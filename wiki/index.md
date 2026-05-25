@@ -41,9 +41,95 @@
 
 ## Papers
 
-| File | Title | Authors | Year | Sources |
-|------|-------|---------|------|---------|
-<!-- New paper entries go here -->
+Papers are organized by research category. Each page includes problem background, methodology, key innovations, and experimental comparisons with baselines.
+
+### 🧠 LLM Training & Theory
+| File | Title | Affiliation | arXiv |
+|------|-------|-----------|-------|
+| [complete-mue-moe](papers/complete-mue-moe.md) | Complete-muE: MoE Hyperparameter Transfer | - | 2605.23893 |
+| [diladiff-diffusion-lm](papers/diladiff-diffusion-lm.md) | DiLaDiff: Distilled Latent-Augmented Diffusion LM | NVIDIA | 2605.23605 |
+| [gated-attention](papers/gated-attention.md) | Gated Attention (NeurIPS 2025 Best Paper) | - | - |
+| [ladir-diffusion-reasoning](papers/ladir-diffusion-reasoning.md) | LaDiR: Latent Diffusion for LLM Text Reasoning | ICLR 2026 | 2510.04573 |
+| [shannon-scaling-law](papers/shannon-scaling-law.md) | Shannon Scaling Law: LLMs as Noisy Channels | ICML 2026 | 2605.23901 |
+| [strong-teacher-distillation](papers/strong-teacher-distillation.md) | Strong Teacher Not Needed? LLM Distillation | - | 2605.23857 |
+| [training-free-looped-transformers](papers/training-free-looped-transformers.md) | Training-Free Looped Transformers | Google? | 2605.23872 |
+| [transformers-inherently-succinct](papers/transformers-inherently-succinct.md) | Transformers are Inherently Succinct (ICLR 2026 Outstanding) | - | - |
+
+### 📊 Recommendation Systems
+| File | Title | Affiliation | arXiv |
+|------|-------|-----------|-------|
+| [airbnb-llm-synthetic-data](papers/airbnb-llm-synthetic-data.md) | LLM-Powered Synthetic Data for NL Search | Airbnb | 2605.21812 |
+| [climber-scaling-laws](papers/climber-scaling-laws.md) | Climber: Efficient Scaling Laws for Large Rec | NetEase / WWW 2025 | 2502.09888 |
+| [harness-lm-bing-ads](papers/harness-lm-bing-ads.md) | HARNESS-LM: SLM Distillation for Sponsored Search | Microsoft Bing Ads | 2605.23572 |
+| [hstu-generative-recommendation](papers/hstu-generative-recommendation.md) | HSTU: Trillion-Parameter Generative Recommendation | Meta / ICML 2024 | 2402.17152 |
+| [kunlun-scaling-law](papers/kunlun-scaling-law.md) | Kunlun: Unified Architecture Scaling Laws | Meta | 2602.10016 |
+| [linkedin-llm-ad-retrieval](papers/linkedin-llm-ad-retrieval.md) | LLM Retrieval for Stable Ad Recommendations | LinkedIn | 2605.21969 |
+| [lirank-linkedin-ranking](papers/lirank-linkedin-ranking.md) | LiRank: Large Scale Ranking at LinkedIn | LinkedIn | 2402.06859 |
+| [netflix-generative-recommender-scaling](papers/netflix-generative-recommender-scaling.md) | Scaling Generative Recommenders (Netflix) | Netflix | 2605.23312 |
+| [rankelastor-recommendation](papers/rankelastor-recommendation.md) | RankElastor: Effective-Rank Dynamics for Rec | KDD 2026 | 2605.23191 |
+| [fat-ctr-scaling](papers/fat-ctr-scaling.md) | FAT: Rademacher CTR Scaling Law | Alibaba | 2511.12081 |
+| [ge4rec-generative-ctr](papers/ge4rec-generative-ctr.md) | GE4Rec: Generative CTR Paradigm | Tencent | 2512.14041 |
+| [genci-ctr](papers/genci-ctr.md) | GenCI: Generative CTR via Cohort Intent Learning | WWW 2026 | 2601.18251 |
+| [rankup-advertising](papers/rankup-advertising.md) | RankUp: High-rank Representations for Ad Ranking | Tencent / KDD 2026 | 2604.17878 |
+| [rporec-reasoning-recommendation](papers/rporec-reasoning-recommendation.md) | RPORec: RL + Reasoning for Recommendation | Kuaishou | 2605.21967 |
+| [suan-ctr-scaling](papers/suan-ctr-scaling.md) | SUAN: Online CTR Scaling Methodology | Meituan / RecSys 2025 | 2508.15326 |
+| [thinkrec](papers/thinkrec.md) | ThinkRec: Thinking-based LLM Recommendation | WWW 2026 | - |
+| [tubifm-ranking](papers/tubifm-ranking.md) | TubiFM: Unified Ranking for Streaming | Tubi (Fox) | 2605.23702 |
+| [wukong-scaling-law](papers/wukong-scaling-law.md) | Wukong: Scaling Law for Large-Scale Rec | Meta / ICML 2024 | 2403.02545 |
+
+### 🤖 Agents & Multi-Agent Systems
+| File | Title | Affiliation | arXiv |
+|------|-------|-----------|-------|
+| [autoresearch-ai](papers/autoresearch-ai.md) | AutoResearch AI: Research Automation | Salesforce | 2605.23204 |
+| [eve-agent-self-evolving](papers/eve-agent-self-evolving.md) | EVE-Agent: Evidence-Verifiable Self-Evolving Agents | - | 2605.22905 |
+| [foundation-protocol-agents](papers/foundation-protocol-agents.md) | Foundation Protocol: Agentic Society Coordination | Tencent/HKUST/UIUC | 2605.23218 |
+| [inductive-deductive-synthesis](papers/inductive-deductive-synthesis.md) | Inductive Deductive Synthesis for Verified Systems | UC Berkeley/Microsoft | 2605.23109 |
+| [mem1-agent](papers/mem1-agent.md) | MEM1: Memory-Reasoning Synergy for Long-Horizon Agents | ICLR 2026 | - |
+| [push-your-agent-persistence](papers/push-your-agent-persistence.md) | Push Your Agent: Goal Persistence in LLM Agents | - | 2605.23574 |
+| [skillopt-agent-skills](papers/skillopt-agent-skills.md) | SkillOpt: Self-Evolving Agent Skills | Microsoft Research Asia | 2605.23904 |
+
+### 🎮 Games & Strategic Reasoning
+| File | Title | Affiliation | arXiv |
+|------|-------|-----------|-------|
+| [alive-frontend-games](papers/alive-frontend-games.md) | ALIVE: Interactive Frontend Games via RL | Alibaba / ICML 2026 | - |
+| [cross-entropy-games](papers/cross-entropy-games.md) | Cross-Entropy Games for General Capabilities | - | 2603.22479 |
+| [dark-souls-iii-lifelong](papers/dark-souls-iii-lifelong.md) | Lifelong Learning in Dark Souls III | ICLR '26 WS | 2601.17923 |
+| [genstrat-strategic-reasoning](papers/genstrat-strategic-reasoning.md) | GENSTRAT: Strategic Reasoning in LLMs | - | 2605.23238 |
+| [hgpo-policy-optimization](papers/hgpo-policy-optimization.md) | HGPO: Hierarchy-of-Groups Policy Optimization | - | 2602.22817 |
+| [nemobot-game-agents](papers/nemobot-game-agents.md) | Nemobot: LLM-Powered Game Agents | - | 2604.21896 |
+| [odysseus-vlm-games](papers/odysseus-vlm-games.md) | Odysseus: Scaling VLMs to 100+ Turn Decision-Making | - | 2605.00347 |
+| [opengame-agentic-coding](papers/opengame-agentic-coding.md) | OpenGame: Open Agentic Coding for Games | - | 2604.18394 |
+| [pcsp-npc-shared-rl](papers/pcsp-npc-shared-rl.md) | PCSP: One Policy, Infinite NPCs (Persona RL) | - | 2605.23652 |
+| [sensi-llm-game-agents](papers/sensi-llm-game-agents.md) | Sensi: Structured Test-Time Learning | - | 2603.17683 |
+| [spiral-self-play-reasoning](papers/spiral-self-play-reasoning.md) | SPIRAL: Self-Play Incentivizes Reasoning | - | - |
+
+### 🎨 Generative Models & Diffusion
+| File | Title | Affiliation | arXiv |
+|------|-------|-----------|-------|
+| [arcache-video-diffusion](papers/arcache-video-diffusion.md) | ARCache: Caching Acceleration for Video Diffusion | CVPR 2026 | - |
+| [precise-sde-sampling](papers/precise-sde-sampling.md) | Precise: SDE-Consistent Sampling for Flow-Matching RL | ByteDance | 2605.23522 |
+| [self-flow-matching](papers/self-flow-matching.md) | Self-Supervised Flow Matching (Self-Flow) | ICML 2026 | - |
+| [uniar-multimodal](papers/uniar-multimodal.md) | UniAR: Unified Multimodal Autoregressive Modeling | Alibaba / ICML 2026 | - |
+
+### 💻 Code & Formal Reasoning
+| File | Title | Affiliation | arXiv |
+|------|-------|-----------|-------|
+| [agentic-proving-verification](papers/agentic-proving-verification.md) | Agentic Proving for Program Verification | - | 2605.23772 |
+| [codetree-code-generation](papers/codetree-code-generation.md) | CodeTree: Agent-guided Tree Search Code Gen | Salesforce / ACL 2025 | - |
+| [improver-2-proof-optimization](papers/improver-2-proof-optimization.md) | ImProver 2: Neurosymbolic Proof Optimization | CMU | 2605.22885 |
+| [rma-research-math](papers/rma-research-math.md) | RMA: Agentic System for Research Math | - | 2605.22875 |
+| [tree-of-evolution](papers/tree-of-evolution.md) | Tree-of-Evolution: Tree-Structured Code Instruction Evolution | NUS / ACL 2025 | - |
+
+### 🔄 Sequential Modeling & Transformers
+| File | Title | Affiliation | arXiv |
+|------|-------|-----------|-------|
+| [dimensionality-barrier-retrieval](papers/dimensionality-barrier-retrieval.md) | Is Dimensionality a Barrier for Retrieval? | MIT | 2605.23556 |
+| [preisach-attention](papers/preisach-attention.md) | Preisach Attention: Hysteretic Sequential Memory | - | 2605.23603 |
+
+### 📐 Benchmarking & Evaluation
+| File | Title | Affiliation | arXiv |
+|------|-------|-----------|-------|
+| [benchmark-rigging-analysis](papers/benchmark-rigging-analysis.md) | How Hard is it to Rig a Benchmark? | - | 2605.23628 |
 
 ## Claims
 
@@ -55,7 +141,13 @@
 
 | File | Name | Sources |
 |------|------|---------|
+| [cross-entropy-curriculum](methods/cross-entropy-curriculum.md) | Cross-Entropy Game Curriculum | 1 |
+| [hierarchical-group-policy-optimization](methods/hierarchical-group-policy-optimization.md) | Hierarchy-of-Groups Policy Optimization (HGPO) | 1 |
+| [pcsp-shared-policy](methods/pcsp-shared-policy.md) | Persona Conditioned Shared Policy (PCSP) | 1 |
 | [reinforcement-learning](methods/reinforcement-learning.md) | Reinforcement Learning | 4 |
+| [sde-consistent-sampling](methods/sde-consistent-sampling.md) | SDE-Consistent Sampling (Precise) | 1 |
+| [structured-test-time-learning](methods/structured-test-time-learning.md) | Structured Test-Time Learning | 1 |
+| [turn-level-critic](methods/turn-level-critic.md) | Turn-Level Critic PPO | 1 |
 
 ## Datasets
 
@@ -79,7 +171,9 @@
 | [deepwiki](entities/deepwiki.md) | DeepWiki | Tool | 1 |
 | [dwarkesh-patel](entities/dwarkesh-patel.md) | Dwarkesh Patel | Person | 2 |
 | [eureka](entities/eureka.md) | Eureka | Company | 1 |
+| [gamecoder-27b](entities/gamecoder-27b.md) | GameCoder-27B | Model | 1 |
 | [github](entities/github.md) | GitHub | Platform | 3 |
+| [harness-lm](entities/harness-lm.md) | HARNESS-LM | Framework | 1 |
 | [hn-time-capsule](entities/hn-time-capsule.md) | HN Time Capsule | Project | 1 |
 | [hugging-face](entities/hugging-face.md) | Hugging Face | Company | 2 |
 | [llama](entities/llama.md) | LLaMA | Model | 1 |
@@ -108,6 +202,7 @@
 | [tesla](entities/tesla.md) | Tesla | Company | 4 |
 | [tesla-autopilot](entities/tesla-autopilot.md) | Tesla Autopilot | Product | 4 |
 | [tinker](entities/tinker.md) | Tinker | Product | 1 |
+| [tubifm](entities/tubifm.md) | TubiFM | Product | 1 |
 | [waymo](entities/waymo.md) | Waymo | Company | 1 |
 | [zero-to-hero](entities/zero-to-hero.md) | Zero to Hero | Course | 1 |
 
@@ -132,6 +227,7 @@
 | [claws](concepts/claws.md) | Claws | 2 |
 | [code-post-scarcity](concepts/code-post-scarcity.md) | Code Post-Scarcity | 1 |
 | [cognitive-core](concepts/cognitive-core.md) | Cognitive Core | 2 |
+| [cognitive-training](concepts/cognitive-training.md) | Cognitive Training | 1 |
 | [context-engineering](concepts/context-engineering.md) | Context Engineering | 1 |
 | [decade-of-agents](concepts/decade-of-agents.md) | Decade of Agents | 2 |
 | [feel-the-agi](concepts/feel-the-agi.md) | Feel the AGI | 1 |
@@ -156,6 +252,8 @@
 | [ramps-to-knowledge](concepts/ramps-to-knowledge.md) | Ramps to Knowledge | 2 |
 | [rl-is-terrible](concepts/rl-is-terrible.md) | "RL is Terrible" | 2 |
 | [rlvr](concepts/rlvr.md) | RLVR (RL from Verifiable Rewards) | 1 |
+| [shannon-scaling-law](concepts/shannon-scaling-law.md) | Shannon Scaling Law | 1 |
+| [skill-graph](concepts/skill-graph.md) | Skill Graph | 1 |
 | [slopacolypse](concepts/slopacolypse.md) | Slopacolypse | 2 |
 | [snowballs](concepts/snowballs.md) | Project Snowballs | 1 |
 | [software-3-0](concepts/software-3-0.md) | Software 3.0 | 2 |
@@ -176,4 +274,12 @@
 
 | File | Topic | Sources |
 |------|-------|---------|
-<!-- New synthesis entries go here -->
+| [affiliation-landscape](synthesis/affiliation-landscape.md) | Affiliation Landscape — AI Research by Institution | 121 papers |
+| [arxiv-broad-2026-05-25](synthesis/arxiv-broad-2026-05-25.md) | arXiv Broad Survey — AI Research Landscape (May 2026) | 121 papers |
+| [arxiv-daily-2026-05-21](synthesis/arxiv-daily-2026-05-21.md) | arXiv Daily — AI & CTR (May 21, 2026) | - |
+| [arxiv-daily-2026-05-23](synthesis/arxiv-daily-2026-05-23.md) | arXiv Daily — AI & CTR (May 23, 2026) | - |
+| [arxiv-daily-2026-05-24](synthesis/arxiv-daily-2026-05-24.md) | arXiv Daily — AI & CTR (May 24, 2026) | - |
+| [arxiv-daily-2026-05-25](synthesis/arxiv-daily-2026-05-25.md) | arXiv Daily — AI & CTR (May 25, 2026) | 27 papers |
+| [conference-digest-2026-05-25](synthesis/conference-digest-2026-05-25.md) | 顶会论文专题报告 — 2026年5月版 | 9 conferences |
+| [ctr-scaling-landscape](synthesis/ctr-scaling-landscape.md) | CTR Scaling Landscape — Industrial RecSys Scaling Laws | 49 papers |
+| [technical-roadmap](synthesis/technical-roadmap.md) | Technical Roadmap — AI Research Directions (2025-2026) | 121 papers |

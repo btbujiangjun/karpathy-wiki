@@ -4,6 +4,119 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-05-25] refactor | Reorganized index.md by categories
+- Papers section restructured into 8 research categories (LLM Training, RecSys, Agents, Games, Generative, Code, Sequential, Benchmarking)
+- All 35 paper pages enhanced with detailed format (中文标题、问题背景、方法详述、创新点、实验结果对比表格)
+- Old Game/RL papers also integrated into the category structure
+- Updated: wiki/index.md
+
+## [2026-05-25] ingest | arXiv Daily — 27 Papers from May 25 Digest
+- Source: wiki/synthesis/arxiv-daily-2026-05-25.md
+- New paper pages: 27
+  - wiki/papers/shannon-scaling-law.md, wiki/papers/strong-teacher-distillation.md
+  - wiki/papers/complete-mue-moe.md, wiki/papers/diladiff-diffusion-lm.md
+  - wiki/papers/training-free-looped-transformers.md
+  - wiki/papers/tubifm-ranking.md, wiki/papers/netflix-generative-recommender-scaling.md
+  - wiki/papers/harness-lm-bing-ads.md, wiki/papers/linkedin-llm-ad-retrieval.md
+  - wiki/papers/rporec-reasoning-recommendation.md, wiki/papers/airbnb-llm-synthetic-data.md
+  - wiki/papers/rankelastor-recommendation.md, wiki/papers/skillopt-agent-skills.md
+  - wiki/papers/pcsp-npc-shared-rl.md, wiki/papers/genstrat-strategic-reasoning.md
+  - wiki/papers/foundation-protocol-agents.md, wiki/papers/autoresearch-ai.md
+  - wiki/papers/inductive-deductive-synthesis.md, wiki/papers/eve-agent-self-evolving.md
+  - wiki/papers/push-your-agent-persistence.md, wiki/papers/precise-sde-sampling.md
+  - wiki/papers/improver-2-proof-optimization.md, wiki/papers/agentic-proving-verification.md
+  - wiki/papers/rma-research-math.md, wiki/papers/preisach-attention.md
+  - wiki/papers/dimensionality-barrier-retrieval.md, wiki/papers/benchmark-rigging-analysis.md
+- New method pages: 2 (sde-consistent-sampling, pcsp-shared-policy)
+- New concept pages: 1 (shannon-scaling-law)
+- New entity pages: 2 (tubifm, harness-lm)
+- Updated: wiki/index.md (Papers, Methods, Concepts, Entities sections)
+
+## [2026-05-25] search | arXiv Daily Digest (AI & CTR)
+- New page: wiki/synthesis/arxiv-daily-2026-05-25.md
+- Sources: arXiv cs.AI new (164 entries), cs.LG new (203 entries), cs.IR new (16 entries), cs.CL new (85 entries)
+- Highlights: Shannon Scaling Law (LLMs as noisy channels), TubiFM (unified ranking), HARNESS-LM (Bing Ads SLM distillation), Netflix generative recommenders 1B params, RPORec (Kuaishou reasoning-augmented rec), SkillOpt (Microsoft agent skill optimizer), PCSP (game NPCs with shared RL), Precise (ByteDance flow-matching RL), Complete-muE (MoE hyperparameter transfer), GenStrat (strategic reasoning in LLMs)
+- 27 papers cataloged across 9 categories
+- Updated: wiki/index.md
+
+## [2026-05-24] search | arXiv Daily Digest
+- New page: wiki/synthesis/arxiv-daily-2026-05-24.md
+- Papers featured: Gated DeltaNet-2, MOSS, Ratchet, Compiling Agentic Workflows, IdleSpec, WorkstreamBench, Search-E1, Advancing Mathematics with Formal Proof, RPORec, LLM Retrieval for Stable Ads
+- Updated: wiki/index.md
+
+## [2026-05-24] ingest | Games & RL Papers from arXiv Daily
+- Source: wiki/synthesis/arxiv-daily-2026-05-24.md (Section 7: Games & RL)
+- New paper pages: 8
+  - wiki/papers/odysseus-vlm-games.md
+  - wiki/papers/opengame-agentic-coding.md
+  - wiki/papers/hgpo-policy-optimization.md
+  - wiki/papers/sensi-llm-game-agents.md
+  - wiki/papers/spiral-self-play-reasoning.md
+  - wiki/papers/nemobot-game-agents.md
+  - wiki/papers/dark-souls-iii-lifelong.md
+  - wiki/papers/cross-entropy-games.md
+- New method pages: 4
+  - wiki/methods/turn-level-critic.md
+  - wiki/methods/hierarchical-group-policy-optimization.md
+  - wiki/methods/structured-test-time-learning.md
+  - wiki/methods/cross-entropy-curriculum.md
+- New concept pages: 2
+  - wiki/concepts/cognitive-training.md
+  - wiki/concepts/skill-graph.md
+- New entity pages: 1
+  - wiki/entities/gamecoder-27b.md
+- Updated: wiki/index.md (Papers, Methods, Concepts, Entities sections)
+
+## [2026-05-25] analyze | arXiv Broad Survey — 121 Papers Across 10 Categories
+- New synthesis pages:
+  - wiki/synthesis/arxiv-broad-2026-05-25.md (categorized paper list with details)
+  - wiki/synthesis/affiliation-landscape.md (10 institutions analysis)
+  - wiki/synthesis/technical-roadmap.md (9 technical routes analysis)
+- Coverage: LLM Training & Theory (16), RecSys (12), CTR (10), Ad Retrieval (9), Agents (14), Games (12), Code/Repair (12), Diffusion (12), Sequence Modeling (13), Benchmarks (11)
+- Affiliations tracked: Google DeepMind, NVIDIA, Microsoft, ByteDance, Alibaba, Tencent, Kuaishou, Netflix, LinkedIn, Walmart, Meituan, Xiaohongshu, Baidu, Salesforce, Arcee AI, CMU, MIT, UC Berkeley, IIIT Ranchi, NTU, CityU HK, NYCU
+- Updated: wiki/index.md (Synthesis section)
+
+## [2026-05-25] query | 顶会论文专题报告 — 覆盖9个会议的最新接收论文
+- Created: wiki/synthesis/conference-digest-2026-05-25.md
+- Conferences covered: ICML 2026, AAAI 2026, KDD 2026, SIGIR 2026, CVPR 2026, WWW 2026, NeurIPS 2025, ICLR 2026, ACL/EMNLP 2025
+- Total papers detailed: 45+ papers with full 5-part analysis (问题背景、方法详述、主要创新点、实验结果对比、局限性)
+- Topics: LLM training & theory, recommender systems, CTR prediction, ad retrieval, agents, game AI/RL, code generation, diffusion models, sequence modeling, benchmarks
+- Key findings: RL for diffusion LLMs (NeurIPS 2025/ICLR 2026), agentic recommendation systems (WWW 2026), tree-search code generation (ACL 2025), representation collapse in deep recommenders (KDD 2026)
+- Updated: wiki/index.md (Synthesis section)
+
+## [2026-05-25] ingest | 13 篇顶会论文消化
+- Created paper pages:
+  - wiki/papers/self-flow-matching.md — Self-Flow (ICML 2026, 自监督流匹配)
+  - wiki/papers/gated-attention.md — Gated Attention (NeurIPS 2025 Best Paper)
+  - wiki/papers/transformers-inherently-succinct.md — Transformer简洁性理论 (ICLR 2026 Outstanding)
+  - wiki/papers/thinkrec.md — ThinkRec (WWW 2026, 思考式推荐)
+  - wiki/papers/rankup-advertising.md — RankUp (KDD 2026, 腾讯微信广告)
+  - wiki/papers/genci-ctr.md — GenCI (WWW 2026, 生成式CTR)
+  - wiki/papers/mem1-agent.md — MEM1 (ICLR 2026, 长时域智能体记忆)
+  - wiki/papers/alive-frontend-games.md — ALIVE (ICML 2026, 前端游戏RL)
+  - wiki/papers/tree-of-evolution.md — Tree-of-Evolution (ACL 2025, 树结构指令进化)
+  - wiki/papers/codetree-code-generation.md — CodeTree (ACL 2025, 树搜索代码生成)
+  - wiki/papers/ladir-diffusion-reasoning.md — LaDiR (ICLR 2026, 潜扩散推理)
+  - wiki/papers/arcache-video-diffusion.md — ARCache (CVPR 2026, 视频扩散缓存加速)
+  - wiki/papers/uniar-multimodal.md — UniAR (ICML 2026, 统一多模态自回归)
+- Updated: wiki/index.md (Papers in LLM Training, RecSys, CTR, Agents, Games, Generative, Code sections)
+- Total paper pages now: 48
+
+## [2026-05-25] ingest | Awesome-CTR-Scaling Repository — 49 Papers CTR 缩放全景
+- Created synthesis: wiki/synthesis/ctr-scaling-landscape.md (按公司+技术路线+时间线三维度组织)
+- Created paper pages (8 new):
+  - wiki/papers/wukong-scaling-law.md — Wukong (Meta, ICML 2024, 推荐缩放律奠基)
+  - wiki/papers/hstu-generative-recommendation.md — HSTU (Meta, ICML 2024, 万亿参数生成推荐)
+  - wiki/papers/kunlun-scaling-law.md — Kunlun (Meta, 2026, 统一架构缩放律)
+  - wiki/papers/fat-ctr-scaling.md — FAT (Alibaba, Rademacher CTR 缩放律理论)
+  - wiki/papers/suan-ctr-scaling.md — SUAN (Meituan, RecSys 2025, 线上缩放方法学)
+  - wiki/papers/ge4rec-generative-ctr.md — GE4Rec (Tencent, 生成式 CTR 范式)
+  - wiki/papers/lirank-linkedin-ranking.md — LiRank (LinkedIn, 大规模工业排序)
+  - wiki/papers/climber-scaling-laws.md — Climber (NetEase, WWW 2025, 持续线上缩放)
+- Companies covered: Meta (9), ByteDance (9), Alibaba (8), Meituan (4), Tencent (3), Kuaishou (4), LinkedIn (2), Google, NetEase, Shopee
+- Updated: wiki/index.md (RecSys, CTR sub-sections, Synthesis section)
+- Total paper pages now: 56
+
 ## [2026-04-15] init | Wiki Created
 - Scaffolded by llm-wiki-bootstrap
 - Domain: Research on Andrej Karpathy's X posts, talks, and related source materials on neural networks, LLMs, and deep learning
@@ -183,6 +296,18 @@
 ## [2026-04-17] bulk-update | index.md reflow
 - Added: 10 source pages, 7 entity pages (autoresearch, deepwiki, matx, microgpt, modded-nanogpt, nanoclaw, simile-ai), 14 concept pages (10x-engineer, agentic-engineering, app-store-outdated, atrophy, autoresearch, bacterial-code, byoai, claws, government-legibility, intelligence-brownouts, llm-knowledge-bases, org-code, slopacolypse, supply-chain-attacks)
 - Source counts updated across: andrej-karpathy (10+), claude-code (3), cursor (2), github (3), cs231n (2), nanochat (5), tesla (3), tesla-autopilot (3), modded-nanogpt (3), openai-codex (3), model-context-protocol (2), march-of-nines (3), nanogpt (3), vibe-coding (2), build-for-agents (2), agentic-engineering (4), bacterial-code (3), claws (2), autoresearch (3), supply-chain-attacks (3), app-store-outdated (2), atrophy (2), slopacolypse (2), org-code (2), 10x-engineer (3)
+
+## [2026-05-21] query | arXiv Daily Report (AI & CTR)
+- Created: wiki/synthesis/arxiv-daily-2026-05-21.md
+- Sources: arXiv cs.AI new (31 entries), cs.IR new (5 entries + 11 replacements)
+- Highlights: CPO (DPO-RLHF non-equivalence), UG-Sep (ByteDance recommender 20% latency cut), PlanningBench, SOLAR
+- Updated: wiki/index.md (Synthesis section)
+
+## [2026-05-23] query | arXiv Daily Report (AI & CTR)
+- Created: wiki/synthesis/arxiv-daily-2026-05-23.md
+- Sources: arXiv cs.AI new (78 entries), cs.IR new (7 entries + replacements)
+- Highlights: FLUID (ID-free livestreaming rec), Sycophancy taxonomy, RPORec (RL + reasoning for rec), Airbnb LLM cold-start, ThinkGR (CoT + generative retrieval), ActiveGraph (event-sourced agents)
+- Updated: wiki/index.md (Synthesis section)
 
 ## [2026-04-18] ingest | Karpathy X posts 2025 (full corpus)
 - Scope: All 69 files in raw/2025/ — Karpathy's X posts from Apr–Dec 2025

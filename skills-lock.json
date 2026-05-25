@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "llm-wiki-bootstrap": {
+      "source": "nanzhipro/Karpathy-llm-wiki-bootstrap-skill",
+      "sourceType": "github",
+      "skillPath": "skill/SKILL.md",
+      "computedHash": "75106b0f893031debe60b40ea4cf9ab892fbfc8f10b27ac2e453fdac9b7791b0"
+    }
+  }
+}

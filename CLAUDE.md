@@ -185,12 +185,13 @@ All wiki content MUST match the language of the source being ingested:
 3. **Structural elements stay English**: YAML frontmatter keys, `type` values, filename slugs, table column headers, and markdown section headings in `index.md` / `log.md` remain in English — they are protocol identifiers, not content.
 4. **Cross-source pages**: For comparisons, synthesis, and overview that span multiple sources, use the language of the majority of sources. If tied, ask the user.
 5. **Conversations**: When discussing takeaways with the user (Ingest Step 2, Query answers), use the same language as the source(s) involved.
+6. **Technical terms in English**: When writing Chinese body content, keep specialized technical terms in their original English form — do not translate them. Examples: "Scaling Law" (not 缩放定律), "Attention" (not 注意力机制), "Feature Interaction" (not 特征交互), "Sequence Modeling" (not 序列建模), "RL / Reinforcement Learning" (not 强化学习), "Knowledge Distillation" (not 知识蒸馏), "Policy Gradient" (not 策略梯度), "Transformer" (not Transformer层), "embedding"/"token"/"latent"/"autoregressive" / "end-to-end" etc. This ensures the wiki remains technically precise for bilingual readers. Only YAML `title-zh` fields may contain the full Chinese translation.
 
 ## Obsidian Setup
 
 This wiki is designed for browsing in Obsidian. Recommended setup:
 
-- **Vault root**: Open `/Users/cyberserval/github/karpathy-wiki/` as the Obsidian vault.
+- **Vault root**: Open `/Users/admin/Documents/work/opensource/karpathy-wiki/` as the Obsidian vault.
 - **Attachment folder**: In Settings → Files and links, set "Default location for new attachments" to `raw/assets/` (create the folder when you first need it).
 - **Plugins**:
   - *Dataview* — query frontmatter (e.g. list all papers by year, all single-source claims).

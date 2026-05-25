@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karpathy Wiki</title>
+<style>
+  :root {
+    --bg: #f8f9fa;
+    --card-bg: #fff;
+    --text: #1a1a2e;
+    --text-muted: #6c757d;
+    --border: #dee2e6;
+    --accent: #5e81ac;
+    --accent-light: #e8f0f8;
+    --tag-bg: #e9ecef;
+    --shadow: 0 1px 3px rgba(0,0,0,.08);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.6;
+  }
+  .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+  header {
+    text-align: center; padding: 40px 20px 30px;
+    border-bottom: 2px solid var(--accent); margin-bottom: 30px;
+  }
+  header h1 { font-size: 2em; color: var(--accent); }
+  header p { color: var(--text-muted); margin-top: 8px; font-size: .95em; }
+  header .meta { margin-top: 12px; font-size: .85em; color: var(--text-muted); }
+  header .meta span { margin: 0 12px; }
+
+  #search {
+    width: 100%; max-width: 500px; margin: 20px auto; display: block;
+    padding: 12px 16px; border: 2px solid var(--border); border-radius: 8px;
+    font-size: 1em; outline: none; transition: border-color .2s;
+  }
+  #search:focus { border-color: var(--accent); }
+
+  .stats { text-align: center; margin-bottom: 24px; font-size: .9em; color: var(--text-muted); }
+
+  .section { margin-bottom: 32px; }
+  .section-title {
+    font-size: 1.3em; font-weight: 600; color: var(--accent);
+    padding-bottom: 8px; border-bottom: 2px solid var(--accent); margin-bottom: 16px;
+  }
+  .section-title .count { font-weight: 400; font-size: .7em; color: var(--text-muted); margin-left: 8px; }
+
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; }
+  .card {
+    background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px;
+    padding: 14px 16px; box-shadow: var(--shadow); transition: box-shadow .2s, transform .2s;
+  }
+  .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,.1); transform: translateY(-1px); }
+  .card-title {
+    font-weight: 600; font-size: .95em; color: var(--accent);
+    text-decoration: none; display: block; margin-bottom: 4px;
+  }
+  .card-title:hover { text-decoration: underline; }
+  .card-desc { font-size: .85em; color: var(--text-muted); line-height: 1.4; }
+  .card-tags { margin-top: 6px; display: flex; flex-wrap: wrap; gap: 4px; }
+  .tag {
+    display: inline-block; font-size: .75em; padding: 2px 8px;
+    background: var(--tag-bg); border-radius: 4px; color: var(--text-muted);
+  }
+  .card-meta { font-size: .8em; color: var(--text-muted); margin-top: 6px; }
+  .card-meta span { margin-right: 12px; }
+  .empty { color: var(--text-muted); font-style: italic; font-size: .9em; padding: 20px; text-align: center; }
+
+  .hidden { display: none !important; }
+
+  footer {
+    text-align: center; padding: 30px; color: var(--text-muted);
+    font-size: .85em; border-top: 1px solid var(--border); margin-top: 40px;
+  }
+
+  @media (max-width: 600px) {
+    .card-grid { grid-template-columns: 1fr; }
+    header h1 { font-size: 1.5em; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>📖 Karpathy Wiki</h1>
+    <p>Personal research knowledge base — neural networks, LLMs, deep learning</p>
+    <div class="meta">
+      <span>📄 <span id="totalPages">0</span> pages</span>
+      <span>📂 <span id="totalSections">7</span> categories</span>
+    </div>
+    <input type="text" id="search" placeholder="搜索页面..." oninput="filterCards()">
+  </header>
+
+  <div class="stats" id="stats"></div>
+  <div id="content"></div>
+
+  <footer>
+    <p>Generated from <code>wiki/</code> · <a href="https://github.com/anomalyco/opencode" target="_blank">opencode</a></p>
+  </footer>
+</div>
+
+<script>
+const wikiData = {
+  concepts: [
+    { name: "10,000 Hours", file: "concepts/10000-hours.md", tags: ["practice", "expertise"] },
+    { name: "10x Engineer (Agent Era)", file: "concepts/10x-engineer.md", tags: ["productivity", "agents"] },
+    { name: "Agentic Engineering", file: "concepts/agentic-engineering.md", tags: ["engineering", "agents"] },
+    { name: "Agentic Models", file: "concepts/agentic-models.md", tags: ["agents", "models"] },
+    { name: "AGI Blends Into 2% Growth", file: "concepts/agi-blends-into-2-percent-growth.md", tags: ["agi", "growth"] },
+    { name: "AI Psychosis", file: "concepts/ai-psychosis.md", tags: ["ai-safety", "psychology"] },
+    { name: "Animals vs Ghosts", file: "concepts/animals-vs-ghosts.md", tags: ["philosophy", "ai"] },
+    { name: "App Store Outdated", file: "concepts/app-store-outdated.md", tags: ["software", "distribution"] },
+    { name: "Atrophy (Generation vs Discrimination)", file: "concepts/atrophy.md", tags: ["skills", "ai-impact"] },
+    { name: "Autonomy Slider", file: "concepts/autonomy-slider.md", tags: ["autonomy", "agents"] },
+    { name: "Autoresearch", file: "concepts/autoresearch.md", tags: ["research", "automation"] },
+    { name: "Bacterial Code", file: "concepts/bacterial-code.md", tags: ["code-evolution", "software"] },
+    { name: "Build for Agents", file: "concepts/build-for-agents.md", tags: ["agents", "design"] },
+    { name: "BYOAI", file: "concepts/byoai.md", tags: ["ai", "personalization"] },
+    { name: "Claws", file: "concepts/claws.md", tags: ["tools", "ai"] },
+    { name: "Code Post-Scarcity", file: "concepts/code-post-scarcity.md", tags: ["coding", "future"] },
+    { name: "Cognitive Core", file: "concepts/cognitive-core.md", tags: ["cognition", "ai"] },
+    { name: "Cognitive Training", file: "concepts/cognitive-training.md", tags: ["games", "curriculum", "transfer"] },
+    { name: "Context Engineering", file: "concepts/context-engineering.md", tags: ["prompts", "engineering"] },
+    { name: "Decade of Agents", file: "concepts/decade-of-agents.md", tags: ["agents", "prediction"] },
+    { name: "Feel the AGI", file: "concepts/feel-the-agi.md", tags: ["agi", "intuition"] },
+    { name: "Galaxy-Brain Reasoning", file: "concepts/galaxy-brain-reasoning.md", tags: ["reasoning", "llm"] },
+    { name: "Government Legibility", file: "concepts/government-legibility.md", tags: ["policy", "ai"] },
+    { name: "In-Context Learning", file: "concepts/in-context-learning.md", tags: ["llm", "learning"] },
+    { name: "Intelligence Brownouts", file: "concepts/intelligence-brownouts.md", tags: ["ai", "reliability"] },
+    { name: "Iron Man Analogy", file: "concepts/iron-man-analogy.md", tags: ["analogy", "ai"] },
+    { name: "Jagged Intelligence", file: "concepts/jagged-intelligence.md", tags: ["ai", "capabilities"] },
+    { name: "LLM Cognitive Deficits", file: "concepts/llm-cognitive-deficits.md", tags: ["llm", "limitations"] },
+    { name: "LLM GUI", file: "concepts/llm-gui.md", tags: ["llm", "interface"] },
+    { name: "LLM Knowledge Bases", file: "concepts/llm-knowledge-bases.md", tags: ["knowledge", "llm"] },
+    { name: "LLM OS", file: "concepts/llm-os.md", tags: ["llm", "operating-system"] },
+    { name: "March of Nines", file: "concepts/march-of-nines.md", tags: ["progress", "metrics"] },
+    { name: "Model Collapse", file: "concepts/model-collapse.md", tags: ["training", "data"] },
+    { name: "Org Code", file: "concepts/org-code.md", tags: ["organizations", "code"] },
+    { name: "Partial-Autonomy Apps", file: "concepts/partial-autonomy-apps.md", tags: ["apps", "autonomy"] },
+    { name: "Peaky Capability", file: "concepts/peaky-capability.md", tags: ["capabilities", "evaluation"] },
+    { name: "People Spirits", file: "concepts/people-spirits.md", tags: ["ai", "psychology"] },
+    { name: "Power to the People", file: "concepts/power-to-the-people.md", tags: ["democratization", "ai"] },
+    { name: "Prompt Injection", file: "concepts/prompt-injection.md", tags: ["security", "prompts"] },
+    { name: "Ramps to Knowledge", file: "concepts/ramps-to-knowledge.md", tags: ["education", "learning"] },
+    { name: "RL is Terrible", file: "concepts/rl-is-terrible.md", tags: ["rl", "opinion"] },
+    { name: "RLVR (RL from Verifiable Rewards)", file: "concepts/rlvr.md", tags: ["rl", "training"] },
+    { name: "Skill Graph", file: "concepts/skill-graph.md", tags: ["games", "hierarchical-rl", "transfer"] },
+    { name: "Slopacolypse", file: "concepts/slopacolypse.md", tags: ["content", "quality"] },
+    { name: "Project Snowballs", file: "concepts/snowballs.md", tags: ["projects", "momentum"] },
+    { name: "Software 3.0", file: "concepts/software-3-0.md", tags: ["software", "paradigm"] },
+    { name: "Supply Chain Attacks (Agent Era)", file: "concepts/supply-chain-attacks.md", tags: ["security", "agents"] },
+    { name: "System Prompt Learning", file: "concepts/system-prompt-learning.md", tags: ["prompts", "learning"] },
+    { name: "Verifiability (Software 2.0 Predicate)", file: "concepts/verifiability.md", tags: ["verification", "software"] },
+    { name: "Verifiable Rewards", file: "concepts/verifiable-rewards.md", tags: ["rl", "rewards"] },
+    { name: "Verification Gap", file: "concepts/verification-gap.md", tags: ["verification", "ai"] },
+    { name: "Vibe Coding", file: "concepts/vibe-coding.md", tags: ["coding", "ai-assisted"] }
+  ],
+  entities: [
+    { name: "Andrej Karpathy", file: "entities/andrej-karpathy.md", type: "Person", tags: ["researcher", "tesla", "openai"] },
+    { name: "Anthropic", file: "entities/anthropic.md", type: "Company", tags: ["company", "ai-safety"] },
+    { name: "autoresearch (repo)", file: "entities/autoresearch.md", type: "Project", tags: ["research", "automation"] },
+    { name: "awesomemovies.life", file: "entities/awesomemovies-life.md", type: "App", tags: ["app", "movie"] },
+    { name: "Claude Code", file: "entities/claude-code.md", type: "Product", tags: ["coding", "anthropic"] },
+    { name: "CS231n", file: "entities/cs231n.md", type: "Course", tags: ["course", "vision"] },
+    { name: "Cursor", file: "entities/cursor.md", type: "Product", tags: ["editor", "coding"] },
+    { name: "Decart", file: "entities/decart.md", type: "Company", tags: ["company", "ai"] },
+    { name: "DeepSeek V3.2", file: "entities/deepseek-v3-2.md", type: "Model", tags: ["model", "chinese"] },
+    { name: "DeepWiki", file: "entities/deepwiki.md", type: "Tool", tags: ["wiki", "tool"] },
+    { name: "Dwarkesh Patel", file: "entities/dwarkesh-patel.md", type: "Person", tags: ["podcaster", "interview"] },
+    { name: "Eureka", file: "entities/eureka.md", type: "Company", tags: ["company", "research"] },
+    { name: "GameCoder-27B", file: "entities/gamecoder-27b.md", type: "Model", tags: ["model", "code-gen", "games"] },
+    { name: "GitHub", file: "entities/github.md", type: "Platform", tags: ["platform", "coding"] },
+    { name: "HN Time Capsule", file: "entities/hn-time-capsule.md", type: "Project", tags: ["project", "hacker-news"] },
+    { name: "Hugging Face", file: "entities/hugging-face.md", type: "Company", tags: ["company", "models"] },
+    { name: "LLaMA", file: "entities/llama.md", type: "Model", tags: ["model", "meta"] },
+    { name: "llm.c", file: "entities/llm-c.md", type: "Project", tags: ["project", "cuda"] },
+    { name: "llm-council", file: "entities/llm-council.md", type: "Project", tags: ["project", "evaluation"] },
+    { name: "LLM101n", file: "entities/llm101n.md", type: "Course", tags: ["course", "education"] },
+    { name: "MatX", file: "entities/matx.md", type: "Company", tags: ["company", "hardware"] },
+    { name: "MenuGen", file: "entities/menugen.md", type: "App", tags: ["app", "ai"] },
+    { name: "microGPT", file: "entities/microgpt.md", type: "Project", tags: ["project", "gpt"] },
+    { name: "micrograd", file: "entities/micrograd.md", type: "Project", tags: ["project", "autograd"] },
+    { name: "modded-nanoGPT", file: "entities/modded-nanogpt.md", type: "Project", tags: ["project", "gpt"] },
+    { name: "Model Context Protocol (MCP)", file: "entities/model-context-protocol.md", type: "Protocol", tags: ["protocol", "context"] },
+    { name: "nanochat", file: "entities/nanochat.md", type: "Project", tags: ["project", "chat"] },
+    { name: "nanoclaw", file: "entities/nanoclaw.md", type: "Project", tags: ["project", "agents"] },
+    { name: "nanoGPT", file: "entities/nanogpt.md", type: "Project", tags: ["project", "gpt"] },
+    { name: "OpenAI", file: "entities/openai.md", type: "Company", tags: ["company", "research"] },
+    { name: "OpenAI Codex", file: "entities/openai-codex.md", type: "Product", tags: ["product", "coding"] },
+    { name: "OpenRouter", file: "entities/openrouter.md", type: "Platform", tags: ["platform", "api"] },
+    { name: "Perplexity", file: "entities/perplexity.md", type: "Product", tags: ["product", "search"] },
+    { name: "Prime Intellect", file: "entities/prime-intellect.md", type: "Company", tags: ["company", "compute"] },
+    { name: "PyTorch", file: "entities/pytorch.md", type: "Framework", tags: ["framework", "deep-learning"] },
+    { name: "Reader3", file: "entities/reader3.md", type: "Tool", tags: ["tool", "reading"] },
+    { name: "Richard Sutton", file: "entities/richard-sutton.md", type: "Person", tags: ["researcher", "rl"] },
+    { name: "Simile", file: "entities/simile-ai.md", type: "Startup", tags: ["startup", "agents"] },
+    { name: "Simon Willison", file: "entities/simon-willison.md", type: "Person", tags: ["developer", "ai"] },
+    { name: "Tesla", file: "entities/tesla.md", type: "Company", tags: ["company", "ev"] },
+    { name: "Tesla Autopilot", file: "entities/tesla-autopilot.md", type: "Product", tags: ["product", "autonomous"] },
+    { name: "Tinker", file: "entities/tinker.md", type: "Product", tags: ["product", "research"] },
+    { name: "Waymo", file: "entities/waymo.md", type: "Company", tags: ["company", "autonomous"] },
+    { name: "Zero to Hero", file: "entities/zero-to-hero.md", type: "Course", tags: ["course", "education"] }
+  ],
+  papers: [
+    { name: "Cross-Entropy Games for General Capabilities", file: "papers/cross-entropy-games.md", authors: "multi-institutional", year: "2026", arxiv: "2603.22479" },
+    { name: "Lifelong Learning in Dark Souls III", file: "papers/dark-souls-iii-lifelong.md", authors: "multi-institutional", year: "2026", arxiv: "2601.17923" },
+    { name: "HGPO: Hierarchy-of-Groups Policy Optimization", file: "papers/hgpo-policy-optimization.md", authors: "multi-institutional", year: "2026", arxiv: "2602.22817" },
+    { name: "Nemobot: LLM-Powered Game Agents for Interactive Learning", file: "papers/nemobot-game-agents.md", authors: "multi-institutional", year: "2026", arxiv: "2604.21896" },
+    { name: "Odysseus: Scaling VLMs to 100+ Turn Decision-Making", file: "papers/odysseus-vlm-games.md", authors: "multi-institutional", year: "2026", arxiv: "2605.00347" },
+    { name: "OpenGame: Open Agentic Coding for Games", file: "papers/opengame-agentic-coding.md", authors: "multi-institutional", year: "2026", arxiv: "2604.18394" },
+    { name: "Sensi: Structured Test-Time Learning for LLM Game Agents", file: "papers/sensi-llm-game-agents.md", authors: "multi-institutional", year: "2026", arxiv: "2603.17683" },
+    { name: "SPIRAL: Self-Play on Zero-Sum Games Incentivizes Reasoning", file: "papers/spiral-self-play-reasoning.md", authors: "multi-institutional", year: "2026", arxiv: "" }
+  ],
+  methods: [
+    { name: "Cross-Entropy Game Curriculum", file: "methods/cross-entropy-curriculum.md", sources: 1 },
+    { name: "Hierarchy-of-Groups Policy Optimization (HGPO)", file: "methods/hierarchical-group-policy-optimization.md", sources: 1 },
+    { name: "Reinforcement Learning", file: "methods/reinforcement-learning.md", sources: 4 },
+    { name: "Structured Test-Time Learning", file: "methods/structured-test-time-learning.md", sources: 1 },
+    { name: "Turn-Level Critic PPO", file: "methods/turn-level-critic.md", sources: 1 }
+  ],
+  sources: [
+    { name: "The Growing Gap in Understanding AI Capability", file: "sources/ai-capability-gap.md", date: "2026-04-15", tags: "capability, agentic, rl" },
+    { name: "Berkeley SkyDeck AI Hackathon 2024 Keynote", file: "sources/berkeley-ai-hackathon-2024-keynote.md", date: "2026-04-17", tags: "keynote, education, agi" },
+    { name: "GPU MODE IRL 2024 — Karpathy on llm.c", file: "sources/gpu-mode-irl-2024-keynote.md", date: "2026-04-17", tags: "cuda, systems, llm-c" },
+    { name: "Karpathy X 2025 — AI-Assisted Coding", file: "sources/karpathy-x-2025-ai-assisted-coding.md", date: "2026-04-18", tags: "coding, agentic-engineering" },
+    { name: "Karpathy X 2025 — Bacterial Code Origin", file: "sources/karpathy-x-2025-bacterial-code-origin.md", date: "2026-04-18", tags: "bacterial-code" },
+    { name: "Karpathy X 2025 — Build for Agents", file: "sources/karpathy-x-2025-build-for-agents.md", date: "2026-04-18", tags: "build-for-agents" },
+    { name: "Karpathy X 2025 — Cognitive Core Spec", file: "sources/karpathy-x-2025-cognitive-core.md", date: "2026-04-18", tags: "cognitive-core" },
+    { name: "Karpathy X 2025 — Dwarkesh Recap", file: "sources/karpathy-x-2025-dwarkesh-recap.md", date: "2026-04-18", tags: "dwarkesh, timelines, rl" },
+    { name: "Karpathy X 2025 — Education", file: "sources/karpathy-x-2025-education.md", date: "2026-04-18", tags: "education, pedagogy" },
+    { name: "Karpathy X 2025 — Evals & Model Vibes", file: "sources/karpathy-x-2025-evals-and-model-vibes.md", date: "2026-04-18", tags: "evals, model-smell" },
+    { name: "Karpathy X 2025 — Ghosts & LLM Psychology", file: "sources/karpathy-x-2025-ghosts-and-psychology.md", date: "2026-04-18", tags: "animals-vs-ghosts" },
+    { name: "Karpathy X 2025 — LLM-Assisted Reading", file: "sources/karpathy-x-2025-llm-reading.md", date: "2026-04-18", tags: "reader3, galaxy-brain" },
+    { name: "Karpathy X 2025 — Miscellaneous", file: "sources/karpathy-x-2025-misc.md", date: "2026-04-18", tags: "misc" },
+    { name: "Karpathy X 2025 — nanochat Saga", file: "sources/karpathy-x-2025-nanochat-saga.md", date: "2026-04-18", tags: "nanochat, training" },
+    { name: "Karpathy X 2025 — Power to the People", file: "sources/karpathy-x-2025-power-to-the-people.md", date: "2026-04-18", tags: "diffusion, individuals-vs-orgs" },
+    { name: "Karpathy X 2025 — RL & Learning Paradigms", file: "sources/karpathy-x-2025-rl-and-learning-paradigms.md", date: "2026-04-18", tags: "rl, system-prompt-learning" },
+    { name: "Karpathy X 2025 — Software Paradigm & Verifiability", file: "sources/karpathy-x-2025-software-paradigm.md", date: "2026-04-18", tags: "software-3-0, verifiability" },
+    { name: "Karpathy X 2025 — Tesla FSD", file: "sources/karpathy-x-2025-tesla-fsd.md", date: "2026-04-18", tags: "tesla, fsd, software-2-0" },
+    { name: "Karpathy X 2025 — Video Generation", file: "sources/karpathy-x-2025-video-gen.md", date: "2026-04-18", tags: "video-gen, veo" },
+    { name: "Karpathy X 2026 — Agent Networks", file: "sources/karpathy-x-2026-agent-networks.md", date: "2026-04-17", tags: "agents, populations" },
+    { name: "Karpathy X 2026 — Agentic Engineering", file: "sources/karpathy-x-2026-agentic-engineering.md", date: "2026-04-17", tags: "agentic-engineering" },
+    { name: "Karpathy X 2026 — autoresearch & Claws", file: "sources/karpathy-x-2026-autoresearch-and-claws.md", date: "2026-04-17", tags: "autoresearch, claws" },
+    { name: "Karpathy X 2026 — Claude Coding Reflections", file: "sources/karpathy-x-2026-claude-coding-reflections.md", date: "2026-04-17", tags: "agentic-engineering, atrophy" },
+    { name: "Karpathy X 2026 — FSD Coast-to-Coast", file: "sources/karpathy-x-2026-fsd-coast-to-coast.md", date: "2026-04-17", tags: "tesla, fsd, march-of-nines" },
+    { name: "Karpathy X 2026 — LLM Knowledge Bases & BYOAI", file: "sources/karpathy-x-2026-llm-wiki.md", date: "2026-04-17", tags: "knowledge-base, byoai" },
+    { name: "Karpathy X 2026 — Malleable Software", file: "sources/karpathy-x-2026-malleable-software.md", date: "2026-04-17", tags: "bacterial-code, app-store-outdated" },
+    { name: "Karpathy X 2026 — Miscellaneous", file: "sources/karpathy-x-2026-misc.md", date: "2026-04-17", tags: "misc" },
+    { name: "Karpathy X 2026 — nanochat & GPT-2", file: "sources/karpathy-x-2026-nanochat-gpt2-reproduction.md", date: "2026-04-17", tags: "nanochat, cost, training" },
+    { name: "Karpathy X 2026 — Supply Chain Attacks", file: "sources/karpathy-x-2026-supply-chain.md", date: "2026-04-17", tags: "security, dependencies" },
+    { name: "Software Is Changing (Again) — YC Keynote", file: "sources/software-is-changing-again.md", date: "2026-04-17", tags: "software-3-0, agents, llm-os" },
+    { name: "Summoning Ghosts, Not Animals — Dwarkesh Interview", file: "sources/summoning-ghosts-not-animals.md", date: "2026-04-17", tags: "agi, agents, rl" }
+  ],
+  synthesis: [
+    { name: "arXiv Daily — AI & CTR (May 21, 2026)", file: "synthesis/arxiv-daily-2026-05-21.md", date: "2026-05-21" },
+    { name: "arXiv Daily — AI & CTR (May 23, 2026)", file: "synthesis/arxiv-daily-2026-05-23.md", date: "2026-05-23" },
+    { name: "arXiv Daily — AI & CTR (May 24, 2026)", file: "synthesis/arxiv-daily-2026-05-24.md", date: "2026-05-24" }
+  ]
+};
+
+function getIcon(section) {
+  const icons = { concepts: "💡", entities: "🏷️", papers: "📄", methods: "🔧", sources: "📚", synthesis: "📰" };
+  return icons[section] || "📎";
+}
+
+function renderCards(section, items) {
+  if (!items || items.length === 0) return '<div class="empty">暂无条目</div>';
+  return items.map(item => {
+    let meta = '';
+    if (section === 'papers') {
+      meta = `<span>👤 ${item.authors}</span><span>📅 ${item.year}</span>`;
+      if (item.arxiv) meta += `<span><a href="https://arxiv.org/abs/${item.arxiv}" target="_blank">arXiv:${item.arxiv}</a></span>`;
+    } else if (section === 'entities') {
+      meta = `<span>🔖 ${item.type}</span>`;
+    } else if (section === 'methods') {
+      meta = `<span>📎 ${item.sources} source(s)</span>`;
+    } else if (section === 'sources') {
+      meta = `<span>📅 ${item.date}</span>`;
+    } else if (section === 'synthesis') {
+      meta = `<span>📅 ${item.date}</span>`;
+    }
+    const tags = section === 'entities' ? (item.tags || []).map(t => `<span class="tag">${t}</span>`).join('') :
+                 section === 'papers' ? `<span class="tag">arxiv ${item.year}</span>` :
+                 section === 'sources' ? (item.tags || '').split(',').map(t => `<span class="tag">${t.trim()}</span>`).join('') :
+                 section === 'methods' ? '' :
+                 (item.tags || []).map(t => `<span class="tag">${t}</span>`).join('');
+    return `<div class="card" data-name="${item.name.toLowerCase()}" data-tags="${(item.tags || []).join(' ').toLowerCase()} ${item.name.toLowerCase()}">
+      <a class="card-title" href="wiki/${item.file}" target="_blank">${item.name}</a>
+      ${meta ? `<div class="card-meta">${meta}</div>` : ''}
+      ${tags ? `<div class="card-tags">${tags}</div>` : ''}
+    </div>`;
+  }).join('');
+}
+
+function render() {
+  const sections = ['papers', 'sources', 'concepts', 'entities', 'methods', 'synthesis'];
+  const titles = { papers: 'Papers', sources: 'Sources', concepts: 'Concepts', entities: 'Entities', methods: 'Methods', synthesis: 'Synthesis' };
+  let html = '';
+  let total = 0;
+  sections.forEach(s => {
+    const items = wikiData[s] || [];
+    total += items.length;
+    html += `<div class="section" id="section-${s}">
+      <div class="section-title">${getIcon(s)} ${titles[s]} <span class="count">(${items.length})</span></div>
+      <div class="card-grid">${renderCards(s, items)}</div>
+    </div>`;
+  });
+  document.getElementById('content').innerHTML = html;
+  document.getElementById('totalPages').textContent = total;
+}
+
+function filterCards() {
+  const q = document.getElementById('search').value.toLowerCase().trim();
+  document.querySelectorAll('.card').forEach(c => {
+    const match = q === '' || c.dataset.name.includes(q) || c.dataset.tags.includes(q);
+    c.classList.toggle('hidden', !match);
+  });
+  let visible = 0;
+  document.querySelectorAll('.section').forEach(s => {
+    const cards = s.querySelectorAll('.card:not(.hidden)');
+    const count = cards.length;
+    visible += count;
+    const titleCount = s.querySelector('.count');
+    if (titleCount) titleCount.textContent = `(${count})`;
+    s.querySelectorAll('.empty').forEach(e => e.classList.toggle('hidden', count > 0));
+  });
+  document.getElementById('stats').textContent = q ? `搜索 "${q}": 找到 ${visible} 个结果` : '';
+}
+
+render();
+</script>
+</body>
+</html>
