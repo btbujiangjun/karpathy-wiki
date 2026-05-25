@@ -1,5 +1,6 @@
 ---
 title: "SPIRAL: Self-Play on Zero-Sum Games Incentivizes Reasoning"
+title-zh: "SPIRAL: 零和博弈自对弈激励推理能力"
 type: paper
 created: 2026-05-24
 updated: 2026-05-24

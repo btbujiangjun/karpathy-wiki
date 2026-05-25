@@ -1,12 +1,12 @@
 ---
 title: "Odysseus: Scaling VLMs to 100+ Turn Decision-Making in Games"
+title-zh: "Odysseus: 将 VLM 扩展到游戏中的百轮决策"
 type: paper
 created: 2026-05-24
 updated: 2026-05-24
 authors: [multi-institutional]
 year: 2026
 arxiv: 2605.00347
-category: games
 category: games
 tags: [vlm, games, rl, ppo, mario, decision-making]
 ---

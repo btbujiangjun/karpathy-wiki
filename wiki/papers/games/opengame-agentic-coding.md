@@ -1,5 +1,6 @@
 ---
 title: "OpenGame: Open Agentic Coding for Games"
+title-zh: "OpenGame: 面向游戏的开源智能体式编程"
 type: paper
 created: 2026-05-24
 updated: 2026-05-24

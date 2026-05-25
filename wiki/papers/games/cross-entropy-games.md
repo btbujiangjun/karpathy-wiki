@@ -1,5 +1,6 @@
 ---
 title: "Cross-Entropy Games for General Capabilities"
+title-zh: "交叉熵游戏：面向通用能力的课程学习框架"
 type: paper
 created: 2026-05-24
 updated: 2026-05-24

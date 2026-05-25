@@ -1,5 +1,6 @@
 ---
 title: "HGPO: Hierarchy-of-Groups Policy Optimization for Long-Horizon Agentic Tasks"
+title-zh: "HGPO: 分层组策略优化用于长时域智能体任务"
 type: paper
 created: 2026-05-24
 updated: 2026-05-24

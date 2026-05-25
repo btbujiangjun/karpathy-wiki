@@ -1,5 +1,6 @@
 ---
 title: "Lifelong Learning in Dark Souls III"
+title-zh: "黑暗之魂 III 中的终身学习"
 type: paper
 created: 2026-05-24
 updated: 2026-05-24
@@ -7,7 +8,6 @@ authors: [multi-institutional]
 year: 2026
 arxiv: 2601.17923
 venue: ICLR '26 Lifelong Agent Workshop
-category: games
 category: games
 tags: [lifelong-learning, games, skill-graph, hierarchical-rl, dark-souls]
 ---

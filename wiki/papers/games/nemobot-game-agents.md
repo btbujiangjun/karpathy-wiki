@@ -1,5 +1,6 @@
 ---
 title: "Nemobot: LLM-Powered Game Agents for Interactive Learning"
+title-zh: "Nemobot: 基于 LLM 的交互式游戏智能体"
 type: paper
 created: 2026-05-24
 updated: 2026-05-24

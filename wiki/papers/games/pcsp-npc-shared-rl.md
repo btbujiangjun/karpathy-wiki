@@ -9,7 +9,6 @@ year: 2026
 arxiv: 2605.23652
 category: games
 tags: [games, rl, npc, persona, shared-policy]
-category: games
 ---
 
 ## 问题背景

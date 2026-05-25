@@ -1,5 +1,6 @@
 ---
 title: "Sensi: Structured Test-Time Learning for LLM Game Agents"
+title-zh: "Sensi: LLM 游戏智能体的结构化测试时学习"
 type: paper
 created: 2026-05-24
 updated: 2026-05-24
