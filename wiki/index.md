@@ -282,4 +282,5 @@ Papers are organized by research category. Each page includes problem background
 | [arxiv-daily-2026-05-25](synthesis/arxiv-daily-2026-05-25.md) | arXiv Daily — AI & CTR (May 25, 2026) | 27 papers |
 | [conference-digest-2026-05-25](synthesis/conference-digest-2026-05-25.md) | 顶会论文专题报告 — 2026年5月版 | 9 conferences |
 | [ctr-scaling-landscape](synthesis/ctr-scaling-landscape.md) | CTR Scaling Landscape — Industrial RecSys Scaling Laws | 49 papers |
+| [tech-report-digest-2026-05-25](synthesis/tech-report-digest-2026-05-25.md) | 各大 AI 公司最新技术报告汇总 — 17 家机构 Tech Report/System Card 调查 | 22 reports |
 | [technical-roadmap](synthesis/technical-roadmap.md) | Technical Roadmap — AI Research Directions (2025-2026) | 121 papers |
