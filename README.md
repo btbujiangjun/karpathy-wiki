@@ -104,15 +104,17 @@ flowchart LR
 2. Enable community plugins: **Dataview**, **Templater**, **obsidian-git**
 3. Set attachments folder to `raw/assets/` in Settings → Files and links
 
-### Scheduled Paper Search
+### Scheduled Jobs
 
-An OpenCode scheduled job is configured to run daily arXiv searches:
+An OpenCode scheduler runs daily searches:
 
-```
-arxiv-conference-daily — Daily at 12:30 PM Beijing (4:30 AM UTC)
-```
+| Job | Time (Beijing) | Description |
+|---|---|---|
+| `arxiv-conference-daily` | 12:30 PM | arXiv + 9 大顶会最新论文 |
+| `llm-tech-report-daily` | 1:00 PM | 大模型 Tech Report / System Card |
 
-To run immediately: `opencode run arxiv-conference-daily now`
+To run immediately: `opencode run {job-name} now` (e.g. `arxiv-conference-daily`)
+
 To list jobs: `opencode list-jobs`
 
 ---
