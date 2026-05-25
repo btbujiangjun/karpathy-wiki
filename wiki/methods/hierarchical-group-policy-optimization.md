@@ -3,7 +3,7 @@ title: "Hierarchy-of-Groups Policy Optimization (HGPO)"
 type: method
 created: 2026-05-24
 updated: 2026-05-24
-sources: [papers/hgpo-policy-optimization.md]
+sources: [papers/agents/hgpo-policy-optimization.md]
 tags: [rl, multi-turn, advantage-estimation, policy-optimization]
 ---
 

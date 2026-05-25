@@ -3,7 +3,7 @@ title: "Cognitive Training"
 type: concept
 created: 2026-05-24
 updated: 2026-05-24
-sources: [papers/cross-entropy-games.md]
+sources: [papers/games/cross-entropy-games.md]
 tags: [curriculum-learning, games, transfer, general-capabilities]
 ---
 
@@ -17,4 +17,4 @@ The idea that general AI capabilities can be built by growing a curriculum of cr
 
 ## Source
 
-[[cross-entropy-games]](papers/cross-entropy-games.md)
+[[cross-entropy-games]](papers/games/cross-entropy-games.md)

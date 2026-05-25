@@ -7,6 +7,7 @@ updated: 2026-05-25
 authors: [Yoosung Hong]
 year: 2026
 arxiv: 2605.23652
+category: games
 tags: [games, rl, npc, persona, shared-policy]
 category: games
 ---

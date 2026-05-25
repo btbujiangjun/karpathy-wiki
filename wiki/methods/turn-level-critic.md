@@ -3,7 +3,7 @@ title: "Turn-Level Critic PPO"
 type: method
 created: 2026-05-24
 updated: 2026-05-24
-sources: [papers/odysseus-vlm-games.md]
+sources: [papers/games/odysseus-vlm-games.md]
 tags: [rl, ppo, critic, vlm, games]
 ---
 

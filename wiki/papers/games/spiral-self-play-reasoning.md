@@ -6,6 +6,7 @@ updated: 2026-05-24
 authors: [multi-institutional]
 year: 2026
 arxiv: (referenced in section 3.2)
+category: games
 tags: [reasoning, self-play, zero-sum-games, rl, alignment]
 ---
 

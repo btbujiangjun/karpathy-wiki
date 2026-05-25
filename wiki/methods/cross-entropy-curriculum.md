@@ -3,7 +3,7 @@ title: "Cross-Entropy Game Curriculum"
 type: method
 created: 2026-05-24
 updated: 2026-05-24
-sources: [papers/cross-entropy-games.md]
+sources: [papers/games/cross-entropy-games.md]
 tags: [curriculum-learning, games, transfer-learning, meta-learning]
 ---
 

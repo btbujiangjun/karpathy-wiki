@@ -6,6 +6,7 @@ updated: 2026-05-24
 authors: [multi-institutional]
 year: 2026
 arxiv: 2602.22817
+category: agents
 tags: [rl, multi-turn, policy-optimization, agents, long-horizon]
 ---
 

@@ -13,20 +13,20 @@
 ## [2026-05-25] ingest | arXiv Daily — 27 Papers from May 25 Digest
 - Source: wiki/synthesis/arxiv-daily-2026-05-25.md
 - New paper pages: 27
-  - wiki/papers/shannon-scaling-law.md, wiki/papers/strong-teacher-distillation.md
-  - wiki/papers/complete-mue-moe.md, wiki/papers/diladiff-diffusion-lm.md
-  - wiki/papers/training-free-looped-transformers.md
-  - wiki/papers/tubifm-ranking.md, wiki/papers/netflix-generative-recommender-scaling.md
-  - wiki/papers/harness-lm-bing-ads.md, wiki/papers/linkedin-llm-ad-retrieval.md
-  - wiki/papers/rporec-reasoning-recommendation.md, wiki/papers/airbnb-llm-synthetic-data.md
-  - wiki/papers/rankelastor-recommendation.md, wiki/papers/skillopt-agent-skills.md
-  - wiki/papers/pcsp-npc-shared-rl.md, wiki/papers/genstrat-strategic-reasoning.md
-  - wiki/papers/foundation-protocol-agents.md, wiki/papers/autoresearch-ai.md
-  - wiki/papers/inductive-deductive-synthesis.md, wiki/papers/eve-agent-self-evolving.md
-  - wiki/papers/push-your-agent-persistence.md, wiki/papers/precise-sde-sampling.md
-  - wiki/papers/improver-2-proof-optimization.md, wiki/papers/agentic-proving-verification.md
-  - wiki/papers/rma-research-math.md, wiki/papers/preisach-attention.md
-  - wiki/papers/dimensionality-barrier-retrieval.md, wiki/papers/benchmark-rigging-analysis.md
+  - wiki/papers/llm-training/shannon-scaling-law.md, wiki/papers/llm-training/strong-teacher-distillation.md
+  - wiki/papers/llm-training/complete-mue-moe.md, wiki/papers/llm-training/diladiff-diffusion-lm.md
+  - wiki/papers/llm-training/training-free-looped-transformers.md
+  - wiki/papers/recommendation/tubifm-ranking.md, wiki/papers/recommendation/netflix-generative-recommender-scaling.md
+  - wiki/papers/recommendation/harness-lm-bing-ads.md, wiki/papers/recommendation/linkedin-llm-ad-retrieval.md
+  - wiki/papers/recommendation/rporec-reasoning-recommendation.md, wiki/papers/recommendation/airbnb-llm-synthetic-data.md
+  - wiki/papers/recommendation/rankelastor-recommendation.md, wiki/papers/agents/skillopt-agent-skills.md
+  - wiki/papers/games/pcsp-npc-shared-rl.md, wiki/papers/games/genstrat-strategic-reasoning.md
+  - wiki/papers/agents/foundation-protocol-agents.md, wiki/papers/agents/autoresearch-ai.md
+  - wiki/papers/agents/inductive-deductive-synthesis.md, wiki/papers/agents/eve-agent-self-evolving.md
+  - wiki/papers/agents/push-your-agent-persistence.md, wiki/papers/generative-models/precise-sde-sampling.md
+  - wiki/papers/code-reasoning/improver-2-proof-optimization.md, wiki/papers/code-reasoning/agentic-proving-verification.md
+  - wiki/papers/code-reasoning/rma-research-math.md, wiki/papers/sequential-modeling/preisach-attention.md
+  - wiki/papers/sequential-modeling/dimensionality-barrier-retrieval.md, wiki/papers/benchmarking/benchmark-rigging-analysis.md
 - New method pages: 2 (sde-consistent-sampling, pcsp-shared-policy)
 - New concept pages: 1 (shannon-scaling-law)
 - New entity pages: 2 (tubifm, harness-lm)
@@ -47,14 +47,14 @@
 ## [2026-05-24] ingest | Games & RL Papers from arXiv Daily
 - Source: wiki/synthesis/arxiv-daily-2026-05-24.md (Section 7: Games & RL)
 - New paper pages: 8
-  - wiki/papers/odysseus-vlm-games.md
-  - wiki/papers/opengame-agentic-coding.md
-  - wiki/papers/hgpo-policy-optimization.md
-  - wiki/papers/sensi-llm-game-agents.md
-  - wiki/papers/spiral-self-play-reasoning.md
-  - wiki/papers/nemobot-game-agents.md
-  - wiki/papers/dark-souls-iii-lifelong.md
-  - wiki/papers/cross-entropy-games.md
+  - wiki/papers/games/odysseus-vlm-games.md
+  - wiki/papers/games/opengame-agentic-coding.md
+  - wiki/papers/agents/hgpo-policy-optimization.md
+  - wiki/papers/games/sensi-llm-game-agents.md
+  - wiki/papers/games/spiral-self-play-reasoning.md
+  - wiki/papers/games/nemobot-game-agents.md
+  - wiki/papers/games/dark-souls-iii-lifelong.md
+  - wiki/papers/games/cross-entropy-games.md
 - New method pages: 4
   - wiki/methods/turn-level-critic.md
   - wiki/methods/hierarchical-group-policy-optimization.md
@@ -86,33 +86,33 @@
 
 ## [2026-05-25] ingest | 13 篇顶会论文消化
 - Created paper pages:
-  - wiki/papers/self-flow-matching.md — Self-Flow (ICML 2026, 自监督流匹配)
-  - wiki/papers/gated-attention.md — Gated Attention (NeurIPS 2025 Best Paper)
-  - wiki/papers/transformers-inherently-succinct.md — Transformer简洁性理论 (ICLR 2026 Outstanding)
-  - wiki/papers/thinkrec.md — ThinkRec (WWW 2026, 思考式推荐)
-  - wiki/papers/rankup-advertising.md — RankUp (KDD 2026, 腾讯微信广告)
-  - wiki/papers/genci-ctr.md — GenCI (WWW 2026, 生成式CTR)
-  - wiki/papers/mem1-agent.md — MEM1 (ICLR 2026, 长时域智能体记忆)
-  - wiki/papers/alive-frontend-games.md — ALIVE (ICML 2026, 前端游戏RL)
-  - wiki/papers/tree-of-evolution.md — Tree-of-Evolution (ACL 2025, 树结构指令进化)
-  - wiki/papers/codetree-code-generation.md — CodeTree (ACL 2025, 树搜索代码生成)
-  - wiki/papers/ladir-diffusion-reasoning.md — LaDiR (ICLR 2026, 潜扩散推理)
-  - wiki/papers/arcache-video-diffusion.md — ARCache (CVPR 2026, 视频扩散缓存加速)
-  - wiki/papers/uniar-multimodal.md — UniAR (ICML 2026, 统一多模态自回归)
+  - wiki/papers/generative-models/self-flow-matching.md — Self-Flow (ICML 2026, 自监督流匹配)
+  - wiki/papers/llm-training/gated-attention.md — Gated Attention (NeurIPS 2025 Best Paper)
+  - wiki/papers/llm-training/transformers-inherently-succinct.md — Transformer简洁性理论 (ICLR 2026 Outstanding)
+  - wiki/papers/recommendation/thinkrec.md — ThinkRec (WWW 2026, 思考式推荐)
+  - wiki/papers/ctr/rankup-advertising.md — RankUp (KDD 2026, 腾讯微信广告)
+  - wiki/papers/ctr/genci-ctr.md — GenCI (WWW 2026, 生成式CTR)
+  - wiki/papers/agents/mem1-agent.md — MEM1 (ICLR 2026, 长时域智能体记忆)
+  - wiki/papers/games/alive-frontend-games.md — ALIVE (ICML 2026, 前端游戏RL)
+  - wiki/papers/code-reasoning/tree-of-evolution.md — Tree-of-Evolution (ACL 2025, 树结构指令进化)
+  - wiki/papers/code-reasoning/codetree-code-generation.md — CodeTree (ACL 2025, 树搜索代码生成)
+  - wiki/papers/llm-training/ladir-diffusion-reasoning.md — LaDiR (ICLR 2026, 潜扩散推理)
+  - wiki/papers/generative-models/arcache-video-diffusion.md — ARCache (CVPR 2026, 视频扩散缓存加速)
+  - wiki/papers/generative-models/uniar-multimodal.md — UniAR (ICML 2026, 统一多模态自回归)
 - Updated: wiki/index.md (Papers in LLM Training, RecSys, CTR, Agents, Games, Generative, Code sections)
 - Total paper pages now: 48
 
 ## [2026-05-25] ingest | Awesome-CTR-Scaling Repository — 49 Papers CTR 缩放全景
 - Created synthesis: wiki/synthesis/ctr-scaling-landscape.md (按公司+技术路线+时间线三维度组织)
 - Created paper pages (8 new):
-  - wiki/papers/wukong-scaling-law.md — Wukong (Meta, ICML 2024, 推荐缩放律奠基)
-  - wiki/papers/hstu-generative-recommendation.md — HSTU (Meta, ICML 2024, 万亿参数生成推荐)
-  - wiki/papers/kunlun-scaling-law.md — Kunlun (Meta, 2026, 统一架构缩放律)
-  - wiki/papers/fat-ctr-scaling.md — FAT (Alibaba, Rademacher CTR 缩放律理论)
-  - wiki/papers/suan-ctr-scaling.md — SUAN (Meituan, RecSys 2025, 线上缩放方法学)
-  - wiki/papers/ge4rec-generative-ctr.md — GE4Rec (Tencent, 生成式 CTR 范式)
-  - wiki/papers/lirank-linkedin-ranking.md — LiRank (LinkedIn, 大规模工业排序)
-  - wiki/papers/climber-scaling-laws.md — Climber (NetEase, WWW 2025, 持续线上缩放)
+  - wiki/papers/recommendation/wukong-scaling-law.md — Wukong (Meta, ICML 2024, 推荐缩放律奠基)
+  - wiki/papers/recommendation/hstu-generative-recommendation.md — HSTU (Meta, ICML 2024, 万亿参数生成推荐)
+  - wiki/papers/recommendation/kunlun-scaling-law.md — Kunlun (Meta, 2026, 统一架构缩放律)
+  - wiki/papers/ctr/fat-ctr-scaling.md — FAT (Alibaba, Rademacher CTR 缩放律理论)
+  - wiki/papers/ctr/suan-ctr-scaling.md — SUAN (Meituan, RecSys 2025, 线上缩放方法学)
+  - wiki/papers/ctr/ge4rec-generative-ctr.md — GE4Rec (Tencent, 生成式 CTR 范式)
+  - wiki/papers/recommendation/lirank-linkedin-ranking.md — LiRank (LinkedIn, 大规模工业排序)
+  - wiki/papers/recommendation/climber-scaling-laws.md — Climber (NetEase, WWW 2025, 持续线上缩放)
 - Companies covered: Meta (9), ByteDance (9), Alibaba (8), Meituan (4), Tencent (3), Kuaishou (4), LinkedIn (2), Google, NetEase, Shopee
 - Updated: wiki/index.md (RecSys, CTR sub-sections, Synthesis section)
 - Total paper pages now: 56

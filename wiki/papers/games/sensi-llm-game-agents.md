@@ -6,6 +6,7 @@ updated: 2026-05-24
 authors: [multi-institutional]
 year: 2026
 arxiv: 2603.17683
+category: games
 tags: [llm, game-agents, test-time-learning, arc-agi, curriculum]
 ---
 

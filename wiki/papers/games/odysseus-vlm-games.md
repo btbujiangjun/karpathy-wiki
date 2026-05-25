@@ -6,6 +6,8 @@ updated: 2026-05-24
 authors: [multi-institutional]
 year: 2026
 arxiv: 2605.00347
+category: games
+category: games
 tags: [vlm, games, rl, ppo, mario, decision-making]
 ---
 

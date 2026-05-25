@@ -8,6 +8,7 @@ authors: [Xu Ouyang, Deyi Liu, Yuhang Cai, Jing Liu, Yuan Yang, Chen Zheng, Thom
 year: 2026
 arxiv: 2605.23901
 venue: ICML 2026
+category: llm-training
 tags: [scaling-laws, information-theory, llm, theory]
 ---
 

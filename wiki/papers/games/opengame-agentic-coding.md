@@ -6,6 +6,7 @@ updated: 2026-05-24
 authors: [multi-institutional]
 year: 2026
 arxiv: 2604.18394
+category: games
 tags: [game-creation, agentic-coding, code-generation, rl]
 ---
 

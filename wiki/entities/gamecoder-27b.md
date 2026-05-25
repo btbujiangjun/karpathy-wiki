@@ -3,7 +3,7 @@ title: "GameCoder-27B"
 type: entity
 created: 2026-05-24
 updated: 2026-05-24
-sources: [papers/opengame-agentic-coding.md]
+sources: [papers/games/opengame-agentic-coding.md]
 tags: [model, code-generation, games, open-source]
 ---
 
@@ -19,4 +19,4 @@ A 27B parameter code language model specialized for web game creation. Trained t
 
 ## Source
 
-[[opengame-agentic-coding]](papers/opengame-agentic-coding.md)
+[[opengame-agentic-coding]](papers/games/opengame-agentic-coding.md)

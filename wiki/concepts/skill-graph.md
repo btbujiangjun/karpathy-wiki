@@ -3,7 +3,7 @@ title: "Skill Graph"
 type: concept
 created: 2026-05-24
 updated: 2026-05-24
-sources: [papers/dark-souls-iii-lifelong.md]
+sources: [papers/games/dark-souls-iii-lifelong.md]
 tags: [lifelong-learning, hierarchical-rl, skill-transfer, games]
 ---
 
@@ -17,4 +17,4 @@ A directed graph representation of skills for real-time combat and control tasks
 
 ## Source
 
-[[dark-souls-iii-lifelong]](papers/dark-souls-iii-lifelong.md)
+[[dark-souls-iii-lifelong]](papers/games/dark-souls-iii-lifelong.md)

@@ -8,6 +8,7 @@ authors: [Alexandre Salle, Chenglei Niu, Suchismit Mahapatra, Xiaoxiao Chen, Suv
 year: 2026
 arxiv: 2605.23702
 affiliation: Tubi (Fox)
+category: recommendation
 tags: [recommendation, ranking, llm, streaming]
 ---
 

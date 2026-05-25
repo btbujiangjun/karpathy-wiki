@@ -6,6 +6,7 @@ updated: 2026-05-24
 authors: [multi-institutional]
 year: 2026
 arxiv: 2603.22479
+category: games
 tags: [curriculum-learning, games, cognitive-training, transfer-learning, meta-learning]
 ---
 

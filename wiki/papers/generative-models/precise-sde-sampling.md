@@ -9,7 +9,7 @@ year: 2026
 arxiv: 2605.23522
 affiliation: ByteDance
 tags: [diffusion, flow-matching, rl, sampling, generative]
-category: generative
+category: generative-models
 ---
 
 ## 问题背景

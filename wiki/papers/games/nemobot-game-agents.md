@@ -6,6 +6,7 @@ updated: 2026-05-24
 authors: [multi-institutional]
 year: 2026
 arxiv: 2604.21896
+category: games
 tags: [llm, game-agents, interactive-learning, shannon-taxonomy, crowdsourcing]
 ---
 

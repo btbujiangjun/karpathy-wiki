@@ -8,6 +8,7 @@ authors: [Vipul Gupta, Shikhar Mohan, Lakshma Kumar, Pranjal Chitale, Nikit Begw
 year: 2026
 arxiv: 2605.23572
 affiliation: Microsoft (Bing Ads)
+category: recommendation
 tags: [distillation, search, retrieval, slm, advertising]
 ---
 

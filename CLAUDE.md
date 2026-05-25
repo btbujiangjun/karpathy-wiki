@@ -33,7 +33,7 @@ wiki/overview.md # High-level synthesis — revise as understanding deepens
 
 | Type | Filename pattern | Purpose |
 |------|-----------------|---------|
-| Paper summary | `wiki/papers/{slug}.md` | Structured summary of a paper: problem, method, results, limitations. |
+| Paper summary | `wiki/papers/{category}/{slug}.md` | Structured summary of a paper, organized by category subdirectory (e.g. `llm-training/`, `ctr/`, `recommendation/`). |
 | Claim | `wiki/claims/{slug}.md` | A single tracked claim with supporting/refuting sources and confidence. |
 | Method | `wiki/methods/{name}.md` | A technique, algorithm, or architecture (e.g. attention, RLHF). |
 | Dataset | `wiki/datasets/{name}.md` | A dataset or benchmark referenced across sources. |

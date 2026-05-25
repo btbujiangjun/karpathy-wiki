@@ -3,7 +3,7 @@ title: "Structured Test-Time Learning"
 type: method
 created: 2026-05-24
 updated: 2026-05-24
-sources: [papers/sensi-llm-game-agents.md]
+sources: [papers/games/sensi-llm-game-agents.md]
 tags: [test-time-learning, llm-agents, curriculum, arc-agi]
 ---
 
