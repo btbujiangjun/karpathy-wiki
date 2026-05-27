@@ -112,6 +112,7 @@ An OpenCode scheduler runs daily searches:
 |---|---|---|
 | `arxiv-conference-daily` | 12:30 PM | arXiv + 9 大顶会最新论文 |
 | `llm-tech-report-daily` | 1:00 PM | 大模型 Tech Report / System Card |
+| `investment-daily` | 10:00 AM (工作日) | 美股/港股/A 股科技 AI 投资热点 |
 
 To run immediately: `opencode run {job-name} now` (e.g. `arxiv-conference-daily`)
 

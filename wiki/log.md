@@ -388,3 +388,15 @@
 - Papers covered: 10 top picks from ~1,500 cs.AI + cs.LG entries
 - Highlights: Language Models Need Sleep, How Much Thinking is Enough, Verified SHAP (ICML 2026), Automated Benchmark Auditing, Agent-ToM, Feature Lottery bifurcation theory, Algometrics, GenLI (CTR), LLM-AutoSciLab
 - Updated: wiki/index.md
+
+## [2026-05-27] synthesis | 投资日报 — 2026-05-27
+- Summary: wiki/synthesis/investment-daily-2026-05-27.md
+- 美股热点：Anthropic $900B 估值融资（IPO 预期 10 月）、SpaceX IPO 路线图（6 月 12 日交易）、Mag 7 分化（GOOGL/AMZN 领涨，MSFT/META 受 CapEx 压制）、AMD +114% YTD、SK Hynix 加入 $1T 俱乐部
+- AI 芯片：NVIDIA $5.5T 市值/Broadcom $2.07T/TSMC 2nm 扩产
+- AI 主题：GPT-5.5/DeepSeek V4/Claude 4.6 密集发布，1M+ token 成标配，AI 首次原创科学发现
+- 数据中心：7GW/12GW 美国 AI 数据中心取消或延迟，Applied Digital $36 亿新项目
+- 港股：Q1 公募重仓腾讯/阿里/美团/小米合计超千亿，2026 是 AI 商业化元年
+- A 股：科创 50 涨超 9%，57 家科创板创新高。算力芯片全线爆发（寒武纪/海光信息/中科曙光）。PCB/MLCC 受英伟达 BOM 拆解引爆。算力网上升为国家战略。
+- 关键主线：AI 算力全产业链（光模块→服务器→液冷→PCB→MLCC），存储芯片供给紧缺涨价
+- New page: wiki/synthesis/investment-daily-2026-05-27.md
+- Updated: wiki/index.md
