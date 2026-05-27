@@ -360,3 +360,31 @@
 - Updated: index.md (full reflow — Sources, Entities, Concepts sections)
 - Contradictions: none (2025 corpus pre-dates 2026 and is mostly *consistent with* the 2026 frame it set up; the Nov 17 verifiability essay restates the Software 2.0 automation predicate without contradicting the earlier Software 3.0 frame).
 - Note: This fills the 2025 gap between the Apr 10 post (already ingested) and the 2026 X-post corpus. The whole corpus coheres as "the year RLVR made reasoning models real and agentic engineering became thinkable."
+
+## [2026-05-26] search | AI 公司技术报告汇总第二版 — 新增至 21 家机构
+- Updated: wiki/synthesis/tech-report-digest-2026-05-26.md (替代 05-25 版作为扩展版本)
+- 新增 7 项: DeepSeek V3 (arXiv:2412.19437)、DeepSeek R1 (arXiv:2501.12948)、GPT-5.1/5.2 System Card 补充、Ministral 3、Qwen3、InternLM3 8B、Step-3 (阶跃星辰)
+- 补充 Baichuan 状态确认 (无近期报告)
+- 覆盖机构完整列表扩展至 21 家
+- Updated: wiki/index.md (Synthesis section)
+
+## [2026-05-26] ingest | Conference Digest Deep Edition
+- Summary: wiki/synthesis/conference-digest-2026-05-26.md
+- Coverage: 11 conferences (ICML 2025, AAAI 2026, ICLR 2026, CVPR 2026, EMNLP 2025, ACL 2026, KDD 2026, RecSys 2025, WWW 2026, SIGIR 2026, CIKM 2025)
+- Papers: 70+ papers across LLM reasoning, RecSys scaling, CTR prediction, AI agents, diffusion models, multimodal VLMs
+- Labs covered: Google DeepMind, OpenAI, Meta, NVIDIA, Anthropic, ByteDance, Alibaba, Kuaishou, Apple, Microsoft Research, Spotify, JD.com
+- Updated: wiki/index.md
+- Contradictions: none
+
+## [2026-05-27] search | 各大 AI 公司技术报告汇总第三版 — 21 家机构详细分析
+- Created: wiki/synthesis/tech-report-digest-2026-05-27.md
+- 对比 05-26 版新增/补充: DeepSeek V3.2 (DSA + IMO/IOI 金牌)、GPT-5 System Card 详细规格、Llama 4 原生多模态细节、Claude 4 ASL-3/ASL-2 层级、Magistral 纯 RL 训练、Mistral Large 3 (675B MoE)、Phi-4-reasoning-vision、Apple PT-MoE 架构详解、NVIDIA Nemotron 3 系列 (Mamba-Transformer Hybrid MoE)、Grok 3 Colossus 200K GPU 超算、Kimi K2.5 视觉 Agent + Agent Swarm、Baichuan-M3 医疗 SOTA、Step-2 MFA 注意力
+- 综合趋势分析: MoE 主流化、Hybrid 架构 (Mamba+Transformer)、Thinking Mode 统一、Agentic 核心化、国产 GPU 适配、RL 重新聚焦
+- Updated: wiki/index.md (Synthesis section)
+
+## [2026-05-26] ingest | arXiv Daily — May 26 Digest
+- Summary: wiki/synthesis/arxiv-daily-2026-05-26.md
+- New page: wiki/synthesis/arxiv-daily-2026-05-26.md
+- Papers covered: 10 top picks from ~1,500 cs.AI + cs.LG entries
+- Highlights: Language Models Need Sleep, How Much Thinking is Enough, Verified SHAP (ICML 2026), Automated Benchmark Auditing, Agent-ToM, Feature Lottery bifurcation theory, Algometrics, GenLI (CTR), LLM-AutoSciLab
+- Updated: wiki/index.md
