@@ -400,3 +400,20 @@
 - 关键主线：AI 算力全产业链（光模块→服务器→液冷→PCB→MLCC），存储芯片供给紧缺涨价
 - New page: wiki/synthesis/investment-daily-2026-05-27.md
 - Updated: wiki/index.md
+
+## [2026-05-28] synthesis | 投资日报 — 2026-05-28
+- Summary: wiki/synthesis/investment-daily-2026-05-28.md
+- 美股热点：Micron $1T 市值突破（+19%，UBS 目标 $1,625）、NVIDIA 财报后跌 6%（营收 $816B +85%）、Snowflake 盘后 +36%（$6B AWS 协议）、AMD +5%（Agentic AI "$200B TAM"）、Qualcomm 获字节跳动 ASIC 订单
+- 港股热点：快手+5.95%（可灵 AI 收入超 1.5 亿）、MiniMax/智谱首次纳入恒生科技指数（6 月 8 日生效）、深演智能 IPO 首日+273%（AI Agent 第一股）、小米 Q1 营收 991B（AI 三年 600 亿）
+- A 股热点：华为韬(τ)定律引爆国产芯片行情（逻辑折叠/等效 1.4nm/已量产 381 款芯片）、长鑫科技科创板 IPO 上会（Q1 营收 508 亿 +719%）、中际旭创盘中突破万亿市值、兆易创新毛利率 57% 创历史新高
+- AI 主题：Agentic AI 全面爆发（NVIDIA/AMD/阿里真武 M890/小米 miclaw/深演智能）、存储超级周期（DRAM 价格涨幅预测上调至 250-280%）、全球 AI CapEx $8300 亿（+79%）、EAGLE 3.1 推理加速 2x、Pointer OSWorld SOTA 83.6%
+- 核心主线：存储芯片超级周期 / Agentic AI 推理侧 / 中国半导体自主可控 / AI 基础设施资本开支 / 港股 AI 资产重估
+- New page: wiki/synthesis/investment-daily-2026-05-28.md
+- Updated: wiki/index.md
+
+## [2026-05-28] synthesis | arXiv Daily — AI & CTR (May 27, 2026)
+- Summary: wiki/synthesis/arxiv-daily-2026-05-27.md
+- 8 papers surveyed: AIRA-Compose/Design (agentic architecture discovery), Hierarchical LM with provable reasoning benefits (Ω(n) context vs Θ(log n) reasoning), GRAM (probabilistic recursive reasoning), RL Memory Agents curriculum study, LoopCTR (loop scaling for CTR), CADET (decoder-only transformer for ads at LinkedIn, 11.04% lift), LLM-HYPER (LLM hypernetworks for cold-start CTR), FEDIN (frequency-domain CTR, SIGIR 2026)
+- Key themes: agentic research automation, theoretical foundations for reasoning, CTR goes decoder-only, LLM+CTR convergence, inference-time scaling
+- New page: wiki/synthesis/arxiv-daily-2026-05-27.md
+- Updated: wiki/index.md
