@@ -282,11 +282,13 @@ Papers are organized by research category. Each page includes problem background
 | [arxiv-daily-2026-05-25](synthesis/arxiv-daily-2026-05-25.md) | arXiv Daily — AI & CTR (May 25, 2026) | 27 papers |
 | [arxiv-daily-2026-05-26](synthesis/arxiv-daily-2026-05-26.md) | arXiv Daily — AI & CTR (May 26, 2026) | 10 papers |
 | [arxiv-daily-2026-05-27](synthesis/arxiv-daily-2026-05-27.md) | arXiv Daily — AI & CTR (May 27, 2026) | 8 papers |
+| [arxiv-daily-2026-05-28](synthesis/arxiv-daily-2026-05-28.md) | arXiv Daily — AI & CTR (May 28, 2026) | 11 papers |
 | [conference-digest-2026-05-25](synthesis/conference-digest-2026-05-25.md) | 顶会论文专题报告 — 2026年5月版 | 9 conferences |
 | [conference-digest-2026-05-26](synthesis/conference-digest-2026-05-26.md) | 顶会论文专题报告 — 2026年5月深度版 | 11 conferences, 70+ papers |
 | [conference-digest-2026-05-28](synthesis/conference-digest-2026-05-28.md) | 顶会论文专题报告 — 2026年5月全面版（NeurIPS Best Papers / ICLR Outstanding / AAAI / CVPR / ICML / EMNLP / KDD / RecSys / SIGIR） | 9 conferences |
 | [investment-daily-2026-05-27](synthesis/investment-daily-2026-05-27.md) | 投资日报 — 2026-05-27（美股/港股/A 股科技与 AI 热点） | — |
 | [investment-daily-2026-05-28](synthesis/investment-daily-2026-05-28.md) | 投资日报 — 2026-05-28（美股/港股/A 股科技与 AI 热点） | — |
+| [investment-daily-2026-05-29](synthesis/investment-daily-2026-05-29.md) | 投资日报 — 2026-05-29（美股/港股/A 股科技与 AI 热点） | — |
 | [ctr-scaling-landscape](synthesis/ctr-scaling-landscape.md) | CTR Scaling Landscape — Industrial RecSys Scaling Laws | 49 papers |
 | [tech-report-digest-2026-05-25](synthesis/tech-report-digest-2026-05-25.md) | 各大 AI 公司最新技术报告汇总 — 17 家机构 Tech Report/System Card 调查 | 22 reports |
 | [tech-report-digest-2026-05-26](synthesis/tech-report-digest-2026-05-26.md) | 各大 AI 公司最新技术报告汇总 (第二版) — 21 家机构, 新增 DeepSeek R1/V3、GPT-5.1/5.2、Ministral 3、Qwen3、InternLM3 8B、Step-3 | 30 reports |

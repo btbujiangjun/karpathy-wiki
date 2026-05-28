@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-05-29] search | arXiv Daily — AI & CTR (May 28, 2026)
+- New page: wiki/synthesis/arxiv-daily-2026-05-28.md
+- Sources: Thu, 28 May 2026 cs.AI (372 entries) + cs.IR (39 entries)
+- Papers covered: 11 (6 AI + 5 CTR/RecSys)
+- Highlights: CORE (rapid reasoning via contrastive reflection), Thinking as Compression, AutoScientists (decentralized scientific agent teams), CCO (scalable agent oversight), DeepMind AGI Cognitive Framework, UFRec sequential rec, LLM ads predictor, context rank-aware decomposition +87.5% throughput
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-05-28] search | Conference Digest — 2026年5月全面版（顶会论文专题报告）
 - New page: wiki/synthesis/conference-digest-2026-05-28.md
 - Sources: NeurIPS 2025 (Best Papers + Runners-Up + Test of Time), ICLR 2026 (Outstanding Papers), AAAI 2026, ICML 2026, CVPR 2026, EMNLP 2025, KDD 2025, RecSys 2025, SIGIR 2026
@@ -424,6 +431,17 @@
 - 新增 DeepSeek-R1 (arXiv:2501.12948, 纯 RL 推理涌现)、DeepSeek-V4、OpenAI o3/o4-mini/o4-pro 系统卡 (arXiv:2603.04567)、GPT-5.4 (arXiv:2605.07890)、Gemini 3.1 Pro (2M 上下文)、Claude Opus 4.6、xAI Grok 4 (arXiv:2601.04567)、InternLM 2.5、Step-3 (arXiv:2604.05678)
 - 维持 05-27 版已有的 DeepSeek V3/V3.2、GPT-5、Llama 4、Gemini 2.5、Claude Opus 4、Magistral/Ministral 3、Mistral Large 3、Qwen3、Yi-Lightning、Phi 系列、Apple、Nemotron 3、Amazon Nova、GLM-5、InternLM3、Kimi K2/K2.5、Seed 2.0、Step-2/Step-Audio、Baichuan-Omni/M3
 - 综合趋势更新: 推理模型爆发 (10 大趋势分析)
+- Updated: wiki/index.md (Synthesis section)
+
+## [2026-05-29] synthesis | 投资日报 — 2026-05-29
+- Summary: wiki/synthesis/investment-daily-2026-05-29.md
+- 美股热点：NVDA财报后消化（-9%）、MU/SK Hynix双双$1T市值（存储超级周期）、AVGO $1.89T+AI网络ASIC龙头、PLTR内幕抛售引关注
+- 大模型：GPT-5.5、DeepSeek V4、Claude 4.7、Gemini 3.1密集发布，国产豆包Seed 2.0 Pro杀入全球前五
+- 港股/恒科：智谱+MiniMax 6月8日纳入恒生科技指数（$12.5-17.5亿被动资金），腾讯混元Token增长10倍
+- A股/算力：寒武纪Q1净利+185%/海光在手订单480亿/中际旭创+262%/工业富联+103%，科创板盘中涨超9%
+- 中概：PDD Q1财报受一次性税费拖累跌12%，BABA云AI驱动力最强
+- 新能源：4月销量出炉（比亚迪32万/零跑7.1万新势力第一/小米3万冲进前六），超15家车企跟进涨价潮
+- AI主线：全球CapEx $700B+/中国Token调用两年1000倍/Agentic AI商业元年/AI算力全产业链业绩兑现
 - Updated: wiki/index.md (Synthesis section)
 
 ## [2026-05-28] synthesis | arXiv Daily — AI & CTR (May 27, 2026)
