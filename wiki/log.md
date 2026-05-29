@@ -464,6 +464,14 @@
 - 综合趋势: MoE 全面主流化, Hybrid Attention 架构崛起, 百万级上下文标配, Thinking Mode 标准化, Agentic 核心化, 推理效率军备竞赛, 国产 GPU 适配加速, 安全对齐层级化
 - Updated: wiki/index.md (Synthesis section)
 
+## [2026-05-29] search | Conference Digest — 2026年5月全面版（顶会论文专题报告第二版）
+- New page: wiki/synthesis/conference-digest-2026-05-29.md
+- Sources: arXiv cs.AI, cs.LG, cs.IR, cs.CL, cs.MA recent; ICML 2026, ICLR 2026, NeurIPS 2025, WWW 2026, SIGIR 2026, CIKM 2025, KDD 2026 accepted papers
+- Papers covered: 80+ papers across 11 categories/venues
+- Highlights: Bi-NAC (ICML 2026 bilevel actor-critic), GSPR (ICLR 2026 safety policy reasoner), NSPO (safety subspace projection), DAR (dual-KL RLHF), OXRL (51-algorithm post-training comparison), CADET (LinkedIn decoder-only CTR +11.04%), LoopCTR (recursive scaling), Memento (Meta RAG long-retention +1% CTR), GRAB (Baidu generative CTR +3.49%), DeepAgent (end-to-end reasoning agent), TRICE (tool-integrated reasoning recipe), SPIRAL (self-play reasoning), DeepMind Gemini Embedding 2, Generative UI, Aletheia math research agent, RePlaid (continuous diffusion LM), MaR (metacognition reward), SpecBench (reward hacking), FeatureBench (complex feature development)
+- Labs covered: Google DeepMind, Meta, ByteDance, Alibaba, Tencent, Kuaishou, Baidu, LinkedIn, OpenAI/Microsoft, Anthropic, Top US e-commerce
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-05-29] ingest | Awesome-CTR-Scaling Full Paper Coverage
 - Operation: Created 38 new paper pages for all missing papers in the CTR scaling landscape
 - Recommendation papers: understanding-scaling-laws-rec, dhen

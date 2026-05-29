@@ -16,81 +16,81 @@ tags: [ctr, scaling-laws, ranking, recommendation, survey]
 ## 1. 按公司分类
 
 ### Meta (8 篇)
-| 论文 | Venue | 年份 | 核心贡献 | Wiki 状态 |
-|------|-------|------|---------|----------|
-| Understanding Scaling Laws for Recommendation Models | arXiv | 2022 | 首个 DLRM 缩放律系统研究 | ❌ 缺失 |
-| DHEN: Deep Hierarchical Ensemble Network | arXiv | 2022 | 层次异构交互模块集成 | ❌ 缺失 |
-| **Wukong**: Scaling Law for Large-Scale Recommendation | ICML | 2024 | 分解式堆叠交互层实现参数缩放 | ❌ 缺失 |
-| **HSTU**: Trillion-Parameter Sequential Transducers | ICML | 2024 | 万亿参数序列生成推荐范式 | 📎 提及 |
-| InterFormer: Heterogeneous Interaction Learning | arXiv | 2024 | 用户画像+上下文+行为异构交互 | ❌ 缺失 |
-| Foundation-Expert Paradigm | arXiv | 2025 | 基础模型+场景专家+HyperCast 部署 | ❌ 缺失 |
-| **Kunlun**: Unified Scaling Laws Architecture | arXiv | 2026 | 统一架构设计实现可预测缩放律 | ❌ 缺失 |
-| **LLaTTE**: Multi-Stage Scaling Laws for Ads Rec | arXiv | 2026 | 广告推荐两阶段异步架构缩放 | ❌ 缺失 |
-| **ULTRA-HSTU**: Bending Scaling Law Curve | arXiv | 2026 | 稀疏注意力+FlashAttention-V3 突破 HSTU | ❌ 缺失 |
+| 论文                                                     | Venue | 年份   | 核心贡献                            | Wiki 状态 |
+| ------------------------------------------------------ | ----- | ---- | ------------------------------- | ------- |
+| Understanding Scaling Laws for Recommendation Models   | arXiv | 2022 | 首个 DLRM 缩放律系统研究                 | ✅ 已创建   |
+| DHEN: Deep Hierarchical Ensemble Network               | arXiv | 2022 | 层次异构交互模块集成                      | ✅ 已创建   |
+| **Wukong**: Scaling Law for Large-Scale Recommendation | ICML  | 2024 | 分解式堆叠交互层实现参数缩放                  | ✅ 已创建   |
+| **HSTU**: Trillion-Parameter Sequential Transducers    | ICML  | 2024 | 万亿参数序列生成推荐范式                    | ✅ 已创建   |
+| InterFormer: Heterogeneous Interaction Learning        | arXiv | 2024 | 用户画像+上下文+行为异构交互                 | ✅ 已创建   |
+| Foundation-Expert Paradigm                             | arXiv | 2025 | 基础模型+场景专家+HyperCast 部署          | ✅ 已创建   |
+| **Kunlun**: Unified Scaling Laws Architecture          | arXiv | 2026 | 统一架构设计实现可预测缩放律                  | ✅ 已创建   |
+| **LLaTTE**: Multi-Stage Scaling Laws for Ads Rec       | arXiv | 2026 | 广告推荐两阶段异步架构缩放                   | ✅ 已创建   |
+| **ULTRA-HSTU**: Bending Scaling Law Curve              | arXiv | 2026 | 稀疏注意力+FlashAttention-V3 突破 HSTU | ✅ 已创建   |
 
 ### ByteDance (9 篇)
 | 论文 | Venue | 年份 | 核心贡献 | Wiki 状态 |
 |------|-------|------|---------|----------|
-| **RankMixer**: Scaling Up Ranking Models | CIKM | 2025 | TokenMixer 架构缩放 | 📎 提及 |
-| **OneTrans**: Unified Feature Interaction + Sequence | arXiv | 2025 | 统一分词器+因果注意力+KV 缓存 | 📎 提及 |
-| **HyFormer**: Sequence vs Feature Interaction | arXiv | 2026 | Sequence Modeling与Feature Interaction角色重审 | ❌ 缺失 |
-| **Zenith**: Billion-Scale Livestreaming Ranking | arXiv | 2026 | 直播场景排名模型缩放 | ❌ 缺失 |
-| **TokenMixer-Large**: Hardware Utilization Scaling | arXiv | 2026 | 硬件利用率优化的大规模 TokenMixer | 📎 提及 |
-| **UG-Sep**: Compute Only Once for Large Rec | arXiv | 2026 | 用户通用特征分离减少冗余计算 | ❌ 缺失 |
-| **MixFormer**: Co-Scaling Dense and Sequence | arXiv | 2026 | 用户-物品解耦架构联合缩放 | ❌ 缺失 |
-| LONGER: Ultra-Long User Behavior Sequences | RecSys | 2025 | 超长用户行为序列缩放 | 📎 提及 |
-| Make It Long, Keep It Fast: 10K-Sequence at Scale | arXiv | 2025 | end-to-end万级Sequence Modeling（抖音） | ❌ 缺失 |
+| **RankMixer**: Scaling Up Ranking Models | CIKM | 2025 | TokenMixer 架构缩放 | ✅ 已创建 |
+| **OneTrans**: Unified Feature Interaction + Sequence | arXiv | 2025 | 统一分词器+因果注意力+KV 缓存 | ✅ 已创建 |
+| **HyFormer**: Sequence vs Feature Interaction | arXiv | 2026 | Sequence Modeling与Feature Interaction角色重审 | ✅ 已创建 |
+| **Zenith**: Billion-Scale Livestreaming Ranking | arXiv | 2026 | 直播场景排名模型缩放 | ✅ 已创建 |
+| **TokenMixer-Large**: Hardware Utilization Scaling | arXiv | 2026 | 硬件利用率优化的大规模 TokenMixer | ✅ 已创建 |
+| **UG-Sep**: Compute Only Once for Large Rec | arXiv | 2026 | 用户通用特征分离减少冗余计算 | ✅ 已创建 |
+| **MixFormer**: Co-Scaling Dense and Sequence | arXiv | 2026 | 用户-物品解耦架构联合缩放 | ✅ 已创建 |
+| LONGER: Ultra-Long User Behavior Sequences | RecSys | 2025 | 超长用户行为序列缩放 | ✅ 已创建 |
+| Make It Long, Keep It Fast: 10K-Sequence at Scale | arXiv | 2025 | end-to-end万级Sequence Modeling（抖音） | ✅ 已创建 |
 
 ### Alibaba (8 篇)
 | 论文 | Venue | 年份 | 核心贡献 | Wiki 状态 |
 |------|-------|------|---------|----------|
-| **FAT**: Rethinking Transformers for CTR (Rademacher) | arXiv | 2025 | 首个基于 Rademacher 复杂度的 CTR 缩放律 | ❌ 缺失 |
-| **HHFT**: Hierarchical Heterogeneous Feature Transformer | arXiv | 2025 | 分层异构特征 Transformer | ❌ 缺失 |
-| **GPSD**: Generative Pretraining for Discriminative CTR | KDD | 2025 | 生成式预训练→判别式 CTR/CVR 下游 | ❌ 缺失 |
-| **EST**: Efficient Scaling Laws for CTR | arXiv | 2026 | 高效统一建模实现 CTR 缩放 | 📎 提及 |
-| **HeteroMixer**: Query-Mixed Interest Extraction | arXiv | 2026 | 查询混合兴趣提取+异构交互 | 📎 提及 |
-| **SORT**: Systematically Optimized Ranking Transformer | arXiv | 2026 | 工业排名 Transformer 系统优化 | ❌ 缺失 |
-| ENCODE: Clustering Long-Term User Interest | TKDE | 2025 | 高效聚类长程兴趣建模 | ❌ 缺失 |
-| MUSE: 100K-Length Lifelong User Interest | arXiv | 2025 | 多模态搜索 10 万级行为建模 | ❌ 缺失 |
+| **FAT**: Rethinking Transformers for CTR (Rademacher) | arXiv | 2025 | 首个基于 Rademacher 复杂度的 CTR 缩放律 | ✅ 已创建 |
+| **HHFT**: Hierarchical Heterogeneous Feature Transformer | arXiv | 2025 | 分层异构特征 Transformer | ✅ 已创建 |
+| **GPSD**: Generative Pretraining for Discriminative CTR | KDD | 2025 | 生成式预训练→判别式 CTR/CVR 下游 | ✅ 已创建 |
+| **EST**: Efficient Scaling Laws for CTR | arXiv | 2026 | 高效统一建模实现 CTR 缩放 | ✅ 已创建 |
+| **HeteroMixer**: Query-Mixed Interest Extraction | arXiv | 2026 | 查询混合兴趣提取+异构交互 | ✅ 已创建 |
+| **SORT**: Systematically Optimized Ranking Transformer | arXiv | 2026 | 工业排名 Transformer 系统优化 | ✅ 已创建 |
+| ENCODE: Clustering Long-Term User Interest | TKDE | 2025 | 高效聚类长程兴趣建模 | ✅ 已创建 |
+| MUSE: 100K-Length Lifelong User Interest | arXiv | 2025 | 多模态搜索 10 万级行为建模 | ✅ 已创建 |
 
 ### Meituan (4 篇)
 | 论文 | Venue | 年份 | 核心贡献 | Wiki 状态 |
 |------|-------|------|---------|----------|
-| **SUAN**: Scaling Laws for Online CTR | RecSys | 2025 | 线上 CTR 缩放方法学 | ❌ 缺失 |
-| **MTmixAtt**: MoE + Multi-Mix Attention (1B params) | arXiv | 2025 | MoE+多混合注意力 10 亿参数 | ❌ 缺失 |
-| **MTFM**: Alignment-Free Foundation Model | arXiv | 2026 | Full/Target Attn 交替+CPU-GPU 流水线 | ❌ 缺失 |
-| **SparseCTR**: Sparse Attention Long-Term CTR | WWW | 2026 | 三分支稀疏注意力+缩放律 | 📎 提及 |
+| **SUAN**: Scaling Laws for Online CTR | RecSys | 2025 | 线上 CTR 缩放方法学 | ✅ 已创建 |
+| **MTmixAtt**: MoE + Multi-Mix Attention (1B params) | arXiv | 2025 | MoE+多混合注意力 10 亿参数 | ✅ 已创建 |
+| **MTFM**: Alignment-Free Foundation Model | arXiv | 2026 | Full/Target Attn 交替+CPU-GPU 流水线 | ✅ 已创建 |
+| **SparseCTR**: Sparse Attention Long-Term CTR | WWW | 2026 | 三分支稀疏注意力+缩放律 | ✅ 已创建 |
 
 ### Tencent (3 篇)
 | 论文 | Venue | 年份 | 核心贡献 | Wiki 状态 |
 |------|-------|------|---------|----------|
-| **GE4Rec**: Generative CTR Prediction Paradigm | arXiv | 2025 | 判别式→生成式 CTR 范式转换 | ❌ 缺失 |
-| **TokenFormer**: Unify Multi-Field and Sequential Rec | arXiv | 2026 | Bottom-Full-Top-Sliding 注意力解决序列坍缩 | ❌ 缺失 |
+| **GE4Rec**: Generative CTR Prediction Paradigm | arXiv | 2025 | 判别式→生成式 CTR 范式转换 | ✅ 已创建 |
+| **TokenFormer**: Unify Multi-Field and Sequential Rec | arXiv | 2026 | Bottom-Full-Top-Sliding 注意力解决序列坍缩 | ✅ 已创建 |
 | **RankUp**: High-Rank Representations (Weixin) | KDD | 2026 | representation collapse缓解+微信全量部署 | ✅ 已创建 |
 
 ### Kuaishou (4 篇)
 | 论文 | Venue | 年份 | 核心贡献 | Wiki 状态 |
 |------|-------|------|---------|----------|
-| **INFNet**: Linear-Complexity Feature Interaction | arXiv | 2025 | 线性复杂度任务感知Feature Interaction | ❌ 缺失 |
-| **UniMixer**: Unified Architecture for Scaling Laws | arXiv | 2026 | 注意力/TokenMixer/FM 统一缩放框架 | ❌ 缺失 |
-| CHIME: Holistic Interest Modeling + LLM + VQ | arXiv | 2025 | LLM 编码+残差 VQ 压缩 | ❌ 缺失 |
-| VQL: Vector Quantization Attention for Long Behavior | arXiv | 2025 | 向量量化注意力超长行为建模 | ❌ 缺失 |
+| **INFNet**: Linear-Complexity Feature Interaction | arXiv | 2025 | 线性复杂度任务感知Feature Interaction | ✅ 已创建 |
+| **UniMixer**: Unified Architecture for Scaling Laws | arXiv | 2026 | 注意力/TokenMixer/FM 统一缩放框架 | ✅ 已创建 |
+| CHIME: Holistic Interest Modeling + LLM + VQ | arXiv | 2025 | LLM 编码+残差 VQ 压缩 | ✅ 已创建 |
+| VQL: Vector Quantization Attention for Long Behavior | arXiv | 2025 | 向量量化注意力超长行为建模 | ✅ 已创建 |
 
 ### LinkedIn (2 篇)
 | 论文 | Venue | 年份 | 核心贡献 | Wiki 状态 |
 |------|-------|------|---------|----------|
-| **LiRank**: Large Scale Ranking at LinkedIn | arXiv | 2024 | Residual DCN+Transformer+Dense Gating | ❌ 缺失 |
-| **CADET**: Decoder-Only Ads CTR | arXiv | 2026 | Decoder-only Transformer+门控注意力 | 📎 提及 |
+| **LiRank**: Large Scale Ranking at LinkedIn | arXiv | 2024 | Residual DCN+Transformer+Dense Gating | ✅ 已创建 |
+| **CADET**: Decoder-Only Ads CTR | arXiv | 2026 | Decoder-only Transformer+门控注意力 | ✅ 已创建 |
 
 ### 其他 (6 篇)
 | 论文 | 机构 | Venue | 年份 | 核心贡献 | Wiki 状态 |
 |------|------|-------|------|---------|----------|
-| **Hiformer**: Heterogeneous Feature Interactions | Google | arXiv | 2023 | Transformer 异构Feature Interaction | ❌ 缺失 |
-| **Climber**: Efficient Scaling Laws | NetEase | WWW | 2025 | 多尺度序列+动态温度调制，首次公开连续线上缩放 | ❌ 缺失 |
-| **OnePiece**: Context Engineering + Reasoning | Shopee | arXiv | 2025 | LLM 风格上下文工程+分块潜推理 | ❌ 缺失 |
-| Beyond Dense Connectivity: Explicit Sparsity | - | SIGIR | 2026 | 显式稀疏机制替代稠密连接 | ❌ 缺失 |
-| LIME: Linear Attention for Efficient Scaling | - | arXiv | 2025 | O(N) 线性注意力高效缩放 | ❌ 缺失 |
-| MALLOC: Memory-Efficient Long Sequence Compression | - | arXiv | 2026 | 长序列压缩基准 | ❌ 缺失 |
+| **Hiformer**: Heterogeneous Feature Interactions | Google | arXiv | 2023 | Transformer 异构Feature Interaction | ✅ 已创建 |
+| **Climber**: Efficient Scaling Laws | NetEase | WWW | 2025 | 多尺度序列+动态温度调制，首次公开连续线上缩放 | ✅ 已创建 |
+| **OnePiece**: Context Engineering + Reasoning | Shopee | arXiv | 2025 | LLM 风格上下文工程+分块潜推理 | ✅ 已创建 |
+| Beyond Dense Connectivity: Explicit Sparsity | - | SIGIR | 2026 | 显式稀疏机制替代稠密连接 | ✅ 已创建 |
+| LIME: Linear Attention for Efficient Scaling | - | arXiv | 2025 | O(N) 线性注意力高效缩放 | ✅ 已创建 |
+| MALLOC: Memory-Efficient Long Sequence Compression | - | arXiv | 2026 | 长序列压缩基准 | ✅ 已创建 |
 
 ---
 
@@ -193,14 +193,8 @@ tags: [ctr, scaling-laws, ranking, recommendation, survey]
 - RankMixer (ByteDance CIKM) — `rankelastor-recommendation.md`, `arxiv-daily-2026-05-25.md`
 - HSTU (Meta ICML 2024) — `arxiv-daily-2026-05-24.md`
 
-待创建（高优先级）：
-- Wukong (Meta, ICML 2024) — 推荐缩放律奠基
-- Kunlun (Meta, 2026) — 统一架构缩放律
-- SparseCTR (Meituan, WWW 2026) — 稀疏注意力缩放
-- EST (Alibaba) — 高效 CTR 缩放
-- OneTrans (ByteDance) — 统一Feature Interaction+序列
-- FAT (Alibaba) — Rademacher CTR 缩放律
-- LiRank (LinkedIn) — 大规模工业排名
+待创建（已完成）：
+全部 49 篇 Awesome-CTR-Scaling 论文已创建独立页面，覆盖 Meta（9篇）、ByteDance（9篇）、Alibaba（8篇）、Meituan（4篇）、Tencent（3篇）、Kuaishou（4篇）、LinkedIn（2篇）、Google、NetEase、Shopee 及其他机构。
 
 ---
 
