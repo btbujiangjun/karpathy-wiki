@@ -450,3 +450,24 @@
 - Key themes: agentic research automation, theoretical foundations for reasoning, CTR goes decoder-only, LLM+CTR convergence, inference-time scaling
 - New page: wiki/synthesis/arxiv-daily-2026-05-27.md
 - Updated: wiki/index.md
+
+## [2026-05-29] search | 各大 AI 公司技术报告汇总第五版 — 新增至 26+ 家机构
+- Updated: wiki/synthesis/tech-report-digest-2026-05-29.md (替代 06-01 版作为最新版本)
+- 新增: Claude Opus 4.7 & Sonnet 4.6 (Anthropic, May 2026, 3T/800B, GPQA 94.3% / SWE-bench 85.2%)
+- 新增: Kimi K2.6 (Moonshot AI, Apr 2026, 1.06T/100B active, 262K context, 288 experts)
+- 新增: Grok 4.1 Fast (xAI, Nov 2025, 2M context, 3x speed vs Grok 4)
+- 新增: InternLM 104B (Shanghai AI Lab, 104B MoE)
+- 新增: Seed 1.6 (ByteDance, Dec 2025, 256K context)
+- 补充: DeepSeek V4 完整规格确认 (1.6T total, 49B active, 1M context, Hybrid Attention)
+- 补充: Qwen3 详细分析 (arXiv:2505.09388, 235B-22B MoE)
+- 覆盖机构完整列表扩展至 26+ 家
+- 综合趋势: MoE 全面主流化, Hybrid Attention 架构崛起, 百万级上下文标配, Thinking Mode 标准化, Agentic 核心化, 推理效率军备竞赛, 国产 GPU 适配加速, 安全对齐层级化
+- Updated: wiki/index.md (Synthesis section)
+
+## [2026-05-29] ingest | Awesome-CTR-Scaling Full Paper Coverage
+- Operation: Created 38 new paper pages for all missing papers in the CTR scaling landscape
+- Recommendation papers: understanding-scaling-laws-rec, dhen
+- CTR papers: interformer, foundation-expert, llatte, ultra-hstu, solaris, versioned-late-materialization, rankmixer, onetrans, hyformer, zenith, tokenmixer-large, ug-sep, mixformer, longer, make-it-long-keep-it-fast, hhft, gpsd, est, hetermixer, sort, encode, muse, mtmixatt, mtfm, sparsectr, tokenformer, infnet, unimixer, chime, vql, cadet, hiformer, onepiece, beyond-dense-connectivity, lime, malloc
+- Updated: wiki/index.md (CTR section split, 38 new entries)
+- Updated: wiki/synthesis/ctr-scaling-landscape.md (status update)
+- Coverage: 47/47 (100%) of Awesome-CTR-Scaling papers now have dedicated pages

@@ -60,6 +60,7 @@ Papers are organized by research category. Each page includes problem background
 |------|-------|-----------|-------|
 | [airbnb-llm-synthetic-data](papers/recommendation/airbnb-llm-synthetic-data.md) | LLM-Powered Synthetic Data for NL Search | Airbnb | 2605.21812 |
 | [climber-scaling-laws](papers/recommendation/climber-scaling-laws.md) | Climber: Efficient Scaling Laws for Large Rec | NetEase / WWW 2025 | 2502.09888 |
+| [dhen](papers/recommendation/dhen.md) | DHEN: Deep Hierarchical Ensemble Network | Meta | 2203.11014 |
 | [harness-lm-bing-ads](papers/recommendation/harness-lm-bing-ads.md) | HARNESS-LM: SLM Distillation for Sponsored Search | Microsoft Bing Ads | 2605.23572 |
 | [hstu-generative-recommendation](papers/recommendation/hstu-generative-recommendation.md) | HSTU: Trillion-Parameter Generative Recommendation | Meta / ICML 2024 | 2402.17152 |
 | [kunlun-scaling-law](papers/recommendation/kunlun-scaling-law.md) | Kunlun: Unified Architecture Scaling Laws | Meta | 2602.10016 |
@@ -67,15 +68,56 @@ Papers are organized by research category. Each page includes problem background
 | [lirank-linkedin-ranking](papers/recommendation/lirank-linkedin-ranking.md) | LiRank: Large Scale Ranking at LinkedIn | LinkedIn | 2402.06859 |
 | [netflix-generative-recommender-scaling](papers/recommendation/netflix-generative-recommender-scaling.md) | Scaling Generative Recommenders (Netflix) | Netflix | 2605.23312 |
 | [rankelastor-recommendation](papers/recommendation/rankelastor-recommendation.md) | RankElastor: Effective-Rank Dynamics for Rec | KDD 2026 | 2605.23191 |
-| [fat-ctr-scaling](papers/ctr/fat-ctr-scaling.md) | FAT: Rademacher CTR Scaling Law | Alibaba | 2511.12081 |
-| [ge4rec-generative-ctr](papers/ctr/ge4rec-generative-ctr.md) | GE4Rec: Generative CTR Paradigm | Tencent | 2512.14041 |
-| [genci-ctr](papers/ctr/genci-ctr.md) | GenCI: Generative CTR via Cohort Intent Learning | WWW 2026 | 2601.18251 |
-| [rankup-advertising](papers/ctr/rankup-advertising.md) | RankUp: High-rank Representations for Ad Ranking | Tencent / KDD 2026 | 2604.17878 |
 | [rporec-reasoning-recommendation](papers/recommendation/rporec-reasoning-recommendation.md) | RPORec: RL + Reasoning for Recommendation | Kuaishou | 2605.21967 |
-| [suan-ctr-scaling](papers/ctr/suan-ctr-scaling.md) | SUAN: Online CTR Scaling Methodology | Meituan / RecSys 2025 | 2508.15326 |
 | [thinkrec](papers/recommendation/thinkrec.md) | ThinkRec: Thinking-based LLM Recommendation | WWW 2026 | - |
 | [tubifm-ranking](papers/recommendation/tubifm-ranking.md) | TubiFM: Unified Ranking for Streaming | Tubi (Fox) | 2605.23702 |
+| [understanding-scaling-laws-rec](papers/recommendation/understanding-scaling-laws-rec.md) | Understanding Scaling Laws for Recommendation Models | Meta | 2208.08489 |
 | [wukong-scaling-law](papers/recommendation/wukong-scaling-law.md) | Wukong: Scaling Law for Large-Scale Rec | Meta / ICML 2024 | 2403.02545 |
+
+### 🎯 CTR Prediction & Ranking — Awesome-CTR-Scaling
+| File | Title | Affiliation | arXiv |
+|------|-------|-----------|-------|
+| [beyond-dense-connectivity](papers/ctr/beyond-dense-connectivity.md) | Beyond Dense Connectivity: Explicit Sparsity | - | 2604.08011 |
+| [cadet](papers/ctr/cadet.md) | CADET: Decoder-Only Ads CTR | LinkedIn | 2602.11410 |
+| [chime](papers/ctr/chime.md) | CHIME: Holistic Interest + LLM + VQ | Kuaishou | 2504.06780 |
+| [encode](papers/ctr/encode.md) | ENCODE: Clustering Long-Term Interest | Alibaba / TKDE 2025 | 2508.13567 |
+| [est](papers/ctr/est.md) | EST: Efficient Scaling Laws for CTR | Alibaba | 2602.10811 |
+| [fat-ctr-scaling](papers/ctr/fat-ctr-scaling.md) | FAT: Rademacher CTR Scaling Law | Alibaba | 2511.12081 |
+| [foundation-expert](papers/ctr/foundation-expert.md) | Foundation-Expert Paradigm | Meta | 2508.02929 |
+| [ge4rec-generative-ctr](papers/ctr/ge4rec-generative-ctr.md) | GE4Rec: Generative CTR Paradigm | Tencent | 2512.14041 |
+| [genci-ctr](papers/ctr/genci-ctr.md) | GenCI: Generative CTR via Cohort Intent Learning | WWW 2026 | 2601.18251 |
+| [gpsd](papers/ctr/gpsd.md) | GPSD: Generative Pretraining for Discriminative CTR | Alibaba / KDD 2025 | 2506.03699 |
+| [hetromixer](papers/ctr/hetromixer.md) | HeteroMixer: Query-Mixed Interest Extraction | Alibaba | 2602.09387 |
+| [hhft](papers/ctr/hhft.md) | HHFT: Hierarchical Heterogeneous Feature Transformer | Alibaba | 2511.20235 |
+| [hiformer](papers/ctr/hiformer.md) | Hiformer: Heterogeneous Feature Interactions | Google | 2311.05884 |
+| [hyformer](papers/ctr/hyformer.md) | HyFormer: Sequence vs Feature Interaction | ByteDance | 2601.12681 |
+| [infnet](papers/ctr/infnet.md) | INFNet: Linear-Complexity Feature Interaction | Kuaishou | 2508.11565 |
+| [interformer](papers/ctr/interformer.md) | InterFormer: Heterogeneous Interaction Learning | Meta | 2411.09852 |
+| [lime](papers/ctr/lime.md) | LIME: Linear Attention for Efficient Scaling | - | 2510.18239 |
+| [llatte](papers/ctr/llatte.md) | LLaTTE: Multi-Stage Scaling Laws for Ads Rec | Meta | 2601.20083 |
+| [longer](papers/ctr/longer.md) | LONGER: Ultra-Long User Behavior Sequences | ByteDance / RecSys 2025 | 2505.04421 |
+| [make-it-long-keep-it-fast](papers/ctr/make-it-long-keep-it-fast.md) | Make It Long, Keep It Fast: 10K-Sequence | ByteDance | 2511.06077 |
+| [malloc](papers/ctr/malloc.md) | MALLOC: Memory-Efficient Sequence Compression | - | 2601.20234 |
+| [mixformer](papers/ctr/mixformer.md) | MixFormer: Co-Scaling Dense and Sequence | ByteDance | 2602.14110 |
+| [mtfm](papers/ctr/mtfm.md) | MTFM: Alignment-Free Foundation Model | Meituan | 2602.11235 |
+| [mtmixatt](papers/ctr/mtmixatt.md) | MTmixAtt: MoE + Multi-Mix Attention | Meituan | 2510.15286 |
+| [muse](papers/ctr/muse.md) | MUSE: 100K-Length Lifelong User Interest | Alibaba | 2512.07216 |
+| [onepiece](papers/ctr/onepiece.md) | OnePiece: Context Engineering + Reasoning | Shopee | 2509.18091 |
+| [onetrans](papers/ctr/onetrans.md) | OneTrans: Unified Feature Interaction + Sequence | ByteDance | 2510.26104 |
+| [rankmixer](papers/ctr/rankmixer.md) | RankMixer: Scaling Up Ranking Models | ByteDance / CIKM 2025 | 2507.15551 |
+| [rankup-advertising](papers/ctr/rankup-advertising.md) | RankUp: High-rank Representations for Ad Ranking | Tencent / KDD 2026 | 2604.17878 |
+| [solaris](papers/ctr/solaris.md) | SOLARIS: Speculative Offloading for Large Models | Meta | 2604.12110 |
+| [sort](papers/ctr/sort.md) | SORT: Systematically Optimized Ranking Transformer | Alibaba | 2603.03988 |
+| [sparsectr](papers/ctr/sparsectr.md) | SparseCTR: Sparse Attention Long-Term CTR | Meituan / WWW 2026 | 2601.17836 |
+| [suan-ctr-scaling](papers/ctr/suan-ctr-scaling.md) | SUAN: Online CTR Scaling Methodology | Meituan / RecSys 2025 | 2508.15326 |
+| [tokenformer](papers/ctr/tokenformer.md) | TokenFormer: Unify Multi-Field and Sequential Rec | Tencent | 2604.13737 |
+| [tokenmixer-large](papers/ctr/tokenmixer-large.md) | TokenMixer-Large: Hardware Utilization Scaling | ByteDance | 2602.06563 |
+| [ug-sep](papers/ctr/ug-sep.md) | UG-Sep: Compute Only Once for Large Rec | ByteDance | 2602.10455 |
+| [ultra-hstu](papers/ctr/ultra-hstu.md) | ULTRA-HSTU: Bending Scaling Law Curve | Meta | 2602.16986 |
+| [unimixer](papers/ctr/unimixer.md) | UniMixer: Unified Architecture for Scaling Laws | Kuaishou | 2604.00590 |
+| [versioned-late-materialization](papers/ctr/versioned-late-materialization.md) | Versioned Late Materialization (Data Infra) | Meta | 2604.24806 |
+| [vql](papers/ctr/vql.md) | VQL: Vector Quantization Attention | Kuaishou | 2508.17125 |
+| [zenith](papers/ctr/zenith.md) | Zenith: Billion-Scale Livestreaming Ranking | ByteDance | 2601.21285 |
 
 ### 🤖 Agents & Multi-Agent Systems
 | File | Title | Affiliation | arXiv |
@@ -293,5 +335,6 @@ Papers are organized by research category. Each page includes problem background
 | [tech-report-digest-2026-05-25](synthesis/tech-report-digest-2026-05-25.md) | 各大 AI 公司最新技术报告汇总 — 17 家机构 Tech Report/System Card 调查 | 22 reports |
 | [tech-report-digest-2026-05-26](synthesis/tech-report-digest-2026-05-26.md) | 各大 AI 公司最新技术报告汇总 (第二版) — 21 家机构, 新增 DeepSeek R1/V3、GPT-5.1/5.2、Ministral 3、Qwen3、InternLM3 8B、Step-3 | 30 reports |
 | [tech-report-digest-2026-05-27](synthesis/tech-report-digest-2026-05-27.md) | 各大 AI 公司最新技术报告汇总 (第三版) — 21 家机构, 补充 DeepSeek V3.2、GPT-5 完整规格、Magistral、Nemotron 3、Kimi K2.5、Baichuan 等详细分析 | 30+ reports |
+| [tech-report-digest-2026-05-29](synthesis/tech-report-digest-2026-05-29.md) | 各大 AI 公司最新技术报告汇总 (第五版) — 26+ 家机构, 新增 Claude Opus 4.7 & Sonnet 4.6、Kimi K2.6、Grok 4.1 Fast、InternLM 104B、Seed 1.6、DeepSeek V4 完整规格 | 35+ reports |
 | [tech-report-digest-2026-06-01](synthesis/tech-report-digest-2026-06-01.md) | 各大 AI 公司最新技术报告汇总 (第四版) — 26+ 家机构, 新增 DeepSeek-R1/V4、o3/o4、Gemini 3.1 Pro、Claude 4.6、Grok 4、Step-3 | 35+ reports |
 | [technical-roadmap](synthesis/technical-roadmap.md) | Technical Roadmap — AI Research Directions (2025-2026) | 121 papers |
