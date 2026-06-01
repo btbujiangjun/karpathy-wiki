@@ -466,6 +466,12 @@
 - New page: wiki/synthesis/arxiv-daily-2026-05-27.md
 - Updated: wiki/index.md
 
+## [2026-06-01] update | 各大 AI 公司技术报告汇总 — 精简重构为 12 家核心机构深度版
+- Rewritten: wiki/synthesis/tech-report-digest-2026-06-01.md (覆盖 12 家核心机构, 24 份报告)
+- 相比此前版本的变化: 精简机构范围 (从 26+ 聚焦到 12 家,弃用低活跃机构), 补充 DeepSeek R1/V3/V4、OpenAI GPT-5/5.5/o3、Meta Llama 4、Google Gemini 2.5、Anthropic Claude Opus 4/4.6/4.8、Mistral Large 3/Small 4/Medium 3.5、Qwen3/3.7-Max、Microsoft Phi-4/Phi-4-Reasoing、Apple AFM 2025、NVIDIA Nemotron 3、xAI Grok 4.1/4.3/4.20、ByteDance Seed 2.0 完整规格
+- 综合趋势更新: 8 大趋势分析 (MoE 主流化、混合注意力、百万上下文、Thinking Mode、Agentic 核心化、推理效率、开源分化、安全层级)
+- Updated: wiki/index.md (Synthesis section)
+
 ## [2026-05-29] search | 各大 AI 公司技术报告汇总第五版 — 新增至 26+ 家机构
 - Updated: wiki/synthesis/tech-report-digest-2026-05-29.md (替代 06-01 版作为最新版本)
 - 新增: Claude Opus 4.7 & Sonnet 4.6 (Anthropic, May 2026, 3T/800B, GPQA 94.3% / SWE-bench 85.2%)
@@ -485,6 +491,14 @@
 - Papers covered: 80+ papers across 11 categories/venues
 - Highlights: Bi-NAC (ICML 2026 bilevel actor-critic), GSPR (ICLR 2026 safety policy reasoner), NSPO (safety subspace projection), DAR (dual-KL RLHF), OXRL (51-algorithm post-training comparison), CADET (LinkedIn decoder-only CTR +11.04%), LoopCTR (recursive scaling), Memento (Meta RAG long-retention +1% CTR), GRAB (Baidu generative CTR +3.49%), DeepAgent (end-to-end reasoning agent), TRICE (tool-integrated reasoning recipe), SPIRAL (self-play reasoning), DeepMind Gemini Embedding 2, Generative UI, Aletheia math research agent, RePlaid (continuous diffusion LM), MaR (metacognition reward), SpecBench (reward hacking), FeatureBench (complex feature development)
 - Labs covered: Google DeepMind, Meta, ByteDance, Alibaba, Tencent, Kuaishou, Baidu, LinkedIn, OpenAI/Microsoft, Anthropic, Top US e-commerce
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-01] search | Conference Digest — 2026年6月全面版（顶会论文专题报告）
+- New page: wiki/synthesis/conference-digest-2026-06-01.md
+- Sources: ICML 2026 (6,500+ papers, 500 highlights), AAAI 2026 (29K submissions), NeurIPS 2025 Best Papers + Runners-Up, ICLR 2026 Outstanding, KDD 2026, CVPR 2026 (4,090 accepted), ACL 2026, EMNLP 2025 Awards, SIGIR 2026, WWW 2026
+- Labs covered: Meta AI (Credit Assignment with Resets, HSTU, ULTRA-HSTU), ByteDance (Lance, Precise, RankMixer), Apple (SGE), NVIDIA (Nemotron 3 Super, DiLaDiff), Google DeepMind (Gemini Embedding 2, AGI Framework), Microsoft Research Asia (SkillOpt)
+- Highlights: Shannon Scaling Law, Gated Attention (NeurIPS Best), Artificial Hivemind, 1000-Layer RL, Diffusion Memorization Theory, Transformers Inherently Succinct (ICLR 2026 Outstanding), SAM 3D (CVPR Best), StreamingTalker (AAAI), Bi-NAC (ICML), HyFunc + Causal Attention + BenchBench (KDD), Infini-gram mini + LingGym (EMNLP), Lance multimodal + Nemotron 3 Super hybrid MoE + SGE tree search
+- Meta-trends: reasoning models explosion, hybrid attention (Mamba+Transformer), MoE standard, generative recommendation paradigm, RLVR post-training, agent → agent society
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
 
 ## [2026-05-29] ingest | Awesome-CTR-Scaling Full Paper Coverage

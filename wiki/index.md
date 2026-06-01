@@ -333,11 +333,12 @@ Papers are organized by research category. Each page includes problem background
 | [investment-daily-2026-05-27](synthesis/investment-daily-2026-05-27.md) | 投资日报 — 2026-05-27（美股/港股/A 股科技与 AI 热点） | — |
 | [investment-daily-2026-05-28](synthesis/investment-daily-2026-05-28.md) | 投资日报 — 2026-05-28（美股/港股/A 股科技与 AI 热点） | — |
 | [investment-daily-2026-05-29](synthesis/investment-daily-2026-05-29.md) | 投资日报 — 2026-05-29（美股/港股/A 股科技与 AI 热点） | — |
+| [conference-digest-2026-06-01](synthesis/conference-digest-2026-06-01.md) | 顶会论文专题报告 — 2026年6月全面版（ICML / AAAI / NeurIPS / ICLR / KDD / CVPR / ACL / EMNLP / SIGIR / WWW / 各大实验室） | 10 conferences, 60+ papers |
 | [ctr-scaling-landscape](synthesis/ctr-scaling-landscape.md) | CTR Scaling Landscape — Industrial RecSys Scaling Laws | 49 papers |
 | [tech-report-digest-2026-05-25](synthesis/tech-report-digest-2026-05-25.md) | 各大 AI 公司最新技术报告汇总 — 17 家机构 Tech Report/System Card 调查 | 22 reports |
 | [tech-report-digest-2026-05-26](synthesis/tech-report-digest-2026-05-26.md) | 各大 AI 公司最新技术报告汇总 (第二版) — 21 家机构, 新增 DeepSeek R1/V3、GPT-5.1/5.2、Ministral 3、Qwen3、InternLM3 8B、Step-3 | 30 reports |
 | [tech-report-digest-2026-05-27](synthesis/tech-report-digest-2026-05-27.md) | 各大 AI 公司最新技术报告汇总 (第三版) — 21 家机构, 补充 DeepSeek V3.2、GPT-5 完整规格、Magistral、Nemotron 3、Kimi K2.5、Baichuan 等详细分析 | 30+ reports |
 | [tech-report-digest-2026-05-29](synthesis/tech-report-digest-2026-05-29.md) | 各大 AI 公司最新技术报告汇总 (第五版) — 26+ 家机构, 新增 Claude Opus 4.7 & Sonnet 4.6、Kimi K2.6、Grok 4.1 Fast、InternLM 104B、Seed 1.6、DeepSeek V4 完整规格 | 35+ reports |
-| [tech-report-digest-2026-06-01](synthesis/tech-report-digest-2026-06-01.md) | 各大 AI 公司最新技术报告汇总 (第四版) — 26+ 家机构, 新增 DeepSeek-R1/V4、o3/o4、Gemini 3.1 Pro、Claude 4.6、Grok 4、Step-3 | 35+ reports |
+| [tech-report-digest-2026-06-01](synthesis/tech-report-digest-2026-06-01.md) | 各大 AI 公司最新技术报告汇总 (2026-06-01) — 12 家核心机构的详细 Tech Report/System Card 分析 | 24 reports |
 | [investment-daily-2026-06-01](synthesis/investment-daily-2026-06-01.md) | 投资日报 — 2026-06-01（美股/港股/A股科技与AI热点） | — |
 | [technical-roadmap](synthesis/technical-roadmap.md) | Technical Roadmap — AI Research Directions (2025-2026) | 121 papers |
