@@ -4,6 +4,15 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-01] search | arXiv Paper Check — AI & CTR (June 1, 2026)
+- New page: wiki/synthesis/arxiv-paper-check-2026-06-01.md
+- Sources: Mon 1 Jun 2026 cs.AI (226 entries) + cs.IR (19 entries) + cs.LG (264 entries), plus Fri 29 May late postings
+- Papers surveyed: ~20
+- CTR highlights: Rec-Distill (24B teacher distillation), Scaling CVR Prediction (+2.6% gain), SaFeAU/KDD, Graph-GRPO, ACE/SIGIR, UniNote/KDD Ads, FOSTER
+- AI highlights: AutoSci (full research lifecycle agent), LinTree (explicit search histories for LLM reasoning), UniScale/ICML (unified routing+TTS), COLLEAGUE.SKILL (skill distillation), DecomposeR (planner-centric deep research RL)
+- IR highlights: SPECTRA (synthetic IR test collections), Factual Density for RAG (medical), No More K-means/ICML, FLASH-MAXSIM, Latent Terms
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-05-29] search | arXiv Daily — AI & CTR (May 28, 2026)
 - New page: wiki/synthesis/arxiv-daily-2026-05-28.md
 - Sources: Thu, 28 May 2026 cs.AI (372 entries) + cs.IR (39 entries)
