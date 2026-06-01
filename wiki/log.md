@@ -13,6 +13,12 @@
 - IR highlights: SPECTRA (synthetic IR test collections), Factual Density for RAG (medical), No More K-means/ICML, FLASH-MAXSIM, Latent Terms
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
 
+## [2026-06-01] search | 投资日报 — 2026-06-01（美股/港股/A股科技与AI热点）
+- New page: wiki/synthesis/investment-daily-2026-06-01.md
+- Covers: US Mag 7 & AI stocks (NVDA, AVGO, DELL, GOOGL, MSFT, AAPL, META, TSLA, MU, AMD), A-share AI concept (华为昇腾产业链/光模块/半导体设备/算力), HK/Chinese stocks, AI hot themes (Agentic AI, Coding Agent, Physical AI, Edge AI, AI Safety)
+- Key events: NVIDIA COMPUTEX 2026 keynote, Broadcom Q2 earnings (June 3), Dell blowout earnings, Anthropic $30B ARR
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-05-29] search | arXiv Daily — AI & CTR (May 28, 2026)
 - New page: wiki/synthesis/arxiv-daily-2026-05-28.md
 - Sources: Thu, 28 May 2026 cs.AI (372 entries) + cs.IR (39 entries)

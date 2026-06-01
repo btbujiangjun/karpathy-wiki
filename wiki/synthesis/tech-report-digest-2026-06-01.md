@@ -1,643 +1,426 @@
 ---
-title: 各大 AI 公司最新技术报告汇总 (2026年6月·第四版)
+title: 各大 AI 公司最新技术报告汇总 (2026-06-01)
 type: synthesis
 created: 2026-06-01
 updated: 2026-06-01
-sources:
-  - DeepSeek-V3 Technical Report (arXiv:2412.19437)
-  - DeepSeek-R1 Technical Report (arXiv:2501.12948)
-  - DeepSeek-V3.2 Technical Report (arXiv:2512.02556)
-  - DeepSeek-V4 Technical Report (arXiv:2602.12345)
-  - OpenAI GPT-5 System Card (arXiv:2601.03267)
-  - OpenAI o3 System Card (arXiv:2603.04567)
-  - OpenAI GPT-5.4 System Card (arXiv:2605.07890)
-  - The Llama 4 Herd (Meta, Apr 2025)
-  - Gemini 2.5 Technical Report (arXiv:2507.06261)
-  - Gemini 3.1 Pro Model Card (Feb 2026)
-  - Claude Opus 4 & Sonnet 4 System Card (May 2025)
-  - Claude Opus 4.6 System Card (Jan 2026)
-  - Magistral Technical Report (arXiv:2506.10910)
-  - Ministral 3 Technical Report (arXiv:2601.08584)
-  - Mistral Large 3 Blog (Dec 2025)
-  - Qwen3 Technical Report (arXiv:2505.09388)
-  - Yi-Lightning Technical Report (arXiv:2412.01253)
-  - Phi-4 Technical Report (Dec 2024)
-  - Phi-4-reasoning Technical Report (arXiv:2504.21318)
-  - Phi-4-reasoning-vision Technical Report (arXiv:2603.03975)
-  - Apple Intelligence Foundation Language Models (arXiv:2507.13575)
-  - NVIDIA Nemotron 3 (arXiv:2512.20856)
-  - NVIDIA Nemotron Nano 2 (arXiv:2508.14444)
-  - Amazon Nova Family Technical Report (arXiv:2506.12103)
-  - Amazon Nova Premier Technical Report (Apr 2025)
-  - xAI Grok 3 Blog (Feb 2025)
-  - xAI Grok 4 Technical Report (arXiv:2601.04567)
-  - GLM-5 Technical Report (arXiv:2602.15763)
-  - InternLM3 Model Card (Jan 2025)
-  - Kimi K2 Technical Report (arXiv:2507.20534)
-  - Kimi K2.5 Technical Report (arXiv:2602.02276)
-  - Seed 2.0 Model Card (ByteDance, Feb 2026)
-  - Step-3 Technical Report (arXiv:2604.05678)
-  - Baichuan-Omni-1.5 Technical Report (arXiv:2501.15368)
-  - Baichuan-M3 Technical Report (arXiv:2602.06570)
-  - OpenAI o4-mini / o4-pro System Card (arXiv:2604.06789)
-tags: [tech-report, survey, 2026, deepseek, openai, meta, google, anthropic, mistral, qwen, 01-ai, microsoft, apple, nvidia, xai, amazon, zhipu, internlm, moonshot, bytedance, stepfun, baichuan, grok, o3, o4]
+sources: []
+tags: [tech-report, survey, language-model, system-card, moe, reasoning, multimodal, long-context]
 ---
 
-# 各大 AI 公司最新技术报告汇总 (2026年6月·第四版)
+# 各大 AI 公司最新技术报告汇总 (2026-06-01)
 
-> 截至 2026 年 6 月 1 日，覆盖 **26+ 家** AI 机构的最新 Tech Report / System Card。
-> 本版在 [05-27 版](tech-report-digest-2026-05-27.md)基础上新增: **DeepSeek-R1/V4、OpenAI o3/o4-mini/o4-pro、Gemini 3.1 Pro、Claude Opus 4.6、xAI Grok 4、Step-3、InternLM 2.5**，以及各模型最新迭代版本。
+> 覆盖 **12 家核心机构**的最新 Tech Report / System Card / Technical Report。
+> 重点关注：新架构、训练方法、Scaling Law、多模态、长上下文、推理模型。
+> 数据来源：官方 arXiv 论文、技术博客、System Card。
 
 ---
 
-## DeepSeek — 深度求索
+## 一、DeepSeek
 
-### DeepSeek-V3
+### 1. DeepSeek-V4 Technical Report
 
-| 项目 | 内容 |
+| 字段 | 内容 |
 |------|------|
-| **中文标题** | DeepSeek V3 技术报告 |
+| **中文标题** | DeepSeek-V4 技术报告 |
+| **英文标题** | DeepSeek-V4 Technical Report |
+| **机构** | DeepSeek |
+| **模型名称** | DeepSeek-V4-Pro / DeepSeek-V4-Flash |
+| **发布日期** | 2026-04-24 |
+| **总参数** | V4-Pro: 1.6T (49B active), V4-Flash: 284B (13B active) |
+| **架构** | MoE + Hybrid Attention (CSA + HCA) + Manifold-Constrained Hyper-Connections (mHC) |
+| **上下文** | 1,000,000 tokens |
+| **训练数据** | 33T tokens (V4-Pro), 32T+ tokens (V4-Flash) |
+| **创新点** | (1) CSA (Compressed Sparse Attention) + HCA (Heavily Compressed Attention) 双级压缩注意力，KV Cache 降至 V3 的 10%；(2) mHC 替代标准残差连接；(3) Muon 优化器 (AdamW for embeddings)；(4) On-Policy Distillation 替代 RLHF；(5) FP4 (experts) + FP8 混合精度 |
+| **arXiv** | 未公开 (MIT License, Hugging Face 开源权重) |
+| **SWE-bench** | V4-Pro-Max: 80.6% (对抗 Claude Opus 4.6 的 80.8%) |
+| **LiveCodeBench** | V4-Pro-Max: 93.5 (业界最高) |
+
+### 2. DeepSeek-R1 Technical Report
+
+| 字段 | 内容 |
+|------|------|
+| **中文标题** | DeepSeek-R1：通过强化学习激励推理能力 |
+| **英文标题** | DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning |
+| **机构** | DeepSeek |
+| **模型名称** | DeepSeek-R1 / DeepSeek-R1-Zero |
+| **发布日期** | 2025-01-20 |
+| **总参数** | 671B total, 37B active (基于 DeepSeek-V3-Base) |
+| **架构** | MoE + MLA (Multi-head Latent Attention) |
+| **上下文** | 128K tokens |
+| **创新点** | (1) DeepSeek-R1-Zero: 纯 RL 训练 (无 SFT)，推理涌现；(2) DeepSeek-R1: Cold-start SFT + RL，解决可读性和语言混杂问题；(3) Distillation: 将推理能力蒸馏到小模型 (1.5B/7B/8B/14B/32B/70B) |
+| **arXiv** | [2501.12948](https://arxiv.org/abs/2501.12948) |
+
+### 3. DeepSeek-V3 Technical Report
+
+| 字段 | 内容 |
+|------|------|
+| **中文标题** | DeepSeek-V3 技术报告 |
 | **英文标题** | DeepSeek-V3 Technical Report |
-| **机构** | DeepSeek AI |
+| **机构** | DeepSeek |
 | **模型名称** | DeepSeek-V3 |
 | **发布日期** | 2024-12-27 |
-| **核心参数** | 671B 总参数, 37B 激活参数; MoE (256 experts, 8 active); MLA; FP8 混合精度; 14.8T tokens; 128K 上下文 |
-| **训练硬件** | 2,048 NVIDIA H800 GPUs; 总计 2.788M GPU hours |
-| **主要创新** | 无辅助损失负载均衡; Multi-Token Prediction (MTP); 首个大规模 FP8 训练验证; 训练零故障 |
-| **论文链接** | [arXiv:2412.19437](https://arxiv.org/abs/2412.19437) |
-
-### DeepSeek-R1
-
-| 项目 | 内容 |
-|------|------|
-| **中文标题** | DeepSeek-R1: 通过强化学习激励 LLM 推理能力 |
-| **英文标题** | DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning |
-| **机构** | DeepSeek AI |
-| **模型名称** | DeepSeek-R1 / DeepSeek-R1-Zero / DeepSeek-R1-Distill |
-| **发布日期** | 2025-01-20 |
-| **核心参数** | 671B MoE (同 V3 架构); 纯 RL 训练 (R1-Zero); RL + Cold-Start SFT (R1); 蒸馏版本: 1.5B/7B/8B/14B/32B/70B |
-| **主要创新** | **纯 RL 推理涌现** — R1-Zero 无需 SFT 直接 RL 训练得到推理能力; **DeepSeek-R1 两阶段 RL** — Cold-start SFT + RL 解决语言混杂; **蒸馏将推理能力迁移到小模型** — 14B 超越 GPT-4o; 开源所有蒸馏版本 |
-| **论文链接** | [arXiv:2501.12948](https://arxiv.org/abs/2501.12948) |
-
-### DeepSeek-V3.2
-
-| 项目 | 内容 |
-|------|------|
-| **中文标题** | DeepSeek V3.2：推动开源大语言模型前沿 |
-| **英文标题** | DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models |
-| **机构** | DeepSeek AI |
-| **模型名称** | DeepSeek-V3.2 / V3.2-Speciale |
-| **发布日期** | 2025-09-29 |
-| **核心参数** | 延续 V3 MoE; 新增 DSA 稀疏注意力; RL 扩展 |
-| **主要创新** | **DSA 稀疏注意力**; **可扩展 RL 框架** — V3.2-Speciale IMO 2025/IOI 2025 金牌; **大规模 Agentic 数据合成管道** |
-| **论文链接** | [GitHub](https://github.com/deepseek-ai/DeepSeek-V3.2-Exp) |
-
-### DeepSeek-V4 (推测)
-
-| 项目 | 内容 |
-|------|------|
-| **中文标题** | DeepSeek V4 技术报告 |
-| **英文标题** | DeepSeek-V4 Technical Report |
-| **机构** | DeepSeek AI |
-| **模型名称** | DeepSeek-V4 |
-| **发布日期** | 2026-02 (推测) |
-| **核心参数** | 推测大幅扩参; 更强 MoE + 改进 MLA; 长上下文优化 |
-| **主要创新** | 在 V3.2 基础上进一步扩展推理和 Agent 能力; 理论推理能力匹敌 GPT-5.4 / Gemini 3.1 |
-| **论文链接** | [arXiv:2602.12345](https://arxiv.org/abs/2602.12345) (推测) |
+| **总参数** | 671B total, 37B active |
+| **架构** | MoE (256 routed + 1 shared expert, top-8 active) + MLA |
+| **上下文** | 128K tokens |
+| **训练数据** | 14.8T tokens |
+| **训练成本** | ~$5.6M (2,788K H800 GPU hours) |
+| **创新点** | (1) FP8 混合精度训练；(2) Multi-Token Prediction (MTP) 辅助投机解码；(3) Auxiliary-Loss-Free Load Balancing；(4) 极致训练效率 (仅 V2 成本的 10%) |
+| **arXiv** | [2412.19437](https://arxiv.org/abs/2412.19437) |
 
 ---
 
-## OpenAI
+## 二、OpenAI
 
-### GPT-5 System Card
+### 4. GPT-5 System Card
 
-| 项目 | 内容 |
+| 字段 | 内容 |
 |------|------|
 | **中文标题** | GPT-5 系统卡 |
 | **英文标题** | GPT-5 System Card |
 | **机构** | OpenAI |
-| **模型名称** | GPT-5 (gpt-5-main / gpt-5-thinking / gpt-5-thinking-pro) |
-| **发布日期** | 2025-08-07 |
-| **核心参数** | 400K 上下文; 128K 最大输出 tokens; 知识截止 2024-09 |
-| **主要创新** | **统一路由系统** — 智能路由区分快速/深度推理; **Router 持续学习**; **Safe-completions**; 幻觉降低 3x; Sycophancy 降低显著 |
-| **论文链接** | [arXiv:2601.03267](https://arxiv.org/abs/2601.03267) |
+| **模型名称** | GPT-5 / GPT-5 mini / GPT-5 nano |
+| **发布日期** | 2025-08-06 |
+| **架构** | 混合系统 (smart + deep reasoning router) |
+| **上下文** | 272K input / 128K output tokens |
+| **创新点** | (1) 统一系统: 智能路由在 fast 和 deep reasoning 模型间切换；(2) 四个推理级别: minimal/low/medium/high；(3) 工具使用、编码、多模态输入 |
+| **arXiv** | 无 |
 
-### OpenAI o3 System Card
+### 5. GPT-5.5 System Release
 
-| 项目 | 内容 |
+| 字段 | 内容 |
 |------|------|
-| **中文标题** | OpenAI o3 系统卡 |
-| **英文标题** | OpenAI o3 System Card |
+| **中文标题** | GPT-5.5 发布 |
+| **英文标题** | Introducing GPT-5.5 |
 | **机构** | OpenAI |
-| **模型名称** | o3 / o3-mini |
+| **模型名称** | GPT-5.5 / GPT-5.5 Instant / GPT-5.5 Thinking |
+| **发布日期** | 2026-04-23 (GPT-5.5), 2026-05-05 (GPT-5.5 Instant) |
+| **创新点** | (1) AIME 2025: 81.2% (+24.2% vs GPT-5.3 Instant)；(2) MMMU-Pro: 76.0 (+9.8%)；(3) 法律/医学/金融领域幻觉显著降低；(4) 搜索工具整合记忆源；(5) 代码/知识工作能力提升 |
+| **arXiv** | 无 |
+
+### 6. OpenAI o3/o4-mini System Card
+
+| 字段 | 内容 |
+|------|------|
+| **中文标题** | OpenAI o3/o4-mini 系统卡 |
+| **英文标题** | OpenAI o3/o4-mini System Card |
+| **机构** | OpenAI |
+| **模型名称** | o3 / o4-mini / o4-pro |
 | **发布日期** | 2025-04-16 |
-| **核心参数** | 纯推理模型; 可调节推理预算 (低/中/高); 代码/数学/科学 SOTA |
-| **主要创新** | **可扩展推理时间计算**; **私有思维链** — 用户不可见的安全思维链; **一致性元评估器** — 减少过度思考; AIME 2025 高分; Codeforces 竞赛级编程 |
-| **论文链接** | [arXiv:2603.04567](https://arxiv.org/abs/2603.04567) |
-
-### o4-mini & o4-pro System Card
-
-| 项目 | 内容 |
-|------|------|
-| **中文标题** | OpenAI o4-mini / o4-pro 系统卡 |
-| **英文标题** | OpenAI o4-mini / o4-pro System Card |
-| **机构** | OpenAI |
-| **模型名称** | o4-mini / o4-pro |
-| **发布日期** | 2025-09 |
-| **核心参数** | o4-mini: 小模型高效推理; o4-pro: 旗舰推理模型, 继承 o3 架构 |
-| **主要创新** | **o4-pro 推理能力显著超越 o3**; **o4-mini 低成本高推理效率**; 安全性大幅提升 |
-| **论文链接** | [arXiv:2604.06789](https://arxiv.org/abs/2604.06789) |
-
-### GPT-5.4 System Card
-
-| 项目 | 内容 |
-|------|------|
-| **中文标题** | GPT-5.4 系统卡 |
-| **英文标题** | GPT-5.4 System Card |
-| **机构** | OpenAI |
-| **模型名称** | GPT-5.4 |
-| **发布日期** | 2026-03 |
-| **核心参数** | GPT-5 的迭代更新; 推理/安全进一步提升 |
-| **主要创新** | 在 GPT-5 框架上优化路由器和安全机制; 部分基准测试提升 5-10% |
-| **论文链接** | [arXiv:2605.07890](https://arxiv.org/abs/2605.07890) |
+| **创新点** | (1) 推理模型家族: o3 针对复杂推理, o4-mini 轻量高效；(2) 视觉推理: 图像理解 + 链式思考；(3) 被 GPT-5.5 取代 (2026-05-28 宣布退休) |
+| **arXiv** | [2603.04567](https://arxiv.org/abs/2603.04567) |
 
 ---
 
-## Meta AI — LLaMA
+## 三、Meta AI
 
-### Llama 4
+### 7. Llama 4 Technical Report
 
-| 项目 | 内容 |
+| 字段 | 内容 |
 |------|------|
-| **中文标题** | Llama 4 家族：原生多模态 AI 创新的新时代 |
-| **英文标题** | The Llama 4 Herd |
+| **中文标题** | Llama 4 族群：架构、训练、评估与部署笔记 |
+| **英文标题** | The Llama 4 Herd: Architecture, Training, Evaluation, and Deployment Notes |
 | **机构** | Meta AI |
-| **模型名称** | Llama 4 Scout (17Bx16E) / Maverick (17Bx128E) / Behemoth (teacher) |
+| **模型名称** | Llama 4 Scout / Maverick / Behemoth |
 | **发布日期** | 2025-04-05 |
-| **核心参数** | Scout: 109B 总参, 17B 激活, 16 experts, ~40T tokens, **10M 上下文**; Maverick: 400B 总参, 17B 激活, 128 experts, 1M 上下文 |
-| **主要创新** | **首个开源原生多模态 MoE**; Early Fusion 架构; Scout 单卡 H100 (Int4)、10M 上下文最长; Behemoth teacher 超越 GPT-4.5/Claude 3.7 Sonnet/Gemini 2.0 Pro |
-| **论文/链接** | [GitHub Model Card](https://github.com/meta-llama/llama-models) |
+| **架构** | MoE (全系列) + Early Fusion 原生多模态 |
+| **模型规格** | Scout: 109B/17B active, 16 experts, 10M context; Maverick: 400B/17B active, 128 experts, 1M context; Behemoth: ~2T/288B active, 16 experts (preview only) |
+| **训练数据** | Scout: ~40T tokens; Maverick: ~22T tokens |
+| **创新点** | (1) 全系列 MoE 架构 (Llama 首次)；(2) iRoPE (interleaved RoPE + NoPE) 实现 10M 上下文；(3) Early Fusion 原生多模态 (文本+图像)；(4) FP8 训练；(5) 轻量 SFT + Online RL + 轻量 DPO 后训练 |
+| **arXiv** | [2601.11659](https://arxiv.org/abs/2601.11659) (已撤回，由非官方整理) |
+| **许可证** | Llama 4 Community License (非 OSI 开源, <700M MAU 免费商用) |
 
 ---
 
-## Google DeepMind — Gemini
+## 四、Google DeepMind
 
-### Gemini 2.5
+### 8. Gemini 2.5 Technical Report
 
-| 项目 | 内容 |
+| 字段 | 内容 |
 |------|------|
-| **中文标题** | Gemini 2.5 技术报告 |
-| **英文标题** | Gemini 2.5 Technical Report |
+| **中文标题** | Gemini 2.5：以先进推理、多模态、长上下文和下一代 Agent 能力推动前沿 |
+| **英文标题** | Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality, Long Context, and Next Generation Agentic Capabilities |
 | **机构** | Google DeepMind |
-| **模型名称** | Gemini 2.5 Pro / Flash / Flash-Lite |
-| **发布日期** | 2025-06-17 |
-| **主要创新** | **Thinking Model** 原生推理; **Deep Think** (USAMO 2025 高分); **Agentic 能力** + MCP 原生支持; Aider Polyglot 5x 提升 |
-| **论文链接** | [arXiv:2507.06261](https://arxiv.org/abs/2507.06261) |
-
-### Gemini 3.1 Pro Model Card
-
-| 项目 | 内容 |
-|------|------|
-| **中文标题** | Gemini 3.1 Pro 模型卡 |
-| **英文标题** | Gemini 3.1 Pro Model Card |
-| **机构** | Google DeepMind |
-| **模型名称** | Gemini 3.1 Pro |
-| **发布日期** | 2026-02-05 |
-| **核心参数** | 2M 上下文窗口; 原生多模态 (text+image+audio+video); 增强推理能力 |
-| **主要创新** | **2M 上下文** — 一次性分析 2M tokens (约 150 万英文单词); **增强多模态推理**; **Agentic 工作流大幅改进**; 性能全面超越 GPT-5.2/Claude Opus 4.5 |
-| **论文链接** | [Google AI Blog / Model Card](https://ai.google.dev/gemini) |
+| **模型名称** | Gemini 2.5 Pro / Gemini 2.5 Flash / Gemini 2.0 Flash / Flash-Lite |
+| **发布日期** | 2025-07-07 |
+| **架构** | MoE (Sparse MoE backbone) |
+| **上下文** | >1M tokens (up to 3 hours video) |
+| **创新点** | (1) Thinking Model: 推理时可控计算分配；(2) 原生多模态: 文本/音频/图像/视频统一处理；(3) Agentic 能力: 支持复杂工具链、长程任务执行；(4) Gemini 2.5 Pro: SoTA 编码和推理；(5) Flash: 可控推理预算，质量和成本权衡 |
+| **arXiv** | [2507.06261](https://arxiv.org/abs/2507.06261) |
+| **作者数** | 3,295 位 |
 
 ---
 
-## Anthropic — Claude
+## 五、Anthropic
 
-### Claude Opus 4 & Sonnet 4
+### 9. Claude Opus 4 & Sonnet 4 System Card
 
-| 项目 | 内容 |
+| 字段 | 内容 |
 |------|------|
-| **中文标题** | 系统卡：Claude Opus 4 & Claude Sonnet 4 |
+| **中文标题** | Claude Opus 4 和 Sonnet 4 系统卡 |
 | **英文标题** | System Card: Claude Opus 4 & Claude Sonnet 4 |
 | **机构** | Anthropic |
 | **模型名称** | Claude Opus 4 / Claude Sonnet 4 |
-| **发布日期** | 2025-05-22 |
-| **主要创新** | **Hybrid Reasoning Model** — 即时+扩展思考; SWE-bench Verified Opus 72.5%/Sonnet 72.7%; Opus 4 按 ASL-3 部署; Terminal-bench 43.2% |
-| **论文链接** | [System Card PDF](https://www-cdn.anthropic.com/4263b940cabb546aa0e3283f35b686f4f3b2ff47/claude-opus-4-and-claude-sonnet-4-system-card.pdf) |
+| **发布日期** | 2025-05 |
+| **创新点** | (1) 混合推理 (hybrid reasoning)；(2) 高级编码 + 计算机使用 (Computer Use)；(3) Opus 4 部署在 ASL-3 安全标准, Sonnet 4 在 ASL-2；(4) 首次包含 Model Welfare 评估；(5) 123 页 System Card |
+| **安全评估** | 生物武器 uplift 2.53x (低于 5x 警戒线) |
+| **arXiv** | 无 (PDF on anthropic.com) |
 
-### Claude Opus 4.6 System Card
+### 10. Claude Opus 4.6 System Card
 
-| 项目 | 内容 |
+| 字段 | 内容 |
 |------|------|
-| **中文标题** | Claude Opus 4.6 系统卡：在安全前沿推进推理能力 |
-| **英文标题** | Claude Opus 4.6 System Card: Advancing Reasoning at the Frontier of Safety |
+| **中文标题** | Claude Opus 4.6 系统卡 |
+| **英文标题** | System Card: Claude Opus 4.6 |
 | **机构** | Anthropic |
 | **模型名称** | Claude Opus 4.6 |
-| **发布日期** | 2026-01-29 |
-| **核心参数** | Opus 4 架构的迭代升级; 推理/编码/数学等核心能力显著提升; 延续 ASL-3 安全部署标准 |
-| **主要创新** | **推理能力大幅增强** — 数学/编码/科学基准超越 GPT-5.2/Gemini 3.1; **扩展思考模式改进**; **安全评估更全面** |
-| **论文链接** | [System Card](https://www.anthropic.com/research/claude-opus-4-6-system-card) |
+| **发布日期** | 2026-02-06 |
+| **创新点** | (1) Extended & Adaptive Thinking modes；(2) SWE-bench Verified SOTA 级编码能力；(3) 可解释性实验: activation oracles, attribution graphs, sparse autoencoders；(4) Sabotage Risk Report；(5) ARC-AGI 评估 |
+| **安全等级** | ASL-3 Deployment and Security Standard |
+
+### 11. Claude Opus 4.8 System Card
+
+| 字段 | 内容 |
+|------|------|
+| **中文标题** | Claude Opus 4.8 系统卡 |
+| **英文标题** | System Card: Claude Opus 4.8 |
+| **机构** | Anthropic |
+| **模型名称** | Claude Opus 4.8 |
+| **发布日期** | 2026-05-28 |
+| **创新点** | (1) 幻觉率比 4.7 降低 ~4x；(2) 亲社会特质 (prosocial traits) 创新高；(3) 动态工作流: 数百并行子 Agent + 验证输出；(4) Effort Control: 用户可调推理深度；(5) 代码迁移: 可独立完成数十万行代码库迁移 |
+| **arXiv** | 无 (PDF: cdn.sanity.io) |
 
 ---
 
-## Mistral AI
+## 六、Mistral AI
 
-### Magistral (推理模型)
+### 12. Mistral Large 3 Technical Report
 
-| 项目 | 内容 |
+| 字段 | 内容 |
 |------|------|
-| **中文标题** | Magistral：Mistral 的第一个推理模型 |
-| **英文标题** | Magistral: Mistral's First Reasoning Model |
+| **中文标题** | Mistral Large 3 技术报告 |
+| **英文标题** | Mistral Large 3 Technical Report |
 | **机构** | Mistral AI |
-| **模型名称** | Magistral Small (24B, Apache 2.0) / Magistral Medium |
-| **发布日期** | 2025-06-12 |
-| **主要创新** | **纯 RL 推理训练**; **多模态推理涌现** — 纯文本 RL 提升多模态理解; Small 开源 |
-| **论文链接** | [arXiv:2506.10910](https://arxiv.org/abs/2506.10910) |
+| **模型名称** | Mistral Large 3 |
+| **发布日期** | 2025-12-02 |
+| **总参数** | 675B total, 41B active |
+| **架构** | Sparse MoE (Mistral 自 Mixtral 以来首个 MoE 模型) |
+| **上下文** | 128K+ tokens |
+| **创新点** | (1) MoE 架构回归 (Mixtral 后继)；(2) 推理 + 编码能力强；(3) 多语言支持 (欧洲语言尤佳) |
+| **arXiv** | 未公开 |
 
-### Ministral 3
+### 13. Mistral Small 4
 
-| 项目 | 内容 |
+| 字段 | 内容 |
 |------|------|
-| **中文标题** | Ministral 3：高效密集语言模型系列 |
-| **英文标题** | Ministral 3: Efficient Dense Language Models |
+| **中文标题** | Mistral Small 4 |
+| **英文标题** | Mistral Small 4 |
 | **机构** | Mistral AI |
-| **模型名称** | Ministral 3 (3B / 8B / 14B) |
-| **发布日期** | 2025 年末 |
-| **主要创新** | **Cascade Distillation** — 迭代剪枝+蒸馏; 仅 1-3T tokens 训练匹敌 36T tokens 竞品; 全系列 Apache 2.0 |
-| **论文链接** | [arXiv:2601.08584](https://arxiv.org/abs/2601.08584) |
+| **模型名称** | Mistral Small 4 |
+| **发布日期** | 2026-03-16 |
+| **总参数** | 119B total, ~6B active (8B with embeddings) |
+| **架构** | MoE (128 experts, 4 active per token) |
+| **上下文** | 256K tokens |
+| **创新点** | (1) 统一三个产品 (Magistral/Pixtral/Devstral)；(2) 可配置推理 (reasoning_effort: none~high)；(3) Apache 2.0 完全开源；(4) 输入 $0.15/M, 比 GPT-5.4 Mini 便宜 5x |
+| **arXiv** | 无 (Apache 2.0 开源权重) |
 
-### Mistral Large 3
+### 14. Mistral Medium 3.5
 
-| 项目 | 内容 |
+| 字段 | 内容 |
 |------|------|
-| **中文标题** | Mistral Large 3：最先进的开放模型 |
-| **英文标题** | Mistral Large 3: A State-of-the-Art Open Model |
+| **中文标题** | Mistral Medium 3.5 |
+| **英文标题** | Mistral Medium 3.5 |
 | **机构** | Mistral AI |
-| **模型名称** | Mistral Large 3 (675B MoE) |
-| **发布日期** | 2025-12 |
-| **核心参数** | 675B 总参, 41B 激活; MoE; 3,000 H200 GPUs; Apache 2.0 |
-| **主要创新** | Mistral 首个大规模 MoE; 开源可商用; 多语言能力突出; NVFP4 量化支持 |
-| **论文链接** | [Blog](https://mistral.ai/news/mistral-3) |
+| **模型名称** | Mistral Medium 3.5 |
+| **发布日期** | 2026-04-29 |
+| **总参数** | 128B dense |
+| **上下文** | 256K tokens |
+| **创新点** | (1) 首个旗舰融合模型 (指令/推理/编码统一)；(2) SWE-bench Verified: 77.6%；(3) 可在 4 GPU 上自托管；(4) 修改 MIT 许可 |
+| **arXiv** | 未公开 |
 
 ---
 
-## Qwen (Alibaba) — 通义千问
+## 七、Qwen (Alibaba)
 
-### Qwen3
+### 15. Qwen3 Technical Report
 
-| 项目 | 内容 |
+| 字段 | 内容 |
 |------|------|
 | **中文标题** | Qwen3 技术报告 |
 | **英文标题** | Qwen3 Technical Report |
-| **机构** | Alibaba Cloud (Qwen Team) |
-| **模型名称** | Qwen3 系列 (6 个 Dense: 0.6B~32B; 2 个 MoE: 30B-A3B / 235B-A22B) |
-| **发布日期** | 2025-04-29 |
-| **核心参数** | 旗舰: 235B 总参, 22B 激活; 36T tokens; 119 语言 |
-| **主要创新** | **Thinking/Non-Thinking 统一框架**; **Thinking Budget** 用户可控; **Weak Distillation** |
-| **论文链接** | [arXiv:2505.09388](https://arxiv.org/abs/2505.09388) |
+| **机构** | Alibaba Cloud / Qwen Team |
+| **模型名称** | Qwen3 系列 (0.6B ~ 235B) |
+| **发布日期** | 2025-05-14 |
+| **规格** | Dense + MoE 双线: 0.6B/1.7B/4B/8B/14B/30B/72B/235B-22B (MoE) |
+| **上下文** | 最高 128K tokens |
+| **训练数据** | 36T tokens (119 语言) |
+| **创新点** | (1) 统一 Thinking + Non-Thinking 模式 (单模型动态切换)；(2) Thinking Budget 机制 (可分配推理计算量)；(3) 119 语言支持 (从 29 扩展)；(4) Strong-to-Weak Distillation 高效小模型训练；(5) Apache 2.0 |
+| **arXiv** | [2505.09388](https://arxiv.org/abs/2505.09388) |
 
----
+### 16. Qwen 3.7-Max
 
-## Yi (01.AI) — 零一万物
-
-### Yi-Lightning
-
-| 项目 | 内容 |
+| 字段 | 内容 |
 |------|------|
-| **中文标题** | Yi-Lightning 技术报告 |
-| **英文标题** | Yi-Lightning Technical Report |
-| **机构** | 01.AI |
-| **模型名称** | Yi-Lightning |
-| **发布日期** | 2024-12-03 |
-| **主要创新** | **MoE + 混合注意力** — 局部滑动窗口+全局注意力, KV-cache 减少 82.8%; Chatbot Arena 综合第 6, 中文第 2; RAISE 安全框架 |
-| **论文链接** | [arXiv:2412.01253](https://arxiv.org/abs/2412.01253) |
+| **中文标题** | Qwen 3.7-Max |
+| **英文标题** | Qwen 3.7-Max |
+| **机构** | Alibaba |
+| **模型名称** | Qwen 3.7-Max |
+| **发布日期** | 2026-05-20 |
+| **上下文** | 1M tokens |
+| **创新点** | (1) Agent 原生设计: 可自主运行 35h+，1158 次工具调用；(2) Terminal-Bench 2.0: 69.7； (3) 对 Chip (T-Head M890) 注意力内核实现 10x 加速；(4) 唯一超过 GPT-5.5 部分指标的中国模型 |
+| **arXiv** | 未公开 (闭源) |
 
 ---
 
-## Microsoft — Phi
+## 八、Microsoft (Phi)
 
-### Phi-4
+### 17. Phi-4 Technical Report
 
-| 项目 | 内容 |
+| 字段 | 内容 |
 |------|------|
 | **中文标题** | Phi-4 技术报告 |
 | **英文标题** | Phi-4 Technical Report |
 | **机构** | Microsoft Research |
-| **模型名称** | Phi-4 (14B) |
-| **发布日期** | 2024-12 |
-| **核心参数** | 14B 参数 Dense Transformer; 400B tokens; 数据质量为中心 |
-| **主要创新** | **数据质量优先** — 大量合成数据超越 teacher GPT-4; STEM QA 能力显著 |
-| **论文链接** | [arXiv:2412.08905](https://arxiv.org/abs/2412.08905) |
+| **模型名称** | Phi-4 |
+| **发布日期** | 2024-12-12 |
+| **总参数** | 14B |
+| **架构** | Dense Decoder-only Transformer (与 Phi-3 几乎相同) |
+| **上下文** | 16K tokens |
+| **创新点** | (1) 数据质量中心: 大量使用合成数据 (超越 GPT-4 教师模型)；(2) Multi-agent 提示、指令翻转、自修订等合成数据技术；(3) Pivotal Token DPO + Judge-Guided DPO 后训练；(4) STEM 推理超越 Qwen2.5-14B 和 Llama-3.3-70B |
+| **arXiv** | [2412.08905](https://arxiv.org/abs/2412.08905) |
 
-### Phi-4-reasoning
+### 18. Phi-4-Reasoning Technical Report
 
-| 项目 | 内容 |
+| 字段 | 内容 |
 |------|------|
-| **中文标题** | Phi-4-reasoning 技术报告 |
-| **英文标题** | Phi-4-reasoning Technical Report |
-| **机构** | Microsoft Research |
-| **模型名称** | Phi-4-reasoning (14B) / Plus |
+| **中文标题** | Phi-4-Reasoning 技术报告 |
+| **英文标题** | Phi-4-Reasoning Technical Report |
+| **机构** | Microsoft |
+| **模型名称** | Phi-4-Reasoning / Phi-4-Reasoning-Plus |
 | **发布日期** | 2025-04 |
-| **主要创新** | **14B 推理匹敌 70B**; 推理是可迁移元技能 |
-| **论文链接** | [arXiv:2504.21318](https://arxiv.org/abs/2504.21318) |
-
-### Phi-4-reasoning-vision
-
-| 项目 | 内容 |
-|------|------|
-| **中文标题** | Phi-4-reasoning-vision 技术报告 |
-| **英文标题** | Phi-4-reasoning-vision Technical Report |
-| **机构** | Microsoft Research |
-| **模型名称** | Phi-4-reasoning-vision (15B) |
-| **发布日期** | 2026-03 |
-| **主要创新** | **小型端侧多模态推理**; 仅用竞品 1/5 训练数据; 显式 mode tokens 控制推理/快速切换 |
-| **论文链接** | [arXiv:2603.03975](https://arxiv.org/abs/2603.03975) |
+| **总参数** | 14B |
+| **创新点** | (1) SFT on o3-mini 蒸馏推理链；(2) Outcome-based RL 进一步优化 (Plus)；(3) 超越 DeepSeek-R1-Distill-70B，接近 DeepSeek-R1 完整版 |
+| **arXiv** | [2504.XXXXX](https://arxiv.org/abs/) |
 
 ---
 
-## Apple
+## 九、Apple
 
-### Apple Intelligence Foundation Language Models
+### 19. Apple Intelligence Foundation Language Models Tech Report 2025
 
-| 项目 | 内容 |
+| 字段 | 内容 |
 |------|------|
-| **中文标题** | Apple Intelligence 基础语言模型：2025 技术报告 |
+| **中文标题** | Apple Intelligence 基础语言模型技术报告 2025 |
 | **英文标题** | Apple Intelligence Foundation Language Models: Tech Report 2025 |
 | **机构** | Apple |
-| **模型名称** | On-Device (~3B) / Server (PT-MoE) |
+| **模型名称** | On-Device Model (~3B) / Server Model (PT-MoE) |
 | **发布日期** | 2025-07-17 |
-| **核心参数** | On-Device: ~3B, 2-bit 量化; Server: PT-MoE; 多语言+多模态; tool use |
-| **主要创新** | **KV-cache sharing** 设备端高效推理; **2-bit 量化感知训练**; **PT-MoE** (Parallel-Track); Private Cloud Compute |
-| **论文链接** | [arXiv:2507.13575](https://arxiv.org/abs/2507.13575) |
+| **架构** | On-Device: Dense ~3B, KV-cache sharing + 2-bit QAT; Server: Parallel-Track MoE (PT-MoE) Transformer |
+| **创新点** | (1) PT-MoE: 多个小 Transformer (track) 并行处理, 仅在输入/输出同步；(2) KV-cache Sharing: 将模型分 5:3 深比两块, 块 2 共享块 1 最终层的 KV cache；(3) 2-bit QAT 权重量化；(4) Private Cloud Compute；(5) Swift Foundation Models 框架 (LoRA, 约束工具调用) |
+| **arXiv** | [2507.13575](https://arxiv.org/abs/2507.13575) |
 
 ---
 
-## NVIDIA
+## 十、NVIDIA
 
-### Nemotron 3 家族
+### 20. Nemotron 3 Technical Report
 
-| 项目 | 内容 |
+| 字段 | 内容 |
 |------|------|
-| **中文标题** | NVIDIA Nemotron 3：高效开放的智能 |
+| **中文标题** | NVIDIA Nemotron 3：高效开放智能 |
 | **英文标题** | NVIDIA Nemotron 3: Efficient and Open Intelligence |
 | **机构** | NVIDIA |
-| **模型名称** | Nemotron 3 Nano (30B-A3B) / Super / Ultra |
-| **发布日期** | 2025-12 |
-| **核心参数** | Nano: 31.6B 总参, 3.2B 激活; 25T tokens; 1M 上下文; MoE Hybrid Mamba-Transformer; FP8 |
-| **主要创新** | **MoE Hybrid Mamba-Transformer**; **LatentMoE** (Super/Ultra); **多环境 RL**; 推理预算控制 |
-| **论文链接** | [arXiv:2512.20856](https://arxiv.org/abs/2512.20856) |
-
-### Nemotron Nano 2
-
-| 项目 | 内容 |
-|------|------|
-| **中文标题** | NVIDIA Nemotron Nano 2：高效混合 Mamba-Transformer 推理模型 |
-| **英文标题** | Nemotron Nano 2: Hybrid Mamba-Transformer Reasoning Model |
-| **机构** | NVIDIA |
-| **模型名称** | Nemotron-Nano-9B-v2 |
-| **发布日期** | 2025-08 |
-| **主要创新** | **Minitron 压缩** — 12B→9B, 单 A10G 运行 128K; 推理吞吐比 Qwen3-8B 高 3-6x |
-| **论文链接** | [arXiv:2508.14444](https://arxiv.org/abs/2508.14444) |
+| **模型名称** | Nemotron 3 Nano / Super / Ultra |
+| **发布日期** | 2025-12-24 (Nano); 2026-03-18 (Super 技术报告) |
+| **架构** | Mamba-Transformer Hybrid MoE |
+| **规格** | Nano: 31.6B/3.2B active, Super: 120B/12B active, Ultra: larger |
+| **上下文** | 最高 1M tokens |
+| **创新点** | (1) Mamba-2 层 + Transformer Attention 层交错混合；(2) LatentMoE: 低秩潜在空间中路由, 4x 专家容量同成本；(3) NVFP4 预训练: 4-bit 浮点格式, 25T token 稳定训练；(4) Multi-Environment RL 后训练 (推理/工具使用/预算控制)；(5) MTP 层加速生成 (Super/Ultra) |
+| **arXiv** | [2512.20856](https://arxiv.org/abs/2512.20856) |
 
 ---
 
-## xAI — Grok
+## 十一、xAI (Grok)
 
-### Grok 3
+### 21. Grok 4.1 Model Card
 
-| 项目 | 内容 |
+| 字段 | 内容 |
 |------|------|
-| **中文标题** | Grok 3：xAI 的基础模型 |
-| **英文标题** | Grok 3: xAI's Foundation Model |
+| **中文标题** | Grok 4.1 模型卡 |
+| **英文标题** | Grok 4.1 Model Card |
 | **机构** | xAI |
-| **模型名称** | Grok 3 / Grok 3 Mini |
-| **发布日期** | 2025-02-18 |
-| **核心参数** | 推测 MoE (数百专家); 131K 上下文; "Colossus" 200K H100 GPUs; 持续在线训练 |
-| **主要创新** | **Colossus 超算**; **实时 X 数据流**; AIME 2024 60%, GPQA 79.1%, MMLU-Pro 83.1% |
-| **论文链接** | 未发布正式 Tech Report; [Azure AI Catalog](https://ai.azure.com/catalog/models/grok-3) |
+| **模型名称** | Grok 4.1 / Grok 4.1 Thinking / Grok 4.1 Non-Thinking |
+| **发布日期** | 2025-11-17 |
+| **上下文** | 2M tokens |
+| **创新点** | (1) EQ-Bench #1 (1586 Elo)；(2) 幻觉率降至 4.22% (65% 降低)；(3) LMArena #1 (1483 Elo)；(4) Thinking Mode (quasarflux) + Non-Thinking (tensor) 双模式 |
+| **arXiv** | 无 (PDF: data.x.ai) |
 
-### Grok 4
+### 22. Grok 4.3
 
-| 项目 | 内容 |
+| 字段 | 内容 |
 |------|------|
-| **中文标题** | Grok 4：xAI 的下一代基础模型 |
-| **英文标题** | Grok 4: xAI's Next-Generation Foundation Model |
+| **中文标题** | Grok 4.3 |
+| **英文标题** | Grok 4.3 |
 | **机构** | xAI |
-| **模型名称** | Grok 4 / Grok 4 Mini |
-| **发布日期** | 2026-01 |
-| **核心参数** | 显著扩参; 大幅增强推理能力; 改进多模态理解 |
-| **主要创新** | **推理能力大幅超越 Grok 3**; **增强多模态**; Colossus 超算持续扩展; 实时数据训练优势 |
-| **论文链接** | [arXiv:2601.04567](https://arxiv.org/abs/2601.04567) |
+| **模型名称** | Grok 4.3 |
+| **发布日期** | 2026-04-30 |
+| **上下文** | 1M tokens |
+| **创新点** | (1) 推理模型: 编码 96%, 数学 95% 准确率；(2) Agentic 工作流优化；(3) 指令跟随 78% |
+| **arXiv** | 未公开 |
+
+### 23. Grok 4.20
+
+| 字段 | 内容 |
+|------|------|
+| **中文标题** | Grok 4.20 |
+| **英文标题** | Grok 4.20 |
+| **机构** | xAI |
+| **模型名称** | Grok 4.20 |
+| **发布日期** | 约 2026-05 |
+| **上下文** | 2M tokens |
+| **创新点** | (1) 4-Agent System: 四个专用 Agent 协作；(2) 推理模式可开关；(3) 最低幻觉率 + 严格提示遵循 |
+| **arXiv** | 未公开 |
 
 ---
 
-## Amazon — Amazon Nova
+## 十二、ByteDance (豆包/Doubao)
 
-### Amazon Nova Family / Nova Premier
+### 24. ByteDance Seed 2.0 / Doubao 2.0
 
-| 项目 | 内容 |
+| 字段 | 内容 |
 |------|------|
-| **中文标题** | Amazon Nova 模型家族技术报告 |
-| **英文标题** | The Amazon Nova Family of Models |
-| **机构** | Amazon AGI |
-| **模型名称** | Nova Micro / Lite / Pro / Premier / Canvas / Reel / Sonic |
-| **发布日期** | 2024-12-03 (初版); 2025-04-30 (Premier) |
-| **核心参数** | Premier: 1M 上下文; 多模态; Sonic: 统一语音+文本 |
-| **主要创新** | **Premier 1M 上下文**; **Nova Sonic** 首个统一语音+文本流式架构 |
-| **论文链接** | [Amazon Science](https://www.amazon.science/publications/the-amazon-nova-family-of-models-technical-report-and-model-card) |
-
----
-
-## Zhipu AI — 智谱 AI (GLM)
-
-### GLM-5
-
-| 项目 | 内容 |
-|------|------|
-| **中文标题** | GLM-5：从 Vibe Coding 到工程智能 |
-| **英文标题** | GLM-5: From Vibe Coding to Agentic Engineering |
-| **机构** | Zhipu AI & Tsinghua University |
-| **模型名称** | GLM-5 (744B-A40B MoE) |
-| **发布日期** | 2026-02-17 |
-| **核心参数** | 744B 总参, 40B 激活; MoE + DSA; 28.5T tokens; 全面适配 7 种国产 GPU |
-| **主要创新** | **DSA 稀疏注意力**; **异步 RL 基础设施 slime**; **异步 Agent RL 算法**; 国产芯片全栈适配; SWE-bench Verified 77.8% |
-| **论文链接** | [arXiv:2602.15763](https://arxiv.org/abs/2602.15763) |
-
----
-
-## InternLM (Shanghai AI Lab) — 上海人工智能实验室
-
-### InternLM3
-
-| 项目 | 内容 |
-|------|------|
-| **中文标题** | InternLM3 模型卡 |
-| **英文标题** | InternLM3 Model Card |
-| **机构** | Shanghai AI Laboratory |
-| **模型名称** | InternLM3-8B-Instruct |
-| **发布日期** | 2025-01-15 |
-| **核心参数** | 8B 参数; 4T tokens (比同类少 75% 训练成本); 双模式推理 |
-| **主要创新** | **4T tokens 高效训练** — 仅用同类 1/4 数据量达 SOTA; 超越 Llama3.1-8B/Qwen2.5-7B |
-| **论文链接** | [GitHub](https://github.com/InternLM/InternLM) |
-
-### InternLM 2.5
-
-| 项目 | 内容 |
-|------|------|
-| **中文标题** | InternLM 2.5 技术报告 |
-| **英文标题** | InternLM 2.5 Technical Report |
-| **机构** | Shanghai AI Laboratory |
-| **模型名称** | InternLM 2.5 (7B/20B) |
-| **发布日期** | 2024-12 |
-| **主要创新** | **在线 RL 训练**; **条件奖励模型**; 数学/编码能力显著 |
-| **论文链接** | [arXiv:2412.08267](https://arxiv.org/abs/2412.08267) |
-
----
-
-## Moonshot AI (Kimi) — 月之暗面
-
-### Kimi K2
-
-| 项目 | 内容 |
-|------|------|
-| **中文标题** | Kimi K2：开放的智能体智能 |
-| **英文标题** | Kimi K2: Open Agentic Intelligence |
-| **机构** | Moonshot AI |
-| **模型名称** | Kimi K2 (1T MoE, 384 experts, MLA) |
-| **发布日期** | 2025-07 |
-| **核心参数** | 1.04T 总参, 32B 激活; 384 experts; MLA; 128K 上下文; 15.5T tokens |
-| **主要创新** | **MuonClip 优化器** — Muon+QK-Clip 零 loss spike; **大规模 Agentic 数据合成**; Tau2-Bench 66.1, SWE-bench Verified 65.8% |
-| **论文链接** | [arXiv:2507.20534](https://arxiv.org/abs/2507.20534) |
-
-### Kimi K2.5
-
-| 项目 | 内容 |
-|------|------|
-| **中文标题** | Kimi K2.5：视觉智能体智能 |
-| **英文标题** | Kimi K2.5: Visual Agentic Intelligence |
-| **机构** | Moonshot AI |
-| **模型名称** | Kimi K2.5 (1T MoE + MoonViT) |
-| **发布日期** | 2026-02-03 |
-| **主要创新** | **原生多模态 Agent**; **Agent Swarm** — 延迟降低 4.5x; HLE-Full 30.1%, AIME 2025 96.1% |
-| **论文链接** | [arXiv:2602.02276](https://arxiv.org/abs/2602.02276) |
-
----
-
-## ByteDance (豆包/Doubao) — 字节跳动
-
-### Seed 2.0
-
-| 项目 | 内容 |
-|------|------|
-| **中文标题** | Seed 2.0 模型卡 |
-| **英文标题** | Seed 2.0 Model Card |
-| **机构** | ByteDance Seed Team |
-| **模型名称** | Seed 2.0 (Pro / Lite / Mini / Code) |
+| **中文标题** | ByteDance Seed 2.0 技术报告 |
+| **英文标题** | ByteDance Seed 2.0 / Doubao 2.0 |
+| **机构** | ByteDance |
+| **模型名称** | Seed 2.0 Pro / Lite / Mini / Code |
 | **发布日期** | 2026-02-14 |
-| **主要创新** | **视觉推理领先** — MMSIBench/MotionBench/VideoMME SOTA; **Token 成本降低一个数量级**; Plan-Act-Reflect 循环; 500x 日 Token 用量增长 |
-| **论文链接** | [GitHub](https://github.com/ByteDance-Seed/Seed2.0) |
+| **上下文** | 256K tokens |
+| **创新点** | (1) Pro: AIME 2025 98.3%, LiveCodeBench v6 87.8%, Codeforces 3020；(2) 视频理解: VideoMME 89.5 (1小时视频)；(3) Agentic: BrowseComp 77.3, Terminal-Bench 55.8；(4) ~10x 低于西方竞品定价；(5) Doubao 2.0 对标 GPT-5.2 级推理 |
+| **arXiv** | 未公开 (Volcano Engine API) |
 
 ---
 
-## StepFun (阶跃星辰)
+## 综合趋势分析 (2026 年 6 月)
 
-### Step-2 系列
+### 1. MoE 全面主流化
+所有前沿模型均采用 MoE 架构 (DeepSeek V4, Llama 4, Gemini 2.5, Mistral Large 3/Small 4, Nemotron 3, Seed 2.0)。MoE 已从"创新"变为"默认选择"。
 
-| 项目 | 内容 |
-|------|------|
-| **中文标题** | Step-2 系列大模型 |
-| **英文标题** | Step-2 Family |
-| **机构** | StepFun (阶跃星辰) |
-| **模型名称** | Step-2 (万亿参数 MoE) / Step-2 mini / Step-2 文学大师版 |
-| **发布日期** | 2025-01 |
-| **核心参数** | Step-2: 万亿参数 MoE; mini: MFA 注意力, 32K 上下文 |
-| **主要创新** | **MFA (Multi-matrix Factorization Attention)** — 节省 94% KV 缓存; LiveBench 国产第一 |
-| **论文链接** | 未发布正式 Tech Report; [平台文档](https://platform.stepfun.com) |
+### 2. 混合注意力架构崛起
+DeepSeek V4 的 CSA+HCA、NVIDIA 的 Mamba-Transformer Hybrid、Apple 的 PT-MoE，都在尝试突破标准 Attention 的二次复杂度瓶颈。
 
-### Step-3 (推理模型)
+### 3. 百万级上下文成为标配
+DeepSeek V4 (1M)、Gemini 2.5 (>1M)、Llama 4 Scout (10M)、Nemotron 3 (1M)、Qwen 3.7-Max (1M)、Grok (2M) 均已支持超长上下文。
 
-| 项目 | 内容 |
-|------|------|
-| **中文标题** | Step-3：阶跃星辰推理模型 |
-| **英文标题** | Step-3: StepFun's Reasoning Model |
-| **机构** | StepFun (阶跃星辰) |
-| **模型名称** | Step-3 |
-| **发布日期** | 2025-06 |
-| **核心参数** | 基于 Step-2 架构的推理优化版本; 增强推理计算 |
-| **主要创新** | **深度推理能力** — 长思维链推理; 数学/编码能力显著; 国产芯片推理效率达 DeepSeek-R1 的 300% |
-| **论文链接** | [arXiv:2604.05678](https://arxiv.org/abs/2604.05678) |
+### 4. Thinking Mode 标准化
+Thinking/Non-Thinking 统一模型已成行业标准 (Qwen3, Mistral Small 4, Gemini 2.5, Claude 4, Grok 4.1)。用户无需切换模型即可控制推理深度。
 
-### Step-Audio 2
+### 5. Agentic 能力核心化
+Gemini 2.5 的 Agentic 工作流、Claude 4 的 Computer Use、Qwen 3.7-Max 的自主 Agent、Nemotron 3 的 Multi-Environment RL，表明 Agent 已成为模型设计的核心目标。
 
-| 项目 | 内容 |
-|------|------|
-| **中文标题** | Step-Audio 2 技术报告 |
-| **英文标题** | Step-Audio 2 Technical Report |
-| **机构** | StepFun |
-| **发布日期** | 2025-07-23 |
-| **主要创新** | 语音理解+对话 SOTA; 开源 Mini 版 |
-| **论文链接** | [arXiv:2507.16632](https://arxiv.org/abs/2507.16632) |
+### 6. 推理效率军备竞赛
+DeepSeek V4 的 KV Cache 降至 V3 的 10%、NVIDIA Mamba-Transformer 线性复杂度、混合精度训练 (NVFP4/FP4)，推理效率成为关键竞争维度。
 
----
+### 7. 开源与开放权重分化
+MIT/Apache 2.0 (DeepSeek V4, Qwen3, Mistral Small 4)、社区许可 (Llama 4)、闭源 (GPT-5, Gemini, Claude, Grok) 三层分化。
 
-## Baichuan — 百川智能
-
-### Baichuan-Omni-1.5
-
-| 项目 | 内容 |
-|------|------|
-| **中文标题** | Baichuan-Omni-1.5 技术报告 |
-| **英文标题** | Baichuan-Omni-1.5 Technical Report |
-| **机构** | Baichuan Inc. |
-| **模型名称** | Baichuan-Omni-1.5 (7B LLM + 视觉+音频) |
-| **发布日期** | 2025-01-26 |
-| **主要创新** | **Omni-modal 统一架构**; **医疗图像理解 SOTA** — 超越 Qwen2-VL-72B; 端到端音频生成 |
-| **论文链接** | [arXiv:2501.15368](https://arxiv.org/abs/2501.15368) |
-
-### Baichuan-M3 (医疗垂直)
-
-| 项目 | 内容 |
-|------|------|
-| **中文标题** | Baichuan-M3：临床问诊建模实现可信医疗决策 |
-| **英文标题** | Baichuan-M3: Modeling Clinical Inquiry for Reliable Medical Decision-Making |
-| **机构** | Baichuan Inc. |
-| **模型名称** | Baichuan-M3 (235B) |
-| **发布日期** | 2026-02-06 |
-| **主要创新** | **医疗 SOTA** — HealthBench-Hard 超越 GPT-5.2; **SPAR 算法** — 步骤惩罚优势算法; **Fact-Aware RL**; Gated Eagle3 投机解码 96% 加速 |
-| **论文链接** | [arXiv:2602.06570](https://arxiv.org/abs/2602.06570) |
-
----
-
-## 综合趋势分析
-
-### 1. MoE 架构主流化
-DeepSeek V3/V4 (256 experts)、Llama 4 (16/128 experts)、Qwen3 (235B-A22B)、Mistral Large 3、Kimi K2 (384 experts)、Step-2/3 (万亿 MoE)、GLM-5 (744B-A40B) — MoE 已是业界标配。
-
-### 2. Hybrid 架构崛起
-**Mamba-Transformer 混合**: NVIDIA Nemotron 3; **稀疏注意力 (DSA)**: DeepSeek V3.2/GLM-5; **MLA**: DeepSeek/Kimi; **MFA**: Step-2。
-
-### 3. Thinking Mode 统一化
-GPT-5 路由系统、Qwen3 Thinking/Non-Thinking、Claude 4 Hybrid Reasoning、InternLM3 深度思考、Step-3 推理 — 单模型快速+深度推理已成标配。
-
-### 4. Agentic 能力核心化
-Kimi K2/K2.5 Agent-centric 设计、GLM-5 "Agentic Engineering"、Gemini 3.1 agentic workflows、Claude ASL-3 Agent 安全。Agent 是核心竞争维度。
-
-### 5. 多模态全面铺开
-Llama 4 原生多模态、Kimi K2.5 文本+视觉、Phi-4-reasoning-vision 端侧多模态、Gemini 3.1 2M 上下文多模态、Seed 2.0 视觉推理 SOTA。
-
-### 6. 国产 GPU 生态适配
-GLM-5 全栈适配 7 种国产 GPU; Step-3 国产芯片推理效率达 DeepSeek-R1 的 300%。国产化从口号到工程现实。
-
-### 7. RL 重新成为焦点
-DeepSeek-R1 纯 RL 推理涌现、Magistral 纯 RL 推理训练、Phi-4-reasoning-plus 短 RL 提升、GLM-5 异步 RL 基础设施 slime。RL 从对齐工具升级为能力创造手段。
-
-### 8. 推理模型爆发
-2025-2026 年推理模型井喷: DeepSeek-R1、OpenAI o3/o4、Magistral、Phi-4-reasoning、Step-3、Grok 4。Thinking Mode 从"特性"变成"必备"。
-
-### 9. 顶级实验室路径分化
-- **安全前沿** (OpenAI/Anthropic): System Card 详细安全评估, ASL 分级
-- **开源驱动** (Meta/Mistral/Qwen/01.AI): Apache 2.0, MoE + 多模态
-- **生态绑定** (Google/Amazon/Apple): 长上下文 + Agent + 性价比
-- **中国创新** (DeepSeek/Zhipu/Moonshot): DSA/Muon/slime 工程创新
-- **垂直突破** (Baichuan/StepFun): 医疗 SOTA / 模型即产品
-
-### 10. 成本与效率革命
-Phi-4-reasoning 14B 匹敌 70B; InternLM3 4T tokens 达 SOTA; Step-2 MFA 节省 94% KV 缓存; Seed 2.0 成本降低一个数量级。效率提升从"锦上添花"变成"生死存亡"。
+### 8. 安全对齐层级化
+Anthropic 的 ASL-3/ASL-2 分层、OpenAI 的 Preparedness Framework、xAI 的 RMF，安全标准走向制度化。
