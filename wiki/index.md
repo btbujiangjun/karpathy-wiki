@@ -318,6 +318,7 @@ Papers are organized by research category. Each page includes problem background
 |------|-------|---------|
 | [affiliation-landscape](synthesis/affiliation-landscape.md) | Affiliation Landscape — AI Research by Institution | 121 papers |
 | [arxiv-broad-2026-05-25](synthesis/arxiv-broad-2026-05-25.md) | arXiv Broad Survey — AI Research Landscape (May 2026) | 121 papers |
+| [arxiv-daily-2026-06-02](synthesis/arxiv-daily-2026-06-02.md) | arXiv Daily — AI Research Survey (June 2, 2026) | ~30 papers |
 | [arxiv-daily-2026-05-21](synthesis/arxiv-daily-2026-05-21.md) | arXiv Daily — AI & CTR (May 21, 2026) | - |
 | [arxiv-daily-2026-05-23](synthesis/arxiv-daily-2026-05-23.md) | arXiv Daily — AI & CTR (May 23, 2026) | - |
 | [arxiv-daily-2026-05-24](synthesis/arxiv-daily-2026-05-24.md) | arXiv Daily — AI & CTR (May 24, 2026) | - |
@@ -326,6 +327,7 @@ Papers are organized by research category. Each page includes problem background
 | [arxiv-daily-2026-05-27](synthesis/arxiv-daily-2026-05-27.md) | arXiv Daily — AI & CTR (May 27, 2026) | 8 papers |
 | [arxiv-daily-2026-05-28](synthesis/arxiv-daily-2026-05-28.md) | arXiv Daily — AI & CTR (May 28, 2026) | 11 papers |
 | [arxiv-paper-check-2026-06-01](synthesis/arxiv-paper-check-2026-06-01.md) | arXiv Paper Check — AI & CTR (June 1, 2026) | ~20 papers |
+| [arxiv-paper-check-2026-06-02](synthesis/arxiv-paper-check-2026-06-02.md) | arXiv Paper Check — AI & CTR (June 2, 2026) | ~25 papers |
 | [conference-digest-2026-05-25](synthesis/conference-digest-2026-05-25.md) | 顶会论文专题报告 — 2026年5月版 | 9 conferences |
 | [conference-digest-2026-05-26](synthesis/conference-digest-2026-05-26.md) | 顶会论文专题报告 — 2026年5月深度版 | 11 conferences, 70+ papers |
 | [conference-digest-2026-05-28](synthesis/conference-digest-2026-05-28.md) | 顶会论文专题报告 — 2026年5月全面版（NeurIPS Best Papers / ICLR Outstanding / AAAI / CVPR / ICML / EMNLP / KDD / RecSys / SIGIR） | 9 conferences |

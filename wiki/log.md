@@ -8,6 +8,11 @@
 - New page: wiki/synthesis/arxiv-paper-check-2026-06-01.md
 - Sources: Mon 1 Jun 2026 cs.AI (226 entries) + cs.IR (19 entries) + cs.LG (264 entries), plus Fri 29 May late postings
 - Papers surveyed: ~20
+
+## [2026-06-02] search | arXiv Paper Check — AI & CTR (June 2, 2026)
+- New page: wiki/synthesis/arxiv-paper-check-2026-06-02.md
+- Sources: Mon 1 Jun 2026 cs.AI (36 new) + cs.IR (12 new) + cs.LG (171 new)
+- Papers surveyed: ~25
 - CTR highlights: Rec-Distill (24B teacher distillation), Scaling CVR Prediction (+2.6% gain), SaFeAU/KDD, Graph-GRPO, ACE/SIGIR, UniNote/KDD Ads, FOSTER
 - AI highlights: AutoSci (full research lifecycle agent), LinTree (explicit search histories for LLM reasoning), UniScale/ICML (unified routing+TTS), COLLEAGUE.SKILL (skill distillation), DecomposeR (planner-centric deep research RL)
 - IR highlights: SPECTRA (synthetic IR test collections), Factual Density for RAG (medical), No More K-means/ICML, FLASH-MAXSIM, Latent Terms
@@ -508,3 +513,9 @@
 - Updated: wiki/index.md (CTR section split, 38 new entries)
 - Updated: wiki/synthesis/ctr-scaling-landscape.md (status update)
 - Coverage: 47/47 (100%) of Awesome-CTR-Scaling papers now have dedicated pages
+
+## [2026-06-02] synthesis | arXiv Daily — AI Research Survey (June 2, 2026)
+- Summary: wiki/synthesis/arxiv-daily-2026-06-02.md
+- New pages: wiki/synthesis/arxiv-daily-2026-06-02.md
+- Updated: wiki/index.md (synthesis section)
+- Description: Survey of ~30 recent papers across generative recommendation, CTR prediction, LLM reasoning/RL, IR/search, games/MARL, and LLM agents
