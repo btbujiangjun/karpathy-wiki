@@ -519,3 +519,8 @@
 - New pages: wiki/synthesis/arxiv-daily-2026-06-02.md
 - Updated: wiki/index.md (synthesis section)
 - Description: Survey of ~30 recent papers across generative recommendation, CTR prediction, LLM reasoning/RL, IR/search, games/MARL, and LLM agents
+
+## [2026-06-02] synthesis | WorldQuant 101 Alpha 每日选股 — 2026-06-02
+- New page: wiki/synthesis/wq101-alpha-daily-2026-06-02.md
+- Updated: wiki/index.md (Synthesis section)
+- Description: WorldQuant 101 Alpha factor-based US stock screening and ranking. Top 20 picks including MU, NVDA, AVGO, DELL, MSFT. S&P 500 at ATH 7,599.96. AI/tech momentum dominant. Factor breakdown: Alpha#1 (momentum) covers 15/20 stocks.
