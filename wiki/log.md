@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-03] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20
+- New page: wiki/synthesis/wq101-alpha-daily-2026-06-03.md
+- Applied Alpha#1/#6/#12/#19/#30/#41/#53 across 7 dimensions (momentum, reversal, volatility, volume-price, trend strength, mean reversion)
+- Top picks: MU(9), DELL(9), NVDA(8), AVGO(8), INTC(8), SNDK(8), MRVL(8)
+- Sectors: 10 Semis, 1 Tech Hardware, 3 Cloud/AI Software, 2 Storage, 1 Industrial, 1 E-Commerce, 1 Healthcare, 1 Consumer Staples
+- Market context: S&P 5K at 7,610 (+0.13%), Nasdaq record 27,094, Tech(YTD: +65% XLK) and Energy(YTD: +38% XLE) leading
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-03] search | arXiv Digest — AI & CTR (June 3, 2026)
 - New page: wiki/synthesis/arxiv-digest-2026-06-03.md
 - Surveyed: cs.LG (247 entries, Wed 3 Jun) + cs.IR (20 entries, Wed 3 Jun)

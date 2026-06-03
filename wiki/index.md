@@ -362,3 +362,4 @@ Papers are organized by research category. Each page includes problem background
 | [tech-report-digest-2026-06-03](synthesis/tech-report-digest-2026-06-03.md) | 各大 AI 公司最新技术报告汇总 (第六版) — 20 家机构, 涵盖 DeepSeek V4、GPT-5.5、GLM-5、Kimi K2.6、Doubao Seed 2.0、Nemotron 3、Qwen3.7 Max 等 35+ 报告 | 35+ reports |
 | [technical-roadmap](synthesis/technical-roadmap.md) | Technical Roadmap — AI Research Directions (2025-2026) | 121 papers |
 | [wq101-alpha-daily-2026-06-02](synthesis/wq101-alpha-daily-2026-06-02.md) | WorldQuant 101 Alpha 每日选股 — 2026-06-02 | — |
+| [wq101-alpha-daily-2026-06-03](synthesis/wq101-alpha-daily-2026-06-03.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-03) | — |
