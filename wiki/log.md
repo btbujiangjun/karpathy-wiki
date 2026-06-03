@@ -24,6 +24,12 @@
 ## [2026-06-03] search | Tech Report Digest — 第六版 (2026-06-03)
 - New page: wiki/synthesis/tech-report-digest-2026-06-03.md
 
+## [2026-06-03] synthesis | Conference & arXiv Digest — 2026-06-03 全面版
+- New page: wiki/synthesis/conference-digest-2026-06-03.md
+- Coverage: ICML 2026 (Bi-NAC, ∇-Reasoner, CAPO, f-GRPO, LAD, LambdaPO, KnowRL, Spectra, CraEG, Hierarchical Language Model, NSHA, AWARE), ICLR 2026 (GNN-as-Judge), KDD 2026 (FAT, MGOE), WWW 2026 (SparseCTR, GenCI, MoS), SIGIR 2026 (GenRec, OneRanker), CIKM 2026 (MuChator), RecSys 2025 (LONGER), ACL 2025 (ActorBreaker), Industry papers: ByteDance (TokenMixer-Large, HyFormer), Alibaba (EST), Tencent (RankUp, HeMix), Meta (Kunlun), Anthropic (Constitutional Classifiers++, Emotion Concepts, Introspective Awareness), Agent systems (DeepAgent, MetaAgent-X, AgentConductor, OpenSage), Game AI (OpenGame, PORTAL, AutoHarness), Video generation (Bernini, Self Forcing, SCD, GPDiT, ARLON), Benchmarks (ParaConsist)
+- Lab distribution: ByteDance AML(5), Alibaba(3), Tencent/Weixin(3), Meta Ads(1), Anthropic(3), JD.com(1)
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-03] search | arXiv Daily — AI Research Survey (June 3, 2026)
 - New page: wiki/synthesis/arxiv-daily-2026-06-03.md
 - Surveyed: cs.AI, cs.LG, cs.IR, cs.CL — May 22 – June 2, 2026
