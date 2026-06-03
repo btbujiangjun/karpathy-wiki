@@ -3,6 +3,18 @@
 > This file catalogs all pages in the wiki. The LLM reads this first when answering queries.
 > Updated automatically on every ingest.
 
+## By Role — 按角色导航
+
+> 总-分结构：每个角色页面提供概览（总）与详细文档索引（分）。基于代码实现事实。
+
+| Role | Audience | 总览 | 关键内容 |
+|------|----------|------|---------|
+| 🔧 **工程实践者** | Engineers / Practitioners | [[roles/engineers|Engineering Practitioner's Guide]] | llm.c, nanochat, nanogpt, micrograd 代码实现详解；Agentic Engineering; Bacterial Code |
+| 🔬 **研究人员** | AI/ML Researchers | [[roles/researchers|Researcher's Guide]] | 76+ 论文按方向分类；7 种方法文档；CTR Scaling 全景 |
+| 📈 **投资者** | Investors / Executives | [[roles/investors|Investor's Guide]] | 投资日报；AI Tech Report Digest; WorldQuant 101 Alpha 选股 |
+| 📚 **学习者** | Students / Learners | [[roles/students|Student's Guide]] | Zero to Hero 系列；代码项目阶梯（100行 → 完整管线）；53 个概念 |
+| ⭐ **关注者** | Karpathy Enthusiasts | [[roles/followers|Follower's Guide]] | 2024–2026 演讲与 X 帖子时间线；概念发明史；思想演进 |
+
 ## Sources
 
 | File | Title | Date Added | Tags |
@@ -343,5 +355,6 @@ Papers are organized by research category. Each page includes problem background
 | [tech-report-digest-2026-05-29](synthesis/tech-report-digest-2026-05-29.md) | 各大 AI 公司最新技术报告汇总 (第五版) — 26+ 家机构, 新增 Claude Opus 4.7 & Sonnet 4.6、Kimi K2.6、Grok 4.1 Fast、InternLM 104B、Seed 1.6、DeepSeek V4 完整规格 | 35+ reports |
 | [tech-report-digest-2026-06-01](synthesis/tech-report-digest-2026-06-01.md) | 各大 AI 公司最新技术报告汇总 (2026-06-01) — 12 家核心机构的详细 Tech Report/System Card 分析 | 24 reports |
 | [investment-daily-2026-06-01](synthesis/investment-daily-2026-06-01.md) | 投资日报 — 2026-06-01（美股/港股/A股科技与AI热点） | — |
+| [tech-report-digest-2026-06-03](synthesis/tech-report-digest-2026-06-03.md) | 各大 AI 公司最新技术报告汇总 (第六版) — 20 家机构, 涵盖 DeepSeek V4、GPT-5.5、GLM-5、Kimi K2.6、Doubao Seed 2.0、Nemotron 3、Qwen3.7 Max 等 35+ 报告 | 35+ reports |
 | [technical-roadmap](synthesis/technical-roadmap.md) | Technical Roadmap — AI Research Directions (2025-2026) | 121 papers |
 | [wq101-alpha-daily-2026-06-02](synthesis/wq101-alpha-daily-2026-06-02.md) | WorldQuant 101 Alpha 每日选股 — 2026-06-02 | — |

@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-03] search | Tech Report Digest — 第六版 (2026-06-03)
+- New page: wiki/synthesis/tech-report-digest-2026-06-03.md
+- Coverage: 20 institutions, 35+ reports
+- Highlights: DeepSeek V4 (1.6T MoE, CSA/HCA, Muon), GPT-5.5 (Agentic Coding), GLM-5 (Agentic Engineering, 744B MoE), Kimi K2.6 (1T MoE, 300-Agent Swarm), Doubao Seed 2.0 (AIME 98.3), Nemotron 3 (Mamba2-Transformer Hybrid MoE), Qwen3.5 (397B MoE, Apache 2.0), Qwen3.7 Max (1M context), Gemini 3.5 Flash, Claude Opus 4/4.5/4.7, Mistral 3, Step 3.7 Flash
+- Key themes: MoE domination, reasoning models as standard, post-training innovation, context length race (up to 10M), open-source maturity, Chinese vs Western pricing gap
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-01] search | arXiv Paper Check — AI & CTR (June 1, 2026)
 - New page: wiki/synthesis/arxiv-paper-check-2026-06-01.md
 - Sources: Mon 1 Jun 2026 cs.AI (226 entries) + cs.IR (19 entries) + cs.LG (264 entries), plus Fri 29 May late postings
@@ -524,3 +531,13 @@
 - New page: wiki/synthesis/wq101-alpha-daily-2026-06-02.md
 - Updated: wiki/index.md (Synthesis section)
 - Description: WorldQuant 101 Alpha factor-based US stock screening and ranking. Top 20 picks including MU, NVDA, AVGO, DELL, MSFT. S&P 500 at ATH 7,599.96. AI/tech momentum dominant. Factor breakdown: Alpha#1 (momentum) covers 15/20 stocks.
+
+## [2026-06-02] restructure | 文档中心按角色总分结构重构
+- New pages: wiki/roles/engineers.md, wiki/roles/researchers.md, wiki/roles/investors.md, wiki/roles/students.md, wiki/roles/followers.md
+- Updated: wiki/index.md (added By-Role navigation section at top)
+- Description: Restructured wiki documentation by 5 audience roles with 总-分 (general-to-specific) organization. Each role page grounded in actual code implementation facts:
+  - 🔧 Engineers: anchored in llm.c (Packed128, deterministic memory, NCCL ZeRO-1), nanochat (full pipeline), micrograd (100-line autograd), nanogpt, bacterial code
+  - 🔬 Researchers: 76+ papers across 9 categories, 7 methods, cross-referenced concepts
+  - 📈 Investors: daily reports, tech report digests, WQ101 alpha, company entities
+  - 📚 Students: learning path micrograd→nanogpt→nanochat→llm.c, Zero to Hero series
+  - ⭐ Followers: 2024-2026 talk/X-post timeline, concept invention history
