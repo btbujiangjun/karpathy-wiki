@@ -4,8 +4,32 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-03] search | arXiv Digest — AI & CTR (June 3, 2026)
+- New page: wiki/synthesis/arxiv-digest-2026-06-03.md
+- Surveyed: cs.LG (247 entries, Wed 3 Jun) + cs.IR (20 entries, Wed 3 Jun)
+- Papers highlighted: ~30 across CTR/Rec, AI/LLM Systems, IR/RAG
+- Top picks: Taiji (POPO, Kuaishou LLM4Rec), UniPinRec (Pinterest unified retrieval+ranking), Dynamic Short Convolutions (1.33× compute advantage), LLMs Need Sleep (memory consolidation), CtM LoRA merging (ICML 2026)
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-06-03] synthesis | 投资日报 — 2026-06-03（美股/港股/A股科技与AI热点）
+- Summary: wiki/synthesis/investment-daily-2026-06-03.md
+- 美股焦点：COMPUTEX 2026（黄仁勋点石成金 Marvell +32.5%、NVIDIA Cosmos 3、NemoClaw）；Broadcom Q2 FY2026 盘后财报（$220亿+营收预期、AI $107亿）；HPE +19.5% AI需求；Microsoft Build Copilot Agent Mode；S&P 500 历史新高 7,620
+- 港股焦点：阿里港股 +6.5% AI重估；腾讯计划 WeChat AI Agent（13亿月活）
+- A股焦点：光模块/半导体设备/国产算力持续景气
+- 中概：智谱AI/MiniMax 6月8日纳入恒生科技
+- AI 主题：Agentic AI（Microsoft/Tencent/OpenAI/Anthropic）、物理 AI（Cosmos 3/NemoClaw）、特朗普 AI 行政令
+- New page: wiki/synthesis/investment-daily-2026-06-03.md
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-03] search | Tech Report Digest — 第六版 (2026-06-03)
 - New page: wiki/synthesis/tech-report-digest-2026-06-03.md
+
+## [2026-06-03] search | arXiv Daily — AI Research Survey (June 3, 2026)
+- New page: wiki/synthesis/arxiv-daily-2026-06-03.md
+- Surveyed: cs.AI, cs.LG, cs.IR, cs.CL — May 22 – June 2, 2026
+- Papers highlighted: ~28 across LLM Architecture (7), Sequential Modeling (7), RecSys/CTR/Ads (9), Games/RL (7), Theory (1)
+- Institutions covered: Meta, LinkedIn, Kuaishou, Tencent(×2), Baidu, Alibaba, Xiaohongshu, LMU Munich, RightNow AI
+- Updated: wiki/index.md, wiki/log.md
 - Coverage: 20 institutions, 35+ reports
 - Highlights: DeepSeek V4 (1.6T MoE, CSA/HCA, Muon), GPT-5.5 (Agentic Coding), GLM-5 (Agentic Engineering, 744B MoE), Kimi K2.6 (1T MoE, 300-Agent Swarm), Doubao Seed 2.0 (AIME 98.3), Nemotron 3 (Mamba2-Transformer Hybrid MoE), Qwen3.5 (397B MoE, Apache 2.0), Qwen3.7 Max (1M context), Gemini 3.5 Flash, Claude Opus 4/4.5/4.7, Mistral 3, Step 3.7 Flash
 - Key themes: MoE domination, reasoning models as standard, post-training innovation, context length race (up to 10M), open-source maturity, Chinese vs Western pricing gap
