@@ -592,3 +592,14 @@
 - Coverage: 12+ conferences (ICML 2026, ICLR 2026, NeurIPS 2025, AAAI 2026, CVPR 2026, KDD 2026, ACL 2025, EMNLP 2025, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025) + arXiv + 8 industry labs (ByteDance, Meta, Microsoft, Google DeepMind, Apple, Alibaba, Kuaishou, Tencent, Meituan, Netflix, etc.)
 - Papers covered: 100+ entries across LLM training theory, recommendation/CTR, agent systems, multi-modal/generative models, games/code, alignment/safety
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-06-04] synthesis | 投资日报 — 2026-06-04（美股/港股/A股科技与AI热点）
+- New page: wiki/synthesis/investment-daily-2026-06-04.md
+- 核心事件：Broadcom AVGO Q2 FY2026 财报炸裂 — 营收 $222 亿 +48% YoY，AI $108 亿 +143%，Q3 指引 $294 亿（AI +200%）；Alphabet $800 亿 AI 股权融资（伯克希尔 $100 亿）; GTC Taipei 最后一日（RTX Spark / N1X / Cosmos 3 / Marvell +32.5%）；港股 6/2 报复性反弹恒科 +4.72%（腾讯 +10.5%）
+- 美股焦点：AVGO 盘后 +10%（高 confidence），DELL/HPE AI 服务器业绩爆发，Meta Business Agent 货币化 +3%，NVDA PC 芯片战略
+- 港股焦点：恒科超卖反弹（PE 20x 近 5 年 10% 分位），腾讯 WeChat AI Agent + 混元大模型
+- A股焦点：光模块（中际旭创/新易盛/天孚）> 半导体设备（北方华创/中微）> 国产算力（寒武纪/海光）> AI PC 概念（GTC 催化）
+- 中概：智谱 AI/MiniMax 6 月 8 日纳入恒生科技（$12.5-17.5 亿被动资金）；FUTU -27.5%、TIGR -25.3% 券商暴跌
+- AI 主题：Agentic AI Summit NY（6月4日），Meta Business Agent 货币化，Microsoft Copilot Agent，WeChat AI Agent 计划
+- 风险提示：美伊冲突升级；AI 估值回调；中美芯片管制
+- Updated: wiki/index.md, wiki/log.md
