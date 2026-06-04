@@ -350,8 +350,10 @@ Papers are organized by research category. Each page includes problem background
 | [investment-daily-2026-05-29](synthesis/investment-daily-2026-05-29.md) | 投资日报 — 2026-05-29（美股/港股/A 股科技与 AI 热点） | — |
 | [conference-digest-2026-06-01](synthesis/conference-digest-2026-06-01.md) | 顶会论文专题报告 — 2026年6月全面版（ICML / AAAI / NeurIPS / ICLR / KDD / CVPR / ACL / EMNLP / SIGIR / WWW / 各大实验室） | 10 conferences, 60+ papers |
 | [conference-digest-2026-06-03](synthesis/conference-digest-2026-06-03.md) | Conference & arXiv Digest — ICML/ICLR/KDD/WWW/SIGIR/CIKM + 各大实验室（2026-06-03全面版） | 12+ venues, 50+ papers, 7 industry labs |
+| [conference-digest-2026-06-04](synthesis/conference-digest-2026-06-04.md) | 顶会论文专题报告 — 2026年6月全面版（ICML / AAAI / NeurIPS / ICLR / KDD / CVPR / ACL / EMNLP / SIGIR / WWW / CIKM / RecSys） | 12+ conferences, 100+ papers, 8 industry labs |
 | [ctr-scaling-landscape](synthesis/ctr-scaling-landscape.md) | CTR Scaling Landscape — Industrial RecSys Scaling Laws | 49 papers |
 | [arxiv-digest-2026-06-03](synthesis/arxiv-digest-2026-06-03.md) | arXiv Digest — AI & CTR (June 3, 2026) | ~30 papers |
+| [arxiv-digest-2026-06-04](synthesis/arxiv-digest-2026-06-04.md) | arXiv Digest — AI & CTR (June 4, 2026) | ~40 papers |
 | [tech-report-digest-2026-05-25](synthesis/tech-report-digest-2026-05-25.md) | 各大 AI 公司最新技术报告汇总 — 17 家机构 Tech Report/System Card 调查 | 22 reports |
 | [tech-report-digest-2026-05-26](synthesis/tech-report-digest-2026-05-26.md) | 各大 AI 公司最新技术报告汇总 (第二版) — 21 家机构, 新增 DeepSeek R1/V3、GPT-5.1/5.2、Ministral 3、Qwen3、InternLM3 8B、Step-3 | 30 reports |
 | [tech-report-digest-2026-05-27](synthesis/tech-report-digest-2026-05-27.md) | 各大 AI 公司最新技术报告汇总 (第三版) — 21 家机构, 补充 DeepSeek V3.2、GPT-5 完整规格、Magistral、Nemotron 3、Kimi K2.5、Baichuan 等详细分析 | 30+ reports |

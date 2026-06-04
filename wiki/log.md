@@ -12,6 +12,13 @@
 - Market context: S&P 5K at 7,610 (+0.13%), Nasdaq record 27,094, Tech(YTD: +65% XLK) and Energy(YTD: +38% XLE) leading
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-06-04] search | arXiv Digest — AI & CTR (June 4, 2026)
+- New page: wiki/synthesis/arxiv-digest-2026-06-04.md
+- Surveyed: cs.LG (236 entries), cs.IR (27 entries), cs.AI (207 entries) from Thu 4 Jun 2026
+- Papers highlighted: ~40 across CTR/Rec, AI/LLM Systems, IR/RAG
+- Top picks: DS-MLP (vanilla MLP + KD for CTR), STRIDE (13× faster TDA for LLMs), Rosetta Neuron scaling laws, Sequential Data Poisoning (single-attacker illusion), AutoLab (long-horizon agent benchmark), TMEM (parametric memory for agents)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-03] search | arXiv Digest — AI & CTR (June 3, 2026)
 - New page: wiki/synthesis/arxiv-digest-2026-06-03.md
 - Surveyed: cs.LG (247 entries, Wed 3 Jun) + cs.IR (20 entries, Wed 3 Jun)
@@ -579,3 +586,9 @@
   - 📈 Investors: daily reports, tech report digests, WQ101 alpha, company entities
   - 📚 Students: learning path micrograd→nanogpt→nanochat→llm.c, Zero to Hero series
   - ⭐ Followers: 2024-2026 talk/X-post timeline, concept invention history
+
+## [2026-06-04] synthesis | conference-digest-2026-06-04
+- New page: wiki/synthesis/conference-digest-2026-06-04.md
+- Coverage: 12+ conferences (ICML 2026, ICLR 2026, NeurIPS 2025, AAAI 2026, CVPR 2026, KDD 2026, ACL 2025, EMNLP 2025, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025) + arXiv + 8 industry labs (ByteDance, Meta, Microsoft, Google DeepMind, Apple, Alibaba, Kuaishou, Tencent, Meituan, Netflix, etc.)
+- Papers covered: 100+ entries across LLM training theory, recommendation/CTR, agent systems, multi-modal/generative models, games/code, alignment/safety
+- Updated: wiki/index.md, wiki/log.md
