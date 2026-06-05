@@ -609,6 +609,13 @@
 - Key themes: scaling laws for recommendation models, benchmark evaluation crisis, black-box agent optimization, CTR denoising as supervised learning
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-06-05] search | Tech Report Digest — 第七版 (2026-06-05)
+- New page: wiki/synthesis/tech-report-digest-2026-06-05.md
+- Coverage: 22+ institutions, 30+ reports
+- Highlights: DeepSeek V4 (1.6T MoE, CSA/HCA, Muon), OpenAI GPT-5.5 (Agentic Coding), Meta Llama 4 + Muse Spark, Google Gemini 3.1 Pro (1M context), Anthropic Claude Opus 4.7/4.8 (SWE-bench 87.6%), Mistral Large 3 (675B MoE, pure RL), Qwen3 (36T tokens, 119 languages) + Qwen3.5 (Gated DeltaNet-2) + Qwen3.7 Max, Microsoft Phi-4 (data quality) + Phi-4-Reasoning-Vision (arXiv:2603.03975), Apple AFM (3B on-device, PT-MoE), NVIDIA Nemotron 3 (Mamba2-Transformer Hybrid MoE), xAI Grok-4.3 (Colossus 200K GPUs), Amazon Nova Premier, Zhipu GLM-5 (744B MoE, MIT), Moonshot Kimi K2.6 (1T MoE, 300-Agent Swarm), ByteDance Seed 2.0 (AIME 98.3), StepFun Step 3.7 Flash (198B, Apache 2.0), Yi-Lightning (arXiv:2412.01253), Intern-S1 (arXiv:2508.15763), Baichuan-Omni-1.5 (arXiv:2501.15368)
+- Key themes: MoE domination, hybrid attention (Mamba2+Transformer), long-context (up to 10M), thinking mode standard, agentic AI core, open-source divergence, synthetic data training
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-04] synthesis | 投资日报 — 2026-06-04（美股/港股/A股科技与AI热点）
 - New page: wiki/synthesis/investment-daily-2026-06-04.md
 - 核心事件：Broadcom AVGO Q2 FY2026 财报炸裂 — 营收 $222 亿 +48% YoY，AI $108 亿 +143%，Q3 指引 $294 亿（AI +200%）；Alphabet $800 亿 AI 股权融资（伯克希尔 $100 亿）; GTC Taipei 最后一日（RTX Spark / N1X / Cosmos 3 / Marvell +32.5%）；港股 6/2 报复性反弹恒科 +4.72%（腾讯 +10.5%）
