@@ -626,3 +626,13 @@
 - AI 主题：Agentic AI Summit NY（6月4日），Meta Business Agent 货币化，Microsoft Copilot Agent，WeChat AI Agent 计划
 - 风险提示：美伊冲突升级；AI 估值回调；中美芯片管制
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-06-05] synthesis | 投资日报 — 2026-06-05（美股/港股/A股/中概/新能源科技与AI热点）
+- New page: wiki/synthesis/investment-daily-2026-06-05.md
+- 美股焦点：Broadcom -12.59%（AI指引不及最高预期）；Alphabet $847.5亿股权融资（伯克希尔$100亿）；Parabolic 7（SanDisk +623% YTD、MRVL +32.5%、DELL AI服务器+757%）；NVIDIA COMPUTEX（RTX Spark/Vera CPU/$800亿回购）；Mag 7分化（NVDA唯一周涨，AMZN -7.6%最弱）
+- 港股焦点：MiniMax/智谱AI 6月5日纳入恒生科技指数（南向资金预计HK$1390亿）；南向5月首次净流出HK$36亿（转向A股）；腾讯WeChat AI Agent即将上线；阿里+6.5% AI重估
+- A股焦点：光模块领涨（中际旭创日成交¥438亿A股第一/新易盛¥337亿第二，均创新高）；CPU重回聚光灯（NVIDIA Vera/AMD Venice量产+涨价潮）；海光+68%营收；比亚迪4nm智驾芯片量产
+- 中概：BABA云AI+40%（真武M890芯片），PDD三年¥1000亿自营"新拼亩"转型，JD 618开门红创纪录
+- 新能源：15家品牌集体涨价（存储/碳酸锂/铜铝/购置税4重成本压力）；5月销量比亚迪38.3万辆/零跑8万新势力第一/小米3万
+- AI主题：Agentic AI全面爆发（MSFT/WeChat/Meta）；Robotaxi全球竞赛（Tesla奥斯丁全都会区/NVIDIA DRIVE Hyperion全球/Uber Munich）；光互连CPO新纪元；三大IPO（SpaceX 6/12 + Anthropic + OpenAI）合计$3.55万亿抽水压力
+- Updated: wiki/index.md, wiki/log.md
