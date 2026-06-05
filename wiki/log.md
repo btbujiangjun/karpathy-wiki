@@ -593,6 +593,22 @@
 - Papers covered: 100+ entries across LLM training theory, recommendation/CTR, agent systems, multi-modal/generative models, games/code, alignment/safety
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-06-05] synthesis | Conference & arXiv Digest — 2026-06-05 全面版（NeurIPS Best / ICLR 2026 / CVPR 2026 / EMNLP 2025 / RecSys 2025 / SIGIR 2026 / AAAI 2026 / KDD 2026 + 各大实验室）
+- New page: wiki/synthesis/conference-digest-2026-06-05.md
+- Coverage: 12+ venues (NeurIPS 2025 Best Papers, ICLR 2026 accepted list, CVPR 2026 accepted papers, EMNLP 2025 awards, RecSys 2025 accepted papers, SIGIR 2026 papers, AAAI 2026 proceedings, KDD 2026 Cycle 1&2 papers, WWW 2026 papers, CIKM 2025)
+- Industry labs: ByteDance (HyFormer, TokenMixer-Large, MixFormer), Microsoft Research (FlexRec, R3-REC, Learned Verbalization, Governable Personalization), Apple (SRLM, SGE, LaCy, MixAtlas, Amortized MIPS), Amazon (User Agency, AgentDR), Alibaba (SIGMA, MGOE), Tencent (OneRanker, R2Rank, TencentGR), NVIDIA (NeMo-4-PayPal), Anthropic (Claude Code Design Space), OpenAI (GPT-5 System Card), DeepSeek (ReaLM-Retrieve), Meta (Sparsity 2:4 Beyond), Google DeepMind (Gemini 3 Pro Image)
+- Key themes: LLM4Rec convergence, CTR scaling laws, agent systems maturation, data quality revolution, MoE standardization, generative recommendation paradigm
+- Total papers referenced: 80+ across all sections
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-06-05] search | arXiv Digest — AI & CTR (June 5, 2026)
+- New page: wiki/synthesis/arxiv-digest-2026-06-05.md
+- Surveyed: cs.AI (418 entries), cs.IR (28 entries), cs.LG (376 entries) from Fri 5 Jun 2026
+- Papers highlighted: ~24 across CTR/Rec, AI/LLM Systems, Agents/Benchmarks
+- Top picks: Scaling Laws for Behavioral Foundation Models, Agents' Last Exam (ALE), Evaluation Blind Spot theory, Trust but Don't Verify (epistemic blind spots), State Commitment Learning (CERL)
+- Key themes: scaling laws for recommendation models, benchmark evaluation crisis, black-box agent optimization, CTR denoising as supervised learning
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-04] synthesis | 投资日报 — 2026-06-04（美股/港股/A股科技与AI热点）
 - New page: wiki/synthesis/investment-daily-2026-06-04.md
 - 核心事件：Broadcom AVGO Q2 FY2026 财报炸裂 — 营收 $222 亿 +48% YoY，AI $108 亿 +143%，Q3 指引 $294 亿（AI +200%）；Alphabet $800 亿 AI 股权融资（伯克希尔 $100 亿）; GTC Taipei 最后一日（RTX Spark / N1X / Cosmos 3 / Marvell +32.5%）；港股 6/2 报复性反弹恒科 +4.72%（腾讯 +10.5%）
