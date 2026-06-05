@@ -636,3 +636,19 @@
 - 新能源：15家品牌集体涨价（存储/碳酸锂/铜铝/购置税4重成本压力）；5月销量比亚迪38.3万辆/零跑8万新势力第一/小米3万
 - AI主题：Agentic AI全面爆发（MSFT/WeChat/Meta）；Robotaxi全球竞赛（Tesla奥斯丁全都会区/NVIDIA DRIVE Hyperion全球/Uber Munich）；光互连CPO新纪元；三大IPO（SpaceX 6/12 + Anthropic + OpenAI）合计$3.55万亿抽水压力
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-06-05] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-05)
+- New page: wiki/synthesis/wq101-alpha-daily-2026-06-05.md
+- Applied Alpha#1/#6/#12/#19/#30/#41/#53 across 7 dimensions
+- Top picks: MU(9), MRVL(9), DELL(9), SNDK(9), HPE(8), NVDA(8), AVGO(8)
+- Sectors: 5 Semiconductors, 3 Storage, 2 AI Hardware, 3 Cloud/AI Software, 1 Financial, 1 Healthcare, 1 Energy, 1 Consumer Staples, 1 Semiconductor Equipment, 1 IT Infrastructure
+- Market context: S&P 5K at 7,584 (+0.41%), Dow record 51,562, sector rotation Tech→Financials/Healthcare
+- Key events: AVGO -12.59% post-earnings, MRVL +32.5% COMPUTEX, DELL AI server +757%, MU $1T market cap
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-06-05] search | arXiv Daily — AI Research Survey (June 5, 2026)
+- New page: wiki/synthesis/arxiv-daily-2026-06-05.md
+- Coverage: ~25 papers across LLM reasoning, diffusion LLMs, CTR prediction, advertising recommender systems, RL for games, and LLM safety/interpretability
+- Companies featured: LinkedIn (CADET), Kuaishou (GR4AD), Meta (Memento), Tencent/Weixin (RankUp), Alibaba/Taobao (EST), Baidu (GRAB), RUCAIBox (DS-MLP)
+- Key themes: Generative recommenders replacing DLRMs at scale (5 major platforms); latent reasoning + dLLMs as emerging LLM paradigms; agentic RL with convergence guarantees
+- Updated: wiki/index.md, wiki/log.md

@@ -332,6 +332,7 @@ Papers are organized by research category. Each page includes problem background
 | [arxiv-broad-2026-05-25](synthesis/arxiv-broad-2026-05-25.md) | arXiv Broad Survey — AI Research Landscape (May 2026) | 121 papers |
 | [arxiv-daily-2026-06-02](synthesis/arxiv-daily-2026-06-02.md) | arXiv Daily — AI Research Survey (June 2, 2026) | ~30 papers |
 | [arxiv-daily-2026-06-03](synthesis/arxiv-daily-2026-06-03.md) | arXiv Daily — AI Research Survey (June 3, 2026) | ~28 papers |
+| [arxiv-daily-2026-06-05](synthesis/arxiv-daily-2026-06-05.md) | arXiv Daily — AI Research Survey (June 5, 2026) | ~25 papers |
 | [arxiv-daily-2026-05-21](synthesis/arxiv-daily-2026-05-21.md) | arXiv Daily — AI & CTR (May 21, 2026) | - |
 | [arxiv-daily-2026-05-23](synthesis/arxiv-daily-2026-05-23.md) | arXiv Daily — AI & CTR (May 23, 2026) | - |
 | [arxiv-daily-2026-05-24](synthesis/arxiv-daily-2026-05-24.md) | arXiv Daily — AI & CTR (May 24, 2026) | - |
@@ -370,3 +371,4 @@ Papers are organized by research category. Each page includes problem background
 | [technical-roadmap](synthesis/technical-roadmap.md) | Technical Roadmap — AI Research Directions (2025-2026) | 121 papers |
 | [wq101-alpha-daily-2026-06-02](synthesis/wq101-alpha-daily-2026-06-02.md) | WorldQuant 101 Alpha 每日选股 — 2026-06-02 | — |
 | [wq101-alpha-daily-2026-06-03](synthesis/wq101-alpha-daily-2026-06-03.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-03) | — |
+| [wq101-alpha-daily-2026-06-05](synthesis/wq101-alpha-daily-2026-06-05.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-05) | — |
