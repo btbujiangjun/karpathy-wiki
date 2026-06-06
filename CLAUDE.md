@@ -27,6 +27,7 @@ wiki/overview.md # High-level synthesis — revise as understanding deepens
 | Concept | `wiki/concepts/{name}.md` | Idea, theory, framework, method. |
 | Comparison | `wiki/comparisons/{a}-vs-{b}.md` | Side-by-side analysis of two+ entities or concepts. |
 | Synthesis | `wiki/synthesis/{topic}.md` | Cross-source analysis on a theme. |
+| Synthesis (date-organized) | `wiki/synthesis/{YYYY-MM-DD}/{task}.md` | Daily task outputs organized by date, then by task name. E.g. `wiki/synthesis/2026-06-05/arxiv-daily.md`. Used by all scheduled jobs. |
 | Overview | `wiki/overview.md` | Top-level narrative of the entire knowledge base. |
 
 ### Research-specific page types

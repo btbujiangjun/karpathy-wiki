@@ -330,45 +330,46 @@ Papers are organized by research category. Each page includes problem background
 |------|-------|---------|
 | [affiliation-landscape](synthesis/affiliation-landscape.md) | Affiliation Landscape — AI Research by Institution | 121 papers |
 | [arxiv-broad-2026-05-25](synthesis/arxiv-broad-2026-05-25.md) | arXiv Broad Survey — AI Research Landscape (May 2026) | 121 papers |
-| [arxiv-daily-2026-06-02](synthesis/arxiv-daily-2026-06-02.md) | arXiv Daily — AI Research Survey (June 2, 2026) | ~30 papers |
-| [arxiv-daily-2026-06-03](synthesis/arxiv-daily-2026-06-03.md) | arXiv Daily — AI Research Survey (June 3, 2026) | ~28 papers |
-| [arxiv-daily-2026-06-05](synthesis/arxiv-daily-2026-06-05.md) | arXiv Daily — AI Research Survey (June 5, 2026) | ~25 papers |
-| [arxiv-daily-2026-05-21](synthesis/arxiv-daily-2026-05-21.md) | arXiv Daily — AI & CTR (May 21, 2026) | - |
-| [arxiv-daily-2026-05-23](synthesis/arxiv-daily-2026-05-23.md) | arXiv Daily — AI & CTR (May 23, 2026) | - |
-| [arxiv-daily-2026-05-24](synthesis/arxiv-daily-2026-05-24.md) | arXiv Daily — AI & CTR (May 24, 2026) | - |
-| [arxiv-daily-2026-05-25](synthesis/arxiv-daily-2026-05-25.md) | arXiv Daily — AI & CTR (May 25, 2026) | 27 papers |
-| [arxiv-daily-2026-05-26](synthesis/arxiv-daily-2026-05-26.md) | arXiv Daily — AI & CTR (May 26, 2026) | 10 papers |
-| [arxiv-daily-2026-05-27](synthesis/arxiv-daily-2026-05-27.md) | arXiv Daily — AI & CTR (May 27, 2026) | 8 papers |
-| [arxiv-daily-2026-05-28](synthesis/arxiv-daily-2026-05-28.md) | arXiv Daily — AI & CTR (May 28, 2026) | 11 papers |
-| [arxiv-paper-check-2026-06-01](synthesis/arxiv-paper-check-2026-06-01.md) | arXiv Paper Check — AI & CTR (June 1, 2026) | ~20 papers |
-| [arxiv-paper-check-2026-06-02](synthesis/arxiv-paper-check-2026-06-02.md) | arXiv Paper Check — AI & CTR (June 2, 2026) | ~25 papers |
-| [conference-digest-2026-05-25](synthesis/conference-digest-2026-05-25.md) | 顶会论文专题报告 — 2026年5月版 | 9 conferences |
-| [conference-digest-2026-05-26](synthesis/conference-digest-2026-05-26.md) | 顶会论文专题报告 — 2026年5月深度版 | 11 conferences, 70+ papers |
-| [conference-digest-2026-05-28](synthesis/conference-digest-2026-05-28.md) | 顶会论文专题报告 — 2026年5月全面版（NeurIPS Best Papers / ICLR Outstanding / AAAI / CVPR / ICML / EMNLP / KDD / RecSys / SIGIR） | 9 conferences |
-| [conference-digest-2026-05-29](synthesis/conference-digest-2026-05-29.md) | 顶会论文专题报告 — 2026年5月全面版（ICML / AAAI / NeurIPS / ICLR / KDD / CVPR / ACL / EMNLP / SIGIR / WWW / CIKM / RecSys） | 11+ conferences, 80+ papers |
-| [investment-daily-2026-05-27](synthesis/investment-daily-2026-05-27.md) | 投资日报 — 2026-05-27（美股/港股/A 股科技与 AI 热点） | — |
-| [investment-daily-2026-05-28](synthesis/investment-daily-2026-05-28.md) | 投资日报 — 2026-05-28（美股/港股/A 股科技与 AI 热点） | — |
-| [investment-daily-2026-05-29](synthesis/investment-daily-2026-05-29.md) | 投资日报 — 2026-05-29（美股/港股/A 股科技与 AI 热点） | — |
-| [conference-digest-2026-06-01](synthesis/conference-digest-2026-06-01.md) | 顶会论文专题报告 — 2026年6月全面版（ICML / AAAI / NeurIPS / ICLR / KDD / CVPR / ACL / EMNLP / SIGIR / WWW / 各大实验室） | 10 conferences, 60+ papers |
-| [conference-digest-2026-06-03](synthesis/conference-digest-2026-06-03.md) | Conference & arXiv Digest — ICML/ICLR/KDD/WWW/SIGIR/CIKM + 各大实验室（2026-06-03全面版） | 12+ venues, 50+ papers, 7 industry labs |
-| [conference-digest-2026-06-04](synthesis/conference-digest-2026-06-04.md) | 顶会论文专题报告 — 2026年6月全面版（ICML / AAAI / NeurIPS / ICLR / KDD / CVPR / ACL / EMNLP / SIGIR / WWW / CIKM / RecSys） | 12+ conferences, 100+ papers, 8 industry labs |
+| [arxiv-daily](synthesis/2026-06-02/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 2, 2026) | ~30 papers |
+| [arxiv-daily](synthesis/2026-06-03/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 3, 2026) | ~28 papers |
+| [arxiv-daily](synthesis/2026-06-05/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 5, 2026) | ~25 papers |
+| [arxiv-daily](synthesis/2026-05-21/arxiv-daily.md) | arXiv Daily — AI & CTR (May 21, 2026) | - |
+| [arxiv-daily](synthesis/2026-05-23/arxiv-daily.md) | arXiv Daily — AI & CTR (May 23, 2026) | - |
+| [arxiv-daily](synthesis/2026-05-24/arxiv-daily.md) | arXiv Daily — AI & CTR (May 24, 2026) | - |
+| [arxiv-daily](synthesis/2026-05-25/arxiv-daily.md) | arXiv Daily — AI & CTR (May 25, 2026) | 27 papers |
+| [arxiv-daily](synthesis/2026-05-26/arxiv-daily.md) | arXiv Daily — AI & CTR (May 26, 2026) | 10 papers |
+| [arxiv-daily](synthesis/2026-05-27/arxiv-daily.md) | arXiv Daily — AI & CTR (May 27, 2026) | 8 papers |
+| [arxiv-daily](synthesis/2026-05-28/arxiv-daily.md) | arXiv Daily — AI & CTR (May 28, 2026) | 11 papers |
+| [arxiv-paper-check](synthesis/2026-06-01/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 1, 2026) | ~20 papers |
+| [arxiv-paper-check](synthesis/2026-06-02/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 2, 2026) | ~25 papers |
+| [conference-digest](synthesis/2026-05-25/conference-digest.md) | 顶会论文专题报告 — 2026年5月版 | 9 conferences |
+| [conference-digest](synthesis/2026-05-26/conference-digest.md) | 顶会论文专题报告 — 2026年5月深度版 | 11 conferences, 70+ papers |
+| [conference-digest](synthesis/2026-05-28/conference-digest.md) | 顶会论文专题报告 — 2026年5月全面版（NeurIPS Best Papers / ICLR Outstanding / AAAI / CVPR / ICML / EMNLP / KDD / RecSys / SIGIR） | 9 conferences |
+| [conference-digest](synthesis/2026-05-29/conference-digest.md) | 顶会论文专题报告 — 2026年5月全面版（ICML / AAAI / NeurIPS / ICLR / KDD / CVPR / ACL / EMNLP / SIGIR / WWW / CIKM / RecSys） | 11+ conferences, 80+ papers |
+| [investment-daily](synthesis/2026-05-27/investment-daily.md) | 投资日报 — 2026-05-27（美股/港股/A 股科技与 AI 热点） | — |
+| [investment-daily](synthesis/2026-05-28/investment-daily.md) | 投资日报 — 2026-05-28（美股/港股/A 股科技与 AI 热点） | — |
+| [investment-daily](synthesis/2026-05-29/investment-daily.md) | 投资日报 — 2026-05-29（美股/港股/A 股科技与 AI 热点） | — |
+| [conference-digest](synthesis/2026-06-01/conference-digest.md) | 顶会论文专题报告 — 2026年6月全面版（ICML / AAAI / NeurIPS / ICLR / KDD / CVPR / ACL / EMNLP / SIGIR / WWW / 各大实验室） | 10 conferences, 60+ papers |
+| [conference-digest](synthesis/2026-06-03/conference-digest.md) | Conference & arXiv Digest — ICML/ICLR/KDD/WWW/SIGIR/CIKM + 各大实验室（2026-06-03全面版） | 12+ venues, 50+ papers, 7 industry labs |
+| [conference-digest](synthesis/2026-06-04/conference-digest.md) | 顶会论文专题报告 — 2026年6月全面版（ICML / AAAI / NeurIPS / ICLR / KDD / CVPR / ACL / EMNLP / SIGIR / WWW / CIKM / RecSys） | 12+ conferences, 100+ papers, 8 industry labs |
 | [ctr-scaling-landscape](synthesis/ctr-scaling-landscape.md) | CTR Scaling Landscape — Industrial RecSys Scaling Laws | 49 papers |
-| [arxiv-digest-2026-06-03](synthesis/arxiv-digest-2026-06-03.md) | arXiv Digest — AI & CTR (June 3, 2026) | ~30 papers |
-| [arxiv-digest-2026-06-04](synthesis/arxiv-digest-2026-06-04.md) | arXiv Digest — AI & CTR (June 4, 2026) | ~40 papers |
-| [arxiv-digest-2026-06-05](synthesis/arxiv-digest-2026-06-05.md) | arXiv Digest — AI & CTR (June 5, 2026) | ~24 papers |
-| [conference-digest-2026-06-05](synthesis/conference-digest-2026-06-05.md) | 顶会论文专题报告 — 2026-06-05 全面版（NeurIPS Best / ICLR 2026 / CVPR 2026 / EMNLP 2025 / RecSys 2025 / SIGIR 2026 / AAAI 2026 / KDD 2026 + 各大实验室） | 12+ venues, 80+ papers, 12 labs |
-| [tech-report-digest-2026-05-25](synthesis/tech-report-digest-2026-05-25.md) | 各大 AI 公司最新技术报告汇总 — 17 家机构 Tech Report/System Card 调查 | 22 reports |
-| [tech-report-digest-2026-05-26](synthesis/tech-report-digest-2026-05-26.md) | 各大 AI 公司最新技术报告汇总 (第二版) — 21 家机构, 新增 DeepSeek R1/V3、GPT-5.1/5.2、Ministral 3、Qwen3、InternLM3 8B、Step-3 | 30 reports |
-| [tech-report-digest-2026-05-27](synthesis/tech-report-digest-2026-05-27.md) | 各大 AI 公司最新技术报告汇总 (第三版) — 21 家机构, 补充 DeepSeek V3.2、GPT-5 完整规格、Magistral、Nemotron 3、Kimi K2.5、Baichuan 等详细分析 | 30+ reports |
-| [tech-report-digest-2026-05-29](synthesis/tech-report-digest-2026-05-29.md) | 各大 AI 公司最新技术报告汇总 (第五版) — 26+ 家机构, 新增 Claude Opus 4.7 & Sonnet 4.6、Kimi K2.6、Grok 4.1 Fast、InternLM 104B、Seed 1.6、DeepSeek V4 完整规格 | 35+ reports |
-| [tech-report-digest-2026-06-01](synthesis/tech-report-digest-2026-06-01.md) | 各大 AI 公司最新技术报告汇总 (2026-06-01) — 12 家核心机构的详细 Tech Report/System Card 分析 | 24 reports |
-| [investment-daily-2026-06-01](synthesis/investment-daily-2026-06-01.md) | 投资日报 — 2026-06-01（美股/港股/A股科技与AI热点） | — |
-| [investment-daily-2026-06-03](synthesis/investment-daily-2026-06-03.md) | 投资日报 — 2026-06-03（美股/港股/A股科技与AI热点） | — |
-| [investment-daily-2026-06-04](synthesis/investment-daily-2026-06-04.md) | 投资日报 — 2026-06-04（美股/港股/A股科技与AI热点） | — |
-| [investment-daily-2026-06-05](synthesis/investment-daily-2026-06-05.md) | 投资日报 — 2026-06-05（美股/港股/A股/中概/新能源科技与AI热点） | — |
-| [tech-report-digest-2026-06-03](synthesis/tech-report-digest-2026-06-03.md) | 各大 AI 公司最新技术报告汇总 (第六版) — 20 家机构, 涵盖 DeepSeek V4、GPT-5.5、GLM-5、Kimi K2.6、Doubao Seed 2.0、Nemotron 3、Qwen3.7 Max 等 35+ 报告 | 35+ reports |
-| [tech-report-digest-2026-06-05](synthesis/tech-report-digest-2026-06-05.md) | 各大 AI 公司最新技术报告汇总 (第七版) — 22+ 家机构, DeepSeek V4、GPT-5.5、Llama 4、Gemini 3.1、Claude Opus 4.7/4.8、Mistral Large 3、Qwen3/3.5/3.7 Max、Phi-4、Apple AFM、Nemotron 3 (Mamba2-Transformer)、Grok-4.3、GLM-5、Kimi K2.6、Doubao Seed 2.0、Step 3.7 Flash 等 30+ 报告 | 30+ reports |
+| [arxiv-paper-check](synthesis/2026-06-06/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 6, 2026) | 27 papers, 7 CTR SOTA models |
+| [arxiv-digest](synthesis/2026-06-03/arxiv-digest.md) | arXiv Digest — AI & CTR (June 3, 2026) | ~30 papers |
+| [arxiv-digest](synthesis/2026-06-04/arxiv-digest.md) | arXiv Digest — AI & CTR (June 4, 2026) | ~40 papers |
+| [arxiv-digest](synthesis/2026-06-05/arxiv-digest.md) | arXiv Digest — AI & CTR (June 5, 2026) | ~24 papers |
+| [conference-digest](synthesis/2026-06-05/conference-digest.md) | 顶会论文专题报告 — 2026-06-05 全面版（NeurIPS Best / ICLR 2026 / CVPR 2026 / EMNLP 2025 / RecSys 2025 / SIGIR 2026 / AAAI 2026 / KDD 2026 + 各大实验室） | 12+ venues, 80+ papers, 12 labs |
+| [tech-report-digest](synthesis/2026-05-25/tech-report-digest.md) | 各大 AI 公司最新技术报告汇总 — 17 家机构 Tech Report/System Card 调查 | 22 reports |
+| [tech-report-digest](synthesis/2026-05-26/tech-report-digest.md) | 各大 AI 公司最新技术报告汇总 (第二版) — 21 家机构, 新增 DeepSeek R1/V3、GPT-5.1/5.2、Ministral 3、Qwen3、InternLM3 8B、Step-3 | 30 reports |
+| [tech-report-digest](synthesis/2026-05-27/tech-report-digest.md) | 各大 AI 公司最新技术报告汇总 (第三版) — 21 家机构, 补充 DeepSeek V3.2、GPT-5 完整规格、Magistral、Nemotron 3、Kimi K2.5、Baichuan 等详细分析 | 30+ reports |
+| [tech-report-digest](synthesis/2026-05-29/tech-report-digest.md) | 各大 AI 公司最新技术报告汇总 (第五版) — 26+ 家机构, 新增 Claude Opus 4.7 & Sonnet 4.6、Kimi K2.6、Grok 4.1 Fast、InternLM 104B、Seed 1.6、DeepSeek V4 完整规格 | 35+ reports |
+| [tech-report-digest](synthesis/2026-06-01/tech-report-digest.md) | 各大 AI 公司最新技术报告汇总 (2026-06-01) — 12 家核心机构的详细 Tech Report/System Card 分析 | 24 reports |
+| [investment-daily](synthesis/2026-06-01/investment-daily.md) | 投资日报 — 2026-06-01（美股/港股/A股科技与AI热点） | — |
+| [investment-daily](synthesis/2026-06-03/investment-daily.md) | 投资日报 — 2026-06-03（美股/港股/A股科技与AI热点） | — |
+| [investment-daily](synthesis/2026-06-04/investment-daily.md) | 投资日报 — 2026-06-04（美股/港股/A股科技与AI热点） | — |
+| [investment-daily](synthesis/2026-06-05/investment-daily.md) | 投资日报 — 2026-06-05（美股/港股/A股/中概/新能源科技与AI热点） | — |
+| [tech-report-digest](synthesis/2026-06-03/tech-report-digest.md) | 各大 AI 公司最新技术报告汇总 (第六版) — 20 家机构, 涵盖 DeepSeek V4、GPT-5.5、GLM-5、Kimi K2.6、Doubao Seed 2.0、Nemotron 3、Qwen3.7 Max 等 35+ 报告 | 35+ reports |
+| [tech-report-digest](synthesis/2026-06-05/tech-report-digest.md) | 各大 AI 公司最新技术报告汇总 (第七版) — 22+ 家机构, DeepSeek V4、GPT-5.5、Llama 4、Gemini 3.1、Claude Opus 4.7/4.8、Mistral Large 3、Qwen3/3.5/3.7 Max、Phi-4、Apple AFM、Nemotron 3 (Mamba2-Transformer)、Grok-4.3、GLM-5、Kimi K2.6、Doubao Seed 2.0、Step 3.7 Flash 等 30+ 报告 | 30+ reports |
 | [technical-roadmap](synthesis/technical-roadmap.md) | Technical Roadmap — AI Research Directions (2025-2026) | 121 papers |
-| [wq101-alpha-daily-2026-06-02](synthesis/wq101-alpha-daily-2026-06-02.md) | WorldQuant 101 Alpha 每日选股 — 2026-06-02 | — |
-| [wq101-alpha-daily-2026-06-03](synthesis/wq101-alpha-daily-2026-06-03.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-03) | — |
-| [wq101-alpha-daily-2026-06-05](synthesis/wq101-alpha-daily-2026-06-05.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-05) | — |
+| [wq101-alpha-daily](synthesis/2026-06-02/wq101-alpha-daily.md) | WorldQuant 101 Alpha 每日选股 — 2026-06-02 | — |
+| [wq101-alpha-daily](synthesis/2026-06-03/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-03) | — |
+| [wq101-alpha-daily](synthesis/2026-06-05/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-05) | — |

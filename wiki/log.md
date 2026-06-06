@@ -5,7 +5,7 @@
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
 ## [2026-06-03] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20
-- New page: wiki/synthesis/wq101-alpha-daily-2026-06-03.md
+- New page: wiki/synthesis/2026-06-03/wq101-alpha-daily.md
 - Applied Alpha#1/#6/#12/#19/#30/#41/#53 across 7 dimensions (momentum, reversal, volatility, volume-price, trend strength, mean reversion)
 - Top picks: MU(9), DELL(9), NVDA(8), AVGO(8), INTC(8), SNDK(8), MRVL(8)
 - Sectors: 10 Semis, 1 Tech Hardware, 3 Cloud/AI Software, 2 Storage, 1 Industrial, 1 E-Commerce, 1 Healthcare, 1 Consumer Staples
@@ -13,40 +13,40 @@
 - Updated: wiki/index.md, wiki/log.md
 
 ## [2026-06-04] search | arXiv Digest — AI & CTR (June 4, 2026)
-- New page: wiki/synthesis/arxiv-digest-2026-06-04.md
+- New page: wiki/synthesis/2026-06-04/arxiv-digest.md
 - Surveyed: cs.LG (236 entries), cs.IR (27 entries), cs.AI (207 entries) from Thu 4 Jun 2026
 - Papers highlighted: ~40 across CTR/Rec, AI/LLM Systems, IR/RAG
 - Top picks: DS-MLP (vanilla MLP + KD for CTR), STRIDE (13× faster TDA for LLMs), Rosetta Neuron scaling laws, Sequential Data Poisoning (single-attacker illusion), AutoLab (long-horizon agent benchmark), TMEM (parametric memory for agents)
 - Updated: wiki/index.md, wiki/log.md
 
 ## [2026-06-03] search | arXiv Digest — AI & CTR (June 3, 2026)
-- New page: wiki/synthesis/arxiv-digest-2026-06-03.md
+- New page: wiki/synthesis/2026-06-03/arxiv-digest.md
 - Surveyed: cs.LG (247 entries, Wed 3 Jun) + cs.IR (20 entries, Wed 3 Jun)
 - Papers highlighted: ~30 across CTR/Rec, AI/LLM Systems, IR/RAG
 - Top picks: Taiji (POPO, Kuaishou LLM4Rec), UniPinRec (Pinterest unified retrieval+ranking), Dynamic Short Convolutions (1.33× compute advantage), LLMs Need Sleep (memory consolidation), CtM LoRA merging (ICML 2026)
 - Updated: wiki/index.md, wiki/log.md
 
 ## [2026-06-03] synthesis | 投资日报 — 2026-06-03（美股/港股/A股科技与AI热点）
-- Summary: wiki/synthesis/investment-daily-2026-06-03.md
+- Summary: wiki/synthesis/2026-06-03/investment-daily.md
 - 美股焦点：COMPUTEX 2026（黄仁勋点石成金 Marvell +32.5%、NVIDIA Cosmos 3、NemoClaw）；Broadcom Q2 FY2026 盘后财报（$220亿+营收预期、AI $107亿）；HPE +19.5% AI需求；Microsoft Build Copilot Agent Mode；S&P 500 历史新高 7,620
 - 港股焦点：阿里港股 +6.5% AI重估；腾讯计划 WeChat AI Agent（13亿月活）
 - A股焦点：光模块/半导体设备/国产算力持续景气
 - 中概：智谱AI/MiniMax 6月8日纳入恒生科技
 - AI 主题：Agentic AI（Microsoft/Tencent/OpenAI/Anthropic）、物理 AI（Cosmos 3/NemoClaw）、特朗普 AI 行政令
-- New page: wiki/synthesis/investment-daily-2026-06-03.md
+- New page: wiki/synthesis/2026-06-03/investment-daily.md
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
 
 ## [2026-06-03] search | Tech Report Digest — 第六版 (2026-06-03)
-- New page: wiki/synthesis/tech-report-digest-2026-06-03.md
+- New page: wiki/synthesis/2026-06-03/tech-report-digest.md
 
 ## [2026-06-03] synthesis | Conference & arXiv Digest — 2026-06-03 全面版
-- New page: wiki/synthesis/conference-digest-2026-06-03.md
+- New page: wiki/synthesis/2026-06-03/conference-digest.md
 - Coverage: ICML 2026 (Bi-NAC, ∇-Reasoner, CAPO, f-GRPO, LAD, LambdaPO, KnowRL, Spectra, CraEG, Hierarchical Language Model, NSHA, AWARE), ICLR 2026 (GNN-as-Judge), KDD 2026 (FAT, MGOE), WWW 2026 (SparseCTR, GenCI, MoS), SIGIR 2026 (GenRec, OneRanker), CIKM 2026 (MuChator), RecSys 2025 (LONGER), ACL 2025 (ActorBreaker), Industry papers: ByteDance (TokenMixer-Large, HyFormer), Alibaba (EST), Tencent (RankUp, HeMix), Meta (Kunlun), Anthropic (Constitutional Classifiers++, Emotion Concepts, Introspective Awareness), Agent systems (DeepAgent, MetaAgent-X, AgentConductor, OpenSage), Game AI (OpenGame, PORTAL, AutoHarness), Video generation (Bernini, Self Forcing, SCD, GPDiT, ARLON), Benchmarks (ParaConsist)
 - Lab distribution: ByteDance AML(5), Alibaba(3), Tencent/Weixin(3), Meta Ads(1), Anthropic(3), JD.com(1)
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
 
 ## [2026-06-03] search | arXiv Daily — AI Research Survey (June 3, 2026)
-- New page: wiki/synthesis/arxiv-daily-2026-06-03.md
+- New page: wiki/synthesis/2026-06-03/arxiv-daily.md
 - Surveyed: cs.AI, cs.LG, cs.IR, cs.CL — May 22 – June 2, 2026
 - Papers highlighted: ~28 across LLM Architecture (7), Sequential Modeling (7), RecSys/CTR/Ads (9), Games/RL (7), Theory (1)
 - Institutions covered: Meta, LinkedIn, Kuaishou, Tencent(×2), Baidu, Alibaba, Xiaohongshu, LMU Munich, RightNow AI
@@ -57,12 +57,12 @@
 - Updated: wiki/index.md, wiki/log.md
 
 ## [2026-06-01] search | arXiv Paper Check — AI & CTR (June 1, 2026)
-- New page: wiki/synthesis/arxiv-paper-check-2026-06-01.md
+- New page: wiki/synthesis/2026-06-01/arxiv-paper-check.md
 - Sources: Mon 1 Jun 2026 cs.AI (226 entries) + cs.IR (19 entries) + cs.LG (264 entries), plus Fri 29 May late postings
 - Papers surveyed: ~20
 
 ## [2026-06-02] search | arXiv Paper Check — AI & CTR (June 2, 2026)
-- New page: wiki/synthesis/arxiv-paper-check-2026-06-02.md
+- New page: wiki/synthesis/2026-06-02/arxiv-paper-check.md
 - Sources: Mon 1 Jun 2026 cs.AI (36 new) + cs.IR (12 new) + cs.LG (171 new)
 - Papers surveyed: ~25
 - CTR highlights: Rec-Distill (24B teacher distillation), Scaling CVR Prediction (+2.6% gain), SaFeAU/KDD, Graph-GRPO, ACE/SIGIR, UniNote/KDD Ads, FOSTER
@@ -71,20 +71,20 @@
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
 
 ## [2026-06-01] search | 投资日报 — 2026-06-01（美股/港股/A股科技与AI热点）
-- New page: wiki/synthesis/investment-daily-2026-06-01.md
+- New page: wiki/synthesis/2026-06-01/investment-daily.md
 - Covers: US Mag 7 & AI stocks (NVDA, AVGO, DELL, GOOGL, MSFT, AAPL, META, TSLA, MU, AMD), A-share AI concept (华为昇腾产业链/光模块/半导体设备/算力), HK/Chinese stocks, AI hot themes (Agentic AI, Coding Agent, Physical AI, Edge AI, AI Safety)
 - Key events: NVIDIA COMPUTEX 2026 keynote, Broadcom Q2 earnings (June 3), Dell blowout earnings, Anthropic $30B ARR
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
 
 ## [2026-05-29] search | arXiv Daily — AI & CTR (May 28, 2026)
-- New page: wiki/synthesis/arxiv-daily-2026-05-28.md
+- New page: wiki/synthesis/2026-05-28/arxiv-daily.md
 - Sources: Thu, 28 May 2026 cs.AI (372 entries) + cs.IR (39 entries)
 - Papers covered: 11 (6 AI + 5 CTR/RecSys)
 - Highlights: CORE (rapid reasoning via contrastive reflection), Thinking as Compression, AutoScientists (decentralized scientific agent teams), CCO (scalable agent oversight), DeepMind AGI Cognitive Framework, UFRec sequential rec, LLM ads predictor, context rank-aware decomposition +87.5% throughput
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
 
 ## [2026-05-28] search | Conference Digest — 2026年5月全面版（顶会论文专题报告）
-- New page: wiki/synthesis/conference-digest-2026-05-28.md
+- New page: wiki/synthesis/2026-05-28/conference-digest.md
 - Sources: NeurIPS 2025 (Best Papers + Runners-Up + Test of Time), ICLR 2026 (Outstanding Papers), AAAI 2026, ICML 2026, CVPR 2026, EMNLP 2025, KDD 2025, RecSys 2025, SIGIR 2026
 - Highlights: Gated Attention (Alibaba Qwen), Artificial Hivemind (UW/Allen AI), 1000-Layer RL, Diffusion Memorization Theory, Transformers Succinctness (ICLR 2026 Outstanding), LLMs in Multi-Turn (ICLR 2026 Outstanding), SAM 3D (CVPR 2026 Best Paper), ReconVLA/VLA-Adapter (AAAI 2026 Oral), RLVR critique (NeurIPS 2025 Runner-Up)
 - Covers 9 conferences, ~70+ papers referenced
@@ -97,7 +97,7 @@
 - Updated: wiki/index.md
 
 ## [2026-05-25] ingest | arXiv Daily — 27 Papers from May 25 Digest
-- Source: wiki/synthesis/arxiv-daily-2026-05-25.md
+- Source: wiki/synthesis/2026-05-25/arxiv-daily.md
 - New paper pages: 27
   - wiki/papers/llm-training/shannon-scaling-law.md, wiki/papers/llm-training/strong-teacher-distillation.md
   - wiki/papers/llm-training/complete-mue-moe.md, wiki/papers/llm-training/diladiff-diffusion-lm.md
@@ -119,19 +119,19 @@
 - Updated: wiki/index.md (Papers, Methods, Concepts, Entities sections)
 
 ## [2026-05-25] search | arXiv Daily Digest (AI & CTR)
-- New page: wiki/synthesis/arxiv-daily-2026-05-25.md
+- New page: wiki/synthesis/2026-05-25/arxiv-daily.md
 - Sources: arXiv cs.AI new (164 entries), cs.LG new (203 entries), cs.IR new (16 entries), cs.CL new (85 entries)
 - Highlights: Shannon Scaling Law (LLMs as noisy channels), TubiFM (unified ranking), HARNESS-LM (Bing Ads SLM distillation), Netflix generative recommenders 1B params, RPORec (Kuaishou reasoning-augmented rec), SkillOpt (Microsoft agent skill optimizer), PCSP (game NPCs with shared RL), Precise (ByteDance flow-matching RL), Complete-muE (MoE hyperparameter transfer), GenStrat (strategic reasoning in LLMs)
 - 27 papers cataloged across 9 categories
 - Updated: wiki/index.md
 
 ## [2026-05-24] search | arXiv Daily Digest
-- New page: wiki/synthesis/arxiv-daily-2026-05-24.md
+- New page: wiki/synthesis/2026-05-24/arxiv-daily.md
 - Papers featured: Gated DeltaNet-2, MOSS, Ratchet, Compiling Agentic Workflows, IdleSpec, WorkstreamBench, Search-E1, Advancing Mathematics with Formal Proof, RPORec, LLM Retrieval for Stable Ads
 - Updated: wiki/index.md
 
 ## [2026-05-24] ingest | Games & RL Papers from arXiv Daily
-- Source: wiki/synthesis/arxiv-daily-2026-05-24.md (Section 7: Games & RL)
+- Source: wiki/synthesis/2026-05-24/arxiv-daily.md (Section 7: Games & RL)
 - New paper pages: 8
   - wiki/papers/games/odysseus-vlm-games.md
   - wiki/papers/games/opengame-agentic-coding.md
@@ -163,7 +163,7 @@
 - Updated: wiki/index.md (Synthesis section)
 
 ## [2026-05-25] query | 顶会论文专题报告 — 覆盖9个会议的最新接收论文
-- Created: wiki/synthesis/conference-digest-2026-05-25.md
+- Created: wiki/synthesis/2026-05-25/conference-digest.md
 - Conferences covered: ICML 2026, AAAI 2026, KDD 2026, SIGIR 2026, CVPR 2026, WWW 2026, NeurIPS 2025, ICLR 2026, ACL/EMNLP 2025
 - Total papers detailed: 45+ papers with full 5-part analysis (问题背景、方法详述、主要创新点、实验结果对比、局限性)
 - Topics: LLM training & theory, recommender systems, CTR prediction, ad retrieval, agents, game AI/RL, code generation, diffusion models, sequence modeling, benchmarks
@@ -204,7 +204,7 @@
 - Total paper pages now: 56
 
 ## [2026-05-25] search | 各大 AI 公司技术报告汇总 — 覆盖 17 家机构 22 份报告
-- Created: wiki/synthesis/tech-report-digest-2026-05-25.md
+- Created: wiki/synthesis/2026-05-25/tech-report-digest.md
 - Coverage: DeepSeek (V4), OpenAI (GPT-5/5.5/o3), Meta (Llama 4), Google (Gemini 2.5/3.5), Anthropic (Claude Opus 4/4.6/4.7), Mistral (Large 3/Small 4/Medium 3.5), Qwen (3.5), Yi (Lightning), Microsoft (Phi-4/reasoning/Mini), Apple (Foundation Models 2025), NVIDIA (Nemotron 3), xAI (Grok 4/4.3), Amazon (Nova/Nova 2), Zhipu AI (GLM-5/5.1), InternLM (2/3), Moonshot (Kimi K2/K2.6), ByteDance (Seed 2.0)
 - Key findings: MoE 主流化, 混合注意力架构崛起, Thinking Mode 成为标配, 长上下文竞争白热化, 合成数据训练突破, Muon 优化器普及
 - Updated: wiki/index.md (Synthesis section)
@@ -390,13 +390,13 @@
 - Source counts updated across: andrej-karpathy (10+), claude-code (3), cursor (2), github (3), cs231n (2), nanochat (5), tesla (3), tesla-autopilot (3), modded-nanogpt (3), openai-codex (3), model-context-protocol (2), march-of-nines (3), nanogpt (3), vibe-coding (2), build-for-agents (2), agentic-engineering (4), bacterial-code (3), claws (2), autoresearch (3), supply-chain-attacks (3), app-store-outdated (2), atrophy (2), slopacolypse (2), org-code (2), 10x-engineer (3)
 
 ## [2026-05-21] query | arXiv Daily Report (AI & CTR)
-- Created: wiki/synthesis/arxiv-daily-2026-05-21.md
+- Created: wiki/synthesis/2026-05-21/arxiv-daily.md
 - Sources: arXiv cs.AI new (31 entries), cs.IR new (5 entries + 11 replacements)
 - Highlights: CPO (DPO-RLHF non-equivalence), UG-Sep (ByteDance recommender 20% latency cut), PlanningBench, SOLAR
 - Updated: wiki/index.md (Synthesis section)
 
 ## [2026-05-23] query | arXiv Daily Report (AI & CTR)
-- Created: wiki/synthesis/arxiv-daily-2026-05-23.md
+- Created: wiki/synthesis/2026-05-23/arxiv-daily.md
 - Sources: arXiv cs.AI new (78 entries), cs.IR new (7 entries + replacements)
 - Highlights: FLUID (ID-free livestreaming rec), Sycophancy taxonomy, RPORec (RL + reasoning for rec), Airbnb LLM cold-start, ThinkGR (CoT + generative retrieval), ActiveGraph (event-sourced agents)
 - Updated: wiki/index.md (Synthesis section)
@@ -448,14 +448,14 @@
 - Note: This fills the 2025 gap between the Apr 10 post (already ingested) and the 2026 X-post corpus. The whole corpus coheres as "the year RLVR made reasoning models real and agentic engineering became thinkable."
 
 ## [2026-05-26] search | AI 公司技术报告汇总第二版 — 新增至 21 家机构
-- Updated: wiki/synthesis/tech-report-digest-2026-05-26.md (替代 05-25 版作为扩展版本)
+- Updated: wiki/synthesis/2026-05-26/tech-report-digest.md (替代 05-25 版作为扩展版本)
 - 新增 7 项: DeepSeek V3 (arXiv:2412.19437)、DeepSeek R1 (arXiv:2501.12948)、GPT-5.1/5.2 System Card 补充、Ministral 3、Qwen3、InternLM3 8B、Step-3 (阶跃星辰)
 - 补充 Baichuan 状态确认 (无近期报告)
 - 覆盖机构完整列表扩展至 21 家
 - Updated: wiki/index.md (Synthesis section)
 
 ## [2026-05-26] ingest | Conference Digest Deep Edition
-- Summary: wiki/synthesis/conference-digest-2026-05-26.md
+- Summary: wiki/synthesis/2026-05-26/conference-digest.md
 - Coverage: 11 conferences (ICML 2025, AAAI 2026, ICLR 2026, CVPR 2026, EMNLP 2025, ACL 2026, KDD 2026, RecSys 2025, WWW 2026, SIGIR 2026, CIKM 2025)
 - Papers: 70+ papers across LLM reasoning, RecSys scaling, CTR prediction, AI agents, diffusion models, multimodal VLMs
 - Labs covered: Google DeepMind, OpenAI, Meta, NVIDIA, Anthropic, ByteDance, Alibaba, Kuaishou, Apple, Microsoft Research, Spotify, JD.com
@@ -463,20 +463,20 @@
 - Contradictions: none
 
 ## [2026-05-27] search | 各大 AI 公司技术报告汇总第三版 — 21 家机构详细分析
-- Created: wiki/synthesis/tech-report-digest-2026-05-27.md
+- Created: wiki/synthesis/2026-05-27/tech-report-digest.md
 - 对比 05-26 版新增/补充: DeepSeek V3.2 (DSA + IMO/IOI 金牌)、GPT-5 System Card 详细规格、Llama 4 原生多模态细节、Claude 4 ASL-3/ASL-2 层级、Magistral 纯 RL 训练、Mistral Large 3 (675B MoE)、Phi-4-reasoning-vision、Apple PT-MoE 架构详解、NVIDIA Nemotron 3 系列 (Mamba-Transformer Hybrid MoE)、Grok 3 Colossus 200K GPU 超算、Kimi K2.5 视觉 Agent + Agent Swarm、Baichuan-M3 医疗 SOTA、Step-2 MFA 注意力
 - 综合趋势分析: MoE 主流化、Hybrid 架构 (Mamba+Transformer)、Thinking Mode 统一、Agentic 核心化、国产 GPU 适配、RL 重新聚焦
 - Updated: wiki/index.md (Synthesis section)
 
 ## [2026-05-26] ingest | arXiv Daily — May 26 Digest
-- Summary: wiki/synthesis/arxiv-daily-2026-05-26.md
-- New page: wiki/synthesis/arxiv-daily-2026-05-26.md
+- Summary: wiki/synthesis/2026-05-26/arxiv-daily.md
+- New page: wiki/synthesis/2026-05-26/arxiv-daily.md
 - Papers covered: 10 top picks from ~1,500 cs.AI + cs.LG entries
 - Highlights: Language Models Need Sleep, How Much Thinking is Enough, Verified SHAP (ICML 2026), Automated Benchmark Auditing, Agent-ToM, Feature Lottery bifurcation theory, Algometrics, GenLI (CTR), LLM-AutoSciLab
 - Updated: wiki/index.md
 
 ## [2026-05-27] synthesis | 投资日报 — 2026-05-27
-- Summary: wiki/synthesis/investment-daily-2026-05-27.md
+- Summary: wiki/synthesis/2026-05-27/investment-daily.md
 - 美股热点：Anthropic $900B 估值融资（IPO 预期 10 月）、SpaceX IPO 路线图（6 月 12 日交易）、Mag 7 分化（GOOGL/AMZN 领涨，MSFT/META 受 CapEx 压制）、AMD +114% YTD、SK Hynix 加入 $1T 俱乐部
 - AI 芯片：NVIDIA $5.5T 市值/Broadcom $2.07T/TSMC 2nm 扩产
 - AI 主题：GPT-5.5/DeepSeek V4/Claude 4.6 密集发布，1M+ token 成标配，AI 首次原创科学发现
@@ -484,21 +484,21 @@
 - 港股：Q1 公募重仓腾讯/阿里/美团/小米合计超千亿，2026 是 AI 商业化元年
 - A 股：科创 50 涨超 9%，57 家科创板创新高。算力芯片全线爆发（寒武纪/海光信息/中科曙光）。PCB/MLCC 受英伟达 BOM 拆解引爆。算力网上升为国家战略。
 - 关键主线：AI 算力全产业链（光模块→服务器→液冷→PCB→MLCC），存储芯片供给紧缺涨价
-- New page: wiki/synthesis/investment-daily-2026-05-27.md
+- New page: wiki/synthesis/2026-05-27/investment-daily.md
 - Updated: wiki/index.md
 
 ## [2026-05-28] synthesis | 投资日报 — 2026-05-28
-- Summary: wiki/synthesis/investment-daily-2026-05-28.md
+- Summary: wiki/synthesis/2026-05-28/investment-daily.md
 - 美股热点：Micron $1T 市值突破（+19%，UBS 目标 $1,625）、NVIDIA 财报后跌 6%（营收 $816B +85%）、Snowflake 盘后 +36%（$6B AWS 协议）、AMD +5%（Agentic AI "$200B TAM"）、Qualcomm 获字节跳动 ASIC 订单
 - 港股热点：快手+5.95%（可灵 AI 收入超 1.5 亿）、MiniMax/智谱首次纳入恒生科技指数（6 月 8 日生效）、深演智能 IPO 首日+273%（AI Agent 第一股）、小米 Q1 营收 991B（AI 三年 600 亿）
 - A 股热点：华为韬(τ)定律引爆国产芯片行情（逻辑折叠/等效 1.4nm/已量产 381 款芯片）、长鑫科技科创板 IPO 上会（Q1 营收 508 亿 +719%）、中际旭创盘中突破万亿市值、兆易创新毛利率 57% 创历史新高
 - AI 主题：Agentic AI 全面爆发（NVIDIA/AMD/阿里真武 M890/小米 miclaw/深演智能）、存储超级周期（DRAM 价格涨幅预测上调至 250-280%）、全球 AI CapEx $8300 亿（+79%）、EAGLE 3.1 推理加速 2x、Pointer OSWorld SOTA 83.6%
 - 核心主线：存储芯片超级周期 / Agentic AI 推理侧 / 中国半导体自主可控 / AI 基础设施资本开支 / 港股 AI 资产重估
-- New page: wiki/synthesis/investment-daily-2026-05-28.md
+- New page: wiki/synthesis/2026-05-28/investment-daily.md
 - Updated: wiki/index.md
 
 ## [2026-06-01] search | 各大 AI 公司技术报告汇总第四版 — 扩展至 26+ 家机构
-- Created: wiki/synthesis/tech-report-digest-2026-06-01.md
+- Created: wiki/synthesis/2026-06-01/tech-report-digest.md
 - 覆盖 26+ 家机构, 35+ 份技术报告
 - 新增 DeepSeek-R1 (arXiv:2501.12948, 纯 RL 推理涌现)、DeepSeek-V4、OpenAI o3/o4-mini/o4-pro 系统卡 (arXiv:2603.04567)、GPT-5.4 (arXiv:2605.07890)、Gemini 3.1 Pro (2M 上下文)、Claude Opus 4.6、xAI Grok 4 (arXiv:2601.04567)、InternLM 2.5、Step-3 (arXiv:2604.05678)
 - 维持 05-27 版已有的 DeepSeek V3/V3.2、GPT-5、Llama 4、Gemini 2.5、Claude Opus 4、Magistral/Ministral 3、Mistral Large 3、Qwen3、Yi-Lightning、Phi 系列、Apple、Nemotron 3、Amazon Nova、GLM-5、InternLM3、Kimi K2/K2.5、Seed 2.0、Step-2/Step-Audio、Baichuan-Omni/M3
@@ -506,7 +506,7 @@
 - Updated: wiki/index.md (Synthesis section)
 
 ## [2026-05-29] synthesis | 投资日报 — 2026-05-29
-- Summary: wiki/synthesis/investment-daily-2026-05-29.md
+- Summary: wiki/synthesis/2026-05-29/investment-daily.md
 - 美股热点：NVDA财报后消化（-9%）、MU/SK Hynix双双$1T市值（存储超级周期）、AVGO $1.89T+AI网络ASIC龙头、PLTR内幕抛售引关注
 - 大模型：GPT-5.5、DeepSeek V4、Claude 4.7、Gemini 3.1密集发布，国产豆包Seed 2.0 Pro杀入全球前五
 - 港股/恒科：智谱+MiniMax 6月8日纳入恒生科技指数（$12.5-17.5亿被动资金），腾讯混元Token增长10倍
@@ -517,20 +517,20 @@
 - Updated: wiki/index.md (Synthesis section)
 
 ## [2026-05-28] synthesis | arXiv Daily — AI & CTR (May 27, 2026)
-- Summary: wiki/synthesis/arxiv-daily-2026-05-27.md
+- Summary: wiki/synthesis/2026-05-27/arxiv-daily.md
 - 8 papers surveyed: AIRA-Compose/Design (agentic architecture discovery), Hierarchical LM with provable reasoning benefits (Ω(n) context vs Θ(log n) reasoning), GRAM (probabilistic recursive reasoning), RL Memory Agents curriculum study, LoopCTR (loop scaling for CTR), CADET (decoder-only transformer for ads at LinkedIn, 11.04% lift), LLM-HYPER (LLM hypernetworks for cold-start CTR), FEDIN (frequency-domain CTR, SIGIR 2026)
 - Key themes: agentic research automation, theoretical foundations for reasoning, CTR goes decoder-only, LLM+CTR convergence, inference-time scaling
-- New page: wiki/synthesis/arxiv-daily-2026-05-27.md
+- New page: wiki/synthesis/2026-05-27/arxiv-daily.md
 - Updated: wiki/index.md
 
 ## [2026-06-01] update | 各大 AI 公司技术报告汇总 — 精简重构为 12 家核心机构深度版
-- Rewritten: wiki/synthesis/tech-report-digest-2026-06-01.md (覆盖 12 家核心机构, 24 份报告)
+- Rewritten: wiki/synthesis/2026-06-01/tech-report-digest.md (覆盖 12 家核心机构, 24 份报告)
 - 相比此前版本的变化: 精简机构范围 (从 26+ 聚焦到 12 家,弃用低活跃机构), 补充 DeepSeek R1/V3/V4、OpenAI GPT-5/5.5/o3、Meta Llama 4、Google Gemini 2.5、Anthropic Claude Opus 4/4.6/4.8、Mistral Large 3/Small 4/Medium 3.5、Qwen3/3.7-Max、Microsoft Phi-4/Phi-4-Reasoing、Apple AFM 2025、NVIDIA Nemotron 3、xAI Grok 4.1/4.3/4.20、ByteDance Seed 2.0 完整规格
 - 综合趋势更新: 8 大趋势分析 (MoE 主流化、混合注意力、百万上下文、Thinking Mode、Agentic 核心化、推理效率、开源分化、安全层级)
 - Updated: wiki/index.md (Synthesis section)
 
 ## [2026-05-29] search | 各大 AI 公司技术报告汇总第五版 — 新增至 26+ 家机构
-- Updated: wiki/synthesis/tech-report-digest-2026-05-29.md (替代 06-01 版作为最新版本)
+- Updated: wiki/synthesis/2026-05-29/tech-report-digest.md (替代 06-01 版作为最新版本)
 - 新增: Claude Opus 4.7 & Sonnet 4.6 (Anthropic, May 2026, 3T/800B, GPQA 94.3% / SWE-bench 85.2%)
 - 新增: Kimi K2.6 (Moonshot AI, Apr 2026, 1.06T/100B active, 262K context, 288 experts)
 - 新增: Grok 4.1 Fast (xAI, Nov 2025, 2M context, 3x speed vs Grok 4)
@@ -543,7 +543,7 @@
 - Updated: wiki/index.md (Synthesis section)
 
 ## [2026-05-29] search | Conference Digest — 2026年5月全面版（顶会论文专题报告第二版）
-- New page: wiki/synthesis/conference-digest-2026-05-29.md
+- New page: wiki/synthesis/2026-05-29/conference-digest.md
 - Sources: arXiv cs.AI, cs.LG, cs.IR, cs.CL, cs.MA recent; ICML 2026, ICLR 2026, NeurIPS 2025, WWW 2026, SIGIR 2026, CIKM 2025, KDD 2026 accepted papers
 - Papers covered: 80+ papers across 11 categories/venues
 - Highlights: Bi-NAC (ICML 2026 bilevel actor-critic), GSPR (ICLR 2026 safety policy reasoner), NSPO (safety subspace projection), DAR (dual-KL RLHF), OXRL (51-algorithm post-training comparison), CADET (LinkedIn decoder-only CTR +11.04%), LoopCTR (recursive scaling), Memento (Meta RAG long-retention +1% CTR), GRAB (Baidu generative CTR +3.49%), DeepAgent (end-to-end reasoning agent), TRICE (tool-integrated reasoning recipe), SPIRAL (self-play reasoning), DeepMind Gemini Embedding 2, Generative UI, Aletheia math research agent, RePlaid (continuous diffusion LM), MaR (metacognition reward), SpecBench (reward hacking), FeatureBench (complex feature development)
@@ -551,7 +551,7 @@
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
 
 ## [2026-06-01] search | Conference Digest — 2026年6月全面版（顶会论文专题报告）
-- New page: wiki/synthesis/conference-digest-2026-06-01.md
+- New page: wiki/synthesis/2026-06-01/conference-digest.md
 - Sources: ICML 2026 (6,500+ papers, 500 highlights), AAAI 2026 (29K submissions), NeurIPS 2025 Best Papers + Runners-Up, ICLR 2026 Outstanding, KDD 2026, CVPR 2026 (4,090 accepted), ACL 2026, EMNLP 2025 Awards, SIGIR 2026, WWW 2026
 - Labs covered: Meta AI (Credit Assignment with Resets, HSTU, ULTRA-HSTU), ByteDance (Lance, Precise, RankMixer), Apple (SGE), NVIDIA (Nemotron 3 Super, DiLaDiff), Google DeepMind (Gemini Embedding 2, AGI Framework), Microsoft Research Asia (SkillOpt)
 - Highlights: Shannon Scaling Law, Gated Attention (NeurIPS Best), Artificial Hivemind, 1000-Layer RL, Diffusion Memorization Theory, Transformers Inherently Succinct (ICLR 2026 Outstanding), SAM 3D (CVPR Best), StreamingTalker (AAAI), Bi-NAC (ICML), HyFunc + Causal Attention + BenchBench (KDD), Infini-gram mini + LingGym (EMNLP), Lance multimodal + Nemotron 3 Super hybrid MoE + SGE tree search
@@ -567,13 +567,13 @@
 - Coverage: 47/47 (100%) of Awesome-CTR-Scaling papers now have dedicated pages
 
 ## [2026-06-02] synthesis | arXiv Daily — AI Research Survey (June 2, 2026)
-- Summary: wiki/synthesis/arxiv-daily-2026-06-02.md
-- New pages: wiki/synthesis/arxiv-daily-2026-06-02.md
+- Summary: wiki/synthesis/2026-06-02/arxiv-daily.md
+- New pages: wiki/synthesis/2026-06-02/arxiv-daily.md
 - Updated: wiki/index.md (synthesis section)
 - Description: Survey of ~30 recent papers across generative recommendation, CTR prediction, LLM reasoning/RL, IR/search, games/MARL, and LLM agents
 
 ## [2026-06-02] synthesis | WorldQuant 101 Alpha 每日选股 — 2026-06-02
-- New page: wiki/synthesis/wq101-alpha-daily-2026-06-02.md
+- New page: wiki/synthesis/2026-06-02/wq101-alpha-daily.md
 - Updated: wiki/index.md (Synthesis section)
 - Description: WorldQuant 101 Alpha factor-based US stock screening and ranking. Top 20 picks including MU, NVDA, AVGO, DELL, MSFT. S&P 500 at ATH 7,599.96. AI/tech momentum dominant. Factor breakdown: Alpha#1 (momentum) covers 15/20 stocks.
 
@@ -588,13 +588,13 @@
   - ⭐ Followers: 2024-2026 talk/X-post timeline, concept invention history
 
 ## [2026-06-04] synthesis | conference-digest-2026-06-04
-- New page: wiki/synthesis/conference-digest-2026-06-04.md
+- New page: wiki/synthesis/2026-06-04/conference-digest.md
 - Coverage: 12+ conferences (ICML 2026, ICLR 2026, NeurIPS 2025, AAAI 2026, CVPR 2026, KDD 2026, ACL 2025, EMNLP 2025, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025) + arXiv + 8 industry labs (ByteDance, Meta, Microsoft, Google DeepMind, Apple, Alibaba, Kuaishou, Tencent, Meituan, Netflix, etc.)
 - Papers covered: 100+ entries across LLM training theory, recommendation/CTR, agent systems, multi-modal/generative models, games/code, alignment/safety
 - Updated: wiki/index.md, wiki/log.md
 
 ## [2026-06-05] synthesis | Conference & arXiv Digest — 2026-06-05 全面版（NeurIPS Best / ICLR 2026 / CVPR 2026 / EMNLP 2025 / RecSys 2025 / SIGIR 2026 / AAAI 2026 / KDD 2026 + 各大实验室）
-- New page: wiki/synthesis/conference-digest-2026-06-05.md
+- New page: wiki/synthesis/2026-06-05/conference-digest.md
 - Coverage: 12+ venues (NeurIPS 2025 Best Papers, ICLR 2026 accepted list, CVPR 2026 accepted papers, EMNLP 2025 awards, RecSys 2025 accepted papers, SIGIR 2026 papers, AAAI 2026 proceedings, KDD 2026 Cycle 1&2 papers, WWW 2026 papers, CIKM 2025)
 - Industry labs: ByteDance (HyFormer, TokenMixer-Large, MixFormer), Microsoft Research (FlexRec, R3-REC, Learned Verbalization, Governable Personalization), Apple (SRLM, SGE, LaCy, MixAtlas, Amortized MIPS), Amazon (User Agency, AgentDR), Alibaba (SIGMA, MGOE), Tencent (OneRanker, R2Rank, TencentGR), NVIDIA (NeMo-4-PayPal), Anthropic (Claude Code Design Space), OpenAI (GPT-5 System Card), DeepSeek (ReaLM-Retrieve), Meta (Sparsity 2:4 Beyond), Google DeepMind (Gemini 3 Pro Image)
 - Key themes: LLM4Rec convergence, CTR scaling laws, agent systems maturation, data quality revolution, MoE standardization, generative recommendation paradigm
@@ -602,7 +602,7 @@
 - Updated: wiki/index.md, wiki/log.md
 
 ## [2026-06-05] search | arXiv Digest — AI & CTR (June 5, 2026)
-- New page: wiki/synthesis/arxiv-digest-2026-06-05.md
+- New page: wiki/synthesis/2026-06-05/arxiv-digest.md
 - Surveyed: cs.AI (418 entries), cs.IR (28 entries), cs.LG (376 entries) from Fri 5 Jun 2026
 - Papers highlighted: ~24 across CTR/Rec, AI/LLM Systems, Agents/Benchmarks
 - Top picks: Scaling Laws for Behavioral Foundation Models, Agents' Last Exam (ALE), Evaluation Blind Spot theory, Trust but Don't Verify (epistemic blind spots), State Commitment Learning (CERL)
@@ -610,14 +610,14 @@
 - Updated: wiki/index.md, wiki/log.md
 
 ## [2026-06-05] search | Tech Report Digest — 第七版 (2026-06-05)
-- New page: wiki/synthesis/tech-report-digest-2026-06-05.md
+- New page: wiki/synthesis/2026-06-05/tech-report-digest.md
 - Coverage: 22+ institutions, 30+ reports
 - Highlights: DeepSeek V4 (1.6T MoE, CSA/HCA, Muon), OpenAI GPT-5.5 (Agentic Coding), Meta Llama 4 + Muse Spark, Google Gemini 3.1 Pro (1M context), Anthropic Claude Opus 4.7/4.8 (SWE-bench 87.6%), Mistral Large 3 (675B MoE, pure RL), Qwen3 (36T tokens, 119 languages) + Qwen3.5 (Gated DeltaNet-2) + Qwen3.7 Max, Microsoft Phi-4 (data quality) + Phi-4-Reasoning-Vision (arXiv:2603.03975), Apple AFM (3B on-device, PT-MoE), NVIDIA Nemotron 3 (Mamba2-Transformer Hybrid MoE), xAI Grok-4.3 (Colossus 200K GPUs), Amazon Nova Premier, Zhipu GLM-5 (744B MoE, MIT), Moonshot Kimi K2.6 (1T MoE, 300-Agent Swarm), ByteDance Seed 2.0 (AIME 98.3), StepFun Step 3.7 Flash (198B, Apache 2.0), Yi-Lightning (arXiv:2412.01253), Intern-S1 (arXiv:2508.15763), Baichuan-Omni-1.5 (arXiv:2501.15368)
 - Key themes: MoE domination, hybrid attention (Mamba2+Transformer), long-context (up to 10M), thinking mode standard, agentic AI core, open-source divergence, synthetic data training
 - Updated: wiki/index.md, wiki/log.md
 
 ## [2026-06-04] synthesis | 投资日报 — 2026-06-04（美股/港股/A股科技与AI热点）
-- New page: wiki/synthesis/investment-daily-2026-06-04.md
+- New page: wiki/synthesis/2026-06-04/investment-daily.md
 - 核心事件：Broadcom AVGO Q2 FY2026 财报炸裂 — 营收 $222 亿 +48% YoY，AI $108 亿 +143%，Q3 指引 $294 亿（AI +200%）；Alphabet $800 亿 AI 股权融资（伯克希尔 $100 亿）; GTC Taipei 最后一日（RTX Spark / N1X / Cosmos 3 / Marvell +32.5%）；港股 6/2 报复性反弹恒科 +4.72%（腾讯 +10.5%）
 - 美股焦点：AVGO 盘后 +10%（高 confidence），DELL/HPE AI 服务器业绩爆发，Meta Business Agent 货币化 +3%，NVDA PC 芯片战略
 - 港股焦点：恒科超卖反弹（PE 20x 近 5 年 10% 分位），腾讯 WeChat AI Agent + 混元大模型
@@ -628,7 +628,7 @@
 - Updated: wiki/index.md, wiki/log.md
 
 ## [2026-06-05] synthesis | 投资日报 — 2026-06-05（美股/港股/A股/中概/新能源科技与AI热点）
-- New page: wiki/synthesis/investment-daily-2026-06-05.md
+- New page: wiki/synthesis/2026-06-05/investment-daily.md
 - 美股焦点：Broadcom -12.59%（AI指引不及最高预期）；Alphabet $847.5亿股权融资（伯克希尔$100亿）；Parabolic 7（SanDisk +623% YTD、MRVL +32.5%、DELL AI服务器+757%）；NVIDIA COMPUTEX（RTX Spark/Vera CPU/$800亿回购）；Mag 7分化（NVDA唯一周涨，AMZN -7.6%最弱）
 - 港股焦点：MiniMax/智谱AI 6月5日纳入恒生科技指数（南向资金预计HK$1390亿）；南向5月首次净流出HK$36亿（转向A股）；腾讯WeChat AI Agent即将上线；阿里+6.5% AI重估
 - A股焦点：光模块领涨（中际旭创日成交¥438亿A股第一/新易盛¥337亿第二，均创新高）；CPU重回聚光灯（NVIDIA Vera/AMD Venice量产+涨价潮）；海光+68%营收；比亚迪4nm智驾芯片量产
@@ -638,7 +638,7 @@
 - Updated: wiki/index.md, wiki/log.md
 
 ## [2026-06-05] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-05)
-- New page: wiki/synthesis/wq101-alpha-daily-2026-06-05.md
+- New page: wiki/synthesis/2026-06-05/wq101-alpha-daily.md
 - Applied Alpha#1/#6/#12/#19/#30/#41/#53 across 7 dimensions
 - Top picks: MU(9), MRVL(9), DELL(9), SNDK(9), HPE(8), NVDA(8), AVGO(8)
 - Sectors: 5 Semiconductors, 3 Storage, 2 AI Hardware, 3 Cloud/AI Software, 1 Financial, 1 Healthcare, 1 Energy, 1 Consumer Staples, 1 Semiconductor Equipment, 1 IT Infrastructure
@@ -647,8 +647,16 @@
 - Updated: wiki/index.md, wiki/log.md
 
 ## [2026-06-05] search | arXiv Daily — AI Research Survey (June 5, 2026)
-- New page: wiki/synthesis/arxiv-daily-2026-06-05.md
+- New page: wiki/synthesis/2026-06-05/arxiv-daily.md
 - Coverage: ~25 papers across LLM reasoning, diffusion LLMs, CTR prediction, advertising recommender systems, RL for games, and LLM safety/interpretability
 - Companies featured: LinkedIn (CADET), Kuaishou (GR4AD), Meta (Memento), Tencent/Weixin (RankUp), Alibaba/Taobao (EST), Baidu (GRAB), RUCAIBox (DS-MLP)
 - Key themes: Generative recommenders replacing DLRMs at scale (5 major platforms); latent reasoning + dLLMs as emerging LLM paradigms; agentic RL with convergence guarantees
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-06-06] search | arXiv Paper Check — AI & CTR (June 6, 2026)
+- New page: wiki/synthesis/2026-06-06/arxiv-paper-check.md
+- Surveyed: cs.AI (108 new + 172 cross, Fri 5 Jun), cs.LG (232 entries, Fri 5 Jun), cs.IR (20 entries, Fri 5 Jun), plus Sat 6 Jun RSS
+- Papers highlighted: 27 across CTR/Rec and AI/LLM Systems
+- Top picks: DS-MLP (dual-stream MLP + KD for CTR), LoopCTR (loop scaling, train-multi-loop infer-zero-loop), EST (Taobao unified sequence CTR), Agents' Last Exam (2.6% pass rate on GDP-relevant tasks), LeanMarathon (258 lemmas, 0 sorries across 4 Erdős problems), Image Generators are Generalist Vision Learners (Google/DeepMind emergent visual understanding)
+- Key themes: CTR scaling laws heat up (5 industrial papers); economically valuable agent benchmarks; AI co-mathematician viable; transformers' fundamental state tracking limits proven
 - Updated: wiki/index.md, wiki/log.md
