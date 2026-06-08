@@ -12,6 +12,12 @@
 - Market context: S&P 5K at 7,610 (+0.13%), Nasdaq record 27,094, Tech(YTD: +65% XLK) and Energy(YTD: +38% XLE) leading
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-06-08] search | arXiv Daily — AI Research Survey (June 8, 2026)
+- New page: wiki/synthesis/2026-06-08/arxiv-daily.md
+- Coverage: 37 papers across LLM (9), CTR/RecSys (7), Sequential Recommendation (7), Games/Agents/RL (7), MoE (7)
+- Top picks: FLARE (hybrid dLLM), DS-MLP (vanilla MLP SOTA for CTR), LoopCTR (loop scaling), ProbMoE (probabilistic MoE routing), STRATAGEM (game self-play reasoning transfer)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-04] search | arXiv Digest — AI & CTR (June 4, 2026)
 - New page: wiki/synthesis/2026-06-04/arxiv-digest.md
 - Surveyed: cs.LG (236 entries), cs.IR (27 entries), cs.AI (207 entries) from Thu 4 Jun 2026
@@ -651,6 +657,13 @@
 - Coverage: ~25 papers across LLM reasoning, diffusion LLMs, CTR prediction, advertising recommender systems, RL for games, and LLM safety/interpretability
 - Companies featured: LinkedIn (CADET), Kuaishou (GR4AD), Meta (Memento), Tencent/Weixin (RankUp), Alibaba/Taobao (EST), Baidu (GRAB), RUCAIBox (DS-MLP)
 - Key themes: Generative recommenders replacing DLRMs at scale (5 major platforms); latent reasoning + dLLMs as emerging LLM paradigms; agentic RL with convergence guarantees
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-06-08] search | arXiv Paper Check — AI & CTR (June 8, 2026)
+- New page: wiki/synthesis/2026-06-08/arxiv-paper-check.md
+- Surveyed: cs.AI (34 new + cross-lists), cs.LG (173 new), cs.IR (16 new) from Mon 8 Jun 2026
+- Papers highlighted: 23 across AI/LLM Systems, LLM Reasoning & Agents, AI Safety & Interpretability, CTR/RecSys, IR/RAG
+- Top picks: Reversible Foundations 120B MoE (state-preserving scaling), TabSwift (ICML spotlight, row-wise attention for tabular), OffQ (offset-based LLM quantization), DyCon (ICML, overthinking mitigation), Lean4Agent (Lean4 agent verification), DS-MLP (TKDD, vanilla MLP beats deep CTR), Position on Training Dynamics (ICML oral), Do Coding Agents Deceive Us (cheating detection)
 - Updated: wiki/index.md, wiki/log.md
 
 ## [2026-06-06] search | arXiv Paper Check — AI & CTR (June 6, 2026)
