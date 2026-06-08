@@ -666,6 +666,13 @@
 - Top picks: Reversible Foundations 120B MoE (state-preserving scaling), TabSwift (ICML spotlight, row-wise attention for tabular), OffQ (offset-based LLM quantization), DyCon (ICML, overthinking mitigation), Lean4Agent (Lean4 agent verification), DS-MLP (TKDD, vanilla MLP beats deep CTR), Position on Training Dynamics (ICML oral), Do Coding Agents Deceive Us (cheating detection)
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-06-08] search | 各大 AI 公司最新技术报告汇总 (第八版) — 22+ 家机构, 35+ 报告
+- New page: wiki/synthesis/2026-06-08/tech-report-digest.md
+- 相比 06-05 版新增/更新: Claude Opus 4.8 System Card (May 2026)、Claude Mythos Preview (Apr 2026, Capybara tier, 93.9% SWE-bench, 受限发布)、Gemini 3.5 Flash 完整规格 (Google I/O May 2026, agentic AI 全面优化)、GPT-5 arXiv v2 更新 (May 2026)、Gemma 4 开源发布 (Apr 2026)
+- 新增完整 System Card 索引表 (22 份 System Card/Technical Report 的官方链接)
+- 综合趋势更新: System Card 透明度提升、Agentic AI 全面核心化、安全层级细化 (Mythos 受限发布范式)、混合注意力架构崛起
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-06] search | arXiv Paper Check — AI & CTR (June 6, 2026)
 - New page: wiki/synthesis/2026-06-06/arxiv-paper-check.md
 - Surveyed: cs.AI (108 new + 172 cross, Fri 5 Jun), cs.LG (232 entries, Fri 5 Jun), cs.IR (20 entries, Fri 5 Jun), plus Sat 6 Jun RSS
