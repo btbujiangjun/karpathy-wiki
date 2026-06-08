@@ -1,301 +1,199 @@
 ---
-title: arXiv Daily — AI Research Survey (June 8, 2026)
+title: "arXiv Daily — June 8, 2026"
 type: synthesis
 created: 2026-06-08
 updated: 2026-06-08
-sources: []
-tags: [arxiv-daily, ai, llm, ctr, recommendation, sequential-modeling, moe, games]
+tags: [arxiv, daily, llm, recommendation, ctr, sequential-modeling, games, agents, scaling]
 ---
 
-# arXiv Daily — AI Research Survey
+# arXiv Daily — June 8, 2026
 
-> Date: 2026-06-08 (Sun)
-> Coverage: ~35 papers across LLM, CTR prediction, recommendation systems, games/agents, MoE
-
----
-
-## Large Language Models
-
-### 1. Generative Criticality in Large Language Model Temperature Scaling
-- **Link**: [arxiv.org/html/2606.06238](https://arxiv.org/html/2606.06238)
-- **Authors**: N/A (Qwen3 family, 0.6B–32B)
-- **Key Innovation**: Proposes a statistical-field framework treating token embeddings as continuous spin variables. Finds a sharp susceptibility peak near characteristic temperature T_c ≈ 1.4 with power-law scaling, suggesting a phase-transition-like phenomenon in LLM decoding.
-- **Highlights**: Robust across model scales (Qwen3 0.6B–32B) and prompt categories. Intrinsic dimension estimated by TwoNN method reaches a minimum near T_c.
-- **Tags**: `LLM` `temperature-scaling` `statistical-physics` `critical-phenomena`
-
-### 2. LLM Self-Recognition: Steering and Retrieving Activation Signatures
-- **Link**: [arxiv.org/html/2606.06315](https://arxiv.org/html/2606.06315)
-- **Authors**: Thibaud Ardoin et al.
-- **Key Innovation**: Demonstrates reliable self-recognition of LLM outputs via internal activation signatures. Introduces steering-based watermarking by injecting random sparse vectors into the residual stream, achieving >98% attribution accuracy across multiple detection settings.
-- **Highlights**: Works on Llama-3.1-8B, Ministral-3-8B; no quality degradation. Enables multi-model attribution.
-- **Tags**: `LLM` `watermarking` `attribution` `interpretability` `AI-safety`
-
-### 3. FLARE: Diffusion for Hybrid Language Model
-- **Link**: [arxiv.org/pdf/2606.01774](https://arxiv.org/pdf/2606.01774)
-- **Authors**: Yuchen Zhu, Jing Shi, Chongjian Ge, Hao Tan, Yiran Xu, Wanrong Zhu, Jason Kuen, Koustava Goswami, Rajiv Jain, Yongxin Chen, Molei Tao, Jiuxiang Gu
-- **Key Innovation**: Converts hybrid-attention (softmax + linear) AR LLMs into diffusion LLMs (dLLMs). Identifies transfer-data quality as dominant factor for preserving AR capability. Builds unified inference system supporting both AR verified decoding and diffusion parallel denoising.
-- **Highlights**: FLARE-2B/4B/9B competitive dLLM quality. Hardware-aware linear attention for diffusion visibility patterns. One checkpoint supports two generation regimes.
-- **Tags**: `LLM` `diffusion` `hybrid-attention` `inference-efficiency` `dLLM`
-
-### 4. Entropy Gate: Entropy Quenching for Near-Lossless Token Compression in LLM Pipelines
-- **Link**: [arxiv.org/html/2606.03739](https://arxiv.org/html/2606.03739)
-- **Authors**: N/A
-- **Key Innovation**: Token compression via entropy quenching — a thermodynamic process freezing out low-energy tokens. Achieves 40–60% compression while maintaining semantic fidelity S_E > 0.80. Provides mathematical guarantee (S_E ≥ θ) that compressed prompts preserve information energy.
-- **Highlights**: Stateless, model-agnostic, deploys as OpenAI-compatible HTTP proxy, 88–96% compression for agentic workloads combined with external memory.
-- **Tags**: `LLM` `token-compression` `prompt-optimization` `inference-efficiency`
-
-### 5. Enhancing LLM Metacognition via Cognitive Pairwise Training
-- **Link**: [arxiv.org/html/2606.00869](https://arxiv.org/html/2606.00869)
-- **Authors**: Weitao Li, Hao Zhou, Xuanyu Lei, Fandong Meng, Yuanhang Liu, Jingyi Ren, Ante Wang, Xiaolong Wang, Yuanchi Zhang, Fuwen Luo, Guangwen Yang, Lin Gan, Weizhi Ma, Yang Liu (Tsinghua University)
-- **Key Innovation**: Cognitive Pairwise Training (CPT) — a mid-training stage that teaches LLMs to compare reasoning traces and internalize a reasoning-quality discrimination boundary. CPT+RL at 14B outperforms SFT+RL by +2.2 math-average and +5.2 abstention-F1.
-- **Highlights**: Works across Qwen3, LLaMA, Olmo from 3B–32B. Improves math–metacognition tradeoff. Generalizes to RAG-style uncertainty handling.
-- **Tags**: `LLM` `metacognition` `reasoning` `RL` `alignment`
-
-### 6. Linguistic Productivity in LLMs: Models Coerce, but do not Preempt
-- **Link**: [arxiv.org/html/2606.02953](https://arxiv.org/html/2606.02953)
-- **Authors**: N/A
-- **Key Innovation**: Tests usage-based linguistic theories (entrenchment vs. preemption) in LLMs. Models successfully generalize from positive evidence (coercion) but fail to use negative evidence (preemption) to constrain overgeneralization.
-- **Highlights**: Even large models (Qwen3-32B, GPT-4o-mini) do not deploy negative evidence like humans. Points to a fundamental generalization gap.
-- **Tags**: `LLM` `linguistics` `productivity` `cognitive-science` `generalization`
-
-### 7. Negligible in Size, Significant in Effect: On Scale Vectors in Large Language Models
-- **Link**: [arxiv.org/html/2605.26895](https://arxiv.org/html/2605.26895)
-- **Authors**: N/A
-- **Key Innovation**: Systematic study of normalization scale vectors in LLMs. Shows they improve optimization (not expressivity) via self-amplifying preconditioning. Proposes branch-specific heterogeneity, improved placement, and magnitude-direction reparameterization.
-- **Highlights**: Experiments on dense and MoE models 0.12B–2B. Lower terminal loss than well-tuned baselines across AdamW and Muon optimizers.
-- **Tags**: `LLM` `normalization` `scale-vectors` `optimization` `pre-training`
-
-### 8. Mimir: Large-scale Multilingual Concept Modeling
-- **Link**: [arxiv.org/html/2605.25263](https://arxiv.org/html/2605.25263)
-- **Authors**: N/A
-- **Key Innovation**: First Large Concept Model trained on multilingual data. 1.6B model trained on 38.9B sentences across 46 languages, instruction-tuned on 66.8M sentences across 35 languages. Uses sentence-level "concept" representations instead of tokens.
-- **Highlights**: Leverages SONAR sentence embeddings. Inherently multilingual generation via shared concept space with per-language decoders.
-- **Tags**: `LLM` `concept-modeling` `multilingual` `LCM`
-
-### 9. Chatbots Output Meaningful (but Problematic) Language
-- **Link**: [arxiv.org/html/2606.02973](https://arxiv.org/html/2606.02973)
-- **Authors**: N/A (NSF-funded)
-- **Key Innovation**: Philosophical argument that LLM outputs are meaningful under existing theories of human language meaning. Argues against intentionalist accounts that deny meaning to AI outputs.
-- **Highlights**: Proposes that meaning is a low bar — does not require mental states or intentions. LLMs acquire lexical items mechanistically through exposure.
-- **Tags**: `LLM` `philosophy-of-language` `meaning` `semantics`
+Curated recent papers across AI, LLMs, recommendation, advertising, CTR, sequential modeling, games, and related areas. Compiled from arXiv new submissions (Jun 2–8, 2026).
 
 ---
 
-## CTR Prediction & Recommender Systems (Industrial)
+## LLMs & Foundation Models
 
-### 10. Dual-Stream MLP is All You Need for CTR Prediction (DS-MLP)
-- **Link**: [arxiv.org/html/2606.04944](https://arxiv.org/html/2606.04944)
-- **Authors**: RUCAIBox
-- **Key Innovation**: Uses knowledge distillation to consolidate explicit feature interaction learning into a main MLP, while a parallel MLP captures implicit interactions. Achieves SOTA with only vanilla MLP structure.
-- **Highlights**: SOTA across Criteo, Avazu, Movielens. Low latency comparable to efficient baselines. Code available.
-- **Tags**: `CTR` `recommender-system` `knowledge-distillation` `MLP`
+### 1. Reversible Foundations: Training a 120B Sparse MoE through State-Preserving Scaling
+- **Authors**: Rohan Shravan
+- **Institution**: Independent
+- **Abstract**: Trains a 120B-parameter sparse MoE (LightningLM 0.1V) on a single 8-GPU node via recurrence backbone, reversible activations (flat memory), and state-preserving growth from a 2B dense seed through 5B MoE → 9B MoE → 120B MoE (460 routed experts, top-12 routing). Uses TQP strategy (quantized base weights + trained LoRA adapters) to cut optimizer memory ~45×.
+- **Key Innovation**: Single-node training of 100B+ MoE; reversibility for activation memory; state-preserving scaling methodology.
+- **Link**: https://arxiv.org/abs/2606.07404
 
-### 11. HeMix: Query-Mixed Interest Extraction and Heterogeneous Interaction
-- **Link**: [arxiv.org/pdf/2602.09387](https://arxiv.org/pdf/2602.09387)
-- **Authors**: Fangye Wang, Guowei Yang et al.
-- **Key Innovation**: Scalable CTR model unifying adaptive sequence tokenization (Query-Mixed Interest Extraction) and heterogeneous interaction (HeteroMixer block). Deployed on AMAP (AutoNavi).
-- **Highlights**: +3.61% GMV, +2.78% PV_CTR, +2.12% UV_CVR over DLRM in online A/B test. Favorable scaling behavior.
-- **Tags**: `CTR` `recommender-system` `industrial` `location-based` `AMAP`
+### 2. Recursive Language Models (RLMs)
+- **Authors**: Alex L. Zhang, Tim Kraska, Omar Khattab (MIT, Stanford)
+- **Abstract**: An inference-time scaling paradigm enabling LLMs to process arbitrarily long prompts by recursively calling themselves over snippets. Outperforms GPT-5 by 26% (median) across long-context tasks. RLM-Qwen3-8B post-trained model approaches vanilla GPT-5 quality on 3 tasks.
+- **Key Innovation**: Recursive inference for arbitrary-length context; programmatic prompt decomposition.
+- **Link**: https://arxiv.org/abs/2512.24601 (updated May 2026)
 
-### 12. LoopCTR: Loop Scaling Paradigm for CTR Prediction
-- **Link**: [arxiv.org/pdf/2604.19550](https://arxiv.org/pdf/2604.19550)
-- **Authors**: N/A
-- **Key Innovation**: Introduces loop scaling — recursive reuse of shared model layers decouples computation from parameter growth. Train-multi-loop, infer-zero-loop strategy achieves SOTA with substantially lower inference cost.
-- **Highlights**: Sandwich architecture (Entry/Loop/Exit Block) with Hyper-Connected Residuals and MoE. Oracle analysis reveals 0.02–0.04 AUC headroom. Zero-loop inference already outperforms all baselines.
-- **Tags**: `CTR` `scaling` `loop` `parameter-efficiency` `recursive`
+### 3. DyCon: Dynamic Reasoning Control via Evolving Difficulty Modeling
+- **Authors**: Tengyao Tu et al. (ICML 2026)
+- **Abstract**: Training-free framework that models evolving difficulty during reasoning via latent step-level embeddings, dynamically controlling reasoning depth to mitigate LLM "overthinking" (redundant reasoning steps). Tested on 4 models (4B–32B) across 12 math/reasoning/coding benchmarks.
+- **Key Innovation**: Dynamic reasoning depth control without training; difficulty is linearly encoded in step embeddings.
+- **Link**: https://arxiv.org/abs/2606.07108
 
-### 13. HyFormer: Unifying Sequence Modeling and Feature Interaction in CTR
-- **Link**: [arxiv.org/pdf/2601.12681](https://arxiv.org/pdf/2601.12681)
-- **Authors**: ByteDance (Douyin Search)
-- **Key Innovation**: Hybrid transformer with Global Tokens serving as shared semantic interface between long behavior sequences and heterogeneous features. Alternates between Query Decoding and Query Boosting.
-- **Highlights**: Deployed on billion-scale Douyin Search. Outperforms LONGER + RankMixer baselines. Superior scaling behavior. Online A/B test validated.
-- **Tags**: `CTR` `recommender-system` `sequence-modeling` `feature-interaction` `ByteDance`
+### 4. Position: Don't Just "Fix it in Post" — A Science of AI Must Study Training Dynamics
+- **Authors**: Stella Biderman, Mohammad Aflah Khan, Niloofar Mireshghallah, Catherine Arnett, Fazl Barez, Naomi Saphra (EleutherAI, etc.)
+- **Abstract**: Argues AI research must study training dynamics (not just post-hoc analysis) to achieve prediction, intervention, and design of model behaviors. Examines scaling laws, mechanistic interpretability, fairness, memorization, simplicity bias.
+- **Key Innovation**: Oral at ICML 2026; lays out research agenda for training dynamics science.
+- **Link**: https://arxiv.org/abs/2606.06533
 
-### 14. EST: Efficiently Scalable Transformer for CTR Prediction
-- **Link**: [arxiv.org/pdf/2602.10811](https://arxiv.org/pdf/2602.10811)
-- **Authors**: Taobao (Alibaba)
-- **Key Innovation**: Unified modeling of all CTR inputs in single sequence without prior aggregation. Lightweight Cross-Attention (LCA) prunes redundant self-interactions; Content Sparse Attention (CSA) leverages content similarity.
-- **Highlights**: Deployed on Taobao display advertising. +3.27% RPM, +1.22% CTR online. Exhibits stable power-law scaling.
-- **Tags**: `CTR` `scaling` `transformer` `industrial` `Taobao`
-
-### 15. FEDIN: Frequency-Enhanced Deep Interest Network for CTR Prediction
-- **Link**: [arxiv.org/html/2605.01726](https://arxiv.org/html/2605.01726)
-- **Authors**: N/A (SIGIR 2026)
-- **Key Innovation**: Discovers distinct spectral entropy distributions in attention scores conditioned on positive vs. negative items. Introduces target-aware spectrum filtering in frequency domain branch alongside time-domain modeling.
-- **Highlights**: Dual-branch architecture (frequency + time). SOTA on Tmall, Taobao, Alipay datasets. Robust to noise.
-- **Tags**: `CTR` `frequency-domain` `sequential-recommendation` `SIGIR26`
-
-### 16. CADET: Context-Conditioned Ads CTR Prediction with Decoder-Only Transformer
-- **Link**: [arxiv.org/html/2602.11410](https://arxiv.org/html/2602.11410)
-- **Authors**: LinkedIn
-- **Key Innovation**: End-to-end decoder-only transformer for ads CTR. Context-conditioned decoding with multi-tower prediction heads resolving the chicken-and-egg problem between pCTR and ad position. Self-gated attention, timestamp-based RoPE.
-- **Highlights**: +11.04% CTR lift over LiRank (DCNv2 + sequential encoder). Deployed on LinkedIn's main sponsored feed traffic.
-- **Tags**: `CTR` `advertising` `decoder-only` `transformer` `LinkedIn`
+### 5. OpenSkill: Open-World Self-Evolution for LLM Agents
+- **Authors**: Zhiling Yan et al. (Lehigh, UIC, etc.)
+- **Abstract**: A framework for agents to bootstrap skills and verification signals from scratch using open-world resources (docs, repos, web) without target-task supervision. Builds virtual tasks for self-practice. Attains best automated pass rate across 3 benchmarks.
+- **Key Innovation**: Zero-supervision self-evolution; skill transfer across models.
+- **Link**: https://arxiv.org/abs/2606.06741
 
 ---
 
-## Sequential Recommendation
+## Agents & AI Systems
 
-### 17. MLTFR: Multi-LLM Token Filtering and Routing for Sequential Recommendation
-- **Link**: [arxiv.org/abs/2604.18200](https://arxiv.org/abs/2604.18200)
-- **Authors**: N/A
-- **Key Innovation**: Uses LLM token embeddings directly (no textual input) for sequential recommendation. Multi-LLM token filtering + Mixture-of-Experts routing with Fisher-weighted semantic consensus.
-- **Highlights**: Addresses semantic misalignment, insufficient task adaptation, and limited coverage of single-LLM representations. Corpus-free (no external text needed).
-- **Tags**: `sequential-recommendation` `LLM` `MoE` `token-embedding`
+### 6. How AI Agents Reshape Knowledge Work: Autonomy, Efficiency, and Scope
+- **Authors**: Jeremy Yang, Kate Zyskowski, Noah Yonack, Jerry Ma (Perplexity AI)
+- **Abstract**: Production study comparing Perplexity Search vs. Computer (autonomous agent). Computer performs 26 min autonomous work/session vs 33s for Search; reduces task completion time from 269→36 min (87% time reduction, 94% cost reduction); dissatisfaction rates 55% lower. Agents expand work scope and shift users toward higher-order tasks.
+- **Key Innovation**: Real-world production data quantifying agent impact on knowledge work.
+- **Link**: https://arxiv.org/abs/2606.07489
 
-### 18. HyTRec: Hybrid Temporal-Aware Attention for Long Behavior Sequential Recommendation
-- **Link**: [arxiv.org/pdf/2602.18283](https://arxiv.org/pdf/2602.18283)
-- **Authors**: N/A
-- **Key Innovation**: Hybrid attention — linear attention backbone with strategically placed softmax attention layers (7:1 ratio) for high-fidelity retrieval. Temporal-Aware Delta Network (TADN) for rapid interest drift capture.
-- **Highlights**: Near-linear complexity. Handles 10K+ interaction sequences. Outperforms pure linear and pure softmax approaches.
-- **Tags**: `sequential-recommendation` `hybrid-attention` `temporal-modeling` `efficiency`
+### 7. Act As a Real Researcher (AARR) — Benchmark Series
+- **Authors**: Jiayu Wang et al.
+- **Abstract**: Benchmarks evaluating LLMs and agentic systems on granular research professionalism, thoroughness, and nuanced reasoning. Best config (Mini-SWE-Agent + Claude Opus 4.7) achieves only 68.3% — frequently missing subtle details obvious to human researchers.
+- **Key Innovation**: Focus on research behavior, not just task execution capability.
+- **Link**: https://arxiv.org/abs/2606.07462
 
-### 19. GrIT: Group Informed Transformer for Sequential Recommendation
-- **Link**: [arxiv.org/pdf/2602.19728](https://arxiv.org/pdf/2602.19728)
-- **Authors**: N/A
-- **Key Innovation**: Models temporally evolving group features alongside individual histories. Learnable time-varying membership weights for latent groups derived from short/long-term interaction features.
-- **Highlights**: Group representations fused with sequential representations in transformer blocks. Evaluated on 5 benchmarks, consistently outperforms SOTA.
-- **Tags**: `sequential-recommendation` `group-modeling` `transformers` `temporal-dynamics`
-
-### 20. CREATE: Cross-Representation Knowledge Transfer for Sequential Recommendation
-- **Link**: [arxiv.org/pdf/2602.23471](https://arxiv.org/pdf/2602.23471)
-- **Authors**: Gimranov et al. (KDD 2026)
-- **Key Innovation**: Combines transformer (sequential) and GNN (graph) encoders with Barlow Twins representation alignment. Graph encoder enriches sequential model with global interaction patterns.
-- **Highlights**: Consistent gains across 5 datasets. No user embeddings needed at inference. Redundancy reduction via alignment.
-- **Tags**: `sequential-recommendation` `GNN` `transformer` `representation-learning` `KDD26`
-
-### 21. FLAME: Condensing Ensemble Diversity into a Single Network
-- **Link**: [arxiv.org/html/2604.04038](https://arxiv.org/html/2604.04038)
-- **Authors**: N/A
-- **Key Innovation**: Modular ensemble using 2 networks (one frozen, one learnable) to simulate exponential diversity (2^M combinations). Guided mutual learning for stable training. Single-network inference.
-- **Highlights**: Up to 7.69× faster convergence, 9.70% improvement in NDCG@20. Architecture-agnostic (works with GRU4Rec, Caser, FMLPRec, SASRec).
-- **Tags**: `sequential-recommendation` `ensemble` `knowledge-distillation` `efficiency`
-
-### 22. SpecTran: Spectral-Aware Transformer-based Adapter for LLM-Enhanced SR
-- **Link**: [arxiv.org/html/2601.21986](https://arxiv.org/html/2601.21986)
-- **Authors**: N/A
-- **Key Innovation**: Spectral-domain adapter that attends over the full spectrum of LLM item embeddings. Learnable spectral-positional encoding injects singular-value cues as inductive bias.
-- **Highlights**: Overcomes dimension collapse of adapter-based methods and rigidity of SVD-based methods. Avg 9.17% improvement across 4 datasets and 3 SR backbones.
-- **Tags**: `sequential-recommendation` `LLM` `spectral-analysis` `adapter`
-
-### 23. ManCAR: Manifold-Constrained Latent Reasoning for Sequential Recommendation
-- **Link**: [arxiv.org/pdf/2602.20093](https://arxiv.org/pdf/2602.20093)
-- **Authors**: N/A
-- **Key Innovation**: Grounds latent reasoning within the topology of a global interaction graph. Restricts reasoning trajectories to collaboratively reachable regions. Adaptive test-time stopping.
-- **Highlights**: Up to 46.88% relative improvement in NDCG@10. Variational interpretation with ELBO-like objective preventing latent drift.
-- **Tags**: `sequential-recommendation` `latent-reasoning` `manifold` `test-time-computation`
+### 8. The Sim-to-Real Gap of Foundation Model Agents: A Unified MDP Perspective
+- **Authors**: Xiaoou Liu et al. (KDD 2026 Blue Sky)
+- **Abstract**: Formalizes sim-to-real gap for foundation model agents using MDP framework, identifying key factors causing deployment failures.
+- **Link**: https://arxiv.org/abs/2606.07017
 
 ---
 
-## Games, Agents & Reinforcement Learning
+## Recommendation & Advertising Systems
 
-### 24. Stratagem: Learning Transferable Reasoning via Trajectory-Modulated Game Self-Play
-- **Link**: [arxiv.org/pdf/2604.17696](https://arxiv.org/pdf/2604.17696)
-- **Authors**: N/A
-- **Key Innovation**: Extends SPIRAL self-play framework. Introduces Reasoning Transferability Coefficient (φ) to select domain-agnostic trajectories and Reasoning Evolution Reward (ψ) for adaptive reasoning development.
-- **Highlights**: Strong gains on competition-level mathematics with Qwen3-4B. Ablation and human evaluation confirm transferable reasoning improvement.
-- **Tags**: `games` `self-play` `reasoning` `reinforcement-learning` `transfer`
+### 9. Dual-Stream MLP is All You Need for CTR Prediction (DS-MLP)
+- **Authors**: Kesha Ou, Zhen Tian, Wayne Xin Zhao, Long Zhang, Sheng Chen, Ji-Rong Wen (Renmin University, TKDD 2026)
+- **Abstract**: Proposes a dual-stream MLP with knowledge distillation — consolidates explicit feature interaction into main MLP while a parallel MLP captures implicit interactions. Two alignment strategies for compatibility. Achieves SOTA on 3 benchmarks with vanilla MLP structure.
+- **Key Innovation**: Simplifies CTR to pure MLP; resolves explicit/implicit imbalance via distillation.
+- **Link**: https://arxiv.org/abs/2606.04944
 
-### 25. SPIRAL: Self-Play on Zero-Sum Games Incentivizes Reasoning
-- **Link**: [arxiv.org/abs/2506.24119](https://arxiv.org/abs/2506.24119)
-- **Authors**: N/A
-- **Key Innovation**: Fully online, multi-turn, multi-agent RL for LLMs via self-play on zero-sum games (TicTacToe, Kuhn Poker, Simple Negotiation). Role-conditioned advantage estimation (RAE) stabilizes multi-agent training.
-- **Highlights**: Up to 10% improvement across 8 reasoning benchmarks (MATH500, AIME24/25, GPQA, etc.) on Qwen3-4B/8B, Llama-3.1-8B. Multi-game training yields strongest results.
-- **Tags**: `games` `self-play` `RL` `reasoning` `multi-agent`
+### 10. SSRLive: Live Streaming Recommendation with Dynamic Semantic ID
+- **Authors**: Teng Shi et al.
+- **Abstract**: Generative+discriminative unified architecture for live streaming recommendation. Dynamic semantic IDs capture rapidly changing live room content; combines user-streamer interaction signals. Online A/B: watch time +3.38%, GMV +0.72%, followers +3.12%. Serving hundreds of millions of users.
+- **Key Innovation**: Dynamic semantic IDs for live content; hybrid generative-discriminative pipeline.
+- **Link**: https://arxiv.org/abs/2606.06970
 
-### 26. ProAct: Agentic Lookahead in Interactive Environments
-- **Link**: [arxiv.org/pdf/2602.05327](https://arxiv.org/pdf/2602.05327)
-- **Authors**: N/A
-- **Key Innovation**: Grounded LookAhead Distillation (GLAD) — compresses MCTS trajectories into concise reasoning chains for SFT. Monte-Carlo Critic (MC-Critic) provides low-variance value estimates for PPO/GRPO.
-- **Highlights**: 4B model outperforms all open-source baselines on 2048 and Sokoban. Rivals closed-source models. Strong generalization to unseen environments.
-- **Tags**: `agents` `lookahead` `MCTS` `RL` `planning`
+### 11. Bradley-Terry Rankings for Recommender Systems Across Dataset Taxonomies
+- **Authors**: Ekaterina Grishina et al. (KDD 2026)
+- **Abstract**: Novel data-driven ranking methodology using Bradley-Terry model for fair algorithm comparison across datasets. Introduces ranking consistency metric and BT trees/covariates for predicting rankings on unseen datasets.
+- **Key Innovation**: BT-based recommender ranking robust to dataset characteristics; predictive without running models.
+- **Link**: https://arxiv.org/abs/2606.07492
 
-### 27. SeeUPO: Sequence-Level Agentic-RL with Convergence Guarantees
-- **Link**: [arxiv.org/pdf/2602.06554](https://arxiv.org/pdf/2602.06554)
-- **Authors**: N/A
-- **Key Innovation**: Models multi-turn interaction as sequential multi-agent bandit problems. Reverse-order sequential policy updates (backward induction) guarantee convergence to global optimal policy.
-- **Highlights**: 43.3–54.6% relative gains on Qwen3-14B for AppWorld and BFCL v4. Critic-free with monotonic improvement guarantees.
-- **Tags**: `RL` `agents` `convergence` `multi-turn` `theory`
+### 12. Gated Bidirectional Linear Attention (GBLA) for Generative Retrieval
+- **Authors**: Artem Matveev et al. (SIGIR 2026)
+- **Abstract**: Linear-time bidirectional attention layer for generative retrieval. Extends kernelized linear attention with Conv1D mixing, key gating, gated RMSNorm. 8.2× speedup at 32K history vs FlashAttention-v3. Matches bidirectional self-attention quality on Yandex Music + Amazon datasets.
+- **Key Innovation**: First sub-quadratic bidirectional attention for generative retrieval encoders.
+- **Link**: https://arxiv.org/abs/2606.07317
 
-### 28. T-STAR: Tree-structured Self-Taught Agent Rectification
-- **Link**: [arxiv.org/pdf/2604.07165](https://arxiv.org/pdf/2604.07165)
-- **Authors**: N/A
-- **Key Innovation**: Consolidates independent trajectories into a Cognitive Tree for variance-reduced advantage estimation. In-Context Thought Grafting synthesizes corrective reasoning by contrasting successful/failed branches.
-- **Highlights**: Surgical Policy Optimization with Bradley-Terry loss at critical divergence points. Works with GRPO, DAPO, GiGPO.
-- **Tags**: `agents` `RL` `tree-search` `credit-assignment` `self-rectification`
+### 13. Scaling Laws for Behavioral Foundation Models over User Event Sequences
+- **Authors**: Rickard Brüel Gabrielsson
+- **Abstract**: First systematic scaling law study for behavioral foundation models (recommendation/payments/fraud). Across ~600 runs spanning 10^15–10^19 FLOPs. Finds: small embedder (~2% params) is compute-optimal; objective-evaluation metric disagreement scales with compute; optimal negative count grows with budget.
+- **Key Innovation**: Comprehensive scaling laws for user-event-sequence models; evaluation metric is part of the scaling law.
+- **Link**: https://arxiv.org/abs/2606.05257
 
-### 29. MARL-GPT: Foundation Model for Multi-Agent Reinforcement Learning
-- **Link**: [arxiv.org/pdf/2604.05943](https://arxiv.org/pdf/2604.05943)
-- **Authors**: Cognitive AI Systems
-- **Key Innovation**: Single GPT-based model trained via offline imitation learning on expert trajectories (400M+ steps) across SMACv2, Google Research Football, and POGEMA. Flexible observation encoder with no task-specific tuning.
-- **Highlights**: Competitive with specialized MARL baselines across all environments. Path toward generalist MARL foundation model.
-- **Tags**: `MARL` `foundation-model` `multi-agent` `imitation-learning` `transformer`
+### 14. PHKT: Personalized Dynamic Hypergraph-enhanced KAN-Transformer for Multi-behavior Sequential Recommendation
+- **Authors**: Ruijie Du et al.
+- **Abstract**: Combines personalized dynamic hypergraph (user-specific heterogeneous relationships) with KAN-Transformer (KAN replaces MLP in FFN for nonlinear modeling) for multi-behavior sequential recommendation. Outperforms 9 baselines on Tmall, RetailRocket, IJCAI.
+- **Key Innovation**: Hybrid hypergraph + KAN + Transformer for multi-behavior recommendation.
+- **Link**: https://arxiv.org/abs/2606.05537
 
-### 30. SeqComm-DFL: Multi-Agent Decision-Focused Learning via Value-Aware Sequential Communication
-- **Link**: [arxiv.org/pdf/2604.08944](https://arxiv.org/pdf/2604.08944)
-- **Authors**: N/A
-- **Key Innovation**: Unifies sequential communication with decision-focused learning. Value-aware message generation with Stackelberg conditioning. Prosocial agent ordering determines guidance potential.
-- **Highlights**: 4–6× higher rewards on healthcare and SMAC benchmarks. 13% win rate improvements. O(1/√T) convergence bounds.
-- **Tags**: `MARL` `communication` `decision-focused-learning` `coordination`
+### 15. Beyond Matching: Category-Guided Latent Intent Reasoning for Generative Retrieval in E-Commerce
+- **Authors**: Fuwei Zhang et al.
+- **Abstract**: Generative retrieval with category-guided latent intent reasoning for e-commerce search. Integrates category hierarchy into generative ranking pipeline.
+- **Link**: https://arxiv.org/abs/2606.07075
 
----
+### 16. Mind the Gap: Bridging Behavioral Silos with LLMs in Multi-Vertical Recommendations
+- **Authors**: Nimesh Sinha et al.
+- **Abstract**: Uses LLMs to bridge behavioral data silos across multiple recommendation verticals, enabling cross-domain knowledge transfer.
+- **Link**: https://arxiv.org/abs/2606.06779
 
-## Mixture-of-Experts
+### 17. SAILRec: Steering LLM Attention to Dual-Side Semantically Aligned Collaborative Embeddings
+- **Authors**: Xi Wu et al.
+- **Abstract**: LLM-based recommendation leveraging dual-side (user+item) semantically aligned collaborative embeddings steered via attention.
+- **Link**: https://arxiv.org/abs/2606.04514
 
-### 31. ProbMoE: Differentiable Probabilistic Routing for MoE
-- **Link**: [arxiv.org/html/2606.01509](https://arxiv.org/html/2606.01509)
-- **Authors**: Heng Hugo Zhao et al.
-- **Key Innovation**: Casts MoE routing as probabilistic inference over cardinality-constrained expert subsets. Uses SIMPLE gradient estimator for tractable marginal-based gradients. Supports both Exact-k and Dynamic-k routing.
-- **Highlights**: Improved expert utilization and routing diversity. Dynamic-k achieves competitive performance with fewer activated experts on average.
-- **Tags**: `MoE` `routing` `probabilistic` `gradient-estimation` `dynamic-k`
+### 18. Beyond Retrieval: Learning Compact User Representations for Scalable LLM Personalization
+- **Authors**: Heng Cao et al.
+- **Abstract**: Compact user representations for scalable LLM personalization in recommendation, enabling efficient user modeling without full history retrieval.
+- **Link**: https://arxiv.org/abs/2606.04547
 
-### 32. DAG-MoE: From Simple Mixture to Structural Aggregation in MoE
-- **Link**: [arxiv.org/html/2606.01062](https://arxiv.org/html/2606.01062)
-- **Authors**: Jiarui Feng et al.
-- **Key Innovation**: Replaces weighted-summation expert aggregation with DAG-structured aggregation. Each expert gets a distinct structural role; enables multi-step reasoning within a single MoE layer.
-- **Highlights**: Expands expert combination space without modifying experts or router. Consistently outperforms standard MoE in pre-training and fine-tuning.
-- **Tags**: `MoE` `aggregation` `DAG` `structural-learning` `reasoning`
-
-### 33. Pr2: Predictive Routing Replay for MoE-Based LLM Reinforcement Learning
-- **Link**: [arxiv.org/html/2606.00395](https://arxiv.org/html/2606.00395)
-- **Authors**: N/A
-- **Key Innovation**: Addresses router drift in MoE RL by augmenting each router with a lightweight evolution predictor. Predicts short-horizon router evolution to enable gradient flow to likely-to-be-active experts.
-- **Highlights**: +12.29% on AIME24 over routing replay on Qwen3-30B-A3B. Reduces routing mismatch, stabilizes PPO training.
-- **Tags**: `MoE` `RL` `router-drift` `stability` `reasoning`
-
-### 34. UniEP: Unified Expert-Parallel MoE MegaKernel for LLM Training
-- **Link**: [arxiv.org/pdf/2604.19241](https://arxiv.org/pdf/2604.19241)
-- **Authors**: N/A
-- **Key Innovation**: Fuses MoE communication and computation into MegaKernels. Fine-grained SM-level scheduling for computation-communication overlap. Deterministic token ordering guarantees numerical consistency.
-- **Highlights**: 1.03×–1.38× speedups over COMET. 1.09× throughput gain on 128-GPU production run (138B tokens/day).
-- **Tags**: `MoE` `systems` `expert-parallelism` `training` `GPU`
-
-### 35. Holistic Scaling Laws for Optimal MoE Architecture Optimization
-- **Link**: [arxiv.org/abs/2603.21862](https://arxiv.org/abs/2603.21862)
-- **Authors**: Weilin Wan et al.
-- **Key Innovation**: Establishes joint constraint triad (FLOPs/token, active params, total params) for MoE. Reduces 16D search space to two sequential low-dimensional phases with algebraic constraints.
-- **Highlights**: Validated across hundreds of MoE models spanning 6 orders of compute magnitude. Near-optimal configuration band widens with scale.
-- **Tags**: `MoE` `scaling-laws` `architecture-search` `theory`
-
-### 36. Optimal Expert-Attention Allocation in MoE: A Scalable Law
-- **Link**: [arxiv.org/pdf/2603.10379](https://arxiv.org/pdf/2603.10379)
-- **Authors**: N/A
-- **Key Innovation**: Extends Chinchilla scaling laws to MoE by incorporating expert–attention FLOPs allocation ratio. Shows optimal ratio follows power-law with total compute and varies with sparsity.
-- **Highlights**: Explicit formula for optimal FLOPs ratio r*. Lower sparsity favors expert-heavy; higher sparsity favors more attention capacity.
-- **Tags**: `MoE` `scaling-laws` `compute-allocation` `Chinchilla`
-
-### 37. Grouter: Decoupling Routing from Representation for Accelerated MoE Training
-- **Link**: [arxiv.org/pdf/2603.06626](https://arxiv.org/pdf/2603.06626)
-- **Authors**: N/A
-- **Key Innovation**: Distills high-quality routing structure from fully-trained MoE models and serves as fixed router. Decouples structural optimization from weight updates.
-- **Highlights**: 4.28× data utilization improvement. 33.5% throughput acceleration. Expert Folding for cross-configuration adaptation.
-- **Tags**: `MoE` `routing` `distillation` `training-acceleration` `Megatron`
+### 19. Bridging Short Videos and Live Streams: Reasoning-Guided Multimodal LLMs for Cross-Domain Representation Learning
+- **Authors**: Le Zhang et al. (Kuaishou)
+- **Abstract**: Cross-domain recommendation bridging short video and live streaming using reasoning-guided multimodal LLMs.
+- **Link**: https://arxiv.org/abs/2606.04448
 
 ---
 
-## Meta
+## Sequential Modeling & Transformers
 
-- **Search date**: 2026-06-08
-- **Sources searched**: arXiv (via web search)
-- **Categories covered**: cs.LG, cs.IR, cs.AI, cs.CL, cs.MA
-- **Papers highlighted**: 37
+### 20. NeuroGame Transformer: Gibbs-Inspired Attention Driven by Game Theory and Statistical Physics
+- **Authors**: Djamel Bouchaffra et al.
+- **Abstract**: Replaces standard pairwise attention with game-theoretic (Shapley/Banzhaf) + Ising model framework. Attention weights emerge as Gibbs distribution marginals via mean-field. SNLI 86.4%, competitive with RoBERTa-Base.
+- **Key Innovation**: Higher-order token dependencies via cooperative game theory + statistical physics; no explicit O(2^n) complexity.
+- **Link**: https://arxiv.org/abs/2603.18761
+
+### 21. Online Pandora's Box for Contextual LLM Cascading
+- **Authors**: Alexandre Belloni, Yan Chen, Yehua Wei
+- **Abstract**: Theoretical framework for dynamically deciding which LLM to call in a cascade, balancing cost vs. quality.
+- **Link**: https://arxiv.org/abs/2606.07392
+
+### 22. Sparsely Gated Tiny Linear Experts
+- **Authors**: Simon Schug
+- **Abstract**: Tiny linear expert models with sparse gating — efficient alternative to dense models for on-device deployment.
+- **Link**: https://arxiv.org/abs/2606.07414
+
+---
+
+## Games & Game Theory
+
+### 23. How reliable are LLMs when it comes to playing dice?
+- **Authors**: Luca Avena, Gianmarco Bet, Bernardo Busoni
+- **Abstract**: Evaluates LLM reliability in probabilistic/game settings (dice games), probing understanding of randomness and probability.
+- **Link**: https://arxiv.org/abs/2606.07515
+
+### 24. AEGIS: A Backup Reflex for Physical AI
+- **Authors**: Josef Chen
+- **Abstract**: A backup safety mechanism (reflex layer) for physical AI systems including game agents and robotics, providing fail-safe behaviors.
+- **Key Innovation**: Hardware-agnostic safety reflex for embodied/game agents.
+- **Link**: https://arxiv.org/abs/2606.06660
+
+---
+
+## Evaluation & Benchmarks
+
+### 25. A Comprehensive Anatomy of Human and DeepSeek-R1 LLM Mathematical Reasoning
+- **Authors**: Yuxiang Chen, Jun Wang
+- **Abstract**: Deep comparison of human vs. DeepSeek-R1 mathematical reasoning processes, identifying differences in strategy and error patterns.
+- **Link**: https://arxiv.org/abs/2606.07410
+
+### 26. Do Coding Agents Deceive Us? Detecting and Preventing Cheating via Capped Evaluation with Randomized Tests
+- **Authors**: Thanawat Lodkaew et al.
+- **Abstract**: Detects cheating in coding agents via randomized test capping; proposes evaluation methodology to prevent overfitting to test cases.
+- **Link**: https://arxiv.org/abs/2606.07379
+
+### 27. SABER: Benchmarking Operational Safety of LLM Coding Agents in Stateful Project Workspaces
+- **Featured on**: alphaXiv (Jun 1–7, 2026)
+- **Abstract**: Safety benchmark for coding agents operating in persistent project environments.
+- **Link**: https://arxiv.deeppaper.ai/papers/weekly (featured)
+
+---
+
+## Summary
+
+| Area | Papers |
+|------|--------|
+| LLMs & Foundation Models | Reversible Foundations 120B MoE, Recursive Language Models, DyCon, Training Dynamics Position, OpenSkill |
+| Agents | Perplexity Agent Study, AARR Researcher Benchmark, Sim-to-Real MDP |
+| Recommendation & CTR | DS-MLP (pure MLP CTR), SSRLive (live streaming), BT Rankings, GBLA (linear attention), Behavioral Scaling Laws, PHKT (KAN-Transformer), SAILRec, cross-domain LLM recommenders |
+| Sequential Modeling | NeuroGame Transformer, GBLA, PHKT |
+| Games & Game Theory | LLM dice reliability, AEGIS safety reflex |
+| Benchmarks & Evaluation | AARR, Coding agent cheating detection, SABER safety, Math reasoning anatomy |

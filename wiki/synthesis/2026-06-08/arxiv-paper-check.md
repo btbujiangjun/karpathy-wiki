@@ -14,6 +14,32 @@ Sources surveyed: cs.AI (34 new), cs.LG (173 new), cs.IR (16 new).
 
 ## AI / LLM Systems
 
+### How AI Agents Reshape Knowledge Work: Autonomy, Efficiency, and Scope
+- **arXiv**: 2606.07489
+- **Authors**: Jeremy Yang, Kate Zyskowski, Noah Yonack, Jerry Ma
+- **Key contribution**: Uses production data from Perplexity's Search and Computer products to quantify AI agent impact. **Computer** performs 26min autonomous work per session vs 33sec for Search; reduces task completion from 269→36min (87% time, 94% cost reduction); dissatisfaction rates 55% lower. Agents shift user queries toward higher-order work (verification, extension).
+- **Tags**: agents, knowledge-work, perplexity, empirical, productivity
+
+### DuMate-DeepResearch: An Auditable Multi-Agent System with Recursive Search and Rubric-Grounded Reasoning
+- **arXiv**: 2606.07299
+- **Authors**: Lingyong Yan, Can Xu, Yukun Zhao et al. (DuMate Team, 16 authors)
+- **Key contribution**: Multi-agent deep research framework with graph-based dynamic planning, recursive two-level search execution, and rubric-based test-time optimization. **SOTA** on DeepResearch Bench (58.03%) and DeepResearch Bench II (61.95%).
+- **Tags**: agents, deep-research, multi-agent, auditability, sota
+
+### Act As a Real Researcher: A Suite of Benchmarks Evaluating Frontier LLMs and Agentic Harnesses in Research Lifecycle
+- **arXiv**: 2606.07462
+- **Authors**: Jiayu Wang, Weijiang Lv, Bowen Fu et al. (11 authors)
+- **Key contribution**: Introduces AARRI-Bench — a benchmark for evaluating whether agents emulate **human-level research professionalism**. Best config (Mini-SWE-Agent + Claude Opus 4.7) only achieves 68.3%, frequently missing subtle but critical details obvious to human researchers.
+- **Tags**: benchmark, agents, research, evaluation, aarri
+
+### The Sim-to-Real Gap of Foundation Model Agents: A Unified MDP Perspective
+- **arXiv**: 2606.07017
+- **Authors**: Xiaoou Liu, Tiejin Chen, Weibo Li, Xiyang Hu, Hua Wei
+- **Key contribution**: Formalizes the foundation model agent evaluation gap as a **classical sim-to-real problem** through MDP lens (Observation, Action, Transition, Reward). Advocates domain randomization and standardized stress tests. Accepted by **KDD 2026 Blue Sky**.
+- **Tags**: agents, sim-to-real, mdp, kdd-2026, blue-sky
+
+### Reversible Foundations: Training a 120B Sparse MoE through State-Preserving Scaling
+
 ### Reversible Foundations: Training a 120B Sparse MoE through State-Preserving Scaling
 - **arXiv**: 2606.07404
 - **Author**: Rohan Shravan
@@ -110,6 +136,12 @@ Sources surveyed: cs.AI (34 new), cs.LG (173 new), cs.IR (16 new).
 
 ## CTR / RecSys
 
+### Scaling Laws for Behavioral Foundation Models over User Event Sequences
+- **arXiv**: 2606.05257 (cross-list cs.LG)
+- **Authors**: Rickard Brüel Gabrielsson
+- **Key contribution**: First rigorous scaling law study for **behavioral foundation models** trained on user event sequences. Across ~600 runs (10^15–10^19 FLOPs), finds a small embedder (~2% params) is compute-optimal; optimal negative count grows with budget. Shows **evaluation metric is part of the scaling law** — changing it changes the compute-optimal recipe. Highly relevant for CTR/RecSys foundation models.
+- **Tags**: scaling-laws, behavioral-models, recsys, ctr, foundation-model
+
 ### Dual-Stream MLP is All You Need for CTR Prediction
 - **arXiv**: 2606.04944 (Thu, Jun 4)
 - **Authors**: Kesha Ou, Zhen Tian, Wayne Xin Zhao, Long Zhang, Sheng Chen, Ji-Rong Wen
@@ -174,9 +206,9 @@ Sources surveyed: cs.AI (34 new), cs.LG (173 new), cs.IR (16 new).
 
 | Area | Count | Highlights |
 |------|-------|------------|
-| AI/LLM Systems | 6 | Reversible Foundations 120B MoE, TabSwift (ICML spotlight), OffQ quantization, Program-of-Layers |
+| AI/LLM Systems | 10 | AI Agents Knowledge Work (Perplexity), DuMate-DeepResearch SOTA, AARRI-Bench, Sim-to-Real MDP, Reversible Foundations 120B, TabSwift (ICML spotlight) |
 | LLM Reasoning & Agents | 5 | DeepSeek-R1 anatomy, DyCon overthinking, OpenSkill self-evolution, Lean4Agent verification |
 | AI Safety & Interpretability | 3 | Training dynamics position (ICML oral), coding agent cheating detection, SAE geometry |
-| CTR / RecSys | 6 | DS-MLP CTR (TKDD), Bradley-Terry rankings (KDD), live streaming, e-commerce generative retrieval |
+| CTR / RecSys | 7 | Scaling Laws for Behavioral FMs, DS-MLP CTR (TKDD), Bradley-Terry rankings (KDD), SSRLive, CaLIR e-commerce |
 | IR / RAG | 3 | Gated linear attention (SIGIR), multi-hop RAG hypergraph, PaperFlow |
-| **Total** | **23** | |
+| **Total** | **28** | |

@@ -659,11 +659,11 @@
 - Key themes: Generative recommenders replacing DLRMs at scale (5 major platforms); latent reasoning + dLLMs as emerging LLM paradigms; agentic RL with convergence guarantees
 - Updated: wiki/index.md, wiki/log.md
 
-## [2026-06-08] search | arXiv Paper Check — AI & CTR (June 8, 2026)
-- New page: wiki/synthesis/2026-06-08/arxiv-paper-check.md
-- Surveyed: cs.AI (34 new + cross-lists), cs.LG (173 new), cs.IR (16 new) from Mon 8 Jun 2026
-- Papers highlighted: 23 across AI/LLM Systems, LLM Reasoning & Agents, AI Safety & Interpretability, CTR/RecSys, IR/RAG
-- Top picks: Reversible Foundations 120B MoE (state-preserving scaling), TabSwift (ICML spotlight, row-wise attention for tabular), OffQ (offset-based LLM quantization), DyCon (ICML, overthinking mitigation), Lean4Agent (Lean4 agent verification), DS-MLP (TKDD, vanilla MLP beats deep CTR), Position on Training Dynamics (ICML oral), Do Coding Agents Deceive Us (cheating detection)
+## [2026-06-08] search | arXiv Paper Check — AI & CTR (June 8, 2026) — updated
+- Source: cs.AI (164 entries Mon), cs.IR (16 entries Mon), cs.LG cross-lists
+- Papers highlighted: 28 across AI/LLM Systems, LLM Reasoning & Agents, AI Safety & CTR/RecSys, IR/RAG
+- Top picks: How AI Agents Reshape Knowledge Work (Perplexity production data, 87% time reduction), DuMate-DeepResearch (SOTA deep research 61.95%), AARRI-Bench (research intern evaluation), Sim-to-Real MDP for agents (KDD Blue Sky), Scaling Laws for Behavioral FMs over user event sequences, DS-MLP CTR (TKDD), DyCon (ICML overthinking)
+- Updated: wiki/synthesis/2026-06-08/arxiv-paper-check.md (added 5 new entries)
 - Updated: wiki/index.md, wiki/log.md
 
 ## [2026-06-08] search | 各大 AI 公司最新技术报告汇总 (第八版) — 22+ 家机构, 35+ 报告

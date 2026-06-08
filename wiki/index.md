@@ -354,7 +354,7 @@ Papers are organized by research category. Each page includes problem background
 | [conference-digest](synthesis/2026-06-04/conference-digest.md) | 顶会论文专题报告 — 2026年6月全面版（ICML / AAAI / NeurIPS / ICLR / KDD / CVPR / ACL / EMNLP / SIGIR / WWW / CIKM / RecSys） | 12+ conferences, 100+ papers, 8 industry labs |
 | [ctr-scaling-landscape](synthesis/ctr-scaling-landscape.md) | CTR Scaling Landscape — Industrial RecSys Scaling Laws | 49 papers |
 | [arxiv-paper-check](synthesis/2026-06-06/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 6, 2026) | 27 papers, 7 CTR SOTA models |
-| [arxiv-paper-check](synthesis/2026-06-08/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 8, 2026) | 23 papers |
+| [arxiv-paper-check](synthesis/2026-06-08/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 8, 2026) | 28 papers |
 | [arxiv-digest](synthesis/2026-06-03/arxiv-digest.md) | arXiv Digest — AI & CTR (June 3, 2026) | ~30 papers |
 | [arxiv-digest](synthesis/2026-06-04/arxiv-digest.md) | arXiv Digest — AI & CTR (June 4, 2026) | ~40 papers |
 | [arxiv-daily](synthesis/2026-06-08/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 8, 2026) | ~37 papers |
