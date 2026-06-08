@@ -369,6 +369,7 @@ Papers are organized by research category. Each page includes problem background
 | [investment-daily](synthesis/2026-06-03/investment-daily.md) | 投资日报 — 2026-06-03（美股/港股/A股科技与AI热点） | — |
 | [investment-daily](synthesis/2026-06-04/investment-daily.md) | 投资日报 — 2026-06-04（美股/港股/A股科技与AI热点） | — |
 | [investment-daily](synthesis/2026-06-05/investment-daily.md) | 投资日报 — 2026-06-05（美股/港股/A股/中概/新能源科技与AI热点） | — |
+| [investment-daily](synthesis/2026-06-08/investment-daily.md) | 投资日报 — 2026-06-08（美股/港股/A股/中概/新能源科技与AI热点） | — |
 | [tech-report-digest](synthesis/2026-06-03/tech-report-digest.md) | 各大 AI 公司最新技术报告汇总 (第六版) — 20 家机构, 涵盖 DeepSeek V4、GPT-5.5、GLM-5、Kimi K2.6、Doubao Seed 2.0、Nemotron 3、Qwen3.7 Max 等 35+ 报告 | 35+ reports |
 | [tech-report-digest](synthesis/2026-06-05/tech-report-digest.md) | 各大 AI 公司最新技术报告汇总 (第七版) — 22+ 家机构, DeepSeek V4、GPT-5.5、Llama 4、Gemini 3.1、Claude Opus 4.7/4.8、Mistral Large 3、Qwen3/3.5/3.7 Max、Phi-4、Apple AFM、Nemotron 3 (Mamba2-Transformer)、Grok-4.3、GLM-5、Kimi K2.6、Doubao Seed 2.0、Step 3.7 Flash 等 30+ 报告 | 30+ reports |
 | [tech-report-digest](synthesis/2026-06-08/tech-report-digest.md) | 各大 AI 公司最新技术报告汇总 (第八版) — 2026-06-08 (22+ 家, Claude Opus 4.8/Mythos/Gemini 3.5 Flash/GPT-5 v2/DeepSeek V4 等 35+ 报告, 完整 System Card 索引) | 35+ reports |

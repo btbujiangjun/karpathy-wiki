@@ -680,3 +680,14 @@
 - Top picks: DS-MLP (dual-stream MLP + KD for CTR), LoopCTR (loop scaling, train-multi-loop infer-zero-loop), EST (Taobao unified sequence CTR), Agents' Last Exam (2.6% pass rate on GDP-relevant tasks), LeanMarathon (258 lemmas, 0 sorries across 4 Erdős problems), Image Generators are Generalist Vision Learners (Google/DeepMind emergent visual understanding)
 - Key themes: CTR scaling laws heat up (5 industrial papers); economically valuable agent benchmarks; AI co-mathematician viable; transformers' fundamental state tracking limits proven
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-06-08] synthesis | 投资日报 — 2026-06-08（美股/港股/A股/中概/新能源科技与AI热点）
+- New page: wiki/synthesis/2026-06-08/investment-daily.md
+- 美股焦点：Broadcom -15%（AI指引miss whisper引发芯片暴跌）；Nasdaq -4.18%创2025年4月以来最大周跌幅；非农172K远超预期85K，降息预期进一步消退；Citi上调S&P年底目标至8,100（AI盈利驱动）；Big-5 AI CapEx合计$725B（TrendForce: Top 9 CSP $830B +79%）
+- AI芯片：NVDA -6%至$214.75（$5.24T）；AVGO -15%至~$385；AMD -4%；INTC -3%（12个月+466%）
+- 美股中概：NIO +1.84%（5月交付+62% YoY）；XPEV +4.88%；BABA +6.6%（6/2）；BIDU +1.12%
+- 港股焦点：恒指-1.15%至24,962（科技+金融拖累）；美团Q1超预期（亏损收窄至¥65亿）后反弹回落；MiniMax/智谱AI 6月9日纳入恒生科技指数（$12.5-17.5亿被动资金）；SMIC -7.2%受美管制压力
+- A股焦点：CPO/光模块行情延续（中际旭创日成交¥263亿A股第一）；联讯仪器¥2,071成新股王；寒武纪¥1,319 +8.4%；工业富联冲击涨停¥1.68万亿超茅台；存储三杰Q1合计净利超¥100亿
+- 新能源：NIO 5月交付37,705辆+62%；TSLA -3%（中国份额承压）；BYD海外加速（目标150万辆出口）
+- AI主题：NVIDIA Spectrum-X CPO硅光量产；Marvell "连接是下一瓶颈"+32.5%；腾讯微信AI Agent即将上线；Agentic AI全面爆发；存储超级周期（DDR4 Q3再涨20%）
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
