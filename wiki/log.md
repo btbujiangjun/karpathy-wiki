@@ -215,6 +215,14 @@
 - Key findings: MoE 主流化, 混合注意力架构崛起, Thinking Mode 成为标配, 长上下文竞争白热化, 合成数据训练突破, Muon 优化器普及
 - Updated: wiki/index.md (Synthesis section)
 
+## [2026-06-08] synthesis | Conference Digest — 2026年6月全面版（顶会论文专题报告）
+- New page: wiki/synthesis/2026-06-08/conference-digest.md
+- Coverage: 12 conferences (ICML 2026, AAAI 2026, NeurIPS 2025, ICLR 2026, KDD 2026, CVPR 2026, ACL 2026, EMNLP 2025, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025) + arXiv
+- Papers covered: 100+ across LLM training theory, recommendation/CTR (ByteDance TokenMixer-Large/HyFormer, Kuaishou Taiji/GR4AD/OneMall, JD GenRec), agent systems (GrandCode Codeforces triple crown, MiRA, MetaClaw, AgentFlow), multimodal/generative models (Self-Flow, UniAR, PixelDiT, Molmo2), games/RL (NitroGen, ALIVE, PCSP), code/reasoning (Aletheia, Agentic Verifier), NeurIPS 2025 Best Papers deep dive (Gated Attention, Artificial Hivemind, 1000-Layer RL, Diffusion Memorization), RLVR critique (Runner-Up)
+- Key themes: Diffusion LLM rise, RLVR paradigm shift, Agent systems maturity, CTR LLM-ification, Reasoning models as default, Multi-modal unification
+- Labs covered: Google DeepMind, OpenAI, Meta AI, Microsoft Research, ByteDance, Alibaba, Tencent, Kuaishou, Baidu, Netflix, NVIDIA, Anthropic, Apple, Amazon, JD.com, Pinterest
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-04-15] init | Wiki Created
 - Scaffolded by llm-wiki-bootstrap
 - Domain: Research on Andrej Karpathy's X posts, talks, and related source materials on neural networks, LLMs, and deep learning
