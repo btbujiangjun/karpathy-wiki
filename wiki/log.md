@@ -689,6 +689,15 @@
 - Key themes: CTR scaling laws heat up (5 industrial papers); economically valuable agent benchmarks; AI co-mathematician viable; transformers' fundamental state tracking limits proven
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-06-08] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20
+- New page: wiki/synthesis/2026-06-08/wq101-alpha-daily.md
+- Market context: Nasdaq -4.18% (worst since Apr 2025), SOX -10.3%, S&P 500 -2.64%, sector rotation Tech→Healthcare/Defense
+- Factor application: Alpha#53 (reversal after SOX -10.3%) primary lens; Alpha#1 (momentum) for defense/healthcare; Alpha#41 (trend strength) for AI infrastructure
+- Top picks: NVDA(9), AVGO(8), MRVL(8), MU(8), LHX(8), LLY(8), GS(8), VRT(8), PANW(8)
+- Sectors: 5 Semiconductors, 3 Defense, 3 Healthcare, 2 Financials, 2 AI Infra, 3 Cloud/Tech, 1 Consumer Tech, 1 Consumer Electronics
+- Key event risks: CPI (6/10), SpaceX IPO (6/12), escalating Iran-Israel conflict
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-08] synthesis | 投资日报 — 2026-06-08（美股/港股/A股/中概/新能源科技与AI热点）
 - Updated: wiki/synthesis/2026-06-08/investment-daily.md
 - 大盘：Nasdaq -4.18%（2025年4月来最大）、S&P -2.64%（结束9周连涨）；SOX半导体指数-10.3%（2020年3月来最差）；韩国KOSPI开盘暴跌8.37%触发熔断；半导体板块单日蒸发$1万亿
