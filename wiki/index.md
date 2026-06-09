@@ -383,3 +383,4 @@ Papers are organized by research category. Each page includes problem background
 | [wq101-alpha-daily](synthesis/2026-06-03/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-03) | — |
 | [wq101-alpha-daily](synthesis/2026-06-05/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-05) | — |
 | [wq101-alpha-daily](synthesis/2026-06-08/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-08) | — |
+| [wq101-alpha-daily](synthesis/2026-06-09/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-09) | — |

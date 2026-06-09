@@ -638,6 +638,15 @@
 - Key themes: MoE domination, hybrid attention (Mamba2+Transformer), long-context (up to 10M), thinking mode standard, agentic AI core, open-source divergence, synthetic data training
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-06-09] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-09)
+- New page: wiki/synthesis/2026-06-09/wq101-alpha-daily.md
+- Applied Alpha#1/#6/#12/#19/#30/#41/#53 across 7 dimensions
+- Top picks: NVDA(9), MRVL(8), AVGO(8), MU(8), INTC(8), MSFT(8), GOOGL(8), XOM(8), LMT(8), LLY(8), VRT(8), PANW(8)
+- Market context: S&P ~7,430, SOX +4.6% rebound from -10.3% selloff
+- Key catalysts: AAPL earnings(6/8), CPI(6/10), MSFT earnings(6/11), SpaceX IPO(6/12), GOOGL earnings(6/14)
+- Sectors: 6 Semis, 3 Mega-cap Tech, 2 Energy, 2 Defense, 2 AI Infra, 2 Healthcare, 2 Financial, 1 Consumer Tech
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-04] synthesis | 投资日报 — 2026-06-04（美股/港股/A股科技与AI热点）
 - New page: wiki/synthesis/2026-06-04/investment-daily.md
 - 核心事件：Broadcom AVGO Q2 FY2026 财报炸裂 — 营收 $222 亿 +48% YoY，AI $108 亿 +143%，Q3 指引 $294 亿（AI +200%）；Alphabet $800 亿 AI 股权融资（伯克希尔 $100 亿）; GTC Taipei 最后一日（RTX Spark / N1X / Cosmos 3 / Marvell +32.5%）；港股 6/2 报复性反弹恒科 +4.72%（腾讯 +10.5%）
