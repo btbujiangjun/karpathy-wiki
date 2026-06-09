@@ -718,6 +718,14 @@
 - AI主题：Big 5 Capex合计$725B；Goldman $7.6万亿五年总投资；Marvell -16.7%（非基本面/机构获利了结）；AEP 63GW数据中心负荷（2030E）；存储涨价周期（DDR4 Q3再涨20%）；A股机器人板块异动（AI算力→机器人轮动）
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-06-09] synthesis | Conference Digest — 2026年6月全面版（顶会论文专题报告）
+- New page: wiki/synthesis/2026-06-09/conference-digest.md
+- Coverage: 13 venues (ICML 2026, AAAI 2026, NeurIPS 2025, ICLR 2026, KDD 2026, CVPR 2026, ACL 2026, EMNLP 2025, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025) + arXiv industry highlights
+- Papers covered: 100+ across all sections
+- Labs covered: ByteDance, Alibaba, Tencent, Kuaishou, Meta, Google DeepMind, Microsoft Research, OpenAI, Anthropic, NVIDIA, Apple, Amazon, Meituan
+- Key themes: Gated Attention (NeurIPS Best), Diffusion LLM rise (LLaDA), Mamba-3 (ICLR 2026 Oral), RLVR critique, Generative recommendation paradigm, CTR scaling laws, Agent systems maturation, Industry lab highlights (ByteDance Lance, NVIDIA DiLaDiff)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-09] search | arXiv Paper Check — AI & CTR (June 9, 2026)
 - New page: wiki/synthesis/2026-06-09/arxiv-paper-check.md
 - Sources: cs.AI (34 new, 287 total) + cs.IR (14 new, 26 total) — Mon 8 Jun 2026
