@@ -358,6 +358,8 @@ Papers are organized by research category. Each page includes problem background
 | [arxiv-digest](synthesis/2026-06-03/arxiv-digest.md) | arXiv Digest — AI & CTR (June 3, 2026) | ~30 papers |
 | [arxiv-digest](synthesis/2026-06-04/arxiv-digest.md) | arXiv Digest — AI & CTR (June 4, 2026) | ~40 papers |
 | [arxiv-daily](synthesis/2026-06-08/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 8, 2026) | ~37 papers |
+| [arxiv-daily](synthesis/2026-06-09/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 9, 2026) | 26 papers |
+| [arxiv-paper-check](synthesis/2026-06-09/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 9, 2026) | 34 cs.AI + 14 cs.IR new submissions |
 | [conference-digest](synthesis/2026-06-08/conference-digest.md) | 顶会论文专题报告 — 2026年6月全面版（ICML / AAAI / NeurIPS / ICLR / KDD / CVPR / ACL / EMNLP / SIGIR / WWW / CIKM / RecSys） | 12 conferences, 100+ papers, 12 labs |
 | [arxiv-digest](synthesis/2026-06-05/arxiv-digest.md) | arXiv Digest — AI & CTR (June 5, 2026) | ~24 papers |
 | [conference-digest](synthesis/2026-06-05/conference-digest.md) | 顶会论文专题报告 — 2026-06-05 全面版（NeurIPS Best / ICLR 2026 / CVPR 2026 / EMNLP 2025 / RecSys 2025 / SIGIR 2026 / AAAI 2026 / KDD 2026 + 各大实验室） | 12+ venues, 80+ papers, 12 labs |

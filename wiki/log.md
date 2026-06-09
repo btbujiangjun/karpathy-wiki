@@ -18,6 +18,14 @@
 - Top picks: FLARE (hybrid dLLM), DS-MLP (vanilla MLP SOTA for CTR), LoopCTR (loop scaling), ProbMoE (probabilistic MoE routing), STRATAGEM (game self-play reasoning transfer)
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-06-09] search | arXiv Daily — AI Research Survey (June 9, 2026)
+- Updated: wiki/synthesis/2026-06-09/arxiv-daily.md
+- Coverage: 26 papers across LLM (11), CTR/Advertising/RecSys (8), Games/RL/Sequential (7)
+- Highlights: Perplexity AI empirical agent study, DuMate-DeepResearch (Baidu SOTA multi-agent), GBLA linear attention for generative retrieval (Yandex, SIGIR'26), BitsMoE MoE quantization, DyCon overthinking mitigation, Taiji (Kuaishou LLM-enhanced rec), Hidden Thoughts reasoning trace exposure
+- New entries: UniPinRec (Pinterest), Bradley-Terry Rankings (KDD'26), CoMIC collaborative agent memory, CRMA continual fine-tuning, MindZero zero-annotation ToM, CAST GRPO training
+- Sources: arXiv cs.AI, cs.CL, cs.IR, cs.LG (Jun 5-8 submissions)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-04] search | arXiv Digest — AI & CTR (June 4, 2026)
 - New page: wiki/synthesis/2026-06-04/arxiv-digest.md
 - Surveyed: cs.LG (236 entries), cs.IR (27 entries), cs.AI (207 entries) from Thu 4 Jun 2026
@@ -709,3 +717,10 @@
 - 中概/EV：NIO 5月交付+62.3% YoY，ES9等待期17周，德银上调目标；BYD Great Tang SUV发布（预订单10万+），近52周低点（-78% from peak）；中国跨境监管打击老虎/富途，$540亿资产承压，利好港股通
 - AI主题：Big 5 Capex合计$725B；Goldman $7.6万亿五年总投资；Marvell -16.7%（非基本面/机构获利了结）；AEP 63GW数据中心负荷（2030E）；存储涨价周期（DDR4 Q3再涨20%）；A股机器人板块异动（AI算力→机器人轮动）
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-06-09] search | arXiv Paper Check — AI & CTR (June 9, 2026)
+- New page: wiki/synthesis/2026-06-09/arxiv-paper-check.md
+- Sources: cs.AI (34 new, 287 total) + cs.IR (14 new, 26 total) — Mon 8 Jun 2026
+- Top picks: Lean4Agent (formal agent verification via Lean4), Don't Just Fix it in Post (ICML 2026 Oral, training dynamics science), OpenSkill (zero-supervision self-evolving agents), GBLA (SIGIR 2026, 8.2× linear attention speedup), AEGIS (backup reflex for physical AI), Attack Selection (strategic attackers break control evals), DyCon (ICML 2026, overthinking mitigation), DREAM (cold-start SIDs in generative rec), Bradley-Terry Rankings (KDD 2026, rec algorithm comparison methodology), RISE (agentic search interaction spaces)
+- Key themes: formal verification for agents, training dynamics as science, self-evolving agents, linear attention for long sequences, generative recommendation maturation, safety realism, agentic search paradigm
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
