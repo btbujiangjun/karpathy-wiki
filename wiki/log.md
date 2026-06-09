@@ -732,3 +732,14 @@
 - Top picks: Lean4Agent (formal agent verification via Lean4), Don't Just Fix it in Post (ICML 2026 Oral, training dynamics science), OpenSkill (zero-supervision self-evolving agents), GBLA (SIGIR 2026, 8.2× linear attention speedup), AEGIS (backup reflex for physical AI), Attack Selection (strategic attackers break control evals), DyCon (ICML 2026, overthinking mitigation), DREAM (cold-start SIDs in generative rec), Bradley-Terry Rankings (KDD 2026, rec algorithm comparison methodology), RISE (agentic search interaction spaces)
 - Key themes: formal verification for agents, training dynamics as science, self-evolving agents, linear attention for long sequences, generative recommendation maturation, safety realism, agentic search paradigm
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-09] synthesis | 投资日报 — 2026-06-09（美股/港股/A股/中概/新能源科技与AI热点）
+- New page: wiki/synthesis/2026-06-09/investment-daily.md
+- 核心事件：Apple WWDC发布Siri AI (基于Gemini 1.2T参数); NVIDIA韩国周6项重大合作(AI Factory); Broadcom Q2 AI营收$10.8B(+143%)但AI指引miss触发板块回调后6/8反弹; 国家数据局Token交易新政; 燧原/粤芯6/15上会; OpenAI/Anthropic/SpaceX三巨头IPO竞赛
+- 美股反弹日：S&P 500 +0.30%, Nasdaq +0.86%; MRVL+9%(S&P 500纳入), MU+7%, NVDA+1.73%, GLW+9%(Amazon光纤协议), AAPL-1.9%(WWDC)
+- 港股：恒生+0.42%; 腾讯微信AI Agent 7月灰度测试; 中国AI IPO潮持续
+- A股：6/8大跌后企稳(上证-1.70%→-0.19%); 数据Token交易概念; 存储涨价确认
+- 中概：ADR退市风险Goldman维持66%概率; BABA/PDD/JD承压
+- EV：BYD 5月376,990辆结束8月下降; 蔚来37,705辆+62%；零跑81,569辆+81%
+- 本周焦点：6/10 CPI + 6/11 FOMC + 6/12 SpaceX IPO + 6/15 燧原/粤芯上会
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
