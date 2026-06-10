@@ -638,6 +638,13 @@
 - Key themes: MoE domination, hybrid attention (Mamba2+Transformer), long-context (up to 10M), thinking mode standard, agentic AI core, open-source divergence, synthetic data training
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-06-10] search | arXiv Paper Check — AI & CTR (June 10, 2026)
+- New page: wiki/synthesis/2026-06-10/arxiv-paper-check.md
+- Surveyed: cs.AI, cs.LG, cs.IR (Jun 9–10, 2026 submissions)
+- Papers highlighted: 22 across AI/ML Systems, LLM Training/Inference, Agents/Benchmarks, CTR/Recommendation
+- Top picks: Target-SFT (unified SFT theory), ReasonAlloc (KV cache "Reasoning Wave"), Piper (programmable distributed training), ABC-Bench (LLMs > human experts in wet-lab), AIR (Kuaishou +3.446% GMV LLM cross-domain rec), Mult-DPO (set-wise DPO for recommenders), τ-Rec (agentic rec reliability cliff)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-09] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-09)
 - New page: wiki/synthesis/2026-06-09/wq101-alpha-daily.md
 - Applied Alpha#1/#6/#12/#19/#30/#41/#53 across 7 dimensions
@@ -751,4 +758,10 @@
 - 中概：ADR退市风险Goldman维持66%概率; BABA/PDD/JD承压
 - EV：BYD 5月376,990辆结束8月下降; 蔚来37,705辆+62%；零跑81,569辆+81%
 - 本周焦点：6/10 CPI + 6/11 FOMC + 6/12 SpaceX IPO + 6/15 燧原/粤芯上会
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-10] synthesis | arXiv Daily — AI Research Survey
+- New page: wiki/synthesis/2026-06-10/arxiv-daily.md
+- Coverage: 17 papers across LLM reasoning, diffusion LMs, recommendation systems, CTR prediction, games/RL, agent memory, benchmarks
+- Key papers: ACTS (CoT steering), FLARE (hybrid AR+diffusion), RGCD-Rep (Kuaishou cross-domain rec), CADET (LinkedIn CTR), Game-RL (VLM reasoning via games), MRAgent (graph memory, ICML 2026)
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
