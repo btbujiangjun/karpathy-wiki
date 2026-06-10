@@ -4,6 +4,15 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-10] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-10)
+- New page: wiki/synthesis/2026-06-10/wq101-alpha-daily.md
+- Applied Alpha#1/#6/#12/#19/#30/#41/#53 across 7 dimensions
+- Market context: US-Iran conflict escalation, CPI data day (YoY +4.2% expected), AI trade selloff continues, VIX 19.87 (+5.02%), Oil ~$89 (+1.02%)
+- Top picks: ORCL(9), XOM(9), LMT(9), JNJ(9), CVX(8), RTX(8), JPM(8), BAC(8), LLY(8), NVDA(8), GOOGL(8)
+- Sectors: 3 Energy, 3 Defense, 4 Financials, 3 Healthcare, 3 Tech, 2 Consumer Defensive, 2 AI Infrastructure
+- Key shift vs 06-09: Energy/Defense/Healthcare dominate (geopolitical risk-off), AI/Technology underweight (CPI fear + trade unwind)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-10] synthesis | 投资日报 — 2026-06-10（美股/港股/A股/中概/新能源科技与AI热点）
 - Summary: wiki/synthesis/2026-06-10/investment-daily.md
 - 美股：SpaceX IPO（$135/股，$1.77万亿，本周五上市）；OpenAI 秘密提交 S-1（$8,520亿估值）；Anthropic 秘密提交 S-1 + Claude Fable 5 发布（$9,650亿估值）；Apple WWDC Siri AI 发布；Super Micro $70亿融资（盘后-9%）；Marvell 加入 S&P 500 (+10%)；Citi 将 S&P 500 目标上调至 8,100
