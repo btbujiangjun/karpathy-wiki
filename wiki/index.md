@@ -386,4 +386,5 @@ Papers are organized by research category. Each page includes problem background
 | [wq101-alpha-daily](synthesis/2026-06-09/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-09) | — |
 | [arxiv-daily](synthesis/2026-06-10/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 10, 2026) | 17 papers |
 | [arxiv-paper-check](synthesis/2026-06-10/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 10, 2026) | 22 papers |
+| [game-rl-daily](synthesis/2026-06-10/game-rl-daily.md) | Game RL & Game AI Bot — Daily Survey (2026-06-10) | 20 papers |
 | [conference-digest](synthesis/2026-06-10/conference-digest.md) | 会议摘要: 2026年AI/ML顶级会议论文全景 — 13 venues, 100+ papers | 13 venues |

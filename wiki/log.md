@@ -26,6 +26,12 @@
 - Sources: arXiv cs.AI, cs.CL, cs.IR, cs.LG (Jun 5-8 submissions)
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-06-10] search | Game RL & Game AI Bot — Daily Survey
+- New page: wiki/synthesis/2026-06-10/game-rl-daily.md
+- Coverage: 20 papers across Game RL (5), Game AI Bot (4), Game Foundation Models (3), PCG (2), Game Benchmarks (3), World Models (2), Related Techniques (2)
+- Top picks: NitroGen (CVPR 2026 Oral, NVIDIA), SPIRAL (self-play reasoning transfer), MARSHAL (multi-agent RL), GROW (GRPO for VLM agents), Orak (KRAFTON benchmark), Matrix-Game (17B Minecraft world model), PCGRLLM (LLM reward design)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-04] search | arXiv Digest — AI & CTR (June 4, 2026)
 - New page: wiki/synthesis/2026-06-04/arxiv-digest.md
 - Surveyed: cs.LG (236 entries), cs.IR (27 entries), cs.AI (207 entries) from Thu 4 Jun 2026
