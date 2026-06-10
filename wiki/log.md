@@ -772,6 +772,13 @@
 - Key papers: ACTS (CoT steering), FLARE (hybrid AR+diffusion), RGCD-Rep (Kuaishou cross-domain rec), CADET (LinkedIn CTR), Game-RL (VLM reasoning via games), MRAgent (graph memory, ICML 2026)
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
 
+## [2026-06-10] synthesis | Tech Report Digest (第九版) — 2026-06-10
+- New page: wiki/synthesis/2026-06-10/tech-report-digest.md
+- Coverage: 22+ organizations, 35+ reports
+- Highlights: DeepSeek V4 CSA/HCA attention, GPT-5 thinking+router, Claude Opus 4.8 (SWE-bench Pro 69.2%), Gemini 3.1 Pro (ARC-AGI-2 77.1%), Qwen3/3.6 thinking/non-thinking unified, Mistral Large 3 (675B MoE, Apache 2.0), Nemotron 3 Ultra (550B hybrid Mamba-Attention), GLM-5.1 (8h autonomous agent), Kimi K2.6 (1.1T MoE, MuonClip), Seed 2.0, Grok 4.3, Amazon Nova Premier, Llama 4, Phi-4, Apple AFM v2, InternLM3, Yi, Baichuan, StepFun
+- Six directions: architecture (MoE/Mamba/hybrid), training (Muon/async RL/distillation), scaling law, multimodal, long context (1M~10M), reasoning models (thinking modes)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-10] synthesis | Conference Digest — 2026年AI/ML顶级会议论文全景
 - New page: wiki/synthesis/2026-06-10/conference-digest.md
 - Coverage: 13 venues (ICML 2026, NeurIPS 2025, ICLR 2026, AAAI 2026, CVPR 2026, ACL/EACL 2026, EMNLP 2025, KDD 2026, SIGIR 2026, WWW 2026, RecSys 2025) + arXiv industry papers

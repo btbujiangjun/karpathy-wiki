@@ -384,6 +384,7 @@ Papers are organized by research category. Each page includes problem background
 | [wq101-alpha-daily](synthesis/2026-06-05/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-05) | — |
 | [wq101-alpha-daily](synthesis/2026-06-08/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-08) | — |
 | [wq101-alpha-daily](synthesis/2026-06-09/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-09) | — |
+| [tech-report-digest](synthesis/2026-06-10/tech-report-digest.md) | 各大 AI 公司最新技术报告汇总 (第九版) — 2026-06-10 (22+ 家机构, DeepSeek V4, GPT-5/5.5, Gemini 3.1/3.5, Claude Opus 4.8, Qwen3/3.6, Mistral Large 3, Nemotron 3 Ultra, GLM-5, Kimi K2.6, Seed 2.0, Grok 4.3, Nova Premier, Llama 4, Phi-4 等 35+ 报告) | 35+ reports |
 | [arxiv-daily](synthesis/2026-06-10/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 10, 2026) | 17 papers |
 | [arxiv-paper-check](synthesis/2026-06-10/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 10, 2026) | 22 papers |
 | [game-rl-daily](synthesis/2026-06-10/game-rl-daily.md) | Game RL & Game AI Bot — Daily Survey (2026-06-10) | 20 papers |
