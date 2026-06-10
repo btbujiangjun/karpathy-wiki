@@ -4,6 +4,16 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-10] synthesis | 投资日报 — 2026-06-10（美股/港股/A股/中概/新能源科技与AI热点）
+- Summary: wiki/synthesis/2026-06-10/investment-daily.md
+- 美股：SpaceX IPO（$135/股，$1.77万亿，本周五上市）；OpenAI 秘密提交 S-1（$8,520亿估值）；Anthropic 秘密提交 S-1 + Claude Fable 5 发布（$9,650亿估值）；Apple WWDC Siri AI 发布；Super Micro $70亿融资（盘后-9%）；Marvell 加入 S&P 500 (+10%)；Citi 将 S&P 500 目标上调至 8,100
+- 全球科技：Broadcom 财报引发上周五 AI 抛售后，本周全球科技股反弹（韩国 KOSPI +8%）；亚洲芯片股 SK Hynix +6.44%，Tokyo Electron +5.65%
+- 中概/港股：中国 5 月 PPI +3.9%（近四年新高，AI 投资拉动），CPI +1.2%（miss）；出口 +19.4%；腾讯/阿里/美团 AI 驱动
+- A股：光模块（中际旭创）、半导体设备（北方华创）、国产算力（寒武纪/海光信息）持续高景气
+- 新能源：比亚迪出口高增长；宁德时代 AI 储能新需求；特斯拉 Robotaxi 持续推进
+- AI 主题：AI IPO 三重奏（SpaceX/OpenAI/Anthropic）、推理芯片竞争（D-Matrix Corsair 投产）、AI 数据中光互联（Corning-Amazon 协议）、JPMorgan AI Agent 部署
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-03] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20
 - New page: wiki/synthesis/2026-06-03/wq101-alpha-daily.md
 - Applied Alpha#1/#6/#12/#19/#30/#41/#53 across 7 dimensions (momentum, reversal, volatility, volume-price, trend strength, mean reversion)
