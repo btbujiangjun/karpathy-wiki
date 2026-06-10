@@ -387,5 +387,5 @@ Papers are organized by research category. Each page includes problem background
 | [tech-report-digest](synthesis/2026-06-10/tech-report-digest.md) | 各大 AI 公司最新技术报告汇总 (第九版) — 2026-06-10 (22+ 家机构, DeepSeek V4, GPT-5/5.5, Gemini 3.1/3.5, Claude Opus 4.8, Qwen3/3.6, Mistral Large 3, Nemotron 3 Ultra, GLM-5, Kimi K2.6, Seed 2.0, Grok 4.3, Nova Premier, Llama 4, Phi-4 等 35+ 报告) | 35+ reports |
 | [arxiv-daily](synthesis/2026-06-10/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 10, 2026) | 17 papers |
 | [arxiv-paper-check](synthesis/2026-06-10/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 10, 2026) | 22 papers |
-| [game-rl-daily](synthesis/2026-06-10/game-rl-daily.md) | Game RL & Game AI Bot — Daily Survey (2026-06-10) | 20 papers |
+| [game-rl-daily](synthesis/2026-06-10/game-rl-daily.md) | Game RL & Game AI Bot — Daily Survey (2026-06-10) | ~41 papers |
 | [conference-digest](synthesis/2026-06-10/conference-digest.md) | 会议摘要: 2026年AI/ML顶级会议论文全景 — 13 venues, 100+ papers | 13 venues |
