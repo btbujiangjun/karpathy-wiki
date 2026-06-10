@@ -1,540 +1,700 @@
 ---
-title: "Game RL & AI Bot Daily — 2026-06-10"
+title: Game RL & Game AI Bot Daily — 2026-06-10
 type: synthesis
 created: 2026-06-10
-updated: 2026-06-11
+updated: 2026-06-10
 sources: []
-tags: [game-rl, game-ai-bot, game-foundation-models, procedural-content-generation, game-benchmarks, self-play, world-models, marl, pcg, curiosity-driven-exploration, hierarchical-rl, diffusion-policy]
+tags: [game-rl, game-ai, self-play, marl, foundation-models, pcg, benchmarks, world-models, curiosity, hierarchical-rl, survey]
 ---
 
-# Game RL & AI Bot Daily — 2026-06-10
+# Game RL & Game AI Bot Daily — 2026-06-10
 
-> Search: arXiv & recent proceedings. Coverage: Game RL, Game AI Bot, Game Foundation Models, PCG, Benchmarks, World Models, Self-Play, Related Techniques.
-
----
-
-## 1. Game RL — Reinforcement Learning in Games
+> arXiv and recent proceedings survey. Covers Game RL, Game AI Bots, Game Foundation Models, PCG, Benchmarks, Industry Game AI, and related techniques.
 
 ---
 
-### 1.1 Dreaming in Code for Curriculum Learning in Open-Ended Worlds
+## 1. Game Reinforcement Learning (MARL, Self-Play)
 
-| Field | Detail |
-|-------|--------|
-| **Authors** | Konstantinos Mitsides, Maxence Faldor, Antoine Cully |
-| **Affiliation** | Imperial College London |
-| **Venue** | arXiv Feb 2026 |
-| **Abstract** | Proposes a curriculum learning method that uses a world model to "dream" about plausible future challenges, generating targeted training environments in open-ended worlds (Craftax). The agent implicitly imagines increasingly difficult scenarios and trains on them before encountering them in the real environment, enabling zero-shot generalization to novel challenges. Bridges model-based RL and unsupervised environment design (UED). |
-| **Link** | [arXiv:2602.08194](https://arxiv.org/abs/2602.08194) |
-| **Tags** | `curriculum-learning` `world-model` `open-ended` `ued` |
+### 1.1 K-Level Policy Gradients (KPG)
+- **Title:** K-Level Policy Gradients: Game-Theoretic Multi-Agent RL
+- **Authors:** (anonymous, under review)
+- **Affiliation:** —
+- **Venue:** arXiv:2509.12117, Sep 2025
+- **Abstract & Innovation:** Harnesses Stackelberg game theory for N-player general-sum games. KPG generalises actor-critic MARL by recursing K levels of strategic reasoning. Reaches ε-Nash equilibrium with finite iterates. Applied to MAPPO, FACMAC, MADDPG — shows superior performance on SMAC, SMAX, and MAMuJoCo.
+- **Link:** https://arxiv.org/abs/2509.12117
 
-### 1.2 Event-Aware World Model for RL (EAWM)
+### 1.2 HLSMAC
+- **Title:** HLSMAC: A New StarCraft Multi-Agent Challenge for High-Level Strategic Decision-Making
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2509.12927, Sep 2025
+- **Abstract & Innovation:** Extends SMAC with 12 scenarios based on the Thirty-Six Stratagems, challenging agents with tactical maneuvering, timing coordination, and deception. Integrates both SOTA MARL algorithms and LLM-based agents. New metrics beyond win rate (ability utilization, advancement efficiency).
+- **Link:** https://arxiv.org/abs/2509.12927
 
-| Field | Detail |
-|-------|--------|
-| **Authors** | Zhao-Han Peng, Shaohui Li, Zhi Li, Shulan Ruan, Yu Liu et al. |
-| **Affiliation** | Multiple |
-| **Venue** | ICLR 2026 |
-| **Abstract** | Proposes an event-aware world model that segments observation streams into discrete events (e.g., "enemy spawns", "door opens") and models event transitions alongside pixel-level dynamics. This hierarchical abstraction improves long-horizon planning and sample efficiency in complex game environments by allowing the agent to reason at the event level rather than frame-by-frame. Tested on Atari and MiniGrid benchmarks. |
-| **Link** | [arXiv:2601.19336](https://arxiv.org/abs/2601.19336) |
-| **Tags** | `world-model` `event-abstraction` `hierarchical-planning` `iclr-2026` |
+### 1.3 MARSHAL
+- **Title:** MARSHAL: Incentivizing Multi-Agent Reasoning via Self-Play with Strategic LLMs
+- **Authors:** (multiple, from Qwen team / academic)
+- **Affiliation:** Qwen / Academic
+- **Venue:** arXiv:2510.15414
+- **Abstract & Innovation:** End-to-end RL framework for multi-turn, multi-agent self-play with LLMs in cooperative and competitive games. Introduces turn-level advantage estimator + agent-specific advantage normalization atop GRPO. Qwen3-4B agents improve 28.7% on held-out games. Zero-shot transfer to AIME (+10%), GPQA-Diamond (+7.6%).
+- **Link:** https://arxiv.org/abs/2510.15414
 
-### 1.3 Curiosity-Driven Exploration for Efficient RL (CDE)
+### 1.4 SPIRAL
+- **Title:** SPIRAL: Self-Play on Zero-Sum Games Incentivizes Reasoning via Multi-Agent Multi-Turn Reinforcement Learning
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2506.24119
+- **Abstract & Innovation:** Self-play framework where models learn by playing multi-turn zero-sum games (TicTacToe, Kuhn Poker, Simple Negotiation) against continuously improving versions of themselves. Proposes Role-conditioned Advantage Estimation (RAE) to stabilize multi-agent RL. Up to 10% improvement across 8 reasoning benchmarks on Qwen and Llama families. Outperforms SFT on 25K expert trajectories.
+- **Link:** https://arxiv.org/abs/2506.24119
 
-| Field | Detail |
-|-------|--------|
-| **Authors** | (Tencent AI Lab) |
-| **Affiliation** | Tencent AI Lab |
-| **Venue** | ICLR 2026 |
-| **Abstract** | Proposes Curiosity-Driven Exploration (CDE), using the model's intrinsic prediction error as a curiosity signal to guide exploration in sparse-reward game environments. Incorporates a dual-head predictor that distinguishes between epistemic and aleatoric uncertainty to avoid "noisy TV" distractions. Outperforms RND and ICM on Montezuma's Revenge and other hard-exploration Atari games. |
-| **Link** | [OpenReview ICLR 2026](https://openreview.net/forum?id=CDE) |
-| **Tags** | `curiosity` `exploration` `sparse-reward` `tencent` |
+### 1.5 Foundation Model Self-Play (FMSP)
+- **Title:** Foundation Model Self-Play: Open-Ended Strategy Innovation via Foundation Models
+- **Authors:** (multiple)
+- **Affiliation:** —
+- **Venue:** arXiv:2507.06466
+- **Abstract & Innovation:** Family of approaches (vFMSP, NSSP, QDSP) that use FM code-generation for open-ended strategy discovery in multi-agent games. Evaluated on Car Tag (continuous control) and Gandalf (LLM jailbreaking). QDSP discovers diverse high-quality policies; FMSPs can automatically red-team and patch LLM vulnerabilities.
+- **Link:** https://arxiv.org/abs/2507.06466
 
-### 1.4 WOMBET: World Model-based Experience Transfer for Robust and Sample-efficient RL
+### 1.6 SPIRAL (Odysseus)
+- *See Section 3.2 for Odysseus (VLM + RL for long-horizon game play).*
 
-| Field | Detail |
-|-------|--------|
-| **Authors** | (Multiple) |
-| **Affiliation** | — |
-| **Venue** | L4DC 2026 |
-| **Abstract** | Introduces a framework that leverages a learned world model to transfer experiences across different tasks or game levels without retraining. The world model enables the agent to simulate how policies trained in one environment would perform in another, enabling robust zero-shot transfer. Demonstrates significant sample efficiency gains on Procgen and NetHack-style environments. |
-| **Link** | [arXiv:2604.08958](https://arxiv.org/abs/2604.08958) |
-| **Tags** | `world-model` `experience-transfer` `zero-shot` `sample-efficiency` |
+### 1.7 SCOPE
+- **Title:** SCOPE: Self-Play via Co-Evolving Policies for Open-Ended Tasks
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2605.31433
+- **Abstract & Innovation:** First framework extending data-free self-play to open-ended tasks (no verifiable answers). Co-evolves Challenger (task generation) and Solver (task solving) with a fixed frozen-base Judge writing rubrics. Uses rubric-based rewards instead of rule-based verifiers. Works on document-grounded tasks.
+- **Link:** https://arxiv.org/abs/2605.31433
 
-### 1.5 HiPER: Hierarchical RL with Explicit Credit Assignment for LLM Agents
+### 1.8 G-Zero
+- **Title:** G-Zero: Self-Play for Open-Ended Generation from Zero Data
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2605.09959
+- **Abstract & Innovation:** Verifier-free co-evolutionary framework using Hint-δ intrinsic reward — measures predictive shift between a Generator's unassisted response vs. hint-conditioned response. Proposer trained via GRPO to target Generator blind spots; Generator optimized via DPO. Bypasses external judge capability ceilings.
+- **Link:** https://arxiv.org/abs/2605.09959
 
-| Field | Detail |
-|-------|--------|
-| **Authors** | (Multiple) |
-| **Affiliation** | — |
-| **Venue** | arXiv Feb 2026 |
-| **Abstract** | Introduces hierarchical RL for LLM agents where high-level goals are decomposed into subgoals with explicit credit assignment across hierarchy levels. Uses a manager–worker architecture: the manager proposes subgoals in natural language, the worker executes primitive actions. Improves long-horizon task completion in text-based games and embodied game settings. |
-| **Link** | [arXiv:2602.07987](https://arxiv.org/abs/2602.07987) |
-| **Tags** | `hierarchical-rl` `credit-assignment` `llm-agent` `subgoal-planning` |
+### 1.9 Scaling Self-Play with Self-Guidance (SGS)
+- **Title:** Scaling Self-Play with Self-Guidance
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2604.20209
+- **Abstract & Innovation:** Asymmetric self-play with three roles (Solver, Conjecturer, Guide). Guide scores synthetic problems by relevance and clarity, preventing Conjecturer degradation over long training runs.
+- **Link:** https://arxiv.org/abs/2604.20209
 
-### 1.6 STEP-HRL: HRL with Augmented Step-Level Transitions for LLM Agents
+### 1.10 OpenSIR
+- **Title:** Open-Ended Self-Improving Reasoner (OpenSIR)
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2511.00602
+- **Abstract & Innovation:** Self-play where LLM alternates teacher/student roles to generate and solve novel problems without external supervision. Optimizes for difficulty + diversity rewards. Achieves open-ended learning from basic to advanced mathematics.
+- **Link:** https://arxiv.org/abs/2511.00602
 
-| Field | Detail |
-|-------|--------|
-| **Authors** | Shuai Zhen et al. |
-| **Affiliation** | — |
-| **Venue** | ACL 2026 |
-| **Abstract** | Hierarchical RL framework for LLM agents where high-level goals are decomposed into subgoals and low-level actions are learned via step-level transitions augmented with language feedback. The agent learns to plan in natural language space while executing fine-grained actions in game environments. Improves long-horizon task completion in text-based games. |
-| **Link** | [arXiv:2604.05808](https://arxiv.org/abs/2604.05808) |
-| **Tags** | `hierarchical-rl` `llm-agent` `language-feedback` `aclr-2026` |
+### 1.11 PopuLoRA
+- **Title:** PopuLoRA: Co-Evolving LLM Populations for Reasoning Self-Play
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2605.16727
+- **Abstract & Innovation:** Population-based asymmetric self-play for RLVR. LoRA adapters on shared frozen base. Teachers propose problems, students solve. LoRA weight-space evolution operators (mutations/crossovers in seconds). Co-evolutionary arms race avoids self-calibration collapse.
+- **Link:** https://arxiv.org/abs/2605.16727
 
-### 1.7 SPIRAL: Self-Play on Zero-Sum Games Incentivizes Reasoning
+### 1.12 π-Play
+- **Title:** π-Play: Multi-Agent Self-Play via Privileged Self-Distillation without External Data
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2604.14054
+- **Abstract & Innovation:** Self-play produces question construction paths (QCPs) — used as privileged context for teacher-student self-distillation. Transforms sparse-reward self-play into dense-feedback self-evolution. Outperforms fully supervised search agents.
+- **Link:** https://arxiv.org/abs/2604.14054
 
-| Field | Detail |
-|-------|--------|
-| **Authors** | Bo Liu, Leon Guertler, Simon Yu, Zichen Liu, Penghui Qi, Daniel Balcells, Mickel Liu, Cheston Tan, Weiyan Shi, Min Lin, Wee Sun Lee, Natasha Jaques |
-| **Affiliation** | PlasticLabs, Sea AI Lab, Thinking Machine, NUS |
-| **Venue** | arXiv 2025 (v3 Mar 2026) |
-| **Abstract** | Self-play framework where LLMs learn by playing multi-turn zero-sum games (TicTacToe, Kuhn Poker, Simple Negotiation) against continuously improving selves. Role-conditioned advantage estimation (RAE) stabilizes multi-agent training. Up to +10% across 8 reasoning benchmarks on Qwen/Llama models. Outperforms SFT on 25,000 expert trajectories. |
-| **Link** | [arXiv:2506.24119](https://arxiv.org/abs/2506.24119) |
-| **Tags** | `self-play` `multi-agent` `zero-sum-games` `reasoning-transfer` |
+### 1.13 MARL-GPT
+- **Title:** MARL-GPT: Foundation Model for Multi-Agent Reinforcement Learning
+- **Authors:** (CogAI Systems / academic)
+- **Affiliation:** Cognitive AI Systems
+- **Venue:** arXiv:2604.05943
+- **Abstract & Innovation:** Single GPT-based model trained via offline RL on expert trajectories (400M SMACv2, 100M GRF, 1B POGEMA) with transformer observation encoder. Competitive across diverse MARL environments without task-specific tuning.
+- **Link:** https://arxiv.org/abs/2604.05943
 
-### 1.8 MARSHAL: Multi-Agent Reasoning via Self-Play with Strategic LLMs
+### 1.14 LaMer
+- **Title:** Meta-RL Induces Exploration in Language Agents
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2512.16848
+- **Abstract & Innovation:** Meta-RL framework for LLM agents with cross-episode training + in-context policy adaptation via reflection. +11%/14%/19% on Sokoban/MineSweeper/Webshop.
+- **Link:** https://arxiv.org/abs/2512.16848
 
-| Field | Detail |
-|-------|--------|
-| **Authors** | Huining Yuan, Zelai Xu, Zheyue Tan, Xiangmin Yi, Mo Guang, Kaiwen Long, Haojia Hui, Boxun Li, Xinlei Chen, Bo Zhao, Xiao-Ping Zhang, Chao Yu, Yu Wang |
-| **Affiliation** | Tencent AI Lab, Tsinghua University |
-| **Venue** | arXiv 2025 (v3 Feb 2026) |
-| **Abstract** | End-to-end RL framework for multi-agent reasoning through self-play. Turn-level advantage estimator + agent-specific advantage normalization. Trained from Qwen3-4B: +28.7% in held-out games. Generalizes to reasoning benchmarks: +10.0% AIME, +7.6% GPQA-Diamond, +3.5% average across all benchmarks. |
-| **Link** | [arXiv:2510.15414](https://arxiv.org/abs/2510.15414) |
-| **Tags** | `self-play` `multi-agent-reasoning` `credit-assignment` `strategic-games` |
+### 1.15 PokeRL
+- **Title:** PokeRL: A Modular RL System for Early-Game Pokemon Red
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2604.10812, Apr 2026
+- **Abstract & Innovation:** PPO agents for Pokemon Red early-game tasks with loop masking, anti-spam mechanisms, dense hierarchical reward design, and curriculum over 3 sequences.
+- **Link:** https://arxiv.org/abs/2604.10812
 
-### 1.9 Search Self-Play: Pushing Agent Capability without Supervision
-
-| Field | Detail |
-|-------|--------|
-| **Authors** | Qwen Team (Alibaba) |
-| **Affiliation** | Alibaba / Qwen |
-| **Venue** | ICLR 2026 Poster |
-| **Abstract** | Self-play training for deep search agents. LLM acts as dual-role: task proposer + problem solver. RAG-based verification of ground-truth answers. Co-evolution of proposer and solver improves search uniformly across benchmarks. |
-| **Link** | [OpenReview ICLR 2026](https://openreview.net/forum?id=ZmGirmNJqE) |
-| **Tags** | `self-play` `deep-search` `agent` `rlvr` |
-
-### 1.10 Self-RedTeam: Online Self-Play for Safer Language Models
-
-| Field | Detail |
-|-------|--------|
-| **Authors** | Mickel Liu, Liwei Jiang, Yancheng Liang, Simon Shaolei Du, Yejin Choi, Tim Althoff, Natasha Jaques |
-| **Affiliation** | UW, NVIDIA, Stanford |
-| **Venue** | arXiv 2025 |
-| **Abstract** | Safety alignment as two-player zero-sum game (attacker–defender co-evolution). Hidden CoT for private planning. +65.5% on WildJailBreak, +21.8% diverse attacks. |
-| **Link** | [arXiv:2506.07468](https://arxiv.org/abs/2506.07468) |
-| **Tags** | `self-play` `safety` `multi-agent` `co-evolution` |
-
-### 1.11 A Comprehensive Review of MARL in Video Games
-
-| Field | Detail |
-|-------|--------|
-| **Authors** | Zhengyang Li et al. |
-| **Affiliation** | Multiple |
-| **Venue** | IEEE Transactions on Games, 2025 |
-| **Abstract** | Survey covering AlphaStar (StarCraft II), OpenAI Five (Dota 2), Rocket League, Minecraft, Quake III Arena, Honor of Kings. Analyzes non-stationarity, partial observability, sparse rewards, team coordination, scalability. Proposes novel game complexity estimation method. |
-| **Link** | [arXiv:2509.03682](https://arxiv.org/abs/2509.03682) |
-| **Tags** | `survey` `marl` `video-games` `alphastar` `openai-five` |
+### 1.16 SeRL
+- **Title:** SeRL: Self-Play Reinforcement Learning for Large Language Models with Limited Data
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2505.20347
+- **Abstract & Innovation:** Self-instruction + self-rewarding modules bootstrap LLM RL training with minimal initial data. Majority-voting reward estimation. On par with verifiable-reward methods.
+- **Link:** https://arxiv.org/abs/2505.20347
 
 ---
 
-## 2. Game AI Bot — LLM-Powered Game Agents
+## 2. Game AI Bots (LLM-Powered)
 
----
+### 2.1 Continual Harness
+- **Title:** Continual Harness: Online Adaptation for Self-Improving Foundation Agents
+- **Authors:** (Gemini team)
+- **Affiliation:** Google DeepMind
+- **Venue:** arXiv:2605.09998
+- **Abstract & Innovation:** Automates manual harness refinement for LLM game agents. Extends Gemini Plays Pokémon (GPP) — first AI to complete multiple Pokémon RPGs (Blue, Yellow Legacy, Crystal). Uses online in-context learning: agent alternates between acting and refining system prompt/sub-agents/skills/memory mid-episode via Refiner.
+- **Link:** https://arxiv.org/abs/2605.09998
 
-### 2.1 Voyager: An Open-Ended Embodied Agent with Large Language Models in Minecraft
+### 2.2 Sensi
+- **Title:** Sensi: Learn One Thing at a Time — Curriculum-Based Test-Time Learning for LLM Game Agents
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2603.17683
+- **Abstract & Innovation:** Two-player architecture (perception vs. action) + curriculum-based learning + database-as-control-plane for ARC-AGI-3. Achieves 50–94× sample efficiency over baselines (completes curriculum in ~32 interactions vs 1600–3000).
+- **Link:** https://arxiv.org/abs/2603.17683
 
-| Field | Detail |
-|-------|--------|
-| **Authors** | Guanxing Chen et al. |
-| **Affiliation** | NVIDIA, Caltech, others |
-| **Venue** | NeurIPS 2023 (seminal); ongoing extensions |
-| **Abstract** | The first LLM-powered embodied lifelong learning agent in Minecraft. Uses GPT-4 as a high-level planner, a skill library for compositional action, and an iterative prompting mechanism for self-improvement. Voyager autonomously explores, acquires skills, and discovers the tech tree without human intervention. Widely cited as foundational for LLM game agents. |
-| **Link** | [arXiv:2305.16291](https://arxiv.org/abs/2305.16291) |
-| **Tags** | `voyager` `minecraft` `embodied-agent` `skill-library` `neurips-2023` |
+### 2.3 Bounded Autonomy
+- **Title:** Bounded Autonomy: Controlling LLM Characters in Live Multiplayer Games
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2604.04703
+- **Abstract & Innovation:** Control architecture for LLM NPCs in live multiplayer games. Three interfaces: agent-agent, agent-world, player-agent. Probabilistic reply-chain decay, embedding-based action grounding, and "whisper" soft-steering.
+- **Link:** https://arxiv.org/abs/2604.04703
 
-### 2.2 Agent World Model: Infinity Synthetic Environments for Agentic RL
+### 2.4 MineNPC-Task
+- **Title:** MineNPC-Task: Task Suite for Memory-Aware Minecraft Agents
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2601.05215
+- **Abstract & Innovation:** User-authored benchmark for memory-aware LLM agents in Minecraft. 216 subtasks from expert co-play with parametric templates, precondition checks, and bounded-knowledge policy. GPT-4o evaluated.
+- **Link:** https://arxiv.org/abs/2601.05215
 
-| Field | Detail |
-|-------|--------|
-| **Authors** | (Multiple) |
-| **Affiliation** | — |
-| **Venue** | arXiv Feb 2026 |
-| **Abstract** | Proposes Agent World Model (AWM) that creates infinite synthetic game environments for training generalist agents. Uses a world model to generate diverse, valid, and playable 2D game levels on-the-fly, conditioned on agent skill level. Bridges procedural content generation with agent training — the agent is continually challenged with appropriately difficult synthetic environments. |
-| **Link** | [arXiv:2602.08194](https://arxiv.org/abs/2602.08194) |
-| **Tags** | `world-model` `synthetic-environments` `generalist-agent` `pcg-training` |
+### 2.5 HER
+- **Title:** HER: Human-like Reasoning and Reinforcement Learning for LLM Role-playing
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2601.21459
+- **Abstract & Innovation:** Dual-layer thinking (first-person character thinking vs third-person LLM thinking) for LLM role-playing. Reverse-engineered reasoning-augmented data. RL with self-principled generative reward model. 30.26% improvement on CoSER benchmark.
+- **Link:** https://arxiv.org/abs/2601.21459
 
-### 2.3 GROW: Aligning GRPO with State-Action Modeling for Open-World VLM Agents
+### 2.6 Codified Finite-State Machines for Role-playing
+- **Title:** Codified Finite-State Machines for Role-playing
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2602.05905
+- **Abstract & Innovation:** CFSM/CPFSM framework using LLM-based coding to extract character state machines from textual profiles. Probabilistic transitions. Outperforms prompting-based baselines in role-playing consistency.
+- **Link:** https://arxiv.org/abs/2602.05905
 
-| Field | Detail |
-|-------|--------|
-| **Authors** | Xiongbin Wu et al. |
-| **Affiliation** | Multiple |
-| **Venue** | arXiv May 2026 |
-| **Abstract** | Adapts GRPO for VLM agents by decomposing long trajectories into state-action samples. Surrogate analysis shows GRPO signal preserved. SOTA on 800+ Minecraft tasks. |
-| **Link** | [arXiv:2605.20246](https://arxiv.org/abs/2605.20246) |
-| **Tags** | `grpo` `vlm-agent` `minecraft` `open-world` |
+### 2.7 LLM-Driven NPCs: Cross-Platform Dialogue
+- **Title:** LLM-Driven NPCs: Cross-Platform Dialogue System for Games and Social Platforms
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2504.13928, Apr 2025
+- **Abstract & Innovation:** Prototype integrating DeepSeek-R1 with Unity + Discord for cross-platform NPC dialogue. Cloud database for synchronized memory.
+- **Link:** https://arxiv.org/abs/2504.13928
 
-### 2.4 Ratchet: Minimal Hygiene Recipe for Self-Evolving LLM Agents
+### 2.8 PORTAL
+- **Title:** PORTAL: Agents Play Thousands of 3D Video Games
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2503.13356, Mar 2025
+- **Abstract & Innovation:** LLM generates specialized Behavior Trees (BTs) in DSL for game-playing across thousands of 3D games. Decouples tactical planning from execution — real-time performance without RL training costs.
+- **Link:** https://arxiv.org/abs/2503.13356
 
-| Field | Detail |
-|-------|--------|
-| **Authors** | Xing Zhang, Yanwei Cui, Guanghui Wang, Ziyuan Li, Wei Qiu, Bing Zhu, Peiyang He |
-| **Affiliation** | AWS Generative AI Innovation Center, HSBC |
-| **Venue** | arXiv May 2026 |
-| **Abstract** | Self-evolving skill library with four hygiene mechanisms (outcome-driven retirement, bounded active-cap, meta-skill authoring, pattern canonicalisation). +0.328 pass@1 gain on MBPP+ hard-100 (peak 0.658). Transfers to SWE-bench Verified (+0.22). |
-| **Link** | [arXiv:2605.22148](https://arxiv.org/abs/2605.22148) |
-| **Tags** | `self-evolving` `skill-library` `voyager` `hygiene` |
-
-### 2.5 Experience Transfer for Multimodal LLM Agents in Minecraft
-
-| Field | Detail |
-|-------|--------|
-| **Authors** | Chenghao Li et al. |
-| **Affiliation** | Multiple |
-| **Venue** | arXiv Apr 2026 |
-| **Abstract** | Echo memory framework decomposes reusable knowledge into 5 dimensions (structure, attribute, process, function, interaction). In-Context Analogy Learning (ICAL) for experience transfer. 1.3x–1.7x speed-up in Minecraft. |
-| **Link** | [arXiv:2604.05533](https://arxiv.org/abs/2604.05533) |
-| **Tags** | `experience-transfer` `minecraft` `memory` `vlm-agent` |
-
-### 2.6 Gated Coordination for Multi-Agent Collaboration in Minecraft
-
-| Field | Detail |
-|-------|--------|
-| **Authors** | Various |
-| **Affiliation** | Multiple |
-| **Venue** | arXiv Apr 2026 |
-| **Abstract** | Gated coordination mechanism for efficient multi-agent collaboration in Minecraft. |
-| **Link** | [arXiv:2604.18975](https://arxiv.org/abs/2604.18975) |
-| **Tags** | `multi-agent` `minecraft` `coordination` |
-
-### 2.7 Competition and Cooperation of LLM Agents in Games
-
-| Field | Detail |
-|-------|--------|
-| **Authors** | (Multiple) |
-| **Affiliation** | — |
-| **Venue** | arXiv Apr 2026 |
-| **Abstract** | Studies emergent competition and cooperation dynamics between LLM agents in repeated game environments (Prisoner's Dilemma variants, resource allocation games). Shows that LLM agents can learn to cooperate, defect, or form coalitions without explicit reward engineering. |
-| **Link** | [arXiv:2604.03888](https://arxiv.org/abs/2604.03888) |
-| **Tags** | `multi-agent` `game-theory` `cooperation` `competition` |
-
-### 2.8 Galileo: A General VLM Agent for Open-Ended Games
-
-| Field | Detail |
-|-------|--------|
-| **Authors** | (Multiple) |
-| **Affiliation** | — |
-| **Venue** | arXiv 2025 |
-| **Abstract** | VLM agent that combines pixel-level perception with LLM-based reasoning for open-ended game play. Uses a visual encoder to process raw pixels, a reasoning module for planning, and a low-level controller for action execution. Demonstrates cross-game generalization without fine-tuning. |
-| **Link** | (Various) |
-| **Tags** | `vlm-agent` `open-ended` `generalist` `cross-game` |
+### 2.9 OpenGame
+- **Title:** OpenGame: Open Agentic Coding for Games
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2604.18394
+- **Abstract & Innovation:** First open-source agentic framework for end-to-end web game creation. GameCoder-27B (CPT + SFT + RL). Three-stage pipeline. OpenGame-Bench for dynamic evaluation across 150 game prompts. Also trains game-playing LLM.
+- **Link:** https://arxiv.org/abs/2604.18394
 
 ---
 
 ## 3. Game Foundation Models
 
+### 3.1 NitroGen
+- **Title:** NitroGen: An Open Foundation Model for Generalist Gaming Agents
+- **Authors:** Magne et al.
+- **Affiliation:** NVIDIA / MineDojo
+- **Venue:** CVPR 2026
+- **Abstract & Innovation:** Vision-action foundation model trained on 40,000 hours of gameplay across 1,000+ games. Automatically extracts actions from public videos. Universal Gymnasium API for any game. Up to 52% relative improvement on unseen games via fine-tuning. Open-source weights, data, and eval suite.
+- **Link:** https://arxiv.org/abs/2601.02427
+
+### 3.2 Odysseus
+- **Title:** Odysseus: Scaling VLMs to 100+ Turn Decision-Making in Games via Reinforcement Learning
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2605.00347
+- **Abstract & Innovation:** PPO with lightweight turn-level critic for VLM long-horizon game play (Super Mario Land, 100+ turns). Shows critic-based PPO > GRPO/Reinforce++ for long-horizon. Pretrained VLMs provide strong action priors. 3× game progress over frontier models. Cross-game generalization.
+- **Link:** https://arxiv.org/abs/2605.00347
+
+### 3.3 Game-TARS
+- **Title:** Game-TARS: Pretrained Foundation Models for Scalable Generalist Multimodal Game Agents
+- **Authors:** Wang et al.
+- **Affiliation:** SEED / Tencent
+- **Venue:** arXiv:2510.23691
+- **Abstract & Innovation:** Unified action space (keyboard-mouse). Pre-trained on 500B+ tokens across OS, web, and games. Decaying continual loss + Sparse-Thinking strategy. 2× SOTA in Minecraft; nears human-level in unseen web 3D games; outperforms GPT-5, Gemini 2.5 Pro, Claude 4 Sonnet on FPS benchmarks.
+- **Link:** https://arxiv.org/abs/2510.23691
+
+### 3.4 Scaling Behavior Cloning — Pixels2Play (P2P)
+- **Title:** Scaling Behavior Cloning Improves Causal Reasoning: An Open Model for Real-Time Video Game Playing
+- **Authors:** (anonymous, Elefant AI)
+- **Affiliation:** Elefant AI
+- **Venue:** arXiv:2601.04575
+- **Abstract & Innovation:** Open recipe for real-time game-playing foundation model on consumer GPU. 8,300+ hours of high-quality human gameplay. Models up to 1.2B params. Scaling laws show BC improves causal reasoning. Real-time 20 Hz inference on RTX 5090.
+- **Link:** https://arxiv.org/abs/2601.04575
+
+### 3.5 Towards Generalist Game Players (Survey)
+- **Title:** Towards Generalist Game Players: An Investigation of Foundation Models in the Game Multiverse
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2605.09965, May 2026
+- **Abstract & Innovation:** Comprehensive survey of LFMs as generalist game players across four pillars (Dataset, Model, Harness, Benchmark). Four evolutionary eras: symbolic → DRL → foundation models → future creator stage. Five fundamental trade-offs. Five-level roadmap to AGI via games.
+- **Link:** https://arxiv.org/abs/2605.09965
+
+### 3.6 GameVerse
+- **Title:** GameVerse: Can Vision-Language Models Learn from Video-based Reflection?
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2603.06656
+- **Abstract & Innovation:** Benchmark with reflect-and-retry paradigm. 15 games, dual action space. Combining failure reflection + expert tutorials mirrors SFT+RL. Training-free paradigm for VLM game agents.
+- **Link:** https://arxiv.org/abs/2603.06656
+
+### 3.7 G1 (mentioned in Towards Generalist survey)
+- Referenced as training VLMs via RL self-evolution in multi-game environments, where perception and reasoning mutually bootstrap.
+
 ---
 
-### 3.1 NitroGen: Open Foundation Model for Generalist Gaming Agents
+## 4. Procedural Content Generation (RL + LLM + PCG)
 
-| Field | Detail |
-|-------|--------|
-| **Authors** | Loïc Magne, Anas Awadalla, Guanzhi Wang, Yinzhen Xu, Joshua Belofsky, Fengyuan Hu, Joohwan Kim, Ludwig Schmidt, Georgia Gkioxari, Jan Kautz, Yisong Yue, Yejin Choi, Yuke Zhu, Linxi "Jim" Fan |
-| **Affiliation** | NVIDIA, Stanford, Caltech, UChicago, UT Austin |
-| **Venue** | **CVPR 2026 Oral** |
-| **Abstract** | Vision-action foundation model trained on 40K hours of gameplay across 1000+ games. Three ingredients: internet-scale video-action dataset, multi-game benchmark, unified vision-action policy via large-scale BC. Up to +52% relative improvement on unseen games. Dataset and weights released. |
-| **Link** | [arXiv:2601.02427](https://arxiv.org/abs/2601.02427) | [Project](https://nitrogen.minedojo.org/) |
-| **Tags** | `foundation-model` `generalist-agent` `vision-action` `cvpr-2026` |
+### 4.1 IPCGRL
+- **Title:** IPCGRL: Language-Instructed Reinforcement Learning for Procedural Level Generation
+- **Authors:** Baek et al.
+- **Affiliation:** —
+- **Venue:** IEEE CoG 2025
+- **Abstract & Innovation:** Instruction-based PCG via RL with sentence embedding model. Fine-tunes task-specific embeddings to compress game-level conditions. 21.4% controllability improvement, 17.2% generalization improvement on 2D level generation.
+- **Link:** https://arxiv.org/abs/2503.12358
 
-### 3.2 Matrix-Game: Interactive World Foundation Model
+### 4.2 Multi-Agent PCGRL
+- **Title:** Video Game Level Design as a Multi-Agent Reinforcement Learning Problem
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2510.04862, Oct 2025
+- **Abstract & Innovation:** Frames level generation as multi-agent problem — multiple embodied generators with local observations. Reduces reward calc bottleneck, improves generalization to out-of-distribution map shapes. Open-sourced on GPU-parallelized PCGRL.
+- **Link:** https://arxiv.org/abs/2510.04862
 
-| Field | Detail |
-|-------|--------|
-| **Authors** | Yifan Zhang et al. |
-| **Affiliation** | Skywork AI |
-| **Venue** | arXiv Jun 2025 |
-| **Abstract** | 17B parameter interactive world model for controllable game world generation. Two-stage pipeline: unlabeled pretraining + action-labeled training. Matrix-Game-MC: 2700h unlabeled + 1000h labeled Minecraft gameplay. Outperforms Oasis and MineWorld. GameWorld Score benchmark released. |
-| **Link** | [arXiv:2506.18701](https://arxiv.org/abs/2506.18701) |
-| **Tags** | `world-model` `minecraft` `interactive-generation` `17b` |
+### 4.3 VIPCGRL
+- **Title:** Human-Aligned Procedural Level Generation via Text-Level-Sketch Shared Representation
+- **Authors:** Baek, Kim et al.
+- **Affiliation:** —
+- **Venue:** arXiv:2508.09860
+- **Abstract & Innovation:** Three-modality PCGRL (text, level grid, sketches). Quadruple contrastive learning for shared embedding. Auxiliary reward for human-likeness alignment.
+- **Link:** https://arxiv.org/abs/2508.09860
 
-### 3.3 Genie 2: Large-Scale Foundation World Model
+### 4.4 Procedural Game Level Design with DRL
+- **Title:** Procedural Game Level Design with Deep Reinforcement Learning
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2510.15120, Oct 2025
+- **Abstract & Innovation:** Two-agent system in Unity 3D: Hummingbird (solver) + Island (flower generator). Both trained with PPO. Co-adaptive emergent behavior for automated level design.
+- **Link:** https://arxiv.org/abs/2510.15120
 
-| Field | Detail |
-|-------|--------|
-| **Authors** | Jack Parker-Holder, Philip Ball, Jake Bruce et al. (Google DeepMind) |
-| **Affiliation** | Google DeepMind |
-| **Venue** | DeepMind Blog Dec 2024 / ongoing |
-| **Abstract** | Foundation world model generating endless variety of action-controllable, playable 3D environments from a single prompt image. Enables training/evaluation in limitless curriculum of novel worlds. |
-| **Link** | [DeepMind Blog](https://deepmind.google/blog/genie-2-a-large-scale-foundation-world-model/) |
-| **Tags** | `world-model` `foundation-model` `deepmind` `3d-environments` |
+### 4.5 Database-Driven 3D Level Generation with LLMs
+- **Title:** A Database-Driven Framework for 3D Level Generation with LLMs
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2508.18533
+- **Abstract & Innovation:** Offline LLM-assisted construction of reusable databases (Room, Facility, Mechanics DBs). Multi-phase pipeline + two-phase repair system. No live LLM calls during generation.
+- **Link:** https://arxiv.org/abs/2508.18533
 
-### 3.4 Towards Generalist Game Players: An Investigation of Foundation Models
+### 4.6 WFC + PCGRL Hybrid
+- **Title:** Learning Local Constraints for Reinforcement-Learned Content Generators
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2605.13570
+- **Abstract & Innovation:** Combines Wave Function Collapse (local constraints) with PCGRL (global playability) for Lode Runner levels. PPO agent selects tile patterns within WFC constraints.
+- **Link:** https://arxiv.org/abs/2605.13570
 
-| Field | Detail |
-|-------|--------|
-| **Authors** | (Multiple) |
-| **Affiliation** | — |
-| **Venue** | arXiv May 2026 |
-| **Abstract** | Investigates whether large foundation models (LFMs) can serve as generalist game players across multiple titles and genres. Probes the capabilities of GPT-4o, Gemini 2.5 Pro, and open-source VLMs on a curated set of 20+ games, measuring perception, planning, and control. Finds that current LFMs show promise on puzzle and strategy games but struggle with real-time action and precise control. |
-| **Link** | [arXiv:2605.09965](https://arxiv.org/abs/2605.09965v1) |
-| **Tags** | `generalist-player` `foundation-model` `vlm` `benchmark` |
+### 4.7 PCGRLLM
+- **Title:** PCGRLLM: Large Language Model-Driven Reward Design for Procedural Content Generation Reinforcement Learning
+- **Authors:** Baek et al.
+- **Affiliation:** —
+- **Venue:** arXiv:2502.10906, Feb 2025
+- **Abstract & Innovation:** LLM designs reward functions for PCGRL agents autonomously. Automates the reward engineering bottleneck in RL-based PCG.
+- **Link:** https://arxiv.org/abs/2502.10906
 
----
+### 4.8 CreativeGame
+- **Title:** CreativeGame: Multi-Agent Iterative Game Generation with Proxy Rewards
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2604.19926
+- **Abstract & Innovation:** Multi-agent system for iterative HTML5 game generation. Proxy reward (programmatic signals), lineage-scoped memory, mechanic-guided planning loop. 7 agents, 10 roles.
+- **Link:** https://arxiv.org/abs/2604.19926
 
-## 4. Procedural Content Generation
+### 4.9 High Dimensional PCG
+- **Title:** High Dimensional Procedural Content Generation (HDPCG)
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2602.18943
+- **Abstract & Innovation:** Extends PCG with additional gameplay dimensions (layers, time, locomotion modes). Encodes world state as attribute-labeled cells over expanded state space. Multi-tier planners with bounded-suboptimal search.
+- **Link:** https://arxiv.org/abs/2602.18943
 
----
+### 4.10 Multiverse
+- **Title:** Multiverse: Language-Conditioned Multi-Game Level Generator
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2603.26782, Mar 2026
+- **Abstract & Innovation:** Cross-game contrastive learning for language-conditioned level generation across game domains. Conditional VQ-VAE. Enables level blending — combining structural attributes from multiple source games.
+- **Link:** https://arxiv.org/abs/2603.26782
 
-### 4.1 PCGRLLM: LLM-Driven Reward Design for PCG-RL
+### 4.11 DreamGarden
+- **Title:** DreamGarden: A Designer Assistant for Growing Games from a Single Prompt
+- **Authors:** Earle, Parajuli, Banburski-Fahey
+- **Affiliation:** —
+- **Venue:** CHI 2025
+- **Abstract & Innovation:** Designer assistant that grows complete games from a single natural language prompt.
+- **Link:** (CHI 2025 proceedings)
 
-| Field | Detail |
-|-------|--------|
-| **Authors** | In-Chang Baek, Sung-Hyun Kim, Sam Earle, Zehua Jiang, Jin-Ha Noh, Julian Togelius, Kyung-Joong Kim |
-| **Affiliation** | Multiple (incl. NYU Game Innovation Lab) |
-| **Venue** | IEEE Transactions on Games, 2026 |
-| **Abstract** | LLM-driven reward function generation for RL-based procedural content generators. Feedback loop + reasoning-based prompt engineering. Human-comparable performance on story-to-reward generation in 2D environments. |
-| **Link** | [arXiv:2502.10906](https://arxiv.org/abs/2502.10906) |
-| **Tags** | `pcg` `reward-design` `llm` `reinforcement-learning` |
-
-### 4.2 PCG in Games: Survey with Insights on LLM Integration
-
-| Field | Detail |
-|-------|--------|
-| **Authors** | Mahdi Farrokhi Maleki, Richard Zhao |
-| **Affiliation** | University of Calgary |
-| **Venue** | AAAI AIIDE 2024 |
-| **Abstract** | Comprehensive PCG survey comparing search-based, ML-based, noise-based, and LLM-based methods across generation types. Identifies gaps and future research directions. |
-| **Link** | [arXiv:2410.15644](https://arxiv.org/abs/2410.15644) |
-| **Tags** | `pcg` `survey` `llm-integration` |
-
-### 4.3 IPCGRL: Language-Instructed RL for Procedural Level Generation
-
-| Field | Detail |
-|-------|--------|
-| **Authors** | (Multiple) |
-| **Affiliation** | — |
-| **Venue** | arXiv 2025 |
-| **Abstract** | Combines instruction following with RL-based level generation. A language model interprets natural language level descriptions (e.g., "a challenging platformer level with lots of gaps"), and an RL agent learns to generate levels satisfying those instructions. Integrates CLIP-style embeddings for open-vocabulary level understanding. |
-| **Link** | [arXiv:2503.10906](https://arxiv.org/abs/2503.10906) |
-| **Tags** | `pcg` `instruction-following` `rl` `language-guidance` |
-
-### 4.4 PANGeA: Procedural Artificial Narrative using Generative AI for Turn-Based Video Games
-
-| Field | Detail |
-|-------|--------|
-| **Authors** | Steph Buongiorno, Lawrence Jake Klinkert, Tanishq Chawla, Zixin Zhuang, Corey Clark |
-| **Affiliation** | — |
-| **Venue** | arXiv Apr 2024 |
-| **Abstract** | Uses LLMs guided by high-level designer criteria to generate narrative content for turn-based RPGs (settings, items, NPCs) and fosters dynamic free-form player–environment interactions. NPCs are personality-biased using the Big 5 Personality Model. Includes a validation system using the LLM's own intelligence. |
-| **Link** | [arXiv:2404.19721](https://arxiv.org/abs/2404.19721) |
-| **Tags** | `pcg` `narrative-generation` `llm` `rpg` |
-
-### 4.5 CrawLLM: LLM Pipeline for Game Asset Generation
-
-| Field | Detail |
-|-------|--------|
-| **Authors** | (Multiple) |
-| **Affiliation** | — |
-| **Venue** | IEEE Transactions on Games, 2026 |
-| **Abstract** | Pipeline that uses LLMs to generate full game asset suites (sprites, textures, sound effects, level layouts, item descriptions) from a single high-level prompt. Assets are validated for consistency and playability. Demonstrates end-to-end game generation from natural language specification. |
-| **Link** | (Various IEEE ToG 2026) |
-| **Tags** | `pcg` `asset-generation` `llm-pipeline` `end-to-end` |
+### 4.12 AutoUE
+- **Title:** AutoUE: Automated Generation of 3D Games in Unreal Engine via Multi-Agent Systems
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2603.07106
+- **Abstract & Innovation:** Multi-agent system for end-to-end 3D game generation in UE5. RAG for tool docs, C++ gameplay code generation, automated play-testing.
+- **Link:** https://arxiv.org/abs/2603.07106
 
 ---
 
 ## 5. Game Benchmarks
 
----
+### 5.1 Orak
+- **Title:** Orak: A Foundational Benchmark for Training and Evaluating LLM Agents on Diverse Video Games
+- **Authors:** Park et al.
+- **Affiliation:** KRAFTON AI
+- **Venue:** arXiv:2506.03610
+- **Abstract & Innovation:** 12 popular video games across all major genres. MCP-based plug-and-play interface. Fine-tuning dataset of expert LLM gameplay trajectories. Game leaderboards + LLM battle arenas.
+- **Link:** https://arxiv.org/abs/2506.03610
 
-### 5.1 BALROG: Benchmarking Agentic LLM and VLM Reasoning on Games
+### 5.2 GameWorld
+- **Title:** GameWorld: Towards Standardized and Verifiable Evaluation of Multimodal Game Agents
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2604.07429
+- **Abstract & Innovation:** 34 browser games across 5 genres, 170 tasks. Sandbox decouples inference latency. State-verifiable evaluator. Studies 18 model–interface pairs. Real-time variant GameWorld-RT. Capability-aligned curriculum analysis.
+- **Link:** https://arxiv.org/abs/2604.07429
 
-| Field | Detail |
-|-------|--------|
-| **Authors** | Davide Paglieri, Nick Collins, Éloi Olivier, et al. |
-| **Affiliation** | Multiple |
-| **Venue** | ICLR 2025 Spotlight |
-| **Abstract** | Evaluates agentic LLM and VLM capabilities through six diverse game environments (Crafter, MiniHack, etc.). Tests multi-step reasoning, planning under uncertainty, instruction following, and visual grounding. Current leader is Gemini 2.5 Pro Exp (35.7% avg completion), with GPT-4o at 15.4% and Llama-3.2-11B at 8.4%. Human baseline is ~90%+. |
-| **Link** | [arXiv:2411.13543](https://arxiv.org/abs/2411.13543) | [Project](https://balrogai.com/) |
-| **Tags** | `benchmark` `llm-agent` `vlm-reasoning` `iclr-2025` |
+### 5.3 VideoGameBench
+- **Title:** VideoGameBench: Can Vision-Language Models Complete Popular Video Games?
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2505.18134
+- **Abstract & Innovation:** 10 popular 1990s games (3 secret). Raw visual input only. Frontier VLMs complete only 0.48% (real-time) / 1.6% (paused). Gemini 2.5 Pro and Claude 3.7 Sonnet best among tested.
+- **Link:** https://arxiv.org/abs/2505.18134
 
-### 5.2 GameWorld: Towards Standardized and Verifiable Evaluation of Multimodal Game Agents
+### 5.4 BALROG
+- **Title:** BALROG: Benchmarking Agentic LLM and VLM Reasoning On Games
+- **Authors:** Paglieri et al.
+- **Affiliation:** —
+- **Venue:** arXiv:2411.13543
+- **Abstract & Innovation:** Aggregates 6 RL game environments (BabyAI, Crafter, TextWorld, Baba Is AI, MiniHack, NetHack). Procedurally generated — no memorization. Fine-grained 0–100 metric; data-informed NetHack progression system.
+- **Link:** https://arxiv.org/abs/2411.13543
 
-| Field | Detail |
-|-------|--------|
-| **Authors** | Mingyu Ouyang, Siyuan Hu, Kevin Qinghong Lin, Hwee Tou Ng, Mike Zheng Shou |
-| **Affiliation** | National University of Singapore, University of Oxford |
-| **Venue** | arXiv Apr 2026 |
-| **Abstract** | Comprehensive benchmark for multimodal game agents across 34 browser-based games and 170 tasks. Supports two agent interfaces: computer-use control and semantic generalist control. Uses outcome-based, state-verifiable evaluation (not just trajectory matching). Covers 5 genres: Runner, Arcade, Platformer, Puzzle, Strategy. |
-| **Link** | [arXiv:2604.07429](https://arxiv.org/abs/2604.07429) | [Project](https://gameworld-project.github.io/) |
-| **Tags** | `benchmark` `multimodal-agent` `browser-games` `verifiable-eval` |
+### 5.5 GameDevBench
+- **Title:** GameDevBench: Evaluating Agentic Capabilities Through Game Development
+- **Authors:** Chi et al.
+- **Affiliation:** —
+- **Venue:** arXiv:2602.11103
+- **Abstract & Innovation:** First benchmark for agents on game development tasks. 132 tasks from Godot tutorials. 3× more complex than SWE-Bench. Best agent solves only 54.5%. Image/video feedback improves performance.
+- **Link:** https://arxiv.org/abs/2602.11103
 
-### 5.3 VideoGameBench: Can Vision-Language Models Complete Popular Video Games?
+### 5.6 CUBE
+- **Title:** CUBE: A Standard for Unifying Agent Benchmarks
+- **Authors:** Lacoste et al.
+- **Affiliation:** The Alliance
+- **Venue:** arXiv:2603.15798
+- **Abstract & Innovation:** Universal protocol standard unifying benchmark interfaces. Any CUBE-compliant benchmark works with any CUBE-compliant eval framework.
+- **Link:** https://arxiv.org/abs/2603.15798
 
-| Field | Detail |
-|-------|--------|
-| **Authors** | VideoGameBench Team |
-| **Affiliation** | OpenCV / Multiple |
-| **Venue** | arXiv May 2025 (v2 Jun 2025) |
-| **Abstract** | Evaluates VLMs on 10 classic 1990s-era video games (Civilization I, Doom II, Pokemon Crystal, Link's Awakening, etc.) requiring real-time decision-making, perception, memory, and planning. Models receive raw visual input and output keyboard/mouse actions. VG-Agent (Gemini 2.5 Pro + action head) achieves ~0.48% — showing massive room for improvement. |
-| **Link** | [arXiv:2505.17619](https://arxiv.org/abs/2505.17619) | [Project](https://vgbench.com/) |
-| **Tags** | `benchmark` `vlm` `retro-games` `real-time` |
-
-### 5.4 Orak: Foundational Benchmark for LLM Agents on Video Games
-
-| Field | Detail |
-|-------|--------|
-| **Authors** | Dongmin Park, Minkyu Kim, Beongjun Choi et al. |
-| **Affiliation** | KRAFTON AI |
-| **Venue** | arXiv Jun 2025 (v3 Apr 2026) |
-| **Abstract** | 12 popular video games spanning all major genres. MCP-based plug-and-play interface for LLM–game connection. Fine-tuning dataset of expert gameplay trajectories. Leaderboards + LLM battle arenas + ablation studies. |
-| **Link** | [arXiv:2506.03610](https://arxiv.org/abs/2506.03610) | [GitHub](https://github.com/krafton-ai/Orak) |
-| **Tags** | `benchmark` `llm-agent` `video-games` `mcp` |
-
-### 5.5 PillagerBench: Competitive Multi-Agent Benchmark in Minecraft
-
-| Field | Detail |
-|-------|--------|
-| **Authors** | Olivier Schipper, Yudi Zhang, Yali Du, Mykola Pechenizkiy, Meng Fang |
-| **Affiliation** | TU Eindhoven, TU Delft |
-| **Venue** | CoG 2025 / arXiv Sep 2025 |
-| **Abstract** | Framework for evaluating multi-agent systems in real-time team-vs-team Minecraft scenarios. TactiCrafter agent uses human-readable tactics, causal dependency learning, self-play adaptation. Extensible API with rule-based built-in opponents. |
-| **Link** | [arXiv:2509.06235](https://arxiv.org/abs/2509.06235) | [GitHub](https://github.com/aialt/PillagerBench) |
-| **Tags** | `benchmark` `multi-agent` `minecraft` `competitive` |
-
-### 5.6 LMGame Bench (ICLR 2026)
-
-| Field | Detail |
-|-------|--------|
-| **Authors** | LMGame.org Team |
-| **Affiliation** | Multiple |
-| **Venue** | ICLR 2026 |
-| **Abstract** | LLM/VLM gaming agents benchmark across classical video games (Sokoban, Tetris, Candy Crush, Super Mario Bros, Ace Attorney). Supports gaming harness for agentic workflows + computer-use agents. |
-| **Link** | [GitHub](https://github.com/lmgame-org/GamingAgent) | [Paper](https://arxiv.org/pdf/2505.15146) |
-| **Tags** | `benchmark` `llm-agent` `vlm` `gaming` |
-
-### 5.7 OfflineMania: A Benchmark Environment for Offline RL in Racing Games
-
-| Field | Detail |
-|-------|--------|
-| **Authors** | (EA SEED Research) |
-| **Affiliation** | **Electronic Arts** — SEED Division |
-| **Venue** | IEEE CoG 2024 |
-| **Abstract** | Industry-first offline RL benchmark built upon a commercial-style racing game (Unity 3D, TrackMania-inspired). Provides large-scale telemetry datasets from human playtesting sessions, designed specifically for offline RL research in games. |
-| **Link** | [EA SEED PDF](https://media.contentapi.ea.com/content/dam/ea/seed/presentations/seed-cog2024-benchmark-offline-rl-racinggame-paper.pdf) |
-| **Tags** | `benchmark` `offline-rl` `racing` `ea` `unity` |
+### 5.7 Survey on Evaluation of LLM-based Agents
+- **Title:** A Survey on Evaluation of LLM-based Agents
+- **Authors:** Yehudai et al.
+- **Affiliation:** —
+- **Venue:** arXiv:2503.16416
+- **Abstract & Innovation:** First comprehensive survey of evaluation methods for LLM-based agents across 5 perspectives. Covers game agent evaluation. Trends toward realistic, challenging, continuously updated benchmarks.
+- **Link:** https://arxiv.org/abs/2503.16416
 
 ---
 
-## 6. World Models for Games
+## 6. Industry Game AI
+
+### 6.1 Pareto-Guided Distillation for Mobile MOBA
+- **Title:** Pareto-guided Pipeline for Distilling Featherweight AI Agents in Mobile MOBA Games
+- **Authors:** (anonymous)
+- **Affiliation:** Tencent (Honor of Kings team)
+- **Venue:** arXiv:2602.07521
+- **Abstract & Innovation:** Distills Honnor of Kings AI into mobile-deployable agents. 12.4× faster inference (<0.5ms/frame), 15.6× energy efficiency improvement. Retains 40.32% win rate against teacher. Deployed on iQOO 12 phone (Snapdragon 8 Gen 3).
+- **Link:** https://arxiv.org/abs/2602.07521
+
+### 6.2 NVIDIA NVIGI SDK
+- **Title:** NVIGI — In-Game Inferencing SDK
+- **Affiliation:** NVIDIA
+- **Venue:** SDK documentation (v1.6.0)
+- **Abstract & Innovation:** Production SDK for GPU-accelerated AI inference in 3D games. Integrates LLMs (GGML, CUDA, D3D12), TensorRT. Non-blocking polling for game engine ticks.
+- **Link:** https://docs.nvidia.com/nvigi-sdk/
+
+### 6.3 Unreal Engine NNE + TensorRT for RTX
+- **Title:** Speed Up Unreal Engine NNE Inference with NVIDIA TensorRT for RTX Runtime
+- **Author:** Homam Bahnassi
+- **Affiliation:** NVIDIA
+- **Venue:** NVIDIA Developer Blog, Apr 2026
+- **Abstract & Innovation:** TensorRT for RTX plugin as NNE runtime in UE5. JIT optimizer generates GPU-specific inference engines. 1.5× faster than DirectML (3.8ms vs 5.7ms on RTX 5090).
+- **Link:** https://developer.nvidia.com/blog/speed-up-unreal-engine-nne-inference-with-nvidia-tensorrt-for-rtx-runtime/
+
+### 6.4 Game-TARS (also in §3.3)
+- SEED / Tencent's generalist game agent. See §3.3.
+
+### 6.5 NitroGen (also in §3.1)
+- NVIDIA's generalist game playing foundation model. See §3.1.
+
+### 6.6 UniGen
+- **Title:** 90% Faster, 100% Code-Free: MLLM-Driven Zero-Code 3D Game Development
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2509.26161
+- **Abstract & Innovation:** End-to-end zero-coding 3D game generation from natural language. Unity C# generation. 91.4% development time reduction.
+- **Link:** https://arxiv.org/abs/2509.26161
 
 ---
 
-### 6.1 RLVR-World: Training World Models with Reinforcement Learning
+## 7. World Models & Model-Based RL for Games
 
-| Field | Detail |
-|-------|--------|
-| **Authors** | Jialong Wu, Shaofeng Yin, Ningya Feng, Mingsheng Long |
-| **Affiliation** | Tsinghua University |
-| **Venue** | **NeurIPS 2025** |
-| **Abstract** | Unified framework using RL with verifiable rewards (RLVR) to optimize world models for task-specific metrics. Evaluated on text games, web navigation, robot manipulation. Autoregressive prediction of tokenized sequences + metric-based verifiable rewards. |
-| **Link** | [arXiv:2505.13934](https://arxiv.org/abs/2505.13934) | [Project](https://thuml.github.io/RLVR-World/) |
-| **Tags** | `world-model` `rlvr` `sequence-modeling` `neurips-2025` |
+### 7.1 Matrix-Game
+- **Title:** Matrix-Game: Interactive World Foundation Model
+- **Authors:** (Skywork AI)
+- **Affiliation:** Skywork AI
+- **Venue:** arXiv:2506.18701
+- **Abstract & Innovation:** Interactive world foundation model for controllable game world generation. 17B params. 2,700h unlabeled + 1,000h labeled Minecraft video. GameWorld Score benchmark. Outperforms Oasis and MineWorld in controllability and physical consistency.
+- **Link:** https://arxiv.org/abs/2506.18701
 
-### 6.2 MBDPO: Scaling World-Model RL Through Diffusion Policy Optimization
+### 7.2 Matrix-Game 3.0
+- **Title:** Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory
+- **Authors:** (Skywork AI)
+- **Affiliation:** Skywork AI
+- **Venue:** arXiv:2604.08995
+- **Abstract & Innovation:** Real-time streaming interactive generation with long-horizon memory consistency. Causal autoregressive few-step diffusion + memory mechanism for minute-long consistency.
+- **Link:** https://arxiv.org/abs/2604.08995
 
-| Field | Detail |
-|-------|--------|
-| **Authors** | Xiaoyuan Cheng, Wenxuan Yuan et al. |
-| **Affiliation** | UCL, NTU, Peking University, Imperial College London |
-| **Venue** | arXiv May 2026 |
-| **Abstract** | Model-Based Diffusion Policy Optimization. Unifies search and policy optimization via diffusion policy in latent world models. Extracts implicit energy function from data. Multi-task offline pretraining, online learning, offline→online fine-tuning. Consistent scaling gains with model capacity. |
-| **Link** | [arXiv:2605.26282](https://arxiv.org/abs/2605.26282) |
-| **Tags** | `world-model` `diffusion-policy` `model-based-rl` `scaling` |
+### 7.3 WorldCam
+- **Title:** WorldCam: Interactive Autoregressive 3D Gaming Worlds with Camera Pose as a Unifying Geometric Representation
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2603.16871
+- **Abstract & Innovation:** Uses camera pose as unifying geometric representation for action control and 3D consistency. Video DiT backbone. 3,000 minutes of human gameplay annotated with camera trajectories. Physics-based continuous action space (Lie algebra).
+- **Link:** https://arxiv.org/abs/2603.16871
 
-### 6.3 MuDreamer: Predictive World Models without Reconstruction
+### 7.4 LingBot-World
+- **Title:** Advancing Open-source World Models
+- **Authors:** (LingBot team)
+- **Affiliation:** LingBot
+- **Venue:** arXiv:2601.20540
+- **Abstract & Innovation:** Open-source world simulator. High fidelity across realism, science, cartoon. Minute-level horizon consistency. Real-time interactivity (<1s latency at 16fps).
+- **Link:** https://arxiv.org/abs/2601.20540
 
-| Field | Detail |
-|-------|--------|
-| **Authors** | Maxime Burchi, Radu Timofte |
-| **Affiliation** | — |
-| **Venue** | ICLR 2024 (withdrawn) |
-| **Abstract** | Builds upon DreamerV3 by removing the pixel reconstruction loss, instead learning hidden representations by predicting the environment value function and previously selected actions. Uses batch normalization to prevent representation collapse. Eliminates the need to model irrelevant visual details while focusing on task-relevant features. |
-| **Link** | [OpenReview ICLR 2024](https://openreview.net/forum?id=9pe38WpsbX) |
-| **Tags** | `world-model` `dreamerv3` `reconstruction-free` `representation-learning` |
+### 7.5 RLVR-World
+- **Title:** RLVR-World: Training World Models with Reinforcement Learning
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2505.13934
+- **Abstract & Innovation:** Unified RLVR framework for training world models. Autoregressive token prediction + verifiable rewards on decoded predictions. +30.7% accuracy on text game state prediction; +15.1% F1 on web page prediction.
+- **Link:** https://arxiv.org/abs/2505.13934
+
+### 7.6 Code World Models (CWM)
+- **Title:** Code World Models: LLM-Generated Game Models via Python Code
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2510.04542, Oct 2025
+- **Abstract & Innovation:** LLMs translate game rules + trajectories into executable Python world models. Search-based policies (MCTS, ISMCTS) with CWM. Outperforms "thinking" LLMs in two-player games.
+- **Link:** https://arxiv.org/abs/2510.04542
+
+### 7.7 Distilling Game Code World Models
+- **Title:** Distilling Game Code World Model Generation into Lightweight Large Language Models
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2605.24375
+- **Abstract & Innovation:** Distills GameCWM generation into Qwen2.5-3B via SFT + RLVR. Dataset of 30 games. GRPO with execution-based verifier.
+- **Link:** https://arxiv.org/abs/2605.24375
+
+### 7.8 Agent World Model (AWM)
+- **Title:** Agent World Model: Infinity Synthetic Environments for Agentic Reinforcement Learning
+- **Authors:** (Snowflake Labs)
+- **Affiliation:** Snowflake Labs
+- **Venue:** arXiv:2602.10090, Feb 2026
+- **Abstract & Innovation:** Fully synthetic environment generation pipeline via code + databases. 1,000 environments with 35 tools each. Reliable state transitions. Large-scale RL for tool-use agents shows strong OOD generalization.
+- **Link:** https://arxiv.org/abs/2602.10090
+
+### 7.9 Reinforcement World Model Learning (RWML)
+- **Title:** Reinforcement World Model Learning for LLM-based Agents
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2602.05842
+- **Abstract & Innovation:** Self-supervised RL method learning action-conditioned world models for LLM agents. Sim-to-real gap rewards in embedding space. +19.6 on ALFWorld without expert data.
+- **Link:** https://arxiv.org/abs/2602.05842
+
+### 7.10 Remember to be Curious
+- **Title:** Remember to be Curious: Episodic Context and Persistent Worlds for 3D Exploration
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2605.22814
+- **Abstract & Innovation:** Curiosity-driven exploration using persistent online 3D reconstruction as forward model. Episodic memory for planning. Outperforms active-mapping baselines on HM3D, zero-shot to Gibson and AI-generated worlds.
+- **Link:** https://arxiv.org/abs/2605.22814
 
 ---
 
-## 7. Related Techniques
+## 8. Curiosity, Exploration, Hierarchical RL, Imitation & Inverse RL
+
+### 8.1 CDE (Curiosity-Driven Exploration)
+- **Title:** CDE: Curiosity-Driven Exploration for Efficient Reinforcement Learning in Large Language Models
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2509.09675, Sep 2025
+- **Abstract & Innovation:** Curiosity signals from both actor (perplexity) and critic (multi-head value variance). Actor-wise bonus penalizes overconfident errors. Critic-wise bonus ≈ count-based exploration. +3 points on AIME with GRPO/PPO.
+- **Link:** https://arxiv.org/abs/2509.09675
+
+### 8.2 CuES
+- **Title:** CuES: A Curiosity-driven and Environment-grounded Synthesis Framework for Agentic RL
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2512.01311
+- **Abstract & Innovation:** Autonomous task generation via intrinsic curiosity. Abstracts interaction patterns into reusable task schemas. Tested on AppWorld, BFCL, WebShop.
+- **Link:** https://arxiv.org/abs/2512.01311
+
+### 8.3 OGER
+- **Title:** OGER: A Robust Offline-Guided Exploration Reward for Hybrid Reinforcement Learning
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2604.18530
+- **Abstract & Innovation:** Unifies offline teacher guidance + online RL. Multi-teacher collaborative training + divergence-based exploration reward + entropy-aware modulation. For LLM reasoning.
+- **Link:** https://arxiv.org/abs/2604.18530
+
+### 8.4 RAPO
+- **Title:** RAPO: Expanding Exploration for LLM Agents via Retrieval-Augmented Policy Optimization
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2603.03078
+- **Abstract & Innovation:** Retrieval-augmented exploration for agentic RL. Hybrid-policy rollout + retrieval reward + importance shaping. Retrieval broadens step-level exploration.
+- **Link:** https://arxiv.org/abs/2603.03078
+
+### 8.5 SPEAR (Self-Imitation Learning)
+- **Title:** Learn the Ropes, Then Trust the Wins: Self-imitation with Progressive Exploration for Agentic Reinforcement Learning
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2509.22601
+- **Abstract & Innovation:** Self-imitation learning with curriculum scheduling for exploration-exploitation balance. Scheduled entropy + intrinsic rewards. +16.1% on ALFWorld, +20.7% on WebShop.
+- **Link:** https://arxiv.org/abs/2509.22601
+
+### 8.6 Cago
+- **Title:** Cago: Capability-Aware Goal Sampling for Learning from Demonstrations
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2601.08731
+- **Abstract & Innovation:** Novel learning-from-demonstrations method using demonstrations as structured roadmaps. Tracks agent competence along demonstration trajectories; samples goals just beyond current capability. Bridges imitation + RL.
+- **Link:** https://arxiv.org/abs/2601.08731
+
+### 8.7 IRL for Reasoning (Process-Level)
+- **Title:** Inverse Reinforcement Learning for Process-Level Reasoning from Expert Demonstrations
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2510.01857
+- **Abstract & Innovation:** Formulates process-level reasoning as IRL to learn dense token-level reward models from expert traces. Token-wise feedback for training + inference reranking + error localization.
+- **Link:** https://arxiv.org/abs/2510.01857
+
+### 8.8 QD-IRL + EBC
+- **Title:** Diversifying Policy Behaviors with Extrinsic Behavioral Curiosity
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2410.06151
+- **Abstract & Innovation:** Quality-Diversity Inverse RL (QD-IRL) + Extrinsic Behavioral Curiosity (EBC). Diverse policy archive with curiosity rewards from external critic. Up to 185% improvement on locomotion tasks.
+- **Link:** https://arxiv.org/abs/2410.06151
+
+### 8.9 STEP-HRL (Hierarchical RL for LLM Agents)
+- **Title:** Hierarchical Reinforcement Learning with Augmented Step-Level Transitions for LLM Agents
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2604.05808, Apr 2026
+- **Abstract & Innovation:** HRL for LLM agents using completed subtasks as global progress + local progress module for compact summaries. Step-level transitions (not full histories). Outperforms baselines on ScienceWorld, ALFWorld with reduced token usage.
+- **Link:** https://arxiv.org/abs/2604.05808
+
+### 8.10 HGPO
+- **Title:** Hierarchy-of-Groups Policy Optimization for Long-Horizon Agentic Tasks
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2602.22817
+- **Abstract & Innovation:** Context-aware hierarchical grouping + adaptive weighting advantage estimation for long-horizon agentic RL. Outperforms baselines on ALFWorld and WebShop.
+- **Link:** https://arxiv.org/abs/2602.22817
+
+### 8.11 HiPER
+- **Title:** HiPER: Hierarchical Reinforcement Learning with Explicit Credit Assignment for Large Language Model Agents
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2602.16165
+- **Abstract & Innovation:** Plan–Execute hierarchical RL with Hierarchical Advantage Estimation (HAE). Separates high-level planner from low-level executor. Unbiased gradient with provably reduced variance.
+- **Link:** https://arxiv.org/abs/2602.16165
+
+### 8.12 STO-RL
+- **Title:** STO-RL: Offline RL using LLM-Guided Subgoal Temporal Order
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2601.08107
+- **Abstract & Innovation:** LLM generates temporally ordered subgoals + potential-based reward shaping for offline RL. Transforms sparse rewards into dense signals. Tested on FourRoom, CliffWalking, PointMaze.
+- **Link:** https://arxiv.org/abs/2601.08107
+
+### 8.13 SPAARS
+- **Title:** SPAARS: Safer RL Policy Alignment through Abstract Exploration and Refined Exploitation of Action Space
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2603.09378, Mar 2026
+- **Abstract & Innovation:** Curriculum framework for safe offline-to-online RL. Starts with latent-space exploration (CVAE), then transfers to raw action space. Provable exploitation gap bound. 5× sample efficiency.
+- **Link:** https://arxiv.org/abs/2603.09378
+
+### 8.14 NF-HIQL
+- **Title:** Data-Efficient Hierarchical Goal-Conditioned RL via Normalizing Flows
+- **Authors:** (anonymous)
+- **Affiliation:** —
+- **Venue:** arXiv:2602.11142
+- **Abstract & Innovation:** Normalizing flow policies for both high- and low-level in H-GCRL. KL-divergence bounds + PAC-style guarantees. Outperforms diffusion-based methods (BESO). Matches full-dataset baselines with 50% data.
+- **Link:** https://arxiv.org/abs/2602.11142
 
 ---
 
-### 7.1 Coverage-Aware Game Playtesting with LLM-Guided RL
+## 9. Key Themes & Trends
 
-| Field | Detail |
-|-------|--------|
-| **Authors** | Various |
-| **Affiliation** | Multiple |
-| **Venue** | arXiv Dec 2025 |
-| **Abstract** | Synergizes code coverage metrics with LLM-guided RL for automated game playtesting. Combines gameplay intent with structural coverage. |
-| **Link** | [arXiv:2512.12706](https://arxiv.org/abs/2512.12706) |
-| **Tags** | `playtesting` `coverage` `llm` `rl` |
-
-### 7.2 Self-Improving AI Agents through Self-Play (Unified Framework)
-
-| Field | Detail |
-|-------|--------|
-| **Authors** | Various |
-| **Affiliation** | Multiple |
-| **Venue** | arXiv 2025 |
-| **Abstract** | Unified geometric framework (Generator–Verifier–Updater / GVU) that subsumes AlphaZero, GANs, STaR, RLHF, Constitutional AI, GRPO as special cases. Fisher-information manifold analysis of self-improvement rate. |
-| **Link** | [arXiv:2512.02731](https://arxiv.org/abs/2512.02731) |
-| **Tags** | `self-improvement` `unified-framework` `self-play` `geometric` |
-
-### 7.3 Unity ML-Agents — Production Game AI Framework
-
-| Field | Detail |
-|-------|--------|
-| **Affiliation** | Unity Technologies |
-| **Venue** | Ongoing open-source (orig. 2017) |
-| **Abstract** | Production-ready framework for training RL agents in Unity-based games. Used extensively by AAA studios for NPC behavior, game testing, and character training. Supports self-play, imitation learning, and multi-agent scenarios. Widely cited in industry game AI deployment. |
-| **Link** | [GitHub](https://github.com/Unity-Technologies/ml-agents) |
-| **Tags** | `framework` `unity` `rl` `industry` |
+1. **Self-play goes open-ended**: SPIRAL, SCOPE, G-Zero, OpenSIR, PopuLoRA — self-play is moving beyond verifiable tasks toward rubric-based and intrinsic-reward-driven open-ended learning.
+2. **Foundation models as game agents**: NitroGen (CVPR 2026), Game-TARS, Odysseus — massive BC/RL pre-training yields generalist game-playing agents that approach/beat humans and frontier models.
+3. **RL for VLM game agents**: Odysseus shows PPO + turn-level critic works for 100+ turn game play, out-performing GRPO/Reinforce++ in long-horizon settings.
+4. **MARL + LLMs**: MARSHAL, MARL-GPT, HLSMAC — LLMs are being integrated into MARL pipelines as both policies and strategic reasoners.
+5. **Industry deployment maturing**: Tencent's HoK distillation for mobile, NVIDIA's NVIGI SDK, UE5 NNE + TensorRT — game AI deployment is becoming practical.
+6. **PCG meets LLMs**: IPCGRL, PCGRLLM, VIPCGRL, AutoUE — language-conditioned and LLM-driven PCG for levels, rewards, and entire games.
+7. **World models are real**: Matrix-Game (17B), LingBot-World, WorldCam — interactive world models with real-time generation, long-horizon consistency, and action control.
+8. **Benchmarks proliferate**: Orak, GameWorld, VideoGameBench, BALROG — each testing different aspects of game agent capability (LLM vs VLM, real-time vs paused, etc.).
 
 ---
 
-## 8. Summary Statistics & Trends
+## Paper Count Summary
 
-| Category | Paper Count |
-|----------|-------------|
-| 1. Game RL | 11 |
-| 2. Game AI Bot | 8 |
-| 3. Game Foundation Models | 4 |
-| 4. Procedural Content Generation | 5 |
-| 5. Game Benchmarks | 7 |
-| 6. World Models for Games | 3 |
-| 7. Related Techniques | 3 |
-| **Total unique papers** | **~41** |
-
-### Top Venues
-| Venue | Count |
-|-------|-------|
-| ICLR 2025/2026 | 5 |
-| CVPR 2026 | 1 (Oral) |
-| NeurIPS 2023/2025 | 2 |
-| IEEE CoG 2024/2025 | 2 |
-| IEEE ToG 2025/2026 | 3 |
-| ACL 2026 | 1 |
-| L4DC 2026 | 1 |
-| arXiv (unreviewed) | ~25 |
-
-### Key Trends
-1. **LLMs + Games** continues to dominate: LLM game agents, VLM gameplay evaluation, LLM-driven PCG.
-2. **World Models** are evolving from pixel-reconstruction to event-aware and value-prediction paradigms.
-3. **Self-play RL** is being cross-pollinated with LLM reasoning (MARSHAL, SPIRAL, Search Self-Play).
-4. **Game Benchmarks** are diversifying: from classic Atari to browser games (GameWorld), LLM-centric (BALROG), and VLM-focused (VideoGameBench).
-5. **Open-ended learning** via world model dreaming (Dreaming in Code) bridges model-based RL with automatic curriculum generation.
-6. **Industry adoption** is accelerating: EA SEED publishes on offline RL benchmarks; NVIDIA releases open generalist gaming FM (NitroGen).
-7. **Diffusion-based world models** (MBDPO) emerge as an alternative to traditional autoregressive world models.
+| Category | Count |
+|----------|-------|
+| Game RL (MARL, Self-Play) | 16 |
+| Game AI Bots (LLM-Powered) | 9 |
+| Game Foundation Models | 7 |
+| Procedural Content Generation | 12 |
+| Game Benchmarks | 7 |
+| Industry Game AI | 6 |
+| World Models & Model-Based RL | 10 |
+| Curiosity, Exploration, HRL, Imitation, IRL | 14 |
+| **Total** | **81** |

@@ -803,3 +803,10 @@
 - Industry CTR papers: CADET (LinkedIn), EST (Alibaba), GRAB (Baidu), LoopCTR (Alibaba), GR4AD (Kuaishou), TokenMixer-Large (ByteDance), HeMix (AMAP), RankUp (Tencent), S-GRec (Tencent), SparseCTR, HyFormer (ByteDance), DAIAN
 - AI labs: Google DeepMind, Meta FAIR, OpenAI, Anthropic, NVIDIA, Microsoft Research, Apple, ByteDance, Alibaba, Tencent, Kuaishou, Baidu, LinkedIn, Pinterest, Walmart, Amazon, Spotify
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-06-10] synthesis | Game RL & Game AI Bot Daily — 2026-06-10
+- New page: wiki/synthesis/2026-06-10/game-rl-daily.md
+- Coverage: 81 papers across 8 categories — Game RL/MARL/self-play (16), Game AI Bots (9), Game Foundation Models (7), PCG (12), Benchmarks (7), Industry Game AI (6), World Models (10), Curiosity/HRL/Imitation/IRL (14)
+- Key papers: NitroGen (CVPR 2026, NVIDIA), Game-TARS (Tencent, 500B tokens), Odysseus (VLM+PPO 100+ turns), SPIRAL (self-play reasoning transfer), MARSHAL (self-play MARL for LLMs), Matrix-Game (17B world model), Orak (KRAFTON benchmark), Continual Harness (Google DeepMind Pokémon), Pareto Distillation (Tencent HoK mobile)
+- Key themes: self-play going open-ended, foundation models as generalist game agents, RL for VLM agents, MARL+LLMs cross-pollination, industry deployment maturing, PCG meets LLMs, world models becoming real-time
+- Updated: wiki/index.md, wiki/log.md
