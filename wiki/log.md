@@ -765,3 +765,12 @@
 - Coverage: 17 papers across LLM reasoning, diffusion LMs, recommendation systems, CTR prediction, games/RL, agent memory, benchmarks
 - Key papers: ACTS (CoT steering), FLARE (hybrid AR+diffusion), RGCD-Rep (Kuaishou cross-domain rec), CADET (LinkedIn CTR), Game-RL (VLM reasoning via games), MRAgent (graph memory, ICML 2026)
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-10] synthesis | Conference Digest — 2026年AI/ML顶级会议论文全景
+- New page: wiki/synthesis/2026-06-10/conference-digest.md
+- Coverage: 13 venues (ICML 2026, NeurIPS 2025, ICLR 2026, AAAI 2026, CVPR 2026, ACL/EACL 2026, EMNLP 2025, KDD 2026, SIGIR 2026, WWW 2026, RecSys 2025) + arXiv industry papers
+- Sections: 18 categories spanning LLM architecture, diffusion, agents, CTR prediction, games, SSMs, recommendation systems, RL, alignment, efficiency
+- Best papers covered: Gated Attention (NeurIPS), 1000-Layer SSL RL (NeurIPS), Why Diffusion Don't Memorize (NeurIPS), D4RT (CVPR Best), O-Voxel (CVPR Best Student), Learning Unmasking Policies (ICML Oral), Transformers are Succinct (ICLR Outstanding), Polar Express (ICLR HM)
+- Industry CTR papers: CADET (LinkedIn), EST (Alibaba), GRAB (Baidu), LoopCTR (Alibaba), GR4AD (Kuaishou), TokenMixer-Large (ByteDance), HeMix (AMAP), RankUp (Tencent), S-GRec (Tencent), SparseCTR, HyFormer (ByteDance), DAIAN
+- AI labs: Google DeepMind, Meta FAIR, OpenAI, Anthropic, NVIDIA, Microsoft Research, Apple, ByteDance, Alibaba, Tencent, Kuaishou, Baidu, LinkedIn, Pinterest, Walmart, Amazon, Spotify
+- Updated: wiki/index.md, wiki/log.md
