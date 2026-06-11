@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-11] search | arXiv Daily — AI Research Survey (June 11, 2026)
+- New page: wiki/synthesis/2026-06-11/arxiv-daily.md
+- Coverage: 17 papers across LLM/Architecture (6), Agentic RL & Reasoning (2), CTR/Advertising (1), Recommendation (5), Ranking/Allocation (1), Games (2)
+- Top picks: CADET (decoder-only CTR @ LinkedIn), AIR (LLM cross-domain rec @ Kuaishou), Gryphon (item-level scoring for generative retrieval), APPO (fine-grained agentic RL), Bebop (MTP acceleration for RL), nD-RoPE (generalized position embedding)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-10] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-10)
 - New page: wiki/synthesis/2026-06-10/wq101-alpha-daily.md
 - Applied Alpha#1/#6/#12/#19/#30/#41/#53 across 7 dimensions
@@ -818,4 +824,19 @@
 - Coverage: 81 papers across 8 categories — Game RL/MARL/self-play (16), Game AI Bots (9), Game Foundation Models (7), PCG (12), Benchmarks (7), Industry Game AI (6), World Models (10), Curiosity/HRL/Imitation/IRL (14)
 - Key papers: NitroGen (CVPR 2026, NVIDIA), Game-TARS (Tencent, 500B tokens), Odysseus (VLM+PPO 100+ turns), SPIRAL (self-play reasoning transfer), MARSHAL (self-play MARL for LLMs), Matrix-Game (17B world model), Orak (KRAFTON benchmark), Continual Harness (Google DeepMind Pokémon), Pareto Distillation (Tencent HoK mobile)
 - Key themes: self-play going open-ended, foundation models as generalist game agents, RL for VLM agents, MARL+LLMs cross-pollination, industry deployment maturing, PCG meets LLMs, world models becoming real-time
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-06-11] arxiv-daily | arXiv Daily — AI Research Survey (June 11, 2026)
+- Summary: wiki/synthesis/2026-06-11/arxiv-daily.md
+- Coverage: ~30 papers across 8 categories — LLMs & Architectures (4), RL & Games (4), Recommendation & CTR (5), Sequential Modeling (2), Agents & Multi-Agent (4), Information Retrieval & RAG (3), Science of AI & Safety (3), Notable Mentions (6)
+- Key papers: RoVE (position-aware value pathway), SWARR (RL for sliding-window attention), DiffCold (diffusion for cold-start recommendation), LLM-Based User Personas (Google-scale), INFRAMIND (infrastructure-aware multi-agent), Behavior Forecasting (bypassing explanations)
+- Key themes: RL for architecture adaptation, infrastructure-aware agent orchestration, generative recommendation maturing, quantization limits on retrieval, calibration drift under reasoning
+- New page: wiki/synthesis/2026-06-11/arxiv-daily.md
+
+## [2026-06-11] search | arXiv Paper Check — AI & CTR (June 11, 2026)
+- New page: wiki/synthesis/2026-06-11/arxiv-paper-check.md
+- Surveyed: cs.AI (199 new entries) + cs.IR (19 new entries) — Thu 11 Jun 2026
+- AI highlights (11): Impossibility of Eliciting Latent Knowledge (alignment theory), MoE Manifold Power Iteration (routing), Architecture-Aware RL for Sliding-Window Attention, SVoT (spatial reasoning + RL), TreeSeeker (tree-structured deep search), Can AI Agents Synthesize Scientific Conclusions?, ATLAS (active theory learning), APPO (agentic procedural RL), Hippocampal Memory for AGI (ICML position), Search Discipline for Research Agents, Forecasting Future Behavior
+- CTR/Rec highlights (7): DiffCold (diffusion for cold-start rec, ECML-PKDD), LLM-Based User Personas at Scale (Google), Tail-Aware Adaptive-k for RAG (ECML-PKDD), CORE-Bench (code retrieval benchmark), CompRank (token-compressed reranking), Quantization Limits on Dense Retrieval (theory), FAST-MEL multimodal entity linking (SIGIR)
+- Key themes: RL for reasoning convergence, alignment theory maturing, LLM+recommendation convergence, efficient retrieval, rigorous agent evaluation
 - Updated: wiki/index.md, wiki/log.md
