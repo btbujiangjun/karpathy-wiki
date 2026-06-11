@@ -386,11 +386,13 @@ Papers are organized by research category. Each page includes problem background
 | [wq101-alpha-daily](synthesis/2026-06-09/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-09) | — |
 | [wq101-alpha-daily](synthesis/2026-06-10/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-10) | — |
 | [tech-report-digest](synthesis/2026-06-10/tech-report-digest.md) | 各大 AI 公司最新技术报告汇总 (第九版) — 2026-06-10 (22+ 家机构, DeepSeek V4, GPT-5/5.5, Gemini 3.1/3.5, Claude Opus 4.8, Qwen3/3.6, Mistral Large 3, Nemotron 3 Ultra, GLM-5, Kimi K2.6, Seed 2.0, Grok 4.3, Nova Premier, Llama 4, Phi-4 等 35+ 报告) | 35+ reports |
+| [tech-report-digest](synthesis/2026-06-11/tech-report-digest.md) | 各大 AI 公司最新技术报告汇总 (第十版) — 2026-06-11 (22+ 家机构, DeepSeek V4/R1/V3, GPT-5/o1, Llama 4, Gemini 2.5/3, Claude Opus 4/4.6/4.7/4.8/Mythos, Mistral Large 3, Qwen3.5/3.6/3.7, Phi-4, Apple AFM, Nemotron 3, Grok 4/4.3/4.2, Nova, GLM-5, Kimi K2/K2.5/K2.6, Seed 1.8/2.0, Step 3.5, InternLM, Yi, Baichuan 等 40+ 报告) | 40+ reports |
 | [arxiv-daily](synthesis/2026-06-10/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 10, 2026) | 17 papers |
 | [arxiv-paper-check](synthesis/2026-06-10/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 10, 2026) | 22 papers |
 | [game-rl-daily](synthesis/2026-06-10/game-rl-daily.md) | Game RL & Game AI Bot — Daily Survey (2026-06-10) | 81 papers |
 | [conference-digest](synthesis/2026-06-10/conference-digest.md) | 会议摘要: 2026年AI/ML顶级会议论文全景 — 13 venues, 100+ papers | 13 venues |
 | [investment-daily](synthesis/2026-06-10/investment-daily.md) | 投资日报 — 2026-06-10（美股/港股/A股/中概/新能源科技与AI热点） | — |
+| [investment-daily](synthesis/2026-06-11/investment-daily.md) | 投资日报 — 2026-06-11（美股/港股/A股/中概/新能源科技与AI热点） | — |
 | [arxiv-daily](synthesis/2026-06-11/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 11, 2026) | 17 papers |
 | [arxiv-paper-check](synthesis/2026-06-11/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 11, 2026) | 11 AI + 7 CTR papers |
 | [conference-digest](synthesis/2026-06-11/conference-digest.md) | Conference & arXiv Digest — June 2026 (ICLR/AAAI/CVPR/ICML/NeurIPS/KDD/EMNLP/RecSys + 13 labs) | 12+ venues, 14 sections, 13 labs |

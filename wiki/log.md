@@ -4,6 +4,16 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-11] synthesis | 投资日报 — 2026-06-11（美股/港股/A股/中概/新能源科技与AI热点）
+- Summary: wiki/synthesis/2026-06-11/investment-daily.md
+- 美股：AI/半导体技术性调整（S&P 500科技板块-11%正式进入回调区）；Oracle财报今夜揭晓（$5530亿RPO验证AI需求）；SpaceX IPO明日上市（$135/股，$1.75万亿，~4%流通量）；Super Micro $70亿融资-28%；CPI +4.2%符合预期
+- Mag 7分化：GOOGL YTD +28%领跑（云+63%）；MSFT/META受CapEx压制；AAPL Siri AI褒贬不一
+- 中概/港股：Pentagon 1260H清单冲击（Alibaba/Baidu/BYD/NIO/CATL等）；天数智芯港股上市+31.5%（国产GPU四小龙齐上市）；澜起科技H股+57%（DDR5互连芯片）；快手可灵AI全球用户破1亿
+- A股：AI应用杀跌/CPO光通信逆市活跃；海光信息+7%（深算4号进展）；半导体设备高景气（北方华创订单至2027）
+- 新能源：比亚迪王传福喊话"低估"（出口+85.5%）；蔚来月交付创新高+37,705(+62.3%)；EV股集体52周新低
+- AI主题：三大超级IPO（SpaceX/OpenAI/Anthropic）、Anthropic Fable 5发布、微信AI生态开放、Google×Intel 300万TPU订单、TSMC产能紧张推动代工格局变化
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-11] search | arXiv Daily — AI Research Survey (June 11, 2026)
 - New page: wiki/synthesis/2026-06-11/arxiv-daily.md
 - Coverage: 17 papers across LLM/Architecture (6), Agentic RL & Reasoning (2), CTR/Advertising (1), Recommendation (5), Ranking/Allocation (1), Games (2)
@@ -850,4 +860,11 @@
 - Recommendation/CTR: CADET (LinkedIn - 11.6% online CTR), ByteDance TokenMixer-Large (15B params), Netflix GenRec scaling laws, Kuaishou OneRec/GRLM, TencentGR datasets
 - Industry labs: Google DeepMind (Gemini 3.5/Omni/Gemma 4), OpenAI (o3/S-1), Anthropic (Claude Fable 5/S-1), Meta (Llama 4), NVIDIA (Nemotron 3), ByteDance (Douyin/TokenMixer), Alibaba (Large User Model), Tencent (TencentGR), Kuaishou (OneRec/GRLM), Netflix (GenRec), Apple (14 @ CVPR 2026)
 - Key shifts: inference-first architecture design, generative recommendation replacing cascaded pipelines, SSMs competitive with Transformers, open-weight frontier models
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-06-11] synthesis | Tech Report Digest — 第十版 (2026-06-11)
+- New page: wiki/synthesis/2026-06-11/tech-report-digest.md
+- Coverage: 22+ organizations, 40+ technical reports/system cards
+- Highlights: DeepSeek V4 (1.6T MoE, CSA/HCA, Muon Optimizer) + R1/V3, OpenAI GPT-5/o1 System Cards, Meta Llama 4 (Scout 10M context), Google Gemini 2.5/3.1/3.5 reports, Anthropic Claude Opus 4/4.6/4.7/4.8/Mythos System Cards, Mistral Large 3 (675B MoE), Qwen3.5/3.6/3.7 Max, Microsoft Phi-4 (+reasoning variants), Apple AFM 2025 (PT-MoE), NVIDIA Nemotron 3 (Hybrid Mamba-Transformer), xAI Grok 4/4.1/4.20/4.3, Amazon Nova/Nova 2, Zhipu GLM-5/5.1, Kimi K2/K2.5/K2.6 (MuonClip), ByteDance Seed 1.8/2.0, Step 3.5 Flash, InternLM2/3, Yi, Baichuan
+- Key themes: MoE domination, Hybrid Mamba-Transformer (Nemotron 3), Hybrid Attention CSA/HCA (DeepSeek V4), 10M context windows (Llama 4 Scout), configurable thinking modes, Muon/JumpCLIP optimizer innovation, early fusion multimodal (Llama 4/Qwen3.5), full open weight/open data movement (Nemotron 3 OpenMDW, GLM-5 MIT)
 - Updated: wiki/index.md, wiki/log.md
