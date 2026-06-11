@@ -840,3 +840,14 @@
 - CTR/Rec highlights (7): DiffCold (diffusion for cold-start rec, ECML-PKDD), LLM-Based User Personas at Scale (Google), Tail-Aware Adaptive-k for RAG (ECML-PKDD), CORE-Bench (code retrieval benchmark), CompRank (token-compressed reranking), Quantization Limits on Dense Retrieval (theory), FAST-MEL multimodal entity linking (SIGIR)
 - Key themes: RL for reasoning convergence, alignment theory maturing, LLM+recommendation convergence, efficient retrieval, rigorous agent evaluation
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-06-11] synthesis | Conference & arXiv Digest — June 2026
+- New page: wiki/synthesis/2026-06-11/conference-digest.md
+- Coverage: 14 sections across 12+ venues (ICLR 2026 Oral highlights, AAAI 2026, CVPR 2026, ICML 2026, NeurIPS 2025, KDD 2026, EMNLP 2025/ACL 2026, RecSys 2025/CIKM 2025)
+- Architecture: Mamba-3 (ICLR 2026 Oral with 7× speedup), NVIDIA Nemotron 3 Ultra (550B MoE), Inception Mercury dLLMs
+- LLM Reasoning: Curriculum-based RL (provable sample complexity), test-time compute scaling
+- Agent Systems: AgentFlow (7B beats GPT-4o), AMC (black-box agent RL), KAIROS, Agent Security vulnerabilities
+- Recommendation/CTR: CADET (LinkedIn - 11.6% online CTR), ByteDance TokenMixer-Large (15B params), Netflix GenRec scaling laws, Kuaishou OneRec/GRLM, TencentGR datasets
+- Industry labs: Google DeepMind (Gemini 3.5/Omni/Gemma 4), OpenAI (o3/S-1), Anthropic (Claude Fable 5/S-1), Meta (Llama 4), NVIDIA (Nemotron 3), ByteDance (Douyin/TokenMixer), Alibaba (Large User Model), Tencent (TencentGR), Kuaishou (OneRec/GRLM), Netflix (GenRec), Apple (14 @ CVPR 2026)
+- Key shifts: inference-first architecture design, generative recommendation replacing cascaded pipelines, SSMs competitive with Transformers, open-weight frontier models
+- Updated: wiki/index.md, wiki/log.md
