@@ -390,6 +390,7 @@ Papers are organized by research category. Each page includes problem background
 | [arxiv-daily](synthesis/2026-06-10/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 10, 2026) | 17 papers |
 | [arxiv-paper-check](synthesis/2026-06-10/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 10, 2026) | 22 papers |
 | [game-rl-daily](synthesis/2026-06-10/game-rl-daily.md) | Game RL & Game AI Bot — Daily Survey (2026-06-10) | 81 papers |
+| [game-rl-daily](synthesis/2026-06-11/game-rl-daily.md) | Game RL & Game AI Bot — Daily Synthesis (2026-06-11) | 69 papers |
 | [conference-digest](synthesis/2026-06-10/conference-digest.md) | 会议摘要: 2026年AI/ML顶级会议论文全景 — 13 venues, 100+ papers | 13 venues |
 | [investment-daily](synthesis/2026-06-10/investment-daily.md) | 投资日报 — 2026-06-10（美股/港股/A股/中概/新能源科技与AI热点） | — |
 | [investment-daily](synthesis/2026-06-11/investment-daily.md) | 投资日报 — 2026-06-11（美股/港股/A股/中概/新能源科技与AI热点） | — |

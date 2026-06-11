@@ -14,6 +14,13 @@
 - AI主题：三大超级IPO（SpaceX/OpenAI/Anthropic）、Anthropic Fable 5发布、微信AI生态开放、Google×Intel 300万TPU订单、TSMC产能紧张推动代工格局变化
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
 
+## [2026-06-11] synthesis | Game RL & Game AI Bot — Daily Synthesis (2026-06-11)
+- New page: wiki/synthesis/2026-06-11/game-rl-daily.md
+- Coverage: 69 papers across 7 categories — Game RL (16), Game AI Bots (16), Game Foundation Models (7), Procedural Content Generation (8), Game Benchmarks (8), Industry Game AI (1), Related Techniques (13)
+- Top papers: NitroGen (CVPR 2026, NVIDIA), Game-TARS (500B token pre-training), MARL-GPT (multi-task MARL foundation model), STRATAGEM/SPIRAL (game self-play for LLM reasoning), GameWorld/OmniGameArena (standardized benchmarks)
+- Key trends: convergence of RL and foundation models, generalist game agents at scale, world models as unifying framework, co-evolution for open-ended learning, PCG goes multi-modal, benchmark standardization, industry deployment matures (NVIDIA ACE + NVIGI)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-11] search | arXiv Daily — AI Research Survey (June 11, 2026)
 - New page: wiki/synthesis/2026-06-11/arxiv-daily.md
 - Coverage: 17 papers across LLM/Architecture (6), Agentic RL & Reasoning (2), CTR/Advertising (1), Recommendation (5), Ranking/Allocation (1), Games (2)
