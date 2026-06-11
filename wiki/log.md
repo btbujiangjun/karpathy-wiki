@@ -27,6 +27,14 @@
 - Top picks: CADET (decoder-only CTR @ LinkedIn), AIR (LLM cross-domain rec @ Kuaishou), Gryphon (item-level scoring for generative retrieval), APPO (fine-grained agentic RL), Bebop (MTP acceleration for RL), nD-RoPE (generalized position embedding)
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-06-11] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-11)
+- New page: wiki/synthesis/2026-06-11/wq101-alpha-daily.md
+- Market context: S&P 500 -0.98%, Nasdaq -1.54%, sector rotation AI→Healthcare/Energy/Industrials; CPI 4.2%; oil ~$97 (Iran conflict)
+- Selected 20 stocks across 6 sectors: Healthcare (UNH/LLY/JNJ/GILD), Energy (XOM/CVX/OXY/COP), Industrials (CAT/GEV/FIX), Technology (NVDA/MRVL/AMD/INTC), Financials (GS/JPM), Consumer Staples (WMT/COST/PG)
+- Top 3 picks: UNH (Alpha#12, 9/10), XOM (Alpha#1/#30, 9/10), CAT (Alpha#41, 8.5/10)
+- Key factor: rotation momentum captured via Alpha#12 (volume-price divergence) and Alpha#1 (12-month momentum)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-10] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-10)
 - New page: wiki/synthesis/2026-06-10/wq101-alpha-daily.md
 - Applied Alpha#1/#6/#12/#19/#30/#41/#53 across 7 dimensions
