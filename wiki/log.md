@@ -4,6 +4,31 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-12] synthesis | Tech Report Digest — 2026-06-12 (第十一版)
+- New page: wiki/synthesis/2026-06-12/tech-report-digest.md
+- Coverage: 19 家机构, 40+ 技术报告/System Card
+- DeepSeek: V4 Model Card, R1 (arXiv:2501.12948), V3 (arXiv:2412.19437)
+- OpenAI: GPT-5.5 System Card (2026-04), GPT-5 System Card (arXiv:2601.03267), o3 System Card (2025-04)
+- Meta: Llama 4 Scout/Maverick/Behemoth (2025-04, MoE, 10M context)
+- Google DeepMind: Gemini 3.1 Pro Model Card, Gemini 2.5 Technical Report, Gemini Embedding 2
+- Anthropic: Claude Opus 4 & Sonnet 4 System Card, 4.5/4.6/4.7/4.8/Fable 5/Mythos 5
+- Mistral: Medium 3.5, Magistral (arXiv:2506.10910), Large 3
+- Qwen: Qwen3 (arXiv:2505.09388), Qwen3.5-Omni, Qwen3.6-35B-A3B
+- Microsoft: Phi-4 (arXiv:2412.08905), Phi-4-Reasoning (arXiv:2504.21318), Phi-4-reasoning-vision (arXiv:2603.03975)
+- Apple: AFM Tech Report 2025 (arXiv:2507.13575) — On-device ~3B + Server PT-MoE
+- NVIDIA: Nemotron 3 Ultra (MoE + Hybrid Mamba-Transformer), Nemotron 3 Super (arXiv:2604.12374), Llama-Nemotron (arXiv:2505.00949)
+- xAI: Grok 4/4.1/4 Fast Model Cards
+- Amazon: Nova 2 (2025-12), Nova Premier (2025-04)
+- Zhipu AI: GLM-5 (arXiv:2602.15763, 744B-A40B)
+- Moonshot AI: Kimi K2 (arXiv:2507.20534), K2.5 (arXiv:2602.02276), Kimi Linear (arXiv:2510.26692)
+- ByteDance: Seed 2.0 Model Card, Seed1.5-VL (arXiv:2505.07062)
+- Shanghai AI Lab: Intern-S1 (arXiv:2508.15763), Intern-S1-Pro (arXiv:2603.25040), InternLM3-8B
+- StepFun: Step3 (arXiv:2507.19427), Step-DeepResearch (arXiv:2512.20491), StepAudio 2.5
+- 01.AI: Yi-Lightning (arXiv:2412.01253), Yi (arXiv:2403.04652)
+- Baichuan: Baichuan-Omni (arXiv:2410.08565), Baichuan-M1 (arXiv:2502.12671)
+- Key trends: MoE 主导, Hybrid Mamba-Transformer 崛起, 推理模型成为标配, 多模态原生集成, Agentic 竞争白热化
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-12] synthesis | Conference Digest — 2026-06-12
 - New page: wiki/synthesis/2026-06-12/conference-digest.md
 - Coverage: 17 sections across 12+ venues (ICLR 2026 Outstanding Papers, ICML 2026, AAAI 2026, CVPR 2026, NeurIPS 2025, KDD 2025/2026, EMNLP 2025, ACL 2026, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025)
