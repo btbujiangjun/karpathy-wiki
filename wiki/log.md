@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-12] search | arXiv Paper Check — AI & CTR (June 12, 2026)
+- New page: wiki/synthesis/2026-06-12/arxiv-paper-check.md
+- Sources: Fri 12 Jun 2026 — cs.AI (86 new), cs.IR (7 new, 4 cross, 12 replacements), cs.LG (121 new)
+- Papers surveyed: ~20 top picks
+- AI/LLM highlights: Pythagoras-Prover (4B beats DeepSeek-Prover-V2-671B at theorem proving), Arbor (tree search cognition for agents, 193% LLM inference gain), From AGI to ASI (DeepMind), Prefill Awareness (models detect tampered outputs), MLUBench (ICML 2026 MLLM unlearning), SciAgentArena (science agent benchmark), Boltzmann Attention (Ising attention mechanism), LoRA-α optimization theory, Zero-source hallucination detection (ICML 2026)
+- CTR/Rec highlights: OneRetrieval (Kuaishou editable generative retrieval, production), Helmsman (RedNote ANNS 90% cost saving, OSDI'26), CQC-RAG (cross-query consistency for robust RAG), AdaGRPO (adaptive GRPO for generative rec), HiGR (Tencent hierarchical slate, production), LENS (CTR interaction granularity)
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-11] synthesis | 投资日报 — 2026-06-11（美股/港股/A股/中概/新能源科技与AI热点）
 - Summary: wiki/synthesis/2026-06-11/investment-daily.md
 - 美股：AI/半导体技术性调整（S&P 500科技板块-11%正式进入回调区）；Oracle财报今夜揭晓（$5530亿RPO验证AI需求）；SpaceX IPO明日上市（$135/股，$1.75万亿，~4%流通量）；Super Micro $70亿融资-28%；CPI +4.2%符合预期
@@ -883,3 +891,8 @@
 - Highlights: DeepSeek V4 (1.6T MoE, CSA/HCA, Muon Optimizer) + R1/V3, OpenAI GPT-5/o1 System Cards, Meta Llama 4 (Scout 10M context), Google Gemini 2.5/3.1/3.5 reports, Anthropic Claude Opus 4/4.6/4.7/4.8/Mythos System Cards, Mistral Large 3 (675B MoE), Qwen3.5/3.6/3.7 Max, Microsoft Phi-4 (+reasoning variants), Apple AFM 2025 (PT-MoE), NVIDIA Nemotron 3 (Hybrid Mamba-Transformer), xAI Grok 4/4.1/4.20/4.3, Amazon Nova/Nova 2, Zhipu GLM-5/5.1, Kimi K2/K2.5/K2.6 (MuonClip), ByteDance Seed 1.8/2.0, Step 3.5 Flash, InternLM2/3, Yi, Baichuan
 - Key themes: MoE domination, Hybrid Mamba-Transformer (Nemotron 3), Hybrid Attention CSA/HCA (DeepSeek V4), 10M context windows (Llama 4 Scout), configurable thinking modes, Muon/JumpCLIP optimizer innovation, early fusion multimodal (Llama 4/Qwen3.5), full open weight/open data movement (Nemotron 3 OpenMDW, GLM-5 MIT)
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-06-12] synthesis | arXiv Daily
+- Page: wiki/synthesis/2026-06-12/arxiv-daily.md
+- Coverage: 75 papers across LLMs, CTR/Advertising, Recommendation Systems, Sequential Modeling, Time Series, Games & RL, Agentic AI
+- Updated: wiki/index.md

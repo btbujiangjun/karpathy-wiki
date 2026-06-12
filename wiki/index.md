@@ -396,5 +396,7 @@ Papers are organized by research category. Each page includes problem background
 | [investment-daily](synthesis/2026-06-11/investment-daily.md) | 投资日报 — 2026-06-11（美股/港股/A股/中概/新能源科技与AI热点） | — |
 | [wq101-alpha-daily](synthesis/2026-06-11/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-11) | — |
 | [arxiv-daily](synthesis/2026-06-11/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 11, 2026) | 17 papers |
+| [arxiv-daily](synthesis/2026-06-12/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 12, 2026) | 75 papers |
 | [arxiv-paper-check](synthesis/2026-06-11/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 11, 2026) | 11 AI + 7 CTR papers |
+| [arxiv-paper-check](synthesis/2026-06-12/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 12, 2026) | 86+7 AI/CTR papers |
 | [conference-digest](synthesis/2026-06-11/conference-digest.md) | Conference & arXiv Digest — June 2026 (ICLR/AAAI/CVPR/ICML/NeurIPS/KDD/EMNLP/RecSys + 13 labs) | 12+ venues, 14 sections, 13 labs |
