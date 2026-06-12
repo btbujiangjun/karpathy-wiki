@@ -40,6 +40,13 @@
 - Key trends: MoE 主导, Hybrid Mamba-Transformer 崛起, 推理模型成为标配, 多模态原生集成, Agentic 竞争白热化
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-06-12] synthesis | Game RL & Game AI Bot — Daily Synthesis (2026-06-12)
+- New page: wiki/synthesis/2026-06-12/game-rl-daily.md
+- Coverage: 61 papers across 8 categories — Game RL (10), Game AI Bots (12), Game Foundation Models (4), Procedural Content Generation (8), Game Benchmarks (8), Industry Game AI (4), World Models (9), Related Techniques (6)
+- Top papers: STRATAGEM (game self-play for math reasoning), FAMOU (co-evolution for MCTF, AAMAS 2026 winner), AVACraft (VLM zero-shot StarCraft II 75-90%), WorldCam (camera-pose world models), NVIDIA IGI SDK (on-device game inference), SMAC-HARD/HLSMAC (next-gen StarCraft benchmarks), π-Play (privileged self-distillation)
+- Key trends: self-play+RL convergence for LLM reasoning, MARL benchmarks evolving beyond SMAC, on-device game AI maturing (NVIDIA IGI, Arm Neural Dawn), co-evolution for open-ended learning, multiplayer world models (Solaris), PCG goes multi-modal
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-12] synthesis | Conference Digest — 2026-06-12
 - New page: wiki/synthesis/2026-06-12/conference-digest.md
 - Coverage: 17 sections across 12+ venues (ICLR 2026 Outstanding Papers, ICML 2026, AAAI 2026, CVPR 2026, NeurIPS 2025, KDD 2025/2026, EMNLP 2025, ACL 2026, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025)
