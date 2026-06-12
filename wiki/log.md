@@ -15,6 +15,14 @@
 - AI 主题：全球 DC CapEx >$1T；三大 IPO（SpaceX/OpenAI/Anthropic）；特朗普会见 AI 高管；CPI 4.2% → 加息风险；1260H 名单扩至 188 家
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
 
+## [2026-06-12] synthesis | WorldQuant 101 Alpha 精选 — 美股 Top 20
+- Summary: wiki/synthesis/2026-06-12/wq101-alpha-daily.md
+- 市场背景：Dow +930pts (+1.86%)，Nasdaq +2.54%，S&P +1.75%；特朗普伊朗外交信号驱动风险偏好
+- 板块轮动：AI/半导体 → Healthcare/Financials/Value 持续
+- Top picks：MU (9/10), DELL (9/10), SNDK (8/10), GS (8/10), AVGO (8/10)
+- 核心因子有效性：Alpha#41（趋势强度）> Alpha#1（动量）> Alpha#30（波动率）> Alpha#53（反转）
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-12] synthesis | Tech Report Digest — 2026-06-12 (第十一版)
 - New page: wiki/synthesis/2026-06-12/tech-report-digest.md
 - Coverage: 19 家机构, 40+ 技术报告/System Card
