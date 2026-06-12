@@ -394,6 +394,7 @@ Papers are organized by research category. Each page includes problem background
 | [conference-digest](synthesis/2026-06-10/conference-digest.md) | 会议摘要: 2026年AI/ML顶级会议论文全景 — 13 venues, 100+ papers | 13 venues |
 | [investment-daily](synthesis/2026-06-10/investment-daily.md) | 投资日报 — 2026-06-10（美股/港股/A股/中概/新能源科技与AI热点） | — |
 | [investment-daily](synthesis/2026-06-11/investment-daily.md) | 投资日报 — 2026-06-11（美股/港股/A股/中概/新能源科技与AI热点） | — |
+| [investment-daily](synthesis/2026-06-12/investment-daily.md) | 投资日报 — 2026-06-12（美股/港股/A股/中概/新能源科技与AI热点） | — |
 | [wq101-alpha-daily](synthesis/2026-06-11/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-11) | — |
 | [arxiv-daily](synthesis/2026-06-11/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 11, 2026) | 17 papers |
 | [arxiv-daily](synthesis/2026-06-12/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 12, 2026) | 75 papers |

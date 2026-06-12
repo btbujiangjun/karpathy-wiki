@@ -4,6 +4,17 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-12] synthesis | 投资日报 — 2026-06-12（美股/港股/A股/中概/新能源科技与AI热点）
+- Summary: wiki/synthesis/2026-06-12/investment-daily.md
+- 美股：大盘强力反弹（Dow +930 pts/+1.86%，Nasdaq +2.54%，费半 +7.9%）；SpaceX IPO 今日上市（$135/股，$1.77T，2 周内从 Mag 7 抽血约 $2T）；Apple WWDC AI Siri 发布 + Google Cloud NVIDIA GPU 合作
+- Mag 7/NVIDIA：NVDA 盘后 $206.01；从高点回落 -15% 后反弹；Q1 营收 $816B（+85%），$1,190 亿供货承诺；Apple 背书 NVIDIA GPU
+- 港股：腾讯 WeChat AI Agent 推动 6 月 2 日 +10.46%（$532 亿市值增）；$46.6 亿双币债券超额认购 3.6 倍；阿里 618 监管冲击 -5.4% + 1260H 名单
+- 中概/ADRs：BABA -5.3%/JD -3%/PDD -1.5%（618 监管执法），BIDU -2.1%（1260H 名单 + 广告 -29%）
+- A 股：寒武纪 A 股股王（Q1 净利 +185%，高盛目标 2,406 元），国产芯片 41% 市占率，字节 800 亿/阿里 1,260 亿 AI 芯片采购
+- 新能源：比亚迪全球出口 160,644（+80%），王传福喊话 5 年世界第一；蔚来 37,705（+62.3%）创新高；NEV 渗透率 66.7% 新高
+- AI 主题：全球 DC CapEx >$1T；三大 IPO（SpaceX/OpenAI/Anthropic）；特朗普会见 AI 高管；CPI 4.2% → 加息风险；1260H 名单扩至 188 家
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-12] synthesis | Tech Report Digest — 2026-06-12 (第十一版)
 - New page: wiki/synthesis/2026-06-12/tech-report-digest.md
 - Coverage: 19 家机构, 40+ 技术报告/System Card
