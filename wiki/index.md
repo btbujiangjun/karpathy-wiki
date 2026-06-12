@@ -400,3 +400,4 @@ Papers are organized by research category. Each page includes problem background
 | [arxiv-paper-check](synthesis/2026-06-11/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 11, 2026) | 11 AI + 7 CTR papers |
 | [arxiv-paper-check](synthesis/2026-06-12/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 12, 2026) | 86+7 AI/CTR papers |
 | [conference-digest](synthesis/2026-06-11/conference-digest.md) | Conference & arXiv Digest — June 2026 (ICLR/AAAI/CVPR/ICML/NeurIPS/KDD/EMNLP/RecSys + 13 labs) | 12+ venues, 14 sections, 13 labs |
+| [conference-digest](synthesis/2026-06-12/conference-digest.md) | Conference & arXiv Digest — 2026-06-12 (ICLR 2026 Outstanding/ICML 2026/AAAI 2026/CVPR 2026/EMNLP 2025/KDD 2026/SIGIR 2026/WWW 2026/CIKM 2025/RecSys 2025/ACL 2026 + Agent/CTR/Gen Models/Code) | 17 sections, 12+ venues, 13 labs |

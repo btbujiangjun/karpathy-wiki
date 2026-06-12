@@ -4,6 +4,20 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-12] synthesis | Conference Digest — 2026-06-12
+- New page: wiki/synthesis/2026-06-12/conference-digest.md
+- Coverage: 17 sections across 12+ venues (ICLR 2026 Outstanding Papers, ICML 2026, AAAI 2026, CVPR 2026, NeurIPS 2025, KDD 2025/2026, EMNLP 2025, ACL 2026, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025)
+- ICLR 2026 Outstanding: Transformers Succinctness, Multi-Turn LLM Degradation, Mamba-3, AgentFlow (7B beats GPT-4o)
+- ICML 2026: MEMO multi-agent games, Curriculum tree-reasoning provable complexity, 6,352 accepted
+- CVPR 2026: 16,092 submissions (+24%), NitroGen gaming agents, Apple 14 papers
+- SIGIR 2026: 90 RecSys papers, LLM Rec dominates, cross-domain & generative rec surge
+- WWW 2026: NEZHA (Taobao 100M DAU, ¥10B GMV), AgentDR, FeDecider
+- CTR/Advertising: HyFormer (ByteDance), GR4AD (Kuaishou 400M users), TencentGR-1M/10M
+- Agent Systems: AlphaEvolve (DeepMind), MCMA meta-cognitive memory, KAIROS, OpenAI o1 System Card
+- Generative Models: DiT with Representation Autoencoders, PixelDiT, SeedVR2
+- Key trends: inference-first architecture, generative recommendation replacing cascaded pipelines, test-time compute scaling, SSMs competitive with Transformers
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-12] search | arXiv Paper Check — AI & CTR (June 12, 2026)
 - New page: wiki/synthesis/2026-06-12/arxiv-paper-check.md
 - Sources: Fri 12 Jun 2026 — cs.AI (86 new), cs.IR (7 new, 4 cross, 12 replacements), cs.LG (121 new)
