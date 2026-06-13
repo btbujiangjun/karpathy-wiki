@@ -29,6 +29,15 @@
 - AI 主题：全球 DC CapEx >$1T；三大 IPO（SpaceX/OpenAI/Anthropic）；特朗普会见 AI 高管；CPI 4.2% → 加息风险；1260H 名单扩至 188 家
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
 
+## [2026-06-13] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-13)
+- Summary: wiki/synthesis/2026-06-13/wq101-alpha-daily.md
+- Market context: SpaceX IPO首日+19%（$161.11, $1.9T市值）；美伊和谈可能周日签署（瑞士）；S&P 500 +0.50%至7,431；VIX 17.68持续下降；Russell 2000 YTD +40.2%领跑
+- 板块轮动：AI/半导体反弹（AMD +4.7%, MRVL纳入S&P 500）+ 能源受和平协议预期承压 + 消费必需品走强
+- Top picks: MRVL (9/10), NVDA (9/10), AMD (9/10), AVGO (8/10), GLW (8/10)
+- 核心因子有效性：Alpha#53（反转）> Alpha#1（动量）> Alpha#41（趋势强度）
+- 关键变化vs 06-12：新增AMD/AAPL/COP/LMT/WMT；存储权重下调；AI半导体反转信号确认
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-12] synthesis | WorldQuant 101 Alpha 精选 — 美股 Top 20
 - Summary: wiki/synthesis/2026-06-12/wq101-alpha-daily.md
 - 市场背景：Dow +930pts (+1.86%)，Nasdaq +2.54%，S&P +1.75%；特朗普伊朗外交信号驱动风险偏好
