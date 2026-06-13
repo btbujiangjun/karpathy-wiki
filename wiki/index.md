@@ -395,10 +395,12 @@ Papers are organized by research category. Each page includes problem background
 | [investment-daily](synthesis/2026-06-10/investment-daily.md) | 投资日报 — 2026-06-10（美股/港股/A股/中概/新能源科技与AI热点） | — |
 | [investment-daily](synthesis/2026-06-11/investment-daily.md) | 投资日报 — 2026-06-11（美股/港股/A股/中概/新能源科技与AI热点） | — |
 | [investment-daily](synthesis/2026-06-12/investment-daily.md) | 投资日报 — 2026-06-12（美股/港股/A股/中概/新能源科技与AI热点） | — |
+| [investment-daily](synthesis/2026-06-13/investment-daily.md) | 投资日报 — 2026-06-13（美股/港股/A股/中概/新能源科技与AI热点） | — |
 | [wq101-alpha-daily](synthesis/2026-06-11/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-11) | — |
 | [wq101-alpha-daily](synthesis/2026-06-12/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-12) | — |
 | [arxiv-daily](synthesis/2026-06-11/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 11, 2026) | 17 papers |
 | [arxiv-daily](synthesis/2026-06-12/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 12, 2026) | 75 papers |
+| [arxiv-daily](synthesis/2026-06-13/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 13, 2026) | 21 papers |
 | [arxiv-paper-check](synthesis/2026-06-11/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 11, 2026) | 11 AI + 7 CTR papers |
 | [arxiv-paper-check](synthesis/2026-06-12/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 12, 2026) | 86+7 AI/CTR papers |
 | [game-rl-daily](synthesis/2026-06-12/game-rl-daily.md) | Game RL & Game AI Bot — Daily Synthesis (2026-06-12) | 61 papers |

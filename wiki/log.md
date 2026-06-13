@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-13] search | arXiv Daily — AI Research Survey (June 13, 2026)
+- New page: wiki/synthesis/2026-06-13/arxiv-daily.md
+- Coverage: 21 papers across LLM Efficiency (7), Attention & Sequence (2), E-Commerce Search (2), Recommendation & CTR (3), Games & Multi-Agent (3), IR & RAG (2), LLM Behavior (2)
+- Top picks: MiniMax Sparse Attention (28.4x compute reduction at 1M context), Reversible Foundations (120B MoE on single 8-GPU node), OneRetrieval (Kuaishou editable generative retrieval, production), HiGR (Tencent hierarchical slate), Helmsman (RedNote ANNS 90% cost savings, OSDI'26), Boltzmann Attention (Ising attention mechanism), LENS (CTR interaction granularity)
+- Sources: arXiv cs.AI, cs.CL, cs.LG, cs.IR, cs.GT (Jun 10-12 submissions)
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-12] synthesis | 投资日报 — 2026-06-12（美股/港股/A股/中概/新能源科技与AI热点）
 - Summary: wiki/synthesis/2026-06-12/investment-daily.md
 - 美股：大盘强力反弹（Dow +930 pts/+1.86%，Nasdaq +2.54%，费半 +7.9%）；SpaceX IPO 今日上市（$135/股，$1.77T，2 周内从 Mag 7 抽血约 $2T）；Apple WWDC AI Siri 发布 + Google Cloud NVIDIA GPU 合作
@@ -22,6 +29,16 @@
 - Top picks：MU (9/10), DELL (9/10), SNDK (8/10), GS (8/10), AVGO (8/10)
 - 核心因子有效性：Alpha#41（趋势强度）> Alpha#1（动量）> Alpha#30（波动率）> Alpha#53（反转）
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-13] synthesis | 投资日报 — 2026-06-13（美股/港股/A股/中概/新能源科技与AI热点）
+- Summary: wiki/synthesis/2026-06-13/investment-daily.md
+- 美股：三大指数周线收涨；SpaceX 上市首日 +19.34%（$161，史上最大 IPO $750 亿）；Adobe -7%（AI Freemium 压制 ARR）；Mag 7 涨跌互现
+- A 股：沪指 +1.12% 站上 4000 点，成交 3.21 万亿放量 6629 亿；有色金属 +6.32%（钨/钼涨价），商业航天（SpaceX 映射），大金融走强；半导体材料获利了结
+- 港股：腾讯 Q1 AI 驱动收入 +9%，CapEx 环比 +84%；阿里云 +40% AI 收入占比 30%；国产算力链受益 CapEx 提升
+- 中概：BIDU +1.69%/NTES +1.71% 领涨；NIO -3.12%/LI -2.89% 回调；板块分化加剧
+- 新能源：5 月 NEV 渗透率 56.9%，出口 +68.7%；宁德时代主力净流入 19.74 亿
+- AI 主题：SpaceX IPO 落地；全球数据中心 CapEx $750B+；半导体市场预计 $1.51T；AI IPO 超级周期（OpenAI/Anthropic 排队）；美伊缓和油价大跌
+- Updated: wiki/index.md, wiki/log.md
 
 ## [2026-06-12] synthesis | Tech Report Digest — 2026-06-12 (第十一版)
 - New page: wiki/synthesis/2026-06-12/tech-report-digest.md
