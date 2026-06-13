@@ -1004,3 +1004,21 @@
 - Saturday — no new arXiv submissions. Covers the Fri Jun 12 batch with additional LG highlights not in the previous report
 - Highlights: RoVE (rotary value embeddings → attentive convolution), FlowBank (query-adaptive workflow optimization), BlendIn (inference-time alignment), OneRetrieval (Kuaishou editable generative retrieval), Helmsman (RedNote ANNS, 90% cost savings), HiGR (Tencent slate recommendation), Strategic Decision Support for AI Agents
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-13] synthesis | Conference Digest — 2026-06-13 全面版
+- New page: wiki/synthesis/2026-06-13/conference-digest.md
+- Coverage: 12 sections across 12+ venues (ICML 2026, AAAI 2026, NeurIPS 2025, ICLR 2026, KDD 2026, CVPR 2026, ACL 2026, EMNLP 2025, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025) + arXiv GRPO training advances
+- ICML 2026: CausalDPO (OOD generative rec +24.1%), ML-Agent (7B beats GPT-5 on ML), SciAgentGym, HyperAgents, 465 agent-related papers
+- AAAI 2026: MoMoREC (Alibaba multi-agent motivation), TreeBridge (Shopee GMV +1.55%), Align³GR (Kuaishou +17.8%/20.2%), STARec (0.4% data SOTA)
+- NeurIPS 2025: RecZero (GRPO for autonomous reasoning rec), R²ec (dual-head reasoning+rec), IGD (token IG for rec), TagCF (MLLM+LLM logic, +0.946% engagement), RecPIE, ORBIT benchmark
+- ICLR 2026: T³ (belief deviation truncation, +30pp), ExpA (expanded action space EARL), MedAgentGym (+43~45% RL), MemAgent, Agent Proving
+- KDD 2026: FAT (Field-Aware Transformer +4.38% AUC), FCN (exponential+linear cross), GR4AD (Kuaishou ads revenue +4.2%), OneRanker (Tencent GMV +1.34%), HAP (ByteDance pre-ranking), KLAN (Kuaishou DAU +0.205%), OneMall (GMV +4.9~14.7%)
+- CVPR 2026: TWIG (thinking-while-generating), Thoughtful3D (CoT for 3D generation), Gen3R, PartDiffuser, Scone, SenseSearch
+- EMNLP 2025: AgentPro (MCTS + PRM, +6.32% HotpotQA), ManuSearch, Preemptive Detection, IPIGuard, Search-o1, LMR-BENCH
+- SIGIR 2026: SIGMA (AliExpress multi-task GR), GenRec (GRPO-SR), GFlowGR (4% revenue lift), ItemRAG, BEAR, SPRINT
+- WWW 2026: ThinkRec (thinking-based rec), AgentDR (2× improvement), ISRF, SEDIRec, IAM, DualGR, HAP
+- CIKM 2025: Climber (NetEase, +12.19% lift), STARec, Prompt Tuning for user profile
+- RecSys 2025: Best Paper (Conformal Risk Control for unwanted rec), RESA, LONGER
+- arXiv GRPO: Predictive Scaling Laws (80% epoch saturation), Prompt Augmentation, MT-GRPO (+16~28% worst-task), GRPO-VPS (+2.6pp), Latent-GRPO (3-4× shorter chains), iGRPO (AIME24 85.62%), GDRO-DRPO (+10.6%)
+- Key trends: GRPO as core reasoning training paradigm, RecSys entering "reasoning era", Agent systems shifting to learning paradigm, game RL feeding back to LLM reasoning, multimodal generation with integrated reasoning, CTR shifting from deeper-to-structured expressivity
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
