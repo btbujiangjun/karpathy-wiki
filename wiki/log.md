@@ -1022,3 +1022,10 @@
 - arXiv GRPO: Predictive Scaling Laws (80% epoch saturation), Prompt Augmentation, MT-GRPO (+16~28% worst-task), GRPO-VPS (+2.6pp), Latent-GRPO (3-4× shorter chains), iGRPO (AIME24 85.62%), GDRO-DRPO (+10.6%)
 - Key trends: GRPO as core reasoning training paradigm, RecSys entering "reasoning era", Agent systems shifting to learning paradigm, game RL feeding back to LLM reasoning, multimodal generation with integrated reasoning, CTR shifting from deeper-to-structured expressivity
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-13] synthesis | Game RL & Game AI Bot — Daily Synthesis (2026-06-13)
+- New page: wiki/synthesis/2026-06-13/game-rl-daily.md
+- Coverage: 58 papers across 8 categories — Game RL (10), Game AI Bots (11), Game Foundation Models (5), Procedural Content Generation (8), Game Benchmarks (8), Industry Game AI (5), World Models (4), Related Techniques (7)
+- Top papers: GARL (game-theoretic RL for multi-agent prioritization, Jun 2026), PopuLoRA (Vmax, co-evolving populations for self-play RLVR), NitroGen (CVPR 2026 Oral, NVIDIA, 40K hours/1K+ games), Dreamer 4 (Minecraft diamonds from offline data), AsyncWebRL (2.9× speedup for multi-step RL), World Models survey (2606.00133), FlowTracer (token-level credit assignment)
+- Key trends: self-play+RL convergence for LLM reasoning as primary paradigm, generalist game agents (NitroGen), industry RL deployment accelerating (NVIDIA ACE, Sony GT Sophy, EA FC 26), world models as unifying framework, PCG becomes multi-objective/multi-modal, benchmark standardization (GameWorld/lmgame-Bench), agentic RL infrastructure matures, co-evolution for open-ended learning
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
