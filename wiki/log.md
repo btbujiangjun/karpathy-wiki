@@ -11,6 +11,13 @@
 - Sources: arXiv cs.AI, cs.CL, cs.LG, cs.IR, cs.GT (Jun 10-12 submissions)
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
 
+## [2026-06-13] synthesis | 大模型技术报告摘要（2025-2026）
+- New page: wiki/synthesis/2026-06-13/tech-report-digest.md
+- Coverage: 19 家 AI 公司最新 Tech Report / System Card 综合摘要
+- Companies: DeepSeek, OpenAI, Meta, Google, Anthropic, Mistral, Qwen, Yi, Microsoft, Apple, NVIDIA, xAI, Amazon, Zhipu, InternLM, Moonshot, StepFun, ByteDance, Baichuan
+- Topics: 新架构 (MoE/Mamba/Hybrid), 训练方法, Scaling Law, 多模态, 长上下文, 推理模型
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-12] synthesis | 投资日报 — 2026-06-12（美股/港股/A股/中概/新能源科技与AI热点）
 - Summary: wiki/synthesis/2026-06-12/investment-daily.md
 - 美股：大盘强力反弹（Dow +930 pts/+1.86%，Nasdaq +2.54%，费半 +7.9%）；SpaceX IPO 今日上市（$135/股，$1.77T，2 周内从 Mag 7 抽血约 $2T）；Apple WWDC AI Siri 发布 + Google Cloud NVIDIA GPU 合作
@@ -31,6 +38,10 @@
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
 
 ## [2026-06-13] synthesis | 投资日报 — 2026-06-13（美股/港股/A股/中概/新能源科技与AI热点）
+
+## [2026-06-13] synthesis | arXiv Daily — 2026-06-13
+- Summary: wiki/synthesis/2026-06-13/arxiv-daily.md
+- New: 16 papers covering LLM architectures (MSA, PCAF, MaxProof, Select & Improve, SWITCH), recommendation/CTR (OneRetrieval, GenAIR, AIR, Mult-DPO, DiffCold, LLM Personas, τ-Rec, Representation Curriculum), RL/multi-agent/games (DoorDash MARL, competitive search game theory), and tool use (ToolSense)
 - Summary: wiki/synthesis/2026-06-13/investment-daily.md
 - 美股：三大指数周线收涨；SpaceX 上市首日 +19.34%（$161，史上最大 IPO $750 亿）；Adobe -7%（AI Freemium 压制 ARR）；Mag 7 涨跌互现
 - A 股：沪指 +1.12% 站上 4000 点，成交 3.21 万亿放量 6629 亿；有色金属 +6.32%（钨/钼涨价），商业航天（SpaceX 映射），大金融走强；半导体材料获利了结
@@ -978,3 +989,9 @@
 - Page: wiki/synthesis/2026-06-12/arxiv-daily.md
 - Coverage: 75 papers across LLMs, CTR/Advertising, Recommendation Systems, Sequential Modeling, Time Series, Games & RL, Agentic AI
 - Updated: wiki/index.md
+
+## [2026-06-13] synthesis | arxiv-paper-check | AI & CTR
+- New page: wiki/synthesis/2026-06-13/arxiv-paper-check.md
+- Saturday — no new arXiv submissions. Covers the Fri Jun 12 batch with additional LG highlights not in the previous report
+- Highlights: RoVE (rotary value embeddings → attentive convolution), FlowBank (query-adaptive workflow optimization), BlendIn (inference-time alignment), OneRetrieval (Kuaishou editable generative retrieval), Helmsman (RedNote ANNS, 90% cost savings), HiGR (Tencent slate recommendation), Strategic Decision Support for AI Agents
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
