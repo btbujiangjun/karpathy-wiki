@@ -1085,3 +1085,12 @@
 - Top picks: DS-MLP (Renmin Univ, SOTA CTR with vanilla MLP), UniVA (Tencent WeChat, 1.5% GMV lift via generative rec value alignment), Generalization Hacking (Anthropic, models resist RL behavioral modification), DiffCold (SJTU, diffusion-based cold-start, ECML-PKDD 2026), LLM-Based Personas (Google, billion-scale real-time user persona generation)
 - Sources: arXiv cs.IR, cs.LG, cs.CL, cs.AI, cs.CR (May-Jun 2026 submissions)
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-15] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-15)
+- New page: wiki/synthesis/2026-06-15/wq101-alpha-daily.md
+- Market context: S&P 500 at 7,520 (+0.50%, YTD +24.66%); 美伊协议6/19签署原油跌至两月低点; SpaceX IPO 首日+19% ($2T市值); FOMC 6/16-17会议
+- 板块配置：能源(6) > 工业(4) > 半导体/AI(3) > 金融(2) > 消费必需品(2) > 医疗(1) > 航天(1) > 可选消费(1)
+- Top picks: CAT(9.5), GEV(9.5), XOM(9), CVX(9), NVDA(9), JPM(9), WMT(9)
+- 核心因子有效性：Alpha#1(动量) > Alpha#41(趋势强度) > Alpha#30(波动率) ≈ Alpha#53(反转) > Alpha#6 > Alpha#12 > Alpha#19
+- 关键变化vs 06-13：工业取代能源成为最高评分板块；反转因子(Alpha#53)使用率上升（市场回调中涌现买入机会）；新增SPCX(SpaceX)/GM/VLO
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
