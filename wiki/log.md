@@ -1037,6 +1037,24 @@
 - Key trends: self-play+RL convergence for LLM reasoning as primary paradigm, generalist game agents (NitroGen), industry RL deployment accelerating (NVIDIA ACE, Sony GT Sophy, EA FC 26), world models as unifying framework, PCG becomes multi-objective/multi-modal, benchmark standardization (GameWorld/lmgame-Bench), agentic RL infrastructure matures, co-evolution for open-ended learning
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
 
+## [2026-06-15] conference-digest | 顶会论文专题报告 — 2026年6月全面版（NeurIPS 2025 Best / ICLR 2026 Outstanding / ICML 2026 / AAAI 2026 / CVPR 2026 Best / EMNLP 2025 / KDD 2026 / RecSys 2025 / SIGIR 2026 / WWW 2026 / CIKM 2025 / ACL 2026）
+- New page: wiki/synthesis/2026-06-15/conference-digest.md
+- Coverage: 12+ venues, 100+ papers, 13 labs
+- Highlights:
+  - NeurIPS 2025 Best: Gated Attention (Alibaba Qwen, attention sink elimination), Artificial Hivemind (UW/CMU/AI2, LLM homogeneity), 1000-Layer RL (CMU/Google, 20-50x RL depth scaling)
+  - ICLR 2026 Outstanding: LLMs Get Lost in Multi-Turn (Microsoft Research, 39% multi-turn drop), Mamba-3 (CMU/Princeton/Stanford, SSM Pareto frontier)
+  - CVPR 2026 Best: D4RT (Google DeepMind, dynamic 4D scene reconstruction), O-Voxel (Microsoft/Tsinghua, 3D structured latents)
+  - ICML 2026: CADET (LinkedIn, decoder-only ads CTR, 11.8% lift), 6,352 accepted papers
+  - KDD 2026: OneMall (Kuaishou generative rec), PROMISE (process reward models), DOS (Meituan semantic IDs)
+  - RecSys 2025: Generative recommendation paradigm, semantic ID revolution
+  - AAAI 2026: ToxiAlert-Bench (audio toxicity), 29K submissions, AutoMalDesc
+  - EMNLP 2025: Speculative Streaming (Apple), CodeArena (Alibaba), value-action gap
+  - CIKM 2025: AGENTiGraph (95.12% KG interaction), HealthGenie
+  - ACL 2026: Theme — "Explainability of NLP Models"
+  - arXiv: Self-Harness (agents auto-improve, 52.6% gain), ExpGraph (Meta self-evolving graph memory), ALE (UC Berkeley, 2.6% agent pass rate), EvoArena, Agentic Monte Carlo
+- Industry labs: Google DeepMind, OpenAI, Meta AI, Microsoft Research, ByteDance, Alibaba/Qwen, Tencent, Kuaishou, NVIDIA, Anthropic, Apple, Amazon, Baidu
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-15] arxiv-daily | arXiv Daily — AI Research Survey (June 15, 2026)
 - New page: wiki/synthesis/2026-06-15/arxiv-daily.md
 - Coverage: 14 papers across AI Alignment & Safety (2), CTR & Advertising (3), Recommendation Systems (3), IR & RAG (2), RL & Games (1), LLM Agents (2)
