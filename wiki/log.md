@@ -4,6 +4,17 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-15] synthesis | 投资日报 — 2026-06-15（美股/港股/A股/中概/新能源科技与AI热点）
+- Summary: wiki/synthesis/2026-06-15/investment-daily.md
+- 宏观焦点：FOMC 6/17-18 会议（CPI 4.2%→鹰派风险）；SpaceX 上市首日+19.3%；AI CapEx 大辩论白热化（Big4 $725B）
+- 美股：NVDA -3.73%($200.42)；INTC +6.5%（Google/NVIDIA 18A 传闻）；ORCL -12%（RPO 创纪录但 $700 亿 CapEx 承压）；CBRS -5.5%（Cathie Wood 买跌）；SOX 6/5 单日 -10%；Microsoft 发 MAI 7 模型
+- 港股：智谱/MiniMax 正式纳入恒生科技指数（6/15 起）；智谱市值从 HK$579 亿→HK$5,858 亿（+911%），启动科创板 150 亿 IPO；仙工智能 6/15-18 招股（"机器人大脑第一股"）
+- 中概：BIDU -13%（1260H 名单重创）；BABA 6 连跌（1260H+618 监管）；AI 收入首超 Core 50%
+- A股：具身智能融资超 ¥345 亿（宇树 73 天过会）；千寻智能 Spirit v1.6 登顶 RoboArena；内部人减持 ¥120 亿/周；智谱 150 亿科创板 IPO 推进
+- 新能源：BYD 王传福喊话 5 年世界第一（出口+80%）；NIO 连续 2 季盈利；NEV 渗透率 62.9% 新高
+- AI 主题：NVIDIA Alpamayo 2 Super、Nemotron 3 Ultra、Isaac GR00T 人形机器人；Alibaba RynnBrain 开源机器人模型；Anthropic Fable 5；DeepSeek 寻求 $70 亿融资
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-15] search | arXiv Paper Check — AI & CTR (June 15, 2026)
 - New page: wiki/synthesis/2026-06-15/arxiv-paper-check.md
 - Sources: cs.IR new (13 entries, Mon 15 Jun), cs.AI new + cs.LG new (Fri 12 Jun — latest weekday listings)
