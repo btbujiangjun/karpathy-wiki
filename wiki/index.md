@@ -402,9 +402,11 @@ Papers are organized by research category. Each page includes problem background
 | [arxiv-daily](synthesis/2026-06-11/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 11, 2026) | 17 papers |
 | [arxiv-daily](synthesis/2026-06-12/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 12, 2026) | 75 papers |
 | [arxiv-daily](synthesis/2026-06-13/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 13, 2026) | 16 papers |
+| [arxiv-daily](synthesis/2026-06-15/arxiv-daily.md) | arXiv Daily — AI, LLM, RecSys, CTR, Advertising, RL, Games (June 15, 2026) | 14 papers |
 | [arxiv-paper-check](synthesis/2026-06-11/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 11, 2026) | 11 AI + 7 CTR papers |
 | [arxiv-paper-check](synthesis/2026-06-12/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 12, 2026) | 86+7 AI/CTR papers |
 | [arxiv-paper-check](synthesis/2026-06-13/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 13, 2026) | 15+ papers (Saturday quiet day) |
+| [arxiv-paper-check](synthesis/2026-06-15/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 15, 2026) | 11 papers |
 | [game-rl-daily](synthesis/2026-06-12/game-rl-daily.md) | Game RL & Game AI Bot — Daily Synthesis (2026-06-12) | 61 papers |
 | [game-rl-daily](synthesis/2026-06-13/game-rl-daily.md) | Game RL & Game AI Bot — Daily Synthesis (2026-06-13) | 58 papers |
 | [tech-report-digest](synthesis/2026-06-12/tech-report-digest.md) | 各大 AI 公司最新技术报告汇总 (第十一版) — 19 家机构, 40+ 报告 | 40+ reports |

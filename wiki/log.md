@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-15] search | arXiv Paper Check — AI & CTR (June 15, 2026)
+- New page: wiki/synthesis/2026-06-15/arxiv-paper-check.md
+- Sources: cs.IR new (13 entries, Mon 15 Jun), cs.AI new + cs.LG new (Fri 12 Jun — latest weekday listings)
+- Papers surveyed: 11 top picks (6 AI/LLM + 5 CTR/IR/Rec)
+- Top picks: MiniMax Sparse Attention (28.4× compute reduction at 1M context), Agentic Monte Carlo (ICML 2026, SMC for black-box agent RL), PCAF (hash-bucket associative memory beats Transformer PPL), Reasoning as Pattern Matching (LLMs and humans both use pattern matching), LLM Reproducibility Assessment (96% agreement), Timeflies (observability + value joint forecasting), ADORE (retrieval-grounded query expansion), TASR (training-free adaptive retrieval stopping, KDD 2026), KGERMAR (KG-enhanced memory for long context), PAD (denoising × popularity bias interaction), ChronoID (temporal signals for generative rec)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-13] search | arXiv Daily — AI Research Survey (June 13, 2026)
 - New page: wiki/synthesis/2026-06-13/arxiv-daily.md
 - Coverage: 21 papers across LLM Efficiency (7), Attention & Sequence (2), E-Commerce Search (2), Recommendation & CTR (3), Games & Multi-Agent (3), IR & RAG (2), LLM Behavior (2)
@@ -1028,4 +1035,11 @@
 - Coverage: 58 papers across 8 categories — Game RL (10), Game AI Bots (11), Game Foundation Models (5), Procedural Content Generation (8), Game Benchmarks (8), Industry Game AI (5), World Models (4), Related Techniques (7)
 - Top papers: GARL (game-theoretic RL for multi-agent prioritization, Jun 2026), PopuLoRA (Vmax, co-evolving populations for self-play RLVR), NitroGen (CVPR 2026 Oral, NVIDIA, 40K hours/1K+ games), Dreamer 4 (Minecraft diamonds from offline data), AsyncWebRL (2.9× speedup for multi-step RL), World Models survey (2606.00133), FlowTracer (token-level credit assignment)
 - Key trends: self-play+RL convergence for LLM reasoning as primary paradigm, generalist game agents (NitroGen), industry RL deployment accelerating (NVIDIA ACE, Sony GT Sophy, EA FC 26), world models as unifying framework, PCG becomes multi-objective/multi-modal, benchmark standardization (GameWorld/lmgame-Bench), agentic RL infrastructure matures, co-evolution for open-ended learning
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-15] arxiv-daily | arXiv Daily — AI Research Survey (June 15, 2026)
+- New page: wiki/synthesis/2026-06-15/arxiv-daily.md
+- Coverage: 14 papers across AI Alignment & Safety (2), CTR & Advertising (3), Recommendation Systems (3), IR & RAG (2), RL & Games (1), LLM Agents (2)
+- Top picks: DS-MLP (Renmin Univ, SOTA CTR with vanilla MLP), UniVA (Tencent WeChat, 1.5% GMV lift via generative rec value alignment), Generalization Hacking (Anthropic, models resist RL behavioral modification), DiffCold (SJTU, diffusion-based cold-start, ECML-PKDD 2026), LLM-Based Personas (Google, billion-scale real-time user persona generation)
+- Sources: arXiv cs.IR, cs.LG, cs.CL, cs.AI, cs.CR (May-Jun 2026 submissions)
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
