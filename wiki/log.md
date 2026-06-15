@@ -1055,6 +1055,13 @@
 - Industry labs: Google DeepMind, OpenAI, Meta AI, Microsoft Research, ByteDance, Alibaba/Qwen, Tencent, Kuaishou, NVIDIA, Anthropic, Apple, Amazon, Baidu
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
 
+## [2026-06-15] synthesis | 大模型技术报告摘要（2025-2026）— 2026-06-15 更新版
+- New page: wiki/synthesis/2026-06-15/tech-report-digest.md
+- Coverage: 20 家 AI 公司最新 Tech Report / System Card 综合摘要
+- Companies: DeepSeek, OpenAI, Meta, Google, Anthropic, Mistral, Qwen, Microsoft, Apple, NVIDIA, xAI, Amazon, Zhipu, InternLM, Moonshot, StepFun, ByteDance, Yi, Baichuan
+- Topics: MoE/Mamba/Hybrid 架构, 训练方法, Scaling Law, 多模态, 长上下文, 推理模型
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-15] arxiv-daily | arXiv Daily — AI Research Survey (June 15, 2026)
 - New page: wiki/synthesis/2026-06-15/arxiv-daily.md
 - Coverage: 14 papers across AI Alignment & Safety (2), CTR & Advertising (3), Recommendation Systems (3), IR & RAG (2), RL & Games (1), LLM Agents (2)

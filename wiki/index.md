@@ -411,6 +411,7 @@ Papers are organized by research category. Each page includes problem background
 | [game-rl-daily](synthesis/2026-06-13/game-rl-daily.md) | Game RL & Game AI Bot — Daily Synthesis (2026-06-13) | 58 papers |
 | [tech-report-digest](synthesis/2026-06-12/tech-report-digest.md) | 各大 AI 公司最新技术报告汇总 (第十一版) — 19 家机构, 40+ 报告 | 40+ reports |
 | [tech-report-digest](synthesis/2026-06-13/tech-report-digest.md) | 大模型技术报告摘要（2025-2026）— 19 家 AI 公司最新 Tech Report / System Card 综合摘要 | 30+ reports |
+| [tech-report-digest](synthesis/2026-06-15/tech-report-digest.md) | 大模型技术报告摘要（2025-2026）— 2026-06-15 更新版，20 家机构 30+ 报告 | 30+ reports |
 | [conference-digest](synthesis/2026-06-12/conference-digest.md) | Conference & arXiv Digest — 2026-06-12 (ICLR 2026 Outstanding/ICML 2026/AAAI 2026/CVPR 2026/EMNLP 2025/KDD 2026/SIGIR 2026/WWW 2026/CIKM 2025/RecSys 2025/ACL 2026 + Agent/CTR/Gen Models/Code) | 17 sections, 12+ venues, 13 labs |
 | [conference-digest](synthesis/2026-06-13/conference-digest.md) | Conference & arXiv Digest — 2026-06-13 全面版 (ICML/AAAI/NeurIPS/ICLR/KDD/CVPR/ACL/EMNLP/SIGIR/WWW/CIKM/RecSys + arXiv GRPO 推理训练进展) | 12+ venues, 100+ papers, 15+ labs |
 | [conference-digest](synthesis/2026-06-15/conference-digest.md) | 顶会论文专题报告 — 2026年6月全面版（NeurIPS 2025 Best / ICLR 2026 Outstanding / ICML 2026 / AAAI 2026 / CVPR 2026 Best / EMNLP 2025 / KDD 2026 / RecSys 2025 / SIGIR 2026 / WWW 2026 / CIKM 2025 / ACL 2026） | 12+ conferences, 100+ papers, 13 labs |
