@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-15] synthesis | Game RL & Game AI Bot — Daily Survey (2026-06-15)
+- New page: wiki/synthesis/2026-06-15/game-rl-daily.md
+- Coverage: 29 papers across Game RL (self-play, MARL), Game AI Bots (LLM agents, NPCs), Foundation/World Models, PCG, Game Benchmarks, Industry Game AI, Related Techniques
+- Top picks: SPIRAL (ICLR 2026, self-play for reasoning), MARSHAL (self-play multi-agent LLM reasoning), FAMOU (co-evolutionary LLM strategy evolution), lmgame-Bench, Orak (KRAFTON game benchmark), Agent World Model (ICML 2026, synthetic environments)
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-15] synthesis | 投资日报 — 2026-06-15（美股/港股/A股/中概/新能源科技与AI热点）
 - Summary: wiki/synthesis/2026-06-15/investment-daily.md
 - 宏观焦点：FOMC 6/17-18 会议（CPI 4.2%→鹰派风险）；SpaceX 上市首日+19.3%；AI CapEx 大辩论白热化（Big4 $725B）

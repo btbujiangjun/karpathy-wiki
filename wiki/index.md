@@ -410,6 +410,7 @@ Papers are organized by research category. Each page includes problem background
 | [arxiv-paper-check](synthesis/2026-06-15/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 15, 2026) | 11 papers |
 | [game-rl-daily](synthesis/2026-06-12/game-rl-daily.md) | Game RL & Game AI Bot — Daily Synthesis (2026-06-12) | 61 papers |
 | [game-rl-daily](synthesis/2026-06-13/game-rl-daily.md) | Game RL & Game AI Bot — Daily Synthesis (2026-06-13) | 58 papers |
+| [game-rl-daily](synthesis/2026-06-15/game-rl-daily.md) | Game RL & Game AI Bot — Daily Survey (2026-06-15) | 29 papers |
 | [tech-report-digest](synthesis/2026-06-12/tech-report-digest.md) | 各大 AI 公司最新技术报告汇总 (第十一版) — 19 家机构, 40+ 报告 | 40+ reports |
 | [tech-report-digest](synthesis/2026-06-13/tech-report-digest.md) | 大模型技术报告摘要（2025-2026）— 19 家 AI 公司最新 Tech Report / System Card 综合摘要 | 30+ reports |
 | [tech-report-digest](synthesis/2026-06-15/tech-report-digest.md) | 大模型技术报告摘要（2025-2026）— 2026-06-15 更新版，20 家机构 30+ 报告 | 30+ reports |
