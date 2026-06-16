@@ -359,6 +359,8 @@ Papers are organized by research category. Each page includes problem background
 | [arxiv-digest](synthesis/2026-06-04/arxiv-digest.md) | arXiv Digest — AI & CTR (June 4, 2026) | ~40 papers |
 | [arxiv-daily](synthesis/2026-06-08/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 8, 2026) | ~37 papers |
 | [arxiv-daily](synthesis/2026-06-09/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 9, 2026) | 26 papers |
+| [arxiv-ai-search](synthesis/2026-06-16/arxiv-ai-search.md) | arXiv AI Search — Comprehensive Survey (June 16, 2026) | ~35 papers across 8 domains |
+| [arxiv-daily](synthesis/2026-06-16/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 16, 2026) | ~50 papers across 9 domains |
 | [arxiv-paper-check](synthesis/2026-06-09/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 9, 2026) | 34 cs.AI + 14 cs.IR new submissions |
 | [conference-digest](synthesis/2026-06-09/conference-digest.md) | 顶会论文专题报告 — 2026年6月全面版（NeurIPS Best / ICLR 2026 / ICML 2026 / AAAI 2026 / CVPR 2026 / EMNLP 2025 / KDD 2026 / RecSys 2025 / SIGIR 2026 / WWW 2026 / CIKM 2025 / ACL 2026） | 12 conferences, 100+ papers, 13 labs |
 | [conference-digest](synthesis/2026-06-08/conference-digest.md) | 顶会论文专题报告 — 2026年6月全面版（ICML / AAAI / NeurIPS / ICLR / KDD / CVPR / ACL / EMNLP / SIGIR / WWW / CIKM / RecSys） | 12 conferences, 100+ papers, 12 labs |
@@ -409,6 +411,7 @@ Papers are organized by research category. Each page includes problem background
 | [arxiv-paper-check](synthesis/2026-06-12/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 12, 2026) | 86+7 AI/CTR papers |
 | [arxiv-paper-check](synthesis/2026-06-13/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 13, 2026) | 15+ papers (Saturday quiet day) |
 | [arxiv-paper-check](synthesis/2026-06-15/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 15, 2026) | 11 papers |
+| [arxiv-paper-check](synthesis/2026-06-16/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 16, 2026) | 10 AI/LLM + 6 CTR/IR/RecSys papers |
 | [game-rl-daily](synthesis/2026-06-12/game-rl-daily.md) | Game RL & Game AI Bot — Daily Synthesis (2026-06-12) | 61 papers |
 | [game-rl-daily](synthesis/2026-06-13/game-rl-daily.md) | Game RL & Game AI Bot — Daily Synthesis (2026-06-13) | 58 papers |
 | [game-rl-daily](synthesis/2026-06-15/game-rl-daily.md) | Game RL & Game AI Bot — Daily Survey (2026-06-15) | 29 papers |

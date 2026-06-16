@@ -1094,3 +1094,24 @@
 - 核心因子有效性：Alpha#1(动量) > Alpha#41(趋势强度) > Alpha#30(波动率) ≈ Alpha#53(反转) > Alpha#6 > Alpha#12 > Alpha#19
 - 关键变化vs 06-13：工业取代能源成为最高评分板块；反转因子(Alpha#53)使用率上升（市场回调中涌现买入机会）；新增SPCX(SpaceX)/GM/VLO
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-16] search | arXiv AI Search — Comprehensive Survey (LLM, CTR, Rec, Ads, Games)
+- New page: wiki/synthesis/2026-06-16/arxiv-ai-search.md
+- Coverage: 35 papers across 8 domains — LLM Architecture & Efficiency (4), LLM Reasoning & Efficient Inference (4), LLM Agents & RL (5), Games & VLM/LLM (5), CTR Prediction (8), Advertising & Generative Recommendation (8), Sequential Recommendation (1), Cross-Lingual & Safety (1)
+- Top picks: MiniMax Sparse Attention (28.4× compute reduction, 14.2× prefill speedup at 1M context), DeRes (1.66× steeper CTR scaling law), GR4AD/Kuaishou (4.2% ad revenue uplift fully deployed on 400M+ users), Odysseus (3× game progress via VLM RL at 100+ turns), AMC/Layer6 AI (SMC for black-box agent RL, outperforms GRPO), MemoPilot (Elo #1 on Texas Hold'em, beats DeepSeek-V3.2)
+- Key trends: Sparse/long-context attention replacing quadratic (MSA, PCAF); generative CTR paradigm across Baidu/Tencent/Kuaishou/JD/Shopee; hierarchical RL for long-horizon agents; game-playing LLMs reaching production quality; CTR scaling laws converging on compute-AUC Pareto fronts
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-16] synthesis | arXiv Daily — AI Research Survey (June 16, 2026)
+- Summary: wiki/synthesis/2026-06-16/arxiv-daily.md
+- ~50 papers across 9 domains: LLM architectures & attention (12 papers), state-space models (5), sequence model theory (9), CTR prediction (11), advertising ranking (6), diffusion LMs (9), games & RL (9), agent memory & reasoning (4), industry deployment snapshot
+- Key themes: sparse attention explosion, generative CTR paradigm shift, hybrid SSM-attention, diffusion LM viability, RL for LLM agents
+- New page: wiki/synthesis/2026-06-16/arxiv-daily.md
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-06-16] search | arXiv Paper Check — AI & CTR (June 16, 2026)
+- New page: wiki/synthesis/2026-06-16/arxiv-paper-check.md
+- Sources: cs.AI (41 new + 110 cross-lists), cs.IR (13 new), cs.LG (165 new) — Mon 15 Jun 2026
+- Papers surveyed: 16 top picks (10 AI/LLM + 6 CTR/IR/RecSys)
+- Top picks: Hyperball (20-30% token speedup, Muon+Hyperball), CacheRL (92% tool-calling at 100× less compute), MiniMax Sparse Attention (28.4× at 1M context), RefGRPO (reflection calibration + free bonus), PAD (denoising × popularity bias), ChronoID (temporal signals for generative rec), ADORE (retrieval-grounded QE, +24.5% nDCG@10 BEIR), TASR (training-free adaptive stopping, KDD 2026), ScoreGate (adaptive RAG chunk selection, 35% fewer tokens)
+- Updated: wiki/index.md, wiki/log.md
