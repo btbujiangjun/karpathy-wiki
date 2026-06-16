@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-16] synthesis | WorldQuant 101 Alpha — 美股 Top 20 (2026-06-16)
+- New page: wiki/synthesis/2026-06-16/wq101-alpha-daily.md
+- 宏观背景：美伊协议达成（油价 -4.8%）, FOMC 6/16-17 会议, NASDAQ +3.07% 领涨
+- 核心信号：SOXX +5.45% 创新高, 半导体 Alpha#1/#6/#30 三重共振
+- Top 5: ARM (9.5), MU (9.5), MRVL (9.0), WDC (9.0), AMD (8.5)
+- 板块分布：半导体/AI 13 只, 存储 3 只, 其他 4 只
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-16] synthesis | Game RL & Game AI Bot — Daily Survey (2026-06-16)
 - New page: wiki/synthesis/2026-06-16/game-rl-daily.md
 - Coverage: 26 papers across Game RL (self-play, MARL, world models), Game AI Bots (LLM agents, NPCs), Game Foundation Models, PCG, Game Benchmarks, Industry Game AI, Related Techniques
