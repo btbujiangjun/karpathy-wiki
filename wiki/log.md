@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-16] synthesis | Conference & arXiv Digest (NeurIPS 2025, ICML 2026, ICLR 2026, AAAI 2026, CVPR 2026, KDD 2026, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025, ACL 2026, EMNLP 2025)
+- New page: wiki/synthesis/2026-06-16/conference-digest.md
+- Coverage: 12+ conferences, 50+ highlighted papers across LLM/agents/CTR/recommendation/generative models/benchmarks
+- Top highlights: D4RT (CVPR 2026 Best Paper), Gated Attention (NeurIPS 2025 Best Paper), ICLR 2026 Oral Papers (223), AAAI 2026 Outstanding Papers, Industry lab releases (Google DeepMind, OpenAI, Anthropic, Meta, NVIDIA, Alibaba)
+- Key trends: Gated Attention standardization, Hybrid architectures (Mamba-Transformer), RL for LLM reasoning, Agent systems, Generative recommendation, On-device LLMs, 4D vision
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-15] synthesis | Game RL & Game AI Bot — Daily Survey (2026-06-15)
 - New page: wiki/synthesis/2026-06-15/game-rl-daily.md
 - Coverage: 29 papers across Game RL (self-play, MARL), Game AI Bots (LLM agents, NPCs), Foundation/World Models, PCG, Game Benchmarks, Industry Game AI, Related Techniques

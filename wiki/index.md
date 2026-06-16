@@ -328,6 +328,8 @@ Papers are organized by research category. Each page includes problem background
 
 | File | Topic | Sources |
 |------|-------|---------|
+| [conference-digest](synthesis/2026-06-16/conference-digest.md) | Conference & arXiv Digest — June 2026 (NeurIPS 2025, ICML 2026, ICLR 2026, AAAI 2026, CVPR 2026, KDD 2026, etc.) | arxiv-search |
+|------|-------|---------|
 | [affiliation-landscape](synthesis/affiliation-landscape.md) | Affiliation Landscape — AI Research by Institution | 121 papers |
 | [arxiv-broad-2026-05-25](synthesis/arxiv-broad-2026-05-25.md) | arXiv Broad Survey — AI Research Landscape (May 2026) | 121 papers |
 | [arxiv-daily](synthesis/2026-06-02/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 2, 2026) | ~30 papers |
