@@ -4,6 +4,19 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-16] synthesis | 投资日报 — 美股/港股/A股/中概/新能源与AI热点 (2026-06-16)
+- Summary: wiki/synthesis/2026-06-16/investment-daily.md
+- 宏观焦点：FOMC 6/17-18 会议前夜；美伊协议达成（油价 -5.34%）；特朗普提议美国政府持有AI公司股权
+- AI CapEx 辩论白热化：Big4 2026 CapEx $725B (+77% YoY)；Dell'Oro 预测 2026 数据中心 CapEx 超 $1 万亿；Janus Henderson 警告仅 53% 规划能建成
+- 美股：NVDA $224.36 (GS $285 PT/+35%)；GOOGL $850 亿 equity raise（含 Berkshire $100 亿）；ORCL 财报后 -8%（FY27 $900B 指引但 CapEx 承压）
+- 中概：BABA $113.49（6月 -9.18%，受 1260H 拖累）；BIDU ERNIE 5.1 #4 全球搜索榜；PDD PE 8.5x 极低估
+- 港股：腾讯 WeChat AI 助手临近发布；智谱纳入恒生科技指数（6/15 生效）+14.95%；MiniMax +5.30%
+- A股：6/12 核心指数年内最大调仓（AI/半导体/机器人获集中加码）；有色金属/商业航天/物理 AI 领涨
+- AI 主题：Anthropic $965B IPO 推进（Claude Fable 5 发布）；OpenAI 筹备 IPO；SK hynix 8 月赴美上市；Anthropic/OpenAI/SpaceX 三大科技 IPO 同台
+- 新能源：NIO CEO 预测中国汽车销量降 15-20%；BYD 董事长敦促耐心；宁德时代钠电池 2026 规模量产
+- 人形机器人：宇树科技 73 天过会；NVIDIA Isaac GR00T；具身智能融资超 ¥345 亿
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-16] synthesis | Conference & arXiv Digest (NeurIPS 2025, ICML 2026, ICLR 2026, AAAI 2026, CVPR 2026, KDD 2026, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025, ACL 2026, EMNLP 2025)
 - New page: wiki/synthesis/2026-06-16/conference-digest.md
 - Coverage: 12+ conferences, 50+ highlighted papers across LLM/agents/CTR/recommendation/generative models/benchmarks
