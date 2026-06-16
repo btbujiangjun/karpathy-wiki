@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-16] synthesis | Game RL & Game AI Bot — Daily Survey (2026-06-16)
+- New page: wiki/synthesis/2026-06-16/game-rl-daily.md
+- Coverage: 26 papers across Game RL (self-play, MARL, world models), Game AI Bots (LLM agents, NPCs), Game Foundation Models, PCG, Game Benchmarks, Industry Game AI, Related Techniques
+- Top picks: NitroGen (CVPR 2026, NVIDIA generalist gaming agent), SEMA (self-evolving multi-agent for StarCraft II), RetroAgent (dual intrinsic feedback RL), SkillRL (recursive skill library), GameNGen (ICLR 2025, diffusion game engine), GameArena (ICLR 2025, LLM reasoning via games), ProxyWar (ICSE 2026, game-based code evaluation)
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-16] synthesis | 投资日报 — 美股/港股/A股/中概/新能源与AI热点 (2026-06-16)
 - Summary: wiki/synthesis/2026-06-16/investment-daily.md
 - 宏观焦点：FOMC 6/17-18 会议前夜；美伊协议达成（油价 -5.34%）；特朗普提议美国政府持有AI公司股权
