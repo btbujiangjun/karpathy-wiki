@@ -4,6 +4,15 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-17] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-17)
+- New page: wiki/synthesis/2026-06-17/wq101-alpha-daily.md
+- 宏观背景：FOMC 维持利率 3.5%-3.75%（略偏鹰），Dow 创新高 / Nasdaq -1.15%，Mag 7 六月蒸发 $2T
+- 核心信号：Great Rotation 加速 — 医疗/金融/消费必需 > 半导体/AI；Alpha#19/#53 反转+均值回复因子主导
+- Top 5: LLY (9.0), UNH (9.0), JPM (8.5), GS (8.5), BRK.B (8.5)
+- 板块分布：医疗 4 只, 金融 5 只, 半导体 4 只, 消费必需 3 只, 工业 2 只, 能源 1 只, 通信 1 只
+- 核心变化 vs 06-16：风格从半导体 Risk-on 全面转向防御价值轮动
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-17] synthesis | 投资日报 — 美股/港股/A股/中概/新能源与AI热点 (2026-06-17)
 - Summary: wiki/synthesis/2026-06-17/investment-daily.md
 - 宏观焦点：FOMC 利率决议今日公布（市场预期不变）；美伊协议油价-5.8%；板块大轮动（科技→金融/工业/医疗）；Mag 7 六月已蒸发 $2 万亿
