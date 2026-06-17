@@ -4,6 +4,19 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-17] synthesis | 投资日报 — 美股/港股/A股/中概/新能源与AI热点 (2026-06-17)
+- Summary: wiki/synthesis/2026-06-17/investment-daily.md
+- 宏观焦点：FOMC 利率决议今日公布（市场预期不变）；美伊协议油价-5.8%；板块大轮动（科技→金融/工业/医疗）；Mag 7 六月已蒸发 $2 万亿
+- 美股：SPY -0.55% / Dow +0.67% 创新高 / Nasdaq -1.15%（NVDA $200-250亿债券发行；AVGO/Q3指引miss持续发酵；ORCL RPO $6380亿但CapEx承压-11%）；SOX 6/5 暴跌 10% 后动量减弱
+- AI 监管首例：美国商务部强制召回 Anthropic Fable 5/Mythos 5（$9650亿 IPO 推增加监管不确定性）
+- 中概：BABA $112.69（1260H + 618监管双重压制，Jefferies 仍为 Top Pick）；BIDU 昆仑芯字节跳动采购叙事；PDD PE 8.5x 极端低估
+- 港股：智谱 GLM-5.2 发布+32.8%（市值突破 HK$7000亿）；MiniMax 纳入恒生科技；恒生科技指数 AI 化转型加速
+- A股：沪指-0.04%（缩量 1.21万亿）；AI 硬件分化（PCB/MLCC/光通信延续强势但降温）；6 只科技牛股集体辟谣"概念热炒脱离基本面"；电子+236亿/通信+121亿主力流入
+- 新能源：中国四大 EV 厂全部发布自研智驾芯片（BYD 玄玑 A3/理想 Mach M100/蔚来神玑/小鹏图灵）；BYD 承担 NOA 事故全责；NIO 5月交付 37,705（+62.3%）
+- AI 主题：SpaceX IPO $2.5万亿（Mag 7 资金外流）；Howard Marks "AI 投资更接近投机"；CapEx 大辩论白热化（Big4 $7000亿+）；DeepSeek 融资 $70亿
+- 三大风险：FOMC 鹰派意外 / AI CapEx ROI 验证 / 1260H→CMIC 路径与被迫抛售
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-17] synthesis | Tech Report Digest — 大模型技术报告全面更新 (2026-06-17)
 - New page: wiki/synthesis/2026-06-17/tech-report-digest.md
 - Coverage: 22 家机构 40+ 份技术报告
