@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-17] synthesis | Tech Report Digest — 大模型技术报告全面更新 (2026-06-17)
+- New page: wiki/synthesis/2026-06-17/tech-report-digest.md
+- Coverage: 22 家机构 40+ 份技术报告
+- 新增重点：Claude Fable 5 / Mythos 5, AFM 3, GPT-5.5 Instant, Seed2.0 系列, Step 3.7 Flash, Mistral Medium 3.5, Qwen3.6-27B, Qwen3.5-Omni, Intern-S1-Pro, Step 3.5 Flash, Grok 4.1, DeepSeek-V4 完整规格
+- 架构趋势归纳：MoE 全面主流化, Hybrid Mamba-Transformer 验证, RL for Reasoning 普及, 1M context 成为旗舰标配
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-17] synthesis | Conference Digest — Top ML/AI Conferences (2026-06-17)
 - New page: wiki/synthesis/2026-06-17/conference-digest.md
 - Coverage: 70+ papers across 12+ venues (ICML 2026, AAAI 2026, NeurIPS 2025, ICLR 2026, CVPR 2026, KDD 2026, ACL 2026, EMNLP 2025, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025)
