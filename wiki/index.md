@@ -335,6 +335,7 @@ Papers are organized by research category. Each page includes problem background
 | [arxiv-daily](synthesis/2026-06-02/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 2, 2026) | ~30 papers |
 | [arxiv-daily](synthesis/2026-06-03/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 3, 2026) | ~28 papers |
 | [arxiv-daily](synthesis/2026-06-05/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 5, 2026) | ~25 papers |
+| [arxiv-daily](synthesis/2026-06-17/arxiv-daily.md) | arXiv Daily — AI, LLMs, CTR, Recommendation, Games, Sequential Modeling (June 17, 2026) | 15 papers |
 | [arxiv-daily](synthesis/2026-05-21/arxiv-daily.md) | arXiv Daily — AI & CTR (May 21, 2026) | - |
 | [arxiv-daily](synthesis/2026-05-23/arxiv-daily.md) | arXiv Daily — AI & CTR (May 23, 2026) | - |
 | [arxiv-daily](synthesis/2026-05-24/arxiv-daily.md) | arXiv Daily — AI & CTR (May 24, 2026) | - |
@@ -416,6 +417,7 @@ Papers are organized by research category. Each page includes problem background
 | [arxiv-paper-check](synthesis/2026-06-13/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 13, 2026) | 15+ papers (Saturday quiet day) |
 | [arxiv-paper-check](synthesis/2026-06-15/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 15, 2026) | 11 papers |
 | [arxiv-paper-check](synthesis/2026-06-16/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 16, 2026) | 10 AI/LLM + 6 CTR/IR/RecSys papers |
+| [arxiv-paper-check](synthesis/2026-06-17/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 17, 2026) | 13 papers (7 AI/LLM + 6 CTR/IR/RecSys) |
 | [game-rl-daily](synthesis/2026-06-12/game-rl-daily.md) | Game RL & Game AI Bot — Daily Synthesis (2026-06-12) | 61 papers |
 | [game-rl-daily](synthesis/2026-06-13/game-rl-daily.md) | Game RL & Game AI Bot — Daily Synthesis (2026-06-13) | 58 papers |
 | [game-rl-daily](synthesis/2026-06-15/game-rl-daily.md) | Game RL & Game AI Bot — Daily Survey (2026-06-15) | 29 papers |

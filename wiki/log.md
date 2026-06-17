@@ -4,6 +4,11 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-17] synthesis | arXiv Daily — AI, LLMs, CTR, Recommendation, Games, Sequential Modeling (2026-06-17)
+- New page: wiki/synthesis/2026-06-17/arxiv-daily.md
+- Coverage: 15 papers across LLMs (SPIRAL, NextFlow, FLARE, SDLM), CTR/Ads (IDProxy, CADET, FEDIN, Pinterest LLM, GenCTR), Games/RL (Game-RL, Strat-Reasoner, MARSHAL), Recommendation (OneRetrieval, UniVA), Sequential Modeling (Diffusion for TS)
+- Key theme: Self-play and game-based RL as scalable reasoning pathway; generative paradigm converging with CTR/advertising
+
 ## [2026-06-16] synthesis | WorldQuant 101 Alpha — 美股 Top 20 (2026-06-16)
 - New page: wiki/synthesis/2026-06-16/wq101-alpha-daily.md
 - 宏观背景：美伊协议达成（油价 -4.8%）, FOMC 6/16-17 会议, NASDAQ +3.07% 领涨
@@ -1148,4 +1153,12 @@
 - Sources: cs.AI (41 new + 110 cross-lists), cs.IR (13 new), cs.LG (165 new) — Mon 15 Jun 2026
 - Papers surveyed: 16 top picks (10 AI/LLM + 6 CTR/IR/RecSys)
 - Top picks: Hyperball (20-30% token speedup, Muon+Hyperball), CacheRL (92% tool-calling at 100× less compute), MiniMax Sparse Attention (28.4× at 1M context), RefGRPO (reflection calibration + free bonus), PAD (denoising × popularity bias), ChronoID (temporal signals for generative rec), ADORE (retrieval-grounded QE, +24.5% nDCG@10 BEIR), TASR (training-free adaptive stopping, KDD 2026), ScoreGate (adaptive RAG chunk selection, 35% fewer tokens)
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-06-17] search | arXiv Paper Check — AI & CTR (June 17, 2026)
+- New page: wiki/synthesis/2026-06-17/arxiv-paper-check.md
+- Sources: cs.AI (214 new entries, Wed 17 Jun) + cs.IR (10 new Wed + 34 Tue 16 Jun)
+- Papers surveyed: 13 top picks (7 AI/LLM + 6 CTR/IR/RecSys)
+- Top picks: Fixed-Point Reasoners (looped Transformer with adaptive compute), Small Initialization Matters (γ-rule for LLM pretraining), How Inference Compute Shapes Frontier LLM Evaluation, PreAct (8.5-13× faster repeated computer-use), STAR (spatiotemporal RL for T2I), E³RL (self-healing autoregressive reasoning), HyGRAG (+9.7% multi-hop RAG), OneRank (Transformer-native MTL ranking, KDD 2026), TPOUR (temporal-aware unsupervised retrieval, ICML 2026), Information Cocoon in Generative Recommendation
+- Key themes: Adaptive compute allocation across domains (Fixed-Point, PreAct, E³RL, STAR); Transformer-native ranking replacing encoder-predictor separation; Temporal awareness in retrieval (TPOUR); Generative recommendation behavioral analysis (cocoons, memorization)
 - Updated: wiki/index.md, wiki/log.md
