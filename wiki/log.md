@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-17] synthesis | Conference Digest — Top ML/AI Conferences (2026-06-17)
+- New page: wiki/synthesis/2026-06-17/conference-digest.md
+- Coverage: 70+ papers across 12+ venues (ICML 2026, AAAI 2026, NeurIPS 2025, ICLR 2026, CVPR 2026, KDD 2026, ACL 2026, EMNLP 2025, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025)
+- Frontier model reports: GPT-5.5 System Card, Claude Opus 4.7, DeepSeek-V4 Technical Report
+- Key themes: RL for reasoning, generative recommendation at scale, agent systems explosion (465 ICML agent papers), diffusion LLMs, spatial VLMs
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-17] synthesis | arXiv Daily — AI, LLMs, CTR, Recommendation, Games, Sequential Modeling (2026-06-17)
 - New page: wiki/synthesis/2026-06-17/arxiv-daily.md
 - Coverage: 15 papers across LLMs (SPIRAL, NextFlow, FLARE, SDLM), CTR/Ads (IDProxy, CADET, FEDIN, Pinterest LLM, GenCTR), Games/RL (Game-RL, Strat-Reasoner, MARSHAL), Recommendation (OneRetrieval, UniVA), Sequential Modeling (Diffusion for TS)

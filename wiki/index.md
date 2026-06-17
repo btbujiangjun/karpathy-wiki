@@ -328,6 +328,7 @@ Papers are organized by research category. Each page includes problem background
 
 | File | Topic | Sources |
 |------|-------|---------|
+| [conference-digest](synthesis/2026-06-17/conference-digest.md) | Conference & arXiv Digest — June 2026 (12+ conferences, 70+ papers, Frontier Models: GPT-5.5/Claude 4.7/DeepSeek-V4) | arxiv-search |
 | [conference-digest](synthesis/2026-06-16/conference-digest.md) | Conference & arXiv Digest — June 2026 (NeurIPS 2025, ICML 2026, ICLR 2026, AAAI 2026, CVPR 2026, KDD 2026, etc.) | arxiv-search |
 |------|-------|---------|
 | [affiliation-landscape](synthesis/affiliation-landscape.md) | Affiliation Landscape — AI Research by Institution | 121 papers |
