@@ -1252,3 +1252,11 @@
 - Key events: FOMC hawkish dot plot (first Warsh meeting, 2026 hike signal); DeepSeek $7.4B funding at $50B+ valuation (Tencent/CATL); Pentagon 1260H blacklist adds 188 firms (BABA/BIDU/BYD/NIO); Sector rotation from tech to financials/healthcare continues; A-share AI hardware/半导体 rallies on DeepSeek news; Tesla SpaceX IPO tracking
 - Key themes: FOMC pivot risk becomes real (dot plot shifted up), China AI arms race intensifies (DeepSeek V4/R2 funding), 1260H geopolitical risk premium on ADRs, Mag 7 June losses surpass $2T, Tripe Witching 6/20
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-18] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-18)
+- New page: wiki/synthesis/2026-06-18/wq101-alpha-daily.md
+- Coverage: 20 stocks across 7 sectors; FOMC hawkish dot plot (rate 3.8%) + US-Iran peace deal + semi rebound (AMAT +9%, LRCX +6%) + sector rotation Financials/Industrials leading, Technology weakening
+- Top picks: JPM (9.0), BAC/GS/MS (8.5), CAT/GEV/RTX/HON/AMAT (8.0)
+- Key factors: Alpha#41 (trend strength) dominant for Financials/Industrials; Alpha#53 (reversal) for semiconductors; Alpha#1 (momentum) across cyclical rotation
+- Core theme: Rate hike beneficiary (Financials) + AI infrastructure buildout (Industrials) + Semi equipment reversal (AMAT/LRCX/INTC)
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
