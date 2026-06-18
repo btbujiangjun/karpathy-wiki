@@ -407,6 +407,7 @@ Papers are organized by research category. Each page includes problem background
 | [investment-daily](synthesis/2026-06-15/investment-daily.md) | 投资日报 — 2026-06-15（美股/港股/A股/中概/新能源与AI热点） | — |
 | [investment-daily](synthesis/2026-06-16/investment-daily.md) | 投资日报 — 2026-06-16（美股/港股/A股/中概/新能源与AI热点） | — |
 | [investment-daily](synthesis/2026-06-17/investment-daily.md) | 投资日报 — 2026-06-17（美股/港股/A股/中概/新能源与AI热点） | — |
+| [investment-daily](synthesis/2026-06-18/investment-daily.md) | 投资日报 — 2026-06-18（美股/港股/A股/中概/新能源与AI热点） | — |
 | [wq101-alpha-daily](synthesis/2026-06-11/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-11) | — |
 | [wq101-alpha-daily](synthesis/2026-06-12/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-12) | — |
 | [wq101-alpha-daily](synthesis/2026-06-13/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-13) | — |
