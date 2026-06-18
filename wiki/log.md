@@ -10,6 +10,19 @@
 - Key themes: Looped/depth-adaptive architectures, post-hoc model efficiency, production RecSys at scale, safety alignment during pretraining, diffusion beyond generation
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
 
+## [2026-06-18] synthesis | Conference Digest — 顶会论文专题报告（2026-06-18 全面版）
+- New page: wiki/synthesis/2026-06-18/conference-digest.md
+- Coverage: 12+ conferences, 100+ papers, 13+ industry labs
+- NeurIPS 2025 Best Papers: Gated Attention (Alibaba, attention-sink-free), RL Reasoning Critique (Tsinghua, value-action gap), Transductive Online Learning (30-year open problem)
+- ICLR 2026 Outstanding: Transformers Succinctness, Mamba-3 (CMU/Princeton, inference-first SSM), MEM1 (memory-reasoning synergy), AgentFlow (7B beats GPT-4o)
+- ICML 2026: Shannon Scaling Law, BLT Byte-Level Diffusion, CTR-RL, How CoT Decomposes Tasks, ALIVE (Alibaba game RL)
+- CVPR 2026 Best Paper: D4RT (Google DeepMind, dynamic 4D scene reconstruction)
+- EMNLP 2025: Speculative Streaming (Apple), Value-Action Gap, Song Generation (VersBand)
+- KDD 2026: RankUp (Tencent), RankElastor, JourneyFormer (Airbnb)
+- RecSys 2025: Amazon Prime Video MoE-Transformer, TikTok Explicit Negatives, Meta Peak-End Retention, Meituan SUAN Scaling
+- 7 key trends: reasoning models & test-time compute, attention mechanism innovation (Gated Attention, Mamba-3), generative recommendation paradigm, AI agent production readiness, diffusion/flow matching, CTR scaling laws, CV→multimodal shift
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-18] search | arXiv Daily — AI, LLMs, CTR, Recommendation, Advertising, Agents, Games, Sequential Modeling (2026-06-18)
 - New page: wiki/synthesis/2026-06-18/arxiv-daily.md
 - Coverage: 20 papers across LLMs (Variable-Width Transformers, Looped World Models, VibeThinker-3B, Ternary Mamba, Agentic Reasoning Survey), CTR/Advertising (GenLI, CADET, GRAB, Field Matters), Recommendation (ChronoID, Implicit Reasoning GR, OneRetrieval, LLM Personas), Games/Agents (ALE Berkeley, NeuroGame Transformer, MARLIN, StraTA, Agent Traces Survey), Sequential Modeling (NextFlow)
