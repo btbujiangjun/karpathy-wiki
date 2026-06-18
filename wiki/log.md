@@ -18,6 +18,13 @@
 - Key themes: Looped/depth-adaptive architectures, post-hoc model efficiency, production RecSys at scale, safety alignment during pretraining, diffusion beyond generation
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
 
+## [2026-06-18] synthesis | Game RL & Game AI Bot — Daily Survey (2026-06-18)
+- New page: wiki/synthesis/2026-06-18/game-rl-daily.md
+- Coverage: 65+ papers across 7 categories — Game RL (7), Game AI Bots (11), Game Foundation Models (8), Procedural Content Generation (12), Game Benchmarks (10), Industry Game AI (2), Related Techniques (18)
+- Top picks: NitroGen (NVIDIA generalist gaming agent), Game-TARS (500B token pre-training, beats GPT-5/Claude-4), SPIRAL/STRATAGEM (self-play for LLM reasoning), OmniGameArena (UE5 benchmark, IDC metric), Matrix-Game 3.0 (40 FPS 720p world model), AstraGame (Tencent/WeChat 24,000+ games), NVIDIA ACE Game Agent SDK, GameWorld/Orak/VideoGameBench (standardized game agent benchmarks)
+- Key themes: Self-play + RL convergence for LLM reasoning; generalist game foundation models; real-time world models for PCG; industry deployment at scale (AstraGame, NVIDIA ACE); benchmark standardization (OmniGameArena, GameWorld, DSGBench); hierarchical RL for long-horizon agents
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-18] synthesis | Conference Digest — 顶会论文专题报告（2026-06-18 全面版）
 - New page: wiki/synthesis/2026-06-18/conference-digest.md
 - Coverage: 12+ conferences, 100+ papers, 13+ industry labs
