@@ -4,6 +4,18 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-18] search | arXiv Paper Check — AI & CTR (June 18, 2026)
+- New page: wiki/synthesis/2026-06-18/arxiv-paper-check.md
+- Coverage: 15 papers from June 17 submissions — LoopWM (looped world models), FPRM (fixed-point reasoning), FoMoE (federated MoE training), Diffusion-Proof (dLLM theorem proving), CAHP (attention head pruning), ESM (model merging), JourneyFormer (Airbnb KDD 2026), Querit-Reranker, Strategic Feature Selection
+- Key themes: Looped/depth-adaptive architectures, post-hoc model efficiency, production RecSys at scale, safety alignment during pretraining, diffusion beyond generation
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-18] search | arXiv Daily — AI, LLMs, CTR, Recommendation, Advertising, Agents, Games, Sequential Modeling (2026-06-18)
+- New page: wiki/synthesis/2026-06-18/arxiv-daily.md
+- Coverage: 20 papers across LLMs (Variable-Width Transformers, Looped World Models, VibeThinker-3B, Ternary Mamba, Agentic Reasoning Survey), CTR/Advertising (GenLI, CADET, GRAB, Field Matters), Recommendation (ChronoID, Implicit Reasoning GR, OneRetrieval, LLM Personas), Games/Agents (ALE Berkeley, NeuroGame Transformer, MARLIN, StraTA, Agent Traces Survey), Sequential Modeling (NextFlow)
+- Key themes: Decoder-only CTR going mainstream; generative recommendation + temporal IDs; variable-width transformers challenging fixed-width assumption; professional agent benchmarks showing huge capability gap; game theory meets attention mechanisms
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-17] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-17)
 - New page: wiki/synthesis/2026-06-17/wq101-alpha-daily.md
 - 宏观背景：FOMC 维持利率 3.5%-3.75%（略偏鹰），Dow 创新高 / Nasdaq -1.15%，Mag 7 六月蒸发 $2T
