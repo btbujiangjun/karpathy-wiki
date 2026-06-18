@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-18] synthesis | Tech Report Digest — 各大AI公司技术报告汇总 (2026-06-18 全面更新版)
+- New page: wiki/synthesis/2026-06-18/tech-report-digest.md
+- Coverage: 22+ 家机构, 40+ 份技术报告/System Card
+- 新增/验证内容: Yi-Lightning MoE 报告, InternLM2/InternVL3, Baichuan-M3 (医疗, 2602.06570), Amazon Nova 家族 (arXiv:2506.12103), NVIDIA Nemotron 3 系列 (2512.20856) + Nano 2 (2508.14444), Phi-4-reasoning-vision (2603.03975), Apple AFM v2 (2407.21075 v2 2026-05-27)
+- 更新数据来源覆盖: arXiv 验证所有核心链接, 补充中国 vs 西方差异分析表
+- Detailed breakdown: 20 家机构逐个参数表 + 架构趋势/开源生态/区域差异三维度分析
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-18] search | arXiv Paper Check — AI & CTR (June 18, 2026)
 - New page: wiki/synthesis/2026-06-18/arxiv-paper-check.md
 - Coverage: 15 papers from June 17 submissions — LoopWM (looped world models), FPRM (fixed-point reasoning), FoMoE (federated MoE training), Diffusion-Proof (dLLM theorem proving), CAHP (attention head pruning), ESM (model merging), JourneyFormer (Airbnb KDD 2026), Querit-Reranker, Strategic Feature Selection
