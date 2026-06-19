@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-19] synthesis | Conference Digest — 顶会论文专题报告（2026-06-19 全面版）
+- New page: wiki/synthesis/2026-06-19/conference-digest.md
+- Coverage: 12+ conferences/venues, 50+ papers, 12+ industry labs (Google DeepMind, OpenAI, Meta AI, Microsoft Research, ByteDance, Alibaba, Tencent, Kuaishou, Baidu, Netflix, NVIDIA, Anthropic, Apple, Amazon)
+- Sections: LLM Architecture (Mamba-3, Nemotron 3, Gated DeltaNet-2, ParaRNN) → Reasoning (Re², SFPO, CAPO, PoLR) → RL for LLMs (RLVR, AREAL, Long-RL, TAMPO) → Agent Systems (A-MEM, ACE, WebOperator, AgentAuditor) → CTR/Recommendation Scaling (EST, LoopCTR, UniMixer, TokenFormer, RankUp, TencentGR) → Generative Models (DiffusionGemma, MMAudio) → CVPR 2026 → ACL/EMNLP 2025–2026 → SIGIR/WWW/CIKM/RecSys → Frontier Models (Claude Opus 4.8, Nemotron 3 Ultra, Gemini 3.5, DiffusionGemma, Kimi K2.7 Code)
+- Key themes: Hybrid SSM-Attention dominant architecture; CTR Scaling Laws established research area; RLVR critique paper (NeurIPS 2025); All-Modality Generative Recommendation emerging; Frontier models converging on MoE + Hybrid + RLVR
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-19] search | arXiv Paper Check — AI & CTR (June 19, 2026)
 - New page: wiki/synthesis/2026-06-19/arxiv-paper-check.md
 - Coverage: cs.AI (73 new, 312 total) + cs.IR (11 new, 22 total) from Fri, 19 Jun 2026

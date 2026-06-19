@@ -328,6 +328,7 @@ Papers are organized by research category. Each page includes problem background
 
 | File | Topic | Sources |
 |------|-------|---------|
+| [conference-digest](synthesis/2026-06-19/conference-digest.md) | Conference & arXiv Digest — 2026-06-19 (LLM 架构/推理/RLVR/Agent/CTR/生成模型, 12+ venues, 50+ papers, 12 labs) | arxiv |
 | [conference-digest](synthesis/2026-06-18/conference-digest.md) | 顶会论文专题报告 — 2026年6月全面版（NeurIPS 2025 Best / ICLR 2026 Outstanding / ICML 2026 / AAAI 2026 / CVPR 2026 Best / EMNLP 2025 / KDD 2026 / RecSys 2025 / SIGIR 2026 / WWW 2026 / CIKM 2025 / ACL 2026） | arxiv |
 | [conference-digest](synthesis/2026-06-17/conference-digest.md) | Conference & arXiv Digest — June 2026 (12+ conferences, 70+ papers, Frontier Models: GPT-5.5/Claude 4.7/DeepSeek-V4) | arxiv-search |
 | [conference-digest](synthesis/2026-06-16/conference-digest.md) | Conference & arXiv Digest — June 2026 (NeurIPS 2025, ICML 2026, ICLR 2026, AAAI 2026, CVPR 2026, KDD 2026, etc.) | arxiv-search |
