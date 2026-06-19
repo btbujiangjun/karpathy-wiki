@@ -1295,3 +1295,11 @@
 - Key factors: Alpha#41 (trend strength) dominant for Financials/Industrials; Alpha#53 (reversal) for semiconductors; Alpha#1 (momentum) across cyclical rotation
 - Core theme: Rate hike beneficiary (Financials) + AI infrastructure buildout (Industrials) + Semi equipment reversal (AMAT/LRCX/INTC)
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-19] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-19)
+- New page: wiki/synthesis/2026-06-19/wq101-alpha-daily.md
+- Coverage: 20 stocks across 7 sectors; Fed hawkish hold + INTC-Apple chip partnership + sector rotation Energy/Tech leading + semi correction bounce (AVGO -$285B aftermath) + Intel surge +9.3% premarket on Apple deal
+- Top picks: SNDK (9.5), MRVL (9.5), AMD (9.0), MU/WDC/XOM (8.5), NVDA/STX/JPM (8.0)
+- Key factors: Alpha#1 (momentum) dominant for Semis/Storage/Energy; Alpha#53 (reversal) for AVGO/MU/META post-correction; Alpha#41 (trend strength) for Financials/Industrials
+- Core theme: Storage super-cycle (SNDK +985% 1Y) + Semi AI buildout (MRVL +217% 3M) + Energy sector momentum leadership + Financials value rotation
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
