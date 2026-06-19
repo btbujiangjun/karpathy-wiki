@@ -339,6 +339,7 @@ Papers are organized by research category. Each page includes problem background
 | [arxiv-daily](synthesis/2026-06-05/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 5, 2026) | ~25 papers |
 | [arxiv-daily](synthesis/2026-06-17/arxiv-daily.md) | arXiv Daily — AI, LLMs, CTR, Recommendation, Games, Sequential Modeling (June 17, 2026) | 15 papers |
 | [arxiv-daily](synthesis/2026-06-18/arxiv-daily.md) | arXiv Daily — AI, LLMs, CTR, Recommendation, Advertising, Agents, Games, Sequential Modeling (June 18, 2026) | 20 papers |
+| [arxiv-daily](synthesis/2026-06-19/arxiv-daily.md) | arXiv Daily — arXiv Daily — AI, LLMs, Recommendation, CTR, Games, RL, Sequential Modeling (June 19, 2026) | 23 papers across 6 categories |
 | [arxiv-daily](synthesis/2026-05-21/arxiv-daily.md) | arXiv Daily — AI & CTR (May 21, 2026) | - |
 | [arxiv-daily](synthesis/2026-05-23/arxiv-daily.md) | arXiv Daily — AI & CTR (May 23, 2026) | - |
 | [arxiv-daily](synthesis/2026-05-24/arxiv-daily.md) | arXiv Daily — AI & CTR (May 24, 2026) | - |
@@ -425,6 +426,7 @@ Papers are organized by research category. Each page includes problem background
 | [arxiv-paper-check](synthesis/2026-06-15/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 15, 2026) | 11 papers |
 | [arxiv-paper-check](synthesis/2026-06-16/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 16, 2026) | 10 AI/LLM + 6 CTR/IR/RecSys papers |
 | [arxiv-paper-check](synthesis/2026-06-17/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 17, 2026) | 13 papers (7 AI/LLM + 6 CTR/IR/RecSys) |
+| [arxiv-paper-check](synthesis/2026-06-19/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 19, 2026) | 15 papers (G2Rec, Token Factory, ITNet, ELVA, DIF, VCG, Beyond Entropy, etc.) |
 | [arxiv-paper-check](synthesis/2026-06-18/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 18, 2026) | 15 papers (LoopWM, FPRM, FoMoE, Diffusion-Proof, CAHP, ESM, JourneyFormer, Querit-Reranker, etc.) |
 | [game-rl-daily](synthesis/2026-06-12/game-rl-daily.md) | Game RL & Game AI Bot — Daily Synthesis (2026-06-12) | 61 papers |
 | [game-rl-daily](synthesis/2026-06-13/game-rl-daily.md) | Game RL & Game AI Bot — Daily Synthesis (2026-06-13) | 58 papers |

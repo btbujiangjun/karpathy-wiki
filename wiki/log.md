@@ -4,6 +4,20 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-19] search | arXiv Paper Check — AI & CTR (June 19, 2026)
+- New page: wiki/synthesis/2026-06-19/arxiv-paper-check.md
+- Coverage: cs.AI (73 new, 312 total) + cs.IR (11 new, 22 total) from Fri, 19 Jun 2026
+- Top picks: G2Rec (generative rec graph tokenization), Token Factory (Google soft tokens for LRMs), ITNet (unified integral transform subsuming conv/attn/rnn), ELVA (RLVR for retrieval, ECCV 2026), DIF (Kuaishou cold-start denoising, KDD 2026), VCG (multimodal video cold-start), Beyond Entropy (token-level distributional LLM reasoning)
+- Key themes: Generative recommendation productionization; unified architectures (ITNet); RLVR extending to retrieval; cold-start & denoising for industrial recsys; cost-aware AI inference
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-19] search | arXiv Daily — AI, LLMs, Recommendation, CTR, Games, RL, Sequential Modeling (June 19, 2026)
+- New page: wiki/synthesis/2026-06-19/arxiv-daily.md
+- Coverage: 23 papers across 6 categories — LLMs & Reasoning (4), Recommendation & CTR (9), Games & Multi-Agent RL (2), Sequential Modeling & Architecture (5), RAG & IR (3)
+- Top picks: VIMPO (critic-free RLVR, Berkeley/MIT), G2Rec (Meta generative rec with graph tokenization), Token Factory (Google soft tokens for LRMs), Beyond Entropy (token-level distributional RLVR), Connect the Dots (Alibaba long-lifecycle agent RL), Hierarchical Control in Multi-Agent Games (Embracer LLM+RL NPCs), Lie-Algebra Attention (geometric deep learning meets attention)
+- Key themes: RLVR optimization (VIMPO, ICT, Rubric-Conditioned Self-Distillation); generative recommendation deployments from Meta and Google; LLM+RL hybrid agents for games; diffusion model fundamentals revisited (timestep embedding redundancy); long-lifecycle agents as new training paradigm
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-18] synthesis | Tech Report Digest — 各大AI公司技术报告汇总 (2026-06-18 全面更新版)
 - New page: wiki/synthesis/2026-06-18/tech-report-digest.md
 - Coverage: 22+ 家机构, 40+ 份技术报告/System Card
