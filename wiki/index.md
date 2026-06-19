@@ -411,6 +411,7 @@ Papers are organized by research category. Each page includes problem background
 | [investment-daily](synthesis/2026-06-16/investment-daily.md) | 投资日报 — 2026-06-16（美股/港股/A股/中概/新能源与AI热点） | — |
 | [investment-daily](synthesis/2026-06-17/investment-daily.md) | 投资日报 — 2026-06-17（美股/港股/A股/中概/新能源与AI热点） | — |
 | [investment-daily](synthesis/2026-06-18/investment-daily.md) | 投资日报 — 2026-06-18（美股/港股/A股/中概/新能源与AI热点） | — |
+| [investment-daily](synthesis/2026-06-19/investment-daily.md) | 投资日报 — 2026-06-19（美股/港股/A股/中概/新能源与AI热点） | — |
 | [wq101-alpha-daily](synthesis/2026-06-11/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-11) | — |
 | [wq101-alpha-daily](synthesis/2026-06-12/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-12) | — |
 | [wq101-alpha-daily](synthesis/2026-06-13/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-13) | — |
@@ -436,6 +437,7 @@ Papers are organized by research category. Each page includes problem background
 | [game-rl-daily](synthesis/2026-06-16/game-rl-daily.md) | Game RL & Game AI Bot — Daily Survey (2026-06-16) | 26 papers |
 | [game-rl-daily](synthesis/2026-06-17/game-rl-daily.md) | Game RL & Game AI Bot — Daily Survey (2026-06-17) | ~60 papers |
 | [game-rl-daily](synthesis/2026-06-18/game-rl-daily.md) | Game RL & Game AI Bot — Daily Survey (2026-06-18) | 65+ papers across 7 categories |
+| [game-rl-daily](synthesis/2026-06-19/game-rl-daily.md) | Game RL & Game AI Bot — Daily Survey (2026-06-19) | ~80 papers across 7 categories |
 | [tech-report-digest](synthesis/2026-06-12/tech-report-digest.md) | 各大 AI 公司最新技术报告汇总 (第十一版) — 19 家机构, 40+ 报告 | 40+ reports |
 | [tech-report-digest](synthesis/2026-06-13/tech-report-digest.md) | 大模型技术报告摘要（2025-2026）— 19 家 AI 公司最新 Tech Report / System Card 综合摘要 | 30+ reports |
 | [tech-report-digest](synthesis/2026-06-15/tech-report-digest.md) | 大模型技术报告摘要（2025-2026）— 2026-06-15 更新版，20 家机构 30+ 报告 | 30+ reports |

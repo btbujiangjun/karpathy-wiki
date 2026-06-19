@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-19] synthesis | Game RL & Game AI Bot — Daily Survey (2026-06-19)
+- New page: wiki/synthesis/2026-06-19/game-rl-daily.md
+- Coverage: ~80 papers across 7 categories — Game RL (16), Game AI Bots (16), Game Foundation Models (8), Procedural Content Generation (10), Game Benchmarks (8), Industry Game AI (6), Related Techniques (16)
+- Top picks: SPIRAL (ICLR 2026, self-play for LLM reasoning transfer), NitroGen (CVPR 2026, NVIDIA generalist gaming foundation model), Game-TARS (500B token pre-training, beats GPT-5/Claude-4), Dreamer 4 (Minecraft diamonds from offline data), PCGRLLM (+415% reward generation), lmgame-Bench (ICLR 2026), CDE (curiosity-driven exploration for RLVR, ICLR 2026)
+- Key themes: Self-play + RL convergence for LLM reasoning; generalist game foundation models; world models as unifying framework; standardization of game benchmarks; industry deployment maturing (NVIDIA ACE/IGI, AstraGame); PCG with LLMs for reward design
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-19] synthesis | Tech Report Digest — 各大AI公司技术报告汇总 (2026-06-19 全面更新版)
 - New page: wiki/synthesis/2026-06-19/tech-report-digest.md
 - Coverage: 20+ 家机构, 19+ 份 Tech Report / System Card
