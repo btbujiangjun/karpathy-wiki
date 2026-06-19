@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-19] synthesis | Tech Report Digest — 各大AI公司技术报告汇总 (2026-06-19 全面更新版)
+- New page: wiki/synthesis/2026-06-19/tech-report-digest.md
+- Coverage: 20+ 家机构, 19+ 份 Tech Report / System Card
+- 核心新增/补充: DeepSeek V4 (1.6T MoE, CSA+HCA, 1M ctx), GPT-5 System Card (router-based unified system), Llama 4 (Scout/Maverick, MoE+early fusion), Gemini 3.1 Pro (2M ctx MoE), Claude 4 系列 (Opus 4.8/Fable 5/Mythos 5 最新 System Card 索引), Mistral Ministral 3/Magistral (Cascade Distillation + 纯RL推理), Phi-4-reasoning-vision (多模态推理), Apple AFM 2025 (PT-MoE server), NVIDIA Nemotron 3 Ultra (Mamba-Attention hybrid + LatentMoE), Grok 4/4.1, Amazon Nova Premier (1M ctx), Qwen3.5-Omni/Qwen 4 Coder (OmniMoE, SWE-Verified 82%), GLM-5 (DSA + 异步RL slime), Kimi K2/K2.5 (MuonClip + Agentic), ByteDance Seed2.0/Seed1.8, Step 3.5 Flash (MFA+AFD, 196B-A11B), InternLM3 (4T 数据效率), Yi-Lightning (MoE+RAISE), Baichuan-M3 (SPAR 医疗RL)
+- 架构趋势: MoE 绝对主流 → Hybrid Mamba-Attention 新兴 → Hybrid Attention (CSA/DSA) 长上下文效率 → Muon/MuonClip 优化器替代 AdamW
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-19] synthesis | Conference Digest — 顶会论文专题报告（2026-06-19 全面版）
 - New page: wiki/synthesis/2026-06-19/conference-digest.md
 - Coverage: 12+ conferences/venues, 50+ papers, 12+ industry labs (Google DeepMind, OpenAI, Meta AI, Microsoft Research, ByteDance, Alibaba, Tencent, Kuaishou, Baidu, Netflix, NVIDIA, Anthropic, Apple, Amazon)
