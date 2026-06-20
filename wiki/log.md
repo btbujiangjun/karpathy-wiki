@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-20] synthesis | Frontier Model Tech Reports Digest
+- New page: wiki/synthesis/2026-06-20/tech-report-digest.md
+- Coverage: 8 major tech reports — DeepSeek V4 (Apr 2026, 1.6T MoE, CSA/HCA), Llama 4 (Apr 2025, Scout/Maverick/Behemoth), Gemini 2.5 (Jul 2025, MoE, dynamic thinking, 3h video), Claude 4/5 (May 2025–Jun 2026, Opus 4/Sonnet 4/Fable 5/Mythos 5), Mistral Large 3 (Dec 2025, 675B MoE, Apache 2.0), Kimi K2→K2.6 (Jul 2025–Apr 2026, 1T MoE, MuonClip, agentic), GPT-5.5 (Apr 2026, 1M context, $5/$30), Qwen3 (May 2025, 119 languages, hybrid thinking)
+- Key themes: All labs converge on MoE + thinking modes + million-token contexts + RLVR post-training; pricing ranges 40× from DeepSeek V4 ($0.87/M out) to GPT-5.5 Pro ($180/M out)
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-20] synthesis | Conference Digest — 顶会论文专题报告（2026-06-20 全面版）
 - New page: wiki/synthesis/2026-06-20/conference-digest.md
 - Coverage: 12+ conferences/venues, 50+ papers, 13+ industry labs (Google DeepMind, OpenAI, Meta AI, Microsoft Research, ByteDance, Alibaba, Tencent, Kuaishou, Baidu, Netflix, NVIDIA, Anthropic, Apple, Amazon)
