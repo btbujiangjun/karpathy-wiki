@@ -443,6 +443,7 @@ Papers are organized by research category. Each page includes problem background
 | [game-rl-daily](synthesis/2026-06-17/game-rl-daily.md) | Game RL & Game AI Bot — Daily Survey (2026-06-17) | ~60 papers |
 | [game-rl-daily](synthesis/2026-06-18/game-rl-daily.md) | Game RL & Game AI Bot — Daily Survey (2026-06-18) | 65+ papers across 7 categories |
 | [game-rl-daily](synthesis/2026-06-19/game-rl-daily.md) | Game RL & Game AI Bot — Daily Survey (2026-06-19) | ~80 papers across 7 categories |
+| [game-rl-daily](synthesis/2026-06-20/game-rl-daily.md) | Game RL & Game AI Bot — Daily Survey (2026-06-20) | ~50 papers across 7 categories; Game-RL (ICLR 2026, Fudan), SPIRAL, NitroGen (CVPR 2026), Dreamer 4, Absolute Zero |
 | [tech-report-digest](synthesis/2026-06-12/tech-report-digest.md) | 各大 AI 公司最新技术报告汇总 (第十一版) — 19 家机构, 40+ 报告 | 40+ reports |
 | [tech-report-digest](synthesis/2026-06-13/tech-report-digest.md) | 大模型技术报告摘要（2025-2026）— 19 家 AI 公司最新 Tech Report / System Card 综合摘要 | 30+ reports |
 | [tech-report-digest](synthesis/2026-06-15/tech-report-digest.md) | 大模型技术报告摘要（2025-2026）— 2026-06-15 更新版，20 家机构 30+ 报告 | 30+ reports |

@@ -23,6 +23,13 @@
 - Key themes: All labs converge on MoE + thinking modes + million-token contexts + RLVR post-training; pricing ranges 40× from DeepSeek V4 ($0.87/M out) to GPT-5.5 Pro ($180/M out)
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
 
+## [2026-06-20] synthesis | Game RL & Game AI Bot — Daily Survey (2026-06-20)
+- New page: wiki/synthesis/2026-06-20/game-rl-daily.md
+- Coverage: ~50 papers across 7 categories — Game RL (12), Game AI Bots (6), Game Foundation Models (4), Procedural Content Generation (5), Game Benchmarks (5), Industry Game AI (6), Related Techniques (12)
+- Top picks: Game-RL (ICLR 2026, Fudan, Code2Logic synthesis for VLM RL), SPIRAL self-play (ICLR 2026), GROW (GRPO for Minecraft VLMs), Dreamer 4 (offline Minecraft diamonds), Dreamer-CDP (ICLR 2026 WS, reconstruction-free world models), Absolute Zero (zero-data self-play), Self-Challenging Agent (Meta/Berkeley), Language Self-Play (Meta), Realtime Async RL (formal realtime RL), NVIDIA ACE production in PUBG/inZOI, Ubisoft Teammates (GDC 2026), GameWorld (NUS, 34 games standardized), Multi-task PCGRL (Scientific Reports 2026), Reward Design Agent (VLM reward design)
+- Key themes: Game data as scalable RL training signal for VLM reasoning; self-play convergence for LLM reasoning; reconstruction-free world models; realtime asynchronous RL; industry production at scale (NVIDIA ACE); standardized evaluation benchmarks
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-20] synthesis | Conference Digest — 顶会论文专题报告（2026-06-20 全面版）
 - New page: wiki/synthesis/2026-06-20/conference-digest.md
 - Coverage: 12+ conferences/venues, 50+ papers, 13+ industry labs (Google DeepMind, OpenAI, Meta AI, Microsoft Research, ByteDance, Alibaba, Tencent, Kuaishou, Baidu, Netflix, NVIDIA, Anthropic, Apple, Amazon)
