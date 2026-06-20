@@ -32,6 +32,13 @@
 - Key themes: Generative recommendation productionization; unified architectures (ITNet); RLVR extending to retrieval; cold-start & denoising for industrial recsys; cost-aware AI inference
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
 
+## [2026-06-20] search | arXiv Paper Check — AI & CTR (June 20, 2026)
+- New page: wiki/synthesis/2026-06-20/arxiv-paper-check.md
+- Coverage: cs.AI (73 new, 312 total) + cs.IR (11 new, 22 total) from Fri, 19 Jun 2026
+- Top picks: ITNet (unified integral transform subsuming conv/attn/rnn), Token Factory (Google soft tokens for LRMs), G2Rec (generative rec graph tokenization), ELVA (RLVR for retrieval, ECCV 2026), DIF (Kuaishou cold-start denoising, KDD 2026), VCG (multimodal video cold-start), Beyond Entropy (token-level distributional LLM reasoning), Which Pairs to Compare (DPO comparison curation theory), MonaVec (training-free edge vector search), Diffusion LMs experimental analysis (8 architectures × 8 benchmarks)
+- Key themes: Unified architectures (ITNet); generative recommendation productionization (Token Factory, G2Rec); RLVR extending to retrieval (ELVA); cold-start & denoising for industrial recsys (DIF, VCG); cost-aware AI inference (SLARouter, Semantic Caching); agent evaluation rethought (Predictive Validity, Agentic Review Systems)
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-19] search | arXiv Daily — AI, LLMs, Recommendation, CTR, Games, RL, Sequential Modeling (June 19, 2026)
 - New page: wiki/synthesis/2026-06-19/arxiv-daily.md
 - Coverage: 23 papers across 6 categories — LLMs & Reasoning (4), Recommendation & CTR (9), Games & Multi-Agent RL (2), Sequential Modeling & Architecture (5), RAG & IR (3)
@@ -1302,4 +1309,11 @@
 - Top picks: SNDK (9.5), MRVL (9.5), AMD (9.0), MU/WDC/XOM (8.5), NVDA/STX/JPM (8.0)
 - Key factors: Alpha#1 (momentum) dominant for Semis/Storage/Energy; Alpha#53 (reversal) for AVGO/MU/META post-correction; Alpha#41 (trend strength) for Financials/Industrials
 - Core theme: Storage super-cycle (SNDK +985% 1Y) + Semi AI buildout (MRVL +217% 3M) + Energy sector momentum leadership + Financials value rotation
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-20] synthesis | arXiv Daily — AI, LLMs, CTR, Recommendation, Advertising, Sequential Modeling, Games, Agents
+- New page: wiki/synthesis/2026-06-20/arxiv-daily.md
+- Coverage: 20 papers across 7 categories — LLM Architecture (4), CTR/Advertising (4), Recommendation (2), Sequential Modeling / Decision Transformers (2), Games & RL (3), LLM Agents & Tool Use (3), Benchmarks (2)
+- Top picks: Variable-Width Transformers (MIT, 22% FLOP reduction), CADET (LinkedIn, +11% CTR lift), SPIRAL (self-play for reasoning transfer), Strat-Reasoner (+22.1% strategic game performance), OPUS (30B tokens beats 200B training), SlimDT (1/3 shorter sequences)
+- Key themes: Decoder-only CTR models, self-play reasoning, variable-width/hybrid architectures, LLMs as ancillary components, generative recommendation alignment
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
