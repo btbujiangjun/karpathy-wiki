@@ -328,6 +328,7 @@ Papers are organized by research category. Each page includes problem background
 
 | File | Topic | Sources |
 |------|-------|---------|
+| [conference-digest](synthesis/2026-06-20/conference-digest.md) | 顶会论文专题报告 — 2026年6月全面版（NeurIPS 2025 Best / ICLR 2026 Outstanding / ICML 2026 / AAAI 2026 / CVPR 2026 Best / EMNLP 2025 / KDD 2026 / RecSys 2025 / SIGIR 2026 / WWW 2026 / CIKM 2025 / ACL 2026） | arxiv |
 | [conference-digest](synthesis/2026-06-19/conference-digest.md) | Conference & arXiv Digest — 2026-06-19 (LLM 架构/推理/RLVR/Agent/CTR/生成模型, 12+ venues, 50+ papers, 12 labs) | arxiv |
 | [tech-report-digest](synthesis/2026-06-19/tech-report-digest.md) | 各大 AI 公司最新技术报告汇总 — 2026-06-19 (20+ 家机构, 19+ 份 Tech Report / System Card, DeepSeek V4/GPT-5/Llama 4/Gemini 3.1/Claude 4/Ministral 3/Phi-4/Apple AFM/Nemotron 3/Grok 4/Amazon Nova/Qwen3.5/GLM-5/Kimi K2/Seed/Step 3.5/InternLM3/Yi-Lightning/Baichuan-M3 等) | web-search |
 | [wq101-alpha-daily](synthesis/2026-06-19/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-19) | — |

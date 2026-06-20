@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-20] synthesis | Conference Digest — 顶会论文专题报告（2026-06-20 全面版）
+- New page: wiki/synthesis/2026-06-20/conference-digest.md
+- Coverage: 12+ conferences/venues, 50+ papers, 13+ industry labs (Google DeepMind, OpenAI, Meta AI, Microsoft Research, ByteDance, Alibaba, Tencent, Kuaishou, Baidu, Netflix, NVIDIA, Anthropic, Apple, Amazon)
+- Sections: NeurIPS 2025 Best Papers (Gated Attention, RLVR Critique) → ICLR 2026 Outstanding (Transformers Succinctness, MEM1, AgentFlow) → ICML 2026 (Shannon Scaling Law, Self-Flow, CTR-RL, ALIVE) → AAAI 2026 Outstanding → CVPR 2026 Best (D4RT, NitroGen) → EMNLP 2025 (Speculative Streaming, Value-Action Gap) → KDD 2026 (RankUp, RankElastor, DIF, JourneyFormer) → RecSys 2025 → SIGIR 2026 (656 accepted across all tracks) → WWW 2026 Industry (OneTrans, NEZHA, JD generative rec) → Frontier Models (Kimi K2.7 Code, DiffusionGemma, Gemma 4 12B, GLM-5.2, Gemini Omni)
+- Key themes: Reasoning models & test-time compute (cross-venue); Gated Attention & attention innovation; CTR Scaling Laws mature; Generative Recommendation industrial deployment; Agent explosion (465 ICML 2026 papers); 4D Vision & 3D Generation; Multi-Agent Society protocols; MoE + Hybrid + RLVR convergence
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-19] synthesis | Game RL & Game AI Bot — Daily Survey (2026-06-19)
 - New page: wiki/synthesis/2026-06-19/game-rl-daily.md
 - Coverage: ~80 papers across 7 categories — Game RL (16), Game AI Bots (16), Game Foundation Models (8), Procedural Content Generation (10), Game Benchmarks (8), Industry Game AI (6), Related Techniques (16)
