@@ -4,6 +4,19 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-20] synthesis | 投资日报 — 美股/港股/A股/中概/新能源与AI热点 (2026-06-20)
+- Summary: wiki/synthesis/2026-06-20/investment-daily.md
+- 宏观焦点：美联储 10 月加息概率 72%；美股板块大轮动（科技→医疗/金融）；美伊协议；DeepSeek 510 亿融资（估值 4000 亿）
+- 美股：Mag 7 全线下跌（META -5.31%/MSFT -3.80%/AMZN -3.46%）；MU +6.4%/INTC +8.9%/AMD +4.0% 半导体反弹；ACN -19% Q3 指引 miss
+- 中概：金龙指数 -1.14%；BABA -3.18%/PDD -2.12%/BEKE -3.72%；TSM +1.48%；蔚来 +0.80%
+- 港股：腾讯 WeChat AI Agent 推进；智谱/MiniMax A+H 双平台布局加速；美图 AI 应用出海 +26%
+- A 股：沪指 4,090（-0.43%）；寒武纪/工业富联/源杰科技 Q1 业绩爆发；AI 算力板块 +3.56%
+- 新能源：小鹏市值反超理想；BYD 出口 +80%；NEV 渗透率 62.9%；中国四大 EV 厂自研智驾芯片全部发布
+- AI 主题：Anthropic $650 亿融资；NVIDIA Vera Rubin 量产；AI CapEx 大辩论；机器人融资超 ¥345 亿
+- 三大风险：10 月加息 / AI CapEx ROI 验证 / 1260H 中概抛售
+- 三大主线：AI 算力基础设施 / 半导体国产替代 / 中概估值修复
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-20] synthesis | Frontier Model Tech Reports Digest
 - New page: wiki/synthesis/2026-06-20/tech-report-digest.md
 - Coverage: 8 major tech reports — DeepSeek V4 (Apr 2026, 1.6T MoE, CSA/HCA), Llama 4 (Apr 2025, Scout/Maverick/Behemoth), Gemini 2.5 (Jul 2025, MoE, dynamic thinking, 3h video), Claude 4/5 (May 2025–Jun 2026, Opus 4/Sonnet 4/Fable 5/Mythos 5), Mistral Large 3 (Dec 2025, 675B MoE, Apache 2.0), Kimi K2→K2.6 (Jul 2025–Apr 2026, 1T MoE, MuonClip, agentic), GPT-5.5 (Apr 2026, 1M context, $5/$30), Qwen3 (May 2025, 119 languages, hybrid thinking)
