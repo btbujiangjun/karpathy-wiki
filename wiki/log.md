@@ -4,6 +4,15 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-21] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-21)
+- New page: wiki/synthesis/2026-06-21/wq101-alpha-daily.md
+- 宏观背景：FOMC 鹰派点阵图后深 V 修复 + 美伊和平协议签署 + 三巫日平稳到期 + 6/19 Juneteenth 休市
+- 核心信号：Alpha#1 动量 + Alpha#53 反转因子共同主导，半导体/存储全面反攻
+- Top 3: MU (9.5), MRVL (9.5), INTC (9.0)
+- 板块分布：半导体/AI 8只, 金融 3只, 医疗 3只, 科技/互联网 3只, 消费必需 1只, 工业 1只, 能源 1只
+- 周度变化 vs 06-18：风格从金融防御→半导体反攻；反转因子增强；新增 INTC/WDC/CVX/JNJ
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-21] synthesis | 投资日报 — 美股/港股/A股/中概/新能源与AI热点 (2026-06-21)
 - Summary: wiki/synthesis/2026-06-21/investment-daily.md
 - 宏观背景：6/21 周日无交易；FOMC 鹰派信号（10 月加息概率 72%）；板块大轮动科技→防御；美伊协议执行中
@@ -112,6 +121,13 @@
 - 新增/验证内容: Yi-Lightning MoE 报告, InternLM2/InternVL3, Baichuan-M3 (医疗, 2602.06570), Amazon Nova 家族 (arXiv:2506.12103), NVIDIA Nemotron 3 系列 (2512.20856) + Nano 2 (2508.14444), Phi-4-reasoning-vision (2603.03975), Apple AFM v2 (2407.21075 v2 2026-05-27)
 - 更新数据来源覆盖: arXiv 验证所有核心链接, 补充中国 vs 西方差异分析表
 - Detailed breakdown: 20 家机构逐个参数表 + 架构趋势/开源生态/区域差异三维度分析
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-21] synthesis | Game RL & Game AI Bot — Daily Survey (2026-06-21)
+- New page: wiki/synthesis/2026-06-21/game-rl-daily.md
+- Coverage: ~40 papers across 7 categories — Game RL (6), Game AI Bots (6), Game Foundation Models (5), Procedural Content Generation (4), Game Benchmarks (5), Industry Game AI (4), Related Techniques (7)
+- Top picks: SPIRAL (ICLR 2026, self-play for reasoning transfer), NitroGen (CVPR 2026, NVIDIA generalist gaming agent), Game-TARS (ByteDance 500B token pre-training), GROW (GRPO for Minecraft VLMs), PCGRLLM (LLM reward design for PCG), GameWorld/Orak (standardized game benchmarks)
+- Key themes: Self-play + RL convergence for LLM reasoning; generalist game foundation models; game world models as real-time engines; LLM + RL for game content generation; standardized evaluation benchmarks; industrial deployment maturing
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
 
 ## [2026-06-18] search | arXiv Paper Check — AI & CTR (June 18, 2026)
