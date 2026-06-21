@@ -1371,3 +1371,28 @@
 - Top picks: Variable-Width Transformers (MIT, -22% FLOP), CADET (LinkedIn, decoder-only CTR), SPIRAL (self-play reasoning), Game-RL (ICLR 2026), Connect the Dots (Alibaba, long-lifecycle agents), Token Factory (Meta, soft tokens for LRMs)
 - Key themes: Decoder-only for CTR, games as RL training data, diffusion LLMs, long-lifecycle agent training, soft tokenization for recommendations, nonuniform transformer scaling
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-21] synthesis | tech-report-digest
+- New page: wiki/synthesis/2026-06-21/tech-report-digest.md
+- Coverage: 19 家 AI 公司/机构最新技术报告综合摘要
+  - DeepSeek: DeepSeek-V4 (arXiv:2606.19348, MoE + CSA/HCA + mHC + Muon), DeepSeek-V3 (arXiv:2412.19437)
+  - OpenAI: GPT-5.5 System Card (2026-04, 1M context), GPT-5 System Card (arXiv:2601.03267)
+  - Meta: Muse Spark Safety Report (2026-05, 原生多模态推理), Llama 4 (2025-04, MoE, 10M context Scout)
+  - Google DeepMind: Gemini 3.5 Flash (2026-06, agentic SOTA), Gemini 3.1 Pro (2026-02, Deep Think), Gemini 2.5, Gemini Embedding 2
+  - Anthropic: Claude Opus 4.8 (2026-05), Fable 5 & Mythos 5 (2026-06), Opus 4.7 (2026-04), Opus 4.6 (ASL-3)
+  - Mistral: Mistral Large 3 (2025-12, granular MoE), Magistral (纯 RL reasoning), Ministral 3 (Cascade Distillation), Leanstral
+  - Qwen: Qwen3 (arXiv:2505.09388, thinking + non-thinking 统一), Qwen3.5-Omni (ARIA), Qwen3-Coder-Next (80B/3B active), Qwen3-TTS
+  - Yi: Yi-Lightning (MoE + RAISE 安全框架), arXiv:2412.01253
+  - Baichuan: Baichuan-Omni-1.5 (全模态 + 端到端音频)
+  - Microsoft: Phi-4-reasoning-vision-15B (arXiv:2603.03975, MIT 开源)
+  - Apple: AFM 3 (2026-06, 20B sparse on-device), AFM Tech Report 2025 (arXiv:2507.13575)
+  - NVIDIA: Nemotron 3 Ultra (550B/55B active, LatentMoE + Mamba-Attention hybrid), Nemotron-Labs-Diffusion (AR+Diffusion+Self-Spec)
+  - xAI: Grok 4.3 (2026-06, 1M context, configurable reasoning), Grok 4.1 (2025-11)
+  - Amazon: Nova 2 (2025-12, Omni+Sonic+Pro), Nova Premier (1M context)
+  - Zhipu AI: GLM-5 (arXiv:2602.15763, 744B/40B, DSA + 异步RL + 国产芯片生态)
+  - InternLM: Intern-S1-Pro (万亿参数科学多模态), InternLM2 (COOL RLHF)
+  - Moonshot AI: Kimi K2.6 (1T/32B, 多模态 Agentic, 300 sub-agents), Kimi K2 (MuonClip)
+  - ByteDance: Seed 2.0 (2026-02, Agentic coding focus), Doubao 1.5-pro (稀疏 MoE Scaling Law)
+  - StepFun: Step 3.5 Flash (196B/11B, MTP-3, SWA), Step3 (MFA+AFD)
+- 6 大趋势总结: MoE 主流化 / RL 训练方法演进 / Scaling Law 新发现 / 原生多模态 / 百万+ token 长上下文 / 推理模型统一化
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
