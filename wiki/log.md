@@ -4,6 +4,20 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-21] synthesis | 顶会论文专题报告 — 2026年6月全面版（2026-06-21）
+- New page: wiki/synthesis/2026-06-21/conference-digest.md
+- Coverage: 12+ 会议/venue (ICML 2026 / AAAI 2026 / NeurIPS 2025 / ICLR 2026 / CVPR 2026 / KDD 2026 / ACL 2026 / EMNLP 2025 / SIGIR 2026 / WWW 2026 / CIKM 2025 / RecSys 2025), 50+ 论文, 13+ 实验室
+- 章节: 19 个分类（LLM 架构 / 推理 & RL / Agent 系统 / CTR & 推荐 / 生成模型 / 代码推理 / Benchmark / 游戏 / 序列建模 / Frontier 模型等）
+- NeurIPS 2025 Best: Gated Attention (Attention Sink 消除), RL Reasoning Critique (value-action gap), Transductive Online Learning
+- ICLR 2026 Outstanding: Transformers Succinctness, MEM1 (memory-reasoning), AgentFlow (7B > GPT-4o), Mamba-3 (inference-first SSM)
+- ICML 2026: Shannon Scaling Law (数据质量 SNR), Self-Flow Matching, CTR-RL, ALIVE (Alibaba 游戏), BitsMoE (MoE 量化), Process-Verified RL
+- CVPR 2026 Best: D4RT (Google DeepMind 4D 场景重建), NitroGen (NVIDIA 通用游戏 Agent), LLaDA-V (扩散 MLLM)
+- KDD 2026: RankUp (Tencent), RankElastor, DIF (Kuaishou 冷启动去噪), JourneyFormer (Airbnb), GenCTR (Alibaba)
+- RecSys 2025: Amazon Prime Video MoE-Transformer, TikTok Explicit Negatives, Meta Peak-End Retention
+- 新增 Frontier Model 报告: DeepSeek V4, GPT-5.5, Gemini 3.1, Claude Opus 4.8/Fable 5/Mythos 5, Llama 4, Qwen3/3.5/3.7, Mistral Large 3, Kimi K2.7 Code
+- Key trends: 推理模型/RLVR 全会议覆盖; Gated Attention 新范式; MoE 主流化; 生成式推荐产业化; 游戏 Agent 通用化; 扩散 LM 崛起
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-20] synthesis | 投资日报 — 美股/港股/A股/中概/新能源与AI热点 (2026-06-20)
 - Summary: wiki/synthesis/2026-06-20/investment-daily.md
 - 宏观焦点：美联储 10 月加息概率 72%；美股板块大轮动（科技→医疗/金融）；美伊协议；DeepSeek 510 亿融资（估值 4000 亿）
@@ -1349,4 +1363,11 @@
 - Coverage: 20 papers across 7 categories — LLM Architecture (4), CTR/Advertising (4), Recommendation (2), Sequential Modeling / Decision Transformers (2), Games & RL (3), LLM Agents & Tool Use (3), Benchmarks (2)
 - Top picks: Variable-Width Transformers (MIT, 22% FLOP reduction), CADET (LinkedIn, +11% CTR lift), SPIRAL (self-play for reasoning transfer), Strat-Reasoner (+22.1% strategic game performance), OPUS (30B tokens beats 200B training), SlimDT (1/3 shorter sequences)
 - Key themes: Decoder-only CTR models, self-play reasoning, variable-width/hybrid architectures, LLMs as ancillary components, generative recommendation alignment
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-21] synthesis | arxiv-daily
+- Summary: wiki/synthesis/2026-06-21/arxiv-daily.md
+- Coverage: 21 papers across 7 categories — LLM Architecture & Training (3), CTR/Advertising (4), Recommendation (3), RL & Games (4), Sequential Modeling (2), Agents & Multi-Agent (3), AI Safety & Evaluation (2)
+- Top picks: Variable-Width Transformers (MIT, -22% FLOP), CADET (LinkedIn, decoder-only CTR), SPIRAL (self-play reasoning), Game-RL (ICLR 2026), Connect the Dots (Alibaba, long-lifecycle agents), Token Factory (Meta, soft tokens for LRMs)
+- Key themes: Decoder-only for CTR, games as RL training data, diffusion LLMs, long-lifecycle agent training, soft tokenization for recommendations, nonuniform transformer scaling
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
