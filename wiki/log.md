@@ -4,6 +4,19 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-21] synthesis | 投资日报 — 美股/港股/A股/中概/新能源与AI热点 (2026-06-21)
+- Summary: wiki/synthesis/2026-06-21/investment-daily.md
+- 宏观背景：6/21 周日无交易；FOMC 鹰派信号（10 月加息概率 72%）；板块大轮动科技→防御；美伊协议执行中
+- 美股：S&P 500 +1.08%至 7,500，Nasdaq +1.91%至 26,518（周四 6/18 收盘）；Mag 7 六月合计蒸发 $2T+；NVDA +3%/$214；INTC +10.6%（Apple 芯片合作）；TSM +6.9%/$462；AMD +4.9%创历史新高
+- 中概：BABA $107（-13.78%月）；PDD $81.5（PE 9.9x）；1260H 清单持续压制；DeepSeek $510 亿首轮融资
+- 港股：恒生科技 4,604（-1.39%）；智谱 AI GLM-5.2 发布+32.8%市值 HK$7,000亿+；WeChat AI Agent 预期
+- A 股：沪指 4,090（-0.43%）；科创50 +3.84%创新高；寒武纪 ¥1,507（+23.6%/周，高盛目标 ¥2,406）；中际旭创千元股创历史新高；上交所 AI 大模型科创板第五套上市标准发布
+- 新能源：中国四大 EV 厂全部发布自研智驾芯片；BYD 出口+80%；NEV 渗透率 62.9%
+- AI 热点：DeepSeek V4 1.6T MoE；Claude Fable 5/Mythos 5 出口管制；1M 上下文成为旗舰标配；MoE 绝对主流
+- 三大主线：AI 算力基础设施 / 半导体国产替代 / 中概估值修复
+- 三大风险：10 月加息 / AI CapEx ROI 验证 / 1260H 中概抛售
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-21] synthesis | 顶会论文专题报告 — 2026年6月全面版（2026-06-21）
 - New page: wiki/synthesis/2026-06-21/conference-digest.md
 - Coverage: 12+ 会议/venue (ICML 2026 / AAAI 2026 / NeurIPS 2025 / ICLR 2026 / CVPR 2026 / KDD 2026 / ACL 2026 / EMNLP 2025 / SIGIR 2026 / WWW 2026 / CIKM 2025 / RecSys 2025), 50+ 论文, 13+ 实验室
