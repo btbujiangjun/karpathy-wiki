@@ -1447,3 +1447,9 @@
   - StepFun: Step 3.5 Flash (196B/11B, MTP-3, SWA), Step3 (MFA+AFD)
 - 6 大趋势总结: MoE 主流化 / RL 训练方法演进 / Scaling Law 新发现 / 原生多模态 / 百万+ token 长上下文 / 推理模型统一化
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-22] synthesis | Game RL & Game AI Bot — Daily Survey (2026-06-22)
+- New page: wiki/synthesis/2026-06-22/game-rl-daily.md
+- Coverage: ~77 papers across 7 categories — Game RL (12), Game AI Bot (8), Game Foundation Models (7), Procedural Content Generation (5), Game Benchmarks (9), Industry Game AI (4), Related Techniques (27+)
+- Key highlights: Odysseus (VLM game RL, 100+ turn Mario), SPIRAL (self-play zero-sum games), NitroGen (CVPR 2026 open generalist gaming agent), Game-TARS (500B+ token generalist, beats GPT-5 at FPS), OmniGameArena (UE5 VLM benchmark with IDC), GameWorld (34 browser games, 170 tasks), Continual Harness (Gemini Plays Pokémon), Matrix-Game 3.0 (40 FPS 720p world model), KRAFTON Ally (PUBG AI teammate deployed), PopuLoRA (LoRA population self-play), MARSHAL (multi-agent reasoning via self-play), COvolve (adversarial co-evolution of envs/policies)
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
