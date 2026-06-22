@@ -332,6 +332,8 @@ Papers are organized by research category. Each page includes problem background
 | [conference-digest](synthesis/2026-06-19/conference-digest.md) | Conference & arXiv Digest — 2026-06-19 (LLM 架构/推理/RLVR/Agent/CTR/生成模型, 12+ venues, 50+ papers, 12 labs) | arxiv |
 | [tech-report-digest](synthesis/2026-06-19/tech-report-digest.md) | 各大 AI 公司最新技术报告汇总 — 2026-06-19 (20+ 家机构, 19+ 份 Tech Report / System Card, DeepSeek V4/GPT-5/Llama 4/Gemini 3.1/Claude 4/Ministral 3/Phi-4/Apple AFM/Nemotron 3/Grok 4/Amazon Nova/Qwen3.5/GLM-5/Kimi K2/Seed/Step 3.5/InternLM3/Yi-Lightning/Baichuan-M3 等) | web-search |
 | [wq101-alpha-daily](synthesis/2026-06-19/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-19) | — |
+| [arxiv-daily](synthesis/2026-06-22/arxiv-daily.md) | arXiv Daily — AI, LLMs, Recommendation, CTR, Advertising, Games, RL, Multimodal, Safety, Synthetic Data (June 22, 2026) | ~50 papers across 11 categories |
+| [arxiv-paper-check](synthesis/2026-06-22/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 22, 2026) | 15 papers (ITNet, Token Factory, G2Rec, DIF, ELVA, Beyond Entropy, etc.) |
 | [arxiv-daily](synthesis/2026-06-21/arxiv-daily.md) | arXiv Daily — AI, LLMs, CTR, Recommendation, Advertising, Sequential Modeling, Games, Agents (June 21, 2026) | 21 papers across 7 categories |
 | [game-rl-daily](synthesis/2026-06-21/game-rl-daily.md) | Game RL & Game AI Bot — Daily Survey (2026-06-21) | ~40 papers across 7 categories |
 | [arxiv-daily](synthesis/2026-06-20/arxiv-daily.md) | arXiv Daily — AI, LLMs, CTR, Recommendation, Advertising, Sequential Modeling, Games, Agents (June 20, 2026) | 20 papers across 7 categories |

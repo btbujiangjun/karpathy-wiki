@@ -4,6 +4,18 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-22] search | arXiv Paper Check — AI & CTR (June 22, 2026)
+- New page: wiki/synthesis/2026-06-22/arxiv-paper-check.md
+- Coverage: cs.AI (73 new, 312 total) + cs.IR (11 new, 22 total) from Fri, 19 Jun 2026
+- Top picks: ITNet (unified integral transform subsuming conv/attn/rnn), Token Factory (Google soft tokens for LRMs), G2Rec (generative rec graph tokenization), DIF (Kuaishou cold-start denoising, KDD 2026), ELVA (RLVR for multimodal retrieval, ECCV 2026), Beyond Entropy (token-level distributional LLM reasoning), Which Pairs to Compare (DPO comparison curation theory), Emergent Alignment (self-supervised DPO alignment), VCG (multimodal e-commerce cold-start), Diffusion LMs experimental analysis (8×8 architectures×benchmarks), Stellar (disk-backed multimodal retrieval), Beyond Static Leaderboards (agent eval predictive validity), PACMS (submodular context selection for agents)
+- Key themes: Unified architectures (ITNet); generative recommendation productionization (Token Factory, G2Rec); RLVR extending to retrieval (ELVA); cold-start & denoising for industrial recsys (DIF, VCG); LLM reasoning & alignment (Beyond Entropy, Emergent Alignment, Which Pairs to Compare); agent evaluation (Beyond Static Leaderboards, PACMS)
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-22] synthesis | arxiv-daily
+- New page: wiki/synthesis/2026-06-22/arxiv-daily.md
+- Coverage: ~50 papers across LLM reasoning, RLVR/GRPO, efficient inference, recommendation/CTR, games/RL, multimodal, safety/alignment, synthetic data, multi-agent systems
+- Domains: AI, LLM, CTR, advertising, recommendation, games, RL, multimodal, safety
+
 ## [2026-06-21] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-21)
 - New page: wiki/synthesis/2026-06-21/wq101-alpha-daily.md
 - 宏观背景：FOMC 鹰派点阵图后深 V 修复 + 美伊和平协议签署 + 三巫日平稳到期 + 6/19 Juneteenth 休市
