@@ -4,6 +4,15 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-22] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-22)
+- New page: wiki/synthesis/2026-06-22/wq101-alpha-daily.md
+- 宏观背景：美伊和平协议签署 + FOMC 鹰派 Hold + Apple-Intel 芯片合作 → 半导体爆发
+- 核心信号：Alpha#1（动量）+ Alpha#53（反转）主导；存储/AI 半导体突破新高
+- Top 3: MU (10), INTC (10), WDC (9.5)
+- 板块分布：半导体/AI 9只, 科技/互联网 3只, 消费 3只, 工业 2只, 金融 2只, 能源 2只
+- 变化 vs 06-21：半导体从 8→9 只、消费防御 1→3 只、金融 3→2 只、医疗出局
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-22] synthesis | 投资日报 — 美股/港股/A股/中概/新能源与AI热点 (2026-06-22)
 - Summary: wiki/synthesis/2026-06-22/investment-daily.md
 - 宏观背景：6/22 周一港股下跌（恒指 -1.24%）；A 股科技分化（创业板/科创 50 创历史新高）；美股 6/19 Juneteenth 休市
