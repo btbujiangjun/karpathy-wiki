@@ -4,6 +4,16 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-22] synthesis | 投资日报 — 美股/港股/A股/中概/新能源与AI热点 (2026-06-22)
+- Summary: wiki/synthesis/2026-06-22/investment-daily.md
+- 宏观背景：6/22 周一港股下跌（恒指 -1.24%）；A 股科技分化（创业板/科创 50 创历史新高）；美股 6/19 Juneteenth 休市
+- 美股热点：NVDA $210.69、Intel +10.6%（Apple 芯片合作传闻）、TSMC +6.9%、Mag 7 表现分化
+- 港股热点：腾讯 WeChat AI Agent 预期差、恒指跌至 11 月低点、AI 公司 IPO 热潮（HQVT 今日上市）
+- A 股热点：PCB/半导体/CPO 为绝对主线，寒武纪创新高，中际旭创市值超越茅台
+- 中概/EV：EU 拟对 PHEV 加税、BYD Da Tang EV 发布、ADRs 整体走弱
+- AI 主题：DeepSeek V4 开源 1.6T MoE、AI CapEx ~$830B（Top 9 CSP）、Agentic AI 时代、机器人、自动驾驶
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-22] search | arXiv Paper Check — AI & CTR (June 22, 2026)
 - New page: wiki/synthesis/2026-06-22/arxiv-paper-check.md
 - Coverage: cs.AI (73 new, 312 total) + cs.IR (11 new, 22 total) from Fri, 19 Jun 2026
