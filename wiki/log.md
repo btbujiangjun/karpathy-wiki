@@ -1481,3 +1481,16 @@
 - Coverage: ~77 papers across 7 categories — Game RL (12), Game AI Bot (8), Game Foundation Models (7), Procedural Content Generation (5), Game Benchmarks (9), Industry Game AI (4), Related Techniques (27+)
 - Key highlights: Odysseus (VLM game RL, 100+ turn Mario), SPIRAL (self-play zero-sum games), NitroGen (CVPR 2026 open generalist gaming agent), Game-TARS (500B+ token generalist, beats GPT-5 at FPS), OmniGameArena (UE5 VLM benchmark with IDC), GameWorld (34 browser games, 170 tasks), Continual Harness (Gemini Plays Pokémon), Matrix-Game 3.0 (40 FPS 720p world model), KRAFTON Ally (PUBG AI teammate deployed), PopuLoRA (LoRA population self-play), MARSHAL (multi-agent reasoning via self-play), COvolve (adversarial co-evolution of envs/policies)
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-23] synthesis | Conference Digest — 顶会论文专题报告（2026年6月全面版更新）
+- New page: wiki/synthesis/2026-06-23/conference-digest.md
+- Coverage: 12+ conferences/venues, 100+ 论文, 15+ 实验室
+- ICML 2026: Stratified GRPO, Agentic Verifier, FPTQuant, CoT分解理论, CORAL推理时编辑, BudgetDraft推测解码, Emergent Alignment
+- AAAI 2026: From AGI to ASI (DeepMind 57页路线图), AI Co-Mathematician, LLM有害操纵评估, AI辅助评审
+- NeurIPS 2025: 门控LoRA连续学习, LLM非确定性来源, Default MoE, GPO推理优化, A-MEM Agent记忆
+- ICLR 2026: PAPL扩散LM路径学习(Oral), MERCI探索奖励, ESPO序列级RL, ECF8无损压缩
+- CVPR 2026: Perceval视觉过程奖励, LLaDA-V扩散MLLM, AVGGT加速, NitroGen游戏Agent
+- KDD 2026: Google YouTube自进化推荐, DLRMv3 HSTU基准, 腾讯全模态GR, GenLI, IDProxy
+- arXiv June: VIMPO, Beyond Entropy ICT, Connect the Dots, NF-CoT, Cola DLM, StreamKL
+- 7大趋势: RLVR主线, 扩散LM崛起, Agent工程化, 生成式推荐渗透, 多模态融合加速, 评估体系重构, 中国科技CTR爆发
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
