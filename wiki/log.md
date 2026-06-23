@@ -4,6 +4,15 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-23] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-23)
+- New page: wiki/synthesis/2026-06-23/wq101-alpha-daily.md
+- 宏观背景：科技 Mega-Cap 抛售（GOOGL -5%/AMZN -4.8%/MSFT -3.2%）+ 美伊协议落地 + FOMC 鹰派 Hold
+- 核心信号：Alpha#1（动量）主导半导体（MU/MRVL/ARM）+ Alpha#53（反转）覆盖超卖 Mega-Cap
+- Top 3: MU (10), MRVL (9.5), SNDK (9.5)
+- 板块分布：半导体/AI 8只, 通信服务 2只, 能源 2只, 工业 2只, 云计算 1只, 消费周期 1只, 医疗 1只, 金融 1只, 技术/消费电子 2只
+- 变化 vs 06-22：Mega-Cap 均值回复策略上调（GOOGL/AMZN/MSFT/META），能源回调后超卖机会（XOM/CVX）
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-22] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-22)
 - New page: wiki/synthesis/2026-06-22/wq101-alpha-daily.md
 - 宏观背景：美伊和平协议签署 + FOMC 鹰派 Hold + Apple-Intel 芯片合作 → 半导体爆发

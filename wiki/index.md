@@ -434,6 +434,7 @@ Papers are organized by research category. Each page includes problem background
 | [wq101-alpha-daily](synthesis/2026-06-17/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-17) | — |
 | [wq101-alpha-daily](synthesis/2026-06-18/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-18) | — |
 | [wq101-alpha-daily](synthesis/2026-06-21/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-21) | — |
+| [wq101-alpha-daily](synthesis/2026-06-23/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-23) | — |
 | [wq101-alpha-daily](synthesis/2026-06-22/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-22) | — |
 | [arxiv-daily](synthesis/2026-06-11/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 11, 2026) | 17 papers |
 | [arxiv-daily](synthesis/2026-06-12/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 12, 2026) | 75 papers |
