@@ -1504,3 +1504,10 @@
 - 中概/EV：ADRs 整体偏弱；BYD Da Tang EV 出口布局；宁德时代储能强劲
 - AI 主题：OpenAI 安全开源 vs Anthropic 出口管控战略对抗；SpaceX 算力合同收益模式存疑（客户融资稀释实质）；Agentic AI 继续推进（微信 AI Agent 即将发布）
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-23] synthesis | Game RL & Game AI Bot — Daily Paper Digest (2026-06-23)
+- New page: wiki/synthesis/2026-06-23/game-rl-daily.md
+- Coverage: ~30 curated papers across 7 categories from arXiv, ICLR 2026, ICML 2026, CVPR 2026
+- Target categories: Game RL, LLM Game Agents, Game Foundation Models, PCG, Game Benchmarks, Industry Game AI, Related Techniques
+- Featured papers: SPIRAL (ICLR 2026 self-play reasoning), Game-RL (ICLR 2026 Fudan, game data → VLM reasoning), Strat-Reasoner (ICML 2026 multi-agent strategic reasoning), NitroGen (CVPR 2026 NVIDIA, 1k-game foundation model), Game-TARS (ByteDance generalist VLM agent), Orak (KRAFTON 12-game benchmark), Dreamer 4 (DeepMind imagination-based Minecraft), PCGRLLM (NYU LLM reward design for PCGRL), lmgame-Bench (ICLR 2026 gaming harness)
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
