@@ -1494,3 +1494,13 @@
 - arXiv June: VIMPO, Beyond Entropy ICT, Connect the Dots, NF-CoT, Cola DLM, StreamKL
 - 7大趋势: RLVR主线, 扩散LM崛起, Agent工程化, 生成式推荐渗透, 多模态融合加速, 评估体系重构, 中国科技CTR爆发
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-23] synthesis | 投资日报 — 美股/港股/A股/中概/新能源与AI热点 (2026-06-23)
+- Summary: wiki/synthesis/2026-06-23/investment-daily.md
+- 今日头条：OpenAI 发布 GPT-5.5-Cyber + "Patch the Planet" 开源漏洞修补计划；SpaceX 与 Reflection AI 签署 $6.3B 算力合同（$150M/月，GB300 在 Colossus 2），SPCX -10% 创最大单日跌幅；Anthropic Fable 5 出口管制积分制今日生效
+- 美股热点：NVDA ~$214 受 SpaceX 合同间接拖累盘后 -2.1%；AVGO 盘后 -1.8%；SPCX -10% 最为瞩目
+- 港股热点：恒指持续弱势接近 11 月低点 23,628；AI 公司 IPO 热潮（Pony AI 进展中）；腾讯 WeChat AI Agent 预期
+- A 股热点：延续上周 PCB/半导体/CPO 主线；寒武纪创新高 9200 亿；中际旭创市值超越茅台
+- 中概/EV：ADRs 整体偏弱；BYD Da Tang EV 出口布局；宁德时代储能强劲
+- AI 主题：OpenAI 安全开源 vs Anthropic 出口管控战略对抗；SpaceX 算力合同收益模式存疑（客户融资稀释实质）；Agentic AI 继续推进（微信 AI Agent 即将发布）
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
