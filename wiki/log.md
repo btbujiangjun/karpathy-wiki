@@ -23,12 +23,31 @@
 - AI 主题：DeepSeek V4 开源 1.6T MoE、AI CapEx ~$830B（Top 9 CSP）、Agentic AI 时代、机器人、自动驾驶
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
 
+## [2026-06-23] search | arXiv Paper Check — AI & CTR (June 23, 2026)
+- New page: wiki/synthesis/2026-06-23/arxiv-paper-check.md
+- Coverage: cs.AI (220 new, 1181 total) + cs.IR (18 new, 90 total) + cs.LG (201 new, 1113 total) from Fri, 19 Jun 2026
+- Top picks: VIMPO (critic-free RLVR via policy-implied value, beats GRPO on AIME/OlympiadBench), Beyond Entropy/ICT (token-level distributional RLVR, +4.58% pass@4), Connect the Dots (Alibaba long-lifecycle agent RL), MATM (multi-agent transactive memory for trajectory sharing), UltraQuant (AMD 4-bit KV cache, 3.47× TTFT reduction), Token Factory (Google soft tokens for LRMs), OneRank (KDD 2026 unified MTL ranking), DIF (Kuaishou cold-start denoising, KDD 2026), ELVA (ECCV 2026 RLVR for multimodal retrieval), TPOUR (ICML 2026 temporal preference optimization)
+- Key themes: RLVR optimization beyond GRPO (VIMPO, ICT); long-lifecycle & multi-agent memory; KV compression for agents; generative RecSys maturation; RLVR extends to retrieval
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-23] synthesis | arXiv AI Search — CTR/Recommendation/Attention/LLM Reasoning/Games
+- New page: wiki/synthesis/2026-06-23/arxiv-ai-search.md
+- Coverage: 30 papers across 4 domains (CTR, Recommendation, Attention/Sequence Models, LLM Reasoning/Games)
+- Top picks: GRAB (Baidu, +3.05% revenue), DeRes (dual-path residual, 2× compute savings), GenRec (JD, +9.5% clicks deployed), Kunlun (Meta, MFU 17%→37%), MiniMax Sparse Attention (28.4× compute reduction at 1M ctx), GraphPO (DAG-based RL for reasoning), Odysseus (Princeton, 100+ turn VLM game play), RA-RFT (analogical reasoning via retrieval augmented RL)
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-22] search | arXiv Paper Check — AI & CTR (June 22, 2026)
 - New page: wiki/synthesis/2026-06-22/arxiv-paper-check.md
 - Coverage: cs.AI (73 new, 312 total) + cs.IR (11 new, 22 total) from Fri, 19 Jun 2026
 - Top picks: ITNet (unified integral transform subsuming conv/attn/rnn), Token Factory (Google soft tokens for LRMs), G2Rec (generative rec graph tokenization), DIF (Kuaishou cold-start denoising, KDD 2026), ELVA (RLVR for multimodal retrieval, ECCV 2026), Beyond Entropy (token-level distributional LLM reasoning), Which Pairs to Compare (DPO comparison curation theory), Emergent Alignment (self-supervised DPO alignment), VCG (multimodal e-commerce cold-start), Diffusion LMs experimental analysis (8×8 architectures×benchmarks), Stellar (disk-backed multimodal retrieval), Beyond Static Leaderboards (agent eval predictive validity), PACMS (submodular context selection for agents)
 - Key themes: Unified architectures (ITNet); generative recommendation productionization (Token Factory, G2Rec); RLVR extending to retrieval (ELVA); cold-start & denoising for industrial recsys (DIF, VCG); LLM reasoning & alignment (Beyond Entropy, Emergent Alignment, Which Pairs to Compare); agent evaluation (Beyond Static Leaderboards, PACMS)
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-23] synthesis | arxiv-daily
+- New page: wiki/synthesis/2026-06-23/arxiv-daily.md
+- Coverage: ~70 papers across 7 categories — LLM Reasoning & RLVR (14), Efficient Attention & Architecture (7), Multimodal (2), CTR Prediction & Advertising (18), Recommendation (2), Games & RL (14), Sequential & Time Series Modeling (10)
+- Top picks: CADET (LinkedIn, +11.04% CTR), GrandCode (first to beat all humans in Codeforces), MiniMax Sparse Attention (28.4× compute reduction), SPIRAL (self-play reasoning), NRT (verifier-free reasoning), GraphPO (DAG-based RL), CAPS (unified attention for TS), Hidden-Align (zero-overhead RL improvement)
+- Key themes: RL for reasoning is dominant paradigm; CTR/advertising going generative across all major tech companies; sparse attention for long context; self-play/multi-agent RL for reasoning; foundation models for time series maturing; cross-layer communication emerging
 
 ## [2026-06-22] synthesis | arxiv-daily
 - New page: wiki/synthesis/2026-06-22/arxiv-daily.md

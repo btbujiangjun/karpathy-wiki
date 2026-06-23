@@ -333,7 +333,9 @@ Papers are organized by research category. Each page includes problem background
 | [tech-report-digest](synthesis/2026-06-19/tech-report-digest.md) | 各大 AI 公司最新技术报告汇总 — 2026-06-19 (20+ 家机构, 19+ 份 Tech Report / System Card, DeepSeek V4/GPT-5/Llama 4/Gemini 3.1/Claude 4/Ministral 3/Phi-4/Apple AFM/Nemotron 3/Grok 4/Amazon Nova/Qwen3.5/GLM-5/Kimi K2/Seed/Step 3.5/InternLM3/Yi-Lightning/Baichuan-M3 等) | web-search |
 | [wq101-alpha-daily](synthesis/2026-06-19/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-19) | — |
 | [arxiv-daily](synthesis/2026-06-22/arxiv-daily.md) | arXiv Daily — AI, LLMs, Recommendation, CTR, Advertising, Games, RL, Multimodal, Safety, Synthetic Data (June 22, 2026) | ~50 papers across 11 categories |
+| [arxiv-daily](synthesis/2026-06-23/arxiv-daily.md) | arXiv Daily — AI, LLMs, CTR, Advertising, Recommendation, Games, RL, Sequential/Time Series (June 23, 2026) | ~70 papers across 7 categories (LLM Reasoning, Efficient Attention, Multimodal, CTR/Advertising, Recommendation, Games/RL, Sequential/Time Series) |
 | [arxiv-paper-check](synthesis/2026-06-22/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 22, 2026) | 15 papers (ITNet, Token Factory, G2Rec, DIF, ELVA, Beyond Entropy, etc.) |
+| [arxiv-paper-check](synthesis/2026-06-23/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 23, 2026) | 10 papers (VIMPO, Beyond Entropy, Connect the Dots, MATM, UltraQuant, Token Factory, OneRank, DIF, ELVA, TPOUR) |
 | [arxiv-daily](synthesis/2026-06-21/arxiv-daily.md) | arXiv Daily — AI, LLMs, CTR, Recommendation, Advertising, Sequential Modeling, Games, Agents (June 21, 2026) | 21 papers across 7 categories |
 | [game-rl-daily](synthesis/2026-06-21/game-rl-daily.md) | Game RL & Game AI Bot — Daily Survey (2026-06-21) | ~40 papers across 7 categories |
 | [arxiv-daily](synthesis/2026-06-20/arxiv-daily.md) | arXiv Daily — AI, LLMs, CTR, Recommendation, Advertising, Sequential Modeling, Games, Agents (June 20, 2026) | 20 papers across 7 categories |
@@ -376,6 +378,7 @@ Papers are organized by research category. Each page includes problem background
 | [arxiv-daily](synthesis/2026-06-08/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 8, 2026) | ~37 papers |
 | [arxiv-daily](synthesis/2026-06-09/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 9, 2026) | 26 papers |
 | [arxiv-ai-search](synthesis/2026-06-16/arxiv-ai-search.md) | arXiv AI Search — Comprehensive Survey (June 16, 2026) | ~35 papers across 8 domains |
+| [arxiv-ai-search](synthesis/2026-06-23/arxiv-ai-search.md) | arXiv AI Search — CTR/Recommendation/Attention/LLM Reasoning/Games (June 23, 2026) | 30 papers across 4 domains |
 | [arxiv-daily](synthesis/2026-06-16/arxiv-daily.md) | arXiv Daily — AI Research Survey (June 16, 2026) | ~50 papers across 9 domains |
 | [arxiv-paper-check](synthesis/2026-06-09/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 9, 2026) | 34 cs.AI + 14 cs.IR new submissions |
 | [conference-digest](synthesis/2026-06-09/conference-digest.md) | 顶会论文专题报告 — 2026年6月全面版（NeurIPS Best / ICLR 2026 / ICML 2026 / AAAI 2026 / CVPR 2026 / EMNLP 2025 / KDD 2026 / RecSys 2025 / SIGIR 2026 / WWW 2026 / CIKM 2025 / ACL 2026） | 12 conferences, 100+ papers, 13 labs |
