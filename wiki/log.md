@@ -4,6 +4,11 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-24] search | arxiv-daily
+- Summary: wiki/synthesis/2026-06-24/arxiv-daily.md
+- Coverage: 68 papers across 7 categories (LLM Reasoning & Agents, Efficient Inference & KV Cache, SSM & Sequence Modeling, CTR & Advertising, Recommendation, Multi-Agent RL & Games, Social World Models & Alignment)
+- Key papers: SPIRAL (Stanford), SelfCompact, MiniMax Sparse Attention (109B MoE), Mamba-3, DeRes, DS-MLP, Odysseus (Princeton), LoopCTR, Keyless Attention, Tangram
+
 ## [2026-06-23] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-23)
 - New page: wiki/synthesis/2026-06-23/wq101-alpha-daily.md
 - 宏观背景：科技 Mega-Cap 抛售（GOOGL -5%/AMZN -4.8%/MSFT -3.2%）+ 美伊协议落地 + FOMC 鹰派 Hold
@@ -1519,4 +1524,11 @@
 - Coverage: ~30 curated papers across 7 categories from arXiv, ICLR 2026, ICML 2026, CVPR 2026
 - Target categories: Game RL, LLM Game Agents, Game Foundation Models, PCG, Game Benchmarks, Industry Game AI, Related Techniques
 - Featured papers: SPIRAL (ICLR 2026 self-play reasoning), Game-RL (ICLR 2026 Fudan, game data → VLM reasoning), Strat-Reasoner (ICML 2026 multi-agent strategic reasoning), NitroGen (CVPR 2026 NVIDIA, 1k-game foundation model), Game-TARS (ByteDance generalist VLM agent), Orak (KRAFTON 12-game benchmark), Dreamer 4 (DeepMind imagination-based Minecraft), PCGRLLM (NYU LLM reward design for PCGRL), lmgame-Bench (ICLR 2026 gaming harness)
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-24] search | arXiv Paper Check — AI & CTR (June 24, 2026)
+- New page: wiki/synthesis/2026-06-24/arxiv-paper-check.md
+- Coverage: cs.LG (110 new) + cs.AI (198 new) + cs.IR (17 new) from Wed, 24 Jun 2026
+- Top picks: OpenThoughts-Agent (agent data recipes, 50+ authors), Can Scale Save Us From Plasticity Loss in LLMs?, Scaling Laws for Task-Specific LLM Distillation, On the Smallness of the LLM Scaling Exponents, Grad Detect (gradient-based hallucination detection), AdversaBench (multi-judge red-teaming), ScaleToT (structured LLM reasoning for billion-scale user modeling), LLM-as-a-Judge for Top-K Recommendation (KDD 2026), The Pitfall of Scaling Up (popularity bias in transformer recommenders, KDD 2026), Improving Long-Context Retrieval with Multi-Prefix Embedding, Data Augmentation: A Fourier Analysis Perspective (COLT 2026), Holistic Data Scheduler for LLM Pre-training via Multi-Objective RL (KDD 2026), Catastrophic Compositional Generation (diffusion extrapolation failure), KLip-PPO (per-sample KL perspective on PPO-Clip), Reasoning as Attractor Dynamics (latent memory retrieval via Gibbs-weighted energy minimization), Unified Multi-Task Relevance Modeling for E-Commerce (SIGIR 2026), INSPIRE (intent-aware sponsored product retrieval, SIGIR 2026)
+- Key themes: Agent data recipes and scaling, plasticity loss in LLMs, LLM distillation scaling laws, gradient-based hallucination detection, LLMs for user modeling/recommendation evaluation, popularity bias in scaling recommenders, Fourier theory for data augmentation, multi-objective data scheduling for pre-training, diffusion model compositional failures
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
