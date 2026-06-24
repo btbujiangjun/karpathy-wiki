@@ -4,6 +4,17 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-24] synthesis | 投资日报 — 2026-06-24（美股/港股/A股/中概/新能源科技与AI热点）
+- New page: wiki/synthesis/2026-06-24/investment-daily.md
+- 全球 AI 信仰压力测试：四大云厂商 Capex $7,250 亿（+77%），算力租赁价回落 30%，科技巨头集体缩紧预算
+- 美股：S&P 500 -1.44%, Nasdaq -2.21%, 费城半导体 -7.9%（MU -13%, SNDK -12.5%, MRVL -9%）
+- 港股：恒指一年新低（-1.8%），恒科指 -3.3%（Zhipu -10%, MiniMax -16%, 9988 跌破 HK$99）
+- A 股：创业板 -3.84%，光模块/PCB 全线杀跌，寒武纪 -3%
+- 中概：1260H 清单持续发酵，BABA $102.60 52 周新低
+- EV：全线下挫，TSLA -5.79%，中国 EV 价格战利润侵蚀加速
+- 焦点事件：MU Q3 FY26 财报明日盘后（预期营收 +268%, EPS +930%），白宫 1260H 清单诉讼
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-24] synthesis | Tech Report Digest — 各大AI公司技术报告汇总 (2026-06-24 第十一版)
 - New page: wiki/synthesis/2026-06-24/tech-report-digest.md
 - Coverage: 20+ 家机构, 50+ 份 Tech Report / System Card
