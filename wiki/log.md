@@ -28,6 +28,13 @@
 - Coverage: 68 papers across 7 categories (LLM Reasoning & Agents, Efficient Inference & KV Cache, SSM & Sequence Modeling, CTR & Advertising, Recommendation, Multi-Agent RL & Games, Social World Models & Alignment)
 - Key papers: SPIRAL (Stanford), SelfCompact, MiniMax Sparse Attention (109B MoE), Mamba-3, DeRes, DS-MLP, Odysseus (Princeton), LoopCTR, Keyless Attention, Tangram
 
+## [2026-06-24] synthesis | game-rl-daily
+- Summary: wiki/synthesis/2026-06-24/game-rl-daily.md
+- Coverage: 40 papers across 7 categories (Game RL, Game AI Bots, Game Foundation Models, Procedural Content Generation, Game Benchmarks, Industry Game AI, Related Techniques)
+- Key papers: Strat-Reasoner (ICML 2026), NitroGen (CVPR 2026), Game-TARS (ByteDance), Dreamer 4 (DeepMind), GameNGen (Google), Matrix-Game 3.0 (Skywork), BALROG (ICLR 2025), DSGBench, AI GameStore (MIT/Harvard), MCU (ICML 2026)
+- New page: synthesis/2026-06-24/game-rl-daily.md
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-23] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-23)
 - New page: wiki/synthesis/2026-06-23/wq101-alpha-daily.md
 - 宏观背景：科技 Mega-Cap 抛售（GOOGL -5%/AMZN -4.8%/MSFT -3.2%）+ 美伊协议落地 + FOMC 鹰派 Hold
