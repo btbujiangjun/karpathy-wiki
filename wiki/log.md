@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-24] synthesis | Tech Report Digest — 各大AI公司技术报告汇总 (2026-06-24 第十一版)
+- New page: wiki/synthesis/2026-06-24/tech-report-digest.md
+- Coverage: 20+ 家机构, 50+ 份 Tech Report / System Card
+- Companies: DeepSeek, OpenAI, Meta, Google, Anthropic, Mistral, Qwen, xAI, Microsoft Phi, Apple, NVIDIA, Amazon, Zhipu, InternLM, Moonshot Kimi, ByteDance Seed/Doubao, StepFun, 01.AI, Baichuan, MiniMax, Cohere, Stability AI, AI21 Labs
+- Key trends: MoE 全面主流化, 1M+ context 成为旗舰标配, RLVR 推理训练普及, Hybrid Mamba-Transformer 新兴, Muon/MuonClip 优化器挑战 AdamW
+- Pricing comparison table added for all major models
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-24] search | arxiv-daily
 - Summary: wiki/synthesis/2026-06-24/arxiv-daily.md
 - Coverage: 68 papers across 7 categories (LLM Reasoning & Agents, Efficient Inference & KV Cache, SSM & Sequence Modeling, CTR & Advertising, Recommendation, Multi-Agent RL & Games, Social World Models & Alignment)
