@@ -342,6 +342,7 @@ Papers are organized by research category. Each page includes problem background
 | [arxiv-daily](synthesis/2026-06-21/arxiv-daily.md) | arXiv Daily — AI, LLMs, CTR, Recommendation, Advertising, Sequential Modeling, Games, Agents (June 21, 2026) | 21 papers across 7 categories |
 | [game-rl-daily](synthesis/2026-06-21/game-rl-daily.md) | Game RL & Game AI Bot — Daily Survey (2026-06-21) | ~40 papers across 7 categories |
 | [game-rl-daily](synthesis/2026-06-24/game-rl-daily.md) | Game RL & Game AI Bot — Daily Survey (2026-06-24) | 40 papers across 7 categories (Game RL, AI Bots, Foundation Models, PCG, Benchmarks, Industry, Related Techniques) |
+| [wq101-alpha-daily](synthesis/2026-06-24/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-24) | — |
 | [arxiv-daily](synthesis/2026-06-20/arxiv-daily.md) | arXiv Daily — AI, LLMs, CTR, Recommendation, Advertising, Sequential Modeling, Games, Agents (June 20, 2026) | 20 papers across 7 categories |
 | [conference-digest](synthesis/2026-06-18/conference-digest.md) | 顶会论文专题报告 — 2026年6月全面版（NeurIPS 2025 Best / ICLR 2026 Outstanding / ICML 2026 / AAAI 2026 / CVPR 2026 Best / EMNLP 2025 / KDD 2026 / RecSys 2025 / SIGIR 2026 / WWW 2026 / CIKM 2025 / ACL 2026） | arxiv |
 | [conference-digest](synthesis/2026-06-17/conference-digest.md) | Conference & arXiv Digest — June 2026 (12+ conferences, 70+ papers, Frontier Models: GPT-5.5/Claude 4.7/DeepSeek-V4) | arxiv-search |

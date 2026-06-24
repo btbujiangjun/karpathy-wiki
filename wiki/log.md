@@ -4,6 +4,15 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-24] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-24)
+- New page: wiki/synthesis/2026-06-24/wq101-alpha-daily.md
+- 宏观背景：费城半导体 -7.6%（SK Hynix 放缓 HBM）+ FOMC 鹰派 + VIX 19 + 板块大轮动科技→能源/工业/防御
+- 核心信号：Alpha#53（反转）> Alpha#41（趋势强度）> Alpha#1（动量）；防御反转逻辑取代纯动量
+- Top 3: CAT (9.0), OXY (8.5), LLY (8.5)
+- 板块分布：能源 5只, 半导体 5只, 医疗 3只, 工业 3只, 消费防御 2只, 材料 1只
+- 变化 vs 06-23：全面转向能源+防御+工业；半导体从 8 只减至 5 只；新增 OXY/CAT/LLY/GEV/VRT/WMB/FCX 等
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-24] synthesis | 投资日报 — 2026-06-24（美股/港股/A股/中概/新能源科技与AI热点）
 - New page: wiki/synthesis/2026-06-24/investment-daily.md
 - 全球 AI 信仰压力测试：四大云厂商 Capex $7,250 亿（+77%），算力租赁价回落 30%，科技巨头集体缩紧预算
