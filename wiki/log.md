@@ -10,6 +10,13 @@
 - Key themes: LLM↔RecSys convergence, KV-cache compression explosion, agentic LLM training, scaling pitfalls, SSMs as Transformer alternatives
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-06-25] synthesis | Conference & arXiv Digest — June 2026
+- New page: wiki/synthesis/2026-06-25/conference-digest.md
+- 100+ papers across 12 venues (ICML 2026, ICLR 2026, NeurIPS 2025, AAAI 2026, KDD 2026, CVPR 2026, ACL 2026, EMNLP 2025, WWW 2026, SIGIR 2026, RecSys 2025, CIKM 2025)
+- Covers: LLM training/alignment, reasoning, agents, CTR prediction, recommendation systems, generative models, multimodal, games, formal math, RL
+- Key institutions: Google DeepMind, NVIDIA, Meta AI, Apple, ByteDance, Alibaba, Tencent, Kuaishou, Baidu, JD.com, NetEase, Microsoft Research, Amazon
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-25] synthesis | arXiv AI Research Search — June 2026
 - New page: wiki/synthesis/2026-06-25/arxiv-ai-search.md
 - 11 curated papers across LLM Alignment (implicit feedback, MLLM bias), CTR/Advertising (DS-MLP, IDProxy, UniVA, Token Factory), Games/RL (MindGames Arena, SlimDT, Game AI)
