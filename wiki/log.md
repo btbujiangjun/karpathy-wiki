@@ -4,6 +4,18 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-25] synthesis | arXiv Daily — AI, LLMs, Recommendation, Advertising, CTR, Games, RL, Sequential Modeling
+- New page: wiki/synthesis/2026-06-25/arxiv-daily.md
+- 33 papers across 8 categories (LLM Training & Alignment, LLM Reasoning & Agents, LLM Inference & Efficiency, Recommendation & Advertising, E-Commerce & IR, RL & Games, World Models & Multi-Agent, Sequential Modeling & Architectures)
+- Key themes: LLM↔RecSys convergence, KV-cache compression explosion, agentic LLM training, scaling pitfalls, SSMs as Transformer alternatives
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-06-25] synthesis | arXiv AI Research Search — June 2026
+- New page: wiki/synthesis/2026-06-25/arxiv-ai-search.md
+- 11 curated papers across LLM Alignment (implicit feedback, MLLM bias), CTR/Advertising (DS-MLP, IDProxy, UniVA, Token Factory), Games/RL (MindGames Arena, SlimDT, Game AI)
+- Key institutions: UMass Amherst, UIUC, Yahoo Research, Renmin University, Xiaohongshu, Tencent, Google, Embark Studios
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-24] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-24)
 - New page: wiki/synthesis/2026-06-24/wq101-alpha-daily.md
 - 宏观背景：费城半导体 -7.6%（SK Hynix 放缓 HBM）+ FOMC 鹰派 + VIX 19 + 板块大轮动科技→能源/工业/防御
@@ -1566,4 +1578,11 @@
 - Coverage: cs.LG (110 new) + cs.AI (198 new) + cs.IR (17 new) from Wed, 24 Jun 2026
 - Top picks: OpenThoughts-Agent (agent data recipes, 50+ authors), Can Scale Save Us From Plasticity Loss in LLMs?, Scaling Laws for Task-Specific LLM Distillation, On the Smallness of the LLM Scaling Exponents, Grad Detect (gradient-based hallucination detection), AdversaBench (multi-judge red-teaming), ScaleToT (structured LLM reasoning for billion-scale user modeling), LLM-as-a-Judge for Top-K Recommendation (KDD 2026), The Pitfall of Scaling Up (popularity bias in transformer recommenders, KDD 2026), Improving Long-Context Retrieval with Multi-Prefix Embedding, Data Augmentation: A Fourier Analysis Perspective (COLT 2026), Holistic Data Scheduler for LLM Pre-training via Multi-Objective RL (KDD 2026), Catastrophic Compositional Generation (diffusion extrapolation failure), KLip-PPO (per-sample KL perspective on PPO-Clip), Reasoning as Attractor Dynamics (latent memory retrieval via Gibbs-weighted energy minimization), Unified Multi-Task Relevance Modeling for E-Commerce (SIGIR 2026), INSPIRE (intent-aware sponsored product retrieval, SIGIR 2026)
 - Key themes: Agent data recipes and scaling, plasticity loss in LLMs, LLM distillation scaling laws, gradient-based hallucination detection, LLMs for user modeling/recommendation evaluation, popularity bias in scaling recommenders, Fourier theory for data augmentation, multi-objective data scheduling for pre-training, diffusion model compositional failures
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-25] search | arXiv Paper Check — AI & CTR (June 25, 2026)
+- New page: wiki/synthesis/2026-06-25/arxiv-paper-check.md
+- Coverage: cs.IR (30 entries, 9 new) + cs.AI (2 replacements) + cs.LG (240, from Wed Jun 24)
+- Top picks: RaG (Kuaishou, 1.87% ad revenue lift, generative video rec), TokenMinds (YouTube, SID user tokens at billions-scale), IRENE (KDD 2024, 4.2% CTR lift in zero-shot ad retrieval), DynamicPO (DASFAA 2026 Best Paper, preference optimization collapse), DADF (distribution-aware debiasing, 0.65% time-spent lift), AutoRelAnnotator (SIGIR 2026, 150M+ relevance annotations), S2-CAR (energy-based intent segmentation), Weight-Space Geometry of Offline Reasoning (ICML 2026 Workshop, DPO near-orthogonal subspace), Hitchhiker's Guide to Agentic AI (comprehensive reference), Is GraphRAG Needed? (ACL 2026, 19-53% token reduction via context engineering), Catastrophic Compositional Generation (diffusion OOD limits), BITEMBED (ternary-weight text embeddings), Nexus Sampling (80% KV-cache eviction)
+- Key themes: Generative recommendation meets video generation, SID-based user modeling at scale, zero-shot retrieval with classifier synthesis, preference optimization collapse in LLM-based rec, offline reasoning weight-space geometry, GraphRAG vs Agentic RAG tradeoffs, extreme quantization for embeddings, streaming KV-cache eviction
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
