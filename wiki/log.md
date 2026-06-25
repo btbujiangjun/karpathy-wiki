@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-25] synthesis | Game RL & Game AI Bot — Daily Survey
+- New page: wiki/synthesis/2026-06-25/game-rl-daily.md
+- ~75 curated papers across 8 categories covering Game RL, LLM Game AI Bots, Game Foundation Models, PCG, Game Benchmarks, Industry Game AI, Self-Play/MARL, World Models, Curiosity, HRL, IRL
+- Key highlights: QZero (model-free Go), RGSC (ICLR 2026), NitroGen (CVPR 2026 NVIDIA), Game-TARS (ByteDance), SPIRAL (ICLR 2026), Dreamer (Nature 2025), Matrix-Game 3.0, Odysseus, PopuLoRA, MARSHAL, FMSP, ChatNPC (ACL 2026), GameWorld, OmniGameArena, Orak (KRAFTON), BALROG, PCGRLLM (NYU), Multiverse
+- Key themes: RL+LLM convergence via self-play, generalist game foundation models, LLM-powered NPCs, diffusion game engines, population-based self-play, evaluation infra maturity
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-25] synthesis | arXiv Daily — AI, LLMs, Recommendation, Advertising, CTR, Games, RL, Sequential Modeling
 - New page: wiki/synthesis/2026-06-25/arxiv-daily.md
 - 33 papers across 8 categories (LLM Training & Alignment, LLM Reasoning & Agents, LLM Inference & Efficiency, Recommendation & Advertising, E-Commerce & IR, RL & Games, World Models & Multi-Agent, Sequential Modeling & Architectures)
