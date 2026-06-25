@@ -32,6 +32,17 @@
 - Key institutions: Google DeepMind, NVIDIA, Meta AI, Apple, ByteDance, Alibaba, Tencent, Kuaishou, Baidu, JD.com, NetEase, Microsoft Research, Amazon
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-06-25] synthesis | 投资日报 — 2026-06-25（美股/港股/A股/中概/新能源科技与AI热点）
+- New page: wiki/synthesis/2026-06-25/investment-daily.md
+- Micron Q3 FY26 财报 "核弹级" 超预期：营收 $41.5B（+346% YoY），EPS $25.11（+930% YoY），Q4 指引 $50B（+74% QoQ），盘后 +15%+
+- SK Hynix 宣布 $294 亿纳斯达克上市（7/10）；JPMorgan 上调标普 500 目标至 7,800
+- 美股：S&P 500 -0.09%，Nasdaq -0.43%，Dow +0.36%（板块大轮动科技→工业/金融）
+- 港股：恒指 +0.33%，科技指数 +1.81%（SMIC +8.9%、Tencent +3.4%、Zhipu +4.6%）
+- A 股：AI 应用端接棒（神州数码涨停、信创 ETF +3.68%）；MiniMax M1 开源提振科创板
+- EV：出口创纪录 $9.2B（+49% YoY），内需承压，BYD 首选
+- AI 热点：Micron take-or-pay 合同 $100B+、Zhipu 配售、腾讯/阿里 Agent 落地、曹操 Robotaxi
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-25] synthesis | arXiv AI Research Search — June 2026
 - New page: wiki/synthesis/2026-06-25/arxiv-ai-search.md
 - 11 curated papers across LLM Alignment (implicit feedback, MLLM bias), CTR/Advertising (DS-MLP, IDProxy, UniVA, Token Factory), Games/RL (MindGames Arena, SlimDT, Game AI)
