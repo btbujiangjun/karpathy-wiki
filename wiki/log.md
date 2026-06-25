@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-25] synthesis | WQ101 Alpha Daily — 美股 Top 20
+- New page: wiki/synthesis/2026-06-25/wq101-alpha-daily.md
+- WorldQuant 101 Alpha factor-based screening of US stocks, Top 20 picks
+- Key picks: MU, SNDK, MRVL, ALAB, CRDO, QCOM, NVDA, AVGO (semi/AI momentum plays)
+- Market context: S&P 500 7,394 (-0.10%), Fed rate hike fears, sector rotation out of tech into energy/defensives
+- Top factors used: Alpha#1 (momentum, 8 stocks), Alpha#19 (mean-reversion, 9 stocks), Alpha#41 (trend strength, 7 stocks)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-25] synthesis | Game RL & Game AI Bot — Daily Survey
 - New page: wiki/synthesis/2026-06-25/game-rl-daily.md
 - ~75 curated papers across 8 categories covering Game RL, LLM Game AI Bots, Game Foundation Models, PCG, Game Benchmarks, Industry Game AI, Self-Play/MARL, World Models, Curiosity, HRL, IRL
