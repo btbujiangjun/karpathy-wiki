@@ -329,6 +329,7 @@ Papers are organized by research category. Each page includes problem background
 | File | Topic | Sources |
 |------|-------|---------|
 | [arxiv-paper-check](synthesis/2026-06-26/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 26, 2026) | 20 papers across AI/LLM/CTR/Rec (TokenMinds, Graph-GRPO, GenRec, GenCI, Autodata, etc.) |
+| [investment-daily](synthesis/2026-06-26/investment-daily.md) | 投资日报 — 2026-06-26（美股/港股/A股/中概/新能源科技与AI热点） | web-search |
 | [tech-report-digest](synthesis/2026-06-26/tech-report-digest.md) | 各大 AI 公司最新技术报告汇总 (第十二版) — 2026-06-26 (21 家机构, DeepSeek V4/V3.2, GPT-5.5/5.4, Llama 4, Gemini 3.1/2.5, Claude Opus 4.8/Fable 5/Mythos 5, Mistral Large 3, Qwen3/3.5-Omni, Phi-4, Apple AFM, Nemotron 3 Ultra, Grok 4/4.1, Amazon Nova, GLM-5, Intern-S1-Pro, Kimi K2/K2.5, Step-3/3.5 Flash, Seed1.8/1.5-VL, Yi-Lightning, Baichuan-M3 等 40+ 报告) | web-search |
 | [conference-digest](synthesis/2026-06-25/conference-digest.md) | Conference & arXiv Digest — Top ML/AI Venues Roundup (ICML 2026, ICLR 2026, NeurIPS 2025, AAAI 2026, KDD 2026, CVPR 2026, ACL 2026, EMNLP 2025, WWW 2026, SIGIR 2026, RecSys 2025) | — |
 | [wq101-alpha-daily](synthesis/2026-06-25/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-25) | — |

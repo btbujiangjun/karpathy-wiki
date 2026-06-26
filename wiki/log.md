@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-26] synthesis | Investment Daily — 美股/港股/A股/中概/新能源科技与AI热点
+- New page: wiki/synthesis/2026-06-26/investment-daily.md
+- Coverage: 美股(Mag 7, 半导体/AI), 中概股, 港股科技, A股AI概念, 新能源/电动车, AI热点主题(大模型/Agent/自动驾驶/机器人/资本开支)
+- Key events: 美光Q3炸裂财报(营收$41.46B, EPS $25.11), 核心PCE 3.4%施压科技估值, Apple -6%, 费城半导体+3.59%, GPT-5.6正式发布, Anthropic AI递归自进化报告
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-26] synthesis | Tech Report Digest — 各大 AI 公司技术报告汇总 (2026-06-26 第十二版)
 - New page: wiki/synthesis/2026-06-26/tech-report-digest.md
 - Coverage: 21 家机构, 40+ 份 Tech Report / System Card
