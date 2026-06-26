@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-26] synthesis | WQ101 Alpha Daily — 美股 Top 20 (2026-06-26)
+- New page: wiki/synthesis/2026-06-26/wq101-alpha-daily.md
+- Market context: S&P 500 7,357 (-0.01%), MU blowout Q3 ($41.46B, +346% YoY), Core PCE 4.1% (3Y high), CAT +76% YTD, sector rotation semi→industrial/energy/healthcare
+- Key picks: MU (10/10, Alpha#1/#6), CAT (9/10, Alpha#41/#1), MRVL (9/10, Alpha#1/#30), SNDK (9/10, Alpha#1/#41)
+- Top factors: Alpha#1 (momentum, 10 stocks), Alpha#19 (mean-reversion, 9 stocks), Alpha#30 (volatility, 7 stocks)
+- Key theme: MU earnings confirms AI supercycle → momentum dominant again; Mag7 mean-reversion signals accumulate
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-26] synthesis | Game RL & Game AI Bot — Daily Paper Digest
 - New page: wiki/synthesis/2026-06-26/game-rl-daily.md
 - Coverage: ~30 papers across 8 categories — MARL in games, LLM-powered game agents, game foundation models (NitroGen CVPR 2026 Oral, Game-TARS, Lumine, GROW), procedural content generation (IPCGRL, PCGRLLM, MOPCGRL, CrawLLM), game benchmarks (WildClawBench, GameWorld, PokeGym), self-play RL (SPIRAL, SPA, SeRL, SPEAR), related techniques (curiosity-driven RL, hierarchical RL, imitation learning), industry game AI (NVIDIA, ByteDance, NYU)
