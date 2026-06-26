@@ -328,6 +328,7 @@ Papers are organized by research category. Each page includes problem background
 
 | File | Topic | Sources |
 |------|-------|---------|
+| [arxiv-paper-check](synthesis/2026-06-26/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 26, 2026) | 20 papers across AI/LLM/CTR/Rec (TokenMinds, Graph-GRPO, GenRec, GenCI, Autodata, etc.) |
 | [conference-digest](synthesis/2026-06-25/conference-digest.md) | Conference & arXiv Digest — Top ML/AI Venues Roundup (ICML 2026, ICLR 2026, NeurIPS 2025, AAAI 2026, KDD 2026, CVPR 2026, ACL 2026, EMNLP 2025, WWW 2026, SIGIR 2026, RecSys 2025) | — |
 | [wq101-alpha-daily](synthesis/2026-06-25/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-25) | — |
 |------|-------|---------|
@@ -339,6 +340,8 @@ Papers are organized by research category. Each page includes problem background
 | [arxiv-daily](synthesis/2026-06-23/arxiv-daily.md) | arXiv Daily — AI, LLMs, CTR, Advertising, Recommendation, Games, RL, Sequential/Time Series (June 23, 2026) | ~70 papers across 7 categories (LLM Reasoning, Efficient Attention, Multimodal, CTR/Advertising, Recommendation, Games/RL, Sequential/Time Series) |
 | [arxiv-daily](synthesis/2026-06-24/arxiv-daily.md) | arXiv Daily — AI, LLMs, CTR, Recommendation, Sequential Modeling, SSM, KV Cache, Games/RL (June 24, 2026) | 68 papers across 7 categories (LLM Reasoning & Agents, Efficient Inference & KV Cache, SSM & Sequence Modeling, CTR & Advertising, Recommendation, Multi-Agent RL & Games, Social World Models & Alignment) |
 | [arxiv-daily](synthesis/2026-06-25/arxiv-daily.md) | arXiv Daily — AI, LLMs, Recommendation, Advertising, CTR, Games, RL, Sequential Modeling (June 25, 2026) | 33 papers across 8 categories |
+| [arxiv-daily](synthesis/2026-06-26/arxiv-daily.md) | arXiv Daily — AI, LLMs, Attention, CTR, Recommendation, RL, Games (June 26, 2026) | 30 papers across 7 categories |
+| [arxiv-ai-search](synthesis/2026-06-26/arxiv-ai-search.md) | arXiv AI Research Scan — June 26, 2026 (LLMs, RecSys, CTR/Ad, Sequential, Games/RL, Time-Series) | 36 papers across 7 categories (LLMs, RecSys, Sequential/Session, Advertising/CTR/Attribution, CTR Prediction, Games/RL, Time-Series/IR) |
 | [arxiv-ai-search](synthesis/2026-06-25/arxiv-ai-search.md) | arXiv AI Research Search — June 2026 (LLM Alignment, MLLM Bias, CTR, Generative Rec, Game RL, World Models) | 11 papers from across AI/LLM/CTR/Rec/Games |
 | [arxiv-paper-check](synthesis/2026-06-22/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 22, 2026) | 15 papers (ITNet, Token Factory, G2Rec, DIF, ELVA, Beyond Entropy, etc.) |
 | [arxiv-paper-check](synthesis/2026-06-23/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 23, 2026) | 10 papers (VIMPO, Beyond Entropy, Connect the Dots, MATM, UltraQuant, Token Factory, OneRank, DIF, ELVA, TPOUR) |

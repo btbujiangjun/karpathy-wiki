@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-26] synthesis | arXiv Paper Check — AI & CTR (2026-06-26)
+- New page: wiki/synthesis/2026-06-26/arxiv-paper-check.md
+- Scanned new listings for Thu, 25 Jun 2026 across cs.IR (9 new), cs.LG (186 new), cs.AI (182 new)
+- 20 papers curated: TokenMinds (YouTube SID user tokens), Graph-GRPO (JD GRPO e-commerce), GenRec (JD generative rec), GenCI/GenLI (generative CTR), Gryphon (SID item scoring), ASRM/DSIRM e-commerce relevance, Autodata (agentic data scientist), Pigeonholing (prompt robustness), Abstract representational geometry in LLMs, Active Inference scaling law, Causal RL intro
+- Key themes: GRPO/RL for recommendation, SIDs dominate generative retrieval, agentic AI safety, mechanistic interpretability × neuroscience, test-time compute scaling
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-25] synthesis | WQ101 Alpha Daily — 美股 Top 20
 - New page: wiki/synthesis/2026-06-25/wq101-alpha-daily.md
 - WorldQuant 101 Alpha factor-based screening of US stocks, Top 20 picks
@@ -28,6 +35,12 @@
 ## [2026-06-25] synthesis | Conference & arXiv Digest — June 2026
 - New page: wiki/synthesis/2026-06-25/conference-digest.md
 - 100+ papers across 12 venues (ICML 2026, ICLR 2026, NeurIPS 2025, AAAI 2026, KDD 2026, CVPR 2026, ACL 2026, EMNLP 2025, WWW 2026, SIGIR 2026, RecSys 2025, CIKM 2025)
+
+## [2026-06-26] synthesis | arXiv Daily
+- New page: wiki/synthesis/2026-06-26/arxiv-daily.md
+- 30 papers across 7 categories: LLM Reasoning & Alignment, Efficient Transformers & Attention, CTR Prediction & Advertising, Sequential Recommendation, RL for LLMs & Agents, Games & Long-Horizon Decision Making
+- Key highlights: SelfCompact (adaptive context compaction), HydraHead (head-level FA/LA hybridization), G2PO (graph credit assignment for RL), Odysseus (100+ turn VLM game-playing), DeRes (dual-path residual for CTR), Taiji (Pareto-optimal semantics-IDs trade-off; Kuaishou deployed), Pigeonholing (bad-context mode collapse)
+- Updated: wiki/index.md, wiki/log.md
 - Covers: LLM training/alignment, reasoning, agents, CTR prediction, recommendation systems, generative models, multimodal, games, formal math, RL
 - Key institutions: Google DeepMind, NVIDIA, Meta AI, Apple, ByteDance, Alibaba, Tencent, Kuaishou, Baidu, JD.com, NetEase, Microsoft Research, Amazon
 - Updated: wiki/index.md, wiki/log.md
@@ -1618,4 +1631,12 @@
 - Coverage: cs.IR (30 entries, 9 new) + cs.AI (2 replacements) + cs.LG (240, from Wed Jun 24)
 - Top picks: RaG (Kuaishou, 1.87% ad revenue lift, generative video rec), TokenMinds (YouTube, SID user tokens at billions-scale), IRENE (KDD 2024, 4.2% CTR lift in zero-shot ad retrieval), DynamicPO (DASFAA 2026 Best Paper, preference optimization collapse), DADF (distribution-aware debiasing, 0.65% time-spent lift), AutoRelAnnotator (SIGIR 2026, 150M+ relevance annotations), S2-CAR (energy-based intent segmentation), Weight-Space Geometry of Offline Reasoning (ICML 2026 Workshop, DPO near-orthogonal subspace), Hitchhiker's Guide to Agentic AI (comprehensive reference), Is GraphRAG Needed? (ACL 2026, 19-53% token reduction via context engineering), Catastrophic Compositional Generation (diffusion OOD limits), BITEMBED (ternary-weight text embeddings), Nexus Sampling (80% KV-cache eviction)
 - Key themes: Generative recommendation meets video generation, SID-based user modeling at scale, zero-shot retrieval with classifier synthesis, preference optimization collapse in LLM-based rec, offline reasoning weight-space geometry, GraphRAG vs Agentic RAG tradeoffs, extreme quantization for embeddings, streaming KV-cache eviction
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-26] search | arXiv AI Research Scan
+- New page: wiki/synthesis/2026-06-26/arxiv-ai-search.md
+- Coverage: cs.LG (162 entries Jun 26), cs.CL (95 entries Jun 26), cs.IR (22 entries Jun 26 + 20 Jun 25 + 17 Jun 24), plus targeted web searches for games/RL and CTR
+- 36 selected papers across 7 categories: LLMs (8), RecSys (5), Sequential/Session (3), Advertising/CTR/Attribution (6), CTR Prediction (5), Games/RL (4), Time-Series/IR (5)
+- Top picks: RiVER (RL for LLMs w/o ground truth), GEOALIGN (geometric rollout curation for LLM RL, ICML 2026), Nemotron-TwoTower (NVIDIA diffusion LM, 2.42× throughput), NOVA (agent-driven rec arch evolution, Alibaba), AgentX (self-iterating multi-agent rec system, Kuaishou), TokenMinds (YouTube SID user tokens at billions-scale), Recommendation as Generation (Kuaishou, +1.87% ad revenue with generated video), CADET (LinkedIn, +11.04% CTR lift with decoder-only transformer), Superhuman AI for Generals.io (JAX-native self-play, #1 on leaderboard), Odysseus (VLM 100+ turn game decision-making via RL)
+- Key trends: LLM agents for rec system iteration, diffusion/non-AR LMs, RL for LLM alignment without ground truth, linear attention improvements, generative video recommendation, LLM-powered CTR/ads, game AI with self-play RL
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
