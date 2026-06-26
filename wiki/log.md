@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-26] synthesis | Tech Report Digest — 各大 AI 公司技术报告汇总 (2026-06-26 第十二版)
+- New page: wiki/synthesis/2026-06-26/tech-report-digest.md
+- Coverage: 21 家机构, 40+ 份 Tech Report / System Card
+- Companies: DeepSeek (V4/V3.2), OpenAI (GPT-5.5/5.4), Meta (Llama 4), Google (Gemini 3.1/2.5), Anthropic (Opus 4.8/Fable 5/Mythos 5/Sonnet 4.6), Mistral (Large 3/Ministral 3/Magistral), Qwen (Qwen3/3.5-Omni/Image-2.0), Microsoft (Phi-4-reasoning-vision/Phi-4-reasoning), Apple (AFM 2025), NVIDIA (Nemotron 3 Ultra/Super/Nano), xAI (Grok 4.1/4/3), Amazon (Nova family), Zhipu (GLM-5/GLM-4.5V), InternLM (Intern-S1-Pro/S1), Moonshot (Kimi K2.5/K2), StepFun (Step-3/3.5 Flash/Step3-VL-10B), ByteDance (Seed1.8/1.5-VL), 01.AI (Yi-Lightning/Yi), Baichuan (M3/Omni-1.5)
+- Key trends: MoE 全面主流化, 1M+ context 旗舰标配, RLVR 推理训练普及, Hybrid Mamba-Transformer 新兴, Muon/MuonClip 优化器挑战 AdamW, 原生多模态 MoE 成为标准
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-26] synthesis | Conference & arXiv Digest — Comprehensive Roundup
 - New page: wiki/synthesis/2026-06-26/conference-digest.md
 - Comprehensive roundup of 12+ ML/AI conferences: ICML 2026, NeurIPS 2025, ICLR 2026, AAAI 2026, CVPR 2026, KDD 2026, ACL 2026, EMNLP 2025, WWW 2026, SIGIR 2025, CIKM 2025, RecSys 2025
