@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-26] synthesis | Game RL & Game AI Bot — Daily Paper Digest
+- New page: wiki/synthesis/2026-06-26/game-rl-daily.md
+- Coverage: ~30 papers across 8 categories — MARL in games, LLM-powered game agents, game foundation models (NitroGen CVPR 2026 Oral, Game-TARS, Lumine, GROW), procedural content generation (IPCGRL, PCGRLLM, MOPCGRL, CrawLLM), game benchmarks (WildClawBench, GameWorld, PokeGym), self-play RL (SPIRAL, SPA, SeRL, SPEAR), related techniques (curiosity-driven RL, hierarchical RL, imitation learning), industry game AI (NVIDIA, ByteDance, NYU)
+- Key trends: VLM+RL convergence, unified keyboard-mouse action spaces, self-play for reasoning transfer, commercial 3D games as testbeds, LLMs for PCG reward/level/asset generation
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-26] synthesis | Investment Daily — 美股/港股/A股/中概/新能源科技与AI热点
 - New page: wiki/synthesis/2026-06-26/investment-daily.md
 - Coverage: 美股(Mag 7, 半导体/AI), 中概股, 港股科技, A股AI概念, 新能源/电动车, AI热点主题(大模型/Agent/自动驾驶/机器人/资本开支)
