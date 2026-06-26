@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-26] synthesis | Conference & arXiv Digest — Comprehensive Roundup
+- New page: wiki/synthesis/2026-06-26/conference-digest.md
+- Comprehensive roundup of 12+ ML/AI conferences: ICML 2026, NeurIPS 2025, ICLR 2026, AAAI 2026, CVPR 2026, KDD 2026, ACL 2026, EMNLP 2025, WWW 2026, SIGIR 2025, CIKM 2025, RecSys 2025
+- 100+ curated papers, 12+ industry labs: Google DeepMind, OpenAI, Meta AI, Microsoft, NVIDIA, Apple, ByteDance, Alibaba, Tencent, Kuaishou
+- Key themes: RLVR/GRPO for LLM reasoning, diffusion language models (LLaDA, CALM), CTR scaling laws, generative recommendation, agent systems, generalist game agents (NitroGen), 4D scene reconstruction (D4RT), continuous reasoning (MUX, PaCoRe)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-26] synthesis | arXiv Paper Check — AI & CTR (2026-06-26)
 - New page: wiki/synthesis/2026-06-26/arxiv-paper-check.md
 - Scanned new listings for Thu, 25 Jun 2026 across cs.IR (9 new), cs.LG (186 new), cs.AI (182 new)
