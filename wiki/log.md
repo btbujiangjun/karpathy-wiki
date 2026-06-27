@@ -4,6 +4,19 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-27] synthesis | 投资日报 — 美股/港股/A股/中概/新能源与AI热点 (2026-06-27)
+- New page: wiki/synthesis/2026-06-27/investment-daily.md
+- Coverage: 美股(Mag 7, 半导体/AI), 中概ADR(周五反弹, NTES+7.74%领涨, PDD+4.43%), 港股科技(智谱/MiniMax -8~11%大幅回调), A股(创业板-4.07%, 存储芯片+7.10%周涨幅逆势走强), 新能源/机器人, AI热点主题(SK Hynix $29B ADR获批, RAMageddon存储涨价全面传导, OpenAI IPO推迟至2027)
+- Key events: SK Hynix 纳斯达克上市获批(7/10, $29B募资), Apple/Mac/iPad全线涨价~20%, Microsoft/Xbox涨价$150, 功率半导体密集涨价(立昂微/扬杰科技7月涨10-15%), 宇树机器人R1降至2.99万元(-58%), 恒生科技盘中跌超3%
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-06-27] synthesis | arXiv AI Research Scan — June 2026
+- New page: wiki/synthesis/2026-06-27/arxiv-ai-search.md
+- Coverage: 36 papers across 6 domains (LLMs & Foundation Models, LLM Inference Efficiency, Sequence Modeling & Architecture, CTR Prediction, Recommendation, Games & RL)
+- Top papers: Ling & Ring 2.6 (Ant Group 1T hybrid attention), SparDA (Forecast-based sparse attention), DeRes (dual-path residual, 2× compute savings for CTR), Keyless Attention (50% KV cache reduction), Odysseus (100+ turn VLM game-play), MARL-GPT (multi-task MARL foundation model), LLMZero (auto RL strategy discovery)
+- Key themes: Hybrid SSM+Attention mainstream, KV cache reduction via architectural innovation, CTR scaling laws maturing, VLM+RL convergence for games, generative CTR/rec at scale
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-26] synthesis | WQ101 Alpha Daily — 美股 Top 20 (2026-06-26)
 - New page: wiki/synthesis/2026-06-26/wq101-alpha-daily.md
 - Market context: S&P 500 7,357 (-0.01%), MU blowout Q3 ($41.46B, +346% YoY), Core PCE 4.1% (3Y high), CAT +76% YTD, sector rotation semi→industrial/energy/healthcare

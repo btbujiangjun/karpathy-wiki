@@ -329,6 +329,7 @@ Papers are organized by research category. Each page includes problem background
 | File | Topic | Sources |
 |------|-------|---------|
 | [arxiv-paper-check](synthesis/2026-06-26/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 26, 2026) | 20 papers across AI/LLM/CTR/Rec (TokenMinds, Graph-GRPO, GenRec, GenCI, Autodata, etc.) |
+| [investment-daily](synthesis/2026-06-27/investment-daily.md) | 投资日报 — 2026-06-27（美股/港股/A股/中概/新能源科技与AI热点） | web-search |
 | [investment-daily](synthesis/2026-06-26/investment-daily.md) | 投资日报 — 2026-06-26（美股/港股/A股/中概/新能源科技与AI热点） | web-search |
 | [tech-report-digest](synthesis/2026-06-26/tech-report-digest.md) | 各大 AI 公司最新技术报告汇总 (第十二版) — 2026-06-26 (21 家机构, DeepSeek V4/V3.2, GPT-5.5/5.4, Llama 4, Gemini 3.1/2.5, Claude Opus 4.8/Fable 5/Mythos 5, Mistral Large 3, Qwen3/3.5-Omni, Phi-4, Apple AFM, Nemotron 3 Ultra, Grok 4/4.1, Amazon Nova, GLM-5, Intern-S1-Pro, Kimi K2/K2.5, Step-3/3.5 Flash, Seed1.8/1.5-VL, Yi-Lightning, Baichuan-M3 等 40+ 报告) | web-search |
 | [conference-digest](synthesis/2026-06-25/conference-digest.md) | Conference & arXiv Digest — Top ML/AI Venues Roundup (ICML 2026, ICLR 2026, NeurIPS 2025, AAAI 2026, KDD 2026, CVPR 2026, ACL 2026, EMNLP 2025, WWW 2026, SIGIR 2026, RecSys 2025) | — |
@@ -347,6 +348,7 @@ Papers are organized by research category. Each page includes problem background
 | [conference-digest](synthesis/2026-06-26/conference-digest.md) | 2026 Conference & arXiv Digest — Top ML/AI Venues Comprehensive Roundup (ICML 2026, NeurIPS 2025, ICLR 2026, AAAI 2026, CVPR 2026, KDD 2026, ACL 2026, EMNLP 2025, WWW 2026, SIGIR 2025, CIKM 2025, RecSys 2025) | 100+ papers, 12+ conferences, 12+ labs |
 | [arxiv-ai-search](synthesis/2026-06-26/arxiv-ai-search.md) | arXiv AI Research Scan — June 26, 2026 (LLMs, RecSys, CTR/Ad, Sequential, Games/RL, Time-Series) | 36 papers across 7 categories (LLMs, RecSys, Sequential/Session, Advertising/CTR/Attribution, CTR Prediction, Games/RL, Time-Series/IR) |
 | [game-rl-daily](synthesis/2026-06-26/game-rl-daily.md) | Game RL & Game AI Bot — Daily Paper Digest (NitroGen CVPR 2026 Oral, Game-TARS, Lumine, GROW, SPIRAL, PCGRLLM, MARL survey) | ~30 papers across 8 categories (Game RL, LLM Game Agents, Foundation Models, PCG, Benchmarks, Self-Play, Related Techniques, Industry)
+| [arxiv-ai-search](synthesis/2026-06-27/arxiv-ai-search.md) | arXiv AI Research Scan — June 2026 (LLMs, CTR, RecSys, Games, RL, Sequential, Attention) | 36 papers across 6 categories |
 | [arxiv-ai-search](synthesis/2026-06-25/arxiv-ai-search.md) | arXiv AI Research Search — June 2026 (LLM Alignment, MLLM Bias, CTR, Generative Rec, Game RL, World Models) | 11 papers from across AI/LLM/CTR/Rec/Games |
 | [arxiv-paper-check](synthesis/2026-06-22/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 22, 2026) | 15 papers (ITNet, Token Factory, G2Rec, DIF, ELVA, Beyond Entropy, etc.) |
 | [arxiv-paper-check](synthesis/2026-06-23/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 23, 2026) | 10 papers (VIMPO, Beyond Entropy, Connect the Dots, MATM, UltraQuant, Token Factory, OneRank, DIF, ELVA, TPOUR) |
