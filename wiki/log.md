@@ -52,6 +52,14 @@
 - Key trends: MoE 全面主流化, 1M+ context 旗舰标配, RLVR 推理训练普及, Hybrid Mamba-Transformer 新兴, Muon/MuonClip 优化器挑战 AdamW, 原生多模态 MoE 成为标准
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-06-27] synthesis | arXiv Paper Check — AI & CTR (2026-06-27)
+- New page: wiki/synthesis/2026-06-27/arxiv-paper-check.md
+- Coverage: 12 AI/LLM papers + 8 CTR/IR/RecSys papers from Friday June 26 submissions
+- AI highlights: Refusal-Persona gating (2606.26161), Sycophancy detection (2606.26155), Verification Horizon (2606.26300), Instruction Bleed (2606.26356), Red Queen Gödel Machine (2606.26294), auto-psych (2606.26460)
+- CTR highlights: UniFormer scaling (2606.27058, Kuaishou), NOVA agent harness (2606.27243), AgentX (2606.26859), TRUST temporal calibration (2606.27214), TikTok attribution (2606.26690)
+- Key themes: Agent-driven RS iteration, mechanistic interpretability for safety, verification bottleneck, co-evolution, GPU-native retrieval acceleration
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-26] synthesis | Conference & arXiv Digest — Comprehensive Roundup
 - New page: wiki/synthesis/2026-06-26/conference-digest.md
 - Comprehensive roundup of 12+ ML/AI conferences: ICML 2026, NeurIPS 2025, ICLR 2026, AAAI 2026, CVPR 2026, KDD 2026, ACL 2026, EMNLP 2025, WWW 2026, SIGIR 2025, CIKM 2025, RecSys 2025

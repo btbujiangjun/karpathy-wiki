@@ -473,6 +473,7 @@ Papers are organized by research category. Each page includes problem background
 | [arxiv-paper-check](synthesis/2026-06-19/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 19, 2026) | 15 papers (G2Rec, Token Factory, ITNet, ELVA, DIF, VCG, Beyond Entropy, etc.) |
 | [arxiv-paper-check](synthesis/2026-06-20/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 20, 2026) | 15 papers across AI/LLM + CTR/IR/RecSys (ITNet, Token Factory, G2Rec, ELVA, DIF, VCG, Beyond Entropy, etc.) |
 | [arxiv-paper-check](synthesis/2026-06-18/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 18, 2026) | 15 papers (LoopWM, FPRM, FoMoE, Diffusion-Proof, CAHP, ESM, JourneyFormer, Querit-Reranker, etc.) |
+| [arxiv-paper-check](synthesis/2026-06-27/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 27, 2026) | 12 AI + 8 CTR/IR/RecSys papers (Refusal-Persona, Sycophancy, Verification Horizon, NOVA, AgentX, UniFormer) |
 | [game-rl-daily](synthesis/2026-06-12/game-rl-daily.md) | Game RL & Game AI Bot — Daily Synthesis (2026-06-12) | 61 papers |
 | [game-rl-daily](synthesis/2026-06-13/game-rl-daily.md) | Game RL & Game AI Bot — Daily Synthesis (2026-06-13) | 58 papers |
 | [game-rl-daily](synthesis/2026-06-15/game-rl-daily.md) | Game RL & Game AI Bot — Daily Survey (2026-06-15) | 29 papers |
