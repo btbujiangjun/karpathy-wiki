@@ -25,6 +25,12 @@
 - Key themes: Hybrid SSM+Attention mainstream, KV cache reduction via architectural innovation, CTR scaling laws maturing, VLM+RL convergence for games, generative CTR/rec at scale
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-06-27] synthesis | LLM Tech Report Digest — 2026-06-27
+- New page: wiki/synthesis/2026-06-27/tech-report-digest.md
+- Coverage: 19 AI labs — DeepSeek (V4/V3/R1), OpenAI (GPT-5), Meta (Llama 4), Google (Gemini 3 Pro), Anthropic (Claude Opus 4/Sonnet 4), Mistral (Large 3/Small 4/Medium 3.5), Qwen (Qwen3), xAI (Grok 4.20), Microsoft (Phi-4-RV-15B), NVIDIA (Nemotron 3 Ultra), Apple (AFM), Amazon (Nova), ByteDance (Doubao-Seed-2.0), Zhipu (GLM-5), Moonshot (Kimi K2/K2.5), StepFun (Step 3), Baichuan (M1/M2/M3), InternLM, 01.AI (Yi)
+- Key themes: MoE dominance, context scaling to 1M-10M, reasoning models becoming standard, sparse attention innovations, open-weight race, domain specialization (medical/coding), multi-token prediction, RL innovation (GRPO/RLVR/async)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-26] synthesis | WQ101 Alpha Daily — 美股 Top 20 (2026-06-26)
 - New page: wiki/synthesis/2026-06-26/wq101-alpha-daily.md
 - Market context: S&P 500 7,357 (-0.01%), MU blowout Q3 ($41.46B, +346% YoY), Core PCE 4.1% (3Y high), CAT +76% YTD, sector rotation semi→industrial/energy/healthcare
