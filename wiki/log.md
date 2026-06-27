@@ -10,6 +10,14 @@
 - Key events: SK Hynix 纳斯达克上市获批(7/10, $29B募资), Apple/Mac/iPad全线涨价~20%, Microsoft/Xbox涨价$150, 功率半导体密集涨价(立昂微/扬杰科技7月涨10-15%), 宇树机器人R1降至2.99万元(-58%), 恒生科技盘中跌超3%
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-06-27] synthesis | WQ101 Alpha Daily — 美股 Top 20 (2026-06-27)
+- New page: wiki/synthesis/2026-06-27/wq101-alpha-daily.md
+- Market context: S&P 500 7,354 (-0.05%), -3.5% off ATH, Nasdaq -5.7% from peak, sector rotation tech→industrial/energy/healthcare/financials, VIX ~19, Fed hawkish signals, Warsh 10月加息概率上升
+- Key picks: MU (10/10, Alpha#1/#30), MRVL (9.5/10, Alpha#1/#6), AMAT (9.5/10, Alpha#30/#41), SNDK (9.5/10, Alpha#1/#30)
+- Top factors: Alpha#19 (mean-reversion, 9 stocks), Alpha#1 (momentum, 8 stocks), Alpha#41 (trend strength, 8 stocks), Alpha#53 (reversal, 6 stocks)
+- Key theme: Great Rotation 2.0 — 半导体AI强者恒强 vs 防御/价值板块均值回复; Mega-Cap超卖机会积累
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-27] synthesis | arXiv AI Research Scan — June 2026
 - New page: wiki/synthesis/2026-06-27/arxiv-ai-search.md
 - Coverage: 36 papers across 6 domains (LLMs & Foundation Models, LLM Inference Efficiency, Sequence Modeling & Architecture, CTR Prediction, Recommendation, Games & RL)
