@@ -25,6 +25,13 @@
 - Key themes: Hybrid SSM+Attention mainstream, KV cache reduction via architectural innovation, CTR scaling laws maturing, VLM+RL convergence for games, generative CTR/rec at scale
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-06-29] synthesis | arXiv Paper Check — AI & CTR (June 29, 2026)
+- New page: wiki/synthesis/2026-06-29/arxiv-paper-check.md
+- Coverage: 15 selected papers from cs.AI / cs.IR / cs.LG (submitted June 25-26, 2026)
+- Top picks: CARVE (new recurrent architecture beating GDN-2), AgentX (agent-driven RecSys iteration at Kuaishou), NOVA (verification-aware architecture evolution), UniFormer (unified model-centric scaling), L2A (resource-adaptive LLM inference), R2LM (bifocal diffusion LMs), Google PAT (automated paper review), IntuRec (intuition-guided latent reasoning for RecSys), TRUST (item-calibrated temporal signals), co-failure ceiling for multi-model ensembles
+- Key themes: Agent-driven RecSys iteration production-ready, LLM reasoning+RecSys convergence, resource-adaptive inference, ensemble limits quantified, interpretability advances
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-27] synthesis | LLM Tech Report Digest — 2026-06-27
 - New page: wiki/synthesis/2026-06-27/tech-report-digest.md
 - Coverage: 19 AI labs — DeepSeek (V4/V3/R1), OpenAI (GPT-5), Meta (Llama 4), Google (Gemini 3 Pro), Anthropic (Claude Opus 4/Sonnet 4), Mistral (Large 3/Small 4/Medium 3.5), Qwen (Qwen3), xAI (Grok 4.20), Microsoft (Phi-4-RV-15B), NVIDIA (Nemotron 3 Ultra), Apple (AFM), Amazon (Nova), ByteDance (Doubao-Seed-2.0), Zhipu (GLM-5), Moonshot (Kimi K2/K2.5), StepFun (Step 3), Baichuan (M1/M2/M3), InternLM, 01.AI (Yi)
