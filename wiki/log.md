@@ -1729,6 +1729,12 @@
 - Key themes: Generative recommendation meets video generation, SID-based user modeling at scale, zero-shot retrieval with classifier synthesis, preference optimization collapse in LLM-based rec, offline reasoning weight-space geometry, GraphRAG vs Agentic RAG tradeoffs, extreme quantization for embeddings, streaming KV-cache eviction
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
 
+## [2026-06-29] synthesis | Investment Daily — 2026-06-29
+- New page: wiki/synthesis/2026-06-29/investment-daily.md
+- Coverage: 美股(Mag 7 周跌$416B+, NVDA/AVGO/MU/AAPL/META), 港股(腾讯/阿里/小米/中芯), A股(AI算力/光模块/机器人), 中概ADR(PDD/BABA/JD), 新能源(TSLA/BYD/CATL/固态电池), AI主题(Scaling Law转缓/推理时代来临/Mag 7 capex焦虑)
+- Key events: S&P 500 -1.95% wk, Nasdaq -4.6% wk, Micron Q3 EPS $19.72(+932% YoY), SK Hynix $29B ADR获批(7/10上市), 美光/三星/铠侠减产救市, US-Iran ceasefire talks
+- Updated: wiki/index.md (Synthesis section), wiki/log.md
+
 ## [2026-06-26] search | arXiv AI Research Scan
 - New page: wiki/synthesis/2026-06-26/arxiv-ai-search.md
 - Coverage: cs.LG (162 entries Jun 26), cs.CL (95 entries Jun 26), cs.IR (22 entries Jun 26 + 20 Jun 25 + 17 Jun 24), plus targeted web searches for games/RL and CTR

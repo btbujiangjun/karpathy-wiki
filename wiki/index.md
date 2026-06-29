@@ -330,6 +330,7 @@ Papers are organized by research category. Each page includes problem background
 |------|-------|---------|
 | [arxiv-paper-check](synthesis/2026-06-26/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 26, 2026) | 20 papers across AI/LLM/CTR/Rec (TokenMinds, Graph-GRPO, GenRec, GenCI, Autodata, etc.) |
 | [arxiv-paper-check](synthesis/2026-06-29/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 29, 2026) | 15 papers (CARVE, AgentX, NOVA, UniFormer, L2A, R2LM, PAT, IntuRec, etc.) |
+| [investment-daily](synthesis/2026-06-29/investment-daily.md) | Investment Daily — 2026-06-29（美股/港股/A股/中概/新能源与AI热点） | web-search |
 | [investment-daily](synthesis/2026-06-27/investment-daily.md) | 投资日报 — 2026-06-27（美股/港股/A股/中概/新能源科技与AI热点） | web-search |
 | [tech-report-digest](synthesis/2026-06-29/tech-report-digest.md) | 各大 AI 公司最新大模型技术报告摘要 (LLM Tech Report Digest) — 2026-06-29 (DeepSeek V3/R1, Llama 4, Qwen3/Qwen3-VL/Qwen3-Omni, Phi-4/Phi-4-Mini/Phi-4-reasoning/Phi-4-reasoning-vision, Amazon Nova, MiniMax-M1, EXAONE Deep 等 14 份经 arXiv 验证的技术报告) | arxiv |
 | [tech-report-digest](synthesis/2026-06-27/tech-report-digest.md) | LLM 最新技术报告汇总 — 2026-06-27（18+ 家机构: DeepSeek V4/V3/R1, GPT-5, Llama 4, Gemini 3 Pro, Claude Opus 4, Mistral Large 3/Small 4, Qwen3, Grok 4.20, Phi-4-RV, Nemotron 3 Ultra, Apple AFM, Amazon Nova, Doubao-Seed-2.0, GLM-5, Kimi K2/K2.5, Step 3, Baichuan M1/M2/M3, InternLM, Yi） | web-search |
