@@ -1753,5 +1753,13 @@
   - Game Benchmarks (8): GameVerse, HLSMAC, MineExplorer, MineNPC-Task, PillagerBench, AgentOdyssey, ODYSSEY, OpenHA
   - Industry Game AI (4): PUBG Ally (KRAFTON/NVIDIA), Augmenting Game AI with DRL, OpenGame, SLM Game Content
   - Related Techniques (14): SPA, SeRL, ProPlay, SPEAR, π-Play, WorldLLM, SIPP, CuES, ZSG Offline RL, GEMS, MixExpert, LAMIR, Matrix-Game 3.0, Generative Code Opt
-- Key themes: VLM+RL convergence, generalist game agents, on-device industry deployment, self-play for reasoning improvement, real-time world models, MARL foundation models, multi-modal PCG
+- Key themes: VLM+RL convergence, generalist game agents, on-device industry deployment, self-play for reasoning improvement,实时 world models, MARL foundation models, multi-modal PCG
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-06-29] synthesis | WQ101 Alpha Daily — 美股 Top 20 (2026-06-29)
+- New page: wiki/synthesis/2026-06-29/wq101-alpha-daily.md
+- Market context: S&P 500 7,354 (-0.05%), Nasdaq -4.6% weekly (tech selloff), Dow +0.6% weekly, WTI crude <$70 (Iran ceasefire progress), PCE 4%+ (3yr high), VIX 18.41, sector rotation tech→healthcare/financials/industrials/utilities
+- Top picks: MRNA (9.5/10, Alpha#1/#6, FDA adcomm unanimous flu vaccine), UNH (9/10, Alpha#1/#41, 52-week high), JNJ (8.5/10, Alpha#19/#53), LLY (8.5/10, Alpha#6/#41), ABBV (8.5/10, Alpha#19/#53)
+- Top factors: Alpha#41 (trend strength, 12 stocks), Alpha#1 (momentum, 11 stocks), Alpha#30 (volatility, 9 stocks), Alpha#6 (volume-price, 8 stocks)
+- Key theme: Rotation 2.0 — Healthcare as the new momentum leader, storage/semis pullback creating reversal entries, financials + industrials benefiting from value rotation
 - Updated: wiki/index.md, wiki/log.md

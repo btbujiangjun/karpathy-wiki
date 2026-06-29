@@ -341,6 +341,7 @@ Papers are organized by research category. Each page includes problem background
 | [conference-digest](synthesis/2026-06-25/conference-digest.md) | Conference & arXiv Digest — Top ML/AI Venues Roundup (ICML 2026, ICLR 2026, NeurIPS 2025, AAAI 2026, KDD 2026, CVPR 2026, ACL 2026, EMNLP 2025, WWW 2026, SIGIR 2026, RecSys 2025) | — |
 | [wq101-alpha-daily](synthesis/2026-06-25/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-25) | — |
 | [wq101-alpha-daily](synthesis/2026-06-26/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-26) | — |
+| [wq101-alpha-daily](synthesis/2026-06-29/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-29) | — |
 |------|-------|---------|
 | [conference-digest](synthesis/2026-06-20/conference-digest.md) | 顶会论文专题报告 — 2026年6月全面版（NeurIPS 2025 Best / ICLR 2026 Outstanding / ICML 2026 / AAAI 2026 / CVPR 2026 Best / EMNLP 2025 / KDD 2026 / RecSys 2025 / SIGIR 2026 / WWW 2026 / CIKM 2025 / ACL 2026） | arxiv |
 | [conference-digest](synthesis/2026-06-19/conference-digest.md) | Conference & arXiv Digest — 2026-06-19 (LLM 架构/推理/RLVR/Agent/CTR/生成模型, 12+ venues, 50+ papers, 12 labs) | arxiv |
