@@ -45,6 +45,13 @@
 - Key themes: Agent-driven RecSys iteration production-ready, LLM reasoning+RecSys convergence, resource-adaptive inference, ensemble limits quantified, interpretability advances
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-06-29] synthesis | LLM Tech Report Digest — 各大 AI 公司最新技术报告摘要
+- New page: wiki/synthesis/2026-06-29/tech-report-digest.md
+- Coverage: 14 份经 arXiv 验证的技术报告 — DeepSeek (V3/R1), Meta (Llama 4), Microsoft (Phi-4/Phi-4-Mini/Phi-4-reasoning/Phi-4-reasoning-vision), Qwen (Qwen3/Qwen3-VL/Qwen3-Omni), Amazon (Nova Family), MiniMax (M1), LG (EXAONE Deep)
+- Key themes: MoE 主流架构, 推理模型 (DeepSeek-R1, Phi-4-reasoning, MiniMax-M1), 混合注意力机制 (MiniMax-M1 Lightning Attention), 多模态统一 (Qwen3-Omni, Phi-4-Multimodal), 合成数据训练 (Phi-4), 数据质量优先
+- 核心创新: DeepSeek-R1 纯 RL 推理激励; MiniMax-M1 CISPO RL 算法; Qwen3 thinking/non-thinking 统一框架; Phi-4-reasoning SFT+outcome-based RL
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-27] synthesis | LLM Tech Report Digest — 2026-06-27
 - New page: wiki/synthesis/2026-06-27/tech-report-digest.md
 - Coverage: 19 AI labs — DeepSeek (V4/V3/R1), OpenAI (GPT-5), Meta (Llama 4), Google (Gemini 3 Pro), Anthropic (Claude Opus 4/Sonnet 4), Mistral (Large 3/Small 4/Medium 3.5), Qwen (Qwen3), xAI (Grok 4.20), Microsoft (Phi-4-RV-15B), NVIDIA (Nemotron 3 Ultra), Apple (AFM), Amazon (Nova), ByteDance (Doubao-Seed-2.0), Zhipu (GLM-5), Moonshot (Kimi K2/K2.5), StepFun (Step 3), Baichuan (M1/M2/M3), InternLM, 01.AI (Yi)
