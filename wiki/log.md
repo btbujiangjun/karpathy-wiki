@@ -25,6 +25,19 @@
 - Key themes: Hybrid SSM+Attention mainstream, KV cache reduction via architectural innovation, CTR scaling laws maturing, VLM+RL convergence for games, generative CTR/rec at scale
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-06-29] synthesis | Conference Digest — 顶会论文专题报告 2026年6月全面版
+- New page: wiki/synthesis/2026-06-29/conference-digest.md
+- Coverage: 12 venues (ICML 2026, AAAI 2026, NeurIPS 2025, ICLR 2026, CVPR 2026, KDD 2026, ACL 2026, EMNLP 2025, WWW 2026, SIGIR 2026, CIKM 2025, RecSys 2025), 100+ papers, 15+ labs
+- Architecture highlights: Mamba-3 (Princeton/CMU), Gated DeltaNet-2 (NVIDIA), GPT-5.6 Sol (OpenAI), TabICLv2 (INRIA/ICML), LimiX-2M (ICML)
+- CVPR 2026 Best: D4RT (Google DeepMind 4D reconstruction), O-Voxel (Microsoft/Tsinghua 3D generation)
+- ICLR 2026 Outstanding: Transformers Succinctness, Multi-Turn LLM Eval, Polar Express
+- CTR/Advertising: FAT (KDD, Alibaba +4.38% AUC), GRAB (Baidu +3.05% revenue), GR4AD (Kuaishou, +4.2% revenue deployed to 400M+ users), GenRec (JD, +9.5% clicks), OneLive/SARM/UniFormer (Kuaishou), SIF/UG-Sep (ByteDance), RankUp (Tencent, +3.41% GMV), SparseCTR (Meituan WWW), CTR-Sink (Ant KDD)
+- Agents: GrandCode (first AI to beat all humans in Codeforces), OpenGame (game coding), MonoScale, HarnessBridge, Lacuna, LLM-as-Code, DeepPlanner, ForeAgent
+- LLM Reasoning: Google DeepMind Efficient Exploration (10× RLHF data efficiency), Aletheia (solves open Erdős problems), ICL from Feedback, Interpreting via Constitutions
+- NeurIPS 2025: Gated Attention (Best), Infinity-Chat (Artificial Hivemind), LLMs as CO solvers (7B > Deepseek-R1)
+- Key themes: RLVR/GRPO dominant, CTR scaling laws mature, generative recommendation at scale, hybrid SSM-attention, agent systems explosion, self-play for reasoning
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-29] synthesis | arXiv Paper Check — AI & CTR (June 29, 2026)
 - New page: wiki/synthesis/2026-06-29/arxiv-paper-check.md
 - Coverage: 15 selected papers from cs.AI / cs.IR / cs.LG (submitted June 25-26, 2026)
