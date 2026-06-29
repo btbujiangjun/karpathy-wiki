@@ -328,6 +328,7 @@ Papers are organized by research category. Each page includes problem background
 
 | File | Topic | Sources |
 |------|-------|---------|
+| [game-rl-daily](synthesis/2026-06-29/game-rl-daily.md) | Game RL & Game AI Bot — Daily Paper Digest (NitroGen CVPR 2026, Game-TARS, SPIRAL, Odysseus, PUBG Ally, QZero, MARL-GPT, WorldGen, PokerSkill, Matrix-Game 3.0, etc.) | 60 papers across 7 categories (Game RL, Game AI Bot, Foundation Models, PCG, Benchmarks, Industry, Related Techniques) |
 | [arxiv-paper-check](synthesis/2026-06-26/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 26, 2026) | 20 papers across AI/LLM/CTR/Rec (TokenMinds, Graph-GRPO, GenRec, GenCI, Autodata, etc.) |
 | [arxiv-paper-check](synthesis/2026-06-29/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 29, 2026) | 15 papers (CARVE, AgentX, NOVA, UniFormer, L2A, R2LM, PAT, IntuRec, etc.) |
 | [investment-daily](synthesis/2026-06-29/investment-daily.md) | Investment Daily — 2026-06-29（美股/港股/A股/中概/新能源与AI热点） | web-search |

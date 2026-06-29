@@ -1742,3 +1742,16 @@
 - Top picks: RiVER (RL for LLMs w/o ground truth), GEOALIGN (geometric rollout curation for LLM RL, ICML 2026), Nemotron-TwoTower (NVIDIA diffusion LM, 2.42× throughput), NOVA (agent-driven rec arch evolution, Alibaba), AgentX (self-iterating multi-agent rec system, Kuaishou), TokenMinds (YouTube SID user tokens at billions-scale), Recommendation as Generation (Kuaishou, +1.87% ad revenue with generated video), CADET (LinkedIn, +11.04% CTR lift with decoder-only transformer), Superhuman AI for Generals.io (JAX-native self-play, #1 on leaderboard), Odysseus (VLM 100+ turn game decision-making via RL)
 - Key trends: LLM agents for rec system iteration, diffusion/non-AR LMs, RL for LLM alignment without ground truth, linear attention improvements, generative video recommendation, LLM-powered CTR/ads, game AI with self-play RL
 - Updated: wiki/index.md (Synthesis section), wiki/log.md
+
+## [2026-06-29] synthesis | Game RL & Game AI Bot — Daily Paper Digest
+- New page: wiki/synthesis/2026-06-29/game-rl-daily.md
+- Coverage: 60 papers across 7 categories
+  - Game RL (9): SPIRAL, OPR, QZero, Chess-R1, ROE, SEMA, CGRPA, LLM-GNCF, Stratagem
+  - Game AI Bot (7): AVA, Sensi, PokerSkill, ToolPoker, SpinGPT, ISO, CrossAgent
+  - Game Foundation Models (9): NitroGen (CVPR 2026), Game-TARS, P2P0.1, Odysseus, Scaling BC, Latent Bridge, MARL-GPT, Generalist Survey
+  - Procedural Content Generation (9): IPCGRL, VIPCGRL, DRL Level Design, WorldGen, Narrative-to-Scene, AI Gamestore, MultiGen, DB-driven PCG, CreativeGame
+  - Game Benchmarks (8): GameVerse, HLSMAC, MineExplorer, MineNPC-Task, PillagerBench, AgentOdyssey, ODYSSEY, OpenHA
+  - Industry Game AI (4): PUBG Ally (KRAFTON/NVIDIA), Augmenting Game AI with DRL, OpenGame, SLM Game Content
+  - Related Techniques (14): SPA, SeRL, ProPlay, SPEAR, π-Play, WorldLLM, SIPP, CuES, ZSG Offline RL, GEMS, MixExpert, LAMIR, Matrix-Game 3.0, Generative Code Opt
+- Key themes: VLM+RL convergence, generalist game agents, on-device industry deployment, self-play for reasoning improvement, real-time world models, MARL foundation models, multi-modal PCG
+- Updated: wiki/index.md, wiki/log.md
