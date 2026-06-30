@@ -1784,6 +1784,12 @@
 - Key theme: Rotation 2.0 — Healthcare as the new momentum leader, storage/semis pullback creating reversal entries, financials + industrials benefiting from value rotation
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-06-30] synthesis | LLM Tech Report Digest — 2026-06-30
+- New page: wiki/synthesis/2026-06-30/tech-report-digest.md
+- Coverage: 19家AI机构最新技术报告 (DeepSeek V4, GPT-5, Llama 4, Gemini 2.5, Claude Opus 4.8/Fable 5, Ministral 3/Mistral Medium 3.5, Qwen3/3.5-Omni, Yi-Lightning, Baichuan-M3, Phi-4 系列, Apple AFM, Nemotron 3 Ultra/Super/Nano, Grok 3/4, Amazon Nova/Premier/2, GLM-5, InternLM3, Kimi K2/K2.5, Step-2, Seed2.0)
+- Key themes: MoE主流化, 推理模型融合, Mamba-Attention Hybrid, 长上下文标配(1M+), Agentic优化, 数据质量>数量, 多模态原生, RL训练创新(Muon/MuonClip, 异步RL)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-30] synthesis | Conference Digest — 2026-06-30
 - New page: wiki/synthesis/2026-06-30/conference-digest.md
 - Coverage: 48 curated papers across 10 sections — ICML 2026 (GoodDiffusion Oral, CPE, Q-learning, CRG), KDD 2026, ECCV 2026 (VisReflect, ViDiHand, Shell-LCC, Nemotron), Kuaishou (POEM, AgentX, RaG), Meta (CMSL), NVIDIA Nemotron, RL (Dual-Flow, ACPO, Chronos, DreamForge-World), Benchmarks (EvalSafetyGap, SpreadsheetBench 2, SWE-Together)
