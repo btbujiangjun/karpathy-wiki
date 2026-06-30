@@ -1783,3 +1783,9 @@
 - Top factors: Alpha#41 (trend strength, 12 stocks), Alpha#1 (momentum, 11 stocks), Alpha#30 (volatility, 9 stocks), Alpha#6 (volume-price, 8 stocks)
 - Key theme: Rotation 2.0 — Healthcare as the new momentum leader, storage/semis pullback creating reversal entries, financials + industrials benefiting from value rotation
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-06-30] synthesis | Conference Digest — 2026-06-30
+- New page: wiki/synthesis/2026-06-30/conference-digest.md
+- Coverage: 48 curated papers across 10 sections — ICML 2026 (GoodDiffusion Oral, CPE, Q-learning, CRG), KDD 2026, ECCV 2026 (VisReflect, ViDiHand, Shell-LCC, Nemotron), Kuaishou (POEM, AgentX, RaG), Meta (CMSL), NVIDIA Nemotron, RL (Dual-Flow, ACPO, Chronos, DreamForge-World), Benchmarks (EvalSafetyGap, SpreadsheetBench 2, SWE-Together)
+- Key themes: Diffusion models for CTR (GoodDiffusion), agent-driven RecSys evolution (AgentX, NOVA), video generation for recommendation (RaG), benchmark safety evaluation maturity (EvalSafetyGap, SWE-Together)
+- Updated: wiki/index.md, wiki/log.md
