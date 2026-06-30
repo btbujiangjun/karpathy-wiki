@@ -1795,3 +1795,9 @@
 - Coverage: 48 curated papers across 10 sections — ICML 2026 (GoodDiffusion Oral, CPE, Q-learning, CRG), KDD 2026, ECCV 2026 (VisReflect, ViDiHand, Shell-LCC, Nemotron), Kuaishou (POEM, AgentX, RaG), Meta (CMSL), NVIDIA Nemotron, RL (Dual-Flow, ACPO, Chronos, DreamForge-World), Benchmarks (EvalSafetyGap, SpreadsheetBench 2, SWE-Together)
 - Key themes: Diffusion models for CTR (GoodDiffusion), agent-driven RecSys evolution (AgentX, NOVA), video generation for recommendation (RaG), benchmark safety evaluation maturity (EvalSafetyGap, SWE-Together)
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-06-30] synthesis | 投资日报 — 美股/港股/A股/中概/新能源与AI热点 (2026-06-30)
+- New page: wiki/synthesis/2026-06-30/investment-daily.md
+- Coverage: 美股(Dow 52,182 +0.59%, S&P 7,440 +1.18%, Nasdaq 25,820 +2.07%, Alphabet纳入道指+4%+), 港股(恒指22,671 -1.76%, 恒科4,255 -3.41% 深度回调), A股(沪指4,027 -2.26%, 创业板-4.07%), 中概ADR(网易+7.74%领涨, BABA $99.80), 新能源/EV(BYD 1-5月140.5万辆, TSLA Robotaxi奥斯汀上线), AI热点主题(最高法院裁定联储独立性违宪, 美伊多哈和谈, GPT-5.6发布, DeepSeek大规模招聘¥3400亿估值, Claude Fable 5出口管制, 算力租赁转向按Token计费, 存储涨价, AI Agent时代宣言)
+- Key events: Dow首次站上52,000; Nasdaq创6月最大单日涨幅+2.07%; Mag 7集体反弹但上周QQQ流出~$20B; 港股恒科YTD -22.82%逼近技术熊市; A股K-shape分化硬件抗跌/软件杀跌; 存储芯片周+7.1%逆势走强; HBM产能全年售罄; SK Hynix $29B ADR上市获批(7/10)
+- Updated: wiki/index.md, wiki/log.md
