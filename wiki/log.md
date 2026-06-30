@@ -18,6 +18,15 @@
 - Key themes: Resource-adaptive inference, RLHF tooling (PEBS, RAC), agent-driven RecSys iteration, diffusion LMs with KV caching, world models via fGRPO
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-06-30] synthesis | WQ101 Alpha Daily — 美股 Top 20 (2026-06-30)
+- New page: wiki/synthesis/2026-06-30/wq101-alpha-daily.md
+- Market context: S&P 500 7,408 (-1.24%), Q2 收官, 能源 YTD +31% 领跑, Nasdaq -5.1% 周跌, Brent $109, VIX 18.4, Fed 鹰派, Mag 7 六月蒸发 ~$2T
+- Key picks: XOM (9.5/10, Alpha#41/#6), CVX (9/10, Alpha#1/#41), COP (8.5/10, Alpha#1/#6), LNG (8.5/10, Alpha#41/#30)
+- Top factors: Alpha#1 (momentum, 11 stocks), Alpha#53 (reversal, 10 stocks), Alpha#19 (mean-reversion, 9 stocks)
+- 板块分布: 能源 4只, 半导体/AI 6只, 医疗 3只, 消费防御 2只, 工业 2只, 金融 1只, 大型科技 2只
+- 关键变化 vs 06-29: 能源板块从 1→4 只（油价 $109 驱动）, 新增 Mag 7 均值回复（MSFT/GOOGL/NVDA）, 医疗从 5→3 只
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-30] synthesis | arXiv Daily Scan — June 30, 2026
 - New page: wiki/synthesis/2026-06-30/arxiv-daily.md
 - Coverage: 45 papers across 5 categories (LLMs & Foundation Models, Reasoning & Inference, Sequence Modeling & Attention, CTR & Advertising Recommendation, Games & Reinforcement Learning)
