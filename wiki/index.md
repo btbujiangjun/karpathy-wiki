@@ -328,6 +328,9 @@ Papers are organized by research category. Each page includes problem background
 
 | File | Topic | Sources |
 |------|-------|---------|
+| [arxiv-daily](synthesis/2026-06-30/arxiv-daily.md) | arXiv Daily Scan — June 30, 2026 (LLMs, Reasoning, Attention Architecture, CTR, Advertising, Games, RL) | ~45 papers across 5 categories (LLMs, Reasoning & Inference, Sequence Modeling & Attention, CTR & Advertising, Games & RL) |
+| [arxiv-ai-search](synthesis/2026-06-30/arxiv-ai-search.md) | arXiv AI Research Roundup — June 30, 2026 (LLMs, RecSys, CTR, Sequential Modeling, Advertising, Games) | 29 papers across 6 categories (LLMs & Reasoning, RecSys, CTR & Advertising, Sequential Modeling, RL & World Models, Graph Learning) |
+| [arxiv-paper-check](synthesis/2026-06-30/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 30, 2026) | 16 papers (R2LM, L2A, COOPA, PEBS, RAC, Textual Belief States, KARLA, SelfCompact, Prism Transformer, CFRG, IntuRec, GLAN, NOVA, PermR, Journal Rec, Enron SAS) |
 | [game-rl-daily](synthesis/2026-06-29/game-rl-daily.md) | Game RL & Game AI Bot — Daily Paper Digest (NitroGen CVPR 2026, Game-TARS, SPIRAL, Odysseus, PUBG Ally, QZero, MARL-GPT, WorldGen, PokerSkill, Matrix-Game 3.0, etc.) | 60 papers across 7 categories (Game RL, Game AI Bot, Foundation Models, PCG, Benchmarks, Industry, Related Techniques) |
 | [arxiv-paper-check](synthesis/2026-06-26/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 26, 2026) | 20 papers across AI/LLM/CTR/Rec (TokenMinds, Graph-GRPO, GenRec, GenCI, Autodata, etc.) |
 | [arxiv-paper-check](synthesis/2026-06-29/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (June 29, 2026) | 15 papers (CARVE, AgentX, NOVA, UniFormer, L2A, R2LM, PAT, IntuRec, etc.) |

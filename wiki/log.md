@@ -4,6 +4,26 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-30] synthesis | arXiv AI Research Roundup — June 30, 2026
+- New page: wiki/synthesis/2026-06-30/arxiv-ai-search.md
+- Coverage: 29 papers across 6 categories (LLMs & Reasoning, RecSys, CTR & Advertising, Sequential Modeling, RL & World Models, Graph Learning)
+- Key themes: TACO (GRPO for tool agents), Speculative decoding theory, MCP server patterns, IID-Nav & POEM at Kuaishou, CMSL at Meta, DeGRe at Taobao KDD 2026, test-time compute scaling for CTR (UTTSI), AdaGRPO, DreamForge-World world models, model monotonicity in autobidding auctions
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-06-30] synthesis | arXiv Paper Check — AI & CTR (June 30, 2026)
+- New page: wiki/synthesis/2026-06-30/arxiv-paper-check.md
+- Coverage: 16 papers from cs.LG (232 total, 75 new) + cs.IR (17 total, 8 new) + cs.AI (277 total, 74 new) — weekend submissions consolidated into Mon Jun 29 listing
+- AI highlights: R2LM (bifocal diffusion LMs, 2.4×–12.9× throughput), L2A (resource-adaptive LLM inference, 34% sparsity at 0.6% loss), COOPA (OR agents), PEBS (per-rater RLHF calibration, 8.58% RMSE reduction), RAC (delayed-reward RLHF), Textual Belief States + fGRPO (world models), KARLA (KB-augmented generation), SelfCompact, Prism Transformer, CFRG (diffusion noise schedule)
+- CTR/Rec highlights: IntuRec (intuition-guided latent reasoning), GLAN (Kuaishou +0.158% DAU), NOVA (verification-aware RecSys evolution, 13× speedup), PermR (revenue reranking, +2% revenue/56M queries), Journal Rec (LLM semantic alignment)
+- Key themes: Resource-adaptive inference, RLHF tooling (PEBS, RAC), agent-driven RecSys iteration, diffusion LMs with KV caching, world models via fGRPO
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-06-30] synthesis | arXiv Daily Scan — June 30, 2026
+- New page: wiki/synthesis/2026-06-30/arxiv-daily.md
+- Coverage: 45 papers across 5 categories (LLMs & Foundation Models, Reasoning & Inference, Sequence Modeling & Attention, CTR & Advertising Recommendation, Games & Reinforcement Learning)
+- Key themes: Head-level attention hybridization (HydraHead), Polar attention (ATMA), MiniMax MSA production deployment, CTR gen-adv unification at Tencent/Baidu/Kuaishou, GraphPO DAG-structured RL, compositional generalization theory for SFT+RL, self-compacting agents
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-27] synthesis | 投资日报 — 美股/港股/A股/中概/新能源与AI热点 (2026-06-27)
 - New page: wiki/synthesis/2026-06-27/investment-daily.md
 - Coverage: 美股(Mag 7, 半导体/AI), 中概ADR(周五反弹, NTES+7.74%领涨, PDD+4.43%), 港股科技(智谱/MiniMax -8~11%大幅回调), A股(创业板-4.07%, 存储芯片+7.10%周涨幅逆势走强), 新能源/机器人, AI热点主题(SK Hynix $29B ADR获批, RAMageddon存储涨价全面传导, OpenAI IPO推迟至2027)
