@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-01] synthesis | Game RL & Game AI Bot — Daily Survey
+- New page: wiki/synthesis/2026-07-01/game-rl-daily.md
+- Coverage: ~80 papers across 7 categories (Game RL, Game AI Bot, Foundation Models, PCG, Benchmarks, Industry, Related Techniques)
+- Key papers: Stratagem (self-play reasoning transfer), OPR (Atari SOTA 10M), SPIRAL (self-play reasoning), MARL-GPT (multi-task MARL foundation model), SOL (scalable hierarchical NetHack), NitroGen (CVPR 2026 NVIDIA), Game-TARS (ByteDance), Odysseus (VLM+RL 100+ turns), AVA (ACL 2026 StarCraft II), OpenGame (GameCoder-27B), GameWorld (state-verifiable benchmark), OmniGameArena (UE5 benchmark), GameDevBench, AstraGame (Tencent FSE 2026), PUBG Ally (KRAFTON), Matrix-Game 3.0 (40FPS 720p world model)
+- Updated: wiki/index.md
+
 ## [2026-07-01] synthesis | AI Tech Report Digest — 全面更新 (22 家机构)
 - New page: wiki/synthesis/2026-07-01/tech-report-digest.md
 - Coverage: 22 orgs, 40+ reports. DeepSeek (V4/V3.2/R1/V3), OpenAI (GPT-5/o3), Meta (Llama4), Google (Gemini 2.5), Anthropic (Claude 4/5 series), Mistral (Magistral/Large3/Ministral3), Qwen3, Yi-Lightning, Baichuan4-Finance, Microsoft (Phi-4/reasoning/vision), Apple (AFM 2025), NVIDIA (Nemotron 3), xAI (Grok 3), Amazon (Nova/Premier/2), Zhipu (GLM-5), InternLM (InternLM3/Intern-S1), Moonshot (Kimi K2/K1.5/K2.5), ByteDance (Seed 2.0/Thinking-v1.5), StepFun (Step 3.5 Flash/Step3-VL-10B)
