@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-01] synthesis | AI Tech Report Digest — 全面更新 (22 家机构)
+- New page: wiki/synthesis/2026-07-01/tech-report-digest.md
+- Coverage: 22 orgs, 40+ reports. DeepSeek (V4/V3.2/R1/V3), OpenAI (GPT-5/o3), Meta (Llama4), Google (Gemini 2.5), Anthropic (Claude 4/5 series), Mistral (Magistral/Large3/Ministral3), Qwen3, Yi-Lightning, Baichuan4-Finance, Microsoft (Phi-4/reasoning/vision), Apple (AFM 2025), NVIDIA (Nemotron 3), xAI (Grok 3), Amazon (Nova/Premier/2), Zhipu (GLM-5), InternLM (InternLM3/Intern-S1), Moonshot (Kimi K2/K1.5/K2.5), ByteDance (Seed 2.0/Thinking-v1.5), StepFun (Step 3.5 Flash/Step3-VL-10B)
+- Key themes: MoE 成为主流架构、混合 Mamba-Attention (NVIDIA)、纯 RL 推理 (DeepSeek-R1/Magistral)、混合推理模式 (Qwen3/GPT-5/Claude 4)、长上下文 10M (Llama 4 Scout)、RL Scaling Law、数据效率 Scaling
+- Updated: wiki/index.md
+
 ## [2026-07-01] synthesis | AI/ML Conference Digest — July 2026
 - New page: wiki/synthesis/2026-07-01/conference-digest.md
 - Coverage: Comprehensive digest of 10+ conferences (ICML 2026, AAAI 2026, NeurIPS 2025, ICLR 2026, CVPR 2026, KDD 2026, ACL 2026, EMNLP 2025, WWW 2026, RecSys 2025), frontier models from OpenAI/Google/Anthropic/Meta/Apple, CTR/RecSys from ByteDance/Alibaba/Tencent/Kuaishou, AI agents, CV, NLP, RL, scaling laws, safety, benchmarks
