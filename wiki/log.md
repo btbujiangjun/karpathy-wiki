@@ -1843,3 +1843,9 @@
 - Coverage: 美股(Dow 52,182 +0.59%, S&P 7,440 +1.18%, Nasdaq 25,820 +2.07%, Alphabet纳入道指+4%+), 港股(恒指22,671 -1.76%, 恒科4,255 -3.41% 深度回调), A股(沪指4,027 -2.26%, 创业板-4.07%), 中概ADR(网易+7.74%领涨, BABA $99.80), 新能源/EV(BYD 1-5月140.5万辆, TSLA Robotaxi奥斯汀上线), AI热点主题(最高法院裁定联储独立性违宪, 美伊多哈和谈, GPT-5.6发布, DeepSeek大规模招聘¥3400亿估值, Claude Fable 5出口管制, 算力租赁转向按Token计费, 存储涨价, AI Agent时代宣言)
 - Key events: Dow首次站上52,000; Nasdaq创6月最大单日涨幅+2.07%; Mag 7集体反弹但上周QQQ流出~$20B; 港股恒科YTD -22.82%逼近技术熊市; A股K-shape分化硬件抗跌/软件杀跌; 存储芯片周+7.1%逆势走强; HBM产能全年售罄; SK Hynix $29B ADR上市获批(7/10)
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-01] synthesis | 投资日报 — 美股/港股/A股/中概/新能源与AI热点 (2026-07-01)
+- New page: wiki/synthesis/2026-07-01/investment-daily.md
+- Coverage: 美股(Mag 7 六月蒸发~$2T, NVDA Firmus $30B 订单, S&P 接近历史新高), 港股(恒科回调, 智谱/MiniMax纳入恒生科技), A股(寒武纪+8.2%, 中际旭创+10.2%, 存储芯片板块+20% Q2), 中概ADR(BABA $95.98, 整体缺乏催化剂), 新能源/EV(BYD 1-5月140.5万辆+28%, 小米SU7目标上修至15万台), AI热点主题(GPT-5 Q3发布预期, DeepSeek V4 MoE推理成本再降, COMPUTEX Rubin架构预览, Figure AI $1.5B融资, AI Agent落地)
+- Key themes: Mag 7 六月同步杀估值(AI Capex回报率质疑), 国产算力替代逻辑强化, 电动汽车出海高速增长, AI Agent/智能体进入GA阶段
+- Updated: wiki/index.md, wiki/log.md
