@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-01] synthesis | AI/ML Conference Digest — July 2026
+- New page: wiki/synthesis/2026-07-01/conference-digest.md
+- Coverage: Comprehensive digest of 10+ conferences (ICML 2026, AAAI 2026, NeurIPS 2025, ICLR 2026, CVPR 2026, KDD 2026, ACL 2026, EMNLP 2025, WWW 2026, RecSys 2025), frontier models from OpenAI/Google/Anthropic/Meta/Apple, CTR/RecSys from ByteDance/Alibaba/Tencent/Kuaishou, AI agents, CV, NLP, RL, scaling laws, safety, benchmarks
+- Key themes: Conference review systems under unprecedented strain (ICML 23,918 submissions, AAAI 23,680), agent ecosystem protocols maturing (A2A, MCP, ACP), CTR scaling as established research area, safety as production infrastructure, Chinese AI ecosystem (ByteDance/TikTok, Alibaba, Tencent, Kuaishou) at forefront of RecSys research
+- Updated: wiki/index.md
+
 ## [2026-07-01] synthesis | arXiv Paper Check — AI & CTR (July 1, 2026)
 - New page: wiki/synthesis/2026-07-01/arxiv-paper-check.md
 - Coverage: 12 curated papers from latest cs.AI (277 total, 74 new), cs.IR (28 total, 11 new), cs.LG (249 total, 95 new) — latest available submissions through Jun 26, plus late-breaking Jun 30 paper (Agents-A1)
