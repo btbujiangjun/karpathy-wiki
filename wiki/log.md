@@ -4,6 +4,27 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-01] synthesis | arXiv Paper Check — AI & CTR (July 1, 2026)
+- New page: wiki/synthesis/2026-07-01/arxiv-paper-check.md
+- Coverage: 12 curated papers from latest cs.AI (277 total, 74 new), cs.IR (28 total, 11 new), cs.LG (249 total, 95 new) — latest available submissions through Jun 26, plus late-breaking Jun 30 paper (Agents-A1)
+- AI highlights: Agents-A1 (35B MoE matching 1T models via agent-horizon scaling, 2606.30616), AgentX (Kuaishou agent-driven RecSys iteration, 3.7× business value, 2606.26859), KARLA (KB-augmented LLM generation, 2606.26807), OPSD diversity cost (2606.26091), Tmax (9B terminal agent SOTA, 2606.23321), Reasoning Quality Emerges Early (91% token efficient, 2606.26797), Red Queen Gödel Machine (co-evolving evaluators, 2606.26294), Abstract Representational Geometry (hippocampal-like LLM representations, 2606.23345)
+- CTR/Rec highlights: DeRes (dual-path residual, 2× compute savings for CTR, 2606.07980), AgentX (also CTR pick)
+- Key themes: Agent-horizon scaling, self-evolving agent systems, hidden diversity costs of self-distillation, LLM–neuroscience convergence, CTR residual bottleneck, CoT safety erosion
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-01] synthesis | arXiv AI Search — July 2026
+- New page: wiki/synthesis/2026-07-01/arxiv-ai-search.md
+- Coverage: 70+ papers across 6 categories (Recommender Systems & LLMs for Rec, CTR & Advertising, LLM Alignment & RL, AI Agents & Games, Efficient Architectures & Attention, Multimodal Learning)
+- Key papers: AgentX (Kuaishou), LLaTTE (Meta), CADET (LinkedIn), GRAB (Baidu), EST (Taobao), f-GRPO, DAR, GAC, MemoPilot, Strat-Reasoner, Odysseus, Gecko, SFA/FlashSFA, MiniMax MSA, Nexusformer, Lance, UniAR, Hydra-X, GenLIP, Penguin-VL
+- Key themes: Scaling laws for recommendation and CTR, generative LLM-based Rec, RL alignment innovation (f-GRPO, DAR, GAC), VLM game agents, feature-level and multi-step sparse attention, unified multimodal models, agentic training frameworks
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-01] synthesis | arXiv Daily — July 1, 2026
+- New page: wiki/synthesis/2026-07-01/arxiv-daily.md
+- Coverage: 20 papers across 5 categories (LLM Agents & RL, CTR Prediction, Advertising Recommendation, Emerging AI Methods)
+- Highlights: Odysseus (VLM RL 100+ turns), AMC (SMC for black-box agents, ICML 2026), SPPO (seq-level PPO, ACL 2026), GR4AD (Kuaishou generative ad rec, +4.2% revenue), GRAB (Baidu LLM-style CTR, +3.49% CTR), DS-MLP (TKDD), GenCI (WWW 2026), IDProxy (Xiaohongshu cold-start), RankUp (Tencent +4.81% GMV), OneRanker (Tencent), GraphPO, T-STAR, SeeUPO, CELEUS, MEMPROBE
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-06-30] synthesis | arXiv AI Research Roundup — June 30, 2026
 - New page: wiki/synthesis/2026-06-30/arxiv-ai-search.md
 - Coverage: 29 papers across 6 categories (LLMs & Reasoning, RecSys, CTR & Advertising, Sequential Modeling, RL & World Models, Graph Learning)
