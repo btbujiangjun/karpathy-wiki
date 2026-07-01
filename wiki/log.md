@@ -4,6 +4,15 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-01] synthesis | WQ101 Alpha Daily — 美股 Top 20 (2026-07-01)
+- New page: wiki/synthesis/2026-07-01/wq101-alpha-daily.md
+- Market context: S&P 500 ~7,491, Q2 6年最佳季度(+14%), 7月开局回调, 能源 YTD +31%领跑, 科技 XLK -2.9%, VIX ~16.6, WTI ~$69, Fed维持利率3.75%, 通胀4.2%
+- Core theme: AI Infrastructure Buildout (MU/MRVL/CRDO/BE/VRT), Memory Supercycle (SNDK/MU), Energy Rally (XOM/OXY/COP/CVX), Tech Rotation → Industrial/Energy
+- Top picks: MU (9/10, Alpha#1/#41), MRVL (9/10, Alpha#1/#6), SNDK (9/10, Alpha#1/#12), CRDO (9/10, Alpha#30/#1)
+- 板块分布: 半导体8只, 能源4只, 工业4只, 技术/硬件2只, 医疗1只, 清洁能源1只
+- 关键变化 vs 06-30: 板块大幅转向半导体动量(从6→8只), 能源维持4只, 新增清洁能源(BE), 减少防御性医疗/消费
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-01] synthesis | Game RL & Game AI Bot — Daily Survey
 - New page: wiki/synthesis/2026-07-01/game-rl-daily.md
 - Coverage: ~80 papers across 7 categories (Game RL, Game AI Bot, Foundation Models, PCG, Benchmarks, Industry, Related Techniques)

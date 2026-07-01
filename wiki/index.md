@@ -343,6 +343,7 @@ Papers are organized by research category. Each page includes problem background
 | [investment-daily](synthesis/2026-06-29/investment-daily.md) | Investment Daily — 2026-06-29（美股/港股/A股/中概/新能源与AI热点） | web-search |
 | [investment-daily](synthesis/2026-06-30/investment-daily.md) | 投资日报 — 2026-06-30（美股/港股/A股/中概/新能源与AI热点） | web-search |
 | [investment-daily](synthesis/2026-07-01/investment-daily.md) | 投资日报 — 2026-07-01（美股/港股/A股/中概/新能源与AI热点） | web-search |
+| [wq101-alpha-daily](synthesis/2026-07-01/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-07-01) | — |
 | [tech-report-digest](synthesis/2026-06-30/tech-report-digest.md) | 大模型技术报告摘要 — LLM Tech Report Digest (2026-06-30更新, 19家机构, DeepSeek V4, GPT-5, Llama 4, Gemini 2.5, Claude Opus 4.8/Fable 5/Mythos 5, Ministral 3/Mistral Medium 3.5, Qwen3/3.5-Omni, Yi-Lightning, Baichuan-M3, Phi-4 系列, Apple AFM, Nemotron 3 Ultra/Super/Nano, Grok 3/4, Amazon Nova/Premier/2, GLM-5, InternLM3, Kimi K2/K2.5, Step-2, Seed2.0) | web-search |
 | [wq101-alpha-daily](synthesis/2026-06-30/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-06-30) | — |
 | [investment-daily](synthesis/2026-06-27/investment-daily.md) | 投资日报 — 2026-06-27（美股/港股/A股/中概/新能源科技与AI热点） | web-search |
