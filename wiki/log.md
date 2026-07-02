@@ -4,6 +4,20 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-02] synthesis | arXiv Paper Check — AI & CTR
+- New page: wiki/synthesis/2026-07-02/arxiv-paper-check.md
+- Coverage: 10 curated papers from cs.AI / cs.IR / cs.LG new submissions (July 1, 2026)
+- AI highlights: Single-layer RL training (2607.01232, middle layers carry all gains), AutoMem memory as trainable skill (2607.01224, 2-4x improvement), Theoria structured verification (2607.01223, 91.4% precision), State-Prediction Separation (2607.01218, 2-3pp gains), Adversarial RLVR (2607.01181, eliminates reward hacking), QuasiMoTTo QMC sampling (2607.01179, 25-47% fewer samples), Human vs LLM research ideas gap (2607.01233)
+- CTR/IR highlights: Diffusion-GR2 block-diffusion re-ranker (2607.01170, 2.4-3.5x speedup), DeRes dual-path residual CTR (2606.07980, 2x compute savings), Trie-based experiment plans for IR pipelines (2607.01162, 26% faster)
+- Key themes: RL post-training layer efficiency, memory as separable skill, structured verification, diffusion for ranking, CTR residual bottlenecks
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-02] synthesis | arXiv AI Research Roundup
+- New page: wiki/synthesis/2026-07-02/arxiv-ai-search.md
+- Coverage: 36 papers across 5 categories — LLM Training & Optimizers (Spectra, Muown, LITE, MUD, Spectral Scaling Laws, HyperP, HTMuon, BSS), LLM-Based Recommendation (Logs-to-Language, Reasoning-to-Rank, Scaling Laws for Synthetic Data, R³-REC, STAR, IAM, SMTPO), Generative Recommendation & Semantic IDs (GenRec JD, Gryphon, CapsID, UniSID, DeepInterestGR, SIGMA AliExpress, SIDReasoner, LASAR), CTR Prediction (LAIN, CADET, IDProxy Xiaohongshu, FEDIN, DS-MLP, AgentX Kuaishou), Multi-Agent Systems/Games/RL (Odysseus, SPIRAL, Stratagem, Strat-Reasoner, T-STAR, Trainee2Trainer, LangMARL, Coalition Formation, MAFP, TRACER, MARO, Competition&Cooperation, Agentic Transformers)
+- Key themes: Muon optimizer variants dominating LLM training research; Generative recommendation with Semantic IDs maturing across industry (JD, Kuaishou, Xiaohongshu, AliExpress, Kuaishou AgentX); Multi-agent RL and game self-play converging as reasoning training paradigms
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-01] synthesis | WQ101 Alpha Daily — 美股 Top 20 (2026-07-01)
 - New page: wiki/synthesis/2026-07-01/wq101-alpha-daily.md
 - Market context: S&P 500 ~7,491, Q2 6年最佳季度(+14%), 7月开局回调, 能源 YTD +31%领跑, 科技 XLK -2.9%, VIX ~16.6, WTI ~$69, Fed维持利率3.75%, 通胀4.2%
