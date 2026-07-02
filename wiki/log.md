@@ -20,6 +20,13 @@
 - Key themes: RL post-training layer efficiency, memory as separable skill, structured verification, diffusion for ranking, CTR residual bottlenecks
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-07-02] synthesis | LLM Tech Report Digest — 增量更新
+- New page: wiki/synthesis/2026-07-02/tech-report-digest.md
+- Coverage: OpenAI GPT-5.6 Preview (Sol/Terra/Luna, Jun 2026), Anthropic Claude Fable 5 & Mythos 5 详细版 (Jun 2026), xAI Grok 4.x (4/4.1 Fast/4.3), Google Gemini Ultra 2 & 3.1 Pro Preview, Kimi K2.5 Visual Agentic Intelligence
+- News: US export ban on Fable 5/Mythos 5 lifted Jul 1; White House restricts GPT-5.6 preview; OpenAI Jalapeño ASIC chip
+- Key themes: dual-release safety strategy (public/restricted), government AI pre-approval, sub-agent orchestration (ultra mode, Agent Swarm), custom AI chips
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-02] synthesis | arXiv AI Research Roundup
 - New page: wiki/synthesis/2026-07-02/arxiv-ai-search.md
 - Coverage: 36 papers across 5 categories — LLM Training & Optimizers (Spectra, Muown, LITE, MUD, Spectral Scaling Laws, HyperP, HTMuon, BSS), LLM-Based Recommendation (Logs-to-Language, Reasoning-to-Rank, Scaling Laws for Synthetic Data, R³-REC, STAR, IAM, SMTPO), Generative Recommendation & Semantic IDs (GenRec JD, Gryphon, CapsID, UniSID, DeepInterestGR, SIGMA AliExpress, SIDReasoner, LASAR), CTR Prediction (LAIN, CADET, IDProxy Xiaohongshu, FEDIN, DS-MLP, AgentX Kuaishou), Multi-Agent Systems/Games/RL (Odysseus, SPIRAL, Stratagem, Strat-Reasoner, T-STAR, Trainee2Trainer, LangMARL, Coalition Formation, MAFP, TRACER, MARO, Competition&Cooperation, Agentic Transformers)
