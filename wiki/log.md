@@ -39,6 +39,13 @@
 - Key themes: Muon optimizer variants dominating LLM training research; Generative recommendation with Semantic IDs maturing across industry (JD, Kuaishou, Xiaohongshu, AliExpress, Kuaishou AgentX); Multi-agent RL and game self-play converging as reasoning training paradigms
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-07-02] synthesis | Game RL & Game AI Bot — Daily Survey
+- New page: wiki/synthesis/2026-07-02/game-rl-daily.md
+- Coverage: ~40 papers across 7 categories (Game RL, Game AI Bot, Game Foundation Models, PCG, Benchmarks, Industry Game AI, Related Techniques)
+- Key papers: SPIRAL (ICLR 2026), MARSHAL (ICLR 2026), π-Play, FMSP, OMAR, ArenaRL (Alibaba), GIFT, PokéChamp, Odyssesus (Princeton VLM+RL 100+ turns), NitroGen (CVPR 2026 NVIDIA), Game-TARS (ByteDance), P2P (Elefant), WorldCam, GeoWorld, WoVR, RWML, PCGRLLM, IPCGRL, VIPCGRL, OpenGame, GameDevBench, OmniGameArena (UE5), GameWorld (NUS), lmgame-Bench, Orak (ICLR 2026 KRAFTON), OmniPlay, GameCraft-Bench, LEGO (HPCA 2026), NVIDIA ACE, HeRoN, HiPER, CuES, IR³, GRACE
+- Key themes: Self-play + RL as dominant LLM reasoning paradigm; generalist game foundation models; VLM+RL for long-horizon; game benchmarks standardizing; PCG with LLMs; industry deployment maturing; world models unifying games/robotics/agents
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-01] synthesis | WQ101 Alpha Daily — 美股 Top 20 (2026-07-01)
 - New page: wiki/synthesis/2026-07-01/wq101-alpha-daily.md
 - Market context: S&P 500 ~7,491, Q2 6年最佳季度(+14%), 7月开局回调, 能源 YTD +31%领跑, 科技 XLK -2.9%, VIX ~16.6, WTI ~$69, Fed维持利率3.75%, 通胀4.2%

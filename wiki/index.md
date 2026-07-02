@@ -329,6 +329,7 @@ Papers are organized by research category. Each page includes problem background
 | File | Topic | Sources |
 |------|-------|---------|
 | [tech-report-digest](synthesis/2026-07-02/tech-report-digest.md) | LLM Tech Report Digest — 2026-07-02 增量更新 (GPT-5.6 Sol/Terra/Luna, Claude Fable 5/Mythos 5 详细, Grok 4.x, Gemini Ultra 2, Kimi K2.5) | OpenAI GPT-5.6 Preview, Anthropic Claude Fable 5/Mythos 5, xAI Grok 4.x, Google Gemini Ultra 2 & 3.1 Pro, Kimi K2.5, news roundup |
+| [game-rl-daily](synthesis/2026-07-02/game-rl-daily.md) | Game RL & Game AI Bot — Daily Survey (2026-07-02) | ~40 papers across 7 categories (Game RL, Game AI Bot, Game Foundation Models, PCG, Benchmarks, Industry Game AI, Related Techniques) |
 | [arxiv-ai-search](synthesis/2026-07-02/arxiv-ai-search.md) | arXiv AI Research Roundup — July 2, 2026 (LLMs, Optimizers, RecSys, CTR, Games, RL, Multi-Agent) | 36 papers across 5 categories (LLM Training & Optimizers, LLM-Based Recommendation, Generative Recommendation & Semantic IDs, CTR Prediction, Multi-Agent Systems/ Games/RL) |
 | [arxiv-paper-check](synthesis/2026-07-02/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (July 2, 2026) | 10 curated papers: Single-layer RL, AutoMem, Theoria verification, State-Prediction Separation, Adversarial RLVR, QuasiMoTTo, Human vs LLM ideas, Diffusion-GR2, DeRes, Trie-based IR plans |
 | [investment-daily](synthesis/2026-07-02/investment-daily.md) | 投资日报 — 2026-07-02（美股/港股/A股/中概/新能源与AI热点） | web-search |
