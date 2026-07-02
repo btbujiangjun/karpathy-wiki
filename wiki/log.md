@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-02] synthesis | Conference Digest 2025–2026
+- New page: wiki/synthesis/2026-07-02/conference-digest.md
+- Coverage: 10+ venues — ICML 2026, NeurIPS 2025, ICLR 2026, AAAI 2026, CVPR 2026 (Best Paper), KDD 2026, SIGIR 2026, EMNLP 2025, ACL 2026, RecSys 2025
+- Industry labs: OpenAI (GPT-5.6, Unit Distance Problem), Google DeepMind (D4RT, Gemini Deep Think, Co-Scientist), Meta AI (ULTRA-HSTU), Anthropic (Claude Sonnet 5)
+- Special topics: CTR/Recommendation Scaling (12 papers across KDD/SIGIR/arXiv), Agent Systems & Reasoning
+- Key themes: Scaling laws everywhere, test-time compute, agent safety, diffusion LMs, CTR+LLM convergence, multimodal unity
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-02] synthesis | arXiv Paper Check — AI & CTR
 - New page: wiki/synthesis/2026-07-02/arxiv-paper-check.md
 - Coverage: 10 curated papers from cs.AI / cs.IR / cs.LG new submissions (July 1, 2026)
