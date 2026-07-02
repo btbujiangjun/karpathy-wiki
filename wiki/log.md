@@ -4,6 +4,15 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-02] synthesis | WQ101 Alpha Daily — 美股 Top 20 (2026-07-02)
+- New page: wiki/synthesis/2026-07-02/wq101-alpha-daily.md
+- Market context: S&P 500 ~7,499 (-0.22%), Nasdaq -1.54% (芯片恐慌 MU -10.6%, SNDK -10.6%, AMD -6.9%, INTC -9%, AMAT -10%); META +10% 云业务拆分领涨; NKE +5%, CRM +4.6%, MSFT +3%
+- Core theme: Alpha#53 反转因子主导 (7只) — 7/1 芯片恐慌创造超卖机会; META 云分拆成为最强动量信号 (Alpha#1/#6, 10/10); 资金从半导体轮入 Mega-cap 科技
+- Top picks: META (10/10, Alpha#1/#6), MU (9/10, Alpha#53/#19), SNDK (9/10, Alpha#53/#12)
+- 板块分布: 半导体/AI 7只, 技术/软件/云 4只, 工业 3只, 能源 1只
+- 关键变化 vs 07-01: 主导因子从 Alpha#1 动量→Alpha#53 反转; 能源从 4→1 只 (Hormuz 和谈); Mega-cap 科技从 1→5 只 (META/MSFT/AAPL/GOOGL/CRM)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-02] synthesis | Investment Daily — 2026-07-02
 - New page: wiki/synthesis/2026-07-02/investment-daily.md
 - Coverage: US Mag 7 (AAPL/NVDA/MSFT/GOOGL/AMZN/META/TSLA), HK tech (Tencent/Alibaba/Meituan/Xiaomi), A-share AI (chip/optical module/server), China ADR (BABA/PDD/JD/BIDU), EV (Tesla/BYD/NIO/LI/XPEV/ZK), AI hot topics (DeepSeek V4, OpenAI, AI Capex, compute rental, autonomous driving, robotics)
