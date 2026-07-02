@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-02] synthesis | Investment Daily — 2026-07-02
+- New page: wiki/synthesis/2026-07-02/investment-daily.md
+- Coverage: US Mag 7 (AAPL/NVDA/MSFT/GOOGL/AMZN/META/TSLA), HK tech (Tencent/Alibaba/Meituan/Xiaomi), A-share AI (chip/optical module/server), China ADR (BABA/PDD/JD/BIDU), EV (Tesla/BYD/NIO/LI/XPEV/ZK), AI hot topics (DeepSeek V4, OpenAI, AI Capex, compute rental, autonomous driving, robotics)
+- Updated: wiki/index.md, wiki/log.md
+- New pages: wiki/synthesis/2026-07-02/investment-daily.md
+
 ## [2026-07-02] synthesis | Conference Digest 2025–2026
 - New page: wiki/synthesis/2026-07-02/conference-digest.md
 - Coverage: 10+ venues — ICML 2026, NeurIPS 2025, ICLR 2026, AAAI 2026, CVPR 2026 (Best Paper), KDD 2026, SIGIR 2026, EMNLP 2025, ACL 2026, RecSys 2025
