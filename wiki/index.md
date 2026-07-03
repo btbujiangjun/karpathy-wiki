@@ -327,7 +327,7 @@ Papers are organized by research category. Each page includes problem background
 ## Synthesis
 
 | File | Topic | Sources |
-|------|-------|---------|
+| [arxiv-paper-check](synthesis/2026-07-03/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (July 3, 2026) | 14 curated papers: Epistemic Goggles, PMD, C3RL+CAS, SOLiD 405B, InfoDelphi, Auto-FL-Research, PACE, Agentic Garden of Forking Paths, MixFormer (KDD 2026), GR2, CoPersona (KDD '26), Bi-NAS, IntentTune, Planning over MF-MDPs |
 | [tech-report-digest](synthesis/2026-07-02/tech-report-digest.md) | LLM Tech Report Digest — 2026-07-02 增量更新 (GPT-5.6 Sol/Terra/Luna, Claude Fable 5/Mythos 5 详细, Grok 4.x, Gemini Ultra 2, Kimi K2.5) | OpenAI GPT-5.6 Preview, Anthropic Claude Fable 5/Mythos 5, xAI Grok 4.x, Google Gemini Ultra 2 & 3.1 Pro, Kimi K2.5, news roundup |
 | [wq101-alpha-daily](synthesis/2026-07-02/wq101-alpha-daily.md) | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-07-02) | 7/1 芯片恐慌 (MU -10.6%, SNDK -10.6%, AMD -6.9%, INTC -9%, AMAT -10%); META +10% 云分拆领涨; 反转因子 Alpha#53 主导; Top 3: META (10/10), MU (9/10), SNDK (9/10) |
 | [game-rl-daily](synthesis/2026-07-02/game-rl-daily.md) | Game RL & Game AI Bot — Daily Survey (2026-07-02) | ~40 papers across 7 categories (Game RL, Game AI Bot, Game Foundation Models, PCG, Benchmarks, Industry Game AI, Related Techniques) |

@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-03] synthesis | arXiv Paper Check — AI & CTR (July 3, 2026)
+- New page: wiki/synthesis/2026-07-03/arxiv-paper-check.md
+- Coverage: 14 curated papers from cs.AI (353 total, 86 new), cs.IR (23 total, 8 new), cs.LG (273 total, 101 new) — July 3, 2026 listings
+- AI highlights: Epistemic Goggles (2607.01690, gradient editing for epistemic framing, 91% fictional detection), PMD (2607.01480, procedural memory distillation, +3.8-13.6%), C3RL+CAS (2607.01612, confidence calibration RL, 12.33× inference savings), SOLiD at 405B (2607.01567, deception 34%→14%), InfoDelphi (2607.01661, information asymmetry for multi-agent, 12-18% Brier), Auto-FL-Research (2607.01366, NVIDIA agentic FL algo search), PACE (2607.01306, neuro-symbolic counterfactuals), Agentic Garden of Forking Paths (2607.01507, m-value for analysis credibility)
+- CTR/IR highlights: MixFormer (KDD 2026, ByteDance Douyin co-scaling dense+sequence), GR2 (generative reasoning re-ranker, +18.7% R@1), CoPersona (KDD '26, collaborative persona graphs), Bi-NAS (bi-level NAS for RecSys explanations), IntentTune (e-commerce query disambiguation), Planning over MF-MDPs (KDD 2026 WS, one-step planning for retrieval)
+- Key themes: LLM self-improvement via procedural memory; confidence calibration as RL objective; collaborative personalization for sparse profiles; generative re-ranking with RL entering production; information asymmetry as key enabler for multi-agent reasoning; gradient editing for epistemic control
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-02] synthesis | WQ101 Alpha Daily — 美股 Top 20 (2026-07-02)
 - New page: wiki/synthesis/2026-07-02/wq101-alpha-daily.md
 - Market context: S&P 500 ~7,499 (-0.22%), Nasdaq -1.54% (芯片恐慌 MU -10.6%, SNDK -10.6%, AMD -6.9%, INTC -9%, AMAT -10%); META +10% 云业务拆分领涨; NKE +5%, CRM +4.6%, MSFT +3%
