@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-03] synthesis | Conference Digest — Comprehensive Roundup (ICML/AAAI/NeurIPS/ICLR/CVPR/KDD/ACL/EMNLP/SIGIR/WWW/CIKM/RecSys 2025–2026)
+- New page: wiki/synthesis/2026-07-03/conference-digest.md
+- Coverage: 12+ venues (AAAI 2026, ICLR 2026, CVPR 2026, ICML 2026, KDD 2026, ACL 2026, EMNLP 2025, NeurIPS 2025, SIGIR 2026, CIKM 2025, RecSys 2025, WWW 2026), 80+ curated papers, 15+ labs (Google DeepMind, OpenAI, Meta AI, Microsoft, Anthropic, NVIDIA, Alibaba, ByteDance, Tencent, Kuaishou, Baidu, Zhipu AI, Mistral, Amazon, Apple)
+- Award papers detailed: NeurIPS 2025 Best (Gated Attention, Hivemind, 1000 Layer RL, Diffusion Memorization), ICLR 2026 Outstanding (Succinct Transformers, Multi-Turn Drop, ∇-Reasoner), CVPR 2026 Best (D4RT), EMNLP 2025 Best (Infini-gram mini), AAAI 2026 Outstanding (COREA, ProCo, GenMatLab)
+- Key sections: Hybrid architectures (Nemotron 3/Mamba-3/Gated DeltaNet-2/Qwen3.6), Agent systems (Intelligent AI Delegation, Scaling Agent Systems, ACE), CTR scaling laws & generative recommendation, DeepMind & Anthropic research portfolios, Reasoning & test-time compute, LLM post-training & alignment (RLVR limitations)
+- Trends: Hybrid Mamba-Attention; test-time gradient descent; deflationary findings winning awards; agent formalization; generative CTR paradigm
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-03] synthesis | arXiv Paper Check — AI & CTR (July 3, 2026)
 - New page: wiki/synthesis/2026-07-03/arxiv-paper-check.md
 - Coverage: 14 curated papers from cs.AI (353 total, 86 new), cs.IR (23 total, 8 new), cs.LG (273 total, 101 new) — July 3, 2026 listings
