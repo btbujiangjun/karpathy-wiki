@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-03] synthesis | Investment Daily — 2026-07-03（美股/港股/A股/中概/新能源与AI热点）
+- New page: wiki/synthesis/2026-07-03/investment-daily.md
+- Coverage: US Mag 7 (Meta +8.8% cloud spin-off rumor, AAPL +2.83%, chip sell-off SOX -6.3%), HK tech (HSI +1.6%, southbound net inflow 40B HKD), A-share (SSE -0.9%, STAR -3.99% chip profit-taking, gold stocks surging), China ADR (HSAI +15%, CSIQ +8.5%, XPEV +3.44%), EV (BYD HK leader, Waymo $16B funding, TSLA FSD V13), AI hot topics (马斯克每月新大模型, AWS GPU涨价, Stargate数据中心, Waymo/FSD自动驾驶, 机器人Optimus量产, 韩国半导体出口+200% YoY)
+- Key themes: Semi selloff panic creates oversold opportunity; STARGate/Colossus 2 GW-scale DC buildout; AI capex debate intensifies ($830B 2026); A-share AI rotation from hardware to application
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-03] synthesis | Conference Digest — Comprehensive Roundup (ICML/AAAI/NeurIPS/ICLR/CVPR/KDD/ACL/EMNLP/SIGIR/WWW/CIKM/RecSys 2025–2026)
 - New page: wiki/synthesis/2026-07-03/conference-digest.md
 - Coverage: 12+ venues (AAAI 2026, ICLR 2026, CVPR 2026, ICML 2026, KDD 2026, ACL 2026, EMNLP 2025, NeurIPS 2025, SIGIR 2026, CIKM 2025, RecSys 2025, WWW 2026), 80+ curated papers, 15+ labs (Google DeepMind, OpenAI, Meta AI, Microsoft, Anthropic, NVIDIA, Alibaba, ByteDance, Tencent, Kuaishou, Baidu, Zhipu AI, Mistral, Amazon, Apple)
