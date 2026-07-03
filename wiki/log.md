@@ -1931,3 +1931,10 @@
 - Coverage: 美股(Mag 7 六月蒸发~$2T, NVDA Firmus $30B 订单, S&P 接近历史新高), 港股(恒科回调, 智谱/MiniMax纳入恒生科技), A股(寒武纪+8.2%, 中际旭创+10.2%, 存储芯片板块+20% Q2), 中概ADR(BABA $95.98, 整体缺乏催化剂), 新能源/EV(BYD 1-5月140.5万辆+28%, 小米SU7目标上修至15万台), AI热点主题(GPT-5 Q3发布预期, DeepSeek V4 MoE推理成本再降, COMPUTEX Rubin架构预览, Figure AI $1.5B融资, AI Agent落地)
 - Key themes: Mag 7 六月同步杀估值(AI Capex回报率质疑), 国产算力替代逻辑强化, 电动汽车出海高速增长, AI Agent/智能体进入GA阶段
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-03] synthesis | Tech Report Digest — 大模型技术报告综合摘要 (2026-07-03)
+- New page: wiki/synthesis/2026-07-03/tech-report-digest.md
+- Coverage: 19 家机构 30+ 技术报告/System Card 全面搜索验证
+- 新增/重点更新: DeepSeek-V4 (CSA+HCA hybrid attention, Muon optimizer, 1M context); OpenAI GPT-5.6 Preview (Sol/Terra/Luna); Claude Sonnet 5 & Opus 4.8 & Mythos Preview; Gemini 3.1 Pro; GLM-5 (DSA, async Agent RL); Kimi K2.5 (visual agentic, Agent Swarm); NVIDIA Nemotron 3 Ultra (Hybrid Mamba-Attention MoE) & Nemotron-Labs-Diffusion (AR+Diffusion+Self-Speculation); Step 3.5 Flash (11B active frontier); ByteDance Seed1.8 (generalized agency); Intern-S1-Pro (1T scientific multimodal); Baichuan-M3 (clinical medical); Qwen3.5-Omni (ARIA, 256K, omnimodal agent); Ministral 3 (Cascade Distillation)
+- Trends: MoE 全面化; Hybrid Mamba-Attention; Diffusion LM; Thinking+Non-Thinking 统一; Configurable reasoning; Agentic RL; 1M context 标配; System Card 标准化
+- Updated: wiki/index.md, wiki/log.md
