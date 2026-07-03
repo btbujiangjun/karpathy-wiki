@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-03] synthesis | Game RL & Game AI Bot — Daily Survey (2026-07-03)
+- New page: wiki/synthesis/2026-07-03/game-rl-daily.md
+- Coverage: ~40 papers across 7 categories (Game RL, Game AI Bot, Game Foundation Models, Procedural Content Generation, Game Benchmarks, Industry Game AI, Related Techniques)
+- Key papers: SPIRAL (ICLR 2026, self-play reasoning), NitroGen (CVPR 2026 NVIDIA, 1000+ game foundation model), Game-TARS (ByteDance, 500B+ token generalist agent), Towards Generalist Game Players (Tsinghua survey), Orak (KRAFTON ICLR 2026, 12-game MCP benchmark), AI GameStore (MIT/Harvard, LLM-synthesized game eval), GameWorld (NUS verifiable benchmark), PCGRLLM (NYU, LLM-driven reward for PCG), IPCGRL (instruction-conditioned PCG RL), GAMEBoT (ACL 2025, transparent LLM game reasoning), Game Theory Meets LLMs (IJCAI 2025 survey), Decrypto (Facebook Research, ToM benchmark), cMarlTest (ICSTW 2025, curiosity-driven multi-agent 3D game testing), SUR-RL Survey (ACM CS 2026), Game-RL (game video for VLM reasoning), MARSHAL (ICLR 2026 multi-agent self-play), JOWA (offline MBRL on Atari, 78.9% human-level), NVIDIA ACE
+- Key themes: Self-play + RL as LLM reasoning paradigm; generalist game foundation models (NVIDIA/ByteDance/Tsinghua); game benchmarks standardizing (Orak/AI GameStore/GameWorld/Decrypto); PCG with LLMs maturing (PCGRLLM/IPCGRL); game theory + LLMs intersection (GAMEBoT/IJCAI survey); industry deployment accelerating (NVIDIA, ByteDance, KRAFTON); MARL surveys consolidating field; world models for games (JOWA)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-03] synthesis | Investment Daily — 2026-07-03（美股/港股/A股/中概/新能源与AI热点）
 - New page: wiki/synthesis/2026-07-03/investment-daily.md
 - Coverage: US Mag 7 (Meta +8.8% cloud spin-off rumor, AAPL +2.83%, chip sell-off SOX -6.3%), HK tech (HSI +1.6%, southbound net inflow 40B HKD), A-share (SSE -0.9%, STAR -3.99% chip profit-taking, gold stocks surging), China ADR (HSAI +15%, CSIQ +8.5%, XPEV +3.44%), EV (BYD HK leader, Waymo $16B funding, TSLA FSD V13), AI hot topics (马斯克每月新大模型, AWS GPU涨价, Stargate数据中心, Waymo/FSD自动驾驶, 机器人Optimus量产, 韩国半导体出口+200% YoY)
