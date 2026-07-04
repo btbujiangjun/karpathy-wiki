@@ -19,6 +19,12 @@
 - Key themes: Generalist game foundation models (NVIDIA/ByteDance/DeepMind); self-play + world models as dual paradigm; LLM-NPCs entering production (NVIDIA ACE 2026); benchmark standardization (Oarak/OmniGameArena/TowerMind); curiosity-driven exploration for LLM reasoning (CDE/CuES); PCG with LLMs maturing (PCGRLLM/IPCGRL); MARL surveys consolidating field; neural game engines (GameNGen)
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-07-04] synthesis | LLM Tech Report Digest — 2026-07-04 综合版（20 家机构全面覆盖）
+- New page: wiki/synthesis/2026-07-04/tech-report-digest.md
+- Coverage: 20 AI labs/companies — DeepSeek (V3/R1/V3.2), OpenAI (GPT-5/o3/o4-mini), Meta (Llama 4 Scout/Maverick), Google (Gemini 2.5 Pro/Flash), Anthropic (Claude Opus 4/Sonnet 4), Mistral (Large 3/Ministral 3), Alibaba (Qwen3 series), 01.AI (Yi-Lightning), Baichuan (Baichuan 4), Microsoft (Phi-4 series), Apple (AFM), NVIDIA (Nemotron 3 Nano/Super/Ultra), xAI (Grok 3), Amazon (Nova family), Zhipu AI (GLM-5), InternLM (InternLM3), Moonshot AI (Kimi K2/K2.5), ByteDance (Seed2.0/Seed1.5-VL), StepFun (Step-2)
+- Key themes: MoE domination (flagship models), Hybrid Mamba-Attention (Nemotron 3), DSA sparse attention (DeepSeek V3.2 → GLM-5), MLA (DeepSeek → Kimi), RL post-training scaling (V3.2 10%+ compute), Hybrid reasoning (Qwen3/Gemini/Claude), 1M+ context (Llama 4 Scout 10M, Gemini/Nemotron/Amazon Nova 1M)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-03] synthesis | Game RL & Game AI Bot — Daily Survey (2026-07-03)
 - New page: wiki/synthesis/2026-07-03/game-rl-daily.md
 - Coverage: ~40 papers across 7 categories (Game RL, Game AI Bot, Game Foundation Models, Procedural Content Generation, Game Benchmarks, Industry Game AI, Related Techniques)
