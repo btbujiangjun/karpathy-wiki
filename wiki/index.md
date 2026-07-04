@@ -327,6 +327,7 @@ Papers are organized by research category. Each page includes problem background
 ## Synthesis
 
 | File | Topic | Sources |
+| [tech-report-digest](synthesis/2026-07-04/tech-report-digest.md) | 大模型技术报告摘要 — LLM Tech Report Digest (2026-07-04 综合版, 20 家机构全面覆盖) | web-search |
 | [arxiv-paper-check](synthesis/2026-07-04/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (July 4, 2026) | 20 curated papers: Distributed Attacks in AI Control, PAW, ReContext, DemoPSD, TAP (ICML 2026), TestEvo-Bench, Reasoning Effort vs Tools, OrbitQuant, Multi-Agent Social Dynamics, WorldSample (ICML 2026), EvoPolicyGym, LACUNA, CoPersona (KDD '26), IntentTune, Bi-NAS, LLM Clustering Hard Negatives, PaperPilot, PlanRAG (SIGMOD 2027), Spotify Behavior-Grounded Judge, MemSyco-Bench |
 | [arxiv-paper-check](synthesis/2026-07-03/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (July 3, 2026) | 14 curated papers: Epistemic Goggles, PMD, C3RL+CAS, SOLiD 405B, InfoDelphi, Auto-FL-Research, PACE, Agentic Garden of Forking Paths, MixFormer (KDD 2026), GR2, CoPersona (KDD '26), Bi-NAS, IntentTune, Planning over MF-MDPs |
 | [conference-digest](synthesis/2026-07-03/conference-digest.md) | 顶会论文专题报告 — 2026年7月全面版 (ICML 2026, AAAI 2026, NeurIPS 2025, ICLR 2026, CVPR 2026, KDD 2026, ACL 2026, EMNLP 2025, WWW 2026, RecSys 2025, SIGIR 2026, CIKM 2025) | 12+ venues, 80+ curated papers, 15+ labs, award-winning papers detailed, hybrid architectures, agent systems, CTR scaling laws, generative recommendation, DeepMind & Anthropic research |
