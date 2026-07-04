@@ -12,6 +12,15 @@
 - Key themes: Agent safety in persistent codebases, fuzzy function compilation for edge deployment, on-policy self-distillation advances, reasoning effort as dominant reliability factor, collaborative personalization for sparse user profiles, search evaluation grounded in behavioral data, agentic search workflows as DAGs
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-07-04] synthesis | WQ101 Alpha Daily — 美股 Top 20 (2026-07-04)
+- New page: wiki/synthesis/2026-07-04/wq101-alpha-daily.md
+- Market context: Dow 52,900 历史新高 (+1.97% 周); S&P +1.75%; Nasdaq +0.72%; SOX -5.44% 连续 2 日暴跌; 非农弱→7月加息概率<20%; WTI $68.43 (-2%, 连续 4 周下跌)
+- Core theme: **医疗板块 (XLV) 新进 Leading + 科技 (XLK) 滑入 Lagging** — Great Rotation 2.0 确认
+- Top picks: AAPL (9/10, Alpha#1/#6, iPhone 涨价+$4.53T), ABBV (9/10, Alpha#1/#6, Q2 $15B), LLY (9/10, Alpha#41/#1, GLP-1), MU (9/10, Alpha#53/#19, 2日-17% 极端超卖)
+- 板块分布: 医疗 4只, 金融 6只, 半导体 3只, 技术 2只, 必需消费 2只, 消费周期 2只, 工业 1只, 通信 1只
+- 关键变化 vs 07-02: 最大变化为重大板块轮动确认 (科技→医疗+金融+防御); 半导体从 7→3 只; 能源出局; 新增 10 只 (ABBV/LLY/MRNA/GS/JPM/BRK.B/V/MA/WMT/PG)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-04] synthesis | Game RL & Game AI Bot — Daily Survey (2026-07-04)
 - New page: wiki/synthesis/2026-07-04/game-rl-daily.md
 - Coverage: ~40 papers across 7 categories (Game RL, Game AI Bot, Game Foundation Models, Procedural Content Generation, Game Benchmarks, Industry Game AI, Related Techniques)
