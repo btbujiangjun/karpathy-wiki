@@ -4,6 +4,15 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-04] synthesis | arXiv Daily Report — AI, LLMs, CTR, Recommendation, RL, Games, Sequential Modeling
+- New page: wiki/synthesis/2026-07-04/arxiv-daily.md
+- Coverage: 17 curated papers across LLM alignment/reasoning (6), generative recommendation/CTR (4), RL/games (5), sequential modeling/SSM (1), multi-agent/game theory (2)
+- LLM highlights: DRIFTLENS (memory-induced reasoning drift), HOLA (hippocampal linear attention + exact cache), Reasoning Alignment audit (alignment regression in reasoning models), Reasoning Structure (graph-based efficiency metric), Constructive Alignment (dynamic preference control), Understanding LLMs survey
+- Rec/CTR highlights: PauseRec (implicit reasoning for GenRec, SID-free), DS-MLP (dual-stream MLP knowledge distillation), LLaCTR (field-level LLM enhancement, 10-100x cheaper), IDProxy (cold-start CTR proxy)
+- RL/Games highlights: IRumAI (first RL for Indian Rummy, 7000x faster), MTG-Causal-RL (causal RL benchmark), SlimDT (RTG-free Decision Transformer), MARLIN (sustainable LLM inference MARL), CART (adversarially robust DT)
+- Key themes: Alignment drift from reasoning conversion, hippocampal memory for linear attention, implicit > explicit reasoning for GR, pure MLP distillation for CTR, RL expanding to underserved games, MARL for sustainability
+- Updated: wiki/index.md
+
 ## [2026-07-04] synthesis | arXiv Paper Check — AI & CTR (July 4, 2026)
 - New page: wiki/synthesis/2026-07-04/arxiv-paper-check.md
 - Coverage: 20 curated papers from cs.AI (30 sampled, submissions from July 2, 2026) and cs.IR (30 sampled, submissions from July 1-2) — July 4, 2026 listing
@@ -1979,6 +1988,23 @@
 - New page: wiki/synthesis/2026-07-01/investment-daily.md
 - Coverage: 美股(Mag 7 六月蒸发~$2T, NVDA Firmus $30B 订单, S&P 接近历史新高), 港股(恒科回调, 智谱/MiniMax纳入恒生科技), A股(寒武纪+8.2%, 中际旭创+10.2%, 存储芯片板块+20% Q2), 中概ADR(BABA $95.98, 整体缺乏催化剂), 新能源/EV(BYD 1-5月140.5万辆+28%, 小米SU7目标上修至15万台), AI热点主题(GPT-5 Q3发布预期, DeepSeek V4 MoE推理成本再降, COMPUTEX Rubin架构预览, Figure AI $1.5B融资, AI Agent落地)
 - Key themes: Mag 7 六月同步杀估值(AI Capex回报率质疑), 国产算力替代逻辑强化, 电动汽车出海高速增长, AI Agent/智能体进入GA阶段
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-04] synthesis | Conference & arXiv Digest — Comprehensive Survey (2026-07-04)
+- New page: wiki/synthesis/2026-07-04/conference-digest.md
+- Coverage: 14 sections across 12+ venues (ICML 2026 / NeurIPS 2025 Best / ICLR 2026 / AAAI 2026 / KDD 2026 / CVPR 2026 Best / ACL 2026 / EMNLP 2025 / SIGIR 2026 / WWW 2026 / CIKM 2025 / RecSys 2025)
+- ICML 2026: 59+ LLM Agent papers (AdaMEM, Agent-Omit, EvoClaw, Constitutional Monitoring, Graph Memory, MCP-Persona), Async Pipeline LLM Pretraining (Yandex, Muon + Error-Feedback for 10B MoE/200B tokens), CTR-Sink (KDD 2026, attention sink for LM-based CTR, AUC +0.2-0.5%)
+- NeurIPS 2025 Best Papers: Gated Attention (used in Qwen3-Next), Artificial Hivemind (Infinity-Chat), 1000-Layer Self-Supervised RL, Diffusion Non-Memorization, Representation Superposition Scaling Laws. Agent papers: Agentic Plan Caching, SuffixDecoding, Hogwild! Inference, DRIFT (security), DyFlow.
+- ICLR 2026: 5,355 accepted (27.4%), review crisis (45% identity leak, 21% AI reviews). 162 LLM Agent papers (A²FM -45% cost, DeepSynth benchmark, UIS-Digger beats O3/GPT-4.1 on unindexed search). SKT C-APO for recommendation. PAPL (diffusion LM planner-aware training).
+- AAAI 2026: 23,000+ submissions, ~23% acceptance. 37 LLM Reasoning papers (Relation-R1, RPM-MCTS, SAPO, SCALE, SERL, MathSmith, Graph-of-Verification). LogicCat Text-to-SQL benchmark.
+- CVPR 2026 Best Paper: D4RT (Google DeepMind, dynamic 4D scene reconstruction). Best Student Paper: Compact Structured Latents for 3D. NitroGen (NVIDIA, 1000+ game foundation model). VideoWorld 2 (ByteDance, transferable knowledge from video).
+- ACL 2026: Meituan 6 papers (LLM evaluation, process reasoning, math reasoning, RL, generative recommendation).
+- EMNLP 2025: 8,000+ submissions, 3,000+ accepted. S1 (simple test-time scaling), Automated Error Discovery (SEEED beats GPT-4o).
+- SIGIR 2026: Modular Rep Compression (SJTU), Agentic ST Grounding (A*STAR), Total Recall QA (UMass CIIR), 7 papers from CIIR.
+- WWW 2026: ScotRec (social CoT), FeDecider (federated cross-domain LLM), AgentDR (Amazon/MSU), NEZHA (Alibaba generative rec decoding), ByteDance pre-ranking, Kuaishou query rewriting.
+- RecSys 2025: GRACE (Walmart, journey-aware gen rec), Spotify agentic query, CTR scaling laws, HSTU production scaling.
+- Industry: ByteDance token-based ranking series (RankMixer → TokenMixer-Large 7B/15B, GMV +2.98%), IDProxy (Xiaohongshu MLLM cold-start CTR), CADET (LinkedIn decoder-only ads CTR).
+- Key themes: Test-time compute scaling, agent safety/memory/orchestration, generative recommendation with scaling laws, LLM-as-ranker, reasoning-augmented recsys, hybrid architectures (Mamba-Attention, MoE), benchmark evolution crisis.
 - Updated: wiki/index.md, wiki/log.md
 
 ## [2026-07-03] synthesis | Tech Report Digest — 大模型技术报告综合摘要 (2026-07-03)
