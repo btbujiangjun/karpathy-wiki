@@ -2038,3 +2038,16 @@
 - Coverage: 20 家机构，基于 07-04 综合版增量更新
 - 新增/重点更新: DeepSeek-V4 (1T MoE, CSA/HCA, On-Policy Distillation, 1M context, arXiv:2605.21510); Anthropic Claude Opus 4.6 System Card (ASL-3, sabotage risk eval, 2026-02); Qwen3-VL (多模态视觉语言, arXiv:2512.00593); Microsoft Phi-4-Reasoning-Vision 15B (arXiv:2603.03975); xAI Grok 4 (媒体报道, 无正式报告); Kimi K2 补充 MuonClip 优化器/RLVR 细节
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-05] synthesis | Game RL & Game AI Bot — Daily Survey (2026-07-05)
+- New page: wiki/synthesis/2026-07-05/game-rl-daily.md
+- Coverage: ~40 curated papers across 7 categories (Game RL, Game AI Bot, Game Foundation Models, PCG, Benchmarks, Industry Game AI, Related Techniques)
+- Game RL highlights: SPIRAL (self-play zero-sum games for LLM reasoning), Think in Games, Outbidding Liar's Poker (compute-efficient self-play), SpinGPT (first LLM for multi-player poker, ACG 2025), Playing Card Games with non-embedded RL, Pommerman curriculum self-play
+- Game AI Bot: Nemobot Games (Shannon taxonomy LLM agents), LLM-Driven NPCs (cross-platform dialogue), AgentGym-RL, DPEPO
+- Game Foundation Models: NitroGen (CVPR 2026 NVIDIA, 40K hours 1000+ games), Towards Generalist Game Players survey, Matrix-Game (17B param Minecraft world model), GameVerse
+- PCG: PCGRLLM (LLM reward design for PCG-RL, Trans. Games), IPCGRL (language-instructed PCG), RL-enhanced WFC for AR, Game Generation via LLMs
+- Benchmarks: Orak (KRAFTON, 12-game MCP-based LLM benchmark), DSGBench (6 strategic games, 5-dim evaluation)
+- Industry: GameNGen (ICLR 2025, neural DOOM engine), MLOps for game AI, NVIDIA ACE & NVIGI SDK, Augmenting Game AI with DRL (CoG 2026)
+- Related techniques: Self-play survey, DiNAT-RCM curiosity (hierarchical ViT, Neurocomputing), CERMIC (MARL curiosity), cMarlTest (curiosity game testing), CDE (LLM curiosity exploration), ARISE (hierarchical skill evolution RL), Causal HRL (ICML 2025), Transformer World Models (Craftax SOTA), Optimistic World Models, TWISTER (contrastive world model), Off-FSP (offline self-play), MTRO (multi-game DT auto target), ARMS (MARL reward shaping with equilibrium guarantees), RILe (reinforced imitation learning), Structured IL via Inverse Games
+- Key themes: Self-play emerging as general reasoning training signal for LLMs; game foundation models scaling from pixels; LLM-driven PCG reward design; industry on-device inference maturing; MARL curiosity and hierarchical approaches advancing
+- Updated: wiki/index.md
