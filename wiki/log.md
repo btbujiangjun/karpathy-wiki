@@ -4,6 +4,16 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-05] synthesis | arXiv Daily Report — AI, LLMs, CTR, Recommendation, RL, Games, Sequential Modeling
+- New page: wiki/synthesis/2026-07-05/arxiv-daily.md
+- Coverage: 21 curated papers across 6 domains (LLM Reasoning & Architecture (4), LLM Agents & Self-Evolution (4), Recommendation Systems (4), CTR Prediction & Advertising (4), Sequential Modeling (2), Reinforcement Learning & Games (3))
+- LLM highlights: ReRec (RFT for recommendation reasoning, ACL 2026), Understanding LLMs survey, Physics Literacy diagnostic (Claude Opus 4.7/GPT-5.5/Gemini 3.1 Pro — 6/15 PASS), Research Ideas Gap (Yale, LLM ideas narrower than human)
+- LLM Agents highlights: Next-Gen Agentic RL Systems (Ant Group/HKUST/Tsinghua, AReaL2.0), SPIRAL (ICLR 2026, self-play zero-sum games improve reasoning 10%), RWML (world model learning for LLM agents, matches expert-data), ReContext (recursive evidence replay)
+- Rec/CTR highlights: CADET (LinkedIn, decoder-only ads CTR, +11.04%), FAT (Alibaba, Field-Aware Transformer, +4.38% AUC, KDD 2026), IDProxy (Xiaohongshu, MLLM cold-start), POEM (Kuaishou, partial-order sequential modeling), Self-Evolving Rec (YouTube/Gemini)
+- RL/Games highlights: CART (adversarially robust Decision Transformer), SlimDT (RTG-free DT, 1/3 shorter sequences), Transformer-Enhanced RL survey, Game AI with DRL (CoG 2026)
+- Key themes: LLM+Rec convergence accelerating; Transformers for CTR graduating to production (LinkedIn, Alibaba, Kuaishou); self-play/self-evolution for LLMs hot; scaling law thinking spreading to recommendation
+- Updated: wiki/index.md
+
 ## [2026-07-04] synthesis | arXiv Daily Report — AI, LLMs, CTR, Recommendation, RL, Games, Sequential Modeling
 - New page: wiki/synthesis/2026-07-04/arxiv-daily.md
 - Coverage: 17 curated papers across LLM alignment/reasoning (6), generative recommendation/CTR (4), RL/games (5), sequential modeling/SSM (1), multi-agent/game theory (2)
@@ -11,6 +21,17 @@
 - Rec/CTR highlights: PauseRec (implicit reasoning for GenRec, SID-free), DS-MLP (dual-stream MLP knowledge distillation), LLaCTR (field-level LLM enhancement, 10-100x cheaper), IDProxy (cold-start CTR proxy)
 - RL/Games highlights: IRumAI (first RL for Indian Rummy, 7000x faster), MTG-Causal-RL (causal RL benchmark), SlimDT (RTG-free Decision Transformer), MARLIN (sustainable LLM inference MARL), CART (adversarially robust DT)
 - Key themes: Alignment drift from reasoning conversion, hippocampal memory for linear attention, implicit > explicit reasoning for GR, pure MLP distillation for CTR, RL expanding to underserved games, MARL for sustainability
+- Updated: wiki/index.md
+
+## [2026-07-05] synthesis | arXiv AI Research Search — July 5, 2026
+- New page: wiki/synthesis/2026-07-05/arxiv-ai-search.md
+- Coverage: 17 papers across 5 categories — LLMs, Recommendation, CTR & Advertising, Sequential Modeling, Game AI
+- LLM highlights: Understanding LLMs survey, LLM Reasoning Failures (TMLR 2026 Survey), Agentic Reasoning survey, Single-Layer RL post-training (2607.01232), SPIRAL (ICLR 2026, self-play for reasoning)
+- RecSys highlights: RecPilot (deep research paradigm), Self-Evolving RecSys at YouTube (Gemini agents), Trustworthy Recommendation in LLM Era survey, Meta Lattice (KDD 2026, model space redesign)
+- CTR & Advertising highlights: CADET (LinkedIn, decoder-only transformer CTR, +11.04% lift), LoopCTR (loop scaling, Alibaba), DS-MLP (dual-stream MLP distillation, TKDD 2026)
+- Sequential Modeling highlights: Mamba-3 (ICLR 2026, complex-valued state + MIMO), Continuity Laws for Sequential Models, Mechanistic Evaluation of Transformers & SSMs (Stanford)
+- Game AI highlights: Augmenting Game AI with Deep RL (Conference on Games 2026)
+- Key themes: Decoder-only entering CTR domain, scaling without parameter growth, LLM agents as autonomous ML engineers, mechanistic understanding beyond accuracy, simplicity+distillation beats complexity
 - Updated: wiki/index.md
 
 ## [2026-07-04] synthesis | arXiv Paper Check — AI & CTR (July 4, 2026)
@@ -2051,3 +2072,11 @@
 - Related techniques: Self-play survey, DiNAT-RCM curiosity (hierarchical ViT, Neurocomputing), CERMIC (MARL curiosity), cMarlTest (curiosity game testing), CDE (LLM curiosity exploration), ARISE (hierarchical skill evolution RL), Causal HRL (ICML 2025), Transformer World Models (Craftax SOTA), Optimistic World Models, TWISTER (contrastive world model), Off-FSP (offline self-play), MTRO (multi-game DT auto target), ARMS (MARL reward shaping with equilibrium guarantees), RILe (reinforced imitation learning), Structured IL via Inverse Games
 - Key themes: Self-play emerging as general reasoning training signal for LLMs; game foundation models scaling from pixels; LLM-driven PCG reward design; industry on-device inference maturing; MARL curiosity and hierarchical approaches advancing
 - Updated: wiki/index.md
+
+## [2026-07-05] synthesis | arXiv Paper Check — AI & CTR (July 5, 2026)
+- New page: wiki/synthesis/2026-07-05/arxiv-paper-check.md
+- Coverage: 17 curated papers from cs.AI (353 total, 86 new), cs.LG (273 total, 101 new), cs.IR (23 total, 8 new) — July 3, 2026 listings (no weekend submissions)
+- AI/LLM highlights: Wiola SLM (2607.01394, novel architecture, 120M–1.5B), Discrete Diffusion Radiology (2607.01436, 3.5–4.4× faster, any-order infill), PMD (2607.01480, procedural memory distillation, +3.8–13.6%), SOLiD at 405B (2607.01567, deception 34%→14%), InfoDelphi (2607.01661, information asymmetry for forecasting, 12–18% Brier), C3RL+CAS (2607.01612, confidence calibration RL, 12.33× inference savings), NightVision (2607.01313, black-box LLM architecture inference), Ember optimizer (2607.01455, O(V+D) VRAM for embeddings), FADE (2607.01490, focal advantage with dynamic entropy, 20k steps earlier peak), MHM-LRU (2607.01523, multi-head recurrent memory, 73.96% retention at 896K), Minimax KV Cache Compression (2607.01520, theoretical guarantees)
+- CTR/Rec highlights: MixFormer (KDD 2026, ByteDance Douyin co-scaling dense+sequence), GR2 (generative reasoning re-ranker, +18.7% R@1), Bi-NAS (bi-level NAS for RecSys explanations), CoPersona (KDD '26, collaborative persona graphs), IntentTune (e-commerce query disambiguation), Monosemanticity in RecSys (MSAE for interpretable collaborative filtering)
+- Key themes: Novel SLM architectures challenging GPT/LLaMA hegemony; diffusion LLMs reaching parity with AR models; recurrent memory collapse fix via architectural shielding; KV cache compression getting theoretical foundations; generative re-ranking and co-scaling dominating industrial RecSys
+- Updated: wiki/index.md, wiki/log.md
