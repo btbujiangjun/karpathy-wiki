@@ -2014,6 +2014,25 @@
 - Trends: MoE 全面化; Hybrid Mamba-Attention; Diffusion LM; Thinking+Non-Thinking 统一; Configurable reasoning; Agentic RL; 1M context 标配; System Card 标准化
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-07-05] synthesis | WQ101 Alpha Daily — 美股 Top 20 (2026-07-05)
+- New page: wiki/synthesis/2026-07-05/wq101-alpha-daily.md
+- Market context: Dow 52,900 历史新高 (+1.14%); S&P 7,483 持平; Nasdaq 25,833 (-0.80%); SOX -5.44% 连续暴跌; 非农弱→7月加息概率<20%
+- Core theme: **Great Rotation 2.0 确认** — 金融(XLF +2.2%) + 医疗(XLV)领涨, 科技(XLK -2.6%)滑入Lagging
+- Top picks: AAPL (9/10, Alpha#1/#6, 动量+量价协同), JPM (9/10, Alpha#1/#41, 金融轮动龙头), LLY (9/10, Alpha#41/#1, GLP-1趋势), ABBV (9/10, Alpha#1/#6, 医疗防御+增长)
+- 板块分布: 金融 6只, 医疗 5只, 必需消费 3只, 科技 2只, 能源 2只, 消费周期 1只
+- 关键变化 vs 07-04: 板块重心从半导体修复转向低波价值防御; 金融+医疗占比 55%; 新增 BRK.B / JNJ; 半导体出局
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-05] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-07-05)
+- New page: wiki/synthesis/2026-07-05/investment-daily.md
+- Market overview: Dow 52,900 新高; Nasdaq -4.6% 连续5周下跌; Great Rotation 2.0 (科技→医疗+金融+防御)
+- US highlights: META +8.8% (AI Cloud "Meta Compute"); Palantir +7.77% (NVIDIA AI tie-up); Reddit +13.7% (AI licensing); NVDA $194 (-1.78% weekly)
+- China ADR: 板块-1.58%; BIDU -3.93% (ERNIE 5.1 中国#1/全球#4); BABA -1.89% (Qwen3.7 Max #5 global); PDD -0.16%
+- HK tech: 恒指+1.57% 重回23000; 科指+3.23%; AI 国家标准落地; 百度昆仑芯上市传闻
+- A-share: AI 算力芯片回调 (寒武纪/海光信息/沐曦); 存储受益韩国投资计划 (深科技涨停); 半导体设备创新高 (中微公司)
+- AI themes: GPT-5.6 宣布(三重变体); Claude Sonnet 5 发布; 算力租赁价格回落30%; 大厂Token配给化; Tesla Optimus 7月量产
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-05] synthesis | LLM Tech Report Digest — 大模型技术报告综合摘要 (2026-07-05)
 - New page: wiki/synthesis/2026-07-05/tech-report-digest.md
 - Coverage: 20 家机构，基于 07-04 综合版增量更新
