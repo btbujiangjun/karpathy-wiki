@@ -2060,6 +2060,29 @@
 - 新增/重点更新: DeepSeek-V4 (1T MoE, CSA/HCA, On-Policy Distillation, 1M context, arXiv:2605.21510); Anthropic Claude Opus 4.6 System Card (ASL-3, sabotage risk eval, 2026-02); Qwen3-VL (多模态视觉语言, arXiv:2512.00593); Microsoft Phi-4-Reasoning-Vision 15B (arXiv:2603.03975); xAI Grok 4 (媒体报道, 无正式报告); Kimi K2 补充 MuonClip 优化器/RLVR 细节
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-07-05] synthesis | Conference Digest — Top ML/AI Venues 2025–2026 (ICML/AAAI/NeurIPS/ICLR/KDD/CVPR/ACL/EMNLP/SIGIR/WWW/CIKM/RecSys)
+- New page: wiki/synthesis/2026-07-05/conference-digest.md
+- Coverage: 14 sections across 12+ venues
+- ICML 2026: MaxRL, Gated Attention, Learning Unmasking Policies (diffusion LLM), Equivariant Deep Learning, Latent Dynamics Geometry for RL. 10 key themes (foundation models, multimodal, efficient ML, XAI, ethical AI, RL, healthcare, federated, robustness, human-AI).
+- AAAI 2026: 29K submissions → 4,167 accepted (largest ever). Key papers: LogicCat, JudgeBoard, RaCoT, ERank, TIV, DCTR, LiR3, DEPO, SpecQuant (ultra-low-bit), FedSEA-LLaMA, FedBRICK. Keynote on controllable/trustworthy LLM reasoning. AI alignment special track.
+- NeurIPS 2025 Best Papers: Gated Attention (Alibaba Qwen, Attention-Sink-Free, 1.7B dense & 15B MoE, 3.5T tokens), Artificial Hivemind (INFINITY-CHAT homogenization dataset), 1000-Layer Self-Supervised RL, Diffusion Non-Memorization. Runners-up: RL for reasoning (skeptical), Online Learning bounds, Scaling Laws.
+- ICLR 2026: 5,355 accepted (27.4%). Outstanding Papers: Transformers Inherently Succinct (ETH/Cambridge), Polar Express optimal matrix sign for Muon optimizer. Key papers: Aurelius (text-to-audio), AutoGPS (geometry), CARE (clinical reasoning), ADEPT (continual pretraining), AlphaSAGE (GFlowNets), Orak (KRAFTON game agents).
+- KDD 2026: Congrats (Kuaishou graph-structured gen rec), MixRAGRec (MoE KG-RAG multi-agent), SPiKE (LLM semantic profiles + KG), Climber-Pilot (NetEase, non-myopic gen rec, +4.24% core metric), SRPFN (KAIST, synthetic pretraining zero-shot, +7.53% avg, ~1min inference), LLM-as-Judge for Rec, CREATE (transformer+GNN alignment), Causal Attention Reformulations, GR memorization analysis, GenRec (JD.com, +9.5% clicks +8.7% transactions).
+- CVPR 2026 Best Paper: D4RT (Google DeepMind/UCL/Oxford, 4D dynamic scene reconstruction, unified transformer, 300× speedup). Best Paper HM: NitroGen (NVIDIA/Stanford, 40K hours 1000+ games, +52% success), SAM 3D (Meta, single-image 3D, 5:1 human preference). Highlighted: PixelDiT (pixel-space DiT, 1.61 FID), O-Voxel (Microsoft, 3D generation), tttLRM (test-time training for 3D), CoTyle (code-to-style). Embodied AI dominant theme.
+- ACL 2026: Miner (intrinsic uncertainty as RL reward, +4.58 Pass@1 vs GRPO), PaCoRe (parallel coordinated reasoning, 8B beats GPT-5 at 94.5% HMMT), KARL (Tsinghua, knowledge-augmented RL agents beats GPT-4o/Claude-4), MetaJuLS (meta-RL constraint propagation, 1.5-2× speedup), Self-Evolving Multi-Agent (textual backpropagation), FOREAGENT (execution prediction world models). MTR-Bench (multi-turn reasoning benchmark).
+- EMNLP 2025: Best Paper on Response Sampling Theory. Tool-Induced Myopia finding.
+- SIGIR 2026: LTRR (learning to rank retrievers for RAG), L2Rec (dual-view LLM recommendation), GenRec (JD.com preference-oriented)
+- WWW 2026: ThinkRec (thinking-based recommendation)
+- CIKM 2025: MTGR (Meituan industrial generative rec)
+- RecSys 2025: Various papers on generative recommendation
+- Industry RecSys/CTR highlights: GR4AD (Kuaishou, gen rec for ads, +4.2% revenue, 400M users), OneMall (Kuaishou e-commerce, +13% GMV, 400M DAU), HyFormer (unified seq modeling + feature interaction), OneRec (pure generative matches full pipeline), UniFormer (Kuaishou, model-centric scaling), DualGR (Kuaishou, dual-branch long/short-term gen retrieval), AgentX (Kuaishou, 60+ authors, self-evolving rec sys, 3.7× human value, >RMB 100M revenue), AliBoost (Alibaba, cold-start boosting, 1B+ items, +60% GMV), DAIAN (Alibaba, trigger-induced CTR)
+- General AI: DeepAgent (end-to-end reasoning agent with ToolPO RL), Eso-LMs (AR+MDM fusion, first exact MDM likelihood), RePlaid (continuous vs discrete diffusion scaling comparison).
+- Agents: AlphaEvolve (Google DeepMind, evolutionary coding agent, improved Strassen's after 56 years), AutoHarness (synth code harness, 145 games, beats GPT-5.2), Confucius Code Agent (54.3% SWE-Bench-Pro), Lacuna (recursive program holes for safe agents), CSRO (Google DeepMind, code-space PSRO), Meta Runtime Behavior LLM.
+- Models: PixelDiT, D-AR (diffusion via AR), NextFlow (multimodal sequential, 6T tokens, 5s 1024²), SSM+Video Diffusion.
+- Benchmarks: CL-Bench (17.2% avg, context learning crisis), DRACO (Perplexity research benchmark), MathNet (MIT, 30K Olympiad problems), MTR-Bench, Orak, INFINITY-CHAT, LitBench (creative writing, 78% trained vs 73% OTS), LLMEval-Fair, KnowledgeBerg.
+- Key themes: RecSys generative revolution led by Kuaishou; agent-driven development; embodied AI at CVPR; diffusion LLM maturity; test-time compute scaling; Chinese industry dominance in applied ML; homogenization as systemic risk.
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-05] synthesis | Game RL & Game AI Bot — Daily Survey (2026-07-05)
 - New page: wiki/synthesis/2026-07-05/game-rl-daily.md
 - Coverage: ~40 curated papers across 7 categories (Game RL, Game AI Bot, Game Foundation Models, PCG, Benchmarks, Industry Game AI, Related Techniques)
