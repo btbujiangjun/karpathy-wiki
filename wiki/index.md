@@ -327,6 +327,7 @@ Papers are organized by research category. Each page includes problem background
 ## Synthesis
 
 | File | Topic | Sources |
+| [tech-report-digest](synthesis/2026-07-05/tech-report-digest.md) | 大模型技术报告摘要 — LLM Tech Report Digest (2026-07-05 综合版, 20 家机构全面覆盖, 新增 DeepSeek-V4 / Claude Opus 4.6 / Qwen3-VL / Phi-4-RV) | web-search |
 | [arxiv-daily](synthesis/2026-07-04/arxiv-daily.md) | arXiv Daily Report — AI, LLMs, CTR, Recommendation, RL, Games, Sequential Modeling (July 4, 2026) | 17 curated papers |
 | [tech-report-digest](synthesis/2026-07-04/tech-report-digest.md) | 大模型技术报告摘要 — LLM Tech Report Digest (2026-07-04 综合版, 20 家机构全面覆盖) | web-search |
 | [arxiv-paper-check](synthesis/2026-07-04/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (July 4, 2026) | 20 curated papers: Distributed Attacks in AI Control, PAW, ReContext, DemoPSD, TAP (ICML 2026), TestEvo-Bench, Reasoning Effort vs Tools, OrbitQuant, Multi-Agent Social Dynamics, WorldSample (ICML 2026), EvoPolicyGym, LACUNA, CoPersona (KDD '26), IntentTune, Bi-NAS, LLM Clustering Hard Negatives, PaperPilot, PlanRAG (SIGMOD 2027), Spotify Behavior-Grounded Judge, MemSyco-Bench |

@@ -2013,3 +2013,9 @@
 - 新增/重点更新: DeepSeek-V4 (CSA+HCA hybrid attention, Muon optimizer, 1M context); OpenAI GPT-5.6 Preview (Sol/Terra/Luna); Claude Sonnet 5 & Opus 4.8 & Mythos Preview; Gemini 3.1 Pro; GLM-5 (DSA, async Agent RL); Kimi K2.5 (visual agentic, Agent Swarm); NVIDIA Nemotron 3 Ultra (Hybrid Mamba-Attention MoE) & Nemotron-Labs-Diffusion (AR+Diffusion+Self-Speculation); Step 3.5 Flash (11B active frontier); ByteDance Seed1.8 (generalized agency); Intern-S1-Pro (1T scientific multimodal); Baichuan-M3 (clinical medical); Qwen3.5-Omni (ARIA, 256K, omnimodal agent); Ministral 3 (Cascade Distillation)
 - Trends: MoE 全面化; Hybrid Mamba-Attention; Diffusion LM; Thinking+Non-Thinking 统一; Configurable reasoning; Agentic RL; 1M context 标配; System Card 标准化
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-05] synthesis | LLM Tech Report Digest — 大模型技术报告综合摘要 (2026-07-05)
+- New page: wiki/synthesis/2026-07-05/tech-report-digest.md
+- Coverage: 20 家机构，基于 07-04 综合版增量更新
+- 新增/重点更新: DeepSeek-V4 (1T MoE, CSA/HCA, On-Policy Distillation, 1M context, arXiv:2605.21510); Anthropic Claude Opus 4.6 System Card (ASL-3, sabotage risk eval, 2026-02); Qwen3-VL (多模态视觉语言, arXiv:2512.00593); Microsoft Phi-4-Reasoning-Vision 15B (arXiv:2603.03975); xAI Grok 4 (媒体报道, 无正式报告); Kimi K2 补充 MuonClip 优化器/RLVR 细节
+- Updated: wiki/index.md, wiki/log.md
