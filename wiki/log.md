@@ -4,6 +4,18 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-06] synthesis | 大模型技术报告综合摘要 — 全面更新版 (22家机构, 40+报告)
+- New page: wiki/synthesis/2026-07-06/tech-report-digest.md
+- Coverage: 22 AI orgs: DeepSeek (V4/V3.2), OpenAI (GPT-5.6/GPT-5/GPT-5.5), Meta (Llama 4), Google (Gemini 3 Pro/3.1 Pro), Anthropic (Claude Fable 5/Mythos 5/Opus 4.8/Sonnet 5), Mistral (Large 3/Ministral 3), Alibaba Qwen (Qwen3/Qwen3.5-Omni/Qwen3-Max), 01.AI (Yi-Lightning/Yi-34B/Yi-Coder), Baichuan (Omni-1.5/M3/M4), Microsoft (Phi-4/reasoning/reasoning-vision), Apple (AFM 2025), NVIDIA (Nemotron 3 Nano/Super/Ultra/Omni), xAI (Grok 4.1/4.20), Amazon (Nova 2), Zhipu AI (GLM-5/GLM-4.5V), Shanghai AI Lab (InternLM3/Intern-S1-Pro), Moonshot AI (Kimi K2/K2.5/K2.6), StepFun (Step 3/3.5 Flash), ByteDance Seed (Seed2.0/2.1)
+- Key content: 6 cross-cutting analyses (MoE/hybrid architectures, training methods, scaling law, multimodal, long-context, reasoning models); 8 key trends summary
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-06] synthesis | 顶会论文专题报告 — Conference & arXiv Digest (全面版)
+- New page: wiki/synthesis/2026-07-06/conference-digest.md
+- Coverage: 12+ venues (ICML 2026, AAAI 2026, NeurIPS 2025, ICLR 2026, CVPR 2026, KDD 2026, ACL 2026, EMNLP 2025, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025), 80+ curated papers, 15+ labs (Google DeepMind, OpenAI, Meta AI, Microsoft, Anthropic, NVIDIA, Alibaba, ByteDance, Tencent, Kuaishou, Baidu, Zhipu AI, Mistral, Amazon, Apple)
+- Key content: Gated Attention (NeurIPS 2025 Best Paper), HyPER & TEAM (ICML 2026), FastDriveVLA (AAAI 2026), D4RT (CVPR 2026 Best Paper), Total Recall QA (SIGIR 2026), DS-MLP & HyFormer (CTR), CADET (LinkedIn), RankUp (Tencent KDD 2026), Meta Lattice (Meta KDD 2026), SDLM (Sequential Diffusion LM), Nemotron 3, Mamba-3, agent systems (59 ICML/82 ACL/162 ICLR), CTR scaling laws, generative recommendation, game AI (NitroGen, SPIRAL), 10 key trends summary, company research focus map
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-06] synthesis | arXiv Paper Check — AI & CTR (July 6, 2026)
 - New page: wiki/synthesis/2026-07-06/arxiv-paper-check.md
 - Coverage: Scanned cs.AI (353 new submissions) + cs.IR (23 new) from Friday July 3, 2026 listings
