@@ -18,6 +18,11 @@
 
 ## [2026-07-06] synthesis | arXiv Paper Check — AI & CTR (July 6, 2026)
 - New page: wiki/synthesis/2026-07-06/arxiv-paper-check.md
+
+## [2026-07-06] synthesis | 投资日报 2026-07-06
+- New page: wiki/synthesis/2026-07-06/investment-daily.md
+- Coverage: 美股 Mag 7 / AI 链（NVDA, MSFT, GOOGL, AMZN, AVGO, AMD 等）、港股科技（腾讯/阿里/美团/小米/智谱/MiniMax）、A 股 AI 算力与应用（寒武纪/工业富联/中际旭创/新易盛/天孚通信）、中概 ADR（BABA/PDD/JD/BIDU/NIO/LI/XPEV）、新能源车（TSLA/比亚迪/蔚小理/宁德时代）、AI 热点主题（云 CapEx 军备竞赛 $670B、新模型发布潮、机器人/具身智能、SpaxeX-Google $30B 算力大单）
+- Updated: wiki/index.md, wiki/log.md
 - Coverage: Scanned cs.AI (353 new submissions) + cs.IR (23 new) from Friday July 3, 2026 listings
 - LLM highlights: PMD (procedural memory distillation, +3.8-13.6% over SDPO), DemoPSD (GRPO alternative), SOLiD scaling trends, Staleness-LR scaling laws for async RLHF, Scaling with Confidence (adaptive test-time scaling), ReContext (long-context reasoning), LACUNA (unlearning localization testbed)
 - Agent highlights: RLVR for tool-use agents (Atlassian), Clinical RL in FHIR, Multi-agent debate social structure (3%→40% divergence), PAW (0.6B→32B matching), Distributed attacks in persistent AI control
