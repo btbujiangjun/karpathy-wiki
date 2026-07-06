@@ -2136,3 +2136,19 @@
 - CTR/Rec highlights: MixFormer (KDD 2026, ByteDance Douyin co-scaling dense+sequence), GR2 (generative reasoning re-ranker, +18.7% R@1), Bi-NAS (bi-level NAS for RecSys explanations), CoPersona (KDD '26, collaborative persona graphs), IntentTune (e-commerce query disambiguation), Monosemanticity in RecSys (MSAE for interpretable collaborative filtering)
 - Key themes: Novel SLM architectures challenging GPT/LLaMA hegemony; diffusion LLMs reaching parity with AR models; recurrent memory collapse fix via architectural shielding; KV cache compression getting theoretical foundations; generative re-ranking and co-scaling dominating industrial RecSys
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-06] synthesis | Game RL & Game AI Bot — arXiv & Proceedings Daily
+- New page: wiki/synthesis/2026-07-06/game-rl-daily.md
+- Coverage: 25+ papers across 7 topics
+- Game Foundation Models: NitroGen (NVIDIA/CVPR 2026, 40K hrs/1K+ games), Scaling BC (open model, 1.2B, causal reasoning), Towards Generalist Game Players (Tsinghua, roadmap survey)
+- Self-Play & Multi-Agent Reasoning: SPIRAL (ICLR 2026, self-play transfers to reasoning), MARSHAL (multi-agent RL for LLMs), DAGS (data-augmented game starts, OpenSpiel), PolicyEvolve (LLM programmatic policy evolution via PBT)
+- World Models: Dreamer 4 (DeepMind, first offline diamond in Minecraft), Matrix-Game (17B params, SkyworkAI), MineWorld (Microsoft, open-source real-time), AWM (code-driven synthetic environments)
+- MARL: GAWM (Transformer world model for SMAC), O2O MARL (AAMAS 2025, offline-to-online transfer)
+- LLM Game Agents & NPCs: LLMGA survey (ACM CS 2026), CPDC Challenge 2025 winning solution (MSRA, GRPO for NPCs), cross-platform NPCs (Unity+Discord), DOOM 1.3M specialized model
+- PCG: PCGRLLM (LLM-driven reward design, IEEE TG), IPCGRL (language-instructed PCG, CoG 2025), PCG+LLM survey (AIIDE 2024)
+- Benchmarks: DSGBench (6 strategic games, 5-dim scoring), TowerMind (TD game for LLM agents)
+- Industry: NVIDIA ACE (production in PUBG/inZOI/NARAKA), Inworld AI ($120M), Ubisoft NEO NPC
+- Related Techniques: CDE (curiosity-driven exploration for LLM RL), Scalable IRL (DeepMind/NIPS 2024), offline MBRL adaptation, BC horizon theory
+- Surveys: MARL in video games (IEEE TG), Self-play survey, LLM agents in games (ICCSIT 2025)
+- Key trends: Open-source game foundation models, self-play for general reasoning, world models reaching practical deployment, LLM-driven PCG reward design, industry NPC AI going mainstream
+- Updated: wiki/index.md, wiki/log.md
