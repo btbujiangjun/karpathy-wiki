@@ -4,6 +4,16 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-06] synthesis | arXiv Paper Check — AI & CTR (July 6, 2026)
+- New page: wiki/synthesis/2026-07-06/arxiv-paper-check.md
+- Coverage: Scanned cs.AI (353 new submissions) + cs.IR (23 new) from Friday July 3, 2026 listings
+- LLM highlights: PMD (procedural memory distillation, +3.8-13.6% over SDPO), DemoPSD (GRPO alternative), SOLiD scaling trends, Staleness-LR scaling laws for async RLHF, Scaling with Confidence (adaptive test-time scaling), ReContext (long-context reasoning), LACUNA (unlearning localization testbed)
+- Agent highlights: RLVR for tool-use agents (Atlassian), Clinical RL in FHIR, Multi-agent debate social structure (3%→40% divergence), PAW (0.6B→32B matching), Distributed attacks in persistent AI control
+- Rec/CTR highlights: CoPersona (collaborative persona graphs), IntentTune (e-commerce query resolution), Bi-NAS (NAS for RecSys explanations), Monosemanticity in RecSys, GR2 technical report, Planning over MF-MDPs for candidate gen
+- Architecture highlights: Wiola (novel SLM architecture), Discrete Diffusion LMs for radiology, OrbitQuant (W2A4 DiT quantization)
+- Key themes: Procedural memory as training paradigm; on-policy self-distillation maturing; agent safety in persistent codebases; fuzzy function compilation (PAW); reasoning effort > tool access
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-05] synthesis | arXiv Daily Report — AI, LLMs, CTR, Recommendation, RL, Games, Sequential Modeling
 - New page: wiki/synthesis/2026-07-05/arxiv-daily.md
 - Coverage: 21 curated papers across 6 domains (LLM Reasoning & Architecture (4), LLM Agents & Self-Evolution (4), Recommendation Systems (4), CTR Prediction & Advertising (4), Sequential Modeling (2), Reinforcement Learning & Games (3))
@@ -2094,6 +2104,12 @@
 - Industry: GameNGen (ICLR 2025, neural DOOM engine), MLOps for game AI, NVIDIA ACE & NVIGI SDK, Augmenting Game AI with DRL (CoG 2026)
 - Related techniques: Self-play survey, DiNAT-RCM curiosity (hierarchical ViT, Neurocomputing), CERMIC (MARL curiosity), cMarlTest (curiosity game testing), CDE (LLM curiosity exploration), ARISE (hierarchical skill evolution RL), Causal HRL (ICML 2025), Transformer World Models (Craftax SOTA), Optimistic World Models, TWISTER (contrastive world model), Off-FSP (offline self-play), MTRO (multi-game DT auto target), ARMS (MARL reward shaping with equilibrium guarantees), RILe (reinforced imitation learning), Structured IL via Inverse Games
 - Key themes: Self-play emerging as general reasoning training signal for LLMs; game foundation models scaling from pixels; LLM-driven PCG reward design; industry on-device inference maturing; MARL curiosity and hierarchical approaches advancing
+- Updated: wiki/index.md
+
+## [2026-07-06] synthesis | arxiv-ai-search
+- New page: wiki/synthesis/2026-07-06/arxiv-ai-search.md
+- Coverage: 40+ papers across 8 categories — LLM Training/Alignment (SPIRAL, T-STAR, SPPO, SeeUPO, Trainee-to-Trainer), Attention (Keyless, MSA, Affine-Scaled, Tucker, CAHP, Streaming Bounds, Hybrid), Compression (Joint Prune+Quant, Statistical Pruning, POP, GRINQH), RecSys/CTR (GenRec/JD, UniRec/Shopee, OneRanker/Tencent, RankUp/Tencent, GRAB/Baidu, IDProxy/Xiaohongshu, DS-MLP, GenCI, DAIAN), RL Agents/Games (MemoPilot, MEMO, Agentic Transformers, AgentOdyssey), Multimodal (UniAR, ARM, TVI-CoT, LaME, ROSE, CogniRoute, UniDrive), LLM Dev/Eval (CuratorKIT, KARLA, Causal Methods, Reasoning Trajectories), Sequential Decision Making
+- Key themes: Self-play for reasoning training; attention becoming key-less/sparse/tensor-factorized; generative recommendation dominating industrial RecSys (JD, Shopee, Tencent, Baidu, Xiaohongshu); joint prune-quantize at ultra-low bits; multimodal unification via shared tokenizers; RL for agent memory optimization
 - Updated: wiki/index.md
 
 ## [2026-07-05] synthesis | arXiv Paper Check — AI & CTR (July 5, 2026)
