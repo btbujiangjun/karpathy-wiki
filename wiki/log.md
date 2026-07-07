@@ -23,6 +23,15 @@
 - 7 sections: LLM Architecture & Reasoning, Agent Systems, CTR & RecSys, Generative Rec & Diffusion, Computer Vision, NLP & IR, RL & Games
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-07-07] synthesis | WQ101 Alpha Daily — 美股 Top 20 (2026-07-07)
+- New page: wiki/synthesis/2026-07-07/wq101-alpha-daily.md
+- Market: Dow 53,055 历史新高; S&P 7,537 (+0.72%); Nasdaq 26,121 (+1.12%); SOX +2.2% 半导体反弹
+- Key theme: Alpha#53 反转因子主导（10次）— 动量回撤24%后超卖机会凸显
+- Top 3: MRNA (9/10, CAR-T概念+33.5%), LLY (9/10, GLP-1趋势), MSFT (8/10, P/E 19x均值回复)
+- 板块分布: 医疗4只, 软件/安全4只, 金融3只, 半导体3只, 工业2只, 通信2只, 消费电子1只, 防御1只
+- 关键变化 vs 07-06: 主导因子从 Alpha#30低波动→Alpha#53反转；医疗从3→4只(MRNA新高); 新增PLTR/MSFT/CRWD软件标的
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-07] synthesis | arXiv Paper Check — AI & CTR (July 7, 2026)
 - New page: wiki/synthesis/2026-07-07/arxiv-paper-check.md
 - Coverage: Scanned cs.AI (228 new), cs.LG (181 new), cs.IR (12 new) from Friday July 3, 2026 — the most recent arXiv batch
@@ -2193,6 +2202,11 @@
 - Related Techniques: CDE (curiosity-driven exploration for LLM RL), Scalable IRL (DeepMind/NIPS 2024), offline MBRL adaptation, BC horizon theory
 - Surveys: MARL in video games (IEEE TG), Self-play survey, LLM agents in games (ICCSIT 2025)
 - Key trends: Open-source game foundation models, self-play for general reasoning, world models reaching practical deployment, LLM-driven PCG reward design, industry NPC AI going mainstream
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-07] synthesis | Game RL & Game AI Bot — arXiv & Proceedings Daily (2026-07-07)
+- New page: wiki/synthesis/2026-07-07/game-rl-daily.md
+- Coverage: 30+ papers across 7 categories — Game RL (SPIRAL ICLR 2026, SMAC-Talk, MARL survey IEEE ToG, OpenGuanDan), Game AI Bot (Nemobot, DRL NPCs CoG 2026, Echo Minecraft, Voyager TMLR 2024), Foundation Models (NitroGen CVPR 2026, Towards Generalist GP survey, SIMA 2), PCG (PCGRLLM IEEE ToG, IPCGRL CoG 2025, PCG+LLM survey AIIDE 2024), Benchmarks (GameDevBench, Orak KRAFTON, OmniGameArena UE5, GameWorld NUS, BALROG ICLR 2025, GameCraft-Bench), Industry (Matrix-Game 3.0, GameNGen ICLR 2025), Related Techniques (SPA, CDE, Valdi RLC 2026, Scaling WM-RL, RILe, IRL L4DC 2026, Self-play survey, Vid2World, Reward Shaping ICML 2026)
 - Updated: wiki/index.md, wiki/log.md
 
 ## [2026-07-07] arxiv-daily | arXiv Daily Report
