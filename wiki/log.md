@@ -4,6 +4,20 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-07] synthesis | arXiv Paper Check — AI & CTR (July 7, 2026)
+- New page: wiki/synthesis/2026-07-07/arxiv-paper-check.md
+- Coverage: Scanned cs.AI (228 new), cs.LG (181 new), cs.IR (12 new) from Friday July 3, 2026 — the most recent arXiv batch
+- AI Safety highlights: How to Avoid Debate (single-prover interactive proofs, ICML 2026), Online Safety Monitoring, Fast Multi-dimensional Refusal Subspaces, Steerability via Constraints
+- Knowledge Distillation highlights: Teacher Supervision over Representation Equivalence Classes (logit-only drives capability), Co-Adaptive Multi-Task LoRA (CoDA, label-free transfer-aware)
+- Weight Space / Neuro-Symbolic highlights: WeightCLIP (dataset-aligned weight representations, ICML 2026), NDVM (native differentiable VM, 24× faster co-search), MentalThink (SVG-based visual reasoning)
+- Agent & Governance highlights: Safety Testing LLM Agents at Scale, CAGE-1 (Control/Assurance/Governance Evaluation), AGL-1 (Enterprise AI Governance Layer), PACE (Agentic Capability Proxy), AgenticSTS, DRIFTLENS, Atomic Task Graph
+- Architecture highlights: Expander SAEs (parameter-efficient dictionaries), BayesLoRA (sparse Bayesian LoRA), A Hippocampus for Linear Attention, Spec-AUF, G-RRM
+- Diffusion highlights: MoG-guided BBDM schedule design, ART Continuous-Time Control, Subliminal Clocks, Distribution-wise Rewards (ICML 2026)
+- Time Series / Graphs highlights: Zeus (tuning-free TS foundation model, ICML 2026), Self-Gating Attention, NetinfoGC (training-free graph classification)
+- IR/CTR highlights: Relevance-Based Embeddings (approximate any similarity), Agentic Search for EO, Chunking for RAG evaluation
+- Key themes: Single-prover AI verification emerging; weight-space learning as new paradigm; enterprise AI governance formalizing; multi-task co-adaptation without labels; Adam convergence limitations; diffusion theory maturing
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-06] synthesis | 大模型技术报告综合摘要 — 全面更新版 (22家机构, 40+报告)
 - New page: wiki/synthesis/2026-07-06/tech-report-digest.md
 - Coverage: 22 AI orgs: DeepSeek (V4/V3.2), OpenAI (GPT-5.6/GPT-5/GPT-5.5), Meta (Llama 4), Google (Gemini 3 Pro/3.1 Pro), Anthropic (Claude Fable 5/Mythos 5/Opus 4.8/Sonnet 5), Mistral (Large 3/Ministral 3), Alibaba Qwen (Qwen3/Qwen3.5-Omni/Qwen3-Max), 01.AI (Yi-Lightning/Yi-34B/Yi-Coder), Baichuan (Omni-1.5/M3/M4), Microsoft (Phi-4/reasoning/reasoning-vision), Apple (AFM 2025), NVIDIA (Nemotron 3 Nano/Super/Ultra/Omni), xAI (Grok 4.1/4.20), Amazon (Nova 2), Zhipu AI (GLM-5/GLM-4.5V), Shanghai AI Lab (InternLM3/Intern-S1-Pro), Moonshot AI (Kimi K2/K2.5/K2.6), StepFun (Step 3/3.5 Flash), ByteDance Seed (Seed2.0/2.1)
@@ -2160,4 +2174,9 @@
 - Related Techniques: CDE (curiosity-driven exploration for LLM RL), Scalable IRL (DeepMind/NIPS 2024), offline MBRL adaptation, BC horizon theory
 - Surveys: MARL in video games (IEEE TG), Self-play survey, LLM agents in games (ICCSIT 2025)
 - Key trends: Open-source game foundation models, self-play for general reasoning, world models reaching practical deployment, LLM-driven PCG reward design, industry NPC AI going mainstream
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-07] arxiv-daily | arXiv Daily Report
+- Report: wiki/synthesis/2026-07-07/arxiv-daily.md
+- Contents: 23 curated papers across 8 categories — LLM Reasoning & RL (GRPO identity, DemoPSD, AReaL2.0), Architecture (HOLA linear attention, MosaicKV), Recommendation (Bi-NAS, CoPersona, DRIFTLENS), Games (AI Native Games survey, Sony Coachable Agents), IR & RAG (SchemaRAG, PRA-RAG, Diffusion-GR2), CTR (DS-MLP, CADET, ML-DCN), Time-Series (EVOTS, StateFlow), Emerging (Thermodynamic AI, Program-as-Weights, AutoMem)
 - Updated: wiki/index.md, wiki/log.md
