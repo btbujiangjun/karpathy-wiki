@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-07] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-07-07)
+- New page: wiki/synthesis/2026-07-07/investment-daily.md
+- Coverage: US Mag 7 (AAPL +2.9%/MSFT -4.17%/NVDA -0.69%/TSLA +1.89%), AI 链 (AMD +9.2%/PLTR +2.51%/AVGO +5.1%), 港股科技 (腾讯 +4.82%/快手 +8%/美团 +4.68%), A 股 AI (寒武纪/中际旭创 -13.47% 4 天/华大九天 +14%/沐曦 +10%), 中概 ADR (BIDU -3.93%/BABA -1.89%), 新能源 (TSLA Optimus 量产线), AI 热点 (腾讯 Hy3 发布/美团 LongCat-2.0 开源/快手可灵 $3B 融资/昆仑芯 $50B 估值/"韬定律"国产芯片/DRAM 涨价)
+- Key themes: Dow 53,055 新高; Great Rotation 2.0 持续 (科技→医疗/金融); 半导体超卖反弹; 恒生科技反弹 300 点; AI 模型国产化加速; "韬定律"重新定义 A 股芯片叙事; AI CapEx $700B 回报验证在即
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-07] synthesis | 大模型技术报告摘要 — LLM Tech Report Digest (22家机构全面覆盖)
 - New page: wiki/synthesis/2026-07-07/tech-report-digest.md
 - Coverage: 22 AI orgs — DeepSeek (V4 2606.19348), OpenAI (GPT-5/5.5/o1), Meta (Llama 4), Google (Gemini 2.5 2507.06261), Anthropic (Claude Opus 4.8/Mythos/Sonnet 5), Mistral (Ministral 3 2601.08584), Alibaba Qwen (Qwen3 2505.09388/Qwen3.5-Omni/Qwen3-Coder-Next 2603.00729/Qwen-VLA 2605.30280), 01.AI (Yi-Lightning 2412.01253), Baichuan (M3 2602.06570/M4 2606.08982/Omni-1.5 2501.15368), Microsoft (Phi-4-reasoning 2504.21318/Phi-4-reasoning-vision 2603.03975), Apple (AFM 2025 2507.13575), NVIDIA (Nemotron 3 Super 2604.12374/Ultra), xAI (Grok 4/4.1/4.20), Amazon (Nova 2506.12103), Zhipu AI (GLM-5 2602.15763), Shanghai AI Lab (Intern-S1-Pro 2603.25040), Moonshot AI (Kimi K2 2507.20534/K2.5 2602.02276), StepFun (Step 3.5 Flash 2602.10604/STEP3-VL 2601.09668), ByteDance Seed (Seed 2.0 2607.00248/Seed 1.8 2603.20633)
