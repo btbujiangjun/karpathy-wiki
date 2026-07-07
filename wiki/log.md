@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-07] synthesis | 大模型技术报告摘要 — LLM Tech Report Digest (22家机构全面覆盖)
+- New page: wiki/synthesis/2026-07-07/tech-report-digest.md
+- Coverage: 22 AI orgs — DeepSeek (V4 2606.19348), OpenAI (GPT-5/5.5/o1), Meta (Llama 4), Google (Gemini 2.5 2507.06261), Anthropic (Claude Opus 4.8/Mythos/Sonnet 5), Mistral (Ministral 3 2601.08584), Alibaba Qwen (Qwen3 2505.09388/Qwen3.5-Omni/Qwen3-Coder-Next 2603.00729/Qwen-VLA 2605.30280), 01.AI (Yi-Lightning 2412.01253), Baichuan (M3 2602.06570/M4 2606.08982/Omni-1.5 2501.15368), Microsoft (Phi-4-reasoning 2504.21318/Phi-4-reasoning-vision 2603.03975), Apple (AFM 2025 2507.13575), NVIDIA (Nemotron 3 Super 2604.12374/Ultra), xAI (Grok 4/4.1/4.20), Amazon (Nova 2506.12103), Zhipu AI (GLM-5 2602.15763), Shanghai AI Lab (Intern-S1-Pro 2603.25040), Moonshot AI (Kimi K2 2507.20534/K2.5 2602.02276), StepFun (Step 3.5 Flash 2602.10604/STEP3-VL 2601.09668), ByteDance Seed (Seed 2.0 2607.00248/Seed 1.8 2603.20633)
+- Key themes: MoE普及化; 混合架构（Mamba-Transformer, CSA+HCA）; 百万Token上下文标配; 推理/思考模式成为基本功能; Agent原生化; 多模态融合加速; 开源开放科学
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-07] synthesis | 顶会论文专题报告 — Conference & arXiv Digest (全面更新版)
 - New page: wiki/synthesis/2026-07-07/conference-digest.md
 - Coverage: 12+ venues (ICML 2026, AAAI 2026, NeurIPS 2025, ICLR 2026, CVPR 2026, KDD 2026, EMNLP 2025, SIGIR 2026, WWW 2026, CIKM 2025), 80+ curated papers, 15+ labs (Google DeepMind, OpenAI, Meta AI, Microsoft, Anthropic, NVIDIA, ByteDance, Kuaishou, Alibaba, Tencent, Yandex, Amazon, Apple, MPI, NTU)
