@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-07] synthesis | 顶会论文专题报告 — Conference & arXiv Digest (全面更新版)
+- New page: wiki/synthesis/2026-07-07/conference-digest.md
+- Coverage: 12+ venues (ICML 2026, AAAI 2026, NeurIPS 2025, ICLR 2026, CVPR 2026, KDD 2026, EMNLP 2025, SIGIR 2026, WWW 2026, CIKM 2025), 80+ curated papers, 15+ labs (Google DeepMind, OpenAI, Meta AI, Microsoft, Anthropic, NVIDIA, ByteDance, Kuaishou, Alibaba, Tencent, Yandex, Amazon, Apple, MPI, NTU)
+- Key content: Gated Attention & Artificial Hivemind (NeurIPS 2025 Best Papers), HyPER (ICML 2026), PAPL (ICLR 2026 Oral), MAMMA & WorldLens (CVPR 2026 Orals), DS-MLP (TKDD 2026, CTR SOTA), SPiKE (KDD 2026), SDLM (Sequential Diffusion LM), LatentMAS (latent-space multi-agent), AgentForge (SWE-Bench 40%), DGenCTR/ContRec/OneRec (Generative Rec), ULTRA-HSTU (Meta), CLSR (symbolic agent communication)
+- 7 sections: LLM Architecture & Reasoning, Agent Systems, CTR & RecSys, Generative Rec & Diffusion, Computer Vision, NLP & IR, RL & Games
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-07] synthesis | arXiv Paper Check — AI & CTR (July 7, 2026)
 - New page: wiki/synthesis/2026-07-07/arxiv-paper-check.md
 - Coverage: Scanned cs.AI (228 new), cs.LG (181 new), cs.IR (12 new) from Friday July 3, 2026 — the most recent arXiv batch
