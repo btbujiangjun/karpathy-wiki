@@ -2234,3 +2234,10 @@
 - Report: wiki/synthesis/2026-07-07/arxiv-daily.md
 - Contents: 23 curated papers across 8 categories — LLM Reasoning & RL (GRPO identity, DemoPSD, AReaL2.0), Architecture (HOLA linear attention, MosaicKV), Recommendation (Bi-NAS, CoPersona, DRIFTLENS), Games (AI Native Games survey, Sony Coachable Agents), IR & RAG (SchemaRAG, PRA-RAG, Diffusion-GR2), CTR (DS-MLP, CADET, ML-DCN), Time-Series (EVOTS, StateFlow), Emerging (Thermodynamic AI, Program-as-Weights, AutoMem)
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-08] synthesis | conference-digest — Major ML/AI Proceedings Overview (2026-07-08)
+- New page: wiki/synthesis/2026-07-08/conference-digest.md
+- Coverage: 12 sections across 12+ venues (NeurIPS 2025, EMNLP 2025, AAAI 2026, ICLR 2026, WWW 2026, CVPR 2026, KDD 2026, ICML 2026, ACL 2026, SIGIR 2026, RecSys 2025)
+- Key highlights: Gated Attention (NeurIPS 2025 Best), s1 test-time scaling (EMNLP 2025), Meta Lattice (KDD 2026), D4RT (CVPR 2026 Best), OneTrans (WWW 2026), ECF8 (ICLR 2026), CTR-Sink (KDD 2026)
+- Themes: Test-time scaling, gated attention, industrial rec scaling, generative recommendation, LLM agents, 4D/3D vision, efficiency optimization
+- Updated: wiki/index.md, wiki/log.md
