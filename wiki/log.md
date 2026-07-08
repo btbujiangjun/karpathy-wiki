@@ -28,6 +28,11 @@
 
 ## [2026-07-08] synthesis | arxiv-daily — arXiv Daily Digest 2026-07-08
 - New page: wiki/synthesis/2026-07-08/arxiv-daily.md
+
+## [2026-07-08] synthesis | game-rl-daily — Game RL & Game AI Bot Paper Digest (July 8, 2026)
+- New page: wiki/synthesis/2026-07-08/game-rl-daily.md
+- Coverage: 65+ curated papers across 10 categories — Game RL (QZero, Generals.io AI, RGSC, AlphaZero Tablut, SPIRAL, Stratagem, Generative Code Opt, GAE, GFXP), MARL (MARL-GPT AAAI/AAMAS 2026, SHPPO, HLSMAC, MARSHAL), Game AI Bot (Odysseus, AVA ACL 2026, Nemobot, Sensi, AdaMARP, Psy-CoT, Bounded Autonomy, LLM Testing), Foundation Models (NitroGen NVIDIA, Game-TARS, Pixels2Play, Lumine, GameVerse, OpenGame, Survey), World Models (Dreamer 4, NE-Dreamer, R2-Dreamer ICLR 2026, WAM, Dreamer-CDP, ARROW, OWM, ResDreamer, RAW-Dream, Matrix-Game 3.0/2.0), PCG (IPCGRL, VIPCGRL, Multiverse, PCGRLLM, CreativeGame, WFC+PCGRL, Word2Minecraft, HDPCG, Word2World, SLM for PCG, DRL Level Design), Benchmarks (OmniGameArena UE5, GameWorld, Orak KRAFTON, lmgame-Bench, AI Gamestore, V-MAGE ACL 2026, HLSMAC), Self-Play & Related (PopuLoRA, FMSP, SeRL, Reasonably Reasoning Agents, DEDA-FP NeurIPS 2025, Karma DPGs), Industry (KRAFTON ICML 2026, Sony GT Sophy, Microsoft WHAM, NC AI, AI Native Games survey), Orchestrated Worlds (Orchestrated Reality, MultiGen)
+- Updated: wiki/index.md, wiki/log.md
 - Coverage: 22 curated papers — LLMs (DepthWeave-KV, FreqDepthKV, World Models Roadmap, ProtoType LMs), CTR (DS-MLP TKDD, IDProxy XHS, CADET LinkedIn, GenLI), Rec (HGenPush, Agentic RS Roadmap, LBR, Temporal Gap Tokenization), Time Series (RMISC), RL & Games (SPIRAL ICLR 2026, FootsiesGym, Augmenting Game AI CoG 2026, Strat-Reasoner), Multi-Agent (StateFuse, Doomed Probe Cascade), IR (UniSGR, Off-Policy REINFORCE, SCOReD)
 - Updated: wiki/index.md, wiki/log.md
 
