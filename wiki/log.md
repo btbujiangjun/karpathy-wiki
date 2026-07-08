@@ -2241,3 +2241,9 @@
 - Key highlights: Gated Attention (NeurIPS 2025 Best), s1 test-time scaling (EMNLP 2025), Meta Lattice (KDD 2026), D4RT (CVPR 2026 Best), OneTrans (WWW 2026), ECF8 (ICLR 2026), CTR-Sink (KDD 2026)
 - Themes: Test-time scaling, gated attention, industrial rec scaling, generative recommendation, LLM agents, 4D/3D vision, efficiency optimization
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-08] synthesis | investment-daily — 全球科技与 AI 板块 (2026-07-08)
+- New page: wiki/synthesis/2026-07-08/investment-daily.md
+- Coverage: 美股韩国 Margin Cascade (KOSPI -8% 熔断; NVDA +0.7%/MU -22%/TSM -4.4%/ASML -4.3%); Mag 7 分化持续 ($2.3T 6月蒸发; MSFT -16% YTD); 三星 Q2 利润暴增 18 倍 (DRAM +44%/NAND +53%); 港股 Momenta 上市 (414 倍超购/$751M); 智谱限售解禁 (HKD 400 亿/机构锁仓 70%); MiniMax 锁定期到期; 腾讯混元 Hy3 发布; A 股存储芯片全线走强 (澜起 H 股 15 天翻倍); BYD Seal 08 6.5 万单/30h/$29K; 昆仑芯冲刺 A+H 估值 $50B; OpenAI GPT-5.6 Sol 预览限美国政府审批; 国产算力替代; Robotaxi 监管松绑 (Momenta/Pony.ai/Hesai+NVIDIA)
+- Key themes: KOSPI 连锁去杠杆; Great Rotation 2.0 (半导体→防御); 内存超级周期; AI CapEx 回报验证窗口临近; 港股 AI 解禁潮; 中国 EV 市场走弱+出口暴增; 国产芯片 IPO 密集期
+- Updated: wiki/index.md, wiki/log.md
