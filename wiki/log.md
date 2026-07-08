@@ -4,6 +4,15 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-08] synthesis | WQ101 Alpha Daily — 美股 Top 20 (2026-07-08)
+- New page: wiki/synthesis/2026-07-08/wq101-alpha-daily.md
+- Market: S&P 500 7,503 (-0.45%), Nasdaq 25,818 (-1.16%), Dow 52,925 (-0.25%), SOX 芯片板块回调, 伊朗局势升温油价反弹
+- Key theme: Alpha#1 动量 (6次) + Alpha#41 趋势强度 (5次) 主导; 金融板块 5 只入选为最强板块
+- Top 3: JPM (9.0, Alpha#41/#6, 52周新高+50B回购), META (8.8, Alpha#1/#12, 量价齐升), CRWD (8.7, Alpha#1/#30, AI安全YTD+76%)
+- 板块分布: 金融 5只, 科技/安全 9只, 通信 2只, 能源 2只, 医疗 1只, 消费 1只
+- 关键变化 vs 07-07: 主导因子从 Alpha#53 反转→Alpha#1 动量+Alpha#41趋势; 金融从 3→5 只; 网络安全动量为主; 能源超卖反转机会 CVX/XOM
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-08] synthesis | arxiv-paper-check — AI & CTR (July 8, 2026)
 - New page: wiki/synthesis/2026-07-08/arxiv-paper-check.md
 - Coverage: Scanned cs.AI (49 new), cs.LG (58 new), cs.IR (11 new) from Wednesday July 8, 2026 listings
