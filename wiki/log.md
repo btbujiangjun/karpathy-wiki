@@ -4,10 +4,31 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-08] synthesis | arxiv-paper-check — AI & CTR (July 8, 2026)
+- New page: wiki/synthesis/2026-07-08/arxiv-paper-check.md
+- Coverage: Scanned cs.AI (49 new), cs.LG (58 new), cs.IR (11 new) from Wednesday July 8, 2026 listings
+- AI highlights: SearchEyes (multi-hop multimodal search), Memory-in-the-Loop (100us in-process retrieval), NapMem (memory as structured action space), Akashic/MemAttention (low-overhead LLM inference with chunked memory), CSTutorBench (SLM tutoring evaluation), Narrative World Model (narratology-grounded memory), TurnOPD (efficient on-policy distillation), PolyWorkBench (multilingual agents), StateFuse (conflict-preserving multi-agent memory), FirstResearch (auditable scientific question formation), ArtisanCAD (industrial CAD with expert knowledge distillation), Controlling Tool Use (activation steering)
+- ML highlights: FourTune (W4A4G4 diffusion post-training, 2.25× memory reduction), λ-VAE (variance equalization for posterior collapse), Exogenous Dropout (robust time series), STS/SBS (stochastic token steering)
+- IR highlights: PORTS (preference-optimized retrievers for tool selection), SCOReD (student-aware CoT for recommendation distillation), Signed MaxSim (theoretical capacity of late-interaction)
+- CTR: No new CTR papers today; included recent highlights (DeRes, DS-MLP, LoopCTR, EST, GRAB)
+- Key themes: Memory architectures dominate (4 papers), agent evaluation maturing, 4-bit training for diffusion
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-07] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-07-07)
 - New page: wiki/synthesis/2026-07-07/investment-daily.md
 - Coverage: US Mag 7 (AAPL +2.9%/MSFT -4.17%/NVDA -0.69%/TSLA +1.89%), AI 链 (AMD +9.2%/PLTR +2.51%/AVGO +5.1%), 港股科技 (腾讯 +4.82%/快手 +8%/美团 +4.68%), A 股 AI (寒武纪/中际旭创 -13.47% 4 天/华大九天 +14%/沐曦 +10%), 中概 ADR (BIDU -3.93%/BABA -1.89%), 新能源 (TSLA Optimus 量产线), AI 热点 (腾讯 Hy3 发布/美团 LongCat-2.0 开源/快手可灵 $3B 融资/昆仑芯 $50B 估值/"韬定律"国产芯片/DRAM 涨价)
 - Key themes: Dow 53,055 新高; Great Rotation 2.0 持续 (科技→医疗/金融); 半导体超卖反弹; 恒生科技反弹 300 点; AI 模型国产化加速; "韬定律"重新定义 A 股芯片叙事; AI CapEx $700B 回报验证在即
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-08] synthesis | arxiv-ai-search — arXiv AI Research Scan July 2026
+- New page: wiki/synthesis/2026-07-08/arxiv-ai-search.md
+- Coverage: 40+ papers across 6 categories — LLM Training (LLM-as-a-Verifier, MiniMax MSA, CPE, TTT-NTP, TEMPO, Overthinking, T² Scaling), Advertising CTR (OneRanker, GR4AD, DAIAN, DS-MLP, GRAB, GenCI, RankUp, CADET, IDProxy), Sequential Rec (HPGR, CMSL, MVCrec, DiffSBR, MLTFR, Persona-KG, LLM Distillation), Time Series (UniTok-FM, TimeSqueeze, Time-TK, UniMamba, TimeFormer, CAPS), Games (Odysseus, SPIRAL, MARL-GPT, Stratagem), RL Agents (RAPO, T-STAR, Trainee-to-Trainer, Agentic Transformers Search)
+- Key themes: verification as new scaling axis, generative recommendation industrial deployment, context pollution in rec systems, overthinking in test-time compute, time series foundation models via NTP, self-play for transferable reasoning
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-08] synthesis | arxiv-daily — arXiv Daily Digest 2026-07-08
+- New page: wiki/synthesis/2026-07-08/arxiv-daily.md
+- Coverage: 22 curated papers — LLMs (DepthWeave-KV, FreqDepthKV, World Models Roadmap, ProtoType LMs), CTR (DS-MLP TKDD, IDProxy XHS, CADET LinkedIn, GenLI), Rec (HGenPush, Agentic RS Roadmap, LBR, Temporal Gap Tokenization), Time Series (RMISC), RL & Games (SPIRAL ICLR 2026, FootsiesGym, Augmenting Game AI CoG 2026, Strat-Reasoner), Multi-Agent (StateFuse, Doomed Probe Cascade), IR (UniSGR, Off-Policy REINFORCE, SCOReD)
 - Updated: wiki/index.md, wiki/log.md
 
 ## [2026-07-07] synthesis | 大模型技术报告摘要 — LLM Tech Report Digest (22家机构全面覆盖)
