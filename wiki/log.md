@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-09] synthesis | LLM Tech Report Digest 2026 — 12家AI公司技术报告汇总
+- New page: wiki/synthesis/2026-07-09/tech-report-digest.md
+- Coverage: 12 AI orgs — DeepSeek (V4), OpenAI (o3/o4-mini), Meta (Llama 4), Google (Gemini 2.5), Anthropic (Claude Opus 4.7/Fable 5/Mythos 5), Mistral (3), Alibaba (Qwen3), Microsoft (Phi-4), xAI (Grok 4), NVIDIA (Nemotron 3), Apple (AFM 2025), Google (Gemma 4)
+- Key themes: cross-cutting architecture analysis (MoE, hybrid Mamba-Attention, MLA), training methods (RL post-training, GRPO/RLVR), scaling law trends, multimodal capabilities, long context (1M+ standard), reasoning model landscape
+- Key sections: Architecture table (12 models), Context length comparison (4 tiers), Cross-cutting themes (8 dimensions), 12 company entries with model cards
+- Updated: wiki/index.md (synthesis entry added), wiki/log.md
+
 ## [2026-07-09] synthesis | arXiv Conference Digest — Comprehensive Multi-Venue Report (2026-07-09)
 - **Updated page:** wiki/synthesis/2026-07-09/arxiv-daily.md (expanded from 15 to 44 curated papers)
 - **Venues now covered:** ICML 2026, NeurIPS 2025, ICLR 2026, AAAI 2026, CVPR 2026, KDD 2026, ACL 2026, EMNLP 2025, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025
