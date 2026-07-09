@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-09] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 9, 2026)
+- New page: wiki/synthesis/2026-07-09/game-rl-daily.md
+- Coverage: 50+ curated papers across 7 categories — Game RL (QZero, Generative Code Opt, DAGS, Think in Games), Game AI Bot (AVA, Odysseus, COSPLAY, Sensi, PokéChamp, PORTAL, MEMO, Nemobot, OpenGame, MineDreamer), Foundation Models (NitroGen NVIDIA, Game-TARS ByteDance, Pixels2Play, MARL-GPT, Generalist GP survey), PCG (PCGRLLM, IPCGRL, VIPCGRL, MOPCGRL, Agentic PCG), Benchmarks (OmniGameArena, lmgame-Bench, GameWorld, Orak, AI Gamestore, CivBench, PokéAgent, RevengeBench), Industry (GT Sophy 5-year, NVIDIA ACE, Ubisoft Teammates, GenAI NPC survey), Related Techniques (SPIRAL, MARSHAL, MATWM, Multiplayer World Models 5B, MultiWorld, SPA, ProPlay, Dreamer 4, GRACE IRL, iLLM, SENSEI, GLANCE, Inverse Game Theory)
+- Key themes: Model-free Go at scale (QZero), VLM+RL for 100+ turn games (Odysseus), GPUs-as-game-foundation-models maturing (NitroGen 1000+ games), Agentic PCG as new sub-area, Industry deployment milestones (GT Sophy production, Ubisoft Teammates), Self-play + world models as dual paradigm continues
+- Updated: wiki/index.md (synthesis entry added), wiki/log.md
+
 ## [2026-07-09] synthesis | LLM Tech Report Digest 2026 — 12家AI公司技术报告汇总
 - New page: wiki/synthesis/2026-07-09/tech-report-digest.md
 - Coverage: 12 AI orgs — DeepSeek (V4), OpenAI (o3/o4-mini), Meta (Llama 4), Google (Gemini 2.5), Anthropic (Claude Opus 4.7/Fable 5/Mythos 5), Mistral (3), Alibaba (Qwen3), Microsoft (Phi-4), xAI (Grok 4), NVIDIA (Nemotron 3), Apple (AFM 2025), Google (Gemma 4)
