@@ -4,6 +4,17 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-09] synthesis | arXiv Daily — AI, LLM, Rec, CTR, Games (2026-07-09)
+- New page: wiki/synthesis/2026-07-09/arxiv-daily.md
+- Coverage: 15 curated papers from arXiv cs.AI, cs.LG, cs.IR recent submissions (Jul 3–9, 2026)
+- LLM RL: Agon (competitive cross-model RL), SAO (single-rollout async, GLM-5.2 750B), EPPO (multi-task entropy pacing)
+- KV Cache: Fractal KV Archives (36-54x compression, O(1) access), DepthWeave-KV (8.3x, 72.8 tok/s at 64K)
+- Transformer Architecture: Analysis-driven linearization (LLaMA/Qwen 32B), FourierQK (spectral QK, 79% loss reduction), RoPE frequency theory
+- AI Safety: GPT-5 deployment simulation (predicted misbehavior rates), Multi-agent AI control (fragmentation effect)
+- Recommendation & CTR: DS-MLP (SOTA CTR via distilled MLP, TKDD), Agentic RS survey, MMEACR (multimodal agents), HGenPush (Kuaishou, heterogeneous generative push)
+- Games: RAID (RL testing for NHL26, 6 exploits found)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-08] synthesis | WQ101 Alpha Daily — 美股 Top 20 (2026-07-08)
 - New page: wiki/synthesis/2026-07-08/wq101-alpha-daily.md
 - Market: S&P 500 7,503 (-0.45%), Nasdaq 25,818 (-1.16%), Dow 52,925 (-0.25%), SOX 芯片板块回调, 伊朗局势升温油价反弹
@@ -2260,4 +2271,21 @@
 - New page: wiki/synthesis/2026-07-08/investment-daily.md
 - Coverage: 美股韩国 Margin Cascade (KOSPI -8% 熔断; NVDA +0.7%/MU -22%/TSM -4.4%/ASML -4.3%); Mag 7 分化持续 ($2.3T 6月蒸发; MSFT -16% YTD); 三星 Q2 利润暴增 18 倍 (DRAM +44%/NAND +53%); 港股 Momenta 上市 (414 倍超购/$751M); 智谱限售解禁 (HKD 400 亿/机构锁仓 70%); MiniMax 锁定期到期; 腾讯混元 Hy3 发布; A 股存储芯片全线走强 (澜起 H 股 15 天翻倍); BYD Seal 08 6.5 万单/30h/$29K; 昆仑芯冲刺 A+H 估值 $50B; OpenAI GPT-5.6 Sol 预览限美国政府审批; 国产算力替代; Robotaxi 监管松绑 (Momenta/Pony.ai/Hesai+NVIDIA)
 - Key themes: KOSPI 连锁去杠杆; Great Rotation 2.0 (半导体→防御); 内存超级周期; AI CapEx 回报验证窗口临近; 港股 AI 解禁潮; 中国 EV 市场走弱+出口暴增; 国产芯片 IPO 密集期
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-09] synthesis | arXiv AI Research Scan (2026-07-09)
+- New page: wiki/synthesis/2026-07-09/arxiv-ai-search.md
+- Coverage: 26 curated papers across 6 categories from recent arXiv submissions (Jun–Jul 2026)
+- LLM Architecture: Review Residuals (scale-emergent gating), Legible-by-Construction (interpretable transformers), Expressivity-Efficiency Tradeoffs (hybrid SSM+attention theory), GD Convergence (beyond NTK), Algorithmic Foundations (circuit-to-NN compilation)
+- RL & Agents: LLM-as-a-Verifier (verification scaling axis, SOTA on 4 benchmarks), CPE (unsupervised weight-space elicitation of latent behaviors), SPIRAL (self-play reasoning via zero-sum games), AgentOdyssey (text game continual learning), AgenticSTS (bounded memory for long-horizon agents), MEMO (memory-augmented context optimization), Agentic RL Systems (self-evolving agents blueprint), Causal Methods for LLMs
+- Games & MARL: Multiplayer World Models (Rocket League, 5B latent diffusion, 20fps on B200), MARL-GPT (foundation model for SMACv2/GRF/POGEMA)
+- CTR/Rec/Advertising: OneRanker (Tencent, unified generation+ranking, +1.34% GMV-Normal), GR4AD (Kuaishou, +4.2% rev, <100ms latency), IDProxy (Xiaohongshu, MLLM cold-start CTR), DS-MLP (Renmin Univ, dual-stream MLP SOTA), GRAB (Baidu, +3.05% revenue), GenCI (WWW 2026, generative cohort intent), UniSID (end-to-end SID generation), SparseCTR (+1.72% CTR online), DAIAN (trigger-induced intent)
+- Updated: wiki/index.md
+
+## [2026-07-09] synthesis | arxiv-paper-check — AI & CTR (July 9, 2026)
+- New page: wiki/synthesis/2026-07-09/arxiv-paper-check.md
+- Coverage: 22 curated papers from cs.AI (95 new), cs.LG (110 new), cs.IR (4 new), cs.CL (34 new) — submissions from July 8, 2026
+- AI & LLM highlights (14 papers): Co-LMLM (continuous-query LMLM), AdaPrefix-GRPO (2.1× GRPO efficiency), Compositional RL via RL post-training, RSI survey (1,250 papers, 7 paradigms), diffusion RLHF (6× efficiency), Future Confidence Distillation (soft+forecast), PALS (40/50% sparsity, -5% accuracy), Bielik (entity familiarity in models), STRACE (LLM agent optimization), SciReasoner (67/86 SOTA), role-factorized search (reasoning curriculum), DeLS-Spec (speculative decoding), Institutional red-teaming guide, CFG guidance repair for diffusion
+- CTR & Rec highlights (4 papers): MMEACR (multimodal agent Rec), R³ (ad compliance, ACL 2026), InductWave (KG reasoning), interpretable uncertainty retrieval
+- Key themes: RL training efficiency (AdaPrefix-GRPO, compositional RL), reasoning curriculum design (role-factorized, SciReasoner), LLM self-assessment (future confidence, entity familiarity), AI safety (red-teaming), CTR/recommendation with agentic multimodal and compliance awareness
 - Updated: wiki/index.md, wiki/log.md
