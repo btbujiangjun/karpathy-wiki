@@ -2296,3 +2296,14 @@
 - CTR & Rec highlights (4 papers): MMEACR (multimodal agent Rec), R³ (ad compliance, ACL 2026), InductWave (KG reasoning), interpretable uncertainty retrieval
 - Key themes: RL training efficiency (AdaPrefix-GRPO, compositional RL), reasoning curriculum design (role-factorized, SciReasoner), LLM self-assessment (future confidence, entity familiarity), AI safety (red-teaming), CTR/recommendation with agentic multimodal and compliance awareness
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-09] synthesis | Investment Daily — 全球科技与 AI 板块投资热点 (2026-07-09)
+- New page: wiki/synthesis/2026-07-09/investment-daily.md
+- Market context: 美伊停火终止油价暴涨；Mag 7 vs 存储芯片轮动加剧；港股科技全线暴涨 5%；A 股 AI 算力产业链持续强势
+- US stocks (13 stocks): Mag 7 全面分析 + Broadcom/AMD/Palantir/Oracle/SpaceX/Micron/SanDisk
+- HK stocks (10 stocks): 阿里巴巴/腾讯/美团/小米/百度/快手/智谱/MINIMAX/商汤/中芯国际
+- A-shares (6 stocks): 寒武纪/中际旭创/新易盛/源杰科技/北方华创/宁德时代
+- 中概股 (7 stocks): PDD/JD/NTES/TCOM/BILI/LI/NIO
+- EV (4 stocks): BYD/Tesla/Zeekr/阳光电源
+- AI 热点主题: Grok 4.5, GPT-Live-1, LongCat-2.0, Protea (10M token), Robostral Navigate, LingBot-VLA 2.0, 混元 Hy3, 国产算力里程碑, 机器人/具身智能, 自动驾驶
+- Updated: wiki/index.md (synthesis entry added), wiki/log.md
