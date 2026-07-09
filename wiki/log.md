@@ -4,16 +4,16 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
-## [2026-07-09] synthesis | arXiv Daily — AI, LLM, Rec, CTR, Games (2026-07-09)
-- New page: wiki/synthesis/2026-07-09/arxiv-daily.md
-- Coverage: 15 curated papers from arXiv cs.AI, cs.LG, cs.IR recent submissions (Jul 3–9, 2026)
-- LLM RL: Agon (competitive cross-model RL), SAO (single-rollout async, GLM-5.2 750B), EPPO (multi-task entropy pacing)
-- KV Cache: Fractal KV Archives (36-54x compression, O(1) access), DepthWeave-KV (8.3x, 72.8 tok/s at 64K)
-- Transformer Architecture: Analysis-driven linearization (LLaMA/Qwen 32B), FourierQK (spectral QK, 79% loss reduction), RoPE frequency theory
-- AI Safety: GPT-5 deployment simulation (predicted misbehavior rates), Multi-agent AI control (fragmentation effect)
-- Recommendation & CTR: DS-MLP (SOTA CTR via distilled MLP, TKDD), Agentic RS survey, MMEACR (multimodal agents), HGenPush (Kuaishou, heterogeneous generative push)
-- Games: RAID (RL testing for NHL26, 6 exploits found)
-- Updated: wiki/index.md, wiki/log.md
+## [2026-07-09] synthesis | arXiv Conference Digest — Comprehensive Multi-Venue Report (2026-07-09)
+- **Updated page:** wiki/synthesis/2026-07-09/arxiv-daily.md (expanded from 15 to 44 curated papers)
+- **Venues now covered:** ICML 2026, NeurIPS 2025, ICLR 2026, AAAI 2026, CVPR 2026, KDD 2026, ACL 2026, EMNLP 2025, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025
+- **New sections added:** Cross-Cutting Themes table, Summary Statistics table
+- **LLM Architecture (10 papers):** Review Residuals (emergent at scale), Legible-by-Construction, Hybrid Seq (6× fewer params), Linearization (32B), Fractal KV (36–54×), DepthWeave-KV (8.3×), FourierQK (79% loss reduction), RoPE theory, GD beyond NTK, Algorithmic Foundations
+- **LLM RL & Agents (10 papers):** Agon (2× GRPO), AdaPrefix-GRPO (2.1× GRPO), Compositional RL, SAO (GLM-5.2 750B), EPPO, LLM-as-a-Verifier (78.2% SWE-Bench), CPE, SPIRAL (10% gain 8 benchmarks), Agentic Transformers (proven DFS), MEMO (19× fewer games)
+- **CTR Prediction (12 papers):** OneRanker (Tencent +1.34% GMV), GR4AD (Kuaishou +4.2% revenue), GRAB (Baidu +3.49% CTR), DS-MLP (TKDD SOTA), CADET (LinkedIn), IDProxy (XHS), SparseCTR (WWW +1.72% CTR), GenCI (WWW), DAIAN, RankUp (KDD), UniSID, LOOPCTR
+- **Recommendation Systems (8 papers):** MMEACR, Agentic RS Roadmap, HGenPush (Kuaishou +0.181% DAU), R^3 ad compliance (ACL 2026), IntuRec, Meta Lattice (KDD), AgentX (3.7×), GenCI
+- **Games & MARL (4 papers):** Multiplayer World Models (4-player 20fps), MARL-GPT, RAID (NHL26), SPIRAL
+- **Updated:** wiki/index.md (synthesis entry expanded), wiki/log.md
 
 ## [2026-07-08] synthesis | WQ101 Alpha Daily — 美股 Top 20 (2026-07-08)
 - New page: wiki/synthesis/2026-07-08/wq101-alpha-daily.md
