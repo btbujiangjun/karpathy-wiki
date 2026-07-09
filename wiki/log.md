@@ -4,6 +4,15 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-09] synthesis | WQ101 Alpha Daily — 美股 Top 20 (2026-07-09)
+- New page: wiki/synthesis/2026-07-09/wq101-alpha-daily.md
+- Market: S&P 7,495 (+9% YTD), Dow 52,422, Nasdaq 29,362; 美伊冲突升级原油+5%至$78; Fed 6月纪要偏鹰; IMF下调全球增长至3%
+- Key theme: Alpha#19 Mean Reversion (8次) + Alpha#30 Low Vol (8次) 主导; 板块轮动科技→医疗/能源/金融/防御
+- Top 3: LLY (9/10, Alpha#19/#30), XOM (8/10, Alpha#53/#6), CVX (8/10, Alpha#53/#12)
+- 板块分布: 医疗4只(LLY/UNH/ABBV/JNJ), 能源3只(XOM/CVX/COP), 科技8只(INTC/MU/AVGO/GOOGL/AMD/MRVL/SNDK/NVDA), 金融2只(JPM/GS), 消费3只(AMZN/WMT/COST)
+- 关键变化 vs 07-08: 主导因子从Alpha#1动量→Alpha#19/#30防御; 医疗从1→4只; 能源从2→3只; 最大变化为板块轮动确认; NVDA从Top 3掉至#20(6/10)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-09] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 9, 2026)
 - New page: wiki/synthesis/2026-07-09/game-rl-daily.md
 - Coverage: 50+ curated papers across 7 categories — Game RL (QZero, Generative Code Opt, DAGS, Think in Games), Game AI Bot (AVA, Odysseus, COSPLAY, Sensi, PokéChamp, PORTAL, MEMO, Nemobot, OpenGame, MineDreamer), Foundation Models (NitroGen NVIDIA, Game-TARS ByteDance, Pixels2Play, MARL-GPT, Generalist GP survey), PCG (PCGRLLM, IPCGRL, VIPCGRL, MOPCGRL, Agentic PCG), Benchmarks (OmniGameArena, lmgame-Bench, GameWorld, Orak, AI Gamestore, CivBench, PokéAgent, RevengeBench), Industry (GT Sophy 5-year, NVIDIA ACE, Ubisoft Teammates, GenAI NPC survey), Related Techniques (SPIRAL, MARSHAL, MATWM, Multiplayer World Models 5B, MultiWorld, SPA, ProPlay, Dreamer 4, GRACE IRL, iLLM, SENSEI, GLANCE, Inverse Game Theory)
