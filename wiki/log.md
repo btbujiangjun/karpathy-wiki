@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-10] synthesis | Conference & arXiv Digest — 2026-07-10
+- New page: wiki/synthesis/2026-07-10/conference-digest.md
+- Coverage: 18 sections across 12+ venues — ICML 2026 Best (Flexibility Trap), CVPR 2026 Best (D4RT), NeurIPS 2025 Best (Gated Attention, Artificial Hivemind), AAAI 2026, ICLR 2026, KDD 2026 (OneMall/FAT), WWW 2026 (ThinkRec), ACL 2026, SIGIR 2026, EMNLP 2025, CIKM 2025, RecSys 2025
+- Key papers: Flexibility Trap (dLLMs), D4RT (4D reconstruction), Gated Attention (Qwen), OneMall (Kuaishou 400M DAU), DS-MLP (CTR), FAT (Taobao deployed), CSRO (DeepMind game agents), ProAct (game lookahead), NitroGen (NVIDIA 40K hrs), CARD (diffusion LM), Metacognitive Harness
+- Labs: Google DeepMind, Alibaba Qwen, Kuaishou, ByteDance, Meituan, Tencent, NVIDIA, Meta, Microsoft, Tsinghua
+- Key themes: Diffusion LM maturing, RL+LLM limits exposed, Agent→Code paradigm, CTR scaling laws, 4D scene understanding
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-10] synthesis | arXiv Paper Check — AI & CTR (July 10, 2026)
 - New page: wiki/synthesis/2026-07-10/arxiv-paper-check.md
 - Coverage: 18 curated papers from cs.AI (56 new), cs.LG (93 new) — Friday July 10, 2026 listings
