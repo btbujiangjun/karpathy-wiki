@@ -4,6 +4,24 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-10] synthesis | arXiv Paper Check — AI & CTR (July 10, 2026)
+- New page: wiki/synthesis/2026-07-10/arxiv-paper-check.md
+- Coverage: 18 curated papers from cs.AI (56 new), cs.LG (93 new) — Friday July 10, 2026 listings
+- CTR highlights: PIT-SUN (Kuaishou, parameter-efficient multi-domain CTR adapters), BACH (Alibaba, Bayesian anchor cold-start), COBART (bid-aware CTR integrating auction info)
+- AI Agent highlights: Tool-Making Self-Evolving Agents (Amazon, 42% latency + 53% error reduction), HeaPA (hierarchical planning + GRPO)
+- Safety highlights: Overthinking (ICML 2026, reasoning amplification surfaces secrets 10× more), CoT persuasion attacks (monitor access increases harm by 9.5%), Agreement ≠ Accuracy (ρ 0.20–0.59, frontier models 48% wrong when agreeing), Alignment Plausibility (healthcare regulatory construct)
+- RL highlights: DRRO-RLHF (distributionally robust reward optimization), ReCoLoRA (continual fine-tuning via recursive consolidation), FMR (offline agent alignment, 98% misalignment reduction)
+- Efficiency highlights: Jet-Long (bifocal RoPE, 1.39× FA2 throughput), Block-sparse uncertainty router (+28pp recall), AgentNAS (11/17 SOTA via LLM+NAS)
+- Key themes: CTR diversifying (multi-domain adapters, auction-aware, cold-start anchors); Safety research maturing (3 papers challenge core assumptions); Production agent patterns crystallizing; RLHF robustness as new frontier
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-10] synthesis | arXiv AI Research Paper Search Report
+- New page: wiki/synthesis/2026-07-10/arxiv-ai-search.md
+- Coverage: 15 curated papers across 3 categories — CTR/Recommendation (8), LLM Reasoning (4), Game Theory/Multi-Agent (3)
+- Key papers: LLaTTE (Meta, scaling laws for rec), GRAB (Baidu, generative CTR), EST (Alibaba, unified CTR scaling), IDProxy (Xiaohongshu, MLLM cold-start), GPR (Tencent, one-model ad rec), GenLI (generative long-term interest), Beyond Positive Signals (Tencent, mixed-polarity sequences), CTR-Sink (Ant Group, attention sink for CTR), Periodic Table of LLM Reasoning survey, LLM Reasoning Failures (Stanford/TMLR), Agentic Reasoning survey, MIPI (training-inference gap in RL), Strat-Reasoner (ICML 2026, strategic reasoning in games), Competitive Information Design, Multi-Agent RL for game strategies
+- Key trends: Scaling laws arrive in rec sys; Generative paradigm shift in ad rec; MLLMs meet CTR cold-start; Sequence data reimagined (mixed-polarity, attention sinks); Strategic reasoning as RL frontier
+- Updated: wiki/log.md
+
 ## [2026-07-09] synthesis | WQ101 Alpha Daily — 美股 Top 20 (2026-07-09)
 - New page: wiki/synthesis/2026-07-09/wq101-alpha-daily.md
 - Market: S&P 7,495 (+9% YTD), Dow 52,422, Nasdaq 29,362; 美伊冲突升级原油+5%至$78; Fed 6月纪要偏鹰; IMF下调全球增长至3%
