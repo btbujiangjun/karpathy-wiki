@@ -2360,3 +2360,18 @@
 - EV (4 stocks): BYD/Tesla/Zeekr/阳光电源
 - AI 热点主题: Grok 4.5, GPT-Live-1, LongCat-2.0, Protea (10M token), Robostral Navigate, LingBot-VLA 2.0, 混元 Hy3, 国产算力里程碑, 机器人/具身智能, 自动驾驶
 - Updated: wiki/index.md (synthesis entry added), wiki/log.md
+
+## [2026-07-10] synthesis | Game RL & Game AI Bot — Daily Digest (2026-07-10)
+- New page: wiki/synthesis/2026-07-10/game-rl-daily.md
+- Contents: 63 papers across 10 categories
+  - Game RL Self-Play & Board Games (5): QZero (Go model-free), RGSC (AlphaZero ICLR 2026), SPIRAL (self-play reasoning), Generals.io AI, Tablut AlphaZero
+  - MARL & Foundation Models (5): MARL-GPT, MARSHAL, π-Play, SAGE, OpenSIR
+  - Atari & Video Game RL (3): Generative Code Optimization, Odysseus (100+ turn VLM), Latent Bridge
+  - Game AI Bots & NPC (8): ROE StarCraft II LLM, HER role-play RL, Character-R1, Bounded Autonomy, Nemobot, AdaMARP, Sensi
+  - Game Foundation Models (7): NitroGen CVPR 2026 NVIDIA (1000+ games), Game-TARS ByteDance, Pixels2Play (1.2B BC), Lumine, GameVerse, Towards Generalist GP
+  - Procedural Content Generation (6): IPCGRL, PCGRLLM, CreativeGame, 3D Level LLM, PCGRL+ JAX, SBGames 2025
+  - Game Benchmarks (6): OmniGameArena UE5, GameWorld NUS, VideoGameBench Princeton, Orak KRAFTON, AI Gamestore, AgentOdyssey
+  - Industry Game AI (4): NVIDIA ACE Game Agent SDK/NVIGI SDK/Code Agents, AI Native Games survey
+  - World Models (8): Matrix-Game 3.0, Solaris multiplayer Minecraft, MineWorld, Matrix-Game 17B, WorldCam, ActWorld, Multiplayer Rocket League 5B, OPINE-World
+  - Related Techniques (11): Curiosity-Critic, exploration dynamics, TROFI offline IRL, STO-RL, HiPER HRL, PROF ICLR 2026, Cago, TRRO/PIRO, MAIL theory, structured IL
+- Updated: wiki/index.md, wiki/log.md
