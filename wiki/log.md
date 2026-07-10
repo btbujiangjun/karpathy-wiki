@@ -35,6 +35,15 @@
 - Key themes: CTR diversifying (multi-domain adapters, auction-aware, cold-start anchors); Safety research maturing (3 papers challenge core assumptions); Production agent patterns crystallizing; RLHF robustness as new frontier
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-07-10] synthesis | WQ101 Alpha Daily — 美股 Top 20 (2026-07-10)
+- New page: wiki/synthesis/2026-07-10/wq101-alpha-daily.md
+- Market: S&P ~7,560 (+11% YTD), Nasdaq +1.3% 半导体反弹, WTI $67 (-40% from $112 peak); 板块轮动确认 (Tech 广度37%/HC 63%/Fin 69% uptrend)
+- Key theme: Alpha#19 均值回复 (9次, 45%) + Alpha#30 低波动 (7次, 35%) 主导; Alpha#1 动量集中于科技/AI
+- Top 3: GOOGL (9/10, Alpha#1/#41), AMZN (9/10, Alpha#1/#6), AVGO (9/10, Alpha#1/#30)
+- 板块分布: 半导体6只, 软件/安全3只, 医疗3只, 工业2只, 金融1只, 能源1只, 消费2只, 通信1只
+- 关键变化 vs 07-09: Top 3 从防御(LLY/XOM/CVX)→Mega-cap科技(GOOGL/AMZN/AVGO); 科技从8→10只回升; 能源从3→1只; 均值回复维持主导
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-10] synthesis | arXiv AI Research Paper Search Report
 - New page: wiki/synthesis/2026-07-10/arxiv-ai-search.md
 - Coverage: 15 curated papers across 3 categories — CTR/Recommendation (8), LLM Reasoning (4), Game Theory/Multi-Agent (3)
