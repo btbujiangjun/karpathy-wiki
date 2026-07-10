@@ -4,6 +4,18 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-10] synthesis | Investment Daily — 全球科技与 AI 板块投资热点 (2026-07-10)
+- New page: wiki/synthesis/2026-07-10/investment-daily.md
+- Market context: 美光$2500亿投资+SK海力士ADR超额7倍+长鑫科技IPO三重催化；Mag 7估值十年最低；港股AI分化（智谱+11%配售创纪录/MINIMAX解禁-18%）；A股科创50+8.41%年内最大涨幅/半导体净流入¥292亿
+- US stocks (9 stocks): Micron/Meta/Tesla/AMD/NVDA/AMAT/AVGO/Broadcom/Oracle等
+- HK stocks (7 stocks): 阿里巴巴/腾讯/中芯国际/智谱/MINIMAX/联想/商汤
+- A-shares (8 stocks): 中芯国际/寒武纪/中微公司/兆易创新/沐曦/摩尔线程/中际旭创/新易盛
+- 中概股 (10 stocks): BABA/PDD/JD/BIDU/NTES/NIO/XPEV/LI/BILI/TME
+- EV (5 stocks): Tesla/BYD/宁德时代/阳光电源/小米汽车
+- AI热点: 云厂商涨价潮/华为Atlas 950/阶跃星辰AI手机/Amazon Moonraker/Q2财报验证窗口
+- Key themes: 半导体定价权向上游转移; Mag 7估值压缩→配置窗口; 中国AI资产全球重估(配比仅1.2%); AI算力进入供需定价阶段
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-10] synthesis | Conference & arXiv Digest — 2026-07-10
 - New page: wiki/synthesis/2026-07-10/conference-digest.md
 - Coverage: 18 sections across 12+ venues — ICML 2026 Best (Flexibility Trap), CVPR 2026 Best (D4RT), NeurIPS 2025 Best (Gated Attention, Artificial Hivemind), AAAI 2026, ICLR 2026, KDD 2026 (OneMall/FAT), WWW 2026 (ThinkRec), ACL 2026, SIGIR 2026, EMNLP 2025, CIKM 2025, RecSys 2025
