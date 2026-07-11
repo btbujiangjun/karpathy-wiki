@@ -4,6 +4,18 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-11] synthesis | arXiv Paper Check — AI & CTR (July 11, 2026)
+- New page: wiki/synthesis/2026-07-11/arxiv-paper-check.md
+- Coverage: 18 curated papers from cs.AI (~157 new), cs.LG (~93 new), cs.IR (~3 new) — Friday July 10, 2026 listings
+- LLM Reasoning highlights: Pyligent (backtrack/continue/finish framework, +72.7pp on hidden graphs), CompactionRL (#1 trending cs.LG, context compaction for long-horizon agents), Danus (fact-graph memory for math reasoning agents)
+- KV Cache highlights: KVpop (learned eviction policy), SeKV (resolution-adaptive hierarchical semantic memory), Linear Attention Architectures (ETH Zurich, 350M study of 4 recurrent architectures + CLVR)
+- Vision-Language highlights: SaMer (object-aware token merging for VL retrieval), CMDR (contextual multimodal document retrieval)
+- CTR highlights: DiseCTR (OOD CTR disentangled interests, +0.02 AUC, ACM TOIS), CADET (LinkedIn decoder-only ads CTR)
+- Safety highlights: Overthinking (ICML 2026, reasoning amplifies harm 10×), CoT persuasion attacks (+9.5% harm), Agreement≠Accuracy (ρ 0.20–0.59)
+- Scientific AI highlights: Agentic verifiable rules for chemical reaction classification (EPFL/Schwaller), PraMem (experiential memory for long-horizon behavior)
+- Key themes: Reasoning recovery as first-class training objective; KV cache research intensifying (3 papers same bottleneck); Safety implications of test-time compute scaling; Agent generalization fragility (ICML 2026)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-10] synthesis | Investment Daily — 全球科技与 AI 板块投资热点 (2026-07-10)
 - New page: wiki/synthesis/2026-07-10/investment-daily.md
 - Market context: 美光$2500亿投资+SK海力士ADR超额7倍+长鑫科技IPO三重催化；Mag 7估值十年最低；港股AI分化（智谱+11%配售创纪录/MINIMAX解禁-18%）；A股科创50+8.41%年内最大涨幅/半导体净流入¥292亿
