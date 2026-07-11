@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-11] synthesis | 2026年7月 AI 大模型技术报告速览 — 19家机构全面覆盖
+- New page: wiki/synthesis/2026-07-11/tech-report-digest.md
+- Coverage: 19 AI orgs — DeepSeek (V3/R1/V4 Pro), OpenAI (GPT-5.5), Meta (LLaMA 4), Google (Gemini 2.5 Pro), Anthropic (Claude Opus 4/4.5 Sonnet), Mistral (Large 2/Codestral 2), Alibaba Qwen (Qwen3/Qwen2.5-VL), 01.AI (Yi-Lightning), Baichuan (Omni-1.5/M3/M4), Microsoft (Phi-4), Apple (AFM on-device+server), NVIDIA (Nemotron 3 Ultra), xAI (Grok 4/4.20), Amazon (Nova family), Zhipu AI (GLM-4), Shanghai AI Lab (InternLM3), Moonshot AI (Kimi K2), StepFun (Step 3.7 Flash), ByteDance (Seedream 2.0)
+- Key themes: MoE架构成为主流; Reasoning能力持续强化(RL post-training); 长上下文竞赛升级(10M tokens); 医疗垂直模型崛起(百川M4幻觉率3.3%); Agent和工具使用成为标配; 端侧部署受重视; 训练成本优化(DeepSeek V3仅$5.6M)
+- Cross-cutting analysis: 横向对比表格(19模型), 7大关键趋势总结
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-11] synthesis | arXiv Paper Check — AI & CTR (July 11, 2026)
 - New page: wiki/synthesis/2026-07-11/arxiv-paper-check.md
 - Coverage: 18 curated papers from cs.AI (~157 new), cs.LG (~93 new), cs.IR (~3 new) — Friday July 10, 2026 listings
@@ -14,6 +21,18 @@
 - Safety highlights: Overthinking (ICML 2026, reasoning amplifies harm 10×), CoT persuasion attacks (+9.5% harm), Agreement≠Accuracy (ρ 0.20–0.59)
 - Scientific AI highlights: Agentic verifiable rules for chemical reaction classification (EPFL/Schwaller), PraMem (experiential memory for long-horizon behavior)
 - Key themes: Reasoning recovery as first-class training objective; KV cache research intensifying (3 papers same bottleneck); Safety implications of test-time compute scaling; Agent generalization fragility (ICML 2026)
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-11] synthesis | Investment Daily — 全球科技与 AI 板块 (2026-07-11)
+- New page: wiki/synthesis/2026-07-11/investment-daily.md
+- Market context: SK海力士Nasdaq IPO(+14%/7x超额认购)为年度最大IPO；NVDA市值>$5T；纳指周线+1.7%；存储超级周期确认(韩国$3T投资计划/SK Hynix CEO称短缺延续至下个十年/江波龙H1净利62204%↑)
+- US stocks (9 stocks): SKHY/NVDA/META/AAPL/MU/MSFT/GOOGL/AMZN/TSLA/PLTR/AMD/AVGO
+- HK stocks (8 stocks): 腾讯/阿里巴巴/美团/小米/比亚迪/中芯国际/联想/快手/商汤
+- A-shares (11 stocks): 江波龙/中芯国际/寒武纪/海光信息/中微公司/北方华创/中际旭创/新易盛/澜起科技/科大讯飞/盛科通信
+- 中概股 (12 stocks): BABA/JD/TCOM/BEKE/LI/XPEV/NIO/BIDU/MNSO/KC/VIPS/TME/NTES/PDD/BILI/BZ/TSM/FUTU/PONY
+- EV (8 stocks): TSLA/BYD/LI/XPEV/NIO/ZK/宁德时代/小米汽车
+- AI热点: 存储超级周期(韩国$3T/MU $2500亿/江波龙业绩爆发); AI CapEx $700B+供需定价(Meta Compute Cloud); 机器人量产(Optimus 2026H2万台); 自动驾驶(FSD V13/Waymo $16B); A股科技调整定性(估值出清非逻辑终结/从β→α范式转变)
+- Key themes: 存储超级周期全面确认; AI算力供不应求格局延续; A股科技7月调整为牛市中期估值出清; 港股四大AI主线(大厂生态→算力→应用→终端); Mag 7估值修复窗口; 中概股估值洼地(全球配比仅1.2%)
 - Updated: wiki/index.md, wiki/log.md
 
 ## [2026-07-10] synthesis | Investment Daily — 全球科技与 AI 板块投资热点 (2026-07-10)
