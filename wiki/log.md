@@ -2432,3 +2432,18 @@
   - World Models (8): Matrix-Game 3.0, Solaris multiplayer Minecraft, MineWorld, Matrix-Game 17B, WorldCam, ActWorld, Multiplayer Rocket League 5B, OPINE-World
   - Related Techniques (11): Curiosity-Critic, exploration dynamics, TROFI offline IRL, STO-RL, HiPER HRL, PROF ICLR 2026, Cago, TRRO/PIRO, MAIL theory, structured IL
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-11] synthesis | 顶会论文专题报告 — Conference & arXiv Digest (2026-07-11 全面更新版)
+- New page: wiki/synthesis/2026-07-11/conference-digest.md
+- Coverage: 12+ venues (ICML 2026, ICLR 2026, AAAI 2026, NeurIPS 2025, CVPR 2026, KDD 2026, ACL 2026, EMNLP 2025, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025), 200+ curated papers, 20+ labs
+- Award papers: Gated Attention (NeurIPS 2025 Best, Alibaba Qwen), Transformers are Inherently Succinct (ICLR 2026 Outstanding), LLMs Get Lost In Multi-Turn (ICLR 2026 Outstanding, Microsoft), D4RT (CVPR 2026 Best, Google DeepMind), LLM2CLIP (AAAI 2026 Outstanding, Microsoft)
+- ICML 2026 (23,918 submissions, ~6,500+ accepted): 6 Orals from Google (ATLAS, DPO Unchained, Rational Transductors, How Much Memorize, Equivalence, TokSuite), GRAM access control (Anthropic Spotlight), DreamDojo robot world models (NVIDIA), TCEC quantized diffusion (ByteDance Spotlight+Oral)
+- ICLR 2026 (19,814 submissions, 5,340 accepted): 223 Orals; Mamba-3, MoE vs Dense, TileLang (5x Triton), NextStep-1 (ByteDance), Depth Anything 3 (TikTok), SANA-Video (NVIDIA)
+- AAAI 2026 (23,680 submissions, 4,167 accepted): ReconVLA robot perception, AI peer review (22,977 papers, OpenAI GPT-5 sponsored), COREA (Amazon), SemanticVLA (Huawei)
+- CVPR 2026 (16,092 submissions, 4,089 accepted): NitroGen game foundation (NVIDIA 40K hrs), SAM 3D (Meta), CLAY 3D generation (Microsoft/Tsinghua)
+- KDD 2026: Kunlun Scaling Laws (Meta, MFU 17%→37%), CausalMoE (Tencent billion-scale)
+- ACL 2026: WebAnchor Plan Anchor (Alibaba), DEEPPLANNER (ByteDance Seed), GeoRA RLVR (Meituan)
+- SIGIR/WWW/RecSys: L2Rec (+9.24% CTR), SIDReasoner (Alibaba), GenCI (WWW), DiffuMIN (Kuaishou +1.52% CTR)
+- CTR Industrial: EST/FAT/PRECTR-V2 (Alibaba), OneRanker (Tencent +1.34% GMV), GR4AD (Kuaishou +4.2% revenue), DeRes (ByteDance), IDProxy (Xiaohongshu), UniRec (Shopee +5.60% GMV), CADET (Amazon)
+- 8 key trends: RL for LLM post-training, diffusion LM maturing, generative rec + CTR scaling laws, agent systems + autonomous research, multimodal unity, safety/alignment audit, efficient inference, memory/context management
+- Updated: wiki/index.md (synthesis entry added), wiki/log.md
