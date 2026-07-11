@@ -4,11 +4,28 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-11] synthesis | AI Papers Compilation: June-July 2026
+- New page: wiki/synthesis/2026-07-11/ai-papers-june-july-2026.md
+- Coverage: 40+ papers/reports across 7 topic areas from June-July 2026
+- Topics: LLMs (10), Agent Systems (5), Code Generation (4), Recommendation Systems (7), Generative Models (6), Sequential Modeling (4), Benchmarks (4)
+- Key labs: Google DeepMind (Gemma 4, DiffusionGemma, ProEval), OpenAI (GPT-5.6), Meta AI (Muse Spark 1.1, ULTRA-HSTU, Kunlun, LLaTTE), Anthropic (Claude Sonnet 5, A3, Global Workspace), ByteDance (CUDA Agent, MDL, CTR cluster), Alibaba (Qwen ParScale, TGA), NVIDIA (Nemotron Labs), DeepSeek (V4), Singapore MU (EAGER)
+- Notable model releases: GPT-5.6 (Jul 9), Muse Spark 1.1 (Jul 9), Claude Sonnet 5 (Jun 30), Gemma 4 (Jun 19), DiffusionGemma (Jun 10)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-11] synthesis | 2026年7月 AI 大模型技术报告速览 — 19家机构全面覆盖
 - New page: wiki/synthesis/2026-07-11/tech-report-digest.md
 - Coverage: 19 AI orgs — DeepSeek (V3/R1/V4 Pro), OpenAI (GPT-5.5), Meta (LLaMA 4), Google (Gemini 2.5 Pro), Anthropic (Claude Opus 4/4.5 Sonnet), Mistral (Large 2/Codestral 2), Alibaba Qwen (Qwen3/Qwen2.5-VL), 01.AI (Yi-Lightning), Baichuan (Omni-1.5/M3/M4), Microsoft (Phi-4), Apple (AFM on-device+server), NVIDIA (Nemotron 3 Ultra), xAI (Grok 4/4.20), Amazon (Nova family), Zhipu AI (GLM-4), Shanghai AI Lab (InternLM3), Moonshot AI (Kimi K2), StepFun (Step 3.7 Flash), ByteDance (Seedream 2.0)
 - Key themes: MoE架构成为主流; Reasoning能力持续强化(RL post-training); 长上下文竞赛升级(10M tokens); 医疗垂直模型崛起(百川M4幻觉率3.3%); Agent和工具使用成为标配; 端侧部署受重视; 训练成本优化(DeepSeek V3仅$5.6M)
 - Cross-cutting analysis: 横向对比表格(19模型), 7大关键趋势总结
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-11] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-07-11)
+- New page: wiki/synthesis/2026-07-11/wq101-alpha-daily.md
+- Market context: S&P 500 ~7,543, Nasdaq 100 ~29,698, SOX ~13,800 (+2.2%芯片反弹)
+- Key events: SK海力士ADR首日+14%（全球最大外国企业美国上市）、美光Q2财报超预期（$2500亿投资计划）、美伊冲突升级（油价$73.71）、SpaceX纳入纳斯达克100
+- Top 20 stocks: MU(9.5), INTC(9.2), AVGO(9.0), AAPL(8.8), LLY(8.7), NVDA(8.5), GOOGL(8.5), AMZN(8.3), AMD(8.3), TSM(8.2), META(8.0), MRVL(8.0), MSFT(7.8), VRT(7.7), CEG(7.5), JPM(7.5), MRNA(7.3), ABBV(7.2), DELL(7.2), PLTR(7.0)
+- Factor analysis: Alpha#1 动量因子回归主导（70%，+5 vs 前日）、Alpha#19 均值回复（40%）、Alpha#30 低波动（40%）
+- Sector breakdown: 半导体8只、科技5只、医疗3只、工业/能源/金融4只
 - Updated: wiki/index.md, wiki/log.md
 
 ## [2026-07-11] synthesis | arXiv Paper Check — AI & CTR (July 11, 2026)
