@@ -20,15 +20,15 @@ tags: [tech-report, llm, moe, reasoning, multimodal, scaling-law]
 - **英文标题**: DeepSeek-V3 Technical Report
 - **发布机构**: DeepSeek（深度求索）
 - **模型名称**: DeepSeek-V3
-- **发布日期**: 2025-01
+- **发布日期**: 2024-12-27
 - **核心参数**: 671B 总参数，37B 激活参数（MoE架构）
 - **主要创新点**:
   - Multi-head Latent Attention (MLA) 实现高效推理
   - DeepSeekMoE 架构 + 无辅助损失负载平衡策略
   - 多 token 预测训练目标
   - FP8 混合精度训练，DualPipe 流水线并行
-  - 14.8T token 预训练，总训练成本仅 $5.576M
-- **链接**: [arXiv:2412.19437](https://arxiv.org/pdf/2412.19437)
+  - 14.8T token 预训练，总训练成本仅 $5.576M（2.788M H800 GPU hours）
+- **链接**: [arXiv:2412.19437](https://arxiv.org/abs/2412.19437)
 
 ### DeepSeek-R1
 - **中文标题**: 通过强化学习激励LLM推理能力
@@ -39,10 +39,26 @@ tags: [tech-report, llm, moe, reasoning, multimodal, scaling-law]
 - **核心参数**: 671B（R1），6个蒸馏版本（1.5B-70B）
 - **主要创新点**:
   - R1-Zero: 纯大规模RL训练（无SFT），自然涌现推理行为
-  - R1: 多阶段训练 + cold-start data + RL
+  - R1: 多阶段训练 + cold-start data + GRPO
   - 性能对标 OpenAI o1-1217
   - 开源蒸馏模型（基于Qwen和Llama）
+  - 已发表于 Nature (vol. 645, 2025)
 - **链接**: [arXiv:2501.12948](https://arxiv.org/abs/2501.12948)
+
+### DeepSeek-V3.2
+- **中文标题**: DeepSeek-V3.2：推动开源大模型前沿
+- **英文标题**: DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models
+- **发布机构**: DeepSeek
+- **模型名称**: DeepSeek-V3.2 / DeepSeek-V3.2-Speciale
+- **发布日期**: 2025-12-01
+- **核心参数**: 671B 总参数，37B 激活（MoE），与 V3 相同架构
+- **主要创新点**:
+  - **DeepSeek Sparse Attention (DSA)**: 高效注意力机制，大幅降低计算复杂度
+  - **可扩展 RL 框架**: 后训练计算预算超过预训练成本的10%，性能与 GPT-5 相当
+  - **大规模 Agentic 任务合成**: 超过1800种环境、85000个复杂 prompt
+  - Speciale 变体在 IMO 2025 和 IOI 2025 获得金牌水平
+  - Speciale 超越 Gemini-3.0-Pro，在多个推理基准上领先
+- **链接**: [arXiv:2512.02556](https://arxiv.org/abs/2512.02556)
 
 ---
 

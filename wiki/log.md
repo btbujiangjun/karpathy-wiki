@@ -4,6 +4,24 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-12] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-07-12)
+- New page: wiki/synthesis/2026-07-12/investment-daily.md
+- Market context: S&P 7575.39 距历史新高仅 0.6%; 纳指周 +1.74% 科技重夺领导力; 恒生科技 +5.33% 本周爆发; 创业板指创历史新高
+- US stocks (11 stocks): META(+14.81% 周线最佳)/NVDA(+8.28%)/TSLA(+3.64%)/AAPL(+2.17%)/AMZN(+1.10%)/GOOGL(-0.76%)/MSFT(-1.38%)/SKHY(IPO +13.1%)/AMD(-8%)/AVGO/PLTR
+- HK stocks (10 stocks): 阿里巴巴(+17.11%)/美团(+9.92%)/腾讯(+6.73%)/小米(+9.5%)/百度(+6%)/快手(+1.03%)/商汤(+2.17%)/智谱(-8.53%)/MINIMAX(-22.50%)/中芯国际
+- A-shares (10 stocks): 中际旭创/新易盛/中芯国际/寒武纪/海光信息/北方华创/中微公司(+33% 12日)/天孚通信/工业富联/长鑫科技(Q1营收+719% YoY)
+- 中概股 (10 stocks): BABA(+11%)/JD(+6%/$1000亿市值)/BIDU/PDD/NTES/BILI/NIO/XPEV/LI/TME
+- EV (8 stocks): TSLA(Q2交付48万)/BYD(全球纯电销冠55.7万辆)/小米SU7(月交付10万+)/NIO/XPEV/LI/宁德时代/阳光电源
+- AI热点: GPT-5.6全面公开(Sol/Terra/Luna)/Meta Muse Spark 1.1+Model API/腾讯Hy3+Agent Bucket/阿里云+45%增速/中国10万卡AI超算集群(郑州)/数据中心建设+190% YoY/$7500亿CapEx/美国25+州数据中心立法/AI推理成本2年降90%
+- Key themes: 科技板块全球同步走强; AI模型→API→商业化闭环验证; 存储超级周期(DRAM+497%/NAND+352%); 港股低估值+AI催化+南向资金三重支撑; Q2财报季7/14启动验证AI CapEx回报
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-13] update | Game RL & Game AI Bot — Daily Paper Digest (July 13, 2026)
+- Summary: wiki/synthesis/2026-07-13/game-rl-daily.md
+- Updated: 35 → 53 papers across 7 categories
+- Added 18 new papers: GARL (game-theoretic RL), Augmenting Game AI (CoG 2026), MARL Review (IEEE ToG), HLSMAC (StarCraft stratagems), SMAC-Talk, SeRL self-play LLM, Echo Minecraft transfer, OmniGameArena UE5, DSGBench strategic games, GameDevBench, JOWA offline MBRL 150M, Agent World Model, DiNAT-RCM curiosity Atari, Advanced Game-Theoretic Frameworks, Multi-task PCG Scientific Reports
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-12] ingest | arXiv Paper Check — AI & CTR (July 12, 2026)
 - Summary: wiki/synthesis/2026-07-12/arxiv-paper-check.md
 - Coverage: 20 curated papers from cs.AI (~188K), cs.LG (~276K), cs.IR (~925 CTR)
@@ -26,6 +44,17 @@
 - Top 20: META(9.5, Alpha#1/#12), NVDA(9.3, Alpha#1/#41), MU(9.0, Alpha#1/#30), AAPL(8.8, Alpha#1/#6), JNJ(8.5, Alpha#30/#19), MSFT(8.3, Alpha#19/#41), AMD(8.0, Alpha#53/#1), AVGO(7.8, Alpha#1/#41), TSM(7.7, Alpha#1/#6), KO(7.5, Alpha#30/#19), GOOGL(7.3, Alpha#53/#19), TSLA(7.2, Alpha#1/#53), JPM(7.0, Alpha#1/#41), WDC(7.0, Alpha#1/#30), VRT(6.8, Alpha#1/#6), BABA(6.7, Alpha#53/#12), MRK(6.5, Alpha#30/#19), IBM(6.5, Alpha#1/#6), C(6.3, Alpha#1/#41), LLY(6.2, Alpha#30/#19)
 - Sector: 半导体6只, 科技5只, 医疗3只, 金融2只, 消费1只, 汽车1只, 工业1只, IT服务1只
 - Key change vs 07-09: Alpha#1动量强势回归(从Alpha#19主导); 半导体从3→6只; 科技从8→5只; 能源从3→0只; Top 3从防御(LLY/XOM/CVX)→成长(META/NVDA/MU)
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-13] synthesis | arXiv Daily Report — AI, LLMs, Recommendation, Advertising, CTR, Games (2026-07-13)
+- New page: wiki/synthesis/2026-07-13/arxiv-daily.md
+- Coverage: 35 curated papers across 5 categories
+- AI/LLMs (4): LLM-as-a-Tutor (KAIST, prompt adaptation for non-verifiable RL), LLM-as-a-Verifier, Set Diffusion (autoregressive-diffusion interpolation), Legible-by-Construction
+- Recommendation (12): UniRec (Shopee +5.37% PVCTR, Chain-of-Attribute), GEMs (lifelong GR 100K+ sequences), Gryphon (Yandex Music item-level scoring), R3-REC (retrieval-augmented reasoning), CMSL (Meta multi-sequence learning), AgentX (Kuaishou self-iterating rec, RMB 100M+ annualized), GenAIR (archetype-grounded representations), SIDReasoner (reasoning over SIDs), Beyond Interleaving (Meta causal attention), FAVE (one-step flow matching), PRISM, Self-Evolving Rec
+- Advertising/CTR (9): EST (Taobao unified transformer +3.27% RPM), GR4AD (Kuaishou generative ads +4.2% revenue), OneRanker (Tencent Weixin +1.34% GMV), GRAB (Baidu +3.05% revenue), LLM-HYPER (LLM hypernetwork cold-start), IDProxy (Xiaohongshu multimodal cold-start), GenCI (generative cohort intent), SparseCTR (sparse attention scaling law), CaliCausalRank (calibrated multi-objective)
+- Games/Multi-Agent RL (8): CausalGame (ICML 2026 Oral, 30 LLMs benchmarked), ACPO (exact policy gradient decomposition), UnityMAS-O (general RL for LLM MAS), NePPO (potential function for general-sum), Dr. MAS (GRPO stability), MEMO (memory-augmented self-play), Cognitive Training (Xent Games), AgentOdyssey (test-time continual learning)
+- Multi-Agent Systems (2): LLM-as-Environment-Engineer, Orchestration Traces RL
+- Key themes: Generative recommendation maturing (UniRec, GR4AD, GEMs deployed at scale); LLM agents in production ads (LLM-HYPER, IDProxy); causal reasoning gap persists (CausalGame); self-evolving systems (AgentX); scaling laws for CTR (EST, SparseCTR)
 - Updated: wiki/index.md, wiki/log.md
 
 ## [2026-07-13] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 13, 2026)

@@ -3,7 +3,7 @@ title: Game RL & Game AI Bot — Daily Paper Digest (July 13, 2026)
 type: synthesis
 created: 2026-07-13
 updated: 2026-07-13
-tags: [game-rl, game-ai, reinforcement-learning, self-play, foundation-models, pcg, benchmarks, world-models, llm-agents, marl, nvidia, deepmind]
+tags: [game-rl, game-ai, reinforcement-learning, self-play, foundation-models, pcg, benchmarks, world-models, llm-agents, marl, nvidia, deepmind, starcraft, marl-review, curiosity, offline-rl]
 ---
 
 # Game RL & Game AI Bot — Daily Paper Digest (July 13, 2026)
@@ -320,31 +320,159 @@ tags: [game-rl, game-ai, reinforcement-learning, self-play, foundation-models, p
 
 ---
 
+---
+
+## 8. Additional Papers — New from arXiv & Proceedings (July 13, 2026)
+
+### 8.1 GARL: Game-Theoretic Reinforcement Learning for Multi-Agent Strategic Prioritisation
+- **Authors:** Yuxiao Ye et al.
+- **Affiliation:** Not specified
+- **Venue:** arXiv preprint, Jun 2026
+- **Abstract:** Formalises strategic prioritisation as a two-stage game where competing agents allocate strategic resources over a shared candidate set, and a higher-level arbiter produces the final ranking. Game-theoretic utilities are converted into role-specific RL signals. Applied to issues-in-dispute ranking in legal proceedings. Small open-source LLMs become competitive with strong closed-source LLMs under the same setting.
+- **Key Innovation:** Game-theoretic interaction structure turned into RL objectives for multi-agent strategic prioritisation
+- **Link:** https://arxiv.org/abs/2606.05002
+
+### 8.2 Augmenting Game AI with Deep Reinforcement Learning
+- **Authors:** Alessandro Sestini et al.
+- **Affiliation:** Not specified
+- **Venue:** Conference on Games 2026 (Vision Paper)
+- **Abstract:** Vision paper proposing a framework for training RL models suited towards game AI and game development. Presents examples of RL-augmented game AI and describes practicalities of deploying ML agents in modern games. Identifies bottlenecks and hard problems offering promising research directions.
+- **Key Innovation:** Framework for deploying player-facing ML agents in commercial games with identified research roadmap
+- **Link:** https://arxiv.org/abs/2606.20210
+
+### 8.3 A Comprehensive Review of Multi-Agent Reinforcement Learning in Video Games
+- **Authors:** Zhengyang Li, Qijin Ji, Xinghong Ling, Quan Liu
+- **Affiliation:** Not specified
+- **Venue:** IEEE Transactions on Games, 2025
+- **Abstract:** Comprehensive review of MARL from turn-based two-agent games to real-time multi-agent video games (Sports, FPS, RTS, MOBA). Covers landmark achievements (AlphaStar, OpenAI Five) and analyzes challenges: nonstationarity, partial observability, sparse rewards, team coordination, scalability. Proposes a novel method to estimate game complexity.
+- **Key Innovation:** Novel game complexity estimation method; comprehensive MARL taxonomy across game genres
+- **Link:** https://arxiv.org/abs/2509.03682
+
+### 8.4 HLSMAC: A New StarCraft Multi-Agent Challenge for High-Level Strategic Decision-Making
+- **Authors:** Xingxing Hong, Yungong Wang, Dexin Jin, Ye Yuan, Ximing Huang, Zijian Wu, Wenxin Li
+- **Affiliation:** Peking University, UC Santa Barbara, UC Santa Cruz, UESTC
+- **Venue:** Preprint Sep 2025
+- **Abstract:** Introduces HLSMAC — 12 StarCraft II scenarios based on classical stratagems from the Thirty-Six Stratagems. Each scenario challenges agents with tactical maneuvering, timing coordination, and deception. Proposes novel metrics: ability utilization, advancement efficiency. Integrates SOTA MARL algorithms and LLM-based agents.
+- **Key Innovation:** High-level strategic intelligence benchmark based on ancient Chinese stratagems
+- **Link:** https://arxiv.org/abs/2509.12927
+
+### 8.5 SMAC-Talk: A Natural Language Extension of the StarCraft Multi-Agent Challenge
+- **Authors:** Joel Sol, Homayoun Najjaran
+- **Affiliation:** Not specified
+- **Venue:** arXiv preprint, Jun 2026
+- **Abstract:** Natural language extension of SMAC for evaluating LLM-based cooperative multi-agent coordination. Bridges the gap between text-based LLM evaluations and visual multi-agent coordination tasks in StarCraft II.
+- **Key Innovation:** NL-annotated SMAC scenarios enabling LLM agent evaluation in cooperative multi-agent settings
+- **Link:** https://arxiv.org/abs/2606.04202
+
+### 8.6 SeRL: Self-Play Reinforcement Learning for Large Language Models with Limited Data
+- **Authors:** Wenkai Fang, Shunyu Liu, Yang Zhou, Kongcheng Zhang, Tongya Zheng, Kaixuan Chen, Mingli Song, Dacheng Tao
+- **Affiliation:** Not specified
+- **Venue:** arXiv preprint (v2 Jan 2026)
+- **Abstract:** Bootstraps LLM training with limited initial data via self-instruction and self-rewarding modules. Self-instruction generates diverse training data; self-rewarding provides automatic quality signals without external reward models. Demonstrates effectiveness in specialized domains with scarce data.
+- **Key Innovation:** Self-play RL for LLMs with self-instruction + self-rewarding, no external data needed
+- **Link:** https://arxiv.org/abs/2505.20347
+
+### 8.7 Experience Transfer for Multimodal LLM Agents in Minecraft Game (Echo)
+- **Authors:** Not specified
+- **Affiliation:** Not specified
+- **Venue:** arXiv preprint, Apr 2026
+- **Abstract:** Proposes Echo, a transfer-oriented memory framework for multimodal LLM agents in Minecraft. Enables agents to derive actionable knowledge from prior interactions rather than treating memory as a passive repository of static records. Demonstrates transfer of learned behaviors across tasks.
+- **Key Innovation:** Active memory transfer framework enabling cross-task skill reuse in open-world game agents
+- **Link:** https://arxiv.org/abs/2604.05533
+
+### 8.8 OmniGameArena: A Unified UE5 Benchmark for VLM Game Agents with Improvement Dynamics
+- **Authors:** Not specified
+- **Affiliation:** Not specified
+- **Venue:** arXiv preprint, Jun 2026
+- **Abstract:** Twelve newly built UE5 games spanning Solo, PvP, and Coop regimes in a single real-time environment. Addresses pre-training contamination (new games not in training data) and covers all three interaction regimes. Tracks agent improvement over repeated interactions via reflection-based methods.
+- **Key Innovation:** Contamination-free real-time game benchmark covering Solo/PvP/Coop with improvement dynamics tracking
+- **Link:** https://arxiv.org/abs/2606.09826
+
+### 8.9 DSGBench: A Diverse Strategic Game Benchmark for Evaluating LLM-based Agents
+- **Authors:** Wenjie Tang, Yuan Zhou, Erqiang Xu, Keyan Cheng, Minne Li, Liquan Xiao
+- **Affiliation:** Not specified
+- **Venue:** arXiv preprint (v2 May 2026)
+- **Abstract:** Six complex strategic games as testbeds for LLM agents. Fine-grained evaluation scoring across five decision-making dimensions. Automated decision-tracking mechanism for in-depth analysis of agent behaviour patterns and strategy turning points. Evaluates six popular LLM agents.
+- **Key Innovation:** Multi-dimensional strategic decision evaluation with automated trajectory analysis
+- **Link:** https://arxiv.org/abs/2503.06047
+
+### 8.10 GameDevBench: Evaluating Agentic Capabilities Through Game Development
+- **Authors:** Not specified
+- **Affiliation:** Not specified
+- **Venue:** arXiv preprint, Feb 2026
+- **Abstract:** 333 tasks derived from web and video tutorials for evaluating agents on game development. Average solution requires 3× more lines of code than prior software dev benchmarks. Best agent solves only 53.8%. Introduces image- and video-based feedback mechanisms improving GPT-5.4 from 41.1% to 52.0%.
+- **Key Innovation:** First game development agent benchmark; visual feedback mechanisms for multimodal coding agents
+- **Link:** https://arxiv.org/abs/2602.11103
+
+### 8.11 JOWA: Jointly-Optimized World-Action Model for Offline Model-Based RL
+- **Authors:** Not specified
+- **Affiliation:** Not specified
+- **Venue:** arXiv preprint (v4 2025)
+- **Abstract:** Offline model-based RL agent pretrained on multiple Atari games with 6 billion tokens of data. Jointly optimizes world-action model through shared transformer backbone. Largest agent (150M params) achieves 78.9% human-level performance on pretrained games using only 10% subsampled offline data, outperforming SOTA by 31.6%.
+- **Key Innovation:** Scaling offline RL via jointly-optimized world-action model pretrained on heterogeneous game data
+- **Link:** https://arxiv.org/abs/2410.00564
+
+### 8.12 Agent World Model: Infinity Synthetic Environments for Agentic RL
+- **Authors:** Not specified
+- **Affiliation:** Not specified
+- **Venue:** arXiv preprint, Feb 2026
+- **Abstract:** Synthesizes diverse and executable environments for agentic RL training. Bridges the gap between real-world API environments (hard to scale) and LLM-simulated environments (unreliable state transitions). Enables large-scale RL training with fast interactions and reliable state transitions.
+- **Key Innovation:** Environment synthesis for scalable agentic RL with executable, diverse synthetic worlds
+- **Link:** https://arxiv.org/abs/2602.10090
+
+### 8.13 Curiosity-Driven Exploration Based on Hierarchical Vision Transformer (DiNAT-RCM)
+- **Authors:** Wanting Jiang, Guanwei Liu, Quanyang Leng, Nan Guo
+- **Affiliation:** Not specified
+- **Venue:** Neurocomputing, Jul 2025
+- **Abstract:** Curiosity model based on Dilated Neighborhood Attention Transformer (DiNAT-RCM) for sparse reward RL. Uses sparse global attention to extract critical states. Integrates curiosity loss for better convergence. AW-A2C actor-critic uses self-attention to filter action information. Surpasses RND with 16.25% reward increase on Atari 2600.
+- **Key Innovation:** Hierarchical Vision Transformer for curiosity-driven exploration in sparse reward game environments
+- **Link:** https://doi.org/10.1016/j.neucom.2025.130252
+
+### 8.14 Advanced Game-Theoretic Frameworks for Multi-Agent AI Challenges: A 2025 Outlook
+- **Authors:** Pavel Malinovskiy
+- **Affiliation:** Not specified
+- **Venue:** IRJMETS, Mar 2025
+- **Abstract:** Reworked examination of game-theoretic paradigms for next-generation AI challenges. Incorporates dynamic coalition formation, language-based utilities, sabotage risks, and partial observability. Provides mathematical formalisms, simulations, and coding schemes for multi-agent AI systems in complex environments.
+- **Key Innovation:** Extended game-theoretic frameworks with sabotage risks and moral framing for adversarial multi-agent AI
+- **Link:** https://arxiv.org/abs/2506.17348
+
+### 8.15 Multi-task Procedural Content Generation with Reinforcement Learning
+- **Authors:** Not specified
+- **Affiliation:** Not specified
+- **Venue:** Scientific Reports, 2026
+- **Abstract:** Multi-task language-based PCG framework using DeBERTa encoder with multi-objective training (regression, contrastive alignment, hybrid learning). Structured dataset of 14,000+ command-level pairs in Super Mario environment. Outperforms BERT-based methods in command following, semantic stability, and structural diversity.
+- **Key Innovation:** Multi-task semantic alignment for language-conditioned PCG with DeBERTa encoding
+- **Link:** https://doi.org/10.1038/s41598-026-48234-7
+
+---
+
 ## Summary Statistics
 
 | Category | Papers Count | Key Venues |
 |----------|-------------|------------|
-| Game RL | 5 | ICLR 2026, DeepMind, Tsinghua/Peking/Tencent, Georgia Tech |
-| Game AI Bot | 5 | NUS, SIGGRAPH 2026, MSR Asia, CPDC 2025 |
-| Game Foundation Models | 3 | CVPR 2026 (NVIDIA), Tsinghua survey |
-| Procedural Content Generation | 4 | IEEE ToG, AIIDE 2024, CoG |
-| Game Benchmarks | 5 | ICLR 2025, NeurIPS 2023, UCLA |
+| Game RL | 10 | ICLR 2026, CoG 2026, IEEE ToG, DeepMind, Tsinghua/Peking/Tencent |
+| Game AI Bot | 8 | NUS, SIGGRAPH 2026, MSR Asia, CPDC 2025 |
+| Game Foundation Models | 4 | CVPR 2026 (NVIDIA), Tsinghua survey |
+| Procedural Content Generation | 5 | IEEE ToG, AIIDE 2024, CoG, Scientific Reports |
+| Game Benchmarks | 8 | ICLR 2025, NeurIPS 2023, UCLA, UE5 |
 | Industry Game AI | 3 | NVIDIA GDC 2026, Epic/UE5 |
-| Related Techniques | 10 | Meta FAIR, Tsinghua, Harvard, DeepMind |
-| **Total** | **35** | |
+| Related Techniques | 15 | Meta FAIR, Tsinghua, Harvard, DeepMind, Neurocomputing |
+| **Total** | **53** | |
 
 ## Cross-Cutting Themes
 
-1. **Foundation Models for Games at Scale:** NitroGen (40K hrs, 1000+ games) and the Generalist Game Player survey establish that game foundation models are entering the "internet pretraining" era, analogous to LLMs.
+1. **Foundation Models for Games at Scale:** NitroGen (40K hrs, 1000+ games) and the Generalist Game Player survey establish that game foundation models are entering the "internet pretraining" era, analogous to LLMs. JOWA demonstrates that jointly-optimized world-action models pretrained on heterogeneous game data can achieve strong offline RL performance.
 
-2. **Self-Play as Reasoning Paradigm:** SPIRAL (ICLR 2026) and the self-play survey demonstrate that zero-sum game self-play develops transferable reasoning capabilities, bridging game RL and LLM reasoning.
+2. **Self-Play as Reasoning Paradigm:** SPIRAL (ICLR 2026), SeRL, and the self-play survey demonstrate that zero-sum game self-play develops transferable reasoning capabilities, bridging game RL and LLM reasoning.
 
 3. **LLM-Generated World Models:** Code World Models (DeepMind) and TheoryCoder (Harvard) show LLMs can synthesize executable world models from game rules, enabling MCTS planning without manual environment engineering.
 
 4. **NPC Intelligence Entering Production:** NVIDIA ACE/NVIGI SDK and INFUSE Engine demonstrate real-time LLM-powered NPCs in commercial games (PUBG, inZOI, NARAKA). Stateless inference architecture (20-40K in / ~100 out) is emerging as the standard pattern.
 
-5. **PCG + LLM Convergence:** PCGRLLM shows LLMs excel at spatial reward design while humans excel at multi-objective tuning — pointing toward complementary human-LLM workflows for game content generation.
+5. **PCG + LLM Convergence:** PCGRLLM shows LLMs excel at spatial reward design while humans excel at multi-objective tuning — pointing toward complementary human-LLM workflows for game content generation. Multi-task PCG with DeBERTa adds semantic alignment to language-conditioned generation.
 
-6. **Game Benchmarks Maturing:** SC2BA (algorithm-vs-algorithm), BALROG (LLM agentic), TeamCraft (multi-modal multi-agent Minecraft), and OpenGuanDan (imperfect information card games) expand the benchmark landscape beyond traditional SMAC/Atari.
+6. **Game Benchmarks Maturing:** SC2BA (algorithm-vs-algorithm), BALROG (LLM agentic), TeamCraft (multi-modal multi-agent Minecraft), OpenGuanDan (imperfect information card games), HLSMAC (strategic decision-making via Thirty-Six Stratagems), OmniGameArena (UE5 Solo/PvP/Coop), DSGBench (multi-dimensional strategic evaluation), and GameDevBench (game development agent evaluation) expand the landscape dramatically.
 
-7. **World Models + Hierarchical Planning:** HWM (Meta) and RLVR-World (Tsinghua) advance model-based RL with multi-scale latent representations and RL-optimized world model training.
+7. **World Models + Hierarchical Planning:** HWM (Meta), RLVR-World (Tsinghua), Agent World Model, and JOWA advance model-based RL with multi-scale latent representations, RL-optimized world model training, and environment synthesis for scalable agentic RL.
+
+8. **MARL at Scale:** The comprehensive MARL review (IEEE ToG) and GARL demonstrate that game-theoretic structure can be turned into effective multi-agent RL objectives, with applications extending beyond games to legal reasoning and strategic prioritisation.
