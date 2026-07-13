@@ -4,6 +4,18 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-13] synthesis | Investment Daily — 全球科技与 AI 板块 (2026-07-13)
+- New page: wiki/synthesis/2026-07-13/investment-daily.md
+- Market context: NVDA $211(+4%/周+5%), S&P 7,575(+0.42%), 恒生科技4,783(+4.95%周线), A股半导体市值首超银行
+- US stocks (7 stocks): NVDA/AVGO/META/MSFT/TSLA/MU/AMD
+- HK stocks (4 stocks): 小米/网易/中芯国际/联想
+- A-shares (4 stocks): 寒武纪/云天励飞/澜起科技/中际旭创
+- 中概股 (5 stocks): BABA/BIDU/JD/PDD/NTES
+- EV (5 stocks): BYD/NIO/XPEV/LI/TSLA
+- AI热点: AI CapEx $941B(TrendForce上调九大CSP至$830B+79%YoY); 存储超级周期(SK海力士Nasdaq IPO+美光$2500亿+韩国$3T); BABA两日+12%四大催化(DOUJ/五角大楼/即时零售/H200); BYD Q2 557K辆夺回全球BEV冠军; A股寒武纪+17.7%国产AI芯片加速
+- Key themes: AI CapEx超级周期全面确认; 存储超级周期延续; 港股恒生科技强势反弹+5%; A股半导体市值首超银行; 中概ADR估值洼地; Mag 7估值修复窗口; 新能源车BYD增长放缓+EU关税风险; AI芯片板块内部分化
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-13] synthesis | 2026年7月 AI 大模型技术报告速览
 - New page: wiki/synthesis/2026-07-13/tech-report-digest.md
 - Coverage: 19家机构全面覆盖 — DeepSeek V3/R1, OpenAI GPT-5/5.5, Meta LLaMA 4, Google Gemini 2.5 Pro/Flash, Anthropic Claude Opus 4/Sonnet 4, Mistral Large 2/Magistral/Devstral, Qwen3/Qwen2.5-VL, 01.AI Yi-Lightning, Baichuan M3/M4, Microsoft Phi-4/Phi-4-RV-15B, Apple AFM, NVIDIA Nemotron 3 Ultra, xAI Grok 4, Amazon Nova, Zhipu GLM-5/GLM-4.7/GLM-4, InternLM3/Intern-S1, Moonshot Kimi K2/K2.5, StepFun Step 3/Step 3.7 Flash, ByteDance Doubao 2.0/Seedream 2.0
