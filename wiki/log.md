@@ -4,6 +4,20 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-12] ingest | arXiv Paper Check — AI & CTR (July 12, 2026)
+- Summary: wiki/synthesis/2026-07-12/arxiv-paper-check.md
+- Coverage: 20 curated papers from cs.AI (~188K), cs.LG (~276K), cs.IR (~925 CTR)
+- Key papers: Illusion of Equivalency (quantization), Super Weights (COLM 2026), SLORR (low-rank reg), Memory Agent (+8.3pp), WebSwarm, OpenCoF (video reasoning), POEM (Kuaishou CTR), RankGraph-2 (Meta +0.96% CTR), Beyond Positive Signals (+9.6% AUC), EMA-FS (LightGBM 2.61×), ARDY (SIGGRAPH 2026)
+- Updated: wiki/index.md, wiki/log.md
+- New pages: wiki/synthesis/2026-07-12/arxiv-paper-check.md
+- Contradictions: none
+
+## [2026-07-12] synthesis | arXiv AI Search Report
+- New page: wiki/synthesis/2026-07-12/arxiv-ai-search.md
+- Coverage: 20+ curated papers across 6 categories (Recommendation, CTR/Advertising, Sequential Modeling, LLMs, Games, Cross-cutting)
+- Key papers: SCOReD (CoT distillation for rec), Agentic Rec Systems survey, GenLI (generative long-term interest), IDProxy (Xiaohongshu cold-start CTR), GRAB (Baidu generative CTR), DS-MLP (dual-stream MLP CTR), Diffusion-GR2 (diffusion re-ranker), Beyond Positive Signals (mixed-polarity sequences), TGA (multi-behavior transitions), Generals.io superhuman AI, Nemobot (LLM game agents)
+- Key trends: generative paradigms in CTR, LLM in production (Baidu/Xiaohongshu), mixed-polarity negative signals, efficient inference for reasoning, edge LLM deployment, agentic recommendation
+
 ## [2026-07-13] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-07-13)
 - New page: wiki/synthesis/2026-07-13/wq101-alpha-daily.md
 - Market: S&P 500 7,575.39(+1.2%周线), Nasdaq 26,281(+1.7%), Dow 52,367(-0.5%), SOX +3.83%
