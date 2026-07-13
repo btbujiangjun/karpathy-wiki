@@ -4,6 +4,18 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-12] synthesis | arXiv Paper Check — AI & CTR (July 12, 2026)
+- New page: wiki/synthesis/2026-07-12/arxiv-paper-check.md
+- Coverage: 22 curated papers from cs.AI (116 new), cs.IR (5 new) — July 13, 2026 listings
+- AI Agent highlights: Agora (auction-based task allocation), TrustX ARC (risk classification), ProofCouncil (mathematical proving), ARCANA (ARC-AGI-2 reflective multi-agent), SAGEAgent (multimodal survival prediction)
+- Multimodal & Medical: Multimodal Reward Hacking (first systematic study), LongMedBench (long-horizon clinical decision-making), PHIN-EEG (topological dream-state analysis)
+- Memory & Context: Shared Selective Persistent Memory, KV-PRM (KV-cache transfer for multi-agent test-time scaling)
+- CTR highlights: CADET (LinkedIn decoder-only ads CTR, +11.04% lift deployed), DPIFrame (23× embedding latency reduction, 5.83× speedup), DS-MLP (simple MLP SOTA via knowledge distillation), Beyond Positive Signals (+1.9–9.6% AUC with mixed-polarity sequences)
+- Safety highlights: Scoped Verification (long-horizon agentic context under distribution shift), Neuro-Agentic Control (LLM agents for cybersecurity)
+- Scientific AI: Vlasov Equation formalization (AI-assisted Lean), PHIN-EEG (dynamic Betti curves for dream classification)
+- Key themes: Agent safety maturing (risk classification, verification, reward hacking); memory architecture as critical bottleneck; CTR simplicity wins (DS-MLP MLP beats complex architectures); multi-agent coordination via auction theory; formal verification integration with AI
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-11] synthesis | AI Papers Compilation: June-July 2026
 - New page: wiki/synthesis/2026-07-11/ai-papers-june-july-2026.md
 - Coverage: 40+ papers/reports across 7 topic areas from June-July 2026
