@@ -4,6 +4,16 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-13] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-07-13)
+- New page: wiki/synthesis/2026-07-13/wq101-alpha-daily.md
+- Market: S&P 500 7,575.39(+1.2%周线), Nasdaq 26,281(+1.7%), Dow 52,367(-0.5%), SOX +3.83%
+- Key events: SK海力士Nasdaq IPO(+13.1%/7x超额), Mag 7周线+4.9%反弹, Q2财报季7/14启动(JPM/GS/WFC), 美伊局势升温油价$76+
+- Core factor: Alpha#1 动量回归主导(10次/50%) — Mag 7反弹+芯片超卖反弹; Alpha#41趋势确认(6次/30%)
+- Top 20: META(9.5, Alpha#1/#12), NVDA(9.3, Alpha#1/#41), MU(9.0, Alpha#1/#30), AAPL(8.8, Alpha#1/#6), JNJ(8.5, Alpha#30/#19), MSFT(8.3, Alpha#19/#41), AMD(8.0, Alpha#53/#1), AVGO(7.8, Alpha#1/#41), TSM(7.7, Alpha#1/#6), KO(7.5, Alpha#30/#19), GOOGL(7.3, Alpha#53/#19), TSLA(7.2, Alpha#1/#53), JPM(7.0, Alpha#1/#41), WDC(7.0, Alpha#1/#30), VRT(6.8, Alpha#1/#6), BABA(6.7, Alpha#53/#12), MRK(6.5, Alpha#30/#19), IBM(6.5, Alpha#1/#6), C(6.3, Alpha#1/#41), LLY(6.2, Alpha#30/#19)
+- Sector: 半导体6只, 科技5只, 医疗3只, 金融2只, 消费1只, 汽车1只, 工业1只, IT服务1只
+- Key change vs 07-09: Alpha#1动量强势回归(从Alpha#19主导); 半导体从3→6只; 科技从8→5只; 能源从3→0只; Top 3从防御(LLY/XOM/CVX)→成长(META/NVDA/MU)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-13] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 13, 2026)
 - New page: wiki/synthesis/2026-07-13/game-rl-daily.md
 - Coverage: 35 curated papers across 7 categories
