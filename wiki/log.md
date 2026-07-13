@@ -2561,3 +2561,12 @@
 - CTR Industrial: EST/FAT/PRECTR-V2 (Alibaba), OneRanker (Tencent +1.34% GMV), GR4AD (Kuaishou +4.2% revenue), DeRes (ByteDance), IDProxy (Xiaohongshu), UniRec (Shopee +5.60% GMV), CADET (Amazon)
 - 8 key trends: RL for LLM post-training, diffusion LM maturing, generative rec + CTR scaling laws, agent systems + autonomous research, multimodal unity, safety/alignment audit, efficient inference, memory/context management
 - Updated: wiki/index.md (synthesis entry added), wiki/log.md
+
+## [2026-07-12] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-07-12)
+- New page: wiki/synthesis/2026-07-12/wq101-alpha-daily.md
+- Market context: S&P 6,280(+0.3%), Dow 44,651(+0.4%), Nasdaq 20,631(+0.1%), VIX 15.78
+- Key events: Trump 35%加拿大关税(8/1生效), NVDA市值突破$4万亿, BTC $118K, 黄金$39+, Fed维持4.25%-4.5%, DAL财报超预期
+- Top 20 stocks: NVDA(9.5), MU(9.3), META(9.0), SNDK(8.8), TSLA(8.5), AAPL(8.3), AMZN(8.2), GOOGL(8.2), AMD(8.0), AVGO(7.8), LLY(7.7), MSFT(7.5), DELL(7.5), TSM(7.3), VRT(7.3), JPM(7.2), CEG(7.0), MRNA(7.0), PLTR(6.8), ABBV(6.8)
+- Factor analysis: Alpha#1 动量主导(8次/40%), Alpha#6 量价相关(4次/20%), Alpha#30 低波动(5次/25%), Alpha#19 均值回复(4次/20%), Alpha#41 趋势(4次/20%), Alpha#53 反转(3次/15%), Alpha#12 量价背离(2次/10%)
+- Sector breakdown: 半导体8只、科技5只、医疗3只、工业/能源/金融4只
+- Updated: wiki/index.md, wiki/log.md
