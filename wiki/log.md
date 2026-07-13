@@ -4,6 +4,19 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-13] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 13, 2026)
+- New page: wiki/synthesis/2026-07-13/game-rl-daily.md
+- Coverage: 35 curated papers across 7 categories
+- Game RL (5): SPIRAL ICLR 2026 (self-play reasoning), Code World Models (DeepMind LLM→code→MCTS), DeepMind RL review, Self-play survey (Tsinghua/Tencent), LLM Game Agents survey (Georgia Tech)
+- Game AI Bot (5): Nemobot (NUS, Shannon taxonomy + LLMs), PCSP (persona-conditioned shared RL policy, 64 agents UE5), CPDC 2025 1st place (GRPO for NPC dialogue), AI LOD (SIGGRAPH 2026, distance-aware quantization), RuleSmith (LLM-as-player for game balancing)
+- Foundation Models (3): NitroGen CVPR 2026 (NVIDIA, 40K hrs, 1000+ games), Generalist GP survey (Tsinghua, 5-level roadmap), CoMaTrack (3B VLA beats 7B via competitive MARL)
+- PCG (4): PCGRLLM (LLM reward design for PCGRL, IEEE ToG), PCG+LLM survey (AIIDE 2024, 207 papers), PCG Benchmark (12 problems, open-source), Co-adaptive DRL Level Design
+- Benchmarks (5): BALROG ICLR 2025 (LLM agentic on 6 RL envs), SC2BA (algorithm-vs-algorithm StarCraft), TeamCraft (55K Minecraft multi-modal multi-agent), OpenGuanDan (Chinese card game), BuilderBench (DeepMind block-building)
+- Industry (3): NVIDIA ACE/NVIGI SDK (production LLM NPCs), INFUSE Engine (Actor-Director pattern), GenAI NPC production survey
+- Related Techniques (10): CDE curiosity for LLM RL, HWM hierarchical planning (Meta), RLVR-World (Tsinghua), π-Play self-distillation, Matrix-Game world model, TheoryCoder (Harvard), MFG survey (DeepMind), Visual Generative Models + RL survey
+- Key themes: Foundation models at internet scale (NitroGen); self-play as LLM reasoning paradigm (SPIRAL); LLM-generated code world models (DeepMind); NPC intelligence entering production (NVIDIA ACE); PCG+LLM complementary workflows; game benchmarks maturing (5 new benchmarks)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-13] synthesis | Investment Daily — 全球科技与 AI 板块 (2026-07-13)
 - New page: wiki/synthesis/2026-07-13/investment-daily.md
 - Market context: NVDA $211(+4%/周+5%), S&P 7,575(+0.42%), 恒生科技4,783(+4.95%周线), A股半导体市值首超银行
