@@ -4,6 +4,24 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-13] synthesis | 顶会论文专题报告 — Conference & arXiv Digest (2026-07-13)
+- New page: wiki/synthesis/2026-07-13/conference-digest.md
+- Coverage: 200+ curated papers across 12+ venues (ICML 2026, NeurIPS 2025, ICLR 2026, CVPR 2026, KDD 2026, AAAI 2026, ACL 2026, WWW 2026, SIGIR 2026, EMNLP 2025, CIKM 2025, RecSys 2025), 20+ labs
+- ICML 2026 Outstanding: "The Flexibility Trap" (Tsinghua, diffusion LMs), "High-Accuracy Sampling" (diffusion models), Test of Time (A3C DeepMind)
+- ICML 2026 Honorable Mentions: Obfuscation Atlas (RLVR), Motion Attribution, How much memorize, Random Matrix Diffusion, Grokking Ridge Regression
+- ICML 2026 Agent RL: HiPER (hierarchical plan-execute, 97.4% ALFWorld), MemoPilot (memory RL, ELO #1), Agentic Monte Carlo, RL-Focal (+8.48% ensemble), JitRL, ML-Agent, DiScoFormer (oral)
+- NeurIPS 2025 Best: Gated Attention (Alibaba Qwen, shipped in Qwen3-Next), Artificial Hivemind (70+ LLMs think alike), 1000 Layer RL (2-50x locomotion), Why Diffusion Don't Memorize
+- ICLR 2026 Outstanding: Mean Flow Policy, Emergent Dexterity, AlphaAlign (deep safety), WaltzRL (Meta, 39%→4.6% unsafe), Safety Subspaces (EPFL), SPIRAL (self-play reasoning)
+- CVPR 2026 Best: D4RT (4D reconstruction), Honorable Mention SAM 3D (Meta), CUPID (+3dB PSNR), MatMart (material diffusion)
+- KDD 2026 CTR: GR4AD (Kuaishou, generative ad rec, +4.2% ad rev, 400M DAU), EST (Alibaba, power-law CTR scaling, +3.27% RPM), FAT (+4.38% AUC), RankUp (Tencent), OneMall (Kuaishou)
+- AAAI 2026: DMGIN (Alibaba, multimodal LLM lifelong behaviors, +4.7% CTR), TreeBridge (Shopee, LLM embedding alignment, +1.55% GMV), MoMoREC (Taobao, multi-agent motivation, +6.3% GMV)
+- ACL 2026: MemRec (collaborative memory agents), RecPO (preference intensity), BLaIR (LLM encoder benchmark, 570M reviews), REASONREC (reasoning multimodal, +30% HR@5), STAR (trajectory distillation)
+- WWW 2026: ThinkRec (LLM reasoning for rec), SparseCTR (Meituan, +1.72%), GenCI (generative CTR)
+- CIKM 2025: UserIP-Tuning (Huawei, +7.47% AUC deployed), RankMixer (ByteDance), LONGER (ByteDance)
+- RecSys 2025: ECAT Best Paper, SUAN (Meituan CTR scaling)
+- Key themes: Diffusion LM maturing (ICML Outstanding); Agent RL systematizing (HiPER/MemoPilot/AReaL2.0); CTR scaling laws full bloom (EST/FAT/GR4AD); Generative rec industrialized (GR4AD 400M DAU); LLM+Rec deep fusion (ThinkRec/MemRec/RecPO/Taiji); Safety alignment matured (WaltzRL/AlphaAlign); Gated Attention in production (Qwen3-Next)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-12] synthesis | arXiv Paper Check — AI & CTR (July 12, 2026)
 - New page: wiki/synthesis/2026-07-12/arxiv-paper-check.md
 - Coverage: 22 curated papers from cs.AI (116 new), cs.IR (5 new) — July 13, 2026 listings
