@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-13] synthesis | 2026年7月 AI 大模型技术报告速览
+- New page: wiki/synthesis/2026-07-13/tech-report-digest.md
+- Coverage: 19家机构全面覆盖 — DeepSeek V3/R1, OpenAI GPT-5/5.5, Meta LLaMA 4, Google Gemini 2.5 Pro/Flash, Anthropic Claude Opus 4/Sonnet 4, Mistral Large 2/Magistral/Devstral, Qwen3/Qwen2.5-VL, 01.AI Yi-Lightning, Baichuan M3/M4, Microsoft Phi-4/Phi-4-RV-15B, Apple AFM, NVIDIA Nemotron 3 Ultra, xAI Grok 4, Amazon Nova, Zhipu GLM-5/GLM-4.7/GLM-4, InternLM3/Intern-S1, Moonshot Kimi K2/K2.5, StepFun Step 3/Step 3.7 Flash, ByteDance Doubao 2.0/Seedream 2.0
+- Key trends: MoE架构成为主流(DeepSeek/Meta/Qwen/GLM-5/Step3/Kimi2), Reasoning模型标配化(GPT-5 thinking/Claude Opus 4/Gemini 2.5 Deep Think/Magistral/Step3), 长上下文竞赛(10M Meta/1M Gemini/200K GLM-5), 中国AI实验室MoE+Reasoning重投入(GLM-5 744B/Step3 321B/Doubao 1T/Kimi2 1T), 多模态成标配, Agent工具使用成标配, 端侧部署受重视, 训练成本优化(DeepSeek-V3 $5.576M)
+- Updated: wiki/index.md
+
 ## [2026-07-13] synthesis | 顶会论文专题报告 — Conference & arXiv Digest (2026-07-13)
 - New page: wiki/synthesis/2026-07-13/conference-digest.md
 - Coverage: 200+ curated papers across 12+ venues (ICML 2026, NeurIPS 2025, ICLR 2026, CVPR 2026, KDD 2026, AAAI 2026, ACL 2026, WWW 2026, SIGIR 2026, EMNLP 2025, CIKM 2025, RecSys 2025), 20+ labs
