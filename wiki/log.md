@@ -4,6 +4,19 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-14] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 14, 2026)
+- New page: wiki/synthesis/2026-07-14/game-rl-daily.md
+- Coverage: 48 curated papers across 7 categories
+- Game RL (5): MARL-GPT (foundation model for MARL), Generals.io superhuman AI (self-play RL), Stratagem (transferable reasoning via game self-play), AlphaZero Tablut (asymmetric board games), Generative Gamer (LLM dynamic deduction, ACL 2026)
+- Game AI Bot (5): Bounded Autonomy (LLM characters live multiplayer), Nemobot (NUS LLM game agents), PTCG-Bench (Pokémon TCG LLM agents), Orchestrated Reality (LLM POMDP game world), OpenGame (agentic coding)
+- Foundation Models (6): NitroGen CVPR 2026 (NVIDIA 40K hrs, 1000+ games), Game-TARS ByteDance (500B+ tokens, keyboard-mouse), Pixels2Play (8300+ hrs open BC), Generalist GP survey Tsinghua (5-level roadmap), GameVerse (video reflection), Lumine (5-hr open-world completion)
+- PCG (7): IPCGRL (language-instructed RL), PCGRLLM (LLM reward design), Multiverse (cross-game level blending), Agentic PCG (tool-using LLMs), GRPO fun-aligned levels, Narrative Arc conditioning, MultiGen (diffusion multiplayer)
+- Benchmarks (9): OmniGameArena UE5 IDC, GameWorld 34 games, AgentOdyssey text games, Orak KRAFTON 12 games MCP, PTCG-Bench, CivBench Civilization V, StarBench Star Rail, MineExplorer Minecraft, CausalGame
+- Industry (2): Augmenting Game AI industry, Experience Transfer CVPR 2026 Minecraft
+- Related Techniques (14): SPIRAL, MARS, MEMO, CuES, SuS, Mind-Studio, GameCWM distillation, WISE, MineEvolve, Sensi, AlayaWorld, WorldCam, RWML, Scalable Multi-Task RL
+- Key themes: Foundation models at internet scale (NitroGen, Game-TARS); self-play as LLM reasoning paradigm (SPIRAL, MARS, Stratagem); executable world models via LLMs (Mind-Studio, GameCWM); memory and self-evolution critical (WISE, MineEvolve, MEMO); 8 new game benchmarks
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-14] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-07-14)
 - New page: wiki/synthesis/2026-07-14/investment-daily.md
 - US stocks (6): AAPL $323创新高(起诉OpenAI)/NVDA $211(大摩$288目标价)/GOOGL融资$800亿AI基建/MSFT Build七款自研模型/META追加$400亿Hyperion/TSLA Model Y Performance中国申报
