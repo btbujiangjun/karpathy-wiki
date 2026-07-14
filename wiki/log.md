@@ -29,6 +29,21 @@
 - Added 18 new papers: GARL (game-theoretic RL), Augmenting Game AI (CoG 2026), MARL Review (IEEE ToG), HLSMAC (StarCraft stratagems), SMAC-Talk, SeRL self-play LLM, Echo Minecraft transfer, OmniGameArena UE5, DSGBench strategic games, GameDevBench, JOWA offline MBRL 150M, Agent World Model, DiNAT-RCM curiosity Atari, Advanced Game-Theoretic Frameworks, Multi-task PCG Scientific Reports
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-07-14] synthesis | Conference & arXiv Digest — ICML/AAAI/NeurIPS/ICLR/CVPR/KDD/ACL/SIGIR/WWW 2026
+- New page: wiki/synthesis/2026-07-14/conference-digest.md
+- 15 sections, 12+ venues, 50+ papers, 15+ labs
+- ICML 2026 Outstanding: Flexibility Trap (Tsinghua), High-Accuracy Diffusion Sampling (MIT/Yale); Test of Time: A3C (DeepMind 2016)
+- ICLR 2026 Outstanding: Transformers Succinct (MPI-SWS), LLMs Lost Multi-Turn
+- CVPR 2026 Best: D4RT (Google DeepMind/Oxford/UCL)
+- AAAI 2026: InTRO (+20% math reasoning), PRIME (dual-process), CDCR-SFT (surpass human CLADDER)
+- KDD 2026: CTR-Sink (Ant Group), SRPFN (synthetic prior RecSys), FlowTime (Kuaishou watch time)
+- ACL 2026: KARL (THUDM, beats GPT-4o), SOAR (+16.9% deep research), Miner (+4.58% over GRPO)
+- SIGIR 2026: LTRR, SmartSearch, SA²CRQ (JD.com deployed), Agentic Search 14M+ logs
+- CTR Production: OneRanker (Tencent GMV+1.34%), EST (Taobao RPM+3.27%), RankUp (Tencent GMV+4.81%)
+- Agent Systems: MILES, BIGMAS, DOLORES (8B beats 32B), SMTL (OPPO, BrowseComp 48.6%)
+- Code Execution: Latent Programming Horizons (25-step lookahead), Self-RLEF, LongHorizonTerminalBench (GPT-5.5 only 15.2%)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-12] ingest | arXiv Paper Check — AI & CTR (July 12, 2026)
 - Summary: wiki/synthesis/2026-07-12/arxiv-paper-check.md
 - Coverage: 20 curated papers from cs.AI (~188K), cs.LG (~276K), cs.IR (~925 CTR)
