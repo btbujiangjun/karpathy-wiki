@@ -4,6 +4,17 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-14] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-07-14)
+- New page: wiki/synthesis/2026-07-14/investment-daily.md
+- US stocks (6): AAPL $323创新高(起诉OpenAI)/NVDA $211(大摩$288目标价)/GOOGL融资$800亿AI基建/MSFT Build七款自研模型/META追加$400亿Hyperion/TSLA Model Y Performance中国申报
+- HK stocks (5): 百度+7.5%(昆仑芯$500亿IPO)/智谱+40%破万亿/GLM-5.2全量开放/商汤开源视觉模型/腾讯云DeepSeek-V4降价97.5%
+- A-shares (3): 中芯国际+18%创历史新高(市值1.25万亿)/澜起科技15日翻倍(市值3000亿)/存储芯片涨停潮
+- 中概股 (2): BABA $90→$110反弹(AI ARR ¥358亿)/BIDU AI收入占比首过半52%
+- EV (4): BYD海外+95%/NIO上调至买入$7/XPEV Q2最佳月份/LI 6月交付-15%
+- AI热点: DeepSeek $450亿估值(大基金领投)/Anthropic洽谈微软Maia芯片/OpenAI Codex整合ChatGPT/美团LongCat-2.0五万卡国产算力训练
+- Key themes: AI CapEx $7500亿(+80% YoY)/国产算力自主可控加速/AI商业化拐点验证/存储超级周期分化/NEV需求疲软
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-14] synthesis | 2026年7月 AI 大模型技术报告速览 (7月14日更新)
 - New page: wiki/synthesis/2026-07-14/tech-report-digest.md
 - Coverage: 19家机构全面覆盖 — DeepSeek V3/R1/V3.2/V4, OpenAI o1/o3/o4-mini/GPT-5/GPT-5.5, Meta LLaMA 4, Google Gemini 2.5 Pro/Flash, Anthropic Claude Opus 4/Sonnet 4/4.1 Opus, Mistral Large 2/Magistral/Devstral, Qwen2.5/Qwen3/Qwen3.5, 01.AI Yi-Lightning, Baichuan M3/M4, Microsoft Phi-4/Phi-4-RV-15B, Apple AFM, NVIDIA Nemotron 3 Ultra, xAI Grok 4, Amazon Nova, Zhipu GLM-4.5/GLM-4, InternLM3/Intern-S1, Moonshot Kimi K2/K2.5, StepFun Step 3/Step 3.7 Flash, ByteDance Seed 2.0/Seedream 2.0
