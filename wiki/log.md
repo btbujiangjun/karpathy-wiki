@@ -18,6 +18,13 @@
 
 ## [2026-07-13] update | Game RL & Game AI Bot — Daily Paper Digest (July 13, 2026)
 - Summary: wiki/synthesis/2026-07-13/game-rl-daily.md
+
+## [2026-07-14] synthesis | arXiv Daily Digest — AI, LLMs, Recommendation, CTR, Games & Sequence Modeling
+- New page: wiki/synthesis/2026-07-14/arxiv-daily.md
+- 32 papers from recent arXiv submissions (July 2026)
+- Categories: LLM Training & RL (6), LLM-as-a-Verifier (1), Audio/Multimodal (2), Recommendation/Advertising/CTR (8), Games/RL Agents (7), State Space Models & Sequence Modeling (7), NeuroAI Theory (1)
+- Key themes: RL post-training dominance, industrial generative recommendation, hybrid SSM-Transformer theory foundations, long-horizon game RL for VLMs, verification as scaling axis
+- Updated: wiki/index.md
 - Updated: 35 → 53 papers across 7 categories
 - Added 18 new papers: GARL (game-theoretic RL), Augmenting Game AI (CoG 2026), MARL Review (IEEE ToG), HLSMAC (StarCraft stratagems), SMAC-Talk, SeRL self-play LLM, Echo Minecraft transfer, OmniGameArena UE5, DSGBench strategic games, GameDevBench, JOWA offline MBRL 150M, Agent World Model, DiNAT-RCM curiosity Atari, Advanced Game-Theoretic Frameworks, Multi-task PCG Scientific Reports
 - Updated: wiki/index.md, wiki/log.md
@@ -2569,4 +2576,13 @@
 - Top 20 stocks: NVDA(9.5), MU(9.3), META(9.0), SNDK(8.8), TSLA(8.5), AAPL(8.3), AMZN(8.2), GOOGL(8.2), AMD(8.0), AVGO(7.8), LLY(7.7), MSFT(7.5), DELL(7.5), TSM(7.3), VRT(7.3), JPM(7.2), CEG(7.0), MRNA(7.0), PLTR(6.8), ABBV(6.8)
 - Factor analysis: Alpha#1 动量主导(8次/40%), Alpha#6 量价相关(4次/20%), Alpha#30 低波动(5次/25%), Alpha#19 均值回复(4次/20%), Alpha#41 趋势(4次/20%), Alpha#53 反转(3次/15%), Alpha#12 量价背离(2次/10%)
 - Sector breakdown: 半导体8只、科技5只、医疗3只、工业/能源/金融4只
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-14] ingest | arXiv Paper Check — AI & CTR (July 14, 2026)
+- Summary: wiki/synthesis/2026-07-14/arxiv-paper-check.md
+- Coverage: 10 curated papers from cs.AI (27 new), cs.IR (2 new) — Monday July 13, 2026 listings
+- AI highlights: CogniConsole (inference-time control as formal abstraction), GATS (graph-augmented tree search with layered world models, 100% success vs 92% LATS), Long-Horizon-Terminal-Bench (46 long-horizon tasks, 15 frontier models), ProofCouncil (LLM agent for open mathematical problems, 6/10 correct), Multimodal Reward Hacking (first systematic study, 48.1% RHR), Shared Selective Persistent Memory (96% task completion vs 79% without memory), Agora (auction-based task allocation for LLM agents)
+- CTR highlights: From Raw IDs to Semantic Planning (recommender systems evolution), Do Rec Algos Work for LLM Agents? (Moltbook, structural signals dominate), Rashomon Explanation Set (explanation fidelity improves prediction accuracy on click-through prediction)
+- Safety highlights: Scoped Verification (GRACE, 0.091→0.673 reliability), Neuro-Agentic Control (LLM planner + TimesFM for cybersecurity), TrustX ARC (12-dimension risk classification)
+- Key themes: Agent reliability via external control; memory as critical bottleneck; reward hacking in multimodal RL; recommender systems evolving from raw IDs to semantic planning; explanation-prediction coupling
 - Updated: wiki/index.md, wiki/log.md
