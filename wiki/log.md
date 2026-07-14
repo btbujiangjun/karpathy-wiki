@@ -4,6 +4,16 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-14] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-07-14)
+- New page: wiki/synthesis/2026-07-14/wq101-alpha-daily.md
+- Market: S&P 7,431(-0.79%), Nasdaq 25,822(-1.55%), Dow 52,872(-0.35%), VIX 17.16, Brent ~$106
+- Events: Q2 bank earnings (JPM/GS/BAC/C/WFC); chip rout (MU -4.3%, NVDA -3.5%, AMD -4.2%); Iran conflict oil surge
+- Factor structure: Alpha#1 momentum (8/40%) from tech→energy/finance/defense; Alpha#41 trend (7/35%); Alpha#6 volume-price (6/30%)
+- Top 20: 5 energy (XOM/COP/OXY/CVX/LNG), 3 financial (GS/JPM/BAC), 3 industrial/defense (CAT/LMT/RTX), 5 tech (MSFT/AVGO/GOOGL/AAPL/META), 1 utility (NEE), 2 healthcare (JNJ/UNH), 1 staples (PG)
+- Top 3: XOM(9.5)/GS(9.3)/CAT(9.2)
+- Key themes: Sector rotation dominant; energy +22% YTD leads; MSFT -22% 52W oversold reversal; defense budget $1.5T; Q2 earnings season starts
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-14] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 14, 2026)
 - New page: wiki/synthesis/2026-07-14/game-rl-daily.md
 - Coverage: 48 curated papers across 7 categories
