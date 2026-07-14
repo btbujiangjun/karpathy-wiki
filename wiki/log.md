@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-14] synthesis | 2026年7月 AI 大模型技术报告速览 (7月14日更新)
+- New page: wiki/synthesis/2026-07-14/tech-report-digest.md
+- Coverage: 19家机构全面覆盖 — DeepSeek V3/R1/V3.2/V4, OpenAI o1/o3/o4-mini/GPT-5/GPT-5.5, Meta LLaMA 4, Google Gemini 2.5 Pro/Flash, Anthropic Claude Opus 4/Sonnet 4/4.1 Opus, Mistral Large 2/Magistral/Devstral, Qwen2.5/Qwen3/Qwen3.5, 01.AI Yi-Lightning, Baichuan M3/M4, Microsoft Phi-4/Phi-4-RV-15B, Apple AFM, NVIDIA Nemotron 3 Ultra, xAI Grok 4, Amazon Nova, Zhipu GLM-4.5/GLM-4, InternLM3/Intern-S1, Moonshot Kimi K2/K2.5, StepFun Step 3/Step 3.7 Flash, ByteDance Seed 2.0/Seedream 2.0
+- Key trends: MoE架构成为主流, Reasoning模型标配化, 长上下文竞赛升级(10M Meta/1M Gemini), 中国AI实验室MoE+Reasoning重投入, 多模态成标配, Agent工具使用成标配, 端侧部署受重视, 训练成本优化(DeepSeek-V3 $5.576M), 模型能力持续突破(Claude 4.1 Opus GPQA 57%, GPT-5.5 agentic能力, DeepSeek-V4 KV cache 10% of V3.2)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-12] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-07-12)
 - New page: wiki/synthesis/2026-07-12/investment-daily.md
 - Market context: S&P 7575.39 距历史新高仅 0.6%; 纳指周 +1.74% 科技重夺领导力; 恒生科技 +5.33% 本周爆发; 创业板指创历史新高
