@@ -4,6 +4,18 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-15] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-07-15)
+- New page: wiki/synthesis/2026-07-15/investment-daily.md
+- Market: S&P 7,543(+0.38%), Nasdaq 26,107(+0.90%), Dow 52,508(+0.02%), SMH +2.54%
+- US stocks (7): NVDA+4%(H20恢复+RTX PRO)/IBM-25%(54年最大跌幅)/MU+4.9%/AMAT+5.3%/CRWD+11.5%/PANW+6.8%/TSLA+0.36%(EPS超预期)
+- HK stocks (8): BABA+17%周/腾讯+6.7%(Hy3极致量化)/美团+9.9%(LongCat-2.0开源)/小米+9.5%/百度+6%/商汤+12%/快手+1%(Kling AI $180亿估值)/中芯国际+8.2%
+- A-shares (6): 新易盛20%涨停(Q2利润+51%)/中际旭创+17%/天孚通信+12%/澜起科技15日翻倍/寒武纪/MICR/中芯国际
+- 中概股 (10): BABA-0.03%/PDD-0.77%/JD-0.14%/BIDU-3.23%/XPEV+3.28%/LI+2.38%/NIO+1.73%/BILI-0.63%/NTES-2.31%/PDD-0.77%
+- EV (4): TSLA+0.36%(EPS超预期)/BYD璿玑A3 4nm芯片/XPEV L4路测/NIO 70万辆世界模型OTA
+- AI热点: NVIDIA恢复H20对华销售+RTX PRO合规GPU/CPI 3.5%加息预期骤降/IBM客户支出转向AI硬件/腾讯Hy3极致量化单卡跑295B/美团LongCat-2.0开源1.6T参数/字节探索物理AI/中国AI模型API连续10周超美国/全球AI CapEx $7500亿(+80% YoY)/长鑫科技IPO+长江存储辅导/光模块800G/1.6T渗透率提升
+- Key themes: CPI降温→芯片股全线反弹/光模块成A股绝对主线/国产算力自主可控加速/AI模型→API→商业化闭环验证/存储超级周期(涨价+IPO)/物理AI元年
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-15] synthesis | 2026年7月 AI 大模型技术报告速览 (7月15日更新)
 - New page: wiki/synthesis/2026-07-15/tech-report-digest.md
 - Coverage: 19家机构全面覆盖 — DeepSeek V4-Pro/Flash/V3.2/R1, OpenAI GPT-5/5.6/GPT-Live, Meta LLaMA 4 Scout/Maverick/Behemoth, Google Gemini 2.5 Pro/Flash, Anthropic Claude Fable 5/Mythos 5/Opus 4.8/Sonnet 4, Mistral Small 4/Medium 3.5/Leanstral 1.5, Qwen3/Qwen3.5-Omni/Qwen-Image-2.0/Qwen-VLA, Microsoft Phi-4-reasoning-vision-15B, Apple AFM PT-MoE, NVIDIA Nemotron 3 Ultra/Super/Nano, xAI Grok 4/4.1/4.20, Amazon Nova 2/Premier, Zhipu GLM-5/5.2, Intern-S1-Pro 1T/InternVL3.5, Moonshot Kimi K2/K2.5, StepFun Step-DeepResearch/StepFun-Prover, ByteDance Seed1.8/Seed1.5-VL, 01.AI Yi-Lightning, Baichuan M4
