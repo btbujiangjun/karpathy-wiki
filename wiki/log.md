@@ -4,6 +4,22 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-15] synthesis | 顶会论文专题报告 — Conference & arXiv Digest (2026-07-15)
+- New page: wiki/synthesis/2026-07-15/conference-digest.md
+- Coverage: 200+ papers across 12+ conferences, 20+ labs
+- ICML 2026: Outstanding (Flexibility Trap, High-Accuracy Sampling), Test of Time (A3C), Agents (HiPER 97.4% ALFWorld, JitRL 30× cheaper, Multi², BEACON 92.9% ALFWorld, GLARE, HPO, Reasoning Collapse)
+- ICLR 2026: Outstanding (Transformers Succinct, LLMs Lost Multi-Turn 39% drop), Honorable (Polar Express/Muon), 5356 accepted, 223 oral
+- CVPR 2026: Best (D4RT DeepMind/Oxford dynamic 4D, O-Voxel Microsoft/Tsinghua 3D), Honorable (SAM 3D Meta 5:1 preference), 4090/16092 accepted
+- AAAI 2026: TreeBridge Shopee +1.55% GMV, MoMoREC Taobao +6.3% GMV, RecCocktail, Monosemantic Rec, SPINRec, RecToM
+- NeurIPS 2025: MeanFlow FID 3.43 one-step, Energy Matching, PartCrafter, AlignedGen DiT style, GPSToken, ARGenSeg
+- KDD 2026: CTR-Sink Ant Group (attention sink for LM-CTR), GR4AD Kuaishou +4.2% ad rev, GenRec JD +9.5% clicks, UniSID, MARS Kuaishou deployed
+- ACL 2026: PaCoRe 94.5% HMMT surpassing GPT-5 (8B model), Deliberative Searcher 96% false-certainty reduction, Think in Sentences +7.7% GSM8k
+- WWW 2026: GenCI generative CTR, SparseCTR Meituan +1.72% CTR, ThinkRec, GEMS unified S&R
+- SIGIR 2026: GEMS gradient multi-subspace, SIGMA AliExpress
+- Key Trends: Hierarchical agent decomposition, training-free methods (JitRL), attention sink for CTR, generative recommendation scaling, one-step diffusion FID 3.43, 3D generation at production scale
+- Industry Deployments: Meta SAM 3D, Shopee TreeBridge, Taobao MoMoREC, Kuaishou MARS/GR4AD, LinkedIn LLM Retrieval, JD GenRec, Meituan SparseCTR
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-15] synthesis | arXiv Paper Check — AI & CTR (July 15, 2026)
 - New page: wiki/synthesis/2026-07-15/arxiv-paper-check.md
 - Coverage: 16 curated papers from cs.AI (157 new Jul 15), cs.LG (1776 July), cs.IR
