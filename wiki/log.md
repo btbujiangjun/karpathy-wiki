@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-15] synthesis | 2026年7月 AI 大模型技术报告速览 (7月15日更新)
+- New page: wiki/synthesis/2026-07-15/tech-report-digest.md
+- Coverage: 19家机构全面覆盖 — DeepSeek V4-Pro/Flash/V3.2/R1, OpenAI GPT-5/5.6/GPT-Live, Meta LLaMA 4 Scout/Maverick/Behemoth, Google Gemini 2.5 Pro/Flash, Anthropic Claude Fable 5/Mythos 5/Opus 4.8/Sonnet 4, Mistral Small 4/Medium 3.5/Leanstral 1.5, Qwen3/Qwen3.5-Omni/Qwen-Image-2.0/Qwen-VLA, Microsoft Phi-4-reasoning-vision-15B, Apple AFM PT-MoE, NVIDIA Nemotron 3 Ultra/Super/Nano, xAI Grok 4/4.1/4.20, Amazon Nova 2/Premier, Zhipu GLM-5/5.2, Intern-S1-Pro 1T/InternVL3.5, Moonshot Kimi K2/K2.5, StepFun Step-DeepResearch/StepFun-Prover, ByteDance Seed1.8/Seed1.5-VL, 01.AI Yi-Lightning, Baichuan M4
+- Key trends: MoE全面普及(所有主要模型), 混合架构(Mamba-Transformer/CSA+HCA), Agent能力成核心竞争力(Kimi Agent Swarm/GLM-5异步Agent RL), 百万Token上下文标配(DeepSeek V4/LLaMA 4 10M/Gemini 1M+), RL后训练多范式(GRAP/异步RL/AgentRL/CascadeRL/CISPO), 垂直模型崛起(Baichuan M4医疗登顶3大榜单幻觉率3.3%), 开源白热化(Mistral Small 4 Apache 2.0/Kimi K2/GLM-5/Nemotron 3), 推理时间Scaling成新轴(Gemini Deep Think/Seed1.8/Leanstral 1.5)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-15] synthesis | 顶会论文专题报告 — Conference & arXiv Digest (2026-07-15)
 - New page: wiki/synthesis/2026-07-15/conference-digest.md
 - Coverage: 200+ papers across 12+ conferences, 20+ labs
