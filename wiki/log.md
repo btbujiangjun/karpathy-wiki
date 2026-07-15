@@ -4,6 +4,19 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-15] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 15, 2026)
+- New page: wiki/synthesis/2026-07-15/game-rl-daily.md
+- Coverage: 25 curated papers across 7 categories
+- Game RL (4): GAE limitation in imperfect-info self-play RL (CMU), Yahtzee stochastic combinatorial RL, HiComm hierarchical communication MARL, AlphaEvolve discovering MARL algorithms (DeepMind)
+- Game AI Bot (4): LLM agents competition/cooperation dynamics, cross-platform LLM NPC Unity+Discord, Slay the Spire 2 LLM testbed, GAMEBoT ACL 2025 transparent LLM reasoning assessment
+- Foundation Models (3): NitroGen CVPR 2026 (NVIDIA 40K hrs, 1000+ games), Generalist GP survey Tsinghua (5-level roadmap), LLM Game Agent survey Georgia Tech/ACM Surveys 2026
+- PCG (3): MIPCGRL multi-objective instruction GIST, PCGRLLM LLM reward IEEE ToG, PCG+LLM survey AIIDE 2024 (207 papers)
+- Benchmarks (4): GameEngineBench UE5 C++ 55.5% pass@1, GBQA ICLR 2026 WS 48% bug discovery, GameWorld NUS 34 browser games, TowerMind tower defence
+- Industry (2): GameEngineBench production C++ gap, cross-platform NPC systems
+- Related Techniques (5): World Models comprehensive survey, probing IRIS/DIAMOND latent representations ICLR 2026 WS, MetaWorld hierarchical skill transfer, Self-Play survey Tsinghua/Tencent, Reward Models survey Nanjing U
+- Key themes: Foundation models at internet scale (NitroGen); self-play as reasoning paradigm (AlphaEvolve MARL discovery); LLM game agents still far from human; PCG+LLM complementary workflows; world models maturing; GAE limitations exposed for imperfect-info games
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-15] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-07-15)
 - New page: wiki/synthesis/2026-07-15/investment-daily.md
 - Market: S&P 7,543(+0.38%), Nasdaq 26,107(+0.90%), Dow 52,508(+0.02%), SMH +2.54%
