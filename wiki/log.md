@@ -4,6 +4,16 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-15] synthesis | WorldQuant 101 Alpha 因子选股日报 — 美股 Top 20 (2026-07-15)
+- New page: wiki/synthesis/2026-07-15/wq101-alpha-daily.md
+- Market: S&P 7,543(+0.38%), Nasdaq 26,107(+0.90%), Dow 52,508(+0.02%), CPI 3.5%降温
+- Events: Q2银行财报开门红(GS EPS+92%/JPM创纪录); CPI 6年来首次环比下降→加息概率<20%; 美伊冲突油价$79.82; AAPL创52周新高$323; IBM暴跌25%
+- Factor structure: Alpha#1 momentum (10/50%) dominant + Alpha#6 volume-price (4/20%); 能源超卖反弹+金融业绩驱动+科技估值修复三线并行
+- Top 20: 5 financial (GS/JPM/BAC/V/HD), 7 tech (NVDA/AAPL/META/TSM/AVGO/AMD/MSFT), 2 energy (CVX/XOM), 3 healthcare (UNH/ABBV/JNJ), 1 storage (MU), 2 consumer (NFLX/DEO)
+- Top 3: GS(10/Alpha#1,6) — 业绩爆发EPS+92%+动量加速; NVDA(9.5/Alpha#1,41) — Fwd P/E 22x历史低位+PEG 0.50; AAPL(9.5/Alpha#1,30) — 三角形突破$323+Services $31B/季
+- Key themes: 金融板块GS/JPM业绩验证资本周期回升; 科技估值回归合理区间(MSFT P/E 22x/NVDA P/E 22x); 能源超卖反弹(CVX RSI 20→45); 医疗保健RRG领先象限持续; CPI降温→利率预期下修利好成长股
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-15] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 15, 2026)
 - New page: wiki/synthesis/2026-07-15/game-rl-daily.md
 - Coverage: 25 curated papers across 7 categories
