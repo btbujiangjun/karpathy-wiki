@@ -4,6 +4,28 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-15] synthesis | arXiv Paper Check — AI & CTR (July 15, 2026)
+- New page: wiki/synthesis/2026-07-15/arxiv-paper-check.md
+- Coverage: 16 curated papers from cs.AI (157 new Jul 15), cs.LG (1776 July), cs.IR
+- AI Agents (6): E3 complexity-aware execution (85% cost cut), OAT unsupervised failure attribution (200-5000× faster), Critic Experience Bank step-level confidence (54% ECE reduction), PM-Bench prospective memory (COLM 2026, GPT-5.4 only 65.1% F1), MemOps lifecycle memory operations, Function-Aware FIM mid-training (+3.2 SWE-Bench)
+- Scientific AI (1): Mechanistic World Models (Posner/Schölkopf — paradigm for autonomous discovery)
+- Safety (1): Isolation as first-class principle for LLM-agent safety (5-boundary taxonomy)
+- Evaluation (2): Bayesian Accuracy length bias correction (ICML 2026), Elenchos abductive reasoning (detection-attribution dissociation)
+- Systems (2): On-Device Deep Research at 4B (exposure vs retrieval levers), PEFT Block-Diffusion negative result (drafter must be cheaper than verifier)
+- CTR/RecSys (4): CADET LinkedIn decoder-only ads CTR (+11.04% lift), EST Alibaba unified CTR scaling (+3.27% RPM), Beyond Positive Signals mixed-polarity (+9.6% AUC), DS-MLP vanilla MLP SOTA
+- Key trends: Agent efficiency as new frontier; memory as lifecycle not storage; detection≠attribution; CTR scaling laws go unified; negative signals matter; simplicity wins in CTR
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-15] synthesis | arXiv Daily Report — AI, LLMs, Recommendation, CTR, Advertising, Sequential Modeling, Games
+- New page: wiki/synthesis/2026-07-15/arxiv-daily.md
+- Coverage: 15 curated papers across 4 categories
+- Advertising/CTR (4): CADET (LinkedIn decoder-only ads CTR, +11.04% lift, deployed), IDProxy (Xiaohongshu MLLM cold-start, deployed), GenLI (generative long-term interest, O(1) retrieval), Beyond Positive Signals (mixed-polarity sequences, +1.9–9.6% AUC)
+- Sequential Modeling/Rec (3): PANTHER (WeChat Pay generative pretraining, 25.6% HitRate@1, deployed), TGA (Alibaba multi-behavior transitions, WWW 2026, deployed), PerSRec (Meta personalization, ICDM 2025)
+- LLM/Multi-Agent (5): MARLIN (HP Labs game-theoretic sustainable LLM inference, -33% carbon), GARL (Tsinghua game-theoretic RL, open-source LLMs competitive with closed-source), Beyond the Leaderboard (Oxford 27-paper failure taxonomy), MALLM (Göttingen decision protocols), MALMAS (USTC memory-augmented, ACL 2026)
+- Games (3): Never-losing chess engine, human-AI coordination, contextual-bandit oversight
+- Key trends: Decoder-only transformers dominate ads CTR; MLLMs as embedding generators for CTR; mixed-polarity behavior sequences challenge positive-only assumption; generative pretraining extends from language to user behavior; game-theoretic RL convergence
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-14] synthesis | WorldQuant 101 Alpha 因子精选 — 美股 Top 20 (2026-07-14)
 - New page: wiki/synthesis/2026-07-14/wq101-alpha-daily.md
 - Market: S&P 7,431(-0.79%), Nasdaq 25,822(-1.55%), Dow 52,872(-0.35%), VIX 17.16, Brent ~$106
