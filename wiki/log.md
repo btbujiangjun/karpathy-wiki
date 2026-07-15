@@ -15,6 +15,8 @@
 - Updated: wiki/index.md, wiki/log.md
 
 ## [2026-07-15] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 15, 2026)
+
+## [2026-07-15] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 15, 2026)
 - New page: wiki/synthesis/2026-07-15/game-rl-daily.md
 - Coverage: 25 curated papers across 7 categories
 - Game RL (4): GAE limitation in imperfect-info self-play RL (CMU), Yahtzee stochastic combinatorial RL, HiComm hierarchical communication MARL, AlphaEvolve discovering MARL algorithms (DeepMind)
