@@ -4,6 +4,18 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-16] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-07-16)
+- New page: wiki/synthesis/2026-07-16/investment-daily.md
+- Market: S&P 7,572(+0.38%), Nasdaq 26,269(+0.62%), Dow 52,658(+0.29%), Phil Semi -2.08%, 恒生科技+1.3%, 纳斯达克中国金龙+2.92%, 科创50跌4%+
+- US stocks (8): AAPL+4%创新高(Qwen接入Apple Intelligence)/MSFT+2.78%(7/29财报+AI ARR $370亿)/NVDA+0.33%(Vera Rubin量产确认)/META+3.07%(自研芯片Iris 9月量产)/AMD-3.46%(UBS目标价$700)/PLTR-25%YTD(Q1+84.7%)/MU-8%(业绩+345%后回调)/ORCL-AI集群成本$490亿/GW
+- HK stocks (7): BABA+4.79%(Qwen接入Apple Intelligence)/MiniMax+13%(ARR $5亿+400%)/智谱+6.7%(GLM-5.2开源SOTA)/美团+5.3%(LongCat-2.0万亿参数)/腾讯+3.9%(回购+AI)/快手+2%(Kling AI $180亿估值)/小米+4%
+- A-shares (3): 中际旭创辟谣企稳(1.6T订单覆盖2027)/寒武纪万亿市值(科创板首支)/科创50跌4%+(韩国暴涨6% vs A股半导体暴跌6%)
+- 中概股 (10): BABA+4.79%/MNSO+9.37%/YMM+6.54%/BEKE+5.87%/BZ+4.71%/BILI+4.58%/GDS+4.12%/UMC+4.47%/PDD+2.18%/BIDU+1.59%
+- EV (4): TSLA-0.43%(Q2交付48万+25%)/BYD天神之眼333万辆+海外+95%/NIO+0.6%(CXMT IPO战略投资)/XPEV+3.18%
+- AI热点: PPI降温→加息骤降(~10%概率); Big Tech从芯片轮动软件; Apple Intelligence中国落地7款手机备案; AI CapEx $7500-7690亿(+61-79%); Morgan Stanley集群成本+20%(Vera Rubin $490亿/GW); Agentic AI驱动CPU需求; 国产AI算力自主可控(寒武纪万亿+美团LongCat国产算力训练)
+- Key themes: 资金从芯片→Big Tech软件轮动; Apple Qwen入华为AI终端化里程碑; 存储超级周期短期获利回吐不改长期逻辑; 中概AI全球配比1.2%重估空间巨大; A股科创短期估值出清
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-16] synthesis | 2026年7月 AI 大模型技术报告速览 (7月16日更新)
 - New page: wiki/synthesis/2026-07-16/tech-report-digest.md
 - Coverage: 19家机构全面覆盖 — DeepSeek V4-Pro/Flash/V3.2/R2, OpenAI GPT-5/5.6/GPT-Live, Meta LLaMA 4 Scout/Maverick/Behemoth, Google Gemini 2.5 Pro/Flash, Anthropic Claude Fable 5/Mythos 5/Opus 4.6/Sonnet 4.5, Mistral Small 4/Large 2, Qwen3.5-397B-A17B, Microsoft Phi-4-RV-15B/Phi-4.5-Small, Apple AFM 3.0, NVIDIA Nemotron Nano 2, xAI Grok 4, Amazon Nova 2, Zhipu GLM-5/5.2, Intern-S1-Pro 1T/InternVL3.5, Moonshot Kimi K2/VL-A3B, StepFun Step-3/Step-Video-T2V, ByteDance Seed 1.6/1.7/Seedream 2.0/Seed-Coder, 01.AI Yi-Lightning, Baichuan M4
