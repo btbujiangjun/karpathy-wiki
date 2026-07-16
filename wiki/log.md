@@ -2743,3 +2743,14 @@
 - Games (1): Augmenting Game AI with deep reinforcement learning (EA, Conference on Games 2026)
 - Key themes: MLP-based efficient architectures for CTR, generative approaches enhancing discriminative models, LLM integration into recommendation systems, linear-complexity multi-behavior modeling, unified multimodal sequential modeling
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-16] synthesis | Top ML/AI Conference & arXiv Paper Digest (2026-07-16)
+- New page: wiki/synthesis/2026-07-16/conference-digest.md
+- Coverage: 80+ papers across 12+ venues (ICML 2026, NeurIPS 2025, AAAI 2026, CVPR 2026, KDD 2026, SIGIR 2026, ACL 2026, RecSys 2025, EMNLP 2025, ICLR 2026, CIKM 2025, WWW 2026) + arXiv recent preprints
+- Top Conference Awards: NeurIPS 2025 Best (Gated Attention, Artificial Hivemind, 1000 Layer RL), ICLR 2026 Outstanding (Flexibility Trap dLLMs, High-Accuracy Sampling), AAAI 2026 (4167/23680 accepted), CVPR 2026 Best (SAM 3D Meta, D4RT DeepMind, B³-Seg 3DGS)
+- Key Industry Labs: Google DeepMind (D4RT, CodeGen2.5), Alibaba (TMallGS, EST, TAROT), Tencent (OneRanker), Kuaishou (GR4AD, LSVCR), NVIDIA (NitroGen), Meta (SAM 3D), ByteDance (NextFlow)
+- ICML 2026 Highlights: MemoPilot ELO#1, STAPO trajectory-aware RL (13-17% speedup), HiPER 97.4% ALFWorld, JitRL 30× cheaper, Multi² agent comms, BEACON planning-guided search
+- CTR/Ads/Rec: DeRes dual-path attention +0.32% AUC, EST power-law +3.27% RPM, OneRanker +1.34% GMV, RankUp +3-4% GMV, Semantic IDs joint S&R (RecSys 2025)
+- Code Generation: Self-Execution Simulation, DUET dual execution (28.9% code match), EAGER (37.3% latency cut, 5.5% quality), EvoCodeBench, CodeWorldModels
+- Key themes: Diffusion language models (Flexibility Trap +8%), Agent RL (STAPPO, RE-TRAC, EAS), Agentic search (14M requests/day), Code execution as verification, Few-shot learning (TAROT, MoDoMoDo), LLM security (AURA, InTRO)
+- Updated: wiki/index.md, wiki/log.md
