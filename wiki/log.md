@@ -4,6 +4,16 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-16] synthesis | WorldQuant 101 Alpha 因子选股日报 — 2026-07-16
+- New page: wiki/synthesis/2026-07-16/wq101-alpha-daily.md
+- Market: S&P 7,577.51(+0.38%), Nasdaq 100 29,406(-0.28%), Dow 50,970(-0.21%), VIX 15.67
+- Macro: PPI低于预期+CPI降温3.5%→加息概率骤降至~10%; Fed Funds 3.75%不变
+- Factors: Alpha#1动量(12次/60%主导)+Alpha#6量价(7次/35%)+Alpha#53反转(5次/25%)
+- Top 20 by score: AAPL(9.5)/JPM(9.0)/GOOGL(9.0)/XOM(8.5)/LLY(8.5)/CVX(8.5)/META(8.5)/AMZN(8.0)/UNH(8.0)/MSFT(8.0)/JNJ(7.5)/BLK(7.5)/MRK(7.5)/NVDA(7.5)/AVGO(7.0)/ABBV(7.0)/TSLA(7.0)/PFE(7.0)/COP(7.0)/AMGN(6.5)
+- Sectors: 科技5只(8.5均分)+医疗7只(7.6)+能源3只(7.5)+金融2只(8.3)+通信消费3只(7.5)
+- Key catalysts: AAPL Qwen入华+V形突破$327历史新高; JPM Q2超预期12.7%营收增长; GOOGL加入道指+102%1Y涨幅; PYPL $53B收购要约+16%; LLY GLP-1龙头7/23财报; 能源YTD+33.84%
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-16] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 16, 2026)
 - New page: wiki/synthesis/2026-07-16/game-rl-daily.md
 - Coverage: 37 curated papers across 7 categories
