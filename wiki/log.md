@@ -4,6 +4,16 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-16] synthesis | arXiv Paper Check — AI & CTR (July 16, 2026)
+- New page: wiki/synthesis/2026-07-16/arxiv-paper-check.md
+- Coverage: 16 curated papers from cs.AI (148 new Jul 16), cs.IR (10 new Jul 16), cs.LG (~200+)
+- AI Agents (6): Do Agent Optimizers Compound? (RELAI-VCL 76.4% lifelong pass, regression control critical), Theory-Level Autoformalization (ICML 2026 Spotlight, complete theory libraries), Experience Memory Graph (one-shot error correction), Self-Evolving Health Agent, LAPO (process rewards for multi-turn search), Self-Improvements in Agentic Systems survey (97 pages)
+- CTR/Recommendation (6): TMallGS (Alibaba Tmall unified Transformer search ranking, heterogeneous tokenization), DANet discount-aware CVR (SIGIR 2026, +3.63% pCVR deployed), IBA information-gain budget allocation for generative rec, Learning to Forget satiation-aware transducers (SIGIR 2026), Mitigating Early CTR Collapse (sparsity control > LR tuning), Not Only NTP extending training signal
+- Retrieval/Search (3): Cluster with Auctions for Vector Search (NeurIPS 2026), MESH heterogeneous content retrieval, GEO survey (45 studies on generative engine optimization)
+- Code Generation (1): Generative Compilation (on-the-fly Rust compiler feedback, sealors, Lean-verified)
+- Key themes: Agent optimization must be regression-controlled to compound; industrial CTR moving from DLRM → unified Transformer; discount/pricing signals underexploited; Semantic IDs + latent reasoning maturing; compilers as active generation participants
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-15] synthesis | WorldQuant 101 Alpha 因子选股日报 — 美股 Top 20 (2026-07-15)
 - New page: wiki/synthesis/2026-07-15/wq101-alpha-daily.md
 - Market: S&P 7,543(+0.38%), Nasdaq 26,107(+0.90%), Dow 52,508(+0.02%), CPI 3.5%降温
@@ -2721,4 +2731,15 @@
 - CTR highlights: From Raw IDs to Semantic Planning (recommender systems evolution), Do Rec Algos Work for LLM Agents? (Moltbook, structural signals dominate), Rashomon Explanation Set (explanation fidelity improves prediction accuracy on click-through prediction)
 - Safety highlights: Scoped Verification (GRACE, 0.091→0.673 reliability), Neuro-Agentic Control (LLM planner + TimesFM for cybersecurity), TrustX ARC (12-dimension risk classification)
 - Key themes: Agent reliability via external control; memory as critical bottleneck; reward hacking in multimodal RL; recommender systems evolving from raw IDs to semantic planning; explanation-prediction coupling
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-16] synthesis | arXiv Daily Report — AI, LLMs, Recommendation, CTR, Advertising, Sequential Modeling, Games
+- New page: wiki/synthesis/2026-07-16/arxiv-daily.md
+- Coverage: 15 papers across 5 categories
+- CTR Prediction (5): DS-MLP dual-stream MLP (Renmin/ByteDance/Meituan), CADET LinkedIn decoder-only CTR (+11.04%), EST Alibaba scaling laws (+3.27% RPM), GenLI generative long-term interest, LoopCTR loop scaling (Alibaba)
+- Recommendation (4): Trustworthy LLM recommendation survey (200+ studies), SPiKE knowledge graph enrichment using LLMs (KDD 2026), SELLER sequence-aware explainable recommendation, Rec-R1 RL bridging generative LLMs with recommendation systems
+- Sequential Modeling (3): PerSRec Meta personalization for long-term interest, TGA multi-behavior transitions (Alibaba), NextFlow unified multimodal sequential modeling (ByteDance)
+- LLMs in Rec (2): Sequence-aware LLMs for explainable recommendation, Rec-R1 reinforcement learning framework
+- Games (1): Augmenting Game AI with deep reinforcement learning (EA, Conference on Games 2026)
+- Key themes: MLP-based efficient architectures for CTR, generative approaches enhancing discriminative models, LLM integration into recommendation systems, linear-complexity multi-behavior modeling, unified multimodal sequential modeling
 - Updated: wiki/index.md, wiki/log.md
