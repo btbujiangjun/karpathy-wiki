@@ -4,6 +4,19 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-16] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 16, 2026)
+- New page: wiki/synthesis/2026-07-16/game-rl-daily.md
+- Coverage: 37 curated papers across 7 categories
+- Game RL (10): SPIRAL self-play reasoning transfer, Strat-Reasoner recursive opponent modeling, MARSHAL multi-agent self-play +28.7%, MEMO memory-augmented 19× fewer games, OMAR conversational self-play, STRATAGEM transferable reasoning, AlphaZero Tablut asymmetric, QZero model-free Go, π-Play privileged self-distillation, SELF-REDTEAM safety alignment via self-play
+- Game AI Bot (8): Nemobot Shannon taxonomy+LLMs, COSPLAY co-evolving skill bank 25.1% improvement, Generative Code Opt Atari competitive with deep RL, Sensi curriculum test-time 50-94× efficiency, AutoHarness code synthesis 145 games, HexMachina Catan 54% vs AlphaBeta, FAMOU co-evolutionary AAMAS 2026 1st, PORTAL 1000+ FPS games
+- Foundation Models (6): NitroGen CVPR 2026 NVIDIA 40K hrs/1000+ games, Pixels2Play 1.2B open BC, Game-TARS ByteDance 500B tokens, Generalist GP survey 5-level roadmap, GameVerse video reflection, OmniGameArena UE5 IDC
+- PCG (6): IPCGRL language-instructed RL, WCRL WFC+PCGRL hybrid, AutoUE 3D Unreal Engine multi-agent, PCGRLLM LLM reward design, AutoBG board game design assistant, Orchestrated Reality LLM-driven POMDP
+- Benchmarks (3): TextArena 100+ games TrueSkill leaderboard, OmniGameArena UE5 IDC improvement dynamics, PCG Benchmark open-source
+- World Models (9): RLVR-World RL for world models, PriorZero LLM priors+MCTS, WorldCam camera-pose geometry 3D, RWML self-supervised sim-to-real, Multiplayer World Models 5B Rocket League 20fps, PaW policy+world co-training, SWIRL latent actions, Kairos regret-aware Physical AI, PAN general interactable long-horizon
+- Related Techniques (7): HiPER hierarchical 97.4% ALFWorld, HiMAC macro-micro 83.4% WebShop, SPEAR progressive exploration, CDE curiosity-driven RL, CuES curiosity task generation, cMarlTest curiosity MARL 3D testing, curiosity-driven action games ICM+A3C
+- Key themes: Self-play generates transferable reasoning (SPIRAL, MARSHAL, Strat-Reasoner); Foundation models at internet scale (NitroGen CVPR 2026, Game-TARS 500B tokens); Code-as-policy beats large LLMs (AutoHarness, FAMOU); World models maturing for games (9 papers, multiplayer 5B Rocket League); Hierarchical RL unlocks long-horizon (HiPER 97.4% ALFWorld); 7 new benchmarks
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-16] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-07-16)
 - New page: wiki/synthesis/2026-07-16/investment-daily.md
 - Market: S&P 7,572(+0.38%), Nasdaq 26,269(+0.62%), Dow 52,658(+0.29%), Phil Semi -2.08%, 恒生科技+1.3%, 纳斯达克中国金龙+2.92%, 科创50跌4%+
