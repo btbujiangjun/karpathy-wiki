@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-16] synthesis | 2026年7月 AI 大模型技术报告速览 (7月16日更新)
+- New page: wiki/synthesis/2026-07-16/tech-report-digest.md
+- Coverage: 19家机构全面覆盖 — DeepSeek V4-Pro/Flash/V3.2/R2, OpenAI GPT-5/5.6/GPT-Live, Meta LLaMA 4 Scout/Maverick/Behemoth, Google Gemini 2.5 Pro/Flash, Anthropic Claude Fable 5/Mythos 5/Opus 4.6/Sonnet 4.5, Mistral Small 4/Large 2, Qwen3.5-397B-A17B, Microsoft Phi-4-RV-15B/Phi-4.5-Small, Apple AFM 3.0, NVIDIA Nemotron Nano 2, xAI Grok 4, Amazon Nova 2, Zhipu GLM-5/5.2, Intern-S1-Pro 1T/InternVL3.5, Moonshot Kimi K2/VL-A3B, StepFun Step-3/Step-Video-T2V, ByteDance Seed 1.6/1.7/Seedream 2.0/Seed-Coder, 01.AI Yi-Lightning, Baichuan M4
+- Key trends: MoE全面普及(所有主要模型), 推理模型标准化(GRPO-PR/thinking/Deep Think), 长上下文竞赛升级(10M Meta/1M DeepSeek/Gemini/GLM-5.2), 多模态成标配(除DeepSeek/NVIDIA外全部), Agent工具使用成标配(Kimi Agent Swarm/GLM-5异步Agent RL/Claude Computer Use), 端侧部署受重视(Apple AFM 3.0/Phi-4.5-Small/Nemotron Nano 2), 训练成本优化(DeepSeek V3 $5.6M)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-16] synthesis | arXiv Paper Check — AI & CTR (July 16, 2026)
 - New page: wiki/synthesis/2026-07-16/arxiv-paper-check.md
 - Coverage: 16 curated papers from cs.AI (148 new Jul 16), cs.IR (10 new Jul 16), cs.LG (~200+)
