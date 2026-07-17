@@ -10,6 +10,13 @@
 - Key models: DeepSeek-V4 (1.6T MoE), GPT-5.5, LLaMA 4, Gemini 2.5, Claude 4, Grok 3, Kimi K2, GLM-5, Step-3.7-Flash
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-07-17] synthesis | Top ML/AI Conference & arXiv Paper Digest — Updated 2026-07-17
+- New page: wiki/synthesis/2026-07-17/conference-digest.md
+- Coverage: **150+ papers** across 12+ venues (ICML 2026, NeurIPS 2025, ICLR 2026, AAAI 2026, KDD 2026, CVPR 2026, ACL 2026, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025, arXiv)
+- Key updates from previous digest: enriched with 70+ additional papers, detailed experimental results with numbers, new sections on game AI (TiG, SPIRAL, FMSP, Odysseus), sequential modeling at scale (10K Douyin, ReaSeq Taobao, ULIM), generative recommendation architectures (GLASS, SIDReasoner, Gryphon, GenRec JD), advertising/auction theory (LLM-Auction 59.1% revenue improvement, Bid2X, CBD, EGA-V1), live papers from Jul 16-17 arXiv submissions, comprehensive stats table
+- Key papers added: SMACS (15 open models beat closed), Scalpel vs. Hammer (GRPO amplifies, SFT replaces), Sparse Delta Memory (Meta FAIR, beats attention at 8B), Mamba-3, Oryx, SPIRAL self-play (+10.5% reasoning), TiG Honor of Kings (Qwen-3-14B beats DeepSeek-R1), Foundation Model Self-Play, AutoSynthesis, Proof-or-Stop, SearchOS-V1, GRAD Meituan (+10.68% ROI), GRAB Baidu (+3.49% CTR), ToolRec OPPO (150M+ MAU), Adaptive Ad Load, PolyQ edge quantization, Muse Muon geometry
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-17] synthesis | arXiv Paper Check — AI & CTR (July 17, 2026)
 - New page: wiki/synthesis/2026-07-17/arxiv-paper-check.md
 - Coverage: 16 curated papers from cs.AI (204 new Jul 17), cs.LG (143 new Jul 17), cs.IR/CTR (~925 total)
