@@ -4,6 +4,16 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-17] synthesis | arXiv Paper Check — AI & CTR (July 17, 2026)
+- New page: wiki/synthesis/2026-07-17/arxiv-paper-check.md
+- Coverage: 16 curated papers from cs.AI (204 new Jul 17), cs.LG (143 new Jul 17), cs.IR/CTR (~925 total)
+- CTR/Recommendation (5): Long-History User Transformers (Yandex, offline encoding + cached representations, +2.77% search ad, +2.1% YAN, +2.26% revenue), TMallGS (Alibaba, unified Transformer search ranking with hierarchical tokenization), Mitigating Early Training Collapse (sparsity control > LR tuning), Privacy Preserving RecSys (federated learning + DP at ε≈5), Mutable Low-Rank Sketches (retrain-free recommendation)
+- AI Agents (4): SearchOS-V1 (open-domain multi-agent search), AutoSynthesis (automated meta-analysis), Proof-or-Stop (verifiable evidence-gated lifecycle control, 48 pages), Atrex (LLM GPU kernel benchmark, Alibaba)
+- ML (4): PolyQ (edge CPU LLM quantization), xHC (Expanded Hyper-Connections), Muse (Muon optimizer geometry analysis), Long-Context Fine-Tuning with Limited VRAM
+- Advertising (3): Adaptive Ad Load Design (economics + ML), ToolRec (on-device query recommendation, 150M MAU, OPPO), Position Auctions with Capacity Constraint (truthful mechanism)
+- Key themes: Offline-online decoupling for CTR; Unified Transformer ranking; Simplicity wins in CTR (sparsity control); Autoresearch goes production; Agent verifiability; Muon optimizer deepened
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-16] synthesis | WorldQuant 101 Alpha 因子选股日报 — 2026-07-16
 - New page: wiki/synthesis/2026-07-16/wq101-alpha-daily.md
 - Market: S&P 7,577.51(+0.38%), Nasdaq 100 29,406(-0.28%), Dow 50,970(-0.21%), VIX 15.67
@@ -2794,4 +2804,16 @@
 - CTR/Ads/Rec: DeRes dual-path attention +0.32% AUC, EST power-law +3.27% RPM, OneRanker +1.34% GMV, RankUp +3-4% GMV, Semantic IDs joint S&R (RecSys 2025)
 - Code Generation: Self-Execution Simulation, DUET dual execution (28.9% code match), EAGER (37.3% latency cut, 5.5% quality), EvoCodeBench, CodeWorldModels
 - Key themes: Diffusion language models (Flexibility Trap +8%), Agent RL (STAPPO, RE-TRAC, EAS), Agentic search (14M requests/day), Code execution as verification, Few-shot learning (TAROT, MoDoMoDo), LLM security (AURA, InTRO)
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-17] synthesis | arXiv AI Research Report (2026-07-17)
+- New page: wiki/synthesis/2026-07-17/arxiv-ai-search.md
+- Coverage: 30+ papers across 6 categories
+- LLMs (5): MILES modular instruction memory, LLM-as-a-Verifier verification framework, KARLA knowledge-base augmented retrieval, Belief-reality separation mechanisms, POPS recovering unlearned knowledge
+- Recommendation (5): GLASS generative recommender, SIDReasoner reasoning over semantic IDs, GenRec JD.com deployed, AgentX Kuaishou self-iteration, Gryphon industrial music service
+- Advertising (5): CADET LinkedIn +11.04% CTR, GRAB Baidu +3.49% CTR, GR4AD Kuaishou +4.2% revenue, AdNanny Bing Ads unified LLM, OneRanker Tencent +1.34% GMV
+- Sequential Modeling (5): Mamba-3 SSM improvements, Oryx hybrid switching, MuonSSM orthogonalized updates, NextFlow multimodal 6T tokens, Sparse Delta Memory 3-order-of-magnitude state
+- CTR Prediction (5): DS-MLP dual-stream MLP SOTA, SparseCTR sparse attention scaling laws, DeRes dual-path +0.32% AUC, LoopCTR loop scaling paradigm, GenCI generative interest cohorts
+- Games (5): Odysseus VLM 100+ turn decisions, Multiplayer World Models 5B parameters, GIFT games for LLM training, Trainee-to-Trainer LLM environment design, T-STAR tree-structured policy optimization
+- Key trends: Generative recommendation production deployment, LLM integration for verification/reasoning, scaling laws in CTR/rec, hybrid SSM-attention architectures, self-improving systems
 - Updated: wiki/index.md, wiki/log.md
