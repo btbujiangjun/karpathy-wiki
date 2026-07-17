@@ -4,6 +4,16 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-17] synthesis | WorldQuant 101 Alpha 因子选股 Top 20 — 美股 (2026-07-17)
+- New page: wiki/synthesis/2026-07-17/wq101-alpha-daily.md
+- Market: S&P 7,533.77(-0.51%), Nasdaq 25,881.95(-1.47%), Dow 52,553.50(-0.20%), SOX 11,867.50(-4.29%)
+- Events: 芯片股暴跌(SOX-4.3%/SNDK-12.6%/MU-5.6%/WDC-9.2%); 资金轮动至防御板块(XLP+2.6%/XLV+1.0%); Energy+3.5pp跑赢Tech; UnitedHealth+8%(Q2上调指引); Abbott+13.5%(Q2超预期); JPM创纪录$212亿净利; 美伊冲突推升油价
+- Factor structure: Alpha#1动量(10次/50%)主导+Alpha#6量价(8次/40%)+Alpha#53反转(5次/25%)
+- Top 20: JPM(9.5)/AMZN(9.3)/UNH(9.0)/V(9.0)/BLK(8.8)/WMT(8.7)/MSFT(8.5)/KO(8.5)/XOM(8.3)/CVX(8.0)/GOOGL(8.0)/ABT(8.0)/AAPL(7.8)/META(7.8)/NVDA(7.5)/GS(7.5)/JNJ(7.5)/BAC(7.3)/COST(7.3)/LULU(7.0)
+- Sectors: Financials 5只+Healthcare 3只+Tech 3只+Staples 3只+Energy 2只+Comm 2只+Cons.Disc. 1只+Semis 1只
+- Key themes: 芯片集中度风险(S&P 20%+)引发防御轮动; Financials Q2财报全面超预期(NII+资本市场); Healthcare MA费率上调5%+成本改善; Energy中东冲突溢价; MSFT/GOOGL估值修复; 消费必需品+低Beta防御配置
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-17] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 17, 2026)
 - New page: wiki/synthesis/2026-07-17/game-rl-daily.md
 - Coverage: 25 curated papers across 7 categories
