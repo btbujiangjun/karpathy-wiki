@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-17] synthesis | LLM 技术报告速递 (2026-07-17)
+- New page: wiki/synthesis/2026-07-17/tech-report-digest.md
+- Coverage: 19家机构技术报告汇总 (DeepSeek, OpenAI, Meta, Google, Anthropic, Mistral, Qwen, xAI, Moonshot, NVIDIA, Zhipu, InternLM, Microsoft, Amazon, StepFun, ByteDance, 01.AI, Baichuan, Apple)
+- Key models: DeepSeek-V4 (1.6T MoE), GPT-5.5, LLaMA 4, Gemini 2.5, Claude 4, Grok 3, Kimi K2, GLM-5, Step-3.7-Flash
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-17] synthesis | arXiv Paper Check — AI & CTR (July 17, 2026)
 - New page: wiki/synthesis/2026-07-17/arxiv-paper-check.md
 - Coverage: 16 curated papers from cs.AI (204 new Jul 17), cs.LG (143 new Jul 17), cs.IR/CTR (~925 total)
