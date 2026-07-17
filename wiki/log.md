@@ -4,6 +4,19 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-17] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 17, 2026)
+- New page: wiki/synthesis/2026-07-17/game-rl-daily.md
+- Coverage: 25 curated papers across 7 categories
+- Game RL (2): COvolve adversarial co-evolution MSNE meta-policy, ResDreamer hierarchical residual world model 3D Minecraft combat
+- Game AI Bot (8): Bounded Autonomy live multiplayer LLM characters, Psy-CoT/RAPO psychology-grounded game NPCs, CASCADE 3-layer low-cost social coordination, WISE causal event graph Minecraft 30%+ task success, ProPlay procedural world model preplay, Orchestrated Reality parameterized-action POMDP, OPINE-World 20/25 ARC-AGI-3 games, RWML self-supervised world model learning
+- Foundation Models (5): Game-TARS 500B tokens outperforms GPT-5/Gemini on FPS, Odysseus 100+ turn VLM RL Mario, Generalist GP survey 5-level roadmap, Pixels2Play 8300+ hrs open BC, GameVerse video reflection benchmark
+- PCG (5): WCRL WFC+PCGRL hybrid, MultiGen editable multiplayer diffusion engine, HDPCG high-dimensional level generation, PCGRL+ JAX 1B timesteps, PRP cake playtrace representation
+- Benchmarks (5): OmniGameArena UE5 12 games IDC, GameWorld 34 games state-verifiable evaluation, MineExplorer multi-hop Minecraft exploration, TextAtari 100K-frame language agents, SciCrafter Minecraft redstone discovery-to-application
+- Industry (4): KRAFTON ICML 2026 PUBG ALLIE on-device LLM agents, Sony AI GT Sophy coachable agent 10-15 demos, NC AI production pipeline lessons, PCSP persona-conditioned shared RL 64 agents UE5
+- Related Techniques (4): HWM hierarchical planning latent world models 70% real robot, WorldCompass RL for video world models 20%→55% accuracy, AgentOWL hierarchical neural options Atari, AgentOdyssey open-ended continual learning
+- Key themes: On-device LLM agents reaching commercial viability (KRAFTON, inZOI); World models as NPC infrastructure (CASCADE/Orchestrated Reality/ProPlay/PCSP); Foundation models scaling (Game-TARS 500B tokens outperforms GPT-5); Benchmarks explosion (6 new this cycle); LLM agents still plateau at 26% on discovery tasks
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-17] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-07-17)
 - New page: wiki/synthesis/2026-07-17/investment-daily.md
 - Coverage: 美股(AAPL+4%创新高/NVDA H20复供), 港股(恒指+1.33%五连阳/小米+6.3%/智谱-9.3%), A股(新易盛3天+40%/CPO爆发/PCB涨停潮), 中概股(金龙+2.92%/BABA+4.79%), 新能源(XPeng+229% YoY/BYD海外+169%), AI热点(ChatGPT Agent/混元Hy3登顶/字节GR-3)
