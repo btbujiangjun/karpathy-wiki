@@ -4,6 +4,11 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-17] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-07-17)
+- New page: wiki/synthesis/2026-07-17/investment-daily.md
+- Coverage: 美股(AAPL+4%创新高/NVDA H20复供), 港股(恒指+1.33%五连阳/小米+6.3%/智谱-9.3%), A股(新易盛3天+40%/CPO爆发/PCB涨停潮), 中概股(金龙+2.92%/BABA+4.79%), 新能源(XPeng+229% YoY/BYD海外+169%), AI热点(ChatGPT Agent/混元Hy3登顶/字节GR-3)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-17] synthesis | LLM 技术报告速递 (2026-07-17)
 - New page: wiki/synthesis/2026-07-17/tech-report-digest.md
 - Coverage: 19家机构技术报告汇总 (DeepSeek, OpenAI, Meta, Google, Anthropic, Mistral, Qwen, xAI, Moonshot, NVIDIA, Zhipu, InternLM, Microsoft, Amazon, StepFun, ByteDance, 01.AI, Baichuan, Apple)
