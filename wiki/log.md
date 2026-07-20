@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-20] synthesis | Investment Daily Report (2026-07-20)
+- New page: wiki/synthesis/2026-07-20/investment-daily.md
+- Coverage: 美股/港股/A股/中概股/EV/AI热点 6大板块，60+只个股
+- Key highlights: Hyperscaler 2026 Capex $7000亿; 科创50涨8.41%; 中概股HXC涨2.92%; 小鹏7月交付创纪录; AI新模型密集发布(GPT-5.6/Grok 4.5/千问新版)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-20] synthesis | arXiv Paper Check — AI & CTR (July 20, 2026)
 - New page: wiki/synthesis/2026-07-20/arxiv-paper-check.md
 - Coverage: 14 curated papers from cs.AI (201 new), cs.IR (9 new), cs.LG (70 new)
