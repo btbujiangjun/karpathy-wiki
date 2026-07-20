@@ -59,6 +59,19 @@
 - Key trends: MoE mainstream (15+ companies), RL + test-time compute reasoning, native multimodal, context from 128K→10M, small model resurgence, Agent-ification, training efficiency innovation
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-07-20] synthesis | LLM Tech Report Daily (2026-07-20) — enriched update
+- Updated page: wiki/synthesis/2026-07-20/tech-report-digest.md
+- Enriched all 19 company sections with:
+  - arXiv links for OpenAI GPT-5 (2601.03267), Google Gemini 2.5 (2507.06261), Microsoft Phi-4-RV (2603.03975), Apple AFM (2507.13575), Amazon Nova (2506.12103), DeepSeek R1 (2501.12948)
+  - Training data sizes (DeepSeek 14.8T, Kimi K2 15.5T, xAI Grok 3 13.4T, InternLM3 4T, Qwen3 119 languages)
+  - Specific parameter counts (Grok 3 1.2T/128 experts, Nemotron 3 Ultra 512 experts, Kimi K2 1.04T)
+  - Context lengths (Kimi K2 196K, GLM-5 200K, Amazon Nova 300K)
+  - Benchmark numbers (Kimi K2 MMLU 77.4, MATH-500 96.2; Baichuan-M4 hallucination rate 3.3%)
+  - StepFun expanded to cover Step-3 + Step 3.5 Flash + Step-DeepResearch
+  - ByteDance expanded to include Game-TARS (500B tokens, surpasses GPT-5)
+- Enhanced trend analysis: added MoE comparison table (7 models with params/activations/experts/context), new section on Safety & Alignment (Anthropic ASL-3, OpenAI GPT-5 System Card, Apple on-device privacy)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-20] synthesis | Investment Daily Report (2026-07-20)
 - New page: wiki/synthesis/2026-07-20/investment-daily.md
 - Coverage: 美股/港股/A股/中概股/EV/AI热点 6大板块，60+只个股
