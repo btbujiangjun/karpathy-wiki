@@ -21,6 +21,24 @@
 - Updated: wiki/index.md, wiki/log.md
 
 
+## [2026-07-20] synthesis | Top ML/AI Conference & arXiv Paper Digest — 2026-07-20
+- New page: wiki/synthesis/2026-07-20/conference-digest.md
+- Coverage: **47+ papers** across 12 venues (ICML 2026, NeurIPS 2025, ICLR 2026, AAAI 2026, KDD 2026, CVPR 2026, ACL 2026, SIGIR 2026, WWW 2026, RecSys 2025, CIKM 2025, arXiv)
+- ICML 2026 (8): Flexibility Trap Outstanding (diffusion constraint failure), Shannon Scaling Law (LLMs as noisy channels), MemoPilot ELO#1, HiPER 97.4% ALFWorld, JitRL 30× cheaper, Self-Flow, UniAR Alibaba, Complete-muE
+- NeurIPS 2025 (5): Gated Attention Alibaba Best (shipped Qwen3-Next), Artificial Hivemind 70+ LLMs, 1000 Layer RL, Diffusion Memorization, RL vs Reasoning Runner-Up
+- ICLR 2026 (4): Transformers Succinct Outstanding (expressiveness limits), LLMs Lost Multi-Turn 39% drop, Mean Flow Policy, Polar Express, Muon HM
+- AAAI 2026 (4): AURA safety alignment for rec, InTRO +20% math reasoning, MoMoREC Taobao +6.3% GMV, TreeBridge Shopee +1.55% GMV
+- KDD 2026 (3): RankElastor effective-rank dynamics, RPORec Kuaishou RL+reasoning, EST Alibaba +3.27% RPM, GR4AD +4.2% revenue
+- CVPR 2026 (3): D4RT DeepMind Best 4D reconstruction, SAM 3D Meta 5:1 preference, NitroGen NVIDIA 40K hrs gaming agents
+- ACL 2026 (4): SOAR +16.9% research quality, KARL beats GPT-4o, HSCodeComp Best Resource, RecPO intensity+temporal
+- SIGIR 2026 (4): Agentic Search 14M requests, AgentRank, LTRR, HyDE, ACE anisotropy +12.4%
+- WWW 2026 (3): ThinkRec, GenCI, SparseCTR Meituan +1.72% CTR
+- RecSys 2025 (3): LSVCR Kuaishou +4.13%, Semantic IDs, LONGER ByteDance
+- CIKM 2025 (1): RankMixer ByteDance
+- arXiv (8): SAO GLM-5.2 750B async RL, MaRCA +16.67% revenue, Sparse Delta Memory beats attention 8B, Mamba-3, SPIRAL +10.5%, TiG Honor of Kings, Genstrat strategic reasoning, PCSP 64 agents
+- Cross-cutting themes: Scaling Laws go vertical (CTR/rec/agents), RL post-training becomes norm, generative rec goes industrial, agent safety urgent, negative signals matter
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-20] synthesis | arXiv Daily Report (2026-07-20) — AI, LLMs, Recommendation, CTR, Advertising, Sequential Modeling, Games
 - New page: wiki/synthesis/2026-07-20/arxiv-daily.md
 - Summary: 20+ curated papers across 6 categories
