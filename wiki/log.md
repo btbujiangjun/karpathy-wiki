@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-20] synthesis | LLM Tech Report Daily (2026-07-20)
+- New page: wiki/synthesis/2026-07-20/tech-report-digest.md
+- Coverage: 19 companies' latest model tech reports — DeepSeek, OpenAI, Meta, Google, Anthropic, Mistral, Qwen, 01.AI, Baichuan, Microsoft, Apple, NVIDIA, xAI, Amazon, Zhipu, InternLM, Moonshot, StepFun, ByteDance
+- Key models: DeepSeek-V3 (671B MoE), Llama 4 Scout (10M ctx), Gemini 2.5 Pro, Claude Opus 4, Mistral Large 3 (675B), Qwen3-235B-A22B, Kimi K2 (1T), Nemotron 3 Ultra (550B Mamba-hybrid), Phi-4-RV-15B, Apple AFM (3B device), GLM-5 (DSA), Step-DeepResearch (32B agent), Seed 2.0 Pro
+- Key trends: MoE mainstream (15+ companies), RL + test-time compute reasoning, native multimodal, context from 128K→10M, small model resurgence, Agent-ification, training efficiency innovation
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-20] synthesis | Investment Daily Report (2026-07-20)
 - New page: wiki/synthesis/2026-07-20/investment-daily.md
 - Coverage: 美股/港股/A股/中概股/EV/AI热点 6大板块，60+只个股
