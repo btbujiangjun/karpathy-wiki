@@ -4,6 +4,28 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-18] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 18, 2026)
+- New page: wiki/synthesis/2026-07-18/game-rl-daily.md
+- Coverage: 30+ curated papers across 7 categories
+- Game RL (10): MARL-GPT unified transformer MARL, Stratagem transferable reasoning, AlphaZero Tablut asymmetric, QZero model-free Go mastery, SPIRAL +10.5% self-play reasoning, PolicyEvolve programmatic PBT, PopuLoRA LoRA evolution 7B, GEMS 6x faster PSRO, FAMOU AAMAS 2026 MCTF winner, Beyond Static Evaluation co-evolution
+- Game AI Bot (10): AVACraft ACL 2026 StarCraft II VLM+MARL, ROE episode reflection TextStarCraft II, Orchestrated Reality POMDP world simulation, Bounded Autonomy live multiplayer LLM characters, COSPLAY co-evolving skill bank +25.1%, Nemobot Shannon taxonomy NUS, Sensi 50-94x sample efficiency ARC-AGI-3, HeRoN RL-LLM mediated NPC +81%, CASCADE 3-layer social coordination, Psy-CoT psychology-grounded role-playing
+- Foundation Models (6): NitroGen CVPR 2026 NVIDIA 40K hrs/1000+ games, Pixels2Play 8300+ hrs open BC 1.2B params, Odysseus 100+ turn VLM RL Mario, Generalist GP survey 5-level roadmap Tsinghua, See Symbolize Act VLM spatial grounding, GameVerse video reflection benchmark
+- PCG (6): WFC+PCGRL hybrid Lode Runner, Multiverse cross-game level blending, HDPCG high-dimensional direction-space/time, PRP cake representation Sokoban, Multi-task PCG DeBERTa Scientific Reports, Co-adaptive DRL Unity level design
+- Benchmarks (5): AVACraft StarCraft II 21 scenarios, GameVerse 15 games reflect-retry, Generalist GP survey 100+ games, ARC-AGI-3 Sensi curriculum learning, MCTF 2026 maritime CTF
+- Related Techniques (8): Population-based training (PolicyEvolve/PopuLoRA/GEMS), self-play reasoning transfer (SPIRAL/Stratagem/QZero), RL+LLM agents (ROE/COSPLAY/Sensi/HeRoN), PCG workflows (WFC+PCGRL/Multiverse/PRP/HDPCG)
+- Key themes: Self-play generates transferable reasoning; Foundation models at internet scale (NitroGen CVPR 2026); VLM perception is bottleneck (See Symbolize Act); LLM agents entering live games; PCG+RL complementary; Population evolution scales PSRO→GEMS→PopuLoRA→FAMOU
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-20] synthesis | WorldQuant 101 Alpha 因子选股 Top 20 — 美股 (2026-07-20)
+- New page: wiki/synthesis/2026-07-20/wq101-alpha-daily.md
+- Market: S&P 7,457.69(-1.55%周), Nasdaq 25,520.24(-2.9%周), SOX进入技术性熊市(较6月高点-20%+)
+- Events: 美伊冲突→布伦特$90+/WTI$84; TMT动量因子-40%史上最快最深回撤; AAPL历史新高$334$4.9T市值反超NVDA; GS Prime 8周累计净卖出美IT股创10年+最高; Energy本周唯一收涨板块+4.54%; 费城半导体-9%周/-18%月
+- Factor structure: Alpha#1动量(12次/60%主导)载体从芯片→能源/金融/医疗; Alpha#6量价(7次/35%); Alpha#53反转(5次/25%); Alpha#41趋势(6次/30%); Alpha#30波动(5次/25%); Alpha#12背离(4次/20%); Alpha#19均值(4次/20%)
+- Top 20: JPM(9.5)/AAPL(9.3)/UNH(9.0)/GS(9.0)/XOM(8.8)/MS(8.8)/CVX(8.5)/WFC(8.5)/ABT(8.3)/VLO(8.3)/META(8.0)/GOOGL(8.0)/EOG(7.8)/V(7.8)/KO(7.5)/WMT(7.5)/PG(7.3)/MSFT(7.3)/HD(7.0)/LMT(7.0)
+- Sectors: Financials 5只+Energy 4只+Tech 4只+Healthcare 2只+Staples 3只+ConsDisc 1只+Defense 1只
+- Key themes: 动量因子载体切换(芯片→能源/金融/医疗); AAPL"Lazy AI"策略避开关税+capex风险; UNH Q2超预期+30%验证医疗成本改善; MSFT超卖-18%YTD=均值回复候选; Energy地缘溢价(EIA库存低于5年均值6.3%); 低波动防御价值凸显(KO/PG/WMT)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-20] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 20, 2026)
 - New page: wiki/synthesis/2026-07-20/game-rl-daily.md
 - Coverage: 40+ curated papers across 7 categories

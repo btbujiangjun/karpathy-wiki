@@ -22,10 +22,10 @@ tags: [llm, tech-report, daily, moe, multimodal, reasoning, scaling]
 | 组织 | DeepSeek |
 | 模型 | DeepSeek-V3, DeepSeek-R1 |
 | 日期 | V3: 2024-12, R1: 2025-01 |
-| 参数 | 671B 总参 / 37B 激活 (V3); R1 基于 V3 架构 |
-| 核心创新 | Multi-head Latent Attention (MLA); DeepSeekMoE 架构 (256 专家/8 激活); FP8 低精度训练; Multi-Token Prediction (MTP) 辅助损失; 同步强化学习训练 (V3) |
-| 亮点 | V3 训练仅消耗 2.788M GPU 小时 (H800); R1-Zero 从纯 RL (无 SFT) 自发涌现 CoT 推理行为; R1 与 OpenAI o1 竞品水平相当 |
-| 链接 | [arXiv:2412.19437](https://arxiv.org/abs/2412.19437), [技术报告](https://api-docs.deepseek.com/news/tech_report_v3) |
+| 参数 | 671B 总参 / 37B 激活 (V3); 14.8T tokens 预训练; R1 基于 V3 架构 |
+| 核心创新 | Multi-head Latent Attention (MLA); DeepSeekMoE 架构 (256 专家/8 激活); FP8 低精度训练; Multi-Token Prediction (MTP) 辅助损失; 同步强化学习训练 (V3); R1-Zero 纯 RL 无 SFT 自发涌现 CoT |
+| 亮点 | V3 训练仅消耗 2.788M GPU 小时 (H800), 成本约 $5.58M; R1-Zero 从纯 RL (无 SFT) 自发涌现 CoT 推理行为; R1 与 OpenAI o1 竞品水平相当; V3/R1 完全开源 |
+| 链接 | [arXiv:2412.19437](https://arxiv.org/abs/2412.19437), [arXiv:2501.12948 (R1)](https://arxiv.org/abs/2501.12948), [技术报告](https://api-docs.deepseek.com/news/tech_report_v3) |
 
 **趋势关联**：DeepSeek 推动了开源模型在推理能力上追赶闭源模型，MoE + RL 成为主流范式。
 
@@ -36,12 +36,12 @@ tags: [llm, tech-report, daily, moe, multimodal, reasoning, scaling]
 | 项目 | 详情 |
 |------|------|
 | 组织 | OpenAI |
-| 模型 | GPT-4.5, GPT-4.1, o3, o4-mini |
-| 日期 | GPT-4.5: 2025-02, o3/o4-mini: 2025-04 |
+| 模型 | GPT-5 (arXiv:2601.03267), o3, o4-mini, Codex |
+| 日期 | GPT-5: 2025-12, o3/o4-mini: 2025-04, Codex: 2025-06 |
 | 参数 | 未公开 |
-| 核心创新 | o3: 低至 0.1% 错误率 (FrontierMath); o3: 可视化推理 (测试时计算搜索 20,000 步); o4-mini: 高性价比推理模型; GPT-4.1: 工程优化型模型 |
-| 亮点 | o3 在 Codeforces 编程竞赛达 99.5th percentile; o3 & o4-mini 是首次在 CLI 中实现视觉推理 (看截图解题); o3 达到 ARC-AGI-1 87.5%, ARC-AGI-2 首次超过 15% |
-| 链接 | [o3 & o4-mini System Card](https://openai.com/index/o3-and-o4-mini-system-card/) |
+| 核心创新 | GPT-5 System Card 详细披露安全评估框架; o3: 低至 0.1% 错误率 (FrontierMath); o3: 可视化推理 (测试时计算搜索 20,000 步); o4-mini: 高性价比推理模型; Codex: agentic coding 框架 |
+| 亮点 | o3 在 Codeforces 编程竞赛达 99.5th percentile; o3 & o4-mini 是首次在 CLI 中实现视觉推理 (看截图解题); o3 达到 ARC-AGI-1 87.5%, ARC-AGI-2 首次超过 15%; GPT-5 System Card 是首个详尽的 frontier model 安全评估文档 |
+| 链接 | [arXiv:2601.03267 (GPT-5)](https://arxiv.org/abs/2601.03267), [o3 & o4-mini System Card](https://openai.com/index/o3-and-o4-mini-system-card/) |
 
 **趋势关联**：OpenAI 强调 test-time compute scaling 和 agentic coding，推理模型性能持续刷新。
 
@@ -54,9 +54,9 @@ tags: [llm, tech-report, daily, moe, multimodal, reasoning, scaling]
 | 组织 | Meta (FAIR) |
 | 模型 | Llama 4 Scout, Llama 4 Maverick |
 | 日期 | 2025-04 |
-| 参数 | Scout: 109B 总参 / 17B 激活; Maverick: 400B 总参 / 17B 激活 |
-| 核心创新 | MoE 架构 (Scout 16 experts, Maverick 128 experts); 原生多模态 (早期融合, 文本+图像+视频+音频统一 tokenization); 超长上下文 (Scout 10M, Maverick 1M); iRoPE 位置编码; 在线知识蒸馏 |
-| 亮点 | Scout 在 10M 上下文中大海捞针 (Needle-in-a-Haystack) 达 95%+; Llama 4 Behemoth (288B 激活, ~2T 总参) 在训练中 |
+| 参数 | Scout: 109B 总参 / 17B 激活 (16 experts); Maverick: 400B 总参 / 17B 激活 (128 experts); Behemoth: ~2T 总参 / 288B 激活 (训练中) |
+| 核心创新 | MoE 架构; 原生多模态 (早期融合, 文本+图像+视频+音频统一 tokenization); 超长上下文 (Scout 10M, Maverick 1M); iRoPE 位置编码; 在线知识蒸馏 (Behemoth→Scout/Maverick) |
+| 亮点 | Scout 是首个支持 10M 上下文的开源模型, NIAH 95%+; Maverick 支持 1M 上下文, 128 专家 MoE; Behemoth (~2T) 在训练中, 目标成为最强开源模型 |
 | 链接 | [llama.meta.com](https://llama.meta.com/) |
 
 **趋势关联**：Meta 推动 MoE + 原生多模态 + 超长上下文，Llama 4 是首个支持 10M 上下文的开源模型。
@@ -72,8 +72,8 @@ tags: [llm, tech-report, daily, moe, multimodal, reasoning, scaling]
 | 日期 | 2025-06 |
 | 参数 | 未公开 |
 | 核心创新 | MoE 架构; 原生多模态 (文本/图像/音频/视频); 原生工具调用; Thinking model 模式 (可调节思考预算); 长视频理解 (最高 3 小时) |
-| 亮点 | 1M token 上下文; 在 6/10 基准测试中表现最佳; 2M+ TPU 算力集群; 250B+ 数据集 |
-| 链接 | [Gemini 2.5 Technical Report](https://arxiv.org/abs/2506.18628) |
+| 亮点 | 1M token 上下文; 在 6/10 基准测试中表现最佳; 支持 3 小时长视频理解; Thinking model 可调节思考预算 (low/medium/high); 原生工具调用和代码执行 |
+| 链接 | [arXiv:2507.06261](https://arxiv.org/abs/2507.06261), [Gemini 2.5 Technical Report](https://arxiv.org/abs/2506.18628) |
 
 **趋势关联**：Google 继续在多模态长上下文和推理能力上领先，Thinking model 模式可调节预算为实用部署提供灵活性。
 
@@ -87,8 +87,8 @@ tags: [llm, tech-report, daily, moe, multimodal, reasoning, scaling]
 | 模型 | Claude Opus 4, Claude Sonnet 4 |
 | 日期 | 2025-05 |
 | 参数 | 未公开 |
-| 核心创新 | 混合推理架构 (extended thinking + 工具调用交替); 长上下文保持能力 (Sonnet 4 在 500K token 后性能 86%); 持久记忆; 并行 tool execution |
-| 亮点 | Opus 4: 顶尖编码和推理; Sonnet 4: 性能与速度平衡; 支持数小时任务; 在 SWE-bench 和 TAU-bench 上领先 |
+| 核心创新 | 混合推理架构 (extended thinking + 工具调用交替); 长上下文保持能力 (Sonnet 4 在 500K token 后性能 86%); 持久记忆; 并行 tool execution; ASL-3/ASL-2 安全等级 |
+| 亮点 | Opus 4: 顶尖编码和推理; Sonnet 4: 性能与速度平衡; 支持数小时任务; 在 SWE-bench 和 TAU-bench 上领先; System Card 详尽披露模型能力边界 |
 | 链接 | [Anthropic System Card](https://www.anthropic.com/research/claude-opus-4-sonnet-4-system-card) |
 
 **趋势关联**：Anthropic 强调 agentic 能力和长时间任务执行，混合推理架构成为趋势。
@@ -102,9 +102,9 @@ tags: [llm, tech-report, daily, moe, multimodal, reasoning, scaling]
 | 组织 | Mistral AI |
 | 模型 | Large 3, Ministral 3B/8B/14B |
 | 日期 | 2025-12 |
-| 参数 | Large 3: 675B 总参 / 41B 激活 (MoE); Ministral 3B/8B/14B |
-| 核心创新 | MoE 架构; Apache 2.0 开源; 支持 40+ 种语言; 函数调用与结构化输出; 128K 上下文; 原生多模态 (视觉+音频); 原生 web 搜索; "Le Chat" 个人 AI 助手平台 |
-| 亮点 | Large 3 是 Mistral 最大开源模型; Ministral 3B 在移动端 3-4 tok/s; Mistral Saba (中东语言优化); 从初创到产品化速度极快 |
+| 参数 | Large 3: 675B 总参 / 41B 激活 (MoE); Ministral 3B/8B/14B (Dense) |
+| 核心创新 | MoE 架构; Apache 2.0 开源; 支持 40+ 种语言; 函数调用与结构化输出; 128K 上下文; 原生多模态 (视觉+音频); 原生 web 搜索 |
+| 亮点 | Large 3 是 Mistral 最大开源模型 (675B MoE); Ministral 3B 在移动端 3-4 tok/s; Mistral Saba (中东语言优化); 从初创到产品化速度极快; Le Chat 个人 AI 助手平台 |
 | 链接 | [mistral.ai](https://mistral.ai/) |
 
 **趋势关联**：Mistral 代表欧洲开源力量，MoE + 开源 + 多语言是其差异化策略。
