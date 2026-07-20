@@ -4,6 +4,18 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-20] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 20, 2026)
+- New page: wiki/synthesis/2026-07-20/game-rl-daily.md
+- Coverage: 40+ curated papers across 7 categories
+- Game RL (7): SPIRAL self-play reasoning transfer (ICLR 2026), Stratagem trajectory-modulated transferable reasoning, MARS multi-agent self-play +28.7%/10% AIME, MEMO memory-augmented 19× fewer games, π-Play privileged self-distillation, MAE Proposer-Solver-Judge co-evolution, FMSP quality-diversity strategy discovery
+- Game AI Bot (8): Sensi curriculum test-time 50-94× sample efficiency (ARC-AGI-3), Orchestrated Reality LLM POMDP world simulation, Bounded Autonomy live multiplayer LLM characters, COSPLAY co-evolving skill bank +25.1%, LLM Reasoner+Planner NPC, Nemobot Shannon taxonomy+LLMs (NUS), HexMachina Catan 54% vs AlphaBeta, Psy-CoT psychology-grounded game NPCs
+- Foundation Models (5): NitroGen CVPR 2026 NVIDIA 40K hrs/1000+ games, Game-TARS ByteDance 500B tokens outperforms GPT-5, Pixels2Play 8300+ hrs open BC, Open MIND scaling BC laws, Generalist GP survey 5-level roadmap
+- PCG (8): CreativeGame mechanic-aware iterative generation, VIPCGRL human-aligned level gen, Multiverse cross-game level blending, AutoUE 3D Unreal Engine multi-agent, OpenGame GameCoder-27B, HDPCG high-dimensional, WFC+PCGRL hybrid, Database-driven 3D level gen with LLMs
+- Benchmarks (8): SciCrafter Minecraft 26% ceiling, Agentick 37 tasks/5 modalities, OmniGameArena UE5 IDC, lmgame-Bench 13 models/6 games, TextAtari 100K frames, VideoGameBench 0.48% completion, GameWorld 34 browser games state-verifiable, TeamCraft 55K Minecraft multi-agent
+- World Models (5): Mind-Studio executable pygame WMs 48.7% NSP Montezuma, GameCWM distillation SFT+RLVR, Code World Models DeepMind 9/10 games, UHM universal horizon offline MBRL, JOWA 150M jointly-optimized world-action
+- Key themes: Self-play generates transferable reasoning (SPIRAL/MARS/Stratagem); Foundation models at internet scale (NitroGen CVPR 2026, Game-TARS 500B tokens); Executable world models via LLMs (Mind-Studio, Code World Models); LLM agents still far from human (26% SciCrafter ceiling, 0.48% VideoGameBench); PCG+LLM complementary workflows; 8+ new game benchmarks
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-20] synthesis | LLM Tech Report Daily (2026-07-20)
 - New page: wiki/synthesis/2026-07-20/tech-report-digest.md
 - Coverage: 19 companies' latest model tech reports — DeepSeek, OpenAI, Meta, Google, Anthropic, Mistral, Qwen, 01.AI, Baichuan, Microsoft, Apple, NVIDIA, xAI, Amazon, Zhipu, InternLM, Moonshot, StepFun, ByteDance
