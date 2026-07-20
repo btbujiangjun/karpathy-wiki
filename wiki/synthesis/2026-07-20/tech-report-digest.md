@@ -292,11 +292,11 @@ tags: [llm, tech-report, daily, moe, multimodal, reasoning, scaling]
 | 项目 | 详情 |
 |------|------|
 | 组织 | StepFun (阶跃星辰) |
-| 模型 | Step-DeepResearch |
-| 日期 | 2025-12 |
-| 参数 | 32B |
-| 核心创新 | Agent 模型; 深度研究能力 (多步推理+工具调用); 内生验证机制 (self-consistency 检测); 强化学习训练 |
-| 亮点 | 在 BrowseComp 基准上超越 o3, o4-mini, Gemini 2.5 Pro; 在人类最后一次考试 (HLE) 上超越 o3 和 Gemini 3; Agent 能力通过端到端 RL 训练 |
+| 模型 | Step-3 (首个原生多模态推理模型), Step 3.5 Flash, Step-DeepResearch |
+| 日期 | Step-3: 2025-07; Step 3.5 Flash: 2026-02; Step-DeepResearch: 2025-12 |
+| 参数 | Step-3: 未公开; Step 3.5 Flash: 未公开; Step-DeepResearch: 32B |
+| 核心创新 | 原生多模态推理 (Step-3 首创); 350 TPS 高速推理 (Step 3.5 Flash); Agent 深度研究能力; 端到端 RL 训练; 内生验证机制 (self-consistency 检测) |
+| 亮点 | Step-3 是首个原生多模态推理模型 (开源); Step 3.5 Flash 达 350 TPS; Step-DeepResearch 在 BrowseComp 上超越 o3/o4-mini/Gemini 2.5 Pro; 在 HLE 上超越 o3 和 Gemini 3 |
 | 链接 | [StepFun Blog](https://www.stepfun.com/blog/228834984796563456) |
 
 **趋势关联**：Step-DeepResearch 代表 Agent + 推理模型融合的趋势，端到端 RL 训练 Agent 是新方向。
@@ -308,11 +308,11 @@ tags: [llm, tech-report, daily, moe, multimodal, reasoning, scaling]
 | 项目 | 详情 |
 |------|------|
 | 组织 | ByteDance (字节跳动) |
-| 模型 | Seed 2.0 Pro, Seed 2.0 Lite, Seed 2.0 Mini, Seed 2.0 Code |
+| 模型 | Seed 2.0 Pro, Seed 2.0 Lite, Seed 2.0 Mini, Seed 2.0 Code, Game-TARS |
 | 日期 | 2026-02 |
 | 参数 | Pro: 未公开; Lite: 未公开; Mini: 未公开; Code: 未公开 |
-| 核心创新 | 分层训练策略 (核心能力分层优化); 多模态原生融合; 高效 RL 训练; Agent 能力; 代码/数学专项优化 |
-| 亮点 | Seed 2.0 系列覆盖全场景 (旗舰/轻量/端侧/代码); 在编码和数学推理任务上表现突出; 字节跳动内部大规模部署验证 |
+| 核心创新 | 分层训练策略 (核心能力分层优化); 多模态原生融合; 高效 RL 训练; Agent 能力; 代码/数学专项优化; 272K 上下文 |
+| 亮点 | Seed 2.0 系列覆盖全场景 (旗舰/轻量/端侧/代码); 在编码和数学推理任务上表现突出; Game-TARS 500B tokens 训练超越 GPT-5; 字节跳动内部大规模部署验证 |
 | 链接 | [arXiv:2602.16325](https://arxiv.org/abs/2602.16325) |
 
 **趋势关联**：Seed 2.0 体现字节跳动在全场景模型布局上的策略，代码和数学成为重点优化方向。
@@ -322,42 +322,60 @@ tags: [llm, tech-report, daily, moe, multimodal, reasoning, scaling]
 ## 综合趋势分析
 
 ### 1. 架构趋势：MoE 成为主流
-所有 19 家公司中，**15+ 家采用或转向 MoE 架构**。代表性模型包括：
-- DeepSeek-V3 (671B/37B), Qwen3-235B-A22B, Llama 4 Maverick (400B/17B), Kimi K2 (1T/32B), Nemotron 3 Ultra (550B), Mistral Large 3 (675B/41B)
+所有 19 家公司中，**15+ 家采用或转向 MoE 架构**。代表性模型：
+| 模型 | 总参 | 激活参 | 专家数 | 上下文 |
+|------|------|--------|--------|--------|
+| Kimi K2 | 1.04T | 32B | - | 196K |
+| Grok 3 | 1.2T | - | 128 | - |
+| Nemotron 3 Ultra | 550B | 55B | 512 | 1M |
+| Mistral Large 3 | 675B | 41B | - | 128K |
+| DeepSeek-V3 | 671B | 37B | 256 | 128K |
+| Qwen3-235B-A22B | 235B | 22B | - | 128K |
+| Llama 4 Maverick | 400B | 17B | 128 | 1M |
 
 ### 2. 推理能力：RL + Test-time Compute
 推理模型成为 2025-2026 年最热门方向：
-- **纯 RL 路线**：DeepSeek R1-Zero (无 SFT), xAI Grok 3
-- **混合推理**：Anthropic Claude Opus 4 (extended thinking + tools), OpenAI o3 (test-time compute scaling)
-- **端到端 RL Agent**：Step-DeepResearch, Qwen3 Thinking mode
+- **纯 RL 路线**：DeepSeek R1-Zero (无 SFT, 自发涌现 CoT), xAI Grok 3 (13.4T tokens RL)
+- **混合推理**：Anthropic Claude Opus 4 (extended thinking + tools, ASL-3), OpenAI o3 (test-time compute 20K steps)
+- **端到端 RL Agent**：Step-DeepResearch (BrowseComp 超越 o3), Qwen3 Thinking mode
+- **异步 RL**：智谱 GLM-5 "Slime" 框架
 
 ### 3. 多模态：原生融合成为标配
 几乎所有新模型都支持多模态：
-- **原生多模态** (早期融合): Llama 4, Gemini 2.5, Kimi K2, Qwen3
-- **后期融合**: GPT-4.5, Claude Opus 4
+- **原生多模态** (早期融合): Llama 4 (文本+图像+视频+音频), Gemini 2.5 (3hr 视频), Kimi K2 (视觉+音频+视频), Qwen3 (119 语言)
+- **后期融合**: GPT-5, Claude Opus 4
+- **设备端多模态**: Apple AFM (3B), Phi-4-RV (15B)
 
 ### 4. 长上下文：从 128K 到 10M
-- **10M tokens**: Llama 4 Scout (首个)
+- **10M tokens**: Llama 4 Scout (首个, NIAH 95%+)
 - **1M tokens**: Gemini 2.5, Nemotron 3 Ultra, InternLM3
-- **512K+**: Qwen3, Kimi K2 (128K native), Mistral Large 3
+- **196K–300K**: Kimi K2 (196K), Amazon Nova (300K)
+- **128K–200K**: Qwen3, Mistral Large 3, GLM-5 (200K)
 
 ### 5. 小模型逆袭
-- Microsoft Phi-4-reasoning (15B): 推理能力与大模型相当
-- InternLM3-8B: 4T tokens 训练达到 20B 模型性能
-- Apple 设备端 3B 模型: 36 tok/s on iPad Pro
+- Microsoft Phi-4-RV (15B): 推理能力与大模型相当, 多模态
+- InternLM3-8B: 4T tokens 训练达到 20B 模型性能, 4096 GPU 15 天
+- Apple 设备端 3B 模型: 36 tok/s on iPad Pro, PT-QAT 2-bit 量化
 - Qwen3-30B-A3B: 超越 Qwen2.5-32B 且推理快 10 倍
 
 ### 6. Agent 化：从对话到自主执行
-- Anthropic: 支持数小时持续任务
-- Kimi K2: 256+ 并行工具调用
-- Step-DeepResearch: 端到端 RL 训练 Agent
-- Baichuan-M4: 垂直领域 (医疗) Agent
+- Anthropic: 支持数小时持续任务, 并行 tool execution
+- Kimi K2: 256+ 并行工具调用 (首个)
+- Step-DeepResearch: 端到端 RL 训练 Agent, BrowseComp SOTA
+- Baichuan-M4: 垂直领域 (医疗) Agent, 幻觉率 3.3%
+- ByteDance Game-TARS: 500B tokens 训练超越 GPT-5
 
 ### 7. 训练效率创新
-- DeepSeek V3: 2.788M GPU 小时训练 671B 模型
-- InternLM3: 4T tokens 训练 8B 模型
-- Apple: 2-bit 量化 (PT-QAT) 实现设备端部署
-- MuonClip 优化器 (Moonshot AI): 支持更高数据质量训练
+- DeepSeek V3: 2.788M GPU 小时 (H800), 成本约 $5.58M 训练 671B 模型
+- InternLM3: 4T tokens 训练 8B 模型, 4096 GPU 15 天
+- Apple: 2-bit 量化 (PT-QAT) 实现设备端 36 tok/s
+- MuonClip 优化器 (Moonshot AI): 15.5T tokens 99%+ 训练稳定性
+- NVIDIA Nemotron 3 Ultra: hybrid Mamba-Attention 降低长上下文计算复杂度
+
+### 8. 安全与对齐
+- Anthropic Claude Opus 4: ASL-3 安全等级, System Card 详尽披露
+- OpenAI GPT-5: 首个详尽的 frontier model 安全评估文档 (arXiv:2601.03267)
+- Apple AFM: 本地化推理保障隐私
 
 ---
 
