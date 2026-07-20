@@ -4,6 +4,24 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-20] synthesis | arXiv Paper Check — AI & CTR (July 20, 2026)
+- New page: wiki/synthesis/2026-07-20/arxiv-paper-check.md
+- Coverage: 14 curated papers from cs.AI (201 new), cs.IR (9 new), cs.LG (70 new)
+- CTR/Recommendation (3): RecGPT-V3 (Taobao, CTR +1%, GMV +3.97%, deployed), RECAP (Kuaishou, GRPO reward, uAUC +0.0084, RecSys 2026), Yi (vector index 1.75x throughput)
+- AI Agents (4): ToolVerse (400 MCPs, 4500 tools), DSWorld (world model 14x speedup), SeerGuard (GUI safety), Causal-Audit (ACL 2026)
+- Scientific (2): S1-Omni (beats GPT-5.5), NeurOWL (neuro-symbolic ontology)
+- LLM Efficiency (3): LLA (21.3x KV compression), CAPC (49% API cost savings), LLMs layer-wise relevance
+- Key themes: Production LLM rec maturing; world models as efficiency lever; MCP as agent infrastructure; cache-aware efficiency
+- Updated: wiki/index.md, wiki/log.md
+
+
+## [2026-07-20] synthesis | arXiv Daily Report (2026-07-20) — AI, LLMs, Recommendation, CTR, Advertising, Sequential Modeling, Games
+- New page: wiki/synthesis/2026-07-20/arxiv-daily.md
+- Summary: 20+ curated papers across 6 categories
+- Categories: Generative Recommendation (5), CTR Prediction (5), Sequential Modeling (6), LLM Embeddings (3), Game AI (4), Scaling/Efficiency (2)
+- Key highlights: SRPFN zero-shot KDD 2026, CADET LinkedIn +11% CTR, Beyond Positive Signals mixed-polarity +9.6% AUC, Incumbent Advantage GEO brand bias, SAO for GLM-5.2 750B
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-17] synthesis | WorldQuant 101 Alpha 因子选股 Top 20 — 美股 (2026-07-17)
 - New page: wiki/synthesis/2026-07-17/wq101-alpha-daily.md
 - Market: S&P 7,533.77(-0.51%), Nasdaq 25,881.95(-1.47%), Dow 52,553.50(-0.20%), SOX 11,867.50(-4.29%)
