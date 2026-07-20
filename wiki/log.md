@@ -2986,3 +2986,21 @@
 - arXiv (12): SAO GLM-5.2 750B single-rollout RL; Push Your Agent goal persistence +34%; SkillOpt Microsoft +22%; MaRCA Alibaba +16.67% revenue; OD-LLM on-device rec; HORIZON benchmark CMU/MSR; GenLI generative interest; TiG Honor of Kings; Genstrat strategic reasoning; PCSP 64 personas; Scalpel vs Hammer GRPO/SFT; Sparse Delta Memory Meta 8B beats attention; Mamba-3 SSM
 - Key themes: Diffusion wins ICML 2026 (both Outstanding); Alignment as dual-use (Censor's Toolkit position paper); RL post-training norm (GLM-5.2, Qwen3-Next, KARL, SPIRAL); Generative rec industrial (GR4AD, TreeBridge, MoMoREC, MaRCA); CVPR signals applied generative AI; ACL dominated by RLVR + safety
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-18] synthesis | Top ML/AI Conference & arXiv Paper Digest — 2026-07-18
+- New page: wiki/synthesis/2026-07-18/conference-digest.md
+- Coverage: 200+ papers across 12+ venues, 20+ labs
+- ICML 2026: Outstanding (Flexibility Trap, Shannon Scaling Law), Agents (MemoPilot ELO#1, HiPER 97.4% ALFWorld, JitRL 30× cheaper), Rec/CTR (Self-Flow, UniAR, Complete-muE)
+- NeurIPS 2025: Best (Gated Attention Alibaba → shipped Qwen3-Next), Artificial Hivemind 70+ LLMs, 1000 Layer RL, RL vs Reasoning Runner-Up
+- ICLR 2026: Outstanding (Transformers Succinct), LLMs Lost Multi-Turn 39% drop, Mean Flow Policy, Polar Express, Muon HM
+- AAAI 2026: AURA safety alignment, InTRO +20% math, MoMoREC Taobao +6.3% GMV, TreeBridge Shopee +1.55% GMV
+- KDD 2026: RankElastor effective-rank dynamics, RPORec Kuaishou RL+reasoning, EST Alibaba +3.27% RPM, GR4AD +4.2% revenue
+- CVPR 2026: Best (D4RT DeepMind 4D, SAM 3D Meta, NitroGen NVIDIA 40K hrs)
+- ACL 2026: SOAR +16.9% research, KARL beats GPT-4o, HSCodeComp Best Resource, RecPO intensity
+- SIGIR 2026: Agentic Search 14M requests, AgentRank, LTRR, HyDE, ACE anisotropy +12.4%
+- WWW 2026: ThinkRec, GenCI, SparseCTR Meituan +1.72%
+- RecSys 2025: LSVCR Kuaishou +4.13%, Semantic IDs, LONGER
+- CIKM 2025: RankMixer ByteDance
+- arXiv: SAO GLM-5.2 750B, MaRCA +16.67% revenue, Sparse Delta Memory beats attention 8B, Mamba-3, SPIRAL +10.5%, TiG Honor of Kings, Genstrat, PCSP 64 agents
+- Key themes: Diffusion wins ICML 2026, RL post-training norm, generative rec industrial deployment, CVPR applied generative AI, ACL RLVR + safety
+- Updated: wiki/index.md, wiki/log.md
