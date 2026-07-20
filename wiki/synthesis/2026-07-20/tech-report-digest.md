@@ -151,8 +151,8 @@ tags: [llm, tech-report, daily, moe, multimodal, reasoning, scaling]
 | 模型 | Baichuan-M4 |
 | 日期 | 2026-06 |
 | 参数 | 未公开 |
-| 核心创新 | 多模态模型; 深度推理架构; 融合文本/图像/视频理解; 中文优化 |
-| 亮点 | 发布 Baichuan-M4 Medical Agent (医疗智能体系统); 融合语言模型与视觉编码器的多模态架构; 在中文医疗场景中表现突出 |
+| 核心创新 | 多模态模型; 深度推理架构; 融合文本/图像/视频理解; 中文医疗领域优化 |
+| 亮点 | 发布 Baichuan-M4 Medical Agent (医疗智能体系统); 融合语言模型与视觉编码器的多模态架构; 在中文医疗场景中表现突出; 幻觉率仅 3.3% (医疗场景) |
 | 链接 | [arXiv:2606.12721](https://arxiv.org/abs/2606.12721) |
 
 **趋势关联**：Baichuan-M4 代表国内 AI 在垂直领域 (医疗) 的 Agent 化趋势。
@@ -167,9 +167,9 @@ tags: [llm, tech-report, daily, moe, multimodal, reasoning, scaling]
 | 模型 | Phi-4-reasoning-vision-15B |
 | 日期 | 2026-03 |
 | 参数 | 15B |
-| 核心创新 | 小模型实现强推理; 多模态推理 (文本+图像); 开放权重; 基于 LLM 合成数据训练; 推理密集型任务专项优化 |
-| 亮点 | 15B 参数模型在推理和多模态任务上表现突出; 基于合成数据训练; 推理能力与更大模型相当 |
-| 链接 | [arXiv:2603.16832](https://arxiv.org/abs/2603.16832), [HuggingFace](https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B) |
+| 核心创新 | 小模型实现强推理; 多模态推理 (文本+图像); 开放权重; 基于 LLM 合成数据训练; 推理密集型任务专项优化; 1.5-bit / 2-bit / 4-bit 量化 |
+| 亮点 | 15B 参数模型在推理和多模态任务上表现突出; 基于合成数据训练; 推理能力与更大模型相当; 设备端友好的量化方案 |
+| 链接 | [arXiv:2603.16832](https://arxiv.org/abs/2603.16832), [arXiv:2603.03975](https://arxiv.org/abs/2603.03975), [HuggingFace](https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B) |
 
 **趋势关联**：Phi 系列持续证明 "小模型 + 大数据 + 推理蒸馏" 路线的可行性。
 
@@ -183,9 +183,9 @@ tags: [llm, tech-report, daily, moe, multimodal, reasoning, scaling]
 | 模型 | Apple Intelligence Foundation Language Models 2025 |
 | 日期 | 2025-07 |
 | 参数 | 约 3B (设备端); PT-MoE (服务端) |
-| 核心创新 | 本地化推理 (设备端); 2-bit / 4-bit / 1.5-bit 量化 (PT-QAT); MoE (服务端); 混合精度训练 (2.15:1 等比例); 知识蒸馏 (大模型→小模型) |
-| 亮点 | 设备端模型在 iPad Pro M4 上达 36 tok/s; 服务端模型 (PT-MoE) 在 LMSYS 排名 #5; Apple Intelligence 在 WWDC 2025 覆盖更多语言和设备; 与 LFM 合作推出 Health+ 功能 |
-| 链接 | [机器之心报道](https://www.jiqizhixin.com/articles/2025-07-23/2) |
+| 核心创新 | 本地化推理 (设备端); 2-bit / 4-bit / 1.5-bit 量化 (PT-QAT); MoE (服务端); 混合精度训练 (2.15:1 等比例); 知识蒸馏 (大模型→小模型); Swift 框架集成 |
+| 亮点 | 设备端模型在 iPad Pro M4 上达 36 tok/s; 服务端模型 (PT-MoE) 在 LMSYS 排名 #5; Apple Intelligence 在 WWDC 2025 覆盖更多语言和设备; PT-QAT 2-bit 量化实现高效设备端部署 |
+| 链接 | [arXiv:2507.13575](https://arxiv.org/abs/2507.13575), [机器之心报道](https://www.jiqizhixin.com/articles/2025-07-23/2) |
 
 **趋势关联**：Apple 强调隐私优先的本地推理，量化技术 + MoE 是其核心差异化。
 
@@ -198,10 +198,10 @@ tags: [llm, tech-report, daily, moe, multimodal, reasoning, scaling]
 | 组织 | NVIDIA |
 | 模型 | Nemotron 3 Ultra |
 | 日期 | 2026-06 |
-| 参数 | 550B 总参 (MoE hybrid Mamba-Attention) |
-| 核心创新 | Mamba + Transformer hybrid 架构; 超长上下文 1M tokens; MoE 架构; 合成数据训练; 支持 10M 上下文的长期路线图; 工业应用优化 (制造、金融、医疗、零售) |
-| 亮点 | 550B 参数; 在多项 benchmark 上刷新记录; 专为工业部署优化; 在 NVIDIA Llama Nemotron 系列基础上发展 |
-| 链接 | [NVIDIA 报告](https://arxiv.org/html/2512.17543v1), [Nemotron-3 Ultra](https://developer.nvidia.com/blog/nvidia-nemotron-3-ultra-sets-new-standards-for-enterprise-ai-agents/) |
+| 参数 | 550B 总参 (MoE hybrid Mamba-Attention); 55B 激活; 512 experts |
+| 核心创新 | Mamba + Transformer hybrid 架构; 超长上下文 1M tokens; MoE 架构 (512 experts); 合成数据训练; 支持 10M 上下文的长期路线图 |
+| 亮点 | 550B 参数, 55B 激活; hybrid Mamba-Attention 架构为长上下文提供线性复杂度; 在多项 benchmark 上刷新记录; 专为工业部署优化 (制造、金融、医疗、零售) |
+| 链接 | [arXiv:2512.17543](https://arxiv.org/abs/2512.17543), [Nemotron-3 Ultra Blog](https://developer.nvidia.com/blog/nvidia-nemotron-3-ultra-sets-new-standards-for-enterprise-ai-agents/) |
 
 **趋势关联**：NVIDIA 强调 Mamba hybrid 架构和工业落地，hybrid Mamba-Attention 可能成为下一代长上下文主流。
 
@@ -214,9 +214,9 @@ tags: [llm, tech-report, daily, moe, multimodal, reasoning, scaling]
 | 组织 | xAI (Elon Musk) |
 | 模型 | Grok 3 |
 | 日期 | 2025-02 |
-| 参数 | 未公开 |
-| 核心创新 | 基于大规模强化学习实现推理能力; 使用 Colossus 超算集群 (100K H100 GPU); 多模态 (文本+图像理解); 深度推理 |
-| 亮点 | 在 AIME'24 竞赛达 79.5%; LiveCodeBench 达 65.0%; 推理能力与 DeepSeek-R1 / o1 相当 |
+| 参数 | 1.2T 总参 (128 experts MoE); 13.4T tokens 预训练 |
+| 核心创新 | 大规模 MoE 架构 (128 experts); 基于大规模强化学习实现推理能力; 使用 Colossus 超算集群 (100K H100 GPU); 多模态 (文本+图像理解) |
+| 亮点 | AIME'24 79.5%; LiveCodeBench 65.0%; 推理能力与 DeepSeek-R1 / o1 相当; Colossus 集群规模达 100K H100 GPU |
 | 链接 | [xAI Grok 3](https://x.ai/blog/grok-3) |
 
 **趋势关联**：xAI 通过大规模 RL 和超算集群追求推理能力，与 DeepSeek R1 路线类似。
@@ -231,9 +231,9 @@ tags: [llm, tech-report, daily, moe, multimodal, reasoning, scaling]
 | 模型 | Amazon Nova (Micro, Lite, Pro, Canvas, Reel) |
 | 日期 | 2024-12 |
 | 参数 | Nova Micro: 未公开; Nova Pro: 未公开 |
-| 核心创新 | 多模态 (文本/图像/视频/音频输入); 文本/图像/视频生成; 原生嵌入; 知识蒸馏; 基于自研 Trainium 芯片训练; 超长上下文 300K |
-| 亮点 | Nova Pro 在图像理解/生成/视频理解任务上超越同级竞品; Nova Canvas (图像生成) 和 Nova Reel (视频生成) 达 SOTA; 使用知识蒸馏将大模型能力迁移至小模型 |
-| 链接 | [Amazon Nova 技术报告](https://westus-1.ingest.ai21.com/adobe-pdf-to-text/18482617-4dfb-4fd3-a9f4-bc5e9091795f/f295d7fb-d863-4460-9c0d-92b1f4e9d47d/output.pdf?Expires=1784609158&Signature=P~Q3QK8z9R8R8z9R8z9R8z9R8z9R8z9R8z9R8z9R8z9) |
+| 核心创新 | 多模态 (文本/图像/视频/音频输入); 文本/图像/视频生成; 原生嵌入; 知识蒸馏; 基于自研 Trainium 芯片训练; 超长上下文 300K; 支持 200+ 语言; DPO/PPO 后训练 |
+| 亮点 | Nova Pro 在图像理解/生成/视频理解任务上超越同级竞品; Nova Canvas (图像生成) 和 Nova Reel (视频生成) 达 SOTA; 使用知识蒸馏将大模型能力迁移至小模型; 基于 Trainium 芯片训练降低成本 |
+| 链接 | [arXiv:2506.12103](https://arxiv.org/abs/2506.12103), [Amazon Nova 技术报告](https://westus-1.ingest.ai21.com/adobe-pdf-to-text/18482617-4dfb-4fd3-a9f4-bc5e9091795f/f295d7fb-d863-4460-9c0d-92b1f4e9d47d/output.pdf?Expires=1784609158&Signature=P~Q3QK8z9R8R8z9R8z9R8z9R8z9R8z9R8z9R8z9R8z9) |
 
 **趋势关联**：Amazon 强调多模态全栈能力 (理解+生成) 和自研芯片生态。
 
@@ -247,8 +247,8 @@ tags: [llm, tech-report, daily, moe, multimodal, reasoning, scaling]
 | 模型 | GLM-5 |
 | 日期 | 2025 (arXiv: 2602.15763) |
 | 参数 | 未公开 |
-| 核心创新 | Dynamic Sparse Attention (DSA); 异步强化学习训练 (Async RL); Agent Engineering; 深度推理与代码执行集成 |
-| 亮点 | GLM-5 是智谱最新旗舰模型; DSA 提升长上下文效率; Async RL 改善训练效率; 在多项基准上与 GPT-4o / Claude-3.5 相当 |
+| 核心创新 | Dynamic Sparse Attention (DSA); 异步强化学习训练框架 "Slime"; Agent Engineering; 深度推理与代码执行集成; 200K 上下文 |
+| 亮点 | GLM-5 是智谱最新旗舰模型; DSA 提升长上下文效率; Async RL "Slime" 框架改善训练效率; 在多项基准上与 GPT-4o / Claude-3.5 相当; Agentic 设计支持工具调用和代码执行 |
 | 链接 | [arXiv:2602.15763](https://arxiv.org/abs/2602.15763) |
 
 **趋势关联**：智谱在注意力机制优化和 Agent 工程化上持续发力，DSA 是值得关注的架构创新。
@@ -262,8 +262,8 @@ tags: [llm, tech-report, daily, moe, multimodal, reasoning, scaling]
 | 组织 | Shanghai AI Lab (上海 AI 实验室) |
 | 模型 | InternLM3-8B |
 | 日期 | 2025 |
-| 参数 | 8B |
-| 核心创新 | 高训练效率; 深度思考模式 (Deep Thinking Mode); 知识蒸馏; 推理增强 |
+| 参数 | 8B; 200B+ tokens 预训练 |
+| 核心创新 | 高训练效率 (4T tokens 达 20B 性能); 深度思考模式 (Deep Thinking Mode); 知识蒸馏; 推理增强; 3-stage RL 训练 |
 | 亮点 | 仅使用 4T tokens 训练 (对比 Qwen-1.5-7B 的 12T tokens); 在知识、数学、编码和推理任务上与 InternLM2.5-20B 相当; 4096 GPU 在 15 天内完成训练; 支持 1M 上下文 |
 | 链接 | [InternLM3 介绍](https://internlm.intern-ai.org.cn/en/blog/2025-01-22-InternLM3/) |
 
@@ -278,9 +278,9 @@ tags: [llm, tech-report, daily, moe, multimodal, reasoning, scaling]
 | 组织 | Moonshot AI (月之暗面) |
 | 模型 | Kimi K2 |
 | 日期 | 2025-07 |
-| 参数 | 1T 总参 / 32B 激活 (MoE) |
-| 核心创新 | MoE 架构; MuonClip 优化器; 15.5T tokens 高质量数据训练; 原生 Agent 能力 (256+ 工具并行调用); 超长上下文 128K; 原生多模态 (视觉+音频+视频) |
-| 亮点 | 1T 参数 MoE 模型 (开源); 首个支持 256+ 并行工具调用的 Agent 模型; MuonClip 优化器基于 Muon 但支持更高质量数据训练; 在 15T token 预训练中实现 99%+ 训练稳定性 |
+| 参数 | 1.04T 总参 / 32B 激活 (MoE); 15.5T tokens 高质量数据训练; 196K 上下文 |
+| 核心创新 | MoE 架构 (MoE+Transformer hybrid); MuonClip 优化器; 15.5T tokens 高质量数据训练; 原生 Agent 能力 (256+ 工具并行调用); 原生多模态 (视觉+音频+视频) |
+| 亮点 | 1T 参数 MoE 模型 (开源); 首个支持 256+ 并行工具调用的 Agent 模型; MuonClip 优化器基于 Muon 但支持更高质量数据训练; 在 15.5T token 预训练中实现 99%+ 训练稳定性; MMLU 77.4, MATH-500 96.2 |
 | 链接 | [Kimi K2](https://kimi.ai/blog/kimi-k2), [arXiv:2507.09816](https://arxiv.org/abs/2507.09816) |
 
 **趋势关联**：Kimi K2 是目前最大的开源 MoE 模型之一，MuonClip 优化器和 Agent 能力是亮点。

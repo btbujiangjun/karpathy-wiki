@@ -26,6 +26,20 @@
 - Key themes: 动量因子载体切换(芯片→能源/金融/医疗); AAPL"Lazy AI"策略避开关税+capex风险; UNH Q2超预期+30%验证医疗成本改善; MSFT超卖-18%YTD=均值回复候选; Energy地缘溢价(EIA库存低于5年均值6.3%); 低波动防御价值凸显(KO/PG/WMT)
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-07-18] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-07-18)
+- New page: wiki/synthesis/2026-07-18/investment-daily.md
+- Coverage: 全球科技与AI板块10大热点深度分析
+- Market: S&P 7,457(-1.01%), Nasdaq 25,520(-1.40%), SOX 11,673(-1.63%进入熊市), 恒指24,562(-1.78%), 恒生科技4,623(-4.37%), 上证~3,764(-3%)
+- Core catalyst: Kimi K3(月之暗面2.8万亿参数开源模型)发布引发全球芯片股暴跌/"DeepSeek 2.0时刻"担忧
+- US stocks (18): NVDA-2.21%(SOX较6月高点-20%), AAPL+0.14%(避风港), META-2.8%(洽谈Anthropic算力出租$100亿), TSLA-2.61%(周-6.6%), AMZN-1%, GOOGL-2%, MSFT-1%+, AVGO-0.97%, AMD-1.03%, AMAT-5.57%, TSM-3%, MU-0.50%, INTC-2%, NFLX-7.26%(指引不及预期), SPCX-5.43%(星舰试飞中止), SNPS-7.85%, CDNS-9.47%, ISRG-14.15%
+- HK stocks (13): 腾讯-4.63%, 阿里-3.68%, 美团-4.07%, 小米-2.25%, 快手-7.8%, 百度-3.45%, 智谱-28.49%, MiniMax-15.63%, 明略科技-16.06%, 中芯国际-10%, 华虹-11.9%, 小鹏-8.7%, 哔哩哔哩+3.13%
+- A-shares: 科创50跌7%, 寒武纪-5%+, 海光信息-4.84%(H1利润创新高但估值承压), 中际旭创-5.23%, 北方华创-3.67%, 新易盛-6%+, 绿盟科技涨停(华为昇腾), 网宿科技涨停
+- 中概股: 纳斯达克中国金龙-1.81%, BIDU-5%+, 理想-3.65%, 小鹏-7%+, 蔚来-8.8%
+- EV: TSLA周-6.6%, BYD 7月A股+20%, 理想Q2超预期, 蔚来降价3万, 宁德时代储能订单排至2028
+- AI热点: Kimi K3 2.8万亿参数开源/Code Arena 1679分登顶/AI CapEx $7250亿引发回报质疑/NVIDIA B200租赁价回落30%/曙光8000十万卡国产超集群上线/华为Atlas 950超节点首秀/DeepSeek $351B估值融资/WAICO 29国AI治理组织成立
+- Key themes: Kimi K3触发AI硬件→软件估值重构; 费半技术性熊市; 资金从AI硬件向平台型公司切换; 国产算力生态突破(曙光8000+华为Atlas); 港股AI概念股崩盘但大型科网相对抗跌; 下周Alphabet/Tesla/Intel财报成关键风向球
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-20] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 20, 2026)
 - New page: wiki/synthesis/2026-07-20/game-rl-daily.md
 - Coverage: 40+ curated papers across 7 categories
@@ -2940,4 +2954,22 @@
 - CTR Prediction (5): DS-MLP dual-stream MLP SOTA, SparseCTR sparse attention scaling laws, DeRes dual-path +0.32% AUC, LoopCTR loop scaling paradigm, GenCI generative interest cohorts
 - Games (5): Odysseus VLM 100+ turn decisions, Multiplayer World Models 5B parameters, GIFT games for LLM training, Trainee-to-Trainer LLM environment design, T-STAR tree-structured policy optimization
 - Key trends: Generative recommendation production deployment, LLM integration for verification/reasoning, scaling laws in CTR/rec, hybrid SSM-attention architectures, self-improving systems
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-19] synthesis | Top ML/AI Conference & arXiv Paper Digest — 2026-07-19
+- New page: wiki/synthesis/2026-07-19/conference-digest.md
+- Coverage: 68+ papers across 12 venues, 25+ labs
+- ICML 2026 (15): Outstanding: Flexibility Trap (Tsinghua) + High-Accuracy Sampling (MIT/Yale); Position Paper: Censor's Toolkit (MCML); Honorable: Obfuscation Atlas, Motion Attribution, LLM Memorization, Random Matrix Diffusion, Grokking; Test of Time: Async DRL (Mnih/DeepMind 2016); Agents: MemoPilot ELO#1, HiPER 97.4% ALFWorld, JitRL 30× cheaper, SPIRAL +10.5%; Rec/CTR: Shannon Scaling Law, Self-Flow, UniAR (Alibaba), Complete-muE; Ads: Autobidding LLM Creatives (RUC/Tsinghua), Incentivized Exploration (UCLA/Meta)
+- NeurIPS 2025 (5): Best: Gated Attention (Alibaba) → shipped Qwen3-Next; Artificial Hivemind 70+ LLMs; 1000 Layer RL; Diffusion Memorization; RL vs Reasoning Runner-Up
+- ICLR 2026 (4): Outstanding: Transformers Succinct (MPI-SWS); LLMs Lost Multi-Turn 39% drop; Mean Flow Policy; Polar Express; Muon Honorable
+- AAAI 2026 (4): AURA safety alignment for rec; InTRO +20% math reasoning; MoMoREC Taobao +6.3% GMV; TreeBridge Shopee +1.55% GMV
+- KDD 2026 (3): RankElastor effective-rank dynamics; RPORec Kuaishou RL+reasoning; EST Alibaba +3.27% RPM; GR4AD Kuaishou +4.2% revenue
+- CVPR 2026 (5): Best: D4RT DeepMind 4D reconstruction; Student: Native Compact Latents; Honorable: SAM 3D (Meta), NitroGen (NVIDIA), O-Voxel (Microsoft), B³-Seg; 16,092 submitted → 4,089 accepted
+- ACL 2026 (8): Best Theme: Imperfective Paradox, Memory Efficiency, Local Attention Expressivity; Best Resource: HSCodeComp (Alibaba), ImplicitMemBench, Audio MultiChallenge, VeriTaS; Social Impact: DIA-HARM, Student LLM Use; 18 Outstanding: RLVR (Evolutionary Decoding, STEER, GeoRA, CURE), Agents (CAR-bench, MediEval), Safety; RecPO intensity+temporal
+- SIGIR 2026 (5): Agentic Search 14M requests; AgentRank; LTRR +5.8% NDCG; Tool-Star web agents; ACE anisotropy +12.4% Recall; HyDE +18% long-tail; Purifying Multimodal RAG (Meituan/Zhejiang)
+- WWW 2026 (3): ThinkRec +4.2% HR; GenCI +6.1% cold-start; SparseCTR Meituan +1.72% CTR
+- RecSys 2025 (3): LSVCR Kuaishou +4.13%; Semantic IDs joint S&R; LONGER ByteDance 10K tokens
+- CIKM 2025 (1): RankMixer ByteDance MoE ranking
+- arXiv (12): SAO GLM-5.2 750B single-rollout RL; Push Your Agent goal persistence +34%; SkillOpt Microsoft +22%; MaRCA Alibaba +16.67% revenue; OD-LLM on-device rec; HORIZON benchmark CMU/MSR; GenLI generative interest; TiG Honor of Kings; Genstrat strategic reasoning; PCSP 64 personas; Scalpel vs Hammer GRPO/SFT; Sparse Delta Memory Meta 8B beats attention; Mamba-3 SSM
+- Key themes: Diffusion wins ICML 2026 (both Outstanding); Alignment as dual-use (Censor's Toolkit position paper); RL post-training norm (GLM-5.2, Qwen3-Next, KARL, SPIRAL); Generative rec industrial (GR4AD, TreeBridge, MoMoREC, MaRCA); CVPR signals applied generative AI; ACL dominated by RLVR + safety
 - Updated: wiki/index.md, wiki/log.md
