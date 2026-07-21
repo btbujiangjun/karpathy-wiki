@@ -4,6 +4,23 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-21] synthesis | Conference & arXiv Digest — 2026-07-21
+- New page: wiki/synthesis/2026-07-21/conference-digest.md
+- Coverage: 80+ papers across 12 venues: ICML 2026, ICLR 2026, AAAI 2026, NeurIPS 2025, CVPR 2026, KDD 2026, ACL 2026, EMNLP 2025, SIGIR 2026, WWW 2026, RecSys 2025, arXiv
+- ICLR 2026 (225 Oral): TROLL trust regions, AlphaAlign deep safety, WaltzRL multi-agent safety, ToolTree MCTS agent planning (+10%), Mamba-3, MoE vs Dense
+- NeurIPS 2025 Best: Gated Attention (Alibaba/Qwen), 1000 Layer RL, Artificial Hivemind, Diffusion Memorization; Runner-up: RLVR doesn't produce new reasoning
+- AAAI 2026: CDCR-SFT causal DAG 95.33% CLADDER surpassing human, InTRO +20% math reasoning, LENS unified RL segmentation
+- CVPR 2026 Best: D4RT (Google DeepMind 4D), O-Voxel (Microsoft 3D gen), SAM 3D (Meta); TUNA unified VMM
+- KDD 2026: CTR-Sink attention sinks (Ant Group), FAT field-aware transformer (+4.38% AUC, +2.33% CTR live), DS-MLP vanilla MLP SOTA, LLM-as-a-Judge rec eval
+- ACL 2026: 12,148 submissions → 2,296 accepted (18.9%); agent/reasoning 366 papers (+224); Deliberative Searcher 96% false-certain reduction
+- SIGIR 2026: MVIGER variational multi-view generative rec (T5-small > Llama 7B), SIGMA AliExpress
+- WWW 2026: ThinkRec System 2 reasoning for rec, GenCI generative user intent for CTR
+- RecSys 2025: Engagement-Aware MoE Amazon, Kuaishou video+comment joint rec, GRACE Walmart
+- Agent systems: ToolTree, HTAA (84.5% effort cut), STAR RL recipe, ParaManager parallel orchestration
+- Code execution: ProgramBench (best 3% tasks), CodeSpecBench (20.2% repo-level), MirrorCode (56% reimpl), ExecVerify (7B=32B)
+- Key themes: Agentic AI dominant; RL for LLM mature but limited; CTR prediction LLM+field-aware fusion; execution simulation emerging; 3D vision breakthroughs
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-21] synthesis | arXiv Paper Check — AI & CTR (July 21, 2026)
 - New page: wiki/synthesis/2026-07-21/arxiv-paper-check.md
 - Coverage: 14 curated papers from cs.AI (105 new Jul 20), cs.IR (10 new Jul 20), cs.LG (~200 new Jul 20)
