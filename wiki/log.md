@@ -4,6 +4,18 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-21] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-07-21)
+- New page: wiki/synthesis/2026-07-21/investment-daily.md
+- Coverage: 美股/港股/A股/中概股/EV/AI热点 6大板块，70+只个股
+- US stocks: S&P+0.14%/Nasdaq+0.38% 创历史新高; GOOGL+2.7%(Q2财报周); NVDA H20对华复供/AMD MI308重启; JPMorgan警告AI拥挤度100th percentile; Block(XYZ)+8.3%纳入S&P 500
+- HK stocks: 腾讯AI重构微信生态/Q2预期营收+12%YoY; 阿里+1.81%(估值修复~13x P/E); 小米黄仁勋确认与雷军合作AI+自动驾驶
+- A-shares: 上证+0.72%/深成+0.86%/创业板+0.87%创年内新高; 雅下水电1.2万亿开工涨停潮(中国电建/西藏天路/华新水泥等); 新易盛3天+40%/中际旭创强势; 宇树科技IPO催化机器人板块
+- 中概股: BABA+4.69%/JD+3.31%/PDD+2.18%; BEKE+5.87%; YMM+6.54%; BZ+4.71%; TME+4.45%
+- EV: XPeng 7月36717台创纪录+229%YoY; 小米>30000台创新高; BYD 344296台(+0.6%YoY/-10.1%MoM); NIO 21017台(ONVO L90售罄); LI 30731台(-39.7%YoY)
+- AI热点: Stargate+4.5GW/$30B年合同Oracle/总容量>5GW; CoreWeave $6B宾州数据中心; OpenAI o3/o4-mini推理模型/IMO金牌水平; 混元3D模型HuggingFace第一; 中国光模块全球市占率38%
+- Key themes: AI Capex持续超预期; H20复供提振中国算力板块; 雅下水电超级工程; 机器人商业化加速; 中国EV交付分化
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-21] synthesis | Conference & arXiv Digest — 2026-07-21
 - New page: wiki/synthesis/2026-07-21/conference-digest.md
 - Coverage: 80+ papers across 12 venues: ICML 2026, ICLR 2026, AAAI 2026, NeurIPS 2025, CVPR 2026, KDD 2026, ACL 2026, EMNLP 2025, SIGIR 2026, WWW 2026, RecSys 2025, arXiv
