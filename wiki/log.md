@@ -4,6 +4,16 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-21] synthesis | arXiv Paper Check — AI & CTR (July 21, 2026)
+- New page: wiki/synthesis/2026-07-21/arxiv-paper-check.md
+- Coverage: 14 curated papers from cs.AI (105 new Jul 20), cs.IR (10 new Jul 20), cs.LG (~200 new Jul 20)
+- CTR/Recommendation (4): RecGPT-V3 (Taobao, Memory Hub + latent reasoning, CTR +1%, GMV +3.97%, deployed), RECAP (Kuaishou, GRPO reward streaming profiles, RecSys 2026), PCTD (preference-guided counterfactual tool retrieval), Yi (in-place vector index 1.75× throughput)
+- AI Agents (3): ToolVerse (400 MCPs, 4500 tools, agentic RL environments), DSWorld (data science world model, 14× speedup), SeerGuard (mobile GUI safety via world model prediction)
+- Causal & Scientific (4): Causal-Audit (ACL 2026, auditable graph reasoning), S1-Omni (unified multimodal scientific foundation model), NeurOWL (neuro-symbolic ontology reasoning), ToolSciVer (multimodal scientific claim verification via visual tool RL)
+- LLM Efficiency (3): LLA (21.3× KV compression on H200), CAPC (cache-aware prompt compression 49% cost savings), LLMs layer-wise cross-lingual relevance encoding
+- Key themes: World models as general efficiency lever; production LLM rec maturing; MCP validated as agent infrastructure; auditable reasoning at ACL 2026; KV cache as new deployment frontier
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-18] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 18, 2026)
 - New page: wiki/synthesis/2026-07-18/game-rl-daily.md
 - Coverage: 30+ curated papers across 7 categories
