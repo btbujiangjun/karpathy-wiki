@@ -31,6 +31,13 @@
 - Key themes: World models as general efficiency lever; production LLM rec maturing; MCP validated as agent infrastructure; auditable reasoning at ACL 2026; KV cache as new deployment frontier
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-07-21] synthesis | LLM Tech Report Daily (2026-07-21)
+- New page: wiki/synthesis/2026-07-21/tech-report-digest.md
+- Coverage: 19 companies latest models and tech reports
+- Major updates since 07-20: DeepSeek V4-Pro (Apr 2026), OpenAI GPT-5.5 Ultra (Apr 2026), Google Gemini 3.1 Pro (Feb 2026), Anthropic Claude Opus 4.8 (May 2026), Mistral Magistral Medium (Jun 2026), xAI Grok 4 "Heavy" (Jul 2026), Baichuan Omni-1.5 (Jan 2026), InternLM Intern-S1-Pro (Feb 2026)
+- Key trends: MoE 15+ companies, reasoning models (Mistral Magistral Medium first reasoning model), multimodal native fusion, long-context 10M (Llama 4 Scout), small models (Phi-4 14B, InternLM3 8B), agent capabilities (256+ tools Kimi K2), hybrid Mamba-Attention (Nemotron 3 Ultra)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-18] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 18, 2026)
 - New page: wiki/synthesis/2026-07-18/game-rl-daily.md
 - Coverage: 30+ curated papers across 7 categories
