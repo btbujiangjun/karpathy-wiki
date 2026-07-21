@@ -4,6 +4,19 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-21] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 21, 2026)
+- New page: wiki/synthesis/2026-07-21/game-rl-daily.md
+- Coverage: 21+ curated papers across 7 categories
+- Game RL (3): SPIRAL self-play interactive RL + LLM-augmented agents, Multi-Agent Game Playing via RL survey (2026), Reinforced Self-Training (ReST) for multi-agent games
+- LLM Game Agents (4): Bounded Autonomy benchmark for LLM agents in open-world games, PCSP benchmark for planning+control in physics games, GameAgent LLM-driven game agent with tool-integrated reasoning, LLM multi-agent stock market simulation (game-theoretic)
+- Foundation Models (4): NitroGen versatile foundation model for game content gen (sprites/tiles/textures/levels), GFM general foundation models for games, GAgent general game agents with LLMs, Survey of Foundation Models for Games
+- PCG (2): Combining PCGRL and WFC hybrid approach, LLMs for PCG survey
+- Benchmarks (1): GameWorld scalable benchmark for game AI agents (multiple genres)
+- Industry (4): Solaris scalable AI-driven game worlds, Dream Cubed 3D game asset generation with latent diffusion, Human-Alignment taxonomy+framework for game AI, Survey of Generative AI for game development
+- Related Techniques (2): Curiosity-Critic improved exploration in RL, TROFI truncated inverse reinforcement learning
+- Key themes: LLM agents rapidly entering game AI with benchmarks maturing; Foundation models for games crystallizing as new subfield; Hybrid RL+LLM approaches dominate; PCG revolutionized by PCGRL+WFC and LLM-based generation; Industry moving fast on generative AI for game worlds/assets; Exploration remains critical RL challenge
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-21] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-07-21)
 - New page: wiki/synthesis/2026-07-21/investment-daily.md
 - Coverage: 美股/港股/A股/中概股/EV/AI热点 6大板块，70+只个股
