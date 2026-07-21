@@ -4,6 +4,15 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-21] synthesis | WorldQuant 101 Alpha 因子选股 Top 20 — 美股 (2026-07-21)
+- New page: wiki/synthesis/2026-07-21/wq101-alpha-daily.md
+- Coverage: S&P 7,444/Nasdaq 25,510/VIX 18.47; 美伊冲突布伦特$90+; Q2财报季加速
+- Top 5: NVDA(9.5)/JPM(9.5)/AMD(9.3)/AAPL(9.3)/CVX(9.0)
+- 7 WQ101因子应用: Alpha#1动量(60%), Alpha#6量价(45%), Alpha#53反转(35%), Alpha#41趋势(30%), Alpha#19均值回复(25%), Alpha#30波动率(20%), Alpha#12量价背离(5%)
+- 板块分布: Semis 6只+Financials 3只+Staples 3只+Energy 2只+Healthcare 2只+Comm 2只+ConsDisc 2只+Industrials 1只
+- Key: 动量因子载体从芯片→能源/金融/医疗; TMT动量因子-40%史上最快最深回撤后轮动剧烈
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-21] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 21, 2026)
 - New page: wiki/synthesis/2026-07-21/game-rl-daily.md
 - Coverage: 21+ curated papers across 7 categories
