@@ -4,6 +4,15 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-22] synthesis | WorldQuant 101 Alpha 因子选股日报 (2026-07-22)
+- New page: wiki/synthesis/2026-07-22/wq101-alpha-daily.md
+- Coverage: WorldQuant 101 Alpha 因子框架筛选美股 Top 20
+- Factors: Alpha#1 动量(10次/50%) + Alpha#53 反转(7次/35%) + Alpha#41 趋势(5次/25%) + Alpha#30 波动率(5次) + Alpha#12 量价(5次) + Alpha#19 均值回复(5次)
+- Top 5: GOOGL(9.5)/NVDA(9.3)/MSFT(9.0)/AMZN(8.8)/META(8.5)
+- Sectors: Tech 9只 + Healthcare 4只 + Comms 2只 + Semis 3只 + Fin 1只 + ConsDisc 1只 + Indust 1只
+- Key catalysts: 7/22 Powell讲话, 7/23 GOOGL+TSLA财报, 7/24 PCE数据, 8/1关税截止
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-22] synthesis | Investment Daily — 全球科技与AI板块 (2026-07-22)
 - New page: wiki/synthesis/2026-07-22/investment-daily.md
 - Coverage: 美股S&P 5,847(+0.84%)/Nasdaq-100 +1.23%; NVDA+3.2%/SMCI+15%/neocloud暴涨; GOOGL+TSLA 7/22盘后财报; A股科创50+10.73%; 港股小米+3%/网易+4.2%; 中概金龙+2.92%; Kimi K3 2.8万亿参数开源; 四大CSP AI Capex $7250亿; 苹果×阿里通义千问合作; 美伊冲突
