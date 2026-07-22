@@ -3072,3 +3072,12 @@
 - arXiv: SAO GLM-5.2 750B, MaRCA +16.67% revenue, Sparse Delta Memory beats attention 8B, Mamba-3, SPIRAL +10.5%, TiG Honor of Kings, Genstrat, PCSP 64 agents
 - Key themes: Diffusion wins ICML 2026, RL post-training norm, generative rec industrial deployment, CVPR applied generative AI, ACL RLVR + safety
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-22] synthesis | arXiv Paper Check — AI & CTR (July 22, 2026)
+- New page: wiki/synthesis/2026-07-22/arxiv-paper-check.md
+- Coverage: 20 curated papers from cs.AI, cs.IR, cs.LG
+- AI Agents & Reasoning (5): CodeRescue budget-calibrated coding agents, Agents in the Wild deployment research, ResearchArena AI safety benchmark, Supra Cognitive Modes agent memory, Shapley-based reward attribution for parallel reasoning
+- Recommendation Systems (6): TSGR Taobao generative retrieval, dual-level denoising multi-modal recommendation, epistemic position-based click model, topology-aware tokenization for generative rec, RECAP streaming semantic user profiles, RecGPT-V3 technical report
+- CTR Prediction & Advertising (9): RAMP privacy-preserving CTR, Long-History User Transformers for ad ranking, TMallGS Alibaba unified search, NONTP extending NTP for generative rec, Mitigating Early CTR Collapse, DeRes dual-path CTR, DS-MLP dual-stream MLP, Cross-Domain Semantic IDs for ads ranking, LENS staged interaction granularity
+- Key themes: Agent safety and deployment readiness, generative retrieval architectures, privacy-preserving CTR prediction, offline/online split for latency-constrained ad ranking, quantization for cross-domain transfer, training stability in CTR models
+- Updated: wiki/index.md, wiki/log.md
