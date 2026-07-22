@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-22] synthesis | Conference & arXiv Digest — ICML/AAAI/NeurIPS/ICLR/KDD/CVPR/ACL/SIGIR/WWW/CIKM 2026
+- New page: wiki/synthesis/2026-07-22/conference-digest.md
+- Coverage: 60+ papers across 12 venues and 6 cross-cutting themes
+- Venues: ICML 2026 (6352 papers, 26.6%), AAAI 2026 (Singapore), NeurIPS 2025 (5823 papers), ICLR 2026 (5300+ papers), KDD 2026 (Jeju), CVPR 2026, ACL 2026, SIGIR 2026, WWW 2026, CIKM 2026
+- Industry labs: Google DeepMind, OpenAI, Meta AI, ByteDance, Alibaba, Tencent, Kuaishou, NVIDIA, Netflix
+- Key papers: InTRO +20% math, Grokking ridge regression, Diffusion RL policies, Slate GLM Bandits, SPIRAL +16pp planning, PRIME dual-process, GRACE 11.5% MTEB, SRPFN 7.53% synthetic prior, DeGRe +3.75% GMV deployed, TUNA unified multimodal, Franca beats DINOv2, KARL RL agents, Think in Sentences +12.5% DROP, Agentic Search 14M requests, CTRL-Rec, GPT-5.6 Sol/Terra/Luna, TokenMixer-Large 7B deployed, GFlowGR +1% revenue deployed
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-21] synthesis | WorldQuant 101 Alpha 因子选股 Top 20 — 美股 (2026-07-21)
 - New page: wiki/synthesis/2026-07-21/wq101-alpha-daily.md
 - Coverage: S&P 7,444/Nasdaq 25,510/VIX 18.47; 美伊冲突布伦特$90+; Q2财报季加速
