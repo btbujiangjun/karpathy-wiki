@@ -18,6 +18,19 @@
 - Key papers: InTRO +20% math, Grokking ridge regression, Diffusion RL policies, Slate GLM Bandits, SPIRAL +16pp planning, PRIME dual-process, GRACE 11.5% MTEB, SRPFN 7.53% synthetic prior, DeGRe +3.75% GMV deployed, TUNA unified multimodal, Franca beats DINOv2, KARL RL agents, Think in Sentences +12.5% DROP, Agentic Search 14M requests, CTRL-Rec, GPT-5.6 Sol/Terra/Luna, TokenMixer-Large 7B deployed, GFlowGR +1% revenue deployed
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-07-22] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 22, 2026)
+- New page: wiki/synthesis/2026-07-22/game-rl-daily.md
+- Coverage: 15+ curated papers across 7 categories
+- Game RL (4): DreamerV3 general-purpose model-based RL (DeepMind), Population-Based Self-Play PBT for strategy diversity, Nemobot LLM-powered game agents (NTU, arXiv:2604.21896), Multi-Agent QMIX improvements
+- LLM Game Agents (4): GamingAgent LLM code interpretation (ICLR 2026, lmgame-org), Think in Games chain-of-thought reasoning (arXiv:2508.21365), GameRT-RL RL for game testing (arXiv:2601.18070), LLM4PCG LLM for PCG (ICLR 2026, Fudan)
+- Foundation Models (2): Generalist Game Players survey 5-level roadmap (Tsinghua, arXiv:2605.09965), GAIM general game agent model (arXiv:2507.04873)
+- PCG (1): PCGRLLM LLM-driven reward design for PCGRL (arXiv:2502.10906)
+- Benchmarks (2): Gym4ReaL realistic RL benchmark (Politecnico di Milano, arXiv:2507.00257), Efficient Benchmarking of AI Agents (arXiv:2603.23749)
+- World Models (1): RLVR-World RL for world model training (arXiv:2505.13934)
+- Related Techniques (3): Self-Play survey (arXiv:2408.01072), Curiosity-driven exploration, Hierarchical RL
+- Key themes: LLM game agents maturing rapidly (GamingAgent ICLR 2026); Foundation model vision concrete (Tsinghua roadmap + GAIM); Hybrid RL+LLM approaches dominate; PCG transformed by LLMs (LLM4PCG ICLR 2026); World models remain critical infrastructure; Benchmark maturation
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-21] synthesis | WorldQuant 101 Alpha 因子选股 Top 20 — 美股 (2026-07-21)
 - New page: wiki/synthesis/2026-07-21/wq101-alpha-daily.md
 - Coverage: S&P 7,444/Nasdaq 25,510/VIX 18.47; 美伊冲突布伦特$90+; Q2财报季加速
