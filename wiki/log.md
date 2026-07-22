@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-22] synthesis | Investment Daily — 全球科技与AI板块 (2026-07-22)
+- New page: wiki/synthesis/2026-07-22/investment-daily.md
+- Coverage: 美股S&P 5,847(+0.84%)/Nasdaq-100 +1.23%; NVDA+3.2%/SMCI+15%/neocloud暴涨; GOOGL+TSLA 7/22盘后财报; A股科创50+10.73%; 港股小米+3%/网易+4.2%; 中概金龙+2.92%; Kimi K3 2.8万亿参数开源; 四大CSP AI Capex $7250亿; 苹果×阿里通义千问合作; 美伊冲突
+- Topics: 美股科技/AI, 港股科技, A股科技, 中概股, 新能源车, AI模型发布, AI资本开支, 算力产业链
+- Updated: wiki/index.md
+
 ## [2026-07-22] synthesis | Conference & arXiv Digest — ICML/AAAI/NeurIPS/ICLR/KDD/CVPR/ACL/SIGIR/WWW/CIKM 2026
 - New page: wiki/synthesis/2026-07-22/conference-digest.md
 - Coverage: 60+ papers across 12 venues and 6 cross-cutting themes
