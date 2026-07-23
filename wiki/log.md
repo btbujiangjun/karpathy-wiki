@@ -4,6 +4,19 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-23] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 23, 2026)
+- New page: wiki/synthesis/2026-07-23/game-rl-daily.md
+- Coverage: 20+ curated papers across 7 categories
+- Game RL (5): DEPT ACL 2026 evolution impasse dual-scale baselines, SEED self-evolving on-policy distillation 2607.14777, Multiplayer World Models 5B Rocket League 4-player 20fps 2607.05352, CORAL autonomous multi-agent evolution 2604.01658, GEA group-evolving agents 71% SWE-bench 2602.04837
+- LLM Game Agents (4): Psy-CoT/RAPO psychology-grounded game NPCs +39% CharacterEval 2606.27025, HeRoN mediated RL-LLM +81% NPC success Springer 2026, Orchestrated Reality POMDP 2606.16014, AutoWorldBuilder JAIR 2026 90% token compression
+- Foundation Models (2): NitroGen CVPR 2026 NVIDIA 40K hrs/1000+ games/90.5% boss success, Pixels2Play 1.2B open BC 2601.04575
+- World Models (4): AlayaWorld 15B DiT 24fps 2607.18367, From Pixels to States 90hrs Black Myth data engine 2607.14076, LingBot-World-Infinity 720p/60fps hours-level 2607.07534, ABot-World-0 RTX 5090 16fps 2607.19191
+- PCG (3): PCGRLLM 415% improvement via LLM reward 2502.10906, HDPCG high-dimensional 2602.18943, VIPCGRL human-aligned 2508.09860
+- Benchmarks (2): CODE-SHARP 6× Craftax performance 2602.10085, AgentOdyssey continual learning 2606.24893
+- Related Techniques (3): HRL-IM/CBS StarCraft hierarchical 2606.30092, Seirênes adversarial self-play +10.2pts 2605.11636, RHI harness self-improvement -60% cost 2607.15524
+- Key themes: Interactive world models at real-time (4 systems); self-play evolution matures (DEPT/CORAL/GEA); multiplayer world models emerge; foundation models scale (NitroGen 90.5% boss); hierarchical RL for complex games
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-23] synthesis | LLM Tech Report Digest — 2026-07-23
 - New page: wiki/synthesis/2026-07-23/tech-report-digest.md
 - Coverage: 12+ major AI companies — DeepSeek, OpenAI, Meta AI, Google DeepMind, Anthropic, Mistral AI, Qwen, xAI, Microsoft, Apple, Moonshot AI, InternLM, ByteDance, Zhipu AI
