@@ -11,6 +11,16 @@
 - Flagship models: Kimi K2 (1T/32B), DeepSeek-V3 (671B/37B), Qwen3-235B-A22B, LLaMA 4 Behemoth (288B/400B)
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-07-23] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-07-23)
+- New page: wiki/synthesis/2026-07-23/investment-daily.md
+- Coverage: 7 market segments — US Mag 7, US AI stocks, HK tech, A-share AI/chips, China ADR, China EV/new energy, AI hot themes
+- US stocks: S&P 7,502(+0.04%)/Nasdaq-100 25,690(-0.57%)/Dow 52,218(-0.01%); GOOGL盘后-3%(Q2云端$247.68亿+81.8%但Capex上修$1950-2050亿); SMCI+20%利润率翻倍+$600亿积压订单; AMD+8.11%获Anthropic数十亿订单; 芯片反弹(NVDA+3.15%/AVGO+2.7%); 公募科技仓位~60%历史极端拥挤
+- HK stocks: 港股微调(NASDAQ-100 ETF-0.64%); 智谱解禁+13%; 小米+3%(SUV YU9曝光)
+- A shares: 上证4005+22点/创业板3386+49点; 高端PCB涨超300%; 长鑫科技IPO/安徽长鑫存储+30%市值超3000亿
+- China ADR: 金龙+2.92%(BABA+4.79%/BILI+4.58%); XPeng 7月36717台+229%YoY; 美团+2.76%; 小鹏汽车+2.67%
+- Key catalysts: GOOGL+TSLA盘后财报; 7/24 PCE; 7/29 MSFT财报; 8/1关税截止; Kimi K3(2.8万亿参数)发布两天算力熔断; DeepSeek V4灰度测试; 四大CSP 2026年AI Capex $4280亿(+55%)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-23] synthesis | Conference & arXiv Digest — 2026-07-23
 - New page: wiki/synthesis/2026-07-23/conference-digest.md
 - Coverage: 13 sections across 12+ venues (ICML 2026, ICLR 2026, AAAI 2026, CVPR 2026, NeurIPS 2025, KDD 2026, EMNLP 2025, SIGIR 2025/2026, ACL 2026, CIKM 2025, WWW 2026, RecSys 2025) + 2026 工业界推荐/CTR/Ads 重点论文 + Agent Benchmarks
