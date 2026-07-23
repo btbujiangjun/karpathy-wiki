@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-23] synthesis | LLM Tech Report Digest — 2026-07-23
+- New page: wiki/synthesis/2026-07-23/tech-report-digest.md
+- Coverage: 12+ major AI companies — DeepSeek, OpenAI, Meta AI, Google DeepMind, Anthropic, Mistral AI, Qwen, xAI, Microsoft, Apple, Moonshot AI, InternLM, ByteDance, Zhipu AI
+- Key themes: MoE mainstream (DeepSeek-V3, Kimi K2, Qwen3, LLaMA 4), hybrid reasoning (Claude Opus 4, Qwen3), multimodal fusion (Gemini 2.5, Phi-4-Vision), million-token context
+- Flagship models: Kimi K2 (1T/32B), DeepSeek-V3 (671B/37B), Qwen3-235B-A22B, LLaMA 4 Behemoth (288B/400B)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-23] synthesis | Conference & arXiv Digest — 2026-07-23
 - New page: wiki/synthesis/2026-07-23/conference-digest.md
 - Coverage: 13 sections across 12+ venues (ICML 2026, ICLR 2026, AAAI 2026, CVPR 2026, NeurIPS 2025, KDD 2026, EMNLP 2025, SIGIR 2025/2026, ACL 2026, CIKM 2025, WWW 2026, RecSys 2025) + 2026 工业界推荐/CTR/Ads 重点论文 + Agent Benchmarks

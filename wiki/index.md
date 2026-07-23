@@ -50,6 +50,7 @@
 | [karpathy-x-2026-supply-chain](sources/karpathy-x-2026-supply-chain.md) | Karpathy X posts 2026 — Supply Chain Attacks | 2026-04-17 | x-posts, security, dependencies |
 | [software-is-changing-again](sources/software-is-changing-again.md) | Software Is Changing (Again) — YC AI Startup School Keynote | 2026-04-17 | software-3-0, agents, llm-os, karpathy |
 | [summoning-ghosts-not-animals](sources/summoning-ghosts-not-animals.md) | We're Summoning Ghosts, Not Building Animals — Dwarkesh Interview | 2026-04-17 | agi, agents, rl, karpathy |
+| [tech-report-digest](synthesis/2026-07-23/tech-report-digest.md) | LLM Tech Report Digest — 2026-07-23 | 2026-07-23 | tech-report, moe, scaling, multimodal, reasoning, daily-digest |
 
 ## Papers
 
