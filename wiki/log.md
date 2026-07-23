@@ -56,6 +56,16 @@
 - Key themes: CTR offline-online decoupling validated in production; simplicity wins (DS-MLP); agent safety with minimal overhead; long-context efficiency for production; uncertainty in click models
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-07-23] synthesis | WorldQuant 101 Alpha 因子选股日报 (2026-07-23)
+- New page: wiki/synthesis/2026-07-23/wq101-alpha-daily.md
+- Coverage: WorldQuant 101 Alpha 因子框架筛选美股 Top 20
+- Factors: Alpha#1 动量(12次/60%) + Alpha#6 量价(7次/35%) + Alpha#53 反转(4次/20%) + Alpha#41 趋势(5次/25%) + Alpha#30 波动率(5次/25%) + Alpha#19 均值回复(3次/15%)
+- Top 5: MU(9.5)/AVGO(9.3)/AMD(9.0)/XOM(8.8)/CVX(8.7)
+- Sectors: Semis 5只 + Energy 4只 + Financials 2只 + Healthcare 3只 + Comms 2只 + ConsDef 2只 + ConsDisc 1只 + Software 1只
+- Key themes: AI存储超级周期(MU+260%/AVGO定制芯片)/能源地缘溢价(XOM+26%/CVX+22%)/科技估值修复(GOOGL超跌/MSFT-18%)/金融蓝筹轮动(JPM纪录)/防御价值配置(WMT/KO)/医疗超卖反弹(UNH-40%)
+- Key catalysts: 7/23 GOOGL+TSLA盘后财报, 7/24 PCE数据, 7/29 MSFT财报, 7/31 Fed决议, 8/1关税截止
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-22] synthesis | WorldQuant 101 Alpha 因子选股日报 (2026-07-22)
 - New page: wiki/synthesis/2026-07-22/wq101-alpha-daily.md
 - Coverage: WorldQuant 101 Alpha 因子框架筛选美股 Top 20
