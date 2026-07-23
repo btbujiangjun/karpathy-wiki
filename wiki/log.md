@@ -4,6 +4,17 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-23] synthesis | Conference & arXiv Digest — 2026-07-23
+- New page: wiki/synthesis/2026-07-23/conference-digest.md
+- Coverage: 13 sections across 12+ venues (ICML 2026, ICLR 2026, AAAI 2026, CVPR 2026, NeurIPS 2025, KDD 2026, EMNLP 2025, SIGIR 2025/2026, ACL 2026, CIKM 2025, WWW 2026, RecSys 2025) + 2026 工业界推荐/CTR/Ads 重点论文 + Agent Benchmarks
+- ICML 2026 highlights: AOrchestra agent orchestration, InfoPO user-centric RL, ESP multi-token prediction, Clover FP4 training
+- ICLR 2026 highlights: iFusion diffusion-based CTR, BridgeDrive diffusion bridge policy
+- CVPR 2026 Best: D4RT dynamic scene reconstruction, Native Compact Structured Latents for 3D
+- NeurIPS 2025: TTRL test-time RL, DreamGym agent experience synthesis
+- 2026 Industrial CTR/Rec: ByteDance (HyFormer, MixFormer, TokenMixer-Large, Zenith, IAT, MDL), Alibaba (EST, SORT, Agentic Recommender), Meta (Kunlun, LLaTTE, ULTRA-HSTU), Kuaishou (OneRec, DualGR), Tencent (FEDIN), Meituan (MBGR)
+- Agent Benchmarks: AgencyBench (ACL 2026), General AgentBench, ALE (2.6% pass rate), MalSkillBench
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-23] synthesis | arXiv Paper Check — AI & CTR (July 23, 2026)
 - New page: wiki/synthesis/2026-07-23/arxiv-paper-check.md
 - Coverage: 15+ curated papers from cs.AI (52 new Jul 23), cs.IR (8 new Jul 23), cs.LG
