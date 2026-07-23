@@ -4,6 +4,17 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-23] synthesis | arXiv Paper Check — AI & CTR (July 23, 2026)
+- New page: wiki/synthesis/2026-07-23/arxiv-paper-check.md
+- Coverage: 15+ curated papers from cs.AI (52 new Jul 23), cs.IR (8 new Jul 23), cs.LG
+- CTR/Recommendation (5): Long-History User Transformers (Yandex offline encoding +2.77% search ad), DS-MLP dual-stream MLP SOTA, DeRes dual-path CTR +0.32% AUC steeper scaling, GenCI generative cohort intent (WWW 2026), Epistemic Position-Based Click Model (SIGIR 2026)
+- AI Agents & Safety (3): NEXUS runtime safety 0.205ms latency, OpenEvoShield co-evolutionary defense 100 rounds, Stochastic Primal-Dual multiobjective rec +1.8% aux
+- Long-Context (2): LISA 50% speedup 16K context, FineServe workload characterization
+- Reasoning (2): FormulaSPIN self-play 74.9% EM (ACL 2026 Oral), AdaRoPE per-head RoPE (ICML 2026)
+- LLM Applications (3): Information Discernment 13 models 670K trials, Profile-Graph Memory 80.1% MemHop, UniRank benchmark
+- Key themes: CTR offline-online decoupling validated in production; simplicity wins (DS-MLP); agent safety with minimal overhead; long-context efficiency for production; uncertainty in click models
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-22] synthesis | WorldQuant 101 Alpha 因子选股日报 (2026-07-22)
 - New page: wiki/synthesis/2026-07-22/wq101-alpha-daily.md
 - Coverage: WorldQuant 101 Alpha 因子框架筛选美股 Top 20
