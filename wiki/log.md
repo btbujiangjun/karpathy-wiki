@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-24] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-07-24)
+- New page: wiki/synthesis/2026-07-24/investment-daily.md
+- Coverage: 全球科技与AI板块投资日报，覆盖美股Mag7/半导体/AI软件、港股AI概念股、A股AI芯片/光模块、中概股、新能源车、AI热点主题
+- Key highlights: Mag 7单日蒸发$7970亿(2025年4月以来最大)；TSLA-14.52% Q2 EPS大幅miss+负现金流；GOOGL-7.13% Capex失控自由现金流转负；伊朗冲突推高布伦特>$100/桶；美联储7月加息概率38%；七部委要求9月起智算中心国产芯片≥75%；长鑫科技7/27科创板IPO；港股AI分化(美团+4.36%/华虹-7.5%)；中概金龙-0.57%
+- Key trends: AI叙事从"投入规模"转向"投入回报验证"；板块轮动加速(硬件→应用)；国产AI芯片份额突破40%；存储超级周期延续；宏观压力(油价+利率)与科技估值回调共振
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-24] synthesis | LLM Tech Report Daily (2026-07-24)
 - New page: wiki/synthesis/2026-07-24/tech-report-digest.md
 - Coverage: 19 companies' latest technical reports and model releases
