@@ -4,6 +4,17 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-24] synthesis | WorldQuant 101 Alpha 因子选股日报 (2026-07-24)
+- New page: wiki/synthesis/2026-07-24/wq101-alpha-daily.md
+- Coverage: WorldQuant 101 Alpha 因子框架筛选美股 Top 20
+- Market: S&P 7,408(-1.21%)/Nasdaq 25,137(-2.15%)/Dow 51,711(-0.97%)/Brent$100+; Mag7单日蒸发$7970亿
+- Factors: Alpha#1 动量(14次/70%) + Alpha#6 量价(8次/40%) + Alpha#53 反转(6次/30%) + Alpha#41 趋势(5次/25%) + Alpha#30 波动(5次/25%)
+- Top 5: XOM(10.0)/CVX(9.5)/LMT(9.5)/RTX(9.3)/JPM(9.3)
+- Sectors: Energy 5只 + Defense 2只 + Financials 3只 + Staples 3只 + Healthcare 3只 + Tech 1只 + Comms 1只 + ConsDisc 1只
+- Key themes: 能源+军工双重地缘溢价(油价$100+/积压$2300-2890亿); 金融Q2全面超预期(JPM创纪录/GS+44%); 大科技超卖均值回复(GOOGL/TSLA/MSFT); 防御板块轮动加速(XLP Improving)
+- Key catalysts: 7/24 PCE, 7/29 MSFT, 7/30 AAPL+META+AMZN, 7/31 Fed决议
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-24] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-07-24)
 - New page: wiki/synthesis/2026-07-24/investment-daily.md
 - Coverage: 全球科技与AI板块投资日报，覆盖美股Mag7/半导体/AI软件、港股AI概念股、A股AI芯片/光模块、中概股、新能源车、AI热点主题
