@@ -4,6 +4,21 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-24] synthesis | Top ML/AI Conference & arXiv Paper Digest — 2026-07-24
+- New page: wiki/synthesis/2026-07-24/conference-digest.md
+- Coverage: 70+ papers across 12 venues, 20+ labs
+- ICML 2026 (26.6% acceptance): Outstanding Papers — Flexibility Trap (diffusion arbitrary order hurts reasoning), High-Accuracy Sampling (exponential improvement, polylog(1/δ)); Honorable Mentions — Obfuscation Atlas, How Much Can LMs Memorize, Grokking Ridge Regression; Test of Time: A3C (DeepMind 2016)
+- NeurIPS 2025: Best — Gated Attention (Alibaba Qwen, shipped Qwen3-Next), Artificial Hivemind (70+ LLMs mode collapse), 1000 Layer RL (2-50× improvement), Why Diffusion Don't Memorize; Runner-Up — RLVR doesn't create new reasoning (Yue et al.), Superposition Yields Robust Scaling
+- ICLR 2026 (27.4% acceptance): Outstanding — Transformers Succinct (EXPSPACE-complete), LLMs Lost Multi-Turn 39% drop; Orals — TROLL trust regions for RL, MemAgent, Mamba-3, MoE > Dense proven, Why DPO is Misspecified, SafeDPO, LongWriter-Zero
+- AAAI 2026 (17.6% acceptance): TWiCE-Rec +8% CTR A/B, MoMoREC +6.3% GMV, TreeBridge +1.55% GMV, SpecGR, AuditAgent, Extracting Monosemantic Concepts
+- KDD 2026: FAT +4.38% AUC +2.33% CTR deployed Taobao, CTR-Sink attention sink Ant Group, DS-MLP vanilla MLP SOTA, Congrats Kuaishou deployed
+- CVPR 2026 (25.4% acceptance): D4RT DeepMind/Oxford Best (4D reconstruction), O-Voxel Microsoft/Tsinghua Best Student (3D generation), SAM 3D Meta 5:1 preference, NitroGen NVIDIA game content, PixelDiT 1.61 FID
+- ACL 2026 (18.9% acceptance): KARL beats GPT-4o/Claude-4, OctoTools +9.3%, SafeAgent +45% safety, 366 agent papers (+224), OneRec-Think Kuaishou
+- SIGIR 2026: L2Rec +9.24% CTR deployed, Agentic Search 14M production requests, ACE +12.4%
+- WWW 2026: ThinkRec reasoning activation, GenCI cohort intent, SparseCTR Meituan +1.72%
+- Cross-cutting themes: Diffusion models dominate ICML; RL post-training maturity + limits; CTR architecture > scale; generative rec industrial; agent safety first-class; 3D vision breakthroughs; MoE vs Dense debate settled; reasoning-rec convergence
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-24] synthesis | arXiv Paper Check — AI & CTR (July 24, 2026)
 - New page: wiki/synthesis/2026-07-24/arxiv-paper-check.md
 - Coverage: 25+ curated papers from cs.AI (354 new Jul 24), cs.IR (20 new Jul 24), cs.LG (263 new Jul 24)
