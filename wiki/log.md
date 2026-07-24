@@ -11,6 +11,13 @@
 - Key trends: AI叙事从"投入规模"转向"投入回报验证"；板块轮动加速(硬件→应用)；国产AI芯片份额突破40%；存储超级周期延续；宏观压力(油价+利率)与科技估值回调共振
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-07-24] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 24, 2026)
+- New page: wiki/synthesis/2026-07-24/game-rl-daily.md
+- Coverage: 25+ papers across 8 categories — Game RL, LLM Game Agents, Foundation Models, World Models, PCG, Benchmarks, Industry, Related Techniques
+- Key highlights: Dreamer 4 DeepMind offline diamond Minecraft; Orak ICLR 2026 12-genre MCP benchmark; Nemobot Shannon taxonomy + LLMs; NVIDIA ACE Game Agent SDK; KRAFTON PUBG Ally + inZOI live deployment; CDE curiosity for LLM RLVR; IPCGRL 21.4% controllability; GameDevBench 333 tasks multimodal game dev
+- Key trends: Foundation model gaming capability maturing (NitroGen CVPR 2026, Pixels2Play 1.2B); PCG advancing via LLM reward shaping; industry deploying agents in production (NVIDIA ACE, KRAFTON); world models achieving offline SOTA in 3D games
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-24] synthesis | LLM Tech Report Daily (2026-07-24)
 - New page: wiki/synthesis/2026-07-24/tech-report-digest.md
 - Coverage: 19 companies' latest technical reports and model releases
