@@ -4,6 +4,16 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-24] synthesis | arXiv Paper Check — AI & CTR (July 24, 2026)
+- New page: wiki/synthesis/2026-07-24/arxiv-paper-check.md
+- Coverage: 25+ curated papers from cs.AI (354 new Jul 24), cs.IR (20 new Jul 24), cs.LG (263 new Jul 24)
+- CTR/Recommendation (8): BARGE Tencent +0.60% CTR generative rec with semantic IDs, LO-FAR CPU-only feature ranking (RecSys 2026), DLMRec diffusion LM for recommendation, PRL causal residual learning (RecSys 2026), SalesLoop RL sales lead +8.7% production A/B, CCBR controllable content-based rec, SHIFT self-reconstruction for retrieval, UniRank benchmark
+- AI Agents & Safety (5): ATM autonomous topology mutation 3.3%→61.7% with <500μs overhead, Robust Critics MDP multi-turn defense, VeriSimpl ICML 2026 optimization verification, PhantomFill form-caused hallucination 100% fabrication, Incomplete Prompt Jailbreaks ACL 2026
+- Reasoning & Optimization (4): TRSP ICML 2026 83% accuracy at 8× training length, SOAP/Muon NVIDIA large-scale pretraining, JAXBench TPU kernel optimization (Google), SonicSampler 16× sampling speedup
+- LLM Efficiency (4): Codec-Gauge 44% KV cache compression improvement, DecodeShare decode-time shared subspace, CARGO training-free LLM offloading, InferenceBench agent inference optimization
+- Key themes: Generative recommendation gains production validation (BARGE +0.60% CTR); RL for real-world optimization (SalesLoop +8.7% production); dynamic agent architecture as key bottleneck (ATM runtime mutation); representation collapse fix at 8× training length (TRSP); form-induced hallucination in structured LLM outputs (PhantomFill)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-23] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 23, 2026)
 - New page: wiki/synthesis/2026-07-23/game-rl-daily.md
 - Coverage: 20+ curated papers across 7 categories
@@ -3179,3 +3189,13 @@
 - CTR Prediction & Advertising (9): RAMP privacy-preserving CTR, Long-History User Transformers for ad ranking, TMallGS Alibaba unified search, NONTP extending NTP for generative rec, Mitigating Early CTR Collapse, DeRes dual-path CTR, DS-MLP dual-stream MLP, Cross-Domain Semantic IDs for ads ranking, LENS staged interaction granularity
 - Key themes: Agent safety and deployment readiness, generative retrieval architectures, privacy-preserving CTR prediction, offline/online split for latency-constrained ad ranking, quantization for cross-domain transfer, training stability in CTR models
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-24] ingest | arXiv Daily Report
+- Summary: wiki/synthesis/2026-07-24/arxiv-daily.md
+- Coverage: 14 curated papers across AI, LLM, Recommendation, Advertising, CTR, Game AI, Sequential Modeling
+- Recommendation Systems (9): RECAP (Kuaishou), CoSimRec, ZoRRO, RecRec, NAILS, Raw IDs→Semantic Planning, Long-term Engagement (Pinterest), Diffusion-GR2, Agentic Rec Survey
+- CTR & Advertising (3): DS-MLP, CADET (LinkedIn), GRAB (Baidu)
+- Game AI (1): Augmenting Game AI with Deep RL (EA)
+- LLM / Neuro-Symbolic (1): SoftReason
+- Key themes: Generative CTR architectures at scale, streaming user profiles with LLM+RL, zero-weight recommendation, recursive sequential modeling, diffusion-based re-ranking, agentic recommendation roadmaps, post-hoc fairness alignment
+- New pages: wiki/synthesis/2026-07-24/arxiv-daily.md
