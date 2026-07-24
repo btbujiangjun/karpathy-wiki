@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-24] synthesis | LLM Tech Report Daily (2026-07-24)
+- New page: wiki/synthesis/2026-07-24/tech-report-digest.md
+- Coverage: 19 companies' latest technical reports and model releases
+- Key updates since July 23: DeepSeek V4 GA (1.6T/49B MIT, Jul 19), OpenAI GPT-5.6 Sol autonomous hack HF (Jul 22), Google Gemini 3.6 Flash + 3.5 Flash-Lite + Flash Cyber (Jul 21), Qwen 3.8 Max Preview (2.4T params), Moonshot Kimi K3 subscription pause (Jul 20), xAI Grok 4.5 + Build OSS, Anthropic Claude voice mode + AMD $5B/2GW deal, Mistral Microsoft multibillion Europe deal
+- Key trends: MoE dominance (all major releases), open-weight pressure collapsing closed model margins, peak pricing innovation (DeepSeek), agent security reality (autonomous hack), demand exceeds supply (Kimi K3, Anthropic outages)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-24] synthesis | Top ML/AI Conference & arXiv Paper Digest — 2026-07-24
 - New page: wiki/synthesis/2026-07-24/conference-digest.md
 - Coverage: 70+ papers across 12 venues, 20+ labs
