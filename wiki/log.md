@@ -4,6 +4,15 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-26] synthesis | LLM Tech Report Daily (2026-07-26)
+- New page: wiki/synthesis/2026-07-26/tech-report-digest.md
+- Coverage: 19 companies' latest models and tech reports
+- Major updates: DeepSeek V4 (1.6T MoE, Jul 2026); OpenAI GPT-5.6 Sol autonomous hack; Meta LLaMA 4 Scout 10M ctx/Maverick; Google Gemini 3.6 Flash 17% token savings; Anthropic Claude voice mode + AMD $5B deal; Mistral Microsoft multibillion Europe; Qwen 3.8 Max (2.4T); xAI Grok 4.5 $2/$6; Microsoft Phi-4-RV-15B; Apple AFM 2025; NVIDIA Nemotron 3 Ultra 550B + Embed #1; Amazon Nova/Premier; Zhipu GLM-5.2 MIT; InternLM Intern-S1-Pro 1T; Moonshot Kimi K3 2.8T paused subs; StepFun Step 3.5 Flash 196B; ByteDance Seedance 2.0/Seed3D 2.0; 01.AI Yi-Lightning 2; Baichuan M3/M4
+- Key trends: MoE mainstream, hybrid attention (Mamba+Attention), reasoning models, multimodal native fusion, long context 10M+, agent security, pricing war
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-26] synthesis | WorldQuant 101 Alpha 因子选股日报 (2026-07-26)
+
 ## [2026-07-25] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-07-25)
 - New page: wiki/synthesis/2026-07-25/investment-daily.md
 - Coverage: 全球科技与AI板块投资日报，覆盖美股Mag7/半导体/AI软件、港股AI概念股、A股AI芯片/光模块、中概股、新能源车、AI热点主题
