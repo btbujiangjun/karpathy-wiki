@@ -11,6 +11,17 @@
 - Key trends: AI叙事进入关键验证期(下周MSFT/AAPL/META/AMZN财报+Fed决议)；板块轮动加速(光模块→AI芯片→AI应用)；NVIDIA AI生态持续扩张($5000亿内存协议)；中国AI自主化加速(七部委国产芯片政策)；Big5 AI Capex合计$7800亿创新高
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-07-26] synthesis | WorldQuant 101 Alpha 因子选股日报 (2026-07-26)
+- New page: wiki/synthesis/2026-07-26/wq101-alpha-daily.md
+- Coverage: WorldQuant 101 Alpha 因子框架筛选美股 Top 20
+- Market: S&P 7,412(-0.6%周/+8.3%YTD)/Nasdaq 24,976(-2.1%周/+7.5%YTD)/Dow 51,947(+0.46%周/+8.1%YTD)/Brent $96.78
+- Factors: Alpha#1 动量(12次/60%主导) + Alpha#6 量价(6次/30%) + Alpha#19 均值回复(4次/20%) + Alpha#41 VWAP偏离(3次/15%) + Alpha#30 波动率(3次/15%)
+- Top 5: XOM(9.5)/LLY(9.5)/GS(9.5)/JPM(9.0)/RTX(9.0)
+- Sectors: Energy 5只 + Financials 4只 + Utilities 4只 + Healthcare 2只 + Industrials 1只 + Tech 1只 + Comms 1只
+- Key themes: 能源+金融双主线(油价$96+M&A $1.2T+IB fees创纪录); 动量因子载体从科技→能源/金融; 均值回复机会(GOOGL/MSFT 31%/22%折价); 公用事业广度最强(90%在200dMA上方); 科技板块在滞后象限
+- Key catalysts: 7/29 MSFT财报/7/30 AAPL+META+AMZN财报/7/31 Fed决议/8/1关税截止
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-24] synthesis | WorldQuant 101 Alpha 因子选股日报 (2026-07-24)
 - New page: wiki/synthesis/2026-07-24/wq101-alpha-daily.md
 - Coverage: WorldQuant 101 Alpha 因子框架筛选美股 Top 20

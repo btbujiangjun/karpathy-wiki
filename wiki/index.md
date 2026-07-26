@@ -52,6 +52,7 @@
 | [summoning-ghosts-not-animals](sources/summoning-ghosts-not-animals.md) | We're Summoning Ghosts, Not Building Animals — Dwarkesh Interview | 2026-04-17 | agi, agents, rl, karpathy |
 | [tech-report-digest](synthesis/2026-07-23/tech-report-digest.md) | LLM Tech Report Digest — 2026-07-23 | 2026-07-23 | tech-report, moe, scaling, multimodal, reasoning, daily-digest |
 | [tech-report-digest](synthesis/2026-07-24/tech-report-digest.md) | LLM Tech Report Digest — 2026-07-24 | 2026-07-24 | tech-report, moe, scaling, multimodal, reasoning, daily-digest |
+| [tech-report-digest](synthesis/2026-07-26/tech-report-digest.md) | LLM Tech Report Digest — 2026-07-26 | 2026-07-26 | tech-report, moe, hybrid-attention, reasoning, multimodal, long-context, daily-digest |
 
 ## Papers
 
