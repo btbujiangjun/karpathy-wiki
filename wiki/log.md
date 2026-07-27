@@ -3411,3 +3411,17 @@
 - Updated: wiki/index.md (added investment-daily entry), wiki/log.md
 - New pages: wiki/synthesis/2026-07-27/investment-daily.md
 - Contradictions: none
+
+## [2026-07-26] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 26, 2026)
+- Summary: wiki/synthesis/2026-07-26/game-rl-daily.md
+- Coverage: 33+ papers across 8 categories
+- Key papers: SGS self-guided self-play (Stanford 2604.20209, 7B beats 671B Lean4), FootsiesGym (2607.06514, fighting game benchmark), Multiplayer World Models (2607.05352, 5B Rocket League 20fps), MCTS-Enhanced Policy Gradient (2607.17882), Reward-Free Evolving Agents (2607.14408, pairwise validator), Deflanderization (2510.13586, CPDC 2025), LLM+AP NPC (2501.10106), Psy-CoT/RAPO (2606.27025, +40% CoSER), EvolvingWorld (2607.17250, co-evolving agents), AlayaWorld (2607.06291, open-source real-time interactive), ABot-World-0 (2607.19191, RTX 5090 16fps 720P), From Pixels to States (2607.14076, Black Myth 90hrs data engine), OPINE-World (2607.01531, ARC-AGI-3 20/25 games), MAGIC (2607.11594, multi-scene 0.96F1), Garden of Forking Paths (2605.01245, narrative arc PCG), SLM dynamic game content (2601.23206, 93% success), WorldGen (CVPR 2026 NVIDIA traversable 3D), Multiverse (2603.26782, cross-game blending), CausalGame (ICML 2026 Oral, 2607.04293, 30 LLMs 68% vs 82% optimal), GameCraft-Bench (2606.17861, Godot 41% best), AI Gamestore (2602.17594, <10% human median), WebGameBench (2605.17637), GAME-Scope (2607.15224), CGSReg Atari Pong (2607.15142, DreamerV3 -21→-12), NVIDIA ACE, KRAFTON production, Sony AI CPDC
+- Key themes: Self-play + world models dual paradigm; LLM game agents mature (Psy-CoT/RAPO +40%, EvolvingWorld co-evolving agents); open-source real-time interactive models (AlayaWorld/ABot-World-0); open-world game world models (Pixels to States Black Myth 90hrs); cross-game blending (Multiverse) and foundation models (WorldGen CVPR 2026); CausalGame ICML 2026 Oral shows 68% vs 82% optimality gap; CGSReg regularization improves world models
+- Updated: wiki/index.md, wiki/log.md
+- New pages: wiki/synthesis/2026-07-26/game-rl-daily.md
+- Contradictions: none
+
+## [2026-07-26] synthesis | 2026-07-26 Conference & arXiv Daily Digest
+- Summary: wiki/synthesis/2026-07-26/conference-digest.md
+- Updated: wiki/index.md, wiki/log.md
+- New pages: wiki/synthesis/2026-07-26/conference-digest.md
