@@ -4,6 +4,16 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-26] synthesis | arXiv Paper Check — AI & CTR (July 26, 2026)
+- New page: wiki/synthesis/2026-07-26/arxiv-paper-check.md
+- Coverage: 18 curated papers from cs.AI (260 new Jul 24), cs.LG (169 new Jul 24)
+- CTR/Recommendation (4): Cold-item generative rec temporal perspective (2607.21101), OpenForgeRL harness-native agent training, Naju discrete SSM long-sequence memory, Agentic Context Management lifecycle architecture
+- AI Agents & Safety (6): Beyond Sycophancy moral reasoning, AREX recursive self-improving deep research, GuardianAgentBench agent failure benchmark, Workflow-Localized skill repair, PATS policy-aware scaffolding, Detecting LLM tokens in coauthored text
+- Reasoning & Optimization (4): Error Localization test-time scaling, Relative Value Learning ICLR 2026, Best-of-Evidence partial verification, GRPO dense reward collapse
+- LLM Efficiency & Architecture (4): Windowed-MTP million-token speculative decoding, Emergent Misalignment persona subspaces, AI Assistants Overassist atrophy, HOPE Hilbert progressive encoding
+- Key themes: Agent memory as architecture problem; recursive self-improvement goes concrete (AREX); verifiability as the new bottleneck; representation understanding deepens; efficiency at million-token scale; alignment beyond sycophancy
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-27] synthesis | WorldQuant 101 Alpha 因子选股日报 (2026-07-27)
 - New page: wiki/synthesis/2026-07-27/wq101-alpha-daily.md
 - Coverage: WorldQuant 101 Alpha 因子框架筛选美股 Top 20
