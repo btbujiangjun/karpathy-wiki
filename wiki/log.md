@@ -4,6 +4,27 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-27] synthesis | arXiv Paper Check — AI & CTR (July 27, 2026)
+- New page: wiki/synthesis/2026-07-27/arxiv-paper-check.md
+- Coverage: 18 curated papers from cs.AI (144 new Jul 27), cs.IR, cs.LG
+- AI Reasoning & Agents (5): PoTRE 4-agent heterogeneous ensemble 49.92% HLE (TMLR 2026), Loopie 20B MoE looped Transformer gold medal IMO/IPhO, From Black Box to Executable Logic RL→Prolog with return-loss bounds, LatentMT 2.6B latent-reasoning MT matching 3-5× models, Black-Mamba event-gated test-time adaptation
+- CTR Prediction & Recommendation (8): GRAB Baidu generative CTR +3.05% revenue +3.49% CTR deployed, DS-MLP dual-stream vanilla MLP SOTA on 3 benchmarks, GenCI generative cohort intent (WWW 2026), IDProxy Xiaohongshu cold-start MLLMs deployed hundreds of millions daily, PRECTR-V2 unified relevance-CTR 2M lightweight encoder, DAIAN intent-aware TIR +1.59% CTR +2.37% bills, EST Alibaba power-law scaling +3.27% RPM +1.22% CTR, FAT field-aware transformer +4.38% AUC +2.33% CTR (KDD 2026)
+- Generative Models (1): Expanding Flow Maps variable-size generation
+- Attention & Transformers (1): L1 Augmented Attention 14.5% perplexity reduction
+- Key trends: Looped/recurrent architectures maturing (Loopie, LatentMT); CTR scaling laws validated in production (EST, FAT); simplicity wins in CTR (DS-MLP); generative CTR gains traction (GRAB, GenCI); event-driven test-time adaptation (Black-Mamba); cold-start solved via MLLMs (IDProxy)
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-27] synthesis | arXiv Daily Report — LLMs, Recommendation, CTR, Ads, Sequential Modeling, Games (2026-07-27)
+- New page: wiki/synthesis/2026-07-27/arxiv-daily.md
+- Coverage: 12 curated papers from Jul 21–27 across 5 categories
+- LLMs & Inference (4): Windowed-MTP constant-cost draft at 1M context (+28–44% speedup), MIRROR cross-view VLM reasoning via reverse-KL, ISO spectral inheritance for RLVR optimization (37% fewer steps), Fast ANN for LLM embeddings (SISAP 2026)
+- Recommendation Systems (6): DLMRec first discrete diffusion LM for rec, UniRank 15-model unified ranking benchmark (700M instances), DeltaGate zero-observation user reactivation (RecSys 2026, +51.6% Hit@10 for >365d gaps), PRTA LLM-as-planner with RecSys tools (RecSys 2026), PRL causal Bayesian residual learning (RecSys 2026), CDL cardinality-decomposed loss for heterogeneous graphs
+- Advertising & CTR (1): LO-FAR CPU-only sparse feature ranking for ad rec (RecSys 2026, ~2 CPU-hours)
+- Generative Retrieval (1): Prompt Generation config-driven framework deployed Taobao (+0.47% transactions, +0.51% GMV)
+- Game AI & RL (1): Augmenting Game AI with RL framework (CoG 2026)
+- Key trends: Diffusion models entering rec, LLM agents orchestrating traditional RecSys, causal refinement via do-calculus, config-driven decoupling for production
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-26] synthesis | LLM Tech Report Daily (2026-07-26)
 - New page: wiki/synthesis/2026-07-26/tech-report-digest.md
 - Coverage: 19 companies' latest models and tech reports
