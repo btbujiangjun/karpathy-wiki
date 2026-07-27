@@ -3368,3 +3368,12 @@
 - Updated: wiki/index.md (added conference-digest entry)
 - New pages: wiki/synthesis/2026-07-27/conference-digest.md
 - Contradictions: none
+
+## [2026-07-27] ingest | 投资日报 — 全球科技与 AI 板块 (2026-07-27)
+- Summary: wiki/synthesis/2026-07-27/investment-daily.md
+- Coverage: 美股大盘(Mag7分化)、AI芯片股血洗、港股科技、A股AI热点、中概股、新能源/EV、AI热点深度
+- Key data: S&P 7411(+0.05%)/Nasdaq 24975(-0.64%)/周-2.1%; Mag7单日蒸发$787B(7/23); AAPL周+4.15%克制AI投入领跑/TSLA周-19%FCF-$10.9亿; 芯片股血洗INTC-7.89%/MU-6.99%/ARM-8.14%; 港股阿里+4.86%(千问3.8开源); A股寒武纪+12.18%逼近¥1万亿; 小鹏36717台+229%YoY; 比亚迪成全球纯电销冠
+- Key themes: AI叙事从"Capex投入=利好"反转为"Capex投入=惩罚"; 7/29-7/30财报季为2026年最关键验证窗口; 华为Atlas 950超节点+七部委国产芯片政策突破; EV格局重塑(比亚迪全球销冠/小米跨界搅局)
+- Updated: wiki/index.md (added investment-daily entry), wiki/log.md
+- New pages: wiki/synthesis/2026-07-27/investment-daily.md
+- Contradictions: none
