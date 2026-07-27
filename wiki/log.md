@@ -55,8 +55,8 @@
 ## [2026-07-25] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-07-25)
 - New page: wiki/synthesis/2026-07-25/investment-daily.md
 - Coverage: 全球科技与AI板块投资日报，覆盖美股Mag7/半导体/AI软件、港股AI概念股、A股AI芯片/光模块、中概股、新能源车、AI热点主题
-- Key highlights: NVDA$206.84(-0.92%)与SK海力士$5000亿内存协议；MSFT-5.15%转向自研AI模型；GOOGL-7.09%/META-9.84%/AMZN-5.05%下周财报关键；港股恒指五连阳+1.88%/美团+8.50%/腾讯+3.21%×Manus AI；A股寒武纪+12.18%市值逼近万亿/科创50+2.13%；中概金龙+1.79%；理想7月>5万辆/小鹏36717台+229%YoY/小米YU7上市3分钟20万大定
-- Key trends: AI叙事进入关键验证期(下周MSFT/AAPL/META/AMZN财报+Fed决议)；板块轮动加速(光模块→AI芯片→AI应用)；NVIDIA AI生态持续扩张($5000亿内存协议)；中国AI自主化加速(七部委国产芯片政策)；Big5 AI Capex合计$7800亿创新高
+- Key highlights: Mag7单日蒸发$787B(7/23为2025年4月以来最大单日跌幅)；AAPL+4.15%周线唯一正收益领跑；TSLA周-19%/FCF-$10.9亿；GOOGL周-8.5%/FCF-$59亿；芯片股血洗INTC-7.89%/MU-6.99%/ARM-8.14%；港股恒指五连阳+1.88%/美团+8.50%(LongCat-2.0)/腾讯+3.21%×Manus AI/阿里+4.86%(ABot+千问3.8)；A股寒武纪+12.18%逼近¥1万亿/华海清科涨停；中概理想-2.02%/>5万辆/小鹏-3.41%/36717台+229%YoY
+- Key trends: AI叙事从"投入=利好"反转为"投入=惩罚"(GOOGL/TSLA FCF为负遭惩罚)；Big5 Capex $7800亿仅$211B折旧/$500B+挂表；阿里千问3.8(2.4T)+25家美企联名支持开放权重AI重塑开源vs闭源格局；板块轮动(光模块→AI芯片→AI应用)；下周MSFT/AAPL/META/AMZN财报+7/31 Fed决议(加息概率38%)为2026年最关键验证窗口
 - Updated: wiki/index.md, wiki/log.md
 
 ## [2026-07-26] synthesis | WorldQuant 101 Alpha 因子选股日报 (2026-07-26)
@@ -3338,4 +3338,24 @@
 - AI for Games (6): Game-theory+RL border defense, SPIRAL self-play ICLR 2026, Think in Games LLM+RL, NitroGen NVIDIA generalist, Nemobot LLM game agents, Multi-agent KTO
 - LLM Infrastructure (3): KV Cache optimization survey, Dynamic Agent Skills survey, Understanding LLMs
 - Key trends: Generative CTR paradigm shift (discriminative→generative pre-training+fine-tuning), token-based ranking scaling to 7B+, foundation models for rec at billion scale, LLM4Rec maturing from feature encoding to reasoning chains, semantic IDs replacing traditional item IDs, auto-bidding reframed as generative sequence modeling
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-27] synthesis | Conference & arXiv Digest (2026-07-27)
+- New page: wiki/synthesis/2026-07-27/conference-digest.md
+- Coverage: 80+ papers across 12 venues + arXiv recent
+- ICML 2026 (Outstanding): High-Accuracy Sampling Diffusion-NES, Alignment Community Censor, MoE Vision, Arabic LLM
+- ICML 2026 DeepMind: Geo-Cultural Safety Alignment (GSA-Bench), LLM Overthinking (SimpleThenHard)
+- NeurIPS 2025 (Best): Artificial Hivemind, Gated Attention, 1000 Layer Self-Supervised RL, LeCun Autonomous Intelligence; Runner-Up: RL Reasoning, Superposition Neural Scaling
+- ICLR 2026 (Outstanding): Transformers Inherently Succinct, LLMs Lost Multi-Turn; Honorable: Polar Express/Muon Algorithm
+- AAAI 2026: 17.6% acceptance (4167/23680); Outstanding: Causal Structure Learning, ReconVLA, LLM2CLIP; Best Alignment: Global Human Opinion
+- KDD 2026: 21% acceptance (256/1215); Best: GReVLOC, Robustness of LLMs, GRAB Field-Aware Generative CTR
+- CVPR 2026: 25.2% acceptance (4089/16092); Best: Draft-and-Refine Visual Experts, VQA Multimodal CoT, Fairness Face Models
+- ACL 2026 (Outstanding): MauBERT, Evolutionary Decoding, Lying with Truths, CURE, GeoRA
+- SIGIR 2026 (Best): Perfect Personalization, Unified ICL+IE, Feature Selection CTR
+- WWW 2026 (Best): MedRGAG Medical QA, DualGR Dual-Perspective Retrieval
+- EMNLP 2025 (Best): Infini-gram mini, LingGym, MiCRo, Causal Interventions
+- RecSys 2026 (Best): Empathetic Conversational Recommender, Cold-Start LLM Profiling, Diverse Multi-Objective Re-Ranking
+- CIKM 2025 (Best): GAE Link Prediction, Counterfactual LLM
+- arXiv Recent: PromptPack ByteDance LLM annotation +8.2% CTR, Speculate with Memory agent acceleration, DAE Disentangled Sequential CTR, Long-Horizon-Terminal-Bench
+- Key themes: Agentic AI as KDD 2026 core theme, LLM alignment & safety (ICML/NeurIPS/AAAI), multi-turn conversation failures (ICLR), generative recommendation at scale (GRAB/Draft-and-Refine), data poisoning robustness (ICML/NeurIPS), scaling laws for synthetic data (AAAI), multilingual LLMs (Arabic/African)
 - Updated: wiki/index.md, wiki/log.md
