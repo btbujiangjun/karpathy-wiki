@@ -3359,3 +3359,12 @@
 - arXiv Recent: PromptPack ByteDance LLM annotation +8.2% CTR, Speculate with Memory agent acceleration, DAE Disentangled Sequential CTR, Long-Horizon-Terminal-Bench
 - Key themes: Agentic AI as KDD 2026 core theme, LLM alignment & safety (ICML/NeurIPS/AAAI), multi-turn conversation failures (ICLR), generative recommendation at scale (GRAB/Draft-and-Refine), data poisoning robustness (ICML/NeurIPS), scaling laws for synthetic data (AAAI), multilingual LLMs (Arabic/African)
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-27] ingest | Conference Digest: 2025-2026 Top ML/AI Venues (Updated)
+- Summary: wiki/synthesis/2026-07-27/conference-digest.md
+- Coverage: ICML 2026 (6634 papers), AAAI 2026, NeurIPS 2025, ICLR 2026, CVPR 2026, KDD 2026, ACL 2026, SIGIR 2026, WWW 2026, EMNLP 2025, RecSys 2025
+- Key papers: Align³GR (Kuaishou +17.8% Recall@10), Gated Attention (Qwen NeurIPS Best), Artificial Hivemind (NeurIPS Best), GR4AD (Kuaishou +4.2% ad revenue), Sparse by Design (Meta), VENOMREC, RSIR, HG-Rec, UniRec (+22.6% HR@50), 1000-layer RL
+- 8 cross-conference trends identified: LLM4Rec industrialization, expanded alignment taxonomy, non-Euclidean geometry, auction+LLM, safety/robustness, MoE redesign, attention revolution, RL depth scaling
+- Updated: wiki/index.md (added conference-digest entry)
+- New pages: wiki/synthesis/2026-07-27/conference-digest.md
+- Contradictions: none

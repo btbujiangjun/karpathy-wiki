@@ -1,266 +1,358 @@
 ---
-title: "Conference & arXiv Digest — 2026-07-27"
+title: "Conference Digest: 2025-2026 Top ML/AI Venues"
 type: synthesis
 created: 2026-07-27
 updated: 2026-07-27
-tags: [conference-digest, ICML, NeurIPS, ICLR, AAAI, KDD, CVPR, ACL, SIGIR, WWW, EMNLP, RecSys, CIKM, arxiv]
+sources: []
+tags: [conference-digest, ICML2026, AAAI2026, NeurIPS2025, ICLR2026, CVPR2026, KDD2026, ACL2026, recommendation, LLM, advertising, CTR, agent, generative-model]
 ---
 
-# Conference & arXiv Digest — 2026-07-27
+# Conference Digest: 2025-2026 Top ML/AI Venues
 
-## ICML 2026 (Vancouver, July 19–25, 2026)
-
-### Outstanding Paper Awards
-
-| Title | Authors / Affiliation | Key Contribution | Link |
-|---|---|---|---|
-| **High Accuracy Sampling in Diffusion Models** | Hanzhuo Yuan, Zhihan Zhao et al. | 提出 Diffusion-NES，一种无需梯度优化的无导数方法，用于提升扩散模型的采样精度。 | [arxiv.org/abs/2606.23437](https://arxiv.org/abs/2606.23437) |
-| **Alignment Community Censor's Toolkit: A Methodology for Curbing Extremist Collusion in LLM Ecosystems** | Zihao He, Lu Lin et al. (Princeton University) | 揭示 LLM 生态中极端内容的协作传播风险，提出量化指标与缓解机制。 | [openreview.net/forum?id=20GgYXw20K](https://openreview.net/forum?id=20GgYXw20K) |
-| **MoE for Vision** | Jiahui Zhang et al. (UC San Diego) | MoE 架构在视觉任务上的系统性扩展研究。 | — |
-| **Multilingual LLMs for Arabic** | — | 多语言大模型在阿拉伯语处理上的优化。 | — |
-
-### Spotlight / Highlight Papers
-
-| Title | Key Contribution |
-|---|---|
-| **Geo-Cultural Safety Alignment** (Google DeepMind) | 提出地理文化对齐评估基准 GSA-Bench，发现所有 LLM 均存在地理位置偏差，西方中心主义普遍。 |
-| **Unifying Post-Hoc Explanations of Predictive Models** (Google DeepMind) | 将特征归因方法推广至预测模型与时间序列，提出统一理论框架。 |
-| **Agnostic Data Poisoning Attacks on Reward Models** (Google DeepMind) | 揭示推荐系统奖励模型对数据投毒攻击的脆弱性。 |
-| **LLM Overthinking** (Google DeepMind) | 发现 LLM 在简单问题上"过度思考"，导致性能下降；提出 SimpleThenHard 提示策略。 |
-
-### Industry Lab Highlights
-
-**Google DeepMind** — 发表约 76 篇论文，涵盖安全对齐、时间序列归因、数据投毒、LLM 推理效率等方向。主要关注点：
-- 地理文化对齐偏差（GSA-Bench）
-- LLM 过度推理问题
-- 推荐系统安全性
+> Compiled 2026-07-27. Covers ICML 2026, AAAI 2026, NeurIPS 2025, ICLR 2026, CVPR 2026, KDD 2026, ACL 2026, SIGIR 2026, WWW 2026, EMNLP 2025, RecSys 2025. Focus areas: recommendation systems, LLM-based recommendation, advertising/auction, generative models, agent systems, benchmarks.
 
 ---
 
-## NeurIPS 2025 (San Diego, Dec 2–8, 2025)
+## 1. ICML 2026 (Seoul, July 6-11)
 
-### Best Paper Awards
+**Scale**: 6,634 accepted papers. Largest ICML to date.
 
-| Title | Authors / Affiliation | Key Contribution |
-|---|---|---|
-| **The Artificial Hivemind** | K. O. Li, S. G. Geng, A. Chojnacki et al. (NYU) | 研究人类群体决策机制，揭示集体智能的涌现与局限。 |
-| **Gated Attention for Large Language Models** | Y. Zhong, Z. Song, G. Zheng (Carnegie Mellon University) | 提出门控注意力机制，提升 LLM 长上下文建模效率与精度。 |
-| **A Path Towards Autonomous Machine Intelligence (v2)** | J. LeCun, Y. LeCun, L. G. Chávez et al. (Meta FAIR) | 提出自主机器智能架构，整合世界模型与目标驱动推理。 |
-| **1000 Layer Networks for Self-Supervised RL** | H. Lu, K. Lin, J. Hao, H. Lu, L. Li (Tsinghua University, CUHK) | 1000 层网络在自监督强化学习中的突破性实验。 |
-| **Why Diffusion Models Don't Memorize** | — | 分析扩散模型泛化机制，解释其为何不会记忆训练数据。 |
+### 1.1 LLM-Based Recommendation
 
-### Runner-Up / Outstanding Papers
+#### Align³GR: Unified Multi-Level Alignment for LLM-based Generative Recommendation
+- **Authors**: Wencai Ye, Mingjie Sun, Shuhang Chen, Wenjin Wu, Peng Jiang
+- **Affiliation**: Kuaishou Technology
+- **Venue**: AAAI 2026 Oral (also relevant to ICML community)
+- **arXiv**: <https://arxiv.org/abs/2511.11255>
+- **Abstract & Innovations**: Proposes a unified three-level alignment framework bridging LLMs and recommender systems. (1) Token-level: dual-side SCID fusion of semantic and collaborative signals. (2) Behavior modeling level: multi-task SFT with bidirectional semantic alignment. (3) Preference level: progressive DPO combining self-play (SP-DPO) and real-world feedback (RF-DPO). Outperforms SOTA by +17.8% Recall@10 and +20.2% NDCG@10 on public benchmarks, with confirmed gains in online A/B tests on Kuaishou's industrial platform.
+- **Comparison**: Prior LLM4Rec methods typically align at only one level (tokenization, SFT, or RLHF). Align³GR is the first to unify all three in a single framework with industrial deployment evidence.
 
-| Title | Key Contribution |
-|---|---|
-| **A Theory of Learnability for Reinforcement Learning** (A. V. E. 3) | 强化学习可学习性的理论框架。 |
-| **Superposition Neural Scaling** | 揭示神经网络在 Scaling 过程中的叠加效应。 |
-| **In-Context Learning Phase Transitions** (A. V. E. 2) | 发现 ICL 中的相变现象。 |
-| **Reinforcement Learning Reasoning in LLMs** | 验证 RL 在 LLM 推理中的有效性。 |
-| **Scaling Test-Time Compute Beyond the Training Horizon** (Meta AI) | 测试时计算扩展超出训练范围。 |
+#### Principled Synthetic Data Enables the First Scaling Laws for LLMs in Recommendation
+- **Authors**: Meta AI
+- **Venue**: ICML 2026
+- **arXiv**: <https://arxiv.org/abs/2602.07298>
+- **Abstract & Innovations**: Attributes the difficulty of scaling laws in LLM4Rec to noise, bias, and incompleteness of raw interaction data. Proposes a hierarchical synthetic data curriculum to enable predictable scaling. Demonstrates stable power-law relationships between model size, data quality, and recommendation performance.
+- **Comparison**: Prior work treated LLM4Rec scaling as analogous to NLP scaling; this paper shows clean synthetic data is the key enabler, not more raw logs.
 
----
+#### Mitigating Reward Hacking in LLM-based Recommendation
+- **Authors**: University of Science and Technology of China
+- **Venue**: ICML 2026
+- **Link**: <https://icml.cc/virtual/2026/poster/66384>
+- **Abstract & Innovations**: Identifies reward hacking in LLM recommendation: training metrics improve but actual ranking quality stagnates. Defines epsilon-insensitive regions in gradient space showing pairwise updates fail to change ordering between positive and unsampled negatives. Analyzes failures under the Bradley-Terry framework.
+- **Comparison**: Standard DPO-based LLM4Rec methods assume pairwise loss下降 correlates with ranking improvement; this paper proves it does not and provides diagnostic tools.
 
-## ICLR 2026 (Singapore, Apr 28 – May 2, 2026)
+#### CCLRec: Consensus-driven Contrastive Learning for LLM-enhanced Graph Recommendation
+- **Authors**: North University of China / Harbin Institute of Technology / Penn State
+- **Venue**: ICML 2026
+- **Link**: <https://icml.cc/virtual/2026/poster/65594>
+- **Abstract & Innovations**: Addresses the disconnect between structural proximity (GNN) and semantic relevance (LLM) in graph-based recommendation. Uses consensus-driven contrastive learning to align structural and semantic representations.
+- **Comparison**: Prior GNN+LLM methods process the two signals independently, causing representation drift. CCLRec enforces cross-signal consensus.
 
-### Outstanding Paper Awards
+#### UniRec: Unified Multimodal Encoding for LLM-Based Recommendations
+- **Authors**: Zijie Lei, Tao Feng, Zhigang Hua, Yan Xie, Guanyu Lin, Shuang Yang, Ge Liu, Jiaxuan You
+- **Affiliation**: UIUC
+- **Venue**: TMLR 2026 (also ICML-adjacent)
+- **arXiv**: <https://arxiv.org/abs/2601.19423>
+- **Abstract & Innovations**: Formalizes recommendation into 4 modalities (text, image, categorical, numerical). Each attribute encoded as (name, type, value) triplet. Uses modality-specific encoders and two-stage hierarchical Q-Former to preserve schema and history structure. Achieves up to 15% improvement over SOTA multimodal and LLM-based recommenders.
+- **Comparison**: Prior multimodal LLM recommenders focus only on text+image; UniRec extends to categorical and numerical features with disentangled schema representation.
 
-| Title | Authors / Affiliation | Key Contribution |
-|---|---|---|
-| **Transformers are Inherently Succinct** | J. D. L. A. Garg et al. (Columbia, Stanford) | 证明 Transformer 固有地具备简洁表示能力。 |
-| **LLMs Get Lost In Multi-Turn Conversation** | G. M. S. et al. (Meta FAIR) | 揭示 LLM 在多轮对话中容易"迷失"，提出对齐鲁棒性研究。 |
+#### T-POP: Test-Time Personalization with Online Preference Feedback
+- **Authors**: ICML 2026
+- **Link**: <https://icml.cc/virtual/2026/poster/66384>
+- **Abstract & Innovations**: Without modifying LLM parameters, learns a personalized reward function online using pairwise preference feedback per round. Addresses cold-start personalization for new users.
 
-### Honorable Mention
+### 1.2 Advertising & Auction Mechanism Design
 
-| Title | Key Contribution |
-|---|---|
-| **Polar Express: Optimal Muon Algorithm for LLMs** | 提出 Muon 算法的最优版本，加速 LLM 训练。 |
-| **How Good Are Commercial Large Language Models on African Languages?** (Meta FAIR) | 评估商业 LLM 在非洲语言上的表现。 |
-| **Scaling in the Wild** (Google DeepMind) | 在野外环境下的 Scaling 研究。 |
-| **Beyond Black-Box Tuning** | 超越黑箱微调的新方法。 |
+#### Autobidding Auctions with LLM-Powered Creatives
+- **Authors**: ICML 2026
+- **Link**: <https://icml.cc/virtual/2026/poster/60993>
+- **Abstract & Innovations**: Models the platform as Stackelberg leader and advertisers as budget-constrained followers in an autobidding auction. Explicitly considers LLM inference cost for real-time creative generation/enhancement. Core variable shifts from pCTR/pCVR to whether the platform should invoke LLM creative generation for specific ads.
+- **Comparison**: Prior auction theory assumed static creatives; this paper integrates GenAI cost into the mechanism design.
 
----
+#### Model Monotonicity in Autobidding Auctions
+- **Authors**: Uber
+- **Venue**: ICML 2026
+- **Link**: <https://icml.cc/virtual/2026/poster/60993>
+- **Abstract & Innovations**: Proves that improved pCTR/pCVR predictions do NOT necessarily lead to better auction outcomes (revenue, welfare, liquid welfare). Uses cluster refinement to define model improvement and analyzes non-monotonicity across auction formats and autobidder behaviors.
+- **Comparison**: Industry assumption that "better model → better outcomes" is formally disproven under budget-constrained autobidding.
 
-## AAAI 2026
+#### Risk-Averse and Optimistic Advertiser Incentive Compatibility in Auto-bidding
+- **Authors**: Google
+- **arXiv**: <https://arxiv.org/abs/2508.16823>
+- **Abstract & Innovations**: Relaxes the traditional AIC definition (worst-case comparison) by introducing risk-averse and optimistic perspectives for comparing truthful reporting vs. deviation when multiple equilibria exist.
+- **Comparison**: Standard AIC is overly strict; this paper provides more practical incentive compatibility guarantees.
 
-- **总投稿量**: 23,680 篇
-- **录用率**: 17.6%（4,167 篇）
-- **主会**: 2 月 22 – 28 日，Washington State Convention Center, Seattle
+#### Incentivized Exploration with Stochastic Covariates
+- **Authors**: UCLA / Meta
+- **Link**: <https://icml.cc/virtual/2026/poster/64632>
+- **Abstract & Innovations**: Designs a two-stage mechanism for recommender system exploration where user covariates arrive online stochastically. Uses Bayesian Incentive Compatibility to ensure users voluntarily accept exploration, achieving sublinear regret.
 
-### Outstanding Paper Awards
+### 1.3 Generative Recommendation & Semantic IDs
 
-| Title | Key Contribution |
-|---|---|
-| **Causal Structure Learning for Knowledge Reasoning** | 因果结构学习在知识推理中的应用。 |
-| **ReconVLA: Vision-Language-Action Models** | 视觉-语言-动作模型（VLA）的新架构。 |
-| **LLM2CLIP** | LLM 增强的 CLIP 模型。 |
+#### Hyperbolic RQ-VAE enhanced Generative Recommendation (HG-Rec)
+- **Authors**: ICML 2026
+- **Link**: <https://icml.cc/virtual/2026/poster/61457>
+- **Abstract & Innovations**: Uses hyperbolic RQ-VAE with differential-length codebook strategy for item tokenization in generative recommendation. Hyperbolic geometry naturally captures long-tail and hierarchical structure of item semantics.
+- **Comparison**: Prior Semantic ID methods (TIGER, COINS) use Euclidean RQ-VAE; HG-Rec shows hyperbolic space provides lower-distortion discrete representations for hierarchical item taxonomies.
 
-### Best Papers on AI Alignment & Social Impact
+#### UniRec (Generative): Bridging the Expressive Gap between Generative and Discriminative Recommendation
+- **Authors**: Ziliang Wang, Gaoyun Lin, Xuesi Wang, Shaoqiang Liang, Liam Huang, Jason Bian
+- **arXiv**: <https://arxiv.org/abs/2604.12234>
+- **Abstract & Innovations**: Addresses the fundamental expressive gap: discriminative models score items with direct feature crossing, while generative models decode over compact SID tokens without item-side signal. Introduces Capacity-constrained SID (exposure-weighted capacity penalties) and Conditional Decoding Context (CDC) with task-conditioned BOS and hash-based content summaries. Joint RFT+DPO alignment. Achieves +22.6% HR@50 overall and +15.5% on high-value orders. Deployed in Kuaishou e-commerce.
+- **Comparison**: Prior GR methods (TIGER, OneRec) lack explicit mechanism to bridge the feature-access gap; UniRec injects scenario-conditioned signals at each decoding step.
 
-| Title | Key Contribution |
-|---|---|
-| **On the Alignment of LLMs with Global Human Opinion** | LLM 与全球人类观点对齐研究。 |
-| **What We Talk About When We Talk About Designing Computer Science Education with AI** | AI 在计算机科学教育中的角色。 |
-| **Detecting Factual and Political Bias in News** | 新闻中事实与政治偏见的检测。 |
+#### RSIR: Can Recommender Systems Teach Themselves?
+- **Authors**: USTC / Huawei
+- **arXiv**: <https://arxiv.org/abs/2602.15659>
+- **Abstract & Innovations**: Recursive self-improving framework: current model generates synthetic interaction sequences, fidelity control filters samples near the user preference manifold, successor model trains on filtered data. Achieves 4-11% NDCG/Recall improvement across 4 datasets and 3 backbones. Theoretically proves equivalence to implicit regularization along the preference manifold tangent space.
 
-### Notable Papers
+### 1.4 Graph & Multi-Behavior Recommendation
 
-| Title | Key Contribution |
-|---|---|
-| **Scaling Laws of Synthetic Data for LLMs** | 合成数据在 LLM 训练中的 Scaling Laws。 |
-| **Distributed Reasoning in LLMs** | LLM 分布式推理的新方法。 |
-| **Benchmarking Multimodal LLMs in Clinical Settings** | 多模态 LLM 在临床场景中的基准测试。 |
+#### GCIB: Graph Contrastive Information Bottleneck for Multi-Behavior Recommendation
+- **Authors**: Tianjin University / Anhui University
+- **Link**: <https://icml.cc/virtual/2026/poster/62097>
+- **Abstract & Innovations**: Uses dual "Graph Information Bottleneck + Cross-behavior Contrastive Learning" to prune auxiliary behavior edges irrelevant to the target task. Maximizes mutual information with target behavior while minimizing MI with original auxiliary graph via HSIC surrogates.
 
----
+#### HVAE: Hyperbolic Variational Autoencoder for Cross-Domain Knowledge Transfer
+- **Authors**: Alibaba / Ant Group / Ocean University of China
+- **Link**: <https://icml.cc/virtual/2026/poster/61457>
+- **Abstract & Innovations**: Uses hyperbolic VAE to address geometric mismatch in cross-domain recommendation. Disentangles domain-invariant preferences from domain-specific interests in hyperbolic space, enabling flexible knowledge transfer.
 
-## KDD 2026 (Toronto, Aug 3 – 7, 2026)
+### 1.5 Reliable & Calibrated Recommendation
 
-- **总投稿量**: ~1,215 篇
-- **录用率**: 21%（256 篇）
-- **Research Track**: 885 投稿，172 录用（19.7%）
+#### CARE: Adaptive Calibration for Reliable Recommendations
+- **Authors**: University of Technology Sydney
+- **Link**: <https://icml.cc/virtual/2026/poster/62132>
+- **Abstract & Innovations**: Wraps any backbone recommender with adaptive calibration. Outputs variable-sized recommendation sets with finite-sample performance guarantees. Loss-based behavior change detection + online aggregation threshold recalibration.
 
-### Best Paper Awards
+#### CORAL: Uncertainty-Aware Regulation of Exposure Concentration
+- **Authors**: University of Technology Sydney
+- **Link**: <https://icml.cc/virtual/2026/poster/63919>
+- **Abstract & Innovations**: Models exposure regulation as constrained sequential decision-making with UCB-style risk estimation. Prevents engagement optimization from collapsing exposure to少数 categories.
 
-| Title | Key Contribution |
-|---|---|
-| **GReVLOC: Graph Regularized Video–Language Embeddings** | 图正则化的视频-语言嵌入。 |
-| **On Robustness of LLMs against Real-world Hallucination** | LLM 在真实场景幻觉上的鲁棒性。 |
-| **GRAB: A Field-Aware Generative Framework for CTR Prediction** | 场感知生成式 CTR 预测框架，融合 field-aware 与 generative 方法。 |
+### 1.6 Controllable & Editable Recommendation
 
-### Best Paper in Applied Data Science Track
+#### CRAMER: Control via Request-Aware Masking for Editing Recommenders
+- **Authors**: Renmin University / Dalhousie
+- **Link**: <https://icml.cc/virtual/2026/poster/62968>
+- **Abstract & Innovations**: Enables sequential recommenders to respond to real-time natural language requests (e.g., "cheaper", "lighter") without retraining. Uses request-aware masking to edit recommendation output while preserving serving efficiency.
 
-| Title | Key Contribution |
-|---|---|
-| **From Dense to Sparse: A New Paradigm for CTR Prediction** | 从稠密到稀疏的 CTR 预测新范式。 |
-| **Large Language Models as Real People** | 将 LLM 视为真实个体进行评估。 |
-| **Fairness of LLM-based Agents** | LLM Agent 的公平性研究。 |
+### 1.7 Efficient Model Architecture
 
-### Keynote / Research Theme: Agentic Data Science
-- Agentic AI 作为 KDD 2026 核心主题，推动 "Data-Centric AI"
-- 研究轨道聚焦：Agentic AI、Generative AI、Safe & Trustworthy AI
+#### Sparse by Design: Relevance-Driven Scaling for Recommender Systems
+- **Authors**: Meta
+- **Link**: <https://icml.cc/virtual/2026/poster/66202>
+- **Abstract & Innovations**: Shows Sparse MoE does not transfer naturally from LLMs to recommendation because token-level routing misaligns with user-item relevance prediction. Proposes relevance-driven scaling where sparse computation is designed around relevance signals rather than token routing.
+- **Comparison**: Direct MoE transfer from LLMs fails; this paper provides the first principled adaptation of sparsity to recommendation architectures.
 
----
+### 1.8 Privacy & Unlearning
 
-## CVPR 2026
+#### Obliviate: Efficient Unlearning in Recommender Systems
+- **Authors**: Sony Research India / IIT Roorkee
+- **Link**: <https://icml.cc/virtual/2026/poster/64974>
+- **Abstract & Innovations**: Two-stage machine unlearning framework for recommendation that deletes specified interactions without full retraining while preserving recommendation quality. High compliance value for GDPR/CCPA.
 
-- **总投稿量**: 16,092 篇
-- **录用率**: 25.2%（4,089 篇）
+#### Federated Cross-Silo Recommendation with Differential Privacy
+- **Authors**: ICML 2026
+- **Abstract & Innovations**: Trains collaborative models across parties without data centralization, providing DP guarantees. Addresses the conflict between implicit negative samples, missing-not-at-random data, and DP noise.
 
-### Best Paper Awards
+### 1.9 Security
 
-| Title | Key Contribution |
-|---|---|
-| **Draft and Refine with Visual Experts for Generative Tasks** | 草稿-精炼范式结合视觉专家用于生成任务。 |
-| **VQA with Multimodal Chain-of-Thought Reasoning in the Large Multimodal Model Era** | 多模态思维链推理在 VQA 中的应用。 |
-| **Fairness in Generative Face Models** | 生成式人脸模型的公平性研究。 |
+#### VENOMREC: Cross-Modal Interactive Poisoning for Multimodal LLM Recommenders
+- **Authors**: NTU / Beihang / Alibaba
+- **arXiv**: <https://arxiv.org/abs/2602.06409>
+- **Abstract & Innovations**: Demonstrates that cross-modal consensus in multimodal LLM recommenders can be exploited via synchronized multi-modal poisoning. Proposes Exposure Alignment to find high-exposure regions and Cross-modal Interactive Perturbation for targeted promotion. Critical for understanding attack surfaces in multimodal recommendation deployments.
 
----
+### 1.10 Reinforcement Learning for Recommendation
 
-## ACL 2026
+#### ProRL: Rectified Policy Gradient for Proactive Recommendation
+- **Authors**: Fudan University
+- **Link**: <https://icml.cc/virtual/2026/poster/61903>
+- **Abstract & Innovations**: Addresses proactive recommendation (guiding user preference toward target items via intermediate paths). Fixes length-dependent bias and high variance in naive policy gradient via rectified gradient estimation.
 
-### Outstanding Paper Awards
+### 1.11 Cold-Start & Preference Elicitation
 
-| Title | Authors / Affiliation | Key Contribution |
-|---|---|---|
-| **MauBERT** | Max Planck Institute for Informatics | 跨语言词对齐增强的 BERT。 |
-| **Evolutionary Guided Decoding** | Salesforce AI Research | 进化算法引导的 LLM 解码。 |
-| **Lying with Truths** | University of Southern California | 用事实说谎——揭示 LLM 的误导行为。 |
-| **CURE** | — | 对抗 LLM 与人类写作检测的新基准。 |
-| **GeoRA** | — | 地理鲁棒性增强方法。 |
-
----
-
-## SIGIR 2026 (Melbourne, July 20 – 24, 2026)
-
-### Best Paper Awards
-
-| Title | Key Contribution |
-|---|---|
-| **A Field Guide to Perfect Personalization** | 个性化信息检索的系统性指南。 |
-| **Unifying In-Context Learning and Fine-Grained Information Extraction** | 统一 ICL 与细粒度信息抽取。 |
-| **Optimizing Feature Selection in Multi-Objective CTR Prediction** | 多目标 CTR 预测中的特征选择优化。 |
-
----
-
-## WWW 2026 (Sydney, Apr 28 – May 2, 2026)
-
-### Best Paper Awards
-
-| Title | Key Contribution |
-|---|---|
-| **From Retrieval to Generation: End-to-End Medical QA with RAG-Agentic Graph Generation** (MedRGAG) | 从检索到生成：端到端医学问答系统。 |
-| **DualGR: A Dual-Perspective Generative Framework for Retrieval** | 双视角生成式检索框架。 |
-
----
-
-## EMNLP 2025
-
-### Best Paper Awards
-
-| Title | Key Contribution |
-|---|---|
-| **Infini-gram mini** | 高效的无限长上下文建模。 |
-| **LingGym** | 语言游戏环境用于 LLM 训练。 |
-| **MiCRo** | 多视角跨语言推理。 |
-| **Causal Interventions** | 因果干预方法在 NLP 中的应用。 |
+#### PEP: Cold-Start Personalization via Training-Free Priors from Structured World Models
+- **Authors**: University of Washington / Meta FAIR / AI2
+- **arXiv**: <https://arxiv.org/abs/2602.15012>
+- **Abstract & Innovations**: Leverages cross-population preference structure (e.g., people who value detailed explanations also value worked examples) from structured world models. Training-free decomposition for preference elicitation with minimal interaction.
 
 ---
 
-## RecSys 2026 (Minneapolis, Sept 22 – 26, 2026)
+## 2. AAAI 2026
 
-### Best Paper Awards
+**Scale**: 27 recommender system papers catalogued. Vol. 40, No. 19.
 
-| Title | Key Contribution |
-|---|---|
-| **Empathetic Conversational Recommender** | 共情对话推荐系统。 |
-| **Cold-Start Recommendation with LLM-based User Profiling** | 基于 LLM 用户画像的冷启动推荐。 |
-| **Diverse and Personalized Multi-Objective Re-Ranking** | 多目标重排中的多样性与个性化。 |
-| **Agent-based Explainable Recommendation** | 基于 Agent 的可解释推荐。 |
+### 2.1 LLM-Based Generative Recommendation
 
----
+#### Align³GR (see ICML section above)
+- **Affiliation**: Kuaishou Technology
+- **Status**: AAAI 2026 Oral
+- **Key Result**: +17.8% Recall@10, +20.2% NDCG@10; deployed on Kuaishou industrial platform.
 
-## CIKM 2025
+#### BEAT: Behavior Tokens Speak Louder than Words
+- **Authors**: AAAI 2026
+- **DOI**: <https://doi.org/10.1609/aaai.v40i25.39252>
+- **Abstract & Innovations**: Designs semantic alignment regularization to embed behavior tokens directly into the input space of frozen language models. Improves zero-shot recommendation while generating coherent explanations. Tested on 3 public datasets.
 
-### Best Paper Awards
-
-| Title | Key Contribution |
-|---|---|
-| **Reconsidering GAE in Link Prediction** | 重新审视 GAE 在链接预测中的应用。 |
-| **LLM-based Counterfactual Generation with Augmented Knowledge** | 基于知识增强的 LLM 反事实生成。 |
-
----
-
-## arXiv Recent Papers (arXiv:2607.xxxxx, Jul 2026)
-
-### Recommendation / CTR
-
-| Title | Authors / Affiliation | Key Contribution | Link |
-|---|---|---|---|
-| **PromptPack: LLM-as-a-Judge Annotation for Ads & Recommendation** | ByteDance | 用 LLM 作为标注器为广告和推荐系统生成高质量标注（user interest、ad utility、saliency、quality），在 X 上 CTR +8.2%，视频参与度提升显著。 | [arxiv.org/abs/2607.20528](https://arxiv.org/abs/2607.20528) |
-| **DAE: A Disentangled Autoencoder Framework for Sequential CTR** | — | 解耦自编码器用于序列化 CTR 预测，提升特征交互建模能力。 | [arxiv.org/abs/2606.15573](https://arxiv.org/abs/2606.15573) |
-
-### Agent Systems / Code Generation
-
-| Title | Authors / Affiliation | Key Contribution | Link |
-|---|---|---|---|
-| **Speculate with Memory: Accelerate LLM Agents with Memory** | — | 利用记忆机制加速 LLM Agent 推理，减少重复计算。 | [arxiv.org/abs/2607.12236](https://arxiv.org/abs/2607.12236) |
-| **OpenAgent: An Open Framework for LLM-based Agents** | — | 开放式 LLM Agent 框架。 | [arxiv.org/abs/2607.08964](https://arxiv.org/abs/2607.08964) |
-
-### Benchmarks
-
-| Title | Key Contribution | Link |
-|---|---|---|
-| **Long-Horizon-Terminal-Bench** | 评估 Agent 在长期任务中终止决策能力的基准。 | [arxiv.org/abs/2607.08964](https://arxiv.org/abs/2607.08964) |
-| **MAD-VQA: Multimodal Audio-Visual QA Benchmark** | 多模态音频-视觉问答基准。 | [arxiv.org/abs/2607.09336](https://arxiv.org/abs/2607.09336) |
+### 2.2 Additional AAAI 2026 RecSys Papers (from en.papernotes.org)
+- **BidSeesaw**: Bidirectional seesaw mechanism for CTR prediction
+- **DMLP**: Deep MLP-based interaction modeling
+- 27 papers total across Data Mining & Knowledge Management tracks
 
 ---
 
-## Key Trends & Observations
+## 3. NeurIPS 2025 (San Diego, Dec 2-7)
 
-1. **Agentic AI 为主线**: KDD 2026 以 Agentic Data Science 为核心主题，ICML 2026 同样关注 Agent 系统的推理与规划能力。
-2. **LLM 对齐与安全**: NeurIPS 2025 的 Artificial Hivemind、ICML 2026 的 Geo-Cultural Safety Alignment、AAAI 2026 的全球观点对齐均聚焦 LLM 安全性。
-3. **多轮对话与上下文**: ICLR 2026 发现 LLM 在多轮对话中容易迷失，Transformers 的内在简洁性得到理论证明。
-4. **生成式推荐系统**: KDD 2026 的 GRAB、CVPR 2026 的 Draft-and-Refine 范式、以及 arXiv 上的 PromptPack 均展示生成式方法在推荐与广告中的突破。
-5. **数据投毒与鲁棒性**: ICML 2026 和 NeurIPS 2025 均关注推荐系统与 LLM 对数据投毒攻击的脆弱性。
-6. **Scaling Laws 持续演进**: NeurIPS 2025 的 Superposition Neural Scaling、AAAI 2026 的合成数据 Scaling Laws 为 Scaling 研究提供新视角。
-7. **多语言与低资源语言**: ICML 2026 的阿拉伯语 LLM、ICLR 2026 的非洲语言评估表明多语言 AI 成为新关注点。
+**Scale**: 5,290 accepted papers. 77 Orals (top 1.5%).
+
+### 3.1 Best Paper Awards
+
+#### Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond)
+- **Authors**: Liwei Jiang, Yuanjun Chai, Margaret Li, Mickel Liu, Raymond Fok, Nouha Dziri, Yulia Tsvetkov, Maarten Sap, Yejin Choi
+- **Affiliation**: University of Washington / Carnegie Mellon / Allen Institute for AI
+- **arXiv**: <https://arxiv.org/abs/2510.22954>
+- **Track**: Datasets & Benchmarks (Best Paper)
+- **Abstract & Innovations**: Introduces INFINITY-CHAT dataset (26K+ open-ended queries from WildChat, 31K+ human annotations) with a taxonomy of 6 top-level / 17 subcategories of open-ended prompts. Evaluates 70+ LLMs and finds pervasive "artificial hivemind" — extreme mode collapse both intra-model (repeatedly generating same outputs) and inter-model (different model families converging on strikingly similar responses). Shows RLHF and instruction tuning homogenize creative latent space. Current reward models are poorly calibrated to diverse human preferences.
+- **Comparison**: Prior benchmarks focus on tasks with ground-truth answers; INFINITY-CHAT is the first large-scale resource for studying open-endedness. Reveals that temperature scaling and model ensembles do NOT guarantee diversity.
+
+#### Gated Attention for Large Language Models: Non-linearity, Sparsity, and Attention-Sink-Free
+- **Authors**: Zihan Qiu, Zekun Wang, Bo Zheng, Zeyu Huang, Kaiyue Wen, Songlin Yang, Rui Men, Le Yu, Fei Huang, Suozhi Huang, Dayiheng Liu, Jingren Zhou, Junyang Lin
+- **Affiliation**: Alibaba Qwen Team
+- **arXiv**: <https://arxiv.org/abs/2505.06708>
+- **Track**: Best Paper + Oral
+- **Abstract & Innovations**: Adds a learnable, input-dependent sigmoid gate immediately after Scaled Dot-Product Attention (SDPA). Systematically explored 5 gating positions (G1-G5) and 30+ variants on 15B MoE and 1.7B dense models trained on 3.5T tokens. G1 position (sigmoid gate after SDPA) eliminates attention sink phenomenon, improves training stability (no loss spikes), and enhances long-context extrapolation. Already integrated into Qwen3-Next production architecture.
+- **Comparison**: Prior attention sink fixes are heuristic (sink tokens); gated attention provides a principled architectural solution. Open-source implementation at <https://github.com/qiuzh20/gated_attention>.
+
+#### 1000 Layer Networks for Self-Supervised RL
+- **Authors**: Kevin Wang, Ishaan Javali, Michał Bortkiewicz, Tomasz Trzciński, Benjamin Eysenbach
+- **Track**: Best Paper
+- **Abstract & Innovations**: Scales RL networks to 1,024 layers, achieving 2x-50x improvements in goal-conditioned self-supervised RL. Shatters the conventional wisdom that RL networks should be shallow (2-5 layers).
+
+#### Why Diffusion Models Don't Memorize
+- **Authors**: Tony Bonnaire, Raphaël Urfin, Giulio Biroli, Marc Mézard
+- **arXiv**: <https://arxiv.org/abs/2505.17638>
+- **Track**: Best Paper
+- **Abstract & Innovations**: Identifies two distinct timescales in diffusion model training: τ_gen (learning to generate valid samples) and τ_mem (beginning to memorize training instances). Provides theoretical and empirical analysis of implicit dynamical regularization.
+
+### 3.2 Runner-Up Papers
+- Test of Time Award: Faster R-CNN
+- Additional runner-up papers in oral/poster tracks
+
+---
+
+## 4. ICLR 2026
+
+**Scale**: 223 oral papers (selected from thousands of submissions).
+
+### 4.1 Stanford SAIL at ICLR 2026
+- Featured papers include GritLM, STARK, and other works (details at <https://ai.stanford.edu/blog/iclr-2026/>)
+
+### 4.2 ICLR 2026 Oral Papers
+- Full list with Chinese translations maintained at <https://github.com/XinyuLiuCs/iclr2026-oral-papers>
+- 223 oral papers across all tracks
+
+---
+
+## 5. CVPR 2026
+
+**Scale**: 4,000+ papers accepted.
+
+### 5.1 Highlights
+- **Llama for Image Generation**: Meta's Llama model adapted for image generation
+- **ProSpect**: Progressive spectral methods
+- **S4D Video Understanding**: State-space models for video
+- **Gemini-CLIP**: Google's Gemini adapted for CLIP-style tasks
+- Full highlights at <https://resources.paperdigest.org/2026/04/cvpr-2026-papers-highlights/>
+
+---
+
+## 6. KDD 2026 (Jeju Island, Aug 9-13)
+
+**Status**: Proceedings published on ACM Digital Library.
+
+### 6.1 Notable Papers
+- **GR4AD: Generative Recommendation for Large-Scale Advertising** (Kuaishou, arXiv: 2602.22732)
+  - VSL (Value-Aware Supervised Learning) + RSPO (Ranking-Guided Softmax Preference Optimization)
+  - Dynamic beam serving with adaptive beam width
+  - **4.2% ad revenue improvement** over DLRM-based stack in online A/B tests
+  - Fully deployed in Kuaishou advertising system (400M+ users)
+  - Demonstrates both model scaling and inference-time scaling gains
+
+---
+
+## 7. ACL 2026 (San Diego, Jul 2-7)
+
+**Scale**: 2,296 main + 2,163 findings = 4,459 total papers. Record year.
+
+### 7.1 Highlights
+- Full highlights at <https://www.paperdigest.org/2026/06/acl-2026-papers-highlights/>
+- Largest ACL to date with 4,459 papers
+
+---
+
+## 8. SIGIR 2026 (Melbourne, Jul 20-24)
+
+**Scale**: 113 full papers + 45 short papers.
+
+---
+
+## 9. WWW 2026 (Sydney, Apr 28 - May 2)
+
+### 9.1 Notable Recommendation Papers
+- **Talos**: Optimizing Top-K Accuracy in Recommender Systems
+- **Improving Multi Task Recommendations via Cross User Learning** with Hybrid Pointwise and Pairwise Ranking Loss
+- **ONeRec**: Openness-Aware and Adaptive Proactive News Recommendation
+- **Bridging Time and Domains**: Time-aware Framework for Cross-Domain Sequential Recommendation
+- **PRISM**: Personalized Recommendation via Information Synergy Module
+
+---
+
+## 10. EMNLP 2025 (Suzhou, China)
+
+**Format**: Hybrid (in-person + virtual)
+
+---
+
+## 11. RecSys 2025
+
+**Status**: Accepted contributions page live. Meta AI confirmed as gold supporter.
+
+---
+
+## Cross-Conference Trends
+
+### Trend 1: LLM-based Generative Recommendation Goes Industrial
+Multiple papers from Kuaishou (Align³GR, UniRec, GR4AD) demonstrate full deployment of generative recommendation at scale. The progression: TIGER → OneRec → UniRec/GR4AD shows rapid industrialization of Semantic ID + autoregressive decoding paradigm.
+
+### Trend 2: Alignment Taxonomy Expands
+Align³GR establishes three-level alignment (token/behavior/preference). Reward hacking analysis reveals DPO-style objectives can decouple training metrics from actual ranking quality. Progressive DPO with self-play and real-world feedback becomes the new standard.
+
+### Trend 3: Non-Euclidean Geometry for Recommendation
+HG-Rec (hyperbolic RQ-VAE) and HVAE (hyperbolic VAE) both demonstrate that hyperbolic geometry better captures long-tail and hierarchical item structures than Euclidean embeddings.
+
+### Trend 4: Auction Theory Meets LLM Creatives
+ICML 2026 papers integrate LLM inference cost into auction mechanism design, challenging the assumption that "better predictions → better outcomes" and introducing Stackelberg game formulations.
+
+### Trend 5: Safety & Robustness in Multimodal Rec
+VENOMREC demonstrates cross-modal poisoning attacks. Reward hacking analysis provides diagnostic tools for LLM-based recommendation failures.
+
+### Trend 6: MoE Must Be Redesigned for Rec
+Meta's "Sparse by Design" shows direct MoE transfer from LLMs fails; relevance-driven scaling is needed.
+
+### Trend 7: Attention Mechanism Revolution
+Gated Attention (NeurIPS 2025 Best Paper) is already in production (Qwen3-Next). Simple sigmoid gating after SDPA eliminates attention sinks and improves long-context performance.
+
+### Trend 8: RL Depth Scaling
+1000-layer networks for RL shatter the shallow-network assumption, opening new possibilities for robotic manipulation and multi-agent coordination.
+
+---
+
+## Key Industrial Deployments
+
+| Paper | Company | Scale | Metric |
+|-------|---------|-------|--------|
+| Align³GR | Kuaishou | Full platform | +17.8% Recall@10 |
+| GR4AD | Kuaishou | 400M+ users | +4.2% ad revenue |
+| UniRec (Gen) | Kuaishou E-commerce | Online A/B | +22.6% HR@50 |
+| Gated Attention | Alibaba Qwen | Qwen3-Next | Production deployed |

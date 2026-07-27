@@ -54,6 +54,7 @@
 | [tech-report-digest](synthesis/2026-07-24/tech-report-digest.md) | LLM Tech Report Digest — 2026-07-24 | 2026-07-24 | tech-report, moe, scaling, multimodal, reasoning, daily-digest |
 | [tech-report-digest](synthesis/2026-07-26/tech-report-digest.md) | LLM Tech Report Digest — 2026-07-26 | 2026-07-26 | tech-report, moe, hybrid-attention, reasoning, multimodal, long-context, daily-digest |
 | [tech-report-digest](synthesis/2026-07-27/tech-report-digest.md) | LLM Tech Report Digest — 2026-07-27 | 2026-07-27 | tech-report, moe, hybrid-attention, reasoning, multimodal, long-context, daily-digest |
+| [conference-digest](synthesis/2026-07-27/conference-digest.md) | Conference Digest: 2025-2026 Top ML/AI Venues | 2026-07-27 | conference-digest, ICML2026, AAAI2026, NeurIPS2025, ICLR2026, CVPR2026, KDD2026, ACL2026, recommendation, LLM, advertising |
 | [arxiv-paper-check](synthesis/2026-07-25/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (July 25, 2026) | 2026-07-25 | arxiv, ai, ctr, recommendation, agents, reasoning, rl |
 
 ## Papers
