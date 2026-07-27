@@ -4,6 +4,19 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-27] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 27, 2026)
+- New page: wiki/synthesis/2026-07-27/game-rl-daily.md
+- Coverage: 35 curated papers across 7 categories
+- Game RL (8): SPIRAL self-play +10.5% reasoning (Meta FAIR), STRATAGEM trajectory-modulated transfer, Augmenting Game AI with DRL (CoG 2026), CGSReg concept-guided Atari Pong, Multiplayer World Models 5B Rocket League 4-player 20fps, Γ-World macro-micro 24fps, WorldCompass RL world models, When Actions Disappear adversarial masking
+- LLM Game Agents (8): Nemobot Shannon taxonomy+LLMs (NTU), Sensi curriculum 50-94× sample efficiency (ARC-AGI-3), MEMO memory-augmented self-play 19× fewer games, Hierarchical LLM+RL 2v2 KoTH (AAMAS 2026), HiPER 97.4% ALFWorld, Latent Bridge fast/slow VLM coupling, Pareto Distillation mobile MOBA 12.4× speedup, Think in Games Honor of Kings
+- Foundation Models (5): NitroGen CVPR 2026 NVIDIA 40K hrs/1000+ games, Scaling Behavior Cloning 8300+ hrs open BC, Generalist GP survey Tsinghua 5-level roadmap 228 refs, GameVerse VLM video reflection benchmark, OpenGame GameCoder-27B agentic coding
+- PCG (3): Multi-task PCGRL DeBERTa Scientific Reports, WCRL WFC+PCGRL hybrid Lode Runner, Co-adaptive DRL Unity level design
+- Benchmarks (5): OmniGameArena UE5 12 games IDC improvement dynamics, CausalGame 14 scenarios 30 LLMs causal thinking, GVGAI-LLM infinite games, lmgame-Bench 13 models, VideoGameBench commercial games
+- Industry (4): OPINE-World programmatic world model ARC-AGI-3 78.4 score, WorldLLM curiosity-driven theory-making, Matrix-Game 3.0 40fps 720p real-time, Reinforcement World Model Learning +19.6pt ALFWorld
+- Related (6): HiMAC hierarchical macro-micro +16% WebShop, FMSP open-ended strategy discovery, Active Zero self-evolving VLMs +5.7% reasoning, Seirênes adversarial self-play +10.2pts, StarBench turn-based RPG benchmark (AAMAS 2026), ICM+A3C curiosity-driven exploration
+- Key themes: Multiplayer world models reach real-time (3 systems 20-40fps); self-play generates transferable reasoning (SPIRAL→STRATAGEM→MARS); foundation models at internet scale (NitroGen CVPR 2026 40K hrs); hierarchical RL+LLM architectures dominate complex games (HiPER 97.4%); benchmarks maturing rapidly (OmniGameArena IDC, CausalGame causal reasoning); industry deployment advances (Pareto mobile 12.4× speedup, Matrix-Game 3.0 real-time)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-25] synthesis | arXiv Paper Check — AI & CTR (July 25, 2026)
 - New page: wiki/synthesis/2026-07-25/arxiv-paper-check.md
 - Coverage: 25+ curated papers from cs.AI (260 new Jul 24), cs.IR (15 new Jul 24), cs.LG (169 new Jul 24), cs.CL (110 new Jul 24)
