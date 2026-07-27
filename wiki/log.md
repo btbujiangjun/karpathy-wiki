@@ -4,6 +4,17 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-25] synthesis | arXiv Paper Check — AI & CTR (July 25, 2026)
+- New page: wiki/synthesis/2026-07-25/arxiv-paper-check.md
+- Coverage: 25+ curated papers from cs.AI (260 new Jul 24), cs.IR (15 new Jul 24), cs.LG (169 new Jul 24), cs.CL (110 new Jul 24)
+- CTR/Recommendation (6): DLMRec diffusion LM for rec, Cold-item SID temporal perspective (2607.21101), CDL cardinality-decomposed loss, RAMP robust ad rec (ICTIR 2026), Topology-Aware Tokenization (RecSys 2026), PRL probabilistic residual learning (RecSys 2026)
+- AI Agents & Training (7): OpenForgeRL harness-native agent training (ICLR 2027), AREX recursive self-improving deep research, Agentic Context Management, GuardianAgentBench, AttriMem attribution-guided memory, MemTools unified agent memory, CAMeR keyword-gated memory
+- RL & LLM Training (4): Dark Room GRPO dense reward pathology, Windowed-MTP million-token MTP, Token Budget Saturation, Multi-turn RL CUDA kernels
+- LLM Efficiency & Architecture (4): Error Certificates KV-cache eviction, Progressive Cramming, Adaptive Depth Sparse (ICIC 2026), KroQuant Diffusion Transformer quantization
+- Safety & Evaluation (3): Robust Critics multi-turn MDP defense, AI Assistants Overassist, Position Bias ceiling effects
+- Key themes: Diffusion as alternative to autoregressive rec; cold-start limits of Semantic-IDs; GRPO dense reward pathology (z-scoring destroys policy); agent memory as architecture-level problem; harness-native agent training; recursive self-improvement for deep research
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-27] synthesis | LLM Tech Report Daily (2026-07-27)
 - New page: wiki/synthesis/2026-07-27/tech-report-digest.md
 - Coverage: 19 companies' latest technical reports and model releases
@@ -57,6 +68,19 @@
 - Sectors: Energy 5只 + Financials 4只 + Utilities 4只 + Healthcare 2只 + Industrials 1只 + Tech 1只 + Comms 1只
 - Key themes: 能源+金融双主线(油价$96+M&A $1.2T+IB fees创纪录); 动量因子载体从科技→能源/金融; 均值回复机会(GOOGL/MSFT 31%/22%折价); 公用事业广度最强(90%在200dMA上方); 科技板块在滞后象限
 - Key catalysts: 7/29 MSFT财报/7/30 AAPL+META+AMZN财报/7/31 Fed决议/8/1关税截止
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-25] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 25, 2026)
+- New page: wiki/synthesis/2026-07-25/game-rl-daily.md
+- Coverage: 18 curated papers across 7 categories
+- Game RL (4): Odysseus 100+ turn VLM RL Mario (Princeton, turn-level critic PPO), Augmenting Game AI CoG 2026 (300K params/170μs inference), Multi-task PCGRL (Scientific Reports), SPA self-play world model transfer (ICLR 2026)
+- LLM Game Agents (4): Nemobot Shannon taxonomy+LLMs (NTU), GameCraft-Bench 140 Godot tasks (41.46% best), GameUIAgent LLM game UI design, MEMOPILOT test-time learning RL over memory
+- Foundation Models (2): NitroGen CVPR 2026 NVIDIA 40K hrs/1000+ games/52% improvement, Generalist GP survey Tsinghua 5-level roadmap 228 refs
+- PCG (2): Multi-task PCGRL Scientific Reports, PCG via GenAI survey Tohoku
+- Benchmarks (3): OmniGameArena UE5 12 games IDC, GameDevBench 333 tasks 53.8% best, GameGen-Verifier 92.2% accuracy 16.6× speedup
+- Industry (2): MLOps for real-time game AI, INFUSE engine $0.50/session
+- Related (2): Curiosity-driven exploration Deathmatch SOTA, Self-Play Meta-RL multi-agent
+- Key themes: VLM+RL scaling to 100+ turns (Odysseus); verification outpaces generation (GameGen-Verifier 92.2% vs GameCraft-Bench 41.46%); industry deployment cost optimization ($200→$0.50/session); self-play enables easy-to-hard transfer (SPA ICLR 2026)
 - Updated: wiki/index.md, wiki/log.md
 
 ## [2026-07-24] synthesis | WorldQuant 101 Alpha 因子选股日报 (2026-07-24)
@@ -3301,3 +3325,17 @@
 - LLM / Neuro-Symbolic (1): SoftReason
 - Key themes: Generative CTR architectures at scale, streaming user profiles with LLM+RL, zero-weight recommendation, recursive sequential modeling, diffusion-based re-ranking, agentic recommendation roadmaps, post-hoc fairness alignment
 - New pages: wiki/synthesis/2026-07-24/arxiv-daily.md
+
+## [2026-07-25] synthesis | arXiv AI Search Report (2026-07-25)
+- New page: wiki/synthesis/2026-07-25/arxiv-ai-search.md
+- Coverage: 25+ papers across 9 categories
+- CTR Prediction (4): CADET LinkedIn decoder-only +11.04% CTR, GRAB Baidu generative CTR +3.05% revenue +3.49% CTR, DS-MLP dual-stream MLP SOTA (TKDD), ML-DCN Pinterest +1.89% CTR
+- Generative Recommendation (6): TokenMixer-Large 7B ByteDance +2.98% GMV, UniMixer unified scaling laws, ULTRA-HSTU Meta 5.3× training/21.4× inference speedup, OneRec Kuaishou end-to-end generative, RecGPT-V3 Taobao Memory Hub +3.97% GMV, PinFM Pinterest foundation model
+- Sequential Modeling (4): LONGER ByteDance 10+ scenarios billion users, HLLM hierarchical LLM, R²ec reasoning recommender NeurIPS 2025, RecZero RL-based reasoning
+- Advertising & Auto-Bidding (3): GRAD Meituan MoE+Value Estimator ROI+10.68%, GenCTR two-stage generative CTR, JD-BP joint-decision bidding
+- LLM4Rec (4): Full-Stack LLM sequential, LLM agent users study, Autonomous Info Seeking survey, RecGPT series
+- Semantic ID & Generative Retrieval (3): GPSD Alibaba KDD 2025, UniSID end-to-end, generative retrieval deployed
+- AI for Games (6): Game-theory+RL border defense, SPIRAL self-play ICLR 2026, Think in Games LLM+RL, NitroGen NVIDIA generalist, Nemobot LLM game agents, Multi-agent KTO
+- LLM Infrastructure (3): KV Cache optimization survey, Dynamic Agent Skills survey, Understanding LLMs
+- Key trends: Generative CTR paradigm shift (discriminative→generative pre-training+fine-tuning), token-based ranking scaling to 7B+, foundation models for rec at billion scale, LLM4Rec maturing from feature encoding to reasoning chains, semantic IDs replacing traditional item IDs, auto-bidding reframed as generative sequence modeling
+- Updated: wiki/index.md, wiki/log.md
