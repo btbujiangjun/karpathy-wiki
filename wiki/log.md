@@ -4,6 +4,17 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-27] synthesis | WorldQuant 101 Alpha 因子选股日报 (2026-07-27)
+- New page: wiki/synthesis/2026-07-27/wq101-alpha-daily.md
+- Coverage: WorldQuant 101 Alpha 因子框架筛选美股 Top 20
+- Market: S&P 7,412(+0.05%日/-0.6%周/+8.3%YTD)/Nasdaq 24,976(-0.64%日/-2.1%周)/Dow 51,947(+0.46%日/-0.9%周)/VIX 18.77
+- Factors: Alpha#1 动量(15次/75%主导) + Alpha#6 量价(13次/65%) + Alpha#19 均值回复(7次/35%) + Alpha#53 反转(4次/20%) + Alpha#41 趋势(2次/10%) + Alpha#12 缩量(3次/15%)
+- Top 5: XOM(9.5)/UNH(9.3)/LMT(9.3)/JPM(9.0)/RTX(9.0)
+- Sectors: Energy 4只 + Financials 4只 + Healthcare 3只 + Utilities 3只 + Industrials/Defense 3只 + Comms 1只 + RE 1只
+- Key themes: 能源+金融+国防三主线(油价$100+/NII加速/军备竞赛); 超卖均值回复(UNH-20%/GOOGL-31%); 公用事业广度最强(90%在200dMA上方); 科技板块-3.67%进入Lagging象限
+- Key catalysts: 7/29 MSFT财报/7/30 AAPL+META+AMZN财报/7/31 Fed决议(加息概率30-38%)/8/1关税截止
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-27] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 27, 2026)
 - New page: wiki/synthesis/2026-07-27/game-rl-daily.md
 - Coverage: 35 curated papers across 7 categories
