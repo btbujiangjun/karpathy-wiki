@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-27] synthesis | LLM Tech Report Daily (2026-07-27)
+- New page: wiki/synthesis/2026-07-27/tech-report-digest.md
+- Coverage: 19 companies' latest technical reports and model releases
+- Major updates: DeepSeek V4 GA (1.6T/49B MIT, CSA+HCA attention, 1M context), Meta Llama 4 Scout 10M context/Maverick/Behemoth, Google Gemini 3.6 Flash 17% token savings, Moonshot Kimi K3 2.8T paused subs, Zhipu GLM-5.2 744B MIT, xAI Grok 4.5 $2/$6, Anthropic Claude voice mode + AMD $5B deal, Mistral Magistral Medium pure RL, Qwen 3.8 Max 2.4T, Apple AFM 3B on-device, NVIDIA Nemotron 3 Ultra 550B Mamba-hybrid, ByteDance Doubao 1.5-pro MoE, InternLM Intern-S1-Pro 1T, StepFun Step 3.7 Flash 196B 400TPS, 01.AI Yi-Lightning 2, Baichuan M4 3.3% hallucination
+- Key trends: MoE mainstream (all major releases), hybrid attention (Mamba+Attention, CSA+HCA), 10M context (Llama 4 Scout), pricing wars (DeepSeek MIT vs closed models), agent capabilities (GPT-5.6 Sol, Kimi K2 256+ tools), safety-first releases (System Cards standard)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-27] synthesis | arXiv Paper Check — AI & CTR (July 27, 2026)
 - New page: wiki/synthesis/2026-07-27/arxiv-paper-check.md
 - Coverage: 18 curated papers from cs.AI (144 new Jul 27), cs.IR, cs.LG
