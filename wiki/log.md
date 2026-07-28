@@ -56,6 +56,18 @@
 - Key trends: MoE mainstream (all major releases), hybrid attention (Mamba+Attention, CSA+HCA), 10M context (Llama 4 Scout), pricing wars (DeepSeek MIT vs closed models), agent capabilities (GPT-5.6 Sol, Kimi K2 256+ tools), safety-first releases (System Cards standard)
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-07-28] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-07-28)
+- New page: wiki/synthesis/2026-07-28/investment-daily.md
+- Coverage: 美股/港股/A股/中概股/EV/AI热点 8大板块
+- US stocks: S&P 7413(+0.02%)/Nasdaq 24932(-0.18%)/Dow 52210(+0.51%)/VIX 18.67; AAPL+1.17% $4.93T反超NVDA登顶; NVDA-4.99% CDS+14bp纪录; 费城半导体-2.23%较6月高点-20%+技术性熊市; ASML-5%+/AMD-5.17%/SK Hynix跌破IPO价/SanDisk-11%+
+- A-shares: 长鑫科技科创板首日+465%市值3.27万亿登顶A股第一/成交额1411亿创纪录; 中际旭创H股HK$980定价7/30挂牌; 创业板+3.16%/芯片板块净流入687亿
+- HK stocks: 恒科近七日+8%+; 快手+8%(可灵AI融资$30亿); 智谱解禁+13%; MiniMax-18%; 联想+9%
+- China ADR: 金龙+2.51%; BABA+2.56%/PDD+2.65%/TME+5.08%/BILI+4.02%/XPeng+3.65%/LI+4.13%
+- EV: TSLA-1.22% Q2 FCF-$10.9亿/Capex>$25B; XPeng 36717台+229%YoY; BYD 344296台
+- AI hot themes: Big5 AI Capex$7250亿(+77%YoY); 高盛建议"系统性做多中国AI全产业链"; 从韩国AI切换至中国AI; NVIDIA三位一体风险(CDS飙升); 财报季关键验证(MSFT/META/AAPL/AMZN+Fed)
+- Key catalysts: 7/29 MSFT/7/30 Meta+Apple+Amazon/7/31 Fed(加息概率34-38%)/8/1关税截止
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-28] synthesis | arXiv Paper Check — AI & CTR (July 28, 2026)
 - New page: wiki/synthesis/2026-07-28/arxiv-paper-check.md
 - Coverage: 18 curated papers from cs.AI (51 new Jul 27), cs.IR (6 new Jul 27), cs.LG (75 new Jul 27), plus replacement submissions
