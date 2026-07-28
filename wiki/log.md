@@ -3443,3 +3443,30 @@
 - Updated: wiki/index.md (added conference-digest entry)
 - New pages: wiki/synthesis/2026-07-28/conference-digest.md
 - Contradictions: none
+
+## [2026-07-28] synthesis | LLM Tech Report Digest — 2026-07-28 (19 companies)
+- Summary: wiki/synthesis/2026-07-28/tech-report-digest.md
+- Coverage: 19 companies, latest reports up to July 2026
+  - DeepSeek: V4-Pro (1.6T/49B MoE) + V4-Flash (284B/13B), CSA+HCA compression, Muon optimizer, 33T tokens, 1M context
+  - OpenAI: GPT-5 (SME 1400+ experts, dynamic reasoning, 256K tokenizer)
+  - Meta: LLaMA 4 Scout (10M ctx, 109B), Maverick (400B), Behemoth (1.8T preview) — arXiv WITHDRAWN
+  - Google: Gemini 1.5 (10M ctx Pro, 2M Flash), 99.2% needle recall, undisclosed params/training
+  - Anthropic: Claude Opus 4.7 (1M ctx) + Sonnet 4.6 (200K), Constitutional AI+RLHF
+  - Mistral: Magistral-Small/Medium (reasoning, 35+ languages, 128K ctx)
+  - Qwen3: Dense+MoE 0.6B–235B, 36T+ tokens, Hybrid Thinking, Apache 2.0
+  - 01.AI: Yi-Lightning (Enhanced MoE), RAISE safety, Arena #6
+  - Baichuan: M4 medical agent (Jun 2026), M3 235B outperforms GPT-5.2 on HealthBench
+  - Microsoft: Phi-4-reasoning-vision-15B (200B tokens), Mixture-of-LoRAs, o3-mini distillation
+  - Apple: AFM 2025 (3B on-device + PT-MoE server), Parallel-Track Transformer, 2-bit QAT
+  - NVIDIA: Nemotron 3 Ultra (550B Mamba-Attention Hybrid, 29B active), 128K ctx
+  - xAI: Grok 4 (256K ctx, pretraining-scale RL, ARC-AGI V2 SOTA 15.9%), no arXiv
+  - Amazon: Nova Premier (1M ctx, 200+ languages, distillation teacher)
+  - Zhipu: GLM-5 (744B/40B, DSA sparse attention, 7 domestic GPU platforms, 28.5T tokens)
+  - InternLM: Intern-S1-Pro (1T MoE+Mamba, science foundation model, 256K ctx)
+  - Moonshot: Kimi K2.5 (1T/32B MoE, Agent Swarm, joint vision-text RL), K3 2.8T preview
+  - StepFun: Step 3.5 Flash (196B/11B, MTP-3 100-300 tok/s), SWE-bench 74.4%
+  - ByteDance: Seed2.0 Pro/Lite/Mini, 4-dim evaluation, ~1/10 cost vs GPT-5.2
+- Key trends: MoE mainstream (15+ companies), 10M context (Scout/Gemini), Mamba/SSM revival, agent capabilities standard, native multimodal, domestic GPU adaptation
+- Updated: wiki/index.md (added tech-report-digest entry)
+- New pages: wiki/synthesis/2026-07-28/tech-report-digest.md
+- Contradictions: Meta LLaMA 4 arXiv paper WITHDRAWN
