@@ -56,6 +56,17 @@
 - Key trends: MoE mainstream (all major releases), hybrid attention (Mamba+Attention, CSA+HCA), 10M context (Llama 4 Scout), pricing wars (DeepSeek MIT vs closed models), agent capabilities (GPT-5.6 Sol, Kimi K2 256+ tools), safety-first releases (System Cards standard)
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-07-28] synthesis | arXiv Paper Check — AI & CTR (July 28, 2026)
+- New page: wiki/synthesis/2026-07-28/arxiv-paper-check.md
+- Coverage: 18 curated papers from cs.AI (51 new Jul 27), cs.IR (6 new Jul 27), cs.LG (75 new Jul 27), plus replacement submissions
+- AI Agents & Tools (4): FlowEvo training-free workflow-skill co-evolution 82.8% ALFWorld (+23.6pp), HierFlow coupled hierarchical search for agentic workflow synthesis, Role Drift 86% of RL gain vanishes when shortcuts removed, Procedural Knowledge Not Low-Rank LoRA fails r=16-128 effective rank 761-1026
+- CTR Prediction & Recommendation (5): RankGraph-2 Meta lifecycle co-design +0.96% CTR +2.75% CVR 20+ launches, RecGPT-V3 Taobao Memory Hub +3.97% GMV -52.4% resources, BARGE Tencent +0.60% CTR generative rec (KDD 2026 replacement), PinEqualizer Pinterest full funnel cold-start (KDD 2026), GRACE sustainable personalized recommendation
+- AI Safety & Robustness (4): FlowGuard ICML 2026 Spotlight multimodal defense <15% attack success, SIREN adversarial LLM rec manipulation 80.5% reproduction, Lost in Context ICML 2026 context anxiety, Red-Team evidential ceiling closed-form bounds
+- LLM Inference & Efficiency (4): AgentKVShift agentic memory 2-3.5× speedup 10-30% refresh, Molt PyTorch-native agentic RL framework, Compression-Based Sparse Attention 1.71 BPB 3.3× faster, RED-PIM processing-in-memory 66.42% geometric mean speedup
+- Multimodal (1): VLMs Read or Rewrite? transcription faithfulness 4.5 WER degradation
+- Key trends: Agent self-evolution goes training-free (FlowEvo, HierFlow); compound system failure modes invisible to accuracy (Role Drift 86% spurious); LoRA hits procedural knowledge ceiling; CTR infrastructure matures (RankGraph-2, RecGPT-V3, BARGE all deployed); context anxiety as efficiency bottleneck; adversarial vulnerability of LLM recommenders
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-27] synthesis | arXiv Paper Check — AI & CTR (July 27, 2026)
 - New page: wiki/synthesis/2026-07-27/arxiv-paper-check.md
 - Coverage: 18 curated papers from cs.AI (144 new Jul 27), cs.IR, cs.LG
