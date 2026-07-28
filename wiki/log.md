@@ -3482,3 +3482,14 @@
 - Updated: wiki/index.md (added tech-report-digest entry)
 - New pages: wiki/synthesis/2026-07-28/tech-report-digest.md
 - Contradictions: Meta LLaMA 4 arXiv paper WITHDRAWN
+
+## [2026-07-28] synthesis | WorldQuant 101 Alpha 因子选股日报 (2026-07-28)
+- New page: wiki/synthesis/2026-07-28/wq101-alpha-daily.md
+- Coverage: WorldQuant 101 Alpha 因子框架筛选美股 Top 20
+- Market: S&P 7,413(+0.02%)/Nasdaq 24,932(-0.18%)/Dow 52,210(+0.51%)/VIX 18.67
+- Factors: Alpha#1 动量(12次/60%) + Alpha#6 量价(9次/45%) + Alpha#19 均值回复(6次/30%) + Alpha#41 趋势(5次/25%) + Alpha#53 反转(4次/20%)
+- Top 5: AAPL(9.5)/JPM(9.3)/BAC(9.2)/ABBV(9.0)/RTX(9.0)
+- Sectors: Healthcare 5只 + Financials 4只 + Industrials 3只 + Tech 2只 + Energy 2只 + Comms 1只 + Staples 1只 + RE 1只 + Utilities 1只
+- Key themes: AAPL创历史新高$4.96T反超NVDA登顶/芯片SOX距6月高点-21%技术性熊市; 板块轮动→金融+医疗+消费必需品; Healthcare 5只入选为当日最大板块; 能源板块短期回调提供入场机会; 本周财报密集周(MSFT/META 7/29, AAPL/AMZN 7/30, Fed 7/31)
+- Key catalysts: 7/29 MSFT+META财报/7/30 AAPL+AMZN+MA+V财报/7/31 Fed决议(加息概率38%)/8/1关税截止
+- Updated: wiki/index.md, wiki/log.md
