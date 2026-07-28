@@ -3436,3 +3436,10 @@
 - Summary: wiki/synthesis/2026-07-26/conference-digest.md
 - Updated: wiki/index.md, wiki/log.md
 - New pages: wiki/synthesis/2026-07-26/conference-digest.md
+
+## [2026-07-28] synthesis | Conference Digest — 2026-07-28 (ICML/AAAI/ICLR/NeurIPS/CVPR/KDD/SIGIR/WWW/EMNLP/ACL/CIKM/RecSys + Agent/CTR/Gen Rec/Code/GenModels)
+- Summary: wiki/synthesis/2026-07-28/conference-digest.md
+- Coverage: 12+ venues, 50+ papers, 13+ labs across 17 sections
+- Updated: wiki/index.md (added conference-digest entry)
+- New pages: wiki/synthesis/2026-07-28/conference-digest.md
+- Contradictions: none
