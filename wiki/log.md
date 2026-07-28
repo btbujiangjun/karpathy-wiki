@@ -4,6 +4,19 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-28] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 28, 2026)
+- New page: wiki/synthesis/2026-07-28/game-rl-daily.md
+- Coverage: 30+ curated papers across 7 categories
+- Game RL (5): MARL-GPT foundation model SMAC/GRF/POGEMA, HRL-IM/CBS StarCraft micromanagement, AlphaZero Tablut asymmetric board game, VIP VLM autocurricula SMAC, Counterfactual feedback latent space
+- LLM Game Agents (8): AVA ACL 2026 StarCraft II VLM+MARL benchmark, Nemobot Shannon taxonomy+LLMs, PCSP 300-persona UE5 0% failure 22× faster, Bounded Autonomy live multiplayer LLM characters, Orchestrated Reality PA-POMDP GM-agent, COS-PLAY co-evolution +25.1%, Sensi 50-94× sample efficiency ARC-AGI-3, Orak KRAFTON 12-genre MCP benchmark
+- Foundation Models (5): NitroGen CVPR 2026 NVIDIA 40K hrs/1000+ games 52% transfer, Game-TARS 500B tokens outperforms GPT-5, Generalist GP survey 5-level roadmap, Pixels2Play 8300+ hrs open BC 20Hz, Odysseus 100+ turn VLM RL
+- PCG (7): AutoUE 3D Unreal Engine end-to-end, CreativeGame mechanic-aware iterative, WFC+PCGRL hybrid Lode Runner, Multiverse cross-game blending, MORTAR GECCO 2026 mechanic evolution, HDPCG high-dimensional, Forking Garden narrative arc
+- Benchmarks (5): BALROG ICLR 2025 6 environments, VideoGameBench 0.48% best VLM, GameVerse reflect-and-retry 15 games, MineExplorer Minecraft open-world, MineNPC-Task memory-aware
+- Industry (3): Bounded Autonomy live multiplayer deployment, PCSP UE5 64 agents sub-frame, MoEC ACL 2026 memory-routed MoE
+- Related Techniques (10): GLANCE curiosity VLM, HiPER hierarchical credit assignment, CDE curiosity LLM, SPEAR progressive self-imitation, CIG information gain, ExToken structured exploration, MineEvolve knowledge-driven, Echo CVPR 2026 experience transfer, WISE causal reasoning, Psy-CoT+RAPO psychology-grounded
+- Key themes: Foundation models for games (NitroGen/Game-TARS); self-play for reasoning transfer (SPIRAL/STRATAGEM); persona-scalable NPCs (PCSP); benchmark arms race (BALROG/VideoGameBench/GameVerse); LLM game world engineering; exploration innovations; hierarchical approaches winning; PCG maturity
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-26] synthesis | arXiv Paper Check — AI & CTR (July 26, 2026)
 - New page: wiki/synthesis/2026-07-26/arxiv-paper-check.md
 - Coverage: 18 curated papers from cs.AI (260 new Jul 24), cs.LG (169 new Jul 24)
