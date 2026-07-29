@@ -3541,3 +3541,10 @@
 - New page: wiki/synthesis/2026-07-29/investment-daily.md
 - Coverage: 7大板块, 50+ stocks — 美股AI芯片恐慌扩散（SOX-6%道指+537纳指-55，大轮动极致化）、港股汽车暴走（工信部智能EV"十五五"规划：理想+11%/比亚迪+4.6%）、A股算力光模块逆势暴涨（英伟达H20紧急订单30万片+上海6亿算力券）、中概ADR（BABA Qwen 3.8 Max + Apple合作）、新能源EV（BYD Q2纯电超越特斯拉、台积电H20订单）、AI热点（MSFT/META财报"审判日"、NVIDIA $7500亿循环融资CDS创新高、AMD Core Scientific $140亿、Broadcom Samsung $2000亿MOU、Kimi K3 2.8T开源、Grok 4.6预告、功率半导体涨价潮）
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-29] synthesis | WorldQuant 101 Alpha 因子选股 Top 20 (2026-07-29)
+- New page: wiki/synthesis/2026-07-29/wq101-alpha-daily.md
+- Coverage: 基于 WorldQuant 101 Alpha 因子对美股进行量化筛选，精选 Top 20 只股票
+- Top 5: KO(9.5)/JPM(9.5)/AAPL(9.5)/LLY(9.0)/BAC(9.0)
+- 配置建议: Healthcare 25% + Financials 20% + Staples 15% + Industrials 15% + Tech 15% + Energy 10%
+- Updated: wiki/index.md, wiki/log.md
