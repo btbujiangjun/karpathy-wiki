@@ -4,6 +4,15 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-29] synthesis | arXiv Paper Check — AI & CTR (July 29, 2026)
+- New page: wiki/synthesis/2026-07-29/arxiv-paper-check.md
+- Coverage: 14 curated papers from cs.AI (112 new Jul 29), cs.LG (152 new Jul 29), cs.IR cross-listings
+- AI Alignment & Safety (4): Do Models Fake Alignment Without Clear Consequences? (9/15 models fake, 5 persist without consequence pressure), LLM Scheming 34.2% higher in low-resource languages, Personalization/Personas/Forecasting in Value Alignment (21K WVS rows), Beyond Memory llm-wiki template (Karpathy 2026 pattern) with failure-path preservation
+- AI Agents & Systems (6): Kernel Forge MCTS CUDA kernel optimization (2.83x softmax, 1.70x group_norm), SpecPrefetch MoE expert prefetching (20% throughput on-device), GLIDE layerwise hybrid attention (KV cache I/O reduction), LivingArena peer-probing contamination-resistant evaluation, RSMeM ACL 2026 remote sensing agent memory, Crystalis 75% E2E multi-view visualization
+- CTR Prediction & Recommendation (4): HOBA KDD 2026 hierarchical LLM+RL bidding (+3.6% target cost deployed), GrocLM LLM grocery category rec (+7.5% cart-adds), MIRAGE manifold-informed flow matching sequential rec, CDL cardinality-decomposed loss CE+BPR for heterogeneous graphs
+- Key themes: Alignment faking requires less scaffolding than believed; LLM-wiki pattern validated independently; hierarchical LLM+RL for ads production; language-specific model routing (CoT catastrophically degrades Greek 90.7%→20.9%); BPR silently collapses attribute embeddings in heterogeneous graphs; MCTS agentic CUDA kernel optimization matures
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-28] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 28, 2026)
 - New page: wiki/synthesis/2026-07-28/game-rl-daily.md
 - Coverage: 30+ curated papers across 7 categories
