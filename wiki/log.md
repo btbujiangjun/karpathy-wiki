@@ -3515,3 +3515,11 @@
 - Key themes: AAPL创历史新高$4.96T反超NVDA登顶/芯片SOX距6月高点-21%技术性熊市; 板块轮动→金融+医疗+消费必需品; Healthcare 5只入选为当日最大板块; 能源板块短期回调提供入场机会; 本周财报密集周(MSFT/META 7/29, AAPL/AMZN 7/30, Fed 7/31)
 - Key catalysts: 7/29 MSFT+META财报/7/30 AAPL+AMZN+MA+V财报/7/31 Fed决议(加息概率38%)/8/1关税截止
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-29] synthesis | Tech Report Digest
+- New page: wiki/synthesis/2026-07-29/tech-report-digest.md
+- Coverage: 20 major AI companies — DeepSeek (V4/V3.2), OpenAI (GPT-5 System Card), Meta (LLaMA 4), Google (Gemini 2.5), Anthropic (Claude Opus 4), Mistral (Large 3), Alibaba (Qwen3), Microsoft (Phi-4), Apple (AFM 2025), NVIDIA (Nemotron 3 Ultra), xAI (Grok 4), Amazon (Nova), Zhipu AI (GLM-5), Shanghai AI Lab (Intern-S1-Pro), Moonshot AI (Kimi K2), StepFun (Step3), ByteDance (Seed 2.0), 01.AI (Yi-Lightning)
+- Company count: 20 (18 active with reports, Baichuan no recent report found)
+- Report count: 30+ technical reports / system cards
+- Key themes: MoE dominance (90%+ of new architectures); Hybrid Mamba-Attention (Nemotron 3); 1M+ context becoming standard (6 companies); Reasoning models with budget control (GPT-5, Gemini 2.5, Qwen3); Agentic RL training pipeline (DeepSeek V3.2, GLM-5, Kimi K2); Low-precision pre-training validation (NVFP4, FP4 quantization); Multi-modality unified (Llama 4, Gemini 2.5, Step3)
+- Updated: wiki/index.md, wiki/log.md
