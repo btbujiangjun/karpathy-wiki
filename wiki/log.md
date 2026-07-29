@@ -4,6 +4,19 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-29] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 29, 2026)
+- New page: wiki/synthesis/2026-07-29/game-rl-daily.md
+- Coverage: 40 curated papers across 7 categories
+- Game RL (11): Pluto StarCraft self-play, Coachable Agents Sony Horizon, Stale but Stable async trust regions, REGEN expert→generalist, DecoEvo co-evolution, When Agents Lie deception, Self-Play Meta-RL, Muon for agentic RL, Single-Rollout async optimization, CompactionRL, Princeton RL→FM thesis
+- LLM Game Agents (4): NPC-Bench immersion/safety, LLM-Driven NPCs cross-platform, ROE StarCraft II, LUDOBENCH LLM decision
+- Foundation Models (3): Princeton RL→FM thesis, MARSHAL multi-agent strategic LLM RL, Offline supervision for VLA
+- PCG (2): ChartGenEval corrupted chart evaluation, LUDOBENCH PCG scenarios
+- Benchmarks (5): Desktop-Delta Bench GUI, AgentGym2 ACL 2026 de-idealized, HANDBOOK.md long-context, GameCraft-Bench update, NRT-Bench red-teaming
+- Industry (5): KRAFTON 10 ICML 2026 papers, KRAFTON Raon proprietary model, NVIDIA Cosmos SIGGRAPH 2026, Sony GT Sophy→Horizon Forbidden West, ICML industry panel
+- Related (10): DiNAT-RCM curiosity VLM, HiSkill skill graphs, CoRT counterfactual replay, DecoEvo co-evolution, Speculate While You Reason, Interactive Reward Agent, HACO hedged computing, Orchestrated Reality POMDP, When Agents Lie deception, Game theory hallucination mitigation
+- Key themes: Self-play RL from scratch in classic games (Pluto StarCraft); coachable agents for AAA open-world (Sony GT Sophy→Horizon); KRAFTON as game AI research powerhouse (10 ICML 2026 papers); async RL stability framework (Stale but Stable); convergence of world models and game engines; LLM deception in games (When Agents Lie); benchmark proliferation; co-evolution and autocurricula; from specialization to generalization
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-29] synthesis | arXiv Paper Check — AI & CTR (July 29, 2026)
 - New page: wiki/synthesis/2026-07-29/arxiv-paper-check.md
 - Coverage: 14 curated papers from cs.AI (112 new Jul 29), cs.LG (152 new Jul 29), cs.IR cross-listings
