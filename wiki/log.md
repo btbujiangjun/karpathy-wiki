@@ -3523,3 +3523,8 @@
 - Report count: 30+ technical reports / system cards
 - Key themes: MoE dominance (90%+ of new architectures); Hybrid Mamba-Attention (Nemotron 3); 1M+ context becoming standard (6 companies); Reasoning models with budget control (GPT-5, Gemini 2.5, Qwen3); Agentic RL training pipeline (DeepSeek V3.2, GLM-5, Kimi K2); Low-precision pre-training validation (NVFP4, FP4 quantization); Multi-modality unified (Llama 4, Gemini 2.5, Step3)
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-29] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-07-29)
+- New page: wiki/synthesis/2026-07-29/investment-daily.md
+- Coverage: 7大板块, 50+ stocks — 美股AI芯片恐慌扩散（SOX-6%道指+537纳指-55，大轮动极致化）、港股汽车暴走（工信部智能EV"十五五"规划：理想+11%/比亚迪+4.6%）、A股算力光模块逆势暴涨（英伟达H20紧急订单30万片+上海6亿算力券）、中概ADR（BABA Qwen 3.8 Max + Apple合作）、新能源EV（BYD Q2纯电超越特斯拉、台积电H20订单）、AI热点（MSFT/META财报"审判日"、NVIDIA $7500亿循环融资CDS创新高、AMD Core Scientific $140亿、Broadcom Samsung $2000亿MOU、Kimi K3 2.8T开源、Grok 4.6预告、功率半导体涨价潮）
+- Updated: wiki/index.md, wiki/log.md
