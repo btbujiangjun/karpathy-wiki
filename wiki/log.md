@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-30] synthesis | LLM Tech Report Digest — 2026-07-30
+- New page: wiki/synthesis/2026-07-30/tech-report-digest.md
+- Coverage: 24 major AI companies' latest tech reports / system cards
+  - DeepSeek (V3/R1/V3.1/V3.2), OpenAI (GPT-5/5.3-Codex/5.6), Meta (Llama 4), Google (Gemini 2.5), Anthropic (Claude Opus 4–5 series), Mistral (Large 3), Qwen (Qwen3/3.5/3.5-Omni), Microsoft (Phi-4/Phi-4-reasoning), Apple (AFM 2025), NVIDIA (Llama-Nemotron/Nemotron 3 Nano/Ultra), xAI (Grok 3), Amazon (Nova), ByteDance (Seed1.5-VL/Seed-Thinking/Seed2.0), Zhipu (GLM-5), Moonshot (Kimi K2), InternLM (InternLM3), Baichuan (Baichuan4-Finance)
+- Key trends analyzed: MoE dominance, Thinking/Non-Thinking unification, RL as core reasoning training method, native multimodality, Agent capability focus, 1M+ context windows, post-training scaling laws, data efficiency
+- Updated: wiki/index.md
+
 ## [2026-07-30] synthesis | arXiv AI Research Scan — July 2026
 - New page: wiki/synthesis/2026-07-30/arxiv-ai-search.md
 - Coverage: 39 curated papers across 6 categories (LLMs, Recommendation/CTR/Advertising, Sequential Modeling/SSMs, Games/RL, AI Agents, Multi-Agent)
