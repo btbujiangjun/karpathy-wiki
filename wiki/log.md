@@ -410,6 +410,15 @@
 - Causal & Scientific (4): Causal-Audit (ACL 2026, auditable graph reasoning), S1-Omni (unified multimodal scientific foundation model), NeurOWL (neuro-symbolic ontology reasoning), ToolSciVer (multimodal scientific claim verification via visual tool RL)
 - LLM Efficiency (3): LLA (21.3× KV compression on H200), CAPC (cache-aware prompt compression 49% cost savings), LLMs layer-wise cross-lingual relevance encoding
 - Key themes: World models as general efficiency lever; production LLM rec maturing; MCP validated as agent infrastructure; auditable reasoning at ACL 2026; KV cache as new deployment frontier
+
+## [2026-07-30] synthesis | Conference Digest — 2026-07-30 (ICML 2026/NeurIPS 2025/ICLR 2026/AAAI 2026/KDD 2026/CVPR 2026/ACL 2026/EMNLP 2025/SIGIR 2026/WWW 2026/CIKM 2025/RecSys 2025)
+- New page: wiki/synthesis/2026-07-30/conference-digest.md
+- Coverage: Structured digest of 100+ papers across 12+ venues and 20+ labs
+  - Best papers, Honorable Mentions, and Notable Papers per venue with detailed methodology/innovation/results
+  - 6 cross-cutting trends: Attention/Architecture > Scale, LLM4Rec engineering convergence, Generative Rec goes production, Agentic AI everywhere, 3D/4D/Multimodal breakthroughs, RL post-training mature
+  - Venue statistics (acceptance rates, paper volumes)
+  - Link summary to all cited papers on arXiv, OpenReview, ACL Anthology
+- Updated: wiki/index.md, wiki/log.md
 - Updated: wiki/index.md, wiki/log.md
 
 ## [2026-07-21] synthesis | LLM Tech Report Daily (2026-07-21)
