@@ -4,6 +4,27 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-30] synthesis | arXiv AI Research Scan — July 2026
+- New page: wiki/synthesis/2026-07-30/arxiv-ai-search.md
+- Coverage: 39 curated papers across 6 categories (LLMs, Recommendation/CTR/Advertising, Sequential Modeling/SSMs, Games/RL, AI Agents, Multi-Agent)
+- Papers from: Alibaba, Tencent, Kuaishou, Huawei, Amazon, Sony AI, Microsoft Research, MIT, NUS, University of Edinburgh, etc.
+- Updated: wiki/index.md
+
+## [2026-07-30] synthesis | arXiv Daily Digest — 2026-07-30
+- New page: wiki/synthesis/2026-07-30/arxiv-daily.md
+- Coverage: 30+ curated papers across 10 categories:
+  - LLMs (7): Penelope localized latent recurrence, MODUS any-to-any multimodal, LLM Memory survey, Evaluation-Awareness suppression, LLM capability taxonomy, LLM understanding survey, LLM watermarking survey
+  - Reasoning (2): ThinkBooster unified TTC framework, LLM-as-a-Verifier
+  - Efficient Serving (2): KV Cache Optimization survey, masked dLLM acceleration
+  - Multi-Agent (5): MAS organizational science, Bayesian uncertainty monitoring, HiSkill skill graphs, Speculate-While-Reason joint agent-speculator RL, Messier agent eval corpus
+  - CTR/Advertising (5): CADET LinkedIn decoder-only, IDProxy Xiaohongshu MLLM cold-start, EST scaling laws Alibaba, HyFormer unified ByteDance, ML-DCN Pinterest
+  - Recommendation (5): BARGE Tencent generative rec +0.60% CTR, DLMRec diffusion LM for rec, MARS multi-agent re-ranking, TRWH text-driven GNN, OneTrans unified transformer
+  - Scaling Laws (5): Kunlun Meta, ULTRA-HSTU action encoding, MixFormer/TokenMixer ByteDance, UniMixer unified paradigm
+  - Sequential Modeling (1): NextFlow 6T multimodal tokens
+  - Games & RL (4): RL→FM Princeton thesis, Odysseus 100+ turn VLM RL, Strat-Reasoner strategic LLM, VLM game QA
+- Key themes: Decoder-only for everything (CTR, multimodal, rec); generative recommendation maturation; scaling laws for recommendation; unified sequence+feature modeling; test-time compute scaling; multi-agent LLM systems maturing; diffusion LMs for rec; RL→foundation models
+- Updated: wiki/index.md
+
 ## [2026-07-29] synthesis | Game RL & Game AI Bot — Daily Paper Digest (July 29, 2026)
 - New page: wiki/synthesis/2026-07-29/game-rl-daily.md
 - Coverage: 40 curated papers across 7 categories
@@ -3547,4 +3568,10 @@
 - Coverage: 基于 WorldQuant 101 Alpha 因子对美股进行量化筛选，精选 Top 20 只股票
 - Top 5: KO(9.5)/JPM(9.5)/AAPL(9.5)/LLY(9.0)/BAC(9.0)
 - 配置建议: Healthcare 25% + Financials 20% + Staples 15% + Industrials 15% + Tech 15% + Energy 10%
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-30] synthesis | arXiv Paper Check — AI & CTR
+- New page: wiki/synthesis/2026-07-30/arxiv-paper-check.md
+- Coverage: 19 curated papers from cs.LG/cs.IR/cs.AI submissions Jul 29-30, 2026
+- Topics: GRPO improvement (ReCo), RL fine-tuning (IPE), cross-task skill RL (SkillRise), latent reasoning rec (WhisperRec), decision-aware user simulation (DASH), two-clock CVR (TWICE Kwai), cold-start news (Kairos), thinking under uncertainty, cost-aware stopping, multi-agent vs self-refinement, privileged self-distillation, LLM-enhanced seq rec (IMFuse), multimodal imputation (CaIRec), multi-objective generative retrieval (OneRec), budget-aware LLM discovery, energy estimation, uncertainty-guided HTE, amortized moment matching
 - Updated: wiki/index.md, wiki/log.md
