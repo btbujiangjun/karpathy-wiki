@@ -3603,6 +3603,15 @@
 - 配置建议: Healthcare 25% + Financials 20% + Staples 15% + Industrials 15% + Tech 15% + Energy 10%
 - Updated: wiki/index.md, wiki/log.md
 
+## [2026-07-30] synthesis | WQ101 Alpha Daily — 美股因子选股 Top 20
+- New page: wiki/synthesis/2026-07-30/wq101-alpha-daily.md
+- Coverage: 基于 WorldQuant 101 Alpha 因子库对美股进行量化因子打分(6个因子维度)，精选 Top 20 只股票
+- Top 5: MSFT(9.5)/AAPL(9.3)/AMZN(9.0)/KO(9.0)/LLY(8.8)
+- 因子分布: Alpha#1 动量(40%出现率) + Alpha#19 均值回复(35%) + Alpha#41 趋势强度(30%)
+- 板块分布: 科技6只 + 必选消费4只 + 金融3只 + 医疗2只 + 能源/工业/消费/综合5只
+- 宏观背景: Fed 9月加息概率31.5%, SOX技术性熊市-20%+, 板块从科技→防御轮动
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-30] synthesis | arXiv Paper Check — AI & CTR
 - New page: wiki/synthesis/2026-07-30/arxiv-paper-check.md
 - Coverage: 19 curated papers from cs.LG/cs.IR/cs.AI submissions Jul 29-30, 2026
