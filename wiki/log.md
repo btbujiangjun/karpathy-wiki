@@ -4,6 +4,17 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-30] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-07-30)
+- New page: wiki/synthesis/2026-07-30/investment-daily.md
+- Coverage: 美股/港股/A股/中概股/EV/AI热点 11大板块
+- US stocks: S&P 7428(+0.21%)/Nasdaq 24876(-0.22%)/Dow 52747(+1.03%)/VIX 16.18(-14.4%); MSFT Q4 FY26超预期(Azure+43%/$90B/Copilot 3000万席位/$41B Capex); META Q2收入超预期但Capex上修至$130-145B AH-8%; AAPL盘中$5T市值; SK Hynix IPO遇冷跌破发行价; 费城半导体技术性熊市(-20%+)
+- HK stocks: 恒科+1.8%; 腾讯+5.28%(Golden Cross); 阿里+3.73%(Qwen3.8+Apple Intelligence); 理想+11%/蔚来+5%/小鹏+4.6%; 中际旭创03308.HK首日暗盘HK$971(-0.92%)
+- A-shares: 上证3828(+0.40%)/创业板3379(+1.55%)/科创50-0.87%; 消费板块爆发; 长鑫科技688825.SH首日暴涨466%市值3万亿; 光模块承压(中际旭创A股-15.69%回撤30%+)
+- China ADR: 金龙反弹; BABA+0.15%/JD+2.43%/PDD+1.21%/BIDU+3.42%; AI催化+低估值三重支撑
+- Key events: MSFT Q4超预期验证AI需求; META收入强劲但成本失控Capex$145B上限; 韩国芯片恐慌扩散(KOSPI熔断); 全球资金从韩国半导体→中国AI轮动; 模型价格战(推理成本2年降280倍)
+- Key catalysts: 7/30 AAPL+AMZN盘后财报; 7/31 Fed决议(加息概率31.5%); 中际旭创H股首日; 8/1关税截止
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-30] synthesis | LLM Tech Report Digest — 2026-07-30
 - New page: wiki/synthesis/2026-07-30/tech-report-digest.md
 - Coverage: 24 major AI companies' latest tech reports / system cards
