@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-30] synthesis | game-rl-daily — Game RL & Game AI Bot Survey
+- New page: wiki/synthesis/2026-07-30/game-rl-daily.md
+- Coverage: ~40 curated papers across 7 categories (Game RL, Game AI Bots, Game Foundation Models, PCG, Benchmarks, Industry Game AI, Related Techniques)
+- Notable papers: CAST, Superhuman Stratego, Solly, SPIRAL (ICLR 2026), Generals.io, CRUISE, PCSP (persona NPC), Bounded Autonomy, COS-PLAY, Sensi, Vox Deorum (Civ V), NitroGen (CVPR 2026 NVIDIA), Game-TARS (ByteDance), Optimus-3, JARVIS-VLA, MAIN-VLA, Pixels2Play, Scaling BC, VIPCGRL, PCGRLLM, IPCGRL, MIPCGRL, WCRL, Multiverse, Orak (KRAFTON), lmgame-Bench (ICLR 2026), OmniGameArena (UE5), GVGAI-LLM, IPR-1 (CVPR 2026), GT7 Reward Design (Sony AI), MARSHAL, Vision-Zero (ICLR 2026), SSP (ICLR 2026), SGA-ACR, LED-WM, ProPS, DiffFP, LSP, MAE, MARL Review (IEEE TG), Da Vinci Code, EPG
+- Updated: wiki/index.md
+
 ## [2026-07-30] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-07-30)
 - New page: wiki/synthesis/2026-07-30/investment-daily.md
 - Coverage: 美股/港股/A股/中概股/EV/AI热点 11大板块
