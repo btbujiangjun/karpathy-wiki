@@ -4,6 +4,18 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-31] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-07-31)
+- New page: wiki/synthesis/2026-07-31/investment-daily.md
+- Coverage: 美股/港股/A股/中概股/AI热点 10大板块
+- US stocks (7/30 close): S&P 7437.63(+1.66%)/Nasdaq 25122.18(+2.78%)/Dow 52208.06(+1.19%)/VIX 17.09(-17.28%); MSFT Q4 FY26 Azure首破$100B单日+16%(2008以来最佳,史上最大单日市值增长); AAPL Q3 FY26营收$109.42B(+16%)/EPS $2.02超预期,但Q4指引9-11%低于共识+大中华区$18.8B不及预期,盘后-7%; AMZN Q2 AWS $42.2B(+37% 18季最快)盘后+9%; META EPS $6.18 miss+Capex上修$135-145B,收盘-7.98%延续连跌; 芯片报复性反弹(LRCX+17.6%纪录季$6.72B/MU+17~18%/AMD+13%/SNDK+21%/SOXX+8%); GOOGL-0.91%; TSLA+3.2~3.5%
+- HK stocks (7/31 close): 恒指25837.72(-0.08%)/恒生科技4818.01(+0.30%)/国企指数8623.7(-0.24%); 7/30曾跌446点(中芯挫一成/智谱急泻逾28%/腾讯美团跌逾4%),7/31科技股企稳(腾讯盘中+1.16%); 汇控逆势破顶; 南向资金持续流入(阿里净流入30.91亿港元)
+- A-shares (7/31 open/intraday): 沪指3833.54(+0.76%)/深成指13690(+3.04%)/创业板指3411.61(+5.15%)盘中一度涨~6%,超4500股上涨; 领涨半导体/CPO/存储/PCB/机器人/光伏/锂电池; 驱动=政治局会议"政策更加积极稳市力度有望增加"+央行隔夜逆回购+国资增持(7月宽基ETF吸金超4100亿); 7/30中际旭创-9.15%; 长鑫科技(688825.SH)52-53元震荡企稳
+- China ADR (7/30): 金龙指数+2.07%; BABA+2.74%/JD+2.2%/PDD+2.2%/BIDU+1.45%
+- Macro: Fed 7/29按兵不动3.50-3.75%(9-3投票); 30Y美债~5.24%创19年新高/10Y 4.70%; 美对伊朗约12目标空袭(WTI~$82.8); 黄金$4162.80(+1.61%)
+- Key themes: 兑现者溢价(Azure/AWS)vs许诺者折价(Meta/Google); 存储超级周期(HBM缺货→内存涨价挤压苹果毛利); 韩国→中国AI资金轮动; A股政策底确立
+- Key catalysts: 8/3央行逆回购/8/6中芯国际业绩/8月初AMD财报+新能源车交付/8/1关税截止/美伊冲突
+- Updated: wiki/index.md (Synthesis表新增investment-daily条目), wiki/log.md
+
 ## [2026-07-31] synthesis | LLM Tech Report Digest — 2026-07-31
 - New page: wiki/synthesis/2026-07-31/tech-report-digest.md
 - Coverage: 19 companies' latest tech reports / system cards

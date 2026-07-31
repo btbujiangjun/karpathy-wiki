@@ -2,7 +2,7 @@
 title: 投资者/管理者导航
 type: synthesis
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-07-31
 tags: [investors, executives, market, landscape, wq101]
 ---
 
@@ -35,6 +35,9 @@ Conference Digest（每周）→ 学术到产业的信号
 
 | 报告 | 日期 |
 |------|------|
+| [[synthesis/2026-07-31/investment-daily|投资日报 2026-07-31]] | 2026-07-31 |
+| [[synthesis/2026-07-30/investment-daily|投资日报 2026-07-30]] | 2026-07-30 |
+| [[synthesis/2026-07-28/investment-daily|投资日报 2026-07-28]] | 2026-07-28 |
 | [[synthesis/investment-daily-2026-06-01|投资日报 2026-06-01]] | 2026-06-01 |
 | [[synthesis/investment-daily-2026-05-29|投资日报 2026-05-29]] | 2026-05-29 |
 | [[synthesis/investment-daily-2026-05-28|投资日报 2026-05-28]] | 2026-05-28 |
