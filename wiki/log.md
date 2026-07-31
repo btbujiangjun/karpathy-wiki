@@ -28,6 +28,29 @@
 - Key trends analyzed: MoE dominance, Thinking/Non-Thinking unification, RL as core reasoning training method, native multimodality, Agent capability focus, 1M+ context windows, post-training scaling laws, data efficiency
 - Updated: wiki/index.md
 
+## [2026-07-31] synthesis | arXiv Daily Digest — 2026-07-31
+- New page: wiki/synthesis/2026-07-31/arxiv-daily.md
+- Coverage: 38 curated papers across 8 categories (submissions Jul 29–31, 2026, from cs.AI/cs.CL/cs.LG/cs.IR):
+  - LLM Reasoning & RL Post-Training (7): β-OPSD UMD (KL knob unifies OPSD/RL via logit mixing), CSCR (counterfactual token credit), LSPO (LoRA scaffold on zero-reward cliffs), CoRT (rubric-guided tokenwise credit), HARGO (heterogeneity-aware weighting HPC), SARA (adaptive rollout allocation, 67% fewer rollouts), HiFloat4 (FP4 RL, 1.1% of BF16 gap)
+  - LLM Agents (6): TAPO (transition-aware PO WebShop/ALFWorld), ClawTrack (trace rubrics, 320 tasks), AAPT (pre-compiled policy trees for GUI latency), Flux-OPD (conflict-weighted distillation), CaM-Wolf (Tencent AI Lab, multimodal Werewolf ACMMM 2026), ParliamentBench (Secret Hitler deception, GPT-5.4/Kimi K2.5/Grok 4.1 Fast/DeepSeek 3.1 top cluster)
+  - CTR & Advertising (6): CCFormer Tencent (+3.57% CTR, 2.21x faster vs HSTU), ROCS Meta (per-request compute sharing, 3x QPS), ReAlloc Taobao (multi-channel uplift), SWAG-Bid AliExpress (sliding-window auto-bidding), PlatformBid/BidFlow Kuaishou (+0.68% target cost), HOBA Kuaishou KDD 2026 (+3.6% target cost)
+  - Recommendation (6): User Foundation Model open-web RecSys'26 (+2.13% CTR), HA-MoE Google Discover, OneShot Meta Instagram (20% recall, 10x efficiency), Memory Layer Meta Instagram (coverage 96→100%), Dual-purpose Semantic IDs Google, Guess Where You Go Amap (+5.83% P-CTR)
+  - Generative Recommendation (6): LoopMemGR Taobao (closed-loop experience memory), HiLaR (hierarchical latent reasoning), Understanding→Action (+4.506% Revenue), Restoring Collaborative Signals, LGRID (disentangled SIDs, collisions 97→39.9%), SPARC Taobao (attribute routing/compression)
+  - Sequential Modeling (2): Raven CMU/EPFL (sparse memory routing, 16x length extrapolation), ClockRoPE Google (Random Fourier rotations, deployed)
+  - Efficient Serving & KV Cache (3): Counter-Causal KV eviction ANU/Adelaide, MLA functional reconstruction PKU (37/64 cells), InferScale GPU KV injection (TTFT −72–79%)
+  - Games & RL (3): PARED inverse RL, CaM-Wolf, ParliamentBench
+- Key themes: token-level credit for critic-free RL; RL post-training efficiency (compute/quantization); process-level agent supervision; industrial CTR/rec efficiency (compute sharing, in-model caches); auto-bidding multi-window coupling; generative rec memory/interpretability; deception as measurable safety property
+- Updated: wiki/index.md
+
+## [2026-07-30] synthesis | arXiv AI Research Scan — July 2026 (regenerated)
+- Updated: wiki/synthesis/2026-07-30/arxiv-ai-search.md (replaced prior 39-paper scan with fresh 30-paper curated scan, all details re-verified against arXiv abs pages)
+- Coverage: LLMs/Agents/RL (13), Recommendation/CTR/Advertising (14), Sequential Modeling/Memory (3)
+  - LLMs/Agents/RL: SVR (self-verifying adaptive TTC), MANTA (topology adaptation), MemHarness (reconstructive memory), Synthetic Textbook (book-level organization, 686K books/32B tokens), GRSD, Echoverse (Microsoft), SKILL-KD, Qwen-UI-Agent (82.1% MobileWorld), AISPA (3,249 prompt instructions audit), OSReward (VLM judge leniency bias), WIDE (token-level width pruning 1.98x/4.95x), SAO (single-rollout async RL, GLM-5.2), RL thesis (Princeton)
+  - Rec/CTR/Ads: CCFormer (Tencent +3.57% CTR), HiLaR, LoopMemGR (Taobao), ROCS (Meta 3x QPS), Feedback-Grounded (+4.506% revenue), Restoring Collaborative Signals, PSD, IMFuse (ZJU), DASH (Tencent), WhisperRec (Kuaishou +17.44% SID@64), Multi-Decoder OneRec (Kuaishou, Kwai26 benchmark), Gwhere (Amap +5.83% P-CTR), LGRID (Kuaishou SID collision 97→39.9%), HA-MoE (Google Discover, RecSys 2026)
+  - Seq/Memory: Memory for LLMs survey (Tsinghua), Naju (independent retention/writing), HOLA (hippocampal cache, Wikitext 27.32→22.92)
+- Key themes: latent reasoning, reconstructive memory, inference-time adaptation, computer-use agents, industrial generative recommendation, system prompt governance, book-level synthetic data
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-07-30] synthesis | arXiv AI Research Scan — July 2026
 - New page: wiki/synthesis/2026-07-30/arxiv-ai-search.md
 - Coverage: 39 curated papers across 6 categories (LLMs, Recommendation/CTR/Advertising, Sequential Modeling/SSMs, Games/RL, AI Agents, Multi-Agent)
@@ -3616,4 +3639,10 @@
 - New page: wiki/synthesis/2026-07-30/arxiv-paper-check.md
 - Coverage: 19 curated papers from cs.LG/cs.IR/cs.AI submissions Jul 29-30, 2026
 - Topics: GRPO improvement (ReCo), RL fine-tuning (IPE), cross-task skill RL (SkillRise), latent reasoning rec (WhisperRec), decision-aware user simulation (DASH), two-clock CVR (TWICE Kwai), cold-start news (Kairos), thinking under uncertainty, cost-aware stopping, multi-agent vs self-refinement, privileged self-distillation, LLM-enhanced seq rec (IMFuse), multimodal imputation (CaIRec), multi-objective generative retrieval (OneRec), budget-aware LLM discovery, energy estimation, uncertainty-guided HTE, amortized moment matching
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-07-31] synthesis | arXiv Paper Check — AI & CTR
+- New page: wiki/synthesis/2026-07-31/arxiv-paper-check.md
+- Coverage: 27 curated papers announced Jul 30-31, 2026 (cs.AI/cs.LG/cs.IR via arXiv RSS/API), complementing wiki/synthesis/2026-07-31/arxiv-daily.md
+- Topics: weak-to-strong on-policy distillation (W2S-OPD), meta-learned reward shaping (MeRLa), RL-vs-SFT representational probes, CWAC off-policy RL, shared SFT lessons, constitutional midtraining; shadow evaluations of open-ended AI research, implementation lottery, latent multi-agent causal audit, mixed-motive deception, Big Five misalignment, SkillBoost, agentic recommendation markets; perishable evaluation scores, projectibility, synthetic-user failure benchmark, RAFS, cognitive convergence, misconception-difficulty bias, blind resampling vs self-repair; CTR/rec: ASARL (QQ Search), DIRECTOR, PSG pair-space reranking, Yandex GNN-vs-ID embeddings, NMKFR cold-start, UniVA (Tencent generative ads), RecSys reproducibility survey
 - Updated: wiki/index.md, wiki/log.md
