@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-07-31] synthesis | LLM Tech Report Digest — 2026-07-31
+- New page: wiki/synthesis/2026-07-31/tech-report-digest.md
+- Coverage: 19 companies' latest tech reports / system cards
+  - DeepSeek (V4 arXiv:2606.19348, 1.6T/49B CSA+DSA 1M ctx, Thinking with Visual Primitives 2026-04-30 Reference Gap/4:1 visual KV), OpenAI (GPT-5.5 System Card 2026-04-23, GPT-5.6 Sol/Terra/Luna), Meta (Llama 4 — arXiv:2601.11659 withdrawn/Redacted), Google (Gemini 3.6 Flash Model Card 2026-07-21 −17% output tokens/OSWorld 83%, 3.5 Flash-Lite $0.30/350tok-s, 3.5 Flash Cyber), Anthropic (Mythos Preview 244-page System Card Project Glasswing, Fable 5 95.5% SWE-bench, Sonnet 5 6/30, Opus 5 7/24), Mistral (Large 3 675B/41B Apache 2.0), Qwen (Qwen3.5-Omni arXiv:2604.15804), Microsoft (Phi-4/reasoning), Apple (AFM 2025), NVIDIA (Nemotron 3 Super TR 2026-03-10 120B/12B LatentMoE), xAI (Grok 4.20 System Card SA/MA modes, FAIF risk axes), Amazon (Nova), ByteDance (Seed2.0/Seedream2.0/Seedance2.0), Zhipu (GLM-5.2 2026-06-13 744B/40B 1M ctx IndexShare/KVShare/LayerSplit/HiSparse MIT, GLM-5), Moonshot (Kimi K2.5 MoonViT-3D Agent Swarm 100 sub-agents +59.3%), InternLM (InternLM3/Intern-S1-Pro), Baichuan (M4/4-Finance), StepFun (Step 3/3.5 Flash/3.7 Flash), 01.AI (Yi-Lightning)
+- Key trends: 1M context as flagship standard (V4/Gemini 3.6/GLM-5.2); sparse attention maturation (DeepSeek CSA+DSA → GLM IndexShare/HiSparse); Mamba-Transformer hybrids (Nemotron 3 series); agent-first positioning (GLM-5.2 long-horizon, K2.5 Agent Swarm, Grok 4.20 multi-agent); post-training RL >10% of pretraining compute; export-control shifts (Anthropic Fable/Mythos 6/12 shutdown → GLM-5.2 MIT surge); visual primitive reasoning paradigm (DeepSeek)
+- Updated: wiki/index.md
+
 ## [2026-07-30] synthesis | game-rl-daily — Game RL & Game AI Bot Survey
 - New page: wiki/synthesis/2026-07-30/game-rl-daily.md
 - Coverage: ~40 curated papers across 7 categories (Game RL, Game AI Bots, Game Foundation Models, PCG, Benchmarks, Industry Game AI, Related Techniques)
