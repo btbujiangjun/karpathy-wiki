@@ -4,6 +4,18 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-01] synthesis | WorldQuant 101 Alpha 因子选股 Top 20 — 美股 (2026-08-01)
+- New page: wiki/synthesis/2026-08-01/wq101-alpha-daily.md
+- Coverage: 7/31 收盘数据,基于 WorldQuant 101 Alpha 因子框架对美股 Top 20 打分
+- Market (7/31 close): S&P 7489.72(+0.70%)/Nasdaq 25373.85(+1.00%)/Dow 52485.03(+0.53%)/VIX 15.99(-6.44%); 7月收官三大指数V型收复; Cons Disc +3.29%领涨/Materials -2.34%领跌
+- Key signals: AMZN+15%创2008年来最大单日(AWS$42.2B+37%/AI+芯片run-rate均破$100B/Capex上修$220B); AAPL-7%(Q4指引9-11%弱/大中华区$18.8B不及预期/内存涨价伤毛利); GOOGL+6%(云+82%/积压$514B/云利润率35.6%/FCF首转负); MSFT+3%(延续Azure破$100B); NVDA+~3%(PE~22x); AVGO+11%(三星$200B AI芯片长约至2030); MU-5.9%(Burry增空)/SNDK-5%(7/30+21%后回吐); 能源: WTI破$100后回落$85/XOM 7月+15%(Q2利润环比+$50亿)/CVX+18%(7/31盘后Q2); 四大云厂2026 AI Capex $720-745B; 三星/SK Hynix创纪录财报+HBM短缺至2028
+- Factor mix: Alpha#1动量(11次/55%)+Alpha#6量价(8次/40%)+Alpha#41趋势(6次/30%)+Alpha#53反转(6次/30%)+Alpha#19均值回复(5次/25%)+Alpha#12背离(3次/15%)+Alpha#30波动率(1次/5%)
+- Sector mix: Semis 7只(35%)+Energy 5只(25%)+Tech/Cloud/Comm 4只(20%)+Utilities/Power 2只(10%)+Healthcare 1只(5%)+EV 1只(5%)
+- Top 5: AMZN(9.5)/MSFT(9.2)/GOOGL(9.0)/NVDA(8.8)/AVGO(8.6)
+- Strategy: 兑现者溢价(AMZN/MSFT/GOOGL)vs折价(AAPL/META); 存储超级周期+短线回调; 能源地缘溢价(警惕中国需求/OPEC+增产); AI电力(GEV/NEE)
+- Catalysts: 8/1非农/8/5 AMD财报/8月下旬NVDA/9月FOMC(降息~68%)
+- Updated: wiki/index.md, wiki/log.md
+
 ## [2026-08-01] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-08-01)
 - New page: wiki/synthesis/2026-08-01/investment-daily.md
 - Coverage: 美股(7/31收盘)/港股/A股/中概股/AI热点/新能源车
