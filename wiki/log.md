@@ -4,6 +4,21 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-01] synthesis | LLM 技术报告摘要 (2026-08-01)
+- New page: wiki/synthesis/2026-08-01/tech-report-digest.md
+- Coverage: 19 公司技术报告/System Card 全景; 今日新增核实: Meta Muse Spark Safety & Preparedness (2026-05-26, Chem/Bio缓解前high risk+多层缓解+拒绝率SOTA), Microsoft Phi-4-reasoning-vision-15B (2026-03, MSR-TR-2026-10, 数据质量为主要杠杆+动态分辨率编码器+mode token双模式), Mistral Leanstral 1.5 (2026-07-02, 119B/6B激活, Apache-2.0, miniF2F 100%饱和+PutnamBench 587/672+FATE-H 87%, CISPO RL, 57仓库发现5个未知bug), ByteDance Seedance 2.5 (2026-07-31, 30s+多轮延长, 30图+10视频+10音频参考, 统一多模态音视频联合生成), Apple AFM 2025 (~3B端侧KV-cache共享+2-bit QAT, 服务端PT-MoE on Private Cloud Compute, Swift Foundation Models框架), Zhipu GLM-5.2 (2026-06-13, MIT, 753B量级MoE+IndexShare每4层注意力索引器+稀疏注意力, Terminal-Bench 2.1 81.0, 无原生视觉), Moonshot Kimi K3 (2026-07-27, 2.8T/104B激活, 93层=69 KDA+24 Gated MLA, 896 experts/16 selected+2 shared, AttnRes, MoonViT-V2 401M, MXFP4/8 QAT, 1M上下文, 首个开源3T级, 118 tok/s GB300→370 tok/s DSpark), InternLM Intern-S1-Pro (2026-02-04, 1T MoE 512 experts/22B激活, SAGE通专融合), StepFun Step 3.5 Flash (2026-01-31, 196B/11B激活, MTP-3, 100-300 tok/s, SWE-bench Verified 74.4%, Apache-2.0)
+- Confirmed no new report: Amazon (仅2024 Nova家族), InternLM (2026后无新报告), Baichuan/Yi (无更新); GLM-5.3 未发布仅为社区传言(未写入)
+- 交叉观察: 开源3T时代开启(Kimi K3+DeepSeek-V4+GLM-5.2), 安全/准备度报告标配化(GPT-5.6/Opus5/Grok4.5/Muse Spark), 垂直特殊能力模型涌现(Leanstral/Phi-4-rv/Intern-S1-Pro), 视频生成长时长+可控参考(Seedance 2.5)
+- Updated: wiki/index.md (Synthesis表新增tech-report-digest条目), wiki/log.md
+- New pages: wiki/synthesis/2026-08-01/tech-report-digest.md
+- Contradictions: none
+
+## [2026-08-01] synthesis | game-rl-daily — Game RL & Game AI Bot Survey
+- New page: wiki/synthesis/2026-08-01/game-rl-daily.md
+- Coverage: ~38 curated papers across 7 categories (Game RL, Game AI Bots, Game Foundation Models, PCG, Benchmarks, Industry Game AI, Related Techniques)
+- Notable papers: Belief-Guided Go (uncertainty gating), DAGS, EMAgnet (ICML 2026 NExT-Game WS), GARIP (running-average self-play), Schnapsen shallow RL, Gin Rummy gold-standard study, Baghchal DRL, PLATO; IL augmentations streamed games (Microsoft), CaM-Wolf, TickingCollabBench (Minecraft), spatial reasoning LLM agents, Cortex Quake BC, belief-conditioned auditing, PEAM parametric memory; StatePlay, WanToFight (ByteDance KOF'97), verified-world-model play-adequacy gap, DreamForge-World 0.1, GROW, Reason to Play; Evolutionary WFC (CoG 2026), playtrace reconstructive partitioning, collision-based enemy morphology, 3DCodeBench, Pokémon procedural relatedness; RTSGameBench (BAR), PTCG-Bench (Alibaba), SMAC-Talk, GPTNT (KTANE), Same Game Different Story, VLM geometry clipping QA; RAID (EA SPORTS NHL 26), AI Native Games survey, TU Graz multi-task game state, SPEAR simulator; Sony AI open-ended autocurricula, ParliamentBench, asymmetric communication language games, behavioural embedding of normal-form games
+- Updated: wiki/index.md
+
 ## [2026-08-01] synthesis | WorldQuant 101 Alpha 因子选股 Top 20 — 美股 (2026-08-01)
 - New page: wiki/synthesis/2026-08-01/wq101-alpha-daily.md
 - Coverage: 7/31 收盘数据,基于 WorldQuant 101 Alpha 因子框架对美股 Top 20 打分
