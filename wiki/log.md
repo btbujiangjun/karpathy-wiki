@@ -4,6 +4,22 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-02] synthesis | WorldQuant 101 Alpha 因子选股 Top 20 — 美股 (2026-08-02)
+- New page: wiki/synthesis/2026-08-02/wq101-alpha-daily.md
+- Coverage: 数据基准 7/31 收盘(周末版),基于 WorldQuant 101 Alpha 因子框架对美股 Top 20 打分
+- Market (7/31 close): S&P 7489.72(+0.70%)/Nasdaq 25373.85(+1.00%)/Dow 52485.03(+0.53%)/VIX 15.99(-6.44%); 7月收官12年来首次7月收跌(S&P -0.13%/纳指-3.20%/道指+0.32%),费半-20.6%创2008来最差单月,等权标普7月跑赢纳指100达7.6pp,资金由Mag7高位AI交易向价值/防御轮动
+- ⚠️ 修正 8/1 报告: "9月降息~68%"有误。经核实 7/29 FOMC 9-3 通过按兵不动(3名异议者主张立即加息),主席 Warsh 不给前瞻指引; 截至 7/31-8/2, Kalshi(54-59%)/CME FedWatch(55.9-61.4%)/Polymarket(52-60%)/利率互换(~60%)/BofA(2026剩余三次会议均加息25bp至4.25-4.50%)一致指向 **9/16 FOMC 加息 25bp 至 3.75-4.00%** 为基准情形 —— 本周宏观定价最重要变化
+- Weekend (8/1-8/2): 中东升级(美State Dept敦促撤侨+空域封锁预警/黑海7月80+起商船遇袭/运输保险成本历史高位)但特朗普宣布取消最新一轮空袭; Brent~$87.9/WTI~$84.6(原油7月+21%)
+- Earnings week: 8/3 PLTR财报(盘后)+ISM制造业; 8/4 AMD财报(盘后,官方确认)+CAT(盘前,EPS预期$6.26,Q1积压$63B)+SpaceX首份财报(盘后); 8/5 LLY财报(盘前)+MRK+SNDK; 8/6 SpaceX首批9.115亿股解禁(~$1092亿); 8/7美国7月非农(Reuters初值+8.3万/失业率4.3%)
+- Key signals: AMZN $271.58+15.3%(AWS$42.2B+37%/Capex上修$220B/FCF-$76亿,单周市值+$400B); MSFT $464.72+3.02%(Azure年化破$100B+43%,单周+$600B); GOOGL $356.13+6.7%(云+82%/积压$514B/云利润率35.6%/FCF首转负-$59亿); NVDA $200.75+2.93%(Q1 FY27营收$81.6B+85%/数据中心$75.2B+92%/Q2指引$91B/PE~24x/供给承诺$119B,重夺全球市值第一$4.86T); CVX $196.83+2.35%(Q2净利$12.1B创纪录~+400%/美国产量~2M bpd创纪录/调整EPS $6.06超50c/炼化利润+500%); XOM(净利$14.5B/FCF$17.2B/回购$5.1B/调整EPS $3.52 miss 8c); AVGO+11%(Q3 AI硅片指引$16B+200% YoY/Apple $30B定制长约至2031/OpenAI Jalapeño); AMD $476.15-1.90%(8/4财报预期营收$11.2B+46%/数据中心Q1 $5.8B+57%/Meta 6GW+OpenAI/MI350 H2 2026); MU $823.03-5.9%(7月-28.7%/16份战略长约+14份take-or-pay锁定~$100B最低收入至2030/DRAM合约价Q2+89%/HBM4量产); TSM(3nm交期超50周/2027提价5-10%预期); JPM $351.79(Q2净利$21.2B创纪录/调整口径$16.9B ROTCE 23%/IB费+30% 2021来最高/市场交易+35%); GS $1018.38(EPS $20.98同比近翻倍/营收$20.34B+39%/backlog 5年最高); COP(7月+13.5%/油价弹性最大纯上游); LLY ~$1155(8/5盘前财报/2026指引$82-85B/GS模型$86.1B上调空间); LNG(霍尔木兹+LNG溢价); PLTR ~$122(周一盘后财报/61x PS/2026 FCF指引$4.2-4.4B); CAT(Q1积压$63B创纪录); GEV($176B积压/116GW燃气轮机锁定/Q2订单$24.2B+88%/FY26 FCF上调至$11.5-12.5B/与CVX合资4GW直供电/风电分部-275M+关税$100-200M); META(+3.28%企稳但Capex上修$135-145B/FCF同比-91%至$7.84亿)
+- Factor mix: Alpha#1动量(11次/55%)+Alpha#6量价(10次/50%)+Alpha#41趋势(7次/35%)+Alpha#53反转(5次/25%)+Alpha#12背离(3次/15%)+Alpha#19均值(3次/15%)+Alpha#30波动率(1次/5%)
+- Sector mix: Semis 6只(30%)+Energy 4只(20%)+Tech/Cloud/Comm 4只(20%)+Financials 2只(10%)+Healthcare 1只(5%)+Software/AI 1只(5%)+Industrials 1只(5%)+Utilities/Power 1只(5%)
+- Top 5: AMZN(9.6)/MSFT(9.4)/GOOGL(9.2)/NVDA(8.9)/CVX(8.7)
+- Strategy: 兑现者溢价延续(AMZN+MSFT+GOOGL单周合计+$1.5T市值)vs许诺者折价(META/AAPL); 事件周驱动(PLTR/AMD/LLY/非农); 新增Financials 2只(9月加息定价54-61%利好银行NIM,四大行Q2合计$43B创纪录); 存储降配仅留MU(铠侠8/1 ADR-10.1%指引弱=SNDK移出); Utilities/EV减配(30Y破5.2%+加息压制长久期,移除NEE/TSLA); 移除OXY/UNH; 候补观察: SNDK/BAC/MRK/ETN/DXCM/UNH
+- Updated: wiki/index.md (Synthesis表新增wq101-alpha-daily条目), wiki/log.md
+- New pages: wiki/synthesis/2026-08-02/wq101-alpha-daily.md
+- Contradictions: 1 (修正8/1 wq101报告"9月降息~68%"→9月加息54-61%; 与investment-daily(8/2)表述一致)
+
 ## [2026-08-02] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-08-02)
 - New page: wiki/synthesis/2026-08-02/investment-daily.md
 - Coverage: 周日版·超级周前瞻（美股 7/31 收盘/港股/A股/中概股/AI热点/7月新能源车交付）
@@ -3752,4 +3768,10 @@
 - LLM Reasoning & RL Post-Training (9): β-OPSD (OPSD = β=1 of policy-opt family, geometric interpolation), Sample More Reflect Less (self-refine/reflexion lose to repeated sampling 1.5B-7B), Reasoning Consensus (weighted DAG aggregation), LSPO (LoRA scaffold recovers GRPO cliff-prompt gradient), CRPO (contrastive agentic OPSD), GRSD (group-reflective self-distillation), Flux-OPD (evolving contexts, reverse-KL conflict term), TAPO (transition-aware PO with environment feedback), Bayesian Domain Reweighting (mixture optimization w/o proxy assumptions)
 - Agents & Evaluation (6): How Benchmarks Mis-Score CUAs (15.3% wrong FAIL verdicts), ClawTrack (dual Task+Process scoring, 320 tasks/21 models), inference-time scaling in local CUAs (diminishing returns), ASP theory distillation (1h solver-in-loop, 9 models), CARP (reputation-penalty honesty market), UNICON (numerical intelligence foundation model)
 - CTR/Recommendation/Ads (9): HA-MoE Google Discover heterogeneous feed, CCFormer Tencent cross-field+sequence compression, ROCS Meta request-oriented compute sharing, LoopMemGR Taobao closed-loop experience memory, HiLaR hierarchical latent reasoning rec, LGRID generative disentangled SIDs, Restoring Collaborative Signals in SID gen rec, ads pricing in AI-generated responses, open-web user foundation model
+- Updated: wiki/index.md, wiki/log.md
+
+## [2026-08-02] synthesis | arXiv AI Research Scan — August 2, 2026
+- New page: wiki/synthesis/2026-08-02/arxiv-ai-search.md
+- Coverage: 24 curated papers from Fri Jul 31, 2026 arXiv listing (submitted Jul 29-30, 2026), complementing the 2026-07-30/2026-08-01 scans with no overlap
+- Sections: LLMs/Agents/AI4AI (10: Frontis-MA1 35B, One Human N Agents, RepBench 46,149 probes, When Specifications Conflict, MIND memory-injection defense, FinanceHarness+FinanceGym Google, AutoSupervision, DataClawEval 100 tasks, Fidelity Is Not Safety, AAPT GUI policy trees), Recommendation/Retrieval/Advertising (5: OneShot Meta in-model index, Reproducibility in RecSys survey, TCA-SIR, VIG-RL, GLM-RAG), Sequential Modeling/Memory (5: ConMem, RRM, CoRA, CACHE-UK, Stage-Replay Divergence KV cache), Games & Strategic Reasoning (4: CCS-MCCFR, Learning to Persuade, Strategic Publishers in GenAI Ecosystems, Collusion with Competitive Marginals)
 - Updated: wiki/index.md, wiki/log.md
