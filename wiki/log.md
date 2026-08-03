@@ -4,6 +4,25 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-03] synthesis | LLM 技术报告摘要 (2026-08-03)
+- New page: wiki/synthesis/2026-08-03/tech-report-digest.md
+- Coverage: 19 家公司大模型技术报告/System Card 全景 (双语表格, 沿用 07-31/08-01 格式)
+- 今日新增核实:
+  - Amazon Nova 2 技术报告 (2026, Hybrid Reasoning: Lite/Pro 的 low/medium/high effort + 内置工具; Nova 2 Lite 相比 Nova Premier 7× 更低成本/5× 更快; τ²-bench Lite 76.0 / Pro 92.7) — ⚠️ 更正 08-01 "Amazon 无 2026 新报告" 结论
+  - Anthropic Claude Sonnet 5 System Card (2026-06-30, RSP 评估 + agentic 增益; MASK 说谎率 3.1% 为对比集最低; hallucination/sycophancy 显著改善; cyber safeguards 默认开启; $2/$10 → 8/31 后 $3/$15)
+  - Apple AFM 3 (2026-06-08, 五模型家族: 3B Core 端侧 + 20B Core Advanced 稀疏 IFP 激活 1-4B + Cloud PCC + ADM 3 Cloud 图像扩散 + Cloud Pro 首次跑在 Google Cloud NVIDIA GPU 上)
+  - NVIDIA Nemotron 3 Ultra (550B/55B, 108 层/512 experts top-22, Mamba-2+Attention+LatentMoE 混合 + MTP, NVFP4 预训练 ~20T tokens, MOPD 后训练, 1M ctx, OpenMDW-1.1, AA Index ~48, 吞吐 5.9×)
+  - xAI Grok 4.5 发布细节 (2026-07-08, SpaceXAI 品牌 + 与 Cursor 联合训练, 数万 GB300, 500K ctx, $2/$6, DeepSWE 62.0% / SWE-bench Pro 64.7% / Terminal-Bench 2.1 83.3%)
+  - Qwen3.7-Flash (2026-07-25, 原生视觉语言 Flash) + Qwen-Audio-3.0-ASR-Flash (2026-07-30, 30 语言+七大方言)
+  - Mistral Robostral Navigate (2026-07-08, 具身导航)
+  - Baichuan-M4 细节 + 更正 (2026-06-22, 清华合作临床级医疗 agent, Baichuan-Harness 评测, hallucination 3.3%, arXiv:2606.08982) — ⚠️ 更正 08-01 误记的 arXiv ID (2606.12721)
+  - Moonshot MoonEP 开源 (2026-07-29, 专家并行库)
+- Confirmed no new report: OpenAI (GPT-5.6 已收录), Google (Gemini 3.6 Flash 已收录), Microsoft (Phi-4-rv 已收录), ByteDance (Seedance 2.5 已收录), Zhipu (GLM-5.2 已收录; GLM-5.3 仍为传言), InternLM (Intern-S1-Pro 已收录; 2026 无新技术报告), StepFun (Step 3.5 Flash 已收录), Yi/01.AI (2026 无新旗舰/新技术报告)
+- 交叉观察: 美国开源权重旗舰之争 (Nemotron 3 Ultra vs DeepSeek-V4 / GLM-5.2 / Kimi K3); 混合推理 effort 控制趋同 (Nova 2 / OpenAI / Gemini / Grok); Mamba-Attention 混合 + 投机解码标配化; agentic 基准 (DeepSWE / SWE-bench Pro / Terminal-Bench 2.1) 成发布主战场; 端侧-云端边界重画 (Apple IFP + PCC on Google Cloud); 中国医疗垂直模型崛起 (Baichuan-M3/M4)
+- Updated: wiki/index.md (Synthesis 表新增 tech-report-digest 条目), wiki/log.md
+- New pages: wiki/synthesis/2026-08-03/tech-report-digest.md
+- Contradictions: 2 (Amazon "无 2026 报告" → Nova 2 技术报告存在; Baichuan-M4 arXiv ID 更正)
+
 ## [2026-08-02] synthesis | WorldQuant 101 Alpha 因子选股 Top 20 — 美股 (2026-08-02)
 - New page: wiki/synthesis/2026-08-02/wq101-alpha-daily.md
 - Coverage: 数据基准 7/31 收盘(周末版),基于 WorldQuant 101 Alpha 因子框架对美股 Top 20 打分
