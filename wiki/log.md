@@ -4,6 +4,19 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-03] synthesis | WorldQuant 101 Alpha 因子选股 Top 20 — 美股 (2026-08-03)
+- New page: wiki/synthesis/2026-08-03/wq101-alpha-daily.md
+- Coverage: 数据基准 7/31 收盘 + 8/3 盘前/期货口径（周一版），基于 WorldQuant 101 Alpha 因子框架对美股 Top 20 打分
+- 8/3 盘前增量（相对 8/2 报告）: ①地缘大幅缓和——特朗普取消对伊打击, Brent <$84 (-5%)/WTI -4%+, OPEC+ 9 月增产 18.8 万桶/日 → 能源板块集体回吐 7 月地缘溢价; ②金融板块创新高——XLF 历史新高 $57.60, JPM/BAC 同创 52 周新高, 资金由科技向金融轮动; ③国防军工崛起——LMT +10.6%/RTX +7.7% (上调 2026 指引), Trump $1.5T 军费提案 + $1.15T 国防授权法案; ④美日 2011 年以来首次联合干预日元; ⑤金价 ~$4,060 高位; ⑥10Y 回落至 ~4.70%; ⑦9/16 FOMC 加息 25bp 定价维持 (CME FedWatch ~54-61%/MoneyDJ ~65%)
+- Key signals: MSFT $464.72+3.02%(Azure 年化破 $100B+43%/下年 Capex 指引 $255-260B/兑现者第一名); AMZN $271.58+15.32%(AWS $42.2B+37%/积压 $364→$496B/Capex 上修 $220B/FCF-$76亿); GOOGL $356.13+6.73%(云+82%/积压 $514B/云利润率 35.6%/FCF 首负-$59亿); NVDA $200.75+2.93%(PE~24x 低位/供给承诺 $119B/8/26 财报前 AMD 周二为需求确认/SK hynix ADR 纳斯达克上市强化 HBM 链); JPM $351.79 创新高(Q2 净利 $21.2B 创纪录/ROTCE 23%/IB+30%/XLF $57.60 历史新高); BAC 新入选 52 周新高(Q2 净利 $9.1B/存款行 NIM 弹性); GS $1018.38(EPS $20.98 近翻倍/backlog 5 年最高); AVGO(Q3 AI 半导体指引 $16B+200%); AMD $476.15(周二 8/4 盘后财报/指引 $11.2B±$300M/EPYC+70% 预期/MI400 看点); LMT 新入选 +10.6%(积压 $230.4B+38.3%/上调指引/$1.15T NDAA); RTX 新入选 +7.7%(上调指引); TSM(3nm 交期超 50 周/类 EMIB); LRCX(下季指引 $8.1B vs 预期 $7.09B 设备链景气); CVX $196.83+2.35%(Q2 净利 $12.1B 创纪录/8/3 油价逆风); XOM(净利 $14.5B/回购 $5.1B); PLTR(周一盘后财报/营收预期 $1.81B+81%/EPS $0.35/Maven program-of-record/61x PS); LLY(周三盘前财报/2026 指引 $82-85B/GS 模型 $86.1B 上调空间); MU $823.03(7 月-28.7% 超卖/HBM4 量产/周四 SNDK/WDC 验证); GEV($176B 积压/FY26 FCF 指引上调至 $11.5-12.5B); CAT(周二盘前财报/EPS 预期 $6.26/积压 $63B)
+- Factor mix: Alpha#6 量价(10 次/50%)+Alpha#41 趋势(10 次/50%, 从 8/2 的 35% 升至 50%——新高金融/国防主导)+Alpha#1 动量(9 次/45%, 从 55% 降至 45%)+Alpha#53 反转(4 次/20%)+Alpha#12 背离(3 次/15%)+Alpha#19 均值(2 次/10%)+Alpha#30 波动率(2 次/10%)
+- Sector mix: Semis 6 只(30%)+Financials 3 只(15%)+Tech/Cloud/Comm 3 只(15%)+Defense 2 只(10%)+Energy 2 只(10%)+Software/AI 1 只(5%)+Healthcare 1 只(5%)+Utilities/Power 1 只(5%)+Industrials 1 只(5%)
+- Top 5: MSFT(9.5)/AMZN(9.3)/GOOGL(9.2)/NVDA(9.0)/JPM(8.7)
+- Strategy: 金融(15%↑)+国防(10%新增)接替能源成为轮动主线——地缘溢价从能源向军工转移, 9 月加息定价利好金融 NIM; 能源降至 10%(8/3 油价大跌, COP/LNG 移出仅留 CVX/XOM); Tech 降至 15%(META 移出, FCF-91% 许诺者折价未解); Semis 30% 持平(NVDA 低位+AMD 周二确认); 新入选 BAC/LMT/RTX; 候补: META/COP/LNG/SNDK/WDC/ETN/MRK; 事件周(PLTR 周一/AMD+CAT+SpaceX 周二/LLY 周三/SNDK-WDC 周四/非农周五)严控仓位, 8/3 盘中可能显著偏离盘前假设
+- Updated: wiki/index.md (Synthesis 表新增 wq101-alpha-daily 条目), wiki/log.md
+- New pages: wiki/synthesis/2026-08-03/wq101-alpha-daily.md
+- Contradictions: none (9 月加息定价 8/2 修正后 54-61% 维持一致; 8/3 为盘前口径未涉及收盘数据冲突)
+
 ## [2026-08-03] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-08-03)
 - New page: wiki/synthesis/2026-08-03/investment-daily.md
 - Coverage: 周一版·超级周第二波 (数据说明: 美股最新完整收盘为 7/31, 港股/A股为 7/31 收盘 + 8/3 早盘口径)
