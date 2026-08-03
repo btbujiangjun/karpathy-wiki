@@ -3775,3 +3775,14 @@
 - Coverage: 24 curated papers from Fri Jul 31, 2026 arXiv listing (submitted Jul 29-30, 2026), complementing the 2026-07-30/2026-08-01 scans with no overlap
 - Sections: LLMs/Agents/AI4AI (10: Frontis-MA1 35B, One Human N Agents, RepBench 46,149 probes, When Specifications Conflict, MIND memory-injection defense, FinanceHarness+FinanceGym Google, AutoSupervision, DataClawEval 100 tasks, Fidelity Is Not Safety, AAPT GUI policy trees), Recommendation/Retrieval/Advertising (5: OneShot Meta in-model index, Reproducibility in RecSys survey, TCA-SIR, VIG-RL, GLM-RAG), Sequential Modeling/Memory (5: ConMem, RRM, CoRA, CACHE-UK, Stage-Replay Divergence KV cache), Games & Strategic Reasoning (4: CCS-MCCFR, Learning to Persuade, Strategic Publishers in GenAI Ecosystems, Collusion with Competitive Marginals)
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-08-03] synthesis | arXiv Paper Check — AI & CTR
+- New page: wiki/synthesis/2026-08-03/arxiv-paper-check.md
+- Coverage: 26 curated papers from Mon Aug 3, 2026 arXiv listing (cs.AI 146 new, cs.LG 137, cs.IR 15, cs.CL 68; 281 unique)
+- CTR/Recommendation/Ads (9): TransX (LinkedIn seq2seq action transduction, +6.0% CTR/+4.4% conv, -80% compute), PaletteID (prototype-composed SIDs multimodal CTR), EvoReason (reasoning-primitive OPD latent gen rec), GALA (Taobao Shangou generative RL alignment, +0.55% orders), Think2Go (next-POI SFT+RL epistemic-uncertainty weighting), SnapLGR (production gen retrieval, +0.37% View Time), RecHarness (bandit-routed agentic optimization, +2.084% ADVV), GenCDSR (hybrid tokenization + serial-parallel decoding, -85.1% latency), MerchantBench (best LLM 27.3% of human net assets)
+- LLM Reasoning & RL (8): PRISM (policy-space decomposition multi-reward RL), LatentRM (latent reasoning traces for scalar RMs end-to-end), TwT (difficulty-adaptive MT, -32-60% tokens), CaRL (capability-aligned RL refusing futile reasoning), SAF-OPD (advantage fusion stability), Adaptive FastOPD (-49-71% training time), DASH-OPD (hysteretic executor switching ALFWorld), WCM (LeJEPA world critic for VLA RL)
+- Agents & Evaluation (5): SESA (self-evolving skill memory), MAGA (structured action distillation GUI fusion), AgentHPOBench (sequential HPO), Zero-Mem (zero-token agent memory), Model-or-Harness (41-failure interaction taxonomy, κ=0.76)
+- Serving/Memory (4): TokTier (stateful tokenization, TTFT -16-34%), ResKV (residual attention reconstruction), DeltaServe (idle inference→LoRA FT, 2.9x), TransMem (hidden-state memory, +11.6-29.3 F1 LoCoMo)
+- Evaluation (3): agent-safety benchmark validity audit (always-positive F1=0.690 artifact), Reflection-or-Re-Generation (ΔI≈0/negative), SARE (step-aware reasoning energy)
+- Complements: wiki/synthesis/2026-08-02/arxiv-ai-search.md (Jul 31 batch); today's batch is the Aug 3 announcement
+- Updated: wiki/index.md, wiki/log.md
