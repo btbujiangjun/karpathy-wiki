@@ -3872,3 +3872,15 @@
 - Contradictions: ICLR 2026 投稿数字口径 minor 差异（BestHub ≈19,000/28% vs 08-01 19,525/27.4%），已标注
 - Complements: wiki/synthesis/2026-08-01/conference-digest.md + wiki/synthesis/2026-08-03/conference-digest.md（奖项基线）；wiki/synthesis/2026-08-04/arxiv-daily.md + arxiv-ai-search.md（arXiv 无重叠）
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-08-04] synthesis | arXiv Paper Check — AI & CTR
+- New page: wiki/synthesis/2026-08-04/arxiv-paper-check.md
+- Coverage: 26 curated papers from fresh 2608.xxxxx submissions (submitted Aug 1-3, 2026, fetched via export.arxiv.org API; not yet in Mon Aug 3 announcement listing; no overlap with Aug 3 paper check/ai-search or Aug 4 arxiv-daily/ai-search/conference-digest)
+- CTR/Recommendation/Ads (7): GRACE (Meta ads generative retrieval serving — GTM SID eligibility filtering 23.55→40.42% target pass rate, decoder redesign 68× cross-attn/23.4-25.8× self-attn/11.1× decode latency vs FlashAttention-2/3), HRPO (KDD 2026 hierarchical residual token-credit post-training, online A/B gains), Exp-RSFT (exponential reward weighting, coverage+noise cost theory, inverted-U in λ, beats PPO/DPO), Tevatron3.0-Megatron (expert-parallel 30B Qwen3-A3B MoE reranker ≈ dense 8B at <half params), GARDRec (graph-grounded LLM next-item ranking), X-KGRank (KG-RAG explainable rec), UpliftBench (outcome-regime/objective mismatch)
+- LLM Reasoning & RL (5): Multi-Moment PO (beyond-mean reward shaping), Progressive Experience Evolution (self-improving), HPFA (hypergraph paired failure attribution), PCSD (persistent-consistency self-distillation), Rewriting-or-Reweighting (geometric account)
+- Agents & Evaluation (6): Fetch-then-Explore, Diagnosing Search Behavior, HALT (verification-aware stopping), Before-Reasoning-Fails (pre-evidence procedural failures), MemArbiter (decision-time memory arbitration), SearchMaster (grounded self-play)
+- Serving/Memory/Efficiency (4): AOSpec (action+observation co-speculation), Disaggregated Attn-FFN energy serving, LaCache (semantic caching), Kilobyte Models
+- Evaluation/Trust (3): Trustworthy AI in Digital Health review, Observability Ladder (reasoning-summary info gain), Post-Bandit Bias (effective exploration rate, regret-bias trade-off)
+- Contradictions: none
+- Complements: wiki/synthesis/2026-08-03/arxiv-paper-check.md (prior batch, 2607.xxxxx); wiki/synthesis/2026-08-04/arxiv-daily.md + arxiv-ai-search.md + conference-digest.md (same-day, no overlap)
+- Updated: wiki/index.md, wiki/log.md
