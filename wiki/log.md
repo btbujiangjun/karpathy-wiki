@@ -3884,3 +3884,24 @@
 - Contradictions: none
 - Complements: wiki/synthesis/2026-08-03/arxiv-paper-check.md (prior batch, 2607.xxxxx); wiki/synthesis/2026-08-04/arxiv-daily.md + arxiv-ai-search.md + conference-digest.md (same-day, no overlap)
 - Updated: wiki/index.md, wiki/log.md
+
+## [2026-08-04] synthesis | tech-report-digest
+- New page: wiki/synthesis/2026-08-04/tech-report-digest.md
+- Coverage: 20 家公司大模型技术报告/System Card 全景（双语表格，沿用 07-31/08-01/08-03 格式；新增 MiniMax 第 20 家）
+- 今日新增核实:
+  - Anthropic Claude Opus 5 System Card (2026-07-24, agentic coding/computer use/long-horizon knowledge work; effort dial $5/$25 比 Fable 5 $10/$50 便宜; SWE-bench Verified 96.0 / SWE-bench Pro 79.2 / Frontier-Bench v0.1 43.3 [xhigh 44.4%] / ARC-AGI-3 30.2; 定价同 Opus 4.8)
+  - Qwen3.8-Max 正式发布 (2026-08-03, 2.4T 总/95B 激活 Sparse MoE + hybrid attention; native vision; 1M ctx; Text Arena #5 / Vision Arena #2; 权重"下周"开源; 基于 Qwen 3.5 构建)
+  - DeepSeek-V4-Flash-0731 官方确认 (2026-07-31, 同 4 月 V4-Flash 架构 re-post-trained; 9 项 DeepSeek agent benchmark 全超 V4-Pro-Preview; MIT 权重; $0.14/$0.28 每 M, 98% cache-hit 折扣) — 确认 08-03 "日期待官方确认" 说法
+  - MiniMax H3 (2026-07-31, 新公司条目: 文本/图像/视频/音频统一 omni-modal 生成; 原生 dual-channel 音视频输出; 最高 15s 2K 视频; Contextual Omni Representation / H3-VAE / H3-Omni Transformer / In-context Regeneration; 同类每秒成本最低; open weights 计划中)
+  - Mistral Medium 3 (2026-08-02, 128K ctx, coding/reasoning 中档, la Plateforme + Azure AI Foundry [mistral-medium-2505])
+  - NVIDIA Nemotron 3 Nano Technical Report (30B-A3B MoE 混合 Mamba-Transformer; 25T tokens 预训练 [3T+ 新增]; 6/128 experts; 1M ctx; 吞吐最高 ~3.3× vs GPT-OSS 20B / Qwen3-30B-A3B-Thinking)
+  - ByteDance Seed2.1 官方确认 (2026-06-23, Pro/Turbo; agent + coding E2E; GDPVal; Seed2.1 Pro 59.1% 击败 Claude Opus 4.6 crowdsource coding)
+  - Amazon Nova 2 技术报告日期核实 (正式出版 2025-12-02; FMSF 评估 arXiv:2601.19134 确认低于释放阈值)
+  - Apple AFM 3 补充 (2026-07-28 Siri Expressive Voices 技术博客: TTS MOS 4.15 vs 3.87; 仍无正式技术报告)
+  - Gemini 3.6 Flash Model Card (2026-07-21) / Grok 4.5 (2026-07-16) 状态核实
+- 传闻未确认（不写入正式条目）: GPT-5.7 (WinCentral 2026-07-30 泄漏, 8 月旗舰, 新 pretraining foundation; GPT-6 或推迟至 9 月), GLM-5.5 (JPMorgan/Reuters, 可能 2026-08, 1T+ 参数/1M ctx), Grok 5 (6T/10T MoE 变体, Colossus 2 训练, Q3+)
+- 🔍 新发现待核实: Intern-S2 Model Collections 出现在 Intern-S1 仓库 README (HuggingFace)
+- Confirmed no new report: OpenAI (GPT-5.6 已收录), Google (Gemini 3.6 Flash 已收录), Meta (Muse Spark 1.1 已收录, 无 Llama 5), Microsoft (Phi-4-rv 已收录, 无 Phi-5), Zhipu (GLM-5.2 已收录), InternLM (Intern-S1-Pro 已收录), Baichuan (M4 已收录), StepFun (Step 3.7/3.5 Flash 已收录), Yi/01.AI (2026 无新旗舰)
+- 交叉观察: 8 月初密集发布期; 开源 2T+ 级旗舰两强格局 (Kimi K3 vs Qwen3.8-Max); Anthropic 分层定价 + effort dial 全面趋同 (Opus 5 < Fable 5); agentic 基准仍是发布主战场; 单模型全模态化加速 (MiniMax H3 / Qwen3.8-Max / Seed2.1); System Card 标配化 (Opus 5 / GPT-5.6 / Nova FMSF)
+- Updated: wiki/index.md (Synthesis 表新增 tech-report-digest 08-04 条目), wiki/log.md
+- Contradictions: none (仅传闻标注与 Intern-S2 待核实 flag)
