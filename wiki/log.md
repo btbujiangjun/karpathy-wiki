@@ -3972,3 +3972,16 @@
 - Contradictions: none
 - Complements: wiki/synthesis/2026-08-03/arxiv-ai-search.md (DungeonBench 2607.29577, MirrorCraft 2607.29218 cross-referenced); wiki/synthesis/2026-08-01/game-rl-daily.md + 2026-08-02/game-rl-daily.md
 - Updated: wiki/index.md (Synthesis 表新增 game-rl-daily 2026-08-04 条目), wiki/log.md
+
+## [2026-08-05] synthesis | WorldQuant 101 Alpha 因子选股 Top 20 — 美股 (2026-08-05)
+- New page: wiki/synthesis/2026-08-05/wq101-alpha-daily.md
+- Coverage: 数据基准 8/4 收盘 + 8/5 盘前/期货口径（周三版），基于 WorldQuant 101 Alpha 因子框架对美股 Top 20 打分
+- 8/5 盘前增量（相对 8/3 报告）: ①三大指数集体创历史收盘新高——S&P 7,737.70 (+1.81%, 7/2 以来首次)/Dow 54,090.66 (+1.72%, 连续第二日)/Nasdaq 26,581.99 (+2.58%), 费半 +~7% 连 4 涨 (7 月 -20.6% 后修复), 科技板块 +4.5% 领涨 11 行业; ②PLTR 财报爆表 +30% (2024/2 以来最大单日, Q2 营收 $1.94B +93%/美国商业 $764M +149%/上调全年指引至 $8.15-8.16B) → AI 软件需求二次确认; ③AMD 财报超预期但盘后 -7.6% (Q2 $11.54B +50% 超 $11.28B/EPS $1.66 超 $1.62/DC $6.72B +107%/Q3 指引 $13B 超 $12.52B, +142% YTD 后"确认非催化" 利好兑现); ④SPCX 首份财报营收 $7.81B +92% 超预期 (Connectivity +66%/AI +247%/Starlink 用户翻倍至 1,200 万) 但 AI Capex $15.83B 超预期 + FCF 转负, 盘后 -7.5%, 8/6 解禁 9.115 亿股; ⑤金融续创新高——XLF 盘中 $58.02 再破纪录 (8/3 的 $57.60), JPM $357.52 (+1.38%) 盘中高 $363; ⑥能源出局——Hormuz 和谈希望 → WTI ~$77 (-4%), 地缘溢价彻底回吐; ⑦8/5 财报日: LLY (盘前, 营收共识 ~$20.3-20.9B +30%, Zepbound 处方量 2x Wegovy) + DIS/UBER/SHOP/NVO/OXY (盘前) + SNDK/WDC (盘后, 存储验证窗口, SNDK EPS 预期 $34.24/+11,706% 营收 $8.30B/+337%) + DASH/XYZ/MELI (盘后) + ADP/ISM 服务业
+- Key signals: MSFT(9.3, Azure $100B+43%/履约义务 +110%); NVDA(9.2, +3.02% $211.48/远期 PE ~22.8x 同行最低/TSMC N3 受限/BofA 超大规模厂 Capex >$1.2T/8/26 财报 Q2 指引 $91B); PLTR(9.1, 最大上调 7.8→9.1); AMZN(9.0, 8/3 首破 $3T 但 Bezos 拟售 $4B+ 股份 = Alpha#12 顶背离预警); GOOGL(8.9); JPM(8.8, Q2 净利 +41% 创纪录); AVGO(8.5, +6% $416/Q3 AI 半导体指引 $16B+200%); TSM(8.4, N3 产能受限稀缺); BAC(8.4, +27%/IB+50%); GS(8.3, 净利 +84%/backlog 5 年最高); CAT(8.3, 上调 7.4→8.3, EPS $8.17 vs $6.20 超 32%/营收 $20.54B vs $19.34B); LMT(8.3); MU(8.2, 上调 7.6→8.2, BofA 重申 Buy/内存定价权/HBF 标准); RTX(8.2); LRCX(8.2); AMD(8.0, 下调 8.4→8.0, 盘后 -7.6%); MRVL(7.9, 新入选 +12.8% AI 网络/定制硅); INTC(7.8, 新入选 +10% 空头回补, 月 -24% 反转); SNDK(7.8, 新入选, HBF 行业标准 + 今日盘后财报); LLY(7.8, 今日盘前财报)
+- Factor mix: Alpha#6 量价(9 次/45%)+Alpha#1 动量(8 次/40%)+Alpha#41 趋势(8 次/40%, 从 50% 回落)+Alpha#53 反转(6 次/30%, 从 20% 上升——深调修复主导)+Alpha#30 波动率(5 次/25%, 从 10% 上升——广度反弹/高波动动量)+Alpha#19 均值(3 次/15%)+Alpha#12 背离(2 次/10%, AMZN 减持风险重点标注)
+- Sector mix: Semis 9 只(45%)+Tech/Cloud/Comm 3 只(15%)+Financials 3 只(15%)+Defense 2 只(10%)+Software/AI 1 只(5%)+Industrials 1 只(5%)+Healthcare 1 只(5%)
+- Top 5: MSFT(9.3)/NVDA(9.2)/PLTR(9.1)/AMZN(9.0)/GOOGL(8.9)
+- Strategy: 半导体大幅上调 30%→45% (AI 基建二次确认: PLTR 爆表 → AMD DC +107% → SPCX +92% 连环验证, 费半 4 连涨 + 广度 INTC/MRVL + 深度 NVDA/TSM); PLTR 冲入前三但 ~60x PS 严禁追高; 金融 15% 维持 (XLF 再创新高 + IB 2026 史上第二强预期); 能源 0% 出局 (WTI ~$77, CVX/XOM 移出); 国防 10% 维持; 移除 CVX/XOM/GEV, 新增 MRVL/INTC/SNDK; "确认非催化"模式 (AMD/SPCX 盘后回调) 提示事件周预留预期差; 候补: SPCX (解禁风险)/WDC/CVX/XOM/GEV/ON/DIS/UBER/V/MA/BRK.B
+- Updated: wiki/index.md (Synthesis 表新增 wq101-alpha-daily 2026-08-05 条目), wiki/log.md
+- New pages: wiki/synthesis/2026-08-05/wq101-alpha-daily.md
+- Contradictions: none (8/3 报告"LLY 8/5 盘前财报"经 Lilly 官方 7/22 公告确认 8/5; SNDK/WDC 财报时间 8/3 报告标注 8/6、8/4 报道指向 8/5 盘后——以最新交易平台口径 8/5 盘后为准)
