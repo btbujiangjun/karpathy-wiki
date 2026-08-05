@@ -4,6 +4,24 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-05] synthesis | LLM Tech Report Digest (2026-08-05)
+- New page: wiki/synthesis/2026-08-05/tech-report-digest.md
+- Coverage: 今日新增核实 9 项 + 保留更新若干——
+- ① NVIDIA Nemotron 3 Super Technical Report (技术报告 PDF 2026-04-03): 120B 总 / 12B 激活 Hybrid Mamba-Attention MoE; 首次 LatentMoE + NVFP4 量化感知预训练 + MTP 投机解码层; 25T tokens; 1M ctx; 吞吐 2.2× GPT-OSS-120B / 7.5× Qwen3.5-122B; 权重开源。Nemotron 3 家族 (Nano/Super/Ultra) 技术报告至此齐备
+- ② OpenAI GPT-5.6 价格调整 (2026-07-30): Luna -80% ($0.20/$1.20, 综合 $1.40 低于 Gemini 3.5 Flash-Lite $2.80 与 Gemini 3.6 Flash $9), Terra -20% ($2/$12), Sol 不变 + premium Fast mode; 效率收益让渡 + 直入低成本推理层
+- ③ Google Gemini Robotics 2 模型卡×3 (2026-07-30): Robotics 2 (VLA, 全身控制 feet-to-fingertips + 双臂); ER 2 (Embodied Reasoning VLM, 基于 Gemini 3.5 Flash, 多机器人协作 + 连续视频任务监控 + 原生工具调用, AI Studio + Enterprise Agent Platform 可用); On-Device 2 (本地 VLA 基于 Gemma, 数小时数据适配新形态, Trusted Testers 分发)
+- ④ Amazon AI 战略收缩 (2026-07-28 Business Insider): Nova Premier (9 月 EOL) / Omni / Reel / Canvas 逐步弃用, AGI Lab 解散, Pieter Abbeel (Covariant) 领衔新前沿项目 Frontier Model Research (FMR), 目标 re:Invent 2026 新旗舰; Nova 2 Lite/Sonic 保留; 与 Nova 2 技术报告 (2025-12-02) 形成"架构仍有效、产品线洗牌"对比
+- ⑤ MiniMax H3 开源权重 (2026-08-02/03): 33B dense Omni Transformer (约 13B 在 AdaLN 分支可预计算缓存、推理免加载), Qwen3-VL-32B 文本编码器, Visual VAE + 独立 Audio VAE; FL2VA/Ref2VA 双任务 checkpoint (CFG-distilled); SGLang/vLLM/diffusers; MiniMax H3 Community License 可用区域限 EU/UK/South Korea/US ("not yet, not not ever" 可申请) —— 更新 08-04 的 "open weights 计划中"
+- ⑥ Intern-S2-Preview 系列确认 (08-04 "待核实" 落地): 35B (2026-07-17 HF, 从 Qwen3.5 续训, task scaling 在核心科学任务媲美万亿级 Intern-S1-Pro); Intern-S2-Preview-397B (2026-07-18, MoE 约 120B 激活/~30%, 三维扩展: 预训练/RL task coverage/interactive agent env); 均 Apache-2.0, BF16 + FP8, HF + ModelScope
+- ⑦ Mistral Shieldstral (2026-08-04 公告 / arXiv 07-28): 3B 开源多模态安全分类器; policy-adaptive QA; Apache-2.0; 12 语言; 单张 16GB GPU; 匹配 7× 体积模型; Open Secure AI Alliance (与 NVIDIA) 成员
+- ⑧ Meta Muse Spark Safety & Preparedness Report 补充: Advanced AI Scaling Framework 评估 (Chem/Bio 缓解前 high risk), 拒绝率 SOTA, 同行对比中 cyber-misuse compliance 最低; Meta AI 底层模型
+- ⑨ Qwen3.8-Max 定价补充 (08-03): $2/$6/$0.25 per M tokens; 权重"下周"与 Qwen3.8-27B 同行开源; 激活参数数与 license 未披露 (noze.it 质疑); 发布日阿里港股 +7%; QwenWork 平台公测
+- 传闻核实 (未确认, 不入正式条目): GPT-5.7 / Astra (WinCentral + The Information, 命名未定), GLM-5.5 (JPMorgan 8 月), Phi-5 (GogoAI 单源 16B/MMLU 86.7%), Grok 4.6 (8/7, 1.5T V9) / Grok 4.7 (2.1T) (Musk 口头时间表, 更新 Grok 5 口径)
+- Key trends: 定价战进入 2T+ 开源旗舰层 (Luna $1.40 vs DeepSeek/Xiaomi); 机器人成 System Card 新品类 (Gemini Robotics + Robostral); 开源=前沿扩散主通道 (H3 区域 License / K3 / V4-Flash MIT / Intern-S2 Apache-2.0 / Nemotron 3); 安全评估行业共同语言化 (Muse Spark framework 与 Preparedness 口径趋同); Amazon 战略收缩与前沿加码并行
+- Updated: wiki/index.md (Synthesis 表新增 tech-report-digest 08-05 条目), wiki/log.md
+- New pages: wiki/synthesis/2026-08-05/tech-report-digest.md
+- Contradictions: none (新增条目均独立核实; 与 08-04 digest 重叠条目显式保留引用; 传闻均标注 ⚠️ 未确认)
+
 ## [2026-08-05] synthesis | conference-digest
 - New page: wiki/synthesis/2026-08-05/conference-digest.md
 - Coverage: 本期补全此前未覆盖论文，获奖全景导航至 08-01/08-03/08-04 digests（ICML 2026 Seoul 7/6-11 / NeurIPS 2025 / ICLR 2026 Rio / AAAI 2026 Singapore / CVPR 2026 Denver / ACL 2026 San Diego / EMNLP 2025 / WWW 2026 Dubai 奖项均已覆盖）。新增：KDD 2026 Vol.1（Jeju 8/9-13, 1,215→256 ~21%, 奖励 8/13 公布）工业推荐 5 篇——Meta Lattice model-space 重构 [2512.09200, 生产 +10% 营收指标/+11.5% 满意度/+6% CVR/20% 容量, 全指标胜 Wukong, 4/8 SOTA @17× 更少 FLOPs], Alibaba FAT field-aware Transformer [2511.12081, 首个 Rademacher complexity CTR scaling law, +4.38% AUC 离线/+2.33% CTR+0.66% RPM], ByteDance MixFormer 稠密-序列协同扩展 [2602.14110, Douyin+Lite 双系统 A/B], Meituan MTFM 免对齐异构 token [2602.11235, GQA+Hybrid Target Attn], Tencent 微信支付商户类目识别 [meta-path+多边际 OT, +8.8% 准确率/+18.9% 营收]; 上下文 Kunlun/LLaTTE/TokenMixer-Large/DeGRe/FARM + KDD Cup=Tencent UNI-REC
