@@ -4,6 +4,21 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-02] synthesis | Game RL & Game AI Bot Daily (2026-08-02)
+- New page: wiki/synthesis/2026-08-02/game-rl-daily.md
+- Coverage: 53 papers verified against arXiv API (no overlap with 07-27/08-01 game-rl digests)
+- Sections: ①Game RL (10): Generals.io superhuman self-play ranking #1 of 5,000+ humans, JAX sim (2606.23348); CAST solver-as-teacher turn-level credit, USTC/Meituan (2607.25308); WallZero WallGo citywide (2606.17847); AlphaZero sparse-reward limits + AZAL (2607.08984); Big 2 self-play (2605.28863); Real-Time Parallel CFR Tsinghua (2605.19928); AlphaExploitem poker exploitation TU Delft (2605.09150); StarWM SC2 world model CASIA (2602.14857); Endpoint Replay U Alberta (2607.25123)
+- ②Game AI Bot (7): environment-grounded prompt optimization Leibniz Hannover (2606.17838); Latent Bridge slow-fast dual-VLM real-time play (2606.24470); SPIKE dual controller (2605.18636); Clue deductive reasoning 18 games/4 wins (2603.17169); CA2 code-aware game testing McGill/Ubisoft (2605.13918); MIMIC-Py personality playtesting Concordia (2604.07752); Fixed-Persona SLM NPC dialogue (2511.10277)
+- ③Game Foundation Models (9): NitroGen NVIDIA 40k h/1k games (2601.02427); DeepMind multi-agent Rocket League world model (2607.05352); AlayaWorld Alibaba (2607.18367); ABot-World-0 single-GPU rollout (2607.19191); Lumine 3D open worlds Tsinghua (2511.08892); MARL-GPT AIRI/HSE (2604.05943); Mind-Studio executable world models Edinburgh (2606.16070); Nano World Models MIT (2605.23993)
+- ④PCG (6): Garden of Forking Paths narrative-arc generation NYU (2605.01245); World-Gen to Quest-Line RPG pipeline (2604.25482); Multiverse cross-game level blending (2603.26782); High-Dimensional PCG McGill (2602.18943); Zero-shot 3D map LLM agents (2512.10501); AutoBG board-game design assistant (2606.01976)
+- ⑤Benchmarks (7): MINDGAMES live social-reasoning arena (2605.29512); OmniGameArena UE5 12 games HKU (2606.09826); GameWorld NUS (2604.07429); SciCrafter Minecraft discovery-to-application UCLA (2604.24697); OpenGuanDan (2602.00676); FootsiesGym fighting-game (2607.06514); MTG-Causal-RL UWA (2605.06066)
+- ⑥Industry (6): TerraZero driving self-play 1.3M steps/s (2607.13028); ActionParty Snap multi-subject generative games (2604.02330); LPM 1.0 Tencent character performance (2604.07823); Play Like Champions counterfactual RTS coaching (2607.00190); Scouting by Reward esports IRL JHU (2604.14474); GameVerse video reflection (2603.06656)
+- ⑦Related techniques (9): info-theoretic open-endedness Stanford (2606.08369); compositional open-ended intelligence MSR/FAIR (2606.15386); PopuLoRA population self-play RLVR (2605.16727); structural self-play collapse threshold (2605.16315); adversarial action removal (2605.16312); ARMS MARL reward shaping (2605.23562); minimax-regret team games MIT (2607.09993); SuS strategy-aware curiosity HSE (2601.10349); PARED IRL Apple (2607.24900)
+- Key cross-cutting trends: superhuman self-play agents moving to full commercial games (Generals.io/Big 2/poker); world models becoming the backbone for both agents and foundation-model pipelines; multi-agent world models (Rocket League) breaking single-agent ceilings; PCG shifting from tiles/levels to narrative/quest/board-game generation; benchmarks moving to live human arenas (MINDGAMES) and video-first (OmniGameArena); industry proving out at scale (NitroGen 40k h, LPM 1.0, TerraZero 1.3M steps/s); theory hardening open-endedness & self-play collapse
+- Updated: wiki/index.md (Synthesis 表新增 game-rl-daily 条目), wiki/log.md
+- New pages: wiki/synthesis/2026-08-02/game-rl-daily.md
+- Contradictions: none (all claims verified against arXiv API metadata)
+
 ## [2026-08-04] synthesis | arXiv Daily Digest (2026-08-04)
 - New page: wiki/synthesis/2026-08-04/arxiv-daily.md
 - Coverage: Curated from the Mon Aug 3, 2026 arXiv batch (the latest listing available at run time: cs.AI 43 new, cs.IR 13, cs.LG 82, cs.CL 51), selecting 26 papers with NO overlap with the Aug 3 arXiv AI scan / Aug 3 paper check / Jul 31 digest. The batch's flagship rec/CTR/ads papers (TransX, SnapLGR, GALA, Think2Go, PaletteID, EvoReason, RecHarness, GenCDSR, MerchantBench) were already covered in the Aug 3 digests.
@@ -98,6 +113,25 @@
 - Updated: wiki/index.md (Synthesis表新增investment-daily条目), wiki/log.md
 - New pages: wiki/synthesis/2026-08-02/investment-daily.md
 - Contradictions: 无(长鑫科技8/1起涨跌幅限制与前期"8/1无限制最后交易日"表述一致; 中芯业绩日修正为本期更正)
+
+## [2026-08-02] synthesis | LLM 技术报告摘要 (2026-08-02)
+- New page: wiki/synthesis/2026-08-02/tech-report-digest.md
+- Coverage: 19 家公司大模型技术报告/System Card 全景（双语表格，沿用 07-31/08-01 格式）
+- 今日新增核实:
+  - NVIDIA Nemotron 3 Ultra 技术报告 (2026-06-09, 550B 总/55B 激活 Hybrid Mamba-Attention MoE + LatentMoE; NVFP4 预训练 20T tokens; MOPD 多环境 RLVR + 推理预算控制; 1M ctx; 吞吐约 6× 提升; 开源)
+  - Apple AFM 3 五模型家族 (2026-06-08, 与 Google 合作: 3B Core + 20B Core Advanced 稀疏激活 1-4B + Cloud PCC + ADM 3 Cloud 图像 + Cloud Pro 推理/Agentic)
+  - Amazon Nova 2 技术报告 (2026, Lite/Pro extended thinking 可配置推理; Omni 文本+图像+视频+音频输入/文本+图像输出; Sonic 语音到语音; 全系 1M ctx) — ⚠️ 更正 08-01 "Amazon 无 2026 新报告" 结论
+  - Zhipu GLM-5 (arXiv:2602.15763, 2026-02-17, 与清华合作; DSA 降低训练/推理成本; 异步 RL 基础设施 + 异步 agent RL; 开源基准 SOTA; 端到端真实软件工程)
+  - xAI Grok 4.5 Model Card 核实确认 (2026-07-14, SpaceXAI/Cursor 合作; 推理步骤数约为其他前沿模型一半; 安全域含 cyber/bio knowledge/bio agentic/反越狱/尽力输出安全含 CBRN 拒答/心理健康/行为)
+  - Anthropic Claude Opus 5 System Card 核实确认 (2026-07-24, Opus 4.8 升级; agentic coding/computer use/long-horizon work/数学科学推理提升; 系统卡+风险报告并存)
+  - Moonshot Kimi K3 补充 arXiv:2607.24653
+  - Baichuan-M4 细节 + 更正 (临床级医疗 Agent 系统; Baichuan-Harness 运行时; SPAR++ 跨度奖励/推理路径压缩/课程学习/稳定策略优化; 多模态医学感知; hallucination 3.3%) — ⚠️ 更正 08-01 误记的 arXiv ID (2606.12721 → 2606.08982)
+  - StepFun Step 3.5 Flash 补充 arXiv:2602.10604 + 基准 (IMO-AnswerBench 85.4% / LiveCodeBench-v6 86.4% / BrowseComp 69.0% 带上下文管理; 对齐 GPT-5.2 xHigh 与 Gemini 3.0 Pro)
+- Confirmed no new report: OpenAI (GPT-5.6 已收录, 卡片无更新), Google (Gemini 3.6 Flash 已收录), Meta (Muse Spark 已收录, 无 2026 新模型卡), Microsoft (Phi-4-rv 已收录), ByteDance (Seedance 2.5 已收录), InternLM (Intern-S1-Pro 已收录), Zhipu (GLM-5.2 已收录; GLM-5.3 仍为传言); Mistral/Qwen 无新 LLM 报告 (仅 Voxtral TTS / Qwen-Audio TTS 音频报告, 不收录主 digest); 01.AI 搜索受限 (429) 待重试
+- 交叉观察: 开源3T时代 (Kimi K3/V4/GLM-5.2); 美国开源权重旗舰之争成型 (Nemotron 3 Ultra vs DeepSeek-V4/GLM-5.2/K3); 安全/准备度报告标配化 (GPT-5.6/Opus5/Grok4.5/Muse Spark); 端侧-云端边界重画 (Apple AFM 3); agentic 基准成发布主战场; 中国医疗垂直模型崛起 (Baichuan-M4)
+- Updated: wiki/index.md (Synthesis 表新增 tech-report-digest 08-02 条目), wiki/log.md
+- New pages: wiki/synthesis/2026-08-02/tech-report-digest.md
+- Contradictions: 2 (Amazon "无 2026 报告" → Nova 2 技术报告存在; Baichuan-M4 arXiv ID 更正); 待核实: 384K 最大输出长度归属 (DeepSeek-V4 vs GPT-5.6 Sol, 未独立证实, 暂沿用 DeepSeek-V4)
 
 ## [2026-08-01] synthesis | LLM 技术报告摘要 (2026-08-01)
 - New page: wiki/synthesis/2026-08-01/tech-report-digest.md
