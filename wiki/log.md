@@ -4,6 +4,25 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-06] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-08-06)
+- New page: wiki/synthesis/2026-08-06/investment-daily.md
+- Coverage: 周四版·事件周第四波(验证日)。数据口径: 美股 8/5 收盘+8/5 盘后(北京 8/6 凌晨), 港股/A股 8/5 收盘 + 8/6 早盘/午前(约 10:30-10:40)
+- ①美股 8/5: 三大指数齐创收盘新高——道指 +1.71% 报 54,085(首破 5.4 万,连续两日)/标普 +1.79% 报 7,736(首破 7,700)/纳指 +2.59% 报 26,584; 驱动=Caterpillar/Palantir 业绩理想 + 霍尔木兹和谈油价急回(能源落伍)
+- ②存储"验证日"落地(今日核心): 闪迪 Q4 FY26 营收 89.7 亿美元(+372%,超预期 83.9 亿)/调整后 EPS 39.25 美元(去年同期 0.29 的 135 倍)/调整后毛利率 84.6%(预期 81.5%)均创单季新高, 数据中心收入 29.8 亿(环比+103%/同比+1298%)、Edge 54.3 亿(环比+48%)、Consumer 5.56 亿(环比-32%); 但 Q1 FY27 指引营收 103-108 亿(低于预期 111.6 亿近 5.5%)、EPS 44-46 美元(低于预期)、毛利率 83-85%(环比持平,见顶迹象); 新增 140 亿回购(总授权 155 亿); 8/5 收跌超 5% 后盘后再跌 8%; 西部数据指引全面超预期但盘后跌超 10%; 两股较 6 月高点跌约 40% 已先行回调(YTD 分别 +468%/+200%+,标普仅 +13%)
+- ③8/6 存储链传导: 韩日存储大跌(SK 海力士 -8%/三星 -5%/铠侠 -10%), 港股南方东英 SK 海力士 ETF 低开 -15%, A/H 存储链补跌; 机构口径: 中信建投"非需求逆转,是涨价斜率与高利润率持续性风险重定价,2026 下半年价格仍有支撑/涨价斜率放缓/扩产逐步推进,定价权重从价格弹性转向订单/产能兑现"; 基本面证据仍硬(2027 三大原厂 DRAM/HBM 产能提前售罄 + HBF 标准发布谷歌/Tenstorrent 加入 + HBM 晶圆占比 2027~30%)
+- ④SpaceX 解禁执行日(8/6): 9.115 亿股 ~$1,140 亿(美国史上最大单股解禁); Q2 营收 $78B(+92%), Q2 Capex $18.4B(~6 倍,95%+ AI), 2026 全年 Capex 指引 $100B+; 8/5 股价 -13%; 马斯克"未来 AI 基建只用 NVIDIA 芯片"(压制 AMD)
+- ⑤谷歌 AI 重组: Jeff Dean 离职创办 Discovery Loop(Alphabet 资金+算力)/Hassabis 卸任 DeepMind CEO 转任董事长兼 Alphabet 首席科学家/Koray Kavukcuoglu 接任; Gemini 3.5 Pro 推迟; GOOGL -~4%
+- ⑥Meta Muse Code: 首个 AI 编程智能体, 贡献者档每百万输出 token 仅 $0.20(低价策略); 苹果: 宣布新增 $1,000 亿美国制造投资
+- ⑦港股: 8/5 收盘恒指 +0.24%(25,915.32)/恒生科技 +0.97%(PCB 胜宏 +16%/黄金中国黄金国际 +13%/三桶油跌/南向净卖 13.98 亿); 8/6 低开 -0.96% 报 25,667.14/恒生科技 -0.99%(科网普跌联想百度哔哩 -2%/黄金股逆势涨赤峰 +9%/建滔积层板 -4%/存储 ETF -15%); 南向早盘净买 94.85 亿港元(腾讯 15.18/阿里 8.76/中芯 6.11); 夜期 25,674 低水 242 点; MiniMax 今日纳入港股通生效 + H3 开源 Day0 适配 + 无问芯穹战略合作
+- ⑧A股: 8/5 放量收涨(沪指 +1.47% 3,878.43/深成指 +1.86% 14,144.20/创业板 +1.32% 3,535.14, 成交 2.66 万亿放量 4,460 亿, 存储芯片/MLCC/玻纤领涨, 中际旭创收跌逾 7% 但成交 675 亿创 A 股个股历史纪录, 新易盛 -5%/天孚 +2.29%); 8/6 早盘半导体材料设备逆势走强(科创板主题指数 +2.09%, 中巨芯 +15.30%/欧莱新材 +11.77%/有研硅 +10.80%)而存储链补跌; 《集成电路布图设计保护条例》修订(10/15 施行)
+- ⑨光模块禁令进展: 中国使馆"采取一切必要措施回应" + 商务部将美国 Compliance Testing LLC 列入反制清单 + "易中天"集体回应未收到限制性文件; FCC Cover List(7/28)未列中国光模块; 高盛/花旗看好龙头; 9 月底高层会晤为关键催化
+- ⑩中概 8/5 US 时段: 金龙指数 +0.93%(阿里 +3%/蔚来 +2%/拼多多 +1%/理想 -5.43%); 宇树科技 8/6 定价(T-2)→8/7 路演→8/10 申购
+- 宏观: 明日 8/7 美国 7 月非农(预期新增 8.5-9 万 vs 6 月 5.7 万, 失业率 4.3%; Fed 9 月加息概率 ~65%; 30Y 曾触 5.24-5.27%; Kalshi/Polymarket 押注 7 万区间; BNY 盈亏平衡就业 ~5 万/月)
+- Key trends: 存储交易范式切换("涨价斜率"→"订单兑现"); "确认非催化"模式扩散(SNDK/WDC 接棒 AMD/SPCX——高动量标的财报利好即兑现); 美股 AI 组织/产品节奏不确定性(谷歌重组/Gemini 推迟)与政策红利(苹果千亿美国制造)并行; 南向逆势扫货=港股 AI 应用主线(阿里 Qwen/MiniMax/智谱)资金面支撑; A股半导体设备材料独立于美韩存储股价
+- Updated: wiki/index.md (Synthesis 表新增 investment-daily 08-06 条目), wiki/log.md
+- New pages: wiki/synthesis/2026-08-06/investment-daily.md
+- Contradictions: none (SNDK 财报"业绩暴增+盘后大跌"与"确认非催化"模式一致; A股 8/6 存储承压 vs 半导体材料设备走强为结构性分化非数据冲突; 恒指 8/5 收盘 25,915.32 由 8/6 开盘 -0.96% 反推校验一致)
+
 ## [2026-08-06] synthesis | LLM Tech Report Digest (2026-08-06)
 - New page: wiki/synthesis/2026-08-06/tech-report-digest.md
 - Coverage: 继承 08-05 全部 20 节条目，今日新增/复核——
@@ -4081,3 +4100,12 @@
 - Updated: wiki/index.md (Synthesis 表新增 conference-digest 2026-08-06 条目), wiki/log.md
 - New pages: wiki/synthesis/2026-08-06/conference-digest.md
 - Contradictions: none（与 08-01/08-03/08-04/08-05 digests 及同日 arxiv-daily/arxiv-paper-check 显式去重；From Word to World 机构构成标注 tentative）
+
+## [2026-08-06] synthesis | arXiv AI Research Scan (2026-08-06)
+- New page: wiki/synthesis/2026-08-06/arxiv-ai-search.md
+- Window: arXiv Thu Aug 6, 2026 listing (Wed Aug 5 submissions, IDs ~2608.04144–2608.05148); all 10 papers verified against abs pages (export API HTTP 429 throughout the run)
+- Focus: clusters NOT covered by same-day jobs — games/game-theory/mechanism-design, multi-agent cooperation & prosocial learning, attention-free sequence modeling, agent spatial-memory grounding, sports forecasting. Explicitly disjoint from arxiv-daily (24), arxiv-paper-check (27), conference-digest, tech-report-digest; no overlap with Aug 5 scan/digest either
+- Papers: Sublogarithmic Swap Regret (2608.04149, first sublog ~O(nm²√(log m log T)) via hybrid entropy+log-barrier FTRL); Budget-Feasible Mechanisms (2608.04337, constant approx for subadditive in poly time resolving DPS conjecture, compensation design, Anagnostides et al.); Dimensions of Power for XAI (2608.05031, power-index taxonomy + property proofs); Reputation-Based Cooperation in LLM Agents (2608.04507, Image-Scoring ceiling, defector exclusion as robustness lever); Calibrating Artificial Guilt (2608.04663, fMRI guilt weight ŵ=1.118, KL=0.0012 vs human); Responsibility in Multi-Agent SDP (2608.04318, formal causal attribution vs human judgments on Goofspiel); Kathleen Writes (2608.04678, attention-free byte-level, 1.84 vs 2.04 bits/byte @512MB, FORM DISTANCE, retrieval-decoding corpus boundary); Modern Information Seeking (2608.04609, FDIA 2026 Best Paper, PhD research statement); When Memory Lies (2608.04574, VLM spatial-memory staleness, stale memory >2× death vs none); Football-Aware Match-State Simulation (2608.05030, auditable exact-score reranking V1→V4 10.0→14.7% Top-1, EPL 150-match replay)
+- Exclusions: 2608.04020 (Artificial Institutions) — cross-list to cs.GT but v1 24 Jun 2026, pre-window
+- Updated: wiki/index.md (Synthesis 表新增 arxiv-ai-search 2026-08-06 条目), wiki/log.md
+- Contradictions: none
