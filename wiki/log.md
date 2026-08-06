@@ -4,6 +4,19 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-06] synthesis | WorldQuant 101 Alpha 因子选股 Top 20 — 美股 (2026-08-06)
+- New page: wiki/synthesis/2026-08-06/wq101-alpha-daily.md
+- Coverage: 数据基准 8/5 收盘 + 8/6 盘前/事件窗口（周四版，事件周第四波），基于 WorldQuant 101 Alpha 因子框架对美股 Top 20 打分
+- 8/6 增量（相对 8/5 报告）: ①指数分化——8/5 Dow 54,503.12 (+0.77%) 连续第三日历史收盘新高, 但 S&P 7,730.65 (-0.08%) 与 Nasdaq 26,472.87 (-0.42%) 自盘中纪录高点回落 (Russell 2000 早盘 +1.85%); ②存储验证日落地 = 利好兑现——SNDK Q4 营收 $8.97B (+372%)/EPS $39.25/毛利率 84.6% 均创单季新高 (数据中心 $2.98B 环比 +103%/同比 +1298%), 但 Q1 FY27 指引 $10.3-10.8B 低于预期 ~5.5% + 毛利率指引 83-85% 环比持平 (市场眼中的见顶), 8/5 收跌 5%+ 后盘后再跌 8%; WDC 指引全面超预期仍盘后 -10~12%; 今晨 SK 海力士 -8%/三星 -5%/铠侠 -10%——存储定价从"涨价斜率"切换至"订单/产能兑现", 与 8/5 报告预判完全吻合; ③"确认非催化"三连击完成 (AMD -9.2% → SNDK/WDC), 反转因子系统性失效; ④财报兑现者接力——LLY +4.2% (Q2 营收 $23.0B +48%/Mounjaro +91% $9.9B/Zepbound $4.9B/上调 2026 指引至 $85-87B), ANET +13.3% (首次 $3B 季度 $3.036B +37.7%/FY26 上调至 $12.6B +40%), SHOP +18% (营收 +34% $3.58B/GMV +32% $115.57B/FCF $654M 18% 利润率/Q3 指引低 30s% 远超 26.3% 预期), DIS +4.5% (Q3 利润超预期 + Toy Story 5 拉动流媒体/商品/乐园); ⑤GOOGL -~4% (Hassabis 卸任 DeepMind CEO 转任董事长兼 Alphabet 首席科学家/Jeff Dean 离职创办 Discovery Loop 获 Alphabet 资金算力/Koray 接任/Gemini 3.5 Pro 推迟)——AI 组织风险首次冲击谷歌叙事; ⑥NVDA +3.4% 收 $219.22 (市值 $5.51T, 逼近 52 周高 $236.54)——SpaceX 确认 AI 基建只用 NVIDIA (Musk: Vera Rubin "undisputed best"), 供给稀缺叙事强化登顶; ⑦宏观——黄金 +3% 现货 $4,199.78/期货 $4,260.80, WTI +0.45% $76.11 (胡塞袭击沙特 Yanbu 油轮), 财政部宣布"至少未来数季"维持发债规模稳定, 10Y 回落, VIX ~15-16
+- Key signals: NVDA(9.4, 登顶, SpaceX 独家 + Alpha#1/#41 双共振); MSFT(9.2, 云兑现基准锚); LLY(9.1, 最大上调 7.8→9.1, "超当期+上调远期"标准兑现者); ANET(8.9, 新入选, 首次 $3B 季度 + 上调指引, AI Fabrics ≥$3.5B/营业利润率 ~49.9%); SHOP(8.8, 新入选, AI 电商 + FCF 利润率 18%); JPM(8.8, XLF 新高区域整固, 8/7 非农为下一个加息路径催化); PLTR(8.7, 下调 9.1→8.7, +30% 后超买+动量边际衰减); AVGO(8.5, Alpha#12 防 AMD 式传染); TSM(8.4, N3 受限稀缺); BAC(8.4); GS(8.3); CAT(8.3); DIS(8.3, 新入选, -12% YTD 深调后反转, Alpha#53 唯一存留); LMT(8.2); RTX(8.2); AMZN(8.2, 下调 9.0→8.2, Bezos 减持悬顶 + 无新增催化); LRCX(8.1, 下调, 存储链情绪传导); MRVL(7.8); MU(7.7, 下调 8.2→7.7, 验证日回吐, 基本面未逆转但情绪出清未完); GOOGL(7.5, 最大下调 8.9→7.5, 组织风险非基本面)
+- Factor mix: Alpha#1 动量(11 次/55%, 从 40% 重回绝对主导——兑现者驱动)+Alpha#41 趋势(9 次/45%)+Alpha#6 量价(8 次/40%)+Alpha#30 波动率(5 次/25%)+Alpha#53 反转(3 次/15%, 从 30% 系统性退潮——"确认非催化"三连击使反转因子在高动量标的上失效)+Alpha#19 均值(2 次/10%, 仅 GOOGL/MU)+Alpha#12 背离(2 次/10%, AMZN/AVGO)
+- Sector mix: Semis 6 只(30%, 从 45% 降配——硬件广度→稀缺精选)+Tech/Software/SaaS 5 只(25%, ANET/SHOP 软件兑现轮动)+Financials 3 只(15%)+Defense 2 只(10%)+Cons Disc 2 只(10%, +DIS)+Healthcare 1 只(5%, LLY)+Industrials 1 只(5%)
+- Top 5: NVDA(9.4)/MSFT(9.2)/LLY(9.1)/ANET(8.9)/SHOP(8.8)
+- Strategy: 只对"超当期+上调远期"的兑现者 (LLY/ANET/SHOP/DIS) 给动量溢价; 半导体从 45% 广度配置转向 30% 稀缺精选 (移除 AMD/SNDK/INTC); 软件/消费兑现轮动 (新入选 ANET/SHOP/DIS); 金融 15% 维持 (非农前加息交易敏感); GOOGL 大下调 (组织风险); 存储链 MU 保留但 Alpha#53 反转需等放量止跌; 候补: AMD/SNDK/WDC/SPCX(解禁)/INTC/CRL/UBER/META/AXP/NVO/CVX/XOM
+- Updated: wiki/index.md (Synthesis 表新增 wq101-alpha-daily 2026-08-06 条目), wiki/log.md
+- New pages: wiki/synthesis/2026-08-06/wq101-alpha-daily.md
+- Contradictions: ⚠️ 发现 investment-daily 08-06 指数数据口径错误——其"美股 8/5 三大指数齐创收盘新高(道指 +1.71% 54,085/标普 +1.79% 7,736/纳指 +2.59% 26,584)"实为 8/4 收盘值 (8/5 实际为 Dow 54,503.12 +0.77% 创新高而 S&P -0.08%/Nasdaq -0.42% 回落), 已在 wq101-alpha-daily 08-06 报告顶部标注勘误并建议 investment-daily 更正; 其余无 (SNDK/WDC"业绩暴增+盘后大跌"与"确认非催化"模式一致)
+
 ## [2026-08-06] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-08-06)
 - New page: wiki/synthesis/2026-08-06/investment-daily.md
 - Coverage: 周四版·事件周第四波(验证日)。数据口径: 美股 8/5 收盘+8/5 盘后(北京 8/6 凌晨), 港股/A股 8/5 收盘 + 8/6 早盘/午前(约 10:30-10:40)
