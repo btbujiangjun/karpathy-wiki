@@ -4,6 +4,23 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-06] synthesis | LLM Tech Report Digest (2026-08-06)
+- New page: wiki/synthesis/2026-08-06/tech-report-digest.md
+- Coverage: 继承 08-05 全部 20 节条目，今日新增/复核——
+- ① Qwen3.8-Max 开源窗口状态更新 (08-03 阿里云官方博客 "A New Bar for Coding and Cowork" 确认; 权重"下周"→预计 08-10 前后放 HF/ModelScope, 仍缺具体日期/license/model card; 对照 Moonshot K3 07-27 按期放权, "承诺+日期+license"成 2T+ 开源旗舰竞争标准)
+- ② xAI Grok 4.6 发布倒计时 (Economic Times 07-29 复核 Musk 口径: 明日 08-07, 1.5T V9 基座, 大幅升级 SFT/RL; Grok 4.7 2.1T 随后数周; 仍为预告, 08-07 为观察日)
+- ③ OpenAI GPT-5.7 泄漏复核 (WinCentral 07-30: 8 月发布, 新 pretraining foundation ~10T tokens, 更强推理/agent 能力; GPT-6 推迟至 9 月; Astra 代号命名未定; 未获官方确认)
+- ④ Apple Siri AI 进入 iOS 27 消费者测试版 (TechCrunch 08-03 "Apple finally fixed Siri", beta 自 07 月起; Apple Foundation Models 经 Google Gemini 合作训练, 与 AFM 3 发布口径一致; AFM 3 正式技术报告仍待发布)
+- ⑤ Moonshot Kimi K4 训练传闻 (AI Weekly 07-28: 寻求更多 Blackwell 芯片, 训练阶段未发布, 不入正式条目; K3 技术报告 07-27 仍为最新)
+- ⑥ Microsoft Phi-5 状态更新 (仍无官方技术报告, 唯一新增为 Inference Index 目录条目 2026-01-08/128K ctx, 非官方报告不写入正式条目)
+- ⑦ NVIDIA Nemotron 3 Ultra 技术报告复核 (06-09, 550B/55B Hybrid Mamba-Attention MoE, 20T tokens, 1M ctx, LatentMoE+MTP+NVFP4 预训练+多环境 RLVR+MOPD, ~6× 推理吞吐; 家族 Nano/Super/Ultra 齐备, 无变更)
+- ⑧ Mistral Shieldstral 复核 (08-04 公告/arXiv 07-28: 3B 多模态安全分类器, policy-adaptive QA, Apache-2.0, 12 语言, 单 16GB GPU, Open Secure AI Alliance) 与 Intern-S2-Preview 35B HF 复核, 均无变更
+- 核实无更新: DeepSeek (V4-Flash-0731 保留, 无 8 月新报告), Meta (无 Llama 新报告, Muse Spark 为当前主线), Google (最新卡 Gemini 3.6 Flash 07-21), Anthropic (Opus 5 System Card 07-24), Amazon (BI 07-28 Nova 收缩+FMR 确认), ByteDance (Seed2.1 06-23), Zhipu (GLM-5.5 仍为 JPMorgan 8 月预测), StepFun (Step 3.7 Flash 官网现列), Baichuan/Yi/MiniMax (无新)
+- Key trends: Qwen 开源窗口=本周最大观察点; 8 月上旬密集发布窗口 (Grok 4.6 明日 + GPT-5.7 传闻); 开放权重=前沿扩散主通道且"承诺兑现"成竞争维度; Nemotron 3 家族技术报告齐备对抗开源 2T+ 阵营; 安全报告行业共同语言化
+- Updated: wiki/index.md (Synthesis 表新增 tech-report-digest 08-06 条目), wiki/log.md
+- New pages: wiki/synthesis/2026-08-06/tech-report-digest.md
+- Contradictions: none (继承条目显式标注"保留"; 新增均标注复核来源; 传闻统一标 ⚠️ 未确认不入正式条目)
+
 ## [2026-08-06] synthesis | arXiv Daily Digest (2026-08-06)
 - New page: wiki/synthesis/2026-08-06/arxiv-daily.md
 - Coverage: 24 papers curated from the Thu Aug 6, 2026 arXiv batch (new submissions ~2608.04012–2608.05148, submitted Aug 4–5; stream sizes cs.AI 41 / cs.CL 72 / cs.LG 96 / cs.IR 8 new, per listing-page headers). NO overlap with Aug 4/5 digests (TurnSight 2608.04007 & WorldCup Arena 2608.04008 at this window's boundary were already covered in the Aug 5 digest). ~12 papers overlap the same-day arXiv Paper Check 2026-08-06 (cs.AI/cs.IR streams) — cross-referenced, not duplicated in coverage.
