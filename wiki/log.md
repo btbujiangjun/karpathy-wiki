@@ -4154,3 +4154,12 @@
 - 去重核验: 每篇候选均对 index.md / log.md / wiki/synthesis/** 全文 grep（arXiv ID + 关键词双查）; 已覆盖排除: MiRA、Subgoal-driven、CSRO、AutoHarness（08-03/08-04 digest）、embedded equilibrium（08-05 arxiv-daily, 仅导航引用）、TmallGS/RaG/UniMVT/IDProxy/AgentGym2/Agent World Model/HOBA/PlatformBid-BidFlow/RWML/Melo（06 digest 已排除清单）
 - Updated: wiki/index.md (Synthesis 表新增 conference-digest 2026-08-07 条目), wiki/log.md
 - Contradictions: none（PerFusion 的 FOUNDv2 训练依赖、"Alibaba AGI 电商智能引擎"命名、KDD Cup 赛道名标注 tentative；与 investment-daily 08-06 的 Hassabis/Jeff Dean 职务变更一致）
+
+## [2026-08-07] synthesis | tech-report-digest
+- New page: wiki/synthesis/2026-08-07/tech-report-digest.md
+- Coverage: 大模型技术报告 / System Card 全景（20 家公司分节 + 交叉观察），今日重点 = Grok 4.6 观察日 + Qwen3.8-Max 开源窗口倒计时 + GPT-5.7 泄漏复核；逐节今日核实（20 家全部复核）
+- 今日新增/变更: ①xAI Grok 4.6 观察日（08-07）——Musk 预告 1.5T V9 基座、大幅升级 SFT/RL 后训练；第三方基准站 kie.ai 称已上线（2026-08-07），但 xAI 官方 models 目录仍仅列 grok-4.5（$2/$6, 500K ctx, 知识截止 2026-02-01）→ 标注"第三方称已上线、官方待确认"，官方文档更新后再升级为正式条目；②Qwen3.8-Max 开源窗口状态更新：08-03"下周"承诺 → 08-08~08-14 为权重观察窗口（明日进入），仍缺具体日期/license/model card；③Anthropic 复核：Claude Opus 5 System Card（07-24）为最新，Sonnet 5 System Card 文档站更新至 07-10 版本；④Kimi Slides 演示（08-03）新增；⑤其余 15+ 家公司（Meta/Google/Mistral/Amazon/ByteDance/InternLM/StepFun/Baichuan/Yi/MiniMax 等）无 8 月新报告，条目保留
+- 传闻未确认清单（不入正式条目）: GPT-5.7/Astra（The Information + WinCentral）、GLM-5.5（JPMorgan 8 月）、Phi-5（仅 Inference Index 目录条目）、Grok 4.6/4.7（Musk 口头时间表 + 第三方上线断言）、Kimi K4（Blackwell 训练传闻）
+- 交叉观察: Grok 4.6 + Qwen 开源窗口 = 两大"承诺制发布"进入验收期；8 月上旬密集发布窗口延续；Nemotron 3 家族技术报告齐备；定价战进入 2T+ 开源旗舰层；安全报告标配化继续且互相参照
+- Updated: wiki/index.md (Synthesis 表新增 tech-report-digest 2026-08-07 条目), wiki/log.md
+- Contradictions: none
