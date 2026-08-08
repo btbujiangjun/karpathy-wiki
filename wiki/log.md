@@ -4,6 +4,27 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-08] synthesis | LLM Tech Report Digest (2026-08-08)
+- New page: wiki/synthesis/2026-08-08/tech-report-digest.md
+- Coverage: 各大 AI 公司最新技术报告 / System Card 汇总（2025-2026），20 个公司/实验室分节 + 交叉观察，沿用 08-07 基线结构
+- 今日增量（相对 08-07）:
+  - **Grok 4.6 观察日（08-07）已过，状态从"观察日"转为"窗口外溢、官方未确认"**：kie.ai 仍称 08-07 已上线（xAI API / Grok app / grok.com / SuperGrok / X Premium+）；但 xAI 官方 docs.x.ai 模型目录截至 08-08 仍仅列 grok-4.5（$2/$6，500K ctx，知识截止 2026-02-01），API release notes 无 grok-4.6 条目；Musk 07-27 "around August 7" / 07-28 1.5T V9 基座 + 大幅升级 SFT/RL，但 **08-04 SpaceX 财报电话会称"next week"（≈08-10~14）**，时间表实际后移；无官方 model card / 定价 / 上下文 / 基准；Grok 4.7（2.1T）随后数周
+  - **Qwen3.8-Max 开源权重窗口今日（08-08）正式开启**：08-03 承诺"下周" = 08-08~08-14；截至搜索时 HF/ModelScope 无新权重条目，仍缺具体日期 + license + model card，对照 Kimi K3 按期放权（07-27 兑现）持续受评论界质疑
+  - **Apple AFM 3 技术报告"承诺未兑现"观察**：06-08 承诺 "later this summer" 仍未发布（2025 年 AFM 2 报告 7 月发布，节奏对照）；核实五模型家族细节——AFM 3 Core（3B dense）/ Core Advanced（20B 稀疏，IFP 激活 1–4B）/ AFM 3 Cloud（PCC）/ ADM 3 Cloud（图像）/ AFM 3 Cloud Pro（PCC on Google Cloud NVIDIA GPU，NVIDIA Confidential Computing + Intel TDX + Google Titan）；与 Google 合作定制、TPU 训练；Siri AI 已进 iOS 27 消费者 beta（TechCrunch 08-03）
+  - **StepFun / InternLM / Yi / Baichuan 无 8 月新报告**：StepFun 最新 = Step 3.7 Flash（05-29，198B/11B，原生多模态，256K）；InternLM 最新 = Intern-S2-Preview（07-17/18，S1-Pro arXiv:2603.25040 为 1T 级科学多模态基线）；Yi / Baichuan 无更新
+  - 复核无变更：DeepSeek / OpenAI（GPT-5.7 仍未确认）/ Meta / Google DeepMind / Anthropic / Mistral / NVIDIA / Amazon / ByteDance / Zhipu（GLM-5.5 单源传闻）/ Moonshot（K3 07-27 仍最新，K4 传闻）/ Microsoft（Phi-5 无官方报告）/ MiniMax
+- Key updates: 见今日重点框与交叉观察——"承诺制发布"验收：Grok 4.6 窗口外溢 + Qwen 开源窗口开启；Apple 技术报告滞后观察；8 月上旬密集发布窗口延续（GPT-5.7 传闻 / Qwen 权重 / Grok 4.7）
+- Updated: wiki/index.md (Synthesis 表新增 tech-report-digest 2026-08-08 条目), wiki/log.md
+- New pages: wiki/synthesis/2026-08-08/tech-report-digest.md
+- Contradictions: ⚠️ 时间表矛盾已标注——Musk 07-27/07-28 称 Grok 4.6 "around August 7"，但 08-04 财报电话会称"next week"（≈08-10~14），且第三方 kie.ai 宣称 08-07 已上线 vs xAI 官方目录无记录；结论为"官方未确认"（明确标注，不写入正式条目）。其余无
+
+## [2026-08-08] synthesis | 投资日报 — 全球科技与 AI 板块 (2026-08-08)
+- New page: wiki/synthesis/2026-08-08/investment-daily.md
+- Coverage: 周五（8/7）完整收盘确认版——美股/港股/A股/中概均为 2026-08-07 收盘口径。①美国 7 月非农爆冷转负（-2.3 万 vs 预期 +8 万，5/6 月合计下修 10.3 万，失业率 4.1%），9 月加息概率 ~55%→~44%，美股齐涨、S&P 500 创收盘新高 7,757.64、纳指周 +5.19%（4 月以来最强）；②A股 8/7 放量大涨（沪指 +1.02% 3,940.04 创年内新高，成交 26,834 亿放量 1,359 亿，超 2800 股上涨）——CRO/创新药爆发（百花医药 4 连板）、AI 硬件 PCB 涨停潮（高盛上修 PCB/CCL）、稀土永磁（中国稀土涨停）、黄金（金价逼近 5300）；③港股 8/7 恒指 +0.54% 收 25,668.03、恒生科技 +0.78%——智谱 +14.63%、MINIMAX-W +9.83%（DeepSeek 拟提价）、胜宏 +10.91%、金斯瑞 +16.18%（医药 BD 出海 997 亿美元）；④中概 8/7 US 时段金龙 +0.82%（确认值，BABA +1.26%、NIO +3.04%）；⑤AI 主题：SpaceX 解禁日 +15.83%（年底 ARR 冲击 $100B、NVIDIA 独供背书）、PLTR +10.31%、OpenAI 暂停 Astra、SK 海力士拟投 383 亿美元扩产、FCC 拟禁中国光收发器（COHR +13%）、寒武纪"最强中报"（H1 营收 59.96 亿 +108%、归母净利 23.11 亿 +122.6%）、宇树科技 8/10 申购（战配 DeepSeek/腾讯/社保）、特朗普对多晶硅加征 15% 关税；⑥策略：非农偏鸽利好长久期 AI 股但 8/12 美国 CPI（预期 3.4%）为下一验证点；A 股主线 = CRO/医药 BD + AI 硬件 + 稀土 + 国产算力；港股 ADR +0.64% 预示周一偏暖；中芯 8/13 Q2 业绩 + 8 月中旬财报季为港股关键催化
+- Updated: wiki/index.md（Synthesis 表新增 investment-daily 2026-08-08 条目）, wiki/log.md
+- New pages: wiki/synthesis/2026-08-08/investment-daily.md
+- Contradictions: ⚠️ 重要口径校准——investment-daily 08-07 的 A股/港股 8/7 数字混入 2025 年同期数据（A股"1.83 万亿成交/医药续跌"实为 2025-08-07 口径，2026 实为沪指 +1.02% 3,940.04/成交 26,834 亿/CRO 爆发；港股"25,081.63/+0.69%"实为 2025，2026 为 25,668.03/+0.54%；"南向 6.61 亿/小米 17.22 亿"亦为 2025-08-07 数据），本报告已校准并注明 2026 南向 8/7 净额待官方确认（最近确认值 8/6 净买 94.85 亿）；中概 8/6 时段明细经 8/7 US 时段数据覆盖（金龙 +0.82%），36氪 8/6 flash 不再采信
+
 ## [2026-08-07] synthesis | WorldQuant 101 Alpha 因子选股 Top 20 — 美股 (2026-08-07)
 - New page: wiki/synthesis/2026-08-07/wq101-alpha-daily.md
 - Coverage: 数据基准 8/6 收盘 + 8/7 盘前/非农事件窗口（周五版，事件周"硬门槛"兑现日），基于 WorldQuant 101 Alpha 因子框架对美股 Top 20 打分
