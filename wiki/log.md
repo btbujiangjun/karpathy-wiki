@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-08] synthesis | Conference Digest
+- New page: wiki/synthesis/2026-08-08/conference-digest.md
+- Coverage: KDD 2026 (Jeju 8/9-13) 开幕倒计时·最后一期开幕前全景——A*STAR CFAR 7 篇录用、Bohrium 分析 1,215→256 ≈21% 复核、⚠️ KDD 官网 OpenReview 数据泄露通告 (tentative, single-source)；NeurIPS 2026 三城联动官宣 (Sydney 12/6-12 + Atlanta 12/8-13 + Paris 12/9-13)，⚠️修正 08-07 digest 的 San Jose 单城口径；2027 议程前瞻——RecSys 2026 Minneapolis 9/28-10/2 (PC = Minmin Chen / Bart Goethals / Martijn Willemsen；GC = Konstan / Karypis / Adomavicius)、CIKM 2026 accepted TBD、EMNLP 2026 accepted 名单已上线 (Porto 11/2-6) + 引用 EMNLP 2025 Knowledge Infusion Scaling Law [2025.emnlp-main.1331, Alibaba Lv et al., memory-collapse threshold + critical collapse point 随模型规模 scale up]；arXiv 大厂精选 8 篇新增 (全库 grep 去重, 2608.xxxxx 本周批次)——Google DeepMind ResidencyRL 临床模拟 RL [2608.07418, 35 作者含 Quoc V. Le/Raia Hadsell/Joelle Barral/Dale R. Webster], Meta Skaling 耦合 Scaling Law [2608.07222, Videau/Youbi-Idrissi/Lopez-Paz/Ahuja, MAPE -1.5-3x, 全网格外推 ~10× 更少计算], TM20K 电商 20K 级序列蒸馏 (老师保留全 token, 学生学合并) [2608.07055], HD-Rec 华为 Noah's Ark + CityU 分层量化 + 域自适应稀疏路由生成式跨域推荐 [2608.06997, Bo Chen/Ruiming Tang/Guorui Zhou/Han Li/Xiangyu Zhao], Baidu Autonomy-of-Heads 免数据稀疏注意力 (冻结 QK 谱几何) [2608.06849, Yang/Shang/Wang/Yu], CoinRAG 上下文化 nugget KV 缓存复用 [2608.07458, Gyuwan Kim 等], CreativeInstruct UNC 质量/创造力/多样性平衡 [2608.07460, Bansal/Stengel-Eskin], MemWM LMU 记忆库条件文本世界模型 [2608.07107, SSF +206.3% vs SFT, ALFWorld/WebShop/ScienceWorld +65.4%]；WeatherNext Nature 8/6 气旋路径/强度/风结构 SOTA + 1 天预警提前量 (s41586-026-10953-2, 已开源)；导航 (已覆盖不重复): SITA 2608.03692 (08-07 ai-search) / DEGR 2608.04809 (08-06 arxiv-daily + paper-check) / Gryphon-v2 2608.06213 (08-07 arxiv-daily + ai-search) / DeepMind 组织变更 (08-06 investment-daily)；当日 arXiv 流由同日 arxiv-daily / arxiv-ai-search 覆盖
+- Updated: wiki/index.md (Synthesis 表新增 conference-digest 2026-08-08 条目), wiki/log.md
+- New pages: wiki/synthesis/2026-08-08/conference-digest.md
+- Contradictions: ⚠️ NeurIPS 2026 会址口径修正——08-07 digest 记 "San Jose, 12/6-12"，本期核验官方为三城 (Sydney + Atlanta + Paris)，已在本期 §2 标注以本期为准；KDD 2026 OpenReview 通告为 tentative, single-source，待后续核验；其余无（每篇 arXiv 均 grep 去重后收录）
+
 ## [2026-08-10] synthesis | wq101-alpha-daily (WorldQuant 101 Alpha 因子选股 Top 20 — 美股)
 - New page: wiki/synthesis/2026-08-10/wq101-alpha-daily.md
 - Data basis: 8/7 周五完整收盘（确认值）+ 8/10 周一盘前/事件窗口
