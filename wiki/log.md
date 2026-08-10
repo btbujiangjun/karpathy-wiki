@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-10] synthesis | wq101-alpha-daily (WorldQuant 101 Alpha 因子选股 Top 20 — 美股)
+- New page: wiki/synthesis/2026-08-10/wq101-alpha-daily.md
+- Data basis: 8/7 周五完整收盘（确认值）+ 8/10 周一盘前/事件窗口
+- Coverage: 非农爆冷落地（-2.3 万 vs +8.3 万，9 月加息概率 ~44%）→ 标普收盘新高 7,757.64、纳指周 +5.19%；AI 交易选择性回归（SOX 周 +9%、NVDA 周 +11.6% +$562B 史上最大单周市值增幅、PLTR 周 +39.8%）；存储"利好出尽"第三日 + 底部信号（AAPL 抢购 DRAM + SK 海力士 $710 亿回报，MU V 型反转企稳）；能源地缘溢价回吐（Hormuz 总体框架，XOM/CVX 移出）；Fed 人事博弈 + 8/12 CPI 为下一"一元决定事件"；Top 20 榜单（NVDA 9.5 登顶 / SHOP 9.0 / MSFT 9.0 / PLTR 8.9 / AAPL 8.8 新入选 / LLY 8.8 / DIS 8.6 / TSM 8.4 上调 / COP 8.3 下调 / ANET 8.3 / JPM 8.3 下调 / LMT 8.1 上调 / MU 8.0 / GOOGL 8.0 回归 / AMZN 7.9 / BAC 7.9 / GS 7.9 / CAT 7.9 下调 / COHR 7.7 新入选 / AMAT 7.7 新入选）；因子主线 Alpha#41 60% + Alpha#1 45% + Alpha#19 扩展至 GOOGL；板块 Tech+Semis 11 只（55%）
+- Updated: wiki/index.md (Synthesis 表新增 wq101-alpha-daily 2026-08-10 条目), wiki/log.md
+- New pages: wiki/synthesis/2026-08-10/wq101-alpha-daily.md
+- Contradictions: none（价格与 investment-daily 08-08/08-10 一致；Dow 54,036.93 新浪 vs 54,036.52 AP 尾数差 0.41 为来源舍入，已在报告标注；非农结果与 8/7 报告"偏鸽情境"预测一致）
+
 ## [2026-08-10] synthesis | Game RL & Game AI Bot — Daily Synthesis (2026-08-10)
 - New page: wiki/synthesis/2026-08-10/game-rl-daily.md
 - Coverage: 13 verified new papers (arXiv API + abs pages, Mon Aug 10, 2026 announcement batch = submissions Aug 7–9, IDs ~2608.06394–2608.07457; every ID grep-verified absent from all prior wiki digests 07-01 → 08-08 before inclusion)
