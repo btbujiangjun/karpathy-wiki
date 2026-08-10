@@ -4269,3 +4269,12 @@
 - Updated: wiki/index.md (Synthesis 表新增 arxiv-ai-search 2026-08-08 条目), wiki/log.md
 - New pages: wiki/synthesis/2026-08-08/arxiv-ai-search.md
 - Contradictions: none (all claims verified against arXiv abs pages citation meta; zero overlap with all prior digests/scans; institution marks "tentative" where only inferred from co-author affiliations)
+
+## [2026-08-10] synthesis | tech-report-digest
+- New page: wiki/synthesis/2026-08-10/tech-report-digest.md
+- Coverage: 20 家公司全覆盖。今日重点 = 本周 (08-10~08-14) 四大"承诺制发布"密集撞期：①**Meta Llama 4 开放权重定档 08-12**（07-27 Bloomberg + X/@pmarca 佐证；405B 参数、原生多模态 文本/图像/音频、单 H100 32 tok/s；与早期 Behemoth "近 2T" 口径需以实际发布为准；官方技术报告待发布）；②**DeepSeek V4-Pro 官方版传闻窗口今日开启**（08-10~08-20，中文科技媒体；Preview 自 04-24 已近 4 个月，未确认）；③**Qwen3.8-Max 开源权重窗口进入本周**（byteiota 08-10 确认 8 月 10 日那周放权；2.4T 参数基于 Qwen 3.5 架构、首个开源 Max 级模型；截至今日 HF/ModelScope 仍无条目，缺日期/license/model card）；④**Grok 4.6 窗口第三次后移**（Musk 08-04 "next week" 今日为窗口第一天；官方目录仍仅列 grok-4.5，无官方 model card/定价/基准）。
+- 新增核实：OpenAI GPT-5.6 Sol/Luna 部署（08-06：Sol 成 Plus/Pro 默认 + Luna 覆盖 Free/Go + Think 按钮）；Anthropic Fable 5.1 泄漏（07-27 称 8 月发布抢在 GPT-6 前，未确认）；Mistral 聚合层能力（Nova 2 计算 + Gemini 图像理解 + Claude 代码库 + 日志/影子提示合规选项——"模型经纪人"定位）；Amazon Nova 2 Sonic 2.1 架构（自回归 transformer 无视觉编码器，05-28 全区域 GA）；StepFun Step-3（07-31，198B 稀疏 MoE GGUF 开源）+ Step-3-0304（70B 开源）；MiniMax M3（06-01，428B，1M ctx，开源）为现役 SOTA、M4 仍为 H2 2026 承诺；InternLM4 官方状态不明（04-13 传闻）。
+- 复核无变更：Apple AFM 3 技术报告持续未发布（"later this summer" 承诺未兑现观察持续）；Microsoft Phi-5 无官方技术报告；GLM-5.5（JPMorgan 8 月，单源）；Kimi K4（Blackwell 训练传闻）；InternLM/Yi/Baichuan 无 8 月新报告；Nemotron 3 家族报告齐备但官方总报告待发布。
+- Updated: wiki/index.md (Synthesis 表新增 tech-report-digest 2026-08-10 条目), wiki/log.md
+- New pages: wiki/synthesis/2026-08-10/tech-report-digest.md
+- Contradictions: ⚠️ Llama 4 "405B" 与早期 Behemoth "近 2T" 报道口径冲突（NeuralStack 明确写 405B，2025-04 Maverick 即为 400B 档）——以 08-12 实际发布为准；Grok 4.6 kie.ai 称 08-07 已上线 vs xAI 官方目录无记录矛盾持续；DeepSeek V4-Pro 官方版窗口为中文媒体传闻非官方确认；其余无
