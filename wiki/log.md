@@ -4,6 +4,26 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-11] synthesis | LLM Tech Report Digest (2026-08-11)
+- New page: wiki/synthesis/2026-08-11/tech-report-digest.md
+- Coverage: 各大 AI 公司最新技术报告 / System Card 汇总（2025-2026），20 个公司/实验室分节 + 交叉观察，沿用 08-10 基线结构
+- 今日增量（相对 08-10）:
+  - **Meta Llama 4 开放权重明日（08-12）发布，今日核实新增细节**：405B 参数、原生多模态（文本/图像/音频）、单 H100 推理 32 tok/s、**15T tokens 训练含 2.4T 图文对**、**11/14 基准达到或超过 GPT-5 且推理计算量少 38%**、**70B 蒸馏边缘版**（neuralstack.network 援引 Bloomberg）；Meta 官方技术报告仍待发布，08-12 为最终验收日；405B 与 Behemoth "近 2T" 口径提示保留
+  - **DeepSeek V4-Flash 官方 API 公开 beta（07-31）核实**：9 项 Agent 基准齐备——Terminal Bench 2.1: 82.7 / NL2Repo: 54.2 / Cybergym: 76.7 / DeepSWE: 54.4 / Toolathlon verified: 70.3 / Agent Last Exam: 25.2 / Automation Bench: 25.1 / DSBench-FullStack: 68.7 / DSBench-Hard: 59.6（releasebot.io/updates/deepseek）；V4-Pro 官方窗口今日第 2 天（08-10~08-20）仍无公告
+  - **Qwen3.8-Max 开源权重窗口今日第 2 天**：截至今日 HF/ModelScope 仍无权重条目，缺日期/license/model card；2.4T MoE / 95B 激活 / 1M ctx / $2/$6 per M；Qwen3.8-27B 同日发布（08-03）
+  - **Grok 4.6 状态升级："已上线但官方 model card 缺席"**：第三方（kie.ai 07-30、blog.4sapi.com）确认约 08-07 上线，1.5T 参数沿用 Grok 4.5 V9 基座、重点大幅升级 SFT+RL；但 xAI 官方 docs.x.ai 目录仍仅列 grok-4.5，API release notes 无 4.6 条目——"上线 vs 官方目录"矛盾持续；无官方 model card/基准/上下文/定价；Grok 4.7（2.1T）计划 3-4 周后
+  - **Anthropic Claude Mythos Preview System Card 核实**（PDF 2026-04-07）：当前最先进闭源前沿；首个按 RSP v3 发布决策审查的系统卡；与 Opus 5 System Card（07-24）、Fable 5.1 泄漏（未确认）并列
+  - **ByteDance Seed2.1 Model Card 确认**：Pro + Turbo，Agent/代码工程（agentic + coding E2E），视频理解多评测 SOTA 含小时级长视频，官方 Model Card PDF 随发布（seed.bytedance.com/zh/seed2_1）；Pro 06-23 报道 dev crowdsource coding 59.1% 击败 Claude Opus 4.6
+  - **智谱 GLM-5 技术报告核实**（2026-02-22）：DSA（DeepSeek Sparse Attention）稀疏注意力 + 异步 RL 基础设施 + 异步 Agent RL 算法，端到端软件工程超此前开源基线，完全适配华为等国产芯片；36kr 08-09 复述报道；GLM-5.5 仍为 JPMorgan 8 月单源传闻
+  - **Moonshot Kimi K4 训练传闻复核**：The Information/AI Weekly 07-28/29 报道寻求更多 NVIDIA Blackwell 芯片，训练阶段未发布；K3 全量权重 + 47 页技术报告（07-27）仍为最新
+  - **Apple AFM 3 技术报告已存在**（"Introducing the Third Generation of Apple's Foundation Models"，5 模型含 AFM 3 Cloud Pro PCC on Google Cloud NVIDIA GPU）但 06-08 承诺的 "later this summer" 正式发布仍未兑现
+  - **NVIDIA Nemotron 3 家族保留**：Ultra（550B/55B hybrid Mamba-Attention MoE + LatentMoE，1M ctx）/ Super（120B/12B）/ Nano（30B-A3B）；官方家族总报告仍待发布
+  - 复核无变更：OpenAI（GPT-5.7 泄漏未确认，GPT-5.6 System Card 07-09 仍最新）/ Google（Gemini 3.1 Pro 卡 02 为最新 Pro 卡，8 月仅 Classroom 更新）/ Mistral（Large 3 2025-12 仍最新自有模型，聚合层定位）/ Microsoft（Phi-5 无官方报告）/ Amazon（Nova TR 2024 仍唯一正式报告，FMR 战略收缩）/ InternLM / Baichuan / StepFun / Yi / MiniMax（M4 仍 H2 2026）
+- Key trends: 明日 08-12 "承诺制发布"集中验收（Llama 4 开放权重 + Qwen3.8-Max 权重第 3 天 + V4-Pro 窗口 + Grok 4.6 model card）；闭源前沿"文档差距"持续（Grok 4.6 上线无卡 / V4-Pro 官方版窗口期 / Apple AFM 3 承诺未兑现 vs 开源阵营 K3 47 页报告、Nemotron 3 家族报告齐备）；Agent 能力成官方评测新主战场（V4-Flash 9 项 Agent 基准 vs Opus 5 / Muse Spark 1.2 / Grok 4.5）；稀疏注意力进入收敛期（CSA/DSA/Mamba-Attention/Qwen hybrid/MiniMax H3）
+- Updated: wiki/index.md (Synthesis 表新增 tech-report-digest 2026-08-11 条目), wiki/log.md
+- New pages: wiki/synthesis/2026-08-11/tech-report-digest.md
+- Contradictions: ⚠️ 时间表矛盾已标注——kie.ai 等第三方宣称 Grok 4.6 约 08-07 上线 vs xAI 官方 docs.x.ai 目录/API release notes 无记录（结论：已上线但无官方 model card，明确标注）；Qwen3.8-Max "本周放权"承诺 vs 截至今日 HF/ModelScope 无条目（窗口第 2 天，继续观察）；Llama 4 405B vs 早期 Behemoth "近 2T" 口径（以 08-12 实际发布为准）。其余无（继承条目显式标注"保留"，新增均标注来源）
+
 ## [2026-08-11] synthesis | arXiv Paper Check — AI & CTR (August 11, 2026)
 - New page: wiki/synthesis/2026-08-11/arxiv-paper-check.md
 - Coverage: No new arXiv batch in the last 24h — latest announcement still Mon Aug 10, 2026 (cs.AI 88 new / cs.IR 9 new), fully curated in the 08-10 paper-check (36 papers); Tue Aug 11 batch lands ~20:00 ET (= 08:00 +08 Aug 12). This report = **second-pass deep scan of the same Mon Aug 10 batch**: 18 additional papers (IR/Rec/Ads/Finance 5, MoE & Efficiency 3, World Models & Agentic Science 4, Agent Safety/Eval/Benchmarks 6), every arXiv ID grep-verified absent from the wiki before inclusion
