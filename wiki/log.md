@@ -4395,3 +4395,10 @@
 - Updated: wiki/index.md (Synthesis 表新增 game-rl-daily 2026-08-11 条目), wiki/log.md
 - New pages: wiki/synthesis/2026-08-11/game-rl-daily.md
 - Contradictions: none (all IDs grep-verified absent; affiliations marked tentative when inferred from co-authors; LDR/Game-of-Thought venue notes marked per third-party listings)
+
+## [2026-08-11] synthesis | arXiv Daily Digest (2026-08-11)
+- New page: wiki/synthesis/2026-08-11/arxiv-daily.md（本任务由手动补跑完成：scheduled arxiv-ai 运行中 agent 挂起，报告文件与 index 条目已产出，log 条目由补跑维护操作补齐并提交）
+- Coverage: 31 curated papers from the fresh Aug 9–10, 2026 arXiv submission window (IDs ~2608.08382–2608.09930), retrieved ahead of the Tue Aug 11 announcement (~20:00 ET) via the arXiv API — a zero-overlap breadth pass over the cs.LG/cs.CL/cs.GT/econ.TH remainder (CTR/Rec/Ads + games clusters claimed by same-day arxiv-paper-check (18) / game-rl-daily (19)); all 31 grep-verified absent from wiki: LLM Post-Training & OPSD (PAST [2608.08726]; SR-OPSD [2608.09745]; SKALD [2608.09826]; Privileged Likelihood [2608.09263]; SoftmaxGRPO [2608.09271]), Reasoning & Test-Time Scaling (Consilience [2608.09898]; TTA [2608.09351]; Subjective RLVR [2608.08889]; CoRE [2608.09324]), Agents/Skills/Memory (Agentic Router [2608.09184]; Branch2Skill [2608.08677]; SkillSentry [2608.09253]; Muscle Memory [2608.08995]), KV/Efficiency (RippleKV [2608.08684]; DistillCache [2608.08878]; KVDiagnosis [2608.09412]; KVGov [2608.09225]; Universal Activation Bus [2608.09521]), Time Series (NDKoop [2608.08788]; SCALER [2608.08675]; Hybrid Neural-Classical [2608.08825]; MixFormer [2608.09468]), Rec/Ads/Ranking (TSPORec [2608.09605]; MetaStrategy [2608.09440]; UniMoMo [2608.08627]; Economics of Agentic Commerce [2608.08395]), Games/GT (ICM Out [2608.09586]; Algorithmic Asymmetry [2608.09780]; Avalon-ToM-Bench [2608.09638]), Interpretability/Safety (MMDiff [2608.09928]; Measuring the Wrong Thing [2608.09624])
+- New pages: wiki/synthesis/2026-08-11/arxiv-daily.md
+- Updated: wiki/index.md (Synthesis 表新增 arxiv-daily 2026-08-11 条目), wiki/log.md
+- Contradictions: none (all IDs grep-verified absent)
