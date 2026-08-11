@@ -4381,3 +4381,10 @@
 - Updated: wiki/index.md（Synthesis 表新增 investment-daily 2026-08-11 条目）, wiki/log.md
 - New pages: wiki/synthesis/2026-08-11/investment-daily.md
 - Contradictions: none（A股/港股 8/11 盘中数据撰写时未获独立来源确认，已在报告顶部标注待午间收评补齐口径）
+
+## [2026-08-11] synthesis | WQ101 Alpha 每日选股报告 2026-08-11
+- Summary: wiki/synthesis/2026-08-11/wq101-alpha-daily.md（数据基准 8/10 周一完整收盘 + 8/11 盘前/事件窗口；修正前份报告 8/7 收盘 + 8/10 盘前口径为非农后第一个完整交易日）
+- 要点: ①市场——S&P -0.06% 7,753.11 距纪录新高一步之遥、SOX -2.94% 30 只成分股全跌（光通信 COHR -14.24% 领跌）、NVDA -2.86% 利好出尽、Energy +4.66% 领涨（SPR 1983 年来新低）、中概金龙 +1.65% 逆市；②Top 20 变动——LLY 9.4 登顶（最大上调，财报后创新高 $1,231.94）、NVDA 降至 9.2（Alpha#12 背离触发）、ABNB 8.8 新入选（4 年新高 +16%）、CVX 8.4/XOM 8.2 重新入选（油价 >$80）、COHR 剔除（暴跌 -14.24%）；③因子——Alpha#41 趋势 65% 最高频 + Alpha#1 动量 55% + Alpha#6 事件 35%（财报季上调）+ Alpha#12 背离 15%（NVDA 激活）；④策略——8/12 CPI 为本周唯一决定事件、SMCI 盘后财报毛利率验证（≥12%）决定 AI 硬件链情绪、NVDA $205-210 关键支撑
+- Updated: wiki/index.md（Synthesis 表新增 wq101-alpha-daily 2026-08-11 条目）, wiki/log.md
+- New pages: wiki/synthesis/2026-08-11/wq101-alpha-daily.md
+- Contradictions: none（8/10 收盘确认值与前份报告 8/7 口径差异已在报告顶部 ⚠️ 标注）
