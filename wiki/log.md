@@ -4388,3 +4388,10 @@
 - Updated: wiki/index.md（Synthesis 表新增 wq101-alpha-daily 2026-08-11 条目）, wiki/log.md
 - New pages: wiki/synthesis/2026-08-11/wq101-alpha-daily.md
 - Contradictions: none（8/10 收盘确认值与前份报告 8/7 口径差异已在报告顶部 ⚠️ 标注）
+
+## [2026-08-11] synthesis | game-rl-daily — Game RL & Game AI Bot Paper Digest
+- New page: wiki/synthesis/2026-08-11/game-rl-daily.md
+- Coverage: 19 verified new papers (all arXiv IDs grep-verified 0 hits across entire wiki; metadata from individual abs pages). Tue Aug 11 arXiv batch lands ~20:00 ET, so this report is a second-pass deep scan of the Aug 8–10 submission window (IDs ~2608.07500–2608.09926, 6 fresh world-model/game papers) + recall fill-in of strong Apr–Jul 2026 game-AI papers prior dailies missed (11) + 2 ICML 2026 game-RL papers. Zero overlap with same-day arxiv-paper-check (18) / conference-digest. Game RL (chess SFT→RL reasoning evolution, ICML 2026 UCSD 2604.05134; Super Mario World 1-1 curriculum 2606.29511; differentiable Atari VCS 2606.22447; LDM-v0 2606.24962; action factorization 2606.26574; assistance games 2607.08012; AlphaZero pipeline automation benchmark 2604.25067), Game AI Bot (panoramic NPC dialogue 2604.19192; LLM-NPC cognitive load N=130 2604.10107; AI-opponent enjoyment meta-analysis 2607.24749), Game Foundation Models / World Models (Sekai2 2608.09449; LDR 2608.09926; Khora 2608.08600; Twin Rollouts 2608.08982; WorldSimProbe 2608.09298; VERDI 2608.09537), PCG (Play2Code/PlaytestArena 2605.28258), Benchmarks (Social Gym + SPaRTan 2608.09128), Related Techniques (DROPJ 2607.13172; Game of Thought ICML 2026 2602.01708). Industry section: no new studio-authored submissions this window — cross-refs only (EA NHL 26 / KRAFTON ALLIE / NVIDIA ACE-NitroGen-γ-World / DeepMind)
+- Updated: wiki/index.md (Synthesis 表新增 game-rl-daily 2026-08-11 条目), wiki/log.md
+- New pages: wiki/synthesis/2026-08-11/game-rl-daily.md
+- Contradictions: none (all IDs grep-verified absent; affiliations marked tentative when inferred from co-authors; LDR/Game-of-Thought venue notes marked per third-party listings)
