@@ -4374,3 +4374,10 @@
 - Updated: wiki/index.md（Sources 表新增 anthropic-riemann-zeta + Synthesis 表新增 conference-digest 2026-08-11 条目）, wiki/sources/anthropic-riemann-zeta.md（新 source-summary 页）, wiki/log.md
 - New pages: wiki/synthesis/2026-08-11/conference-digest.md, wiki/sources/anthropic-riemann-zeta.md
 - Contradictions: none（Riemann 结果数据均出自 Anthropic 官方页面，single-source、尚无第三方独立复现已标注 tentative；Agent0 结果以 arXiv 摘要为准；与 08-10 digest 的 γ-World/PostTrainBench 引用关系已在页内交叉说明）
+
+## [2026-08-11] synthesis | 投资日报 2026-08-11
+- Summary: wiki/synthesis/2026-08-11/investment-daily.md（美股/中概 8/10 完整收盘 + 港股 8/10 收盘/8/11 开盘 + A股 8/10 收盘/8/11 前瞻口径）
+- 要点: ①英伟达×六巨头（Apollo/贝莱德/黑石/博枫/高盛/KKR）5,000 亿美元算力融资平台——NVDA 盘中跳水收跌 2.86%（利好出尽）、费半 -2.94%、光通信暴跌（COHR -14.24%）；②微软 Maia 300 最快 9 月发布（台积电 30 万颗 2027 交付、目标 Anthropic）；③美股 8/10 三指数小幅收跌、金龙指数 +1.65% 中概逆市；④港股 8/11 高开、AI 应用领涨（MINIMAX +4.22%/智谱 +3.04%/阿里 +2.13%）、金价重上 4,400 美元；⑤A股 8/10 沪指五连阳 3,966.59（有色/白酒/地产领涨、AI 硬件回调）；⑥明日 8/12 超级事件日 = 美国 7 月 CPI + Llama 4 + 寒武纪业绩说明会 + 宇树缴款；8/13 中芯 Q2
+- Updated: wiki/index.md（Synthesis 表新增 investment-daily 2026-08-11 条目）, wiki/log.md
+- New pages: wiki/synthesis/2026-08-11/investment-daily.md
+- Contradictions: none（A股/港股 8/11 盘中数据撰写时未获独立来源确认，已在报告顶部标注待午间收评补齐口径）
