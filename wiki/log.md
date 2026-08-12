@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-12] synthesis | game-rl-daily (2026-08-12)
+- New page: wiki/synthesis/2026-08-12/game-rl-daily.md
+- Summary: 13 verified new game-RL / game-AI papers over the Wed Aug 12 window (deep-scan follow-up — Aug 11 wave IDs ~2608.10325–2608.11208, late-Aug-10 tail ~2608.10008–2608.10324, plus absent Aug 10 fill-in ~2608.09000–2608.09926). All 13 IDs grep-verified absent (0 hits) from the entire wiki; zero overlap with same-day arxiv-daily / arxiv-paper-check / arxiv-ai-search / conference-digest.
+- Categories: Game RL (guided tour 2608.09389; extensive-form switching regret 2608.09501; DTOA Byzantine-robust team fictitious play 2608.09256) · Game AI Bot (Hierarchical Games 2608.09574; Not a Monolith evolutionary IPD 2608.10262; CEAA NPC/IVA architecture 2608.09848) · World Models (FACT failure-aware causal WAM 2608.10232; LeWorldModel eval-protocol reproduction 2608.10145) · Benchmarks (DSLE Dark Souls, AAAI AIIDE 2026, 2608.09902) · Related (A-DFL GameSec 2026 2608.09036; competitive mediator games 2608.09894; IRL Fisher hypergradient 2608.11052; EDPFRL-IM curiosity federated RL 2608.10499) · PCG/Industry: no new submissions (cross-refs)
+- Updated: wiki/index.md (Synthesis table — game-rl-daily 2026-08-12 entry), wiki/log.md
+- New pages: wiki/synthesis/2026-08-12/game-rl-daily.md
+- Contradictions: none (LeWorldModel reproduction's negative eval-fidelity findings noted as a reproducibility warning, not a contradiction)
+
 ## [2026-08-12] synthesis | LLM Tech Report Digest (2026-08-12)
 - New page: wiki/synthesis/2026-08-12/tech-report-digest.md
 - Coverage: 各大 AI 公司最新技术报告 / System Card 汇总（2025-2026），20 个公司/实验室分节 + 交叉观察，沿用 08-11 基线结构
