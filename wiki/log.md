@@ -4,6 +4,29 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-12] synthesis | LLM Tech Report Digest (2026-08-12)
+- New page: wiki/synthesis/2026-08-12/tech-report-digest.md
+- Coverage: 各大 AI 公司最新技术报告 / System Card 汇总（2025-2026），20 个公司/实验室分节 + 交叉观察，沿用 08-11 基线结构
+- 今日增量（相对 08-11）:
+  - **⚠️ Meta "Llama 4 405B 开放权重 08-12" 验收失败（关键纠偏）**：当日无 405B 开放权重、无 Meta 官方技术报告；实际为 08-10 开放权重战略转向——开源 30B **Muse Glimmer**（Apache 2.0、128K ctx、本地运行、由 Muse Spark 蒸馏）+ 承诺数周内开源 **Muse Spark 1.2** 权重（Muse Spark 4 月首发为闭源）+ Zuckerberg 6000 字文章《The Future Is for Everyone》（Ars Technica 08-10）；llama.com 目录仍为 Llama 4 Scout/Maverick（2025-04 时代）。08-11 页的 405B/15T tokens/11-14 基准细节源自 Bloomberg/NeuralStack 预告口径，今日确认未发生，不保留为正式发布条目
+  - **⚠️ Qwen3.8-Max 权重验收日（08-12）截至撰写时未兑现**：ModelScope 发布页指向今日（08-12），但 HF Qwen org 实时检查仍无 Qwen3.8-Max / Qwen3.8-27B 权重条目（最新为 Qwen3-ASR ~07-22），license 未发布（byteiota 08-07 提示草案曾含 US/EU/UK/Korea 地域限制争议）；Qwen3.8-27B 同为今日验收
+  - **OpenAI 下一大模型官方定名 Astra（08-01 官方博客）**：内部版本解决 10 道数学/理论计算机难题（非软 sofic、Connes rigidity 反例、高维 sphere packing 界、Erdős 问题等）；"next major model"、The Information 确认新家族为 long-running workloads 设计；GPT-5.7 传闻被搁置；最新正式发布仍为 GPT-5.6（System Card 07-09）
+  - **NVIDIA Nemotron 3.5 Lightning（08-11）**：30B-A3B 开放 MoE，面向 always-on agents；Nemotron 3 家族（Ultra/Super/Nano）保留
+  - **MiniMax M2.7 自我进化（08-08 官方新闻）**："第一代自我进化"模型——自建 Agent Harness 参与迭代自身模型；MLE Bench Lite 22 任务 66.6% 得牌率（9 gold/5 silver/1 bronze 最佳 run），仅次 Opus 4.6（75.7%）/ GPT-5.4（71.2%），与 Gemini 3.1（66.6%）持平；已在 MiniMax Agent/开放平台全量上线；M3 仍现役 SOTA、M4 仍 H2 2026 承诺
+  - **DeepSeek API 涨价公告（08-06）**：官方宣布近期整体大幅上调定价；峰谷计费（工作日 9-12/14-18 高峰 = 2 倍）；平时价 V4-Flash 1/2 元、V4-Pro 3/6 元每 M tokens；业内预期 V4-Pro GA 临近；V4-Pro 官方窗口今日第 3 天（08-10~08-20）仍无 GA 公告
+  - **字节跳动 >5T/10T 参数新模型训练传闻（08-06/07）**：晚点 LatePost（>5T）vs 金融时报（10T，或超 Mythos 5 约 8T）；Seed Foundation 负责人项亮主导 + 预训练数据负责人沈科合作；张一鸣 Seed 全员会表态反对蒸馏（"复制 Claude 能力难超越"）、编程是关键非唯一热点、接受短期落后；梁汝波承认豆包 AI Coding 不突出；预训练早期（3-6 个月），未发布
+  - **Baichuan-M2（08-11）**：开源医疗增强大模型，32B，HealthBench 60.1，以 32B 尺寸超 gpt-oss-120B；延续医疗垂直战略（M4 HealthBench 68.6 世界第一保留）
+  - **Anthropic Fable 5.1 事实核查（08-03）**：AIToolsReview 确认无官方公告——仅两条 X 泄漏（Pankaj Kumar 07-26 + Lumina），$10/$50 定价为传闻；Opus 5 已部分超越原 Fable 5；不写入正式条目
+  - **Google DeepMind 领导层改组（08-05，Reuters）**：Hassabis 转任主席（兼 Alphabet 首席科学家）、Kavukcuoglu 升 SVP、Jeff Dean 离职另有任用；Gemini 3.5 Pro 仍延迟，Gemini 4 预期 11-12 月（Pichai 称"最雄心勃勃预训练"）
+  - **智谱口径转向 GLM-5.3**：JPMorgan（8 月 >1T）+ 新浪财经（07-20）口径为新旗舰 GLM-5.3；GLM-5.5 为早期传闻未确认；均未发布，GLM-5.2 仍为确认旗舰
+  - **Mistral（08-02 新闻）**：将推出 Code/Apps sections（Vibe/Le Chat）+ 夏季新"大而稀疏"开放 MoE 权重预告（未发布）；无新报告
+  - **InternLM 补充**：Intern-S2-Preview-397B 于 WAIC 2026（07-01）以 397B 追平此前万亿模型（书生·端砚平台）；35B/397B 07-17/18 已收录
+  - 复核无变更：Apple AFM 3（技术报告存在、正式发布承诺未兑现）/ Grok 4.6（已上线但官方 docs.x.ai 仍仅列 grok-4.5，无 model card，Grok 4.7 3-4 周后）/ Microsoft Phi-5（无官方报告）/ Amazon Nova（Nova TR 2024 仍唯一正式报告，re:Invent 2026 为下一观察点）/ StepFun / Yi / OpenAI GPT-5.6
+- Key trends: 08-12 双验收日两"承诺制发布"均未兑现（Llama 4 405B + Qwen3.8-Max 权重）——对照 Kimi K3 按期放权（07-27）与 Nemotron 家族报告齐备，"承诺→兑现"信用分化加剧；同日并存新发布（Nemotron 3.5 Lightning / MiniMax M2.7 / Baichuan-M2 / DeepSeek 涨价 / Astra 定名 / DeepMind 改组）；"规模军备竞赛"叙事升级（字节 >5T~10T + Grok 4.7 2.1T + Kimi K4 + GLM-5.3 + M4）；闭源前沿"文档差距"持续扩大（Grok 4.6/V4-Pro/AFM 3 vs 开源阵营）
+- Updated: wiki/index.md (Synthesis 表新增 tech-report-digest 2026-08-12 条目), wiki/log.md
+- New pages: wiki/synthesis/2026-08-12/tech-report-digest.md
+- Contradictions: ⚠️ 验收失败已如实记录——08-11 页所载 "Llama 4 405B 08-12 开放权重（Bloomberg/NeuralStack 预告口径）" 与 08-12 当日实际（无 405B 发布、改为 Muse Glimmer 开源 + Muse Spark 1.2 权重承诺）矛盾，本页已纠偏并说明不保留为正式发布条目；Qwen3.8-Max "ModelScope 页面指向 08-12" vs "截至 08-12 撰写时 HF 无权重条目" 矛盾已标注（验收日未兑现）；字节新模型规模口径 >5T（晚点）vs 10T（FT）矛盾已标注为传闻；其余继承条目显式标注"保留"，新增均标注来源
+
 ## [2026-08-11] synthesis | LLM Tech Report Digest (2026-08-11)
 - New page: wiki/synthesis/2026-08-11/tech-report-digest.md
 - Coverage: 各大 AI 公司最新技术报告 / System Card 汇总（2025-2026），20 个公司/实验室分节 + 交叉观察，沿用 08-10 基线结构
@@ -4423,3 +4446,10 @@
 - Updated: wiki/index.md（Synthesis 表新增 conference-digest 2026-08-12）, wiki/log.md
 - New pages: wiki/synthesis/2026-08-12/conference-digest.md
 - Contradictions: none (all IDs grep-verified absent; CoCo affiliation not stated on arXiv page — left unmarked; RecSys 2026 主会期 9/29-10/1 与 Melo journal-ref 标注 9/27-10/2 存在小幅日期口径差异，属会议官网 vs DOI 元数据差异，非实质矛盾)
+
+## [2026-08-12] synthesis | arXiv Daily Digest (2026-08-12)
+- New page: wiki/synthesis/2026-08-12/arxiv-daily.md
+- Coverage: 32 curated papers from the Wed Aug 12, 2026 announced window — Aug 11 submission wave (IDs ~2608.10325–2608.11208) + small late-Aug-10 tail (IDs 2608.10008–2608.10324). All 32 IDs grep-verified 0 hits across wiki/. Themes: OPD (OpenPrefs Detection) real-time preference disclosure in visual agent tasks [2608.11079]; Rollback Repair memory repair for context corruption, WABR/SFR gains on Llama/Mistral/Claude [2608.11152]; agent-skill infrastructure — SkillZip skill synthesis w/ intra-skill attention [2608.10430], MERA replay vs procedural memory for skill composition [2608.10545], MEGA diverse expert demos [2608.10149], GitSkills public skill diffusion [2608.10373]; recommendation — NTCF non-transitive preferences [2608.10444], VisGate gating dropout beats vanilla [2608.10835], FedCGR federated CGR [2608.10775]; time series — Right-History left/right context recall [2608.10333], REATS AutoML time series [2608.10120], ChronoSSM SSM for sequences [2608.10296]; efficiency — ImpactHO hyperparameter optimization [2608.10362], MemSpec [2608.10729], OlmPool pooling [2608.10700]; reliability — UniProbe/Latent Critic/ProbGuard hallucination detection [2608.10906]/[2608.10397]/[2608.10823], error-aware step reasoning [2608.10928]; mechanism design — EFX∨MMS chore allocation + Lean-4 formalized EFX chores [2608.11025]. Zero-overlap: 15 same-day papers claimed by arxiv-ai-search / arxiv-paper-check were removed from this digest (batch note documents the split) — GenRec [2608.10257], MARCO [2608.10562], LinkedIn causal [2608.10182], LLM-rec hallucination audit [2608.10008], group-rec tie-breaking [2608.11190], Sequential Modality Dropout [2608.10240], TimeRoute [2608.10983], model merging [2608.10447], ReOrder-OPD [2608.10905], CLAUDE.md catastrophic remembering [2608.11095], MESA [2608.10108], UniF-MoE [2608.10392], TORF [2608.11114], VERDICT [2608.10665], ContractSim [2608.10475] (ai-search claimed GenRec/MARCO/ReOrder-OPD/UniF-MoE/CLAUDE.md/TORF/VERDICT/ContractSim; paper-check claimed MESA/TimeRoute/LinkedIn causal/hallucination audit/group-rec tie-breaking/sequential-modality dropout/model merging)
+- Updated: wiki/index.md (Synthesis 表新增 arxiv-daily 2026-08-12), wiki/log.md
+- New pages: wiki/synthesis/2026-08-12/arxiv-daily.md
+- Contradictions: none (32 IDs grep-verified absent; 15 same-day overlaps excluded, not duplicated)
