@@ -4,6 +4,16 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-13] synthesis | Conference Digest — KDD 2026 落幕颁奖全景
+- New page: wiki/synthesis/2026-08-13/conference-digest.md
+- Summary: KDD 2026（Jeju 8/9–13）闭幕/收尾版 digest。**颁奖全景**——Test of Time = XGBoost (Chen & Guestrin, KDD '16, DOI 10.1145/2939672.2939785, 42,397 引用 / 300,534 下载); Best Research Paper HM = EARTH (HKBU Jianliang Xu + 博士生 Yun Peng, spatiotemporal K-function 分析加速 26×–19.04×, 官方口径 top-3/2,000+); SIGKDD Innovation Award = **Wei Wang (UCLA)**（⚠️修正早期检索片段将获奖者记为 Haixun Wang 的口径, 以 cs.ucla.edu 公告为准）; 主 Best Paper / Best Student Paper **未确认**（kdd.org 奖项页反爬截断, caveat 标注待补）; keynote 三人——Jeff Dean (8/11 "Important Trends in AI": Gemini/TPU/大规模训练, 自 8/5 离开 Alphabet 另立 Discovery Loop 后公开演讲)、Jingren Zhou (Alibaba CTO)、Regina Barzilay (MIT, 延续「高预测精度不足以保证支撑临床决策」主题)。
+- KDD 2026 论文挖掘（Paper Digest 500 条库, DOI 核验）: ①Alibaba **MAC/MoAE** CVR 多归因机制 benchmark + Mixture-of-Asymmetric-Experts（充分学习 multi-attribution 知识 + 主任务中心利用, 12 作者含 Xiang-Rong Sheng/Han Zhu/Jian Xu/Bo Zheng, DOI 10.1145/3770855.3817488）; ②**DLL** Decoupled Listwise Learning 流式兼容 Listwise CTR——免 session batching 重建 session 级监督, 打破 listwise-shuffle 两难（Junlin He/Rui Tang/Liyin Hong, DOI 10.1145/3770855.3818327）; ③Tencent **确定性分配匿名联合广告**——证明非确定性分配在所有在线广告场景导致可行解不存在, 取整解-最优解 gap 理论化（Zhen Zhang/Qianlong Xie/Qi Qi/Xingxing Wang, DOI 10.1145/3770855.3818370）。共同主题: 工业广告/推荐在「标签—分配—训练结构」三层的严谨化。
+- arXiv 精选 3 篇（全部 arXiv ID + 标题 grep 0 命中）: ①**Simulator Collapse**（One Frozen Simulator Is Not Enough, Stanford/Berkeley/MIT 跨组 10 人含 Levine/Manning/Shi, [2608.12253]）——单 LLM 模拟用户导致 policy 过拟合窄策略, 理论形式化 + 推理期 Verbalized Sampling + 训练期 Co-Training; ②**Mechanist**（NUS/ZJU 25 人含 Ningyu Zhang/Tat Seng Chua/Huajun Chen, [2608.12036]）——AI 作为科学仪器做自主机制发现, 13K 可解释知识图谱 + 43M 论文库/26 领域 + 32 基础方法库, 发现模态间安全风险迁移 + 信念机制理论 + DNA 定向生成干预; ③**VITA** 语料特异临床 RAG（Praveen Reddy 等 7 人, [2608.12138]）——LMIC（印度）场景专有语料 RAG 在 HealthBench 4,023 题 GPT-4.1 裁判下匹配/超越新 frontier LLM, 评测材料全公开。
+- 去重: HealthBench 本体已覆盖于 2026-06-13 tech-report-digest（index/log 命中）, VITA 论文本体为新收录; FAT-CTR 已在 wiki/papers/ctr/fat-ctr-scaling.md 覆盖故仅导航; 同日 37+17 篇 arXiv 归 [arxiv-daily](./arxiv-daily.md) + [arxiv-paper-check](./arxiv-paper-check.md) 不重复; KDD 开幕前口径/KDD Cup/组织变更见 08-08 digest。
+- Updated: wiki/index.md (Synthesis 表新增 conference-digest 2026-08-13 条目), wiki/log.md
+- New pages: wiki/synthesis/2026-08-13/conference-digest.md
+- Contradictions: 1 —— Innovation Award 获奖者口径修正: 早期检索/摘要片段记为 Haixun Wang, 本期以 UCLA CS 官方公告核实为 **Wei Wang**（已在 digest 正文与本期条目中显式标注）; 主 Best Paper / Best Student Paper 名单未确认, 待 kdd.org 奖项页可访问后补录
+
 ## [2026-08-13] synthesis | arXiv Paper Check — AI & CTR (August 13, 2026)
 - New page: wiki/synthesis/2026-08-13/arxiv-paper-check.md
 - Coverage: 17 curated papers from the **Thu Aug 13, 2026 announced window** (submissions Aug 11–12; IDs ~2608.11207–2608.12307; cs.AI 211 new / cs.IR 16 new). Complement to the same-day arxiv-daily (which claims the CIKM 2026 rec cluster HCGRec/PRISM/GALLM/FunnelCausalNet/Token-Level-Credit, OPD/RL diagnosis, agent-memory formalization, PIC/KV efficiency). Every arXiv ID grep-verified absent (0 hits) from the entire wiki before inclusion.
