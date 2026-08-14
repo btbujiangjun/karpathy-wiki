@@ -4561,3 +4561,10 @@
 - Updated: wiki/index.md (Synthesis table — arxiv-ai-search 2026-08-11 entry inserted before 08-10 entry), wiki/log.md
 - New pages: wiki/synthesis/2026-08-11/arxiv-ai-search.md
 - Contradictions: none (21 IDs grep-verified absent; Ouroboros 2608.08311 / MARP 2608.07280 / extensive-form regret 2608.09501 excluded as already covered elsewhere and cross-referenced in the report)
+
+## [2026-08-14] synthesis | LLM Tech Report Daily (2026-08-14)
+- New page: wiki/synthesis/2026-08-14/tech-report-digest.md
+- Coverage: 20 家机构滚动更新 digest（继承 08-13）。今日重点: **MiniMax M3 完整规格补全**——官方技术报告 + 开源权重齐备（arXiv:2606.13392, GitHub MiniMax-AI/MiniMax-M3），428B 总参/23B 激活原生多模态 MoE，1M ctx 下相对 M2 prefill 9×/decode 15× 提速（每 token 计算 1/20），核心创新 MSA（MiniMax Sparse Attention，Index Branch top-16 block 路由 + Main Branch 精确注意力）+ 7-MTP 投机解码，60 层（前 3 层 Full GQA 16:1 + 3-59 层 MSA），128 专家 top-4 sigmoid 路由 + 1 共享专家，CLIP ViT-32L + 3D RoPE 视觉塔，BrowseComp 83.5 超 Opus 4.7（79.3）/TrainBench 37.1 第三，国内首个 "frontier coding + 1M ctx + 原生多模态 + 开放世界" 齐备旗舰；**Gemini 3.7 Flash GA（08-13）**——1M input/64K output ctx、$0.75/$3.75 每 M（intro pricing 至 2026-12-31）、主打 agentic coding/terminal execution；**GPT-5.6 System Card 增补（08-03）**——GPT-Red 自动红队（自博弈 RL）；**Grok 4.6 Model Card（08-12 修订）**——1.5T 家族、text+image 输入/text-only 输出、与 Cursor 联合开发；**Nemotron 3.5 Lightning（08-11）**——30B-A3B 面向 always-on agents；**Kimi K3 技术报告（07-27）**——2.8T/104B、Delta Attention + Attention Residuals + Stable LatentMoE、约 2.5× scaling efficiency；**Microsoft Phi 核实**——无 Phi-5 官方报告，最新 Phi Silica Platform Card（06-24/07-08，NPU 端侧 SLM）；其余: Claude Sonnet 5/Opus 5 System Cards、Shieldstral、GLM-5.2、SeedRealtime、Step 3、Nova 2、AFM 3、InternGeometry、Baichuan-M4（清华合作）、Qwen3.8-Max 权重兑现（继承）、DeepSeek V4 GA（继承）；Meta Llama 4 405B 持续未兑现（第 3 天）
+- Updated: wiki/index.md（Synthesis 表新增 tech-report-digest 2026-08-14 条目，插在 08-14 arxiv 条目之后、08-13 条目之前）, wiki/log.md
+- New pages: wiki/synthesis/2026-08-14/tech-report-digest.md
+- Contradictions: 无实质矛盾——Step 3 规格以官方 321B 总参/38B 激活为准（修正 08-12 记 198B 口径，与 08-13 digest 一致）；Gemini 3.6 Flash Model Card（07-21）与 3.7 Flash GA（08-13）为代际关系非矛盾；Phi Silica 为端侧 SLM 新品卡、与 Phi-4 开放家族并行，非 Phi-5 替代
