@@ -4,6 +4,15 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-16] synthesis | wq101-alpha-daily (2026-08-16)
+- New page: wiki/synthesis/2026-08-16/wq101-alpha-daily.md
+- Coverage: WorldQuant 101 Alpha 因子选股 Top 20 — 美股周末复盘版。数据基准 = **8/14（周五）完整收盘全确认值 + 8/16（周日）事件窗口**（8/15-16 无美股交易，无"事件窗口折价"）。①**零售销售 -0.6% 大幅 miss**（7 月环比 -0.6% vs 预期 +0.1%，2025/5 来最大降幅；核心 -0.3%、线上 -2.2%、汽车 -1.8%）+ 密歇根 8 月初值 51（预期 55）→ FedWatch 9 月加息概率降至 ~28.6%——"低于 0% 消费下调"预设兑现；②**指数自 8/13 纪录回落但周线三连涨**（S&P 7,785.76 -0.17% / Nasdaq 26,729.16 -0.28% / Dow 53,732.41 -0.20%）；③**油价反弹**（WTI $82.40 +1.42% / Brent $88.52 +1.67%，伊朗/霍尔木兹升级 + IEA 赤字预测）——"WTI 续破 $80 下调"条件未触发，CVX +0.4 / XOM +0.4 评分上调；④**Berkshire 13F**：Q2 增持 Alphabet 83% → 106M 股 ~$37.9B 第三大持仓，14 季度首次净买入 → GOOGL 评分 ↑ 至 8.0（Alpha#19 价值锚确认）；⑤**AI 硬件内部二次分化**：SNDK +7.39% $1,641.11（JPMorgan 上调至增持目标 $2,250）/ MU +2.30% / NBIS +8.88% vs ANET -2.36% / PLTR -2.78% / SHOP -2.66%；⑥**JD 均值回复论证伪（重要纠偏）**——8/13 财报日 ADR -8.3% + 8/14 续跌 -0.80%，弱零售增长盖过 EPS beat，Mizuho 目标价 $41→$39，JD 从 Top 20 剔除并纳入"低质修复被市场否决"减分条件（Alpha#19 运用规则更新）；⑦**DIS +1.96% 零售弱日逆势 = 防御属性确认**。
+- Top 20: LLY(9.3) / NVDA(9.3) / MSFT(8.8) / ABNB(8.8) / SHOP(8.6 ↓) / CVX(8.5 ↑) / MU(8.4) / TSM(8.3) / XOM(8.3 ↑) / AAPL(8.5) / JPM(8.2) / DIS(8.2 ↑) / SMCI(8.2) / SNDK(8.0) / GOOGL(8.0 ↑) / ANET(7.9 ↓) / NBIS(7.9 ↑) / AMZN(7.8) / PLTR(7.8 ↓↓) / **WMT(7.5 新入选，防御轮动 + 8/20 财报窗口)**；移出 JD(6.9)
+- Factor weighting: Alpha#1 30% + #41 25% + #6 15%（纪律化深化：仅"远期/长约型兑现"配溢价）+ #12 10% + #53 10% + #19 5%（GOOGL/Berkshire + WMT）+ #30 5%（SNDK 周 +35% 追高警告）
+- Updated: wiki/index.md（Synthesis 表新增 wq101-alpha-daily 2026-08-16 条目，插在 08-14 wq101 条目之前、game-rl-daily 08-12 之后，保持 wq101 组逆序排列）, wiki/log.md
+- New pages: wiki/synthesis/2026-08-16/wq101-alpha-daily.md
+- Contradictions: JD "经营利润转正 + EPS beat 应获纠偏溢价"（8/14 报告假设）vs 市场 8/13 ADR -8.3% + 8/14 续跌——均值回复论证伪，已在报告中以 ⚠️ 标注并更新 Alpha#19 运用规则；8/13 油价 -2.4% 下调 CVX/XOM 被 8/14 +1.42% 反弹反转（地缘定价回归）
+
 ## [2026-08-16] synthesis | arXiv Paper Check — AI & CTR (2026-08-16)
 - New page: wiki/synthesis/2026-08-16/arxiv-paper-check.md
 - Coverage: 16 curated papers from the **Fri Aug 14, 2026 announced window** (submissions Aug 12–13; IDs ~2608.12308–2608.13560; cs.AI 204 new / cs.IR 19 new). Sat–Sun Aug 15–16, 2026 has **no arXiv announcement** (weekend), so the latest batch remains Fri Aug 14. Complement to the same-day arxiv-ai-search (20 papers) and arxiv-daily (26 papers), which together claim ~46 papers of this window. Every arXiv ID grep-verified absent (0 hits) from the entire wiki before inclusion.
