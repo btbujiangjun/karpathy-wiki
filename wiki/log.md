@@ -2,7 +2,14 @@
 
 > Append-only chronological record of all wiki operations.
 > Each entry: `## [YYYY-MM-DD] operation | subject`
-> Parse with: `grep "^## \[" wiki/log.md | tail -10`
+> Parse with: `grep "^## \[" wiki/log.md | tail-10`
+
+## [2026-08-17] synthesis | tech-report-digest (2026-08-17)
+- New page: wiki/synthesis/2026-08-17/tech-report-digest.md
+- Coverage: 19 家主流 AI 公司/实验室最新技术报告与旗舰模型汇总。每家一节：最新模型 + 发布日期 + 核心参数 + 架构创新 + 论文链接 + 最新动态。涵盖：DeepSeek (R1 + V4 Pro GA), OpenAI (GPT-5 + Astra), Meta (Llama 4 Scout/Maverick), Google (Gemini 2.5 Pro/Flash), Anthropic (Claude Opus 4/Sonnet 4), Mistral (Large 3), Qwen (Qwen3 + Qwen3.8-Max), Yi/Lightning, Baichuan (M2), Microsoft (Phi-4), Apple (AFM 2025), NVIDIA (Nemotron 3 Ultra + 3.5 Lightning), xAI (Grok 3 + 4.6), Amazon (Nova), Zhipu (GLM-5/5.2), InternLM (S1-Pro), Moonshot (Kimi K3), StepFun (Step-DeepResearch + Step 3), ByteDance (Seed 2.0/2.1)。交叉观察：MoE 统治、Hybrid Attention、原生多模态、Thinking 范式、端侧部署、开放 vs 闭源格局、"承诺→兑现"信用追踪、规模军备竞赛。
+- Updated: wiki/index.md (Synthesis table new tech-report-digest 2026-08-17 entry), wiki/log.md
+- New pages: wiki/synthesis/2026-08-17/tech-report-digest.md
+- Contradictions: none
 
 ## [2026-08-17] synthesis | conference-digest (2026-08-17)
 - New page: wiki/synthesis/2026-08-17/conference-digest.md
