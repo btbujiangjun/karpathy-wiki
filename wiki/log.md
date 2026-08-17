@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail-10`
 
+## [2026-08-17] synthesis | game-rl-daily (2026-08-17)
+- New page: wiki/synthesis/2026-08-17/game-rl-daily.md
+- Coverage: 17 papers across 5 categories — Game RL (MARLIO EA/CoG 2026 MOBA DRL benchmark, self-play parking, Dream Rehearsal continual MBRL), Game AI Bot (Nemobot Games ByteDance 100K+ GPU envs, Game-TARS cross-game transformer, GameVerse VLM video reflection), Game Foundation Models (GameWorld autoregressive WM Wuhan/Huawei, MAGIC LLM PCG, World Models survey UW-Madison), Benchmarks (GameCraft-Bench Unity LLM game creation Fudan/PKU/ByteDance, OmniGameArena UE5 LLM eval PKU/BAAI, Orak game agent framework ZJU/Huawei, GameDevBench, Agent Benchmarks Protocol Validity), PCG (Multi-Objective Instruction-Aware PCGRL). Cross-cutting: LLM-as-game-agent performance gap with humans persists; world models as game testbed; GPU-accelerated simulation at 100K+ concurrent environments.
+- Updated: wiki/index.md (Synthesis table new game-rl-daily 2026-08-17 entry), wiki/log.md
+- New pages: wiki/synthesis/2026-08-17/game-rl-daily.md
+- Contradictions: none
+
 ## [2026-08-17] synthesis | investment-daily (2026-08-17)
 - New page: wiki/synthesis/2026-08-17/investment-daily.md
 - Coverage: 全球科技与 AI 板块投资日报。覆盖美股 Mag 7 + AI 芯片/基础设施（NVDA/AMD/AVGO/PLTR/CRWV/NBIS/SNDK）、港股科技（腾讯/阿里/京东/联想/百度）、A 股算力/芯片（寒武纪/海光信息/中际旭创）、中概股（BABA/PDD/JD/NIO/XPEV）、新能源汽车（比亚迪/特斯拉/宁德时代）。核心驱动：①S&P 500 Q2 盈利 +31%（30 年最强）；②AI 基础设施链（CoreWeave $1040亿积压/Nebius +454% YoY）验证"新云"模式；③存储芯片超级周期（SNDK 周+35%/SKH +20%）；④中国新能源车渗透率突破 60%；⑤AI 模型密集发布（Gemini 3.7 Flash/Nemotron 3.5 Lightning/GLM-5.3）。
