@@ -4657,3 +4657,10 @@
 - Updated: wiki/index.md (Synthesis 表新增 conference-digest 2026-08-16 条目，插在 game-rl-daily 2026-08-16 之前), wiki/log.md
 - New pages: wiki/synthesis/2026-08-16/conference-digest.md
 - Contradictions: ①WWW 2026 会址勘误——迪拜 (Dubai, UAE) 非悉尼（悉尼为 WWW 2025），已在本 digest 与 index 中标注；②CIKM 2025 会址勘误——首尔 (Seoul) 非贝尔法斯特（贝尔法斯特为 CIKM 2024）；③AAAI 2026 会址/时间勘误——新加坡 1/20-27（此前口头假设华盛顿）；④KDD 2026 Research Track Best Paper 获奖者公开来源未确认（Meta RAG Benchmark 为 D&B track、MCGrad 为 ADS track），caveat 标注；⑤RecSys 2025 Best Industry Paper 官方奖项页未列出（not confirmed）；⑥部分条目 (MaxRL, daVinci-Dev, LIVE, DR Tulu, ThreadWeaver, GEPA, CAR-bench 等) 为检索可见标题/摘要、affiliation 或 arXiv 链接未能独立确认，均已标注；⑦前序 digest 记 WWW 2026 悉尼、CIKM 2025 贝尔法斯特 为错误口径，本 digest 起以官方站点为准；⑧ICML 2026 Outstanding Position Paper 与部分 Honorable Mentions 未逐条展开（标注）；⑨与本 wiki 已有 NeurIPS/ICML/CVPR 奖项确认条目 (08-10 conference-digest) 一致，无实质冲突
+
+## [2026-08-17] synthesis | arXiv Paper Check — AI & CTR (August 17, 2026)
+- New page: wiki/synthesis/2026-08-17/arxiv-paper-check.md
+- Coverage: 10 curated papers from Mon Aug 17 arXiv listings (cs.AI: 268 new entries, cs.LG: 138 new entries). Topics: LLM pruning (Sparsity Whisperer), nested LM training (Matryoshka), mechanistic interpretability (Graph Circuit Learning), agent evaluation (AV-AIVAT 74× cheaper), training-free LTSF (KReF), CTR loop scaling (LoopCTR), dual-path CTR residuals (DeRes), frequency-domain CTR (FEDIN), generative intent CTR (GenCI), unified relevance-CTR with LLM distillation (PRECTR-V2). Cross-cutting trends: computation-without-parameter-growth, dual-path architectures, frequency-domain for CTR, amortized/training-free methods, LLM→production CTR distillation.
+- Updated: wiki/index.md (Synthesis 表新增 arxiv-paper-check 2026-08-17 条目，插在 arxiv-paper-check 2026-08-12 之后), wiki/log.md
+- New pages: wiki/synthesis/2026-08-17/arxiv-paper-check.md
+- Contradictions: none
