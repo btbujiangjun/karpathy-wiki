@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail-10`
 
+## [2026-08-17] synthesis | wq101-alpha-daily (2026-08-17)
+- New page: wiki/synthesis/2026-08-17/wq101-alpha-daily.md
+- Coverage: WorldQuant 101 Alpha 因子选股 Top 20 — 美股日报。数据基准 = 8/15（周五）完整收盘确认值 + 8/17（周日）事件窗口。板块轮动深化：从"科技+AI"集中 → "金融+医疗+工业"分散化。Top 20: JPM(9.2) / MRK(9.0) / MSFT(8.9) / DELL(8.7) / ETN(8.6) / BAC(8.4) / SCHW(8.3) / PANW(8.2) / MU(8.2) / AAPL(8.1) / SBUX(8.0) / BNY(7.9) / FIX(7.8) / VRT(7.8) / STX(7.7) / TRV(7.6) / GOOGL(7.5) / GS(7.5) / XOM(7.4) / AMZN(7.3)。核心变化：金融板块 6 只入选（JPM/BAC/SCHW/BNY/TRV/GS），Alpha#6 量价因子在银行股信号最强；医疗 MRK 3M 动量 +16% 领跑全市场；科技内部分化（MSFT/DELL 强 vs AVGO/AMAT 弱）；能源受地缘溢价支撑。因子权重：Alpha#1 30% + #41 25% + #6 15% + #12 10% + #53 10% + #19 5% + #30 5%。
+- Updated: wiki/index.md (Synthesis table new wq101-alpha-daily 2026-08-17 entry), wiki/log.md
+- New pages: wiki/synthesis/2026-08-17/wq101-alpha-daily.md
+- Contradictions: none
+
 ## [2026-08-17] synthesis | game-rl-daily (2026-08-17)
 - New page: wiki/synthesis/2026-08-17/game-rl-daily.md
 - Coverage: 17 papers across 5 categories — Game RL (MARLIO EA/CoG 2026 MOBA DRL benchmark, self-play parking, Dream Rehearsal continual MBRL), Game AI Bot (Nemobot Games ByteDance 100K+ GPU envs, Game-TARS cross-game transformer, GameVerse VLM video reflection), Game Foundation Models (GameWorld autoregressive WM Wuhan/Huawei, MAGIC LLM PCG, World Models survey UW-Madison), Benchmarks (GameCraft-Bench Unity LLM game creation Fudan/PKU/ByteDance, OmniGameArena UE5 LLM eval PKU/BAAI, Orak game agent framework ZJU/Huawei, GameDevBench, Agent Benchmarks Protocol Validity), PCG (Multi-Objective Instruction-Aware PCGRL). Cross-cutting: LLM-as-game-agent performance gap with humans persists; world models as game testbed; GPU-accelerated simulation at 100K+ concurrent environments.
