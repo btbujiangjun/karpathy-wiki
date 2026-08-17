@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-17] synthesis | conference-digest (2026-08-17)
+- New page: wiki/synthesis/2026-08-17/conference-digest.md
+- Coverage: Structured digest covering 12 top ML/AI conferences (2025–2026): ICML 2026, ICLR 2026, NeurIPS 2025, AAAI 2026, CVPR 2026, KDD 2026, ACL 2026, EMNLP 2025, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025. Updated 2026-08-17 with latest award details from web searches. Key papers: Flexibility Trap/JustGRPO (ICML Outstanding), High-Accuracy Diffusion Sampling (ICML Outstanding), Transformers Inherently Succinct (ICLR Outstanding), LLMs Lost in Multi-Turn (ICLR Outstanding), Artificial Hivemind (NeurIPS Best), Gated Attention Qwen (NeurIPS Best), 1000-Layer RL (NeurIPS Best), Why Diffusion Don't Memorize (NeurIPS Best), D4RT 4D reconstruction Google DeepMind (CVPR Best), Imperfective Paradox NII (ACL Best), Conformal Risk Control EC JRC (RecSys Best), MedRGAG WWW Best, XGBoost Test of Time KDD, GANs Test of Time ICLR. Industry: Netflix GenRec, Meta ConnectionMind, Alibaba MetaStrategy, BMW CAR-bench, NVIDIA NitroGen. Cross-conference thematic analysis included (diffusion, RL post-training, LLM-as-ranker, agent safety).
+- Updated: wiki/index.md (Synthesis table new conference-digest 2026-08-17 entry), wiki/log.md
+- New pages: wiki/synthesis/2026-08-17/conference-digest.md
+- Contradictions: none (all papers verified against web sources; cross-references to 08-16 conference-digest, 08-17 arxiv-paper-check included)
+
 ## [2026-08-16] synthesis | wq101-alpha-daily (2026-08-16)
 - New page: wiki/synthesis/2026-08-16/wq101-alpha-daily.md
 - Coverage: WorldQuant 101 Alpha 因子选股 Top 20 — 美股周末复盘版。数据基准 = **8/14（周五）完整收盘全确认值 + 8/16（周日）事件窗口**（8/15-16 无美股交易，无"事件窗口折价"）。①**零售销售 -0.6% 大幅 miss**（7 月环比 -0.6% vs 预期 +0.1%，2025/5 来最大降幅；核心 -0.3%、线上 -2.2%、汽车 -1.8%）+ 密歇根 8 月初值 51（预期 55）→ FedWatch 9 月加息概率降至 ~28.6%——"低于 0% 消费下调"预设兑现；②**指数自 8/13 纪录回落但周线三连涨**（S&P 7,785.76 -0.17% / Nasdaq 26,729.16 -0.28% / Dow 53,732.41 -0.20%）；③**油价反弹**（WTI $82.40 +1.42% / Brent $88.52 +1.67%，伊朗/霍尔木兹升级 + IEA 赤字预测）——"WTI 续破 $80 下调"条件未触发，CVX +0.4 / XOM +0.4 评分上调；④**Berkshire 13F**：Q2 增持 Alphabet 83% → 106M 股 ~$37.9B 第三大持仓，14 季度首次净买入 → GOOGL 评分 ↑ 至 8.0（Alpha#19 价值锚确认）；⑤**AI 硬件内部二次分化**：SNDK +7.39% $1,641.11（JPMorgan 上调至增持目标 $2,250）/ MU +2.30% / NBIS +8.88% vs ANET -2.36% / PLTR -2.78% / SHOP -2.66%；⑥**JD 均值回复论证伪（重要纠偏）**——8/13 财报日 ADR -8.3% + 8/14 续跌 -0.80%，弱零售增长盖过 EPS beat，Mizuho 目标价 $41→$39，JD 从 Top 20 剔除并纳入"低质修复被市场否决"减分条件（Alpha#19 运用规则更新）；⑦**DIS +1.96% 零售弱日逆势 = 防御属性确认**。
