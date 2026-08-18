@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail-10`
 
+## [2026-08-18] synthesis | tech-report-digest (2026-08-18)
+- Summary: LLM Tech Report Digest — 2026-08-18, 19 家 AI 公司最新技术报告全面更新。重点变化：DeepSeek V4-Pro GA（08-13，Agent 能力大幅提升）；OpenAI GPT-5.6 System Card + Astra 数学定理证明；Apple AFM 3 首个端侧 20B Sparse 模型；NVIDIA Nemotron 3 Ultra（550B Hybrid Mamba-Attention）；xAI Grok 4.6 GA（1.5T，Cursor 联合）；Zhipu GLM-5.3（post-training scaling 驱动网络安全涌现）；InternLM 三篇论文（S2-Preview 397B + Mobius 架构 + S1-Pro 1T）；Kimi K3（2.8T KDA 线性注意力 + WebDev Arena #1）；Qwen3.8-Max 权重开放（08-17）；Step 3.7 Flash Advisor Mode（97% Opus 4.6 @ 1/9 成本）；Mistral Shieldstral 3B 安全分类器
+- Updated: wiki/index.md (Synthesis table new tech-report-digest 2026-08-18 entry), wiki/log.md
+- New pages: wiki/synthesis/2026-08-18/tech-report-digest.md
+- Contradictions: none
+
 ## [2026-08-18] synthesis | Conference & arXiv Daily Digest (2026-06-05)
 - Summary: Conference & arXiv Daily Digest — 2026-06-05 covering ICLR 2026, ICML 2026, NeurIPS 2025, CVPR 2026, AAAI 2026, ACL 2026, EMNLP 2025, KDD 2026, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025, plus arXiv preprints. 56 paper entries organized across 14 sections including ICLR 2026 Outstanding Papers (Transformers Inherently Succinct, LLMs Lost in Multi-Turn), ICML 2026 Outstanding (Flexibility Trap, High-Accuracy Diffusion Sampling), NeurIPS 2025 Best (Artificial Hivemind, Gated Attention, 1000-Layer RL, Why Diffusion Don't Memorize), CVPR 2026 Best (D4RT 4D Reconstruction), ACL 2026 Best (Imperfective Paradox), AAAI 2026 Outstanding (LLM2CLIP, ReconVLA), and industry papers from Netflix (GenRec), Meta (ConnectionMind), Alibaba (MetaStrategy), NVIDIA (NitroGen), BMW (CAR-bench), plus CTR/Recommendation, LLM/Agent, Google DeepMind/OpenAI/Meta AI research sections.
 - Updated: wiki/index.md (Synthesis table new conference-digest 2026-06-05 entry)
