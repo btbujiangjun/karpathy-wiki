@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail-10`
 
+## [2026-08-18] synthesis | wq101-alpha-daily (2026-08-18)
+- Summary: WorldQuant 101 Alpha 因子选股 Top 20 — 美股日报。能源板块 5 只入选（XOM 9.3/CVX 8.7/COP 8.5/SLB 7.9/DVN 7.7），医疗板块 6 只入选（LLY 9.1/HUM 8.9/CORT 8.6/DXCM 8.4/UNH 8.2/GILD 8.0），科技板块 5 只入选（DELL 9.0/PANW 8.8/NVDA 8.3/NTAP 7.6/ANET 7.5），公用事业 1 只（CEG 7.4），消费 1 只（BBY 8.1）。核心变化：能源从地缘溢价升级为 AI 电力+地缘双重驱动；金融板块全面移出（日跌-1.00% 触发 Alpha#12 背离）；VIX +6.60% 飙升 + WTI $85.09 + 黄金 $4,452.90。
+- Updated: wiki/index.md (Synthesis table new entry)
+- New pages: wiki/synthesis/2026-08-18/wq101-alpha-daily.md
+- Contradictions: none
+
 ## [2026-08-18] synthesis | investment-daily (2026-08-18)
 - Summary: wiki/synthesis/2026-08-18/investment-daily.md — 投资日报覆盖美股（Mag 7、AI 芯片、存储、光通信）、港股（腾讯/阿里/百度/MiniMax）、A 股（寒武纪/海光信息/AI 芯片板块）、中概股（小鹏/蔚来/拼多多）、新能源（比亚迪/宁德时代/特斯拉）。重点：Nvidia $1050 亿 OpenAI 数据中心担保；存储芯片逆势大涨（美光 +5.9%）；寒武纪/海光信息业绩创新高；特斯拉 Cybercab 计划 8 月底公开部署；ECB 预警 AI 市场修正风险。
 - Updated: wiki/index.md (Synthesis table new entry)
