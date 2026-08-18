@@ -38,6 +38,13 @@
 - New pages: wiki/synthesis/2026-08-18/arxiv-daily.md
 - Contradictions: none
 
+## [2026-08-18] synthesis | game-rl-daily (2026-08-18)
+- New page: wiki/synthesis/2026-08-18/game-rl-daily.md
+- Coverage: 25+ papers across 7 categories — Game RL (Generals.io superhuman self-play 2606.23348, EMAgnet 2606.23995, GARIP 2606.22688, AlphaZero Tablut 2604.05476, Big 2 self-play 2605.28863, DAGS 2605.14379, Stratagem 2604.17696), Game AI Bot (CAST 2607.25308, Hierarchical LLM+RL 2606.20014, Spatial Reasoning 2607.22732, RAPOA 2606.17838, Bounded Autonomy 2604.04703, Continual Harness 2605.09998), Game Foundation Models (NitroGen CVPR 2026 2601.02427, Game-TARS 2510.23691, Survey 2605.09965), PCG (VIPCGRL 2508.09860, PCGRLLM 2502.10906, Multiverse 2603.26782, Multi-Agent PCGRL 2510.04862, WCRL 2605.13570), Benchmarks (GVGAI-LLM 2508.08501, OmniGameArena 2606.09826, LMGame-Bench ICLR'26 2505.15146, CUBE 2603.15798), World Models (Mind-Studio 2606.16070, GameCWM distillation 2605.24375, ITC 2605.16457, OPINE-World 2607.01531, RWML 2602.05842), Hierarchical RL (AgentOWL 2602.02799, CODE-SHARP 2602.10085). 5 cross-cutting themes identified.
+- Updated: wiki/index.md (Synthesis table new game-rl-daily 2026-08-18 entry), wiki/log.md
+- New pages: wiki/synthesis/2026-08-18/game-rl-daily.md
+- Contradictions: none
+
 ## [2026-08-17] synthesis | wq101-alpha-daily (2026-08-17)
 - New page: wiki/synthesis/2026-08-17/wq101-alpha-daily.md
 - Coverage: WorldQuant 101 Alpha 因子选股 Top 20 — 美股日报。数据基准 = 8/15（周五）完整收盘确认值 + 8/17（周日）事件窗口。板块轮动深化：从"科技+AI"集中 → "金融+医疗+工业"分散化。Top 20: JPM(9.2) / MRK(9.0) / MSFT(8.9) / DELL(8.7) / ETN(8.6) / BAC(8.4) / SCHW(8.3) / PANW(8.2) / MU(8.2) / AAPL(8.1) / SBUX(8.0) / BNY(7.9) / FIX(7.8) / VRT(7.8) / STX(7.7) / TRV(7.6) / GOOGL(7.5) / GS(7.5) / XOM(7.4) / AMZN(7.3)。核心变化：金融板块 6 只入选（JPM/BAC/SCHW/BNY/TRV/GS），Alpha#6 量价因子在银行股信号最强；医疗 MRK 3M 动量 +16% 领跑全市场；科技内部分化（MSFT/DELL 强 vs AVGO/AMAT 弱）；能源受地缘溢价支撑。因子权重：Alpha#1 30% + #41 25% + #6 15% + #12 10% + #53 10% + #19 5% + #30 5%。
