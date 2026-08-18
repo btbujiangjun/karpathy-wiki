@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail-10`
 
+## [2026-08-18] synthesis | investment-daily (2026-08-18)
+- Summary: wiki/synthesis/2026-08-18/investment-daily.md — 投资日报覆盖美股（Mag 7、AI 芯片、存储、光通信）、港股（腾讯/阿里/百度/MiniMax）、A 股（寒武纪/海光信息/AI 芯片板块）、中概股（小鹏/蔚来/拼多多）、新能源（比亚迪/宁德时代/特斯拉）。重点：Nvidia $1050 亿 OpenAI 数据中心担保；存储芯片逆势大涨（美光 +5.9%）；寒武纪/海光信息业绩创新高；特斯拉 Cybercab 计划 8 月底公开部署；ECB 预警 AI 市场修正风险。
+- Updated: wiki/index.md (Synthesis table new entry)
+- New pages: wiki/synthesis/2026-08-18/investment-daily.md
+- Contradictions: none
+
 ## [2026-08-18] synthesis | tech-report-digest (2026-08-18)
 - Summary: LLM Tech Report Digest — 2026-08-18, 19 家 AI 公司最新技术报告全面更新。重点变化：DeepSeek V4-Pro GA（08-13，Agent 能力大幅提升）；OpenAI GPT-5.6 System Card + Astra 数学定理证明；Apple AFM 3 首个端侧 20B Sparse 模型；NVIDIA Nemotron 3 Ultra（550B Hybrid Mamba-Attention）；xAI Grok 4.6 GA（1.5T，Cursor 联合）；Zhipu GLM-5.3（post-training scaling 驱动网络安全涌现）；InternLM 三篇论文（S2-Preview 397B + Mobius 架构 + S1-Pro 1T）；Kimi K3（2.8T KDA 线性注意力 + WebDev Arena #1）；Qwen3.8-Max 权重开放（08-17）；Step 3.7 Flash Advisor Mode（97% Opus 4.6 @ 1/9 成本）；Mistral Shieldstral 3B 安全分类器
 - Updated: wiki/index.md (Synthesis table new tech-report-digest 2026-08-18 entry), wiki/log.md
