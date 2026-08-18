@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail-10`
 
+## [2026-08-18] synthesis | Conference & arXiv Daily Digest (2026-06-05)
+- Summary: Conference & arXiv Daily Digest — 2026-06-05 covering ICLR 2026, ICML 2026, NeurIPS 2025, CVPR 2026, AAAI 2026, ACL 2026, EMNLP 2025, KDD 2026, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025, plus arXiv preprints. 56 paper entries organized across 14 sections including ICLR 2026 Outstanding Papers (Transformers Inherently Succinct, LLMs Lost in Multi-Turn), ICML 2026 Outstanding (Flexibility Trap, High-Accuracy Diffusion Sampling), NeurIPS 2025 Best (Artificial Hivemind, Gated Attention, 1000-Layer RL, Why Diffusion Don't Memorize), CVPR 2026 Best (D4RT 4D Reconstruction), ACL 2026 Best (Imperfective Paradox), AAAI 2026 Outstanding (LLM2CLIP, ReconVLA), and industry papers from Netflix (GenRec), Meta (ConnectionMind), Alibaba (MetaStrategy), NVIDIA (NitroGen), BMW (CAR-bench), plus CTR/Recommendation, LLM/Agent, Google DeepMind/OpenAI/Meta AI research sections.
+- Updated: wiki/index.md (Synthesis table new conference-digest 2026-06-05 entry)
+- New pages: wiki/synthesis/2026-06-05/conference-digest.md
+- Contradictions: none
+
 ## [2026-08-18] synthesis | arXiv Paper Check — AI & CTR (2026-08-18)
 - New page: wiki/synthesis/2026-08-18/arxiv-paper-check.md
 - Coverage: 15 curated papers from the **Mon Aug 17, 2026 announced batch** (submissions Sun Aug 16; IDs ~2608.138xx–2608.145xx; cs.AI 185 new / cs.LG 138 new / cs.IR 13 new = 336 entries). Complement to same-day arxiv-daily (which covers a different batch). All 15 IDs grep-verified absent (0 hits) from the entire wiki; zero overlap with existing digests.
