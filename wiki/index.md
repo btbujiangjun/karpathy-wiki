@@ -344,6 +344,8 @@ Papers are organized by research category. Each page includes problem background
 ## Synthesis
 
 | File | Topic | Sources |
+| [arxiv-paper-check](synthesis/2026-08-19/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (August 19, 2026) | 2026-08-19 | arxiv, daily-check, ai, ctr, recommendation, agents, reasoning, rl, quantization, efficiency |
+| [arxiv-daily](synthesis/2026-08-19/arxiv-daily.md) | arXiv Daily — 2026-08-19 | 2026-08-19 | arxiv, daily, llm, recommendation, ctr, advertising, games, sequential-modeling |
 | [arxiv-daily](synthesis/2026-08-18/arxiv-daily.md) | arXiv Daily — 2026-08-18 | 2026-08-18 | arxiv, daily, llm, recommendation, ctr, advertising, games, sequential-modeling |
 | [arxiv-paper-check](synthesis/2026-08-18/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (August 18, 2026) | 2026-08-18 | arxiv, daily-check, ai, ctr, recommendation, ads, agents, moe, efficiency, world-models, evaluation, bias, daily-digest |
 | [tech-report-digest](synthesis/2026-08-18/tech-report-digest.md) | LLM Tech Report Digest — 2026-08-18 | 2026-08-18 | tech-report, moe, scaling, multimodal, reasoning, daily-digest |
