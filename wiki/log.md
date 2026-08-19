@@ -11,6 +11,13 @@
 - New pages: wiki/synthesis/2026-08-19/tech-report-digest.md
 - Contradictions: none
 
+## [2026-08-19] synthesis | investment-daily (2026-08-19)
+- Summary: wiki/synthesis/2026-08-19/investment-daily.md — 每日投资热点跟踪（美股/港股/A股/中概/AI/EV），覆盖 Magnificent 7、AI 模型与算力、港股科技、A 股 AI/芯片/光模块、新能源汽车、宏观地缘风险。
+- Key coverage: 苹果 iPhone 17e 发布；英伟达 Q2 FY2027 财报 8/26；Anthropic Q2 营收超 11.5 亿美元（14 倍 YoY）实现调整后经营利润；Physical AI H1 2026 达 474 亿美元（+80% YoY）；阿里首发全栈 Agentic 电商系统；快手可灵 AI 2.1 定档 8/19 发布；小鹏全新 Robotaxi 8/19 发布；比亚迪巴西工厂投产、7 月欧洲销量首超特斯拉
+- Updated: wiki/index.md (Synthesis table new investment-daily 2026-08-19 entry)
+- New pages: wiki/synthesis/2026-08-19/investment-daily.md
+- Contradictions: none
+
 ## [2026-08-19] synthesis | conference-digest (2026-08-19)
 - Summary: wiki/synthesis/2026-08-19/conference-digest.md — Comprehensive survey of 53 papers from 12 top ML/AI conferences.
 - Coverage: Recommendation (R²ec, IGD, RecBench, Counter-IF, RecZero, ORBIT, AgentRecBench, TagCF, LPDO, ThinkRec, GenCI, SparseCTR, TransX, GRAB, RoleMix, IDProxy, MARC, D-MoE, GenRec, LO-FAR), Code (StepCodeReasoner, R1-Code-Interpreter, ExecVerify, Agentic Verifier), Agents (VeRO, Meta-Harness, Automata from Traces, RepoNavigator), LLM Training (UniAR, Markovian Transformers, SPPO, LSE-MTP, LoongRL, GEPA), Generative (TiM, HierDiff, ControlAudio), Benchmarks (ORBIT, AgentRecBench, RecBench).
