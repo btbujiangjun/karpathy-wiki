@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail-10`
 
+## [2026-08-19] synthesis | conference-digest (2026-08-19)
+- Summary: wiki/synthesis/2026-08-19/conference-digest.md — Comprehensive survey of 53 papers from 12 top ML/AI conferences.
+- Coverage: Recommendation (R²ec, IGD, RecBench, Counter-IF, RecZero, ORBIT, AgentRecBench, TagCF, LPDO, ThinkRec, GenCI, SparseCTR, TransX, GRAB, RoleMix, IDProxy, MARC, D-MoE, GenRec, LO-FAR), Code (StepCodeReasoner, R1-Code-Interpreter, ExecVerify, Agentic Verifier), Agents (VeRO, Meta-Harness, Automata from Traces, RepoNavigator), LLM Training (UniAR, Markovian Transformers, SPPO, LSE-MTP, LoongRL, GEPA), Generative (TiM, HierDiff, ControlAudio), Benchmarks (ORBIT, AgentRecBench, RecBench).
+- Themes: Reasoning+Recommendation convergence, RL post-training, generative rec at scale, CTR scaling, agent safety.
+- Updated: wiki/index.md (Synthesis table new entry)
+- New pages: wiki/synthesis/2026-08-19/conference-digest.md
+- Contradictions: none
+
 ## [2026-08-19] synthesis | arxiv-paper-check (2026-08-19)
 - New page: wiki/synthesis/2026-08-19/arxiv-paper-check.md
 - Coverage: 8 curated papers from the **Wed Aug 19, 2026 announced batch** (submitted Aug 18–19; cs.AI, cs.LG, cs.CL, cs.IR, stat.ML). Complement to same-day arxiv-daily. All IDs grep-verified absent (0 hits) from the entire wiki before inclusion.
