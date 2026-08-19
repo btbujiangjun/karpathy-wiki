@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail-10`
 
+## [2026-08-19] synthesis | game-rl-daily (2026-08-19)
+- Summary: wiki/synthesis/2026-08-19/game-rl-daily.md — 30+ papers across 7 categories: Game RL, Game AI Bot, Game Foundation Models, PCG, Benchmarks, World Models, Related Techniques.
+- Coverage: Generals.io superhuman self-play (2606.23348), QZero model-free Go (2601.03306), AlphaZero Tablut (2604.05476), DAGS self-play exploration (2605.14379), Odysseus VLM 100+ turn games (2605.00347), CAST game solvers as teachers (2607.25308), MEMO memory-augmented LLM games (2603.09022), LLM+RL hierarchical control (2606.20014), FAMOU co-evolutionary code evolution (2606.10389), AutoHarness (2603.03329), GenGamer ACL 2026, NitroGen CVPR 2026 (2601.02427), generalist game players survey (2605.09965), PCGRLLM (2502.10906), MIPCGRL (2508.09193), WCRL (2605.13570), MAGIC (2607.11594), OpenGame (2604.18394), OmniGameArena (2606.09826), RNG-Bench (2606.19338), GameCraft-Bench (2606.17861), GameDevBench (2602.11103), AutoWorldModel-Bench (2608.11216), WorldCompass (2602.09022), OPINE-World (2607.01531), Curiosity-Critic (2604.18701), GLANCE (2605.03782)
+- Updated: wiki/index.md (Synthesis table new game-rl-daily 2026-08-19 entry)
+- New pages: wiki/synthesis/2026-08-19/game-rl-daily.md
+- Contradictions: none
+
 ## [2026-08-19] synthesis | tech-report-digest (2026-08-19)
 - Summary: wiki/synthesis/2026-08-19/tech-report-digest.md — 19 家 AI 公司最新技术报告与旗舰模型汇总。
 - Key updates vs 08-18: DeepSeek API 定价调整（峰值/非峰值双轨，08-16 生效）；OpenAI GPT-5.6 ChatGPT 更新（thinking slider + Luna 免费用户默认）+ Model Spec 08-18 更新；xAI Grok 4.6 GitHub Copilot 全线集成（08-14）；Claude Opus 4.1 已退役；GLM-5.3 权重预计 08-28 前开源
