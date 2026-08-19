@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail-10`
 
+## [2026-08-19] synthesis | wq101-alpha-daily (2026-08-19)
+- Summary: WorldQuant 101 Alpha 因子选股 Top 20 — 美股日报。能源板块 5 只入选（XOM 9.3/CVX 8.7/VLO 8.5/COP 8.0/SLB 7.7），医疗板块 4 只入选（LLY 9.1/MRK 8.5/GILD 8.0/UNH 7.8），科技板块 6 只入选（SNDK 8.8/DELL 8.6/PANW 8.4/NTAP 7.9/GLW 7.5/AMAT 7.6），工业 3 只（CAT 8.2/GE 8.0/FIX 7.6），消费防御 2 只（COST 8.0/WMT 7.5）。
+- Key changes vs 08-18: 能源从 2 只增至 5 只（地缘溢价+AI电力双驱动强化，XOM 登顶 #1）；金融板块全部移出（日跌-1.00%触发Alpha#12背离）；消费防御新增 COST/WMT（零售弱日防御轮动）；SNDK 新入选（JPMorgan 上调至增持 $2,250）；GLW/AMAT/FIX 反转信号（Alpha#53）增强。因子频次：Alpha#1 动量 80%（↑核心巩固）+ Alpha#41 趋势 55% + Alpha#19 均值回复 45%（↑防御）+ Alpha#12 背离 25%（消费识别）+ Alpha#53 反转 25%（↑）+ Alpha#6 量价 20%（↓）。市场环境：S&P 7,691.76 -0.69%/Nasdaq 26,289.71 -1.33%（半导体领跌）/VIX 15.84 +4.28%/10Y 4.70%/WTI $84.66/黄金 $4,409。
+- Updated: wiki/index.md (Synthesis table new wq101-alpha-daily 2026-08-19 entry)
+- New pages: wiki/synthesis/2026-08-19/wq101-alpha-daily.md
+- Contradictions: none
+
 ## [2026-08-19] synthesis | game-rl-daily (2026-08-19)
 - Summary: wiki/synthesis/2026-08-19/game-rl-daily.md — 30+ papers across 7 categories: Game RL, Game AI Bot, Game Foundation Models, PCG, Benchmarks, World Models, Related Techniques.
 - Coverage: Generals.io superhuman self-play (2606.23348), QZero model-free Go (2601.03306), AlphaZero Tablut (2604.05476), DAGS self-play exploration (2605.14379), Odysseus VLM 100+ turn games (2605.00347), CAST game solvers as teachers (2607.25308), MEMO memory-augmented LLM games (2603.09022), LLM+RL hierarchical control (2606.20014), FAMOU co-evolutionary code evolution (2606.10389), AutoHarness (2603.03329), GenGamer ACL 2026, NitroGen CVPR 2026 (2601.02427), generalist game players survey (2605.09965), PCGRLLM (2502.10906), MIPCGRL (2508.09193), WCRL (2605.13570), MAGIC (2607.11594), OpenGame (2604.18394), OmniGameArena (2606.09826), RNG-Bench (2606.19338), GameCraft-Bench (2606.17861), GameDevBench (2602.11103), AutoWorldModel-Bench (2608.11216), WorldCompass (2602.09022), OPINE-World (2607.01531), Curiosity-Critic (2604.18701), GLANCE (2605.03782)
