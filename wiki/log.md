@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail-10`
 
+## [2026-08-19] synthesis | tech-report-digest (2026-08-19)
+- Summary: wiki/synthesis/2026-08-19/tech-report-digest.md — 19 家 AI 公司最新技术报告与旗舰模型汇总。
+- Key updates vs 08-18: DeepSeek API 定价调整（峰值/非峰值双轨，08-16 生效）；OpenAI GPT-5.6 ChatGPT 更新（thinking slider + Luna 免费用户默认）+ Model Spec 08-18 更新；xAI Grok 4.6 GitHub Copilot 全线集成（08-14）；Claude Opus 4.1 已退役；GLM-5.3 权重预计 08-28 前开源
+- Updated: wiki/index.md (Synthesis table new tech-report-digest 2026-08-19 entry)
+- New pages: wiki/synthesis/2026-08-19/tech-report-digest.md
+- Contradictions: none
+
 ## [2026-08-19] synthesis | conference-digest (2026-08-19)
 - Summary: wiki/synthesis/2026-08-19/conference-digest.md — Comprehensive survey of 53 papers from 12 top ML/AI conferences.
 - Coverage: Recommendation (R²ec, IGD, RecBench, Counter-IF, RecZero, ORBIT, AgentRecBench, TagCF, LPDO, ThinkRec, GenCI, SparseCTR, TransX, GRAB, RoleMix, IDProxy, MARC, D-MoE, GenRec, LO-FAR), Code (StepCodeReasoner, R1-Code-Interpreter, ExecVerify, Agentic Verifier), Agents (VeRO, Meta-Harness, Automata from Traces, RepoNavigator), LLM Training (UniAR, Markovian Transformers, SPPO, LSE-MTP, LoongRL, GEPA), Generative (TiM, HierDiff, ControlAudio), Benchmarks (ORBIT, AgentRecBench, RecBench).
