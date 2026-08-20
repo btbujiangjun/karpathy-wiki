@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-20] synthesis | tech-report-digest (2026-08-20)
+- Summary: wiki/synthesis/2026-08-20/tech-report-digest.md — 19 家主流 AI 公司/实验室最新技术报告汇总，含最新模型、核心参数、架构创新、arXiv/技术报告链接。
+- Coverage: 19家公司: DeepSeek(V4-Pro GA), OpenAI(GPT-5.6/Astra), Meta(LLaMA 4), Google(Gemini 3.5 Flash), Anthropic(Claude Opus 5), Mistral(Medium 3 SWE-bench 58.8%), Qwen(3.8-Max/Next 80B), Yi(Lightning), Baichuan(M2/M3), Microsoft(Phi-4-reasoning-vision), Apple(AFM 3), NVIDIA(Nemotron 3 Ultra/3.5 Lightning), xAI(Grok 4.6), Amazon(Nova), Zhipu(GLM-5.3), InternLM(S2-Preview/Mobius), Moonshot(Kimi K3), StepFun(Step 3.7 Flash), ByteDance(Seed 2.0)
+- Key trends: MoE统治(8+/19家), Hybrid Attention, 原生多模态, Thinking范式, 端侧部署, 架构创新(KDA/Mobius/Cascade)
+- Updated: wiki/index.md (Synthesis table new tech-report-digest 2026-08-20 entry)
+- New pages: wiki/synthesis/2026-08-20/tech-report-digest.md
+- Contradictions: none
+
 ## [2026-08-20] synthesis | conference-digest (2026-08-20)
 - Summary: wiki/synthesis/2026-08-20/conference-digest.md — 2026 AI 会议论文全景速递，覆盖 12 大会议 + 8 大主题方向，共 100+ 篇论文详细条目。
 - Coverage: ①**ICML 2026** (温哥华 8/9–13, 28.4% 接收率) — 25+ 篇论文：效率(Speed-Dynamic SDE/ACE-RT/SAM Revisiting)、可信/鲁棒(数据投毒/公平性基准)、图/几何(神经坍缩/图谱协同)、大语言模型/推理(演绎收敛RL/RLXY/元提示)、推荐(多行为MoE/Castle并行)、具身智能(VLA联合演化)、多模态(VLM遥感综述)、时序(加密货币预测)、多目标(MOBO NAS)；②**AAAI 2026** (新加坡 1/20–27) — Best Paper(Dialogue Reflection/Critique, AiNomist, GenAI KG, SciML Symmetry)、TMT论文(轻量CTR/DFGN/去偏LLM rec)；③**NeurIPS 2025** (圣地亚哥 12/2–8, 26.4% 接收) — Best(人工蜂巢思维/Proudfoot/双尺度扩散/注意力缺陷ICL)、其他(MoE+IT/Sparse Autoencoder/Google后训练Scaling)；④**ICLR 2026** — DeepMind论文(程序合成/课程RL/CoT ICL)、最新arXiv(数据污染/测试时计算扩展/SparQ)；⑤**KDD 2026** (济州岛 8/9–13) — A*STAR 7篇(流量预测/扩散异常检测/动态沙箱)、Best(Curiosity数据选择)、Featured(可信Agent/长上下文LLM)；⑥**CVPR 2026** (丹佛 6/3–7) — Google白金赞助(Lumiere视频/ParCo量化/机器人协调)、AI Science(烟草AI诊断)、安全Agent(威胁建模/AgenticRAG)、推荐(ALIR冷启动)；⑦**ACL 2026** — Outstanding(CxMP构式基准)、Best Theme(不完全体悖论)、Transformer(多头RAG/UFO2/LLaVA-o1/HELMET)；⑧**EMNLP 2025** — Outstanding(LingGym)、低资源语言标注、方言建模；⑨**SIGIR 2026** (首尔, 15.2% 接收) — 6主题分布(推荐61篇/搜索57篇)、10篇精选(任务算术RAG/显式隐式交互/参数高效长文档)；⑩**WWW 2026** — 推荐(数据稀疏方案/CTR适配LLM)、Agent(AgentLens/PlanAgent)、多模态(日历事件解析/书法修辞)；⑪**CIKM 2025** (韩国) — Best(GAE链接预测)、Applied(Climber Scaling Laws/LLM代码语义搜索)；⑫**RecSys 2025** (布拉格) — Best(Conformal Prediction缓解不当推荐/Hybrid负采样/多层嵌入)、特色(Explainable AI Survey/大动作模型/Hawkes过程)
