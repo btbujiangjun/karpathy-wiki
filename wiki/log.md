@@ -4,6 +4,20 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-20] synthesis | wq101-alpha-daily (2026-08-20)
+- Summary: WorldQuant 101 Alpha 因子选股 Top 20 — 美股日报。科技板块 9 只入选（NVDA 9.5/MSFT 9.3/AMD 9.1/MU 8.8/AVGO 8.7/PLTR 8.1/CRM 7.5/GOOGL 9.0/META 8.6），通信服务 3 只（GOOGL/META/NFLX 8.0），医疗 3 只（LLY 8.2/GILD 7.8/TMO 7.4），金融 2 只（GS 8.4/V 7.9），消费 2 只（AMZN 8.9/COST 8.5），工业 1 只（VRT 8.3），能源 1 只（XOM 7.7）。
+- Key changes vs 08-19: 软件轮动深化（MSFT 月+28.7% 登顶 #2）；META 超跌反转入选（YTD -9.3%，Alpha#53）；COST 防御轮动入选（7月零售-0.6%）；GS 金融复苏入选（投行+国债回购利好）；UNH 移出（前日入选但量价信号减弱）。因子频次：Alpha#1 动量 75%（↑核心巩固）+ Alpha#41 趋势 55% + Alpha#19 均值回复 30%（↑GOOGL/META）+ Alpha#12 背离 30% + Alpha#6 量价 25% + Alpha#53 反转 20%。市场环境：S&P ~7,710 +0.2%/Nasdaq ~26,340 +0.2%/VIX 14.89 -6%/10Y 4.65% -5bp/WTI $84.44/黄金 $4,549。
+- Updated: wiki/index.md (Synthesis table new wq101-alpha-daily 2026-08-20 entry)
+- New pages: wiki/synthesis/2026-08-20/wq101-alpha-daily.md
+- Contradictions: none
+
+## [2026-08-20] synthesis | investment-daily (2026-08-20)
+- Summary: wiki/synthesis/2026-08-20/investment-daily.md — 每日投资热点跟踪（美股/港股/A股/中概/AI/EV），覆盖 Mag 7、AI 基础设施债务风险、OpenAI 安全暂停、港股大模型双雄估值重估、A 股芯片午后爆发、中概股分化、新能源车渗透率破 60%。
+- Key coverage: ①AI 基础设施债务成焦点：2026 年 AI 债券发行 4890 亿美元，Nvidia $5000 亿 GPU 融资+ $1050 亿 OpenAI 担保；②OpenAI Q2 营收 670 亿（+18% QoQ）但亏损扩大至 1230 亿，Anthropic Q2 营收 1160 亿首次超越且盈利；③九峰山实验室磷化铟 6 英寸突破引爆 A 股芯片板块，寒武纪突破千元市值 4200 亿；④宇树科技科创板首日 +460% 市值 3418 亿；⑤百度 Q2 营收 313 亿（-4%），净利润暴跌 68%，AI 收入占比 50%；⑥港股大模型双雄（智谱/MINIMAX）稀缺性溢价瓦解，空头仓位激增；⑦韩国宣布采购 35000 枚 GPU；⑧中国新能源车 7 月渗透率首破 60.4%，但行业利润下降近两成
+- Updated: wiki/index.md (Synthesis table new investment-daily 2026-08-20 entry)
+- New pages: wiki/synthesis/2026-08-20/investment-daily.md
+- Contradictions: none
+
 ## [2026-08-20] synthesis | tech-report-digest (2026-08-20)
 - Summary: wiki/synthesis/2026-08-20/tech-report-digest.md — 19 家主流 AI 公司/实验室最新技术报告汇总，含最新模型、核心参数、架构创新、arXiv/技术报告链接。
 - Coverage: 19家公司: DeepSeek(V4-Pro GA), OpenAI(GPT-5.6/Astra), Meta(LLaMA 4), Google(Gemini 3.5 Flash), Anthropic(Claude Opus 5), Mistral(Medium 3 SWE-bench 58.8%), Qwen(3.8-Max/Next 80B), Yi(Lightning), Baichuan(M2/M3), Microsoft(Phi-4-reasoning-vision), Apple(AFM 3), NVIDIA(Nemotron 3 Ultra/3.5 Lightning), xAI(Grok 4.6), Amazon(Nova), Zhipu(GLM-5.3), InternLM(S2-Preview/Mobius), Moonshot(Kimi K3), StepFun(Step 3.7 Flash), ByteDance(Seed 2.0)
