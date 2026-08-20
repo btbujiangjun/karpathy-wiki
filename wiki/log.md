@@ -4,6 +4,15 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-20] synthesis | conference-digest (2026-08-20)
+- Summary: wiki/synthesis/2026-08-20/conference-digest.md — 2026 AI 会议论文全景速递，覆盖 12 大会议 + 8 大主题方向，共 100+ 篇论文详细条目。
+- Coverage: ①**ICML 2026** (温哥华 8/9–13, 28.4% 接收率) — 25+ 篇论文：效率(Speed-Dynamic SDE/ACE-RT/SAM Revisiting)、可信/鲁棒(数据投毒/公平性基准)、图/几何(神经坍缩/图谱协同)、大语言模型/推理(演绎收敛RL/RLXY/元提示)、推荐(多行为MoE/Castle并行)、具身智能(VLA联合演化)、多模态(VLM遥感综述)、时序(加密货币预测)、多目标(MOBO NAS)；②**AAAI 2026** (新加坡 1/20–27) — Best Paper(Dialogue Reflection/Critique, AiNomist, GenAI KG, SciML Symmetry)、TMT论文(轻量CTR/DFGN/去偏LLM rec)；③**NeurIPS 2025** (圣地亚哥 12/2–8, 26.4% 接收) — Best(人工蜂巢思维/Proudfoot/双尺度扩散/注意力缺陷ICL)、其他(MoE+IT/Sparse Autoencoder/Google后训练Scaling)；④**ICLR 2026** — DeepMind论文(程序合成/课程RL/CoT ICL)、最新arXiv(数据污染/测试时计算扩展/SparQ)；⑤**KDD 2026** (济州岛 8/9–13) — A*STAR 7篇(流量预测/扩散异常检测/动态沙箱)、Best(Curiosity数据选择)、Featured(可信Agent/长上下文LLM)；⑥**CVPR 2026** (丹佛 6/3–7) — Google白金赞助(Lumiere视频/ParCo量化/机器人协调)、AI Science(烟草AI诊断)、安全Agent(威胁建模/AgenticRAG)、推荐(ALIR冷启动)；⑦**ACL 2026** — Outstanding(CxMP构式基准)、Best Theme(不完全体悖论)、Transformer(多头RAG/UFO2/LLaVA-o1/HELMET)；⑧**EMNLP 2025** — Outstanding(LingGym)、低资源语言标注、方言建模；⑨**SIGIR 2026** (首尔, 15.2% 接收) — 6主题分布(推荐61篇/搜索57篇)、10篇精选(任务算术RAG/显式隐式交互/参数高效长文档)；⑩**WWW 2026** — 推荐(数据稀疏方案/CTR适配LLM)、Agent(AgentLens/PlanAgent)、多模态(日历事件解析/书法修辞)；⑪**CIKM 2025** (韩国) — Best(GAE链接预测)、Applied(Climber Scaling Laws/LLM代码语义搜索)；⑫**RecSys 2025** (布拉格) — Best(Conformal Prediction缓解不当推荐/Hybrid负采样/多层嵌入)、特色(Explainable AI Survey/大动作模型/Hawkes过程)
+- Key trends: 高效推理与计算优化(ICML+NeurIPS)、多模态融合(CVPR+EMNLP)、可解释性与可控生成(ICLR+NeurIPS)、LLM Agent系统(AAAI+KDD+WWW)、推荐系统创新(RecSys+SIGIR+CIKM)、RLHF/DPO对齐(ICLR+NeurIPS)、科学AI(ICML+CVPR)、公平性与去偏(AAAI+SIGIR+RecSys)、代码执行与沙箱(KDD)
+- Top labs: Google DeepMind(ICML/CVPR/NeurIPS/ICLR), Microsoft Research(NeurIPS/ACL/CVPR), OpenAI(ICLR/NeurIPS), ByteDance(KDD/WSDM/RecSys/ICML), Meta AI(ICML), Alibaba(NeurIPS/ACL), Bilibili(WSDM), KAIST(CIKM)
+- Updated: wiki/index.md (Synthesis table new conference-digest 2026-08-20 entry)
+- New pages: wiki/synthesis/2026-08-20/conference-digest.md
+- Contradictions: none
+
 ## [2026-08-20] synthesis | arxiv-paper-check (2026-08-20)
 - New page: wiki/synthesis/2026-08-20/arxiv-paper-check.md
 - Coverage: 13 curated papers from the **Thu Aug 20, 2026 announced batch** (submitted Aug 19–20; cs.AI 186 new / cs.IR 19 new / cs.LG 169 new). Complement to same-day arxiv-daily (45 papers) and arxiv-ai-search (21 papers). All 13 IDs grep-verified absent (0 hits) from the entire wiki; zero overlap with sibling digests.
