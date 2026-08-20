@@ -345,6 +345,9 @@ Papers are organized by research category. Each page includes problem background
 ## Synthesis
 
 | File | Topic | Sources |
+| [arxiv-ai-search](synthesis/2026-08-20/arxiv-ai-search.md) | arXiv AI/LLM/RecSys/Advertising Paper Search (2026-08-20) | 2026-08-20 | arxiv, ai, llm, recommendation, advertising, ctr, sequential-modeling, games, reinforcement-learning, cold-start, generative-rec |
+| [arxiv-daily](synthesis/2026-08-20/arxiv-daily.md) | arXiv Daily Digest — 2026-08-20 | 2026-08-20 | arxiv, daily, llm, recommendation, ctr, advertising, games, sequential-modeling, generative-rec, llm-distillation, multi-agent |
+| [arxiv-paper-check](synthesis/2026-08-20/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (August 20, 2026) | 2026-08-20 | arxiv, daily-check, ai, ctr, recommendation, agents, distillation, efficiency, retrieval, moe, rl, evaluation, daily-digest |
 | [arxiv-paper-check](synthesis/2026-08-19/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (August 19, 2026) | 2026-08-19 | arxiv, daily-check, ai, ctr, recommendation, agents, reasoning, rl, quantization, efficiency |
 | [arxiv-daily](synthesis/2026-08-19/arxiv-daily.md) | arXiv Daily — 2026-08-19 | 2026-08-19 | arxiv, daily, llm, recommendation, ctr, advertising, games, sequential-modeling |
 | [arxiv-daily](synthesis/2026-08-18/arxiv-daily.md) | arXiv Daily — 2026-08-18 | 2026-08-18 | arxiv, daily, llm, recommendation, ctr, advertising, games, sequential-modeling |
