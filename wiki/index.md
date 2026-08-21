@@ -348,6 +348,7 @@ Papers are organized by research category. Each page includes problem background
 | File | Topic | Sources |
 | [arxiv-paper-check](synthesis/2026-08-21/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (August 21, 2026) | 2026-08-21 | arxiv, daily-check, ai, ctr, recommendation, ads, ir, agents, agentic-rl, moe, distillation, evaluation, benchmark-validity, daily-digest |
 | [arxiv-ai-search](synthesis/2026-08-21/arxiv-ai-search.md) | arXiv AI/LLM/RecSys/Advertising Paper Search (2026-08-21) | 2026-08-21 | arxiv, ai, llm, recommendation, advertising, games, reinforcement-learning, generative-rec |
+| [conference-digest](synthesis/2026-08-21/conference-digest.md) | Conference & arXiv Paper Daily Digest (2026-08-21) | 2026-08-21 | arxiv, conference-digest, ICML2026, code-world-models, agents, agentic-rl, video-generation, time-series, benchmark, daily-digest |
 | [arxiv-ai-search](synthesis/2026-08-20/arxiv-ai-search.md) | arXiv AI/LLM/RecSys/Advertising Paper Search (2026-08-20) | 2026-08-20 | arxiv, ai, llm, recommendation, advertising, ctr, sequential-modeling, games, reinforcement-learning, cold-start, generative-rec |
 | [arxiv-daily](synthesis/2026-08-20/arxiv-daily.md) | arXiv Daily Digest — 2026-08-20 | 2026-08-20 | arxiv, daily, llm, recommendation, ctr, advertising, games, sequential-modeling, generative-rec, llm-distillation, multi-agent |
 | [tech-report-digest](synthesis/2026-08-20/tech-report-digest.md) | LLM Tech Report Digest — 2026-08-20 | 2026-08-20 | tech-report, moe, scaling, multimodal, reasoning, daily-digest |
