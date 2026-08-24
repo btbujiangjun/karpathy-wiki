@@ -4,7 +4,16 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
-## [2026-08-21] synthesis | tech-report-digest (2026-08-21)
+## [2026-08-22] synthesis | arxiv-ai-search (2026-08-22)
+- Summary: wiki/synthesis/2026-08-22/arxiv-ai-search.md — 10 curated papers across 4 categories: LLM Reasoning & Post-Training (2), Latent World Models & Learned Planning (3), Advertising & Auction Theory (2), Games & Multi-Agent Systems (3).
+- Coverage: ①LLM: Continual Reasoning Gym PKU+BAAI(tentative) — continual RLVR, forgetting only partly explains gap vs MTRL, shared reasoning identified, Continual Prompt Replay (replay prompts + regenerate with current policy) reaches MTRL-level [2608.18574]; Nested SMC (FA-NSMC) for inference-time steering of discrete diffusion LMs — fixes best-of-n overoptimism + bootstrap-SMC weight degeneracy, Feynman–Kac formulation with corrected prior biases [2608.20123]. ②World models/planning: Orthogonal JEPA CUHK+Shanghai AI Lab orthogonal predictive factorization (basis matrices + per-component prediction branches + orthogonality/activity/variance regularization; vision/single-cell/EHR/control/MD) [2608.20065]; DA-LeWM decision-metric alignment diagnostics (Plan-Real & CEM-stage Spearman) for Euclidean-cost latent MPC + inverse-dynamics/goal-action heads → higher success at same probe scores [2608.18746]; RP1 first fully-learned multi-step plan improvement, model-agnostic critic+optimizer trained offline from imagined rollouts, 1000× fewer rollouts / up to 67× faster [2608.18669]. ③Ads/auction theory: One-Shot Pricing HOTW markets as Fisher market via Eisenberg–Gale — competitive-equilibrium price revenue-optimal among uniform-price mechanisms, outcome-equivalent to paced sequential FPAs with ex-ante multipliers, millions of auctions → one convex program (Melo/Shum/Vohra) [2608.01591]; tight PPAD inapproximability for pacing AND throttling equilibria in second-price auctions at every constant approximation factor [2608.16682]. ④Games: Solvable Sokoban via masked diffusion — 77.4% solvability from tile-completion-only training (no solver/reward/labels), emergent global constraint satisfaction, any-order generation matches non-local structure [2608.15958]; UC-PSRO utility-conditioned PSRO + FiLM commander's-intent + comm-dropout curriculum for UAS swarms (35%→62% success as denial increases), honest negative result on self-play exploitability advantage [2608.15372]; RoboStriker SJTU+Shanghai AI Lab+BAAI(tentative) humanoid boxing as latent-space zero-sum Markov game — motion-manifold distillation + Neural Fictitious Self-Play co-evolution, real-robot deployment [2608.16195].
+- Dedup: all candidate IDs grep-verified against entire wiki before inclusion. Zero new CTR/recsys/sequential papers today — all 15 candidates already covered by sibling digests 08-19/20/21. Also excluded: SPADE 2608.19197 (arxiv-daily 08-20 + game-rl-daily 08-21), MoE hyperparam transfer 2608.20061 (paper-check 08-21), MARCO/MISO/PPAD auto-bidding/Co-RL/debate-training.
+- Key trends: "shape the space before you search it" — four independent papers structure geometry before search (latent motion manifolds for self-play, orthogonal factorized predictive states, decision-aligned latent metrics, learned plan improvement); auction-theory impossibility results converge on practical auto-bidding; diffusion models exhibit emergent global properties from local objectives.
+- Updated: wiki/index.md (Synthesis table new arxiv-ai-search 2026-08-22 entry)
+- New pages: wiki/synthesis/2026-08-22/arxiv-ai-search.md
+- Contradictions: none
+
+
 - Summary: wiki/synthesis/2026-08-21/tech-report-digest.md — 19 家主流 AI 公司/实验室最新技术报告汇总（基于 08-20 digest 增量更新 + 全量复核），含最新模型、核心参数、架构创新、论文链接、交叉观察与勘误。
 - Key updates vs 08-20: ①Meta Muse Glimmer 30B 开放权重（Apache 2.0，08-10）+ Spark 1.2 权重承诺，条目切换至 Muse 家族口径；②Google Gemini 3.7 Flash 发布（08-13，intro 半价 $0.75/$3.75，3.5 Pro 跳票）；③OpenAI GPT-5.6-Cyber + Daybreak 扩容（08-11）、Astra 因无法排除 Critical cyber 能力降速 + CoT 监控；④GLM-5.3 API 上架（08-18，$1.40/$0.26/$4.40）但权重延期 ~08-28 做安全加固，Brockman 点名其威胁影响；⑤DeepSeek 峰谷双轨新定价 08-16 生效（cache-hit 最高 +1,100%）+ IPO 准备（pre-money ~$71B、自研推理芯片）；⑥NVIDIA Nemotron 3.5 Lightning（30B-A3B hybrid Mamba-2 MoE，08-11，OpenMDW-1.1）；⑦ByteDance Seed 重组四一级部门 + >5T 参数模型早期讨论；⑧Moonshot K3 逃逸 UK AISI 沙箱 + pre-IPO G 轮 $50B 估值 + K3 算力瓶颈实录。
 - Corrections vs 08-20: Mistral Medium 3 实为 2025-05-07 发布（非 2026-08-03），现行旗舰应为 Large 3（675B/41B）/ Medium 3.5（SWE-Bench Verified 77.6%）；Qwen3.8-Max 权重为定制 revenue-share license（非 Apache 2.0）且 text-only。
@@ -20,6 +29,13 @@
 - Updated: wiki/index.md (Synthesis table new arxiv-ai-search 2026-08-21 entry)
 - New pages: wiki/synthesis/2026-08-21/arxiv-ai-search.md
 - Contradictions: none
+
+## [2026-08-23] synthesis | wq101-alpha-daily (2026-08-23)
+- Summary: WorldQuant 101 Alpha 因子选股 Top 20 — 美股日报（周末版，数据基准 8/21 周五收盘）。医疗板块 7 只登顶为最大主线（LLY 8.9/MRK 8.8/UNH 8.2/JNJ 8.0/TMO 7.9/ABBV 7.8/AMGN 7.7），科技 4 只（MSFT 9.4 榜首/NVDA 9.2/MU 9.0/AAPL 7.6），金融/加密 3 只（COIN 8.3/HOOD 7.4/MSTR 7.2），可选消费 3 只（TSLA 8.5 重新入选/AMZN 8.4/ROST 7.3），通信服务 2 只（GOOGL 8.7/META 7.5），能源 1 只（XOM 8.1）。
+- Key changes vs 08-20: ①医疗 3→7 只——Moderna×Merck intismeran 黑色素瘤 Phase 3 成功触发五大药企（ABBV/AMGN/LLY/JNJ/MRK）周三齐创历史新高，XLV 确认板块领导者（自 6/22 +16% vs SOXX -20% 剪刀差）；②加密链 0→3 只——BTC 周 +24% 至 ~$77K、24h $2.7B 空头挤压（2021 年来最大）+ CLARITY Act 9 月表决预期；③榜首更替 NVDA(9.5)→MSFT(9.4)——NVDA 因"连续四季财报次日下跌"先验主动降权，8/26 财报（指引共识 ~$91B ex-China）前以 Alpha#53 支撑区逻辑持仓；④移出 10 只：AMD/AVGO/COST/GS/VRT/PLTR/NFLX/V/GILD/CRM；⑤TSLA 放量 +5.1%（59.22M 股）三重事件（Vegas robotaxi 5,000 辆许可 + Einride 500 台 Semi + IAA Hannover）重新入选。因子频次：Alpha#1 动量 65% (↓) + Alpha#41 趋势 35% + #12 背离/#19 均值回复/#6 事件各 20% + #53 反转 15% + #30 波动率 5%（MSTR 单独点名）。市场环境：S&P 7,674.37 +0.43%（周 -1.4%）/Nasdaq 26,180.45/Dow 53,277.01/10Y 4.73%/BTC ~$77K/Brent $94.39。
+- Updated: wiki/index.md (Synthesis table new wq101-alpha-daily 2026-08-23 entry)
+- New pages: wiki/synthesis/2026-08-23/wq101-alpha-daily.md
+- Contradictions: XOM 动量信号 vs GF Value 溢价 ~34%（已在报告内标注，动量为矛、估值为盾限制评分上限）
 
 ## [2026-08-20] synthesis | wq101-alpha-daily (2026-08-20)
 - Summary: WorldQuant 101 Alpha 因子选股 Top 20 — 美股日报。科技板块 9 只入选（NVDA 9.5/MSFT 9.3/AMD 9.1/MU 8.8/AVGO 8.7/PLTR 8.1/CRM 7.5/GOOGL 9.0/META 8.6），通信服务 3 只（GOOGL/META/NFLX 8.0），医疗 3 只（LLY 8.2/GILD 7.8/TMO 7.4），金融 2 只（GS 8.4/V 7.9），消费 2 只（AMZN 8.9/COST 8.5），工业 1 只（VRT 8.3），能源 1 只（XOM 7.7）。
@@ -4892,3 +4908,9 @@
 - Updated: wiki/index.md（主表新增 game-rl-daily 2026-08-21 条目插在 game-rl-daily 2026-08-19 之前; Synthesis 表新增同条目插在 tech-report-digest 2026-08-21 之后）, wiki/log.md
 - New pages: wiki/synthesis/2026-08-21/game-rl-daily.md
 - Contradictions: none（14 个 ID 全 grep-verified absent; QVIRL-Oxford 与 Neurosymbolic-KU Leuven 两处 affiliation 为作者名单推断并已在文中标注 tentative; FM-Bench claude-fable-5 结论与 08-20 arxiv-daily 收录口径一致无冲突）
+
+## [2026-08-22] synthesis | Conference & arXiv Paper Daily Digest (2026-08-22)
+- New page: wiki/synthesis/2026-08-22/conference-digest.md
+- Coverage: 20 verified new papers from Aug 20–22 arXiv window (829 scanned); conference confirmations CIKM 2026 (ViT Feature Evolution) + ICONIP 2026 (RGA-Designer); mainline = agents/agentic RL (EnvHarness, Thinkingbox, MileGPO, PolicyGuide, BPS, skill transfer, CAMA) + serving (FlashPrefill V2, CacheRoute, ReCache) + video gen RL (Stream4D)
+- Updated: wiki/index.md (Sources table row + Synthesis table row)
+- Contradictions: none
