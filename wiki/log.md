@@ -4914,3 +4914,10 @@
 - Coverage: 20 verified new papers from Aug 20–22 arXiv window (829 scanned); conference confirmations CIKM 2026 (ViT Feature Evolution) + ICONIP 2026 (RGA-Designer); mainline = agents/agentic RL (EnvHarness, Thinkingbox, MileGPO, PolicyGuide, BPS, skill transfer, CAMA) + serving (FlashPrefill V2, CacheRoute, ReCache) + video gen RL (Stream4D)
 - Updated: wiki/index.md (Sources table row + Synthesis table row)
 - Contradictions: none
+
+## [2026-08-23] synthesis | LLM Tech Report Digest — 2026-08-23
+- New page: wiki/synthesis/2026-08-23/tech-report-digest.md
+- Coverage: 周末增量期（08-21 → 08-23，基于 08-21 期 digest），增量专题格式。核心更新：① DeepSeek-V4-Flash-Vision-Exp 发布（08-21，V4 家族首个 vision 模型，284B/13B 基座，图像 ≤384 tokens 平价计费无 vision surcharge，Terminal Bench 83.9 / Chartography 64.3，"接近 Opus 4.8" 为 vendor claim 未附对照列）；② OpenAI 正式确认前沿 RL 训练暂停（08-18：两周 RL 暂停完成但最大前沿 RL run 继续搁置，技术文档 "Pacing model development in an era of cyber-critical capabilities"，安全流程首次公开决定训练节奏）；③ Meta Muse Spark 1.2 多模态博客（08-20）+ Spark 1.2 Contributor 上架（08-21，单源待核）；④ Zhipu GLM-5.2 Turbo 上架（08-17）+ GLM-5.3 权重倒计时（~08-28 开源）；⑤ Stripe 收购 OpenRouter（08-19，分发层整合信号）；⑥ Gemini 3.5 Pro 跳票后 FutureSearch 重预测中位数 09-20；Grok 4.7 维持 9 月窗口；Mistral Agentic Search 产品（08-20）；GPT-6/Fable 5.1 传闻继续按 rumor 处理。其余 10 家公司无实质变化（快查表收录）。交叉观察：多模态下沉为 agent 基础设施、安全制度化第二阶段（训练节奏公开受控）、分发层收敛；承诺追踪表新增 DeepSeek vision 权重条目。
+- Updated: wiki/index.md (Synthesis 表顶部新增 tech-report-digest 2026-08-23 条目), wiki/log.md
+- New pages: wiki/synthesis/2026-08-23/tech-report-digest.md
+- Contradictions: none（kie.ai "Fable 5.1 已发布/GPT-6 8月发布" 与 BenchLM 08-18 "未官宣" 结论冲突——已在 digest 中标注为 rumor 并说明证据等级；DeepSeek "接近 Opus 4.8" 官方口径缺 Opus 对照列已注明 vendor claim 待独立验证）

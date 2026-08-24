@@ -348,6 +348,7 @@ Papers are organized by research category. Each page includes problem background
 ## Synthesis
 
 | File | Topic | Sources |
+| [tech-report-digest](synthesis/2026-08-23/tech-report-digest.md) | LLM Tech Report Digest — 2026-08-23 | 2026-08-23 | tech-report, moe, scaling, multimodal, reasoning, long-context, daily-digest |
 | [conference-digest](synthesis/2026-08-22/conference-digest.md) | Conference & arXiv Paper Daily Digest (2026-08-22) | 2026-08-22 | arxiv, conference-digest, CIKM2026, ICONIP2026, agents, agentic-rl, llm-serving, video-generation, code-generation, benchmark, daily-digest |
 | [arxiv-ai-search](synthesis/2026-08-22/arxiv-ai-search.md) | arXiv AI/LLM/RecSys/Advertising Paper Search (2026-08-22) | 2026-08-22 | arxiv, ai, llm, recommendation, advertising, ctr, sequential-modeling, games, reinforcement-learning, world-models, diffusion-lm, auction-theory |
 | [arxiv-paper-check](synthesis/2026-08-21/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (August 21, 2026) | 2026-08-21 | arxiv, daily-check, ai, ctr, recommendation, ads, ir, agents, agentic-rl, moe, distillation, evaluation, benchmark-validity, daily-digest |
