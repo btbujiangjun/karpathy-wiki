@@ -4969,3 +4969,9 @@
 - Updated: wiki/index.md (Synthesis 表顶部新增 investment-daily 2026-08-24 条目), wiki/log.md
 - New pages: wiki/synthesis/2026-08-24/investment-daily.md
 - Contradictions: none（BABA ADR 周五收盘价存在口径差异——cointelegraph 快讯报 -8.5% vs Yahoo bid 价 ~$119.4 推算约 -8.4%，已在报告中按 ~-8.5% 处理并标注；老虎社区"8 月 24 日"帖经交叉验证为往年旧文已排除）
+
+## [2026-08-24] synthesis | WQ101 Alpha Daily — WorldQuant 101 Alphas 美股 Top 20 精选 (2026-08-24)
+- New page: wiki/synthesis/2026-08-24/wq101-alpha-daily.md
+- Coverage: 基于 WorldQuant "101 Formulaic Alphas" 7 因子框架 (Alpha#1 momentum / #6 量价 / #12 量价背离短线 / #19 均值回复 / #30 波动率预警 / #41 趋势强度 / #53 日内位置反转) 对美股大中盘 (市值 >$10B) 打分筛选。数据基准 = 8/21 (周五) 收盘 + 近两周公开报道 (~10 组 web search：指数与板块轮动、MRVL-Google 协议、存储 supercycle、TSLA robotaxi 牌照、AI 电力板块)。Top 20 按 Tier 分层: Tier1 = NVDA 9.2 / MU 9.0; Tier2 = SNDK, MRVL, TSLA, GEV, CEG, GS, GOOGL, MSFT, AVGO, SKHY, WDC; Tier3 = AMZN, INTC, META, NBIS, STX, VST, TLN。含因子公式表、打分规则、逐股卡片 (代码/板块/市值/因子/信号/逻辑/风险)、总表、板块汇总、组合级风险 6 条
+- Updated: wiki/index.md (Synthesis 表顶部新增 wq101-alpha-daily 条目), wiki/log.md
+- Contradictions: MU YTD 涨幅媒体口径冲突 (+216% vs +721%，已标注以券商口径为准)；SK Hynix ADR 代码按 247wallst 报道记为 SKHY 并标注近似；本文为定性推断非实时回测，已在文首与方法论节双重声明
