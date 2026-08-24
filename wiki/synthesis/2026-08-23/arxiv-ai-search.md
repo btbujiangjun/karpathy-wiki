@@ -59,7 +59,7 @@ tags: [arxiv, ai, llm, recommendation, advertising, ctr, sequential-modeling, ga
 | **Abstract** | Multi-merchant catalogs fragment behavioral evidence for equivalent products across merchant-scoped IDs, while expert taxonomies are too coarse for fine-grained discovery. Learns one hierarchical Semantic ID representation from product-content embeddings, then reuses it in two different production systems: (a) personalized discovery ranking — aggregating consumer affinity and product performance over SID prefixes into sequence features; (b) search-page query reformulation. Offline relevance improves under controlled ablations; online ranking evaluation positive. |
 | **Key innovations** | Single learned hierarchy serving both ranking features and query rewriting — SID prefixes act as a shared product-concept vocabulary across surfaces; addresses merchant-ID fragmentation endemic to marketplaces. |
 | **arXiv** | [2608.20640](https://arxiv.org/abs/2608.20640) · cs.IR, cs.AI |
-| **Why it matters** | Industrial confirmation that SIDs are becoming platform-wide infrastructure (ranking + search), not just a generative-retrieval trick — extends the [[semantic-id]] story beyond recommendation. |
+| **Why it matters** | Industrial confirmation that SIDs are becoming platform-wide infrastructure (ranking + search), not just a generative-retrieval trick — extends the Semantic-ID story beyond recommendation (see [[hstu-generative-recommendation]], [[netflix-generative-recommender-scaling]]). |
 
 ### 1.5 Profiling What Matters: Context-Aware Item Profiles from Large-Scale Metadata for LLM Recommenders (CAIRO)
 
@@ -81,11 +81,11 @@ tags: [arxiv, ai, llm, recommendation, advertising, ctr, sequential-modeling, ga
 | **Abstract** | Real image-search queries are compositional ("find this shirt in pink": entity to keep, attribute to modify, context to ignore). Existing re-rankers compress this into opaque embeddings or hallucination-prone free-form CoT. Recasts multimodal re-ranking as **semantic constraint satisfaction**: parse any query (text/image/composed) into typed criteria across six semantic slots labeled required/forbidden/ignorable; rank by evidence-conditioned verification combining deterministic rubric scoring with model judgment. |
 | **Key innovations** | Rubric/checklist evaluation methodology imported from NLP into image retrieval; verifiable, auditable relevance decisions instead of a single similarity score. |
 | **arXiv** | [2608.20886](https://arxiv.org/abs/2608.20886) · cs.CV, cs.LG |
-| **Why it matters** | Same checklist-as-verifier move now hitting ranking stacks — echoes the wiki's rubric-alignment entries ([[g-carl]]-style reward checklists) and AdsWorldEngine's label-grounded judging ([2026-08-22 digest](../2026-08-22/arxiv-ai-search.md)). |
+| **Why it matters** | Same checklist-as-verifier move now hitting ranking stacks — echoes rubric-aligned reward learning (G-CARL, [2608.20331](https://arxiv.org/abs/2608.20331)) and AdsWorldEngine's label-grounded judging ([2026-08-22 digest](../2026-08-22/arxiv-ai-search.md)). |
 
 ---
 
-## ② LLM Post-Training, Agents & Efficiency (4)
+## ② LLM Post-Training, Agents & Efficiency (5)
 
 ### 2.1 Inject, Align, Recover: Staged Post-Training for Retrieval-Free Document Knowledge Internalization (IAR)
 
@@ -98,7 +98,18 @@ tags: [arxiv, ai, llm, recommendation, advertising, ctr, sequential-modeling, ga
 | **arXiv** | [2608.20281](https://arxiv.org/abs/2608.20281) · cs.CL, cs.AI |
 | **Why it matters** | Speaks directly to the wiki's personal-knowledge-base theme ([[karpathy-x-2026-llm-wiki]]): the retrieval-free endgame of "bake your corpus into the weights" now has a staged recipe. Karpathy's BYOAI/Cognitive-Core direction, operationalized. |
 
-### 2.2 When Failures Propagate: Causal Failure Attribution in Agentic Retrieval-Augmented Generation (AgenticRAG-FP)
+### 2.3 Beyond LLM-Based Reasoning: Lightweight GNNs for Agent Failure Attribution
+
+| Field | Detail |
+|-------|--------|
+| **Authors** | Ting-Wei Li, Yuanchen Bei, Xiao Lin, Hanghang Tong |
+| **Institution** | University of Illinois Urbana-Champaign (inferred: Hanghang Tong's group) |
+| **Abstract** | Agent Failure Attribution — given a failed multi-agent trajectory, identify the faulty agents and their error types. Current approaches lean on LLMs (direct prompting, synthetic-data fine-tuning, agentic pipelines), incurring long-context and post-training costs, while even SOTA models show limited benchmark accuracy. Revisits the task with **lightweight GNNs** over a graph representation of the trajectory, questioning whether expensive generative backbones are necessary at all. |
+| **Key innovations** | Reformulates trajectory attribution as graph learning; shows small discriminative models can rival much larger LLM pipelines on the task. |
+| **arXiv** | [2608.18575](https://arxiv.org/abs/2608.18575) · cs.CL |
+| **Why it matters** | Sets up a cost axis for the attribution literature that AgenticRAG-FP (2.2 below) stress-tests causally: cheap structural attribution first, expensive causal verification second. |
+
+### 2.4 When Failures Propagate: Causal Failure Attribution in Agentic Retrieval-Augmented Generation (AgenticRAG-FP)
 
 | Field | Detail |
 |-------|--------|
@@ -107,9 +118,9 @@ tags: [arxiv, ai, llm, recommendation, advertising, ctr, sequential-modeling, ga
 | **Abstract** | Interventional benchmark for causal failure attribution in multi-hop agentic RAG: inject a certified fault at a specified hop, re-execute the downstream trajectory, and score diagnosers against the known intervention — does a post-hoc trace still localize the injected hop after the suffix has changed? On strict dense Claude Haiku 4.5 sweeps over 80 three-hop MuSiQue questions, coverage-based diagnosis hits 0.91 at hop 1 but 0.00 at hops 2–3. |
 | **Key innovations** | Certified fault injection + counterfactual re-execution as ground truth for attribution; exposes that trace-based diagnosis collapses beyond the first hop because later steps rewrite the evidence trail. |
 | **arXiv** | [2608.20627](https://arxiv.org/abs/2608.20627) · cs.CL, cs.AI |
-| **Why it matters** | Hardens yesterday's failure-attribution entries ([[gnn-agent-failure-attribution]] [2608.18575], step-credit audit in [2026-08-21 digest](../2026-08-21/arxiv-paper-check.md)): attribution methods validated on static traces may not survive actual trajectory dynamics. |
+| **Why it matters** | Hardens yesterday's failure-attribution entries (step-credit audit in [2026-08-21 digest](../2026-08-21/arxiv-paper-check.md), GNN attribution in 2.3 above): attribution methods validated on static traces may not survive actual trajectory dynamics. |
 
-### 2.3 AI4AI-Bench: Benchmarking LLM Agents in Algorithmic Design for Recursive Self-Improvement
+### 2.5 AI4AI-Bench: Benchmarking LLM Agents in Algorithmic Design for Recursive Self-Improvement
 
 | Field | Detail |
 |-------|--------|
@@ -120,7 +131,7 @@ tags: [arxiv, ai, llm, recommendation, advertising, ctr, sequential-modeling, ga
 | **arXiv** | [2608.20318](https://arxiv.org/abs/2608.20318) · cs.AI, cs.CL, cs.LG |
 | **Why it matters** | Complements the wiki's AI-post-training-AI entry ([What is Missing from AI Post-Training AI](../2026-08-22/conference-digest.md), 2608.19072): that paper found strategy-lock-in in autonomous post-training; this provides the measuring stick for strategy-level capability. |
 
-### 2.4 Quantization-Aware Healing (QAH): Recovering Structurally Compressed, 4-Bit LLMs
+### 2.6 Quantization-Aware Healing (QAH): Recovering Structurally Compressed, 4-Bit LLMs
 
 | Field | Detail |
 |-------|--------|
@@ -129,7 +140,7 @@ tags: [arxiv, ai, llm, recommendation, advertising, ctr, sequential-modeling, ga
 | **Abstract** | Structural compression + 4-bit quantization jointly degrade reasoning/math/code/long-context enough to need recovery before deployment. Default QAT refits against hard labels and was observed to converge slowly and collapse past peak. QAH instead distills the 4-bit student **directly from the original uncompressed teacher** — reasoning that a compressed model's bf16 checkpoint is itself merely a distillation-recovered approximation, making it a poor target. Demonstrated on GPT-OSS 120B→60B→MXFP4. |
 | **Key innovations** | Teacher choice insight: heal from the pristine original, never the compressed intermediate; positions healing as a standard pipeline stage for ship-cheap-models economics. |
 | **arXiv** | [2608.20953](https://arxiv.org/abs/2608.20953) · cs.CL, cs.AI, cs.LG |
-| **Why it matters** | Practical recipe for the deployment-cost curve the wiki tracks ([[bitsandbytes]], quantization lines); also a caution against chained lossy artifacts — errors compound through compression pipelines. |
+| **Why it matters** | Practical recipe for the deployment-cost curve the wiki tracks via its quantization/efficiency entries; also a caution against chained lossy artifacts — errors compound through compression pipelines. |
 
 ---
 
@@ -178,9 +189,9 @@ tags: [arxiv, ai, llm, recommendation, advertising, ctr, sequential-modeling, ga
 
 1. **Semantic IDs become platform infrastructure.** eBay's dual-surface hierarchy (1.4) and the single-level codebook proposal (1.3) show SIDs graduating from generative-rec internals to cross-system vocabularies — while SIDScope (yesterday) supplies the audit tooling.
 2. **Cheap adaptive machinery around frozen LLMs.** CAIRO profiling (1.5), EviRank checklists (1.6), memory-scaffold CoT (3.1): the recurring win is moving computation into prefill/profiling/verification stages around a fixed backbone, echoing CoRRe/SCoRD from the 08-21 digest.
-3. **Baking corpora into weights gets a recipe; agent self-modification gets a yardstick.** IAR (2.1) stages knowledge internalization; AI4AI-Bench (2.3) isolates training-algorithm design — together they sketch the measurement path for Karpathy-style BYOAI/Cognitive-Core claims.
-4. **Verification culture spreads.** Causal fault injection in agentic RAG (2.2), executed-replay audits (08-21), certified-fault attribution: 2026's methodology shift is "intervene, re-execute, compare" replacing static trace analysis.
-5. **Recommender-effects empirics at scale.** Netflix's 8.5M-user study (1.4/1.1) brings econometric field-experiment rigor to the "do algorithms polarize?" debate — answer for the middle-tail: no, they fatten it.
+3. **Baking corpora into weights gets a recipe; agent self-modification gets a yardstick.** IAR (2.1) stages knowledge internalization; AI4AI-Bench (2.5) isolates training-algorithm design — together they sketch the measurement path for Karpathy-style BYOAI/Cognitive-Core claims ([[byoai]], [[cognitive-core]]).
+4. **Verification culture spreads.** Causal fault injection in agentic RAG (2.4), executed-replay audits (08-21), certified-fault attribution: 2026's methodology shift is "intervene, re-execute, compare" replacing static trace analysis.
+5. **Recommender-effects empirics at scale.** Netflix's 8.5M-user study (1.1) brings econometric field-experiment rigor to the "do algorithms polarize?" debate — answer for the middle-tail: no, they fatten it.
 
 ---
 
