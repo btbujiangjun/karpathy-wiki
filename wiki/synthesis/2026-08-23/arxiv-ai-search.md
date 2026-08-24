@@ -9,7 +9,7 @@ tags: [arxiv, ai, llm, recommendation, advertising, ctr, sequential-modeling, ga
 
 # arXiv Recent Papers — AI, LLMs, Recommendation, Advertising, Sequential Modeling, CTR, Games
 
-> Search date: 2026-08-23 · Scope: papers **not yet covered anywhere in the wiki** (every arXiv ID below grep-verified absent from all existing pages; zero overlap with the Aug 20–22 sibling digests, which already absorbed most of the 2608.15xxx–2608.20xxx wave — see Coverage Notes at bottom). Fresh window = Thu Aug 20 – Fri Aug 21 submissions (IDs ~2608.20xxx–2608.213xx), retrieved via arXiv API across cs.IR / cs.CL / cs.AI / cs.LG / cs.GT with topic-keyword sweeps (recommendation, CTR/click-through/advertising/ranking, sequential/user-behavior, games, LLM/agents/post-training).
+> Search date: 2026-08-23 · Scope: papers **not yet covered anywhere in the wiki** (every arXiv ID below grep-verified absent from all existing pages — including the same-day sibling digests arxiv-paper-check / game-rl-daily / tech-report-digest; zero overlap). Fresh window = Thu Aug 20 – Fri Aug 21 submissions (IDs ~2608.20xxx–2608.213xx), retrieved via arXiv API across cs.IR / cs.CL / cs.AI / cs.LG / cs.GT with topic-keyword sweeps (recommendation, CTR/click-through/advertising/ranking, sequential/user-behavior, games, LLM/agents/post-training). **12 new papers below across 4 categories.**
 >
 > Affiliations marked *(stated)* come from paper front matter or comments; those marked *(inferred)* are deduced from author identities and flagged accordingly; otherwise "not stated".
 
@@ -85,20 +85,9 @@ tags: [arxiv, ai, llm, recommendation, advertising, ctr, sequential-modeling, ga
 
 ---
 
-## ② LLM Post-Training, Agents & Efficiency (5)
+## ② LLM Post-Training, Agents & Efficiency (3)
 
-### 2.1 Inject, Align, Recover: Staged Post-Training for Retrieval-Free Document Knowledge Internalization (IAR)
-
-| Field | Detail |
-|-------|--------|
-| **Authors** | Qian Kou*, Xiaofeng Shi*, Xiaosong Qiu, Hua Zhou (*equal contribution) |
-| **Institution** | Not stated |
-| **Abstract** | Studies converting a fixed document corpus into parametric knowledge so QA works without retrieval at inference. Three-stage post-training: **Inject** (continuation/rewrite/instruction-conditioned reconstruction objectives over source docs), **Align** (answer-only QA supervision), **Recover** (merge domain-adapted model with base instruction model to restore general ability). Evaluated across Common Corpus/CCI and Llama/Phi families. |
-| **Key innovations** | Separates knowledge acquisition, QA behavior, and general-capability preservation into distinct stages with model merging as the recovery mechanism — unlike monolithic continued pretraining which trades off general ability for corpus fit. |
-| **arXiv** | [2608.20281](https://arxiv.org/abs/2608.20281) · cs.CL, cs.AI |
-| **Why it matters** | Speaks directly to the wiki's personal-knowledge-base theme ([[karpathy-x-2026-llm-wiki]]): the retrieval-free endgame of "bake your corpus into the weights" now has a staged recipe. Karpathy's BYOAI/Cognitive-Core direction, operationalized. |
-
-### 2.3 Beyond LLM-Based Reasoning: Lightweight GNNs for Agent Failure Attribution
+### 2.1 Beyond LLM-Based Reasoning: Lightweight GNNs for Agent Failure Attribution
 
 | Field | Detail |
 |-------|--------|
@@ -109,7 +98,7 @@ tags: [arxiv, ai, llm, recommendation, advertising, ctr, sequential-modeling, ga
 | **arXiv** | [2608.18575](https://arxiv.org/abs/2608.18575) · cs.CL |
 | **Why it matters** | Sets up a cost axis for the attribution literature that AgenticRAG-FP (2.2 below) stress-tests causally: cheap structural attribution first, expensive causal verification second. |
 
-### 2.4 When Failures Propagate: Causal Failure Attribution in Agentic Retrieval-Augmented Generation (AgenticRAG-FP)
+### 2.2 When Failures Propagate: Causal Failure Attribution in Agentic Retrieval-Augmented Generation (AgenticRAG-FP)
 
 | Field | Detail |
 |-------|--------|
@@ -118,20 +107,9 @@ tags: [arxiv, ai, llm, recommendation, advertising, ctr, sequential-modeling, ga
 | **Abstract** | Interventional benchmark for causal failure attribution in multi-hop agentic RAG: inject a certified fault at a specified hop, re-execute the downstream trajectory, and score diagnosers against the known intervention — does a post-hoc trace still localize the injected hop after the suffix has changed? On strict dense Claude Haiku 4.5 sweeps over 80 three-hop MuSiQue questions, coverage-based diagnosis hits 0.91 at hop 1 but 0.00 at hops 2–3. |
 | **Key innovations** | Certified fault injection + counterfactual re-execution as ground truth for attribution; exposes that trace-based diagnosis collapses beyond the first hop because later steps rewrite the evidence trail. |
 | **arXiv** | [2608.20627](https://arxiv.org/abs/2608.20627) · cs.CL, cs.AI |
-| **Why it matters** | Hardens yesterday's failure-attribution entries (step-credit audit in [2026-08-21 digest](../2026-08-21/arxiv-paper-check.md), GNN attribution in 2.3 above): attribution methods validated on static traces may not survive actual trajectory dynamics. |
+| **Why it matters** | Hardens recent failure-attribution entries (step-credit audit in [2026-08-21 digest](../2026-08-21/arxiv-paper-check.md), GNN attribution in 2.1 above): attribution methods validated on static traces may not survive actual trajectory dynamics. |
 
-### 2.5 AI4AI-Bench: Benchmarking LLM Agents in Algorithmic Design for Recursive Self-Improvement
-
-| Field | Detail |
-|-------|--------|
-| **Authors** | Yizhe Chi, Wenyi Li, Deyao Hong, Xiaoqiu Wang, Mingju Gao, Kaisen Yang, Bingxiang He, Youjie Zheng et al. |
-| **Institution** | Not stated |
-| **Abstract** | Recursive self-improvement hinges on whether an agent can redesign the *training algorithm itself* — the thing that sets the compute-capability exchange rate for every later run. No existing benchmark isolates algorithmic-design ability from data collection/hyperparameter tuning. AI4AI-Bench: 10 frozen research repositories spanning 10 training-algorithm families; the agent gets 4 hours on one B300 to rewrite the training procedure, and outcomes are measured by how the rewritten algorithm trains subsequent systems. |
-| **Key innovations** | First benchmark separating "change how a run executes" from "change how the model learns"; executable, budget-boxed tasks targeting objective/update-rule design rather than engineering glue. |
-| **arXiv** | [2608.20318](https://arxiv.org/abs/2608.20318) · cs.AI, cs.CL, cs.LG |
-| **Why it matters** | Complements the wiki's AI-post-training-AI entry ([What is Missing from AI Post-Training AI](../2026-08-22/conference-digest.md), 2608.19072): that paper found strategy-lock-in in autonomous post-training; this provides the measuring stick for strategy-level capability. |
-
-### 2.6 Quantization-Aware Healing (QAH): Recovering Structurally Compressed, 4-Bit LLMs
+### 2.3 Quantization-Aware Healing (QAH): Recovering Structurally Compressed, 4-Bit LLMs
 
 | Field | Detail |
 |-------|--------|
@@ -189,12 +167,11 @@ tags: [arxiv, ai, llm, recommendation, advertising, ctr, sequential-modeling, ga
 
 1. **Semantic IDs become platform infrastructure.** eBay's dual-surface hierarchy (1.4) and the single-level codebook proposal (1.3) show SIDs graduating from generative-rec internals to cross-system vocabularies — while SIDScope (yesterday) supplies the audit tooling.
 2. **Cheap adaptive machinery around frozen LLMs.** CAIRO profiling (1.5), EviRank checklists (1.6), memory-scaffold CoT (3.1): the recurring win is moving computation into prefill/profiling/verification stages around a fixed backbone, echoing CoRRe/SCoRD from the 08-21 digest.
-3. **Baking corpora into weights gets a recipe; agent self-modification gets a yardstick.** IAR (2.1) stages knowledge internalization; AI4AI-Bench (2.5) isolates training-algorithm design — together they sketch the measurement path for Karpathy-style BYOAI/Cognitive-Core claims ([[byoai]], [[cognitive-core]]).
-4. **Verification culture spreads.** Causal fault injection in agentic RAG (2.4), executed-replay audits (08-21), certified-fault attribution: 2026's methodology shift is "intervene, re-execute, compare" replacing static trace analysis.
-5. **Recommender-effects empirics at scale.** Netflix's 8.5M-user study (1.1) brings econometric field-experiment rigor to the "do algorithms polarize?" debate — answer for the middle-tail: no, they fatten it.
+3. **Attribution goes structural, then causal, then adversarial.** Lightweight GNNs make failure diagnosis cheap (2.1); certified-fault injection with counterfactual re-execution makes it valid (2.2); CIVA (4.1) shows the attack surface itself lives in the critic's latent subspace. The wiki's audit thread (executed-replay step-credit audits, 08-21) extends from evaluation into security.
+4. **Recommender-effects empirics at scale.** Netflix's 8.5M-user study (1.1) brings econometric field-experiment rigor to the "do algorithms polarize?" debate — answer for the middle-tail: no, they fatten it.
 
 ---
 
 ## Coverage Notes (dedup)
 
-Already covered elsewhere and therefore excluded today (grep-verified present in wiki): SCoRD/CoRRe/RecPFN/seq-benchmark-probes/ERASE/OneModel/SIDScope/rEDMRec/OGR-slate/Netflix-multimodal/GOD/SAGA/pacing-throttling ([2026-08-22 arxiv-ai-search](../2026-08-22/arxiv-ai-search.md), [2026-08-21 arxiv-paper-check](../2026-08-21/arxiv-paper-check.md)); MemTrapBench/Cross-task skill transfer/[What is Missing from AI Post-Training AI] ([2026-08-22 conference-digest](../2026-08-22/conference-digest.md)); Router-Mem/EFCA ([2026-08-21 conference-digest](../2026-08-21/conference-digest.md)); PRP playtrace PCG ([earlier game digests](../../index.md)).
+All 12 arXiv IDs in this report were grep-verified absent from every wiki page at write time. Already covered elsewhere and therefore excluded today: SCoRD/CoRRe/RecPFN/seq-benchmark-probes/ERASE/OneModel/SIDScope/rEDMRec/OGR-slate/Netflix-multimodal/GOD/SAGA/pacing-throttling ([2026-08-22 arxiv-ai-search](../2026-08-22/arxiv-ai-search.md), [2026-08-21 arxiv-paper-check](../2026-08-21/arxiv-paper-check.md)); MemTrapBench/Cross-task skill transfer/[What is Missing from AI Post-Training AI] ([2026-08-22 conference-digest](../2026-08-22/conference-digest.md)); Router-Mem/EFCA ([2026-08-21 conference-digest](../2026-08-21/conference-digest.md)); PRP playtrace PCG ([earlier game digests](../../index.md)); **same-day siblings**: IAR + AI4AI-Bench ([2026-08-23 arxiv-paper-check](./arxiv-paper-check.md)), streamed-games IL augmentations + VLM-conditioned game agent ([2026-08-23 game-rl-daily](./game-rl-daily.md)).
