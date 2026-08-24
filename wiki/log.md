@@ -4929,3 +4929,11 @@
 - Updated: wiki/index.md (Synthesis 表顶部新增 tech-report-digest 2026-08-23 条目), wiki/log.md
 - New pages: wiki/synthesis/2026-08-23/tech-report-digest.md
 - Contradictions: none（kie.ai "Fable 5.1 已发布/GPT-6 8月发布" 与 BenchLM 08-18 "未官宣" 结论冲突——已在 digest 中标注为 rumor 并说明证据等级；DeepSeek "接近 Opus 4.8" 官方口径缺 Opus 对照列已注明 vendor claim 待独立验证）
+
+## [2026-08-23] synthesis | Game RL & Game AI Bot — Daily Paper Digest (2026-08-23)
+- New page: wiki/synthesis/2026-08-23/game-rl-daily.md
+- Coverage: 周末 catch-up 扫尾版（Sat 8/22 → Sun 8/23 无新公告，扫 8/8–8/17 未收录 backlog + 2 篇更早漏网）。11 items 全 NEW（10 papers + 1 community release），~45 候选 / ~12 组 web search 筛选，每个 ID grep-verified 零重叠。Game RL: PureTD Backgammon money-game pure-TD 无搜索自对弈 (2608.15146)；Watermarked Game Solving via Perturbed Regret Minimization — CFR 族求解策略水印 (CMU Kim & Sandholm, 2608.14977)；AgilePE UAV pursuit-evasion self-play PFSP + CTBR sim-to-real 零样本迁移 (2608.14135)。Related Techniques: Dynamic Reward Shaping 统一框架 12 method families (Bahrpeyma, 2608.08158)；CR-Eyes Atari 计算 rational 视觉采样 CHI'26 EA catch-up (2603.26527)。Game AI Bot: HSI 冻结 LLM harness 三层自进化 BALROG 大幅提升但 NLE 归零，feedback-fidelity/backbone-capability 双界 (2608.08466)；NCP-Bench ICML 2026 叙事 commitment preservation 对抗基准 GPT-5.2 仅 42% 存活 (2608.08160)。World Models & PCG: Marionette 显式 world state + 零参数 renderer + video diffusion，state-space 物理修复 (2608.14530)；Beyond Asking 行为→玩家特质推断驱动个性化游戏生成 (UIUC, 2608.16196)。Benchmarks: Two-Bridge StarCraft II 中间难度基准 v2 catch-up (2603.06608)。Industry/community: bedrock-rl HF blog (8/19) 确定性 Minecraft + verl GRPO VLM agent 框架
+- Excluded as claimed (grep hits): VLM-Trackmania 2608.05954 / 流式 IL 增强 2607.14200 / OPR 2603.06793 / DiG-bench 2608.12593 / AgentOdyssey 2606.24893 / SciCrafter 2604.24697 / CODE-SHARP 2602.10085 / SCALAR 2603.09036；CrafterDojo 2508.13530 零命中但 >12mo 过期排除
+- Updated: wiki/index.md (Synthesis 表顶部新增 game-rl-daily 2026-08-23 条目), wiki/log.md
+- New pages: wiki/synthesis/2026-08-23/game-rl-daily.md
+- Contradictions: none（全部 ID grep-verified absent；Marionette/AgilePE/Beyond Asking/Two-Bridge 等 5 处 affiliation 为作者名单推断并已在文中标注 tentative；bedrock-rl 为社区博客单源已标注）
