@@ -4954,3 +4954,10 @@
 - Updated: wiki/index.md (Synthesis 表新增 arxiv-ai-search 2026-08-23 条目，插在 tech-report-digest 2026-08-23 之后), wiki/log.md
 - New pages: wiki/synthesis/2026-08-23/arxiv-ai-search.md
 - Contradictions: none（12 个 ID 全部 verified absent；Netflix middle-tail 结论与"推荐致极化"的流行叙事相悖但 wiki 无既有页面主张该叙事，非页面级冲突；affiliation 多处为作者推断并已在文中标注）
+
+## [2026-08-24] synthesis | 投资日报 — 美股 / 港股 / A 股科技与 AI 热点 (2026-08-24)
+- New page: wiki/synthesis/2026-08-24/investment-daily.md
+- Coverage: 数据基准 = 美股/A 股周五 (8/21) 收盘 + 港股周一 (8/24) 开盘。核心事件：① 阿里巴巴周末公告 800 亿港元配售（710M 股 @ HK$112.70，折让 8.4%，港史最大 primary follow-on，100% 净额投全栈 AI，8/26 交割），叠加 FY27Q1 经营利润 -57%/Capex +75% 与 Burry 清仓言论，周一港股低开 ~8%；② NVIDIA 财报周（8/26 盘后）：指引 $91B±2%（不含中国 DC compute）、共识 $92–95B、Vera Rubin Q3 出货、与 Apollo/BlackRock/Blackstone/Brookfield/GS/KKR 共建 $500B+ AI 基建融资平台；③ Tesla +5.14%：Clark County 批准 Las Vegas 5,000 辆付费 robotaxi（Waymo/Uber 各约 1,500）；④ 存储通胀传导：AI 服务器明年初涨价 >15%、memory 占 NVDA 系统成本 40–50%（MU YTD +721%）；⑤ A 股算力中报验证：中际旭创 H1 净利 ¥136.51 亿 (+241.7%)、新易盛激励考核 2026 营收 ≥¥500 亿、寒武纪 H1 净利 +122.6%（存货 ¥82.48 亿隐忧）。港股：恒指五连升重越 26,000；小米"铁大"人形机器人 + SU7 七月零售 21,044 辆；网易 Q2 超预期 ADR +6.9%；智谱 (02513) 成交额居前、较 IPO 价 +871%。中概：HXC 全周 +0.10% 于 50 日均线拉锯。新能源车：BYD 7 月 41.9 万辆 (+21.8%)/海外 +124.3%，但行业 7 月销量同比 -5.9% 转负。本周日历：NVDA/Marvell 财报 (8/26)、Jackson Hole (Warsh 首秀)、阿里交割 (8/26)、7 月 PCE
+- Updated: wiki/index.md (Synthesis 表顶部新增 investment-daily 2026-08-24 条目), wiki/log.md
+- New pages: wiki/synthesis/2026-08-24/investment-daily.md
+- Contradictions: none（BABA ADR 周五收盘价存在口径差异——cointelegraph 快讯报 -8.5% vs Yahoo bid 价 ~$119.4 推算约 -8.4%，已在报告中按 ~-8.5% 处理并标注；老虎社区"8 月 24 日"帖经交叉验证为往年旧文已排除）
