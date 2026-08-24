@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-24] synthesis | Game RL & Game AI Bot — Daily Paper Digest (2026-08-24)
+- New page: wiki/synthesis/2026-08-24/game-rl-daily.md
+- Summary: Mon 8/24 announcement window (= Fri 8/21 submissions) — genuinely quiet, **2 verified-new items** (both at digest periphery): ①Level-k Distinguishable Mechanisms for Evaluating Bounded Rationality in LLMs (cs.MA 2608.21296) — memorization-proof novel game structures + level-K distinguishability criterion; recursive reasoning depth accurate & CoT-action consistent, errors = wrong depth-step count not best-response computation; opponent-trace induction degrades sharply; explicit mentalizing helps. ②AudioWorldSim (cs.SD/LG 2608.21075) — open-source SoundSpaces 2.0 extension auto-generating binaural audio datasets for world models.
+- Method: export.arxiv.org API timed out again; exhaustive screening via full Mon-24 listing sections (cs.AI 200 / cs.LG 112 / cs.CV 103 / cs.GT 4 / cs.MA 8 / cs.NE 6 entries) + arXiv advanced-search UI keyword sweeps over Aug 21–25 submissions across all cs ("game", "world model", Atari, Minecraft, self-play, poker/chess, "procedural content generation", "gaming").
+- Dedup: both retained IDs grep-verified absent from entire wiki. Excluded: CIVA 2608.21114 + GraphOp-WM 2608.20936 (sibling arxiv-ai-search 08-23); Baltieri et al. world-models theory 2608.20401 unclaimed but stale (v1 Jul 23); RISE 2608.20430 driving-domain; pure game-theory quartet 2608.21348/21259/21202/20766 out of scope; AgentMercury 2608.20634 business-env marginal; no fresh industry news (NVIDIA ACE coverage Mar–Jul era).
+- Updated: wiki/index.md (Synthesis 表顶部新增 game-rl-daily 2026-08-24 条目), wiki/log.md
+- Contradictions: none
+
 ## [2026-08-24] synthesis | tech-report-digest (2026-08-24)
 - Summary: wiki/synthesis/2026-08-24/tech-report-digest.md — 19 家主流 AI 公司最新技术报告汇总（基于 08-21 digest 增量更新，窗口 08-19→08-24）+ MiniMax 补充观察。
 - Key updates vs 08-21: ①OpenAI《Pacing model development》(08-18/19)：正式确认 Astra "may meet Critical cybersecurity threshold"，RL 两周暂停已完成、最大 frontier RL run 仍搁置、CoT+逐 token activation classifier 监控常态化（~20% compute tax）、Astra 无日期；GPT-5.6 Sol API 降价 >20%（$5/$30→$4/$20×3mo）+ Zero Data Retention + AI Futures 博客 + DevDay 定档 09-29。②Anthropic 内部 Model 2 超旗舰不发布 + misalignment risk 上调 low（Axios 08-14）。③DeepSeek V4-Flash-Vision-Exp + 免费 Files API（08-21）：主流开放权重阵营多模态拼图补完。④xAI 分发闪电战：Bedrock(08-19)/Grok Build 全计划(08-19)/Grok Bot 扩面(08-21)/Vertex Model Garden(08-21)；Grok 4.7 维持 9 月窗口。⑤Mistral Agentic Search(08-20) + 主权托管首发 GLM-5.2(08-11 补记)。⑥Meta Spark 1.2 工具增强评测预热(+12.2pts, 08-20) + Spark 1.1 第三方环境外泄披露(~08-14)。⑦Gemma 破 10 亿下载(08-20)；Gemini 3.5 Pro 四度跳票或跳过直上 Gemini 4。⑧GLM-5.3 权重 ~08-28 倒计时 + Project Glasswing 对标叙事；Moonshot 9 月递表窗口；Microsoft MAI-Cyber-1-Flash(CyberGym 96%)。
