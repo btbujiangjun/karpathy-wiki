@@ -12,6 +12,22 @@
 - New pages: wiki/synthesis/2026-08-26/arxiv-paper-check.md
 - Contradictions: none
 
+## [2026-08-26] synthesis | conference-digest (2026-08-26)
+- Summary: wiki/synthesis/2026-08-26/conference-digest.md — Comprehensive survey of recent papers from top ML/AI conferences (2025–2026 cycle) and latest arXiv preprints. Organized by venue (CVPR, ACL, ICML, ICLR, AAAI, NeurIPS, KDD, WWW, EMNLP, CIKM, RecSys) and category (generative models, recommendation, advertising, agents, reasoning, efficiency, games, code execution). Focus on papers from Google DeepMind, OpenAI, Meta AI, Microsoft Research, ByteDance, Alibaba, Tencent, Kuaishou, Baidu, Netflix, NVIDIA, Anthropic, Apple, Amazon.
+- Key papers: Netflix GenRec (LLM-backed recommendation ranker, +1.6% MRR offline, deployed in A/B test); Kuaishou GR4AD (+4.2% ad revenue, 400M+ users); Kuaishou OneMall (+13% GMV, deployed 400M+ DAU); Alibaba GALA (GRPO-based alignment, deployed 200M+ DAU); Tencent UniVA (+1.5% GMV in WeChat Channels); ByteDance TokenMixer-Large (15B ranking models in production); Google DeepMind D4RT (CVPR 2026 Best Paper, dynamic scene reconstruction); Google DeepMind Scaffolding Minds (latent visual reasoning, +9.5% FrozenLake); BDH-CQ (150M model beats 57× larger models on ARC-AGI-1); ICPO/ME-ICPO (theoretical framework for LLM self-reflection).
+- Key trends: (1) LLM-based generative recommendation reaches production at Netflix/Kuaishou/Alibaba/Tencent/ByteDance; (2) RLVR dominates post-training (3 of 18 ACL Outstanding Papers); (3) Agent systems & tool use as fastest growth area (+224 papers at ACL 2026); (4) Latent reasoning & test-time compute (BDH-CQ, ICPO, Recirculation); (5) Multimodal foundation models reaching production scale (SIREN, GALA); (6) Efficiency innovations (WhiteMatter 8.2% perplexity reduction, LazyAR 2× QPS); (7) CVPR 2026: 4,089/16,092 accepted (25.4%); ACL 2026: 4,459/12,148 accepted (18.9% main); ICML 2026: 6,352/23,918 accepted (26.6%).
+- Updated: wiki/index.md (Synthesis table new conference-digest 2026-08-26 entry)
+- New pages: wiki/synthesis/2026-08-26/conference-digest.md
+- Contradictions: none
+
+## [2026-08-26] synthesis | arxiv-paper-check (2026-08-26)
+- Summary: wiki/synthesis/2026-08-26/arxiv-paper-check.md — Complement to same-day arxiv-daily and arxiv-ai-search; 6 verified-new papers across AI agents/memory (3), AI safety (1), AI efficiency (1), finance/AI (1). All IDs grep-verified absent from entire wiki.
+- Key papers: AgentWeave pre-inference routing layer for function calling (+12.5% success, −70% tools/tokens); ContraMem cross-model contrastive procedural memory (26.2%→55.3% GAIA2/ARE, transfers to unseen Qwen3.7 Plus); UniMem unified multimodal memory for VLA models (93.4% sim / 80.0% hardware); DARKSIDE coherence auditing for LLM-generated knowledge graphs; SparseRead token-efficient sparse reading (−92.9% tokens, −89% latency); The Axiomatic Trader mathematical framework for quantitative systems.
+- Key trend: "front-loading intelligence" — AgentWeave + SparseRead + ContraMem converge on reducing what the model sees before inference (routing, sparse reading, distilled memory) as distinct design philosophy from model scaling.
+- Updated: wiki/index.md (Synthesis table new arxiv-paper-check 2026-08-26 entry)
+- New pages: wiki/synthesis/2026-08-26/arxiv-paper-check.md
+- Contradictions: none
+
 ## [2026-08-26] synthesis | arxiv-daily (2026-08-26)
 - Summary: wiki/synthesis/2026-08-26/arxiv-daily.md — arXiv daily digest covering 45+ papers across 7 categories: LLM × Recommendation (4), CTR Prediction (5), Sequential Modeling (4), Advertising/Auto-Bidding (11), Multimodal/Embedding (6), Game AI/RL (6), General Recommendation/IR (3).
 - Key papers: UniSpecRec spectral decoupling for LLM-enhanced CF; Native Multimodal Representation for CTR (Alibaba CIKM'26); DS-MLP dual-stream MLP for CTR; Beyond Positive Signals mixed-polarity sequences; SA-RSQ sparse multimodal quantization (Meituan A/B); WeMM-Embedding WeChat 2B/4B/9B multimodal; LLM-OSDA optimal-stopping auction for LLM-native advertising; HOBA hierarchical bidding agents (KDD'26); AIGB-R1 self-evolving generative auto-bidding (Alibaba); MARCO click-intent decomposition (Google); Human-Like Goalkeeping EA Sports FC 25 production-deployed.
