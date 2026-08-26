@@ -4,6 +4,16 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-26] synthesis | wq101-alpha-daily (2026-08-26)
+- Summary: WorldQuant 101 Alpha 因子选股 Top 20 — 美股日报。7因子框架 (Alpha#1/#6/#12/#19/#30/#41/#53) 打分，板块轮动视角：Healthcare确认领涨 (12M +21.3%, 18x PE vs Tech 28.5x)，Energy最强 (12M +41.7%, 地缘+AI电力)，Tech面临集中度风险 (38% S&P权重)。
+- Top 20: Tier1 = NVDA (9.2, 8/26盘后财报指引$91B, 61分析师Strong Buy $305目标) / LLY (9.0, GLP-1龙头) / MSFT (8.8, AI软件转型核心)；Tier2 = META (8.6, Alpha#12量价背离机构吸筹) / UNH (8.5, Healthcare板块权重最大) / JPM (8.4, Financials新兴领涨) / AVGO (8.3, 定制芯片+VMware)；Tier3 = XOM (8.2, 能源龙头) / CVX (8.0) / CAT (7.9) / GILD (7.8) / MRNA (7.7, +151.9%月涨幅mRNA癌症疫苗)；Tier4 = AMZN (7.6) / LMT (7.5) / ABBV (7.4) / NOW (7.3) / HON (7.2) / RTX (7.1) / CEG (7.0, AI核电) / GOOGL (6.9)。
+- 板块分布: Healthcare×5 / Tech×4 / Energy×3 / Industrials×4 / Comm×2 / Financials×1 / Consumer×1 / Utilities×1
+- 配置策略: 杠铃——50-60% Healthcare+Energy核心 / 25-30% Tech精选+Industrials / 10-15%高弹性事件驱动
+- 关键日期: NVDA 8/26盘后财报 + PCE数据 + Jackson Hole 8/27-29 (Warsh首秀)
+- Updated: wiki/index.md (Synthesis table new wq101-alpha-daily 2026-08-26 entry)
+- New pages: wiki/synthesis/2026-08-26/wq101-alpha-daily.md
+- Contradictions: none
+
 ## [2026-08-26] synthesis | game-rl-daily (2026-08-26)
 - Summary: wiki/synthesis/2026-08-26/game-rl-daily.md — 5 verified-new papers across 3 categories (Game RL ×1, Game AI Bot ×2, Game Foundation Models ×2); all IDs grep-verified absent from entire wiki; ~200 candidates screened via arXiv API keyword searches.
 - Key papers: PopuLoRA — population-based asymmetric self-play via LoRA weight-space evolution for LLM reasoning (teacher-student co-evolutionary arms race, Absolute Zero Reasoner backbone, 7B scale, beats single-agent baseline on 10 benchmarks) [2605.16727]; Twin — test-time world model construction via coding agent for unknown games (97.8% level clear rate, 88.3% faster than humans, 93.3% vs 7.8% base model score on ARC-AGI-3-style grid games) [2608.14490]; ReactiveGWM — zero-shot NPC strategy transfer across fighting games via modular cross-attention (42%→80% NPC strategy adherence, 100% player controllability preserved, Street Fighter) [2605.15256]; WorldMind — 4-layer decoupled game world model (Understand→Decide→Control→Generate) for state-aware NPC behavior with BOSS-140K dataset (144K clips, 14 bosses, 3 games, ~70% preference over baselines) [2608.21439]; WanToFight — first real-time multi-player generative game engine (KOF'97, 30FPS on RTX 5090, Wan-1.3B backbone, single-player-to-multi-player curriculum) [2607.12592].
