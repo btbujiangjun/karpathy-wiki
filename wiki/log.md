@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-26] synthesis | investment-daily (2026-08-26)
+- Summary: wiki/synthesis/2026-08-26/investment-daily.md — Daily Investment Briefing covering US stocks (Mag 7, AI chips), HK stocks (Alibaba/XPeng/NIO/BYD), A-shares (AI/chip/compute stocks), Chinese ADRs, EV/new energy, and AI themes (models, data centers, autonomy, robotics).
+- Key coverage: ①NVIDIA Q2 FY27 earnings tonight — guided Q3 $91B±2%, 75% GM; ②Alibaba HK$80B equity raise for AI infra; ③XPeng robotics subsidiary $6.3B valuation, $900M raise, Q2 miss → -7%; ④BYD $9.14B R&D > Tesla's $6.41B; ⑤A-share chip rotation; ⑥Shein HK IPO targeting US$1.8B at ~US$27B valuation.
+- Key trends: AI infra capex cycle continues; efficiency narrative (Broadcom custom silicon); Chinese EV R&D > Tesla; A-share rotation from hardware to AI applications.
+- Updated: wiki/index.md (Synthesis table new investment-daily 2026-08-26 entry)
+- New pages: wiki/synthesis/2026-08-26/investment-daily.md
+- Contradictions: none
+
 ## [2026-08-26] synthesis | arxiv-paper-check (2026-08-26)
 - Summary: wiki/synthesis/2026-08-26/arxiv-paper-check.md — Complement to same-day arxiv-daily and arxiv-ai-search; 6 verified-new papers across AI agents/memory (3), AI safety (1), AI efficiency (1), finance/AI (1). All IDs grep-verified absent from entire wiki.
 - Key papers: AgentWeave pre-inference routing layer for function calling (+12.5% success, −70% tools/tokens); ContraMem cross-model contrastive procedural memory (26.2%→55.3% GAIA2/ARE, transfers to unseen Qwen3.7 Plus); UniMem unified multimodal memory for VLA models (93.4% sim / 80.0% hardware); DARKSIDE coherence auditing for LLM-generated knowledge graphs; SparseRead token-efficient sparse reading (−92.9% tokens, −89% latency); The Axiomatic Trader mathematical framework for quantitative systems.
