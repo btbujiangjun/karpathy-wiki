@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-26] synthesis | game-rl-daily (2026-08-26)
+- Summary: wiki/synthesis/2026-08-26/game-rl-daily.md — 5 verified-new papers across 3 categories (Game RL ×1, Game AI Bot ×2, Game Foundation Models ×2); all IDs grep-verified absent from entire wiki; ~200 candidates screened via arXiv API keyword searches.
+- Key papers: PopuLoRA — population-based asymmetric self-play via LoRA weight-space evolution for LLM reasoning (teacher-student co-evolutionary arms race, Absolute Zero Reasoner backbone, 7B scale, beats single-agent baseline on 10 benchmarks) [2605.16727]; Twin — test-time world model construction via coding agent for unknown games (97.8% level clear rate, 88.3% faster than humans, 93.3% vs 7.8% base model score on ARC-AGI-3-style grid games) [2608.14490]; ReactiveGWM — zero-shot NPC strategy transfer across fighting games via modular cross-attention (42%→80% NPC strategy adherence, 100% player controllability preserved, Street Fighter) [2605.15256]; WorldMind — 4-layer decoupled game world model (Understand→Decide→Control→Generate) for state-aware NPC behavior with BOSS-140K dataset (144K clips, 14 bosses, 3 games, ~70% preference over baselines) [2608.21439]; WanToFight — first real-time multi-player generative game engine (KOF'97, 30FPS on RTX 5090, Wan-1.3B backbone, single-player-to-multi-player curriculum) [2607.12592].
+- Key trend: Game world models decoupling state understanding from visual generation — explicit NPC decision layers (WorldMind), zero-shot cross-game strategy transfer (ReactiveGWM), real-time multi-player generation (WanToFight), and test-time world model construction (Twin) as convergent design patterns.
+- Updated: wiki/index.md (Synthesis table new game-rl-daily 2026-08-26 entry)
+- New pages: wiki/synthesis/2026-08-26/game-rl-daily.md
+- Contradictions: none
+
 ## [2026-08-26] synthesis | investment-daily (2026-08-26)
 - Summary: wiki/synthesis/2026-08-26/investment-daily.md — Daily Investment Briefing covering US stocks (Mag 7, AI chips), HK stocks (Alibaba/XPeng/NIO/BYD), A-shares (AI/chip/compute stocks), Chinese ADRs, EV/new energy, and AI themes (models, data centers, autonomy, robotics).
 - Key coverage: ①NVIDIA Q2 FY27 earnings tonight — guided Q3 $91B±2%, 75% GM; ②Alibaba HK$80B equity raise for AI infra; ③XPeng robotics subsidiary $6.3B valuation, $900M raise, Q2 miss → -7%; ④BYD $9.14B R&D > Tesla's $6.41B; ⑤A-share chip rotation; ⑥Shein HK IPO targeting US$1.8B at ~US$27B valuation.
