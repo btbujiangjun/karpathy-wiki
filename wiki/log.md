@@ -5032,3 +5032,10 @@
 - New page: wiki/synthesis/2026-08-26/arxiv-ai-search.md
 - Coverage: 15+ papers across CTR prediction, sequential modeling, generative recommenders, LLM inference, multi-agent RL/games, multimodal representation. Sourced from arXiv cs.AI, cs.IR, cs.LG listings (Aug 20–26, 2026).
 - Key trends: Generative recommender tokenization (TAGR, Tlow, SST), mixed-polarity behavior sequences, LLM × recommendation alignment (DuELRec, UniSpecRec), multi-agent RL for system optimization (MARLIN), scaling laws for user representations (Densing Law).
+
+## [2026-08-26] synthesis | tech-report-digest (2026-08-26)
+- Summary: wiki/synthesis/2026-08-26/tech-report-digest.md — Comprehensive digest of 19 major AI companies' latest model tech reports and system cards. Covers DeepSeek-V3/R1 (671B MoE), OpenAI GPT-5 System Card, Google Gemini 2.5 Pro/Flash, Anthropic Claude 4.5/4.6 family, Mistral Magistral (pure-RL reasoning), Qwen3 (9-model 0.6B–235B family), Microsoft Phi-4 (14B), NVIDIA Nemotron-H (Mamba-Transformer hybrid), ByteDance Seed1.5-Thinking/VL, Moonshot Kimi K2, StepFun Step-3 (model-system co-design), Zhipu GLM-5-Agentic (DSA), InternLM Intern-S1-Pro (1T MoE), Apple AFM (on-device), Amazon Nova (Bedrock). Yi/Baichuan: no 2026 public tech report found.
+- Key trends: (1) MoE architecture dominant (DeepSeek-V3, Qwen3-235B, Intern-S1-Pro 1T); (2) Pure RL reasoning models emerging (Mistral Magistral); (3) Small models competitive (Phi-14B vs 70B, Nemotron-H-8B); (4) Multimodal+Agent as standard capability; (5) Open-source ecosystem thriving (Qwen3 9 models, DeepSeek, Magistral Small); (6) China models concentrated effort (DeepSeek/Qwen/Seed/Kimi/GLM/Step/InternLM); (7) On-device and efficiency-first (Apple AFM, Phi-4, Nemotron-H).
+- Updated: wiki/index.md (Synthesis table new tech-report-digest 2026-08-26 entry)
+- New pages: wiki/synthesis/2026-08-26/tech-report-digest.md
+- Contradictions: none
