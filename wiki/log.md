@@ -4,6 +4,22 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-26] synthesis | arxiv-paper-check (2026-08-26)
+- Summary: wiki/synthesis/2026-08-26/arxiv-paper-check.md — Complement to same-day arxiv-daily and arxiv-ai-search; 6 verified-new papers across AI agents/memory (3), AI safety (1), AI efficiency (1), finance/AI (1). All IDs grep-verified absent from entire wiki.
+- Key papers: AgentWeave pre-inference routing layer for function calling (+12.5% success, −70% tools/tokens); ContraMem cross-model contrastive procedural memory (26.2%→55.3% GAIA2/ARE, transfers to unseen Qwen3.7 Plus); UniMem unified multimodal memory for VLA models (93.4% sim / 80.0% hardware); DARKSIDE coherence auditing for LLM-generated knowledge graphs; SparseRead token-efficient sparse reading (−92.9% tokens, −89% latency); The Axiomatic Trader mathematical framework for quantitative systems.
+- Key trend: "front-loading intelligence" — AgentWeave + SparseRead + ContraMem converge on reducing what the model sees before inference (routing, sparse reading, distilled memory) as distinct design philosophy from model scaling.
+- Updated: wiki/index.md (Synthesis table new arxiv-paper-check 2026-08-26 entry)
+- New pages: wiki/synthesis/2026-08-26/arxiv-paper-check.md
+- Contradictions: none
+
+## [2026-08-26] synthesis | arxiv-daily (2026-08-26)
+- Summary: wiki/synthesis/2026-08-26/arxiv-daily.md — arXiv daily digest covering 45+ papers across 7 categories: LLM × Recommendation (4), CTR Prediction (5), Sequential Modeling (4), Advertising/Auto-Bidding (11), Multimodal/Embedding (6), Game AI/RL (6), General Recommendation/IR (3).
+- Key papers: UniSpecRec spectral decoupling for LLM-enhanced CF; Native Multimodal Representation for CTR (Alibaba CIKM'26); DS-MLP dual-stream MLP for CTR; Beyond Positive Signals mixed-polarity sequences; SA-RSQ sparse multimodal quantization (Meituan A/B); WeMM-Embedding WeChat 2B/4B/9B multimodal; LLM-OSDA optimal-stopping auction for LLM-native advertising; HOBA hierarchical bidding agents (KDD'26); AIGB-R1 self-evolving generative auto-bidding (Alibaba); MARCO click-intent decomposition (Google); Human-Like Goalkeeping EA Sports FC 25 production-deployed.
+- Key trends: LLM semantic alignment debated (spectral decoupling wins); production CTR/rec gains 1-5% across Alibaba/Meituan/Kwai/Yandex/EA; auto-bidding matures with hierarchical RL+LLM planners; multimodal embeddings reaching production scale (WeChat 2B surpasses 8B baseline); mixed-polarity user sequences as new data paradigm; semantic subword tokenization for generative rec.
+- Updated: wiki/index.md (Synthesis table new arxiv-daily 2026-08-26 entry)
+- New pages: wiki/synthesis/2026-08-26/arxiv-daily.md
+- Contradictions: none
+
 ## [2026-08-24] synthesis | Game RL & Game AI Bot — Daily Paper Digest (2026-08-24)
 - New page: wiki/synthesis/2026-08-24/game-rl-daily.md
 - Summary: Mon 8/24 announcement window (= Fri 8/21 submissions) — genuinely quiet, **2 verified-new items** (both at digest periphery): ①Level-k Distinguishable Mechanisms for Evaluating Bounded Rationality in LLMs (cs.MA 2608.21296) — memorization-proof novel game structures + level-K distinguishability criterion; recursive reasoning depth accurate & CoT-action consistent, errors = wrong depth-step count not best-response computation; opponent-trace induction degrades sharply; explicit mentalizing helps. ②AudioWorldSim (cs.SD/LG 2608.21075) — open-source SoundSpaces 2.0 extension auto-generating binaural audio datasets for world models.
@@ -4995,3 +5011,8 @@
 - Coverage: 延续 7 因子框架 (Alpha#1/#6/#12/#19/#30/#41/#53)，数据基准 = 8/24 (周一) 收盘 + ~9 组 web search (NVDA 财报前瞻、周一收盘详情、Micron/存储、TSLA robotaxi、电力股 CEG/VST/GEV、MRVL/AVGO、巨头财报、Jackson Hole/PCE/黄金/收益率、NBIS/SK 海力士)。本期核心判断：因子环境切换——NVDA 七连阴 (2022-10 以来最长) 使 AI 主线动量信号集体转负，榜单从"追动量"切换为"事件+反转"；实际收益率 20 年高位 + 30Y 5.25% + 各会议 30–60% 加息概率定价压制长久期资产；防御 rotation 确认 (Dow +0.26% vs Nasdaq -0.76%)。Top 20: Tier1 = GOOGL 8.7 / MSFT 8.6 / NVDA 8.5；Tier2 = AVGO 8.4 / MU 8.2 / CEG 8.2 / GS 8.1 / GEV 8.0 / VST 8.0 / META 7.9 / AMZN 7.9 / MRVL 7.8 / TSLA 7.7；Tier3 = INTC 7.6 / WDC 7.5 / STX 7.4 / AAPL 7.4 (新入榜，防御属性) / NBIS 7.2 / SKHY 7.2 / TLN 7.0。移出 SNDK (Q1 指引 miss)。含因子用法调整说明、打分规则、逐股卡片、总表、板块汇总、组合级风险 6 条
 - Updated: wiki/index.md (Synthesis 表顶部新增 wq101-alpha-daily 2026-08-25 条目), wiki/log.md
 - Contradictions: MRVL 财报日期修正 (昨日报告写 8/26，Zacks/TipRanks 实为 8/27，已在今日报告"口径修正"节声明)；SKHY ADR 代码与上市时点仍未官宣 (媒体近似口径已标注)；本文为定性推断非实时回测，已在文首与方法论双重声明
+
+## [2026-08-26] synthesis | arXiv AI/LLM/RecSys Search Report
+- New page: wiki/synthesis/2026-08-26/arxiv-ai-search.md
+- Coverage: 15+ papers across CTR prediction, sequential modeling, generative recommenders, LLM inference, multi-agent RL/games, multimodal representation. Sourced from arXiv cs.AI, cs.IR, cs.LG listings (Aug 20–26, 2026).
+- Key trends: Generative recommender tokenization (TAGR, Tlow, SST), mixed-polarity behavior sequences, LLM × recommendation alignment (DuELRec, UniSpecRec), multi-agent RL for system optimization (MARLIN), scaling laws for user representations (Densing Law).
