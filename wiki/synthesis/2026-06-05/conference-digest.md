@@ -1,311 +1,674 @@
 ---
-title: Conference & arXiv Daily Digest (2026-06-05)
+title: "ArXiv & Conference Digest - 2026-06-05"
 type: synthesis
 created: 2026-06-05
 updated: 2026-06-05
 sources: []
-tags: [conference-digest, arxiv, iclr-2026, icml-2026, cvpr-2026, aaai-2026, neurips-2025, acl-2026, emnlp-2025, kdd-2026, sigir-2026, recommendation, llm, agent, ctr]
+tags: [arxiv, conference, ICML, AAAI, NeurIPS, ICLR, KDD, CVPR, ACL, EMNLP, SIGIR, WWW, CIKM, RecSys, recommendation, CTR, LLM, agent, generative-models, sequential-modeling]
 ---
 
-# Conference & arXiv Daily Digest — 2026-06-05
+# ArXiv & Conference Digest — 2026-06-05
 
-> 按会议/专题整理的最新论文摘要，覆盖 LLM、推荐系统、广告、CTR、Agent、生成模型、序列建模、代码生成、Benchmark 等方向。
+## Overview
 
----
-
-## 1. ICLR 2026 (Rio de Janeiro, Apr 23–27, 2026)
-
-**概况**: 19,814 篇投稿，5,340 篇录用（26.95%），其中 Oral 223 篇（1.13%），Poster 5,117 篇。
-
-### 1.1 推荐系统 / CTR / 广告
-
-| # | Title | Authors | Affiliation | Key Innovation |
-|---|-------|---------|-------------|----------------|
-| 1 | **ALM-MTA: Front-Door Causal Multi-Touch Attribution for Creator-Ecosystem Optimization** | Kuaishou Team | 快手 | 对抗学习中介变量代理未观测混杂因子，通过 front-door identification 解决大规模推荐系统的多触点归因问题。在 40 亿 DAU、3000 亿样本的生产系统中，DAU 提升 0.04%，日活创作者提升 0.6%，曝光效率提升 670%。AUUC 相比 SOTA 提升最高 0.070。 |
-| 2 | **DNR: Denoising Neural Reranker for Recommender Systems** | Kuaishou Team | 快手 | 将重排建模为对召回分数的去噪过程，耦合去噪重排器与噪声生成模块，分解为样本增强去噪、对抗样本探索、召回分数分布对齐三个子目标。在 3 个公开数据集和工业系统上超越现有 SOTA 重排器。 |
-| 3 | **GoalRank: Group-Relative Optimization for a Large Ranking Model** | Kuaishou Team | 快手 | 证明足够大的纯生成器可近似最优排序策略优于任何有限 Generator-Evaluator 系统。使用 Group-Relative Optimization (GRO) 训练单一生成器，在 50 亿+ DAU 短视频平台上验证有效。 |
-| 4 | **Mix-Ecom: Mixed-Type E-Commerce Dialogues with Complex Domain Rules** | Kuaishou Team | 快手 | 构建 4,799 条真实客服对话数据集，覆盖 4 种对话类型、3 类电商任务、82 条领域规则。揭示当前 Agent 在混合类型对话和规则密集场景下的局限性。 |
-
-### 1.2 LLM / Agent / 推理
-
-| # | Title | Authors | Affiliation | Key Innovation |
-|---|-------|---------|-------------|----------------|
-| 5 | **DIVA-GRPO: Difficulty-Adaptive Variant Advantage for Multimodal Reasoning** | Kuaishou Team | 快手 | 动态评估问题难度，在适当难度级别采样变体，通过难度加权归一化计算优势值。在 6 个推理基准上实现更快收敛和更高推理性能。 |
-| 6 | **DreamOn: Diffusion Language Models for Code Infilling Beyond Fixed-Size Canvas** | Kuaishou Team | 快手 | 引入两种长度控制状态使扩散语言模型在扩散过程中自主扩展或收缩输出长度。基于 Dream-Coder-7B，在 HumanEval-Infilling 上匹配 SOTA 自回归模型。 |
-| 7 | **GoR: A Unified Generative Framework for Ordinal Regression** | Kuaishou Team | 快手 | 将数值预测重构为自回归 token 生成任务，发射"加法语义"token 序列并以动态 `<EOS>` 终止。在 5 个领域 15 个基准上设立新 SOTA。 |
-| 8 | **Multimodal Visual Jigsaw Post-Training Improves MMLMs** | P. Wu et al. | MMLab@NTU | 通过视觉拼图后训练提升多模态大语言模型能力。[arXiv:2509.25190](https://arxiv.org/abs/2509.25190) |
-| 9 | **Setting the Record Straight on Transformer Oversmoothing** | Gbètondji J-S Dovonon et al. | Mila / Georgia Tech | 重新审视 Transformer 过平滑问题，提供理论分析。 |
-| 10 | **Visual Symbolic Mechanisms: Emergent Symbol Processing in VLMs** | Rim Assouel et al. | Mila / Yoshua Bengio | 发现视觉语言模型中涌现的符号处理机制。ICLR 2026 Oral。 |
-
-### 1.3 生成模型 / 扩散
-
-| # | Title | Authors | Affiliation | Key Innovation |
-|---|-------|---------|-------------|----------------|
-| 11 | **SeedVR2: One-Step Video Restoration via Diffusion Adversarial Post-Training** | J. Wang et al. | MMLab@NTU | 通过扩散对抗后训练实现单步视频修复。[arXiv](https://arxiv.org/abs/2512.11782) |
-| 12 | **Multimodal From Pixels to Words - Towards Native Vision-Language Primitives at Scale** | H. Diao et al. | MMLab@NTU | 原生视觉-语言原语的规模化。[arXiv:2510.14979](https://arxiv.org/abs/2510.14979) |
+This digest compiles recent papers from top ML/AI conferences and arXiv, covering:
+- **Conferences**: ICML 2026, AAAI 2026, NeurIPS 2025, ICLR 2026, KDD 2026, CVPR 2026, ACL 2026, EMNLP 2025/2026, SIGIR 2026, WWW 2026, CIKM 2026, RecSys 2026
+- **Topics**: LLMs, Recommendation Systems, CTR Prediction, Agent Systems, Generative Models, Sequential Modeling, Advertising, Code Execution, Benchmarks
+- **Labs**: Google DeepMind, OpenAI, Meta AI, Microsoft Research, ByteDance, Alibaba, Tencent, Baidu, Netflix, NVIDIA, Anthropic, Apple, Amazon, Kuaishou
 
 ---
 
-## 2. ICML 2026 (Seoul, Jul 6–11, 2026)
+## 1. ICML 2026 (Seoul, South Korea, Jul 6-11, 2026)
 
-**概况**: 6,634 篇录用，涵盖 Image Generation (141)、Model Compression (117)、AI Safety (114)、RL (110)、Interpretability (92)、Multimodal VLM (89)、LLM Reasoning 等方向。
+**6,634 papers accepted** — the largest ICML ever.
 
-### 2.1 LLM / 推理 / MoE
+### 1.1 Recommendation & CTR Prediction
 
-| # | Title | Authors | Affiliation | Key Innovation |
-|---|-------|---------|-------------|----------------|
-| 13 | **Attention Sink Forges Native MoE in Attention Layers: Sink-Aware Training to Address Head Collapse** | Zizhuo Fu et al. | Meng Li Lab (Texas A&M) | 提出 Sink-Aware Training 解决 MoE 注意力层中的 head collapse 问题。 |
-| 14 | **TEAM: Temporal–Spatial Consistency Guided Expert Activation for MoE Diffusion Language Model Acceleration** | Linye Wei et al. | Meng Li Lab (Texas A&M) | 通过时空一致性引导的专家激活加速 MoE 扩散语言模型。 |
-| 15 | **HyPER: Bridging Exploration and Exploitation for Scalable LLM Reasoning with Hypothesis Path Expansion and Reduction** | Shengxuan Qiu, Haochen Huang et al. | Meng Li Lab (Texas A&M) | 通过假设路径扩展与缩减平衡 LLM 推理中的探索与利用。 |
-| 16 | **DocHop: Benchmarking Out-of-domain Multi-hop Reasoning in Information-Dense Documents** | Zhuoran Yu et al. | Kookmin AILab / Wisconsin-Madison / IBM Research | 多跳推理基准测试。 |
+#### CTR-Sink: Attention Sink for Language Models in Click-Through Rate Prediction
+- **Authors**: Zixuan Li, Binzong Geng et al.
+- **Affiliation**: NLPR, Institute of Automation, Chinese Academy of Sciences; Ant Group
+- **Venue**: KDD 2026 (also appears in ICML context)
+- **Abstract**: Addresses semantic fragmentation challenge in LM-based CTR prediction. Proposes CTR-Sink framework inserting recommendation-signal-fused `[SINK]` tokens between user behaviors, anchoring LM attention at behavioral boundaries. Two-stage training strategy guides LM attention toward sink tokens; attention sink mechanism amplifies inter-sink dependencies.
+- **Key Innovations**: (1) Recommendation-specific `[SINK]` tokens with temporal distance signals; (2) Decoder-compatible attention guidance; (3) Behavioral boundary attention anchoring.
+- **Results**: 0.2–0.5% AUC improvement over baseline LM-CTR methods on industrial dataset, MovieLens, and KuaiRec datasets.
+- **Link**: [arXiv:2508.03668](https://arxiv.org/abs/2508.03668) | [Code](https://github.com/UGUESS-lzx/CTR-SINK)
 
-### 2.2 Kuaishou ICML 2026 论文
+#### Sparse by Design: Relevance-Driven Scaling for Recommender Systems
+- **Authors**: Meta AI Research
+- **Affiliation**: Meta
+- **Venue**: ICML 2026
+- **Abstract**: Discusses why Sparse MoE doesn't transfer naturally from LMs to recommendation. Token-level routing misaligns with user-item relevance prediction. Proposes relevance-driven scaling where sparse computation is designed around relevance signals.
+- **Key Innovations**: Relevance-driven routing granularity, expert specialization adapted to recommendation tasks.
+- **Link**: [ICML 2026 Poster](https://icml.cc/virtual/2026/poster/66202)
 
-快手技术团队在 ICML 2026 上有多篇论文被录用，包括一篇 Spotlight 论文关于隐喻视觉理解（metaphor visual understanding），以及在 AI 多个子领域的工作。
+#### CRAMER: Control via Request-Aware Masking for Editing Recommenders
+- **Authors**: Renmin University of China / Dalhousie University
+- **Venue**: ICML 2026
+- **Abstract**: Enables sequence recommendation models to respond to user's natural language requests (e.g., "I want cheaper/lighter/more formal items") without retraining the full network or relying on LLM prompt reasoning.
+- **Key Innovations**: Request-aware masking for editing recommender behavior; bridges traditional sequential recommendation and LLM agent recommendation.
+- **Link**: [ICML 2026 Poster](https://icml.cc/virtual/2026/poster/62968)
 
-### 2.3 CVLab@SNU ICML 2026 论文
+#### GCIB: Graph Contrastive Information Bottleneck for Multi-Behavior Recommendation
+- **Authors**: Tianjin University / Anhui University
+- **Venue**: ICML 2026
+- **Abstract**: Uses graph contrastive information bottleneck to simultaneously denoise auxiliary behaviors and enhance target behavior representation in multi-behavior recommendation.
+- **Link**: [ICML 2026 Poster](https://icml.cc/virtual/2026/poster/62097)
 
-| # | Title | Authors | Affiliation | Key Innovation |
-|---|-------|---------|-------------|----------------|
-| 17 | **Infinite-Precision Autoregressive Modeling for Vector Graphics and Layouts** | Yeonsang Shin et al. | SNU CVLab | 无限精度自回归建模用于矢量图形和布局。 |
-| 18 | **Score-Repellent Monte Carlo: Efficient Non-Markovian Sampler with Constant Memory** | Jie Hu et al. | SNU CVLab | 常数内存的高效非马尔可夫采样器。 |
-| 19 | **Hybrid Space-Aware Randomized Defense for Adversarial Robustness** | Joy Dhar et al. | SNU CVLab + 多机构 | 混合空间感知随机防御提升对抗鲁棒性。 |
+#### CARE: Adaptive Calibration for Reliable Recommendations
+- **Authors**: University of Technology Sydney
+- **Venue**: ICML 2026
+- **Abstract**: Wraps any backbone recommender with adaptive calibration, producing variable-size recommendation sets with finite-sample performance guarantees. Uses loss-based behavior change monitoring and online aggregation threshold recalibration.
+- **Link**: [ICML 2026 Poster](https://icml.cc/virtual/2026/poster/62132)
 
----
+#### CORAL: Uncertainty-Aware Regulation of Exposure Concentration in Recommender Systems
+- **Authors**: University of Technology Sydney
+- **Venue**: ICML 2026
+- **Abstract**: Addresses feedback-driven exposure concentration where systems collapse to少数 categories. Models exposure regulation as constrained sequential decision with UCB risk estimation.
+- **Link**: [ICML 2026 Poster](https://icml.cc/virtual/2026/poster/63919)
 
-## 3. CVPR 2026 (Denver, Jun 3–7, 2026)
+#### ProRL: Effective Reinforcement Learning for Proactive Recommendation
+- **Authors**: Fudan University
+- **Venue**: ICML 2026
+- **Abstract**: Addresses proactive recommendation where system guides user preferences toward target items. Uses rectified policy gradient to fix length-dependent bias and high variance from path-level reward weighting.
+- **Link**: [ICML 2026 Poster](https://icml.cc/virtual/2026/poster/61903)
 
-**概况**: 16,092 篇投稿，4,090 篇录用（~25.4%）。Best Paper 获奖者包括 SAM 3D 和 SAM 3D Body。
+#### RSIR: Can Recommender Systems Teach Themselves?
+- **Authors**: University of Science and Technology of China / Huawei
+- **Venue**: arXiv (ICML context)
+- **Abstract**: Uses closed-loop self-bootstrapping with fidelity control — current model generates user interaction sequences, fidelity filter retains samples aligned with approximate user preference manifold, then retrains successor model.
+- **Link**: [arXiv:2602.15659](https://arxiv.org/abs/2602.15659)
 
-### 3.1 计算机视觉 / 3D
+#### VENOMREC: Cross-Modal Interactive Poisoning for Targeted Promotion
+- **Authors**: NTU / Beihang University / Alibaba
+- **Venue**: ICML 2026
+- **Abstract**: Exposes vulnerability in multimodal LLM recommender systems — synchronized multimodal poisoning can manipulate fusion representations along stable semantic directions.
+- **Link**: [arXiv:2602.06409](https://arxiv.org/abs/2602.06409)
 
-| # | Title | Authors | Affiliation | Key Innovation |
-|---|-------|---------|-------------|----------------|
-| 20 | **🏆 SAM 3D: 3Dfy Anything in Images** | Jianing Yang et al. | Meta AI (FAIR) | 将 SAM 扩展到 3D 重建，从图像中生成 3D 场景。CVPR 2026 Best Paper。[arXiv:2511.16624](https://arxiv.org/abs/2511.16624) |
-| 21 | **🏆 SAM 3D Body: Robust Full-Body Human Mesh Recovery** | Xitong Yang et al. | Meta AI (FAIR) | 全身人体网格恢复。CVPR 2026 Best Paper。[arXiv:2602.15989](https://arxiv.org/abs/2602.15989) |
-| 22 | **Molmo2: Open-Source Multimodal Model** | Allen AI | Allen AI | 开源多模态模型，CVPR 2026 Oral。 |
+### 1.2 Generative Models & Diffusion
 
-### 3.2 MMLab@NTU CVPR 2026 论文
+#### SoftMatcha 2: Fast and Soft Pattern Matcher for Trillion-Scale Corpora
+- **Authors**: Masataka Yoneda, Yusuke Matsushita, Go Kamoda et al.
+- **Affiliation**: Preferred Networks, RIKEN AIP
+- **Venue**: ICML 2026
+- **Abstract**: Fast soft pattern matching for trillion-scale text corpora.
+- **Link**: [arXiv:2602.10908](https://arxiv.org/abs/2602.10908)
 
-| # | Title | Authors | Affiliation | Key Innovation |
-|---|-------|---------|-------------|----------------|
-| 23 | **MatAnyone2: Scaling Video Matting via Learned Quality Evaluator** | P. Yang et al. | MMLab@NTU | CVPR 2026 Highlight，扩展视频抠像。[arXiv:2512.11782](https://arxiv.org/abs/2512.11782) |
-| 24 | **Trainable Log-linear Sparse Attention for Efficient Diffusion Transformers** | Y. Zhou et al. | MMLab@NTU | CVPR 2026 Highlight，高效扩散 Transformer 的可训练稀疏注意力。[arXiv:2512.16615](https://arxiv.org/abs/2512.16615) |
+### 1.3 Agent Systems
 
-### 3.3 Meta AI / Google 等顶会论文
-
-| # | Title | Authors | Affiliation | Key Innovation |
-|---|-------|---------|-------------|----------------|
-| 25 | **AToken: A Unified Tokenizer for Vision** | - | Meta AI | 统一视觉 tokenizer。 |
-| 26 | **AVATAR: Reinforcement Learning to See, Hear, and Reason Over Video** | - | Meta AI | 视频理解的多模态 RL。 |
-
----
-
-## 4. AAAI 2026 (Singapore, Jan 20–27, 2026)
-
-**概况**: 23,680 篇投稿，4,167 篇录用（17.6%）。
-
-### 4.1 自动驾驶 / 多模态
-
-| # | Title | Authors | Affiliation | Key Innovation |
-|---|-------|---------|-------------|----------------|
-| 27 | **FastDriveVLA: Efficient End-to-End Driving via Plug-and-Play Reconstruction-based Token Pruning** | 小鹏汽车 + 北大 | 小鹏汽车 / 北京大学 | 高效视觉 token 剪枝框架，专为端到端自动驾驶 VLA 模型定制。 |
-
-### 4.2 AI Safety / 多智能体
-
-AAAI 2026 接收了大量 AI Safety (45篇)、3D Vision (79篇)、Image Generation (79篇)、Medical Imaging (75篇)、Multimodal VLM (75篇)、Reinforcement Learning (58篇)、Autonomous Driving (56篇) 等方向论文。
-
----
-
-## 5. ACL 2026
-
-**概况**: 南京大学大模型研究中心 9 篇录用（5 Main + 4 Findings）。
-
-### 5.1 LLM / NLP
-
-| # | Title | Authors | Affiliation | Key Innovation |
-|---|-------|---------|-------------|----------------|
-| 28 | **Bootstrapping Code Translation with Weighted Multilanguage Exploration (BootTrans)** | Yuhan Wu et al. | 南京大学 | 无需平行语料的自举代码翻译框架。[arXiv:2601.03512](https://arxiv.org/abs/2601.03512) |
-| 29 | **Reasoning While Asking: PIR** | Xin Chen et al. | 南京大学 / 深圳先进院 | 将推理 LLM 从被动求解器转变为主动询问者。[arXiv:2601.22139](https://arxiv.org/abs/2601.22139) |
-| 30 | **A Data-Efficient Path to Multilingual LLMs: DeltaMoE** | Hao Zhou et al. | 南京大学 / 通义实验室 | 通过 MoE 升级实现低成本多语言扩展，避免灾难性遗忘。 |
-| 31 | **How Do Answer Tokens Read Reasoning Traces?** | Haoyang Chen et al. | 南京大学 | 研究推理 LLM 中答案 token 如何读取推理轨迹。 |
-| 32 | **To Diff or Not to Diff? Structure-Aware Output Formats for LLM-based Code Editing** | Wei Cheng et al. | 南京大学 / 通义实验室 | 优化输出格式和生成策略提升代码编辑效率，延迟和 token 成本降低 30%+。 |
-
-### 5.2 中国 NLP 社区 ACL 2026 论文
-
-ACL 2026 覆盖代码模型、视觉模型、跨学科 NLP 应用等方向，体现了 NLP 与科学、教育、医学等领域的交叉融合。
+#### ABCD: All Biases Come Disguised
+- **Authors**: Mateusz, Xavier et al.
+- **Affiliation**: Dartmouth College
+- **Venue**: ICML 2026
+- **Abstract**: Studies bias propagation in AI systems.
+- **Link**: [arXiv:2602.17445](https://arxiv.org/abs/2602.17445) | [Project](https://futuramistic.github.io/abcd/)
 
 ---
 
-## 6. NeurIPS 2025 (San Diego, Dec 2–7, 2025)
+## 2. AAAI 2026 (Singapore, Jan 20-27, 2026)
 
-**概况**: 5,526 篇投稿，5,275 篇录用（95.46% 社区数据），其中 Poster 4,515、Spotlight 683、Oral 77 篇。
+**4,902 papers accepted** from ~29,000 submissions. Largest AAAI ever.
 
-### 6.1 机器人 / RL
+### 2.1 LLM & Agent Systems
 
-| # | Title | Authors | Affiliation | Key Innovation |
-|---|-------|---------|-------------|----------------|
-| 33 | **Enhancing Tactile-based Reinforcement Learning for Robotic Control** | Elle Miller et al. | U. Edinburgh | 自监督学习利用触觉观测，agent 在复杂接触任务上达到超人类灵巧度。[arXiv:2510.21609](https://arxiv.org/abs/2510.21609) |
+#### LLM Collaboration With Multi-Agent Reinforcement Learning
+- **Venue**: AAAI 2026
+- **Abstract**: Explores how LLM agents can collaborate through multi-agent reinforcement learning for complex task solving.
+- **Link**: [arXiv:2508.04652](https://arxiv.org/abs/2508.04652)
 
-### 6.2 跨领域研究
+#### AutoTool: Efficient Tool Selection for Large Language Model Agents
+- **Venue**: AAAI 2026
+- **Abstract**: Addresses efficient tool selection for LLM agents, reducing computational overhead while maintaining task performance.
+- **Link**: [arXiv:2511.14650](https://arxiv.org/abs/2511.14650)
 
-NeurIPS 2025 覆盖 federated learning、foundation models for biology、LLM reasoning 等广泛方向。
+#### ExtendAttack: Attacking Servers of LRMs via Extending Reasoning
+- **Venue**: AAAI 2026
+- **Abstract**: Proposes adversarial attack method targeting large reasoning models by manipulating reasoning chains.
+- **Link**: [arXiv:2506.13737](https://arxiv.org/abs/2506.13737)
 
----
+#### BadThink: Triggered Overthinking Attacks on Chain-of-Thought Reasoning
+- **Venue**: AAAI 2026
+- **Abstract**: Demonstrates vulnerabilities in CoT reasoning through triggered overthinking attacks.
+- **Link**: [arXiv:2511.10714](https://arxiv.org/abs/2511.10714)
 
-## 7. EMNLP 2025 (Suzhou, Nov 4–9, 2025)
+#### Rethinking the Reliability of Multi-agent System: Byzantine Fault Tolerance
+- **Venue**: AAAI 2026
+- **Abstract**: Analyzes multi-agent system reliability from Byzantine fault tolerance perspective.
+- **Link**: [arXiv:2511.10400](https://arxiv.org/abs/2511.10400)
 
-**概况**: 8,174 篇提交，1,811 篇 Main Conference 录用（22.16%），1,417 篇 Findings 录用（17.34%）。
+### 2.2 Vision-Language Models
 
-### 7.1 LLM / NLP
+#### VLA-Adapter: Tiny-Scale Vision-Language-Action Model
+- **Venue**: AAAI 2026
+- **Abstract**: Efficient paradigm for tiny-scale VLA models with adapter-based transfer.
+- **Link**: [arXiv:2509.09372](https://arxiv.org/abs/2509.09372)
 
-| # | Title | Authors | Affiliation | Key Innovation |
-|---|-------|---------|-------------|----------------|
-| 34 | **Selective Preference Optimization via Token-Level Reward Function Estimation** | Kailai Yang et al. | Athena Research / Manchester | Token 级别奖励函数估计的选择性偏好优化。 |
-| 35 | **Masked Diffusion Language Models with Frequency-Informed Training** | Despoina Kosmopoulou et al. | Athena Research / Athens | 频率信息训练的掩码扩散语言模型。 |
-| 36 | **Towards Automated Error Discovery in Conversational AI** | Dominic Petrak et al. | TU Darmstadt | 对话 AI 中的自动错误发现。 |
+#### GUI-G²: Gaussian Reward Modeling for GUI Grounding
+- **Venue**: AAAI 2026
+- **Abstract**: Novel reward modeling approach for GUI grounding using Gaussian rewards.
+- **Link**: [arXiv:2507.15846](https://arxiv.org/abs/2507.15846)
 
----
+#### X-SAM: From Segment Anything to Any Segmentation
+- **Venue**: AAAI 2026
+- **Abstract**: Extends SAM architecture to universal segmentation tasks.
+- **Link**: [arXiv:2508.04655](https://arxiv.org/abs/2508.04655)
 
-## 8. KDD 2026 (Jeju Island, Aug 9–13, 2026)
+### 2.3 Recommendation
 
-**概况**: 第 32 届 ACM SIGKDD 会议，超过 1,400 篇录用。
+#### RMBRec: Robust Multi-Behavior Recommendation towards Target Behaviors
+- **Affiliation**: Multiple institutions
+- **Venue**: AAAI 2026
+- **Abstract**: Robust multi-behavior recommendation framework focusing on target behavior prediction.
+- **Link**: [arXiv:2601.08705](https://arxiv.org/abs/2601.08705)
 
-### 8.1 推荐系统 / 数据挖掘
+#### Length-Adaptive Interest Network for Balancing Long and Short Sequence Modeling in CTR Prediction
+- **Venue**: AAAI 2026
+- **Abstract**: Addresses the trade-off between long and short user behavior sequences in CTR prediction.
+- **Link**: [arXiv:2601.19142](https://arxiv.org/abs/2601.19142)
 
-KDD 2026 接收了大量推荐系统、数据挖掘、知识发现方向论文。会议涵盖 Research Track、ADS Track 和 Data & Benchmark Track 三个赛道。
-
----
-
-## 9. SIGIR 2026 (Melbourne, Jul 20–24, 2026)
-
-**概况**: 信息检索顶会，已发布录用论文列表。
-
-### 9.1 信息检索 / 推荐
-
-SIGIR 2026 覆盖信息检索、推荐系统、搜索排序等方向。
-
----
-
-## 10. 工业界推荐系统论文盘点 (2026 年初至今)
-
-### 10.1 字节跳动 (ByteDance)
-
-字节跳动 2026 年以来在推荐系统方向的论文覆盖：
-- **生成式推荐 / Semantic ID**
-- **超长序列建模**
-- **大规模 Ranking Transformer**
-- **预排序 / 重排序**
-- **多模态 / 多业务建模**
-- **Agent 化推荐**
-
-ByteDance 在 ICLR 2026 上共 115 篇论文被录用，其中 12 篇 Oral（占提交量的 10.4%，远超会议平均的 4.2%）。
-
-### 10.2 美团 (Meituan)
-
-美团 2026 年推荐方向论文覆盖类似技术方向。
-
-### 10.3 阿里巴巴 (Alibaba)
-
-阿里 2026 年推荐方向论文，包括 Qwen 系列模型在推荐场景的应用。
-
-### 10.4 快手 (Kuaishou)
-
-快手在 ICLR 2026 上有 9 篇论文被录用（见上文 1.1-1.3 节），在 ICML 2026 上有多篇论文包括 Spotlight。
+#### Bid Farewell to Seesaw: Long-tail Session-based Recommendation via Dual Constraints
+- **Venue**: AAAI 2026
+- **Abstract**: Solves long-tail distribution problem in session-based recommendation through dual constraints of hybrid intents.
+- **Link**: [arXiv:2511.08378](https://arxiv.org/abs/2511.08378)
 
 ---
 
-## 11. LLM Agent / 推理 / 代码执行
+## 3. NeurIPS 2025 (Mexico City, Dec 2-5, 2025)
 
-### 11.1 Agent 系统
+**5,275 papers accepted** (95.46% of reviewed papers).
 
-| # | Title | Source | Key Innovation |
-|---|-------|--------|----------------|
-| 37 | **From LLM Reasoning to Autonomous AI Agents: A Comprehensive Review** | arXiv 2504.19678 | 综述 LLM-based agents 在软件工程、科学研究、数学问题求解等领域的应用。 |
-| 38 | **Agon: Autonomous Large-Scale Omnidisciplinary Research System** | arXiv 2606.24177 | 基于 Prompt Economy 构建的自主大规模全学科研究系统。 |
-| 39 | **Forge Reasoning Attacks on LLM Agent Memory** | arXiv 2607.05029 | 揭示 LLM Agent 持久记忆的安全漏洞，提出伪造推理攻击。 |
+### 3.1 Notable Oral/Spotlight Papers
 
-### 11.2 LLM Research Papers 2026 (Sebastian Raschka 整理)
+#### DynamiX: Dynamic Resource eXploration for Personalized Ad-Recommendations
+- **Venue**: NeurIPS 2025
+- **Abstract**: Dynamic resource exploration framework for personalized ad recommendations.
+- **Link**: [arXiv:2511.18331](https://arxiv.org/abs/2511.18331)
 
-2026 年 1-5 月 LLM 研究论文重点领域：
-1. **Architecture & Model Design**: Nemotron 3 (hybrid attention + Mamba-2), Arcee Trinity, Mamba-3, Gated DeltaNet-2
-2. **Efficient Training & Scaling**: Deep Delta Learning, MiMo-V2-Flash
-3. **Inference Efficiency & KV Cache**
-4. **Sparse Attention & Long Context**
-5. **Reasoning & Test-Time Compute**
-6. **Reinforcement Learning & RLVR**
-7. **Agent Systems & Tool Use**
-8. **Coding Agents & Software Engineering**
-9. **Diffusion Language Models**
-10. **Model Evaluation & Benchmarks**
+#### Boosting Knowledge Utilization in Multimodal Large Language Models via Adaptive Logits Fusion and Attention Reallocation
+- **Venue**: NeurIPS 2025 Oral
+- **Abstract**: Novel approach to enhance knowledge utilization in MLLMs through adaptive logits fusion.
+- **Link**: [NeurIPS 2025 Virtual](https://neurips.cc/virtual/2025/papers.html)
 
 ---
 
-## 12. CTR Prediction / 广告
+## 4. ICLR 2026 (Singapore, Apr 28 - May 2, 2026)
 
-### 12.1 最新 CTR 论文
+**5,356 papers accepted**.
 
-| # | Title | Authors/Affiliation | Venue | Key Innovation |
-|---|-------|---------------------|-------|----------------|
-| 40 | **CADET: Context-Conditioned Ads CTR Prediction with a Decoder-Only Transformer** | LinkedIn | AdKDD 2026 | 将 decoder-only Transformer 用于广告 CTR 预测，处理 post-scoring contextual signals。已部署于 LinkedIn 广告平台，相比 LiRank baseline 提升 4.04% CTR。[arXiv:2602.11410](https://arxiv.org/abs/2602.11410) |
-| 41 | **Dual-Stream MLP is All You Need for CTR Prediction (DS-MLP)** | Kesha Ou et al. | SIGIR 2026 | 提出 DS-MLP 框架，解决特征交互学习复杂度高和显隐式模块不平衡两大挑战。[arXiv:2606.04944](https://arxiv.org/abs/2606.04944) |
-| 42 | **EST: Towards Efficient Scaling Laws in CTR Prediction via Unified Modeling** | Mingyang Liu et al. (阿里) | arXiv 2026-02 | 统一建模实现 CTR 预测的高效 Scaling Law，解决 token-level 信号信息瓶颈。[arXiv:2602.10811](https://arxiv.org/abs/2602.10811) |
-| 43 | **IDProxy: Cold-Start CTR Prediction with Multimodal LLMs** | 小红书 (Xiaohongshu) | arXiv 2026-03 | 利用多模态大语言模型解决冷启动 CTR 预测。 |
-| 44 | **Field Matters: Lightweight LLM-enhanced Method for CTR Prediction** | ACM DL 2026 | KDD 2026 | 轻量级 LLM 增强 CTR 方法。 |
-| 45 | **Feature Interaction using Similarity-based Adaptive Graph Attention Network** | Taylor & Francis | Neural Computing and Applications | 图注意力网络建模特征交互。 |
+### 4.1 Vision & Multimodal
 
----
+#### NEO: Multimodal From Pixels to Words — Native Vision-Language Primitives at Scale
+- **Authors**: H. Diao, M. Li, S. Wu et al.
+- **Affiliation**: MMLab@NTU
+- **Venue**: ICLR 2026
+- **Abstract**: Proposes native vision-language primitives for efficient multimodal processing.
+- **Link**: [arXiv:2510.14979](https://arxiv.org/abs/2510.14979) | [Project](https://github.com/EvolvingLMMs-Lab/NEO)
 
-## 13. Google DeepMind / OpenAI / Meta AI 最新研究
+#### SeedVR2: One-Step Video Restoration via Diffusion Adversarial Post-Training
+- **Authors**: J. Wang, S. Lin, Z. Lin et al.
+- **Affiliation**: MMLab@NTU
+- **Venue**: ICLR 2026
+- **Abstract**: Achieves one-step video restoration through diffusion adversarial post-training.
+- **Link**: [arXiv:2506.05301](https://arxiv.org/abs/2506.05301) | [Project](https://iceclear.github.io/projects/seedvr2/)
 
-### 13.1 Google DeepMind
+### 4.2 Recommendation & Sequential
 
-| # | Title/Topic | Date | Key Innovation |
-|---|-------------|------|----------------|
-| 46 | **From AGI to ASI** | 2026-06-10 | 57 页论文映射从 AGI 到 ASI 的四条路径：Scaling、范式转变、递归改进、多智能体集体。arXiv:2606.12683，54,000+ 浏览。 |
-| 47 | **Gemini 3.7 Flash** | 2026-08 | 最新 Gemini 模型。 |
-| 48 | **DiffusionGemma** | 2026-06 | 4x 更快的文本生成。 |
-| 49 | **TRecViT: A Recurrent Video Transformer** | 2026-01 | 循环视频 Transformer。 |
-| 50 | **Decoupled DiLoCo** | 2026-04 | 解耦分布式训练的基础设施论文。arXiv:2604.20761 |
-| 51 | **Vision Banana** | 2026-04 | 训练图像生成模型以更好理解图像。arXiv:2604.18547 |
+#### CollectiveKV: Decoupling and Sharing Collaborative Information in Sequential Recommendation
+- **Venue**: ICLR 2026
+- **Abstract**: Decouples and shares collaborative information for improved sequential recommendation.
+- **Link**: [arXiv:2601.19178](https://arxiv.org/abs/2601.19178)
 
-### 13.2 OpenAI
+### 4.3 Theory & ML
 
-| # | Title/Topic | Date | Key Innovation |
-|---|-------------|------|----------------|
-| 52 | **GPT-5.5 + Images 2.0** | 2026-04-23 | 推理内置于图像生成管线的旗舰模型。 |
-| 53 | **Astra** | 2026 | 研究发布，涉及 agentic coding 和 cybersecurity 能力。 |
-
-### 13.3 Meta AI
-
-| # | Title/Topic | Date | Key Innovation |
-|---|-------------|------|----------------|
-| 54 | **SAM 3D / SAM 3D Body** | CVPR 2026 | 3D 重建最佳论文。 |
-| 55 | **AI Business Assistant** | 2026-04-24 | 全球部署的 Agent 化广告工具，监控账户数据、自动排障、优化广告投放。 |
-| 56 | **Llama 系列** | 2026 | 持续开源大语言模型。 |
+#### InfoNCE Induces Gaussian Distribution
+- **Authors**: Roy Betser, Eyal Gofer et al.
+- **Venue**: ICLR 2026 Oral
+- **Abstract**: Proves that InfoNCE loss induces Gaussian distribution in representation space.
+- **Link**: [arXiv:2602.24012](https://arxiv.org/abs/2602.24012)
 
 ---
 
-## 14. 趋势总结
+## 5. KDD 2026 (Jeju Island, South Korea, Aug 9-13, 2026)
 
-### 14.1 推荐系统趋势
-- **生成式推荐**：从判别式范式向生成式范式转变（GenCTR, DGenCTR, EST）
-- **LLM 增强推荐**：轻量级 LLM 增强传统 CTR 模型（Field Matters）
-- **多模态 CTR**：利用多模态 LLM 解决冷启动（IDProxy）
-- **因果归因**：front-door identification 用于大规模推荐系统（ALM-MTA）
-- **重排序去噪**：将重排建模为去噪问题（DNR）
+**1,400+ papers accepted** across two cycles.
 
-### 14.2 LLM/Agent 趋势
-- **推理 LLM**：从被动求解到主动询问（PIR, HyPER）
-- **MoE 扩散语言模型**：加速推理（TEAM, DreamOn）
-- **Agent 安全**：记忆伪造攻击防御
-- **多 Agent 协调**：agentic RAG、协作研究系统
+### 5.1 Recommendation & CTR
 
-### 14.3 视觉/生成趋势
-- **SAM 3D**：从 2D 到 3D 的 foundation model 扩展
-- **扩散 Transformer 效率**：稀疏注意力、单步生成
-- **视频理解**：多模态 RL 用于视频推理
+#### GRAB: LLM-Inspired Sequence-First Click-Through Rate Prediction Modeling
+- **Authors**: Baidu Research
+- **Affiliation**: Baidu
+- **Venue**: arXiv (KDD 2026 context)
+- **Abstract**: End-to-end generative framework for CTR prediction inspired by LLM scaling. Integrates Causal Action-aware Multi-channel Attention (CamA) for temporal dynamics. Full-scale online deployment shows 3.05% revenue increase and 3.49% CTR rise.
+- **Key Innovations**: (1) Sequence-first paradigm for CTR; (2) CamA mechanism; (3) Monotonic scaling with longer sequences.
+- **Link**: [arXiv:2602.01865](https://arxiv.org/abs/2602.01865)
+
+#### Meta Lattice: Model Space Redesign for Cost-Effective Industry-Scale Ads Recommendations
+- **Affiliation**: Meta
+- **Venue**: KDD 2026
+- **Abstract**: Redesigns model space for cost-effective large-scale ads recommendation, addressing efficiency-performance tradeoffs at Meta's scale.
+- **Link**: [GitHub](https://github.com/guyulongcs/Deep-Learning-for-Search-Recommendation-Advertisements)
+
+#### CTR-Sink: Attention Sink for Language Models in CTR Prediction
+- **Authors**: Zixuan Li et al.
+- **Affiliation**: CAS / Ant Group
+- **Venue**: KDD 2026
+- **Abstract**: (See Section 1.1 above — full paper published at KDD 2026)
+
+#### Generalizable Multi-Pass Training of Ads Recommendation Models with Foundation Model Guidance
+- **Venue**: KDD 2026
+- **Abstract**: Multi-pass training paradigm for ads recommendation models guided by foundation model knowledge.
+
+### 5.2 Data Mining & Knowledge Discovery
+
+#### KDD 2026 Research Track highlights include papers on:
+- Federated learning for recommendation
+- Causal inference in advertising
+- Graph neural networks for user modeling
+- Large-scale sequential behavior modeling
 
 ---
 
-*Generated on 2026-06-05 by karpathy-wiki maintenance agent.*
+## 6. CVPR 2026 (New Orleans, Jun 14-19, 2026)
+
+**4,069 papers indexed** in Open Access.
+
+### 6.1 3D Vision & Generation
+
+#### OmniVGGT: Omni-Modality Driven Visual Geometry Grounded Transformer
+- **Authors**: H. Peng, H. Li, Y. Dai et al.
+- **Affiliation**: MMLab@NTU
+- **Venue**: CVPR 2026 (Highlight)
+- **Abstract**: Unified visual geometry transformer driven by omni-modality input.
+- **Link**: [arXiv:2511.10560](https://arxiv.org/abs/2511.10560) | [Project](https://livioni.github.io/OmniVGGT-official/)
+
+#### PhysX-Anything: Simulation-Ready Physical 3D Assets from Single Image
+- **Authors**: Z. Cao, F. Hong, Z. Chen, L. Pan, Z. Liu
+- **Venue**: CVPR 2026
+- **Abstract**: Generates simulation-ready physical 3D assets from single images.
+- **Link**: [arXiv:2511.13648](https://arxiv.org/abs/2511.13648) | [Project](https://physx-anything.github.io/)
+
+### 6.2 Video & World Models
+
+#### WorldLens: Full-Spectrum Evaluations of Driving World Models in Real World
+- **Authors**: A. Liang et al.
+- **Venue**: CVPR 2026 (Oral)
+- **Abstract**: Comprehensive benchmarking framework for driving world models.
+- **Link**: [arXiv:2512.10958](https://arxiv.org/abs/2512.10958) | [Project](https://worldbench.github.io/worldlens)
+
+#### MatAnyone2: Scaling Video Matting via Learned Quality Evaluator
+- **Authors**: P. Yang, S. Zhou, K. Hao, Q. Tao
+- **Venue**: CVPR 2026 (Highlight)
+- **Abstract**: Scales video matting with learned quality evaluation.
+- **Link**: [arXiv:2512.11782](https://arxiv.org/abs/2512.11782) | [Project](https://pq-yang.github.io/projects/MatAnyone2/)
+
+### 6.3 Efficient Inference
+
+#### LLSA: Trainable Log-linear Sparse Attention for Efficient Diffusion Transformers
+- **Authors**: Y. Zhou, Z. Xiao, T. Wei, S. Yang, X. Pan
+- **Venue**: CVPR 2026 (Highlight)
+- **Abstract**: Proposes log-linear sparse attention for efficient diffusion transformer inference.
+- **Link**: [arXiv:2512.16615](https://arxiv.org/abs/2512.16615) | [Project](https://github.com/SingleZombie/LLSA)
+
+---
+
+## 7. ACL 2026 (San Diego, Jul 2-7, 2026)
+
+**2,296 Main + 2,163 Findings = 4,459 papers accepted** from 12,148 submissions.
+
+### 7.1 LLM Agents & Reasoning
+
+#### Reasoning While Asking: Transforming Reasoning LLMs from Passive Solvers to Proactive Inquirers
+- **Authors**: Xin Chen, Feng Jiang et al.
+- **Affiliation**: Nanjing University / CAS
+- **Venue**: ACL 2026 Main
+- **Abstract**: Transforms reasoning LLMs from passive problem solvers to proactive information seekers.
+- **Link**: [arXiv:2601.22139](https://arxiv.org/abs/2601.22139)
+
+#### PEGRL: Post-Editing Guided Reinforcement Learning for LLM-based Machine Translation
+- **Authors**: Nanjing University / Tongyi Lab
+- **Venue**: ACL 2026 Main
+- **Abstract**: Two-stage RL framework introducing post-editing as auxiliary task for stable translation training. On English-to-Turkish, COMETKiwi score comparable to DeepSeek-V3.2.
+- **Link**: [arXiv:2511.02626](https://arxiv.org/abs/2511.02626)
+
+#### BootTrans: Bootstrapping Code Translation with Weighted Multilanguage Exploration
+- **Authors**: Yuhan Wu et al.
+- **Affiliation**: Nanjing University
+- **Venue**: ACL 2026 Main
+- **Abstract**: Reduces reliance on parallel corpora for multilingual code translation.
+- **Link**: [arXiv:2601.03512](https://arxiv.org/abs/2601.03512)
+
+### 7.2 Theme: Interpretability
+
+ACL 2026's special theme is **"Interpretability of NLP Models"**. Key trend shifts:
+- LLM Reasoning/Agents/Tool Use: 142→366 papers (+224, +8.2pp)
+- Model Training/Fine-tuning/Alignment/RL: 196→295 papers
+- RAG/QA/Knowledge Editing: 174→244 papers
+- Traditional NLP: declining share
+
+### 7.3 Key Trends
+
+- From "generalization" (ACL 2025) to "interpretability" (ACL 2026)
+- Agent and reasoning topics show greatest growth
+- Systems that "reason, retrieve evidence, cite correctly, explain itself, and fail less dangerously"
+
+---
+
+## 8. EMNLP 2025 (Suzhou, China, Nov 4-9, 2025) & EMNLP 2026
+
+### 8.1 EMNLP 2025 Highlights
+
+#### Single LLM, Multiple Roles: Unified RAG Using Role-Specific Token Optimization
+- **Authors**: Yutao Zhu, Jiajie Jin et al.
+- **Venue**: EMNLP 2025 Main
+- **Abstract**: Unified retrieval-augmented generation framework using role-specific token optimization for multi-role LLM deployment.
+- **Link**: [EMNLP 2025](https://2025.emnlp.org/program/main_papers)
+
+#### Selective Preference Optimization via Token-Level Reward Function Estimation
+- **Venue**: EMNLP 2025
+- **Abstract**: Token-level reward estimation for fine-grained preference optimization.
+
+### 8.2 EMNLP 2026 Findings
+
+#### Context-Aware Hierarchical Taxonomy Generation for Scientific Papers via LLM-Guided Multi-Aspect Clustering
+- **Authors**: kun Zhu, Lizi Liao et al.
+- **Venue**: EMNLP 2026
+
+---
+
+## 9. SIGIR 2026
+
+### 9.1 Sequential Recommendation
+
+#### Beyond Item IDs: Scaling Short-Form-Video Recommendation via Semantic-Native Long Sequence Modeling
+- **Venue**: SIGIR 2026
+- **Abstract**: Scales recommendation for short-form video through semantic-native long sequence modeling beyond traditional item IDs.
+
+#### FEDIN: Frequency-Enhanced Deep Interest Network for CTR Prediction
+- **Venue**: SIGIR 2026
+- **Abstract**: Enhances interest modeling through frequency-domain analysis for CTR prediction.
+
+#### WPGRec: Wavelet Packet Guided Graph Enhanced Sequential Recommendation
+- **Venue**: SIGIR 2026
+- **Abstract**: Uses wavelet packet analysis to guide graph-enhanced sequential recommendation.
+
+#### ACE: Anisotropy-Controllable Embedding for LLM-enhanced Sequential Recommendation
+- **Venue**: SIGIR 2026
+- **Abstract**: Controls embedding anisotropy for improved LLM-enhanced sequential recommendation.
+
+#### Learning to Forget: Satiation-Aware Long-Sequence Transducers
+- **Venue**: SIGIR 2026
+- **Abstract**: Addresses post-purchase redundancy through satiation-aware sequence modeling.
+
+#### RoTE: Coarse-to-Fine Multi-Level Rotary Time Embedding for Sequential Recommendation
+- **Venue**: SIGIR 2026
+- **Abstract**: Multi-level rotary time embedding for temporal recommendation.
+
+---
+
+## 10. WWW 2026
+
+### 10.1 Recommendation
+
+#### Mixture of Sequence: Theme-Aware MoE for Long-Sequence Recommendation
+- **Authors**: Lin X et al.
+- **Venue**: WWW 2026
+- **Abstract**: Theme-aware mixture-of-experts for long-sequence recommendation at scale.
+
+#### VK-LSVD: Large-Scale Industrial Dataset for Short-Video Recommendation
+- **Venue**: WWW 2026
+- **Abstract**: Large-scale industrial dataset specifically for short-video recommendation research.
+
+#### Hyena Operator for Fast Sequential Recommendation
+- **Venue**: WWW 2026
+- **Abstract**: Adapts Hyena operator for efficient sequential recommendation.
+
+#### OneTrans: Unified Feature Interaction and Sequence Modeling with One Transformer
+- **Venue**: WWW 2026
+- **Abstract**: Single Transformer architecture unifying feature interaction and sequence modeling for industrial recommendation.
+
+#### STCRank: Spatio-temporal Collaborative Ranking at Kuaishou E-shop
+- **Authors**: Kuaishou
+- **Venue**: WWW 2026
+- **Abstract**: Spatio-temporal collaborative ranking for interactive recommendation at Kuaishou's e-commerce platform.
+
+#### PRISM: Personalized Recommendation via Information Synergy Module
+- **Venue**: WWW 2026
+
+---
+
+## 11. RecSys 2026 (Minneapolis, Sep 27 - Oct 2, 2026)
+
+### 11.1 LLM & Agents for Recommendation
+
+#### Self-Evolving Recommendation System: End-To-End Autonomous Model Optimization With LLM Agents
+- **Authors**: Haochen Wang et al.
+- **Affiliation**: Google (YouTube)
+- **Venue**: RecSys 2026
+- **Abstract**: First rigorous framework where LLM agents act as expert Machine Learning Engineers to evolve recommendation models. Uses Gemini 2.5 Pro in hierarchical agentic system managing full lifecycle — from hypothesis generation to A/B testing. Successful production deployments at YouTube.
+- **Key Innovations**: (1) Autonomous MLE framework at industrial scale; (2) Semantic discovery beyond parameter tuning; (3) Acceleration of experimental velocity.
+- **Results**: Agents surpass hand-tuned baselines; successfully deployed to multiple YouTube recommendation surfaces.
+- **Link**: [arXiv:2602.10226](https://arxiv.org/abs/2602.10226) | [DOI:10.1145/3773078.3831919](https://doi.org/10.1145/3773078.3831919)
+
+### 11.2 Sequential Recommendation
+
+#### Structure-Preserving Projection for Mitigating Modality Bias in LLM-Based Sequential Recommendation
+- **Venue**: RecSys 2026
+- **Link**: [arXiv:2608.08583](https://arxiv.org/abs/2608.08583)
+
+#### Deciding When to Rely on Visual Information: Gated Multimodal Fusion in Sequential Recommendation
+- **Venue**: RecSys 2026
+- **Link**: [arXiv:2608.10700](https://arxiv.org/abs/2608.10700)
+
+#### Topology-Aware Tokenization for Generative Recommendation
+- **Venue**: RecSys 2026
+- **Link**: [arXiv:2607.18600](https://arxiv.org/abs/2607.18600)
+
+#### RecRec: Latent Interests Recursive Reasoning for Sequential Recommendation
+- **Venue**: RecSys 2026
+- **Link**: [arXiv:2607.12945](https://arxiv.org/abs/2607.12945)
+
+---
+
+## 12. CIKM 2026
+
+### 12.1 Sequential Recommendation
+
+#### HCGRec: Hint-Conditioned Generative Recommendation with Semantic IDs
+- **Venue**: CIKM 2026
+- **Link**: [arXiv:2608.11980](https://arxiv.org/abs/2608.11980)
+
+#### From Overlooked to Exploited: Recovering Item Relations via Mixture of Perspectives
+- **Venue**: CIKM 2026
+- **Link**: [arXiv:2608.11846](https://arxiv.org/abs/2608.11846)
+
+---
+
+## 13. Cross-Conference: LLMs in Recommendation & Advertising
+
+### 13.1 LLM-Enhanced CTR Prediction
+
+#### Field Matters: Lightweight LLM-enhanced Method for CTR Prediction
+- **Affiliation**: Alibaba (published at ACM)
+- **Venue**: ACM (2026)
+- **Abstract**: Lightweight LLM-enhanced CTR method that avoids extensive textual description processing for large-scale instances.
+- **Link**: [ACM DL](https://dl.acm.org/doi/abs/10.1145/3774904.3792387)
+
+#### HyFormer: Revisiting Sequence Modeling and Feature Interaction in CTR Prediction
+- **Affiliation**: ByteDance
+- **Venue**: arXiv (2026)
+- **Abstract**: Revisits the roles of sequence modeling and feature interaction through hybrid Transformer architecture for CTR prediction at ByteDance scale.
+- **Link**: [GitHub](https://github.com/guyulongcs/Awesome-Deep-Learning-Papers-for-Search-Recommendation-Advertising)
+
+#### TokenMixer-Large: Scaling Up Large Ranking Models in Industrial Recommenders
+- **Affiliation**: ByteDance
+- **Venue**: arXiv (2026)
+- **Abstract**: Scales up ranking models in industrial recommender systems through token mixing.
+
+### 13.2 Generative Recommendation
+
+#### Towards An Efficient LLM Training Paradigm for CTR Prediction
+- **Venue**: arXiv (2026)
+- **Abstract**: Proposes efficient training paradigm addressing computational inefficiency in LLM-based CTR prediction.
+
+#### Causal Direct Preference Optimization for Distributionally Robust Generative Recommendation
+- **Affiliation**: Northeastern University
+- **Venue**: ICML 2026
+
+#### SynGR: Unleashing Cross-Modal Synergy for Generative Recommendation
+- **Affiliation**: Beihang University
+- **Venue**: ICML 2026
+
+### 13.3 LLM Advertising
+
+#### NaiAD: Initiate Data-Driven Research for LLM Advertising
+- **Venue**: arXiv (2026)
+- **Abstract**: First comprehensive dataset for LLM-native advertising (58,999 ad-embedded responses). Organized around theoretically grounded evaluation metrics capturing user and platform perspectives.
+- **Link**: [arXiv:2605.09918](https://arxiv.org/abs/2605.09918)
+
+---
+
+## 14. Cross-Conference: Agent Systems
+
+### 14.1 LLM Agents
+
+#### Google DeepMind: AI Co-Mathematician
+- **Affiliation**: Google DeepMind
+- **Abstract**: Stateful AI workspace for long-term mathematical discovery, supporting mathematicians with iterative research assistance.
+
+#### Meta AI: Proactive Memory Agent
+- **Affiliation**: Meta FAIR
+- **Abstract**: "Remember When It Matters" — proactive memory agent that boosts Claude Sonnet 4.5 by +8.3pp on Terminal-Bench 2.0, +6.8pp on τ²-Bench. Two-phase memory bank runs alongside unmodified action agent.
+
+#### Self-Evolving Recommendation System (YouTube/Google)
+- (See Section 11.1 above)
+
+### 14.2 Multi-Agent Systems
+
+#### LLM Collaboration With Multi-Agent Reinforcement Learning
+- **Venue**: AAAI 2026
+- **Link**: [arXiv:2508.04652](https://arxiv.org/abs/2508.04652)
+
+---
+
+## 15. Cross-Conference: Generative Models & Diffusion
+
+### 15.1 Text Generation
+
+#### Cola DLM: Continuous Latent Diffusion Language Model
+- **Venue**: arXiv (2026)
+- **Abstract**: Hierarchical latent diffusion model for text generation — plans in latent space then decodes to natural language. Uses Text VAE + block-causal Diffusion Transformer.
+
+### 15.2 Image & Video Generation
+
+#### Image Generators are Generalist Vision Learners
+- **Affiliation**: Google DeepMind
+- **Abstract**: Shows that training generative models to produce images teaches better visual understanding than discriminative pretraining.
+
+#### GPT-5.5 + Images 2.0
+- **Affiliation**: OpenAI
+- **Abstract**: Reasoning integrated into image generation pipeline — search, plan, evaluate, generate paradigm. Can web search during generation for real-time information.
+
+---
+
+## 16. Cross-Conference: Sequential Modeling
+
+### 16.1 Key Papers
+
+| Paper | Venue | Key Innovation |
+|-------|-------|----------------|
+| ONETrans (ByteDance) | WWW 2026 | Unified feature interaction + sequence modeling with one Transformer |
+| TokenMixer-Large (ByteDance) | arXiv 2026 | Scaling ranking models via token mixing |
+| LONGER (ByteDance) | arXiv 2025 | Scaling long sequence modeling in industrial recommenders |
+| RankMixer (ByteDance) | arXiv 2025 | Scaling ranking models at industrial scale |
+| STCA (ByteDance) | arXiv 2025 | End-to-End 10k-sequence modeling on Douyin |
+| Mixture of Sequence (WWW 2026) | WWW 2026 | Theme-aware MoE for long-sequence recommendation |
+
+---
+
+## 17. Cross-Conference: Benchmarks & Evaluation
+
+### 17.1 Notable Benchmarks
+
+#### IndustryBench: Probing Industrial Knowledge Boundaries of LLMs
+- **Venue**: arXiv (2026)
+- **Abstract**: Tests LLMs on industrial procurement standards compliance.
+
+#### SLR-Bench: Curriculum Benchmark for Logical Reasoning
+- **Venue**: ACL 2026
+- **Abstract**: 19k prompts across 20 curriculum levels for relational, arithmetic, and recursive complexity.
+
+#### WorldLens Benchmark for Driving World Models
+- **Venue**: CVPR 2026 (Oral)
+- **Abstract**: Full-spectrum evaluation of driving world models in real-world scenarios.
+
+---
+
+## 18. Industry Lab Highlights
+
+### 18.1 Google DeepMind (2026 publications)
+- **TRecViT**: Recurrent Video Transformer (Jan 2026)
+- **Image Generators are Generalist Vision Learners** (Apr 2026)
+- **Decoupled DiLoCo**: Distributed training infrastructure (Apr 2026)
+- **AI Co-Mathematician**: Stateful AI workspace for math discovery
+- **Vision Banana**: Generative models for visual understanding (Apr 2026)
+
+### 18.2 OpenAI (2026)
+- **GPT-5.5 + Images 2.0**: Reasoning in generation pipeline
+- **GPT-5.6 Sol**: Price reduction (>20% cut)
+- **InstantDB acquisition**: Persistent state for AI agents
+
+### 18.3 Meta AI (2026)
+- **Meta Lattice**: Cost-effective ads recommendation (KDD 2026)
+- **Sparse by Design**: Relevance-driven scaling (ICML 2026)
+- **Proactive Memory Agent**: +8.3pp on Terminal-Bench
+- **DMC-Optim RL Framework**: Code optimization improvements
+- **Muse Spark**: Closed-source model launch
+- **AI Business Assistant**: Global rollout to all advertisers
+
+### 18.4 ByteDance (2026)
+- **HyFormer**: Hybrid Transformer for CTR
+- **TokenMixer-Large**: Scaling ranking models
+- **LONGER**: Scaling long sequence modeling
+- **RankMixer**: Scaling ranking models
+- **STCA**: 10k-sequence modeling on Douyin
+- **ONETrans**: Unified architecture for industrial recommendation
+
+### 18.5 Alibaba (2026)
+- **Field Matters**: Lightweight LLM-enhanced CTR
+- **VENOMREC**: Multimodal LLM recommendation security (ICML 2026)
+- **Qwen**: Continued model advancement
+
+### 18.6 Baidu (2026)
+- **GRAB**: Generative ranking with CamA for CTR (3.05% revenue increase)
+- **Ernie Bot**: Continued integration
+
+### 18.7 Kuaishou (2026)
+- **STCRank**: Spatio-temporal collaborative ranking (WWW 2026)
+- **TWIN series**: Continued evolution of lifelong behavior modeling
+
+### 18.8 Tencent (2026)
+- **Hunyuan**: Continued model advancement
+- **WeChat AI integration**: Plugin penetration ~20-30%
+
+---
+
+## Key Trends Summary
+
+1. **LLM → Agent Evolution**: ACL 2026 shows 158% growth in agent/reasoning papers. Systems move from "bigger models" to "reasoning, retrieving, citing, explaining."
+
+2. **Generative Recommendation**: Shift from discriminative CTR to generative paradigms — GRAB (Baidu), ONETrans (ByteDance), Self-Evolving RecSys (Google/YouTube).
+
+3. **Scaling Laws for Recommendation**: ByteDance's LONGER, RankMixer, TokenMixer-Large demonstrate industrial-scale scaling; Meta's Wukong/Lattice explore cost-effective scaling.
+
+4. **MoE in Recommendation**: Theme-aware MoE (WWW 2026), relevance-driven sparse scaling (Meta/ICML 2026) — adapting LLM architectures to recommendation.
+
+5. **Agentic Optimization**: YouTube's Self-Evolving RecSys (RecSys 2026) shows LLM agents can surpass human ML engineers in model evolution.
+
+6. **Security & Adversarial**: VENOMREC (ICML 2026), BadThink (AAAI 2026) highlight growing concerns about multimodal attacks and reasoning vulnerabilities.
+
+7. **Interpretability as Theme**: ACL 2026's special theme signals field maturation — systems must explain, not just perform.
+
+8. **Unified Architectures**: ONETrans, HyFormer converge feature interaction and sequence modeling into single Transformer architectures.
+
+---
+
+*Generated: 2026-06-05 | Sources: arXiv, conference proceedings, paper lists*
