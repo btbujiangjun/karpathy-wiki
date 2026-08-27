@@ -12,6 +12,16 @@
 - New pages: wiki/synthesis/2026-06-05/conference-digest.md (rebuilt)
 - Contradictions: none
 
+## [2026-08-27] synthesis | wq101-alpha-daily (2026-08-27)
+- Summary: wiki/synthesis/2026-08-27/wq101-alpha-daily.md — WorldQuant 101 Alpha 因子选股日报，基于6类核心因子（Alpha#1动量/Alpha#6量价相关/Alpha#12量价背离/Alpha#19均值回复/Alpha#30波动率/Alpha#41趋势强度）对美股中大盘股（市值>$10B）进行量化筛选，精选Top 20。
+- Top 5: NVDA(9.2) / CRWD(8.8) / MSFT(8.7) / AMD(8.6) / ANET(8.5)
+- 市场背景: S&P 500 7,675.70(-0.02%), Nasdaq 26,130.20(-0.08%), Dow 53,463.88(-0.21%); Nvidia Q2 营收$96.2B超预期，Q3指引$108B；CrowdStrike盘后+10.9%(ARR增速51% YoY)；PCE通胀3.7%略超预期
+- 板块分布: Technology(10只)/Healthcare(4只)/Financial(2只)/Consumer(1只)/Industrials(1只)/Materials(1只)
+- Key factors: 动量因子主导（NVDA/MSFT/AMD趋势延续）+ 量价相关（NVDA/ANET/LITE/SMTC量价齐升）+ 趋势强度（V/MA/CAT高于VWAP）
+- Updated: wiki/index.md (Synthesis table new wq101-alpha-daily 2026-08-27 entry)
+- New pages: wiki/synthesis/2026-08-27/wq101-alpha-daily.md
+- Contradictions: none
+
 ## [2026-08-27] synthesis | game-rl-daily (2026-08-27)
 - Summary: wiki/synthesis/2026-08-27/game-rl-daily.md — 31 papers across 7 categories: Game RL (self-play, multi-agent, game-specific), Game AI Bot (LLM agents, Minecraft, DOOM), Game Foundation Models (NitroGen, generalist players, VLM), PCG (LLM reward design, level generation, game verification), Benchmarks (GameWorld, GVGAI-LLM, Mage), Industry (RL for NPCs, AI-native games), Related Techniques (curiosity-driven, world models, hierarchical RL, reward shaping, offline RL).
 - Key papers: SPIRAL self-play reasoning (ICLR 2026, 2506.24119); NitroGen foundation model 40K hours/1000+ games (2601.02427); SauerkrautLM 1.3M params beats 120B LLMs at DOOM (2604.07385); GameGen-Verifier 92% accuracy on LLM-generated games (2605.07442); GameWorld 34 games/170 tasks benchmark (2604.07429); PCGRLLM LLM reward design for PCGRL (2502.10906); Conference on Games 2026 vision paper for industry RL deployment (2606.20210).
