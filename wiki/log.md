@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-27] synthesis | arxiv-paper-check (2026-08-27)
+- Summary: wiki/synthesis/2026-08-27/arxiv-paper-check.md — Complement to same-day arxiv-daily (12 papers already covered); 6 verified-new papers across CTR/Rec (3), Agent Memory/Verification (2), Multimodal Efficiency (1). All IDs grep-verified absent from entire wiki.
+- Key papers: DUMoE drift-aware multimodal user representation via sparse MoE interest adapter (expert specialization + adaptive gating for interest disentanglement) [2608.25773]; D3ER disentangle-and-distill dynamic ensemble for multi-modal rec (ACMMM 2026) [2608.25737]; MOTIF motivation-guided topology inference for cold-start multimodal rec (WISE 2026) [2608.25381]; Stale Constraints in Inherited Agent Memory — 77.3% stale-consistent decisions under 2-record verification budget, +61–74pp fix with critical-path reallocation [2608.25553]; CaSKG counterfactual-causal skill graphs for agent skill retrieval [2608.25500]; PUMA post-hoc sparsification of universal multimodal embeddings (8–16x storage reduction, 25x faster scoring) [2608.25780].
+- Key trends: MoE interest disentanglement for user representation; freshness ≠ relevance in agent memory; cold-start via topology inference; post-hoc efficiency for multimodal embedders; causal skill graphs.
+- Updated: wiki/index.md (Synthesis table new arxiv-paper-check 2026-08-27 entry)
+- New pages: wiki/synthesis/2026-08-27/arxiv-paper-check.md
+- Contradictions: none
+
 ## [2026-08-26] synthesis | wq101-alpha-daily (2026-08-26)
 - Summary: WorldQuant 101 Alpha 因子选股 Top 20 — 美股日报。7因子框架 (Alpha#1/#6/#12/#19/#30/#41/#53) 打分，板块轮动视角：Healthcare确认领涨 (12M +21.3%, 18x PE vs Tech 28.5x)，Energy最强 (12M +41.7%, 地缘+AI电力)，Tech面临集中度风险 (38% S&P权重)。
 - Top 20: Tier1 = NVDA (9.2, 8/26盘后财报指引$91B, 61分析师Strong Buy $305目标) / LLY (9.0, GLP-1龙头) / MSFT (8.8, AI软件转型核心)；Tier2 = META (8.6, Alpha#12量价背离机构吸筹) / UNH (8.5, Healthcare板块权重最大) / JPM (8.4, Financials新兴领涨) / AVGO (8.3, 定制芯片+VMware)；Tier3 = XOM (8.2, 能源龙头) / CVX (8.0) / CAT (7.9) / GILD (7.8) / MRNA (7.7, +151.9%月涨幅mRNA癌症疫苗)；Tier4 = AMZN (7.6) / LMT (7.5) / ABBV (7.4) / NOW (7.3) / HON (7.2) / RTX (7.1) / CEG (7.0, AI核电) / GOOGL (6.9)。
@@ -5064,4 +5072,13 @@
 - Key trends: (1) MoE architecture dominant (DeepSeek-V3, Qwen3-235B, Intern-S1-Pro 1T); (2) Pure RL reasoning models emerging (Mistral Magistral); (3) Small models competitive (Phi-14B vs 70B, Nemotron-H-8B); (4) Multimodal+Agent as standard capability; (5) Open-source ecosystem thriving (Qwen3 9 models, DeepSeek, Magistral Small); (6) China models concentrated effort (DeepSeek/Qwen/Seed/Kimi/GLM/Step/InternLM); (7) On-device and efficiency-first (Apple AFM, Phi-4, Nemotron-H).
 - Updated: wiki/index.md (Synthesis table new tech-report-digest 2026-08-26 entry)
 - New pages: wiki/synthesis/2026-08-26/tech-report-digest.md
+- Contradictions: none
+
+## [2026-08-27] arxiv-daily | arXiv Daily Digest — 2026-08-27
+- Summary: wiki/synthesis/2026-08-27/arxiv-daily.md
+- Scanned 209 new cs.AI + 26 new cs.IR entries (Thu Aug 27 announcement wave) plus 21 cs.IR from Wed Aug 26
+- 30 papers covered across CTR/Advertising, Recommendation, Agents, Games/World Models, LLM Training, Sequential Modeling, Efficiency
+- Key highlights: AMBER event tokenization (2608.25546), TAGR live-streaming generative rec +16.1% revenue (2608.24034), HSR Hamiltonian sequential rec (2608.25755), Mine-Then-Train native multimodal CTR (2608.24091), HiPS agent memory co-evolution EMNLP'26 (2608.25329), RLHEV game dev as world model reward (2608.25518)
+- Updated: wiki/index.md
+- New pages: none (synthesis report only)
 - Contradictions: none
