@@ -5090,3 +5090,11 @@
 - Updated: wiki/index.md
 - New pages: none (synthesis report only)
 - Contradictions: none
+
+## [2026-08-27] synthesis | tech-report-daily (2026-08-27)
+- Summary: wiki/synthesis/2026-08-27/tech-report-digest.md — Comprehensive digest of 19 companies' latest LLM tech reports/system cards. Each entry includes: 中文标题, 英文标题, 发布机构, 模型名称, 发布日期, 核心参数 (参数量/数据量/上下文长度), 主要创新点, 论文链接.
+- Companies covered: DeepSeek (V3 MoE 671B/37B, arXiv:2412.19437), OpenAI (GPT-5.6/5.5/GPT-Live System Cards), Meta AI (Llama 4 Scout/Maverick MoE, 10M+ ctx), Google DeepMind (Gemini 2.5 Pro/Flash, arXiv:2507.06261), Anthropic (Claude Opus 5/Sonnet 5/Opus 4.8), Mistral AI (Large 3/Small 4/Forge/Voxtral TTS), Qwen/Alibaba (Qwen3 0.6B–235B, thinking/non-thinking unified, arXiv:2505.09388), Microsoft (Phi-4 14B + Phi-4-Mini MoLo multimodal, arXiv:2412.08905 + arXiv:2503.01743), Apple (AFM 2025 on-device ~3B + Server, arXiv:2507.13575), NVIDIA (Nemotron 3 Ultra MoE+Mamba hybrid 253B), xAI (Grok 4.6, no public report), Amazon (Nova Pro/Lite/Micro/Canvas/Reel, arXiv:2506.12103), Zhipu AI (GLM-5 Agentic Engineering, arXiv:2602.15763), Moonshot AI (Kimi K2 ultra-sparse MoE+MLA, arXiv:2507.20534), StepFun (Step-3 model-system co-design, arXiv:2507.19427), ByteDance (Seed-Thinking-v1.5 MoE 200B/20B active), Baichuan (M3 235B medical SPAR RL, arXiv:2602.06570), InternLM (InternLM3-8B + InternVL3, arXiv:2504.10479), 01.AI (Yi-Lightning MoE RAISE, arXiv:2412.01253)
+- Key trends: (1) MoE dominant architecture; (2) Thinking/Non-thinking unified inference; (3) Long context arms race (10M+ to 400K); (4) Agentic Engineering paradigm; (5) Medical/vertical domain specialization; (6) Mamba/hybrid SSM emerging; (7) Synthetic data as training core; (8) Inference cost as systems engineering; (9) Safety frameworks systematized; (10) Chinese firms leading MoE + Agent innovation.
+- Updated: wiki/index.md (Synthesis table new tech-report-digest 2026-08-27 entry)
+- New pages: wiki/synthesis/2026-08-27/tech-report-digest.md
+- Contradictions: none
