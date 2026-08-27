@@ -12,6 +12,14 @@
 - New pages: wiki/synthesis/2026-06-05/conference-digest.md (rebuilt)
 - Contradictions: none
 
+## [2026-08-27] synthesis | game-rl-daily (2026-08-27)
+- Summary: wiki/synthesis/2026-08-27/game-rl-daily.md — 31 papers across 7 categories: Game RL (self-play, multi-agent, game-specific), Game AI Bot (LLM agents, Minecraft, DOOM), Game Foundation Models (NitroGen, generalist players, VLM), PCG (LLM reward design, level generation, game verification), Benchmarks (GameWorld, GVGAI-LLM, Mage), Industry (RL for NPCs, AI-native games), Related Techniques (curiosity-driven, world models, hierarchical RL, reward shaping, offline RL).
+- Key papers: SPIRAL self-play reasoning (ICLR 2026, 2506.24119); NitroGen foundation model 40K hours/1000+ games (2601.02427); SauerkrautLM 1.3M params beats 120B LLMs at DOOM (2604.07385); GameGen-Verifier 92% accuracy on LLM-generated games (2605.07442); GameWorld 34 games/170 tasks benchmark (2604.07429); PCGRLLM LLM reward design for PCGRL (2502.10906); Conference on Games 2026 vision paper for industry RL deployment (2606.20210).
+- Key trends: self-play as reasoning curriculum; small specialized models beat LLMs at real-time; game foundation models scale to internet data; automated verification for LLM-generated games; world models decouple state from generation; PCG via LLM reward design; industry RL prioritizes deployment constraints.
+- Updated: wiki/index.md (Synthesis table new game-rl-daily 2026-08-27 entry)
+- New pages: wiki/synthesis/2026-08-27/game-rl-daily.md
+- Contradictions: none
+
 ## [2026-08-27] synthesis | arxiv-paper-check (2026-08-27)
 - Summary: wiki/synthesis/2026-08-27/arxiv-paper-check.md — Complement to same-day arxiv-daily (12 papers already covered); 6 verified-new papers across CTR/Rec (3), Agent Memory/Verification (2), Multimodal Efficiency (1). All IDs grep-verified absent from entire wiki.
 - Key papers: DUMoE drift-aware multimodal user representation via sparse MoE interest adapter (expert specialization + adaptive gating for interest disentanglement) [2608.25773]; D3ER disentangle-and-distill dynamic ensemble for multi-modal rec (ACMMM 2026) [2608.25737]; MOTIF motivation-guided topology inference for cold-start multimodal rec (WISE 2026) [2608.25381]; Stale Constraints in Inherited Agent Memory — 77.3% stale-consistent decisions under 2-record verification budget, +61–74pp fix with critical-path reallocation [2608.25553]; CaSKG counterfactual-causal skill graphs for agent skill retrieval [2608.25500]; PUMA post-hoc sparsification of universal multimodal embeddings (8–16x storage reduction, 25x faster scoring) [2608.25780].
