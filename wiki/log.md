@@ -5097,4 +5097,11 @@
 - Key trends: (1) MoE dominant architecture; (2) Thinking/Non-thinking unified inference; (3) Long context arms race (10M+ to 400K); (4) Agentic Engineering paradigm; (5) Medical/vertical domain specialization; (6) Mamba/hybrid SSM emerging; (7) Synthetic data as training core; (8) Inference cost as systems engineering; (9) Safety frameworks systematized; (10) Chinese firms leading MoE + Agent innovation.
 - Updated: wiki/index.md (Synthesis table new tech-report-digest 2026-08-27 entry)
 - New pages: wiki/synthesis/2026-08-27/tech-report-digest.md
+
+## [2026-08-27] synthesis | investment-daily (2026-08-27)
+- Summary: wiki/synthesis/2026-08-27/investment-daily.md — 每日市场综合投资报告，涵盖美股/港股/A股科技与AI热点、新能源车板块
+- Key highlights: NVIDIA Q2营收962亿+五连派息+与AWS合作追加200万颗AI芯片；Meta资本支出上调至$1,150-$1,350亿；阿里拟HK$135配售H股募资HK$80亿；MiniMax季收2.24亿美元+101.8%；小鹏7月零售+229%同比；蔚来第4,100座换电站；理想L9降价2万元；A股主力净流入197亿；AI模型密集发布（Qwen3.8-Max、Muse、Grok 4.6、Gemini 3.7 Flash）；美国对华关税9月24日生效
+- Updated: wiki/index.md (Synthesis table new investment-daily 2026-08-27 entry)
+- New pages: wiki/synthesis/2026-08-27/investment-daily.md
+- Contradictions: none
 - Contradictions: none
