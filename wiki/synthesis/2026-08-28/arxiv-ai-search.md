@@ -9,9 +9,9 @@ tags: [arxiv, ai, llm, recommendation, advertising, ctr, sequential-modeling, ga
 
 # arXiv Recent Papers — AI, LLMs, Recommendation, Advertising, Sequential Modeling, CTR, Games
 
-> Search date: 2026-08-28 · Scope: papers **not yet covered anywhere in the wiki** (every arXiv ID below grep-verified absent from `wiki/` — including same-day sibling [arxiv-daily](arxiv-daily.md) which claimed IDs ~2608.26480–2608.27454 across cs.IR/cs.AI/cs.LG; zero overlap). Coverage window: Thu Aug 20 – Thu Aug 27 submission waves (IDs ~2608.20xxx–2608.27xxx), retrieved via arXiv API across cs.IR / cs.CL / cs.AI / cs.LG / cs.GT / cs.MA / cs.CR / cs.HC with topic-keyword sweeps (recommendation, advertising/CTR, sequential/user-behavior, games, world models, agents, RL). **21 new papers below across 6 categories.**
+> Search date: 2026-08-28 · Scope: papers **not yet covered anywhere in the wiki** (every arXiv ID below grep-verified absent from `wiki/` — including same-day siblings [arxiv-daily](arxiv-daily.md), which claimed IDs ~2608.26480–2608.27454, and [arxiv-paper-check](arxiv-paper-check.md); one candidate, tacit collusion in algorithmic electricity markets `2608.26896`, was found already claimed by the sibling paper-check and **dropped** here). Coverage window: Thu Aug 20 – Thu Aug 27 submission waves (IDs ~2608.20xxx–2608.27xxx), retrieved via arXiv API across cs.IR / cs.CL / cs.AI / cs.LG / cs.GT / cs.MA / cs.CR / cs.HC with topic-keyword sweeps (recommendation, advertising/CTR, sequential/user-behavior, games, world models, agents, RL). **20 new papers below across 6 categories.**
 >
-> Affiliations marked *(stated)* come from paper front matter; *(inferred)* = deduced from author identities / GitHub / release notes; otherwise "not stated". **Advertising note:** pure CTR/advertising papers were mostly absorbed by the sibling daily (LAMA token-level auction, MaskRec, Stageboost); the two closest survivors here are market-mechanism papers (2.1 AgentLance, 2.2 tacit collusion) plus the industrial e-commerce entries in §①.
+> Affiliations marked *(stated)* come from paper front matter; *(inferred)* = deduced from author identities / GitHub / release notes; otherwise "not stated". **Advertising note:** pure CTR/advertising papers were mostly absorbed by the sibling daily (LAMA token-level auction, MaskRec, Stageboost); the closest survivors here are the market-mechanism paper (2.1 AgentLance) plus the industrial e-commerce entries in §①.
 
 ---
 
@@ -63,7 +63,7 @@ tags: [arxiv, ai, llm, recommendation, advertising, ctr, sequential-modeling, ga
 
 ---
 
-## ② Advertising & Market Mechanisms (2)
+## ② Advertising & Market Mechanisms (1)
 
 ### 2.1 Markets, Not Planners: Decentralized Orchestration of LLM Agents with Private Information (AgentLance)
 
@@ -74,18 +74,7 @@ tags: [arxiv, ai, llm, recommendation, advertising, ctr, sequential-modeling, ga
 | **Abstract** | Orchestrating many independent LLM agents is "assembling labor across an economy," not calling subroutines — yet current orchestration is centralized: a single planner assigns every task, requiring agents' private costs, bottlenecking as pools grow, and being trivially manipulable (a single inserted preference nearly doubles a favored agent's task share in a centralized LLM allocator). AgentLance is a repeated labor market: agents bid on tasks with **private costs + self-maintained strategy notes**; an allocator selects winners from bids and public reputation; a **VCG-style payment rule** rewards cost-aware bidding; hierarchical delegation lets winners subcontract through the same mechanism. Beats single-model, centralized-orchestration, and market baselines on math reasoning, code gen, knowledge QA, and agentic tasks; diagnosing market failures (cost self-estimation, bidding) and correcting them yields further gains. |
 | **Key innovations** | Mechanism-design (auction) answer to agent orchestration; explicit manipulation-resistance and private-information argument; self-maintained strategy notes as agentic "skills ledger." |
 | **arXiv** | [2608.23867](https://arxiv.org/abs/2608.23867) · cs.MA/cs.CL |
-| **Why it matters** | The economics angle on [decade-of-agents](../../concepts/decade-of-agents.md): if agent economies really arrive, allocation will be auction-based. Ties directly to token-level ad auctions (LAMA, claimed by sibling daily) — both move "who pays for work" into the mechanism. |
-
-### 2.2 AI Agents in Algorithmic Electricity Markets: On the Emergence of Tacit Collusion
-
-| Field | Detail |
-|-------|--------|
-| **Authors** | Jakub Seredyński, Georgios Tsaousoglou |
-| **Institution** | Technical University of Denmark (inferred: Tsaousoglou is DTU) |
-| **Abstract** | As power markets become algorithmic bidders, tacit collusion — sustained supra-competitive outcomes reached without communication via independent learning — is a documented failure mode in other markets, and electricity is structurally susceptible (oligopoly, repeated interaction). Models strategic bidding as a repeated game with imperfect public monitoring and multi-agent RL agents. Proposes a multi-dimensional criteria set *beyond* profit-vs-Nash comparison to classify whether emergent behavior constitutes tacit collusion; shows cases where RL agents do learn to sustain supra-competitive outcomes supportive of collusion indicators, without ever being instructed to collude. |
-| **Key innovations** | Multi-dimensional tacit-collusion detection criteria for algorithmic markets; MARL evidence in a real-world repeated-bid setting. |
-| **arXiv** | [2608.26896](https://arxiv.org/abs/2608.26896) · cs.AI/cs.GT/cs.MA |
-| **Why it matters** | Autobidding wholesale adoption in ads/rec ([auto-bidding](../../synthesis/2026-08-26/arxiv-daily.md)) raises the same question: what do independently learned bidding populations converge to? Same "learning dynamics hazard" lens as the wiki's [equal-regret/self-play theory](../../synthesis/2026-08-28/arxiv-daily.md). |
+| **Why it matters** | The economics angle on [decade-of-agents](../../concepts/decade-of-agents.md): if agent economies really arrive, allocation will be auction-based. Ties directly to token-level ad auctions (LAMA, claimed by sibling daily) — both move "who pays for work" into the mechanism. *(Note: the companion tacit-collusion paper `2608.26896` is covered by today's sibling [arxiv-paper-check](arxiv-paper-check.md), not duplicated here.)* |
 
 ---
 
@@ -275,13 +264,13 @@ tags: [arxiv, ai, llm, recommendation, advertising, ctr, sequential-modeling, ga
 1. **E-commerce data is becoming agentic plumbing** (Box 1.2/1.3/1.4 + market mechanism 2.1): catalog enrichment, product linking, and orchestration all now ship produce-and-verify agent loops with explicit evidence provenance, and the A/B numbers (+0.48% conversion, 68→77% coverage) are production-scale. The "grounded, verifiable data layer" is where agent value is being monetized first.
 2. **World models split "world" from "visuals," twice** — GameWAM (parallel video+action generation), Code World Model (code as persistent state, video as renderer), and SCG (growable encoder) all separate causal/state machinery from pixel simulation. Consistent with the wiki's Alaya-EVOKE/Marionette tracking: the memory/state substrate, not pixel fidelity, is the current frontier.
 3. **Reward engineering is consolidating on internal signals**: belief-action alignment (MetaRAG), symbolic milestones (SPEAR), action-token measure (SPO++), and preference-data selection (BALIGN) all move supervision away from external scalar outcomes toward process/geometry signals.
-4. **Multi-agent benefits are conditional, not automatic**: Interaction Tax shows information exchange can erase diversity; AgentLance shows mechanisms (auctions) beat planners; tacit-collusion work warns learning populations may game the mechanism. Orchestration and mechanism design are converging on the same object: *what information flows between agents*.
+4. **Multi-agent benefits are conditional, not automatic**: Interaction Tax shows information exchange can erase diversity; AgentLance shows mechanisms (auctions) beat planners; the sibling paper-check's tacit-collusion work (`2608.26896`) independently warns that learning populations may game the mechanism. Orchestration and mechanism design are converging on the same object: *what information flows between agents*.
 
 ## Methodology
 
 - 9 arXiv API queries (`export.arxiv.org`) sorted by submission date: cs.IR(400), cs.CL(400), cs.AI(500), cs.LG(500), cs.GT(250), cs.MA(250), cs.CR(200), cs.HC(200), `all:recommendation`(400) → 2,469 unique papers (ID range 2607.18115–2608.27455).
-- Domain-tuned keyword scoring (rec / ctr-advertising / sequential / generative-rec / retrieval / LLM-agent / games / efficiency / eval), freshness filter ≥ 2026-08-20 → 417 weighted candidates → manual abstract review → 21 verified-new papers reported.
-- Every reported ID grep-verified absent from `wiki/` (known-ID set of 3,896 IDs) and from same-day sibling [arxiv-daily](arxiv-daily.md) (which separately claimed 28 papers in the 2608.26480–27454 window).
+- Domain-tuned keyword scoring (rec / ctr-advertising / sequential / generative-rec / retrieval / LLM-agent / games / efficiency / eval), freshness filter ≥ 2026-08-20 → 417 weighted candidates → manual abstract review → 20 verified-new papers reported.
+- Every reported ID grep-verified absent from `wiki/` (known-ID set of 3,896 IDs) and from same-day siblings. One candidate (`2608.26896` tacit collusion) turned out to be claimed by the sibling [arxiv-paper-check](arxiv-paper-check.md) and was dropped rather than duplicated; the final 20 are disjoint from arxiv-daily (28 papers, window 2608.26480–27454) and arxiv-paper-check (5 papers).
 - Temp fetch files cached under `/var/folders/q9/tsl_tl5548x7j892sgt3qvlc0000gn/T/opencode/arxiv0828/` and deleted after use (per temp-file constraint).
 - For TRACE, DoorDash affiliation confirmed from the PDF front matter via web search; GameWAM and Code World Model affiliations inferred from author GitHub/project pages.
 
