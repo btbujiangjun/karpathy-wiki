@@ -5100,6 +5100,24 @@
 - New pages: wiki/synthesis/2026-08-26/tech-report-digest.md
 - Contradictions: none
 
+## [2026-08-28] arxiv-daily | arXiv Daily Digest — 2026-08-28
+- Summary: wiki/synthesis/2026-08-28/arxiv-daily.md
+- Scanned 567 unique arXiv entries (Fri Aug 28 announcement wave — Thu Aug 27 submissions, IDs ~2608.26480–2608.27454) via cs.IR/cs.AI/cs.LG date sweeps; every covered ID grep-verified absent from wiki (zero overlap with sibling arxiv-daily/arxiv-paper-check/game-rl-daily/conference-digest/tech-report-digest)
+- 28 papers covered: CTR/Advertising ×4 (LAMA token-level ads, MaskRec unified CVR backbone, Stageboost eBay signals, LiveSim live-stream simulation), Recommendation ×8 (causal incremental rec Spotify, GNN friend rec scaling, PrismRec spectral flow matching, conversational live-catalogue rec, CoVeMem vector agent memory, MOSAIC UGC meta-review, OC-SFT order-consistent scorers, PailitaoGR gen image retrieval), Retrieval ×1 (ProRetrieval), Agents ×7 (Astar self-evolving industrial AI, WikiSkill, GraphMemix, PILOT, contract-centered runtime, PES pattern, ACE agentic-data lens), Games/World Models ×3 (CLAP, PAWBench, LEON), LLM Training ×5 (ES-vs-GRPO, DPO β disentangling, Puro-2B, SFT instruction sensitivity, block-drafting info floors)
+- Key highlights: LAMA token-level advertising auction (2608.27382); Spotify causal incremental rec −7% impressions (2608.26804); Astar closes the evolution-direction loop +4.86% GMV at Alibaba Lazada (2608.27287); ES > GRPO reasoning coverage + GRPO→ES sequential recipe (2608.27351); Puro-2B ~$4.4K pretraining with cost scaling law (2608.27370); WikiSkill persistent wiki KB for skill evolution (2608.27454); PAWBench negative result on probabilistic alignment of world models (2608.27345); CLAP cross-embodiment zero-shot world models (2608.27406)
+- Updated: wiki/index.md (Synthesis table new arxiv-daily 2026-08-28 entry)
+- New pages: wiki/synthesis/2026-08-28/arxiv-daily.md
+- Contradictions: none
+
+## [2026-08-28] arxiv-paper-check | arXiv Paper Check — AI & CTR (August 28, 2026)
+- Summary: wiki/synthesis/2026-08-28/arxiv-paper-check.md
+- Scanned 24 new cs.IR + 196 new cs.AI entries (Fri Aug 28 announcement window = Thu Aug 27 submissions); CTR/advertising/rec highlights already captured by same-day arxiv-daily; every covered ID grep-verified absent from wiki (zero overlap with sibling digests)
+- 5 papers covered: AI & Algorithm Design ×2 (LLMs Can Design Near-Optimal OR Algorithms, Jackie Baek 2608.27296; Fabricated Evidence Makes LLM Agents Commit to the Unknowable 2608.27167), Multimodal Representations ×1 (OmniUE Omni-Interactive Universal Embedder 2608.27044), Multi-Agent Markets & Safety ×2 (Not All Eval-Awareness Is Equal 2608.27340; AI Agents in Algorithmic Electricity Markets tacit collusion 2608.26896)
+- Key highlights: gpt-5.6-sol near-optimal OR algorithms even with algorithm frozen before test instances (2608.27296); action-vs-calibration gap — commitment 6.5%->54% with fabricated market-panel evidence, trainable-but-context-fragile act/don't-act gate (2608.27167); OmniUE any-to-any interactive embeddings +83.7% visual-interactive (2608.27044); capabilities vs safety framing of eval-awareness +24-46pp compliance gap (2608.27340); independent multi-agent RL learns tacit collusion in repeated electricity markets (2608.26896)
+- Updated: wiki/index.md (Synthesis table new arxiv-paper-check 2026-08-28 entry)
+- New pages: wiki/synthesis/2026-08-28/arxiv-paper-check.md
+- Contradictions: none
+
 ## [2026-08-27] arxiv-daily | arXiv Daily Digest — 2026-08-27
 - Summary: wiki/synthesis/2026-08-27/arxiv-daily.md
 - Scanned 209 new cs.AI + 26 new cs.IR entries (Thu Aug 27 announcement wave) plus 21 cs.IR from Wed Aug 26
