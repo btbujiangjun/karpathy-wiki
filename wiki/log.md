@@ -4,6 +4,17 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-28] synthesis | investment-daily (2026-08-28)
+- Summary: wiki/synthesis/2026-08-28/investment-daily.md — 每日投资热点（美股/港股/A股/中概/AI/新能源）
+- 核心事件: NVIDIA FY27 Q2 财报全面超预期（营收 $962.2B +106%、Data Center $890B +117%、Q3 指引 $1080B 首破千亿、FY28 +70% 指引）；拟 $129 亿收购 Hugging Face（报道）；NVDA 8/27 +8.7% 至 $227.98 终结 8 日跌势（市值 $5.08T）；软件/网络安全 agentic AI 爆发（CRM +22.58%/CRWD +20.5%/OKTA +28%）
+- 港股: AI 芯片映射大涨（智谱 +12.62% GLM-5.3-Flash/Ox Alpha、澜起科技 +12.30%、天数智芯 +10.54%、百度 +5.34% 9/1 双重上市、中芯国际 +2.30%）；8/28 早盘恒指 +0.54%/恒生科技 +2.29%，联想 +17% 创历史新高（AI 营收翻倍）
+- A股: 8/27 算力硬件集体大涨（科创50 +3.77%），国产算力capex加速（阿里 677 亿/腾讯 528 亿 +176%/百度 114 亿 +200%）；DeepSeek 传二轮融资 500 亿/估值 5000 亿
+- EV: 比亚迪 7 月海外销量 18.05 万 (+124%，2.7x Tesla)、特斯拉上海出口 6.63 万创新高、零跑首登全球 BEV 第三；Q2 全球 NEV 销量 537 万 (+10.4%)
+- 关键变量: Fed Warsh Jackson Hole 首秀 (8/28) + NVDA 内存短缺致毛利率三季连降至 71-72%
+- New pages: wiki/synthesis/2026-08-28/investment-daily.md
+- Updated: wiki/index.md (Synthesis table)
+- Contradictions: none
+
 ## [2026-06-05] synthesis | conference-digest (2026-06-05) — comprehensive rebuild
 - Summary: wiki/synthesis/2026-06-05/conference-digest.md — Comprehensive survey of 80+ papers from 12 top ML/AI conferences (2025–2026 cycle) and latest arXiv preprints. Organized by venue (ICML 2026, AAAI 2026, NeurIPS 2025, ICLR 2026, KDD 2026, CVPR 2026, ACL 2026, EMNLP 2025/2026, SIGIR 2026, WWW 2026, CIKM 2026, RecSys 2026) and category (recommendation, CTR, LLM, agents, generative models, sequential modeling, advertising, benchmarks, code execution). Focus on papers from Google DeepMind, OpenAI, Meta AI, Microsoft Research, ByteDance, Alibaba, Tencent, Kuaishou, Baidu, Netflix, NVIDIA, Anthropic, Apple, Amazon.
 - Key papers: CTR-Sink KDD 2026 (Attention Sink for LM-CTR, +0.2-0.5% AUC); Sparse by Design ICML 2026 (Meta relevance-driven MoE); Self-Evolving RecSys RecSys 2026 (YouTube LLM agent MLE framework); GRAB Baidu (+3.05% revenue, +3.49% CTR); Meta Lattice KDD 2026 (cost-effective ads); HyFormer ByteDance (sequence vs feature interaction in CTR); CRAMER ICML 2026 (request-aware masking); ProRL ICML 2026 (proactive recommendation RL); VENOMREC ICML 2026 (multimodal adversarial); NEO ICLR 2026 (vision-language primitives); WorldLens CVPR 2026 (driving world model benchmark); LLSA CVPR 2026 (sparse attention for diffusion); Reasoning While Asking ACL 2026; PEGRL ACL 2026 (post-editing RL for MT); NaiAD (LLM-native advertising dataset).
