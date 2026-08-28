@@ -5162,6 +5162,16 @@
 - New pages: wiki/synthesis/2026-08-28/arxiv-ai-search.md
 - Contradictions: none
 
+## [2026-08-28] synthesis | wq101-alpha-daily (2026-08-28)
+- Summary: wiki/synthesis/2026-08-28/wq101-alpha-daily.md — WorldQuant 101 Alpha 因子选股 Top 20 美股日报（数据基准 8/27 周四收盘）
+- Market context: NVDA 财报"炸场"（Q2 $96.2B +106%, Q3 指引 $108B 首破千亿, FY28 +70%）→ +8.74% 至 $227.98 终结 8 日跌势；AI 交易从硬件扩散到软件/安全：CRM +22.58%（六年最佳）/NOW +9.8%（"SaaSpocalypse"被证伪），网络安全 CRWD +13~18%（ARR $5.84B 净新增 +51%）/OKTA +28%（AI 身份占新预订 30%）/PANW +12.83%（YTD +102.9%）；半导体跟随（MU 内存 supercycle/AMD +4.9%/AVGO +200% YoY 指引）；PCE 3.7% 偏热 + 今日 8/28 Warsh 杰克逊霍尔首秀为关键变量
+- Top 20: Tier1 = NVDA (9.4)/CRM (9.2)/CRWD (8.9)/MSFT (8.7)/PANW (8.6)；Tier2 = OKTA (8.3)/NOW (8.2)/MU (8.0)/AMD (7.9)/AVGO (7.8)；Tier3 = ZS/S/TSLA/MRVL/META；Tier4 = FTNT/AMZN/AAPL/GOOGL/NET
+- Sector mix: Technology/Semi/Software/Cyber 16 只 + Consumer (TSLA/AMZN) 2 + Communication (META/GOOGL) 2
+- Risks: Warsh 杰克逊霍尔首秀利率决定论 + 财报后追涨风险 (CRM/OKTA/NVDA) + AI 集中度极高（Nasdaq 涨但新低多于新高）+ 内存周期顶点之争 + 板块轮动极端快速
+- Updated: wiki/index.md (Synthesis table new wq101-alpha-daily 2026-08-28 entry)
+- New pages: wiki/synthesis/2026-08-28/wq101-alpha-daily.md
+- Contradictions: none
+
 ## [2026-08-28] synthesis | tech-report-daily (2026-08-28)
 - Summary: wiki/synthesis/2026-08-28/tech-report-digest.md — 18 家机构最新 LLM 技术报告/系统卡综合摘要，聚焦 2026 年（尤其 8 月）最新发布/更新，附每机构一个表格（中文/英文标题、机构、系列、发布日、参数、数据量、上下文、创新点、链接）。
 - Companies covered: DeepSeek (V4 Pro/Flash 1.6T/49B + CSA/HCA, 32T+ tokens, 1M ctx, MIT, arXiv:2606.19348; V4-Pro GA 08-13), OpenAI (GPT-5.6 Sol/Terra/Luna System Card + GPT-Red 自博弈红队增补 08-03), Meta (Muse Glimmer 30B Apache 2.0 DFlash 多模态 agent 本地 24-32GB; Llama 4 405B 开放权重仍失约), Google (Gemini 3.1 Pro Model Card 1M/64K), Anthropic (Claude Fable 5 & Mythos 5 System Card 06-09, ASL-3 blocker), Mistral (Shieldstral 3B 开源安全分类器 Apache 2.0 + 欧洲主权路线), Qwen (Qwen3.5-397B-A17B Hybrid MoE + Qwen3.5-Omni ARIA 256K + Qwen3.8-Max 2.4T 权重 08-12 兑现), Microsoft (Phi-4-reasoning-vision-15B, Phi-5 仍无官方报告), NVIDIA (Nemotron 3.5 Lightning 30B MoE agentic autodraft 最高4×), xAI (Grok 4.6 Model Card 1.5T 家族/500K, +PartBench/DeepSearchQA/KernelBenchInternal), Amazon (Nova family, Nova 2 2026), Zhipu (GLM-5.3 08-14 coding 聚焦 743B 同基座后训练提智, CyberGym 84.5% 超 Mythos 5 83.8% 与 Sol 83.6%, 权重两周后开源), Moonshot (Kimi K3 2.8T/104B MoE Delta Attention + Attention Residuals + Stable LatentMoE 896专家激活16, 2.5×效率 vs K2, 1M ctx 原生视觉, full weights 开源, arXiv:2607.24653), StepFun (Step3 321B/38B MFA+AFD, Hopper 吞吐较 DeepSeek-R1 +70%), ByteDance (Seed2.0/Doubao-Seed-2.0-pro MaaS), Baichuan (M4 06-09 临床医疗 agent SPAR++ HealthBench 68.6 世界第一 hallucination 3.3%, arXiv:2606.08982), InternLM (InternLM3-8B 4T tokens, 无 2026 新大模型技术报告), 01.AI (Yi-Lightning 仍为最新, 2026 转向企业 AI)
