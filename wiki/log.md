@@ -4,6 +4,15 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-08-29] synthesis | arxiv-ai-search (2026-08-29)
+- Summary: wiki/synthesis/2026-08-29/arxiv-ai-search.md — arXiv AI/LLM/Rec/Ads paper search (complementary 2nd pass); 8 verified-new papers, 4 categories; all IDs grep-verified absent from wiki (known-ID set of 1,086 IDs); zero overlap with 08-28 siblings whose coverage window ended at ~2608.27455
+- Coverage: focus on the fresh Fri Aug 27–28 submission wave (~2608.2704x–2608.27449) that fell after the 08-28 digests locked their windows. Direct arXiv API/web blocked in this environment (curl exit 35, webfetch "Transport error"), so all metadata (titles/authors/abstracts/categories/venue) recovered via targeted websearch per paper against arXiv/HF papers/OpenReview/aggregators. Candidates in the past-week 2608.26xxx/27xxx range that were strong rec/CTR/games entries were already claimed by same-day siblings (LAMA, MaskRec, Stageboost, WikiSkill, LiveSim, RLHEV/AWoMo — all dropped as KNOWN). Month-old ~2608.001xx/01xxx candidates (Bazaar 2608.00102, REDAgentBench 2608.10669) excluded as out of active scope.
+- 8 papers covered: LLM Post-training/RLVR ×4 (TTPO label-free test-time policy optimization — asymmetric agree-distill/disagree-penalize, Qwen3-1.7B 38.0→45.2% TTT, +25.2–36.4% without thinking, ZJU inferred 2608.27448; Boosting LLM Exploration via Weak-Model Guidance in RLVR — weak-model reasoning prefixes to fight entropy collapse, ACL ARR 2608.27420; Consolidating RLVR Capabilities Across Domains — Merge vs Mix RL vs multi-teacher distillation 2608.27409; Performance Foundations of Parallel & Distributed RLMs — RL-for-LLM systems taxonomy + work-depth, ETH Besta/Hoefler inferred 2608.27046), SW Engineering Agents ×2 (SWE-Prime — 10% trajectory SFT data selection beats full resolved set, +12.2%/24.2% SWE-Bench Pro/Verified, SYSU inferred 2608.27449; MCR-Bench — first defect-state-aware multi-round code-review benchmark, 2,269 tasks/5 langs, ISSTA 2026, SYSU inferred 2608.27442), Agent Safety ×2 (INTENT-AS-A-TOOL — intent-targeted tools as judge-free fine-grained misalignment probe, Tsinghua inferred 2608.27348; RedEvoAgent — black-box red-team agent distilling attack trajectories into evolving human-readable attack skill, CityU inferred 2608.27439)
+- Key highlights: whole-of-stack attack on RLVR in one wave (test-time labels, exploration collapse, expert fusion, systems); "fewer high-quality examples beat more" reappears (SWE-Prime 10%; cf. BALIGN/SPEAR from 08-28); agent safety bifurcating into runtime-intent (INTENT-AS-A-TOOL) vs red-team (RedEvoAgent); multi-round code review exposes LLM long-range-memory failure (MCR-Bench)
+- Updated: wiki/index.md (Synthesis table new arxiv-ai-search 2026-08-29 entry)
+- New pages: wiki/synthesis/2026-08-29/arxiv-ai-search.md
+- Contradictions: none
+
 ## [2026-08-28] synthesis | investment-daily (2026-08-28)
 - Summary: wiki/synthesis/2026-08-28/investment-daily.md — 每日投资热点（美股/港股/A股/中概/AI/新能源）
 - 核心事件: NVIDIA FY27 Q2 财报全面超预期（营收 $962.2B +106%、Data Center $890B +117%、Q3 指引 $1080B 首破千亿、FY28 +70% 指引）；拟 $129 亿收购 Hugging Face（报道）；NVDA 8/27 +8.7% 至 $227.98 终结 8 日跌势（市值 $5.08T）；软件/网络安全 agentic AI 爆发（CRM +22.58%/CRWD +20.5%/OKTA +28%）
@@ -5178,4 +5187,15 @@
 - Key trends: (1) MoE 仍绝对主流; (2) 稀疏/压缩注意力进入收敛期 (CSA/Delta Attention/MSA/IndexShare/Hybrid Attention); (3) 后训练 Scaling 成竞争前沿 (GLM-5.3 同基座提智); (4) 中国开源旗舰"能力/许可证双轨"+ 兑现信用分化; (5) Agentic 能力成官方评测主战场 (PartBench/Terminal-Bench/DeepSWE/MOPD); (6) 安全分类器/System Card 成独立品类; (7) 推理成本=系统工程; (8) 全模态+长上下文成旗舰标配; (9) 垂直领域差异化 (医疗/企业/端侧); (10) "承诺制发布"对决 (Qwen 权重/V4-Pro GA/Grok 4.6 兑现 vs Meta 405B 失约)
 - Updated: wiki/index.md (Synthesis table new tech-report-digest 2026-08-28 entry)
 - New pages: wiki/synthesis/2026-08-28/tech-report-digest.md
+- Contradictions: none
+
+## [2026-08-29] synthesis | wq101-alpha-daily (2026-08-29)
+- Summary: wiki/synthesis/2026-08-29/wq101-alpha-daily.md — WorldQuant 101 Alpha 因子选股 Top 20 美股日报（数据基准 8/28 周五完整收盘）
+- Market context: Fed Chair Kevin Warsh 杰克逊霍尔首秀（8/28）鹰派表态"more work to do"→ 9 月加息概率 ~35%→50%，指数全周收跌（S&P 7,711/-0.26%、Nasdaq 26,400/-0.53%、Dow 53,558/-0.02%）；10Y 4.68%、PCE 3.7%、密歇根信心 51.7；8/27 仅 Technology +3.16% 独涨后 8/28 资金回补防御。因子环境从 8/28 期"AI 单一主线"切换为"鹰派利率+防御轮动+选股克制"杠铃结构（Alpha#30 波动率风险折价上调至最高）
+- Top 20: Tier1 = NVDA (9.2)/MSFT (8.8)/CRWD (8.6)/COST (8.5)/GOOGL (8.5)；Tier2 = CRM (8.4)/MU (8.3)/AVGO (8.2)/CEG (8.1)/PANW (8.0)；Tier3 = AMD (7.9)/VST (7.8)/MRVL (7.7)/SNDK (7.6)/INTC (7.6)/V (7.6)/OKTA (7.5)/META (7.4)/TSLA (7.4)/ZS (7.3)
+- Sector mix: 半导体 7 (NVDA/MU/AVGO/AMD/MRVL/SNDK/INTC) + 网络安全 4 (CRWD/PANW/OKTA/ZS) + 软件云 2 (MSFT/CRM) + 通信 2 (GOOGL/META) + 电力核电 2 (CEG/VST) + 必选消费 1 (COST) + 金融支付 1 (V) + 消费电车 1 (TSLA)
+- Key calls: NVDA FY28 +70% 指引但毛利率 Q4 降至 71-72%/回吐；MRVL"确认非催化"（Google 协议收入时点受质疑）；SNDK +35% 内存超级周期；GOOGL 逆势上涨+Berkshire 增持；COST/CEG/VST/V 防御质量新入 vs 纯科技（16/20→13/20）
+- Risks: 鹰派 Fed 加息尾部 + AI capex 集中度（3 家占盈利增量 70%）+ 财报追涨（CRM/OKTA/CRWD RSI 超买）+ NVDA 自身矛盾（强指引 vs 利润率+循环融资）+ 内存周期顶点 + 板块轮动极端加速
+- Updated: wiki/index.md (Synthesis table new wq101-alpha-daily 2026-08-29 entry)
+- New pages: wiki/synthesis/2026-08-29/wq101-alpha-daily.md
 - Contradictions: none
