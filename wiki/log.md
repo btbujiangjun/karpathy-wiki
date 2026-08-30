@@ -5225,3 +5225,10 @@
 - Updated: wiki/index.md (Synthesis table new conference-digest 2026-08-30 entry)
 - New pages: wiki/synthesis/2026-08-30/conference-digest.md
 - Contradictions: none
+
+## [2026-08-30] synthesis | investment-daily 2026-08-30
+- 周末报告（无交易日）：聚焦下周一（9/1）开盘前消息面与 9 月第一周前瞻催化剂。
+- Key events: 苹果 9/10 发布会官宣（iPhone 18 Pro 系列 + 首款折叠屏 iPhone Ultra，新 CEO John Ternus 首秀）；百度 9/1 双重主要上市生效、最快 9/7 纳入港股通；英伟达财报余波（FY28 +70% 指引、capex $119B→$279B、毛利率三季连降）+ Fed Warsh 鹰派（9 月加息概率 ~50%）；9/1 港股八收官 + 美团财报反价 + 百度港股通 + 南向 vs 夜期博弈；A 股 8/28 算力获利回吐（寒武纪重回千元 1,029.53、中际旭创 937.64 +3.70%、新易盛 439.10 +6.06%）后 9/7 华为 / 9/10 苹果发布会事件驱动。
+- 新增: wiki/synthesis/2026-08-30/investment-daily.md
+- Updated: wiki/index.md (Synthesis 新增投资日报 2026-08-30), wiki/roles/investors.md (投资日报表格新增 2026-08-30)
+- Contradictions: none
