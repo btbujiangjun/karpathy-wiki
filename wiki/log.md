@@ -5307,3 +5307,14 @@
 - Updated: wiki/index.md（Synthesis 表 08-31 批次内新增 investment-daily 条目）
 - New pages: wiki/synthesis/2026-08-31/investment-daily.md
 - Contradictions: none（注：A股 8/31 "探底回升 +1.78%"为低质聚合源，与 8/31 低开实况矛盾，未采信；智谱 8/31 早盘涨超 11% 为单源待确认标 tentative；中概 8/28-31 逐股涨跌待确认）
+
+## [2026-08-31] synthesis | wq101-alpha-daily (2026-08-31)
+- Summary: wiki/synthesis/2026-08-31/wq101-alpha-daily.md — WorldQuant 101 Alpha 因子美股量化选股 Top 20 报告。数据口径：美股 8/28（周五）完整收盘 + 8/31（周一）早盘/期货信号；全篇中文，附 ⚠️ 免责声明与 WorldQuant 101 因子框架说明。
+- 市场环境：Fed Warsh 杰克逊霍尔放鹰（9月加息概率 ~57.5%、2Y 4.348%、10Y 4.72%）+ 8/30-31 周末美伊军事升级（美军炸伊朗拉腊克岛/伊朗回击驻约旦美军）→ 周一布油破 $90、WTI 破 $85、美股期货走低（S&P CFD ~7,686 -0.34%）；摩根士丹利上修布油 Q4 至近 $100。
+- 因子框架：选用 Alpha#1 动量、Alpha#6 量价相关、Alpha#12 量价背离、Alpha#19 均值回复、Alpha#30 波动量价、Alpha#41 趋势偏离（另 Alpha#53 反转备用）；6 维加权评分（板块+基本面权重 30%）。
+- Top 20（当前三重驱动杠铃）：Tier1 NVDA(9.3)/MSFT(9.0)/XOM(8.8)/AVGO(8.7)/CVX(8.6)；Tier2 JPM(8.5)/LLY(8.4)/META(8.3)/COP(8.1)/GOOGL(8.0)；Tier3 MS(7.9)/AMZN(7.8)/UNH(7.7)/PLTR(7.6)/GILD(7.5)/CEG(7.4)/TEAM(7.3)/MRNA(7.2)/HON(7.1)/GS(7.0)。
+- 板块分布：技术/软件/半导体 6、能源 3、金融 3、医疗/制药/生物 4、通信 2、工业 1、公用事业/核电 1。
+- 结论：能源（伊朗溢价）+ 金融（收益率陡峭/M&A 繁荣）+ 科技/AI（NVDA 财报验证主线）三重驱动；9/4 非农为"一元决定事件"；PLTR/TEAM/MRNA 等短线暴涨股均值回复风险高，建议杠铃配置控制高弹性仓位。
+- Updated: wiki/index.md（Synthesis 表 08-31 批次内新增 wq101-alpha-daily 条目）
+- New pages: wiki/synthesis/2026-08-31/wq101-alpha-daily.md
+- Contradictions: none（注：个股点位为区间/近似值用于因子方向判断，非精确报价，已在报告内标注）
