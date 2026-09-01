@@ -4,6 +4,17 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-09-01] synthesis | wq101-alpha-daily (2026-09-01)
+- Summary: wiki/synthesis/2026-09-01/wq101-alpha-daily.md — WorldQuant 101 Alpha 因子选股日报，基于 7 类核心因子（Alpha#1 动量 / #6 量价相关 / #12 量价背离 / #19 均值回复 / #30 波动率 / #41 趋势强度 / #53 反转）对美股中大盘股（市值>$10B）量化筛选，精选 Top 20。
+- 市场背景（8/31 收盘）: 道指 -0.70% 53,185.9 / 标普 -0.33% 7,686.14 / 纳指 -0.12% 26,370.89；8月道指 +1.34%（连续5月收涨）/ 标普 +2.62% / 纳指 +3.93%（AI 主线最佳）。美伊冲突升级 → 布油重返 $90+、WTI ~$85.76、10Y 4.75%、9月加息概率 ~66%（9/16 FOMC）。板块轮动: Energy 独领涨（SLB +4.83% / XOM +2.71% / CVX +2.12%），Healthcare "Heating-Up"，Communication/Consumer 走强，Technology/Utilities 走弱。AI 分化：平台股守（AMZN +3.97% / MSFT +1.68% / AAPL +1.63%）vs AI 硬件链承压（MRVL -10.28% / ARM -6.33% / AMAT -4.29%），NVDA 财报后回撤 ~$217（支撑 $200/$190）。
+- Top 5: LLY(9.2) / XOM(9.0) / MRK(8.8) / CVX(8.5) / CRWD(8.5)。本日因子环境：Energy 动量+量价共振（地缘油价），Healthcare 防御动量取暖，高估值 Tech 动量走弱、9月魔咒下结合 Alpha#12/#53 反转因子审慎追高。
+- 板块分布: Healthcare×6（LLY/MRK/JNJ/UNH/VEEV/MRNA） / Technology×6（CRWD/PLTR/MSFT/NOW/TEAM/SNDK） / Energy×4（XOM/CVX/SLB/HAL） / Consumer Discretionary×2（AMZN/TSLA） / Financial×2（V/COIN）
+- 关键亮点: LLY 近一年 +74~78% 逼近 ATH；MRK 一年 +89.5%（mRNA 癌症疫苗）；XOM/CVX 年内 +33~36%；CRWD 年内 +94% 创高（Fal.Con）；8月反弹 PLTR +48% / TEAM +83.6% / NOW +33%。
+- 风险: 9月魔咒+加息（标普9月平均 -1.1%）；油价地缘溢价可逆；Healthcare 短期过热（MRNA +150%）；高动量追高（PLTR/TEAM/CRWD P/S 极端）；NVDA/AI 硬件链分化；AMZN FTC 反垄断。
+- Updated: wiki/index.md (Synthesis 表 09-01 批次顶部新增 wq101-alpha-daily 条目)
+- New pages: wiki/synthesis/2026-09-01/wq101-alpha-daily.md
+- Contradictions: none（数据与同日 investment-daily 一致；XOM/CVX 盘中 24/7 Wall St 报价 207/161 与收评 160.95/206.14 略有差异，以 Yahoo/exa 收盘口径为准）
+
 ## [2026-09-01] synthesis | investment-daily (2026-09-01)
 - Summary: wiki/synthesis/2026-09-01/investment-daily.md — 每日投资热点（美股/港股/A股/中概/AI/新能源）。
 - 核心: 9/1 为"多事件日"——SHEIN(00625.HK) 港股挂牌首日、苹果库克卸任/特努斯接任 CEO、华为 2026H1 营收 4,678.19 亿(+9.55%)/净利 234 亿(-35%)/研发 1,213 亿创新高、蔚来 Q2 财报+新势力 8 月交付、百度双重主要上市生效。
