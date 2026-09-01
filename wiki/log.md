@@ -4,6 +4,17 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-09-01] synthesis | tech-report-digest (2026-09-01)
+- Summary: wiki/synthesis/2026-09-01/tech-report-digest.md — LLM Tech Report Digest **Delta 版** (vs 08-31 全量基准 [[../2026-08-31/tech-report-digest]]), 聚焦 08-26 → 09-01 窗口。09-01 早间无重大新模型发布。
+- 🆕 **腾讯混元 Hy4 preview 正式收录（第 20 家口径）**：770B/49B active MoE（256 routed + 1 shared，top-8+shared）、1M ctx、Apache 2.0、**递归自我改进闭环**（自主分析推理瓶颈→算子融合/通信→端到端吞吐 +31.8%）、内部盲测 2.99/4.00（163 专家/203 任务）略优于 GLM-5.3 (2.92) 与 Kimi K3 (2.94)、Arena 代码第 5/开源第 3、Terminal Bench 2.1 85.4、DeepSWE 28.0→64.3、定价 ¥6/¥18 per M、08-28 开源（HF/ModelScope/GitCode/CNB）。
+- ⚡ **GLM-5.3 权重矛盾化解**：多方信源（IT之家 08-29、DataLearner 08-31、智谱 HF 官方卡）确认权重确于 **08-28 开源**（FP8 + BF16 双版），explainx "未兑现" 说法为过时/错误予以排除；参数量统一为官方 **744B-A40B**（743B/753B 为未定稿估数）；License 营收阈值定案 **$10B USD（100 亿美元）**（原 "$100B" 说法作废）。
+- OpenAI：GPT-5.4 于 08-31 退役、由 GPT-5.6 取代；Atlas 浏览器 08-09 关闭；**Pentagon 08-31 接入 ChatGPT / Grok**。
+- xAI Grok 5 仍延后（原 2026 Q1 目标多次顺延，~6T 参数 MoE 在 Colossus 2 训练；最新 Grok 4.6 Model Card 08-12）。
+- 其余 14 家机构（DeepSeek/Meta/Google/Anthropic/Mistral/Qwen/Microsoft/NVIDIA/Amazon/Kimi/StepFun/Baichuan/InternLM/01.AI/Apple）08-31 后均无新 tech report / system card，延续 08-31 基准；ByteDance 记录 08-21 Seed 组织调整（预训练数据统一支撑新 Omni 模型）。
+- Updated: wiki/index.md（Synthesis 表 09-01 批次内新增 tech-report-digest 条目）
+- New pages: wiki/synthesis/2026-09-01/tech-report-digest.md
+- Contradictions: resolved 1 — GLM-5.3 权重是否 08-28 开源（explainx vs 官方/IT之家/DataLearner → 采信已开源）；GLM-5.3 参数量 743B/744B/753B → 统一 744B-A40B；License 阈值 $10B/$100B → 定案 $10B USD
+
 ## [2026-09-01] synthesis | conference-digest (2026-09-01)
 - Summary: wiki/synthesis/2026-09-01/conference-digest.md — comprehensive survey of recent papers from top ML/AI conferences (2025–2026 cycle: ICLR/ICML/NeurIPS/KDD/CVPR/AAAI/ACL/EMNLP/SIGIR/WWW/CIKM/RecSys) + latest arXiv preprints (late-Aug 2026 wave ~2608.17xxx–27xxx).
 - **46 papers across 5 categories**: LLM Post-training/RLVR & Credit Assignment (credit-assignment shift to transport operators CompPO/CCT, step-level audit Credit Without Ground Truth, self-reflective dense reward SRPO, value-function regression Le Critique/Privileged Value Functions); Agent Systems & Agentic RL (EnvHarness, Prime Agent, AHEAD, EDGE, EnvACE, E2-Explainer/Consilience/DeAR/ExRole); Recommendation/Advertising/CTR/Sequential (Kuaishou PushDualGen/HRPO/UniMoMo/GR4AD, Tencent OneRanker/STAR/UniDot, Baidu GRAB, Alibaba CRRN, ICML'26 CausalDPO/ProRL/CFlower/RSIR, FAT CTR scaling law); World Models & Games (Code World Model, Code-as-World, Twin, WorldMind, WALL-SS, LDR, ForgeWM); Generative Models & Benchmarks/Conference Trends (ICLR 2026 / NeurIPS 2025).
