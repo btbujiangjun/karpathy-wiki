@@ -5456,3 +5456,11 @@
 - Updated: wiki/index.md（Synthesis 表 arxiv-daily 2026-09-02 条目之后新增 arxiv-paper-check 2026-09-02 条目）
 - New pages: wiki/synthesis/2026-09-02/arxiv-paper-check.md
 - Contradictions: none
+
+## [2026-09-02] synthesis | 投资日报 investment-daily 2026-09-02
+- Summary: wiki/synthesis/2026-09-02/investment-daily.md
+- 来源: 新浪财经、东方财富、证券时报、财联社、华尔街见闻、英为财情/Investing、MacroMicro、华盛通、每日经济、腾讯/21 经济、连板网等公开新闻（网络搜索汇编，非 raw/ 源文件）
+- Content: 美股 AI 存储涨价（英伟达 AI 服务器明年交付价或 +15%+/GB300·Rubin ~17%，1GW 数据中心成本或 +$5 亿）+ 英伟达 Q2（$96.2B +106%、Vera Rubin 全面投产、FY28 +70% 指引、订单 >$2T/采购承诺 $2,790 亿、毛利率触底 71~72%）+ Broadcom Q3 财报（9/2 定制 ASIC 链关键验证）；港股科指回落 ~4,489（快手可灵 AI 领涨、MiniMax/智谱大模型双雄逆势）；A 股情绪退潮（涨停 ~30 家最高 5 板，主线军工/化工/股权转让/AI 视频/零售）；中概/EV 8 月交付与 Q3 指引；未来 48 小时关注 Broadcom/非农/华为发布会/苹果发布会
+- Updated: wiki/index.md（Synthesis 表新增 investment-daily 2026-09-02 条目）
+- New pages: wiki/synthesis/2026-09-02/investment-daily.md
+- Contradictions: none（存储/服务器涨幅 15% vs 17% 为并列的公开报道口径，已如实标注）
