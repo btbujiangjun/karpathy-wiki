@@ -5399,3 +5399,39 @@
 - Updated: wiki/index.md（Synthesis 表新增 arxiv-daily 2026-08-29 条目）
 - New pages: wiki/synthesis/2026-08-29/arxiv-daily.md
 - Contradictions: none
+
+## [2026-09-02] synthesis | arxiv-daily (2026-09-02)
+- Summary: wiki/synthesis/2026-09-02/arxiv-daily.md — 跨领域 arXiv 日报（LLM/agent/推荐/广告/CTR/序列建模/游戏），基于 websearch + 直接抓取 arxiv abs 页，覆盖 late-Aug→early-Sep 2026 投稿潮。13 篇 featured + 5 篇 HM，按 5 类组织。
+- LLM Agents & Self-Evolving/Agentic Rec: Self-Evolving Rec System (2602.10226, YouTube, Gemini LLM-MLEs 端到端自演化, Offline Fast/Online Slow 双环, 多个生产发布); CoVeMem (2608.26895, 协作向量记忆替换文本记忆, LightGCN memory bank + soft tokens, 零额外 LLM 调用, 19/20 metric cells 追平/超越); Stageboost (2608.27366, eBay 反事实信号选择/排序, 2-stage XGBoost, +0.08% GMB/+0.58% Parts GMB).
+- Advertising/CTR: CADET (2602.11410, LinkedIn decoder-only ads CTR, context-conditioned heads + timestamp RoPE + self-gated attention, +11.04% CTR over LiRank, 服务 homefeed sponsored 主流量); Quantizing Intent 跨域语义 ID (2606.01396).
+- Sequential Modeling: TGA Transition-Aware Graph Attention Network (2601.14955, 线性复杂度多行为建模, item/category/neighbor 三级转移图, WWW'26 短, 工业部署); Beyond Positive Signals 隐式负行为 (2606.15252).
+- LLM Training/RLVR: Weak-Model Guidance in RLVR (2608.27420, 弱模型外前缀破坏过度自信, 缓解 entropy collapse, pass@k 增益随 k 放大).
+- Game AI: Augmenting Game AI with Deep RL (2606.20210, EA 愿景文, 生产 NPC 而非超人类 playing, 训练时间/漂移/可塑性为瓶颈, CoG 2026).
+- HM: Understanding LLMs (2607.01006); How LMs Organize Moral Knowledge (2608.27402); PANTHER WeChat Pay (2510.10102); D3ER MMRec (2608.25737, ACMMM'26); VK-GNN friend rec (2608.27413, CIKM'26).
+- Updated: wiki/index.md（Synthesis 表顶部新增 arxiv-daily 2026-09-02 条目）
+- New pages: wiki/synthesis/2026-09-02/arxiv-daily.md
+- Contradictions: none
+
+## [2026-09-02] synthesis | arxiv-ai-search (2026-09-02)
+- Summary: wiki/synthesis/2026-09-02/arxiv-ai-search.md — 跨领域 arXiv 深度报告 (AI/LLM/推荐/广告/CTR/序列建模/游戏)，聚焦 1-2 Sep 2026 投稿新潮 `2609.xxxxx`，与同日 arxiv-daily 互补。17 featured + 2 HM，所有 arXiv ID grep-verified 不在 wiki/。
+- ① Industrial Recommendation, Ranking & Advertising (4): ReST (2609.01240, rec-native 序列 Transformer 扩展, dual-gated attention + rotary temporal PE + encoder/decoder 分解 shared-prefix serving, 在线 A/B +1.31% AUC/+11.93% 营收, 全量部署); TGR Tencent Generative Recommendation (2609.00986, GenRank CCFormer +3.57% CTR/+1.71% 广告收入, GenRec BARGE/HiGR whole-slate, GenReason cold-start new-user Hit@1 +477.8%, 数亿用户规模部署); SwapRec (2609.00913, 训练时 cold-item swap 对齐推理时 warm-neighbor 启发式, RecSys'26 DaQuaMRec); CoGR (2609.00638, 生成式检索 query+item 双侧 LLM 关键词生成 + 交替 GRPO 共演化, F1 +10.9%/+36.1%, Google-inferred, WANDS).
+- ② Sequential & Conversational Recommendation (4): TS-SSM (2609.00165, two-sided SSM + MNAR 多模态评论融合 + 非对称 item 反馈 carryover, Recall@20 +14.8-18.8% over BSARec, Findings EMNLP'26); WMG-RL (2609.01067, 用户参与 world model 提供线上前稠密奖励, 1.7B student 追平更大 LLM, EMNLP'26); DREAMS (2609.00618, dual-node MCTS elicit/exploit 结构上下文建模); HypReflect (2609.00251, 显式不确定性偏好假设 + hypotheses-guided self-distillation, Amazon-inferred).
+- ③ LLM-Driven Rec Evaluation & Experimentation (3): RPCBench (2609.00918, premise-critique 基准, 主动检测为瓶颈 + overthinking penalty, 11 LLM); Authority bias in conversational search (2609.00248, 因果 flipped/boosted 元数据, say-do gap, EMNLP'26 Main); Persona A/B simulation (2609.01038, 行为数据驱动的 persona-conditioned agents, 0.75-0.90 directional accuracy, EMNLP'26 Industry).
+- ④ LLM Agents, RL & Self-Evolution (3): ARISE-RL (2609.01058, Generator/Solver rubric 共演化 + reward-gated self-distillation RG-SED + ECR-Bench); AgentFactory (2609.01045, 模型+workflow 联合自动优化, +9.1% avg, MedQA 19.6%); One Policy Is Enough (2608.30952, 单策略 RL 胜过 hierarchical MCTS 化学工具学习, programmatic reward off gold chains, 无 critic/judge).
+- ⑤ Games, World Models & Autonomous Software Development (3): CM-PTM (2609.01057, 移动游戏跨多源行为预训练, cascaded mask-then-predict, ICDM'26); HyperWorld (2609.00002, hypergraph 状态序列化文本 world model, 0.5B-1.5B + OOD 增益, v1 日期 2026-06-12 见于 2609 新潮列表); Harness-of-Harness (2609.01481, 多日自主软件开发, 平均 +52.25% relative gain, 70+ 迭代自主构建可玩 FPS).
+- ⑥ Economic Theory & Mechanism Design (1): Mechanism Design for Alignment and Control (2609.01595, Bergemann/Koh/Morris, unknown alignment+capabilities 下的 mechanism design, sandbagging 建模, peer scoring, scalable oversight).
+- HM: Does OPD Really Distill/OPSA (2608.31046); WorldBench (2609.01056).
+- Updated: wiki/index.md（Synthesis 表顶部新增 arxiv-ai-search 2026-09-02 条目）
+- New pages: wiki/synthesis/2026-09-02/arxiv-ai-search.md
+- Contradictions: none（注: HyperWorld 2609.00002 abs 页显示 v1 日期为 2026-06-12, 但作为 2609.xxxxx 新潮条目出现在 2 Sep 列表扫描中, 已按页面所示如实标注）
+
+## [2026-09-02] synthesis | arxiv-paper-check (2026-09-02)
+- Summary: wiki/synthesis/2026-09-02/arxiv-paper-check.md — AI & CTR arXiv Paper Check，作为同日 arxiv-daily 的新一波补充。4 篇 featured + 4 篇 HM，所有 ID grep 验证未出现在 wiki/ 且与 09-01/09-02 兄弟 digest 的 claimed 集合无重叠。直接 arXiv API/curl 被网络环境阻断，改用 websearch 抓取 abs/html 页面。
+- LLM Agents / Tool-Calling: CAST (2608.30147, ASU + Cisco Research，将稀疏任务结果转为 action-level critique 监督用于 critique model + policy 优化，Qwen3 微调在 Retail 上 >10% pass⁴ 优于 GPT-OSS-120B、Telehealth OOD +9%)。
+- LLM Pre-training / Data Augmentation: REER-PT (2608.30627, 逆向工程推理 + perplexity 引导的预训练数据增广，离线插入简洁推理标注、无在线 rollout；680M 模型在知识/推理 benchmark 上 +2.07 pp)。
+- Efficient Attention: LoGo (2608.29539, token 级动态 local-global attention，学习门控只为需长程信息的 token 开启全局 attention + 阈值预算控制 + query-sparse Triton kernel；保持 full-attention scaling，长程检索提升)。
+- Retrieval / Causal Reranking for RAG: From Association to Causation (2608.21702, Beihang，基于 Reichenbach common-cause 的 collider-opening training-free 重排规则，守护企业 KB 的 keyword-stuffing 场景：rank 6→top 3、mean target rank 2.88→1.25；BEIR 上不如 baseline 并明确 scope boundary)。
+- HM: CSE Constraint Saturation Evaluation (2608.12426); BLADE bilevel LLM unlearning (2608.22557); SAUL sharpness-aware unlearning (2608.16249)。
+- Updated: wiki/index.md（Synthesis 表 arxiv-daily 2026-09-02 条目之后新增 arxiv-paper-check 2026-09-02 条目）
+- New pages: wiki/synthesis/2026-09-02/arxiv-paper-check.md
+- Contradictions: none
