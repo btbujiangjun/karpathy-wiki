@@ -17,7 +17,7 @@ tags: [conference-digest, icml-2026, emnlp-2026, icdm-2026, sigir-2026, ase-2026
 
 ## 🏭 概述 Overview
 
-本期 conference-digest 聚焦 **9 月初新鲜提交波（`2609.0xxxx`）**，并标注了已确认的会议录取（**EMNLP 2026、ICML 2026、IEEE ICDM 2026、35th ACM、ASE 2026、SOSP AgenticOS 2026** 等）。与同日 sibling digest 去重后，重点覆盖其未触及的 **MoE 推理/量化、LLM 后训练科学与 RLVR 审计、对话式/证据型推荐、世界模型、代码执行智能体、生成模型、基准评测** 专题。
+本期 conference-digest 聚焦 **9 月初新鲜提交波（`2609.0xxxx`）**，并标注了已确认的会议录取（**EMNLP 2026、ICML 2026、35th ACM、ASE 2026、SOSP AgenticOS 2026** 等）。与同日 sibling digest 去重后，重点覆盖其未触及的 **MoE 推理/量化、LLM 后训练科学与 RLVR 审计、对话式/证据型推荐、世界模型、代码执行智能体、生成模型、基准评测** 专题。
 
 热门主题：
 1. **MoE 从"选择专家"走向"细粒度路径组合 + 近数据调度 + 硬件感知量化"** —— PCoMoE（EMNLP'26）、DynaNDE、SMELT（looped-MoE Scaling Law）将 MoE 推理粒度从整专家拆解到子路径/微块；量化侧 QTEA（ternary）、OCGQuant（NVFP4）、HBQ 逐层微格式推进低比特部署；Instella-MoE（AMD）提供纯开源 16B/2.8B MoE 从零训练基线。
@@ -343,12 +343,11 @@ tags: [conference-digest, icml-2026, emnlp-2026, icdm-2026, sigir-2026, ase-2026
 
 ---
 
-## 七、基准评测与结论（Benchmarks & Conclusions）
+## 七、基准评测（Benchmarks）
 
-### 33. RPCBench — 已被同日 [[arxiv-ai-search]] 收录（去重排除），此处不展开。
-### 34. WorldBench — 已被同日 [[arxiv-ai-search]] 收录（去重排除），此处不展开。
+> **去重说明**：基准方向两个同日候选 **RPCBench**（proactive premise critique for LLM rec, [2609.00918](https://arxiv.org/abs/2609.00918)）与 **WorldBench**（culturally-grounded multilingual agents, [2609.01056](https://arxiv.org/abs/2609.01056)）已由同日 [[arxiv-ai-search]] 收录，此处不再展开。
 
-> 基准方向本日另有 **MUSES（#19）** 与 **GUI-CC（#22，EMNLP'26 Findings）** 两个未被 sibling 覆盖的新基准，详见对应小节。
+本日未被他 digest 覆盖的新基准见：**MUSES（#19）**（前瞻性思想根源检索）与 **GUI-CC（#22，EMNLP'26 Findings）**（GUI 世界模型多步一致性），详见对应小节。
 
 ---
 
@@ -370,4 +369,4 @@ tags: [conference-digest, icml-2026, emnlp-2026, icdm-2026, sigir-2026, ase-2026
 
 ---
 
-*本摘要由 arXiv 与会议检索自动生成，部分机构与录取信息为"inferred"需以原文为准。链接为 arXiv abstract 页或会议页面。已与同日 sibling digests 去重；本页 34 篇唯一论文的 arXiv ID 均经 grep 校验未在 `wiki/` 中重复收录。*
+*本摘要由 arXiv 与会议检索自动生成，部分机构与录取信息为"inferred"需以原文为准。链接为 arXiv abstract 页或会议页面。已与同日 sibling digests 去重；本页 32 篇唯一论文的 arXiv ID 均经 grep 校验未在 `wiki/` 中重复收录。*
