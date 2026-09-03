@@ -5464,3 +5464,18 @@
 - Updated: wiki/index.md（Synthesis 表新增 investment-daily 2026-09-02 条目）
 - New pages: wiki/synthesis/2026-09-02/investment-daily.md
 - Contradictions: none（存储/服务器涨幅 15% vs 17% 为并列的公开报道口径，已如实标注）
+
+## [2026-09-03] arxiv-daily
+- Summary: wiki/synthesis/2026-09-03/arxiv-daily.md
+- Papers covered: 35 across 6 categories (LLM, Rec, CTR, Sequential, Advertising, Games)
+- Key topics: LLM-native recommendation (Netflix GenRec, Taobao EST), token-level advertising (LAMA, Neuron Auctions), recursive refinement (RecRec), test-time world models (Twin), CTR scaling laws (EST)
+
+## [2026-09-03] synthesis | arxiv-paper-check (2026-09-03)
+- Summary: wiki/synthesis/2026-09-03/arxiv-paper-check.md — AI & CTR arXiv Paper Check，作为同日 arxiv-daily / arxiv-ai-search 的补充。4 篇 featured，全部提交于 Sep 1–2, 2026（fresh 2609 wave），所有 ID grep 验证未出现在 wiki/ 且与 09-01/09-02 兄弟 digest 及 09-03 arxiv-daily(2609.00323)/arxiv-ai-search(2609.01182) 的 claimed 集合无重叠。直接 arXiv API/curl 受限，改用 websearch + abs 页 webfetch。
+- Deep Research Agents / Hypothesis-Guided Search: HypoSearch (2609.01294, Explore-Before-Commit——生成轻量 hypothesis 作为软搜索提示，bounded 独立分支探索 + branch-level evidence 对比后再 commit，混合式 test-time scaling；Qwen3.5-122B 在 BC-small 46.7→60.0 且工具调用更少)。
+- Multimodal Document Retrieval: MIDR (2609.01316, EMNLP 2026, Bloomberg-inferred——把多模态推理移到 index time，多模态 LLM 将渲染页转成已验证文本字段，BM25F+dense 融合；ViDoRe V3 0.6219 avg nDCG +23.0% vs BM25，与 ColQwen2.5 相当，4/7 域领先，~9× 更小索引内存 + ~2× 更低延迟)。
+- Composed Image Retrieval: AutoConcept (2609.01456, PRICAI 2026——训练无关 concept-guided reranker，concept 证据转可解释记忆，过滤噪声 + 正约束 + 负惩罚 + inference-time 校准；FashionIQ 早期 rank 提升 + LinCIR 池 plug-in 增益)。
+- Data-Centric Agents / Persistent Discovery Context: Beyond Context Windows (2609.02129, Jalal Mahmud——轻量记忆层存 prior intent-to-object 映射并复用增强后续检索，3 个结构化数据环境优于 metadata-only 检索，lexically sparse 域 memory-only 甚至超过 metadata)。
+- Updated: wiki/index.md（Synthesis 表顶部新增 arxiv-paper-check 2026-09-03 条目）
+- New pages: wiki/synthesis/2026-09-03/arxiv-paper-check.md
+- Contradictions: none（注意：CTR/industrial-ranking 类新作——ReST 2609.01240 / TGR 2609.00986 / CoGR 2609.00638 等已被 09-02 兄弟 digest 及 09-03 arxiv-daily 覆盖，本期不重复收录）

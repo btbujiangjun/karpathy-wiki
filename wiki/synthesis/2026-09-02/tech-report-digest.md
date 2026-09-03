@@ -19,28 +19,28 @@ sources: []
 
 ## 目录 / Table of Contents
 
-| # | 机构 | 模型 | 发布日期 | 本窗口状态 |
-|---|------|------|----------|-----------|
-| 1 | **Anthropic** | **Claude Fable 5.1 / Mythos 5.1** | **2026-09-01** | **🆕 全新增入（新 SOTA）** |
-| 2 | **Meta AI** | **Muse Voice Transcribe** | **2026-09-01** | **🆕 全新增入（实时音频感知）** |
-| 3 | **Google DeepMind** | Gemini Agentic Video (3.7 Flash / 3.6 Flash / 3.5 Flash-Lite) | 2026-09-01 | **🆕 新增能力** |
-| 4 | DeepSeek | DeepSeek-V4 (Pro / Flash / Flash-Vision-Exp) | 2026-04~08 | 补充录入 Flash-Vision-Exp (08-30, MIT) |
-| 5 | OpenAI | GPT-5.6 (Sol / Terra / Luna) | 2026-07/08 | 无新增（Astra 家族待审） |
-| 6 | Qwen (Alibaba) | Qwen3.8 系列（Next 预告 Qwen4 架构） | 2026-08 | 无新增 |
-| 7 | Microsoft | MAI-Thinking-1 / Phi | 2026-08 | 无新增 |
-| 8 | NVIDIA | Nemotron 3 | 2026-06/08 | 无新增 |
-| 9 | xAI | Grok 4.6 / Grok 5（延后） | 2026-08-12 | Grok 5 仍延后 |
-| 10 | 腾讯 Tencent | Hy4 preview | 2026-08-28 | 无新增（成熟窗口） |
-| 11 | Zhipu AI | GLM-5.3 / 5.3-Flash | 2026-08 | 无新增 |
-| 12 | Moonshot AI | Kimi K3 | 2026-07-27 | 无新增 |
-| 13 | StepFun | Step 系列 | 2025~2026 | 无新增 |
-| 14 | ByteDance | Seed 系列 | 2026-06/08 | 无新增 |
-| 15 | Baichuan | Baichuan-M4 / M3 | 2026-06/01 | 无新增 |
-| 16 | InternLM | Intern-S2 / S1 | 2026-08/03 | 无新增 |
-| 17 | 01.AI | Yi-Lightning | 2024-12 | 无新增 |
-| 18 | Amazon | Nova 2 | 2025-12/2026 | 无新增 |
-| 19 | Apple | AFM 3 | 2026-06-08 | 无新增 |
-| 20 | Mistral AI | Shieldstral / Small 4 / Large 3 | 2026-03/12 | 无新增 |
+| #   | 机构                  | 模型                                                            | 发布日期           | 本窗口状态                              |
+| --- | ------------------- | ------------------------------------------------------------- | -------------- | ---------------------------------- |
+| 1   | **Anthropic**       | **Claude Fable 5.1 / Mythos 5.1**                             | **2026-09-01** | **🆕 全新增入（新 SOTA）**                |
+| 2   | **Meta AI**         | **Muse Voice Transcribe**                                     | **2026-09-01** | **🆕 全新增入（实时音频感知）**                |
+| 3   | **Google DeepMind** | Gemini Agentic Video (3.7 Flash / 3.6 Flash / 3.5 Flash-Lite) | 2026-09-01     | **🆕 新增能力**                        |
+| 4   | DeepSeek            | DeepSeek-V4 (Pro / Flash / Flash-Vision-Exp)                  | 2026-04~08     | 补充录入 Flash-Vision-Exp (08-30, MIT) |
+| 5   | OpenAI              | GPT-5.6 (Sol / Terra / Luna)                                  | 2026-07/08     | 无新增（Astra 家族待审）                    |
+| 6   | Qwen (Alibaba)      | Qwen3.8 系列（Next 预告 Qwen4 架构）                                  | 2026-08        | 无新增                                |
+| 7   | Microsoft           | MAI-Thinking-1 / Phi                                          | 2026-08        | 无新增                                |
+| 8   | NVIDIA              | Nemotron 3                                                    | 2026-06/08     | 无新增                                |
+| 9   | xAI                 | Grok 4.6 / Grok 5（延后）                                         | 2026-08-12     | Grok 5 仍延后                         |
+| 10  | 腾讯 Tencent          | Hy4 preview                                                   | 2026-08-28     | 无新增（成熟窗口）                          |
+| 11  | Zhipu AI            | GLM-5.3 / 5.3-Flash                                           | 2026-08        | 无新增                                |
+| 12  | Moonshot AI         | Kimi K3                                                       | 2026-07-27     | 无新增                                |
+| 13  | StepFun             | Step 系列                                                       | 2025~2026      | 无新增                                |
+| 14  | ByteDance           | Seed 系列                                                       | 2026-06/08     | 无新增                                |
+| 15  | Baichuan            | Baichuan-M4 / M3                                              | 2026-06/01     | 无新增                                |
+| 16  | InternLM            | Intern-S2 / S1                                                | 2026-08/03     | 无新增                                |
+| 17  | 01.AI               | Yi-Lightning                                                  | 2024-12        | 无新增                                |
+| 18  | Amazon              | Nova 2                                                        | 2025-12/2026   | 无新增                                |
+| 19  | Apple               | AFM 3                                                         | 2026-06-08     | 无新增                                |
+| 20  | Mistral AI          | Shieldstral / Small 4 / Large 3                               | 2026-03/12     | 无新增                                |
 
 ---
 
