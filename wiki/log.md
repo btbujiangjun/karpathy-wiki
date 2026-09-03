@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-09-03] synthesis | investment-daily (2026-09-02)
+- Summary: wiki/synthesis/2026-09-02/investment-daily.md — Daily Investment Briefing covering US/HK/A-share tech & AI sectors.
+- Key highlights: 三大指数止跌回升（道指 +0.56%，标普 +0.46%，纳指 +0.45%）；10Y 国债收益率冲至 4.814%，美联储 9 月加息概率 69%。Mag7 分化：NVDA +3.21%、META +2.47% 领涨。DELL +15.76% 上调全年指引，SNOW 盘后 +21% 上调营收指引，AVGO AI 业务三年翻倍至 $2300 亿。特斯拉 Cybercab 9/3 发布会（无方向盘/踏板，售价 <$3 万）。燧原科技 688801.SH IPO 开启申购（发行价 142.18 元，腾讯/小米战配），中签率 0.02455% 低于摩尔/沐曦。光模块双雄中际旭创 + 新易盛 H1 合计净利 210 亿+，中际旭创 40-80 亿回购。8 月新势力：零跑破 10 万、理想反弹 +24%、蔚来稳定 3.5 万、小米连续 5 月 3 万+。百度双重主要上市生效，最快 9/7 入港股通。国产 AI 链"从 1→N"放量阶段，资本开支仅美国 1/7~1/6。
+- Updated: wiki/index.md（Synthesis 表新增 investment-daily 2026-09-02 条目）
+- New pages: wiki/synthesis/2026-09-02/investment-daily.md
+- Contradictions: 无
+
 ## [2026-09-03] synthesis | tech-report-digest (2026-09-03)
 - Summary: wiki/synthesis/2026-09-03/tech-report-digest.md — LLM Tech Report Digest **Delta 版** (vs 09-02 基准). 聚焦 **09-02 → 09-03** 窗口，Google/Meta/Qwen **三强同日密集发布日**。
 - 🆕 **Google Gemini 3.8 Flash / 3.8 Flash Cyber（09-02）** — 三个月内第三款 Flash（3.6→3.7→3.8，六个月第 4 款）：基于 3.7 Flash 持续训练（"based on Gemini 3.7 Flash"，非新 base，Explains 三周迭代）；AA Intelligence Index **59**（较 3.7 +3；medium 57 追平 GPT-5.6 Terra max / Muse Spark 1.2 xhigh）；官方对 3.7 全面领先 + 在 **3 项超 Claude Opus 5**（Vals Finance Agent v2、Harvey's Legal Agent Benchmark、HLE-Verified 54.9%）；"works harder" 烧更多 thinking tokens 换长程质量；同价 $0.75/$3.75 达 Intelligence-vs-Cost-per-Task Pareto 前沿；第三方 SWE-bench Verified 80.0%、Terminal-Bench 2.1 90.8%；短板：Terminal-Bench 4.0 19.1% vs Opus 5 51.8%、OSWorld-2.0 输 16.4、verbose（AA 74/196）、TTFT 13.30s vs 2.99s 中位。**3.8 Flash Cyber** 为前沿网络防御：CWE-Bench pass@1 47.2%（vs 前端 47.8%，成本远低，Pareto 前沿）、CyberGym 超 3.5 Flash Cyber 与更大前端、20 语言内部漏洞基准 >70%、Chrome Security 补丁 2.6×、Wiz recall +7.5~9.7%（成本 2.3–5.2× 低）、Cloud VR <2h 关键漏洞；仅经新 **Fairwind Program** 对受信防御者放行。
