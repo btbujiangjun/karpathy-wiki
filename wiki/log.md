@@ -4,6 +4,19 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-09-03] synthesis | wq101-alpha-daily (2026-09-03)
+- Summary: wiki/synthesis/2026-09-03/wq101-alpha-daily.md — WorldQuant 101 Alpha 因子美股精选 Top 20。
+- 市场概况: 9/2收盘 — 道指 +0.56% 53,061.95 / 标普 +0.46% 7,666.60 / 纳指 +0.45% 26,217.83；三大指数结束三连跌；小盘股Russell 2000 +1.13%领涨。
+- 板块轮动: 能源 YTD +43% 领跑所有板块（XLE 创52周新高）；医疗保健 RRG 处于领先象限；科技板块进入 Weakening 象限；价值轮动加速（S&P 500 Momentum Index 自7月跌9%）。
+- AI链: 硬件回流（NVDA +3.21%、DELL +15.81%、MU +2.43%），软件资安遭抛售（PLTR -5.83%、PANW -9.28%）；AVGO Q3营收$295.9亿超预期，上调AI长期收入至$2300亿。
+- 宏观: 油价 WTI $90+/布伦特 $95+；10Y国债收益率 4.78%（盘中触及4.82%）；ADP 8月新增就业仅3.8万；9月加息概率超66%。
+- 精选Top20: NVDA(9.0)/CVX(9.0)/XOM(8.5)/META(8.5)/JNJ(8.0)/LLY(8.0)/DELL(8.0)/UNH(7.5)/MU(7.5)/AVGO(7.5)/QCOM(7.0)/MRK(7.0)/AMZN(7.0)/MSFT(7.0)/VLO(7.0)/MA(7.0)/V(6.5)/UNP(6.5)/BAC/GS(6.5)/SNOW(6.5)。
+- 板块分布: 科技/AI硬件×9 / 医疗×4 / 能源×3 / 金融×2 / 工业×1 / 云计算×1。
+- 7因子框架: Alpha#1(动量)/#6(量价)/#12(量价背离)/#19(均值回复)/#30(波动率)/#41(趋势强度)/#53(反转)。
+- Updated: wiki/index.md (Synthesis 表新增 wq101-alpha-daily 2026-09-03 条目)
+- New pages: wiki/synthesis/2026-09-03/wq101-alpha-daily.md
+- Contradictions: none
+
 ## [2026-09-03] synthesis | game-rl-daily (2026-09-03)
 - Summary: wiki/synthesis/2026-09-03/game-rl-daily.md — Game RL & Game AI Bot daily paper digest. 31 papers across 7 categories: Game RL (5: SPIRAL, MARSHAL, STRATAGEM, MEMO, Skill-SP), Game AI Bot (7: WorldMind, PCSP, Sensi, HeRoN, Nemobot, Controlling LLM Characters, Orchestrated Reality), Game Foundation Models (6: NitroGen, Game-TARS, Pixels2Play, Odysseus, Towards Generalist Players, GameVerse), PCG (5: IPCGRL, VIPCGRL, CAD metageneration, Multiverse, Database-Driven 3D), Benchmarks (6: GameWorld, OmniGameArena, lmgame-Bench, VideoGameBench, Orak, DiG-bench), Industry (6: Augmenting Game AI with Deep RL, Matrix-Game 3.0, AI-Native Games, WanToFight, Scalable Generative Game Engine, ABot-World-0), Related Techniques (6: SENSEI, JOWA, WorldLLM, HWM, HiQC, CARL).
 - Key papers: SPIRAL self-play reasoning (2506.24119); MARSHAL multi-agent self-play (2510.15414); STRATAGEM transferable reasoning via trajectory-modulated self-play (2604.17696); NitroGen open foundation model 40K hours/1000+ games CVPR 2026 (2601.02427); Game-TARS foundation model 500B+ tokens ByteDance (2510.23691); WorldMind 4-layer decoupled game world model (2608.21439); PCSP persona-conditioned shared policy (2605.23652); GameWorld 34 games/170 tasks benchmark (2604.07429); WanToFight real-time multiplayer generative game engine (2607.12592); Augmenting Game AI with Deep RL industry framework (2606.20210).
