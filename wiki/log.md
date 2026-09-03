@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-09-03] synthesis | game-rl-daily (2026-09-03)
+- Summary: wiki/synthesis/2026-09-03/game-rl-daily.md — Game RL & Game AI Bot daily paper digest. 31 papers across 7 categories: Game RL (5: SPIRAL, MARSHAL, STRATAGEM, MEMO, Skill-SP), Game AI Bot (7: WorldMind, PCSP, Sensi, HeRoN, Nemobot, Controlling LLM Characters, Orchestrated Reality), Game Foundation Models (6: NitroGen, Game-TARS, Pixels2Play, Odysseus, Towards Generalist Players, GameVerse), PCG (5: IPCGRL, VIPCGRL, CAD metageneration, Multiverse, Database-Driven 3D), Benchmarks (6: GameWorld, OmniGameArena, lmgame-Bench, VideoGameBench, Orak, DiG-bench), Industry (6: Augmenting Game AI with Deep RL, Matrix-Game 3.0, AI-Native Games, WanToFight, Scalable Generative Game Engine, ABot-World-0), Related Techniques (6: SENSEI, JOWA, WorldLLM, HWM, HiQC, CARL).
+- Key papers: SPIRAL self-play reasoning (2506.24119); MARSHAL multi-agent self-play (2510.15414); STRATAGEM transferable reasoning via trajectory-modulated self-play (2604.17696); NitroGen open foundation model 40K hours/1000+ games CVPR 2026 (2601.02427); Game-TARS foundation model 500B+ tokens ByteDance (2510.23691); WorldMind 4-layer decoupled game world model (2608.21439); PCSP persona-conditioned shared policy (2605.23652); GameWorld 34 games/170 tasks benchmark (2604.07429); WanToFight real-time multiplayer generative game engine (2607.12592); Augmenting Game AI with Deep RL industry framework (2606.20210).
+- Key trends: (1) Self-play as reasoning curriculum progressing from single-game to multi-game cooperative+competitive; (2) Game foundation models scale to internet data (40K+ hours, 1000+ games); (3) NPC intelligence multi-layer: decoupled world models + shared RL policies + LLM embeddings; (4) Generative game engines hit real-time (30-48 FPS via distillation+quantization); (5) Benchmarks mature: state-verifiable, PvP/Coop, discovery-focused; (6) PCG converges on language interfaces; (7) World models become game infrastructure.
+- Updated: wiki/index.md (Sources table new game-rl-daily 2026-09-03 entry)
+- New pages: wiki/synthesis/2026-09-03/game-rl-daily.md
+- Contradictions: none
+
 ## [2026-09-03] synthesis | investment-daily (2026-09-02)
 - Summary: wiki/synthesis/2026-09-02/investment-daily.md — Daily Investment Briefing covering US/HK/A-share tech & AI sectors.
 - Key highlights: 三大指数止跌回升（道指 +0.56%，标普 +0.46%，纳指 +0.45%）；10Y 国债收益率冲至 4.814%，美联储 9 月加息概率 69%。Mag7 分化：NVDA +3.21%、META +2.47% 领涨。DELL +15.76% 上调全年指引，SNOW 盘后 +21% 上调营收指引，AVGO AI 业务三年翻倍至 $2300 亿。特斯拉 Cybercab 9/3 发布会（无方向盘/踏板，售价 <$3 万）。燧原科技 688801.SH IPO 开启申购（发行价 142.18 元，腾讯/小米战配），中签率 0.02455% 低于摩尔/沐曦。光模块双雄中际旭创 + 新易盛 H1 合计净利 210 亿+，中际旭创 40-80 亿回购。8 月新势力：零跑破 10 万、理想反弹 +24%、蔚来稳定 3.5 万、小米连续 5 月 3 万+。百度双重主要上市生效，最快 9/7 入港股通。国产 AI 链"从 1→N"放量阶段，资本开支仅美国 1/7~1/6。
