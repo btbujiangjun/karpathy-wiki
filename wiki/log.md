@@ -13,6 +13,13 @@
 - New pages: wiki/synthesis/2026-09-04/tech-report-digest.md
 - Contradictions: 记录 OpenAI (Astra OSWorld 72.6% 官方设置) vs Anthropic (Fable 5.1 护栏计 0) 之 OSWorld 口径差异, 非本 wiki 裁决。
 
+## [2026-09-04] synthesis | game-rl-daily (2026-09-04)
+- Summary: wiki/synthesis/2026-09-04/game-rl-daily.md — Game RL & Game AI Bot daily synthesis covering 37 papers across 7 categories.
+- Categories covered: ① Game RL (MARL survey, SPA self-play world models, Odysseus VLM RL, EA hierarchical LLM+RL, SPIRAL self-play reasoning), ② Game AI Bot (Nemobot LLM strategic agents, EA RL-augmented NPC, GamingAgent), ③ Game Foundation Models (NitroGen CVPR'26 Oral, Generalist Game Players survey, MARL-GPT), ④ PCG (PCGRLLM LLM reward design, High-Dim PCG, perception bias), ⑤ Benchmarks (GameCraft-Bench, GameWorld, OmniGameArena, GameDevBench, PokeGym, Orak, GBQA), ⑥ Industry (EA vision paper, small vs LLM), ⑦ Related (curiosity exploration, entropy modulation, skill graphs, self-play survey, game-theoretic LLM, social deduction Avalon/Among Us/Werewolf)
+- Key themes: LLM+RL convergence dominates; foundation models entering gaming; benchmark explosion with real game engines; social deduction games as new LLM testbed
+- Updated: wiki/index.md (Synthesis table new game-rl-daily 2026-09-04 entry)
+- New pages: wiki/synthesis/2026-09-04/game-rl-daily.md
+
 ## [2026-09-04] synthesis | arxiv-paper-check (2026-09-04)
 - Summary: wiki/synthesis/2026-09-04/arxiv-paper-check.md — arXiv daily scan of new submissions in cs.AI, cs.LG, and CTR/Recommendation/Advertising categories. 10 most relevant papers selected.
 - Key papers: (1) Geometry of Ignorance (2609.02959) — unembedding direction encodes Bayesian prior; (2) TGOPD (2609.02998) — teacher-gated on-policy distillation; (3) Causal Foundation Models (2609.03003) — in-context causal inference; (4) SMC (2609.03236) — speculative macro commit for agents; (5) NTEP (2609.03493) — tool-evidence path rewards; (6) FlowBalance (2609.03241) — verifier-grounded self-improvement; (7) MoE+LoRA contention (2609.03150) — SpawnLoRA; (8) Native Multimodal CTR (2608.24091); (9) LeanStream (2609.03079) — on-device LLM inference; (10) Hybrid Transformers (2609.02986) — Head-wise Hybrid Architecture.
