@@ -2,7 +2,15 @@
 
 > Append-only chronological record of all wiki operations.
 > Each entry: `## [YYYY-MM-DD] operation | subject`
-> Parse with: `grep "^## \[" wiki/log.md | tail -10`
+> Parse with: `grep "^## \[" wiki/log.md | tail-10`
+
+## [2026-09-04] synthesis | arxiv-paper-check (2026-09-04)
+- Summary: wiki/synthesis/2026-09-04/arxiv-paper-check.md — arXiv daily scan of new submissions in cs.AI, cs.LG, and CTR/Recommendation/Advertising categories. 10 most relevant papers selected.
+- Key papers: (1) Geometry of Ignorance (2609.02959) — unembedding direction encodes Bayesian prior; (2) TGOPD (2609.02998) — teacher-gated on-policy distillation; (3) Causal Foundation Models (2609.03003) — in-context causal inference; (4) SMC (2609.03236) — speculative macro commit for agents; (5) NTEP (2609.03493) — tool-evidence path rewards; (6) FlowBalance (2609.03241) — verifier-grounded self-improvement; (7) MoE+LoRA contention (2609.03150) — SpawnLoRA; (8) Native Multimodal CTR (2608.24091); (9) LeanStream (2609.03079) — on-device LLM inference; (10) Hybrid Transformers (2609.02986) — Head-wise Hybrid Architecture.
+- Key themes: LLM Bayesian reasoning, agent efficiency, CTR multimodal + MoE, on-policy distillation, hybrid transformer architectures.
+- Updated: wiki/index.md (Synthesis table new arxiv-paper-check 2026-09-04 entry)
+- New pages: wiki/synthesis/2026-09-04/arxiv-paper-check.md
+- Contradictions: none
 
 ## [2026-09-03] synthesis | wq101-alpha-daily (2026-09-03)
 - Summary: wiki/synthesis/2026-09-03/wq101-alpha-daily.md — WorldQuant 101 Alpha 因子美股精选 Top 20。
@@ -5528,3 +5536,17 @@
 - Updated: wiki/index.md（Synthesis 表顶部新增 arxiv-paper-check 2026-09-03 条目）
 - New pages: wiki/synthesis/2026-09-03/arxiv-paper-check.md
 - Contradictions: none（注意：CTR/industrial-ranking 类新作——ReST 2609.01240 / TGR 2609.00986 / CoGR 2609.00638 等已被 09-02 兄弟 digest 及 09-03 arxiv-daily 覆盖，本期不重复收录）
+
+## [2026-09-04] synthesis | arxiv-daily (2026-09-04)
+- Summary: wiki/synthesis/2026-09-04/arxiv-daily.md — 跨方向 arXiv 每日摘要（LLM / Recommendation / CTR & Advertising / Sequential Modeling / Games & World Models），覆盖 14 篇论文。
+- 方法: 本次 arXiv Atom API 持续节流（HTTP 429），改用 websearch 抓取 arXiv abs 页 + 本地缓存 listing 数据。
+- 去重: 所有 featured paper ID 均 grep 验证未出现在 09-01 / 09-02 / 09-03 兄弟 digest（arxiv-daily / arxiv-ai-search / arxiv-paper-check / conference-digest / game-rl-daily），优先收录新鲜内容。
+- LLMs (4): Declarative Attention (2609.02737, 模型在 CoT 中自声明注意力span，跳过大部分 KV cache 读取；Gemma-4-31B/Qwen-3.6-27B 15 长上下文任务 attended tokens −52.0%/−31.1%，精度微降随规模缩小)；PROSE (2609.02553, 基于 AMR 语义结构的黑盒 LLM 溯源指纹，100% 检出 0 误报，对量化/剪枝/微调/蒸馏鲁棒)；GlossoGen (2609.01491, 多 LLM agent 间涌现私有语言——compositional、不可读懂、可跨代累积文化演化，弱模型可从 usage 习得)；Beyond Human-Likeness (2609.01895, 基于 ICLR'25 数据的 LLM 同行评审功能画像，专家 prompt 非但不能更类人反而放大 LLM 倾向)。
+- Recommendation (2): CORAL (2609.02730 Meta, LLM-native agentic harness 在闭环中持续重构生产推荐器，两个社交平台 A/B 跨 engagement–efficiency 前沿)；SwapRec (2609.00913, 训练期 swap 让 sequential rec 对推理期 warm-neighbor swap 冷启动鲁棒，3 域，RecSys'26)。
+- CTR & Advertising (2): ReST (2609.01240, recommendation-native 序列 Transformer 扩展——dual-gated attention + RoPE/RoTE + heavy-encoder/light-cross-decoder 共享前缀 compute-once decode-many；线上 A/B +1.31% AUC / +11.93% 收入，已全量部署)；PRIME (2608.30449, Dense-anchored 低秩输入条件 MoE 残差解决共享 CTR top-NN 的子组梯度竞争，竞争缺口 −34.3%，Avazu/Criteo 13 架构中 11 个 AUC 提升)。
+- Sequential Modeling (3): SpecTran (2601.21986, 谱域 transformer 适配器，全谱注意力 + 可学习谱位置编码，平均 +9.17%)；GrIT (2602.19728, 带时变 latent group membership 的 group-informed transformer，5 数据集 SOTA)；GenAIR (2606.11023, 生成式 archetype-grounded item 表征 + 行为校准，WWW'26)。
+- Games & World Models (3): AWoMo + RLHEV (2608.25518, 游戏引擎作为可执行验证器 + 人类验收信号，类比代码 RL；UnitySceneBench 最优，跨引擎 transfer 正向)；ReWorld (2608.23565, 交互式世界模型长程记忆——混合 per-head 注意力窗口 + 随机 head routing + pose-indexed landmark bank + 4-step LoRA 蒸馏，实时流式 704×1280)；ActSWM (2607.26712, action-sensitive 潜世界模型消除 Context Collapse，~380× action-rollout 分离度，Minecraft 长程规划)。
+- Cross-cutting: agentic 推荐器控制已进入工业生产（CORAL，呼应 agentic-recommender 趋势）；behavior-sequence transformer 扩展成为 CTR/ranking 前沿（ReST，呼应 Taobao EST / Baidu GRAB）；世界模型聚焦奖励/验证稀缺 + 控制-记忆分离（AWoMo/ReWorld/ActSWM）；LLM 溯源与涌现语言安全成为新兴议题（PROSE/GlossoGen）。
+- Updated: wiki/index.md（Synthesis 表顶部新增 arxiv-daily 2026-09-04 条目；含主题摘要 + tags）
+- New pages: wiki/synthesis/2026-09-04/arxiv-daily.md
+- Contradictions: none（多个条目作者/机构标注为 "opencode-compiled"，因搜索片段未捕获完整列表，已注明需以 arXiv abs 页为准）
