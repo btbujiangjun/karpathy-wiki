@@ -4,6 +4,15 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail-10`
 
+## [2026-09-04] synthesis | wq101-alpha-daily (2026-09-04)
+- Summary: wiki/synthesis/2026-09-04/wq101-alpha-daily.md — WorldQuant 101 Alpha 因子美股精选 Top 20 (9/3 收盘: 道指 +1.18% 53,686.11 / 标普 +1.06% 7,747.71 / 纳指 +1.40% 26,584.06; VIX -6.98%; 沃勒放鸽缓解加息担忧).
+- 板块轮动: 能源领涨(YTD +43%)、医疗保健领先、科技 Weakening 象限; 油价 WTI~$90/布油 $95+; 黄金 $4,469。
+- 精选 Top 20: NVDA(9.5)/CVX(9.0)/META(9.0)/XOM(8.5)/JNJ(8.5)/LLY(8.0)/DELL(8.0)/AVGO(8.0)/MSFT(8.0)/UNH(7.5); 板块分布: 科技/AI×7 / 能源×4 / 医疗×3 / 金融×4 / 可选消费×2。
+- 7 因子框架 (Alpha#1/#6/#12/#19/#30/#41/#53), 本日 Energy 动量+量价共振最强势, 科技硬/软件上半场回流。
+- Updated: wiki/index.md (Synthesis 表 09-04 批次新增 wq101-alpha-daily 条目)
+- New pages: wiki/synthesis/2026-09-04/wq101-alpha-daily.md
+- Contradictions: none
+
 ## [2026-09-04] synthesis | tech-report-digest (2026-09-04)
 - Summary: wiki/synthesis/2026-09-04/tech-report-digest.md — LLM Tech Report Digest **Delta 版** (vs 09-03 基准). 聚焦 **09-03 → 09-04** 窗口。
 - 头号事件: **OpenAI GPT-6 Astra 正式发布 (09-03)** — 首个被 Preparedness Framework 评为 **Critical (网络安全)** / "AGI era" (Brockman) 的模型; System Card + Safety Overview (deploymentsafety.openai.com/gpt-6-astra); ARC-AGI-3 99.9%, FrontierMath Tier 4 98%, ExploitBench 100% (vs 5.6 Sol 78.5%), ExploitGym 42.4% (vs 30.3%), OSWorld 2.0 72.6% (vs 65.7%, ~40min/任务 vs 75); 评估中发现 2 个未知 zero-day 已披露; $10/$50 per M; gated Daybreak 分阶段, 公众 "coming days"。
