@@ -5550,3 +5550,17 @@
 - Updated: wiki/index.md（Synthesis 表顶部新增 arxiv-daily 2026-09-04 条目；含主题摘要 + tags）
 - New pages: wiki/synthesis/2026-09-04/arxiv-daily.md
 - Contradictions: none（多个条目作者/机构标注为 "opencode-compiled"，因搜索片段未捕获完整列表，已注明需以 arXiv abs 页为准）
+
+## [2026-09-04] synthesis | conference-digest (2026-09-04)
+- Summary: wiki/synthesis/2026-09-04/conference-digest.md — 2025–2026 会议周期的获奖/高影响力论文文摘，按会场组织，聚焦论文级亮点（NeurIPS 2025 最佳论文、ICML 2026、ICLR 2026、CVPR 2026、推荐/CTR/广告会场等）。
+- NeurIPS 2025 (投稿 20,000、录取 ~25%): 4 篇最佳论文 — ① Gated Attention for LLMs（阿里 Qwen，唯一中国籍 2025 Best Paper; G1 SDPA 输出门控、按头、乘法、sigmoid; attention-sink-free、支持 context-length extension、已落地 Qwen3-Next，arXiv 2505.06708）; ② Artificial Hivemind / Infinity-Chat（26K 开放式查询 + 31K 人类标注; 单模型内重复 + 跨模型同质; 79% 响应相似度 >0.8; 挑战 temperature/集成多样性常识，arXiv 2510.22954）; ③ 扩散模型隐式动力学正则化（泛化→记忆两阶段，切换点随数据集大小线性）; ④ RLVR 激发新推理能力 = 负向发现（RLVR 只放大已有基础能力，不扩展推理容量）。Test of Time → Faster R-CNN（何恺明/孙剑）。
+- ICML 2026 (录取 6,634 篇): Outstanding Paper — The Flexibility Trap（DiffLM 任意顺序为"陷阱"，Zanlin Ni）、High-Accuracy Sampling for Diffusion/Log-Concave（Fan Chen）; Outstanding Position Paper — 对齐社区无意构建"审查工具包"（Ball/Hackemann）。
+- ICLR 2026: Muon 优化器（改进的极性分解近似，微软等）。
+- CVPR 2026: 录取 4,068 篇; 视频生成运动归因、world-model 主线。
+- 推荐/广告/CTR: Wukong 推荐缩放定律（Meta，2403.02545）、SIGIR 2026 墨尔本、RecSys 2025、KDD 2026（出价优化）、WWW 2026（token 级拍卖 LAMA）、CIKM 2025、EMNLP 2025（Step-KTOder 函数级代码偏好优化）。
+- 跨主题: RLVR 能力边界、Attention 机制工程化复兴、评测"多样性危机"、生成式推荐/广告工业化、顶会白热化（华人团队多点开花）。
+- 方法: 基于 08-30 期文摘格式 + 当日（09-04）websearch 补充详情（NeurIPS 最佳论文名单、Qwen Gated Attention 细节、Infinity-Chat 规模等）。
+- 去重: 与同日兄弟 digest（arxiv-daily / arxiv-ai-search / arxiv-paper-check）以 arXiv 日报内容为主不同，本页侧重会议获奖/论文级综述，避免与 arXiv 逐篇日报重复；同步更新 index.md。
+- Updated: wiki/index.md（Synthesis 表顶部新增 conference-digest 2026-09-04 条目 + tags）
+- New pages: wiki/synthesis/2026-09-04/conference-digest.md
+- Contradictions: none（获奖作者/机构部分条目因搜索片段未捕获完整名单，已标注 "inferred / 详见官方公告"，需以会议官网为准）
