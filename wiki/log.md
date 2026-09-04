@@ -4,6 +4,15 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail-10`
 
+## [2026-09-04] synthesis | tech-report-digest (2026-09-04)
+- Summary: wiki/synthesis/2026-09-04/tech-report-digest.md — LLM Tech Report Digest **Delta 版** (vs 09-03 基准). 聚焦 **09-03 → 09-04** 窗口。
+- 头号事件: **OpenAI GPT-6 Astra 正式发布 (09-03)** — 首个被 Preparedness Framework 评为 **Critical (网络安全)** / "AGI era" (Brockman) 的模型; System Card + Safety Overview (deploymentsafety.openai.com/gpt-6-astra); ARC-AGI-3 99.9%, FrontierMath Tier 4 98%, ExploitBench 100% (vs 5.6 Sol 78.5%), ExploitGym 42.4% (vs 30.3%), OSWorld 2.0 72.6% (vs 65.7%, ~40min/任务 vs 75); 评估中发现 2 个未知 zero-day 已披露; $10/$50 per M; gated Daybreak 分阶段, 公众 "coming days"。
+- 其余: Anthropic Fable 5.1/Mythos 5.1 (09-01, AA66 SOTA) 为前基准; Google Gemini 3.8 Flash / Meta Muse Spark 1.3 / Qwen3.8-Max-0902 (09-02) 昨日已录; 其余 15 家无新报告; xAI Grok 5 仍延后。
+- 关键跨源注意: OSWorld 2.0 各厂评分口径不统一 (护栏计0/官方设置/任务修改), 跨厂对比需审慎。
+- Updated: wiki/index.md (Synthesis 表 09-04 批次顶部新增 tech-report-digest 条目)
+- New pages: wiki/synthesis/2026-09-04/tech-report-digest.md
+- Contradictions: 记录 OpenAI (Astra OSWorld 72.6% 官方设置) vs Anthropic (Fable 5.1 护栏计 0) 之 OSWorld 口径差异, 非本 wiki 裁决。
+
 ## [2026-09-04] synthesis | arxiv-paper-check (2026-09-04)
 - Summary: wiki/synthesis/2026-09-04/arxiv-paper-check.md — arXiv daily scan of new submissions in cs.AI, cs.LG, and CTR/Recommendation/Advertising categories. 10 most relevant papers selected.
 - Key papers: (1) Geometry of Ignorance (2609.02959) — unembedding direction encodes Bayesian prior; (2) TGOPD (2609.02998) — teacher-gated on-policy distillation; (3) Causal Foundation Models (2609.03003) — in-context causal inference; (4) SMC (2609.03236) — speculative macro commit for agents; (5) NTEP (2609.03493) — tool-evidence path rewards; (6) FlowBalance (2609.03241) — verifier-grounded self-improvement; (7) MoE+LoRA contention (2609.03150) — SpawnLoRA; (8) Native Multimodal CTR (2608.24091); (9) LeanStream (2609.03079) — on-device LLM inference; (10) Hybrid Transformers (2609.02986) — Head-wise Hybrid Architecture.
