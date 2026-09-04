@@ -5573,3 +5573,12 @@
 - Updated: wiki/index.md（Synthesis 表顶部新增 conference-digest 2026-09-04 条目 + tags）
 - New pages: wiki/synthesis/2026-09-04/conference-digest.md
 - Contradictions: none（获奖作者/机构部分条目因搜索片段未捕获完整名单，已标注 "inferred / 详见官方公告"，需以会议官网为准）
+
+## [2026-09-04] synthesis | investment-daily (2026-09-04)
+- Summary: wiki/synthesis/2026-09-04/investment-daily.md — 每日投资日报（美股 9/3 收盘 / 港股 9/3 / A 股 9/3 收盘），覆盖美股科技 AI、港股、A 股、中概股、中概新能源、AI 热点主题。
+- 覆盖范围：① 美股 Mag7 + AI 相关（NVIDIA 收购 Hugging Face / Palantir / Salesforce / 博通 / Dell / Snowflake / SpaceX / Tesla Cybercab）② 港股（AI 概念股分化、南向资金 AI 转向、Moonshot IPO、港股 IPO 热潮）③ A 股（液冷、CPO/光模块、算力、机器人、半导体设备）④ 中概股 ADR ⑤ 中概新能源/电动车 ⑥ AI 热点主题（GPT-6 Astra、OpenAI/Cybercab、AI 资本开支、机器人 ETF、美银泡沫警示）
+- 核心事件: NVIDIA $129.3 亿收购 Hugging Face（史上最大, 2027 H1 关闭, 触发 HSR+欧盟审查）; 美联储沃勒放鸽（9 月倾向按兵不动）→ 三大美股指数上涨（道指 +1.18%/标普 +1.07%/纳指 +1.40%）; OpenAI GPT-6 Astra 发布（首个 Critical 网络安全门槛, 宣称"AGI 时代"）; 特斯拉 Cybercab 9/3 奥斯汀发布会; 软件板块 +6.4%（Palantir +7.71%/Salesforce +3.07%）; 港股南向 8 月 AI 转向; Moonshot 拟 $30 亿/500 亿估值港股 IPO; WSJ 指 9 大厂约 $3 万亿 AI 表外表内承诺; 美银示警 AI 泡沫（Bull&Bear 指标 9.7）
+- 市场反应（9/3）: 美股 Mag7 普涨（Tesla +5.42%/Meta +3.01%/MSFT +2.68%/NVDA +1.80%）; 港股恒指 -0.39%、恒生科技 -1.08% 刷阶段新低; A 股沪指 +0.02% 缩量（1.78 万亿）, 主线液冷服务器/CPO
+- Updated: wiki/index.md（Synthesis 表顶部新增 investment-daily 2026-09-04 条目 + 主题摘要 + tags）
+- New pages: wiki/synthesis/2026-09-04/investment-daily.md
+- Contradictions: none（注：Palantir、Salesforce 反弹与其 PE 高企、Burry 做空并存；港股南向买入 AI 与传统行业被卖并存——均已明确标注）
