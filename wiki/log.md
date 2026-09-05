@@ -4,6 +4,17 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail-10`
 
+## [2026-09-05] synthesis | wq101-alpha-daily (2026-09-05)
+- Summary: wiki/synthesis/2026-09-05/wq101-alpha-daily.md — WorldQuant 101 Alpha 因子美股精选 Top 20 (9/4 周五收盘: 道指 -0.51% 53,414.25 / 标普 -0.4% 7,718.60 / 纳指 -0.29% 26,506.99; NDX +0.21%、Russell 2000 +0.25%; 8 月非农 +162k 大超预期 → 9 月加息概率 57~60%, 2Y 4.37%, 10Y ~4.8%)。
+- 核心结构: 存储/内存超级周期爆发 — DRAM ETF(Roundhill Memory) +6.6%、SOX +2.1%; MU +6.1%($1,016.59 新高)/SNDK +8~12%/WDC +4~6%/STX +5%/ALAB +9.75%/KLA +7%; 软件普跌 — PLTR -3~4%(7 个月最差)/ASAN -11.8%/WDAY -5.4%/SNOW -5.2%/MSFT -2.04%; TSLA -5.92%(NHTSA Cybercab 调查函); 炼油 MPC/PSX/VLO 齐创纪录新高(WTI 3-2-1 crack ~$9/bbl, 约 1 月 3 倍); 金价 ~$4,400-4,509/oz, Citi 目标 $5,000。
+- 精选 Top 20: NVDA(9.2)/MU(9.1)/MPC(9.0)/NEM(9.0)/SNDK(8.9)/MS(8.7)/GS(8.6)/STX(8.5)/JPM(8.4)/ALAB(8.3)/CRWD(8.2)/HOOD(8.1)/AEM(8.0)/PSX(8.0)/CEG(8.0)/WDC(8.0)/ORCL(7.8)/CRM(7.6)/COIN(7.5)/MRNA(7.2)。
+- 板块分布: Technology×9 / Financials×5 (MS GS JPM HOOD COIN) / Energy×2 (MPC PSX) / Gold×2 (NEM AEM) / Utilities×1 (CEG) / Healthcare×1 (MRNA)。
+- 7 因子框架 (Alpha#1/#6/#12/#19/#30/#41/#53); 本日存储超周期 Alpha#1 动量 + Alpha#12 量价确认共振最强势; 对比上期(09-04 报告)Energy+防御 → 本日轮动至硬件+金融+炼油+黄金, 9 只更替。
+- 方法注记: 因子值为行情快照定性重构(无全量 OHLCV 计算), 市值部分为近似估算(标注"估"); PLTR 收盘与行情快照存在分歧(以 investment-daily 09-05 交叉核对为准, 未入选)。
+- Updated: wiki/index.md (Synthesis 表顶部新增 wq101-alpha-daily 2026-09-05 条目)
+- New pages: wiki/synthesis/2026-09-05/wq101-alpha-daily.md
+- Contradictions: 无系统性矛盾; 记录 PLTR 单日涨跌数据源分歧(+10.3% 行情快照 vs -3~4% 日报口径), 已采用多数来源并避免入选
+
 ## [2026-09-05] synthesis | game-rl-daily (2026-09-05)
 - Summary: wiki/synthesis/2026-09-05/game-rl-daily.md — Game RL & Game AI Bot daily paper digest covering 26 verified-new papers across 7 categories.
 - Categories covered: ① Game RL (ECHO-OFTRL constant individual regret in general games — MIT 2608.31166; PPAD-hardness + first sub-exponential radically-uncoupled CCE algorithm for discounted Markov games — UIUC 2609.00504; compositional differential-game competing control 2609.01838; horizon-independent contraction for discounted regularized MFGs — UIUC 2608.27723; "is MCTS just every-visit MC control?" 2608.27985; network topology & opponent info in MARL cooperation — UCL 2608.28977), ② Game AI Bot (MineCEraft Minecraft construction benchmark, EMNLP 2026 Findings — 2608.28884; HoopMind real-time possession planning 2608.29563; ChessQueries ViT+DETR board recognition, 15.3→99.2% ChessReD 2608.30762; JSON-Bag game-agnostic value functions — QMUL 2608.30056), ③ Game Foundation & World Models (Intervention Gap in latent WMs 2608.29998; Semantic Bayesian World Models 2609.03834; WM↔policy composition in LLM agents 2608.30067; CAER causal action-effect reweighting 2608.30897; RIWM safety-critical rethinking 2609.03774), ④ PCG (feasibility-aware latent spaces for procedural automotive wheel design 2609.00527), ⑤ Benchmarks (CivBench Civ-VI MCP long-horizon — Oxford 2609.02459; video "Shell Game" unobserved-state tracking 2608.30692; cross-segment world-state reasoning 2609.03673; SolarWM open video-WM foundation 2609.02886; VeriPhy agentic physical verification 2609.03153), ⑥ Industry (Matrix-Game 3.5 patch-memory streaming interactive WM 2608.29910; Unreal Engine action-conditioned video pipeline 2609.03557), ⑦ Related (self-play driving emergence/breaking incl. traffic-light reward hacking — U Tartu 2608.30819; UDRM uncertainty-driven replay memory — RIT 2608.29860; game-theoretic AI alignment survey 2608.27910)
