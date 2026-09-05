@@ -5646,3 +5646,9 @@
 - Updated: wiki/index.md（Synthesis 表顶部新增 arxiv-ai-search 2026-09-05 条目 + 主题摘要 + tags）
 - New pages: wiki/synthesis/2026-09-05/arxiv-ai-search.md
 - Contradictions: none（机构为 tentative/推断，已在文中与 index 注明需核实）
+
+## [2026-09-05] synthesis | investment-daily (2026-09-05)
+- Summary: wiki/synthesis/2026-09-05/investment-daily.md — 投资日报（美股 9/4 / 港股 9/4 / A 股 9/4 收盘）。宏观：8 月非农 +162k 大超预期（失业率 4.1% 持平）→ 9 月加息概率升至 ~50-63%，2Y 收益率创 2025 年 1 月以来新高；道指 -0.51%、标普 -0.38%、纳指 -0.29%；BTC 回落至 ~$79.7k。美股 AI：芯片强软件弱——AMD +4.69%（Cathie Wood 减持 AMD 买 NVDA）、NVDA +0.84%；Palantir 约 -3~4%（7 个月最差单日，Barron's 软件股普跌）；MSFT -2.04%（发布 Project Zenith：64GB+ 本地跑 30B+ 模型，首发 AMD Ryzen AI Halo）；TSLA -5.92%（Cybercab 未达预期 + NHTSA audit query，得州仅 45 辆注册，吐回 9/3 +5% 涨幅）；GPT-6 Astra 大众版分阶段开放（$10/$50 per M，>272K tokens 翻倍，与 Claude Fable 5.1 同价）。港股：恒指 +1.74% 25,650.87、恒生科技 +2.27% 4,569.80（周线 -0.77%）；龙湖 +8.4%、联想 +6.1%、美团 +5.3%；华虹宏力 -8.4% 领跌；南向净卖 100.21 亿（腾讯 -21.02 亿、MiniMax +9.48 亿）；腾讯回购连续 14 日。A 股：沪指 -0.30% 3,930.12、科创50 -2.10%（2.03 万亿放量）；猪肉/数字货币/AI 应用领涨（龙版传媒 5 连板周涨 61.14%、新炬网络 2 连板、楚天龙涨停），煤炭/半导体链/CPO 回落（郑州煤电跌停）；早盘存储/PCB 强、午后硬件跳水、高低切换。中概 ADR：金龙 -0.81%；BABA +1.28%、Hesai +11.27%、Futu +3.33%、TCOM -5.11%。新能源：8 月交付——比亚迪 ~44 万断层第一、零跑 10.31 万（+80.7% 新高）、小鹏 3.91 万、理想 3.77 万（+32%）、蔚来 3.58 万、小米 3 万+；比亚迪/蔚来/小鹏/上汽被传采购国产 AI 芯片（FT）；Waymo 累计 50 万次行程。下周：9/7 Labor Day 休市、9/10 Oracle + PPI、9/11 CPI。
+- Updated: wiki/index.md（Synthesis 表顶部新增 investment-daily 2026-09-05 条目 + 主题摘要 + tags）
+- New pages: wiki/synthesis/2026-09-05/investment-daily.md
+- Contradictions: none（PLTR 收盘数据源之间 $174.3 vs $176.1 分歧，文中以 ~$176、-3~-4% 范围披露；美股指数收盘 53,414.25 vs 个别行情快照差异，以多数来源为准；GOOGL 9/4 收盘未获可靠数据，暂缺列）
