@@ -4,6 +4,21 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail-10`
 
+## [2026-09-06] synthesis | tech-report-digest (2026-09-06)
+- Summary: wiki/synthesis/2026-09-06/tech-report-digest.md — LLM Tech Report Digest **Delta 版** (vs 09-05 基准, 聚焦 09-05→09-06 窗口)。
+- 头号事件: **OpenAI GPT-6 Astra 面向 ChatGPT 付费订阅公开铺开**（09-03 受限预览 → **09-04 全面开放**；Pro/Business/Enterprise 滚动 + Plus 于 ChatGPT Work/Codex 滚动，Enterprise 默认关闭需管理员开启，公开版为 security 削版）；首发 24h 准入事故 + **Sam Altman 公开道歉 + daily usage resets/banked resets 补偿**。
+- 首次 **终端第三方独立评估**: ARC Prize 于 provider-neutral Standard harness 实测 **ARC-AGI-3 = 62.7%**（max effort，$26,098），**vs OpenAI 官方 99.9%（Provider Adapter，$18,817，-49% token、~3.66× 快）** → ⚠️ CONTRADICTION/CAVEAT 记录在案（同一模型、不同 harness 口径，非本 wiki 裁决）；ARC Prize 明确"不认为 Astra 是 AGI"。Artificial Analysis **AA Index v4.1.1 = 61**（持平 GPT-5.6 Sol，约落后 Fable 5.1 5 分）；HLE with tools **57.2% < Sol 65.0% / Fable 5.1 63.8%** —— "更强但不全面更强"。
+- 对齐自披露: 模拟越狱评估中 **Astra 越靶 0% (Sol 48%)**、computer-use 安全 **2.4% (Sol 22%)**、ExploitBench 100% / ExploitGym 42.4%、发现并披露 2 个未知 zero-day；但 **Astra 书面推理比 Sol 更难监控**；Pachocki 直言 "能力增长不保证对齐增长……在重新获得足够信心前暂停 scaling" → **可监控性成为继续 scaling 的显式闸门**。
+- 其他规格: 训练规模 Stargate >100K GPU 迄今最大 run (tentative, single-source)；1.05M ctx/128K out（第三方实测）；Fast mode 2× 速度 2× 价；cached input $1.00/M；FrontierMath Tier 4 97.6% / DeepSWE 1.1 74.1% / FrontierCode 53.3%；素数间隔界 240→186。
+- Grok 4.7: 无新官方文档（docs.x.ai 止步 grok-4.6，预期 **09-12**）；SpaceX 补充语料细节（Starlink 遥测/火箭研制记录/内部工程文档）；产品侧 09-03 Grok Bot。
+- Fable 5.2 传闻升温（PolyMarket 盘口成交 $4,046，官方零确认，9 月中下旬推断）；Anthropic 窗口内 Claude iOS 接入 CarPlay (non-model)。
+- NVIDIA: **$12.9B 收购 Hugging Face 确认**（non-model）+ RTX Spark N1X 定档 10 月。其余 18 家机构无新 report（aireleasetracker 09-06 当日 0 release）；Apple AFM 3 "later this summer" 承诺实质到期未出。
+- 趋势: ①"官方分 vs 独立测"成 frontier 发布标配第二幕（99.9% vs 62.7% 三种叙事）；②放宽分布即放宽对齐再确认 + 可监控性成 scaling 闸门；③能力管线与范围控制解耦（公开版削权/Enterprise 默认关/工具版本门槛）；④发布真空的另一种形态——新闻全围绕已发布模型首周落地；下窗口 09-12 Grok 4.7 → 9 月中下旬 Fable 5.2（传闻）。
+- Updated: wiki/index.md（Synthesis 表 09-06 批次顶部新增 tech-report-digest 条目，位于 arxiv-paper-check 之前）
+- New pages: wiki/synthesis/2026-09-06/tech-report-digest.md
+- Contradictions: 记录 ARC-AGI-3 99.9% vs 62.7% harness 口径之争（非本 wiki 裁决）；GDPval 未出现在 launch materials（implicator 指出）
+- Note: 该文件为前序 scheduled job 产物（本次 commit 一并纳入），本条目补齐其 index/log 协议记录。
+
 ## [2026-09-06] synthesis | arxiv-paper-check (2026-09-06)
 - Summary: wiki/synthesis/2026-09-06/arxiv-paper-check.md — arXiv daily scan (AI + CTR/Recommendation/Advertising focus). Weekend catch-up window: arXiv runs no new listings Sat–Sun (RSS skipDays confirmed; `list/*/new` still at Fri 4 Sep 2026), so this report covers the unclaimed remainder of the Fri 4 Sep mailing, deduped against the 09-05 sibling digests (arxiv-daily, arxiv-ai-search, game-rl-daily, conference-digest). All featured arXiv IDs grep-verified 0 hits in `wiki/`.
 - 13 papers (12 featured + 1 honorable mention) across 4 themes:
