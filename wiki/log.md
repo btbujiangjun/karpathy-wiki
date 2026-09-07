@@ -5779,3 +5779,9 @@
 - Updated: wiki/index.md（Synthesis 表顶部新增 investment-daily 2026-09-07 条目 + 主题摘要 + tags）
 - New pages: wiki/synthesis/2026-09-07/investment-daily.md
 - Contradictions: none（恒指/A 股/美的数据为 9/4 收盘基准、美股 9/7 休市无当日交易；DeepSeek 昇腾 16 万颗订单为彭博媒体报道、未官方公告，文中明确标注"传闻/媒体"属性；华为/小米 9/7 发布会硬件参数为爆料/官方预热口径，个别（麒麟 9030 vs 9050 Pro）存在多源出入，以官方 14:30/19:00 发布为准）
+
+## [2026-09-07] synthesis | wq101-alpha-daily (2026-09-07)
+- Summary: wiki/synthesis/2026-09-07/wq101-alpha-daily.md — 基于 WorldQuant 101 Alpha 因子库对美股中大盘股（市值 >$10B）进行量化筛选，精选 Top 20。本期市场背景：9/2 科技反弹 + 9月 Industrials 中位数 +2.6% 领涨板块轮动；DELL AI 服务器 backlog $95B 引发 AI 硬件行情；FOMC 9/17-18 前降息概率回落至 78%；油价高企（布伦特 ~$96）利好能源。Top 5：NVDA(9.0)/DELL(8.9)/MSFT(8.7)/SMCI(8.5)/AAPL(8.4)。6大因子维度（Alpha#1 动量、Alpha#6 量价相关、Alpha#12 量价背离、Alpha#19 均值回复、Alpha#30 波动率、Alpha#41 趋势强度）交叉验证，权重：动量 25%/量价 20%/趋势 20%/波动 15%/均值 10%/背离 10%。板块分布：Technology 6 / Financials 4 / Energy 2 / Healthcare 2 / Communication 2 / Consumer Cyclical 2 / Industrials 1 / Materials 1。核心逻辑：AI 算力链条（NVDA/DELL/SMCI/TSM）动量最强；金融（TRV/V/PYPL/JPM）为"伟大轮动"核心受益；能源（VLO/GPOR）受油价高企+估值低双重驱动；Healthcare 防御反击。
+- Updated: wiki/index.md（Synthesis 表顶部新增 wq101-alpha-daily 2026-09-07 条目 + 主题摘要 + tags）
+- New pages: wiki/synthesis/2026-09-07/wq101-alpha-daily.md
+- Contradictions: none（9/2 S&P 500 收盘数据多源有出入——TickerDaily 记 5,847 vs CNBC 记 7,747.71；采用 9/4 最新数据源为基准，已在文内标注）
