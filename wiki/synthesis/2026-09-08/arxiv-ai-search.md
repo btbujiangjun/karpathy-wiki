@@ -11,7 +11,7 @@ tags: [arxiv, AI, LLM, interpretability, mechanistic-interpretability, reasoning
 
 Generated: 2026-09-08 | Scope: AI, LLMs, Recommendation, Advertising, Sequential Modeling, CTR, Games
 
-**Methodology**: No new arXiv mailing appeared since 09-07 (arXiv lists announced through **Mon 7 Sep 2026**), so this report is a **second pass over the Mon 7 Sep 2026 mailing**, sweeping the papers the 09-07 digests did *not* feature. Data pulled directly from `arxiv.org/list/{cs.IR,cs.CL,cs.LG,cs.GT}/recent` listings + individual `/abs/` pages (arXiv Atom API still rate-limited). This report is **complementary** to the 09-07 reports: the 24 papers featured in [[arxiv-ai-search (2026-09-07)|arxiv-ai-search]] and 23 in [[arxiv-daily (2026-09-07)|arxiv-daily]] are **not re-featured**. 17 new papers selected across 6 sections; every featured arXiv ID was **grep-verified absent from `wiki/`** (24/24 candidates checked, 22 clean, 2 already covered: 2609.05152 DEX-Comp and 2609.04526 Scale-QLoRA, both in arxiv-daily / arxiv-ai-search 09-07).
+**Methodology**: No new arXiv mailing appeared since 09-07 (arXiv lists announced through **Mon 7 Sep 2026**), so this report is a **second pass over the Mon 7 Sep 2026 mailing**, sweeping the papers the 09-07 digests did *not* feature. Data pulled directly from `arxiv.org/list/{cs.IR,cs.CL,cs.LG,cs.GT}/recent` listings + individual `/abs/` pages (arXiv Atom API still rate-limited). This report is **complementary** to the 09-07 reports: the 24 papers featured in [[arxiv-ai-search]] and 23 in [[arxiv-daily]] (both 2026-09-07) are **not re-featured**. The same-day 09-08 sibling digest [[arxiv-paper-check]] is also non-overlapping (its 10 papers — layer-dropout 2609.05275, RISE 2609.05295, OPD 2609.05198, scaling-law BO 2609.05016, GUT 2609.05284, TROVE 2609.05019, compact memory 2609.04915, ACE 2609.05228, Speculative Uncertainty 2609.05274, phase-transition 2609.05194 — all screened out of this pass). 17 new papers selected across 6 sections; every featured arXiv ID was **grep-verified absent from `wiki/`** (24/24 candidates checked, 22 clean, 2 already covered: 2609.05152 DEX-Comp and 2609.04526 Scale-QLoRA, both in arxiv-daily / arxiv-ai-search 09-07).
 
 > **Recommendation / Advertising / CTR / Sequential coverage note**: the cs.IR Mon 7 Sep listing (20/20 entries) was **fully mined on 09-07** (Embedding Surgery 2609.05110, AlleCompanion 2609.05063, AtomRec 2609.04882, PTDG 2609.04862, LARK 2609.04645, MURAL 2609.04574, SAM-D2Q 2609.04961, IGPO 2609.04813, Repeated Queries 2609.05059, CAGE 2609.04647) plus RecSys-adjacent Trade-up Rec (2609.05363) and the forecasting/sequential set (PRICE 2609.05235, MomentQuant 2609.05136, RCBNB-MB 2609.05150) in the same-day digests. The only new rec/ads-domain-adjacent find in this second pass is 2609.05309 (mHC residual streams, Huawei ranking/CTR group) — featured in §1.1 below. For genuinely fresh cs.IR material, wait for the Tue 8 Sep 2026 listing.
 
@@ -207,7 +207,8 @@ Generated: 2026-09-08 | Scope: AI, LLMs, Recommendation, Advertising, Sequential
 | Efficient Inference & Edge Deployment | 2 |
 | Games & Game Theory | 1 |
 | **Total (this report)** | **17** |
-| Overlaps with 09-07 [[arxiv-daily]] / [[arxiv-ai-search]] | 0 featured (2 screened-out already-covered: 2609.05152, 2609.04526) |
+| Overlaps with 09-07 [[arxiv-daily]] / [[arxiv-ai-search]] (both 2026-09-07) | 0 featured (2 screened-out already-covered: 2609.05152, 2609.04526) |
+| Overlaps with 09-08 [[arxiv-paper-check]] | 0 featured |
 
 ## Key Trends
 
