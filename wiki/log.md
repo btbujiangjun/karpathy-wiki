@@ -4,6 +4,16 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail-10`
 
+## [2026-09-08] synthesis | wq101-alpha-daily (2026-09-08)
+- Summary: wiki/synthesis/2026-09-08/wq101-alpha-daily.md — WorldQuant 101 Alpha 因子美股精选 Top 20 (基于 9/4 收盘 + 9/8 复市数据; 标普 ~7,707 -0.15%, Dow 53,414 -0.51%, Nasdaq 26,507 -0.29%; CPI 3.4%, Fed 3.50-3.75% 加息 25bp 概率 ~60%; Brent ~$91-92 地缘风险)。
+- 7 因子框架 (Alpha#1 动量 / #6 量价相关 / #12 量价背离 / #19 均值回复 / #30 波动率 / #41 趋势强度 / #53 反转); 本日 AI 硬件/存储超周期动量(Alpha#1 60%)+量价(Alpha#6 40%)共振最强势; 板块轮动至 Technology×11 / Healthcare×3 / Consumer Disc.×2 / Financials×1 / Industrials×1 / Comm. Services×2。
+- 精选 Top 20: MU(9.2)/SNDK(9.0)/DELL(8.8)/GEV(8.7)/NVDA(8.5)/SNOW(8.3)/AVGO(8.2)/MRNA(8.0)/LLY(7.9)/META(7.8)/JPM(7.7)/UNH(7.6)/INTC(7.5)/TSLA(7.4)/WMT(7.3)/CBRS(7.2)/HUT(7.0)/IREN(6.8)/NFLX(6.7)/AMZN(6.5)。
+- 对比上期(09-07 报告 Top5 NVDA/DELL/MSFT/SMCI/AAPL) 8 只更替: 新入 SNDK/GEV/SNOW/MRNA/MU/CBRS/HUT/IREN; 留存 NVDA/DELL/JPM/WMT/LLY/UNH/META/TSLA/AMZN/NFLX/INTC/AVGO。
+- 方法注记: 因子值为行情快照定性重构(无全量 OHLCV 计算); 市值部分为近似估算(标注"估"); 行业分布基于公开数据(板块分类为近似)。
+- Updated: wiki/index.md (Synthesis 表顶部新增 wq101-alpha-daily 2026-09-08 条目)
+- New pages: wiki/synthesis/2026-09-08/wq101-alpha-daily.md
+- Contradictions: 无系统性矛盾; 存储类(SNDK/MU/DELL)前期涨幅巨大回调风险高, 已在个股风险提示中标注
+
 ## [2026-09-08] synthesis | conference-digest (2026-09-08)
 - Summary: wiki/synthesis/2026-09-08/conference-digest.md — Conference & arXiv Daily Digest 2025-2026 Top ML/AI Venues. **Venue-anchored second pass over Mon 7 Sep 2026 mailing**（SIGIR/KDD 奖项复核 + 本周批次 EMNLP 2026 录用论文锚定）；16 篇新收录，所有 featured arXiv ID grep 验证 `wiki/` 0 hits；与 09-07/09-08 五个兄弟 digest 全部 ID 级去重；未重复收录项以表格交叉引用。
 - ① EMNLP 2026 (4): KOPA-Bench + EDGE 韩语公开 API 多步工具调用（Execution-grounded Dynamic Graph 数据合成，GRPO 9B ≈ 未调 27B，BFCL 亦升，Industry 2609.05395）；TRILOGUE 英/俄/哈三语口语对话事实核查（12K 对话/187K turns/390h 音频，ASR 鲁棒性+检索证据收敛，2609.04452）；中文社会语用推理基准（4,735 项，最强 LWO 81.42% vs 人类 90.8%，识反讽不识机制，2609.04384）；RefactorPlatform 仓库级重构评估 harness（AST chunking +25-30%，RAG 单 agent 86% vs 子 agent 66%，SysDemo 2609.04898）。
