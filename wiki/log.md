@@ -5829,3 +5829,9 @@
 - Updated: wiki/index.md（Synthesis 表顶部新增 wq101-alpha-daily 2026-09-07 条目 + 主题摘要 + tags）
 - New pages: wiki/synthesis/2026-09-07/wq101-alpha-daily.md
 - Contradictions: none（9/2 S&P 500 收盘数据多源有出入——TickerDaily 记 5,847 vs CNBC 记 7,747.71；采用 9/4 最新数据源为基准，已在文内标注）
+
+## [2026-09-08] synthesis | tech-report-digest (2026-09-08)
+- Summary: wiki/synthesis/2026-09-08/tech-report-digest.md — 19 家 AI 公司最新大模型 Tech Report / System Card 双语摘要（截至 2026-09-08），沿用 07-27 digest 的 19 家列表与格式。覆盖：DeepSeek-V4（arXiv 2606.19348，CSA+HCA 1M 上下文、V4-Pro 1.6T-A49B / V4-Flash 284B-A13B）；OpenAI GPT-6 Astra System Card（2026-09-03，1.05M 上下文/128K max output，含 UK AISI 外部评测与 alignment-faking/metagaming 评估）；Meta Muse Spark 1.3 + Muse Glimmer 30B（Apache 2.0）+ Llama 4 Scout 中期 checkpoint；Google Gemini 3.6 Flash 等 model cards 中心（2026-07-21 更新）；Anthropic Fable 5.1 / Mythos 5.1 及 Opus 5 system cards；Mistral Large 3（675B-A41B 稠密 MoE、Apache 2.0，2506/2612 发布）→ 附 Ministral 3（Cascade Distillation）与 Magistral（纯 RL）；Qwen3.5-397B-A17B（DeltaNet 线性注意力+稀疏 MoE、262K、原生多模态）；NVIDIA Nemotron 3 hybrid Mamba-Transformer MoE 白皮书；xAI Grok 4.6（08/12）为最新、Grok 5 在训无 card；Amazon Nova 2；Apple 第三代 AFM（5 模型家族，与 Google 合作，技术报告后续发布）；Microsoft MAI-Thinking-1（自研从零训练、零第三方蒸馏，06/06 报告）；Zhipu GLM-5（DSA）；InternLM Intern-S2-Mobius（知识-推理解耦架构，~4× inference 提速）与 Intern-S1-Pro（首个 1T 科学多模态）；Moonshot Kimi K2.5（联合文本-视觉训练+Agent Swarm）；StepFun Step 3.5 Flash / STEP3-VL-10B；ByteDance Seed2.0 Model Card（Pro/Lite/Mini agent 模型）+ Seedance 2.0。趋势：hybrid/线性注意力上位、翻倍上下文、agentic 系统卡标准化（UK AISI 外部评测）、开放权重 Apache 2.0 放量、垂直领域 agent（医疗/科学）。
+- Updated: wiki/index.md（Synthesis 表顶部新增 tech-report-digest 2026-09-08 条目 + 主题摘要 + tags）
+- New pages: wiki/synthesis/2026-09-08/tech-report-digest.md
+- Contradictions: 1 — 07-27 digest 将 DeepSeek-V4 记为 arXiv 2507.06810：Tech Report《Towards Highly Efficient Million-Token Context Intelligence》实为 arXiv 2606.19348（2604/26 提交），已在 09-08 文中以 ⚠️ NOTE 标注并给出正确链接（07-27 页未回改）；xAI Grok 4.5→4.6 为迭代版本更新而非矛盾
