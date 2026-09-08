@@ -5835,3 +5835,8 @@
 - Updated: wiki/index.md（Synthesis 表顶部新增 tech-report-digest 2026-09-08 条目 + 主题摘要 + tags）
 - New pages: wiki/synthesis/2026-09-08/tech-report-digest.md
 - Contradictions: 1 — 07-27 digest 将 DeepSeek-V4 记为 arXiv 2507.06810：Tech Report《Towards Highly Efficient Million-Token Context Intelligence》实为 arXiv 2606.19348（2604/26 提交），已在 09-08 文中以 ⚠️ NOTE 标注并给出正确链接（07-27 页未回改）；xAI Grok 4.5→4.6 为迭代版本更新而非矛盾
+## [2026-09-08] synthesis | investment-daily (2026-09-08)
+- Summary: wiki/synthesis/2026-09-08/investment-daily.md — 2026-09-08 投资日报（美股 9/4 收盘 + 9/8 盘中；港股/A股 9/7 收盘；9/7 美国劳动节休市）。覆盖 Mag7 与 AI 个股、港股/A股/中概股、新能源车、AI 热点主题。要点：NYDA $12.9B 收购 Hugging Face 确认、AVGO Q3 AI 营收 $16.7B (+221%) 三年至 $230B、Apple 9/9 发布会 + CEO Ternus 换班、Tesla Cybercab 9/3 奥斯汀上线即遭 NHTSA AQ26002 认证调查（9/4 -6%、9/8 盘中再 -5.92%）；GPT-6 Astra 发布周（105万 ctx / Critical 网络安全阈值 / Recurrent Depth 架构争议，官方 ARC-AGI-3 99.9% vs ARC Prize 独立 harness 62.7%）、Anthropic IPO 推迟至 11 月中期选举前、DeepSeek 内蒙古 16 万颗昇腾 950DT 集群（彭博）；A股 9/7 沪指 +0.07%/深成指 +1.91%/创业板指 +3.41%，成交 1.95 万亿，光模块爆发中际旭创市值重回万亿、摩尔线程上市以来首次 20cm 跌停（2577.45 万股解禁≈134 亿）、寒武纪/海光分化；港股 华为小米同日折叠屏上新（起售价超万元）+ 小米 18 Fold 9/10 开售、小米澎程增程 SUV 20-30 万、希音市值蒸发超 400 亿港元、江波龙 A+H 首家独立存储（H 发行价仅 A 增发价 36%）；高盛首覆中际旭创 H 目标价 3267 港元；存储超级周期 MU $1,016 新高 / SNDK YTD +633%；空头撤退（腾讯阿里卖空比例较 8 月高点降超 80%）。
+- Updated: wiki/index.md（Synthesis 表顶部新增 investment-daily 2026-09-08 条目 + 主题摘要 + tags）
+- New pages: wiki/synthesis/2026-09-08/investment-daily.md
+- Contradictions: 2 — ① GPT-6 Astra ARC-AGI-3 官方 99.9%（Provider Adapter）vs ARC Prize 独立 harness 62.7%，已在文中 ⚠️ 标注"口径差异（非本 wiki 裁决）"；② NVDA-Hugging Face 传闻价 ~$14B（Money Morning 9/3 报道"洽谈"）vs $12.9B 确认价（多源 9/6），文中采纳确认价并保留 $14B 谈判幅度注记
