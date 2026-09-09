@@ -4,6 +4,17 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail-10`
 
+## [2026-09-09] synthesis | wq101-alpha-daily (2026-09-09)
+- Summary: wiki/synthesis/2026-09-09/wq101-alpha-daily.md — WorldQuant 101 Alpha 因子每日精选 Top 20 美股。基于 Alpha#1/#6/#12/#19/#30/#41/#53 七因子框架打分排序。
+- 市场背景 (9/8 收盘): S&P 500 -0.58%, Dow -1.18%, Nasdaq -0.32%，费半逆势 +1.30%；油价逼近 $100 驱动通胀担忧；Fed 加息概率 ~60%。
+- Top 5: KLAC (9.5) > MRVL (9.3) > MU (9.2) > AMD (9.0) > BE (8.8)。
+- 板块分布: 半导体 10 只 (KLAC/MRVL/MU/AMD/INTC/AMAT/AVGO/TSM/QCOM/SNDK)、AI 基础设施/电力 2 只 (BE/CRWV)、科技巨头 4 只 (META/GOOGL/MSFT/TSLA)、其他 4 只 (NRG/STX/GLW/WDC)。
+- 核心信号: Alpha#1 动量因子集中触发于半导体/AI 硬件链；Alpha#12 反转信号指向 INTC/STX; Alpha#19 均值回复集中于大市值科技股。
+- 风险: Fed 加息、油价冲击、AI 交易拥挤、美银系统性抛售 $1630 亿测算。
+- Updated: wiki/index.md (Synthesis 表顶部新增 wq101-alpha-daily 2026-09-09 条目)
+- New pages: wiki/synthesis/2026-09-09/wq101-alpha-daily.md
+- Contradictions: none
+
 ## [2026-09-09] synthesis | game-rl-daily (2026-09-09)
 - Summary: wiki/synthesis/2026-09-09/game-rl-daily.md — Game RL & Game AI Bot daily digest. arXiv `list/*/recent`仍锚定 Mon 7 Sep 2026 window (无新 mailing) → 本次为第三遍 noise-floor sweep + web mining over Sep 1–8 window, 所有 featured arXiv ID 均 grep 验证 0 hits in wiki/ (豁免: 2609.03667 已在 09-05 arxiv-ai-search 完整报道, 此处 cross-ref)。
 - ① Game RL: CANOPY (2609.01245) — 稀疏 outcome-only RL 的失败归因于实践 bug (signal starvation + policy drift) 而非算法上限; coverage-anchored on-policy 更新使 Qwen3-14B 登顶 AppWorld 公开榜 (Test-Normal TGC 86.9 / Test-Challenge 67.6), 同法 Qwen3.5-9B SWE-bench Verified +16.6。
