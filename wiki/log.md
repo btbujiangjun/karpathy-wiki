@@ -4,6 +4,19 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail-10`
 
+## [2026-09-09] synthesis | investment-daily (2026-09-09)
+- Summary: wiki/synthesis/2026-09-09/investment-daily.md — 投资日报（美股/A股/港股/中概股/NW 光伏新能源）。**本期主线 = 光通信/光互联全链条爆发 + OpenAI 生态 + 苹果发布会**。
+- ① 美股（9/8 收盘）：道指 -1.17% (52,786.07)、纳指 -0.32% (26,421.41)、标普 -0.58% (7,673.52)，三大指数收跌但 AI 基建逆势：光通信 Lumentum +11.04%/康宁 +7.56%/Coherent +7%；算力租赁 CoreWeave +11.72%/Nebius +7.73%；**高通×亚马逊跨多代定制 AI 推理芯片 + 1.6T 光互联合作**（最高 $600 亿采购、2500 万股认股权证、行权价 $161.26，高通盘前 +10%，数据中心 2029 目标 $150 亿）；英特尔 +9%（PC CPU 涨价 10%）；SpaceX 重回 $2T；诺华 -13%（一周内三挫）。收盘价：NVDA $225.73 / AAPL $316.22 / AMD $505.74 / AVGO $368.56 / PLTR $170.30 / SNOW $335.50。
+- ② OpenAI 生态：GPT-6 Astra 9/9 起向 limited orgs 铺开；**年底前部署博通合作自研芯片 Jalapeño**（与 NVDA/AMD 协同）→ 定制 ASIC 军备竞赛（AMD×OpenAI 10% 股权、Marvell×Google $122 亿权证）。
+- ③ A 股（9/8 收 + 9/9 盘中）：沪指 +0.20% (3,940.55)，双创 9/8 走弱、9/9 高开（创业板指 +1.15%）；9/7 AI 硬件复苏创业板指 +3.41%。9/9 CPO 走强：华工科技涨停、蘅东光 +6% 新高、光库/德科立/东山精密/天孚跟涨；高盛恢复中际旭创 A 股"买入"、首覆 H 股（1.6T 净利大超预期）；中际旭创+新易盛 H1 合计净利破 210 亿。
+- ④ 港股（9/8 收 + 9/9 盘中）：恒指 -0.38% (25,317.18)、恒生科技 -1.61%；南向净买入 61.28 亿港元（长飞光纤 6.54/阿里-W 6.27/小米-W 5.59 亿居前）；9/9 光通信延续强势：海光芯正 +17.73%、长飞光纤光缆盘中 +21%（野村光纤涨价）、俊知 +5.56%。
+- ⑤ 新能源：比亚迪 8 月 44.03 万辆（海外 18 万新高）；塔斯拉等十余品牌 9 月降价促销；理想 i6 9 月底预订、引入中创新航电池；小米 8 月交付 3 万+；特斯拉 Cybercab 量产推进。
+- ⑥ 催化日历: 9/9 (美西 10:00) Apple「Surprise and Shine」（新 CEO Ternus 首秀 + iPhone 18 Pro/Max + 折叠屏 iPhone Ultra + Siri AI，预购 9/12）; 9/12 Grok 4.7（预期）。
+- 口径备注：9/9 A 股/港股为盘中报道数据，收盘价以交易所结算为准；美股为 9/8 正式收盘价。
+- Updated: wiki/index.md（Synthesis 表顶部新增 investment-daily 2026-09-09 条目）
+- New pages: wiki/synthesis/2026-09-09/investment-daily.md
+- Contradictions: none（大盘指数收跌 vs AI 基建逆势大涨为结构性分化，非数据矛盾）
+
 ## [2026-09-09] synthesis | tech-report-digest (2026-09-09)
 - Summary: wiki/synthesis/2026-09-09/tech-report-digest.md — LLM Tech Report Digest (Delta 版, vs 09-08 全量基准, 聚焦 09-08→09-09 窗口)。头号事件: OpenAI GPT-6 Astra 全面铺开启动 (09-09 blog 更新, limited orgs 今日起 → coming days 全量 Plus/Pro/Business/Enterprise + API + Azure + Bedrock; API 1,050,000 ctx / 128,000 max output / cutoff 2026-04-30; 首个 Critical 网络安全; 书面推理更难监控)。窗口内实质动作: ByteDance Seed 2.0 Agent 系列发布 (09-03, Agent 2.0 Pro/Lite/Mini + Seed 2.0 Code, 豆包/TRAE + 火山引擎闭源 MaaS); Mistral Ministral 3 技术报告复盘 (arXiv 2601.08584, Cascade Distillation, 3B/8B/14B, 仅 1–3T token, ≤256K ctx, Apache 2.0); xAI Grok 4.7 (预期 09-12, 2.1T +40%, SpaceX/Starlink 语料, 预训练 08-12 完成, 零官方文档); DeepSeek V5 定性为 rumor。其余 15 家机构无窗口内新 tech report/system card, 规格延续 09-08/09-07 基准; Apple AFM 2026 报告仍逾期, 09-09 苹果发布会为产品侧 non-model 事件。时间表: 09-12 Grok 4.7 → 9 月中下旬 Fable 5.2 (传闻)。
 - Updated: wiki/index.md (Synthesis 表顶部新增 tech-report-digest 2026-09-09 条目)
