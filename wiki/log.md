@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail-10`
 
+## [2026-09-09] synthesis | tech-report-digest (2026-09-09)
+- Summary: wiki/synthesis/2026-09-09/tech-report-digest.md — LLM Tech Report Digest (Delta 版, vs 09-08 全量基准, 聚焦 09-08→09-09 窗口)。头号事件: OpenAI GPT-6 Astra 全面铺开启动 (09-09 blog 更新, limited orgs 今日起 → coming days 全量 Plus/Pro/Business/Enterprise + API + Azure + Bedrock; API 1,050,000 ctx / 128,000 max output / cutoff 2026-04-30; 首个 Critical 网络安全; 书面推理更难监控)。窗口内实质动作: ByteDance Seed 2.0 Agent 系列发布 (09-03, Agent 2.0 Pro/Lite/Mini + Seed 2.0 Code, 豆包/TRAE + 火山引擎闭源 MaaS); Mistral Ministral 3 技术报告复盘 (arXiv 2601.08584, Cascade Distillation, 3B/8B/14B, 仅 1–3T token, ≤256K ctx, Apache 2.0); xAI Grok 4.7 (预期 09-12, 2.1T +40%, SpaceX/Starlink 语料, 预训练 08-12 完成, 零官方文档); DeepSeek V5 定性为 rumor。其余 15 家机构无窗口内新 tech report/system card, 规格延续 09-08/09-07 基准; Apple AFM 2026 报告仍逾期, 09-09 苹果发布会为产品侧 non-model 事件。时间表: 09-12 Grok 4.7 → 9 月中下旬 Fable 5.2 (传闻)。
+- Updated: wiki/index.md (Synthesis 表顶部新增 tech-report-digest 2026-09-09 条目)
+- New pages: wiki/synthesis/2026-09-09/tech-report-digest.md
+- Contradictions: DeepSeek "V5-Preview" 传闻被第三方 (orcarouter.ai) 标注为 rumor、官方零确认, 与生产版 V4 线 (Flash-0731/Pro-0813/Flash-Vision-Exp) 并存 — 已在 digest 中显式区分; GPT-6 Astra ARC-AGI-3 官方 99.9% vs ARC Prize provider-neutral 62.7% 口径差 (沿用 09-06 记录, 非本窗口新增)
+
 ## [2026-09-08] synthesis | wq101-alpha-daily (2026-09-08)
 - Summary: wiki/synthesis/2026-09-08/wq101-alpha-daily.md — WorldQuant 101 Alpha 因子美股精选 Top 20 (基于 9/4 收盘 + 9/8 复市数据; 标普 ~7,707 -0.15%, Dow 53,414 -0.51%, Nasdaq 26,507 -0.29%; CPI 3.4%, Fed 3.50-3.75% 加息 25bp 概率 ~60%; Brent ~$91-92 地缘风险)。
 - 7 因子框架 (Alpha#1 动量 / #6 量价相关 / #12 量价背离 / #19 均值回复 / #30 波动率 / #41 趋势强度 / #53 反转); 本日 AI 硬件/存储超周期动量(Alpha#1 60%)+量价(Alpha#6 40%)共振最强势; 板块轮动至 Technology×11 / Healthcare×3 / Consumer Disc.×2 / Financials×1 / Industrials×1 / Comm. Services×2。
