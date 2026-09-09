@@ -4,6 +4,18 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail-10`
 
+## [2026-09-09] synthesis | game-rl-daily (2026-09-09)
+- Summary: wiki/synthesis/2026-09-09/game-rl-daily.md — Game RL & Game AI Bot daily digest. arXiv `list/*/recent`仍锚定 Mon 7 Sep 2026 window (无新 mailing) → 本次为第三遍 noise-floor sweep + web mining over Sep 1–8 window, 所有 featured arXiv ID 均 grep 验证 0 hits in wiki/ (豁免: 2609.03667 已在 09-05 arxiv-ai-search 完整报道, 此处 cross-ref)。
+- ① Game RL: CANOPY (2609.01245) — 稀疏 outcome-only RL 的失败归因于实践 bug (signal starvation + policy drift) 而非算法上限; coverage-anchored on-policy 更新使 Qwen3-14B 登顶 AppWorld 公开榜 (Test-Normal TGC 86.9 / Test-Challenge 67.6), 同法 Qwen3.5-9B SWE-bench Verified +16.6。
+- ② Game AI Bot: SAGE (2609.01567, EMNLP 2026 Findings) — entropy-gated 查询不完美 VLM teacher、environment-advantage 加权蒸馏至轻量 RL policy, 推理期零 VLM 调用, 若干环境反超 teacher。
+- ③ Skills: CoSkill (2609.04865) — Reasoning Agent + Meta-Skill Agent 联合 RL 共适应, static workflow → learnable meta-agent; ALFWorld 98.4% / WebShop 90.6% (+3.5/+6.2 pp)。
+- ④ Related: Verbal RL survey (2609.01597) — 三大支柱 Grounding/Deliberative/Learning feedback 首次统一分类学; 交叉引用 OOD offline MARL sequence models (2609.03667, InstaDeep, task diversity > dataset size, SMAX/StarCraft 3.2×)。
+- ⑤ Continuity/dedup: 头部分列出 09-07/09-08/09-09 兄弟 digest 与历史 game-rl-daily 已覆盖论文 (CHAMP 2609.04870 / HPGPN 2609.04803 / NashDreamer 2609.01549 / S3Gym + curiosity trio / 2609.04303 / 2609.05298 / 2609.04394 / 2609.04396 / 2609.04911 / 2602.00190 / 2609.03753 / 2609.03169 / 2609.04894 / MineCEraft / CivBench / Matrix-Game 3.5 / 2608.30819 / 2608.31166 / 2609.00504 / 2609.01838 / 2609.05897 / 2609.05961 / 2609.06019 / MasterChess 2608.27757 等), 均不重复 featured。
+- 主题: ① outcome-only RL 的天花板是"实践 bug" 而非算法; ② skill system 从被动 artifact → 协同进化 agent; ③ verbal feedback 成为一等 RL channel; ④ offline multi-agent transfer 中 task diversity 优于 data volume。
+- Updated: wiki/index.md (Synthesis 表顶部新增 game-rl-daily 2026-09-09 条目)
+- New pages: wiki/synthesis/2026-09-09/game-rl-daily.md
+- Contradictions: none; 与 09-08 记载无冲突。资格备注: 2609.01567 venue 取自 journal-ref 字段 (EMNLP 2026 Findings); 三篇 affiliations 为 *(inferred)*。
+
 ## [2026-09-09] synthesis | investment-daily (2026-09-09)
 - Summary: wiki/synthesis/2026-09-09/investment-daily.md — 投资日报（美股/A股/港股/中概股/NW 光伏新能源）。**本期主线 = 光通信/光互联全链条爆发 + OpenAI 生态 + 苹果发布会**。
 - ① 美股（9/8 收盘）：道指 -1.17% (52,786.07)、纳指 -0.32% (26,421.41)、标普 -0.58% (7,673.52)，三大指数收跌但 AI 基建逆势：光通信 Lumentum +11.04%/康宁 +7.56%/Coherent +7%；算力租赁 CoreWeave +11.72%/Nebius +7.73%；**高通×亚马逊跨多代定制 AI 推理芯片 + 1.6T 光互联合作**（最高 $600 亿采购、2500 万股认股权证、行权价 $161.26，高通盘前 +10%，数据中心 2029 目标 $150 亿）；英特尔 +9%（PC CPU 涨价 10%）；SpaceX 重回 $2T；诺华 -13%（一周内三挫）。收盘价：NVDA $225.73 / AAPL $316.22 / AMD $505.74 / AVGO $368.56 / PLTR $170.30 / SNOW $335.50。
