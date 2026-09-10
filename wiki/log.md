@@ -5969,3 +5969,10 @@
 - Updated: wiki/index.md（Synthesis 表按文件名顺序新增 conference-digest 2026-09-09 条目，置于 09-09 arxiv-paper-check 之后）
 - New pages: wiki/synthesis/2026-09-09/conference-digest.md
 - Contradictions: none
+
+## [2026-09-10] synthesis | wq101-alpha-daily (2026-09-10)
+- Summary: wiki/synthesis/2026-09-10/wq101-alpha-daily.md — WorldQuant 101 Alpha 因子每日精选 — Top 20 美股（2026-09-10，基准 9/9 收盘）。市场：道指 -0.77% 52,380.66 / 标普 -0.48% 7,636.36 / 纳指 -0.64% 26,253.34（连续收跌），但 Brent 破 $100（7 月以来首次）驱动能源领涨、META +6.55% 领跑 AI 消费货币化、存储/网络/光轮动接棒（半导体设备 KLAC -3.82% 被抛售）。Top 5 因子精选：① META 9.4（Alpha#6 量价比 1.98× + Alpha#1 动量，Muse 三档订阅 = AI capex→消费收入定价锚）；② MU 9.1（~$1,028，市值 $1.16T 全球第 13，HBM 2026 售罄/2027 锁定，Alpha#6+#53）；③ AMD 8.9（+3.04% 缩量新高 Pocket Pivot，Alpha#1+#41，MI450）；④ XOM 8.6（油破百 + 高 FCF 通胀对冲，Alpha#1+#12，新进）；⑤ MRVL 8.5（定制网络/1.6T 光互联 $235，Alpha#1+#41）。板块：半导体/存储链 9 只 + 能源 2 + AI 基建/电力 3 + 光通信 3 + 平台/消费 3。因子触发：Alpha#1 动量 10 只、Alpha#6 量价 5 只（META 最强）、Alpha#12（XOM/SLB/STX/INTC）、Alpha#19（ORCL/AVGO/TSLA/MSFT/WDC）、Alpha#30（SLB/CRWV/SNDK/LITE/COHR）、Alpha#41（AMD/MRVL/BE/GLW/AVGO/MSFT）、Alpha#53（MU/TSLA/INTC）。当日轮动结论：设备→存储/网络/光 + 能源；KLAC（昨日 Top1）日内 -3.82% 出局。宏观风险：周五 CPI（9/11）为 Fed 关键变量、9/16 FOMC 加息 ~60%、10Y 2023 年以来新高、存储年涨幅 200~650%+ 拥挤度极高（Morningstar 警告 20–30% 回撤）。
+- Data corrections: 前一日（09-09）wq101 报表中 MU/MRVL/KLAC 绝对价格与多源交叉校验（fiscal.ai/tradingeconomics/companiesmarketcap/Yahoo）不符（真实 9/9：MU ~$1,028/$1.16T、MRVL ~$235、KLAC ~$183）。本报表已改用多源验证价格并在文中"数据勘误"标注。
+- Updated: wiki/index.md（Synthesis 表新增 wq101-alpha-daily 2026-09-10 条目，置于 09-10 arxiv-paper-check 之后、09-09 wq101 之前）
+- New pages: wiki/synthesis/2026-09-10/wq101-alpha-daily.md
+- Contradictions: 与 09-09 wq101 报表的 MU（~$1.16T vs ~$110B）/MRVL/KLAC 价格数据存在矛盾（前表数据有误，已勘误）
