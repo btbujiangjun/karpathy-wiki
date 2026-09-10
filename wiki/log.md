@@ -2,7 +2,23 @@
 
 > Append-only chronological record of all wiki operations.
 > Each entry: `## [YYYY-MM-DD] operation | subject`
-> Parse with: `grep "^## \[" wiki/log.md | tail-10`
+> Parse with: `grep "^## \[" wiki/log.md | tail -10`
+
+## [2026-09-10] synthesis | conference-digest (2026-09-10)
+- Summary: wiki/synthesis/2026-09-10/conference-digest.md — Conference Digest: Top ML/AI Conferences & Recent Papers (2025-2026). Comprehensive compilation covering ICLR 2026 (5,355 accepted, 27.4% rate), ICML 2026 (6,352 accepted), AAAI 2026 (4,167 accepted, 17.6% rate), NeurIPS 2025, KDD 2026, SIGIR 2026, ACL 2026, EMNLP 2026, WWW 2026, RecSys 2025, CIKM 2025.
+- Key papers covered:
+  - ICLR 2026 Outstanding: Transformers are Inherently Succinct, LLMs Get Lost In Multi-Turn Conversation, The Polar Express (Muon)
+  - Recommendation Systems: GenRec (JD.com, SIGIR'26, +9.5% clicks), OneRank (Alibaba, KDD'26, unified Transformer-native ranking), MixFormer (co-scaling dense+sequence), IntuRec (KDD'26, latent reasoning for rec), Climber-Pilot (KDD'26, non-myopic generative rec)
+  - CTR Prediction: EST (Alibaba, +3.27% RPM), IDProxy (Xiaohongshu, MLLM cold-start), CADET (LinkedIn, +11.04% CTR), DS-MLP (Meituan/ByteDance), UniCon (Meituan, +3.09% RPM), FAT (Alibaba, +2.33% CTR)
+  - LLM Agents: COMPASS (Google Cloud AI, +20% on GAIA), FlowSearch (82.42% on GAIA), Eureka (meta-agent orchestration), MiRA (Google DeepMind, +43% success rate), ChronoMem (Google, semantic rollback)
+  - Generative Models: Set Diffusion, ARPG (FID 1.83), Evo (8B duality latent flow), Insertion Process
+  - AAAI 2026: InTRO (20% improvement on math reasoning), CDCR-SFT (95.33% on CLADDER), Bonsai (interpretable reasoning)
+  - ICML 2026: Variance Driven Exploration, Induction Heads Interpolate N-Grams, SPHERE (MoE for RL)
+  - NeurIPS 2025: TTRL (test-time RL), Perception Encoder (Meta AI), EraseFlow (GFlowNet)
+- Key trends: Generative recommendation going mainstream (JD/Meituan/Taobao/LinkedIn deployments), Transformer-native CTR prediction, agent systems maturing with hierarchical architectures, diffusion-AR hybrids, production-scale deployments with online A/B results
+- Updated: wiki/index.md (Synthesis table top new conference-digest 2026-09-10 entry)
+- New pages: wiki/synthesis/2026-09-10/conference-digest.md
+- Contradictions: none
 
 ## [2026-09-10] synthesis | arxiv-paper-check (2026-09-10)
 - Summary: wiki/synthesis/2026-09-10/arxiv-paper-check.md — arXiv daily scan (AI + CTR focus). Thu, 10 Sep 2026 mailing. Scanned cs.AI (150 entries), cs.IR (11 entries), cs.LG (163 entries). Zero new CTR papers this window; 3 rec-adjacent papers (CIKM'26 feature transformation, PACE dialogue routing, ALIGN-HOLD DiDi ride-hailing). 18 papers across 6 themes.
