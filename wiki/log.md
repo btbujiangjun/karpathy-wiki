@@ -4,6 +4,19 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail-10`
 
+## [2026-09-10] synthesis | arxiv-paper-check (2026-09-10)
+- Summary: wiki/synthesis/2026-09-10/arxiv-paper-check.md — arXiv daily scan (AI + CTR focus). Thu, 10 Sep 2026 mailing. Scanned cs.AI (150 entries), cs.IR (11 entries), cs.LG (163 entries). Zero new CTR papers this window; 3 rec-adjacent papers (CIKM'26 feature transformation, PACE dialogue routing, ALIGN-HOLD DiDi ride-hailing). 18 papers across 6 themes.
+- ① Agent Memory Lifecycle (3): Fortunate Recall ontology-driven memory lifecycle (2609.10413), What Should an Agent Forget separation of stored vs used (2609.10263), PRAGMA personalized memory alignment lifelong conversations EMNLP'26 (2609.09664).
+- ② Agent Evolution & Architecture (2): RobustSGPO search-space control for agent evolution (2609.09646), JarvisGUI cross-device GUI agents EMNLP'26 Main (2609.10451).
+- ③ Reasoning (2): Structural Process Supervision latent CoT (2609.09928), Token-Trimming SFT for math EMNLP'26 Findings (2609.09707).
+- ④ LLM Efficiency (4): UnitBoost compound LLM merge operator (2609.09815), KV Cache Concatenation-aware hybrid (2609.09768), Forward-Free depth pruning (2609.09883), Layer-Selective Unlearning AACL'26 (2609.10439).
+- ⑤ Foundation Models (1): Semigroup-JEPA zero-shot physics (2609.10464), ConvMem convolutional long-context memory (2609.10441).
+- ⑥ Rec-Adjacent (3): Hierarchical Feature Transformation CIKM'26 (2609.10225), PACE QoE-aware RAG routing (2609.10372), ALIGN-HOLD DiDi ride-hailing (2609.09685).
+- Key themes: memory management as first-class agent engineering concern; not-all-tokens-equal in SFT; model composition without retraining; zero-shot physics via semigroup constraints.
+- Updated: wiki/index.md (Synthesis table top new arxiv-paper-check 2026-09-10 entry)
+- New pages: wiki/synthesis/2026-09-10/arxiv-paper-check.md
+- Contradictions: none
+
 ## [2026-09-09] synthesis | wq101-alpha-daily (2026-09-09)
 - Summary: wiki/synthesis/2026-09-09/wq101-alpha-daily.md — WorldQuant 101 Alpha 因子每日精选 Top 20 美股。基于 Alpha#1/#6/#12/#19/#30/#41/#53 七因子框架打分排序。
 - 市场背景 (9/8 收盘): S&P 500 -0.58%, Dow -1.18%, Nasdaq -0.32%，费半逆势 +1.30%；油价逼近 $100 驱动通胀担忧；Fed 加息概率 ~60%。
