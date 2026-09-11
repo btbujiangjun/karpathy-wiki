@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-09-11] synthesis | investment-daily (2026-09-11)
+- Summary: wiki/synthesis/2026-09-11/investment-daily.md — 每日投资热点简报：覆盖美股/港股/A股/中概股科技AI板块
+- 热点事件 (17): Oracle $3000 亿 OpenAI 算力合约 + NVIDIA×Palantir 主权 AI 供应链 + DOJ Groq 调查 + OpenAI GPT-6 Astra + Meta Muse 个人 AI Agent + Apple 折叠屏 iPhone + 燧原科技科创板上市首日涨200%+ + 港股 AI 大模型板块暴跌(智谱-10.34%/MiniMax-8.98%) + DeepSeek Flash 降价 + CPO/光通信光博会催化 + 港股汽车股集体走低 + 油价破百$100 + PPI超预期5.4%
+- Updated: wiki/index.md (Synthesis table added investment-daily 2026-09-11 entry)
+- New pages: wiki/synthesis/2026-09-11/investment-daily.md
+- Contradictions: none
+
 ## [2026-09-11] synthesis | tech-report-digest (2026-09-11)
 - Summary: wiki/synthesis/2026-09-11/tech-report-digest.md — 全球主要 AI 公司大模型技术报告速览（截至 2026-09-11）。覆盖 19 家公司/组织，从 2024-12 至 2026-08 的公开 Tech Report / System Card / White Paper。
 - Companies covered (19): DeepSeek (V3, V3.2, R1, V4), OpenAI (o1, GPT-4.5, GPT-5), Anthropic (Opus 4, Opus 5, Fable/Mythos 5.1), Meta AI (Llama 3, Llama 4), Google DeepMind (Gemini 2.5), Microsoft (Phi-4, Phi-4-reasoning, Phi-4-Mini), Mistral AI (Magistral, Medium 3, Large 3), Alibaba/Qwen (Qwen2.5, Qwen3, Qwen3.8-Max), xAI (Grok 4, Grok 4.20), NVIDIA (Nemotron 3), Moonshot AI (Kimi K2, K2.5), Amazon (Nova), Apple (AFM 2025), ByteDance/Seed (Seed1.5-VL, Seed-Thinking-v1.5, Seed1.6), 智谱 AI (GLM-4.5, GLM-5), InternLM (InternVL3, InternVL3.5), StepFun (Step-3, Step-3.5 Flash, Step-DeepResearch), 01.AI (Yi), Baichuan (Baichuan-Omni).
