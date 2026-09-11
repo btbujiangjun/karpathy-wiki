@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-09-11] synthesis | tech-report-digest (2026-09-11)
+- Summary: wiki/synthesis/2026-09-11/tech-report-digest.md — 全球主要 AI 公司大模型技术报告速览（截至 2026-09-11）。覆盖 19 家公司/组织，从 2024-12 至 2026-08 的公开 Tech Report / System Card / White Paper。
+- Companies covered (19): DeepSeek (V3, V3.2, R1, V4), OpenAI (o1, GPT-4.5, GPT-5), Anthropic (Opus 4, Opus 5, Fable/Mythos 5.1), Meta AI (Llama 3, Llama 4), Google DeepMind (Gemini 2.5), Microsoft (Phi-4, Phi-4-reasoning, Phi-4-Mini), Mistral AI (Magistral, Medium 3, Large 3), Alibaba/Qwen (Qwen2.5, Qwen3, Qwen3.8-Max), xAI (Grok 4, Grok 4.20), NVIDIA (Nemotron 3), Moonshot AI (Kimi K2, K2.5), Amazon (Nova), Apple (AFM 2025), ByteDance/Seed (Seed1.5-VL, Seed-Thinking-v1.5, Seed1.6), 智谱 AI (GLM-4.5, GLM-5), InternLM (InternVL3, InternVL3.5), StepFun (Step-3, Step-3.5 Flash, Step-DeepResearch), 01.AI (Yi), Baichuan (Baichuan-Omni).
+- Cross-section analysis: MoE+Hybrid 架构趋势, RL 后训练创新, Scaling Law, 长上下文竞赛, 推理模型格局, 未发布独立报告的公司
+- Updated: wiki/index.md (Synthesis table added tech-report-digest 2026-09-11 entry)
+- New pages: wiki/synthesis/2026-09-11/tech-report-digest.md
+- Contradictions: none
+
 ## [2026-09-11] synthesis | conference-digest (2026-09-11)
 - Summary: wiki/synthesis/2026-09-11/conference-digest.md — Conference Digest: Top ML/AI Conferences 2025-2026 — Full Edition. Comprehensive compilation covering ICML 2026 (6,352 accepted, 23,918 submissions), ICLR 2026 (5,355 accepted, 19,525 submissions), NeurIPS 2025 (5,200+ accepted), CVPR 2026 (4,089 accepted, 16,092 submissions), KDD 2026 (~1,400+ papers), SIGIR 2026, ACL 2026 (2,296 main + 2,163 findings), EMNLP 2025, WWW 2026, CIKM 2025 (870 accepted), RecSys 2025-2026.
 - 12 sections: ICML 2026 (outstanding papers, orals, spotlights), ICLR 2026 (outstanding papers), NeurIPS 2025 (best papers + runners-up), CVPR 2026 (best papers + honorable mentions), KDD 2026 (industry papers + keynotes), SIGIR 2026, ACL 2026, EMNLP 2025, WWW 2026, CIKM 2025, RecSys 2025-2026, Cross-Conference Themes (12 subsections), Key Industry Lab Highlights (10 companies).
