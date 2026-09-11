@@ -4,6 +4,16 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-09-11] synthesis | conference-digest (2026-09-11)
+- Summary: wiki/synthesis/2026-09-11/conference-digest.md — Conference Digest: Top ML/AI Conferences 2025-2026 — Full Edition. Comprehensive compilation covering ICML 2026 (6,352 accepted, 23,918 submissions), ICLR 2026 (5,355 accepted, 19,525 submissions), NeurIPS 2025 (5,200+ accepted), CVPR 2026 (4,089 accepted, 16,092 submissions), KDD 2026 (~1,400+ papers), SIGIR 2026, ACL 2026 (2,296 main + 2,163 findings), EMNLP 2025, WWW 2026, CIKM 2025 (870 accepted), RecSys 2025-2026.
+- 12 sections: ICML 2026 (outstanding papers, orals, spotlights), ICLR 2026 (outstanding papers), NeurIPS 2025 (best papers + runners-up), CVPR 2026 (best papers + honorable mentions), KDD 2026 (industry papers + keynotes), SIGIR 2026, ACL 2026, EMNLP 2025, WWW 2026, CIKM 2025, RecSys 2025-2026, Cross-Conference Themes (12 subsections), Key Industry Lab Highlights (10 companies).
+- Key papers: The Flexibility Trap (ICML best, challenges DLM arbitrary order), High-Accuracy Sampling (ICML best, polylog(1/δ) diffusion sampler), Transformers are Inherently Succinct (ICLR outstanding), LLMs Get Lost In Multi-Turn Conversation (ICLR outstanding), Gated Attention (NeurIPS best, Alibaba Qwen, eliminates attention sink), 1000 Layer Networks (NeurIPS best, RL depth scaling), D4RT (CVPR best, 4D reconstruction), Efficiently Reconstructing Dynamic Scenes (CVPR best student), NitroGen (CVPR HM, NVIDIA gaming foundation model), SAM 3D (CVPR HM, Meta 3D reconstruction).
+- Cross-conference themes: Recommendation production deployments (Kuaishou +3.6% target cost, JD +9.5% clicks, Alibaba +13% CTR, Meituan +3.09% RPM), LLM reasoning & post-training (PaCoRe ACL'26 8B > GPT-5), agent systems (NitroGen 40K hours gaming, daVinci-Dev SE), generative models (Set Diffusion, ARCache), CTR prediction (CADET +11%, FAT scaling law), games & code execution (GPU-CFR 80x, SPIRAL self-play).
+- Key industry labs: Google DeepMind (D4RT, Gated Attention, A3C), Meta AI (SAM 3D, Perception Encoder), Alibaba/Qwen (Gated Attention, UniAR, OneRank), ByteDance (SequenceO1 100K), Kuaishou (25 papers KDD), Tencent (TGR), Baidu (GRAB), LinkedIn (CADET), Meituan (UniCon), NVIDIA (NitroGen).
+- Updated: wiki/index.md (Synthesis table top new conference-digest 2026-09-11 entry)
+- New pages: wiki/synthesis/2026-09-11/conference-digest.md
+- Contradictions: none
+
 ## [2026-09-11] synthesis | arxiv-paper-check (2026-09-11)
 - Summary: wiki/synthesis/2026-09-11/arxiv-paper-check.md — arXiv daily scan (AI + CTR focus). Fri, 11 Sep 2026 mailing. Scanned cs.AI (171 entries), cs.IR (15 entries), cs.LG (171 entries). Zero new CTR papers; 3 rec-adjacent (UniRec cross-stage Kuaishou +0.616%, FedHUR federated, regularization landscape). 15 papers across 5 themes.
 - ① Recommendation & Ranking (3): UniRec (Kuaishou, cross-stage multi-task fusion with preference alignment, +0.616% app usage, deployed; 2609.11052), FedHUR (Fudan, hierarchical utility-guided client relations for federated rec, 5 datasets; 2609.11632), On the Regularization Landscape for Linear Recommendation Models (unifies nuclear/Frobenius-norm regularizers, closed-form solutions; 2609.11876).
