@@ -4,6 +4,15 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-09-11] synthesis | game-rl-daily (2026-09-11)
+- Summary: wiki/synthesis/2026-09-11/game-rl-daily.md — Game RL & Game AI Bot Daily Paper Digest covering 45 papers across 9 categories
+- Categories: Game RL (5), Game AI Bot (5), Game Foundation Models (4), PCG (7), Benchmarks (7), Industry Game AI (6), Self-Play (5), World Models (5), Offline/Model-Based RL (1)
+- Key papers: NitroGen (CVPR'26 HM), Game-TARS (ByteDance), Lumine (NTU/ByteDance), SPIRAL, Odysseus, PopuLoRA, CAST, Matrix-Game 3.0, PlayTrain, GameWAM, Programmable World Model
+- Key themes: Foundation models go multi-game, self-play for LLM post-training, world models reach real-time, PCG goes multi-agent, knowing-doing gap persists, benchmarks get harder
+- Updated: wiki/index.md (Synthesis table added game-rl-daily 2026-09-11 entry)
+- New pages: wiki/synthesis/2026-09-11/game-rl-daily.md
+- Contradictions: none
+
 ## [2026-09-11] synthesis | investment-daily (2026-09-11)
 - Summary: wiki/synthesis/2026-09-11/investment-daily.md — 每日投资热点简报：覆盖美股/港股/A股/中概股科技AI板块
 - 热点事件 (17): Oracle $3000 亿 OpenAI 算力合约 + NVIDIA×Palantir 主权 AI 供应链 + DOJ Groq 调查 + OpenAI GPT-6 Astra + Meta Muse 个人 AI Agent + Apple 折叠屏 iPhone + 燧原科技科创板上市首日涨200%+ + 港股 AI 大模型板块暴跌(智谱-10.34%/MiniMax-8.98%) + DeepSeek Flash 降价 + CPO/光通信光博会催化 + 港股汽车股集体走低 + 油价破百$100 + PPI超预期5.4%
