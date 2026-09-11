@@ -4,6 +4,16 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-09-11] synthesis | wq101-alpha-daily (2026-09-11)
+- Summary: wiki/synthesis/2026-09-11/wq101-alpha-daily.md — WorldQuant 101 Alpha 因子每日精选 — Top 20 美股 (基准 9/10 收盘)
+- 市场: 三大指数 4 连跌 (SPX 7,591.75 -0.58% / NDX 26,081.73 -0.65% / DJI 52,064.10 -0.60% 破 50 DMA, Three Black Crows)；油价破 $100 (美袭伊朗油轮)；30Y 创 19 年新高；PPI 5.4% 超预期；CPI 今日定调；9/16 FOMC 加息概率 ~60%
+- Top 5: COP (9.0) 油价破百通胀交易 + DELL (8.8) 9月 +21.5% + MRNA (8.6) 肿瘤疫苗三期 + AAPL (8.5) 均值回复 + JNJ (8.4) 防御轮入
+- 板块轮动: 高位 AI 硬件获利了结 → 能源 (COP/XOM/SLB) + 黄金 (NEM/FCX/CDE) + 医药 (JNJ/MRNA/SMMT) + 金融/消费 (HOOD/MSTR/AUR)
+- 数据校核: 非 API 直连价格含多源估算 ("约"标记)，报告已标注
+- Updated: wiki/index.md (Synthesis table added wq101-alpha-daily 2026-09-11 entry)
+- New pages: wiki/synthesis/2026-09-11/wq101-alpha-daily.md
+- Contradictions: none
+
 ## [2026-09-11] synthesis | game-rl-daily (2026-09-11)
 - Summary: wiki/synthesis/2026-09-11/game-rl-daily.md — Game RL & Game AI Bot Daily Paper Digest covering 45 papers across 9 categories
 - Categories: Game RL (5), Game AI Bot (5), Game Foundation Models (4), PCG (7), Benchmarks (7), Industry Game AI (6), Self-Play (5), World Models (5), Offline/Model-Based RL (1)
