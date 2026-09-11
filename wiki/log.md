@@ -4,6 +4,32 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-09-11] synthesis | arxiv-paper-check (2026-09-11)
+- Summary: wiki/synthesis/2026-09-11/arxiv-paper-check.md — arXiv daily scan (AI + CTR focus). Fri, 11 Sep 2026 mailing. Scanned cs.AI (171 entries), cs.IR (15 entries), cs.LG (171 entries). Zero new CTR papers; 3 rec-adjacent (UniRec cross-stage Kuaishou +0.616%, FedHUR federated, regularization landscape). 15 papers across 5 themes.
+- ① Recommendation & Ranking (3): UniRec (Kuaishou, cross-stage multi-task fusion with preference alignment, +0.616% app usage, deployed; 2609.11052), FedHUR (Fudan, hierarchical utility-guided client relations for federated rec, 5 datasets; 2609.11632), On the Regularization Landscape for Linear Recommendation Models (unifies nuclear/Frobenius-norm regularizers, closed-form solutions; 2609.11876).
+- ② LLM Efficiency & Serving (3): LILA (calibration-free structured pruning via latent spectral geometry, KS distance on FFN singular values, no calibration data; 2609.11163), REVA (ICDM'26, reusable evidence view aggregation for RAG, 5.3-15.6x compression overhead reduction; 2609.11209), Thinking with Looped Flows (ARC-AGI-1 58.8%, local denoising objectives for recurrence; 2609.11801).
+- ③ Agent Skill Optimization (2): COBRA-Skills (contextual bandit-guided skill evolution, -55-58% cost vs SkillOpt, 50 examples/benchmark; 2609.11682), The Last AI Built by Humans (recursive self-improvement theory; 2609.11873).
+- ④ On-Policy Distillation (1): Unified Per-Token Gating FKL/RKL (EMNLP'26 Findings, four-coefficient parameterization unifying EOPD/ToDi; 2609.11768).
+- ⑤ Retrieval & RAG (4): VikingRAG (token-efficient structured doc RAG; 2609.11390), Distribution-Shape QPP (TSD'26, retrieval sufficiency from score distribution shape; 2609.11646), Generative Late-Interaction Embeddings (visual doc retrieval; 2609.11808), When Synthetic Data Hurts (EMNLP'26 Industry, catastrophic forgetting in skill retrieval; 2609.10750).
+- Key themes: Cross-stage cascaded optimization validated in production (UniRec); calibration-free pruning simplifies LLM deployment (LILA); agent skill cost reduction via bandit prioritization (COBRA); RAG compression via historical attention mining (REVA); recursive self-improvement as AI frontier.
+- Updated: wiki/index.md (Synthesis table top added arxiv-paper-check 2026-09-11 entry)
+- New pages: wiki/synthesis/2026-09-11/arxiv-paper-check.md
+- Contradictions: none
+
+## [2026-09-11] synthesis | arxiv-daily (2026-09-11)
+- Summary: wiki/synthesis/2026-09-11/arxiv-daily.md — arXiv Daily Report covering AI, LLMs, Recommendation, Advertising, CTR Prediction, Sequential Modeling, and Games. Scanned cs.AI, cs.LG, cs.IR, cs.GT recent listings + targeted web searches. 27 papers across 7 sections.
+- ① Recommendation & Sequential Modeling (5): SequenceO1 (Douyin/ByteDance, 100K ultra-long sequences with low-rank caching, RecSys'26 oral); UniRec (cross-stage multi-task fusion for cascaded rec); Closing Long-Short View Gap (CIKM'26); Task-Blind No MORE (CIKM'26, multi-task ranking backbone); FedHUR (Fudan, federated personalized rec).
+- ② CTR Prediction (5): CADET (LinkedIn, decoder-only transformer, +11.04% CTR, self-gated attention + timestamp RoPE); FAT (Alibaba, KDD'26, field-aware transformer, CTR scaling law); DeRes (dual residual paths, gamma=0.118 vs 0.071 OneTrans); LoopCTR (recursive layer reuse scaling); LENS (Tencent, interaction granularity staged design).
+- ③ Advertising & LLM-Enhanced Rec (4): Fine-Tuned LLM as Complementary Predictor (LLM as ancillary predictor for ads); LLM Retrieval for Stable Ad Recommendations (semantic candidate generation); RankUp (Tencent Weixin, high-rank representations, GMV +3.41-4.81%); Dual-Stream MLP (SOTA with vanilla MLP).
+- ④ LLMs & AI Agents (8): Recursive Self-Improvement; On-Policy Distillation (one example); Terminal-Universe (Alibaba); Test-Time Adaptation (CMU/Stanford/DeepMind); LLM-Rec Routing; LILA (calibration-free pruning); PTQ Analysis (Tsinghua); Thinking with Looped Flows.
+- ⑤ RAG & IR (3): VikingRAG (token-efficient structured doc RAG); EAGER (EMNLP'26 Industry, e-commerce query gen); Agentic Share-of-Search (multi-agent e-commerce).
+- ⑥ Game Theory & AI in Games (6): GPU-CFR (80x CFR speedup via CUDA graphs); LLM Strategic Choice (internal anatomy); Turn-Based Combat Arena (ML agent training); Paradoxes of PoA (chaotic dynamics); LLM Energy Trading (P2P); Board Game Arena (LLM evaluation via games).
+- ⑦ Scaling Laws (3): Thinking with Looped Flows; MoE Overfitting (Stanford/Allen AI); SCILAWS-BENCH (scientific law discovery, UCSD).
+- Key trends: LLM integration into production ads/rec systems accelerating (LinkedIn CADET, Alibaba FAT, Douyin SequenceO1); CTR scaling law research maturing (field-aware, loop, dual-residual approaches); game-theoretic AI bridging CFR optimization and LLM strategic behavior; efficient LLM (pruning, quantization, MoE) remains active.
+- Updated: wiki/index.md (Synthesis table top added arxiv-daily 2026-09-11 entry)
+- New pages: wiki/synthesis/2026-09-11/arxiv-daily.md
+- Contradictions: none
+
 ## [2026-09-10] synthesis | game-rl-daily (2026-09-10)
 - Summary: wiki/synthesis/2026-09-10/game-rl-daily.md — Game RL & Game AI Bot daily paper digest. arXiv mailing advanced to Wed 9 Sep 2026 window; fresh Sep 8–10 submissions surfaced. Game RL: SPEAR self-imitation experience replay for language games (2609.08829); SRPO self-play RL optimization for multi-agent LLM coordination (2609.07539); NashDreamer model-based RL for two-player zero-sum games (2609.01139). Game AI Bot: PlayTrain LLM-generated JS games as RL training environments (2609.09059); LLM-guided RL for adaptive NPC combat behavior with Mistral 7B strategy selector (2609.02931); ASGame multi-agent strategic game understanding (2609.06641); TextWorldReasoning logic-tree prompting for text games (2608.22234). World Models / Foundation Models: WorldMind decoupled game world model for state-aware NPCs + BOSS-140K dataset (Tencent, 2608.21439); MARL-GPT multi-task MARL foundation model (2604.05943, catch-up). Benchmarks: HLSMAC high-level strategy SC2 MARL benchmark (2509.12927, catch-up). PCG: LLM-guided procedural content metageneration (2608.17947, catch-up). Related: Skill-SP skill self-play co-evolution (2607.22529, catch-up); ProPlay procedural world models for playability prediction (2609.06479).
 - Updated: wiki/index.md (Synthesis table top added game-rl-daily 2026-09-10 entry)
