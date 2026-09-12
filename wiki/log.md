@@ -4,6 +4,25 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-09-12] synthesis | wq101-alpha-daily (2026-09-12)
+- Summary: wiki/synthesis/2026-09-12/wq101-alpha-daily.md — WorldQuant 101 Alpha 因子每日精选 — Top 20 美股 (基准 9/11 收盘)
+- 市场: 周五放量大反弹 (SPX +0.86% 7,656.98 / 道指 +509 52,573.29 +0.98% / 纳指 +0.96% 26,333.04, 终结四连跌但全周收跌, VIX 15.84 -11.2%, 10Y 4.95%)；8 月 CPI 符合预期 (核心 +0.3% 略超)；9/15-16 FOMC 加息概率 ~87-90% (⚠️跨源分歧: Pomegra 69% vs MarketDash/Kiplinger 90%, wiki 内取 87-90%)；WTI 回落 ~$99-100 (周 +9%)，能源 YTD +43-47% 领跑 (XLE 历史新高)
+- 催化/主线: Oracle 上调全年 capex 至 $90-95B + OpenAI $30B 合约 → AI 基建主线强势回归 (从 09-11 防御配置切换): DELL +11.98%/HPE +12.44% (S&P 最大涨幅)/NTAP +8.56%/SMCI +7%/光通信无催化齐涨 (+4-5%)
+- Top 5: DELL (9.3, #1+#6, $95B backlog) → HPE (9.1, #1+#6, AI backlog $7.6B) → NVDA (9.0, #1+#41, 逼近 ATH) → AVGO (8.9, #1+#41, AI +221%) → XOM (8.8, #1+#41, 能源通胀交易)
+- 板块: AI 服务器 (DELL/HPE/NTAP/SMCI) + 半导体 (NVDA/AVGO/AMD/MU/MRVL) + 光通信/网络 (LITE/CIEN/ANET/CSCO/COHR) + 能源 (XOM/CVX/COP) + AI 电力 (VST/CEG, 均值回复) + ORCL (#19/#53 最大分歧反转, RPO $664B vs FCF -$5.4B)
+- 数据校核: COP 参考价跨源分歧 ($118.79 vs $137) 已标注约值；ORCL 收盘分分歧 ($150.28 vs $154.31)；MU 市值基于 ~$1,028 参考价估算 (~$1.0-1.1T)；因子为定性估算非 API 实时
+- Updated: wiki/index.md (Synthesis table added wq101-alpha-daily 2026-09-12 entry)
+- New pages: wiki/synthesis/2026-09-12/wq101-alpha-daily.md
+- Contradictions: Fed 加息概率跨源分歧 (69% vs 90%, 详见 S&P500 报告与 investment-daily); COP/ORCL 收盘价跨源分歧 (已在页内标注多源估算)
+
+## [2026-09-12] synthesis | game-rl-daily (2026-09-12)
+- Summary: wiki/synthesis/2026-09-12/game-rl-daily.md — Game RL & Game AI Bot Daily Paper Digest. 20 verified-new papers across 7 sections + 2 event/proceedings pointers (IEEE CoG 2026 competitions; no new game benchmark in window).
+- Method: fresh arXiv windows Fri 11 Sep mailing (371 entries cs.AI/LG/CL/IR/GT/MA/CY) + Thu 10 Sep + Wed 9 Sep catch-up; every featured ID grep-verified 0 hits in `wiki/`; excluded already-covered 2609.11923 (GPU-CFR), 2609.11042 (T1), 2609.11863/2609.11889 (TNBR/ABRA), 2609.09059/2609.10540/2608.21439 etc.
+- Headliners: AVI-vs-AlphaZero self-play (2609.09094); multi-step-lookahead RL planning NP-hardness+approx (2609.11807); DRG-MAPPO 87% air-combat MARL (2609.11155); SUN novelty+reachability exploration EWRL 2026 (2609.08642); MARBO EMNLP 2026 social-deduction LLM agents (2609.06563); H3-World Tencent language-interface world model (2609.01560); World-Time Compute verified code WMs +29pts (2609.09163); Valerant WM+SLAM 3D map PCG (2609.09418); KuaiRP Kuaishou role-play RL tech report (2609.11127).
+- Updated: wiki/index.md (Synthesis table added game-rl-daily 2026-09-12 entry)
+- New pages: wiki/synthesis/2026-09-12/game-rl-daily.md
+- Contradictions: none (dedup verified vs 09-09→09-12 sibling digests)
+
 ## [2026-09-12] synthesis | llm-tech-report-daily (2026-09-12)
 - Summary: wiki/synthesis/2026-09-12/tech-report-digest.md — LLM Tech Report Digest 2026-09-12（各主要 AI 公司最新 Tech Report / System Card / Model Card，标注自 09-11 摘要起新增项）
 - 本日头条: ①DeepSeek-V4.1-Flash 发布 (2026-09-10, HF) — 552B backbone MoE + 196B Engram 条件记忆, 8B/16B active, 新 CED 架构 + CSA2 + SWA Bounded Replay, KV cache 890 bytes/token (~V4-Flash 的 1/4), FP4 (E2M1) KV caching, 45T tokens, 原生多模态, 1M ctx; ②Grok 4.7 跳票 (2026-09-11 Musk: 还需数日 RL tuning, 目标 ~09-15+; 2.1T params 报道)
