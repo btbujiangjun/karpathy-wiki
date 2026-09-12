@@ -4,6 +4,16 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-09-12] synthesis | llm-tech-report-daily (2026-09-12)
+- Summary: wiki/synthesis/2026-09-12/tech-report-digest.md — LLM Tech Report Digest 2026-09-12（各主要 AI 公司最新 Tech Report / System Card / Model Card，标注自 09-11 摘要起新增项）
+- 本日头条: ①DeepSeek-V4.1-Flash 发布 (2026-09-10, HF) — 552B backbone MoE + 196B Engram 条件记忆, 8B/16B active, 新 CED 架构 + CSA2 + SWA Bounded Replay, KV cache 890 bytes/token (~V4-Flash 的 1/4), FP4 (E2M1) KV caching, 45T tokens, 原生多模态, 1M ctx; ②Grok 4.7 跳票 (2026-09-11 Musk: 还需数日 RL tuning, 目标 ~09-15+; 2.1T params 报道)
+- 新增报告/模型卡 (~15): GPT-6 Astra System Card (09-03/09-09, 首个 Critical 网络安全); Muse Spark Safety & Preparedness Report (2606.12429, CBRN 缓解前 high risk, Meta AI 底层模型); Gemma 4 Technical Report (2607.02770 — dense 2.3B-31B + 26B-A4B MoE, encoder-free 12B, thinking mode, Ky footprint -37.5%, Apache 2.0); Phi-4-reasoning-vision-15B (2603.03975); Shieldstral (2607.25857) + Ministral 3 (2601.08584); Qwen3.8-Flash-Next (2608.30320 — 125B-A6B, Gated DeltaNet+QSA, off-accelerator 51B n-gram, 超 397B-A17B 前身); Grok 4.6 Model Card (08-12, 1.5T-scale/500K, Cursor 合作 + 自报安全回归); Nemotron 3 Ultra model card (06-09, 550B-A55B, NVFP4, ~6× 吞吐); Kimi K2.7 Code (09-04, 1T-A32B, Kimi Code Bench v2 62.0 +21.8%, 思考 token -30%); Nova 2 (12-02); Apple AFM 3 (06-08); Seed2.0 Model Card (2607.00248); GLM-5.2 (2606.12370) / 5.3 Flash 国产芯片 / GLM-6 在研; Intern-S2-Preview (2608.13505) / S1-Pro (2603.25040) / InternVideo3 (2606.12195); Step-3.7-Flash + Step3-VL-10B (2601.09668, 92.2% MMBench / 80.11% MMMU); Baichuan-M3 (2602.06570, HealthBench-Hard 44.4 超 GPT-5.2)
+- 交叉主题: 显式记忆层 (Engram/Memory Decoder) + 稀疏注意力 (CSA2/DSA/QSA) + off-accelerator 表征 成为 2026H2 成本稀释主线; KV cache 效率竞争 (V4.1-Flash 890B/token); 小型/开放模型"以小博大"持续 (Gemma 4 E2B≈1/10 params 匹敌 27B; Step3-VL-10B; Qwen3.8-6B active); 安全评估焦点 (OpenAI Critical cyber, Meta CBRN high-risk-raw, Grok 4.6 安全回归, Anthropic CB-1)
+- ⚠️ 提示: 智谱 GLM-6 与 GLM-5.2 时间线冲突 flagged (第三方称 GLM-6 已于 06 上旬发布 vs 官方序列 GLM-5.2 为最新; 优先官方口径, GLM-6 视为在研); Grok 4.7 参数 2.1T 与日期为第三方报道 (未验证)
+- Updated: wiki/index.md (Synthesis table added tech-report-digest 2026-09-12 entry)
+- New pages: wiki/synthesis/2026-09-12/tech-report-digest.md
+- Contradictions: Zhipu GLM-6 发布状态 (第三方 vs 官方序列) — flagged in-page, 官方口径优先
+
 ## [2026-09-12] synthesis | arxiv-daily (2026-09-12)
 - Summary: wiki/synthesis/2026-09-12/arxiv-daily.md — arXiv Daily AI/LLM/Rec/Ads/CTR/Games weekend report (Sat 12 Sep, no new mailing → refines Fri 11 Sep window, ID-deduped vs wiki)
 - Method: re-scanned cs.IR/cs.LG/cs.AI/cs.CL/cs.GT/cs.MA recent listings; featured IDs grep-verified 0 hits in wiki/; excluded ids already covered by 09-09→09-11 sibling digests (2609.11876, 2609.11682, 2609.11209, 2609.11808, 2609.11646, 2609.10750, 2609.06140)
