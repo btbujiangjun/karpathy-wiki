@@ -11,7 +11,7 @@ tags: [game-rl, game-ai, llm-agents, foundation-models, pcg, benchmarks, world-m
 
 > Recent arXiv + proceedings scan (2026-08-27 → 2026-09-11 window). The freshest arXiv mailing is **Fri 11 Sep 2026** (weekend = no new mailing on Sat 12 Sep). All featured IDs grep-verified **0 hits** in `wiki/`, and excluded from 09-09 → 09-12 sibling digests (game-rl-daily, arxiv-daily, arxiv-ai-search, arxiv-paper-check, conference-digest, tech-report-digest). **20 papers featured across 7 sections + 2 event/proceedings pointers.**
 >
-> **Continuity / already-covered (not re-featured):** GitGPU-CFR (2609.11923, 09-11 arxiv-daily), T1 terminal-agent RL (2609.11042, 09-12 arxiv-daily), TNBR (2609.11863) + ABRA (2609.11889) + Games-over-Observation-Space Capture-the-Flag (2609.06178) + last-iterate policy dynamics (2609.08823) [09-12 arxiv-daily], PlayTrain (2609.09059, 09-10 game-rl-daily), Programmable World Model (2609.10540, 09-11 game-rl-daily), LLM-guided NPC RL (2609.02931, 09-11 game-rl-daily), WorldMind (2608.21439, 09-10 game-rl-daily), ReactiveGWM/StatePlay/etc. (earlier digests).
+> **Continuity / already-covered (not re-featured):** GPU-CFR (2609.11923, 09-11 arxiv-daily), T1 terminal-agent RL (2609.11042, 09-12 arxiv-daily), TNBR (2609.11863) + ABRA (2609.11889) + Games-over-Observation-Space Capture-the-Flag (2609.06178) + last-iterate policy dynamics (2609.08823) [09-12 arxiv-daily], PlayTrain (2609.09059, 09-10 game-rl-daily), Programmable World Model (2609.10540, 09-11 game-rl-daily), LLM-guided NPC RL (2609.02931, 09-11 game-rl-daily), WorldMind (2608.21439, 09-10 game-rl-daily), ReactiveGWM/StatePlay/etc. (earlier digests).
 
 ---
 
@@ -119,7 +119,7 @@ tags: [game-rl, game-ai, llm-agents, foundation-models, pcg, benchmarks, world-m
 
 ### 3.3 H3-World: Turning Language Understanding into World Control
 - **Authors**: Danze Chen, Zeqing Wang, Ziyue Lin, Xingyi Yang, Yeying Jin
-- **Affiliation**: **Tencent / National University of Singapore / Hong Kong Polytechnic University (HKUST-internships at Tencent)**
+- **Affiliation**: **Tencent / National University of Singapore / The Hong Kong Polytechnic University**
 - **Venue**: arXiv preprint (2609.01560)
 - **Key Innovations**: Turns the 33B MiniMax-H3 video generator into an interactive world model without dedicated action modules: uses the native **language pathway** as the control interface (character + camera commands as compositional textual instructions aligned to temporal video latents), plus **temporal attention routing** to prevent control leakage across action intervals. Reuses the semantic representations from large-scale video pretraining.
 - **Results**: Only 8,000 gameplay samples, 10,000 LoRA steps, 0.199% trainable parameters; precise character/camera control, preserved generation quality, and transfer to unseen scenarios.
