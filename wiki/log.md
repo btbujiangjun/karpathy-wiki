@@ -4,6 +4,15 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-09-12] synthesis | arxiv-daily (2026-09-12)
+- Summary: wiki/synthesis/2026-09-12/arxiv-daily.md — arXiv Daily AI/LLM/Rec/Ads/CTR/Games weekend report (Sat 12 Sep, no new mailing → refines Fri 11 Sep window, ID-deduped vs wiki)
+- Method: re-scanned cs.IR/cs.LG/cs.AI/cs.CL/cs.GT/cs.MA recent listings; featured IDs grep-verified 0 hits in wiki/; excluded ids already covered by 09-09→09-11 sibling digests (2609.11876, 2609.11682, 2609.11209, 2609.11808, 2609.11646, 2609.10750, 2609.06140)
+- 24 papers / 7 sections: Rec/Ads (5), Sequential/TS (3), LLM/Agents (5), RAG/IR (3), Efficiency (2), Games/GT (4), Multi-agent (2)
+- Headliners: Auto-RecSys; greedy-ranking optimality 2609.08001; 1.283 PoA repeated virtual FPA; housing rec audit (39% strictly dominated); T1 122B-MoE terminal RL (64.0% TB2.1); Magenta 100% AIME + full IMO 2026; AmazonSWE SSM imputation; FlexComp any-ratio compression; Kashin-DCT quantization; TNBR/ABRA coordination-game guarantees; ORCH (50-agent wildfire missions); CUSP collective uncertainty
+- Updated: wiki/index.md (Synthesis table added arxiv-daily 2026-09-12 entry)
+- New pages: wiki/synthesis/2026-09-12/arxiv-daily.md
+- Contradictions: none
+
 ## [2026-09-11] synthesis | wq101-alpha-daily (2026-09-11)
 - Summary: wiki/synthesis/2026-09-11/wq101-alpha-daily.md — WorldQuant 101 Alpha 因子每日精选 — Top 20 美股 (基准 9/10 收盘)
 - 市场: 三大指数 4 连跌 (SPX 7,591.75 -0.58% / NDX 26,081.73 -0.65% / DJI 52,064.10 -0.60% 破 50 DMA, Three Black Crows)；油价破 $100 (美袭伊朗油轮)；30Y 创 19 年新高；PPI 5.4% 超预期；CPI 今日定调；9/16 FOMC 加息概率 ~60%
@@ -22,6 +31,16 @@
 - Updated: wiki/index.md (Synthesis table added game-rl-daily 2026-09-11 entry)
 - New pages: wiki/synthesis/2026-09-11/game-rl-daily.md
 - Contradictions: none
+
+## [2026-09-12] synthesis | investment-daily (2026-09-12)
+- Summary: wiki/synthesis/2026-09-12/investment-daily.md — 每日投资热点简报（美股/港股/A股 9/11 完整收盘口径）
+- 宏观: 8月CPI +0.4% MoM符合预期(核心 +0.3% 略超) + 油价回落 → 美股四连跌终止但全周收跌；Fed 9/15-16 加息概率 ~87-90%
+- Top 热点: ①FCC 光模块禁令落空（中际旭创 H +4.37%/A +4.03%、长飞 +3.44%）②Oracle $3000 亿 OpenAI 合约消化（ORCL $154.31）③铜关税停滞铜崩（江西铜业 -9.19%/五矿 -8.20%/北方铜业跌停）④DeepSeek Flash 降价 -60% 压大模型（智谱盘中 -10%）⑤Grok 4.7 再跳票 + GPT-6 Astra 定价翻倍 + OpenAI IPO 或延至 2027
+- 板块轮动: 美股 PCB/Wholesale-Computers/半导体反弹；A股 AI 硬件(CPO/PCB/MLCC)逆势 + 电力；港股 铜/大模型/存储承压、光模块+科网回购护盘
+- 数据校核: META ~$650 多源(651.95/648.03/649.09)并存；PLTR $165.70 与前日报 ~$127 歧义；XPEV $10.52 vs $10.34；个股价多为第三方行情口径，标"约"
+- Updated: wiki/index.md (Synthesis table added investment-daily 2026-09-12 entry)
+- New pages: wiki/synthesis/2026-09-12/investment-daily.md
+- Contradictions: 无（PLTR/XPEV/META 价格歧义已按多源交叉标注"约/⚠️"）
 
 ## [2026-09-11] synthesis | investment-daily (2026-09-11)
 - Summary: wiki/synthesis/2026-09-11/investment-daily.md — 每日投资热点简报：覆盖美股/港股/A股/中概股科技AI板块
