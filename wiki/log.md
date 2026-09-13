@@ -6129,3 +6129,13 @@
 - Updated: wiki/index.md (Synthesis table top added arxiv-paper-check 2026-09-12 entry)
 - New pages: wiki/synthesis/2026-09-12/arxiv-paper-check.md
 - Contradictions: none
+
+## [2026-09-13] synthesis | investment-daily (2026-09-13, Sunday Weekend Edition)
+- Summary: wiki/synthesis/2026-09-13/investment-daily.md — 周日周末前瞻版（数据截止美股/港股/A股 9/11 收盘；周末休市）。核心头条: ①AI 安全减速呼吁 — Anthropic Amodei 长文三步方案（嵌入式独立评估员/行业协调+反垄断豁免/国际合作）+ Altman "我们会同样做" + Musk "Dario is right"，Altman Fortune 专访同步释放 OpenAI IPO 推迟至 2027；②9/16 FOMC（Warsh 首份 SEP）加息概率 CPI 后 ~87-90%（⚠️跨源 65%~90%），10Y 逼 5%、30Y 19 年新高，点阵图定全年节奏；③SpaceX AI 负载独家用 NVIDIA（AMD 承压）+ NVIDIA 澳洲 2GW；④Grok 4.7 第四次跳票（RL 长度惩罚 bug）；⑤苹果 18 Pro 预售台湾 2 分钟售罄 +200%/Duo 10/23 发售。
+- 市场 recap: 美股 9/11 反弹（道指 +509 52,573.29 +0.98%/标普 7,656.98 +0.86%/纳指 26,333.04 +0.96%，终结四连跌、全周收跌，VIX 15.84）；港股恒指 24,805.63 -0.60%（周 -3.30%）、恒科 4,320.57 -0.23%（周 -5.45%，贴 52 周低 0.5%）、南向 +44.31 亿；A 股沪指 3,888.11 -1.18%（周 -1.07%，盘中 3,852 获承接）、成交 1.97 万亿放量、超 4,800 股下跌、创业板指周 +1.08% 本周唯一收红、两融 8 月末 2.66 万亿（去杠杆近尾声）。
+- Top picks/主题: AI 安全减速三国共识（利好有安全预算云厂/利空独立实验室 IPO 节奏）；FOMC "利空出尽"小级别反弹窗口（申万宏源）；NVIDIA 生态（SpaceX 绑定/澳洲 2GW/HF 收购）；港股恒科四重底+回购托底（腾讯 YTD 301.35 亿）；具身智能产线验证期（小鹏 IRON vs Optimus "训练元年"）；比亚迪方程S GT 9/16 上市+宁德 H1 净利 432.8 亿 +42%；*ST卓然退市重罚/A 股强监管出清。
+- 板块/结构: 美股 AI 算力链（NVDA/DELL/ORCL）回归 vs AMD 叙事受损；A 股科创50 ETF 5 日 +68 亿逆势吸金、半导体/医药/证券 ETF 净赎回；大模型价格战续压港股 AI（智谱/MiniMax），DeepSeek-V4+阿里汽车 AI 为港股催化。
+- 数据校核: FOMC 加息概率跨源分歧 65%~90% 已在文中双标注；"宁德时代 H 股配售 391 亿港元"经查证为 2026-04-28 旧闻（Nikkei/Reuters: 62.4M 股 @ HK$628.20）已排除；中概 ADR 收盘价为 9/11 近期基准（部分"约"值）；Grok 4.7 规格（2.1T 参数）为 Musk 单口径未采录；GPT-6 Astra ARC-AGI-3 99.9% vs 62.7% 为 harness 口径差异。
+- Updated: wiki/index.md (Synthesis table top added investment-daily 2026-09-13 entry)
+- New pages: wiki/synthesis/2026-09-13/investment-daily.md
+- Contradictions: FOMC 加息概率 65% (FXIFY/CME 口径) vs ~87-90% (Stockopedia/CNBC/中文源口径) — 已双标注；OpenAI IPO 时间线（推迟至 2027）与 Anthropic（仍瞄 2026 底 $9650 亿估值）路线分化已标注
