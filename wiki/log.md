@@ -4,6 +4,16 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-09-13] synthesis | game-rl-daily (2026-09-13)
+- Summary: wiki/synthesis/2026-09-13/game-rl-daily.md — Game RL & Game AI Bot Daily Paper Digest. Weekend note (no Sunday mailing; freshest = Fri 11 Sep 2026 window). Cross-category sweep of cs.AI / cs.GT / cs.MA / cs.LG / cs.CV / cs.CL / cs.RO / cs.NE / cs.HC recent listings (433 entries parsed), grep-verified 0 hits in wiki/.
+- ① Game RL & Cooperative MARL (3): Certifying cooperation — formal cooperation-requirement predicates over temporal cooperation graphs (Laser Learning Environment, Molinghen/Charels/Lenaerts ULB 2609.06586); Reachability-Certified Subteam Decomposition for locally-interacting MAMDPs — speed-limit affinity + reward envelope, regret ≤ 2× centralized, RCSD-Exact cuts regret 56.0%/28.8%/25.3% (2609.08366); Deception in Reach-Avoid Game with heterogeneous attacker speeds — critical speed pairs, information-limiting deception (2609.06953).
+- ② Game Foundation & World Models (2): World in World — training-free inference-time world-model control, camera/time-labelled evidence + EWA CFG (2609.11548); Recursive Code World Models — recursive scene programs reconstruct complex 3D worlds in code from single reference image (2609.11499).
+- ③ Game Theory / Self-Play / Equilibrium Learning (3): Entropic Risk-Sensitive Evolutionary Learning — risk attitude steers equilibrium selection, IEEE CDC 2026 (2609.08677); Exact-Form Regret for GD/MD/FTRL (Soleymani/Farina/Jaillet 2609.09466); Actionable Strategy Certificates in Stochastic Parity Games (TU Dresden 2609.08529).
+- Method: arXiv API unavailable → direct list/recent page fetches + /abs/ page extraction (parse.py / filter.py / extract.py in scratch dir); dedup via `rg -o '2609\.\d{5}' wiki/ | sort -u` (1338 covered 2609 IDs).
+- Updated: wiki/index.md (Synthesis table added game-rl-daily 2026-09-13 entry)
+- New pages: wiki/synthesis/2026-09-13/game-rl-daily.md
+- Contradictions: none (all 8 featured IDs grep-verified absent from entire wiki; excluded 2609.07136 already featured by sibling arxiv-daily 09-13)
+
 ## [2026-09-13] synthesis | arxiv-paper-check (2026-09-13)
 - Summary: wiki/synthesis/2026-09-13/arxiv-paper-check.md — arXiv Paper Check AI & CTR (Sunday catch-up; no new mailing since Fri 11 Sep). 12 papers / 5 themes; every featured ID grep-verified 0 hits in `wiki/`.
 - Method: third dedup-verified pass over Fri 11 Sep 2026 mailing (cs.AI 171 / cs.IR 15 / cs.LG 171) + Thu 10 Sep window catch-up; export.arxiv.org API rate-limited (HTTP 429) → listing/abs pages via arxiv.org; excluded 09-11/09-12 sibling-coverage IDs (2609.11915, 2609.10712, 2609.11061, 2609.10657, 2609.11030, 2609.11393, 2609.11752, 2609.11155, 2609.11127, 2609.11739, 2609.11243, 2609.11318, 2609.11319, etc.)
@@ -28,6 +38,18 @@
 - Updated: wiki/index.md (Synthesis table added tech-report-digest 2026-09-13 entry)
 - New pages: wiki/synthesis/2026-09-13/tech-report-digest.md
 - Contradictions: Mistral Small 4 发布日期 (早前搜索结果 09-10 vs 官方 03-16 — 已核实修正, 官方多源一致); Kimi K3 激活参数 (官方 104B vs 第三方 ~50B — 官方优先); Gemini 4 发布预期为传闻 (low confidence, 页内标注)
+
+## [2026-09-13] synthesis | wq101-alpha-daily (2026-09-13, Sunday Weekend Edition)
+- Summary: wiki/synthesis/2026-09-13/wq101-alpha-daily.md — WorldQuant 101 Alpha 因子每日精选 — Top 20 美股（周末版，基准仍为 9/11 周五收盘，无新交易数据；重心=因子重读 + 周末催化）。
+- 周末宏观重估: ①油价两级信号——实物市场紧绷 (VLCC 日费创纪录 ~$800k、运费 $30/桶 vs 战前 $6、保费 $2.50 vs $0.05、沙特东-西管线遭袭、胡塞进占佩里姆岛/曼德海峡) vs 外交/停火叙事 (Trump "战后油价将大跌" + 伊朗-阿曼会谈 + GS Brent/WTI Dec-26 $85/$80 隐含 -20%) → **能源因子 β 为本周最大边际变量**；②FOMC 9/16 (Warsh 首个 SEP + 点阵图)，加息概率 ~90% (CME) vs 45% (Kalshi) 跨源分歧扩大，12 月两次加息概率 ~50%，零售销售 (周三) 与美联储同日 = "通胀+需求"双信号日。
+- 评分 vs 09-12: DELL 9.4 (RBC init $640/EIS $650/Susq $700 卖方共振) · HPE 9.1 · NVDA 9.1 (Reuters: 洽谈向 Anthropic IPO 投资至多 $100 亿) · MU 8.8 (9/30 财报催化 + 均值回复, HBM 2027 售罄 + 16 份 take-or-pay ~$22B) · AVGO 8.7↓ (10-K 新增 $126.8B 采购承诺 + $29B 租赁回补 + 单一分销商 50%) · AMD 8.8 (Citi 重申 + CFO $3T TAM) · XOM 8.5↓ / COP 7.8↓ (地缘溢价退潮尾部风险, COP #1→#53 预警) · CVX 8.5 持平。
+- 排名变化: MU #4↑ / AMD #6↑ / AVGO #5↓ / COP #13→#18；名单 20 只骨架不变（无新交易日）。
+- 新纳入候选: SWKS (SAMR 对 Qorvo 合并审查进入最后阶段, 周四 +10% $84.24) / QRVO ($112.65) 事件型 Alpha#6/#53；COP↔VLO 做成"停火空/多"镜像候选。
+- 周一前瞻: 油价亚洲时段缺口 → 若能源高开但 VIX 未同步飙升 = 溢价消化型高开；pre-FOMC 压缩波动；零售销售 + 点阵图决定高估值成长方向。
+- Data notes: MU 9/11 收盘 $975.26 (-0.22%, 距 52 周高点 $1,255 -24%, 市值 ~$1.08T)；AVGO $361.99 (21.1M 股)；ORCL/COP 跨源分歧沿用 09-12 标注；因子为定性估算非 API 实时。
+- Updated: wiki/index.md (Synthesis table added wq101-alpha-daily 2026-09-13 entry)
+- New pages: wiki/synthesis/2026-09-13/wq101-alpha-daily.md
+- Contradictions: FOMC 加息概率跨源分歧 (CME ~90% vs Kalshi 45%, 较 09-12 的 69-90% 进一步扩大); MU 每股收益口径分歧 ($30.89 vs $31.24 财季标号差异, 已标注约值); 油价"物理紧绷 vs 停火叙事"方向相反的一级信号并存 (页内双标注)
 
 ## [2026-09-12] synthesis | wq101-alpha-daily (2026-09-12)
 - Summary: wiki/synthesis/2026-09-12/wq101-alpha-daily.md — WorldQuant 101 Alpha 因子每日精选 — Top 20 美股 (基准 9/11 收盘)
