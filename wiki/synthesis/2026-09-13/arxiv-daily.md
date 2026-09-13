@@ -8,7 +8,7 @@ tags: [arxiv-daily, AI, LLM, recommendation, advertising, auctions, CTR, sequent
 
 # arXiv Daily Report — 2026-09-13
 
-> **Weekend note on methodology**: arXiv does not announce on Sundays, so no new mailing exists for Sun 13 Sep 2026 — the freshest window is the **Fri 11 Sep 2026** mailing (announcing the Wed 9 Sep – Thu 10 Sep submission wave, IDs ~2609.062xx–2609.119xx). This run re-scanned the cs.IR / cs.LG / cs.AI / cs.CL / cs.GT / cs.MA "recent" listings, grep-verified every featured ID against all 4,609 arXiv IDs in `wiki/`, and excluded papers already covered by the 09-09 → 09-12 sibling digests (arxiv-daily, arxiv-ai-search, arxiv-paper-check, conference-digest, game-rl-daily). All 26 featured papers are **fresh to the wiki** (0 hits). Notable not-repeated coverage (already featured on 09-12): 2609.11876 regularized rec models, 2609.11682 COBRA-Skills, 2609.11209 REVA, 2609.11808 generative late-interaction VDR, 2609.11646 QPP, 2609.10750 synthetic-data forgetting, 2609.11859 mechanistic routing studies, 2609.11687 Kashin-DCT quantization, 2609.11863/2609.11889 TNBR/ABRA, 2609.11737 ORCH, 2609.05708 CUSP.
+> **Weekend note on methodology**: arXiv does not announce on Sundays, so no new mailing exists for Sun 13 Sep 2026 — the freshest window is the **Fri 11 Sep 2026** mailing (announcing the Wed 9 Sep – Thu 10 Sep submission wave, IDs ~2609.062xx–2609.119xx). This run re-scanned the cs.IR / cs.LG / cs.AI / cs.CL / cs.GT / cs.MA "recent" listings, grep-verified every featured ID against all 4,609 arXiv IDs in `wiki/`, and excluded papers already covered by the 09-09 → 09-12 sibling digests (arxiv-daily, arxiv-ai-search, arxiv-paper-check, conference-digest, game-rl-daily) **plus the same-day 09-13 arxiv-paper-check**. All 26 featured papers are **fresh to the wiki** (0 hits). Notable not-repeated coverage (already featured on 09-12): 2609.11876 regularized rec models, 2609.11682 COBRA-Skills, 2609.11209 REVA, 2609.11808 generative late-interaction VDR, 2609.11646 QPP, 2609.10750 synthetic-data forgetting, 2609.11859 mechanistic routing studies, 2609.11687 Kashin-DCT quantization, 2609.11863/2609.11889 TNBR/ABRA, 2609.11737 ORCH, 2609.05708 CUSP. Excluded into the 09-13 arxiv-paper-check: 2609.09878 (purchase-advice measurement), 2609.11414 (SWRouter), 2609.11607 (alt-data forecasting), 2609.11709 (Bayesian backward reasoning).
 
 ---
 
@@ -330,13 +330,13 @@ tags: [arxiv-daily, AI, LLM, recommendation, advertising, auctions, CTR, sequent
 
 | Trend | Notable Papers |
 |-------|---------------|
-| **Recsys accountability reaches serving semantics** | FunnelAudit (graded responsibility + witness certificates), Purchase Advice (outcome-measurement gap in AI commerce) |
+| **Recsys accountability reaches serving semantics** | FunnelAudit (graded responsibility + witness certificates), Looking for Bidding Teammates (peer-review collusion formation) |
 | **Generative retrieval grows up: multi-ID & reproducibility** | PDMR (passage-level multi-ID), ReDSI (open DSI for all 3 ID types), Cassette (graph distillation for legal) |
 | **RAG faithfulness & cost** | CHyD (verbatim-guaranteed spans), LiteRAG (100× cheaper graph RAG), Matryoshka Hash (any-budget compact codes) |
-| **LLM-as-judge / peer review gets audited** | NovGauge (novelty verified-F1 diagnostics), SWRouter (multi-turn routing eval) — joins the 09-12 measurement wave (cf. 2609.10856 housing audit) |
-| **Agent research validation** | DCP (discovery = recovery test), Copying-in-the-wild (real gathered agent behavior), PspMAS (heterogeneity injection), Bayesian backward anchors |
+| **LLM-as-judge gets measured, not assumed** | NovGauge (novelty verified-F1 diagnostics), Verbalized-Confidence compatibility shift, Noise-Fabricates-Bias (120× asymmetry) |
+| **Agent research validation** | DCP (discovery = recovery test), Copying-in-the-wild (real gathered agent behavior), PspMAS (heterogeneity injection), Cross-Substrate Authority (authorization outside planner-visible state) |
 | **Muon-type optimizers mature** | Musec (spectral clipping vs flattening; first convergence guarantee) |
 | **Fair division: PMMS settled in one wave** | Aziz (4-agent counterexample), Gölz (3-agent, 78/79), Bei et al. (chores reductions, 4/3-PMMS, NP-hardness) — rare same-week settlement of a long-open problem |
-| **Game theory complexity tightens** | Golowich (LMM optimality across all ε regimes for ε-Nash), exact-form regret unified geometry (GD/MD/FTRL given the connected wave's equilibrium-quality theme) |
+| **Game theory complexity tightens** | Golowich (LMM optimality across all ε regimes for ε-Nash); contemporaneous equilibrium-quality work (exact-form regret) covered by the 09-13 game-rl-daily |
 
 (End of file — total 26 papers / 7 sections)
