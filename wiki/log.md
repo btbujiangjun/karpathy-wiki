@@ -17,6 +17,18 @@
 - New pages: wiki/synthesis/2026-09-13/arxiv-paper-check.md
 - Contradictions: none (dedup verified vs 09-11/09-12 sibling digests; prior contradictory politeness-judge results reconciled in-page)
 
+## [2026-09-13] synthesis | llm-tech-report-daily (2026-09-13)
+- Summary: wiki/synthesis/2026-09-13/tech-report-digest.md — LLM Tech Report Digest（各主要 AI 公司最新 Tech Report / System Card / Model Card；标注自 09-12 摘要起新增项 ★ 与 catch-up 补录 ⭐）
+- 本日主线: 开放权重"以小博大"加速（Mistral Small 4 / Qwen3.8-27B / Nemotron 3.5 Lightning / Muse Spark 1.3）+ Kimi K3 追踪 + Grok 4.7 跳票持续
+- ⭐ catch-up 新增 2 项: ①Mistral Small 4 (2026-03-16 发布, 119B-A6B MoE, 128e/4active, 256K, Apache 2.0 — Magistral+Pixtral+Devstral 三合一, Nemotron Coalition 创始成员; 早前搜索引用的 09-10 日期经 HF/NVIDIA NIM/博客多源核实为 crawler 误标, 实为 03-16); ②Kimi K3 (2026-07-16 发布/07-27 开源, 2.8T-A104B 首个开放 3T-class, KDA+AttnRes+Stable LatentMoE 16/896, 1M ctx, MXFP4/MXFP8 QAT, k3_tech_report.pdf; 激活参数以官方 README 104B 为准, 纠偏此前第三方 ThunderCompute ~50B 说法)
+- 新增 ★: Meta Muse Spark 1.3 (09-02, agentic+coding, tool calls -20%/tokens -25%); NVIDIA Nemotron 3.5 Lightning (30B-A3B, NVFP4, NeMo Switchyard) + Nemotron 4 1T 在研传闻 (tentative); Qwen3.8-27B (27B dense VLM, Apache 2.0, 1M ctx) + Qwen3.8-Max-0902 快照; DeepSeek 09-14 12:00 起 v4-pro 临时路由至 V4.1-Flash (Flash 价格) 至 V4.1-Pro 上线; Grok 4.7 跳票更新 (某第三方解读 RL 自我校验: response-length 惩罚过激+过早停止, 目标 ~09-15+); Gemini 4 泄露线索 (10 月发布传闻/3.5 Pro 搁置, low confidence); Amazon Nova Premier EOL 09-14 + Nova 2 Omni KTLO + re:Invent 新模型预期; StepFun Step AOS/STEPX Neo AI 手机/Step Edge 产品线
+- 无新报告: Anthropic / Apple / ByteDance / 智谱 / InternLM / MS Phi / 01.AI / Baichuan / OpenAI(仅系统卡)
+- 交叉主题: 开放 3T-class 时代开启 + 能力统一 (reasoning/multimodal/coding 合一); FP4 生态 (NVFP4/MXFP4) 从推理量化走向 QAT; 多家公司在研/预告造成的正式发布空窗
+- ⚠️ 提示: Gemini 4 泄露及发布时间线为 third-party leak (low confidence); Grok 4.7 参数 2.1T 为第三方报道; Amazon/StepFun 项为产品/动态非技术报告
+- Updated: wiki/index.md (Synthesis table added tech-report-digest 2026-09-13 entry)
+- New pages: wiki/synthesis/2026-09-13/tech-report-digest.md
+- Contradictions: Mistral Small 4 发布日期 (早前搜索结果 09-10 vs 官方 03-16 — 已核实修正, 官方多源一致); Kimi K3 激活参数 (官方 104B vs 第三方 ~50B — 官方优先); Gemini 4 发布预期为传闻 (low confidence, 页内标注)
+
 ## [2026-09-12] synthesis | wq101-alpha-daily (2026-09-12)
 - Summary: wiki/synthesis/2026-09-12/wq101-alpha-daily.md — WorldQuant 101 Alpha 因子每日精选 — Top 20 美股 (基准 9/11 收盘)
 - 市场: 周五放量大反弹 (SPX +0.86% 7,656.98 / 道指 +509 52,573.29 +0.98% / 纳指 +0.96% 26,333.04, 终结四连跌但全周收跌, VIX 15.84 -11.2%, 10Y 4.95%)；8 月 CPI 符合预期 (核心 +0.3% 略超)；9/15-16 FOMC 加息概率 ~87-90% (⚠️跨源分歧: Pomegra 69% vs MarketDash/Kiplinger 90%, wiki 内取 87-90%)；WTI 回落 ~$99-100 (周 +9%)，能源 YTD +43-47% 领跑 (XLE 历史新高)
