@@ -4,6 +4,19 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-09-13] synthesis | arxiv-paper-check (2026-09-13)
+- Summary: wiki/synthesis/2026-09-13/arxiv-paper-check.md — arXiv Paper Check AI & CTR (Sunday catch-up; no new mailing since Fri 11 Sep). 12 papers / 5 themes; every featured ID grep-verified 0 hits in `wiki/`.
+- Method: third dedup-verified pass over Fri 11 Sep 2026 mailing (cs.AI 171 / cs.IR 15 / cs.LG 171) + Thu 10 Sep window catch-up; export.arxiv.org API rate-limited (HTTP 429) → listing/abs pages via arxiv.org; excluded 09-11/09-12 sibling-coverage IDs (2609.11915, 2609.10712, 2609.11061, 2609.10657, 2609.11030, 2609.11393, 2609.11752, 2609.11155, 2609.11127, 2609.11739, 2609.11243, 2609.11318, 2609.11319, etc.)
+- ① Recommendation/Conversational (4): Polite LLM Relevance Judge — tone as severity operating-point shift (RecSys'26 Reproducibility, 3,498 TREC DL19/DL20 pairs, 8 judges, ρ=-0.683 p=0.019, max |ΔNDCG@10|=0.011; 2609.09703); Purchase Advice & Observable Buyer Responses — 67 Aiso episodes, 77.6% recommend but 0 explicit purchase decisions, central finding = measurement limitation (2609.09878); Project Qualia Song2Vec — 531.6M scrobbles/28.6M sessions, artist-residual 0.2487→0.0005 but 4,577 cross-artist pairs ≥0.70, experiential genre/era clusters (2609.10862); From Retrieval to Weights — per-user DoRA adapters, dz=1.27 individuality, adds knowledge not alignment (2609.10155)
+- ② LLM Serving (2): SWRouter similarity-contractive multi-turn routing, +16.26% over best LLM / +8.22% over Conv-ID baseline, dual-metric eval decouples context construction from routing (Baidu; 2609.11414); Decoupling Readiness from Release — mean-CVaR turn-release scheduling, up to 3.50× P95 flow-time speedup under contention (Tsinghua; 2609.10964)
+- ③ Agents & Data Systems (2): When Agents Disagree — Bayesian backward reasoning as label-free anchor, JSD cross-path consistency, MinJS/FwdJS/LogLin, LogLin best on DDXPlus (2609.11709); Glyph enterprise data-catalog multi-strategy agents + RRF, MiniLM NDCG@10 0.55→0.92 (2609.10430)
+- ④ Evaluation Infrastructure & Audits (2): Benchmark Radar living DB/search engine — 37 daily sources, 1,283 records, 12,916 observations, saturation/Pareto/trend views (2609.11115); Published Unlearning Numbers Move Per Checkpoint — 263 BN checkpoints, refit moves 47/221 past seed spread, 12 verdicts flip, fitting convention must be named, pre-registered 29 Aug (2609.11490)
+- ⑤ Ecosystem & Finance (2): The Oligarch Barely Steers Model Collapse — concentration invariance, pool-supplier susceptibility index R²=0.68, K=3 member swap 2.8× drift, half-human pool halves drift (2609.11146); Making Alternative Data Work — two-agent context-augmented LLM revenue forecasting, ICL integration beats sources alone over 4 commercial alt-data channels (2609.11607)
+- Trend: LLM-as-judge validity under audit pressure (tone severity shifter / living benchmark DB / per-checkpoint instability); conversational + parametric-individual rec; serving economics for multi-turn agentic traffic; "who/what you average over" beats "size of top player" in ecosystem dynamics
+- Updated: wiki/index.md (Synthesis table added arxiv-paper-check 2026-09-13 entry)
+- New pages: wiki/synthesis/2026-09-13/arxiv-paper-check.md
+- Contradictions: none (dedup verified vs 09-11/09-12 sibling digests; prior contradictory politeness-judge results reconciled in-page)
+
 ## [2026-09-12] synthesis | wq101-alpha-daily (2026-09-12)
 - Summary: wiki/synthesis/2026-09-12/wq101-alpha-daily.md — WorldQuant 101 Alpha 因子每日精选 — Top 20 美股 (基准 9/11 收盘)
 - 市场: 周五放量大反弹 (SPX +0.86% 7,656.98 / 道指 +509 52,573.29 +0.98% / 纳指 +0.96% 26,333.04, 终结四连跌但全周收跌, VIX 15.84 -11.2%, 10Y 4.95%)；8 月 CPI 符合预期 (核心 +0.3% 略超)；9/15-16 FOMC 加息概率 ~87-90% (⚠️跨源分歧: Pomegra 69% vs MarketDash/Kiplinger 90%, wiki 内取 87-90%)；WTI 回落 ~$99-100 (周 +9%)，能源 YTD +43-47% 领跑 (XLE 历史新高)
@@ -40,6 +53,15 @@
 - Headliners: Auto-RecSys; greedy-ranking optimality 2609.08001; 1.283 PoA repeated virtual FPA; housing rec audit (39% strictly dominated); T1 122B-MoE terminal RL (64.0% TB2.1); Magenta 100% AIME + full IMO 2026; AmazonSWE SSM imputation; FlexComp any-ratio compression; Kashin-DCT quantization; TNBR/ABRA coordination-game guarantees; ORCH (50-agent wildfire missions); CUSP collective uncertainty
 - Updated: wiki/index.md (Synthesis table added arxiv-daily 2026-09-12 entry)
 - New pages: wiki/synthesis/2026-09-12/arxiv-daily.md
+- Contradictions: none
+
+## [2026-09-12] synthesis | arxiv-ai-search (2026-09-12)
+- Summary: wiki/synthesis/2026-09-12/arxiv-ai-search.md — arXiv AI Research Paper Search Report (Fri 11 Sep 2026 mailing, ~300 titles screened; API rate-limited → listing pages + /abs pages)
+- Dedup: fully reconciled against same-week siblings — 13 papers featured with full entries (all grep-verified unique to wiki/), 22 screened-but-covered IDs cross-referenced to 09-12 arxiv-daily/arxiv-paper-check/game-rl-daily and 09-11 arxiv-paper-check; 10 more IDs excluded (already in 09-11 arxiv-daily/arxiv-ai-search)
+- Featured (13): Fragility Spectrum 2609.11149; Distance Generalization 2609.11913; ActMap 2609.11498; LOCUS 2609.11739; SIRF 2609.11752; When Does Text Inform 2609.11282; SolCloudLLM 2609.11135; CryptoL 2609.11206; DF-LLM 2609.11314; Core existence 2609.11912; Tapes Together Strong 2609.10817; Artificial Id 2609.11911; CausalArena 2609.11897
+- Cross-referenced (22): 11042, 11319, 11393, 11699, 11768, 11192, 11687, 10922, 10856, 11876, 11646, 11808, 11572, 11758, 11209, 11648, 11863, 11889, 11737, 11682, 11859, 11318
+- Updated: wiki/index.md (Synthesis table added arxiv-ai-search 2026-09-12 entry)
+- New pages: wiki/synthesis/2026-09-12/arxiv-ai-search.md
 - Contradictions: none
 
 ## [2026-09-11] synthesis | wq101-alpha-daily (2026-09-11)
