@@ -6281,3 +6281,9 @@
 - Updated: wiki/index.md (Synthesis table added conference-digest 2026-09-14 entry as top row)
 - New pages: wiki/synthesis/2026-09-14/conference-digest.md
 - Contradictions: none (all featured IDs grep-verified absent prior to writing; cross-refs verified ≥1 hit; all numbers author-reported)
+
+## [2026-09-14] synthesis | investment-daily (2026-09-14)
+- Summary: wiki/synthesis/2026-09-14/investment-daily.md — Daily Investment Briefing（美股 9/11 收盘 + 港股/A股 9/14 早盘快照）。核心: ① 周末"AI 三巨头减速呼吁"（Amodei 长文 + Altman/Musk 背书）→ 亚太芯片链重挫（SoftBank -13%、SK 海力士 -4.6%、纳指期货 -1%+、NVDA/MU/AMD 预市回落）；② Anthropic×NVIDIA IPO 锚定谈判（~$2T/最多 $1000 亿/NVDA 至多 $100 亿）vs OpenAI 今年不上市；③ 智谱 ~$50 亿融资（配售+可转债）但 Jefferies 下调目标价至 1183.79、AI 双雄续挫；④ 国常会算力网 + 工信部"AI+软件"行动 → A 股算力网/光模块/PCB/MLCC 政策与涨价共振（CCL +30%/村田停产 MLCC）；⑤ 本周 FOMC（9/15-16 加息 ~90%）+中国 8 月数据（9/15）定价窗口; EV 主线（2.98M 召回、小鹏 IRON 产线、小马智行欧洲全无人、BYD 固态、宁德"去宁化"）
+- Updated: wiki/index.md（Synthesis 表新增 investment-daily 2026-09-14 条目）
+- New pages: wiki/synthesis/2026-09-14/investment-daily.md
+- Contradictions: none（09-12/09-13 报告衔接处已标注跨源分歧：加息概率含 Kalshi ~45% 口径; 智谱配售折价数据以公司公告为主）
