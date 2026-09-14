@@ -13,7 +13,7 @@ Generated: 2026-09-14 (Monday). Freshest arXiv window = **Mon 14 Sep 2026 mailin
 
 **Methodology**: Parsed arXiv "recent" listings (`arxiv.org/list/{cat}/new?show=500`) for cs.AI, cs.LG, cs.CL, cs.IR, cs.GT, cs.MA, cs.CY, cs.NE, cs.SI — 546 unique IDs, 285 candidates ≥ 2609.12000 after excluding the 30 featured IDs of today's 09-14 [[arxiv-daily]]. Every featured ID below was grep-verified 0 hits in `wiki/` at selection time.
 
-**Dedup notice**: AI/LLM-focused sibling of 09-14 [[arxiv-daily]]. Papers covered there (30) were deliberately excluded. No 09-14 arxiv-paper-check / game-rl-daily siblings exist yet — if created later, they may overlap; see Cross-Reference Index at the bottom.
+**Dedup notice**: AI/LLM-focused sibling of 09-14 [[arxiv-daily]] (30 papers) and 09-14 [[arxiv-paper-check]] (9 featured + 3 runner-ups). Papers covered there were excluded after same-day re-verification; three initial picks (2609.12002 judges, 2609.12578 RIVET, 2609.12039 two-gap SWE) proved to be in the concurrently-written paper-check and were replaced. See Cross-Reference Index at the bottom.
 
 ## Summary Statistics
 
@@ -24,22 +24,22 @@ Generated: 2026-09-14 (Monday). Freshest arXiv window = **Mon 14 Sep 2026 mailin
 | Fresh candidates ≥ 2609.12000 (post-daily-dedup) | 285 |
 | Featured in full in this report | 20 |
 | Direct CTR / advertising papers | **0** (see ADS/CTR note) |
-| Recommendation-adjacent | 1 (trust-aware health rec, §2.4) + 2 user-modeling papers |
+| Recommendation-adjacent | 2 (AUM §2.1, implicit personality §2.3) |
 
-**Advertising/CTR note**: No fresh direct CTR or advertising papers in this window — consistent with the 0-hit CTR count in today's arxiv-daily. The closest rec-adjacent finds (personalized user modeling for LLM interaction §2.1, implicit personality §2.3, trust-aware health recommendation §2.4) are included here.
+**Advertising/CTR note**: No fresh direct CTR or advertising papers in this window — consistent with the 0-hit CTR count in today's arxiv-daily and single PinDCO in today's arxiv-paper-check. Closest rec-adjacent finds are the user-modeling papers in §2.
 
 ---
 
-## 1 LLM-as-a-Judge & Evaluation Reliability
+## 1 Evaluation Reliability & Judging Infrastructure
 
-### 1.1 Can We Trust LLM Judges — Capability-Dependent Biases and Multi-Judge Ensembles (2609.12002)
-- **Title**: Can We Trust LLM Judges: A Study of Capability-Dependent Biases and Multi-Judge Ensemble for Bias Calibration
-- **Authors**: Gemma Zhang, Prachi Badarayani, Asmi Kumar, Sadid Hasan, Sulaiman Vesal
-- **Institution**: (industry, tentative)
+### 1.1 The Praxa AI Metrics Audit — When Agent Metrics Measure Different Things (2609.12017)
+- **Title**: When Agent Metrics Measure Different Things: An Evidence-Grounded Audit of the Praxa AI Pipeline
+- **Authors**: Stefan G. Creadore, Peyton Woakz
+- **Institution**: — (independent; analytics-adjacent, tentative)
 - **Date**: Announced 14 Sep 2026 (Mon mailing)
-- **arXiv**: https://arxiv.org/abs/2609.12002
-- **Abstract**: Studies biases in **absolute-scoring** LLM-as-a-judge (vs the usual pairwise setting), across 4 benchmarks × 6 models (36 judge–examinee pairs). Task accuracy strongly predicts judging accuracy (Pearson r ≥ 0.90) and inversely predicts directional bias (r ≤ −0.83), but accuracy alone does not ensure fairness: **more capable examinees consistently get more lenient judgments from all judges** (r ≥ 0.83). Proposes calibrated weighted majority voting (WMV): weights judges by online false-positive/false-negative rate estimates derived **purely from inter-judge disagreement** (no ground-truth labels, no task metadata). Label-free WMV tracks an oracle with perfect error-rate knowledge within 0.5 pp on average and beats both single judges and unweighted majority voting.
-- **Key Innovations**: (1) Absolute-scoring (not pairwise) judge-bias study; (2) capability-leniency effect, decoupled from judge accuracy; (3) label-free, disagreement-based ensemble calibration.
+- **arXiv**: https://arxiv.org/abs/2609.12017
+- **Abstract**: Agent evaluations can be numerically correct while measuring a different construct than their labels imply. Retrospective measurement audit of Praxa AI implementation files, historical eval artifacts, and operational records. A 139-case routing report shows 112 passes / 27 failures despite **zero gating failures** (known gaps explicitly exempted from the gate). An identifier-free export of 8,843 tool-attempt rows has 121 durations equal to the signed 32-bit max carrying "abandoned-client" labels — database code clamps elapsed lifecycle age; pooled reported 99th percentile is 2,147,483,647 ms vs 38,118.31 ms among server-observed completed calls. This is a **stratum contrast, not a treatment effect**. In a single-trajectory compaction pilot the reported follow-up input reduction is 94.39% but the reduction across trigger+follow-up together is 46.54%. Reproduces the descriptive calculations, verifies 91 timing stats via weighted rational arithmetic, executes 13 scoring-function + 12 analysis-verifier tests. Reusable verification package for separating gate policy, lifecycle timing, and request-level accounting from agent-performance claims.
+- **Key Innovations**: (1) Source-linked, reproducible measurement audit separating construct validity from numeric correctness (gate policy vs lifecycle timing vs request accounting); (2) finite-completion bounds on missing-duration inference (no imputation); (3) reusable scoring-function/verifier test package.
 - **Venue**: Preprint.
 
 ### 1.2 GAUGE — When Not to Trust LLM-as-a-Judge in User-Simulated Agent Eval (2609.12191)
@@ -93,18 +93,8 @@ Generated: 2026-09-14 (Monday). Freshest arXiv window = **Mon 14 Sep 2026 mailin
 - **Date**: Announced 14 Sep 2026 (Mon mailing)
 - **arXiv**: https://arxiv.org/abs/2609.12704
 - **Abstract**: Human implicit-personality structure (which trait words co-occur, which oppose) is strikingly consistent across raters/cultures. Tests whether Qwen 2.5-7B-Instruct reproduces it internally: builds a human implicit-personality matrix from millions of crowd-sourced personality ratings of fictional characters; builds a model matrix from contrastive activations over the same traits. The two align strongly (Mantel r = 0.77), trait-by-trait and in aggregate; the model's two dominant trait axes recover the classic **social warmth** and **intellectual competence** dimensions. On held-out dialogue, projecting activations onto these directions yields personality profiles agreeing with human ratings.
-- **Key Innovations**: (1) Human-grounded comparison of internal trait geometry vs shared human personality structure; (2) recovery of the classic Big-Two emotion/competence axes from model activations; (3) activation-projection personality profiling on dialogue.
+- **Key Innovations**: (1) Human-grounded comparison of internal trait geometry vs shared human personality structure; (2) recovery of the classic Big-Two social/intellectual axes from model activations; (3) activation-projection personality profiling on dialogue.
 - **Venue**: **Findings of EMNLP 2026**.
-
-### 2.4 Personalized, Trust-Aware Health Recommendation Policies (2609.12679)
-- **Title**: Personalized and Trust-Aware Health Recommendation Policies for a Construction Workplace
-- **Authors**: Atefeh Mollabagher, Yogesh Gautam, Houtan Jebelli, Parinaz Naghizadeh
-- **Institution**: Penn State / Ohio State (tentative)
-- **Date**: Announced 14 Sep 2026 (Mon mailing)
-- **arXiv**: https://arxiv.org/abs/2609.12679
-- **Abstract**: Trust-aware recommender design for personalized health interventions (fatigue/heat-stress monitoring for construction workers). Models the loop: worker health evolves, **trust** is affected by both health and recommendation dynamics, and trust in turn governs compliance with future recommendations. Characterizes the recommender policy (a health-based triggering threshold + recommendation frequency) with both model-based short-horizon control and model-free RL. Shows how recommendation frequency is tuned per worker to balance health, productivity, and trust.
-- **Key Innovations**: (1) Co-evolution of health, trust, and recommendation compliance in one dynamic model; (2) policy characterization (trigger threshold + frequency) via control + RL; (3) rec-adjacent relevance: trust as a first-class state in recommender policy design.
-- **Venue**: Preprint.
 
 ---
 
@@ -154,15 +144,15 @@ Generated: 2026-09-14 (Monday). Freshest arXiv window = **Mon 14 Sep 2026 mailin
 - **Key Innovations**: (1) Quotient-manifold view of trajectory-update redundancy; (2) decision-preserving (not just weight-error) low-rank compression; (3) single-adapter agent adaptation without per-capability adapters.
 - **Venue**: Preprint.
 
-### 4.3 Reality Is the Final Verifier — Two-Gap Framework for Agentic SWE (2609.12039)
-- **Title**: Reality Is the Final Verifier: On Two Key Gaps in Agentic Software Engineering
-- **Authors**: Alexander Krentsel, Shubham Agarwal, Mert Cemri, Shu Liu, Sidharth Sankhe, Ziming Mao, Matei Zaharia, Ion Stoica
-- **Institution**: UC Berkeley (SkyLab)
+### 4.3 Skill Issue — Optimizing Repository SKILLs for Coding Agents (2609.12742)
+- **Title**: Skill Issue: Lessons from Optimizing Repository SKILLs for Coding Agents
+- **Authors**: Mykhailo Kozyrev, Andrei Kozyrev, Anton Podkopaev
+- **Institution**: — (not specified)
 - **Date**: Announced 14 Sep 2026 (Mon mailing)
-- **arXiv**: https://arxiv.org/abs/2609.12039
-- **Abstract**: The implementation-verification loop (agent revises until a test-suite evaluator accepts) is analyzed as a **two-gap framework**: the *requirement gap* (requirements only approximate stakeholder intent) and the *model gap* (the evaluator's model only approximates the real deployment environment). Unifies agentic-SWE failure modes: **reward hacking exploits omissions** in requirements/model; **hallucination widens the gaps** by fabricating requirements or environment assumptions. Since neither gap can be certified closed in an open world, proposes an **assurance-revision loop** that revises requirements/model/evaluator from deployment evidence, and casts assured agentic development as resource allocation over human judgment, agent capability, and compute. Central claim: predeployment evals are proxies; reality (acceptable behavior under real deployment) is the ultimate test.
-- **Key Innovations**: (1) Unifying two-gap theory of agentic-SWE failure (reward hacking ↔ requirement/model gaps); (2) assurance-revision loop shifting goal from closing to narrowing gaps; (3) Boston-consistency framing of eval-vs-deployment.
-- **Venue**: Preprint (Berkeley).
+- **arXiv**: https://arxiv.org/abs/2609.12742
+- **Abstract**: Coding agents increasingly read repository knowledge from **SKILLs** — plain `.md` files versioned alongside code. Recent work synthesizes these automatically by optimizing the document against a benchmark; but a bare repo has no benchmark, and prior synthetic tasks are small enough that a capable agent saturates them with no document at all. Solution: mine harder tasks — **merged pull requests of the repository reverted at a single frozen base commit** — and score a candidate document by whether the same agent does better with it than without. On three Kotlin repositories, GEPA-found documents raise this score by **+4.9pp** on average; SkillOpt documents leave it ~flat (+0.1pp above seed). The GEPA gain matches prior work but, at a single repository's dataset size, cannot be separated from run-to-run variance; the documents read better than the score — one maintainer found in them knowledge "one only gets by working in the project."
+- **Key Innovations**: (1) Benchmark-free SKILL optimization from reverted PRs (harder, realistic tasks); (2) minimal document-ablation scoring (better-with-than-without); (3) honest variance-limits analysis + repository-maintainer validation.
+- **Venue**: Preprint.
 
 ---
 
@@ -216,14 +206,14 @@ Generated: 2026-09-14 (Monday). Freshest arXiv window = **Mon 14 Sep 2026 mailin
 
 ## 7 Model Efficiency & Serving
 
-### 7.1 Rivet — Internalizing Routed Experts into Compact Reasoners (2609.12578)
-- **Title**: From Collaboration to Capability: Internalizing Routed LLM Experts into Compact Reasoners
-- **Authors**: Frank Nie, Shuyao Wang, Ethan B. Liu
-- **Institution**: (industry, tentative)
+### 7.1 RoofLang — AI-Driven Architecting of LLM Inference Systems (2609.12551)
+- **Title**: RoofLang: Enabling AI-Driven Architecting of LLM Inference Systems
+- **Authors**: Ziyue Yang, Yuting Jiang, Lei Qu, Peng Cheng
+- **Institution**: (Microsoft Research / industry, tentative)
 - **Date**: Announced 14 Sep 2026 (Mon mailing)
-- **arXiv**: https://arxiv.org/abs/2609.12578
-- **Abstract**: A compact controller coordinates stronger experts (selecting whom to consult, formulating requests, integrating responses); question: **does learning from the controller's decisions plus the experts' reasoning/code improve generation after expert removal?** **Rivet** ("collaboration internalization"): expert-augmented RL applies a shared outcome signal to controller decisions and returned expert spans; verified-trajectory internalization consolidates successful interactions via format-aware supervision. Deployed controller generates reasoning, code, and interaction structure with local Python execution — **no external LLM**. On 7 competition-math benchmarks, RIVET-1.7B / 4B hit 28.25% / 44.16% average accuracy; Stage-II (+6.49 pts post-removal for 4B) plus GPQA-Diamond evidence of generalization to scientific reasoning.
-- **Key Innovations**: (1) "Collaboration internalization" as a compact-reasoner recipe (borrowing expert reasoning/code before removal); (2) format-aware verified-trajectory supervision; (3) self-contained local execution, no external LLM at deploy — relevant to routed-MoE distillation.
+- **arXiv**: https://arxiv.org/abs/2609.12551
+- **Abstract**: Existing AI-driven LLM-optimization is predominantly **profiling-based**, which confines search to the capabilities/performance of an existing software stack — preventing fundamentally better *architectures* from being found. Argues the architecting loop needs a **general workload representation, verifiable mutation space, and implementation-independent evaluator**. **RoofLang** is a DSL providing all three for LLM inference-system architecture search. Evaluation: RoofLang reveals DeepSeek V4-series models could reach **3.5–39.5× higher peak decode throughput** than representative models — a gap disproportionate to parameter counts, arising largely from **compact KV-cache designs** (larger batches, less memory traffic). A persistent optimizer agent then discovered architectures improving both throughput and interactivity of DeepSeek V4 Pro on NVIDIA B300 by **6.23–50.1%**.
+- **Key Innovations**: (1) Implementation-independent DSL for inference-system *architecture* (not profile-tuning) search; (2) verifiable mutation space + general workload representation; (3) KV-cache-design framing of the DeepSeek V4 throughput gap.
 - **Venue**: Preprint.
 
 ### 7.2 Dissecting GPU Utilization for LLM Inference on Hopper (2609.12923)
@@ -248,7 +238,7 @@ Generated: 2026-09-14 (Monday). Freshest arXiv window = **Mon 14 Sep 2026 mailin
 
 ---
 
-## 8 Game Theory & Incentive Design
+## 8 Game Theory & Multi-Agent Games
 
 ### 8.1 Fragility of Worst-Case Nash Equilibria in Atomic Congestion Games (2609.12220)
 - **Title**: On the Fragility of Worst-Case Nash Equilibria in Atomic Congestion Games
@@ -260,26 +250,41 @@ Generated: 2026-09-14 (Monday). Freshest arXiv window = **Mon 14 Sep 2026 mailin
 - **Key Innovations**: (1) Satisfaction/efficiency correlation at equilibrium; (2) fragility theorem: worst-case equilibria coincide with indifference; (3) extends the "indifference-only guarantees" line to congestion games — complements same-wave pPoA optimal-design results (2609.12077 in today's arxiv-daily, same group).
 - **Venue**: Preprint.
 
+### 8.2 HORIZON — Opponent-Adapting Agent for Lux AI Season 3 (2609.12422)
+- **Title**: Hierarchical Belief Modeling for Zero-Shot Opponent Adaptation in Partially Observable Multi-Agent Navigation
+- **Authors**: Kowei Shih, Lu Cheng, Zeyu Wang, Yeyun Xu, Kejian Tong
+- **Institution**: (academia, tentative)
+- **Date**: Announced 14 Sep 2026 (Mon mailing)
+- **arXiv**: https://arxiv.org/abs/2609.12422
+- **Abstract**: Lux AI Season 3: partial observability, randomized episode-level dynamics, and a best-of-five match structure rewarding tactical execution **and** fast adaptation. **HORIZON** is a hierarchical agent combining symmetry-aware spatial perception, **dual-memory belief tracking**, relic-centric graph attention, information-gain-driven exploration, and an **opponent-conditioned policy mixture**. HORIZON separates short-horizon control from cross-match meta-reasoning and uses auxiliary belief/world-model objectives to stabilize learning. Trained with PPO in a large-scale JAX simulator, the agent explicitly infers hidden game parameters and opponent style — consistent gains in match win rate, episode win rate, adaptation gain, and league rating over strong recurrent and feed-forward baselines.
+- **Key Innovations**: (1) Hierarchical belief/world-model architecture separating control from meta-reasoning (best-of-N adaptation); (2) opponent-conditioned policy mixture + explicit hidden-parameter inference; (3) zero-shot adaptivity evidence (league rating/adaptation gain).
+- **Venue**: Preprint (Lux AI S3).
+
 ---
 
 ## Key Trends Across This Window
 
-1. **The LLM-as-a-judge validity crisis gets measurable** (Can-We-Trust-Judges, GAUGE, SynthSentry): leniency scales with examinee capability; satisfaction≁success in user-simulated agent eval (57.5% failure under panel-satisfied); contamination screening pushed pre-training. Reinforces the judge-validation skepticism thread across 09-12/09-13 paper-checks.
+1. **Measurement audits & judge validity get sharpened** (Praxa Metrics Audit, GAUGE, SynthSentry, today's paper-check judges work): agent metrics can be numerically correct yet construct-mislabeled (gate exemptions, clamping artifacts, 32-bit saturating durations); LLM-judge satisfaction≁success in user-simulated agent eval (57.5% failure under panel-satisfied); contamination screening pushed pre-training. Reinforces the judge/eval-hygiene thread across 09-12/09-13 checks.
 2. **Personalization pivots from preferences to stable personality structure** (AUM, CORE/PERSIST, Implicit Personality): personality-first user models + uncertainty-aware persona-state revision + human-grounded trait geometry (Mantel r=0.77) — clusters tightly with the user-modeling angle relevant to rec/ads personalization.
 3. **Agent RL fixes credit assignment granularity** (GACA, BQ-LoRA): per-step adaptation of advantage granularity (GRPO/GiGPO gap) and behavior-quotient-manifold low-rank updates — practical, theory-backed training-efficiency directions for long-horizon agent tasks.
-4. **Agentic SWE gets a unifying theory** (Two-Gap, Reality Is the Final Verifier): reward hacking ↔ requirement/model gaps; eval-vs-deployment stratification — echoes the "Reality/verifier" theme and eval-hygiene threads of 09-13.
+4. **Coding agents: knowledge lives in the repo** (Skill Issue): benchmark-free SKILL optimization from reverted PRs, +4.9pp — variance-limited but qualitatively right (maintainer validation); complements the two-gap/harness work in today's paper-check.
 5. **Diversity-preserving decoding returns, with theory** (CCPS): weight-bound resampling + semantic-majority consensus, up to +10.6 pp training-free on reasoning.
 6. **Sequential modeling: recurrence buys shallower depth** (Fewer Layers); memory becomes reconstructive (CueMem) — both argue for reshaping the training-time vs inference-time compute allocation.
-7. **MoE serving/offloading matures** (SeqMoE, Rivet): activation prediction as sequence modeling + 80% full-load performance at 45% residency; and distillation of routed-expert behavior into compact reasoners.
+7. **Serving/architecture search leaves the profile loop** (RoofLang, SeqMoE, Hopper-GPU dissection). RoofLang finds KV-cache-design-driven 3.5–39.5× decode throughput differences *across models* by architecting, not profiling; SeqMoE gets 80.22% of full-load performance at 45% expert residency via activation-prediction-as-sequence-modeling (ties to RunningTensor/linear-attention knobs in today's arxiv-daily).
 8. **Interpretability gets a negative result** (Decoder cosine ≠ feature flow): causal ablation beats cosine proxies for SAE transition atlases — a check on SAE-believable tooling.
+9. **Games: indifference theory + zero-shot adaptation** (§8): congestion-game fragility/full-information-indifference ties to optimal pPoA design; HORIZON shows zero-shot opponent adaptation practice (hierarchical beliefs + opponent-conditioned mixtures) on Lux AI S3.
 
 ## ADS / CTR Coherence Check
 
-0 direct CTR/ads papers this window again (matches today's arxiv-daily). Rec-adjacent: §2.1 AUM (user modeling for personalization), §2.4 trust-aware health rec. Advertising image-gen was fully absorbed by today's arxiv-daily (§6). No new ads/CTR material to flag.
+0 direct CTR/ads papers this window again (matches today's arxiv-daily's 0 and paper-check's single PinDCO 2609.11943). Rec-adjacent: §2.1 AUM (user modeling for personalization), §2.3 implicit personality. No new ads/CTR material to flag.
 
 ## Cross-Reference Index (Sibling-Covered IDs)
 
+- **2609.12002** Can We Trust LLM Judges → 09-14 [[arxiv-paper-check]] §⑤ (label-free calibrated WMV) — *excluded here after same-day re-verification*.
+- **2609.12578** RIVET (internalizing routed experts) → 09-14 [[arxiv-paper-check]] §⑥ — *excluded here after same-day re-verification*.
+- **2609.12039** Reality Is the Final Verifier (two-gap agentic SWE) → 09-14 [[arxiv-paper-check]] §④ — *excluded here after same-day re-verification*.
+- **2609.12679** Personalized & Trust-Aware Health Recommendation → 09-14 [[arxiv-paper-check]] runner-up — *excluded here after same-day re-verification*.
+- **2609.11942 / 11945** PAMR + delegation-spectrum agentic-rec positions, **2609.11943** PinDCO, **2609.11951** MemRetriever, **2609.11953** InitGen, **2609.11987** Harness-or-Model → all 09-14 [[arxiv-paper-check]].
 - **2609.12077** pPoA optimal utility design for networked games → same group as §8.1 (Philip N. Brown, UCCS), covered in 09-14 [[arxiv-daily]] §5.4.
-- **2609.12375 / 12399 / 12556 / 12842 / 12579 / 13141 / 110xx** etc. → 09-14 arxiv-daily (30 papers), excluded here.
-- No 09-14 arxiv-paper-check / game-rl-daily siblings exist yet; if scheduled, papers in §4/§8 (GACA, BQ-LoRA, congestion-game fragility) may be candidates for game-rl-daily re-coverage.
+- **2609.12375 / 12399 / 12556 / 12842 / 13141 / 110xx** etc. → 09-14 arxiv-daily (30 papers), excluded here.
 - **2609.13144** (Type Diversity / compositional generalization) referenced only as the upper bound of the ID window in arxiv-daily's methodology — not featured; excluded here to keep the 0-hit claim clean.
