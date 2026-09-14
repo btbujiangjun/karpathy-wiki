@@ -6301,3 +6301,9 @@
 - Updated: wiki/index.md（Synthesis 表新增 investment-daily 2026-09-14 条目）
 - New pages: wiki/synthesis/2026-09-14/investment-daily.md
 - Contradictions: none（09-12/09-13 报告衔接处已标注跨源分歧：加息概率含 Kalshi ~45% 口径; 智谱配售折价数据以公司公告为主）
+
+## [2026-09-14] synthesis | wq101-alpha-daily (2026-09-14)
+- Summary: wiki/synthesis/2026-09-14/wq101-alpha-daily.md — WQ101 因子选股 Top 20（周一版，基准 9/11 收盘 + 周一预市/周末事件）。核心: ① 周末"AI 三巨头减速呼吁"（Amodei 长文 9/12 + Altman/Musk 背书）→ 周一预市半导体/存储杀跌（NVDA -2.16%/MU -3.25%/AMD -3.22%/INTC -3.81%/SNDK -3.61%，纳指期货 -1%+ / S&P CFD -0.40%）；② 沙特东-西管线遭袭关停 → WTI +2.84% $102.9 / Brent +2.85% $107.6，能源分支重燃（XOM +0.1/COP +0.1）；③ 对冲催化 Anthropic IPO 锚定 NVDA（Reuters ~$2T / 最多 $1000 亿 / NVDA 至多 $100 亿）→ NVDA "卖铲人升级一级股权玩家"；OpenAI 今年不上市；④ FOMC 9/15-16 加息 ~86-90%（⚠️跨源分歧 Kalshi ~45%）+ 周三零售销售定价窗口；⑤ Top5: DELL(9.3↓)/HPE(9.1)/NVDA(9.0↓)/MU(8.8)/XOM(8.6↑)；评分变动: 能源系普涨、AI 硬件系预市情绪杀下调（AMD -0.2 最大）；板块: AI 服务器 4 + 半导体 5 + 光通信/网络 5 + 能源 3 + AI 电力 2 + ORCL；给出"情绪杀 vs 基本面"判别手册（低开缩量企稳=低吸窗口/放量破位=动量暂歇）；候补 SWKS/QRVO/VLO/CRDO/MRNA/TKO
+- Updated: wiki/index.md（Synthesis 表新增 wq101-alpha-daily 2026-09-14 条目）
+- New pages: wiki/synthesis/2026-09-14/wq101-alpha-daily.md
+- Contradictions: 标注跨源分歧（预市跌幅 -0.4%~-1%+ 指数口径、FOMC 概率 CME ~90% vs Kalshi ~45%、ORCL $145-155 价格口径、COP 市值区间）——均注明为口径差异，无实质矛盾
