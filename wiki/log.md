@@ -6339,3 +6339,9 @@
 - Updated: wiki/index.md（Synthesis 表顶部新增 arxiv-ai-search 2026-09-15 条目；09-15 arxiv-paper-check 条目由兄弟任务先落盘，无冲突）
 - New pages: wiki/synthesis/2026-09-15/arxiv-ai-search.md
 - Contradictions: none（全部 featured ID grep 验证 0 hits；与 09-14 上限 2609.13144 结构性无重叠；09-15 兄弟报告因 API 限流未生成文件，跨集去重依赖 grep 验证 + 坐标标注；07:00-11:00 API 429 说明留档）
+
+## [2026-09-15] synthesis | game-rl-daily
+- Summary: wiki/synthesis/2026-09-15/game-rl-daily.md — Game RL & Game AI Bot Daily Paper Digest (2026-09-15)。Tue-15 arXiv mailing 在运行时刻（11:00 CST）尚未落地（Tue batch ~20:00 ET ≈ 09-16 08:00 CST），故为 **backlog sweep**：对 Jan–Aug 早期 wave 跨类扫描，回收兄弟 digest 未收录的游戏相关论文。**7 篇 featured，全部 grep 验证 0 hits in wiki/**（2602.08194 DiCode ICML'26 / 2605.08982 PMCTS / 2606.10135 BiWM / 2606.01164 IVWM survey / 2608.09156 EPS / 2601.18068 XGuardian USENIX'26 / 2606.18786 R2D-RL）。补充核对：fresh 窗口 2609.132xx+ 仅 arxiv-ai-search 09-15 收录 1 篇游戏论文（Core-Up-To-One）；NashDreamer 2609.01549（09-02）、Test-time RL IIG 2608.30635（09-05）、WMG-RL 2609.01067（09-02）均已被兄弟 digest 收录，未重复。
+- Updated: wiki/index.md（Synthesis 表新增 game-rl-daily 2026-09-15 条目）
+- New pages: wiki/synthesis/2026-09-15/game-rl-daily.md
+- Contradictions: none（全量 featured ID grep 验证 0 hits；与 09-14 game-rl-daily 覆盖上限 2609.13144 结构性无重叠）
