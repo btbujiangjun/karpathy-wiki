@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-09-18] synthesis | tech-report-digest (2026-09-18)
+- Summary: wiki/synthesis/2026-09-18/tech-report-digest.md — **本日主线**: xAI Grok 4.7 进入实际 rollout（09-17 GC quota 先行 + limited users，Musk "on par with Opus 5.0, not 5.1"；修正 09-17 "再顺延"口径）+ Google 双增量（Gemini 3.8 Flash AA Intelligence Index ≈59；09-15 Gemini 3.8 Live/Live-ET 实时语音档 S2S ≈82.6、$3.50/hr）
+- New: 09-18 tech-report-digest（★ xAI Grok 4.7 rollout + 路线图 4.8/4.9/5；Google 3.8 Flash 独立评测 + 3.8 Live; Anthropic Fable 5.2 矛盾 flag + 威胁情报蒸馏指控；DeepSeek 763B N-gram 口径清理；⭐ Muse Spark 1.3 AA≈60、Nova 2 官网技术报告 URL）
+- Updated: wiki/index.md (synthesis 表 09-18 条目), wiki/log.md
+- Contradictions: kie.ai Fable 5.2 "launched 09-10" vs 官方 system-cards（仍 5.1/Mythos 5.1）——按 rumor 纪律不采信；Grok 4.7 顺延→rollout 状态修正（限"有限铺开"，GA/卡未出）；DeepSeek 763B vs 552B 参数口径（判定为计量差异，tentative）
+
 ## [2026-09-18] synthesis | arxiv-paper-check (2026-09-18)
 - Summary: wiki/synthesis/2026-09-18/arxiv-paper-check.md — arXiv Paper Check (AI & CTR), **11 featured + 6 runner-up papers, all grep-verified 0 hits in wiki/**. **The Fri-18 batch has now posted** — `/list/{cs.IR,cs.AI,cs.LG}/new` all announce "Friday, 18 September 2026", so this is the **first coverage of the fresh Fri-18 window** (IDs **2609.19149–2609.20822**, fully above the Thu-17 sibling max 2609.19145), structurally disjoint from the 09-18 arxiv-daily (which mined the Thu-17 remainder) and all 09-16/09-17 siblings. Parsed 373 fresh unique IDs (cs.IR 22, cs.AI 215, cs.LG 198); API still 429 → direct page fetches of 14 abs pages, cached in pre-approved temp dir and cleaned.
 - **CTR/ads note: the CVR drought breaks** — 1 direct industrial CVR-conversion paper (KDD Cup 2026 UniRec, 2609.19787, 34.82M records): dense-feature stack +0.0095 AUC and orthogonalized optimizer +0.0028 vs all sequence-modeling components ≤0.0005 (seed band ±0.0004); final test AUC 0.828535 (15-step chain 0.813237→0.827816); flags shared-time-window train/val split overstating leaderboard by ~0.014 and sign-inverting verdicts. Contrarian vs the unified-sequence-scaling thesis (flagged for the CTR-scaling thread).
