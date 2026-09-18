@@ -6475,3 +6475,13 @@
 - Updated: wiki/index.md (Synthesis table added game-rl-daily 2026-09-18 entry at top), wiki/log.md
 - New pages: wiki/synthesis/2026-09-18/game-rl-daily.md
 - Contradictions: none (all 19 featured IDs + 3 runner-ups inside Fri-18 window 2609.19149–2609.20822 and grep-verified 0 hits in wiki/; window's marquee world-model/self-play items deliberately deduped to same-day arxiv-ai-search and cross-referenced, not re-featured; institutional affiliations flagged tentative where author-inferred)
+
+## [2026-09-18] synthesis | wq101-alpha-daily (2026-09-18)
+- Summary: wiki/synthesis/2026-09-18/wq101-alpha-daily.md — WorldQuant 101 Alpha 因子每日精选 Top 20 美股（周五版，基准 = 9/17 周四完整收盘 "利空出尽暴力反攻日"）。
+- Baseline: 纳指 +1.69% 26,418.30（距 ATH ~2.8%）、S&P +1.14% 7,637.76、道指 +0.61%、费半 +3.14%; 10Y 回落至 ~4.93% 重回 5% 下方 = 本次反攻宏观引信; WTI ~$101.29 企稳、Brent $104.59; 金价逼近 $4,400; 美元指数 ~100.25。
+- Key moves: 半导体全链主升（NVDA $219.34 突破 $214.5-216.3 阻力 +2.54%、AMD +6.36% 三连涨 $545.09、MU +5.50% $977.50 逼近 $1,000、INTC +7.6%、MRVL +4.81%、ARM +8.57%、SNDK +6.21%、Lumentum +9.59%、AVGO +2.29%）; 驱动 = SK 海力士×Intel 美国存储合作 + 黄仁勋"明年芯片销量翻倍" + Oracle FQ1 capex $28.5B 超预期; 能源止血（XOM -0.03%/CVX +0.01%/COP +0.49%）; 软件分化（CRWD 创新高 $245.70 vs CRM -3.07%; NOW/INTU 出局）; AI 电力 10Y 引信启动（VST +2.26%/CEG +1.26%）。
+- List changes (换血日, 2出2进): 入 = MRVL (~$240.80 +4.81%, #19+#53, 10/6 Investor Day), INTC (~$111 +7.6%, #53 极端反转 + SK 海力士合作, 期权 OI 比值 362.8 博弈仓); 出 = NOW ($138.47 再失 $140, 违反 09-17 纪律位), INTU ($313.13, Investor Day 重申 FY27 $23.3-23.5B 9-10% 增速但市场 -1.57% 不买账)。Top5: DELL 9.3 → NVDA 9.2 → ORCL 9.0 → CRWD 9.0 → AMD 8.8。
+- Forward: 9/18 BOJ 决议（预期 +25bp 至 1.25%）+ 九月四巫日 → 9/18 收盘不纳入基准; 9/30 MU 财报（$1,000 关口决战）; 10/6 MRVL Investor Day; 10Y 站稳 5% 下方为单一宏观开关。
+- Updated: wiki/index.md (Synthesis table added wq101-alpha-daily 2026-09-18 entry at top), wiki/synthesis/2026-09-17/wq101-alpha-daily.md (衔接载体), wiki/log.md
+- New pages: wiki/synthesis/2026-09-18/wq101-alpha-daily.md
+- Contradictions: none new (跨源/估算已 flag: ORCL $150.59 vs $150.93; SMCI ~$40.35 / MRVL ~$240.80 / INTC ~$111 为推算口径; 10Y ~4.93-4.94% 为估算; GOOGL $347.33 单源)
