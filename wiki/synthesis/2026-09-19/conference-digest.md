@@ -123,7 +123,7 @@ tags: [conference-digest, ICML2026, ICLR2026, NeurIPS2025, KDD2026, CVPR2026, SI
 - **Authors**: Wolfgang Lehrach, Daniel Hennes, Miguel Lazaro-Gredilla, Xinghua Lou, Carter Wendelken, Zun Li, Antoine Dedieu, Marc Lanctot, Atil Iscen, John Schultz, Marcus Chiam, Ian Gemp, Piotr Zielinski, Satinder Singh, Kevin Murphy
 - **Affiliation**: Google DeepMind
 - **Venue**: ICLR 2026 (accepted)
-- **arXiv**: https://arxiv.org/abs/2609.09351 (proceedings page: proceedings.iclr.cc)
+- **arXiv/Proceedings**: ICLR 2026 proceedings page (proceedings.iclr.cc, hash d8a12fde9e72444e1b356e8c37e53753)
 - **Innovation**: Instead of prompting the LLM directly for moves (which yields illegal moves and shallow play), the LLM **translates natural-language rules + trajectories into an executable Python world model** (state transition, legal-move enumeration, termination checks), then classical **MCTS** plans over the verified simulator. LLM also generates heuristic value functions (perfect-info efficiency) and inference functions (hidden-state estimation in imperfect-info games).
 - **Results**: Evaluated on 10 games (5 perfect, 5 imperfect info; 4 novel). Outperforms or matches Gemini 2.5 Pro in **9/10** games. Three advertised advantages vs direct prompting: verifiability, strategic depth, and generalization (data-to-code meta-task).
 - **Comparison**: Direct contrast to the "LLM as policy" line of game agents — same LLM, but reassigned to world-model compilation, retaining classical search optimality.
