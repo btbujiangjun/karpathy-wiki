@@ -6674,3 +6674,9 @@
 - Updated: wiki/index.md (Synthesis table added tech-report-digest 2026-09-22 entry at top), wiki/log.md
 - New pages: wiki/synthesis/2026-09-22/tech-report-digest.md
 - Contradictions: none new — 维持纪律项：Fable 5.2（kie.ai 09-10 声称 vs 官方页仍 5.1）不采信；Grok 4.7 参数量 2.1T 创始人口述 low confidence；DeepSeek 763B vs 552B 计量口径差异 tentative；Kimi K4 单一信源 rumor；Opus 5.2 灰度 signal-layer。
+
+## [2026-09-22] synthesis | investment-daily (2026-09-22)
+- Summary: wiki/synthesis/2026-09-22/investment-daily.md — Daily Investment Briefing 2026-09-22（周二版）。覆盖：①**美股 9/21 AI 半导体全面爆发**——AMD 市值首破 $1T（+9.95% 至 $615.52，美第 14 家/芯片第 4 家万亿公司）、META +11.43%（Muse 登顶美区 App Store 超 ChatGPT，10 天 730K 下载，Wells Fargo $810 PT）、INTC +12.14% $121.78、ARM +17.16%（2025/4 来最大）、QCOM ~+9.3%（跨源差异 +4.5%~+9.29% tentative）、费半 +4.29%（8/4 来最大单日）→ 纳指 +2.26% 27,122.09 收盘历史新高、纳指100 +2.83% 首破 30,000、标普 +1.49% 距纪录 -0.44%、道指 +0.71%；②**云栖大会 9/22 开幕**（蔡崇信"五层全栈 AI"+真武超节点+AgentCore）→ 中概/A 股算力催化 + BABA +2.22%；③A股 9/21 沪指重回 3950（CRO/创新药爆发 + 华字辈 31 涨停，成交 2.03 万亿缩量）+ 9/22 半导体/算力硬件高开（创业板盘中 +2%，燧原新高，融资买入前三 = 中际旭创 22.63 亿/胜宏 21.33 亿/新易盛 20.31 亿）；④港股 9/22 开盘恒指 25,170.8 +0.51%（腾讯 +2.98%、澜起 +11.73%、MINIMAX +5.44%、智谱 +4.28%）；⑤新能源——TSLA +3.03%（Optimus 德州产线接近完工）、宁德储能电芯提价 vs 股价失守 300、大众/保时捷减值、智界 RX 订单结构；⑥中概 ADR 分化（BABA +2.22% vs 理想 LI -5.11%）；⑦宏观——二十届五中全会 10/26-29 官宣、CME 10 月加息概率回落 53.1%、油价大跌（特朗普-伊朗对话）；展望 = 9/24 中美峰会（最大变量）+ 9/25 中秋 A/H 休市 + 9/29 OpenAI DevDay + 9/30 美光财报
+- Updated: wiki/index.md (Synthesis table added investment-daily 2026-09-22 entry at top), wiki/log.md
+- New pages: wiki/synthesis/2026-09-22/investment-daily.md
+- Contradictions: ①港股 XM"午评"单源口径（恒指盘中回落 24,748/-2.29%、恒生科技 -1.49%、台积电 3nm 下半年提价 15% → 华虹 +11%/中芯 +3.64%）与 09:25 开盘多源数据（恒指 +0.51%）方向相反——标记 tentative、以开盘数据为准待收盘复核；②QCOM 9/21 涨跌幅跨源分歧（Korea Times +4.5% vs 国内源 +9.29%）；③A股 9/21 深成指/创业板精确收盘%未独立确认（网易收评仅披露沪指重回 3950），已用保守口径；④理想 ADR -5.11% 归因（i9 Home 交付周期调整）为推测 tentative，无单一确认催化
