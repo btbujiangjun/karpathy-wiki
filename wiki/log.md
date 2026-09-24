@@ -6801,3 +6801,9 @@
 - Updated: wiki/index.md (Synthesis table added game-rl-daily 2026-09-24 entry within the 09-24 block, above game-rl-daily 09-23), wiki/log.md
 - New pages: wiki/synthesis/2026-09-24/game-rl-daily.md
 - Contradictions: none — 24/24 IDs (20 featured + 4 runner-ups) grep-verified 0 hits in `wiki/` at write time; all inside the Thu-24 window (≥ 2609.26809) and outside all sibling-claimed sets. Affiliations author-inferred/tentative where arXiv does not print them. Temp artifacts under the pre-approved temp dir cleaned after commit.
+
+## [2026-09-24] synthesis | wq101-alpha-daily (2026-09-24)
+- Summary: wiki/synthesis/2026-09-24/wq101-alpha-daily.md — WorldQuant 101 Alpha 因子每日精选 Top 20 美股（周四版，基准 = 9/23 周三完整收盘 + 9/24 盘前/峰会日快照）。**9/23 = "10Y 破 5.1% 的久期杀 + 存储获利回吐 + 软件/网安逆势轮动"日**：道指 -0.68% 51,511.59、标普 -0.75% 7,706.03、纳指 -1.13% 26,936.04，SOX -1.23% 12,534.27 断 6 连涨，10Y 收 5.104-5.116%（2007 年以来最高），CME 10 月加息概率 ~66-71%，Brent +3.9% 重上 $103/WTI +1.8% ~$92。Top5 = NVDA(9.0)→META(8.9)→MU(8.8)→CRWD(8.8)→INTC(8.7)。本期为确认/再平衡日（1 出 1 进低换手）：出 CEG（10Y 破 5% 生命线纪律触发→候补），入 PLTR（$191.79 +3.68% 软件轮动第三极）；DELL $549.83 缩量企稳 = 9/23 版 #19 反抽条件兑现转正确认。因子主线 = #1 动量"高低切"（硬件极值→软/网安新动量）+ #19 均值回复主引擎（DELL/GOOGL/ORCL 候选）+ #30 波动率惩罚放大（SOXL -3.75%）。峰会事件 = Bessent 宣布贸易休战延长 2 个月至 2027-01-10（Xi 近 60 年来首次白宫红毯），9/24 主谈日为当日最大变量；BABA -4.74% 卖事实后转修复候选。
+- Updated: wiki/index.md (Synthesis table added wq101-alpha-daily 2026-09-24 entry after investment-daily 09-24, above wq101 09-23), wiki/log.md
+- New pages: wiki/synthesis/2026-09-24/wq101-alpha-daily.md
+- Contradictions: 跨源冲突已在页内"十、数据来源与跨源冲突口径"标注并处置——① INTC % 行情 -1.02% vs Sharecast +1.25% 道指口径（取 -1.02%）；② ORCL 收盘 $144.56 vs 盘中快照 $145.635（取 $144.56）；③ CRWD cnbc 快照 $203.42 -5.42% 判过期/坏数据弃用（多源 9/23 收盘 $262.49 +4.97%）；④ SNDK 9/22 实际前收修正 $1,887.04（非 ~$1,900 口述整位）；⑤ VIX 9/23 收盘 ~16 标注估算；⑥ 标普 7,706.03 vs 7,709.62 / 道指 51,511.59 vs 51,512.42 取 AP 口径；⑦ Investing.com/MarketWatch 9/24 盘前快照（MU $955.90 等）与基准库错位判为缓存他日数据未采用。均为口径差异非逻辑矛盾。
