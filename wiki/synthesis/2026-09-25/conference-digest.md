@@ -11,7 +11,7 @@ tags: [conference-digest, ICML2026, ICLR2026, NeurIPS2025, AAAI2026, KDD2026, CV
 
 > Full Edition. Sweep of the **fresh Friday 25 Sep 2026 arXiv window (IDs 2609.28504–2609.30266, 577 parsed entries across cs.AI/LG/CL/IR/CV/GT/MA/NE/RO/SE/HC)** plus the **conference-proceedings sweep** across ICML 2026 / ICLR 2026 / NeurIPS 2025 / AAAI 2026 / KDD 2026 / CVPR 2026 / ACL 2026 / EMNLP 2025 / SIGIR 2026 / WWW 2026 / CIKM 2025 / RecSys 2025/2026.
 >
-> **Dedup discipline**: today's sibling digests (arxiv-ai-search / arxiv-daily / arxiv-paper-check, all 2026-09-25) already committed. Every paper **featured in detail** here is grep-verified **0 hits in `wiki/` AND absent from all sibling-claimed sets** (30 unique IDs). Sibling-claimed marquee items are **cross-referenced** (Section 5) rather than re-featured.
+> **Dedup discipline**: today's sibling digests (arxiv-ai-search / arxiv-daily / arxiv-paper-check / game-rl-daily, all 2026-09-25) already committed. **22 featured papers are exclusive to this digest**: fresh-window IDs grep-verified absent from all 4 siblings' claimed sets AND absent from `wiki/` at write time (only the venue-sweep items C1/L3 are pre-fire: HOBA was featured in 08-26 arxiv-daily, Flexibility Trap in 07-30→09-05 digests). **8 featured entries overlap with other claims** — R3 slate (all 3 search siblings), C2 ScalarLens (ai-search §1.2), L1 PoEM / A2 AdvRole / W1 WROP / W2 HelloWorld (game-rl-daily §③/②/⑦) — marked `⚠️dup` and cross-referenced in §5, not silently re-featured.
 
 ---
 
@@ -44,7 +44,7 @@ tags: [conference-digest, ICML2026, ICLR2026, NeurIPS2025, AAAI2026, KDD2026, CV
 
 ### 1.5 KDD 2026 (Jeju) & KDD Cup 2026
 
-- **HOBA: Hierarchical On-Policy Bidding Agents for Adaptive Online Advertising**(arXiv:2607.24779, KDD 2026 ads track)— 高层 LLM(Think-Act-Observe-Reflect + 经验检索)推断超参,中层 SARSA agent 以 causal adjustment 消除选择偏差并在 PID/MPC/IQL/Decision Transformer 专家池动态选模型;AuctionNet + 大规模 A/B 优于 SOTA,线上 target cost **+3.6%**。**本 digest 独家收录(0 hits in wiki)**。
+- **HOBA: Hierarchical On-Policy Bidding Agents for Adaptive Online Advertising**(arXiv:2607.24779, KDD 2026 ads track)— 高层 LLM(Think-Act-Observe-Reflect + 经验检索)推断超参,中层 SARSA agent 以 causal adjustment 消除选择偏差并在 PID/MPC/IQL/Decision Transformer 专家池动态选模型;AuctionNet + 大规模 A/B 优于 SOTA,线上 target cost **+3.6%**。⚠️ **pre-featured 于 08-26 arxiv-daily;此处作为 KDD 2026 venue 确认的纪要保持,不宣称独家**。
 - KDD Cup 2026 UniRec 冠军 QueryFormer 已在 [[conference-digest 09-19]] 收录;AI Search CVR 冠军方案已在 arxiv-paper-check 收录。
 
 ### 1.6 CVPR 2026
@@ -78,9 +78,9 @@ tags: [conference-digest, ICML2026, ICLR2026, NeurIPS2025, AAAI2026, KDD2026, CV
 
 ---
 
-## 2. 新鲜窗口精选（Featured, 独家未冲突）
+## 2. 新鲜窗口精选（Featured;⚠️dup = 同日 sibling 亦收录）
 
-> 全部 30 个 ID grep-verified 0 hits in `wiki/` 且不在今天三个 sibling 集合内。机构根据共同作者推断、未打印者标注置信度。
+> Filter: **22 fresh-window featured IDs are exclusive to this digest**(grep-verified 0 hits in `wiki/` at write time);**2 venue-sweep records**(C1 HOBA、L3 Flexibility Trap)为更早 digest 已收录内容的 KDD/ICML venue 确认纪要;**6 个 ⚠️dup 条目**(R3/C2/L1/A2/W1/W2)同日在四个 sibling 中亦有收录 —— 本节仍全文展开(内容需知情标注),但在标题与 §5 表中明确标注冲突、不宣称独家;另 2 个 runner-up(SLCA-GRPO/CounterRoute)仅交叉引用。机构根据共同作者推断、未打印者标注置信度。
 
 ### 2.1 Recommendation & Search — 推荐与搜索
 
@@ -104,7 +104,7 @@ tags: [conference-digest, ICML2026, ICLR2026, NeurIPS2025, AAAI2026, KDD2026, CV
 - **Comparison**: 对比静态/扁平 intent clustering 与 prototype learning 类 SOTA。
 - **Results**: 三个真实数据集上显著优于 SOTA 基线。(摘要未给具体数值)
 
-#### R3 `2609.29453` Decoupled Learning and Selection in Slate Recommendation — slate 推荐的解耦学习与选择
+#### R3 `2609.29453` ⚠️dup Decoupled Learning and Selection in Slate Recommendation — slate 推荐的解耦学习与选择 *(claimed by all 3 search siblings; cross-ref §5, featured here for venue context)*
 - **Authors**: (无法确定全名单,摘要已核)
 - **Affiliation**: 未标注
 - **Venue**: arXiv
@@ -114,7 +114,7 @@ tags: [conference-digest, ICML2026, ICLR2026, NeurIPS2025, AAAI2026, KDD2026, CV
 
 ### 2.2 Advertising & CTR — 广告与 CTR
 
-#### C1 `2607.24779` HOBA: Hierarchical On-Policy Bidding Agents for Adaptive Online Advertising — 分层在线竞价智能体(KDD 2026 ads track)
+#### C1 `2607.24779` HOBA: Hierarchical On-Policy Bidding Agents for Adaptive Online Advertising — 分层在线竞价智能体(KDD 2026 ads track) *⚠️pre-featured in 08-26 arxiv-daily; kept here as venue-sweep confirmation*
 - **Affiliation**: 广告平台工业团队(tentative);**Venue: KDD 2026**, DOI 10.1145/3770855.3818435
 - **arXiv**: https://arxiv.org/abs/2607.24779
 - **Method**: 高层 LLM(Think-Act-Observe-Reflect + 经验检索)推断超参 → 中层 SARSA agent 以 causal adjustment 消除选择偏差,在 PID/MPC/IQL/Decision Transformer 专家池中动态选模型,把在线学习约束在离散专家选择上,降低探索风险。
@@ -126,7 +126,7 @@ tags: [conference-digest, ICML2026, ICLR2026, NeurIPS2025, AAAI2026, KDD2026, CV
 
 ### 2.3 LLM Training & Post-Training — LLM 训练与后训练
 
-#### L1 `2609.30226` PoEM: Predicting RL Outcomes from Existing Policies — 从现有策略预测 RL 输出
+#### L1 `2609.30226` ⚠️dup PoEM: Predicting RL Outcomes from Existing Policies — 从现有策略预测 RL 输出 *(also claimed by game-rl-daily §⑦; cross-ref §5)*
 - **Authors**: Kimia Hamidieh, Giannis Daras, Antonio Torralba
 - **Affiliation**: **MIT CSAIL**(high confidence)
 - **Venue**: arXiv
@@ -159,7 +159,7 @@ tags: [conference-digest, ICML2026, ICLR2026, NeurIPS2025, AAAI2026, KDD2026, CV
 - **Comparison**: 对比行为克隆与人工 retargeting——不改权重、无需大量演示,输出可验证的程序。
 - **Results**: 8 个 contact-rich nonprehensile 任务 + LIBERO-Pro 全部表现强;真实 **Franka** 机械臂完成全部 8 个 nonprehensile 任务;对物体 pose/shape/material/环境变化泛化。(统一 pass@1 见正文)
 
-#### A2 `2609.28609` Adversarial Closed-Loop Curriculum for Evolving Role-Playing Agents — 演化中角色扮演 Agent 的对抗式闭环课程(AdvRole)
+#### A2 `2609.28609` ⚠️dup Adversarial Closed-Loop Curriculum for Evolving Role-Playing Agents — 演化中角色扮演 Agent 的对抗式闭环课程(AdvRole) *(also claimed by game-rl-daily §②; cross-ref §5)*
 - **Authors**: Zheng Zhang, Liu Liu, Qi Chai, Deheng Ye, Peilin Zhao, Mao Zheng, Hao Wang
 - **Affiliation**: **腾讯 AI Lab**(inferred, high confidence)
 - **Venue**: arXiv
@@ -199,7 +199,7 @@ tags: [conference-digest, ICML2026, ICLR2026, NeurIPS2025, AAAI2026, KDD2026, CV
 
 ### 2.6 World Models, Robotics & Sequential — 世界模型 与 序列建模
 
-#### W1 `2609.28654` Training Object Permanence in World Models — 在世界模型中训练客体永久性
+#### W1 `2609.28654` ⚠️dup Training Object Permanence in World Models — 在世界模型中训练客体永久性 *(also claimed by game-rl-daily §③; cross-ref §5)*
 - **Authors**: Haotian Zhang 等(含 Renrui Zhang, Philip Torr, Alan Yuille, Yilun Du, Felix Juefei-Xu 等)
 - **Affiliation**: 15+ 高校合作(USC, CMU, JHU, UCSD, UCLA, Columbia, UToronto, Bristol, UC Berkeley, Waterloo, Stanford, Oxford, Harvard, NYU 等;high confidence)
 - **Venue**: arXiv
@@ -208,7 +208,7 @@ tags: [conference-digest, ICML2026, ICLR2026, NeurIPS2025, AAAI2026, KDD2026, CV
 - **Method**: 构建 1.5M 样本训练语料,注入系统性破坏 object permanence 的反面数据 + 300 题考试集(**PWM-WROP**)评测。
 - **Results**: 对 14 个主流视频世界模型统一评测,定量刻画既有模型的系统性失败。
 
-#### W2 `2609.28931` HelloWorld: Towards Practical Applications of Generative Driving World Models — 生成式驾驶世界模型实用化
+#### W2 `2609.28931` ⚠️dup HelloWorld: Towards Practical Applications of Generative Driving World Models — 生成式驾驶世界模型实用化 *(also claimed by game-rl-daily §③; cross-ref §5)*
 - **Authors**: Fan Lu 等(含 Beihang 的 Peixi Peng、Tongji 的 Guang Chen;项目页带"哈啰 Robotaxi"标识)
 - **Affiliation**: 北航/同济 + 车厂母公司项目(inferred)
 - **Venue**: arXiv (project page: helloworld-4d.github.io)
@@ -310,10 +310,10 @@ tags: [conference-digest, ICML2026, ICLR2026, NeurIPS2025, AAAI2026, KDD2026, CV
 
 ---
 
-## 3. Runner-ups（备选,未冲突）
+## 3. Runner-ups（备选;⚠️标记者已被 sibling 收录,仅引不展开）
 
-- `2609.29050` **SLCA-GRPO** — GRPO 对 tool-calling agent 广播同一 trajectory-level advantage 致 cross-segment credit misattribution;Segment-Locked Credit Assignment + Schema-Guided LLM Simulator 避免真实 API 探索成本。
-- `2609.29109` **CounterRoute** — 在线 RL 联合学"路由 + 模式条件响应",counterfactual rollouts 只给 routing token 跨模式 credit,组内 GRPO 训响应 token,无需 method-specific SFT warm-up。
+- `2609.29050` ⚠️dup(arxiv-daily) **SLCA-GRPO** — GRPO 对 tool-calling agent 广播同一 trajectory-level advantage 致 cross-segment credit misattribution;Segment-Locked Credit Assignment + Schema-Guided LLM Simulator 避免真实 API 探索成本。
+- `2609.29109` ⚠️dup(arxiv-ai-search) **CounterRoute** — 在线 RL 联合学"路由 + 模式条件响应",counterfactual rollouts 只给 routing token 跨模式 credit,组内 GRPO 训响应 token,无需 method-specific SFT warm-up。
 - `2609.28845` **LastOPD** — latent on-policy distillation 从 Qwen3-4B/8B → 1.7B 时:MATH-500 25→46(10 步)后崩到 11 无法恢复,"对齐越好、行为越差"→ latent 空间不匹配。
 - `2609.29264` **TP-CRIV** — 第三方 challenge-response AI 模型身份验证框架。
 
@@ -354,6 +354,13 @@ tags: [conference-digest, ICML2026, ICLR2026, NeurIPS2025, AAAI2026, KDD2026, CV
 | AD-WM: action-discriminative world models(清华) | 2609.30264 | arxiv-daily |
 | Anchored Planning — frozen world models 规划(清华) | 2609.30036 | arxiv-ai-search §6.2 |
 | Reasoning Instructions Break VLM Answer Decoding(ScienceQA 80.76→45.48) | 2609.29278 | arxiv-daily |
+| **POEM**: 预测 RL 输出 | 2609.30226 | game-rl-daily §⑦ |
+| **AdvRole**: 角色扮演对抗课程 | 2609.28609 | game-rl-daily §② |
+| **WROP/PWM-WROP**: 客体永久性训练 | 2609.28654 | game-rl-daily §③ |
+| **HelloWorld**: 驾驶世界模型 | 2609.28931 | game-rl-daily §③ |
+| **slate 解耦学习与选择** | 2609.29453 | arxiv-ai-search / arxiv-daily / arxiv-paper-check |
+| **SLCA-GRPO**: segment-locked credit | 2609.29050 | arxiv-daily |
+| **CounterRoute**: 自路由推理 | 2609.29109 | arxiv-ai-search |
 
 ---
 
