@@ -17,6 +17,22 @@ Generated: 2026-09-28 (Monday). **⚠️ Window-stall disclosure: the arXiv new-
 
 Today is **Monday 2026-09-28**; arXiv posts the Monday announcement at ~20:00 ET / ~17:00 PT, after this run's execution. The next genuine window will appear on the **2026-09-29** run.
 
+> ### ⚠️ CORRECTION — added 2026-09-28 by [[arxiv-paper-check]] (same day). The "window stall" conclusion above is **false**.
+>
+> The two checks in lines 14–18 are individually honest but **cannot support the conclusion drawn from them**. Both were **category-scoped**, and the leap from "per-category max" to "global max" is invalid:
+> - **Check 1** sampled **8 of arXiv's ~170 categories**. It establishes that cs.AI, cs.LG, cs.IR, cs.CL, cs.GT, cs.MA, cs.NE and cs.CV received *no new primary submissions* in this mailing — it is silent about the other ~162 categories.
+> - **Check 2** was a **`cat:cs.LG`-scoped** query. Labelling it an "API tail sweep" and concluding "no paper anywhere in the API is newer than the Fri-25 batch" overstates what a `cs.LG` query can establish. This is the specific error: a category filter was read as a global bound.
+>
+> A **category-agnostic** query run the same morning at 09:46 CST returns `2609.31366v1` (`published=2026-09-25T15:01:40Z`), and the range filter `submittedDate:[202609241800 TO 202609260000]` returns **1,013 papers spanning 2609.30361–2609.31373** — over 1,000 IDs above the 2609.30266 ceiling, and **none of them appear anywhere in `wiki/`**. **628 of the 1,013** fall in the AI/IR/stats pool.
+>
+> **Net effect: this page covers 454 of the 1,013 papers in the mailing, not 1,013 of them.** The unclaimed remainder it was built on is genuinely unclaimed *within the 8 categories it scanned*, but the wider remainder in the categories it did not scan was missed.
+>
+> **No content is retracted.** All 22 papers featured here are valid and correctly claimed; the two reports are **fully ID-disjoint** (all 22 IDs here are ≤ 2609.30266; all 34 in [[arxiv-paper-check]] are ≥ 2609.30361). This is a **coverage gap, not a factual error in the entries**. It also means the negative finding in §"rec / ads / CTR line is exhausted" is scoped too narrowly: the CTR drought is real, but the scan behind it covered less than half the mailing.
+>
+> **Methodology rule now in force for all `arxiv-*` jobs:** never bound a *global* window from a single category's `/list` page or from a `cat:`-scoped API query. Detect the window with a **category-agnostic** API query sorted by `submittedDate` descending, seed the lower cutoff from the previous run's max ID, and verify that the new window's **minimum** ID exceeds the prior **ceiling**. Category pages remain the right tool for *per-category coverage*, never for *global window detection*.
+>
+> Full treatment: [[arxiv-paper-check]] (2026-09-28).
+
 **Methodology**: Direct page fetches of `/list/{cat}/new` for **cs.AI, cs.LG, cs.IR, cs.CL, cs.GT, cs.MA, cs.NE, cs.CV**; parsed only the **New submissions** section of each page (Cross-lists and Replacements excluded by section-splitting). The parse **exactly reproduces** the 09-25 `arxiv-ai-search` figures — **454 unique new IDs**, span **2609.28475–2609.30264**; per-category cs.LG 119, cs.CV 111, cs.AI 107, cs.CL 86, cs.IR 16, cs.GT 8, cs.NE 4, cs.MA 3 — which is the proof that the corpus is unchanged. Whole-`wiki/` regex diff for `260N.NNNNN` found **123 of the 454 already claimed** by the five 09-25 sibling reports, leaving a **331-paper unclaimed pool**. Title screen of all 331 against the target topics (AI / LLM / recommendation / advertising / sequential modeling / CTR / games / mechanism design / retrieval / agents) → 22 papers deepened via API abstracts. Listing HTML, pool JSON, and API XML cached under the pre-approved temp dir `/var/folders/q9/tsl_tl5548x7j892sgt3qvlc0000gn/T/opencode/arxiv-search-0928/` and deleted after the run.
 
 **Institutions** are author-affiliation inferred where arXiv prints none — all marked *tentative*; the basis for each inference is stated in the entry.
@@ -372,4 +388,6 @@ The one adjacent item worth watching is **2609.28919** (§4.4) — not a rec pap
 | 2609.29014 | AlphaDiverse | §7.4 | not printed |
 | 2609.29711 | SPARK | §8.1 | Tsinghua / BAAI |
 
-**Sibling-job handoff**: treat all 22 IDs above as claimed by this report. The next `arxiv-ai-search` / `arxiv-daily` / `arxiv-paper-check` run should target the **2026-09-29 window** (the first genuinely new mailing), not this remainder.
+**Sibling-job handoff**: treat all 22 IDs above as claimed by this report.
+
+> ⚠️ **Handoff corrected 2026-09-28.** The original handoff pointed the next `arxiv-ai-search` / `arxiv-daily` / `arxiv-paper-check` run at the **2026-09-29 window** on the premise that no new window existed yet. That advice is withdrawn: **a large unclaimed window already exists right now** — 1,013 papers, IDs **2609.30361–2609.31373**, screened and claimed in [[arxiv-paper-check]] (24 featured + 10 runner-ups, all 0-hit in `wiki/`). The next run should (a) treat those 34 IDs as claimed, and (b) screen the **residual** of that same 1,013-paper window rather than waiting for 09-29. See the CORRECTION block at the top of this page for why the "stall" premise failed.
