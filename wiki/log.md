@@ -7074,3 +7074,30 @@
 - **Dedup（写稿时 wiki 全库 grep 实录）**: `OpenShell` **0 命中**、`Open Agent Safety` **0 命中**、`Gems` **0 命中**、`Holo4` **0 命中**、`Space Bunny` **0 命中** → 均为首次收录；`Sonnet 5.5` 仅命中 09-28 digest 的"不采信"条目与 log/index；`Agents-A1` 仅命中 `07-01/arxiv-paper-check.md`；`CSA2` / `2609.19969` 命中 11+ 既有页、`Flash-Next` 命中 20+ 既有页 → 明确不重复收录。
 - **⚠️ Commit scoping（本日第 4 次 write-race，续 `investment-daily` 08:10 的记录）**: `investment-daily` job 在 08:10 执行 `git add -A` 时**扫进了本 job 08:09 落盘、但 index 行与 log 条目尚未写入的 `tech-report-digest.md`**，随即以 `git reset --soft` 撤销并重做为仅含其三个文件的提交，**把本页面还原为 untracked 交回本 job**。本 job 随后写入 index 行与本条 log 并自行提交。**本次再次确认 09-28 三次记录以来的同一结论，且本次观测到的竞争发生在 08:00 档（tech-report 与 investment 两个 job 同时 08:00 触发），比此前记录的 10:00-11:00 档更早**——`git status` 复核（investment job 已做过一次）**不足以免疫**，因为 sibling 可在 status 与 add 之间落盘。**需要 claim registry 或确定性 claim 顺序，而非更好的写入检查。** 本 job 提交前已再次 `git status` 确认工作树仅含本 job 的两个文件（`index.md` 修改 + 本页面 untracked），且**同目录 09-29 的 `investment-daily.md` 已被前序提交纳入、不再是 untracked**。
 - **Handoff（给 2026-09-30 digest）**: ① **OpenAI DevDay keynote 产出全部归 09-30**——首要观察点是"若出现 agent / tool-use 相关发布，与 09-28 的 tool-use 全面暂停线如何并置"；② **Sonnet 5.5 的"1M 上下文 / 128K 最大输出"待 Claude Platform 文档或 models overview 页确认**；③ **Gemini 4 的实际发布形态**（Kavukcuoglu 说的 "early post-training output" 按字面可能不是最终 checkpoint）；④ **Google Gems→skills 的免费用户访问级别**（官方支持页此前 404）；⑤ **Sonnet 5.5 System Card 是否补进官方 `/system-cards` 索引页**；⑥ **HAiku 5.5**（官方称"未来数周内"，无日期）；⑦ arXiv 侧：**Tue 29 Sep 窗口尚未被任何 `arxiv-*` job 扫描**，按 09-28 记录的 over-paging 规则执行（`totalResults` 不可作为窗口大小），预计 RecSys 2026（09-28→10-02）与 DevDay 落地使该窗口偏产业重。
+
+## [2026-09-29] wq101 | WorldQuant 101 Alpha 每日精选 Top 20 美股 — 2026-09-29（周二版）
+
+- **Summary**: `wiki/synthesis/2026-09-29/wq101-alpha-daily.md`（新建，733 行）
+- **数据基准**: 2026-09-28（周一）完整收盘；生成于 2026-09-29 美股开盘前，9/29 盘中数据尚未产生。行情/因子读数经 Yahoo Finance、CNBC、stockrow、fiscal.ai、stockanalysis.com、companiesmarketcap、marketcaplens、quant500、investorsunderground、FactSet、CME FedWatch (via Gate)、Apollo Global 多源交叉复核。
+- **本期核心判断 = "五日内的三次方向性反转" + 组合从单边动量切换为哑铃结构**:
+  1. **利率冲击分界线已越过**：10Y **5.241%（+9.5bp，2007 年来最高）**、30Y 5.57%（2004 年来最高）、2Y 4.93%（曲线整体上移，非单纯陡峭化）。问题从"何时降息"切换为**"10 月是否加息"**——概率 8/19 的 6.6% → 9/18 的 57.6% → **9/29 的 70.9%**。Williams（9/24）称年内再加息一次"合理"；**Cook（9/28 Oakland）点名 AI 建设 + 更高油价为后续通胀源，并称"就业市场处于能够承受加息的位置"**。→ **贴现率与分子端同时恶化**。
+  2. **油价反弹至 19 个月高位**：Brent **$105.28**（盘中 $108.83，YTD >+70%，三连月上涨）/ WTI $92.60（盘中 $96.54）。
+  3. **波动率苏醒**：VIX **16.07（+8.07%）**。
+- **方法论升级（本期最重要的单点发现）**: 板块读数口径由 ETF 改为**中位数个股**（quant500 全 503 只 S&P 成分股）。核心结论是**权重陷阱**——**能源中位数 −0.77%（17 跌 4 涨）但 XLE +0.06%**：油价只传导给超大市值一体化巨头，中小 E&P 与油服被"油价→通胀→加息"逻辑杀死。**Alpha#6 在行业层面的教科书证据：成交量只确认权重股，行业整体并未确认。** 同类背离另见通信服务（中位数 −0.56% vs XLC −1.58%，META 独跌）、可选消费（−0.48% vs XLY −1.41%）、工业（−0.38% vs XLI −0.97%）。
+- **市场宽度**: 163 涨 / 336 跌 / 4 平；中位数 −0.52% vs SPY −0.74% → **真实中位数级收缩，非权重股掩护下的普跌**。医疗保健 +0.27%（39/20）是唯一中位数为正板块；公用事业 26 只仅 2 只涨；**金融 −1.02%（60/70 下跌）全市场最差**。
+- **AI 安全冲击是 IT 板块内部零和的**: 半导体（QCOM/ARM/MRVL/MU）被杀跌，而网络安全被追捧——**PANW +4.63%（S&P 涨幅第一、收于日高、Alpha#53 ★★★★★）+ CRWD +2.82%（涨幅第三、零个股新闻）**。
+- **Top 20 与评分**: NVDA 9.3 / MU 8.9 / PANW 8.6 / MSFT 8.5 / TSM 8.4 / AAPL 8.3 / GOOGL 8.2 / LLY 8.2 / AMZN 8.1 / AVGO 8.0 / SPCX 8.0 / XOM 7.9 / AMD 7.8 / CRWD 7.6 / RTX 7.6 / CVX 7.5 / LMT 7.4 / JPM 7.1 / NEM 6.9 / ISRG 6.8。**全 20 只市值均已取得 9/28 收盘实测值，无一只处于 >$10B 临界区。**
+- **换手 7 进 7 出**: 新进 PANW / AMZN / XOM / CRWD / CVX / NEM / ISRG；退出 META / MRNA / SNDK / DELL / GE / NOC / TXG 10X Genomics。最大调整 **AMD #4 → #13（−9 位）**（单日 +9.6% 突破 $1T 的事件动能完全耗尽）与 **JPM #15 → #18（−3 位）**。
+- **自我推翻 3 处（本期最诚实的部分）**:
+  1. **JPM 从 #15/7.9 → #18/7.1**。9/28 版原文"**本期 Alpha#19 均值回复池的第一顺位**：5.18% 的无风险收益率对银行净息差是直接利好"被 **Apollo 首席经济学家 Torsten Sløk 的 "agentic bank run"** 情景证伪。**关键在于兑现路径不同**：9/28 版预警的是"资产质量 + 曲线"，实际发生的是**"负债成本"**——这比预警本身更严重，因为预警里没有这一条通道。
+  2. **AMD −9 位**，事件动量一日耗尽。
+  3. **能源从 0 只 → 2 只、材料从 0 只 → 1 只**（能源敞口回归但明确不给 ETF 敞口与中小型 E&P）。
+- **因子层**: **Alpha#53 反转最有效**（PANW ★★★★★ 收于日高）；Alpha#6 量价分化（NVDA/PANW/XOM ★★★★★ vs MSFT/META/AMD ★★★☆☆）；**Alpha#19 正面读数簇**（NEM −4.43%、JPM −1.89%、金融全线、软件久期股 CRM −2.88%/NOW −3.07%、公用事业 26 中 2 涨、地产 8-22）；Alpha#41 趋势分化（NVDA/TSM/PANW/ISRG 上行；MU/AMD/MSFT 跌破 VWAP 中枢）；Alpha#12 背离仅 SPCX ★★★★★。
+- **策略纪律**: 10/28 加息落地 → 无条件降低长久期/高 beta 敞口，优先减 AMD / AVGO / CRWD / ISRG；10Y 破 5.40% → 优先减 NEM（黄金与实际利率直接反向）与全部长久期软件。能源仓位有效性完全依赖地缘政治，而地缘政治可以一夜之间消失。
+- **Updated**: `wiki/synthesis/2026-09-29/wq101-alpha-daily.md`（新建）、`wiki/index.md`（Synthesis 段新增 2026-09-29 wq101-alpha-daily 行）、`wiki/log.md`（本条）
+- **New pages**: `wiki/synthesis/2026-09-29/wq101-alpha-daily.md`
+- **Contradictions**: **1 项未解矛盾（拒绝裁定）**——**CONFLICT 2：油价上涨但防务股 RTX / LMT / NOC 全跌**。候选解释有二：(a) Trump 周末拒绝伊朗霍尔木兹方案被市场反向解读为停火在望，能源多头拥挤而防务被减仓；(b) 板块内权重股回调。**本报告拒绝裁定，代价是工业/防务板块的判断置信度显著低于其他板块。** 另记录 1 项跨源数据冲突：**黄金 $4,155.60（Yahoo，−0.31%）vs $4,291.33（Newmont IR，−1.67%）**，差 3.2%，疑为 COMEX 合约月份不同，两者并列保留不取单点。
+- **✅ 9/28 版口径错误在本期纠正**: Yahoo 原文"S&P 500 forward P/E 降至 19 倍（自 22 倍）"混淆了远期（19.2x，FactSet）与滚动（22.9x）P/E。正确表述：远期 19.2x **低于 5 年均值 19.8x、接近 10 年均值 19.0x**。
+- **⚠️ 免责与局限（写入报告 §7.3）**: 因子读数为**人工近似判读（1-5 星），非 WorldQuant 101 alpha 实算结果**（真实 Alpha#1 需 `Delay(close,1)` 10 日滚动相关、Alpha#6 需 open-volume 10 日滚动相关、Alpha#41 需逐日 VWAP，均需 point-in-time 日频库，本报告不具备）；**无回测 / 无 IC / 无 IR / 无换手率**；无幸存者偏差控制（未做全市场约 4,600 只的完整横截面回溯）；**不构成投资建议**。WorldQuant 101 Alpha 库本身是 2016 年的研究产物，在 10 年后的市场结构（零佣金、算法化、高被动化）下有效性未经检验。
+- **⏭ Handoff（给 2026-09-30 及后续）**: ① **9/29 盘后 MU 财报（共识 EPS $31.15，guidance 营收 ~$50B±1B / GM ~86%，焦点在 Dec 指引）**——发布后需立即重写报告 §3.2 与 §7.2 的最高优先级风险条目；② **9/30 8 月 PCE**；③ **10/2 非农 + Tesla Q3 交付**；④ 持仓期观察：JPM 存款成本与 NIM 的实际披露、**"agentic bank run" 是否从 hypothetical 变为被定价**、NEM 观察位是否跌破。
+- **抓取失败记录**: Investopedia 页面 `StatusCode: non 2xx status code (402 GET ...)`，已改用 Yahoo Finance / CNBC / stockrow / fiscal.ai / stockanalysis.com 等替代来源。
