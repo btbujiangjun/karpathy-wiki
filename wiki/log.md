@@ -7526,3 +7526,6 @@
 - **Updated**: `wiki/index.md` (Synthesis section, row placed first as the newest), `wiki/log.md` (this entry)
 - **Temp files**: all arXiv Atom XML, HTML author-block renders, and parser scripts written to `/var/folders/q9/tsl_tl5548x7j892sgt3qvlc0000gn/T/opencode/arxiv/` (pre-authorized scratch), **deleted after writing**. No writes outside that directory or the wiki.
 - **Contradictions**: **Two, both recorded rather than absorbed.** (a) ⚠️ **`2610.01533`'s title on file is wrong** and the 10-03 digest's Semantic-ID lineage conclusion is weakened by the real paper's content — correction recommended in the report's §4 and left for approval. (b) ⚠️ **The 10-05 report's lane-saturation and cadence recommendation is contradicted by this run** and should be read as scoped to keyword-backfill queries only. **No intra-report numeric conflicts**; the three open questions are all flagged inline rather than resolved — CutBCE's GPU portability, CIPHER-MoE's unverifiable-without-code DeepSeek-V4-Pro numbers, and WorkForge's APEX 5.0 starting floor.
+## [2026-10-06] ingest/query-filed | WorldQuant 101 Alphas - 美股 Top 20 股票精选 (2026-10-06)
+- Filed as: wiki/synthesis/2026-10-06/wq101-alpha-daily.md
+- Related pages: wiki/synthesis/2026-09-30/wq101-alpha-daily.md
