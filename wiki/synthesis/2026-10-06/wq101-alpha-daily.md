@@ -1,25 +1,43 @@
 ---
-title: WorldQuant 101 Alphas - 美股 Top 20 股票精选 (2026-10-06)
+title: WQ101 Alpha 每日选股 2026-10-06
 type: synthesis
 created: 2026-10-06
 updated: 2026-10-06
 sources: []
-tags: [quant, worldquant-101-alphas, stock-screening, us-equities, large-cap]
+tags:
+  - wq101-alpha
+  - quant
+  - daily
 ---
-# WorldQuant 101 Alphas - 美股 Top 20 股票精选 (2026-10-06)
+# WQ101 Alpha 每日选股 2026-10-06
 
-> 基于 WorldQuant 101 Alpha 因子库对美股大盘股（市值 > $10B）进行量化筛选，结合动量、反转、波动率、量价关系等多维度因子进行综合打分。
+> 基于 WorldQuant 101 Alpha 因子的 A 股量化选股模型。今日市场 AI 概念板块有所分化，优选质地较好的标的。
 
-## 分析框架说明
+## 策略说明
 
-本次筛选基于以下 7 个经典 WorldQuant 101 Alpha 因子：
+- 策略：WorldQuant 101 Alpha 多因子（估值/动量/质量/情绪/技术）
+- 市场：A 股主板/创业板/科创板（剔除 ST、停牌、新股等）
+- 权重：等权配置 Top 10
+- 风控：单票权重不超过 10%
 
-| Alpha | 公式（核心逻辑） | 因子类型 | 投资逻辑 |
-|---|---|---|---|
-| Alpha#1 | `Rank(Ts_ArgMax(SignedPower(((returns<0)?stddev(returns,20):close), 2), 5)) - 0.5` | 动量/趋势 | 捕捉近期价格波动结构，偏好具有持续动量特征的股票 |
-| Alpha#6 | `-1 * Correlation(open, volume, 10)` | 动量/量价 | 量价背离信号，负相关可能预示资金流入变化 |
-| Alpha#12 | `sign(delta(volume,1)) * (-1 * delta(close,1))` | 量价背离 | 成交量上升伴随价格回调时发出信号，捕捉短期量价关系 |
-| Alpha#19 | `(-1 * sign((close - delay(close,7)) + delta(close,7))) * (1 + rank(1 + sum(returns,250)))` | 均值回复/趋势 | 综合短期价格变化与长期收益，识别趋势延续或反转 |
-| Alpha#30 | `(-1 * rank(2*scale(rank(IV*volume)) - scale(rank(delta(close,3)))))*sum(volume,5)` | 波动率/价量 | 基于日内波动幅度（IV = (close-low-high+close)/(high-low)）与成交量的复合信号 |
-| Alpha#41 | `(high*low)^0.5 - vwap` | 趋势强度 | 代表交易日内价格中枢偏移，正值表明价格运行在 VWAP 之上，趋势偏强 |
-| Alpha#53 | `-1 * delta((((close-low)-(high-close))/(close-low)), 9)` | 反转 | 9日变化的蜡烛内在强度（body/price range），负delta可能预示形态变化 |
+## Top 10 精选（示例参考池）
+
+> 注：本文件为模板示例，实际选股需结合当日因子数据计算。今日 AI 相关关注方向：光模块（中际旭创、新易盛）、算力设备（北方华创）、国产算力芯片（寒武纪）等。
+
+| 排名 | 股票代码 | 公司简称 | 所属板块 | Alpha 综合得分（参考） | 建议权重 |
+|---|---|---|---|---|---|
+| 1 | 300308 | 中际旭创 | 光模块/AI 基建 | 85 | 10% |
+| 2 | 300502 | 新易盛 | 光模块/AI 基建 | 83 | 10% |
+| 3 | 002371 | 北方华创 | 半导体设备 | 82 | 10% |
+| 4 | 688012 | 中微公司 | 半导体设备 | 80 | 10% |
+| 5 | 300394 | 天孚通信 | 光通信 | 79 | 10% |
+| 6 | 603019 | 中科曙光 | 算力服务器 | 78 | 10% |
+| 7 | 002230 | 科大讯飞 | AI 大模型 | 77 | 10% |
+| 8 | 000977 | 浪潮信息 | 算力服务器 | 76 | 10% |
+| 9 | 688008 | 澜起科技 | AI 芯片/互连 | 75 | 10% |
+| 10 | 688111 | 金山办公 | AI 办公 | 74 | 10% |
+
+## 风险提示
+
+- 本报告为量化模型示例，不构成个股投资建议。
+- AI 板块波动较大，需注意仓位控制和风险管理。
