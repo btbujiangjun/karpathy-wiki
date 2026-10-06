@@ -11,9 +11,9 @@ tags: [arxiv, daily-check, ai, ctr, recommendation, ads, auctions, generative-re
 
 **Search**: `cat:cs.IR`, `cat:cs.AI`, `cat:cs.LG`, `cat:cs.CL`, `cat:cs.CV` restricted to `submittedDate:[202610050000 TO 202610072359]`, plus topical `abs:` passes on *click-through / CTR / recommendation / ranking / cold-start / ads*. Announced window = **2026-10-05 (all 464 harvested entries carry this date)**.
 
-**Dedup baseline**: 7,964 unique arXiv IDs already claimed repo-wide → **462 of 464 window papers are unclaimed**. All 22 featured IDs re-verified 0-hit immediately before this write.
+**Dedup baseline**: 7,964 unique arXiv IDs already claimed repo-wide → **462 of 464 window papers are unclaimed**. **17 papers featured** (7 CTR/ads/recsys + 10 core AI), all 17 IDs re-verified 0-hit immediately before this write; **3 further selections were withdrawn** after a post-write collision pass (see *Sibling-claimed papers*).
 
-⚠️ **Window caveat, stated up front**: this is a *single-day* harvest (2026-10-05 submissions), not a rolling 24 hours. §8 explains why the "last 24 hours" framing and the announcement date diverge on arXiv and what that costs.
+⚠️ **Window caveat, stated up front**: this is a *single-day* harvest (2026-10-05 submissions), **not a rolling 24 hours**. The *Method disclosure* section explains why the "last 24 hours" framing and the announcement date diverge on arXiv, and what that costs in coverage.
 
 ---
 
@@ -21,7 +21,9 @@ tags: [arxiv, daily-check, ai, ctr, recommendation, ads, auctions, generative-re
 
 ### CTR / Ads / Recommender lane
 
-The headline finding for this series' core specialty: **the CTR lane produced 11 papers, and 3 of them are from Google, Meta, and Criteo AI Lab** — this window is unusually industrial for an unreviewed arXiv block. Two papers are also directly on ads auctions, which this wiki has essentially no coverage of.
+The headline finding for this series' core specialty: **the CTR lane produced 7 papers in the featured set, and 4 of them carry an explicit Google, Meta, or Criteo affiliation** — unusually industrial for an unreviewed arXiv block. The top paper is directly on **ads auctions with incentive-compatibility guarantees**, a subject this wiki had essentially no coverage of.
+
+⚠️ **Same-day sibling collision, and it removed three papers from this report.** The 2026-10-06 `arxiv-ai-search` digest had already claimed **`2610.05559` CutBCE**, **`2610.05670` CreGR**, and **`2610.05744` CIPHER-MoE** before this run finished. Those three are **excluded from the featured sections below** and recorded in *Sibling-claimed papers* rather than re-summarized. This is the failure mode the 2026-10-05 `game-rl-daily` digest warned about — two sibling jobs harvesting the same announcement window on the same day — and it is the reason this report's yield (17 papers) is **lower than the window supports**.
 
 ---
 
@@ -39,7 +41,7 @@ The headline finding for this series' core specialty: **the CTR lane produced 11
 - Bounds the pseudo-dimension of MIRT under hard attention: near-optimal expected welfare learnable with sample complexity polynomial in transformer size, **logarithmic in range size**
 - Beats the previous *non-strategyproof* state of the art on welfare while remaining **exactly** strategyproof
 
-**Notes:** The most theoretically substantive ads paper this wiki holds. Directly comparable to the CTR literature recorded in [[ctr-scaling-landscape]] but orthogonal — it optimizes *feed composition under incentive compatibility* rather than *single-model accuracy*. See §9 for a caution on the welfare metric.
+**Notes:** The most theoretically substantive ads paper this wiki holds. Directly comparable to the CTR literature recorded in [[ctr-scaling-landscape]] but orthogonal — it optimizes *feed composition under incentive compatibility* rather than *single-model accuracy*. See the *Method disclosure* section for a caution on the welfare metric.
 
 ---
 
@@ -57,7 +59,7 @@ The headline finding for this series' core specialty: **the CTR lane produced 11
 - Proves two operational corollaries: under a frozen router an expert's execution frequency controls its stochastic-gradient convergence rate; and confident near-root decisions **bound cross-device communication** when experts are placed by tree prefix
 - **Evaluated on Criteo click-through-rate prediction** plus Forest Covertype, HIGGS, YearPredictionMSD; $E=16$, top-4 routing, 5 seeds
 
-**Notes:** ⚠️ The Criteo CTR run is one of four benchmarks and the paper reports no effect sizes in the abstract — this is an **embedding-scaling** contribution, not a CTR-prediction contribution. Its relevance to this lane is that CTR is the load-bearing industrial test case for the routing claim. Pairs with [[cipher-moe-workload-imbalance]]'s finding below (that workload imbalance is a system problem, not a router problem) — two papers, same week, opposite solutions.
+**Notes:** ⚠️ The Criteo CTR run is one of four benchmarks and the paper reports no effect sizes in the abstract — this is an **embedding-scaling** contribution, not a CTR-prediction contribution. Its relevance to this lane is that CTR is the load-bearing industrial test case for the routing claim. Contrasts with `2610.05744` CIPHER-MoE (**claimed by the same-day sibling, see *Sibling-claimed papers***): BRANCH changes the router to fix balance *without* an aux loss; CIPHER keeps the router's Top-K selection untouched and filters downstream. Two papers, same window, opposite design choices on the same problem — and both were published on the same day.
 
 ---
 
@@ -110,7 +112,7 @@ The headline finding for this series' core specialty: **the CTR lane produced 11
 - Offline: next-item prediction jointly optimized with temporal supervision. Online: **shared model frozen, only the two user memories update** — i.e. personalization without any weight update, which is the production-friendly part
 - **+7.0–13.2% mean NDCG@10** over the strongest external baseline on MovieLens-10M, Amazon Luxury Beauty, and **KuaiRec**
 
-**Notes:** KuaiRec is an industrial short-video log, so this is one of the few papers this window with a real online-distribution test. Single-author paper — see §9.
+**Notes:** KuaiRec is an industrial short-video log, so this is one of the few papers this window with a real online-distribution test. Single-author paper — see the *Method disclosure* section.
 
 ---
 
@@ -118,6 +120,7 @@ The headline finding for this series' core specialty: **the CTR lane produced 11
 
 - **ID**: `2610.06060v1` | **Cat**: cs.IR | **Submitted**: 2026-10-05
 - **Authors**: Jana Isabelle Friese, Andreas Konstantin Kruff, Timo Breuer, Philipp Schaer, Norbert Fuhr
+- **Affiliation**: ⚠️ **not stated** — the posted file is the author's own Version of Record notice with **no affiliation block**; not inferred
 - **Venue**: **CIKM '26** (definitive version of record, DOI `10.1145/3799682.3840602`)
 - **PDF**: [Link](https://arxiv.org/pdf/2610.06060)
 
@@ -131,42 +134,9 @@ The headline finding for this series' core specialty: **the CTR lane produced 11
 
 ---
 
-#### 7. [Generate What You Can Trust: Content Credibility in Generative Recommenders](https://arxiv.org/abs/2610.05670)
 
-- **ID**: `2610.05670v1` | **Cat**: cs.IR | **Submitted**: 2026-10-05
-- **Authors**: Zhuo Cai, Guanghao Wu, Shoujin Wang, Peilin Zhou, Victor W. Chu
-- **Affiliations**: Data Science Institute, **University of Technology Sydney**; **New York University Abu Dhabi**
-- **PDF**: [Link](https://arxiv.org/pdf/2610.05670)
 
-**Key contributions:**
-- Names the gap: generative recommendation optimizes accuracy while neglecting **credibility** of what it generates, exposing users to uncredible content (fake news) with trust and reputational consequences
-- **CreGR** attacks both GR stages. *Tokenization*: a **credibility-aware tokenizer** learns discriminative tokens for credible vs. uncredible items, disentangling credibility at token level. *Generation*: an **accuracy-preserving credibility-oriented generator** on discrete diffusion
-- The generation stage uses **asymmetric masking probability reduction** — selectively down-weights tokens associated with uncredible content while leaving **user-preference signal tokens untouched**, so accuracy is preserved by construction
-- Three real-world datasets
-
-**Notes:** The "leave preference tokens alone" mechanism is the transferable idea — it means credibility intervention does not have to trade off against relevance. ⚠️ **No effect sizes, no dataset names, and no metric definitions appear in the abstract**; recorded as a mechanism contribution (single-source).
-
----
-
-#### 8. [Cut Binary Cross Entropy: Efficient Large-Vocabulary Loss and Gradient Kernels for Sequential Recommendation](https://arxiv.org/abs/2610.05559)
-
-- **ID**: `2610.05559v1` | **Cat**: cs.LG, cs.AI, cs.AR, cs.IR | **Submitted**: 2026-10-04 (in the 10-05 announcement)
-- **Authors**: Yaoyiran Li, Haowen Ning, Mohamed Hammad
-- **Affiliation**: **Google Cloud** (London UK; Mountain View USA)
-- **PDF**: [Link](https://arxiv.org/pdf/2610.05559) | **Code**: [open-sourced](https://github.com/AI-Hypercomputer/RecML/blob/main/recml/core/ops/binary_cross_entropy_ops.py)
-
-**Key contributions:**
-- The concrete systems problem: industrial sequential recommenders run over 10⁵–10⁷ items and train multi-label models with BCE over the **full vocabulary**, which materializes a dense $[B,N,V]$ logits tensor in HBM → $O(BNV)$ memory and **fatal OOM**
-- Notes the gap precisely: chunked loss optimizations exist for **Softmax** CE in LLMs, but large-scale **multi-label BCE** optimization "remains unexplored across deep learning ecosystems"
-- **CutBCE**: an *exact* fused reformulation evaluating dense background loss plus sparse target corrections; a custom **VJP with a dedicated Pallas TPU backward kernel** computing logit tiles on-chip in both passes so **logits and their gradients never reside in HBM**; dynamic VMEM budgeting and sharding-aware collective hoisting; count-based zero-overhead training metrics
-- **Single-chip TPU v5e/v6e**: eliminates OOM, up to **91.9% speedup**
-- **8-chip slice, multi-label SASRec with 876k items on Yambda-50M**: **−65.7% peak HBM (>14 GiB saved per chip)**, **+225.9% training speed**, comparable accuracy
-
-**Notes:** The most concretely reusable artifact in this report — it is **open-sourced**, exact (not approximate), and the gap it identifies is one this wiki's CTR corpus has never covered. The 876k-item Yambda-50M setup is a real production recommender workload. ⚠️ The Yambda dataset is Google's, so this is not an independently replicated result.
-
----
-
-#### 9. [Reading the Mood: Emotion-Guided Book-to-Music Recommendation via CGANs and LLMs](https://arxiv.org/abs/2610.06703)
+#### 7. [Reading the Mood: Emotion-Guided Book-to-Music Recommendation via CGANs and LLMs](https://arxiv.org/abs/2610.06703)
 
 - **ID**: `2610.06703v1` | **Cat**: cs.IR, cs.CL, cs.LG | **Submitted**: 2026-10-05 | **Comment**: **Accepted at SENTIRE 2026 (ICDM 2026 Workshops)**; 9 pages
 - **Authors**: Manousos Linardakis, Georgios Alexandridis
@@ -189,7 +159,7 @@ Ten papers, selected for signal. Three clusters: (a) **post-training and continu
 
 ---
 
-#### 10. [Off-Policy Merging Beats On-Policy Self-Distillation for Continual Learning](https://arxiv.org/abs/2610.05872)
+#### 8. [Off-Policy Merging Beats On-Policy Self-Distillation for Continual Learning](https://arxiv.org/abs/2610.05872)
 
 - **ID**: `2610.05872v1` | **Cat**: cs.LG, cs.AI, cs.CL | **Submitted**: 2026-10-05
 - **Authors**: Chen Henry Wu, Thomas Zhang, Aditi Raghunathan
@@ -203,11 +173,11 @@ Ten papers, selected for signal. Three clusters: (a) **post-training and continu
 - **Pareto-dominates both SFT and OPSD** on new-task *and* old-task performance across three settings: distilling expert traces, self-improvement with STaR and Pedagogical RL, and injecting knowledge after the pretraining cutoff
 - Avoids expensive on-policy sampling entirely
 
-**Notes:** ⚠️ **The most consequential paper in this report for this wiki's post-training entries.** See §7 — this *contradicts* the direction of `2610.05200` and `2610.04978` in the same window.
+**Notes:** ⚠️ **The most consequential paper in this report for this wiki's post-training entries.** See *Comparison* below — this *contradicts* the direction of `2610.05200` and `2610.04978` in the same window.
 
 ---
 
-#### 11. [Learning without Overwriting: A Theory of Self-Distillation and Supervised Fine-Tuning in Continual Reasoning](https://arxiv.org/abs/2610.05200)
+#### 9. [Learning without Overwriting: A Theory of Self-Distillation and Supervised Fine-Tuning in Continual Reasoning](https://arxiv.org/abs/2610.05200)
 
 - **ID**: `2610.05200v1` | **Cat**: cs.LG | **Submitted**: 2026-10-04 (in the 10-05 announcement)
 - **Authors**: Shinichi Uemura, Taiji Suzuki
@@ -218,14 +188,15 @@ Ten papers, selected for signal. Three clusters: (a) **post-training and continu
 - Models LLM reasoning as **search over a DAG** and gives a unified theory of both OPSD and SFT dynamics in continual learning, plus the effect of pretraining
 - Three findings with an optimization guarantee: **(i)** OPSD with hints from correct outputs enables continual learning **without forgetting**, via sparse-yet-effective gradient updates induced by the hint structure; **(ii)** SFT on correct reasoning paths can cause **catastrophic forgetting**, via dense updates along the training path that overwrite prior information; **(iii)** **pretraining diversity is crucial** for a post-trained model to reach a correct output when a rollout starts from an intermediate state
 
-**Notes:** Finding (ii) is the theoretical counterpart of paper 10's empirical claim that "naively applying its update interferes with existing capabilities." ⚠️ Note that 52-page total / 11-page main — the theory is in the main text, experiments largely in appendix.
+**Notes:** Finding (ii) is the theoretical counterpart of paper 8's empirical claim that "naively applying its update interferes with existing capabilities." ⚠️ Note that 52-page total / 11-page main — the theory is in the main text, experiments largely in appendix.
 
 ---
 
-#### 12. [What Will Post-Training Fix? Per-Problem Gains Are Shared Across Independent RL Runs](https://arxiv.org/abs/2610.04978)
+#### 10. [What Will Post-Training Fix? Per-Problem Gains Are Shared Across Independent RL Runs](https://arxiv.org/abs/2610.04978)
 
 - **ID**: `2610.04978v1` | **Cat**: cs.LG | **Submitted**: 2026-10-04 (in the 10-05 announcement) | **Comment**: 10 pages, 2 figures
 - **Authors**: Xiaoxian Duan (sole author)
+- **Affiliations**: Institute of Automation, **Chinese Academy of Sciences**; **Zhongguancun Academy**, Beijing; **Z.ai** (three explicit affiliation spans, single author)
 - **PDF**: [Link](https://arxiv.org/pdf/2610.04978)
 
 **Key contributions:**
@@ -235,11 +206,11 @@ Ten papers, selected for signal. Three clusters: (a) **post-training and continu
 - Three findings holding on both base models: **(a)** independent runs agree on which rarely-solved problems improve, noise ceiling ≈ **0.9**, yet the two base models agree with each other at only **ρ = 0.25** — *the shared component belongs to the base model, not the problem*; **(b)** a priori signals (base pass rate, likelihood of a correct solution, a larger model's pass rate, and combinations) explain only **0.30 and 0.24** of explainable variance; **(c)** **existing checkpoints are the better predictor** — a single checkpoint from another family predicts a new run better than every a priori signal (**0.52 vs 0.33**; **0.34 vs 0.17** against combined signals)
 - Robust to 2025–2026 competition problems and to independently-estimated baselines; proposes the noise ceiling as a standard companion to per-problem signals
 
-**Notes:** Finding (a) is the sharpest: it says "what post-training fixes" is **not a property of the problem**, which undercuts problem-difficulty-based curricula. ⚠️ Two of the three selected papers in this report are single-author (`2610.04978`, `2610.06050`); see §9.
+**Notes:** Finding (a) is the sharpest: it says "what post-training fixes" is **not a property of the problem**, which undercuts problem-difficulty-based curricula. ⚠️ Two of the three selected papers in this report are single-author (`2610.04978`, `2610.06050`); see the *Method disclosure* section.
 
 ---
 
-#### 13. [Judged Useless, Queried Anyway: Tool-Using Agents Rarely Turn Their Own Evidence Judgments into Stopping Decisions](https://arxiv.org/abs/2610.06191)
+#### 11. [Judged Useless, Queried Anyway: Tool-Using Agents Rarely Turn Their Own Evidence Judgments into Stopping Decisions](https://arxiv.org/abs/2610.06191)
 
 - **ID**: `2610.06191v1` | **Cat**: cs.AI, cs.CL | **Submitted**: 2026-10-05 | **Comment**: 37 pages, 6 figures, 28 tables
 - **Authors**: Chubin Zhang, Zhenglin Wan, Xingrui Yu, Jingxuan Wu, Yaxin Zhou, Ivor Tsang, Bo An
@@ -257,7 +228,7 @@ Ten papers, selected for signal. Three clusters: (a) **post-training and continu
 
 ---
 
-#### 14. [Copies or Sources? Measuring How LLM Aggregators Count Restated Evidence in Multi-Agent Systems](https://arxiv.org/abs/2610.06192)
+#### 12. [Copies or Sources? Measuring How LLM Aggregators Count Restated Evidence in Multi-Agent Systems](https://arxiv.org/abs/2610.06192)
 
 - **ID**: `2610.06192v1` | **Cat**: cs.AI | **Submitted**: 2026-10-05
 - **Authors**: Jianxin Gao, Runze Li, Tianyi Yu, Liangwei Ren, Bohan Chen, Zining Wang
@@ -276,7 +247,7 @@ Ten papers, selected for signal. Three clusters: (a) **post-training and continu
 
 ---
 
-#### 15. [Can Language Models Learn to Reject Their Own Bad Reasoning Steps?](https://arxiv.org/abs/2610.05976)
+#### 13. [Can Language Models Learn to Reject Their Own Bad Reasoning Steps?](https://arxiv.org/abs/2610.05976)
 
 - **ID**: `2610.05976v1` | **Cat**: cs.CL | **Submitted**: 2026-10-05
 - **Authors**: Siheng Xiong, Xiaoze Liu, Yiqiao Jin, Xiaoqian Wang, Jing Gao
@@ -295,7 +266,7 @@ Ten papers, selected for signal. Three clusters: (a) **post-training and continu
 
 ---
 
-#### 16. [Evolving in Thought Space: Training a Small Model at Test Time Unlocks Better Discoveries](https://arxiv.org/abs/2610.06269)
+#### 14. [Evolving in Thought Space: Training a Small Model at Test Time Unlocks Better Discoveries](https://arxiv.org/abs/2610.06269)
 
 - **ID**: `2610.06269v1` | **Cat**: cs.AI, cs.LG | **Submitted**: 2026-10-05 | **Comment**: 35 pages incl. references and appendices
 - **Authors**: Chonghe Jiang, Ao Qu, Siyuan Liu, Ruoyun Ma, Zijian Zhou, Dingyi Zhuang, Bo Liu, Han Zheng, Hanfei Yu, Baichuan Mo, Jinhua Zhao, Paul Pu Liang
@@ -314,25 +285,8 @@ Ten papers, selected for signal. Three clusters: (a) **post-training and continu
 
 ---
 
-#### 17. [CIPHER-MoE: Balancing Efficiency and Routing Fidelity in Trillion-Scale MoE Training](https://arxiv.org/abs/2610.05744)
 
-- **ID**: `2610.05744v1` | **Cat**: cs.LG, cs.AI | **Submitted**: 2026-10-05
-- **Authors**: Jing Li, Jian Meng, Yingmeng Gao, Suming Qiu, Linyuan Qiu, Dongfang Li, Baotian Hu, Binfan Zheng, Rongqian Zhao, Weijian Sun, Xin Chen
-- **Affiliations**: Tongji University; **Cornell University**; Harbin Institute of Technology, Shenzhen; AI Training Platform Team, Shenzhen Loop Area Institute
-- **PDF**: [Link](https://arxiv.org/pdf/2610.05744)
-
-**Key contributions:**
-- Frames MoE workload imbalance as a **system** problem: non-uniform token routing → imbalanced expert workloads across experts *and devices* → destabilized training; at trillion-scale the cost of underloaded experts and hot experts both rise
-- Notes existing fixes (intricate parallelism strategies, resource reallocation) **add resource requirements and orchestration complexity** — unaffordable under constrained compute
-- **CIPHER-MoE** mitigates imbalance while keeping the router's **token-side Top-K selection unchanged** — the key constraint, since prior work changes routing semantics
-- Mechanism: **affinity-aware Expert-to-Token filtering with explicit capacity control**, no additional hardware resources, no complex runtime design
-- Evaluated on large-scale MoE models including **DeepSeek-V4-Pro**: up to **64.9 percentage points Top-1 expert workload reduction** and **1.10×–1.94× training acceleration**, preserving training quality
-
-**Notes:** ⚠️ **"DeepSeek-V4-Pro" could not be independently verified** — see §9. Pairs with paper 2 (BRANCH-MoE, same window) as a clean contrast: BRANCH changes the router to fix balance *without* an aux loss; CIPHER keeps the router untouched and filters downstream. If both hold, they compose.
-
----
-
-#### 18. [On Hyperparameter Tuning on the Test Set](https://arxiv.org/abs/2610.05902)
+#### 15. [On Hyperparameter Tuning on the Test Set](https://arxiv.org/abs/2610.05902)
 
 - **ID**: `2610.05902v1` | **Cat**: cs.LG, cs.AI, cs.CV | **Submitted**: 2026-10-05
 - **Authors**: Matteo Fregonara, Tom Viering, Jan van Gemert
@@ -349,7 +303,7 @@ Ten papers, selected for signal. Three clusters: (a) **post-training and continu
 
 ---
 
-#### 19. [Byte Language Models: Scaling, Emergent Abstractions, and Information Allocation](https://arxiv.org/abs/2610.05978)
+#### 16. [Byte Language Models: Scaling, Emergent Abstractions, and Information Allocation](https://arxiv.org/abs/2610.05978)
 
 - **ID**: `2610.05978v1` | **Cat**: cs.CL, cs.LG | **Submitted**: 2026-10-05
 - **Authors**: Jie Wang, Shiwei Luo, Qi Zhang, Yuanbin Wu
@@ -363,11 +317,11 @@ Ten papers, selected for signal. Three clusters: (a) **post-training and continu
 - **They build local text abstractions as external tokenizers**: a set of segmentation-like positions collects local context representations, and **restricting up to 25% of intermediate layers to these local representations preserves downstream performance**
 - Those learned structures induce **highly non-uniform generation difficulty**, with uncertainty concentrated near local structure boundaries; exploiting them for speculative decoding yields **3.4× more accepted tokens** than subword Transformers
 
-**Notes:** The "segmentation-like positions as an emergent external tokenizer" finding is the interesting one — it argues tokenization's benefit is recoverable by architecture-free learning. ⚠️ ⚠️ **The abstract reports no absolute model sizes, no benchmark scores, and no perplexities** — all comparisons are relative. Also relevant to this lane indirectly: a tokenizer is exactly what CTR work uses for IDs (semantic IDs, see papers 4 and 7).
+**Notes:** The "segmentation-like positions as an emergent external tokenizer" finding is the interesting one — it argues tokenization's benefit is recoverable by architecture-free learning. ⚠️ ⚠️ **The abstract reports no absolute model sizes, no benchmark scores, and no perplexities** — all comparisons are relative. Also relevant to this lane indirectly: a tokenizer is exactly what CTR work uses for IDs (semantic IDs, see paper 4; the sibling-claimed `2610.05670` CreGR makes this its central mechanism).
 
 ---
 
-#### 20. [The Optimization Landscape of Learning Compacted Context Models](https://arxiv.org/abs/2610.05885)
+#### 17. [The Optimization Landscape of Learning Compacted Context Models](https://arxiv.org/abs/2610.05885)
 
 - **ID**: `2610.05885v1` | **Cat**: cs.LG | **Submitted**: 2026-10-05
 - **Authors**: Thomas Villeneuve, Alex Sandomirsky, Charles O'Neill, Max Kirkby, Michael Psenka
@@ -381,7 +335,21 @@ Ten papers, selected for signal. Three clusters: (a) **post-training and continu
 - A heavily simplified **Perceiver-based architecture matches a full Perceiver transformer** on continuous context compaction and **outperforms baselines on compaction utility**
 - Evaluated on MCQ tasks across **Finance, Legal, Gutenberg, and Code**
 
-**Notes:** The framing is the transferable part — KV compaction as a *weights-preserving* continual-learning channel, which is a third option alongside paper 10's grafting and `2610.05200`'s theory. ⚠️ Workshop paper (NeurIPS workshops, not main track); no numeric table appears in the abstract, and "outperforms baselines on compaction utility" names no margin. MCQ-only evaluation on four text domains.
+**Notes:** The framing is the transferable part — KV compaction as a *weights-preserving* continual-learning channel, which is a third option alongside paper 8's grafting and paper 9's theory. ⚠️ Workshop paper (NeurIPS workshops, not main track); no numeric table appears in the abstract, and "outperforms baselines on compaction utility" names no margin. MCQ-only evaluation on four text domains.
+
+---
+
+## Sibling-claimed papers (excluded from the featured sections)
+
+The same-day `arxiv-ai-search` digest (`wiki/synthesis/2026-10-06/arxiv-ai-search.md`) claimed three papers from this window **after this run's claimed-ID baseline was built**. They are recorded here rather than re-summarized:
+
+| Paper | ID | Affiliation | Why it belonged here |
+|---|---|---|---|
+| **CutBCE** — exact large-vocabulary BCE loss + Pallas TPU VJP kernel for sequential recommendation | `2610.05559` | **Google Cloud** | Would have been the most reusable artifact of the report — **open-sourced**, exact rather than approximate, −65.7% peak HBM (>14 GiB/chip) and +225.9% training speed on 8-chip TPU with 876k-item SASRec on Yambda-50M. The sibling's §"RecSys infra" row carries the numbers. |
+| **CreGR** — credibility-aware tokenizer + accuracy-preserving credibility-oriented generator for generative recommenders | `2610.05670` | **UTS** + **NYU Abu Dhabi** | The CTR-lane's most on-topic paper; asymmetric masking that down-weights uncredible-content tokens **while leaving user-preference tokens untouched**, so credibility intervention does not trade off against relevance. ⚠️ No effect sizes, dataset names, or metrics in the abstract. |
+| **CIPHER-MoE** — affinity-aware Expert-to-Token filtering for trillion-scale MoE training | `2610.05744` | **Tongji** + **Cornell** + HIT-Shenzhen + Shenzhen Loop Area Institute | Claims up to **64.9 pp** Top-1 expert workload reduction and **1.10–1.94×** training acceleration on "DeepSeek-V4-Pro". ⚠️ **The sibling already flags that "DeepSeek-V4-Pro" could not be independently verified**, and this run reached the same conclusion independently. Its contrast with paper 2 (BRANCH-MoE) is preserved in paper 2's note. |
+
+⚠️ **None of these three carries a venue**, while 4 of the 17 featured papers do (`2610.06590`, `2610.06060`, `2610.06703`, `2610.05885`) — so the sibling collision cost this report **no** peer-reviewed item. ⚠️ What it did cost is a **namesake trap check**: the sibling flags that CreGR's authors **Shoujin Wang** and **Peilin Zhou** are names this wiki associates with industrial ads teams, while this run resolved both to **UTS / NYU Abu Dhabi** from the LaTeXML author block. **The two runs agree**, which is a useful independent check on a name-collision this wiki has been bitten by before.
 
 ---
 
@@ -402,12 +370,12 @@ This window contains an unusually clean three-way disagreement, recorded rather 
 
 ## Cross-cutting observations
 
-1. **The CTR lane is unusually industrial this window — 3 papers from Google (Cloud, Research ×2), Meta, and Criteo AI Lab.** Two separate Google papers (paper 2 routing for embeddings, paper 8 loss kernels for large-vocabulary recsys) plus a Google billion-scale thumbnail bandit in the 10-04 batch is the highest industrial density this series has recorded in one window.
-2. **The unifying theme across papers 2, 3, 8, 17 is "stop treating the vocabulary/candidate set as a flat thing."** Paper 8 stops materializing the dense logits tensor; paper 2 imposes a topology on experts; paper 3 makes the model matrix-native so the 2-D structure is used rather than flattened. Same underlying realization in four different layers.
-3. **Measurement papers outnumber method papers in the AI lane** (13, 14, 18, plus `2610.05830` and `2610.06251` in §8). Four of them find that **reported capability and verified capability diverge in the same direction — over-crediting**. Paper 13: judges correct, acts wrong. Paper 14: counts copies as sources. Paper 18: challenges the test-set convention. `2610.05830`: the reproduction scorer **failed its validation gate** and the contamination gap came back **inconclusive**. `2610.06251`: 170/384 four-bit answers changed when only a *companion* request changed.
-4. **Three papers report negative or null results and are the most reusable items here** — 12 (a priori signals explain ~0.3 of variance; checkpoints predict better), 18 (test-set tuning inflates less than feared), 13 (judgments don't drive stopping).
-5. **A new measurement primitive appeared that is worth stealing: the "copy weight" scalar in paper 14** — restated evidence converted to units of independent readings, with an exact Bayesian oracle, on [0,1]. This is the same shape as this wiki's existing pass@k vs pass^k distinction (see `2609.38121` in the game-RL lane) and would apply to any multi-agent aggregation.
-6. **Nothing in this window is a strong CTR-prediction architecture paper.** The closest are papers 2 and 3 (Criteo used as a benchmark) and paper 5 (KuaiRec, +7.0–13.2% NDCG@10). The CTR-scaling thread in [[ctr-scaling-landscape]] — GRAB, LoopCTR, EST, CADET — **had no new entrant in this window**. Recorded explicitly so a gap is not mistaken for an absence of interest.
+1. **The CTR lane is unusually industrial this window — 4 featured papers carry Google, Meta, or Criteo affiliations** (paper 1 Meta; paper 2 Google Research; paper 4 JKU + Criteo AI Lab; plus a Google Cloud paper and a Google billion-scale thumbnail bandit in the sibling-claimed and 10-04 batches respectively). Add the sibling-claimed `2610.05559` (Google Cloud) and `2610.05670` (UTS) and the industrial density is the highest this series has recorded in one window.
+2. **The unifying theme across papers 2, 3, and the sibling-claimed `2610.05559` is "stop treating the vocabulary/candidate set as a flat thing."** `2610.05559` stops materializing the dense `[B,N,V]` logits tensor; paper 2 imposes a topology on experts; paper 3 makes the model matrix-native so the 2-D structure is used rather than flattened. Same underlying realization at three different layers, from three different companies.
+3. **Measurement papers outnumber method papers in the AI lane** (11, 12, 15, plus `2610.05830` and `2610.06251` in *Also worth recording*). Four of them find that **reported capability and verified capability diverge in the same direction — over-crediting**. Paper 11: judges correct, acts wrong. Paper 12: counts copies as sources. Paper 15: challenges the test-set convention. `2610.05830`: the reproduction scorer **failed its validation gate** and the contamination gap came back **inconclusive**. `2610.06251`: 170/384 four-bit answers changed when only a *companion* request changed.
+4. **Three papers report negative or null results and are the most reusable items here** — 10 (a priori signals explain ~0.3 of variance; existing checkpoints predict better), 15 (test-set tuning inflates less than feared), 11 (judgments don't drive stopping).
+5. **A new measurement primitive appeared that is worth stealing: the "copy weight" scalar in paper 12** — restated evidence converted to units of independent readings, with an exact Bayesian oracle, on [0,1]. This is the same shape as this wiki's existing pass@k vs pass^k distinction (`2610.02425` XiangqiBench, recorded in the 2026-10-05 game-RL digest) and would apply to any multi-agent aggregation.
+6. **Nothing in this window is a strong CTR-prediction architecture paper.** The closest are papers 2 and 3 (Criteo used as a benchmark) and paper 5 (KuaiRec, +7.0–13.2% NDCG@10). With the sibling-claimed `2610.05559` added, this wiki's CTR corpus gains **no** new CTR-prediction model this window. The CTR-scaling thread in [[ctr-scaling-landscape]] — GRAB, LoopCTR, EST, CADET — **had no new entrant in this window**. Recorded explicitly so a gap is not mistaken for an absence of interest.
 
 ---
 
@@ -423,7 +391,9 @@ This window contains an unusually clean three-way disagreement, recorded rather 
 - **`2610.06347`** — *ImproveAnyTask* (Xingbo Yao et al.). Autonomous post-training harness: **+18.29 / +11.97 pp** mean gains on Base/Instruct, max **+41.96 pp**, 11 tasks, 24-hour budget on 8×H20.
 - **`2610.06105`** — *Flash-OPD*. Reframes on-policy-distillation acceleration from rollout-horizon control to **adaptive trajectory-level boundary verification** — the reliability boundary need not be predicted, only detected from the observed prefix.
 - **`2610.06116`** — *ORCA* (Yuanshi Liu, Boyuan Jiang, Liang Hou, Xin Tao, Pengfei Wan, Zhouchen Lin, Cong Fang; Peking University / Kling Team). Strong **temporary** soft orthogonality regularization early in training, then removed. Lower final validation loss than Muon across LLaMA, Qwen3, and MoE models from 130M–8B.
-- **`2610.06050`'s datasets (MovieLens-10M, Amazon Luxury Beauty, KuaiRec)** and **`2610.05432`** OpticalRec (UC San Diego / Alibaba / UIUC / Texas A&M / HKPolyU / CUHK) and **`2610.05670`** are noted for the index only.
+- **`2610.06050`'s datasets** — MovieLens-10M, Amazon Luxury Beauty, KuaiRec — noted for the index only. KuaiRec is already this wiki's CTR-lane test bed (see [[ctr-scaling-landscape]]), which is why paper 5's NDCG@10 numbers are the window's only directly comparable CTR result.
+
+⚠️ **This section was dedup-checked against the post-sibling baseline too.** One further item was withdrawn here as well: **`2610.05432`** OpticalRec (UC San Diego / Alibaba / UIUC / Texas A&M / HKPolyU / CUHK), which the same-day `arxiv-ai-search` sibling had already claimed. **`2610.02425`** (XiangqiBench) appears in this report only as **prior wiki context** from the 2026-10-05 `game-rl-daily` digest and is deliberately **not** counted as a new selection.
 
 ---
 
@@ -437,11 +407,13 @@ This window contains an unusually clean three-way disagreement, recorded rather 
 
 ⚠️ **Window framing**: "last 24 hours" is not what arXiv exposes. The API's newest `published` timestamp at run time was 2026-10-05T05:07Z, and **all 464 harvested entries carry submittedDate 2026-10-05**. arXiv does not announce on weekends and the announcement date lags submission by ~24h, so a run on 2026-10-06 sees a window whose newest papers were *submitted* 2026-10-05. This report covers **2026-10-05 announcements (plus the unclaimed 10-04 batch)**, and the two batches are labelled separately. **No 2026-10-06 submissions exist in the API yet.**
 
-⚠️ **Dedup**: baseline built by regex-extracting every `NNNN.NNNNN` pattern from all `wiki/**/*.md` → **7,964 unique arXiv IDs**. 462 of 464 window entries unclaimed. **All 20 featured IDs re-verified 0-hit against that baseline immediately before writing.** ⚠️ **ID-level dedup only, no title-level pass** — and the 2026-10-05 `game-rl-daily` digest explicitly records that **ID-only dedup has already produced duplicate papers twice in three days**. Treat overlap risk as nonzero.
+⚠️ **Dedup**: baseline built by regex-extracting every `NNNN.NNNNN` pattern from all `wiki/**/*.md` → **7,964 unique arXiv IDs**. 462 of 464 window entries unclaimed. **All 17 featured IDs re-verified 0-hit against that baseline immediately before writing.** ⚠️ **The baseline was built *before* the same-day `arxiv-ai-search` sibling finished, so it did not contain that file's IDs** — three selected papers (`2610.05559`, `2610.05670`, `2610.05744`) were caught only by a **second collision pass run after writing**, and removed. ⚠️ **ID-level dedup only, no title-level pass**, and the 2026-10-05 `game-rl-daily` digest records that **ID-only dedup has already produced duplicate papers twice in three days**. **Recommendation for this job series: sibling jobs harvesting the same announcement window must serialize, or build their claimed-ID baseline at the same instant.**
 
-⚠️ **Affiliation discipline**: institutions read **only** from each paper's own LaTeXML author block or an explicit institutional address block, **never inferred from author surnames, email domains, or reputation**. **19 of 20 numbered papers fully resolved; 1 partial** — `2610.05872` (arXiv serves **no HTML** for this ID; recovered from the **PDF title block**, Carnegie Mellon University). **Two entries elsewhere in this report are unresolved and recorded as such** rather than guessed: `2610.06060` (author-posted Version of Record notice, **no affiliation block in the posted version**) and `2610.05550` (**no affiliation markup in the PDF**). `2610.04978`'s author block carries a single shared affiliation (TU Delft) without per-author mapping, so it is recorded as one rather than attributed per author.
+⚠️ **Affiliation discipline**: institutions read **only** from each paper's own LaTeXML author block or an explicit institutional address block, **never inferred from author surnames, email domains, or reputation**. **16 of 17 fully resolved, 0 partial, 1 not stated.** A final re-verification pass re-checked all 17 titles and author lists against the harvested API metadata: **17/17 titles exact**, and author order and spelling exact on 14, with one benign transliteration (`2610.06590`'s author is **Justin Hangöbl** — the HTML author block carries the umlaut while the arXiv API returns `Hangoebl`; the HTML form is recorded here). The two IDs outside the harvest pool (`2610.05200`, `2610.04978`, both 2026-10-04 submissions) were re-checked against their own HTML author blocks. The one recovered non-trivially: **`2610.05872`, for which arXiv serves no HTML at all** — Carnegie Mellon University was read from the **PDF title block**. The not-stated: **`2610.06060`**, an author-posted Version of Record notice with **no affiliation block in the posted version** — left blank rather than inferred from the author list. **One entry in *Also worth recording* is likewise unresolved**: `2610.05550` (**no affiliation markup in the PDF**).
 
-⚠️ **Venue discipline**: **4 of 20 carry a venue** — `2610.06590` (**CIKM 2026 short paper**, 5 pages), `2610.06060` (**CIKM '26**, DOI `10.1145/3799682.3840602`), `2610.06703` (**SENTIRE 2026 — an ICDM 2026 *Workshop***, not main track), `2610.05885` (**NeurIPS 2026 *Workshop***, not main track). Only the first two are main-track. `2610.04860`, **NeurIPS 2026 main track**, sits in the 10-04 batch rather than this window. **The remaining 16 numbered papers are unreviewed preprints.** **No result in this report was independently replicated**, and none was replicated by a second group.
+⚠️ **One affiliation error was found and corrected during the final verification pass, and it is the reason that pass was worth running.** This draft initially attributed `2610.04978` to **TU Delft** — the wrong paper. The arXiv API `affiliation` field is empty for that ID, the abs page shows a bare author line, and the value was carried over from an adjacent entry. Re-fetching the HTML author block returned **Institute of Automation, Chinese Academy of Sciences + Zhongguancun Academy + Z.ai** for the sole author Xiaoxian Duan. **`2610.05902` (TU Delft, Fregonara/Viering/van Gemert) is the paper the TU Delft value actually belonged to.** Both IDs are now re-verified from their own HTML author blocks. **Recorded because the failure mode is not random: a mis-scoped affiliation from a neighbouring entry is indistinguishable from a correct one until the source is re-fetched, and an industrial affiliation guess can silently rewrite a paper's provenance.**
+
+⚠️ **Venue discipline**: **4 of 17 carry a venue** — `2610.06590` (**CIKM 2026 short paper**, 5 pages), `2610.06060` (**CIKM '26**, DOI `10.1145/3799682.3840602`), `2610.06703` (**SENTIRE 2026 — an ICDM 2026 *Workshop***, not main track), `2610.05885` (**NeurIPS 2026 *Workshop***, not main track). Only the first two are main-track. `2610.04860`, **NeurIPS 2026 main track**, sits in the 10-04 batch rather than this window. **The remaining 13 numbered papers are unreviewed preprints.** **No result in this report was independently replicated**, and none was replicated by a second group.
 
 ⚠️ **Claim-level cautions carried inline**:
 - **"DeepSeek-V4-Pro"** (`2610.05744`) could **not be independently verified** — no arXiv listing, no release note, nothing in the fetched metadata. The 64.9pp / 1.10–1.94× figures are the paper's own claim about a model this report cannot confirm exists in that configuration. Treat as **single-source and unverified on its central artifact**.
@@ -461,4 +433,4 @@ This window contains an unusually clean three-way disagreement, recorded rather 
 
 - [[ctr-scaling-landscape]] — the CTR scaling thread (GRAB / LoopCTR / EST / CADET) that had **no new entrant** in this window
 - [[arxiv-paper-check]] (2026-10-05 edition) — prior run. ⚠️ **Its "last 24 hours" scope claim does not hold:** all eight papers it listed carry original submission dates between 2025-08-05 and 2026-08-25, and only two had been *revised* recently (v4 2026-08-02, v2 2026-09-12). It is therefore a **re-survey of the CTR literature**, not a daily window, and should not be read as a 24-hour digest. Today's report scopes strictly to the announcement window and labels its two batches separately.
-- `2610.05872` / `2610.05200` / `2610.04978` — the three-way post-training disagreement, tabulated in §6 above
+- `2610.05872` / `2610.05200` / `2610.04978` — the three-way post-training disagreement, tabulated in *Comparison* above
