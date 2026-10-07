@@ -7593,3 +7593,16 @@
 - New pages: wiki/synthesis/2026-10-07/wq101-alpha-daily.md
 - Contradictions: none
 
+
+## [2026-10-07] conference-digest | Conference & arXiv Digest — 2026-10-07
+- Summary: wiki/synthesis/2026-10-07/conference-digest.md
+- Window: 2026-09-10 → 2026-10-07; 34 venue-tagged or top-lab papers across 6 categories
+- Venues: NeurIPS 2026 (main + ED Track + workshops), EMNLP 2026 Main, KDD 2026, RecSys 2026 (CARS), AAAI 2026 (workshop), GRAIL 2026; remaining are preprints
+- Channels: arXiv export API — 5 category sweeps (cs.IR/cs.LG/cs.CL/cs.AI/cs.CV) + 16 topic/affiliation queries → 1,000 unique pooled; requests serialized ≥3s; the API failure mode is a bare 14-byte "Rate exceeded." body read as zero results
+- Dedup: whole-wiki baseline 8,086 unique arXiv IDs; all 34 featured IDs re-verified 0-hit pre-write; no overlap with 2026-10-01→06 sibling digests
+- ★ Headlines: (1) Semantic-ID construction under three-way attack — FLASH (NeurIPS 2026, UIC+Amazon) says learned-vs-hashing is a decoding artifact; Artefact Research Center pair gives a unified PQ/RQ design space and shows random DocIDs keep 83–90% of RQ Hit@1; (2) only completed online A/B is Airbnb SIFT (GRAIL 2026) +20.0% filter engagement; (3) Navier–Stokes lost in translation (2610.08144) — Lean-verified ≠ correct, autoformalisation is SCI = ∞ (harder than Halting); (4) MOBA Dyna loop (2610.08033) wins 70.2% of real games with no real gradient, exploitation invisible in-dream; (5) two reproducible negatives — persistent-memory null (2610.07782) and bottling ≠ zero-shot (2610.08775)
+- Cross-cutting: identifier scheme may matter less than decoder; verification is a policy (mandatory vs optional) problem; world models must be judged from outside; industrial evidence scarce (window composition, not trend)
+- Affiliation discipline: read only from arXiv HTML author block, never inferred; 7 marked "not recovered" (2610.06479, 2610.06851, 2610.07640, 2610.08144, 2610.08319, 2610.08329, 2610.08626); venue tags self-reported, not verified against proceedings
+- Updated: wiki/index.md（Synthesis 表新增居首行，2026-10-07）、wiki/log.md（本条目）
+- New pages: wiki/synthesis/2026-10-07/conference-digest.md
+- Contradictions: none (§1.1/§1.4/§1.5 challenge the wiki's prior "semantic IDs encode meaning" framing — flagged as a reframing, not a formal contradiction); §5.3 implicates OpenAI's announced Navier–Stokes Lean proof, flagged in-report
