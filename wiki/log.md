@@ -7557,3 +7557,13 @@
 - Affiliations: 35/36 recovered from arXiv HTML `ltx_authors` blocks or printed inline; **0 inferred from surnames**; **4 papers have no HTML version** (`2606.24037`, `2512.04714`, `2606.29457`, `2606.15503`) and are marked unverified. 4/36 carry a venue + ~14 CoG 2026 entries with no abstract (flagged as pointers, not findings)
 - New pages: none (single synthesis page)
 - Contradictions: §9.4 — no 10-05 claim directly contradicted; §9.2/§9.3 record venue/window updates instead. Name-collision note in §9.5: **"David H. Silver" (`2511.11611`, Remiza AI) ≠ DeepMind's David Silver**
+
+## [2026-10-07] investment-daily | 投资日报 2026-10-07（周三）
+- Summary: wiki/synthesis/2026-10-07/investment-daily.md
+- 数据基准: 美股 10/6 收盘（道指 51,521.28/+0.49%、标普 7,818.94/+0.58%、纳指 27,599.79/+0.45%，纳指与标普双创收盘新高）+ 港股 10/7 盘中/开盘 + A 股国庆休市（10/8 复市）
+- 主线: ① Marvell 投资者日上调长期营收目标（+5.81%）点燃 AI 定制硅，博通/AMD 跟涨；② 英伟达盘中创历史新高、市值一度 5.83 万亿美元，SpaceX 拟融资 400 亿美元采购芯片；③ 存储芯片重挫（希捷 −9%、SK 海力士 −6.39%、西数 −6%+、英特尔 −3%+）与 AI 芯片上涨形成半导体内部尖锐分化；④ 谷歌 × Constellation 签 20 年核电 PPA（CEG +12%）；⑤ 港股 10/6 AI 大模型/软件/医药领涨（智谱 +7.59%、百度 +3%、阿里 +2.75%、康希诺 +14%），10/7 低开回吐（阿里 −1.39%）；⑥ 蔚来 × 吉利换电交易（吉利入股蔚来能源 30%，投后约 160 亿元）；⑦ A 股 10/8 复市前瞻（非农弱→加息预期降温 + 八部门 19 条新政 + 国庆档票房破 10 亿元）
+- Updated: wiki/index.md（Synthesis 表新增居首行，2026-10-07）、wiki/log.md（本条目）
+- New pages: wiki/synthesis/2026-10-07/investment-daily.md
+- ⚠️ 数据校准: 本 wiki `synthesis/2026-10-06/investment-daily.md` 记录的"纳指 27,477.31/+1.05%"实为 10/5 收盘、被误标为 10/6；本文以多源一致的 10/6 收盘为准，建议后续 lint 回溯修正 10-06 期
+- ⚠️ 已知来源冲突（已就地标注、未裁决）: 阿里巴巴 ADR 涨跌幅 −1.39%（中新经纬/证券时报）vs −0.94%（部分行情源）；NVDA/AMD/PLTR 收盘价多源不一（fiscal.ai vs altindex 口径差异）
+- Contradictions: none（仅上述数据校准与来源冲突，已在报告内标注）
