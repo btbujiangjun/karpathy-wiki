@@ -7586,3 +7586,10 @@
 - 交叉信号: ① KV cache / 长上下文成本成为竞争焦点；② 百万 token 上下文 + 长输出趋于标配；③ Qwen/GLM 同日推 Prime 旗舰，中国厂商节奏加快；④ 开放权重阵营（NVIDIA/AI2/Tencent/Moonshot）持续供给可复现训练栈
 - ⚠️ 待复核/未采信: Gemini 4 定价与基准数值二手来源冲突，仅保留发布日期与定位；GPT-6.1 Sol 官方系统卡、Claude 5.5 完整评估待官方文档公开后补录；DeepSeek-V4-Pro 下线为官方计划表述
 - Contradictions: none（相对 10-06 期以增量/更新为主；旧旗舰降级为背景条目）
+
+## [2026-10-07] ingest/analysis | wq101-alpha-daily | WorldQuant 101 Alphas 美股 Top 20 (2026-10-07)
+- Summary: wiki/synthesis/2026-10-07/wq101-alpha-daily.md
+- Updated: wiki/index.md (Synthesis entry), wiki/log.md
+- New pages: wiki/synthesis/2026-10-07/wq101-alpha-daily.md
+- Contradictions: none
+
