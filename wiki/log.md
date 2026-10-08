@@ -7662,3 +7662,15 @@
 - **Updated**: `wiki/index.md` (Synthesis row inserted after the 2026-10-07 arxiv-paper-check row; kept the sibling's appended arxiv-daily 2026-10-08 row), `wiki/log.md` (this entry).
 - **Temp files**: all arXiv Atom XML pages, LaTeXML HTML author-block renders, and JSON/ID-baseline artifacts written to `/var/folders/q9/tsl_tl5548x7j892sgt3qvlc0000gn/T/opencode/arx0810/` (pre-authorized scratch), deleted after writing. No writes outside that directory or the wiki.
 - **Contradictions**: none direct. ⚠️ Report preserves author claims with claim-level cautions; no claim-level conflicts with existing wiki content. Venue disclosure: **3 of 20** featured papers carry a stated venue (NeurIPS 2026; INLG 2026; ICWSM-2027-submitted); **No result independently replicated.**
+
+## [2026-10-08] ingest | LLM Tech Report Digest — 2026-10-08
+- Summary: wiki/synthesis/2026-10-08/tech-report-digest.md — 增量版，自 [10-07 期](../synthesis/2026-10-07/tech-report-digest.md) 续接，聚焦 2026-09 → 2026-10-08 的新 frontier 技术报告/系统卡；检索以 websearch 为主（未走 arXiv API，避免 429）。
+- **New pages**: `wiki/synthesis/2026-10-08/tech-report-digest.md`.
+- **Updated**: `wiki/index.md`（Synthesis 表新增 tech-report-digest 2026-10-08 行，置于 10-07 行之前、保持该分组按日期倒序）、`wiki/log.md`（本条目）。
+- **本期头条 ①（OpenAI）**: 「**GPT-6 Sol and GPT-6 Luna: October 2026 update**」系统卡，**2026-10-07**，[PDF](https://cdn.openai.com/pdf/gpt-6-october.pdf) + [Deployment Safety Hub](https://deploymentsafety.openai.com/gpt-6-october/model-safety) — Preparedness 判定**网络安全与生物化学双域 High capability、AI Self-Improvement 未达 High 阈值**，沿用 GPT-5.6 系统卡防护；生物拒绝 Severe Safe 0.980（GPT-6 Sol Oct）vs 0.954（GPT-5.6 Sol Aug）；GPT-6 家族 1,050,000 ctx、Sol $2/$10、Luna $0.10/$0.50；GPT-6.1 Sol 附录 09-29/10-02。
+- **本期头条 ②（Anthropic）**: **Claude Haiku 5.5 系统卡 + 发布，2026-10-07** — 知识截止 2026-06；**新增专用 sandbox-escape 评估 4.0%**（Opus 5.5 3.4% / Sonnet 5.5 5.3%）；定价 $0.10/$0.50 为第三方口径（tentative）；Sonnet 5.5 同日启用更新后 cache-read 价格。
+- **本期头条 ③（Mistral）**: **Mistral Large 4「le Chonk」公开预览，2026-10-06** — 约 1.05T 总参 / 49B 激活原生多模态 MoE、1M ctx、混合 instruct+reasoning 单模型，**开放权重承诺 10 月底**；HF `Mistral-Large-4.0-1T05-A52B`。
+- **其他更新**: **Gemini 4 Argon** 分批开放（09-30 官宣、10-02 首批 cyber defenders，介绍期 $2/$10 → 正式 $4/$20，Fairwind Program 对受信防御方不带 cyber guardrails 开放）；**xAI** Grok 4.7（09-21）/4.8（09-13 官宣 2.5T + C++ 栈）/Grok 5（传闻 6T/10T）**全部无技术报告**；MiniMax-M3.1-Flash-Preview（09-27）、OrcaSAQ-2 27B（09-28）入「其他值得关注」。
+- **状态沿用（本期零新报告）**: DeepSeek、Qwen、NVIDIA、Meta、Zhipu、Moonshot、Tencent，以及 Yi / Baichuan / Apple / Microsoft(Phi) / Amazon(Nova) / StepFun / InternLM / ByteDance Seed —— 各机构最新报告日期与链接在页面表格中逐行给出。
+- **Contradictions**: **1 项显式冲突（已在页面标记）** — ⚠️ **Mistral Large 4 激活参数：官方公告 49B vs 文档引文 52B（+1.6B 视觉编码器）vs 二手拆解 675B 总参/41B 激活**；技术报告未发布前不裁定，页面采用官方口径并保留备查。其余为**缺口而非冲突**：Gemini 4 model card 缺位（已核实 Model Cards 列表最新条目为 Gemini 3.8 Audio 09-24）、Haiku 5.5 官方定价与系统卡索引行未补齐、ML4 架构/后训练细节待技术报告。第三方基准（ML4 Coding Agent Index 49.8% / AutomationBench 59.9%）与 Gemini 4 第三方上下文口径均标 (tentative)；Grok 4.8/5 参数归入 rumor tier，不计入 claim 级证据。
+- **Temp files**: 无（本轮仅 websearch，未写临时文件）。
