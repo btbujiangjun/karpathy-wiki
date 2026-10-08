@@ -7674,3 +7674,11 @@
 - **状态沿用（本期零新报告）**: DeepSeek、Qwen、NVIDIA、Meta、Zhipu、Moonshot、Tencent，以及 Yi / Baichuan / Apple / Microsoft(Phi) / Amazon(Nova) / StepFun / InternLM / ByteDance Seed —— 各机构最新报告日期与链接在页面表格中逐行给出。
 - **Contradictions**: **1 项显式冲突（已在页面标记）** — ⚠️ **Mistral Large 4 激活参数：官方公告 49B vs 文档引文 52B（+1.6B 视觉编码器）vs 二手拆解 675B 总参/41B 激活**；技术报告未发布前不裁定，页面采用官方口径并保留备查。其余为**缺口而非冲突**：Gemini 4 model card 缺位（已核实 Model Cards 列表最新条目为 Gemini 3.8 Audio 09-24）、Haiku 5.5 官方定价与系统卡索引行未补齐、ML4 架构/后训练细节待技术报告。第三方基准（ML4 Coding Agent Index 49.8% / AutomationBench 59.9%）与 Gemini 4 第三方上下文口径均标 (tentative)；Grok 4.8/5 参数归入 rumor tier，不计入 claim 级证据。
 - **Temp files**: 无（本轮仅 websearch，未写临时文件）。
+
+## [2026-10-08] investment-daily | 投资日报 2026-10-08（周四）
+- Summary: wiki/synthesis/2026-10-08/investment-daily.md
+- 数据基准: 美股 10/7 完整收盘 + 港股 10/8 开盘/早盘 + A 股 10/8 节后复市首日（开盘 + 盘面快照）
+- 核心主题: 美联储 9 月纪要偏鹰（年底前或再加息）三大指数齐跌；AI 债务融资潮（博通 $500 亿 OpenAI 芯片融资 / SpaceX $400 亿购英伟达芯片 / Oracle 数千亿级，AI 债务总量 ~$880 亿）；恒生科技指数诞生以来最大改革（30→50 只，12/7 生效）；A 股国庆复市首日 + 央行 1.2 万亿买断式逆回购
+- Updated: wiki/index.md (Synthesis 行新增，置于 10-07 investment-daily 之前), wiki/log.md (本条目)
+- New pages: wiki/synthesis/2026-10-08/investment-daily.md
+- Contradictions: none direct. ⚠️ 数据缺口/单源标注: A 股 10/8 收盘点位与涨停家数（仅东方财富财富号当日复盘）、港股 10/8 全天数据（仅开盘/早盘）、美股 Mag7 各股 10/7 精确涨跌幅部分未取得；页面均已显式标注 tentative。
