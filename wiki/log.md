@@ -7768,3 +7768,13 @@
 - New pages: `wiki/synthesis/2026-10-09/investment-daily.md`.
 - Updated: `wiki/index.md`（Synthesis 表新增 investment-daily 2026-10-09 行，置于 tech-report-digest 2026-10-09 行之前）、`wiki/log.md`（本条目）。
 - Contradictions: 与既有 wiki 页面无直接 claim 级冲突。⚠️ 数据口径分歧已在页面显式标注：港股 10/8 成交额约 HK$2,073 亿 vs 1,498 亿；A 股 10/9 午间数据来自聚合源（tentative）；蔚来 10/8 收盘 −3.8% vs 盘中 −1.55%。未采用部分 2025-10-09 过期搜索结果。
+
+## [2026-10-09] synthesize | wq101-alpha-daily (2026-10-09)
+- Summary: `wiki/synthesis/2026-10-09/wq101-alpha-daily.md` (type: synthesis). 数据基准 = 美股 **10/8 收盘**（标普 7,765.36/−0.47%、纳指 27,193.34/−1.25%、纳指100 30,725.81/−1.39%、道指 51,231.64/+0.10%、罗素 2000 2,794.13/+0.03%、VIX 15.41、10Y 约 5.23%、WTI ~$91.49、Brent $103.92/+3.71%）。
+- Method: WorldQuant 101 Alphas 因子框架（Alpha#1/#6 动量、#53 反转、#30 波动率结构、#12 量价背离、#41 趋势强度、#19 均值回复），对市值 >$10B 中大盘美股打分排序，精选 Top 20。
+- Market: **Energy +2.97% 领涨、Technology −1.79% 领跌**；格局 = 「AI 硬件杀估值（OpenAI ARR 缩水约 $200 亿，SOX −3.39%）+ 能源/电力/防御轮动（油价急涨）」。
+- Top 20：VST、XOM、NVDA、MPC、CVX、CEG、MSFT、MU、GOOGL、TSM、TLN、GEV、WMT、CCJ、AVGO、META、OXY、NEM、JPM、AAPL。
+- 因子主线：能源/电力（Alpha#6 + Alpha#41，VST 突破下降楔形 + 成交量创一年新高为全榜最强结构）；半导体洗盘（Alpha#53 + Alpha#30）；防御（Alpha#19）。
+- New pages: `wiki/synthesis/2026-10-09/wq101-alpha-daily.md`.
+- Updated: `wiki/index.md`（Synthesis 表新增 wq101-alpha-daily 2026-10-09 行，置于表头之后首行）、`wiki/log.md`（本条目）。
+- Contradictions: 与既有 wiki 页面无 claim 级冲突。⚠️ 价格/市值为公开网络检索估算值，可能与行情终端存在差异（已在页面标注）。不构成投资建议。
