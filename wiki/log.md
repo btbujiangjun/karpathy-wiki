@@ -7848,3 +7848,13 @@
 - New pages: `wiki/synthesis/2026-10-10/investment-daily.md`。
 - Updated: `wiki/index.md`（Synthesis 表新增 investment-daily 2026-10-10 行，置于表头之后首行）、`wiki/log.md`（本条目）。
 - Contradictions: 无 claim 级冲突；5 项跨源口径差异已标注待核。
+
+## [2026-10-10] synthesis | wq101-alpha-daily (2026-10-10)
+- Summary: `wiki/synthesis/2026-10-10/wq101-alpha-daily.md` (type: synthesis)。基于 WorldQuant 101 Alphas 因子框架的美股 Top 20 量化精选，基准 2026-10-09 收盘。
+- 市场概述：S&P 7,811.54（+0.59%）距历史高点 -0.4%、纳指 +0.64% 四周连涨、道指 +0.83%（+423 点）、VIX 14.84（-3.7%）；11 板块 9 涨 2 跌，房地产（+1.88%）、非必需消费（+1.69%）、医疗（+1.58%）领涨，通信服务（-0.4%）、能源（-0.18%）垫底；信息技术 +0.36% 但涨幅集中于软件/数据云。
+- 核心主题：① SpaceX ~$80 亿收购 Grain 800MHz 频谱 → 电信三巨头单日 -10%+（TMUS/T/VZ，Alpha#12 背离信号），铁塔三剑客暴涨（CCI +15.6%/AMT +9.3%/SBAC +7.3%）；② AI 软件/数据云/网安轮动接棒（SNOW +7.42%/DDOG +7.11%/PLTR +5.17% 历史新高/PANW +5.09%/CRWD +4.57%）；③ 银行财报季 10/13-14 开启 + CPI 10/14 为关键催化。
+- Top 20 选股逻辑：7 只软件/云/网安（MSFT 居首 9.5、PLTR、DDOG、SNOW、PANW、CRWD、ANET，Alpha#1 动量 + Alpha#6 量价）+ 3 只铁塔 REIT（CCI/AMT/SBAC，Alpha#41 趋势 + Alpha#30 放量）+ 2 只医疗反转（HUM +11.56%/MRNA +14.2%，Alpha#53 反转）+ 4 只金融（JPM/V/WFC/GS，财报季催化 + Alpha#19/#53 超跌修复）+ AMZN/TSLA（Alpha#41 突破）+ GOOGL + XOM。
+- 因子说明：Alpha#1（动量）/Alpha#6（量价同步）/Alpha#53（反转）/Alpha#30（波动率）/Alpha#12（量价背离）/Alpha#41（趋势强度）/Alpha#19（均值回复）——定性解读、非实时终端计算值，已声明。
+- New pages: `wiki/synthesis/2026-10-10/wq101-alpha-daily.md`。
+- Updated: `wiki/index.md`（Synthesis 表新增 wq101-alpha-daily 2026-10-10 行，置于表头之后首行）、`wiki/log.md`（本条目）。
+- Contradictions: 无 claim 级冲突。⚠️ 因子值为公开价量数据的定性推演、市值估值为网络检索近似值；电信运营商（TMUS/T/VZ）因 Alpha#12 背离信号可列为观察，未入选 Top 20（事件性下杀、判断为 left-side）。
