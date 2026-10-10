@@ -7850,11 +7850,12 @@
 - Contradictions: 无 claim 级冲突；5 项跨源口径差异已标注待核。
 
 ## [2026-10-10] synthesis | wq101-alpha-daily (2026-10-10)
-- Summary: `wiki/synthesis/2026-10-10/wq101-alpha-daily.md` (type: synthesis)。基于 WorldQuant 101 Alphas 因子框架的美股 Top 20 量化精选，基准 2026-10-09 收盘。
-- 市场概述：S&P 7,811.54（+0.59%）距历史高点 -0.4%、纳指 +0.64% 四周连涨、道指 +0.83%（+423 点）、VIX 14.84（-3.7%）；11 板块 9 涨 2 跌，房地产（+1.88%）、非必需消费（+1.69%）、医疗（+1.58%）领涨，通信服务（-0.4%）、能源（-0.18%）垫底；信息技术 +0.36% 但涨幅集中于软件/数据云。
-- 核心主题：① SpaceX ~$80 亿收购 Grain 800MHz 频谱 → 电信三巨头单日 -10%+（TMUS/T/VZ，Alpha#12 背离信号），铁塔三剑客暴涨（CCI +15.6%/AMT +9.3%/SBAC +7.3%）；② AI 软件/数据云/网安轮动接棒（SNOW +7.42%/DDOG +7.11%/PLTR +5.17% 历史新高/PANW +5.09%/CRWD +4.57%）；③ 银行财报季 10/13-14 开启 + CPI 10/14 为关键催化。
-- Top 20 选股逻辑：7 只软件/云/网安（MSFT 居首 9.5、PLTR、DDOG、SNOW、PANW、CRWD、ANET，Alpha#1 动量 + Alpha#6 量价）+ 3 只铁塔 REIT（CCI/AMT/SBAC，Alpha#41 趋势 + Alpha#30 放量）+ 2 只医疗反转（HUM +11.56%/MRNA +14.2%，Alpha#53 反转）+ 4 只金融（JPM/V/WFC/GS，财报季催化 + Alpha#19/#53 超跌修复）+ AMZN/TSLA（Alpha#41 突破）+ GOOGL + XOM。
-- 因子说明：Alpha#1（动量）/Alpha#6（量价同步）/Alpha#53（反转）/Alpha#30（波动率）/Alpha#12（量价背离）/Alpha#41（趋势强度）/Alpha#19（均值回复）——定性解读、非实时终端计算值，已声明。
+- Summary: `wiki/synthesis/2026-10-10/wq101-alpha-daily.md` (type: synthesis)。基于 WorldQuant 101 Alphas 因子框架的美股 Top 20 量化精选（周六版），基准 2026-10-09 完整收盘。⚠️ 本条目为对先前中断运行所留条目的修正重写（前次仅写入 index/log、未落盘页面文件，且内容与实际产出不符），页面文件以本次为准。
+- 市场概述：S&P 7,811.54（+0.59%，纪录新高）、纳指 27,366.17（+0.64%）、道指 51,654.95（+0.83%/+423）、纳指 100 30,883.15、罗素 2000 2,806.98、VIX 14.82（−3.83%）、10Y 5.242%；11 板块 9 涨 2 跌，房地产 +1.88%、非必需消费 +1.69%、医疗 +1.58% 领涨，能源/通信服务垫底（后者受电信拖累）；SOX 全周 −4.3%、NVDA 绿盘日仍 −0.52%（距 ATH ~5%）= "轮动修复而非 AI 领涨 V 型"。
+- 核心主题：① OpenAI 营收"$50B 惊吓"次日澄清（会计口径差异，年底 run-rate 目标 $70B+），资金切向软件/数据云/网安（SNOW +7.42%/DDOG +7.11%/PLTR +5.17% 历史新高/PANW +5.09%/CRWD +4.57%）；② SpaceX ~$8B 收购 Grain 800MHz 频谱 → 电信三巨头 −10%+（TMUS −13.27%/T −10.82%/VZ −10.14%），铁塔暴涨（CCI +15.6%/AMT +9.3%/SBAC +7.34%）";③ 黄金破 $4,200（现货 $4,191.87 +1.81%，NEM +2.34% 盘中）；④ 特斯拉 Q3 交付 486,532 超共识 +5.3%（10/21 财报）。
+- Top 20：**① PLTR 9.6（历史新高 + 37.3M 放量 / Alpha#1+#6）② SNOW 9.2（8.0M 股吞没前日跌幅 / Alpha#6+#53）③ NVDA 8.8（3.2× 均量机构洗盘 / Alpha#53+#30）④ TSLA 8.8（交付反转 / Alpha#53+#30）⑤ CCI 8.7（铁塔放量突破 / Alpha#6+#41）⑥ ORCL 8.5（+4.21% 收复 / Alpha#53+#12）⑦ MU 8.4（企稳 / Alpha#53+#30）⑧ AMT 8.3（+9.3% / Alpha#6+#41）⑨ NEM 8.3（金价纪录 / Alpha#41+#6）⑩ MSFT 8.2 ⑪ TSM 8.1（10/15 财报催化）⑫ BABA 8.1（+5.36% ADR 领涨）⑬ LITE 8.0（+5.22% 产能售罄至 2029）⑭ DDOG 8.0 ⑮ CRWD 7.9 ⑯ XOM 7.8 ⑰ PANW 7.8 ⑱ GOOGL 7.7 ⑲ VST 7.6 ⑳ PDD 7.5**。
+- 因子主线：**软件/AI 应用 = Alpha#1（动量）+ Alpha#6（量价同步）**（PLTR/SNOW/DDOG/CRWD/PANW 放量新高最密）；**算力洗盘 = Alpha#53（反转）+ Alpha#30（波动结构）**（NVDA/MU/TSM/AVGO 视为有基本面支撑的入场点）；**铁塔/黄金/EV = Alpha#41（趋势强度）+ Alpha#6**（CCI/AMT/NEM/TSLA）；防御/价值梯队用 Alpha#19（均值回复）。板块：Software 8 席 / 半导·光通信 4 / 铁塔 2 / EV 2 / 黄金·能源·核电·中概各 1。
+- 与上期（10/08 版，能源/电力主导）的相反结构显式记录：上期 VST/XOM 领衔、本期软件 8 席反超——10Y 5.24% 高位 + OpenAI 收入验证分歧下，因子框架输出从"油价+核电 Beta"切换到"软件动量 + 事件驱动（SpaceX/黄金/交付）"。
 - New pages: `wiki/synthesis/2026-10-10/wq101-alpha-daily.md`。
-- Updated: `wiki/index.md`（Synthesis 表新增 wq101-alpha-daily 2026-10-10 行，置于表头之后首行）、`wiki/log.md`（本条目）。
-- Contradictions: 无 claim 级冲突。⚠️ 因子值为公开价量数据的定性推演、市值估值为网络检索近似值；电信运营商（TMUS/T/VZ）因 Alpha#12 背离信号可列为观察，未入选 Top 20（事件性下杀、判断为 left-side）。
+- Updated: `wiki/index.md`（Synthesis 表 2026-10-10 wq101 行摘要修正为本次实际内容）、`wiki/log.md`（本条目修正重写）。
+- Contradictions: 无 claim 级冲突。⚠️ 因子值为公开价量数据的定性推演、市值估值为网络检索近似值；电信运营商（TMUS/T/VZ）因 Alpha#12 背离信号可列为观察名单，未入选 Top 20（SpaceX/FCC 事件未决，判断为 left-side，承担机会成本）；铁塔单日 +15.6% 已现延伸，MoffettNathanson 提示"涨幅过于乐观"已标注。
