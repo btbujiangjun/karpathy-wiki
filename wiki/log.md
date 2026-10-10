@@ -7869,3 +7869,9 @@
 - New pages: `wiki/synthesis/2026-10-10/game-rl-daily.md`.
 - Updated: `wiki/index.md`（Synthesis 表新增 game-rl-daily 2026-10-10 行，置于表头之后首行）、`wiki/log.md`（本条目）。
 - Contradictions: 无 claim 级冲突。⚠️ 本轮为**回采 spot-check**、非完整窗口枚举，已在页面顶部显式声明；同日 siblings 独立报告"窗口内 0 新 game-RL/CTR 论文"，与本轮回采口径一致；13 篇既有收录论文已标注 dedup 计数，**未重复声称首创**。
+
+## [2026-10-10] digest | Conference & arXiv Digest 2026-10-10
+- Summary: wiki/synthesis/2026-10-10/conference-digest.md
+- Updated: wiki/index.md (added entry for conference-digest 2026-10-10)
+- New pages: wiki/synthesis/2026-10-10/conference-digest.md
+- Contradictions: none
