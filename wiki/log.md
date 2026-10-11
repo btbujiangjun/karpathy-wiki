@@ -7931,3 +7931,21 @@
 - New pages: `wiki/synthesis/2026-10-11/investment-daily.md`.
 - Updated: `wiki/index.md`（Synthesis 表新增 investment-daily 2026-10-11 行，置于表头之后首行）、`wiki/log.md`（本条目）。
 - Contradictions: 无 claim 级冲突。⚠️ OpenAI 营收口径差异（官方仅计自身实得 vs 竞品计入云平台全额）已在报告中显式披露；大部分盘中/收盘数字来自财经媒体，未逐条二次核验。
+
+## [2026-10-11] synthesis | game-rl-daily (2026-10-11)
+- Summary: `wiki/synthesis/2026-10-11/game-rl-daily.md` — Game RL & Game AI Bot 每日论文 digest（7 赛道：Game RL / Game AI Bot / Game Foundation Models / PCG / Game Benchmarks / Industry Game AI / Related Techniques）。
+- Window: 与两个 sibling 同块，arXiv 公告块仍冻结于 **2026-10-08**；本轮为 back-catalog 重采 + 精选（非完整窗口枚举）。本轮 arXiv export API 不可用（`429` rate-limit / `301` / `000` / XML parse error），改用 `websearch` + 逐篇 `webfetch` abs 页取元数据。
+- Featured: **17 篇：5 篇完全首见（repo 级 0 命中），12 篇 documented-and-refeatured；全部对 `wiki/synthesis/2026-10-11/` 0 命中。**
+  - §1 Game RL: ★★★ LocusRL `2610.04441`（首见；LLM 奖励/策略干预的诊断框架——符号反转 dense oracle 胜率 2.8% vs 仅终局奖励 57.2%，"奖励可影响学习却未提升性能"）、★★ MemoPilot `2606.08656`（ICML 2026；对抗冻结玩家的多轮 GRPO 记忆，LHE Elo 1762 / RPS 1590 第一）、★★ Chess Prompt Optimization `2610.00416`（1,118 道 Lichess 题，可再生防污染 APO 基准，6 算法 × 8 模型约 $800）。
+  - §2 Game AI Bot: ★★★ ASH: Agents that Self-Hone `2605.14211`（首见；NeurIPS 2026；从无标注互联网视频学长期策略，self-IDM + 关键时刻记忆；8 小时 Pokémon Emerald 11.2/12 vs 9.3/12、Zelda 9.9/12 vs 7.8/12）、★★ HeRoN（Neural Computing & Applications 38:549；Helper–Reviewer–NPC 中介的 RL-LLM，Reviewer 降幻觉动作 98%，Qwen 0%→81.2%）、★★ CASCADE `2604.03091`（三层协调式；tag 路由 JSON 指令，Action-Dialogue Decoupling 抗 prompt injection）。
+  - §3 Game Foundation Models: ★★ Qwen-AgentWorld `2606.24597`（跨 7 域 language world model，>10M 轨迹，35B-A3B/397B-A17B；解耦模拟器 + agent warm-up）。
+  - §4 PCG: ★★★ Recursive Game Creator `2610.08621`（Designer/Builder/Player/Reviewer 回路；GameCraft-Bench 72.70→77.89，GameASG-Bench 任务成功率 9/47→25/47）、★★ Pacing-Aware Level Generation（首见；I3D Companion '26；目标体验曲线驱动地形 + 运行时事件控制）、★★ Valerant `2609.09418`（免训练单图→可导航 3D 地图，action-conditioned world model + SLAM）。
+  - §5 Game Benchmarks: ★★★ PlayWorld `2608.13552`（Agent-Player 长期协议，171 场景；九个 world model 在空间一致性与持久状态上仍不可靠）、★★★ GlyphBench `2609.34214`（360+ 任务，Unicode-glyph 观测；在 100 任务 RL 后 Qwen3.5-4B 达 63.48% Reasoning Gym，胜过数学/代码 RL）、★★ Social Gym + SPaRTan `2608.09128`（21 个可验证社交博弈 + Elo；免训练 playbook 提升弱方）。
+  - §6 Industry Game AI: ★★ LLM-Assisted RL for Affective Game Adaptation（首见；PACM HCI 10(4) EICS029；MAPE-K 回路中的有界 LLM 动作菜单、RL 掌管 credit；n=46，混合式在参与度而非客观吞吐上更优）。
+  - §7 Related: ★★ UniSkill `2610.10164`（首见；免 rollout 的 actor-aligned 技能提议；ALFWorld 98.4% / WebShop 84.7%）、★★★ RLDiscover `2610.09218`（LLM 共演化 RL 算法；26 个 task–algo 对全部提升，中位数 +39.8%/+83.6%/+32.1%，约 1/15 算力）、★★ Matrix-Game 3.5 `2608.29910`（patch-memory + tiled-PRoPE + 静态/动态解耦，20 FPS 因果 world model）。
+- Fresh (0 hits repo-wide): `2610.04441`、`2605.14211`、`2610.10164`、`10.1145/3807895.3807929`（Pacing-Aware）、`10.1145/3816781`（Affective Game Adaptation）。
+- Dedup: `rg -l -F "<id-or-name>" wiki/ | wc -l` 计数（总计）——`2606.08656`=17、`2608.13552`=7、`2608.29910`=6、`2608.09128`=5、`2610.00416`=4、`s00521-026-12275-w`=4、`2610.08621`=4、`2609.34214`=4、`2609.09418`=3、`2610.09218`=2、`2606.24597`=2、`2604.03091`=2。
+- Corrections applied: `RLDiscover` = `2610.09218`（非 "2610.xxxx"）、`AGAR` = `2610.09215`；**CASTLE `2610.07704` 未获验证/系捏造，已剔除**（0 命中、无法由 websearch/webfetch 证实）。
+- New pages: `wiki/synthesis/2026-10-11/game-rl-daily.md`.
+- Updated: `wiki/index.md`（Synthesis 表新增 game-rl-daily 2026-10-11 行，置于 game-rl-daily 2026-10-10 行之前）、`wiki/log.md`（本条目）。
+- Contradictions: 无 claim 级冲突。⚠️ arXiv 元数据不含 affiliation，故多数标注 "not stated" / "⚠️ inference — tentative"，不作断言（abs 页拉取）；所有结果无第三方独立复现；窗口公告块冻结于 10-08（与两个 sibling 同块）。临时数据在 `/var/folders/q9/tsl_tl5548x7j892sgt3qvlc0000gn/T/opencode/gamerl1011/`。
