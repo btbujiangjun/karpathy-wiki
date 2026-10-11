@@ -7920,3 +7920,14 @@
 - New pages: `wiki/synthesis/2026-10-11/conference-digest.md`.
 - Updated: `wiki/index.md`（Synthesis 表新增 conference-digest 2026-10-11 行，置于表头之后首行）、`wiki/log.md`（本条目）。
 - Contradictions: 无 claim 级冲突。⚠️ 窗口公告块冻结于 10-08（与两个 sibling 同块）；临时数据在 `/var/folders/q9/tsl_tl5548x7j892sgt3qvlc0000gn/T/opencode/confdig1011/`。
+
+## [2026-10-11] synthesis | investment-daily (2026-10-11)
+- Summary: `wiki/synthesis/2026-10-11/investment-daily.md`（投资日报，8 节：宏观与市场概览 / 美股科技 AI / 港股科技 AI / A 股 AI 芯片 / 中概 ADR / 中概新能源 EV / AI 热点主题总结 / 投资逻辑与风险提示）。
+- Window: 数据基准 = 美股/港股/A 股 **2026-10-09（周五）收盘** + AI 事件 2026-10-06 → 2026-10-11；报告日（周日）休市。
+- Core narrative: OpenAI 年化营收披露"缩水"约 200 亿美元（10/8，官方口径截至 9 月底约 $500 亿 vs 市场流传 ~$680–700 亿，差异源于是否计入云平台全额）触发 AI 链回调 → 10/9 美股/中概/港股集体修复；资金在 AI 内部从"卖铲子"（芯片/算力）切向"用铲子"（云/电商/软件/应用）。
+- Key data: 道指 +0.83% 51,654.95 / 标普 +0.59% 7,811.54 / 纳指 +0.64% 27,366.17（本周 +0.93%/+1.15%/+0.64%）；恒指 +1.79%（~24,700）、恒生科技 +3.06% 4,197.84、国企 +1.70%；上证 +0.05% 3,813.79、深证 +0.17%、创业板 +0.22%、科创 50 +0.07%、北证 50 +2.49%；金龙指数 +2.69% 5,753.78（本周 +4.25%）。
+- Highlights: ① 英伟达洽谈收购/加注 Reflection AI（FT 10/10，早期洽谈，~$250 亿投前估值，已投 ~$8 亿，本周发 Beam）；② DeepSeek 单轮融资 ≥800 亿元（腾讯/宁德时代领投，为 2027 IPO 铺路）；③ Manus 母公司蝴蝶效应融资超 $5 亿（估值 ~$40 亿，10/8）；④ 智谱 GLM-5.3 上架 Cursor / AWS Bedrock（10/6）+ 高盛目标价 1,560 港元；⑤ 小米 +9.72% 领涨恒生科技；⑥ 美国电信股闪崩（TMUS −13.27%/T −9.85%，SpaceX/Starlink D2D）；⑦ A 股 AI 视频/传媒涨停潮（新华传媒 9 连板，传媒主力净流入 30.67 亿居首）；⑧ 台积电 10/15 Q3 法说会（Q3 营收约 NT$1.49 万亿，+51% YoY）。
+- Corrections applied: 谷歌"Gemini Agent 10/9 发布"未能独立核实 → 报告弱化为"持续加码 Gemini Enterprise / Antigravity Agent 平台（持续性主题）"；英伟达 $105B 俄亥俄数据中心为 2026-08 旧闻 → 未收作本周热点；腾讯混元 Hy4 未获核实 → 未收录；工信部《"人工智能+软件"专项行动实施方案》为 **2026-09-11 发布**（作背景，已正确标注日期）。
+- New pages: `wiki/synthesis/2026-10-11/investment-daily.md`.
+- Updated: `wiki/index.md`（Synthesis 表新增 investment-daily 2026-10-11 行，置于表头之后首行）、`wiki/log.md`（本条目）。
+- Contradictions: 无 claim 级冲突。⚠️ OpenAI 营收口径差异（官方仅计自身实得 vs 竞品计入云平台全额）已在报告中显式披露；大部分盘中/收盘数字来自财经媒体，未逐条二次核验。
