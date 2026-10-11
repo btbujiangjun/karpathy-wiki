@@ -7949,3 +7949,16 @@
 - New pages: `wiki/synthesis/2026-10-11/game-rl-daily.md`.
 - Updated: `wiki/index.md`（Synthesis 表新增 game-rl-daily 2026-10-11 行，置于 game-rl-daily 2026-10-10 行之前）、`wiki/log.md`（本条目）。
 - Contradictions: 无 claim 级冲突。⚠️ arXiv 元数据不含 affiliation，故多数标注 "not stated" / "⚠️ inference — tentative"，不作断言（abs 页拉取）；所有结果无第三方独立复现；窗口公告块冻结于 10-08（与两个 sibling 同块）。临时数据在 `/var/folders/q9/tsl_tl5548x7j892sgt3qvlc0000gn/T/opencode/gamerl1011/`。
+
+## [2026-10-11] synthesis | wq101-alpha-daily (2026-10-11)
+- Summary: `wiki/synthesis/2026-10-11/wq101-alpha-daily.md` — WorldQuant 101 Alphas 每日美股精选报告（Top 20 排名版；周日/下周前瞻版，与 10-10 周六版差异化）。
+- Window: 数据基准 = 美股 **2026-10-09（周五）收盘**；报告日（周日 10-11）休市；前瞻窗口 = 2026-10-13 → 2026-10-28（财报季 + FOMC）。
+- Context: OpenAI 营收"缩水"约 200 亿美元（10/8 FT 报道）触发 AI 硬件抛售（SOX −3.39%）→ 10/9 资金轮动修复（软件/数据云/网安领涨、电信闪崩、铁塔暴涨）。
+- Market data: 标普 7,811.54 +0.59%（纪录收盘，周 +1.15%）、纳指 27,366.17 +0.64%、纳指 100 30,883.15、道指 51,654.95 +0.83%、罗素 2000 2,806.98；VIX ~14.8；10Y ~5.24%（跨源 5.17%–5.31%，个别来源误报 3.92% 未采信）；WTI ~$92 / Brent ~$104；现货金 ~$4,195。
+- Top 20（score）: ① TSM 9.5 ② PLTR 9.3 ③ JPM 9.1 ④ SNOW 9.0 ⑤ NVDA 8.9 ⑥ GS 8.8 ⑦ NEM 8.7 ⑧ MSFT 8.6 ⑨ LITE 8.4 ⑩ GOOGL 8.4 ⑪ MU 8.3 ⑫ ASML 8.2 ⑬ AVGO 8.1 ⑭ DDOG 8.0 ⑮ TSLA 8.0 ⑯ CCI 7.9 ⑰ AMT 7.8 ⑱ BABA 7.7 ⑲ CRWD 7.6 ⑳ XOM 7.5。
+- Factor framework: Alpha#1（动量）/ #6（Correlation(open,volume,10) 量价同步）/ #53（反转）/ #30（波动结构）/ #12（量价背离）/ #41（`((high*low)^0.5) - vwap` 趋势）/ #19（均值回归）。
+- Sector summary: 半导·设备·光通信 6（TSM/NVDA/MU/ASML/AVGO/LITE）/ Software·数据云·网安 5（PLTR/SNOW/MSFT/DDOG/CRWD）/ 银行 2（JPM/GS）/ 铁塔 2（CCI/AMT）/ 中概·通信 2（GOOGL/BABA）/ 黄金 NEM 1 / EV TSLA 1 / 能源 XOM 1。
+- Catalyst calendar: 10/13 JPM/WFC/GS/C 财报；10/14 ASML Q3（隐含 ±8.5%）+ 美国 9 月 CPI / BAC/MS；10/15 TSMC Q3（14:00 ET）+ 美国零售销售 / 英国 GDP；10/16 期权到期；10/20 Netflix；10/21 Tesla Q3（EPS $0.41 / 营收 $27.6B）；10/22 Newmont；10/27–28 FOMC（决议 10/28）。
+- New pages: `wiki/synthesis/2026-10-11/wq101-alpha-daily.md`.
+- Updated: `wiki/index.md`（Synthesis 表新增 wq101-alpha-daily 2026-10-11 行，置于表头之后首行）、`wiki/log.md`（本条目）。
+- Contradictions: 无 claim 级冲突。⚠️ 价格/市值为估算值，本报告不构成投资建议；10Y 收益率跨源存在 5.17%–5.31% 区间，个别来源误报 3.92% 已显式剔除。
