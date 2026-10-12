@@ -8010,3 +8010,14 @@
 - New pages: `wiki/synthesis/2026-10-12/conference-digest.md`.
 - Updated: `wiki/index.md`（Synthesis 表新增 conference-digest 2026-10-12 行，置于表头之后首行）、`wiki/log.md`（本条目）。
 - Contradictions: 无 claim 级冲突。⚠️ CTR-prediction 架构赛道本窗口再度为空（§11 disclosure），未见 [[ctr-scaling-landscape]] 新入局者。
+
+## [2026-10-12] synthesis | investment-daily (2026-10-12)
+- Summary: `wiki/synthesis/2026-10-12/investment-daily.md`（投资日报，8 节：宏观与市场概览 / 美股科技 AI / 港股科技 AI / A 股 AI 芯片 / 中概 ADR / 中概新能源 EV / AI 热点主题总结 / 投资逻辑与风险提示）。
+- Window: 数据基准 = 美股 **2026-10-09（周五）收盘**（10/10–10/11 周末休市，为最近有效收盘）+ 港股/A 股 **2026-10-12（周一）早盘盘中**（撰写时点 ~10:50 CST，盘中数值待收盘确认）+ AI 事件 2026-10-10 → 2026-10-12。
+- Core narrative: 承接上周五"OpenAI 营收缩水 → AI 链回调 → 修复"节奏，**AI 基建从"芯片"走向"电力 + 网络"** —— 谷歌–Constellation **3.59GW** 供电协议（含 890MW 核电增容、20 年 PPA、首批 2028）+ 博通 OCP 峰会（10/12–15）**10 万+ 加速器** AI 网络平台 + 算力垂直整合密集出手（亚马逊 ~$70 亿收购 Decart、英伟达洽谈/加注 Reflection AI ~$250 亿、DeepSeek ≥800 亿元融资宁德时代领投）。
+- Key data: 道指 +0.83% 51,654.95 / 标普 +0.59% 7,811.54 / 纳指 +0.64% 27,366.17（**费半 −0.41%、连跌三日**）；NVDA $229.28 −0.52% / AMZN·MSFT·TSLA +2~3% / AAPL −1%+ / AMD −2.03% / INTC −2.22% / TSM ADR −1.02%；10Y ~5.24%、VIX ~14.8、现货金 ~$4,195；港股早盘恒指 +0.92% / 恒生科技 +1.03%（阿里-W +3%+）；A 股早盘上证 −0.18% 3,806.98 / 深证 −0.43% / 创业板 −0.65%（盘中一度 −1%）/ 科创 50 −0.92% → V 型回升 +1%（~1,472.21）；中概（参考 10/9）金龙 +2.69% 5,753.78。
+- Highlights: ① 谷歌–Constellation 3.59GW 供电协议（AI 电力瓶颈）；② 博通 OCP 峰会 AI 网络平台（十万卡 scale-up/scale-out、CPO/1.6T）；③ 摩根大通预计**阿里云 12 月季度 EBITA 首次覆盖 AI 亏损/盈利拐点**（美股 TP $210→$200、港股 $205→$195，维持增持）；④ 杰富瑞警告 AI 债务风险（RPO ~$2.34 万亿、约半集中 OpenAI/Anthropic）；⑤ SemiAnalysis 指英伟达表外承诺单季飙至 5,300 亿美元（上季 1,840 亿）；⑥ 亚马逊洽谈 ~$70 亿收购 Decart（WSJ）；⑦ 台积电 9 月营收 +54.6% YoY、Q3 创新高 ~1.49 万亿（+50.9% YoY），10/15 法说会；⑧ 港股 AI 概念/自动驾驶领涨（海致科技 +8.50%、文远知行 +5.85%、小马智行 +3.61%）；⑨ A 股早盘半导体/存储/光通信/CPO 领跌（富信科技 −10%+、有研硅 −5%+、长鑫科技 −3%+）后科创 50 V 型回升；⑩ "新质生产力"顶层设计落地（AI+/半导体/固态电池/量子/人形机器人）；⑪ 全球运营商最大单体智算中心扩容竣工、液冷订单排至 2027。
+- Corrections/notes applied: 美股 10/9 收盘为最近有效收盘（周末休市），报告显式标注口径；港股/A 股数值为盘中、报告显式标注"待收盘确认"；韩国 Kospi 下半年 −22%/外资净撤 ~1,310 亿美元作为风险项收录（单源，未独立复现）。
+- New pages: `wiki/synthesis/2026-10-12/investment-daily.md`.
+- Updated: `wiki/index.md`（Synthesis 表新增 investment-daily 2026-10-12 行，置于表头之后首行、conference-digest 2026-10-12 之前）、`wiki/log.md`（本条目）。
+- Contradictions: 无 claim 级冲突。⚠️ 大量盘中/早盘数字来自财经媒体，未逐条二次核验且待收盘确认；AI 债务（杰富瑞 RPO）与英伟达表外承诺（SemiAnalysis 5,300 亿美元）为单一研究机构口径，报告按"机构观点/风险提示"处理，未作事实断言。
