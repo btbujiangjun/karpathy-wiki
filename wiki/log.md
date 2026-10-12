@@ -7995,3 +7995,18 @@
 - New pages: `wiki/synthesis/2026-10-12/tech-report-digest.md`.
 - Updated: `wiki/index.md`（Synthesis 表新增 tech-report-digest 2026-10-12 行，置于表头之后首行、arxiv-daily 之前）、`wiki/log.md`（本条目）。
 - Contradictions: ⚠️ 见上 Meta Llama 4 Scout MoD 与官方口径冲突（本页标为未证实传闻，不作事实断言）。所有性能/安全数字无第三方独立复现；"下一次 Olmo 采用 hybrid MoE" 为 COLM recap 转述（tentative）。
+
+## [2026-10-12] synthesis | conference-digest (2026-10-12)
+- Summary: `wiki/synthesis/2026-10-12/conference-digest.md` (type: synthesis)。**60 篇精选论文，13 个 section，全部 new-to-wiki。**
+- Scope: 带*经验证* venue tag 的 NeurIPS 2026 / EMNLP 2026 / ICML 2026 / CIKM 2026 / ACL·NAACL 2026 / AAAI 2026 / CVPR 2026 / SIGMOD·ICDE，加 **ICLR 2027（在审）** 预印本与 recsys/ads/CTR 赛道。
+- Window: arXiv 最新已索引公告块 = **2026-10-09**（与今日 `arxiv-daily` / `arxiv-paper-check` 同块；10-10 → 10-12 未索引）。
+- Harvest: arXiv export API 两趟 — (1) 17 条 venue `co:`/`comment:` + 9 条类目 `submittedDate:[20261001 TO 20261010]` + 21 条 `all:` 主题；(2) 17 条公司 `co:`（Kuaishou/ByteDance/Alibaba/Tencent/Baidu/Meituan/Netflix/Google DeepMind/Microsoft Research/Meta AI/Ant Group/Xiaohongshu/Shopee/LinkedIn/NVIDIA/Amazon/Huawei）+ 15 条更远主题。查询间隔 ≥2.2 s。**5,851 unique → 1,436 venue-tagged unclaimed → 266 published ≥2026-09-20 → 60 featured。**
+- Dedup: repo 级 **8,730 条** arXiv ID（bare-ID 扫描，建于今日 3 个 sibling staged 之后）；60 篇 featured 全部 `rg -l` **0 命中**。**12 个初选 ID 因出现在 wiki（被前报 featured 或仅 *提及*）在 0-hit gate 被剔除**：2610.12242、2610.12030、2609.27297、2609.23780、2609.28972、2609.25542、2609.28980、2609.33073、2610.00425、2609.33045、2609.30568、2610.07663。
+- Venue spread (60): NeurIPS 2026 **15**（12 main + 2 E&D + 1 BeNTo workshop）、EMNLP 2026 **13**（7 main + 4 Findings + 2 Industry）、ICLR 2027-in-review **9**、ICML 2026 **4**、CIKM 2026 **3**、ACL/NAACL 2026 **4**、SIGMOD 2027 / ICDE 2027 **4**、AAAI/AIES **3**、CVPR 2026 **2**、KDD 2025 EAI workshop **1**、RecSys/Ads lane **2**（un-venued）。
+- Sections: §0 摘要、§1 NeurIPS main（12）、§2 NeurIPS E&D/workshop（3）、§3 EMNLP（13）、§4 ICLR 2027（9）、§5 ICML 2026（4）、§6 CIKM 2026（3）、§7 ACL/NAACL（4）、§8 CVPR 2026 + KDD 2025 workshop（3）、§9 AAAI/AIES（3）、§10 SIGMOD/ICDE 2027（4）、§11 RecSys/Ads/CTR lane（2）、§12 空赛道与 collision、§13 follow-ups。
+- Highlights: ★ **diffusion-as-substrate 5 篇** — ChemDiffAgent 首个掩码扩散工具智能体 `2610.13330`（化学，~+20% over AR）、PDFM 样本级约束流匹配 `2610.12699`、CFG 信息瓶颈 `2610.13369`（SJTU+**vivo**+Stanford+UBC）、LSP 联合图扩散修 E-R 先验 `2610.13765`、GDM 条件记忆 `2610.13786`（NeurIPS BeNTo workshop）。★ **评测/效度工具 6 篇** — LongSocialBench 73K-token 讨论帖（best 63.0% vs 人 72.4%）`2610.04118`、sk-bench 斯洛伐克语 `2610.09152`、LASEF 骨架语言 `2610.09607`、DUMA-Bench 双控智能体安全 ASR 26.9→41.1% `2609.24662`、SALUS ~37% BIRD/~27% Spider 标注错误 `2610.05540`、ReproBench 从零复现 5.3% `2609.34450`。锚点数字：OMNI 39 任务≤10× 小参数追平 10 个病理 FM `2610.12574`；Exemplar2VQA `2609.37655`（ECNU+SJTU+Fudan+**Tencent**）；APEX-Voice 无语音 agent >25% Pass@1 `2609.34973`；KVFetch 逐字复制 0.8→78.4 `2610.08811`；SWE-Duel 自扩展竞技场 `2610.12569`；softmax 重参数化 W4 KL −93% + 延迟 −10.8% `2609.31291`；QPT 38/38 DSRL `2609.34426`。
+- Industry: 14/60 有公司/实验室作者 —— **Tencent**（Exemplar2VQA）、**vivo BlueImage Lab**、**Sony Group**（ELMA）、**JPMorgan Chase**（FinDialogLens）、**Kensho**（FLINT）、**Huawei**（AIM-ZO）、**Infinigence AI**（HAPMoE）、**RWS Language Weaver**、**TelePIX**（SatUnreal）、**Hive Trace Lab**（DUMA-Bench）、**Cisco**（sk-bench）、CAS/UCAS（ChemDiffAgent、OGPO 上级实验室）。
+- Affiliations: 仅从论文自身 arXiv HTML author block 读取；无法回收的标 *(affiliation not recovered)*，不作推断（本轮约 13 篇，含 2610.08347 HTML 缺失）。
+- New pages: `wiki/synthesis/2026-10-12/conference-digest.md`.
+- Updated: `wiki/index.md`（Synthesis 表新增 conference-digest 2026-10-12 行，置于表头之后首行）、`wiki/log.md`（本条目）。
+- Contradictions: 无 claim 级冲突。⚠️ CTR-prediction 架构赛道本窗口再度为空（§11 disclosure），未见 [[ctr-scaling-landscape]] 新入局者。
