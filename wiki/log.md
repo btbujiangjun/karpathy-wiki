@@ -8021,3 +8021,9 @@
 - New pages: `wiki/synthesis/2026-10-12/investment-daily.md`.
 - Updated: `wiki/index.md`（Synthesis 表新增 investment-daily 2026-10-12 行，置于表头之后首行、conference-digest 2026-10-12 之前）、`wiki/log.md`（本条目）。
 - Contradictions: 无 claim 级冲突。⚠️ 大量盘中/早盘数字来自财经媒体，未逐条二次核验且待收盘确认；AI 债务（杰富瑞 RPO）与英伟达表外承诺（SemiAnalysis 5,300 亿美元）为单一研究机构口径，报告按"机构观点/风险提示"处理，未作事实断言。
+
+## [2026-10-12] ingest | arXiv/Game AI papers - Game RL & Game AI Bot Daily Digest
+- Summary: wiki/synthesis/2026-10-12/game-rl-daily.md
+- Updated: wiki/index.md, wiki/log.md
+- New pages: wiki/synthesis/2026-10-12/game-rl-daily.md
+- Contradictions: none
