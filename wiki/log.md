@@ -7985,3 +7985,13 @@
 - New pages: `wiki/synthesis/2026-10-12/arxiv-paper-check.md`.
 - Updated: `wiki/index.md` (Synthesis 表新增 arxiv-paper-check 2026-10-12 行，置于表头之后首行), `wiki/log.md` (本条目).
 - Contradictions: none. ⚠️ Affiliations **not extracted** (absent from arXiv API metadata; none inferred). No result independently replicated. Venue tags only those self-reported via arXiv `comment`.
+
+## [2026-10-12] synthesis | tech-report-digest (2026-10-12)
+- Summary: `wiki/synthesis/2026-10-12/tech-report-digest.md` (type: synthesis)。
+- Window: 2026-10-11 → 2026-10-12。19 家目标机构**无新 frontier 文本模型技术报告 / 系统卡 / model card**（最近仍为 09-29 GPT-6 Sol、09-28 Claude Sonnet 5.5；Gemini 4 Argon 09-30 亮相仅限 Fairwind 试点）。本期为**邻近补录 + 架构/模态双主线**版。
+- Featured (all grep-verified wiki-first): ★★★ **Ai2 Olmo Hybrid 7B**（论文 2026-04 / COLM 2026 recap 10-09，arXiv:2604.03444）——75% sliding-window attention 换 **Gated DeltaNet**（3:1 GDN:attention），7B、6T token、512 GPU（H100→B200），MMLU 少 49% token 追平 Olmo 3 7B（≈2× data efficiency）、Common Crawl 少 35%、RULER 64k +14.1%、scaling token 节省 ~1.3×@1B→~1.9×@70B；★★ **Ai2 Bolmo 登 Nature**（10-07，`s41586-026-11111-4`）——byteification 两阶段、49.1B token <1% 预算，外推 **Bwen 8B**（Qwen3 8B Base，最强 byteified）/ **Blama 8B**（Llama 3 8B）；STEM +16.5% over BLT 7B；★★ **Cloudflare Clef-omni**（10-09，Apache-2.0）——30B-A3B MoE（Qwen3-Omni-30B-A3B-Instruct 基座）全模态决策模型，text/JSON/image/audio/video→每选项校准概率、单次前向无文本生成，64k ctx，21s 视频 ~1.5s，$0.15/M input；★ **Qwen-Image-2.1-Turbo**（10-09）——7B DiT + Qwen3-VL 8B，8 步 vs 40，2K/2752×1536，research license，Turbo API CNY 0.1/图；★ 信号 **Gemini 4 "Carbon"** 内部 checkpoint 泄露（BI 10-09，低可信）。
+- Low-confidence / flagged: ⚠️ **Meta "Llama 4 Scout MoD re-release"**（10-11，dev.to + SEO 聚合）——105B/24B 激活 MoD、1M ctx 等，**与官方 Llama 4 Scout（109B/17B 激活、MoE、10M ctx）系统性冲突、无官方 model card，不予采信**；Gemini Carbon 为单源匿名主观印象、无 benchmark（DeepSWE 77.9% 属 Argon 非 Carbon）。
+- Cross-theme: 决策模型类别延续（承接 10-11 期 Microsoft-Decision-1 / Liquid d1 / Perplexity Decider），Clef-omni 为其**全模态化**下一步；架构支线 = hybrid（GDN）+ byte-level。
+- New pages: `wiki/synthesis/2026-10-12/tech-report-digest.md`.
+- Updated: `wiki/index.md`（Synthesis 表新增 tech-report-digest 2026-10-12 行，置于表头之后首行、arxiv-daily 之前）、`wiki/log.md`（本条目）。
+- Contradictions: ⚠️ 见上 Meta Llama 4 Scout MoD 与官方口径冲突（本页标为未证实传闻，不作事实断言）。所有性能/安全数字无第三方独立复现；"下一次 Olmo 采用 hybrid MoE" 为 COLM recap 转述（tentative）。
