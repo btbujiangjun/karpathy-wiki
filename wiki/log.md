@@ -8033,3 +8033,23 @@
 - Updated: wiki/index.md, wiki/log.md
 - New pages: wiki/synthesis/2026-10-12/game-rl-daily.md
 - Contradictions: none
+
+## [2026-10-13] synthesis | arXiv Daily — AI/LLM/RecSys/CTR/Games (2026-10-13)
+- Summary: `wiki/synthesis/2026-10-13/arxiv-daily.md`
+- Window: arXiv 公告块**仍为 2026-10-09（周五）** — `submittedDate:[20261009 TO 20261010]` 返回 **1,129 篇**，与 2026-10-12 digest 同一块；`[20261010 TO 20261013]` → 0，cs.AI 按 submittedDate 降序仍止于 `2026-10-09T17:59Z`。因块未更新，本轮改采**"同块尾部二次挖掘"**策略。
+- Harvest: 全块 1,129 篇下载并解析（arXiv export API，submittedDate 单查询）→ 相关类目（cs.AI/LG/CL/IR/GT/MA/MM/CY/NE/SI/SE/CR/SD/RO、stat.ML、eess.SP/AS、q-bio.NC/QM/GN）过滤 → **429 篇**，其中 **322 篇 new-to-wiki**（grep 0 命中，对照 8,856 条 repo 级 arXiv ID baseline）。
+- Featured: **50 篇全部 new-to-wiki**，分 9 节：Core AI/LLM/Agents(7)、Reasoning/RL/Post-Training(9)、Efficiency/Inference/Generation(6)、Memory/Robust Training(5)、IR/Retrieval(3)、Rec/Ads/Marketing(3)、Sequential/Time Series(5)、Games/Multi-Agent/Bandits/Mech(7)、Benchmarks/Interpretability(5)。
+- Lane note: 本块 **CTR/广告/推荐直命中已全部被 2026-10-12 digest 抢先收录**（2610.13066 ECC、2610.13806 FORTE、2610.12977 CQG、2610.13716 GSP、2610.13407 PC-LinUCB、2610.13351 极化），§6 仅余边缘新料（word-of-mouth 营销扩散 2610.13890、带放弃动态匹配 0.5-competitive 2610.12991、隐式用户偏差可辨识性 2610.13185）。
+- Affiliation: arXiv Atom API 不含机构字段；仅 abstract/comment/code 明示时标注（Samaya 2610.13000、iPulse AI 2610.13431、SIB/Expasy 2610.13648 等），其余标 `not stated`。
+- New pages: `wiki/synthesis/2026-10-13/arxiv-daily.md`.
+- Updated: `wiki/index.md`（Synthesis 表新增 arxiv-daily 2026-10-13 行，置于表头之后首行）、`wiki/log.md`（本条目）。
+- Contradictions: 无 claim 级冲突。⚠️ 本块未推进（自 2026-10-09 起连续第三期同一 block），报告已显式声明窗口；未对同块内已被 10-12 收录的 50 篇做重复收录（全部经 baseline grep 去重）。
+
+## [2026-10-13] synthesis | LLM Tech Report Digest (2026-10-13)
+- Summary: `wiki/synthesis/2026-10-13/tech-report-digest.md`
+- Window: 2026-10-12 → 2026-10-13。
+- Featured: ★★★ **Meta Muse Wonder / Muse Wonder Full**（10-12，Meta 首个 frontier 模型；Active Memory + Active Focus；AA v4.3 = 56 / 52；1M ctx、text/image/video/audio 输入；Wonder Full 仅 Muse Code 订阅者）；★★ **Anthropic distillation 防御**（10-12；数据攫取 −90~99%、reasoning token 提取低 10–100×；preserved thinking + 两阶段 classifier(<0.1% FPR) + 封号/计费；点名 Zhipu/Moonshot，最大链路指向 Qwen）；★★ **OpenAI textGrain**（邻近补录 10-05；熵校准文本水印，块级 OT + Gumbel + KL 正则；EU AI Act）；★★ **Meta CanonQ**（邻近补录 arXiv:2610.09202，10-06；W2A4KV2 联合量化，PPL 最多低 14.28×、zero-shot 最多高 57.9%）。
+- Candidate（未达门槛）: AWS SageMaker llama.cpp decision-model 部署路径（10-13，非卡面）；Kolibri（Aleph Alpha，非目标机构）；Limite 1B-Violetto（Paradigma，非目标机构）。
+- New pages: `wiki/synthesis/2026-10-13/tech-report-digest.md`.
+- Updated: `wiki/index.md`（Synthesis 表新增 tech-report-digest 2026-10-13 行，置于表头之后首行）、`wiki/log.md`（本条目）。
+- Contradictions: 无 claim 级冲突。⚠️ Muse Wonder 完整安全评估未发布（官方称 coming soon）；Anthropic 90–99% 为厂商自测无独立审计；textGrain 报告无实验、检测率为报道口径；CanonQ 无第三方复现。四条候选均经 repo 级 grep 确认 wiki 首见。
