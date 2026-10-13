@@ -8064,3 +8064,15 @@
 - New pages: `wiki/synthesis/2026-10-13/investment-daily.md`.
 - Updated: `wiki/index.md`（Synthesis 表新增 investment-daily 2026-10-13 行，置于表头之后首行、tech-report-digest 2026-10-13 之前）、`wiki/log.md`（本条目）。
 - Contradictions: 无 claim 级冲突。⚠️ 两个方向的数据冲突已在文内标注：①油价/金价跨源（gudaobang vs Goodman 收盘口径），主取 gudaobang 并附区间；②10Y 美债 10/12 收盘 ~5.25% vs 10/13 亚洲时段期货 5.29%（时点差异）。Anthropic IPO（$2T+）与北向 80 亿/粤芯涨幅为传闻/盘中口径，报告标注 tentative 与"待收盘确认"；不限涨跌幅新股首日价格波动极大，已列风险。
+
+## [2026-10-13] synthesis | WorldQuant 101 Alphas 每日精选 (2026-10-13)
+- Summary: `wiki/synthesis/2026-10-13/wq101-alpha-daily.md`（Top 20 精选，因子框架 = Alpha#1/#6/#53/#30/#12/#41/#19）。
+- Window: 数据基准 = 美股 **2026-10-12（周一）完整收盘**（10/12 = 哥伦布日：美股照常交易、**美债现货休市**，收益率取期货/前值）。撰写时点 ~11:00 CST。
+- Core narrative: **"AI 硬件融资/供给双杀，防御 + 能源 + 通信轮动"** —— 博通/英特尔 CEO 警示 AI 资本约束 + 中国长鑫存储（CXMT）4F² DRAM 量产 → 费半重挫，光通信/存储链领跌；资金切向能源/必需消费/防御。
+- Key data: 标普 7,807.24 -0.06% / 道指 51,850.55 **+0.38% 创阶段新高** / 纳指 27,245.90 -0.44% / 纳指100 30,664.70 -0.71% / 罗素2000 2,794.48 -0.45% / **SOX 12,236.79 -2.67% 连跌四日** / VIX ~15.2 / 10Y ~5.24% / WTI ~$93.2–93.7 / Brent ~$105.9–106.7 / 现货金 $4,171.65 -0.43% / DXY 102.59 +0.41%；板块能源 +1.5% 领涨（纪录收盘）、必需消费 +1.2%、通信服务 +0.9%、医疗 +0.7%、金融 +0.6% vs **科技 -0.9%~-1.2% 最弱**、非必需消费 -0.7%；个股 META $742.96 +3.38%（Muse Wonder、量高均量 41%）、MSFT $541.15 +1.14%（重回 $4T、Maia 300）、AAPL +1.29%、NVDA $226.32 -1.29%、AMZN -1.11%、GOOGL +0.30%、JPM $334.30 +0.39%、XOM +1.90%、CVX +1.42%、COP +2.58%、VZ +2.71%、NEM -0.59%；光通信/存储重挫 CIEN -9.99%/LITE -9.78%/CRDO -7.25%/GLW -6.00%/MU -3.9%。
+- Top 20: ① META 9.3 ② XOM 9.1 ③ COP 9.0 ④ JPM 9.0 ⑤ MSFT 8.8 ⑥ GOOGL 8.6 ⑦ CVX 8.6 ⑧ GS 8.5 ⑨ TSM 8.4 ⑩ CEG 8.3 ⑪ VST 8.1 ⑫ NVDA 8.0 ⑬ UNH 7.9 ⑭ VZ 7.8 ⑮ MU 7.7 ⑯ AVGO 7.6 ⑰ ASML 7.5 ⑱ AAPL 7.5 ⑲ MDT 7.4 ⑳ NEM 7.3。
+- Factor threads: 能源 = Alpha#41+#6（趋势+量价）双强；通信/软件 = Alpha#1+#6；半导体/存储 = Alpha#53+#30（反转+波动结构）错杀候选；防御 = Alpha#19。板块：半导体 5 / 能源 3 / 通信服务 3 / 金融 2 / AI 电力 2 / 医疗 2 / 软件·IT 2 / 材料 1。
+- Catalysts: 10/13 JPM/GS/C/WFC 财报 → 10/14 ASML Q3 + 9 月 CPI → 10/15 TSMC Q3 + PPI/零售销售；10 月底加息概率 ~22%（前 ~18%）。
+- New pages: `wiki/synthesis/2026-10-13/wq101-alpha-daily.md`.
+- Updated: `wiki/index.md`（Synthesis 表新增 wq101-alpha-daily 2026-10-13 行，置于表头之后首行、investment-daily 2026-10-13 之前）、`wiki/log.md`（本条目）。
+- Contradictions: 无 claim 级冲突。⚠️ 跨源差异已在文内标注：WTI（+1.4%~+3.3%）、Brent（+1.2%~+1.8%）、JPM 收盘（$334.30 +0.39% vs $334.49 +0.45%）；10/12 为哥伦布日，美债现货休市，10Y 取期货参考值。价格/市值为估算值，报告标注"不构成投资建议"。
