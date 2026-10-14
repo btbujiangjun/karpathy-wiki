@@ -8082,3 +8082,12 @@
 - New pages: `wiki/synthesis/2026-10-13/wq101-alpha-daily.md`.
 - Updated: `wiki/index.md`（Synthesis 表新增 wq101-alpha-daily 2026-10-13 行，置于表头之后首行、investment-daily 2026-10-13 之前）、`wiki/log.md`（本条目）。
 - Contradictions: 无 claim 级冲突。⚠️ 跨源差异已在文内标注：WTI（+1.4%~+3.3%）、Brent（+1.2%~+1.8%）、JPM 收盘（$334.30 +0.39% vs $334.49 +0.45%）；10/12 为哥伦布日，美债现货休市，10Y 取期货参考值。价格/市值为估算值，报告标注"不构成投资建议"。
+
+## [2026-10-14] synthesis | tech-report-digest (2026-10-14)
+- Summary: `wiki/synthesis/2026-10-14/tech-report-digest.md`
+- Window: 2026-10-13 → 2026-10-14。
+- Featured: ★★★ **Google Gemini 4 Argon 全球 GA + Model Card**（Google DeepMind，10-13；09-30 曾限 Fairwind cyber 试点 → 本期升级 GA；large-scale sparse MoE + 原生多模态 text/image/video/audio/PDF→text；**统一 input+output token 上限 1,048,576**、默认同步输出 65,536、long decode 经 continuation protocol 至 ~1M；thinking low/medium/high；采样参数忽略、仅 implicit caching；知识截止 2026-03；**$2/$10 per M（cache −95%）→ 2026-11-30 后 $4/$20**；自报 Vals Index #1 68.9%、AutomationBench 51.3%、DeepSWE v1.1 77.9%、GraphWalks 256k–1M F1 84.2%、LVBench 91.7%，FrontierSWE v2 / Terminal-bench 4.0 / OSWorld-2.0 落后；217 页安全报告、Gray Swan IPI 0.7%、CWE-bench 68%）；★★ **Anthropic self-replicating AI（weight-based replicator）**（Frontier Red Team，10-12/媒体 10-13；Qwen3.5-9B 于 9 类硬件中 8 类起推理、Gemma4-26B-A4B 跨 15 台 $55 Android TV 盒 0.39 tok/s；8 节点 GCP 网络仅 GLM-5.2 端到端复制成功 4/5×8/8；ECI 外推小模型 2026 年底达标；作者称 upper bound + 无野外案例；防御目标 R0<1）；★★ **NVIDIA Nemotron 3.5 Bolt 74B-A9B**（预告 10-13 / 释出 10-15；74B total / ~9B active MoE、2-bit QAT → 24GB、fully open、llama.cpp/vLLM/Ollama/Unsloth/LM Studio 首发、Hermes/OpenClaw；E4B 4GB 10-23；全厂商自评）；★ **Zhipu GLM-5.3-Highspeed**（10-12；峰值 490 tok/s、1M ctx、128k 输出、thinking low/high/max）。
+- Candidate（未达门槛）: Liquid AI LFM2.5-24B-A2B（非目标机构）；ScaleDown CDM（非目标机构）；Microsoft Maia 300（infra，非卡面）；Qwen3.8-Omni-Flash（blog 09-14、全自评、无可读价格）；StepFun Step 5 权重/license（10-15 释出，10-13 官方无 repo/license）。
+- New pages: `wiki/synthesis/2026-10-14/tech-report-digest.md`.
+- Updated: `wiki/index.md`（Synthesis 表新增 tech-report-digest 2026-10-14 行，置于表头之后首行、arxiv-paper-check 2026-10-14 之前）、`wiki/log.md`（本条目）。
+- Contradictions: 无 claim 级冲突。⚠️ Argon benchmark 为 Google 自评表（部分无明显独立复现）；Anthropic 复制实验为高度简化的 upper bound、无野外案例；Nemotron Bolt 10-13 权重未公开、全厂商声明；Maia 300 "每 MW +40% token" 未点名对照 GPU；**GLM-5.4/5.5 仅名称/预测，无 model card，未采信为发布**。四条主条目 + 五条候选均经 repo 级 grep 复核 wiki 首见。
