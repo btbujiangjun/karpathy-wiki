@@ -8189,3 +8189,11 @@
 - New pages: `wiki/synthesis/2026-10-15/investment-daily.md`.
 - Updated: `wiki/index.md`（Synthesis 表新增 investment-daily 2026-10-15 行，置于表头之后首行）、`wiki/log.md`（本条目）。
 - Contradictions: 无 claim 级冲突。⚠️ 盘中数值跨源差异较大（尤其 10/15 港股低开 vs 午间反转口径），已以午间口径为准并显式标注待收盘确认；A 股部分 AI 生成页面数值（如"沪指 4134"）明显异常，已剔除不采信。
+
+## [2026-10-15] refresh | Game RL & Game AI Bot — Daily Digest (2026-10-15)
+- Summary: `wiki/synthesis/2026-10-15/game-rl-daily.md`（刷新既有 digest；窗口由 Oct 11–13 扩为 **Oct 11–15**）。
+- Method: `export.arxiv.org` API 持续 `429 "Rate exceeded."`（多次重试均失败）；改用 `websearch`/`webfetch` 采集候选，逐 ID 对照全仓 baseline（8,453 条 arXiv ID，`rg -o "26[01][0-9]\.[0-9]{4,5}"`）去重。
+- Added (new-to-wiki game papers): **2610.13995** GameSmith（synthesised zero-sum games 自博弈扩展，Qwen3-4B 13-bench avg 45.5→62.5，CRAB 至 64.9；§1）; **2610.14883** MARL-BattleGrounds（JAX-native 异构竞争 MARL benchmark，5v5 TDM，50k 步/秒 @RTX 5090；§1）; **2610.12403** ViSkill（visual-native skill cards for VLM 游戏智能体，Sokoban/FrozenLake 0.89→0.91；§2）; **2610.14727** MHWA（多时标层级 world-action model，Atari 14 游戏 IQM HNS 0.884，胜 matched JOWA-70M 0.529；§3）。
+- Dedup: 与既有 2026-10-15 `game-rl-daily` 及同日 siblings（`arxiv-daily` 1,330 IDs、`arxiv-ai-search` 1,234 IDs、`conference-digest`）做同 scope 过滤；新增 4 篇均 grep 0 命中、baseline 未收录。同窗口已收录论文（Multics 2610.17201、CivWorldBench 2610.16450、Game-Creation-Agents 2610.16776、SpireBench 2610.12596、PlaySuite 2610.07127、Memento 3 2610.11794 等）未重复。
+- Updated: `wiki/index.md`（Synthesis 表 game-rl-daily 2026-10-15 行描述补全）、`wiki/log.md`（本条目）。
+- Contradictions: none.
