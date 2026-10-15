@@ -8123,3 +8123,11 @@
 - New pages: `wiki/synthesis/2026-10-14/conference-digest.md`.
 - Updated: `wiki/index.md`（Synthesis 表新增 conference-digest 2026-10-14 行，置于表头之后首行、wq101-alpha-daily 2026-10-14 之前）、`wiki/log.md`（本条目）。
 - Contradictions: 无 claim 级冲突。⚠️ venue tag 均为 arXiv `comment`/`journal_ref` 作者自报（main vs Findings vs workshop vs Industry 在 comment 可区分处标注）；机构仅取自各论文 arXiv HTML 作者块，未消歧企业实体，部分条目标注 *(affiliation not recovered)*；CTR/广告预测架构 lane **再度为空**（§16），rec/search lane 6 篇。
+
+## [2026-10-15] synthesis | Game RL & Game AI Bot — Daily Digest (2026-10-15)
+- Summary: wiki/synthesis/2026-10-15/game-rl-daily.md
+- Window: 2026-10-11 → 2026-10-13 (announced block)
+- Featured: Game RL/opponent modeling (2610.17391, 2610.18229, 2610.15932, 2610.18808, 2610.18560); LLM-powered game agents & negotiation/role-play (2610.16776, 2610.17310, 2610.18354, 2610.18424, 2610.17327, 2610.17456); Game foundation models/world models (2610.17201 Multics, 2610.16166 Esports WM Dataset, 2610.18826 WorldOracle, 2610.18637 object memory); Benchmarks (2610.16450 CivWorldBench, 2610.18834 Game2Real-Bench); PCG/assets (2610.16423 sprite interpolation); MARL coordination (2610.17409 CTME), game theory complexity (2610.16848).
+- New pages: wiki/synthesis/2026-10-15/game-rl-daily.md
+- Updated: wiki/index.md (Synthesis table), wiki/log.md (this entry)
+- Contradictions: none
