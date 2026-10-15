@@ -8102,3 +8102,12 @@
 - New pages: `wiki/synthesis/2026-10-14/investment-daily.md`.
 - Updated: `wiki/index.md`（Synthesis 表新增 investment-daily 2026-10-14 行，置于表头之后首行、tech-report-digest 2026-10-14 之前）、`wiki/log.md`（本条目）。
 - Contradictions: 无 claim 级冲突。⚠️ 数据冲突/低置信项已在文内标注：①港股 10/13 腾讯/中芯/小米跨源差异；②微软 Azure 降本 20%（The Information，微软否认）为传闻；③Maia 300 "+40% token/W" 未点名对照系统；④长鑫存储 4F² DRAM 无规格/良率；⑤博通为 Anthropic 筹 ~$600 亿债务为单一二手源；⑥DeepSeek 融资/估值、Winverse AI 领投为报道口径；⑦ASML 10/14、TSMC 10/15 财报为前瞻（撰写时点未公布）；⑧A 股/港股 10/14 早盘数值待收盘确认。
+
+## [2026-10-14] synthesis | wq101-alpha-daily (2026-10-14)
+- Summary: `wiki/synthesis/2026-10-14/wq101-alpha-daily.md`（WorldQuant 101 Alphas 每日美股精选 Top 20，基准 = 2026-10-13 完整收盘，因子框架 = Alpha#1/#6/#53/#30/#12/#41/#19）。
+- Core narrative: **"AI 资本约束"延续下的分化整理日** —— 三大指数小幅收跌（道指 -0.35% 51,670.10 / 标普 -0.02% 7,805.45 / 纳指 -0.15% 27,204.38 / 纳指100 -0.31% / 罗素2000 -0.40%），**SOX -0.23% 12,208.80 连跌第五日**（盘中一度 -3%、尾盘靠联储 Williams 讲话收窄）。逆势主线 = **微软创 2025-10 以来纪录新高（$4T+，Maia 300 2nm + Azure 传降本 20%）**、**Meta +2.63% $762.50**、**甲骨文 +4.28%**、**能源续强**（康菲 +2.43%）、**超跌处理器芯片反弹**（AMD +1.90% $605.53、英特尔 +1.44%）。失血点 = 存储/设备（应用材料 **-6.69%**、Cadence -4.08%、KLA -3.22%、美光 -3.62%、SK 海力士 ADR -3.19%、铠侠 ADR -6.35%）、银行财报后集体走低（花旗 -5.6%、富国 -3.1%、摩根大通 -0.9%）、强生 -5.73%。**AI 基建最强边际 = 英伟达 OCP 开放 Vera Rubin 机柜设计**（MGX 1.2 / 250kW / 5000A 液冷母排 / 与思科 USFP 400G 光模块 / 800VDC）+ 微软 Maia 300 + 长鑫存储 CXMT 4F² DRAM 压制存储链。
+- Top 20（评分）: ① MSFT 9.4（纪录新高，Alpha#1+#6）② META 9.2 ③ TSM 9.1（10/15 财报，Alpha#41+#6）④ NVDA 8.9（OCP Vera Rubin）⑤ XOM 8.8 ⑥ ASML 8.7（10/14 财报）⑦ ORCL 8.7 ⑧ COP 8.6 ⑨ GOOGL 8.5 ⑩ AAPL 8.4 ⑪ V 8.3 ⑫ AVGO 8.2 ⑬ CVX 8.0 ⑭ AMAT 7.9（-6.69% 反转，Alpha#53+#30）⑮ CEG 7.8 ⑯ MU 7.7 ⑰ AMD 7.6 ⑱ JPM 7.5 ⑲ KO 7.4 ⑳ NEM 7.3。板块：半导体 7 / 平台科技 5 / 能源 3 / 支付·银行 2 / AI 电力·必需·黄金各 1。因子主线：平台/云 = Alpha#1+#6；能源/支付/银行 = Alpha#41+#6；半导体 = Alpha#41+#6（趋势）与 Alpha#53+#30（洗盘反转）双线；防御 = Alpha#19。
+- Catalysts: 10/14 **ASML Q3 财报**（共识 EPS ~$12.13–12.54 / 营收 ~$13.16–13.18B）+ 美国 9 月 CPI → 10/15 **TSMC Q3 法说会**（营收 ~NT$1.49 万亿 +51% YoY、capex $600–640 亿）+ 美国 9 月 PPI → 10/21 Tesla Q3 → 10/22 Newmont Q3 → 10/28 FOMC。
+- New pages: `wiki/synthesis/2026-10-14/wq101-alpha-daily.md`.
+- Updated: `wiki/index.md`（Synthesis 表新增 wq101-alpha-daily 2026-10-14 行，置于表头之后首行、investment-daily 2026-10-14 之前）、`wiki/log.md`（本条目）。
+- Contradictions: 无 claim 级冲突。⚠️ 价格/市值为网络检索与交易平台口径估算（10Y 跨源 5.2–5.3%）；ASML 10/14、TSMC 10/15 财报为前瞻（撰写时点未公布，仅列共识）；微软 Azure 降本 20% 为传闻（公司否认）；长鑫存储 4F² DRAM 无规格/良率；博通为 Anthropic 筹 ~$600 亿债务为单一二手源。本报告不构成投资建议。
