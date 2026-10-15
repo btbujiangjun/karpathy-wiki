@@ -8,7 +8,7 @@ tags: [game-rl, game-ai, llm-agents, reinforcement-learning, self-play, foundati
 ---
 # Game RL & Game AI Bot — Daily Digest (2026-10-15)
 
-*Latest papers on Game RL, Game AI Bots, Game Foundation Models, Procedural Content Generation, Game Benchmarks, and related techniques (Oct 11–13, 2026).*
+*Latest papers on Game RL, Game AI Bots, Game Foundation Models, Procedural Content Generation, Game Benchmarks, and related techniques (Oct 11–15, 2026; window refreshed 2026-10-15).*
 
 ## 1. Game RL, Self-Play, Multi-Agent RL & Game Theory
 
@@ -56,6 +56,24 @@ tags: [game-rl, game-ai, llm-agents, reinforcement-learning, self-play, foundati
 - **Abstract:** Proves linear last-iterate convergence of OFTRL to Nash in multiplayer harmonic games under mild regularity and broad regularizers (entropy/Tsallis/log-barrier). Analysis uses dual perspective and energy dissipation with tight bounds; also holds for Extragradient FTRL.
 - **Key innovations:** Theoretical convergence guarantees for optimistic learning in a class of games.
 - **Relevance:** Game theory foundation for learning dynamics in adversarial/cooperative settings.
+
+### 2610.13995 | GameSmith: Scaling Zero-Sum Self-Play with Synthesised Games
+- **Authors:** Weixian Waylon Li, Jiaxin Zhang, Han Zhou, Chengzu Li, Ke Wang, Fengxiang He, Yiwen Guo
+- **arXiv:** https://arxiv.org/abs/2610.13995 (cs.LG)
+- **Affiliation:** not stated
+- **Published:** 2026-10-14
+- **Abstract:** Scales LLM post-training on two-player zero-sum games on two fronts. (1) Game supply: an LLM synthesises games inside templates with fixed reward/observation/hidden-information code; each game is verified by seed-paired replay and an independent re-implementation, then expanded into encoding/rule/size variants — yielding 26 new games in 29 families and 336 verified variants from the three SPIRAL templates. (2) Post-training: distill a larger teacher's (Qwen3-32B) self-play on these games, then self-play RL with CRAB, an advantage estimator crediting each decision against a shrinkage estimate of its position's expected return, defined on every variant. On Qwen3-4B-Base, distillation lifts the 13-benchmark mean pass@1 from 45.5 to 62.5 (above the three SPIRAL games at the same budget) and self-play with CRAB reaches 64.9; the ordering holds across models and transfer grows with the number of game families.
+- **Key innovations:** Verified synthesis of many zero-sum games as a scalable distillation/RL environment; CRAB baseline that shares information across variants for corpus-wide advantage estimation.
+- **Relevance:** Direct extension of SPIRAL-style self-play; shows game-based post-training transfers to general reasoning.
+
+### 2610.14883 | MARL-BattleGrounds: A JAX-native Benchmark for Heterogeneous and Competitive Multi-agent RL
+- **Authors:** Ulixes Tariq Hawili, Subramanian Ramamoorthy, Yoann Altmann, Ignacio Carlucho
+- **arXiv:** https://arxiv.org/abs/2610.14883 (cs.LG, cs.AI, cs.MA)
+- **Affiliation:** not stated
+- **Published:** 2026-10-14 (submitted 2026-10-10)
+- **Abstract:** A sample-/compute-efficient JAX-native benchmark for heterogeneous, competitive team-vs-team MARL, filling the gap between simple benchmarks (SMAX) and costly ones (Dota 2). First mode, Team Deathmatch, is a simultaneous turn-based game between two teams of five heterogeneous agents (five classes with distinct basic/passive/ultimate abilities designed to synergize and counter). 52 hand-designed maps with a 12-map curriculum plus held-out validation/test maps. Provides an 8-scenario endgame generalization challenge and a monthly round-robin Elo tournament; releases six deep MARL baselines, three scripted bots, replay viewer, self-play/cross-play/curriculum/zero-shot coordination tools, and an LLM-agent API (evaluates Qwen3.5-9B vs the strongest policy). Runs 50,000 5v5 steps/sec on one RTX 5090 with 1,024 parallel games; records 11,192 metrics per game across 28 topics.
+- **Key innovations:** JAX-native "missing middle" competitive MARL benchmark with heterogeneous classes, tournament/Elo infrastructure, and a public opponent pool.
+- **Relevance:** New evaluation platform for competitive game AI, self-play, and population-based methods.
 
 ## 2. Game AI Bots & LLM-Powered Game Agents
 
@@ -113,6 +131,15 @@ tags: [game-rl, game-ai, llm-agents, reinforcement-learning, self-play, foundati
 - **Key innovations:** Compositional evaluation metric; C-RL trains for team effectiveness, not isolated correctness.
 - **Relevance:** Training LLM agents to collaborate in multi-agent gameplay/reasoning.
 
+### 2610.12403 | ViSkill: Reinforcing VLM Agents with Evolving Visual-Native Skills
+- **Authors:** Hongxing Li, Dingming Li, Yixin Li, Yong Du, Wenqi Zhang, Weiming Lu, Jun Xiao, Yueting Zhuang, Yongliang Shen
+- **arXiv:** https://arxiv.org/abs/2610.12403 (cs.CV)
+- **Affiliation:** Zhejiang University
+- **Published:** 2026-10-08
+- **Abstract:** Skill-augmented agents distil successful trajectories into reusable strategies, but most approaches are text-centric, linearising spatial layouts and action–state correspondences and losing geometric structure. ViSkill encodes successful interactions as composite visual skill cards (annotated trajectory frames + distilled policy strategy) directly accessible to VLM agents. Retrieved skills guide both inference and reward shaping, while successful trajectories passing quality/novelty gates are distilled back into the library, forming a closed loop where skill accumulation and policy improvement reinforce each other; an optional cold-start pre-populates the library with solver-derived seed skills. On Sokoban, FrozenLake, and PrimitiveSkill (2D spatial planning + 3D manipulation), ViSkill reaches 0.89 overall success (0.91 with cold-start), beating VAGEN and AtlasVA and converging faster than standard PPO.
+- **Key innovations:** Visual-native skill representation (image cards) instead of text; joint online skill distillation with PPO and skill-guided reward shaping.
+- **Relevance:** VLM game agents; sample-efficient skill learning in puzzle/planning environments.
+
 ## 3. Game Foundation Models & World Models
 
 ### 2610.17201 | Multics: Generative Multi-Player World Model with Hierarchical Communication
@@ -159,6 +186,15 @@ tags: [game-rl, game-ai, llm-agents, reinforcement-learning, self-play, foundati
 - **Abstract:** Benchmarks connection between procedurally generated game tasks and real-world visual reasoning across 4 groups (fine-grained perception, spatial, constraint reasoning, sequential planning). 1000 verified game samples + 400 real samples aligned by reasoning requirements. Strong correlation (Pearson/Spearman ~0.935) between game and real performance across 25 VLMs; one-shot transfer shows mixed effects.
 - **Key innovations:** Quantifies game-to-real transferability of visual reasoning; aligned benchmark design.
 - **Relevance:** Game benchmarks as proxies for real-world reasoning; game foundation model evaluation.
+
+### 2610.14727 | MHWA: Multi-timescale Hierarchical World-Action Model
+- **Authors:** Pengcheng Pan, Guoqing Ma, Yuhan Zhang, Yang Chen, Yichen Liu, Ziheng Li, Shan Yu
+- **arXiv:** https://arxiv.org/abs/2610.14727 (cs.LG)
+- **Affiliation:** not stated
+- **Published:** 2026-10-10
+- **Abstract:** Autoregressive world models for sample-efficient decision making suffer from increasing open-loop drift/error accumulation within the planning horizon. MHWA introduces a strided high-level context channel that reduces global-context update frequency to curb compounding drift, and uses context-aware routing so a gating network dynamically reconfigures a low-level mixture of experts from both global context and current observations — enabling flexible high-low coordination and alleviating interference common in static hierarchies. Using RLiable seed-by-game aggregation, MHWA (77M params) reaches an IQM human-normalized score (HNS) of 0.884 across three seeds on a 14-game Atari subset with 10% subsampled offline data, beating a matched JOWA-70M baseline (0.529) and matching JOWA-150M while using ~half the parameters and 70.88% fewer training FLOPs per sequence.
+- **Key innovations:** Multi-timescale hierarchical world-action model with context-aware MoE routing and strided high-level context.
+- **Relevance:** Efficient world models for offline Atari/Game RL; reduces compounding rollout drift.
 
 ## 4. Procedural Content Generation & Game Assets
 
@@ -226,6 +262,6 @@ Benchmark connecting game tasks to real-world visual reasoning transfer.
 
 ## Summary
 
-The Oct-11–13 block shows a strong emphasis on **multi-agent coordination**, **LLM-powered agents**, **world models** (especially multi-player with communication), and **game benchmarks**. Classic arcade-style Game RL (Atari-style) is less represented than theoretical/game-theoretic, LLM-agent, and world-modeling work. Notable highlights include **Multics** (hierarchical multi-player world model), **CivWorldBench** and **Esports World Model Dataset** (benchmarks/datasets), **ADiCo** (closed-loop behavioral diversity for MARL), and **Game-Creation-Agents** (end-to-end LLM-driven game production).
+The Oct-11–15 block shows a strong emphasis on **multi-agent coordination**, **LLM-powered agents**, **world models** (especially multi-player with communication), and **game benchmarks**. Classic arcade-style Game RL (Atari-style) is less represented than theoretical/game-theoretic, LLM-agent, and world-modeling work. Notable highlights include **Multics** (hierarchical multi-player world model), **CivWorldBench** and **Esports World Model Dataset** (benchmarks/datasets), **ADiCo** (closed-loop behavioral diversity for MARL), and **Game-Creation-Agents** (end-to-end LLM-driven game production). Papers surfaced in the Oct 13–14 refresh add **GameSmith** (scaling self-play post-training with synthesised zero-sum games), **MARL-BattleGrounds** (JAX-native heterogeneous competitive MARL benchmark), **ViSkill** (visual-native skill cards for VLM game agents), and **MHWA** (hierarchical world-action model beating matched Atari baselines at ~half the parameters).
 
 *Affiliations marked "not stated" where not explicitly given; arXiv metadata lacks reliable affiliation extraction in general.*
