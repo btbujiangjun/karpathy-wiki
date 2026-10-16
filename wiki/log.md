@@ -8247,3 +8247,11 @@
 - New pages: `wiki/synthesis/2026-10-16/tech-report-digest.md`.
 - Updated: `wiki/index.md`（Synthesis 表新增 tech-report-digest 2026-10-16 行，置于表头之后首行）、`wiki/log.md`（本条目）。
 - Contradictions: ⚠️ **Meta vs NVIDIA same-day "most capable US open-weight"** claims with inconsistent AA Index readings (39 vs 26.5) — presented side by side, deferred to Artificial Analysis's live leaderboard. License divergence flagged (Muse Model License / OpenMDW-1.1 / StepFun Model License 1.0 / MIT).
+## [2026-10-16] synthesis | Conference & arXiv Digest (2026-10-16)
+
+- Summary: wiki/synthesis/2026-10-16/conference-digest.md — 20 selected papers from the fresh Fri 2026-10-16 arXiv block (IDs > 2610.20610, all new-to-wiki against 9,222 baseline IDs; 589 candidates harvested across target categories, 20 curated). Covers Rec/IR/Ads (TransX, RecSoup CIKM'26, Hybrid Gen-Tagging EMNLP'26 Industry, Sequential Auctions), Agents (MAI-Gym, PROBE NeurIPS'26, MemComposer, Priming for Agentic Post-Training, Terminal-RSI), Reasoning/RL (Confidence-Calibrated Inference Expansion NeurIPS'26, Learning to Read Out NeurIPS'26, Phase Kernel NeurIPS Spotlight), Code (SWE-at-Scale, OPRD), KV/Efficiency (DropKV NeurIPS'26, KV cache scaling), Games/Mechanism (Market Incentives NeurIPS'26, Why Alternation Speeds Up CFR), Generative/Sequential (Noise-Space Reward Alignment, Quantile-Guided Diffusion), Benchmarks (AgentEval, Grid-Bench, OmicsBench).
+- Method: listing-page harvest (`arxiv.org/list/cs.*/new`), per-paper fields (Title/Authors/Affiliation/Venue+Comments/Abstract/arXiv/Subjects). Affiliation inferred from author context; venue tags parsed from Comments where present (CIKM'26, EMNLP'26 Findings/Industry, NeurIPS'26 including Spotlight). Dedup: repo-wide `\d{4}\.\d{4,5}` grep across `wiki/**/*.md` gave 9,222 unique IDs; filtered to candidates not present; all featured IDs returned 0 hits before writing.
+- New pages: wiki/synthesis/2026-10-16/conference-digest.md
+- Updated: wiki/index.md (added Synthesis row for conference-digest)
+- Contradictions: none
+
