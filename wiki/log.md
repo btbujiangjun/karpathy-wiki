@@ -8209,3 +8209,13 @@
 - New pages: `wiki/synthesis/2026-10-15/arxiv-paper-check.md`.
 - Updated: `wiki/index.md`（Synthesis 表新增 arxiv-paper-check 2026-10-15 行，置于表头之后首行）、`wiki/log.md`（本条目）。
 - Contradictions: none direct. ⚠️ Affiliation labels marked *(inferred)* from title/author-block company names (no affiliation metadata field); v1 submission dates differ from announcement days (explicitly stated per entry).
+
+## [2026-10-16] synthesis | arXiv Paper Check — AI & CTR (2026-10-16)
+- Summary: `wiki/synthesis/2026-10-16/arxiv-paper-check.md` (type: synthesis).
+- Trigger: scheduled user request to search arXiv for new AI + CTR papers in the last 24h, summarize the most interesting, and file a report.
+- Method (degraded mode): `export.arxiv.org/api/query` returned `HTTP 429` ("Rate exceeded") on date-range/`sortBy` queries and the simple listing query timed out → results assembled from arXiv recent-listing snapshots and known attention papers. Abstracts were not exhaustively re-fetched; a full crawl would need to respect API backpressure.
+- CTR status: no brand-new CTR-prediction submissions surfaced in the sampled 2026-10-15/16 window; three recurring CTR papers (Aug-2026 v1) re-listed for relevance — **CRRN** trigger-introduced rec `2608.22973`, **PRIME** subgroup-gradient residual MoE `2608.30449`, **Mine-Then-Train** multimodal CTR `2608.24091`.
+- Featured AI/agentic work: Co-Evolving Acting & Forecasting `2610.20597`, Scaling Discovery Requires Forgetting `2610.20563`, ActiveEvidence `2610.20532`, Zero-Shot Tool Selection via Validity `2610.20388`, TreeFlex `2610.20334`, Argument Graph Uncertainty `2610.20312`, Reflect After Failure (embodied self-evolving agents), CASI set-intervention credit assignment for agentic retrieval `2610.20293`.
+- New pages: `wiki/synthesis/2026-10-16/arxiv-paper-check.md`.
+- Updated: `wiki/index.md`（Synthesis 表新增 arxiv-paper-check 2026-10-16 行，置于表头之后首行）、`wiki/log.md`（本条目）。
+- Contradictions: none. ⚠️ Some author lists / arXiv IDs in the report were reconstructed from listing snippets and may be imprecise; the Reflect-After-Failure entry has **no verified arXiv ID** in this pass (left blank rather than guessed) — verify before citing.
