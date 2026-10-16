@@ -8255,3 +8255,16 @@
 - Updated: wiki/index.md (added Synthesis row for conference-digest)
 - Contradictions: none
 
+
+## [2026-10-16] synthesis | 投资热点日报 — 美股 / 港股 / A 股 / 中概股（2026-10-16）
+- Summary: `wiki/synthesis/2026-10-16/investment-daily.md` (type: synthesis).
+- Trigger: scheduled user request to search today's US / HK / A-share / China-concept investment hotspots (tech & AI focus), write a daily report, update index + log, then git commit and push.
+- Data basis: 美股 = **2026-10-15 周四完整收盘**；港股 = **10/15 收盘 + 10/16 早盘盘中**；A 股 = **10/16 收盘**；中概 ADR = **10/15 收盘**。
+- ★ 主线①：**AI 融资成本恐慌缓和**——9 月 PPI 同比 +6.3%（2022 年来最大）但 10Y 美债回落至 ~5.09%；道指 +1.08% 52,177.69、标普 +0.33% 7,744.06、纳指 +0.08% 26,713.03；SOX 连跌第 7 日；CoreWeave +5.94%（前日 −15% 后反弹）、Dell −6.8% / HPE −7.1%；资金轮动至医疗/材料/金融。
+- ★ 主线②：**TSMC Q3 纪录财报但 2027 审慎**——净利 NT$7,630.6 亿 +68.7% YoY（第 6 连续纪录季）、全年营收指引上调 +44%、capex $600–640 亿；TSM ADR −1.8% $422.25、NVDA −1.84% $217.23。
+- ★ 主线③：**中国 AI 硬件杀估值→抢反弹**——港股 10/15 恒科 −2.72% 4,060.99 / 10/16 早盘 +2.0% 4,142.50（腾讯 +2.5%/阿里 +3.2%/快手 +5.3%）；A 股液冷服务器/CPO/算力租赁涨停潮（英维克、大元泵业、优刻得、首都在线、大位科技），沪指 +0.05% 4,134.02、创业板 +1.32%。
+- 中概：金龙指数 +1.96%（网易 +2.73%、携程 +2.70%、京东 +2.66%、蔚来 +2.64%、小鹏 +2.28%、BABA −0.04%）。
+- 新模型：NVIDIA Nemotron 3.5 Super VL（1200 亿参数开源 VLM）、苹果×Meta 高端 Mac 本地跑 Muse Spark Open、豆包 Seedance 2.0。
+- New pages: `wiki/synthesis/2026-10-16/investment-daily.md`.
+- Updated: `wiki/index.md`（Synthesis 表新增 investment-daily 2026-10-16 行，置于表头之后首行、conference-digest 之前）、`wiki/log.md`（本条目）。
+- Contradictions: 排除 2 条——①"美股三大指数集体收跌（道指 −0.51%）"GMT8 源与本日全部来源方向相反（陈旧/错误）；②"蔚来港股暴跌逾 13%（GIC 诉讼）"与 10/15 ADR +2.64% 矛盾且时间线属 2025 背景（旧文）。TSM ADR 跌幅 −1.73%/−1.80%、阿里 ADR −0.04%/−0.05% 为四舍五入差异，未裁定。港股为上午盘中数据。
