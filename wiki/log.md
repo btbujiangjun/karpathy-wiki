@@ -8372,3 +8372,14 @@
 - Updated: `wiki/index.md`（Synthesis 表新增 game-rl-daily 2026-10-17 行，置于 2026-10-17 分组内）、`wiki/log.md`（本条目）。
 - Contradictions: none against existing wiki sources; all 24 featured items new-to-wiki and single-source. Open questions flagged in-page, not resolved: ⚠️ **naming collision** — Realtime-Bench `2610.22155` (UT Austin×OSU×UIUC×NVIDIA×Northwestern) vs 10-16 RealtimeBench `2610.20665` (PKU×Samsung), independent same-block benchmarks, neither cites the other; wall-clock/paused-clock/token-clock latency taxonomy; and the ACT3D (learns to *acquire* visual evidence) vs Grid-Bench (complete-state accuracy collapses over long event histories) tension.
 - Temp artifacts: `/var/folders/q9/tsl_tl5548x7j892sgt3qvlc0000gn/T/opencode/` (listing HTML, `abs/`, `html/`, parsed JSON) — deleted after write-up.
+
+## [2026-10-17] synthesis | WorldQuant 101 Alphas 每日精选 — 美股 Top 20（2026-10-17）
+- Summary: `wiki/synthesis/2026-10-17/wq101-alpha-daily.md` (type: synthesis)。分析基准 = 美股 **10/16 周五完整收盘** + 本周催化剂。
+- 主题：**"AI 交易再遭重挫 + 油价破 $100 → 防御全面胜利"**。市场（10/16）：标普 −1.09% 7,659.44（跌幅大于 84% 交易日）、纳指 −2.15% 26,140.03（距 10/6 高点 −5.3%）、纳指 100 −2.50%/−2.79% 29,188、道指 −0.34% 52,002.41、罗素 2000 −1.66% 2,721.37、VIX **19.99 +21.45%**、10Y 5.10%；板块 **6 涨 5 跌：能源 +2.52% 领涨** / 公用事业 +1.34% / 必需消费 +1.08% vs **科技 −3.02% 领跌**；WTI ~$101（+3.5%）、金 ~$4,200；广度恶化（2,977 涨 / 6,694 跌，1,198 只创 52 周新低，仅 23% 个股高于 50 日均线）。
+- 关键催化：油价破 $100（伊朗核威胁 + 胡塞袭击也门 + 霍尔木兹风险，传埃克森 Q3 受"伊朗战争"增益 ~$4.5B）；AI 融资/回报担忧延续（CoreWeave 债务危机、Anthropic 估值缩水、微软自研模型摩擦）；沃什讲话后 10 月加息押注回落至 ~15%（瑞银预计下次 12 月）；医疗财报周开启（默克 FDA 获批、AbbVie 癌症数据大涨、疫苗股回落）；特斯拉/SpaceX 合并预期概率升至 56%。
+- **Top 20（评分）**：① XOM 9.3（Alpha#41+#1）② LMT 9.1（Alpha#41+#6）③ CVX 9.0（Alpha#1+#41）④ COP 9.0（Alpha#1+#12）⑤ LLY 8.8（Alpha#1+#19）⑥ WMT 8.7（Alpha#1+#6）⑦ NEM 8.6（Alpha#53+#1）⑧ ABBV 8.5（Alpha#12+#1）⑨ MPC 8.4（Alpha#41+#19）⑩ VLO 8.3（Alpha#53+#1）⑪ AMGN 8.1（Alpha#1+#6）⑫ PSX 8.0（Alpha#41+#1）⑬ AEM 8.0（Alpha#53+#41）⑭ CVS 7.9（Alpha#53+#12）⑮ TSLA 7.8（Alpha#53+#30）⑯ MSFT 7.6（Alpha#19+#53）⑰ GOOGL 7.5（Alpha#19+#41）⑱ UNH 7.4（Alpha#1+#19）⑲ AAPL 7.3（Alpha#19+#12）⑳ CEG 7.2（Alpha#41+#53）。板块：能源 6 / 医疗 5 / 平台科技 3 / 黄金 2 / 国防·必需消费·AI 电力·EV 各 1。
+- 与上期（10-16）对比：领涨从医疗/材料/金融反转为**能源**；领跌从能源反转为**科技 −3.02%**；Top 定调由 LLY 9.3 转为 XOM 9.3（能源新高日）；金融清仓、半导体全撤、前日反弹腿（QCOM/ARM/MU/TSM/NVDA/AVGO/META/NKE）止盈/移出，新入能源 6 连击 + 国防 + 医疗修复腿 + 黄金 + 事件型 TSLA + AI 电力 CEG。
+- ⚠️ 口径提示：VIX 19.99（+21.45%，pulsafi）vs 另源盘中 ">22"；纳指 100 −2.50%（marketscreener）/−2.79%（stocksetups）；油价 WTI ~$101 / Brent 源间 $104-110 区间，取近似区间；CVX $224.99（stockti）与另源 $218.44 存在时点差，采用 10/16 收盘口径；市值为网络检索估算。
+- New pages: `wiki/synthesis/2026-10-17/wq101-alpha-daily.md`。
+- Updated: `wiki/index.md`（Synthesis 表新增 wq101-alpha-daily 2026-10-17 行）、`wiki/log.md`（本条目）。
+- Contradictions: 无对既有 wiki 的实质矛盾；跨源价格/VIX 口径分歧已在正文与本期条目显式披露。完成后 git 提交并推送。
