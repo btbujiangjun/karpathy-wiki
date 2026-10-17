@@ -8333,3 +8333,17 @@
 - New pages: `wiki/synthesis/2026-10-17/investment-daily.md`。
 - Updated: `wiki/index.md`（Synthesis 表新增 investment-daily 2026-10-17 行，置于表头之后）、`wiki/log.md`（本条目）。
 - Contradictions: 无新增实质性矛盾；已排除 2025 口径旧文（"金龙 −0.91%"、"恒指 25,888.51"、"蔚来 −9% GIC 诉讼"等）。
+
+## [2026-10-17] synthesis | LLM Tech Report Digest — 2026-10-17
+- Summary: `wiki/synthesis/2026-10-17/tech-report-digest.md` (type: synthesis)。窗口 **2026-10-16 → 2026-10-17**。
+- 头条（★★★）：**Microsoft AI MAI-Base-2 预训练报告**（`microsoft.ai/news/frontier-pre-training-at-microsoft-ai/`，公告 10-15 / 10-16 广泛覆盖，**10-16 期漏收本期补录**）——**80B 激活 / 2.8T 总参数 MoE**、**102 层 / hidden 8704 / 每层 MoE**（1 shared + 7 routed / 512 experts）、**原生 VLM**、**50T tokens（视觉-语言 18% ≈ 9T，4.5T unique）**、知识截止 2026-03；**16,000×GB200 × 38 天（2026-08~09）、MFU 21%、goodput 89%**；**Muon 优化器** + MXFP8 E4M3 + 全局权重/激活梯度裁剪；**较 DeepSeek-V4-Pro-Base 4.2–12.3× FLOPs-efficient**、较 MAI-Base-1 6.3–12.7×；**明确无蒸馏**；**⚠️ 不开放权重**（仍在 post-training，权重经 Foundry 授权受信伙伴）；MAI-Base-3 筹备中。
+- ★★：**NVIDIA arXiv 2610.22019「Priming Base Models for Agentic Post-Training: An Open Midtraining Recipe」**（10-16）——首次以开放配方公开 pretraining↔post-training 之间的 **midtraining**：**256K 上下文、数千亿 token**、自然软件工程语料（packed repos / PRs / commit histories / build logs）+ 少量 agentic traces。**Nemotron 3.5 Lightning**（500B tokens）：SWE-bench Verified **60.7→64.5**、Multilingual **55.8→62.8**、Pro **32.0→35.5**；**Nemotron 3.5 Super**（280B tokens）：DeepSWE **11.7→15.7**、SWE-bench Verified **72.9→74.3**（相同 full SFT 后，跨 harness 鲁棒性亦提升）。**方法教训：base-model 代理指标与 post-training 结果不可靠相关 → 评测协议建在短固定 SFT run 上**；附消融。作者 Soumye Singhal 等。
+- ★★（非 19 家目标机构）：**Reflection AI Beam 1.0 开放权重落地**（10-16）——**501B 总参 / 23B 激活稀疏 MoE**、**1M 上下文**、**Apache 2.0**、**BF16/FP8/NVFP4 + DFlash2 drafter**（NVFP4 ~280GB）、reasoning 五档 low/medium/high/xhigh/max + `preserve_thinking`；day-0 transformers/SGLang/vLLM/Unsloth/Axolotl + 全参数 RL（Miles）；**Mirror CLI**（Python 前端 + Rust agent core）+ **Beam Safety Technical Report**；**23.8T 预训练 token；10.5K GB300 × 4 周、>1 亿 rollouts**；40+ 伙伴。BF16 自评：SWE-bench Verified 81.6 / SWE Bench Pro v2-Hard 76.5 / Terminal Bench v2.1 80.1 / DeepSWE v1.1 43.3 / GPQA-D 90.6 / AIME 2026 97.7。OpenRouter $0.25/$1.00。**结清 10-05 / 10-09 期"承诺开放权重待落地"。**
+- ★ **OpenAI GPT-6 Astra Pro 并行 agents**（10-16，ChatGPT Pro 产品更新，非技术报告）——多 agent 并行 + 进度跟踪；无 benchmark/定价/agent 上限，subagent 配额口径不明；API 侧并行 subagents 为 Responses API beta（GPT-6.1 Sol / GPT-5.6），另一套口径。
+- ★ **Google DeepMind Gemini 4 Argon 机器人物理推理博文**（10-16，首方 demo）——**ERQA 87%（纯推理）称 SOTA**；含 Spot / 76-DoF Apollo 2 / ALOHA 2 折纸 demo；无对照模型、无 release/定价/API、无 trial 计数（非 model card，Argon 卡见 10-13/10-14 期）。
+- ★ **Mistral Large 4 STEMBench 公告**（10-16；1T/49B natively multimodal）——Ulam 私有 STEMBench 工程/天文成绩；重申"美欧最强开放权重"；**开放权重承诺 10 月底（HF 占位页 10-31）**；激活参数口径冲突延续不裁定。
+- ⚠️ **未落地 / 排除**：DeepSeek **V4.1 Pro** 仍未发布（无卡/端点/价格/日期；第三方预告 11-12）；"Moonshot 10-17 开源 Kimi K3"判为**旧闻二次传播**（K3 权重 07-27）；Anthropic Haiku/Sonnet 5.5 的 10-16 报道为 The Batch 分析非新发布。
+- 方法：优先一手来源（reflection.ai、arxiv.org/abs/2610.22019、microsoft.ai PDF + 多篇二手交叉核验）；`web_search_exa` 多次 timeout，`export.arxiv.org` API 返回 `HTTP 429`，microsoft.ai 直连 `403`（Cloudflare）→ 改用单篇 `arxiv.org/abs` + websearch 命中摘要交叉核验。
+- New pages: `wiki/synthesis/2026-10-17/tech-report-digest.md`。
+- Updated: `wiki/index.md`（Synthesis 表新增 tech-report-digest 2026-10-17 行，置于 2026-10-17 分组内）、`wiki/log.md`（本条目）。
+- Contradictions: 无对既有 wiki 的实质矛盾；⚠️ 待落地项已在正文显式标注（Mistral Large 4 权重 10-31、DeepSeek V4.1 Pro、Beam 托管性能优化中）。
