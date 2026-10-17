@@ -8295,3 +8295,27 @@
 - Updated: `wiki/index.md` (Synthesis table — game-rl-daily 2026-10-16 row added)
 - Contradictions: none against existing wiki sources. Open questions flagged in-page: latency-vs-capability (RealtimeBench/System1-Arena) and self-play-without-demonstrations generality (SHRED/uncertainty-driven self-play) — noted, not resolved.
 
+
+## [2026-10-17] synthesis | arXiv AI Search — Recent Papers (2026-10-17)
+- Summary: `wiki/synthesis/2026-10-17/arxiv-ai-search.md` (type: synthesis).
+- Trigger: scheduled user request to search arXiv for recent AI/LLM/recommendation/advertising/sequential-modeling/CTR/games papers (title, authors, institution, abstract, key innovations, link), write the report, then update index + log.
+- Window: **Saturday run over the fresh Friday 2026-10-16 announcement block** (arXiv posts no weekend announcements; `/list/{cat}/new` header reads *"Showing new listings for Friday, 16 October 2026"*); IDs `2610.20614 → 2610.22372`.
+- Method (degraded mode): export API `export.arxiv.org/api/query` returned **`HTTP 429` ("Rate exceeded.")** on all eight attempted date/category queries → pivoted to `arxiv.org` **listing pages** (`/list/cs.{AI,CL,LG,IR,GT,MA}/new?show=2000`, different host, unthrottled): **897 unique entries**, 638 with `2610.*` IDs. Abstracts per-paper from `arxiv.org/abs/{id}` (browser UA), affiliations from LaTeXML `arxiv.org/html/{id}v1` author blocks.
+- Dedup: repo-wide `\d{4}\.\d{4,5}` baseline = **9,226 IDs**; **585 `2610.*`** new-to-wiki (540 in `2610.2xxxx`); **27 featured, all grep-verified 0-hit**; no same-day `wiki/synthesis/2026-10-17/` siblings existed → **0 collisions**.
+- Sections (27): Rec/Ads (4) · OPD/Post-Training (6) · RLVR/Reward & Data (3) · Agents/Memory/Self-Improvement (4) · Efficiency/Inference (3) · Sequential/Time-Series (2) · Games/GT/MARL/Bandits (5).
+- ★ Thematic: **① OPD cluster industrializes** (10-09 design-axis thesis → 5-paper program: Training-Free OPD `2610.22236`, STOPD `2610.21337`, Compatibility/teacher-routing `2610.21234`, CCE-OPD `2610.21195`, Waypoint-OPD `2610.21601`); **② KV-cache "post-selection" thesis** (RoPERelay `2610.21126` positional geometry + MIT/IBM `2610.22016` fidelity≠consumability); **③ CTR empty for 5th consecutive October block**, advertising = generative-engine visibility (VoteGEO-Bench `2610.21330`).
+- Affiliation provenance: **27/27** recovered from LaTeXML author blocks (2 from author affiliation tables); zero inferred from surname/domain. `2610.20682` single author as-printed under "Department of Neurology, University of Pittsburgh" — reported faithfully.
+- New pages: `wiki/synthesis/2026-10-17/arxiv-ai-search.md`.
+- Updated: `wiki/index.md`（Synthesis 表新增 arxiv-ai-search 2026-10-17 行，置于表头之后首行）、`wiki/log.md`（本条目）。
+- Contradictions: none against existing wiki sources. ⚠️ In-page tension noted, not resolved: OPD target-design (§5.1) vs RLVR *error-coherence* theory `2610.20898` — argued to be the same problem from two ends. FEB-30 audit `2610.22209` caveat applied to the memory-agent claims in the same block.
+- Temp artifacts: `/var/folders/q9/tsl_tl5548x7j892sgt3qvlc0000gn/T/opencode/arxiv-ai-search-20261017/` — deleted after write-up.
+
+## [2026-10-17] synthesis | Conference Digest — Top ML/AI Venues 2025-2026 (2026-10-17)
+- Summary: `wiki/synthesis/2026-10-17/conference-digest.md` (type: synthesis) — accepted-paper + award harvest across the requested venue set and cross-cutting topics.
+- Venues: **ICML 2026** (Seoul, Jul 6-11; 23,918 submissions → 6,352 accepted = 26.6%, 536 spotlights, 168 orals; Outstanding Papers incl. *The Flexibility Trap* — structured-order RL for diffusion LMs — and *High-Accuracy Sampling for Diffusion Models and Log-Concave Distributions*), **NeurIPS 2025** (San Diego/Mexico City, Dec 2025; 7 award papers), **ICLR 2026** (Rio de Janeiro, Apr 23-27; orals), **AAAI 2026** (Singapore, Jan; agents), **KDD 2026** (Jeju, Aug 9-13; GR4AD `2602.22732`, EST `2602.10811`, FAT `2511.12081`, Tencent GPR), **CVPR 2026** (Denver, Jun; best/highlights: D4RT, O-Voxel, NitroGen, StreamDiT, TV2TV), **SIGIR 2026** (Melbourne, Jul 20-24; 234/1,271 = 18% acceptance), **WWW 2026**, **ACL 2026 / EMNLP 2025** (Suzhou, Nov 2025; awards), **CIKM 2025** (Seoul, Nov), **RecSys 2025** (Prague, Sep 22-26; GRACE, Semantic-ID prefix-ngram, HSTU context parallelism).
+- Cross-cutting themes: code-execution prediction & program reasoning (DUET, CoRE, DexBench, SWE-Flux `2609.28449`, `2610.11889`, `2604.03253`, `2604.16320`, `2607.25996`); LLM agents/memory/RLVR; generative & video models; sequential modeling & CTR/advertising scaling; games & strategic reasoning; benchmarks.
+- Method: web harvest of official conference pages (icml.cc, cvpr.thecvf.com, kdd2026.kdd.org, thewebconf, sigir2026.org, 2025.emnlp.org, recsys.acm.org, aaai.org), ACM DL proceedings, OpenReview, arXiv listing/abs pages, lab round-ups (Google Research, NVIDIA, Meta, Amazon Science). **arXiv export API returned `HTTP 429` ("Rate exceeded")** on date-range queries — proceedings/listing fallback used.
+- Dedup: cross-checked against sibling digests `2026-10-15`, `2026-10-16`, and `2026-09-11`. Affiliations as printed; tentative/inferred flagged.
+- New pages: `wiki/synthesis/2026-10-17/conference-digest.md`.
+- Updated: `wiki/index.md`（Synthesis 表新增 conference-digest 2026-10-17 行）、`wiki/log.md`（本条目）.
+- Contradictions: none adjudicated; venue-date/acceptance-rate figures vary across aggregators (reported as primary-venue figures).
