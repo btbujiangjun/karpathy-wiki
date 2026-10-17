@@ -129,7 +129,7 @@ tags: [game-rl, game-ai, llm-agents, reinforcement-learning, self-play, multi-ag
 - **Affiliation**: not stated on arXiv metadata / LaTeXML author block; *not inferred*.
 - **Venue**: **SODA 2027** — also arXiv:2610.22149 (15 Oct 2026) — `cs.GT`. 56 pages.
 - **Link**: https://arxiv.org/abs/2610.22149
-- **Abstract and key innovations**: Turn-based games have "the state of linear programming in the 1970s": **policy iteration (PI)** and **value iteration (VI)** work well in practice but are **exponential-time** on some inputs, and no polynomial algorithm is known. A prior result (Loff & Skomra) gave **smoothed-polynomial** PI for discounted and mean-payoff games on an **ergodic** graph. This paper **drops the ergodicity assumption**: the PI algorithms run in smoothed-polynomial time on **any game graph**, via a generalized smoothed-analysis criterion and a new proof. It also gives **three smoothed-polynomial VI algorithms** (a direct one, plus a faster "Q(γ_H)-style" algorithm?) — specifically, two based on standard fixed-point iterations and a simultaneous-elimination style method improving the bound.
+- **Abstract and key innovations**: Turn-based games have "the state of linear programming in the 1970s": **policy iteration (PI)** and **value iteration (VI)** work well in practice but are **exponential-time** on some inputs, and no polynomial algorithm is known. A prior result (Loff & Skomra) gave **smoothed-polynomial** PI for deterministic discounted and mean-payoff games on an **ergodic** graph. This paper **drops the ergodicity assumption**: their PI algorithms run in **smoothed-polynomial time for any game graph**, via a generalized criterion under which a game is "well-conditioned" and a new proof. It additionally gives **three smoothed-polynomial VI algorithms** (two fixed-point-iteration variants plus a faster simultaneous-elimination variant) with improved bounds. The framing is explicitly the **Spielman–Teng smoothed-analysis** explanation for why PI performs well in practice.
 - **Why it matters here**: the strongest fresh **theory-of-game-solving** result in the wiki — it explains *why* the value/policy iterators used across game AI work well, in the Spielman–Teng smoothed-analysis sense, now without the ergodicity crutch.
 - **Caveats**: **fully fresh — 0 hits in wiki**; deterministic (not stochastic) games; smoothed (not worst-case) guarantees.
 
@@ -219,7 +219,7 @@ tags: [game-rl, game-ai, llm-agents, reinforcement-learning, self-play, multi-ag
 - **Caveats**: **fully fresh — 0 hits in wiki**; reasoning/coding/executable-agent environments (not games); evaluation baselines are paper-defined.
 
 ### ★★ MetaExp: Learning to Self-Improve through Experience via Verifiable Cross-Task Environment Scaling
-- **Authors**: Renhao Li, Xinjie Shen, Yang Su, Jianhong Tu, Derek F. Wong, Daijheng Liu, Ming Yang
+- **Authors**: Renhao Li, Xinjie Shen, Yang Su, Jianhong Tu, Derek F. Wong, Dayiheng Liu, Min Yang
 - **Affiliation**: University of Macau; Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences; Georgia Institute of Technology; Alibaba Token Hub, Alibaba Group.
 - **Venue**: arXiv:2610.21492 (15 Oct 2026) — `cs.AI`.
 - **Link**: https://arxiv.org/abs/2610.21492
@@ -250,7 +250,7 @@ tags: [game-rl, game-ai, llm-agents, reinforcement-learning, self-play, multi-ag
 - **Caveats**: **fully fresh — 0 hits in wiki**; a system paper (not benchmarked on classic game RL); "world" scope is paper-defined.
 
 ### ★★ 3DCodeVerse: Exploring 3D Worlds as Code
-- **Authors**: Yipeng Gao, Ziyao Zeng, Jinfa Huang, Yijiang Li, Haolin Xiong, Wang Qin, Xinlei Yu, Youheng Yao, Jie Zhang, Kun-Yu Lin, Rong Liu, Yinyuan Zhao, Yajie Zhao, Meiqi Guo, Jiebo Luo, Lei Shu, Yunhao Ge, Xiying Wang(?), …
+- **Authors**: Yipeng Gao, Ziyao Zeng, Jinfa Huang, Yijiang Li, Haolin Xiong, Wang Qin, Xinlei Yu, Youheng Yao, Jie Zhang, Kun-Yu Lin, Rong Liu, Yinyuan Zhao, Yajie Zhao, Meiqi Guo, Jiebo Luo, Lei Shu, Yunhao Ge, …
 - **Affiliation**: not stated on arXiv metadata / LaTeXML author block; *not inferred* (large multi-institution author list; project page linked).
 - **Venue**: arXiv:2610.22341 (15 Oct 2026) — `cs.AI`; `cs.CV`.
 - **Link**: https://arxiv.org/abs/2610.22341
@@ -291,9 +291,9 @@ tags: [game-rl, game-ai, llm-agents, reinforcement-learning, self-play, multi-ag
 ## §5 Game Benchmarks & Evaluation Suites
 
 ### ★★★ Realtime-Bench: Can Frontier Models Solve Real-time Interactive Problems?
-- **Authors**: Yao Long Teng(?) … (author block from abs page; see link), et al.
+- **Authors**: Jingyu Tang, Xu Yang, Zhehao Zhang, Zheng Wang, Qi Cheng, Haozhe Zhao, Manling Li, Wenxuan Li, Xide Xia, Jiaxin Pei
 - **Affiliation**: University of Texas at Austin; The Ohio State University; University of Illinois at Urbana-Champaign; NVIDIA; Northwestern University.
-- **Affiliation note**: author block on LaTeXML lists the four institutions above (Steadyworks listed with an equal-contribution footnote); treat the per-author mapping as *not fully resolved*.
+- **Affiliation note**: the LaTeXML author block lists the five institutions above plus "Steadyworks" with an equal-contribution footnote; treat the per-author mapping as *not fully resolved*.
 - **Venue**: arXiv:2610.22155 (15 Oct 2026) — `cs.AI`.
 - **Link**: https://arxiv.org/abs/2610.22155
 - **Abstract and key innovations**: Real-time interaction requires perceiving evolving environments and acting under **temporal constraints**, but existing real-time evaluations focus on conversational quality/streaming perception, leaving **action under strict time pressure** untested. **Realtime-Bench** is a curated suite of **dynamic tasks where delayed actions directly affect success**. Under **Wall Clock** (time advances with actual inference latency) the best success rate is only **44%** and best **Pass^3 only 36%**. It introduces **Paused Clock** (an idealized reference removing serving latency) and **Token Clock** (advances simulated time with generated token count) to **separate serving latency from streaming capability**; findings show higher reasoning effort has **mixed effects under time pressure**.
@@ -365,9 +365,9 @@ tags: [game-rl, game-ai, llm-agents, reinforcement-learning, self-play, multi-ag
 - **Affiliation**: Beihang University.
 - **Venue**: **NeurIPS 2025** — also arXiv:2610.22056 (15 Oct 2026) — `cs.AI`.
 - **Link**: https://arxiv.org/abs/2610.22056
-- **Abstract and key innovations**: Sparse-reward RL suffers from poor credit assignment; LLM-based planners depend on **predefined skill libraries** and **fail to optimize low-level control**, while reward-based methods need extensive human feedback. **PRM4RL** uses an **LLM as an agentic planner + reward generator**: it **infers goal states for sub-steps** (e.g. *"sub-goal state"* / "*strategy*" style intermediate rewards) and learns a **per-step reward model** so RL can learn without manual reward engineering. It learns a **dense progress reward model** that replaces manual reward shaping, and demonstrates it on **Minecraft**, **Habitat**, and **manipulation** with large gains over RL/planner baselines and generalization to harder tasks.
-- **Why it matters here**: the fresh **LLM-as-reward-shaper** for open-world game RL — the reward-design lane the wiki tracks closely (§1 IRL, `2610.21912`), with an explicit Minecraft evaluation.
-- **Caveats**: **fully fresh — 0 hits in wiki**; abstract truncated in listing — exact benchmark numbers not fully extracted; a *published* NeurIPS 2025 paper re-announced in this block.
+- **Abstract and key innovations**: Traditional RL struggles with long-term, **sparse-reward** tasks. **PRM4RL** integrates **task planning and dense reward**: for high-level planning, a complex task is **decomposed into a series of simple, manageable subtasks** with a **subtask-oriented, fine-grained progress function** to monitor execution; for low-level reward generation, it uses the progress function to construct a **Progress Reward Model (PRM)** providing **theoretically grounded optimality and convergence guarantees**, enabling effective policy optimization without hand-designed dense rewards (in the spirit of potential-based reward shaping).
+- **Why it matters here**: the fresh **dense-progress-reward** entry for long-horizon agent tasks — the reward-shaping lane the wiki tracks closely (cf. §1 IRL `2610.21912` and `2610.20473`), with an explicit **LLM-planner + RL-trainer** integration.
+- **Caveats**: **fully fresh — 0 hits in wiki**; a **NeurIPS 2025** re-announcement; reported experiments are on **robotics control tasks**, not game environments; exact benchmark suite and numbers summarized from the abstract only.
 
 ### Also related and fresh
 - [`2610.22084`](https://arxiv.org/abs/2610.22084) **Learning Changes the World and Then What Was Learned has Changed: Training and Deploying Neural Networks in the Control Loop** — a **closed-loop** framing of "train-then-deploy" failure: an agent's own actions change the data distribution it was trained on, so deployment shifts the world and invalidates the learned function; gives a **distribution-shift / non-stationarity** taxonomy for learned controllers.
