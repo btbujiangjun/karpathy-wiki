@@ -8319,3 +8319,17 @@
 - New pages: `wiki/synthesis/2026-10-17/conference-digest.md`.
 - Updated: `wiki/index.md`（Synthesis 表新增 conference-digest 2026-10-17 行）、`wiki/log.md`（本条目）.
 - Contradictions: none adjudicated; venue-date/acceptance-rate figures vary across aggregators (reported as primary-venue figures).
+
+## [2026-10-17] synthesis | 投资热点日报 — 美股 / 港股 / A 股 / 中概股（2026-10-17）
+- Summary: `wiki/synthesis/2026-10-17/investment-daily.md` (type: synthesis)。
+- 数据基准：**美股 / 港股 / A 股 / 中概 ADR 全部为 10/16（周五）完整收盘**；今日周六三地休市，本报告为**周末收盘确认版**。
+- 主题：**"AI 债务融资信任危机 → 纳指全周 −4.48%（6 月来最差周）、防御轮动道指翻红 +0.67%；中国资产分化：港股恒科逆势 +1.16%、A 股缩量整理、中概 ADR 补跌 −1.30%"**。
+- 美股（10/16）：道指 −0.34% 52,002.41、标普 −1.09% 7,659.44、纳指 −2.15% 26,140.03；10Y 回落 ~5.09%；Mag 7 仅苹果 +0.43%；半导体重灾（ARM −6.94%/AMD −5.95%/INTC −5.79%/AVGO −4.52%/MU −5.6%）、**CoreWeave 近 −12%**（~$500 亿债务、CDS 隐含 5 年违约概率 ~60%）。
+- 港股（10/16）：恒指 +0.52% 24,186、恒科 +1.16% 4,108、国企 +0.31% 8,128；阿里 +2.26%、百度 +1.4%、联想 +8%、腾讯平收 417.80（成交居首）。
+- A 股（10/16）：沪指 +0.24% 3,716.28、深成 −0.12%、创业板 −0.39%、北证 50 −1.81%，成交 1.5691 万亿（缩量 767 亿）；飞行汽车/低空经济涨停潮、军工/碳纤维领涨；中际旭创 +1.99% ¥670、寒武纪 +1.99% ¥915。
+- 中概 ADR（10/16）：金龙指数 −1.30%；万国数据 −8.85%、小鹏 −4.15%、百度 −2.93%、阿里 −1.82%、蔚来 −2.00%。
+- 核心事件：AI 基建债务融资危机（CoreWeave/Dell/HPE/GDS）；Meta Muse Spark Open（816B 开放权重）；OpenAI GPT-6 Astra Pro 多智能体；Anthropic 反蒸馏并指控 Zhipu/Moonshot；微软 Maia 200 投产 / Maia 300 定档 2027；IDC 中国非 GPU 加速器出货首超 GPU；特斯拉第二代 Roadster（会飞，2028 量产）→ A 股飞行汽车涨停潮；比亚迪 2027 全固态电池量产车。
+- ⚠️ 口径校准：上期 investment-daily 2026-10-16 的 A 股指数点位（沪指 4,134.02 / 深成 14,283.00 / 创业板 3,328.06）与全部 10/16 当日来源及本 wiki 其余 2026 年记录（3,700–3,800 区间）不一致，**判为错误数据，已按实际收盘（3,716.28 等）修正**；港股收盘亦校正为午后回吐后的定格值（恒指 24,186）。
+- New pages: `wiki/synthesis/2026-10-17/investment-daily.md`。
+- Updated: `wiki/index.md`（Synthesis 表新增 investment-daily 2026-10-17 行，置于表头之后）、`wiki/log.md`（本条目）。
+- Contradictions: 无新增实质性矛盾；已排除 2025 口径旧文（"金龙 −0.91%"、"恒指 25,888.51"、"蔚来 −9% GIC 诉讼"等）。
