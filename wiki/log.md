@@ -8419,3 +8419,13 @@
 - New pages: `wiki/synthesis/2026-10-18/wq101-alpha-daily.md`。
 - Updated: `wiki/index.md`（Synthesis 表新增 wq101-alpha-daily 2026-10-18 行）、`wiki/log.md`（本条目）。
 - Contradictions: 无对既有 wiki 的实质矛盾；与 10-17 期落选差异已在"与上一期对比"章节显式披露。完成后 git 提交并推送。
+
+## [2026-10-18] synthesis | arXiv Daily AI/LLM/RecSys/CTR/Games (2026-10-18)
+- Summary: wiki/synthesis/2026-10-18/arxiv-daily.md (type: synthesis). Covers Friday 2026-10-16 arXiv block (no weekend announcements as of 2026-10-18). Harvested 42 new-to-wiki papers across cs.AI/cs.CL/cs.LG/cs.IR/cs.GT/cs.MA.
+- Featured: Core AI/LLM/Reasoning (8), Agents/Workflows/Tools (6), Recommendation/Retrieval/Search (5), Sequential/Time-Series/Forecasting (7), Efficiency/Quantization/Sparsity (7), Other Notable (9).
+- Key threads: latent/latent-CoT reasoning (taxonomy, density/steering), on-policy/self-distillation behavior, agent workflows and memory (Librarian Agents, TEM), retrieval/RAG (document RAG evidence, ensemble gains), time-series/forecasting (streamflow, trajectories, cellular sheaves), efficient attention/quantization/sparsity (token selection, bit-sparsity), and recommender systems (quantum ML media recommendation, user simulation).
+- CTR lane: 0 direct CTR-prediction papers in this block (consistent with recent trends); advertising/market papers scarce among new-to-wiki set.
+- Updated: wiki/index.md (added 2026-10-18/arxiv-daily.md to Synthesis table).
+- New pages: wiki/synthesis/2026-10-18/arxiv-daily.md.
+- Contradictions: none vs existing wiki content. Affiliations marked "not stated" where no LaTeXML Affiliation block detected (single-author/markup variance).
+- Temp artifacts: /var/folders/q9/tsl_tl5548x7j892sgt3qvlc0000gn/T/opencode/arxiv-1018/ (listings, IDs, details.json, test files) — deleted after write-up.
