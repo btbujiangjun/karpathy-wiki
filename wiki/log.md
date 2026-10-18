@@ -8389,3 +8389,12 @@
 - Updated: wiki/index.md (added Synthesis entry for 2026-10-18), wiki/log.md (this entry)
 - New pages: wiki/synthesis/2026-10-18/arxiv-paper-check.md
 - Contradictions: none
+
+## [2026-10-18] synthesis | arXiv AI Search — recent papers (AI/LLM/Rec/Ads/Sequential/CTR/Games)
+- Summary: wiki/synthesis/2026-10-18/arxiv-ai-search.md (type: synthesis). Sunday run over the fresh Friday 2026-10-16 block (no weekend announcements). Channels: one successful export-API query (`cs.CL AND "large language model"`, 20 entries w/ abstracts) after repeated `Rate exceeded.` on parallel bursts; `/list/{cs.CL,cs.IR}/recent` listings; per-paper `abs` pages; web search for the games lane.
+- Featured: 20 papers; **5 new-to-wiki** (`2610.22273` Librarian Agents, `2610.21900` TEM, `2610.22324` diverse ideation RL, `2610.22292` CATCH honesty, `2610.21681` data-strategy survey); 15 already on file, cross-referenced in-page.
+- Key threads: ① industrial recsys = systems papers with online A/B receipts — TransX `2610.20913` (prod CTR +6.02%, serving cost −80%), WeGR `2610.16979` (WeChat, orders +2.54%, CPU/GPU −25%), UniSGR-V2 `2610.16132` (Lazada, GMV +3.09%); ② Semantic IDs shared substrate (beam > MTP at scale `2610.15864`, HASTE `2610.17368`, RecSoup `2610.21220`); ③ RecSys toolkit migrating into LLM agent memory/curation; ④ **explicit CTR-prediction papers: 0 for the 6th consecutive October window**; ads = AdCoEvo multi-agent ops `2610.19454`; ⑤ games: SAGE v2 `2609.34342` (+127.6% payoff, −80/90% tokens), CriticaLLM `2610.21525` (TTRPG game master).
+- Updated: wiki/index.md (Synthesis row for 2026-10-18/arxiv-ai-search), wiki/log.md (this entry).
+- New pages: wiki/synthesis/2026-10-18/arxiv-ai-search.md.
+- Contradictions: none vs existing wiki content; 15 featured IDs were already filed by siblings (10-15/16/17 dailies, paper-checks, conference-digest, game-rl-dailies) and are explicitly cross-referenced rather than re-claimed. Affiliations mostly "not listed" or marked (inferred) — arXiv abs pages carry no affiliation fields; a follow-up run could restore LaTeXML html author-block parsing.
+- Temp artifacts: /var/folders/q9/tsl_tl5548x7j892sgt3qvlc0000gn/T/opencode/arxiv_{llm,ir,ctr,seq,games,test}.xml — deleted after write-up.
