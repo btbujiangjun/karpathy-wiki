@@ -8429,3 +8429,14 @@
 - New pages: wiki/synthesis/2026-10-18/arxiv-daily.md.
 - Contradictions: none vs existing wiki content. Affiliations marked "not stated" where no LaTeXML Affiliation block detected (single-author/markup variance).
 - Temp artifacts: /var/folders/q9/tsl_tl5548x7j892sgt3qvlc0000gn/T/opencode/arxiv-1018/ (listings, IDs, details.json, test files) — deleted after write-up.
+
+## [2026-10-18] synthesis | WorldQuant 101 Alphas 每日精选 — 美股 Top 20（2026-10-18 周日，10/16 收盘基准 + 周末增量）
+- Summary: `wiki/synthesis/2026-10-18/wq101-alpha-daily.md` (type: synthesis)。分析基准 = 美股 **10/16 周五完整收盘**（周日无新交易日）+ **10/17-18 周末增量** + 10/19-23 财报周前瞻。
+- 主题：**"防御第二阶段内部换仓"** — 霍尔木兹第二艘油轮触水雷（10/17）+ AI 信贷危机深化（CoreWeave 周 -25%、5Y CDS 破 1000bp）+ GS 标价 2027 Brent $80 → 能源上游→中游扩容、国防增至 2 席、低 beta 医疗/必需加厚、平台科技全撤。
+- 市场（10/16 + 全周）：标普 7,659.44 -1.09%（周 -1.95%）、纳指 26,140.03 -2.15%（周 -4.48%）、纳指 100 周 -5.5%、道指周 +0.67% 唯一上涨、VIX 19.99 +21.45%（盘中破 22）、10Y 5.10%、Brent 盘中首触 $110、金 $4,190；芯片周 -11.41%（费半 8 连跌）、能源板块 21/21 全涨中位数 +2.87% vs 科技 -2.62%。
+- **Top 20（评分）**：① XOM 9.2 ② CVX 9.0 ③ LMT 8.9 ④ COP 8.8 ⑤ KMI 8.7（10/21 财报）⑥ NOC 8.6（10/20 财报）⑦ LLY 8.5 ⑧ TRGP 8.4（周五涨幅第一 +4.37%）⑨ WMT 8.3 ⑩ KO 8.2（历史新高）⑪ NEM 8.1（10/22 财报）⑫ ABBV 8.0 ⑬ FANG 7.9 ⑭ JNJ 7.8 ⑮ MRK 7.7 ⑯ AEM 7.6 ⑰ UNH 7.5 ⑱ NI 7.4 ⑲ AAPL 7.3 ⑳ TSLA 7.1（10/21 财报 ±7.5%）。板块：能源 6（上游 4+中游 2）/ 医疗 5 / 国防 2 / 必需 2 / 黄金 2 / 公用·科技·EV 各 1。
+- 与 10-17 期对比：移出 MPC/VLO/PSX（炼油周五量价信号弱）、AMGN/CVS（换入低 beta JNJ/MRK）、MSFT/GOOGL（SOX 八连跌下撤单）、CEG（换入 NI）；新入 KMI/TRGP/FANG/NOC/KO/JNJ/MRK/NI。
+- Updated: `wiki/index.md`（修复同日重复行：删除早前"周度因子体制专刊"陈旧行，保留与页面实际内容一致的日度版行）、`wiki/log.md`（本条目）。
+- New pages: `wiki/synthesis/2026-10-18/wq101-alpha-daily.md`。
+- ⚠️ 操作记录：同日早前一条 `[2026-10-18] …周度因子体制专刊` 条目所描述的页面内容（WMT 8.9 领跑等）在并发写入竞争中未落盘 —— 提交 8136146 实际捕获的是本条目对应的日度版页面内容，早前索引行亦与页面不符，已删除；该陈旧日志条目按 append-only 原则保留但以本条目为准。
+- Contradictions: 无对既有 wiki 其他页面的实质矛盾；与 10-17 期落选差异已在报告"与上期报告对比"章节显式披露。
