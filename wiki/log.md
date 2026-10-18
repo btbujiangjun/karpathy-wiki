@@ -8383,3 +8383,9 @@
 - New pages: `wiki/synthesis/2026-10-17/wq101-alpha-daily.md`。
 - Updated: `wiki/index.md`（Synthesis 表新增 wq101-alpha-daily 2026-10-17 行）、`wiki/log.md`（本条目）。
 - Contradictions: 无对既有 wiki 的实质矛盾；跨源价格/VIX 口径分歧已在正文与本期条目显式披露。完成后 git 提交并推送。
+
+## [2026-10-18] ingest | arXiv paper check (AI & CTR)
+- Summary: wiki/synthesis/2026-10-18/arxiv-paper-check.md
+- Updated: wiki/index.md (added Synthesis entry for 2026-10-18), wiki/log.md (this entry)
+- New pages: wiki/synthesis/2026-10-18/arxiv-paper-check.md
+- Contradictions: none
