@@ -8408,3 +8408,14 @@
 - Updated: wiki/index.md（Synthesis 表新增 investment-daily 2026-10-18 行）、wiki/log.md（本条目）。
 - New pages: wiki/synthesis/2026-10-18/investment-daily.md。
 - Contradictions: 金龙指数 −1.30% vs +1.96%、TSM −2.28% vs −2.2%、科大讯飞涨跌两版 —— 全部为时点差或时区差，已在 §5.2 逐一裁决；传闻类（TSLA×SPCX 合并、苹果在华 AI 双引擎）标注未核实，不入估值。
+
+## [2026-10-18] synthesis | WorldQuant 101 Alphas 每日精选 — 美股 Top 20（2026-10-18 周度因子体制专刊）
+- Summary: `wiki/synthesis/2026-10-18/wq101-alpha-daily.md` (type: synthesis)。分析基准 = 2026-10-12～16 完整周度信号（10/16 周五收盘）+ 下周财报催化前瞻，与 10-17 日度期衔接。
+- 主题：**"High Beta / Momentum 崩塌周 + Value / Low Vol 年内最佳周"**。周度：标普 -1.95%（6 月来最差）、纳指 -4.48%、费半 -11.41%（8 连跌）vs 道指 +0.67%；**Value 因子 +8.0%（z=+3.2，一年最佳）/ Low Vol +5.3% / 股息率 +5.7% vs High Beta -13.1%（z=-3.2，2020 年来第二差）/ Momentum -5.3%**；VIX 14.84→19.99（周 +35%）；10Y 5.244%→5.098%（CPI 3.7% 超预期后回落 = 避险）；WTI 周 +10.41% 破 $100；标普等权 +0.56% vs 加权 -1.95%（广度背离）；软件轮动（CRM +8.3% 指引上调、NOW +6.3%、SAP +5.9%）。
+- 因子权重调整（周度体制）：Alpha#1 25% · #41 20% · #53 15% · #12 15% · #19 上调至 10% · #6 10% · #30 下调至 5%。
+- **Top 20（评分）**：① WMT 8.9（#1+#6，ETF 连续 5 日系统性加仓）② LLY 8.8（距 52 周高 2.3%）③ HD 8.7（mega-cap 周涨幅第一 +6.95%）④ KO 8.6（10/15 历史新高）⑤ XOM 8.5 ⑥ CVX 8.4（收盘新高 $224.99）⑦ PG 8.3（10/22 财报）⑧ MA 8.2 ⑨ V 8.1 ⑩ UNH 8.0（Q3 反转 +9.1%，Alpha#53 标杆）⑪ COST 7.9 ⑫ AMGN 7.8 ⑬ ABBV 7.7（RSI 70.5 超买警示）⑭ TMO 7.6 ⑮ CRM 7.5（软件轮动核心反转）⑯ FICO 7.3（深跌反弹 +15.5%，唯一逆向仓）⑰ COP 7.2 ⑱ BRK.B 7.1 ⑲ TRV 7.0（财报事件动量）⑳ MSFT 6.9（科技唯一敞口）。板块：必需消费 4 / 医疗 5 / 能源 3 / 金融 4 / 软件 2 / Fintech 1 / 可选消费 1。
+- 与 10-17 期对比：定调由 XOM 9.3 → WMT 8.9；11 只新入（KO/PG/MA/V/COST/TMO/CRM/FICO/BRK.B/TRV/HD），落选国防（LMT）、黄金（NEM/AEM）、炼油（MPC/VLO/PSX，利差见顶）；共同保留 9 只（XOM/CVX/COP/LLY/WMT/ABBV/AMGN/UNH/MSFT）= 防御+能源主线跨期稳定。
+- ⚠️ 口径提示：S&P 7,659.44（AP）/7,661.22（Factor Watch 计算口径）；WTI $101.41（结算）/$101.75（Morningstar）；Brent 源间 $104-110 区间；因子为定性映射非平台实测值；市值/价格为网络检索估算。
+- New pages: `wiki/synthesis/2026-10-18/wq101-alpha-daily.md`。
+- Updated: `wiki/index.md`（Synthesis 表新增 wq101-alpha-daily 2026-10-18 行）、`wiki/log.md`（本条目）。
+- Contradictions: 无对既有 wiki 的实质矛盾；与 10-17 期落选差异已在"与上一期对比"章节显式披露。完成后 git 提交并推送。
