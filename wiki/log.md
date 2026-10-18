@@ -8398,3 +8398,13 @@
 - New pages: wiki/synthesis/2026-10-18/arxiv-ai-search.md.
 - Contradictions: none vs existing wiki content; 15 featured IDs were already filed by siblings (10-15/16/17 dailies, paper-checks, conference-digest, game-rl-dailies) and are explicitly cross-referenced rather than re-claimed. Affiliations mostly "not listed" or marked (inferred) — arXiv abs pages carry no affiliation fields; a follow-up run could restore LaTeXML html author-block parsing.
 - Temp artifacts: /var/folders/q9/tsl_tl5548x7j892sgt3qvlc0000gn/T/opencode/arxiv_{llm,ir,ctr,seq,games,test}.xml — deleted after write-up.
+
+## [2026-10-18] synthesis | 投资热点日报 2026-10-18（周日版，10-16 周五收盘基准）
+- Summary: wiki/synthesis/2026-10-18/investment-daily.md (type: synthesis)。周日无交易，数据基准 = 美股 / 港股 / A 股 / 中概 ADR 全部为 **2026-10-16（周五）完整收盘**；港股 10-19 因重阳节翌日休市。10 轮 web 检索（AP/Reuters/CNBC/CBS/Bloomberg/Yahoo/StockAnalysis/东财/新浪/财联社/数据宝/21 经济/每经/雪球/etnet/金十/台积电 IR）。
+- 三条主线：**① AI 债务融资信任危机** — 纳指周 −4.48%（6 月来最差）、标普周 −1.95%、费半连八黑（周 −11%）、20 只 AI/半导体巨头单周蒸发 $1 万亿+；CoreWeave 2032 债 YTM >15%、CDS 一度 >1,140bp、债务 ~$520 亿，CRWV 周 −25%、NBIS −12.18%、Dell 周 −22%；9 月 CPI +3.7%/PPI +6.3% 超预期 + FedWatch 12 月加息 89%；**10Y 全周反降 15bp 至 5.1%**（避险压过通胀）；等权标普周 +0.56% —— 指数跌、广度涨。**② Anthropic IPO 估值预期 $2T → $1.5T**（Q3 营收 $168 亿、环比 +45% vs 前值 ~140%、毛利率 85%、NRR 900%，传 11/9 当周启动）。**③ 台积电 Q3 六连纪录**（营收 $467.2 亿、净利 NT$7,630.6 亿 +68.7%、营业利润率 58.7% 超上沿、2nm 占 8% 晶圆收入、2026 营收指引上调至 +44%、capex $600–640 亿重申）但 TSM ADR 三连跌、周跌近 9% —— 市场定价的是客户融资能力，不是台积电盈利。
+- 分市场（10-16 收盘）：美股 道指 −0.34% 52,002.41（周 +0.67%）/ 标普 −1.09% 7,659.44 / 纳指 −2.15% 26,140.03 / VIX 19.99（周 +34.7%）；Mag 7 仅 AAPL 周涨（+2.03%，周中破 $5 万亿），META −3.72%、NVDA 周 −6.61%、AMD 周 −13.05%、MU 周 −14.58%；WTI $101.41。港股 恒指 +0.52% 24,186.83、恒科 +1.16%，南向净卖出 35.68 亿（连续 4 日流出）唯腾讯连续 3 日净买入，联想 +8.01%、可灵 4.0 全量上线。A 股 沪指 +0.24% 3,716.28、成交 1.56 万亿缩量；寒武纪/中际旭创 +1.99% vs 北方华创 −3.31%、PCB/CRO 领跌；算力链回购潮 102.42 亿 vs 天孚 0.06% 市值回购次日 −4.71%（含金量定价）。中概 金龙 −1.30%、TSM −2.28%、XPEV −4.15%。
+- 下周清单：10-20 SPCX 财报 + GTC 柏林（黄仁勋 10-21 北京 17–19 时）、10-21 Meta/特斯拉财报 + LRCX/TXN/IBM、10-22 WDC、10-19 中国 Q3 GDP、约 70 家标普财报、Anthropic 招股书 10 月下旬–11 月初。
+- 已排除的错误信息：① 每经「市值月盘点」NIO $28.48/TSLA $439.67 实为 2019–2020 旧文被误标 2026-10-16；② 新浪「金龙 +1.96%」实为 10-15 周四收盘（周五 −1.30%）；③ finews 同源时点错配；④ 21 经济网/每经「光模块回暖」为 2025-10-16 旧稿。科大讯飞开盘 +0.83% / 收盘 −0.83% 为两个时点，取收盘。
+- Updated: wiki/index.md（Synthesis 表新增 investment-daily 2026-10-18 行）、wiki/log.md（本条目）。
+- New pages: wiki/synthesis/2026-10-18/investment-daily.md。
+- Contradictions: 金龙指数 −1.30% vs +1.96%、TSM −2.28% vs −2.2%、科大讯飞涨跌两版 —— 全部为时点差或时区差，已在 §5.2 逐一裁决；传闻类（TSLA×SPCX 合并、苹果在华 AI 双引擎）标注未核实，不入估值。
