@@ -8559,3 +8559,14 @@
 - Updated: `wiki/index.md` (Synthesis table — game-rl-daily 2026-10-20 row inserted above the investment-daily 10-19 row), `wiki/log.md` (this entry).
 - Contradictions/flags: ⚠️ All claims abstract-only (no full-text/code verification). ⚠️ NetHack Checkpointed Exploration single-source (no arXiv ID). ⚠️ "Embark/Ubisoft" affiliation for `2606.20210` and "Qwen Business Unit" for `2607.22529` carried from earlier coverage as tentative, not restated as fact on-page. No contradictions against existing wiki pages; SPIRAL/GameSmith/NitroGen/pcsp threads continue prior dailies. Sibling coverage respected: game-rl-daily 10-19 owns the 15–16 Oct Monday block; this run adds no new Monday-band IDs.
 - Temp artifacts: `/var/folders/q9/tsl_tl5548x7j892sgt3qvlc0000gn/T/opencode/gamerl1020/` (`meta.json`, 28 `*.html` abs snapshots) — deleted after write-up.
+
+## [2026-10-20] synthesis | wq101-alpha-daily (2026-10-20)
+- Report: `wiki/synthesis/2026-10-20/wq101-alpha-daily.md` (type: synthesis)
+- Basis: 美股 **2026-10-19（周一）完整收盘** + 10/20 财报日历。
+- 主题: **"超卖修复第一棒 + 领涨重心换人"** — 纳指 +1.11% 26,430.89、SOX +1.61% 11,316.34 终结八连黑（2008 年来最长）、标普 +0.41% 7,690.73（近 2/3 成分股下跌）、道指 -0.07%、VIX 18.44 (-7.75%)。
+- 核心发现: ①半导体超跌反弹底色为修复非反转（存储领涨 WDC +6.09%/SNDK +5.53%/MU +2.97%、CoreWeave 高盛上调后仍收 -0.44%、对冲基金创纪录减持科技）；②10 月领涨重心转向零售电商（WMT +14.22%）、支付（V +12.13%/MA +11.77%）、能源（BP +12.39%）、医疗（UNH +10.84%）四族群 vs 费半 10 月 -10.39%；③AMZN +4.98% 领涨 Mag 7（大摩首选 + 960MW 核电）。
+- Top 20: WMT 9.1 / AMZN 8.9 / XOM 8.8 / V 8.7 / CVX 8.6 / LLY 8.4 / MA 8.3 / UNH 8.2 / KO 8.1 / WDC 8.0 / SNDK 7.9 / COP 7.8 / ABBV 7.7 / NVDA 7.6 / MU 7.5 / TSLA 7.3 / PLTR 7.2 / JNJ 7.1 / BP 7.0 / NEM 6.9。板块 = 能源 4、科技 5（含存储链 3）、医疗 4、必需 2、支付 2、消费事件 2、黄金 1。
+- 更替: 移出 KMI、TRGP、MRK、AEM、NI、AAPL；新入 WMT(Top1)、AMZN、V、MA、WDC、SNDK、MU、BP、PLTR。
+- Updated: `wiki/index.md` (Synthesis table — wq101-alpha-daily 2026-10-20 row added at top), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-10-20/wq101-alpha-daily.md`.
+- Contradictions/flags: ⚠️ 跨源口径分歧已标注（Mag 7 中 Meta -0.55% vs -1.55%；费半收盘 +1.61% vs 盘中 +3.7%；VIX 收盘 18.44 取 TechFlow；CoreWeave 收盘 $61.39 vs $61.12）。⚠️ 因子值为 10/19 收盘行情快照的定性重构（非全量 OHLCV 计算）、市值为估算。⚠️ 存储链 3 席列为高波动超跌修复仓位，非趋势确认。
