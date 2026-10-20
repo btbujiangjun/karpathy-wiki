@@ -8514,3 +8514,18 @@
 - Updated: `wiki/index.md` (Synthesis table — game-rl-daily 2026-10-19 row added above the 2026-10-18 row), `wiki/log.md` (this entry).
 - Contradictions / flags: ⚠️ **round-robin EF1 correction** — `2610.23686` shows "every pure NE of Round-Robin is EF1" (arXiv:2109.08644, WINE 2021 / MOR 49(4) 2024) is **false**; true bound **1/2-EF1 + PROP1**, no equilibrium guarantee > **2/3-EF1**. It is **prospective** — no wiki page asserts the old claim, so nothing to retract in-wiki. ⚠️ **Monday-block timing** reconciled (see Window). Open questions in-page: 631 GlobeBench tasks unsolved by any model; empty PCG lane for a fourth day while general suites absorb game contexts. No contradictions against existing wiki sources; all featured items new-to-wiki and single-source unless venue-stated.
 - Temp artifacts: `/var/folders/q9/tsl_tl5548x7j892sgt3qvlc0000gn/T/opencode/gamerl1019/` (`monday.json`, `known_ids.txt`, `triage.json`/`triage2.json`, `featured_abstracts.txt`, `dates.json`, `backward_abs.txt`, `babs/`, `aff/`, `candidates.json`, `harvest.py`, `fetch_affs.py`, `part1.md`–`part5.md`) — deleted after write-up.
+
+## [2026-10-20] synthesis | arXiv Daily Report
+- Report: wiki/synthesis/2026-10-20/arxiv-daily.md
+- Scope: AI/LLM, recommendation, advertising, sequential modeling, CTR, games (submissions ~2026-10-06 to 2026-10-19)
+- Papers covered: 16 full + 4 notable (TransX, WeGR, MAPS, AdCoEvo, DuoLM, SAHL, HASTE, OneChord, ReRankID, PerCDR, RecSoup, Player-1, Off-Policy PG anatomy, MARL-BattleGrounds, BluffJAX, MicroRTS strategist-executor)
+- Contradictions: none
+
+## [2026-10-20] synthesis | arxiv-paper-check (2026-10-20)
+- Report: `wiki/synthesis/2026-10-20/arxiv-paper-check.md` (type: synthesis)
+- Window: last 24h = arXiv block announced 2026-10-19/20; newest v1 timestamps `2026-10-19T04:00Z`–`2026-10-19T08:07Z`.
+- Harvest: `export.arxiv.org/api/query` × 4 (cs.IR/cs.LG/cs.AI desc-by-date; `abs:"click-through" OR abs:"CTR" OR abs:"recommender"`; `cs.IR ∧ (CTR|click-through rate|ranking)`; `abs:"click-through rate" OR abs:"CTR prediction" OR abs:"ad ranking" OR abs:"ad recommendation"`), all deduped and grep-checked vs `wiki/`.
+- Papers covered: 13 featured in full + 6 bullets. CTR/Rec/Ads: CATH `2610.25801`, A Cue's Hidden Price `2610.25843` (both new-to-wiki); MAPS `2610.25748` + OneChord `2610.25805` cross-referenced (already claimed by sibling `arxiv-daily` 10-20). AI: ClueFlow `2610.25980`, APSD `2610.25973`, GLOBE `2610.25970`, KV-Surgeon `2610.25933`, OrderGPT `2610.25949`, Claim Laundering/EVIGATE `2610.25947`, LP-SMC `2610.25932`, Productive State-Space Exploration `2610.25957`, Behavioral Probes for LLM Swarms `2610.25966`, CXBench `2610.25954`, Policy Search in Code Space `2610.25946`; bullets: GraphEvoResearcher `2610.25978`, ABACUS `2610.25963`, AdaExploreBench `2610.25950`, EmbodiedWorld-200K `2610.25959`, PaceVLA `2610.25961`, diatom calibration `2610.25977`.
+- Updated: `wiki/index.md` (Synthesis table — new `arxiv-paper-check` 2026-10-20 row inserted at top), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-10-20/arxiv-paper-check.md`.
+- Contradictions/flags: ⚠️ **CTR-prediction lane empty again** — no new `click-through rate`/`CTR prediction` modeling paper in-window; dedicated sweep's newest hits are WeGR `2610.16979` (10-12) and ECC `2610.13066` (10-09), both out of window/on file. `[[ctr-scaling-landscape]]` gains no entrant (continues the October streak recorded by 10-17/10-18 checks). ⚠️ Collision management: `2610.25748` and `2610.25805` first-covered by sibling `arxiv-daily` 10-20 → cross-referenced, not re-featured. ⚠️ All claims abstract-only (no full-text/code verification); affiliations "not stated" unless declared in the abstract — never inferred.
