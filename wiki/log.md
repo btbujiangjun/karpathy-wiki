@@ -8643,3 +8643,10 @@
 - New pages: `wiki/synthesis/2026-10-21/wq101-alpha-daily.md`.
 - Updated: `wiki/index.md` (Synthesis table — wq101-alpha-daily 2026-10-21 row inserted at top), `wiki/log.md` (this entry).
 - Contradictions/flags: ⚠️ 因子值为 10-20 收盘定性重构（Alpha#1/#6/#53/#30/#12/#41/#19 定性匹配），非交易所计算因子；⚠️ 市值与部分涨跌幅为网络检索/交易平台估算，跨源口径分歧已在报告内标注；⚠️ 盘后涨幅（SMCI/NFLX/SpaceX）尚未开盘确认。
+
+## [2026-10-21] correction | wq101-alpha-daily (2026-10-21) — 原油口径更正
+- Trigger: 复核发现当日已提交报告中 WTI 数据错误——原记 "WTI −5.21% $98.26 跌破 $100（美伊协议传闻）" 并据此把能源 4 席全撤；与实际不符。
+- Verified data: WTI 收 $101.79 / **−1.80%**（同花顺/eastmoney 结算口径，与同日 `investment-daily.md` 一致），Brent $108.79 / −0.69%；油价自 5 个月高点回落但仍稳于 $100 上方（美伊妥协提案传闻盘中一度跌逾 3% 后部分收复）。XOM/CVX/COP/MPC/PSX 当日仍创 52 周新高。
+- Fixed: `wiki/synthesis/2026-10-21/wq101-alpha-daily.md`（市场概况 WTI 行、核心叙事第 1-2 条、跨源口径提示、评分权重注、能源板块汇总、与上期对比表、催化日历、风险提示第 2/7 条）；能源板块结论由 "4→0 全撤" 改为 "4→1 保留炼化 MPC、上游趋势项下调"。
+- Updated: `wiki/index.md`（wq101-alpha-daily 2026-10-21 行 —— WTI 与能源席位数同步更正）, `wiki/log.md`（本条目）。
+- Flags: Top 20 名单与评分维持原样（主题=轮动至确定性/医疗创新高的结论不变）；仅修正被错误前提支撑的 WTI 数值与能源清仓措辞。
