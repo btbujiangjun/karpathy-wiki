@@ -8633,3 +8633,13 @@
 - New pages: `wiki/synthesis/2026-10-21/investment-daily.md`.
 - Updated: `wiki/index.md` (Synthesis table — investment-daily 2026-10-21 row inserted at top), `wiki/log.md` (this entry).
 - Contradictions/flags: ⚠️ 恒指早盘三时点数据并列标注（高开 24,139 +1.14% → 10:05 23,943 +0.3% → 10:42 23,806.96 −0.3%，时序可衔接非矛盾）；⚠️ 联想 HKEJ 头条"反弹 6%"与智通盘中 +2.14% 取盘中表值；⚠️ 苹果市值首破 $5 万亿、盘后 CRWV +5%/INTC +4%/NVDA +2%（TradingKey）均为单源待开盘确认；⚠️ 美股 9 月非农 ~9 万为二手转述；⚠️ 已排除不可信源 aqwhw.cn / xtxg.cn（行情数字错乱）与 YesDaily（日期/点位错置），并区分 2025-10-21 同名旧文；⚠️ 港/A 部分为盘中快照，收盘后以官方数据为准。
+
+## [2026-10-21] synthesis | wq101-alpha-daily (2026-10-21)
+- Report: `wiki/synthesis/2026-10-21/wq101-alpha-daily.md` (type: synthesis) — WorldQuant 101 Alphas 每日精选美股 Top 20；数据基准 = 美股 2026-10-20（周二）完整收盘 + 盘后财报（SMCI/NFLX/SpaceX）。
+- 核心主题 = "轮动第一天：钱买确定性"：医疗 +2.37% 创历史新高、WTI −5.21% $98.26 打断能源动量、VIX −6.13% 17.31、10Y 回落 2bp 至 5.12%；道指 +1.02% 52,495.88 创阶段新高 vs 纳指 −0.02% 平收、罗素 2000 +1.65%、SOX −0.29%。
+- Top 20：LLY 9.2 / UNH 8.8 / MRNA 8.6 / AMGN 8.4 / NOC 8.3 / MSCI 8.2 / BMY 8.0 / MMM 7.9 / BIIB 7.8 / WDAY 7.7 / ADBE 7.6 / HLT 7.5 / KEY 7.4 / WMT 7.3 / WDC 7.2 / TSLA 7.1 / SMCI 7.0 / NVDA 6.9 / V 6.8 / CRL 6.7。
+- 板块变动 vs 10-20：能源 4→0（XOM/CVX/COP/BP 全撤，WTI 跌破 $100 信号失效）、医疗 4→7（扩至板块之首）、科技 5（承今夜 META/TSLA/IBM/LRCX/TXN 盘后 + GTC Berlin 事件）、金融 3、工业/国防 2、可选 2、必需 1。
+- 事件：今夜盘后财报四连 + 黄仁勋 GTC Berlin 演讲；SMCI 盘后 +16%（指引 $185–195 亿超预期）；SpaceX Q3 营收 $146 亿 +161% 盘后 +7~8%；NFLX 盘后 −5%；10-24 MRNA ESMO。
+- New pages: `wiki/synthesis/2026-10-21/wq101-alpha-daily.md`.
+- Updated: `wiki/index.md` (Synthesis table — wq101-alpha-daily 2026-10-21 row inserted at top), `wiki/log.md` (this entry).
+- Contradictions/flags: ⚠️ 因子值为 10-20 收盘定性重构（Alpha#1/#6/#53/#30/#12/#41/#19 定性匹配），非交易所计算因子；⚠️ 市值与部分涨跌幅为网络检索/交易平台估算，跨源口径分歧已在报告内标注；⚠️ 盘后涨幅（SMCI/NFLX/SpaceX）尚未开盘确认。
