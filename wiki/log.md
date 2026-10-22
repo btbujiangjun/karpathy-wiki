@@ -8713,3 +8713,12 @@
 - New pages: `wiki/synthesis/2026-10-22/investment-daily.md`.
 - Updated: `wiki/index.md`（Synthesis 表顶部插入 investment-daily 2026-10-22 行）、`wiki/log.md`（本条目）。
 - Contradictions/flags: ⚠️ **港股/A 股为盘中快照**（港 10:44 / A 10:59），收盘可能大幅波动，恒指连续第二日下行后方向未定、VHSI 已 +9.15%；⚠️ **"美国光模块供应链限制"目前仅为传闻**，国元证券明示政策尚未正式落地——本报告将其作为 10-22 中国 AI 硬件下跌的核心归因属**二手券商观点**，非官方确认，若被否认则跌幅最深的标的回补弹性最大；⚠️ **宁德时代毛利率口径冲突（已解决）**：金投网 10-21 港股收评称"连续**三个**季度走低"，与公司三季报矛盾——按 Q1 24.82% / Q2 23.15% / Q3 20.69% 单季序列，正确表述为**连续两季下行**（累计 −4.13pct，同比 −5.11pct），**本报告采用公司季报口径**（与 10-21 日报一致），金投网该表述已列为不可信源排除；⚠️ **出口退税政策经一手核验**：财政部/税务总局公告 2026 年第 29 号（国家税务总局政策法规库原文）确认 — 新能源汽车 13%→9%（67 个税号）+ 电子烟设备装置及部分竹制品取消退税（24 个税号），**均自 2027-04-01 生效**；德勤 2026-10-19 税务快讯补充政策序列（2024-12-01 光伏+电池 13%→9% → 2026-04-01 取消光伏等 249 项、电池 9%→6% → 2027-01-01 取消电池退税 → 2027-04-01 汽车/电子烟），即**电池出口退税先于汽车归零**；⚠️ **兆威机电 +16.47%、布鲁可 −18.86% 的具体催化未取得**（前者按机器人零部件主题推测为 tentative，后者归因为风险偏好退潮）；⚠️ Meta / Tesla 财报数字为二手转述，应以公司 IR 原文为准（Meta 净利 +264% 系 $98.9 亿一次性计提反向增厚，非经营改善）；⚠️ **中概 ADR 与港股出现价差背离**（TCEHY −4.10% vs H −2.64%、BABA −3.87% vs H −5.16%、NTES −1.70% vs H −6.02%、BZ −1.75% vs H −6.58%），因两地收盘时点不同 + 融资/做空结构差异，不应简单套利解读；⚠️ **RLX = 雾芯科技（RELX 悦刻）**，非其他标的，10-21 收平 $1.68，电子烟出口退税取消尚未在价格中体现；⚠️ **ZK 极氪无美股行情**（2025-12-22 完成吉利私有化并从纽交所退市），非停牌遗漏；⚠️ **天数智芯港股代码 09903**（IPO 价 144.60 港元，2026-01-08 上市），当前 73.30 港元；⚠️ **智谱 2513.HK 的 D 系列于 10-21 17:00 发布后"利好出尽"**，为典型事件驱动回落样本；⚠️ 宏观项（10Y / WTI / VIX 10-22 读数）**未取得**，沿用 10-21 快照并显式标注；⚠️ 已排除不可信源 aqwhw.cn / xtxg.cn / 界面新闻"A 股午评"（点位与实时行情矛盾）/ YesDaily（日期与点位错置）/ 金投网宁德时代毛利率口径；⚠️ 未发现与既有 wiki 页面的直接矛盾（`wiki/synthesis/2026-10-21/investment-daily.md` 记"毛利率连续两季回落"与本报告口径一致，非矛盾）。
+
+## [2026-10-22] ingest/synthesis | wq101-alpha-daily
+- Summary: wiki/synthesis/2026-10-22/wq101-alpha-daily.md
+- Market context: S&P500 +0.58%, Nasdaq +1.05%, AI leadership (SMCI +9.55%, SpaceX +7.79%, semis strong); Meta raised FY26 capex to $135-145B
+- Framework: Mapped requested WorldQuant 101 Alphas (momentum/reversal/volatility/divergence/VWAP/range) to canonical 101 logic
+- Output: Top 20 US large-caps (> $10B) ranked by composite score with factors, signals, logic, risks; sector breakdown + factor alignment
+- Updated: wiki/index.md (added synthesis entry)
+- New pages: wiki/synthesis/2026-10-22/wq101-alpha-daily.md
+- Contradictions: none
