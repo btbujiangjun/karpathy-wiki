@@ -8675,3 +8675,22 @@
 - New pages: `wiki/synthesis/2026-10-22/arxiv-paper-check.md`.
 - Updated: `wiki/index.md`（Synthesis 表顶部插入 arxiv-paper-check 2026-10-22 行）、`wiki/log.md`（本条目）。
 - Contradictions/flags: ⚠️ 全部结论仅基于摘要（abstract-only，未核全文/代码）；⚠️ 机构未声明一律记 "not stated"，推断（DeepMind/Cambridge/RUC/pixee）已内联标注为推断；⚠️ API `submittedDate` 窗口（10-20→10-21）只覆盖 cs.AI 公告块 211 条中的 193 条，差额为同块内 cross-list 与 replacement（原始提交更早，如 `2601.13749`、`2610.22714`）——已并入 543 ID 并集，涉及条目在正文内标注；⚠️ `2610.28642` 原始提交为 2026-08-27，属本块新公告而非新投稿，已标注；⚠️ `2610.29869` 为单作者投稿、附带自发布制品，结论未在本 wiki 内复现；⚠️ 本窗口 CTR/ads 主题论文仅 5 篇且其中 1 篇为旧投稿再公告，样本量小于 AI lane；⚠️ 未发现与既有 wiki 页面的直接矛盾（[[ctr-scaling-landscape]] 因限定 Awesome-CTR-Scaling 仓库范围未修改，FineSID 记为候选进入者）；⚠️ **同日兄弟 digest 并发重叠**：本报告撰写期间，scheduled job 另行产出 `wiki/synthesis/2026-10-22/arxiv-daily.md`（10:30，30 IDs）与 `wiki/synthesis/2026-10-22/arxiv-ai-search.md`（10:39，42 IDs），二者与本报告 featured 的 15 篇中 **6 篇重叠**（2610.29138 / 2610.29298 / 2610.30128 / 2610.29216 / 2610.29458 / 2610.29435）——本报告保留完整 write-up 并在正文加 "Sibling overlap" 说明框，兄弟篇仅作全量目录；⚠️ 由兄弟 digest 提供的机构标注（Alibaba Group、USTC/Ant Group、RUC、ZOZO Research、IQuest/Beihang/RUC、CUHK-Shenzhen×FNii-Shenzhen）已在正文内联标注出处，abs 页本身无机构块；2610.29869 的 `Pixee` 经 arXiv API `<arxiv:affiliation>` 字段直接核实（本次唯一机器可验证机构）。
+
+## [2026-10-22] synthesis | LLM Tech Report Digest — 2026-10-22
+- Report: `wiki/synthesis/2026-10-22/tech-report-digest.md` (type: synthesis) — 全球主要 AI 公司大模型技术报告速览，覆盖 19 家公司/组织：DeepSeek、OpenAI、Anthropic、Meta、Google DeepMind、Microsoft、Mistral、Qwen(Alibaba)、xAI、NVIDIA、Moonshot、Amazon、Apple、ByteDance、智谱、Shanghai AI Lab、StepFun、01.AI、Baichuan。
+- 新增/更新窗口重点（vs 2026-09-11 报告）：
+  - DeepSeek-V4 (2026-04, arXiv:2606.19348) — CSA+HCA hybrid attention + mHC(Birkhoff polytope) + Muon optimizer；Pro 1.6T/49B、Flash 284B/13B；1M context；32T tokens；1M 推理 FLOPs 仅 V3.2 的 27%、KV cache 10%；Sovereign AI(TileLang+MXFP4，适配 Ascend/Cambricon)
+  - OpenAI GPT-6 Sol/Luna (2026-09-22) + GPT-6.1 Sol (2026-09-29) — 官方已发布，spec 未公开
+  - Anthropic Claude Opus 5.5 System Card (2026-09-22) — 5.5 家族首个，成本较 Opus 5 低 40%；TB4.0 66.4%；AA Intelligence Index 58 (#1)；CB-1 生物能力
+  - Meta Muse Spark Open (2026-10-15) — 816B/42B active MoE，1M context，四模态，Muse Model License；Llama 5 8B + Scout 109B-A17B (2026-05)
+  - Google Gemini 4 Argon (2026-09-30/10-13) + Gemma 4 技术报告 (2026-06-19, arXiv:2607.02770, global KV cache −37.5%, Slice-Granularity Elasticity)
+  - xAI Grok 4.7 (2026-09-21, 500K context) + Grok 4.8 (2.5T, 训练中)
+  - NVIDIA Nemotron 3.5 Super VL (120B/12B, 1M context, 2026-10-15) + Bolt 74B-A9B / Lightning 30B-A3B
+  - Apple AFM 3 第三代 (2026-06) — AFM 3 Core Advanced 20B/1-4B active，自研 Instruction-Following Pruning (IFP) 稀疏激活，experts 驻 NAND flash 突破内存墙；与 Google 合作蒸馏；macOS 27 新增 /usr/bin/fm
+  - 智谱 GLM-5.3 (2026-08-14)，承接 GLM-5.2 (2026-06-13, AA Index 51 开源最高)
+  - Qwen3.5-Omni 技术报告 (2026-04, arXiv:2604.15804) — Thinker-Talker + ARIA 单流交错；Hybrid-Attention MoE + GDN；215 项音频/视听 SOTA；Audio-Visual Vibe Coding
+  - Qwen3.8-Max (2026-08, 2.4T, 1M context)；Kimi K2.6 (2026-04, 长周期 coding 4000+ 工具调用/12h+)；Mistral Small 4 (2026-03) + Mistral Large 4 (2026-10-06)；Microsoft Phi-5 Mini (2026-04-28, 4B)；StepFun Step 5 Preview (2026-09-28)
+- 交叉主题分析：MoE+Hybrid 绝对主流；优化器创新(Muon/MuonClip)；长上下文竞赛(1M 成新标配)；推理模型格局；多模态/Omni 趋势；量化感知训练(2-bit/int2-4/MXFP4/NVFP4)。
+- New pages: `wiki/synthesis/2026-10-22/tech-report-digest.md`.
+- Updated: `wiki/index.md`（Sources 表 + Synthesis 表顶部插入 tech-report-digest 2026-10-22 行）、`wiki/log.md`（本条目）。
+- Contradictions/flags: ⚠️ 部分数据来自聚合追踪站（BenchLM/LLMReference/Next AI Model/Vals AI/LLMCheck），中置信度，参数量/日期可能与最终官方口径有差异（Muse Spark Open、Nemotron 3.5、Grok 4.7、GLM-5.3、GPT-6.1 Sol、Step 5 Preview、Qwen3.8-Max、Llama 5、Phi-5 等）；⚠️ GPT-6/GPT-6.1 Sol 已发布但 spec 未公开；⚠️ GLM-5.5 为未证实传闻，已标注；⚠️ 正式 arXiv 技术报告仅 DeepSeek-V4/Qwen3.5-Omni/Gemma 4/Baichuan-M4 为高置信度；无与既有 wiki 页面的直接矛盾。
