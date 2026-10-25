@@ -8766,3 +8766,9 @@
 - Updated: wiki/index.md (Synthesis 新增条目), wiki/log.md
 - New pages: wiki/synthesis/2026-10-25/wq101-alpha-daily.md
 - Contradictions: none
+
+## [2026-10-25] ingest | Game RL & Game AI Bot — Daily Paper Digest (2026-10-25)
+- Summary: wiki/synthesis/2026-10-25/game-rl-daily.md — covers SPIRAL (ICLR 2026), self-play reasoning, Wikipedia Game navigation benchmark, executor-advisor cost optimization, RATED tool reliability, Noise Space Learning/VLA adaptation, Splat2Act, Chronos Policy (time-aware), Hide and Seek explainability, multi-agent stochastic systems
+- Updated: wiki/index.md (added synthesis entry)
+- New pages: wiki/synthesis/2026-10-25/game-rl-daily.md
+- Contradictions: none
