@@ -8760,3 +8760,9 @@
 - Updated: wiki/index.md (Synthesis 新增条目), wiki/log.md
 - New pages: wiki/synthesis/2026-10-25/tech-report-digest.md
 - Contradictions: 部分闭源模型未公开精确参数，已标注未公开。
+
+## [2026-10-25] synthesis | wq101-alpha-daily (2026-10-25)
+- Summary: wiki/synthesis/2026-10-25/wq101-alpha-daily.md — WorldQuant 101 Alphas 美股 Top 20 筛选（2026-10-25）。基于 Alpha#1/#6/#12/#19/#30/#41/#53 因子逻辑，聚焦 AI 基建（半导体/算力/网络/存储/电源散热/云平台），输出 Top 20 排名表、板块分类、因子对齐、风险提示。
+- Updated: wiki/index.md (Synthesis 新增条目), wiki/log.md
+- New pages: wiki/synthesis/2026-10-25/wq101-alpha-daily.md
+- Contradictions: none
