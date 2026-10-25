@@ -8737,3 +8737,20 @@
 - New pages: `wiki/synthesis/2026-10-22/game-rl-daily.md`.
 - Updated: `wiki/index.md`（Synthesis 表顶部插入 game-rl-daily 2026-10-22 行）、`wiki/log.md`（本条目）。
 - Contradictions/flags: ⚠️ 全部 **abstract-only**（未读 PDF 全文），数字均为作者自报、未独立复现；⚠️ **机构一律从论文作者块/`thanks` 解析，绝不推断**——无作者块者记 "—"（`2610.29237` HTML 404；`2610.29673` 无 affiliation 块；`2610.29149` 仅给到院系）；⚠️ 窗口定义 = 10-22 公告块；`2610.27386`/`2610.27629` 为 10-19 提交、10-21 块公告，已标注；⚠️ **PCG 赛道本块空缺**；⚠️ 与既有 wiki 页面无矛盾——GuanDan 负结果与 [[rl-is-terrible]] 一致且加强之；⚠️ 同日三个 sibling（arxiv-daily / arxiv-ai-search / arxiv-paper-check）已写的 13 篇 game/world-model 论文仅作 cross-reference。
+
+## [2026-10-23] synthesis | arXiv AI Search - AI, LLMs, Recommendation, Advertising, Sequential Modeling, CTR, Games
+- Report: `wiki/synthesis/2026-10-23/arxiv-ai-search.md` (type: synthesis) — 17 papers, window ~2026-10-19…10-22.
+- Method: arXiv Export API queries for `cs.IR`, `cs.CL`, `cs.AI`, `cs.LG` (40 most recent each) plus targeted sweeps; arXiv `html` pages fetched for affiliation parsing. Export API intermittently returned 429/500, so coverage is a recent sample rather than an exhaustive scan.
+- Featured: FineSID `2610.29138`, SPAR `2610.27898`, ECHO `2610.28569`, CAPE `2610.29298`, Instagram baseline/incremental `2610.27423`, SOAR `2610.29556`, Click Thinning `2610.30999`, Next Best Action `2610.26817`, DR contextual pricing `2610.30957`, Auto-Purchase Line `2610.29216`, LongZero `2610.30132`, Uni-Mem `2610.29671`, MemoryTax `2610.29823`, Quant-Arena `2610.30113`, Where LLMs Recommend AI `2610.29785`, Environment Duels `2610.30116`, Flood-It `2610.31100`.
+- New pages: `wiki/synthesis/2026-10-23/arxiv-ai-search.md`.
+- Updated: `wiki/index.md` (Synthesis table — new arxiv-ai-search 2026-10-23 row), `wiki/log.md` (this entry).
+- Contradictions/flags: ⚠️ abstract-only; numbers are author-reported and not independently reproduced; ⚠️ affiliations parsed from author blocks, never inferred; ⚠️ several papers were previously referenced in 2026-10-21/10-22 sibling digests (`2610.29138`, `2610.29298`, `2610.29216`, `2610.29785`, `2610.29556`, `2610.27898`, `2610.27423`, `2610.26817`, `2610.28569`, `2610.30132`, `2610.29671`, `2610.30116`, `2610.30113`) — this report is a cross-cutting digest, not a new-to-wiki claim; ⚠️ no contradictions with existing wiki pages identified.
+
+
+## [2026-10-25] synthesis | arXiv Paper Check — AI & CTR (October 25, 2026)
+- Report: `wiki/synthesis/2026-10-25/arxiv-paper-check.md` (type: synthesis) — Recent submissions Oct 21–25 focusing on AI/CTR/recommendation/ads/LLM agents.
+- Method: arXiv API queries across cs.AI/cs.IR/cs.LG with CTR/advertising/recommendation filters; reviewed abstracts and metadata.
+- Featured: FineSID `2610.29138` (Alibaba, multimodal CTR progressive learning), LARA/agentic retrieval `2610.30423` (Adobe, attribution gap), Sensorimotor Alignment $S^2$ `2610.31670` (embodied proxy), pass@$k$ thought pruning `2610.31667` (efficient reasoning), bimanual imitation schedule decoupling `2610.26507` (manipulation).
+- New pages: `wiki/synthesis/2026-10-25/arxiv-paper-check.md`.
+- Updated: `wiki/index.md` (Synthesis table — added arxiv-paper-check 2026-10-25 row), `wiki/log.md` (this entry).
+- Contradictions/flags: ⚠️ abstract-only; numbers are author-reported; coverage limited to recent sample via API.
