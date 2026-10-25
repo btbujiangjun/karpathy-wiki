@@ -8754,3 +8754,9 @@
 - New pages: `wiki/synthesis/2026-10-25/arxiv-paper-check.md`.
 - Updated: `wiki/index.md` (Synthesis table — added arxiv-paper-check 2026-10-25 row), `wiki/log.md` (this entry).
 - Contradictions/flags: ⚠️ abstract-only; numbers are author-reported; coverage limited to recent sample via API.
+
+## [2026-10-25] synthesis | tech-report-digest (2026-10-25)
+- Summary: wiki/synthesis/2026-10-25/tech-report-digest.md — 搜索各大 AI 公司最新发布的大模型技术报告（Tech Report / Technical Report / System Card），覆盖 DeepSeek、OpenAI、Meta AI (LLaMA)、Google DeepMind (Gemini)、Anthropic (Claude)、Mistral AI、Qwen (Alibaba)、Microsoft (Phi)、Apple、xAI (Grok)、ByteDance (豆包/Doubao)、Zhipu AI (GLM)。重点关注新架构（MoE/Mamba/hybrid）、训练方法（pre-training/post-training/alignment/RL）、Scaling Law、多模态、长上下文、推理模型。整理中英文标题、发布机构、模型系列、发布日期、核心参数、主要创新点、arXiv/链接。
+- Updated: wiki/index.md (Synthesis 新增条目), wiki/log.md
+- New pages: wiki/synthesis/2026-10-25/tech-report-digest.md
+- Contradictions: 部分闭源模型未公开精确参数，已标注未公开。
