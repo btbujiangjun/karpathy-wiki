@@ -8787,6 +8787,13 @@
 - Updated: `wiki/index.md` (Synthesis table — new arxiv-ai-search 2026-10-26 row), `wiki/log.md` (this entry).
 - Contradictions/flags: abstract-only; numbers author-reported and not independently reproduced; affiliations parsed from author blocks/PDF, never inferred; `2610.32980` lists no affiliation on arXiv; no dedicated CTR-prediction paper in this window (HGE is GTV/conversion; OneLatent reports ads revenue); Click Thinning `2610.30999` already covered in 2026-10-23 sibling report and cross-referenced, not duplicated; no contradictions with existing wiki pages identified.
 
+## [2026-10-28] synthesis | investment-daily (2026-10-28)
+- Report: `wiki/synthesis/2026-10-28/investment-daily.md` — 美股 / 港股 / A 股 / 中概 ADR / 新能源车 / AI 热点日报；数据基准 2026-10-27 收盘，撰写 2026-10-28 08:00 CST 盘前。
+- Key: Anthropic S-1（ANT，估值约 $1.5 万亿）+ Meta 最高 $950 亿股权融资；台积电 CoWoS 报价上调 10%–20%；美股纳指 +1.18%、费半 +3%+，存储/光通信领涨；A 股上证 −1.33%、创业板 −3.41%、科创50 −4.81%，银行/消费逆势；港股恒指 −0.73%、恒生科技 −1.48%，智谱 +8.9%；FOMC 10-28 + MSFT/GOOGL/META/AMZN 财报周。
+- Updated: `wiki/index.md` (Synthesis table — new investment-daily 2026-10-28 row), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-10-28/investment-daily.md`.
+- Contradictions/flags: 标普涨幅按点位推算为 +0.60%（36kr 写 +0.06% 为笔误）；恒指 23,041.32 为确切收盘，国企/恒生科技为约数；中际旭创 H 股 10-27 收盘价源冲突（未采用）；AAPL 涨跌源冲突（采用 Investing 快照 −1.10%）；汇丰 −5.56% 催化未取得；Anthropic 估值、Meta 融资、CoWoS 涨价均为媒体/供应链口径。
+
 ## [2026-10-27] ingest | Game RL & Game AI Bot — Daily Paper Digest (2026-10-27)
 - Summary: wiki/synthesis/2026-10-27/game-rl-daily.md — covers Game RL, Game AI Bot (VLA/harness/agents), Game Foundation Models, PCG, Game Benchmarks, Industry Game AI, related techniques (self-play/RL/IL/VLA/world-models).
 - Updated: wiki/index.md (added synthesis entry)
