@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-10-27] synthesis | tech-report-digest (2026-10-27)
+- Summary: wiki/synthesis/2026-10-27/tech-report-digest.md — LLM Tech Report Digest（2026-10-27）。涵盖 DeepSeek（V4/V4.1-Flash-1017/FlashMemory）、OpenAI（GPT-6 Sol/Luna/6.1 Sol/Astra）、Meta（Muse Wonder）、Google Gemini 4 Argon、Anthropic Claude Opus 5.5、Mistral Large 4（Le Chonk）、Qwen3.8-Max、Moonshot Kimi K3.1 Pro/K3、Zhipu GLM-5.3/GLM-5.3-Flash、StepFun Step-3/3.7 Flash、Intern-S2-397B、ByteDance Seed 2.0、xAI Grok 4.7、Amazon Nova 2、Microsoft Phi-4-reasoning-vision/NVIDIA Nemotron 3.5 Bolt、Apple AFM 2026 等；聚焦 MoE/Mamba/hybrid、后训练/RL、Scaling Law、多模态、长上下文、推理/Agent、安全评估。
+- Updated: wiki/index.md (Synthesis 表新增 2026-10-27 行)
+- New pages: wiki/synthesis/2026-10-27/tech-report-digest.md
+- Contradictions: 部分闭源模型参数未完全公开，Apple AFM 2026、01.AI Yi、Baichuan 缺乏完整主源技术报告（已标注）；Kimi K3.1 Pro 权重计划 2026-11-04 开源。
+
 ## [2026-10-16] synthesis (enrich) | wq101-alpha-daily (2026-10-16)
 - Summary: wiki/synthesis/2026-10-16/wq101-alpha-daily.md — 增补（未改动 Top 20 选股与评分）。补充：①市场表填入此前留空的纳斯达克100 **29,935.59 −0.05%（唯一收跌宽基）**、罗素2000 **2,767.28 +1.38%**、SOX **11,581.22 −0.88%**，并加 9 月零售销售 **+0.8%（预期 +0.3%）**、初请 199,000、成交量 **207 亿股 vs 20日均 176 亿**。②修正纳指为"盘中 −1.4% 后收复 = 4 月以来最大日内反转"、10Y "约 −10bp（逾一年最大单日降幅）"。③新增叙事：涨幅榜分散化（EFX +7.25% 标普第1、FICO +6.99% 第3、RDDT +7.24%、COIN +6.32%；软件 NOW +6.14%/INTU +6.36%/CRM +4.6%）、能源 XLE −1.55% vs WTI +3.03% 的 **Alpha#12 量价背离**、市场宽度（NYSE 1,990:757、Nasdaq 2,214:1,199、标普涨跌 3.1:1、74% 个股上涨、纳指自低点 +404 点）。④财报日历细化（10/19 Lam、10/20 盘前 GE/GM/RTX/NOC/MMM/MSCI、10/21 盘前 ABT/NEE/CME/DHR/T/ELV、10/21 盘后 IBM/LRCX/TXN、10/22 盘前 LMT/BLK/DOW/POOL、10/23 AXP/SLB）。⑤MU 补 Morningstar 公允价 $1,520.76→$1,560.57、技术面未站上 0.5 斐波那契 $923.25；NVDA 补盘中破 100DMA $214.47/38.2% 回撤 $213.15（日内低 $212.85）后回收、成交 1.26 亿股。⑥标注矛盾/数据质量：**Vertiv 美股 −3.61% vs A 股"隔夜 +24%"叙事矛盾（未采信后者）**；**TTD $13.13/$57.5 亿市值异常，排除出筛选池**；AMD −1.50% vs −3.1% 采用 −1.50%。
 - Updated: wiki/synthesis/2026-10-16/wq101-alpha-daily.md（增补版）
@@ -8771,4 +8777,18 @@
 - Summary: wiki/synthesis/2026-10-25/game-rl-daily.md — covers SPIRAL (ICLR 2026), self-play reasoning, Wikipedia Game navigation benchmark, executor-advisor cost optimization, RATED tool reliability, Noise Space Learning/VLA adaptation, Splat2Act, Chronos Policy (time-aware), Hide and Seek explainability, multi-agent stochastic systems
 - Updated: wiki/index.md (added synthesis entry)
 - New pages: wiki/synthesis/2026-10-25/game-rl-daily.md
+- Contradictions: none
+
+## [2026-10-26] synthesis | arXiv AI Search - AI, LLMs, Recommendation, Advertising, Sequential Modeling, CTR, Games
+- Report: `wiki/synthesis/2026-10-26/arxiv-ai-search.md` (type: synthesis) — 24 papers, effective window 2026-10-22 to 2026-10-23.
+- Method: arXiv Export API sweep of `cs.IR`, `cs.CL`, `cs.AI`, `cs.GT`, `cs.LG`, `cs.MA` (120 most recent each), deduplicated to 637 unique IDs; title/abstract screening; affiliation parsing from `arxiv.org/html` author blocks, with PDF first-page fallback for `2610.32141` and `2610.32951`.
+- Featured: Deco `2610.32980`, KD across item/code spaces `2610.32943`, TGR-EvoDAG `2610.32326`, TCBSA `2610.32098`, OneLatent `2610.30675`, HGE `2610.32420`, Monetizing Intelligence `2610.32945`, Differentiable Combinatorial Auction `2610.31977`, Balanced Posted Prices `2610.31153`, ALTO MXFP4 `2610.32229`, LARE `2610.32141`, Rounding-Location Alignment `2610.32951`, On-Policy Self-Training `2610.32770`, Rewriting Scaling Laws `2610.31867`, AMM `2610.32464`, ActionRAG `2610.32752`, MCP Faults `2610.32555`, Frontier-OPD `2610.32802`, BGAFlow `2610.30825`, PlayerEmbed `2610.32727`, Halting Heads `2610.32246`, Werewolf Agents `2610.32107`, Markets of Minds `2610.32190`, Recommender Regret `2610.32910`.
+- New pages: `wiki/synthesis/2026-10-26/arxiv-ai-search.md`.
+- Updated: `wiki/index.md` (Synthesis table — new arxiv-ai-search 2026-10-26 row), `wiki/log.md` (this entry).
+- Contradictions/flags: abstract-only; numbers author-reported and not independently reproduced; affiliations parsed from author blocks/PDF, never inferred; `2610.32980` lists no affiliation on arXiv; no dedicated CTR-prediction paper in this window (HGE is GTV/conversion; OneLatent reports ads revenue); Click Thinning `2610.30999` already covered in 2026-10-23 sibling report and cross-referenced, not duplicated; no contradictions with existing wiki pages identified.
+
+## [2026-10-27] ingest | Game RL & Game AI Bot — Daily Paper Digest (2026-10-27)
+- Summary: wiki/synthesis/2026-10-27/game-rl-daily.md — covers Game RL, Game AI Bot (VLA/harness/agents), Game Foundation Models, PCG, Game Benchmarks, Industry Game AI, related techniques (self-play/RL/IL/VLA/world-models).
+- Updated: wiki/index.md (added synthesis entry)
+- New pages: wiki/synthesis/2026-10-27/game-rl-daily.md
 - Contradictions: none
