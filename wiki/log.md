@@ -8801,7 +8801,7 @@
 - Contradictions: none
 
 ## [2026-10-27] synthesis | Investment Daily — 2026-10-27
-- Report: `wiki/synthesis/2026-10-27/investment-daily.md` (type: synthesis) — 延迟发布，数据截止 2026-10-27 美股/港股/A 股完整收盘（撰写于 2026-10-28 08:00 CST）。
+- Report: `wiki/synthesis/2026-10-27/investment-daily.md` (type: synthesis) — 延迟发布，数据截止 2026-10-27 美股/港股/A 股完整收盘（撰写于 2026-10-29 08:01 CST）。
 - Key themes: ① Anthropic 递交 S-1 冲刺纳斯达克 IPO（据报代码 ANT、目标估值 $2 万亿、营收 $163 亿）；② 美股芯片股领涨，SOXX +3.91%、AMD +5.45%、AVGO +4.00%、TSM +2.95%、MU +2.77%；③ Meta 据报拟增发 $950 亿股票融资 AI 扩张，META -1.64%；④ Tesla 获 Barclays 上调至 Overweight，TSLA +4.04%；⑤ 港股恒生科技 -1.48% 至 3,800.43，距 52 周低仅 6.41 点，汇丰 -5.56%、龙湖 -7.06%、内房破位，半导体高开低走；⑥ A 股科创50 -4.81%、创业板 -3.41%，超 4,900 股下跌，银行/核电/零售逆势，寒武纪 -5.68%、北方华创 -5.51%、新易盛 -5.60%；⑦ 中概 ADR 相对抗跌，京东 +1.31%、小鹏 +1.86%、蔚来 +0.92%。
 - Updated: `wiki/index.md` (Synthesis table — new investment-daily 2026-10-27 row), `wiki/log.md` (this entry).
 - New pages: `wiki/synthesis/2026-10-27/investment-daily.md`.

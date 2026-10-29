@@ -2,14 +2,14 @@
 title: "投资热点日报 — 美股 / 港股 / A 股 / 中概股（2026-10-27，延迟发布）"
 type: synthesis
 created: 2026-10-27
-updated: 2026-10-28
+updated: 2026-10-29
 sources: []
 tags: [investment-daily, US-stocks, HK-stocks, A-shares, Chinese-ADRs, AI, EV, semiconductor, anthropic, ipo, broadcom, meta, tesla, nvidia, amd, memory, optical-module, fed, earnings, hongkong-property, daily-digest]
 ---
 
 # 投资热点日报 — 美股 / 港股 / A 股 / 中概股（2026-10-27）
 
-> **数据基准**：本报告原定 2026-10-27 早间发布，因任务延迟至 **2026-10-28 08:00 CST（美东 10-27 20:00）** 完成，因此采用 **10-27 美股、港股、A 股完整收盘**，而非早盘快照。
+> **数据基准**：本报告原定 2026-10-27 早间发布，因任务延迟至 **2026-10-29 08:01 CST（美东 10-28 20:01）** 完成，因此采用 **10-27 美股、港股、A 股完整收盘**，而非早盘快照。
 >
 > | 市场 | 使用数据 | 状态 |
 > |---|---|---|
@@ -458,6 +458,6 @@ tags: [investment-daily, US-stocks, HK-stocks, A-shares, Chinese-ADRs, AI, EV, s
 
 ---
 
-*报告生成时间：2026-10-28 08:00 CST（延迟发布，数据截止 2026-10-27 收盘）*
+*报告生成时间：2026-10-29 08:01 CST（延迟发布，数据截止 2026-10-27 收盘）*
 *数据来源：stockanalysis.com、腾讯行情、Reuters、CNBC、财联社、新浪财经、智通财经、香港经济日报、公司公告/媒体转述*
 *声明：本报告仅供研究参考，不构成投资建议。*
