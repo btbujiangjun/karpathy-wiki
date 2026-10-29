@@ -8817,7 +8817,7 @@
 - Summary: wiki/synthesis/2026-10-28/wq101-alpha-daily.md — WorldQuant 101 Alphas 美股 Top 20 筛选（2026-10-28）。基于 Alpha#1/#6/#12/#19/#30/#41/#53 因子逻辑，数据基准为 2026-10-27 收盘 + 10-28 盘前事件，聚焦 AI 基建（半导体/存储/网络/电力/能源/云平台），输出 Top 20 排名表、板块汇总、因子对齐、组合构建建议与风险提示。
 - Updated: wiki/index.md (Synthesis 新增 2026-10-28 条目), wiki/log.md
 - New pages: wiki/synthesis/2026-10-28/wq101-alpha-daily.md
-- Contradictions: 部分价格为盘中/盘后或 10-23/10-26 数据；市值为约数；因子读数为代理估计，不是逐票精确回测。已标注，不构成投资建议。
+- Contradictions: 价格已按 Nasdaq 10-27 收盘复核（CEG/AMAT 已由 10-26/10-23 更新为 10-27）；市值为 Nasdaq summary 约数；因子读数为代理估计，不是逐票精确回测。已标注，不构成投资建议。
 
 ## [2026-10-28] synthesis | LLM Tech Report Digest — 2026-10-28
 - Report: `wiki/synthesis/2026-10-28/tech-report-digest.md` (type: synthesis) — 覆盖 2026-10-21 → 10-28 的 19 家/组织；10-28 当日无新增一手技术报告，以复核与补正为主。
@@ -8850,3 +8850,11 @@
 - New pages: `wiki/synthesis/2026-10-29/tech-report-digest.md`.
 - Updated: `wiki/index.md` (Synthesis table — new tech-report-digest 2026-10-29 row), `wiki/log.md` (this entry).
 - Contradictions/flags: 修正 10-28 digest 的 Mistral「52B active」为 49B active/token（52B 含 embedding 与输出层）；Mistral HF ETA 由 10-31 15:00Z 改为 10-29 18:00 UTC；Gemini 4 Carbon 无 model card；Nemotron 名称 30B 但官方为 34B total；DeepSeek V5 仅为占位符；所有 benchmark 为厂商自报，未独立复现。
+
+## [2026-10-29] synthesis | investment-daily (2026-10-29)
+- Report: `wiki/synthesis/2026-10-29/investment-daily.md` (type: synthesis) — 美股/中概基于 2026-10-28 完整收盘 + 盘后，港股/A 股基于 2026-10-28 完整收盘；10-29 港 A 盘前，仅列美股期货信号。
+- Key calls: FOMC 维持 3.75%–4.00%（10:2，12 月加息概率约 85%，10Y 5.03%）；美股 S&P +0.28% 7,743.98、纳指 +0.27%、费半 +1.75%，ORCL +10.58%、SKHY +13.30%、MU +5.96%，NVDA −1.17%；盘后 MSFT Azure +48%/capex 452 亿美元低于预期 +3.8%，GOOGL EPS miss/FCF −90.7 亿美元/2027 capex 约 3,000 亿美元 −9%，纳指期货 −1.2%；恒指 +0.23% 23,094.83、恒生科技 +1.40%，中芯 +5.43%、联想 +6.26%、阿里 +1.96%，南向净卖出 8.04 亿港元；A 股上证 +0.91% 3,681.47、创业板 +3.40%，成交 1.63 万亿元/4,156 股上涨，中际旭创 +10.28%、新易盛 +8.08%、寒武纪 +4.93%；金龙指数 −1.83%，BABA +0.72%、PDD −1.19%、新东方 −12.54%。
+- Themes: HBM/存储超级周期（SK 海力士营业利润率 80%、HBM 排满至 2029、短缺至 2030）、光模块/CPO（高盛上修 2026–2028 TAM 至 677/1,314/1,485 亿美元）、Oracle/新云与多芯片（FY2030 营收 2,250 亿美元、TPU on OCI 2027）、大型平台 capex 与 FCF 分化、中国机器人与物理 AI（上海 2028 年 8,000 台人形机器人）、EV/新能源承压。
+- Updated: `wiki/index.md` (Synthesis table — new investment-daily 2026-10-29 row), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-10-29/investment-daily.md`.
+- Contradictions/flags: 恒指收盘官方 23,094.83（+0.23%）vs 二手 23,102.63（+0.27%）；更正 10-28 日报「Meta 10-28 盘后财报」口径，Meta Q3 实际已于 10-21 发布，10-28 下跌与 950 亿美元股权融资/稀释有关；Alphabet 营收 consensus 存在 1,272 亿 vs 1,282 亿美元口径差异；寒武纪收盘 958.00（+4.93%）vs 盘中 949.97；部分 ADR/A 股为不同终端收盘口径；中际旭创 H 代码未统一，仅保留价格；极氪 ZK 已于 2025-12-22 私有化退市。所有数据为公开网络检索，不构成投资建议。
