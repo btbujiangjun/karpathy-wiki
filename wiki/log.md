@@ -8799,3 +8799,16 @@
 - Updated: wiki/index.md (added synthesis entry)
 - New pages: wiki/synthesis/2026-10-27/game-rl-daily.md
 - Contradictions: none
+
+## [2026-10-27] synthesis | Investment Daily — 2026-10-27
+- Report: `wiki/synthesis/2026-10-27/investment-daily.md` (type: synthesis) — 延迟发布，数据截止 2026-10-27 美股/港股/A 股完整收盘（撰写于 2026-10-28 08:00 CST）。
+- Key themes: ① Anthropic 递交 S-1 冲刺纳斯达克 IPO（据报代码 ANT、目标估值 $2 万亿、营收 $163 亿）；② 美股芯片股领涨，SOXX +3.91%、AMD +5.45%、AVGO +4.00%、TSM +2.95%、MU +2.77%；③ Meta 据报拟增发 $950 亿股票融资 AI 扩张，META -1.64%；④ Tesla 获 Barclays 上调至 Overweight，TSLA +4.04%；⑤ 港股恒生科技 -1.48% 至 3,800.43，距 52 周低仅 6.41 点，汇丰 -5.56%、龙湖 -7.06%、内房破位，半导体高开低走；⑥ A 股科创50 -4.81%、创业板 -3.41%，超 4,900 股下跌，银行/核电/零售逆势，寒武纪 -5.68%、北方华创 -5.51%、新易盛 -5.60%；⑦ 中概 ADR 相对抗跌，京东 +1.31%、小鹏 +1.86%、蔚来 +0.92%。
+- Updated: `wiki/index.md` (Synthesis table — new investment-daily 2026-10-27 row), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-10-27/investment-daily.md`.
+- Contradictions/flags: Anthropic/Meta/SpaceX 融资条款为媒体转述，未获公司最终确认；A 股科技回吐归因为价格与新闻推断，无单一确认利空；ZK 报价停留在 2025-12-22 已排除；VIX、10Y 美债、油价精确收盘、南向资金、当日融资余额未获取。
+
+## [2026-10-28] synthesis | wq101-alpha-daily (2026-10-28)
+- Summary: wiki/synthesis/2026-10-28/wq101-alpha-daily.md — WorldQuant 101 Alphas 美股 Top 20 筛选（2026-10-28）。基于 Alpha#1/#6/#12/#19/#30/#41/#53 因子逻辑，数据基准为 2026-10-27 收盘 + 10-28 盘前事件，聚焦 AI 基建（半导体/存储/网络/电力/能源/云平台），输出 Top 20 排名表、板块汇总、因子对齐、组合构建建议与风险提示。
+- Updated: wiki/index.md (Synthesis 新增 2026-10-28 条目), wiki/log.md
+- New pages: wiki/synthesis/2026-10-28/wq101-alpha-daily.md
+- Contradictions: 部分价格为盘中/盘后或 10-23/10-26 数据；市值为约数；因子读数为代理估计，不是逐票精确回测。已标注，不构成投资建议。
