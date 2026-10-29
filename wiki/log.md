@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-10-28] synthesis | conference-digest (2026-10-28)
+- Summary: wiki/synthesis/2026-10-28/conference-digest.md — Conference Digest: **20 papers** across ICML 2026, AAAI 2026, NeurIPS 2025, ICLR 2026, KDD 2026, CVPR 2026, ACL 2026, EMNLP 2025, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025, plus two arXiv preprints. Includes award winners, production systems, bilingual titles, authors/affiliations, methods, exact comparisons, and caveats.
+- Updated: wiki/index.md (Synthesis 表新增 2026-10-28 conference-digest 行)
+- New pages: wiki/synthesis/2026-10-28/conference-digest.md
+- Contradictions: Gated Attention exact award label remains disputed (Best Paper vs Runner-up); ReconVLA AAAI outstanding status tentative; HOBA/GenCI exact table values marked as prior wiki notes because not re-confirmed from official PDFs; OneRec-Think and Meta synthetic-data paper are arXiv-only, Meta is an ICML 2026 submission not a confirmed acceptance.
+
 ## [2026-10-27] synthesis | tech-report-digest (2026-10-27)
 - Summary: wiki/synthesis/2026-10-27/tech-report-digest.md — LLM Tech Report Digest（2026-10-27）。涵盖 DeepSeek（V4/V4.1-Flash-1017/FlashMemory）、OpenAI（GPT-6 Sol/Luna/6.1 Sol/Astra）、Meta（Muse Wonder）、Google Gemini 4 Argon、Anthropic Claude Opus 5.5、Mistral Large 4（Le Chonk）、Qwen3.8-Max、Moonshot Kimi K3.1 Pro/K3、Zhipu GLM-5.3/GLM-5.3-Flash、StepFun Step-3/3.7 Flash、Intern-S2-397B、ByteDance Seed 2.0、xAI Grok 4.7、Amazon Nova 2、Microsoft Phi-4-reasoning-vision/NVIDIA Nemotron 3.5 Bolt、Apple AFM 2026 等；聚焦 MoE/Mamba/hybrid、后训练/RL、Scaling Law、多模态、长上下文、推理/Agent、安全评估。
 - Updated: wiki/index.md (Synthesis 表新增 2026-10-27 行)
@@ -8821,6 +8827,12 @@
 - Updated: `wiki/index.md` (Synthesis table — new tech-report-digest 2026-10-28 row), `wiki/log.md` (this entry).
 - Contradictions/flags: 10-27 digest 的 Mistral 49B active 更正为官方 52B（1.05T total）；Qwen 最新架构报告应为 Qwen3.8-Flash-Next 而非 Qwen3.8-Max；DeepSeek V4.1-Flash 补充 arXiv 2609.19969；Apple AFM 3 仍无 arXiv 报告；Phi-5 仅有二手传闻；Mistral 权重与 license 未落地；所有 benchmark 为厂商自报，未独立复现。
 
+## [2026-10-29] synthesis | wq101-alpha-daily (2026-10-29)
+- Summary: wiki/synthesis/2026-10-29/wq101-alpha-daily.md — WorldQuant 101 Alphas 美股 Top 20 筛选（2026-10-29）。数据基准为 2026-10-28 收盘 + 10-28 盘后/10-29 盘前，使用 Alpha#1/#6/#12/#19/#30/#41/#53，输出 Top 20、板块汇总、因子对齐、组合建议与风险提示。
+- Updated: wiki/index.md (Synthesis 新增 2026-10-29 条目), wiki/log.md
+- New pages: wiki/synthesis/2026-10-29/wq101-alpha-daily.md
+- Contradictions: 部分价格为盘后/盘中；市值为约数；因子读数为代理估计，不是逐票精确回测；GOOGL EPS 媒体口径不一，正文未采用具体 EPS 数值。已标注，不构成投资建议。
+
 ## [2026-10-29] synthesis | arxiv-paper-check (2026-10-29)
 - Report: `wiki/synthesis/2026-10-29/arxiv-paper-check.md` (type: synthesis) — 14 featured + 8 notable papers, window = 2026-10-28 arXiv RSS announcement batch (latest at query time).
 - Method: arXiv RSS sweep of `cs.IR`, `cs.AI`, `cs.LG`, `cs.CL`; 822 unique items, 491 `new`/`cross`, 51 `cs.IR`; export API was rate-limited (`HTTP 429`); abstract-only screening; all featured IDs grep-checked absent from wiki and deduplicated against `wiki/synthesis/2026-10-26/arxiv-ai-search.md`.
@@ -8830,3 +8842,11 @@
 - Updated: `wiki/index.md` (Synthesis table — new arxiv-paper-check 2026-10-29 row), `wiki/log.md` (this entry).
 - New pages: `wiki/synthesis/2026-10-29/arxiv-paper-check.md`.
 - Contradictions/flags: abstract-only and author-reported, no independent reproduction; "Announced" is RSS batch date, not original submission date; export API throttled so RSS is the window source; cross-day embedding study withholds raw datasets and exact values; no contradictions with existing wiki pages identified.
+
+## [2026-10-29] synthesis | LLM Tech Report Digest — 2026-10-29
+- Report: `wiki/synthesis/2026-10-29/tech-report-digest.md` (type: synthesis) — 增量覆盖 2026-10-28 → 10-29，基线为 2026-10-28 digest；覆盖 20 家/组织，24h 内仅 Google 与 NVIDIA 有新增一手技术材料。
+- Featured: Gemini 4 Carbon（10-28；AA Intelligence Index v5 #1 59；SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0%；仅向网络安全防御者开放；无 model card，URL/PDF 均 404）、Nemotron 3.5 Transcribe（10-28；34B/4.3B active，65,536 ctx，1h 音频，40 语种，OpenMDW-1.1，技术报告 PDF）、Mistral Large 4（HF `Upcoming release` ETA 10-29 18:00 UTC，991 waiting；1T/49B active，52B 含 embedding）、DeepSeek V5 代码占位符（`v5`/`v5-open`/`v5-next`，未发布）。
+- Method: 官方 blog / HF model card / 技术报告 PDF 优先；arXiv、GitHub、第三方榜单交叉核对；厂商自报与第三方口径分开标注；未证实传闻（GLM-5.5、Llama 5、Grok 4.8）不进入主表。
+- New pages: `wiki/synthesis/2026-10-29/tech-report-digest.md`.
+- Updated: `wiki/index.md` (Synthesis table — new tech-report-digest 2026-10-29 row), `wiki/log.md` (this entry).
+- Contradictions/flags: 修正 10-28 digest 的 Mistral「52B active」为 49B active/token（52B 含 embedding 与输出层）；Mistral HF ETA 由 10-31 15:00Z 改为 10-29 18:00 UTC；Gemini 4 Carbon 无 model card；Nemotron 名称 30B 但官方为 34B total；DeepSeek V5 仅为占位符；所有 benchmark 为厂商自报，未独立复现。
