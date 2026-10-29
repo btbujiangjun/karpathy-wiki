@@ -8812,3 +8812,11 @@
 - Updated: wiki/index.md (Synthesis 新增 2026-10-28 条目), wiki/log.md
 - New pages: wiki/synthesis/2026-10-28/wq101-alpha-daily.md
 - Contradictions: 部分价格为盘中/盘后或 10-23/10-26 数据；市值为约数；因子读数为代理估计，不是逐票精确回测。已标注，不构成投资建议。
+
+## [2026-10-28] synthesis | LLM Tech Report Digest — 2026-10-28
+- Report: `wiki/synthesis/2026-10-28/tech-report-digest.md` (type: synthesis) — 覆盖 2026-10-21 → 10-28 的 19 家/组织；10-28 当日无新增一手技术报告，以复核与补正为主。
+- Featured: GPT-6.1 Terra system card addendum（10-26；1.05M context，cyber Critical）、Muse Glimmer 30B（10-23；29.6B dense，128K+）、Nemotron 3.5 Super/Lightning（10-21；120B/12B 与 30B/3B，hybrid Mamba-Transformer）、Mistral Large 4（1.05T/52B active，权重截至 10-27 未发布，HF ETA 10-31 15:00Z）、Qwen3.8-Flash-Next（125B/6B + 51B n-gram，GDN+QSA，262K native/1M）、DeepSeek V4.1-Flash（552B，CED，16B decode/8B prefill，890 bytes/token）、Kimi K3.1 Pro/K3、GLM-5.3、MAI-Base-2、AFM 3、Nova 2、Grok 4.7、Claude Haiku 5.5、Gemini 4 Argon、Seed2.0、Step 5 Preview、Intern-S2-Preview、Baichuan-M4。
+- Method: 官方 model card / system card / technical report / 开发者文档优先；Exa websearch + arXiv abs/HTML + 官方 PDF 交叉核对；厂商自报 benchmark 与第三方口径分开标注；未证实传闻（Phi-5）不进入主表。
+- New pages: `wiki/synthesis/2026-10-28/tech-report-digest.md`.
+- Updated: `wiki/index.md` (Synthesis table — new tech-report-digest 2026-10-28 row), `wiki/log.md` (this entry).
+- Contradictions/flags: 10-27 digest 的 Mistral 49B active 更正为官方 52B（1.05T total）；Qwen 最新架构报告应为 Qwen3.8-Flash-Next 而非 Qwen3.8-Max；DeepSeek V4.1-Flash 补充 arXiv 2609.19969；Apple AFM 3 仍无 arXiv 报告；Phi-5 仅有二手传闻；Mistral 权重与 license 未落地；所有 benchmark 为厂商自报，未独立复现。

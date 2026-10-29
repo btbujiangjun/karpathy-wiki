@@ -366,6 +366,7 @@ Papers are organized by research category. Each page includes problem background
 
 | File | Topic | Sources |
 |------|-------|---------|
+| [tech-report-digest](synthesis/2026-10-28/tech-report-digest.md) | LLM Tech Report Digest — 2026-10-28: 复核 2026-10-21→10-28，19 家/组织。新增/修订：GPT-6.1 Terra（10-26，1.05M ctx，cyber Critical）、Muse Glimmer 30B（10-23，29.6B dense）、Nemotron 3.5 Super/Lightning（10-21，120B/12B & 30B/3B）、Mistral Large 4（1.05T/52B active，权重延期至 10-31）、Qwen3.8-Flash-Next（125B/6B + 51B n-gram，262K native/1M）、DeepSeek V4.1-Flash（552B，CED，16B decode/8B prefill）、Kimi K3.1 Pro、GLM-5.3、MAI-Base-2、AFM 3、Nova 2、Grok 4.7、Claude Haiku 5.5、Gemini 4 Argon | 2026-10-28 | tech-report, LLM, technical-report, system-card, arXiv, moe, reasoning, long-context, multimodal, hybrid-architecture, scaling-law, daily-digest |
 | [wq101-alpha-daily](synthesis/2026-10-28/wq101-alpha-daily.md) | WorldQuant 101 Alpha 美股 Top 20 筛选（2026-10-28） | 2026-10-28 | worldquant, alphas, factor-investing, momentum, reversal, volatility, large-cap, us-equities, quantitative-screening |
 | [wq101-alpha-daily](synthesis/2026-10-25/wq101-alpha-daily.md) | From WorldQuant 101 Alphas: Screening US Equities for Top 20 Picks (2026-10-25) | 2026-10-25 | worldquant, alphas, factor-investing, momentum, reversal, volatility, large-cap, us-equities, quantitative-screening |
 | [arxiv-paper-check](synthesis/2026-10-25/arxiv-paper-check.md) | arXiv Paper Check — AI & CTR (October 25, 2026) | 2026-10-25 | arxiv, daily-check, ai, ctr, recommendation, ads, llm, agents, retrieval, ir, ranking |
