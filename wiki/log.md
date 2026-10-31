@@ -8891,3 +8891,21 @@
 - New pages: `wiki/synthesis/2026-10-30/conference-digest.md`.
 - Updated: `wiki/index.md` (Synthesis table — new conference-digest row), `wiki/log.md` (this entry).
 - Contradictions/flags: ICML 2026 accepted count 6,352 (official) vs 6,634 (aggregators); CVPR 2026 4,089 vs 4,090; several ICML 2026 poster-only papers lack public arXiv versions and verified numbers (marked "see paper"); some affiliations marked only where confirmed.
+
+## [2026-10-30] arxiv-daily | arXiv Daily — AI, LLMs, Recommendation, Advertising, CTR, Sequential Modeling, Games
+- Summary: `wiki/synthesis/2026-10-30/arxiv-daily.md` (18 papers, 2026-10-26→10-27 announcement batch).
+- Method: arXiv Export API sweep (cs.CL/cs.LG/cs.AI/cs.IR/cs.GT/cs.MA/stat.ML + keyword queries; 1,006 pooled records), in-window screening, dedup vs same-day `arxiv-ai-search`.
+- Rec/sequential: LESSRec (2610.37286), PDG-F (2610.37280), AutoRSE (2610.37228), KL-MOPD (2610.36973), BehaveRec (2610.36239), RELAY (2610.36000), LinkedIn semantic labeling (2610.36383), Refiner (2610.36890), JevRec (2610.36937), DARTS (2610.36954), cross-day embeddings (2610.36408).
+- CTR/ads: TRIP (2610.37140), Roblox creative pre-ranking (2610.36020), DiffAuction (2610.34917). Games: GameVerse (2610.37257). LLM: Heads of Security (2610.37657), EnergyCal (2610.37062), Guided-RLVR (2610.37041).
+- New pages: `wiki/synthesis/2026-10-30/arxiv-daily.md`.
+- Updated: `wiki/index.md` (Synthesis table).
+- Contradictions/flags: none. All quantitative results author-reported and not independently reproduced; BehaveRec item-level result explicitly mixed and scoped as open by the authors; LY study withholds raw dataset sizes.
+- Temp artifacts: fetched pages/PDFs cached under `/var/folders/.../T/opencode/arx1030/` and removed after extraction.
+
+## [2026-10-30] synthesis | Game RL & Game AI Bot — Daily Paper Digest (2026-10-30)
+- Summary: wiki/synthesis/2026-10-30/game-rl-daily.md — 25 verified new papers (submission window ~2026-10-19…10-27; 369 candidates screened; 13 papers already covered by sibling digests excluded).
+- Coverage: Game RL (zero-sum POSG policy iteration, no-regret exploitation theory, noise-shaped surplus, TANDEM centralized/decentralized critic, N-agent ad hoc teamwork critics, MIRL multi-objective MARL, program-level co-adaptive self-play, SpecMAGIC, safe-MARL attacks, EMPO, Short-to-Long value learning); Game AI Bots (Gym-Anything-RT real-time VLM minigames, DECE Eurogame arena, AI-teaches-humans Go, failure-feedback backfiring, AgentMonopoly personas); Game Foundation/World Models (BoxWorld, World-in-Context, Tempo-Zero, WorldStream); PCG (VibeGame, AnyGameRenderer); Benchmarks (WMEval); Industry/real-time inference (WorldPager); Related (PACT).
+- Key findings: frontier VLM agents pass 9.0% of real-time minigames vs 75.0% paused (2610.37567); harness choice rivals model choice in LLM game benchmarks (2610.35773); symbolic-engine + neural-renderer hybrids gain traction (2610.36371, 2610.28827); self-play moves from policies to executable programs (2610.32433, 2610.36143); naive failure transcripts make small LLM players repeat illegal moves (2610.30205).
+- Updated: `wiki/index.md` (Synthesis table — new game-rl-daily 2026-10-30 row), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-10-30/game-rl-daily.md`.
+- Contradictions/flags: ⚠️ abstract/author-block only; numbers author-reported and not independently reproduced; affiliations taken from arXiv HTML/PDF, not inferred (`2610.34799` lists none); ⚠️ sibling digests on 2026-10-20…10-30 already cover `2610.36306`, `2610.33845`, `2610.25356`, `2610.25113`, `2610.26286`, `2610.25957`, `2610.37397`, `2610.34791`, `2610.32107`, `2610.27670`, `2610.28554`, `2610.35980`, `2610.26789`; no contradictions with existing wiki pages identified.
