@@ -8909,3 +8909,13 @@
 - Updated: `wiki/index.md` (Synthesis table — new game-rl-daily 2026-10-30 row), `wiki/log.md` (this entry).
 - New pages: `wiki/synthesis/2026-10-30/game-rl-daily.md`.
 - Contradictions/flags: ⚠️ abstract/author-block only; numbers author-reported and not independently reproduced; affiliations taken from arXiv HTML/PDF, not inferred (`2610.34799` lists none); ⚠️ sibling digests on 2026-10-20…10-30 already cover `2610.36306`, `2610.33845`, `2610.25356`, `2610.25113`, `2610.26286`, `2610.25957`, `2610.37397`, `2610.34791`, `2610.32107`, `2610.27670`, `2610.28554`, `2610.35980`, `2610.26789`; no contradictions with existing wiki pages identified.
+
+## [2026-10-30] synthesis | WorldQuant 101 Alpha 美股 Top 20 筛选（2026-10-30）
+- Report: `wiki/synthesis/2026-10-30/wq101-alpha-daily.md` (type: synthesis) — 数据基准 2026-10-29 完整收盘 + 10-29 盘后。
+- Market: S&P 500 7,720.39 (−0.30%)、Nasdaq 26,184.72 (−1.38%)、Dow 52,342.56 (−0.25%)、Russell 2000 +1.01%、SOX −1.42%；8/11 板块上涨，医疗 +2.4%~+2.65%、房地产 +2.2%~+2.33%、必需消费 +1.5%~+1.69% 领涨，通信服务（GOOGL 权重）、科技、能源下跌；4,471 涨/3,382 跌、484 新高/516 新低、仅 38% 高于 50DMA；10Y 5.00%、2Y 4.65%、30Y 5.32%；Q3 GDP 初值 3.4%、9 月核心 PCE +0.3% MoM/整体 +3.6% YoY；WTI 约 $102、Brent 约 $115、黄金 $4,041。
+- Key events: GOOGL −12.64% 至 $283.82（营收 +25%、云翻倍，但 Search 17%→12%、capex $514 亿、FCF −$91 亿）；MSFT −0.16%（FCF +$186 亿）；AMZN 收 −4.25%、盘后 −6%~−7.3%（AWS +39%、TTM FCF −$424 亿）；INTC 盘后约 −22%（Q4 指引低于 Q3）；NOW −26.95%、FTNT −20.09%、MRVL −13.24%、MU −4.98%（盘后 −3.19%）、SNDK −5.30%（beat + 8 拆 1 仍被卖）；LLY +6.4%~+6.6% 至约 $1,373.48（营收 +39%、指引上调至 $910–920 亿）；MRK +3.84%、UNH +0.4%，医疗板块创历史新高；DASH +5.61%（$170 亿收购 Instacart）、CVNA +15.68%、TXT +15%、HWM +5.51%、ADT +33.4%。
+- Top 20: LLY, MRK, DASH, UNH, CVNA, TXT, JNJ, HWM, PLD, AVGO, JPM, WMT, NEE, V, COST, CEG, NVDA, XOM, GOOGL, MU（医疗 4、可选消费 2、工业 2、金融 2、必需消费 2、公用事业 2、半导体 3、房地产 1、能源 1、通信服务 1）。
+- Rotation: 新增 MRK/DASH/UNH/CVNA/TXT/HWM/PLD/WMT/NEE/GOOGL；保留 LLY/JNJ/AVGO/JPM/V/COST/CEG/NVDA/XOM/MU；剔除 VRT/GEV/MSFT/ORCL/AMD/TSM/GS/CVX/ANET/NEM。
+- Updated: `wiki/index.md` (Synthesis table — new wq101-alpha-daily 2026-10-30 row), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-10-30/wq101-alpha-daily.md`.
+- Contradictions/flags: S&P 收盘 7,720.39（CNBC/Investopedia）vs 7,719.93（cot-trading）；通信服务跌幅 −10.51%（stocksetups）vs −8.42%（fintwit）；LLY 涨幅 +6.4%（StockTitan）vs +6.63%（fintwit）；INTC 盘后 −21.7%~−23.0% 口径不一；MU 收盘 $934.27 vs 盘中快照 $941.69；AAPL 财报实际为 11-02 而非 10-29；部分标的（MRK/UNH/PLD/NEE/WMT/COST/JPM/V/XOM/CEG/DASH/TXT/HWM）未逐一取得收盘价，表中以涨跌幅、板块表现与市值描述为主；因子读数为代理估计而非逐票 101 alpha 回测；市值为约数，不构成投资建议。
