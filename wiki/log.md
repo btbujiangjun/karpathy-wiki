@@ -8919,3 +8919,12 @@
 - Updated: `wiki/index.md` (Synthesis table — new wq101-alpha-daily 2026-10-30 row), `wiki/log.md` (this entry).
 - New pages: `wiki/synthesis/2026-10-30/wq101-alpha-daily.md`.
 - Contradictions/flags: S&P 收盘 7,720.39（CNBC/Investopedia）vs 7,719.93（cot-trading）；通信服务跌幅 −10.51%（stocksetups）vs −8.42%（fintwit）；LLY 涨幅 +6.4%（StockTitan）vs +6.63%（fintwit）；INTC 盘后 −21.7%~−23.0% 口径不一；MU 收盘 $934.27 vs 盘中快照 $941.69；AAPL 财报实际为 11-02 而非 10-29；部分标的（MRK/UNH/PLD/NEE/WMT/COST/JPM/V/XOM/CEG/DASH/TXT/HWM）未逐一取得收盘价，表中以涨跌幅、板块表现与市值描述为主；因子读数为代理估计而非逐票 101 alpha 回测；市值为约数，不构成投资建议。
+
+## [2026-10-31] ingest | arXiv Paper Check — AI & CTR (2026-10-30 batch)
+- Summary: `wiki/synthesis/2026-10-31/arxiv-paper-check.md`
+- Scope: arXiv RSS `cs.IR`/`cs.AI`/`cs.LG`/`cs.CL`; 753 unique `new`/`cross` papers (40 touch `cs.IR`, 16 `new`-only), 19 featured + 12 notable.
+- CTR/Ads picks: GR4AD-X Kuaishou Multi-Path SID + UniVGD, +3.07% revenue (2610.38378); PFA progressive attention for long-sequence GR (2610.39273); UGR Taobao multi-business generative ranking, +2.10% GMV (2610.39426); LWR latent workspaces, −69.6% GFLOP (2610.39188); PRISM personalized history embeddings, power-law exponent 0.468 (2610.39175); GistRank K=4 gist tokens, 14× speedup (2610.39610); CASH advertiser subsidy +15.35% rev/account (2610.39244); Beyond IPS propensity-free counterfactual evaluation (2610.40112); KARMA training-free ads-agent knowledge evolution +8.96 pts (2610.39884).
+- AI picks: Soft-MTP KL gradient recovery (2610.38331); RLVR pass@1/pass@k price theorem (2610.39295); CoT reliance scaling law (2610.38433); Platonic Representation Theorem with JEPAs (2610.39302); Rethinking Pre-pretraining (2610.40051); How to Loop Your Transformer (2610.40325); Dual DeltaNet (2610.38578); Adversarial Self-Distillation (2610.38732); self-evolution degrades IPI robustness (2610.39122); Transformer as score of entropic laws (2610.39614).
+- Updated: `wiki/index.md` (Synthesis table — new arxiv-paper-check 2026-10-31 row), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-10-31/arxiv-paper-check.md`.
+- Contradictions/flags: abstract-only screening; author-reported numbers not independently reproduced; arXiv has no dedicated CTR category (CTR work under `cs.IR`); none of the featured IDs overlap prior wiki reports; no contradictions with existing wiki pages identified.
