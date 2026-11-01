@@ -8929,6 +8929,14 @@
 - New pages: `wiki/synthesis/2026-10-31/arxiv-paper-check.md`.
 - Contradictions/flags: abstract-only screening; author-reported numbers not independently reproduced; arXiv has no dedicated CTR category (CTR work under `cs.IR`); none of the featured IDs overlap prior wiki reports; no contradictions with existing wiki pages identified.
 
+## [2026-10-31] synthesis | investment-daily (2026-10-31)
+- Report: `wiki/synthesis/2026-10-31/investment-daily.md` (type: synthesis) — 数据基准 2026-10-30（周五）完整收盘；周末休市，为复盘而非实时报价。
+- Key calls: ① “AI capex 审判”第二天：纳指 −2.86% 25,437.00、标普 −1.82% 7,580.07、道指 −1.09% 51,770.31、费半约 −7.1%、SOXX −8%，全球芯片股市值单日蒸发逾 1 万亿美元；② 英特尔 −28.58%（1974 年以来最差单日，Q4 指引 150–160 亿美元 vs 172.9 亿、EPS 0.25 vs 0.45）、AMD −10.88%、美光 −5.30%、台积电 −5.95%、Marvell −10.05%、Lumentum −8.57%；③ 算力链业绩分化：中际旭创 Q3 净利 +173.74%（环比 +8.5%）、新易盛 +61%（环比 −19%、5 日 −24.90%）、胜宏 Q3 −52% 同比/−66% 环比；④ A 股上证 −1.44% 3,599.02、创业板 −4.13%、科创 50 −5.48%，成交 1.6877 万亿、876 涨/4,540 跌、1,465 只跌超 5%；白酒 +5.27%，银行/煤炭/石油创多年新高，计算机主力净流出 39.73 亿；⑤ 港股恒指 +1.46% 23,294.42、国企 +1.37%、恒生科技 +0.29%，消费/石油/保险领涨，中芯 −4.40%、华虹 −6.04%、联想 −7.41%、智谱 −9.10%，南向净卖出 35.60 亿港元；⑥ 中概金龙 −0.96%，蔚来 −4%+、拼多多 −3%+、京东 −2%+，理想/B 站涨超 1%；⑦ 主题：Gemini 4 Carbon 以 59 分登顶 AA Intelligence Index v5（Coding Agent 第二，落后 Claude Opus 5.5 的 62）、Marvell 接近全股票收购 Lumentum（最快下周）、甲骨文宣布 2027 年后停止扩 capex、港交所推出首只 AI 主题指数（中芯权重 9.80%）。
+- Themes: AI capex 融资结构定价、算力硬件业绩分化、中国资产缩短久期（红利/消费 vs 双创）、港股独立走强、中概/EV 承压、Gemini/Marvell-Lumentum 主题。
+- Updated: `wiki/index.md` (Synthesis table — new investment-daily 2026-10-31 row), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-10-31/investment-daily.md`.
+- Contradictions/flags: Lumentum 收盘 840.70（−8.57%，exa）vs 盘中快照 817.02（−11.15%，Yahoo）；Marvell 196.40（−10.05%）vs 盘中 193.80（−11.24%）；拼多多“跌超 3%”（界面收盘）vs exa 78.61（−0.85%）；京东“跌超 2%”vs exa 25.68（+0.20%）；金龙 −0.96%（界面）vs +0.20%（新浪 10-30 05:10 稿，实为 10-29 时段）；北方华创收盘 478.74（−3.73%）vs 盘中 486.30（−2.21%）；黄金 3,884.90（−3.63%）与“一年新低”口径并用；比特币约 77,114 美元但盘中一度跌 5%；所有数据为公开网络检索，未用行情终端，不构成投资建议。
+
 ## [2026-10-31] synthesis | WorldQuant 101 Alpha 美股 Top 20 筛选（2026-10-31）
 - Report: `wiki/synthesis/2026-10-31/wq101-alpha-daily.md` (type: synthesis) — 周六报告，数据基准 2026-10-30（周五）完整收盘。
 - Market: S&P 500 7,580.07（-1.82%）、Nasdaq 25,437.00（-2.86%）、Nasdaq-100 28,384.85（-3.46%）、Dow 51,770.31（-1.09%）、Russell 2000 约 2,803–2,812（-1.66%~-1.95%）、VIX 约 19.5–21.0；11 板块 6 涨：能源 +1.91%、必需消费 +1.38%、公用事业 +0.64%、医疗 +0.43%，IT -4.24%、工业 -1.57%、通信服务 -1.11%；10Y 4.929%、12 月加息概率约 74%；10 月 S&P 约 -0.9%、Dow 约 +1.7%、Nasdaq 为 2025 年 3 月以来最差单月。
@@ -8938,3 +8946,12 @@
 - Updated: `wiki/index.md` (Synthesis table — new wq101-alpha-daily 2026-10-31 row), `wiki/log.md` (this entry).
 - New pages: `wiki/synthesis/2026-10-31/wq101-alpha-daily.md`.
 - Contradictions/flags: VIX 19.46（+13.14%）vs 21.03（+22.25%）；Russell 2000 2,803.38（-1.95%）/2,809.041（-1.75%）/2,811.84（-1.66%）；Dow 51,770.31（-1.09%）vs 51,756.97（-1.12%）；HD 涨幅 +3.60%（$328.98）vs 约 +0.3%（$329.20）；GPN 收盘 95.17（+11.02%）/96.84（+12.97%）/97.06（+13.23%）；ACN/MDLZ/CMCSA/GDDY 未取得精确收盘价；因子读数为代理估计而非逐票 101 alpha 回测；市值为约数，不构成投资建议。
+
+## [2026-10-31] synthesis | LLM Tech Report Digest — 2026-10-31
+- Report: `wiki/synthesis/2026-10-31/tech-report-digest.md` (type: synthesis) — 增量窗口 2026-10-29 → 2026-10-31，基线为 2026-10-29 digest。
+- Coverage: 19 companies/orgs (OpenAI, Mistral, NVIDIA, Google DeepMind, DeepSeek, Anthropic, Meta, xAI, Amazon, Microsoft, Apple, ByteDance, Qwen, Zhipu, Moonshot, StepFun, InternLM, Baichuan, 01.AI/Yi).
+- Key changes: Mistral Large 4 weights released 10-29 (1.05T total / 49B active / 52B incl. embeddings, 1M ctx, 72 layers, MLA+DSA top-2048, 128 experts top-4 + 1 shared, FP8/NVFP4, Mistral Ecosystem Open-Weight License; full tech report still pending); OpenAI GPT-6 Luna (October 29) system-card addendum (behavior update, more concise/less agreeable, factual-error and health/mental-health regressions, 99.91% instruction-hierarchy robustness, cyber/bio High); NVIDIA Nemotron 3.5 Super (120B/12B multimodal) & Lightning (30B/3B text) technical report arXiv 2610.38095 (1M ctx, hybrid Mamba-Transformer MoE, 51.78% SWE-bench Pro, 99.62% NVFP4 recovery, 4,856 tok/s/GPU GB200); Nemotron 3.5 Transcribe parameter correction (30B backbone / 34B checkpoint incl. MTP / 4.3B active; 40 languages, 1h audio, WER 4.71 EN / 4.62 multilingual).
+- Unchanged / unverified: Gemini 4 Carbon still has no public model card; DeepSeek V5 remains Harness code placeholders only; GLM-5.5, Llama 5, Grok 4.8, Phi-5 remain unconfirmed; Kimi K3.1 Pro weights still promised by 2026-11-04.
+- Updated: `wiki/index.md` (Synthesis table — new tech-report-digest 2026-10-31 row), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-10-31/tech-report-digest.md`.
+- Contradictions/flags: all benchmarks vendor-reported unless noted (AA Index, Open ASR Leaderboard, Lakera B3); Gemini 4 Carbon has no model card and undisclosed parameters/context; GPT-6 Luna update is not a new model and shows factual/health regressions; Mistral Large 4 full technical report not released; Nemotron 3.5 Transcribe naming (30B) vs checkpoint total (34B incl. MTP) vs active (4.3B incl. audio encoder) requires explicit口径; DeepSeek V5 / GLM-5.5 / Llama 5 / Grok 4.8 / Phi-5 not released.
