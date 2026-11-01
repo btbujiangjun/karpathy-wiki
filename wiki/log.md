@@ -8928,3 +8928,13 @@
 - Updated: `wiki/index.md` (Synthesis table — new arxiv-paper-check 2026-10-31 row), `wiki/log.md` (this entry).
 - New pages: `wiki/synthesis/2026-10-31/arxiv-paper-check.md`.
 - Contradictions/flags: abstract-only screening; author-reported numbers not independently reproduced; arXiv has no dedicated CTR category (CTR work under `cs.IR`); none of the featured IDs overlap prior wiki reports; no contradictions with existing wiki pages identified.
+
+## [2026-10-31] synthesis | WorldQuant 101 Alpha 美股 Top 20 筛选（2026-10-31）
+- Report: `wiki/synthesis/2026-10-31/wq101-alpha-daily.md` (type: synthesis) — 周六报告，数据基准 2026-10-30（周五）完整收盘。
+- Market: S&P 500 7,580.07（-1.82%）、Nasdaq 25,437.00（-2.86%）、Nasdaq-100 28,384.85（-3.46%）、Dow 51,770.31（-1.09%）、Russell 2000 约 2,803–2,812（-1.66%~-1.95%）、VIX 约 19.5–21.0；11 板块 6 涨：能源 +1.91%、必需消费 +1.38%、公用事业 +0.64%、医疗 +0.43%，IT -4.24%、工业 -1.57%、通信服务 -1.11%；10Y 4.929%、12 月加息概率约 74%；10 月 S&P 约 -0.9%、Dow 约 +1.7%、Nasdaq 为 2025 年 3 月以来最差单月。
+- Key events: XOM +2.16% 至 $187.25 创历史新高（Q3 EPS $4.23、净利 $154 亿、FCF $191 亿、2027 年前 $200 亿回购）；CVX +1.75% 至 $235.52（Q3 EPS $5.28、炼油利润 $49 亿 +300%）；REGN +12.79% 至 $923.50（营收 $51.158 亿、EPS $18.45）；GPN +13% 至约 $96.8（约 $400 亿收购传闻 + Oppenheimer 上调至 Outperform/$115）；INTC -28.58% 至 $65.76（Q4 指引 150–160 亿、EPS 0.25 vs 预期 0.43）；AMD -10.85%、SNDK -13.47%、QCOM -11.12%、AMAT -7.49%、ASML -6.55%、ANET -8.34%、DELL -10.77%；RDDT -29.22% 至 $91.73（Q4 指引 $10.0–10.3 亿 vs 预期 $10.5 亿、Google AI 搜索分流）；NVDA -4.22% 至 $204.64、距 10-06 高点 -15.9%；WMT +1.86%、KO +1.9%、MRK +2.8%、TMUS +6.2%。
+- Top 20: XOM, REGN, CVX, WMT, MRK, GPN, KO, TMUS, ACN, MDLZ, CMCSA, AMGN, HD, AAPL, MSFT, META, GOOGL, NVDA, AMD, INTC（能源 2、医疗 3、必需消费 3、IT 6、通信服务 4、金融 1、可选消费 1）。
+- Rotation: 新增 XOM/REGN/CVX/GPN/KO/TMUS/ACN/MDLZ/CMCSA/AMGN/HD/AAPL/MSFT/META/AMD/INTC；保留 WMT/MRK/NVDA/GOOGL；剔除 LLY/DASH/UNH/CVNA/TXT/HWM/JNJ/PLD/AVGO/JPM/V/COST/NEE/CEG/MU（风格切向能源/防御 + 部分标的无 10-30 可核实收盘）。
+- Updated: `wiki/index.md` (Synthesis table — new wq101-alpha-daily 2026-10-31 row), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-10-31/wq101-alpha-daily.md`.
+- Contradictions/flags: VIX 19.46（+13.14%）vs 21.03（+22.25%）；Russell 2000 2,803.38（-1.95%）/2,809.041（-1.75%）/2,811.84（-1.66%）；Dow 51,770.31（-1.09%）vs 51,756.97（-1.12%）；HD 涨幅 +3.60%（$328.98）vs 约 +0.3%（$329.20）；GPN 收盘 95.17（+11.02%）/96.84（+12.97%）/97.06（+13.23%）；ACN/MDLZ/CMCSA/GDDY 未取得精确收盘价；因子读数为代理估计而非逐票 101 alpha 回测；市值为约数，不构成投资建议。
