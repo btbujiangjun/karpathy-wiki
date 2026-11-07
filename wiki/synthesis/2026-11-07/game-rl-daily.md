@@ -8,7 +8,7 @@ tags: [game-rl, game-ai, llm-agents, reinforcement-learning, self-play, foundati
 ---
 # Game RL & Game AI Bot — Daily Paper Digest (2026-11-07)
 
-*Window: arXiv submissions announced roughly 2026-10-28 → 2026-11-05. 31 new papers across Game RL, game-theoretic learning, MARL systems, LLM/VLA game agents, interactive world models, procedural content generation, game benchmarks, industry deployment, and related techniques. Papers already covered by the sibling `2026-10-30` digest (e.g. `2610.37567`, `2610.35773`, `2610.33894`, `2610.31466`) are excluded; cross-references are noted inline.*
+*Window: arXiv submissions announced roughly 2026-10-28 → 2026-11-06 (including Fri Nov 6 listings where relevant). 34 new papers across Game RL, game-theoretic learning, MARL systems, LLM/VLA game agents, interactive world models, procedural content generation, game benchmarks, industry deployment, and related techniques. Papers already covered by the sibling `2026-10-30` digest (e.g. `2610.37567`, `2610.35773`, `2610.33894`, `2610.31466`) are excluded; cross-references are noted inline.*
 
 > ⚠️ All performance numbers below are **author-reported** and have not been independently reproduced. Affiliations are taken from arXiv HTML/PDF author blocks; where the paper lists none, this is stated explicitly rather than inferred.
 
@@ -202,6 +202,21 @@ tags: [game-rl, game-ai, llm-agents, reinforcement-learning, self-play, foundati
   - Demonstrates zero-shot policy transfer with emergent adversarial behaviours; all assets released publicly.
 - **Relevance:** Brings game-style adversarial MARL into the physical world at low cost — a reproducible bridge between simulated game AI and robotics.
 
+
+#### EFXPLORER: Cooperative Multi-Agent Reinforcement Learning via Epigraph-Form Guided Exploration
+- **Title:** Cooperative Multi-Agent Reinforcement Learning via Epigraph-Form Guided Exploration
+- **Authors:** Sungil Son, Hoseong Jung, Dahyun Oh, H. Jin Kim
+- **Affiliation:** Seoul National University
+- **Venue:** NeurIPS 2026
+- **arXiv:** [https://arxiv.org/abs/2611.07066](https://arxiv.org/abs/2611.07066) | **PDF:** [https://arxiv.org/pdf/2611.07066](https://arxiv.org/pdf/2611.07066)
+- **Abstract:** Discovering cooperative behavior in MARL is difficult because the joint state-action space is combinatorial and trial-and-error alone rarely yields coordinated strategies. Intrinsic rewards can help discovery but naively mixing them with team objectives can distort the learning signal and hurt task performance. EFXPLORER frames exploration as constrained optimisation: maximise exploration subject to preserving established task performance.
+- **Key Innovations:**
+  - Epigraph reformulation introduces adaptive exploration budgets, separating intrinsic rewards from task objectives and regulating exploration through task feasibility rather than scalar reward mixing.
+  - Incorporates a successor-distance-based intrinsic reward that captures long-horizon dependencies to encourage diverse, temporally extended exploration.
+  - Conservative exploration framework avoids the objective distortion that often arises when intrinsic bonuses overshadow team rewards.
+  - Empirically outperforms strong baselines and induces novel cooperative strategies across **SMAX, VMAS, and MPE** benchmark suites.
+- **Relevance:** A principled exploration mechanism for cooperative game/MARL benchmarks (SMAX/VMAS/MPE) — directly addresses the common failure mode where curiosity bonuses break coordination.
+
 #### SEER: A Scalable Event-Driven Runtime for Parallel Execution of Multi-Agent Reinforcement Learning Environments
 - **Title:** SEER: A Scalable Event-Driven Runtime for Parallel Execution of Multi-Agent Reinforcement Learning Environments
 - **Authors:** Jiming Su, Feng Zhu, Yuhao Xiao, Miao Zhang
@@ -215,6 +230,21 @@ tags: [game-rl, game-ai, llm-agents, reinforcement-learning, self-play, foundati
   - STPA preflight-guided thread-pool selection combines short runtime traces with static workload and hardware features.
   - Reduces inference latency 16.2% on UAV swarm control and environment-execution latency 46.9%/19.5%/64.9% versus ROSS-T/NBSE/ROOT-Sim on wireless management.
 - **Relevance:** Training-throughput infrastructure for large multi-agent game environments; environment simulation is often the bottleneck after GPU policy batching.
+
+
+#### MA-SafeDiffuser: Safe Multi-Agent Planning with Diffusion Probabilistic Models
+- **Title:** MA-SafeDiffuser: Safe Multi-Agent Planning with Diffusion Probabilistic Models
+- **Authors:** Kiran Ravish, Ankita Kushwaha, Preeti, Pawan Kumar
+- **Affiliation:** IIIT Hyderabad, Hyderabad, India
+- **Venue:** AAMAS 2026
+- **arXiv:** [https://arxiv.org/abs/2611.05524](https://arxiv.org/abs/2611.05524) | **PDF:** [https://arxiv.org/pdf/2611.05524](https://arxiv.org/pdf/2611.05524)
+- **Abstract:** MA-SafeDiffuser extends SafeDiffuser to multi-agent settings by equipping diffusion-based trajectory planners with finite-time diffusion invariance guarantees for joint-agent safety specifications. Building on single-agent CBF constraints embedded into reverse-diffusion updates, it provides joint-safe planning for interacting agents.
+- **Key Innovations:**
+  - Formalises joint safe sets as intersections of per-agent and pairwise barrier sets.
+  - Derives centralised and decentralised (communication-aware) constrained denoising procedures with provable invariance under mild assumptions.
+  - Addresses local-trap and deadlock phenomena via time-varying specifications and liveness CBFs.
+  - Develops a lightweight benchmarking suite including a multi-agent Maze2D domain; empirically reduces violation counts relative to unconstrained diffusion baselines while retaining planning quality.
+- **Relevance:** Diffusion-based multi-agent planning with safety guarantees — relevant to game/NPC path planning, collision-aware multi-agent control, and safe generative policies.
 
 ---
 
@@ -500,6 +530,21 @@ This window's industrial signal is strong and mostly *deployed systems* rather t
 
 ## 8. Related Techniques — Self-Play, Reward, and Exploration
 
+
+#### SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization
+- **Title:** SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization
+- **Authors:** Qile Jiang, George Em Karniadakis
+- **Affiliation:** Brown University (affiliation inferred from author profile; verify on PDF)
+- **Venue:** arXiv preprint (2026-11)
+- **arXiv:** [https://arxiv.org/abs/2611.08483](https://arxiv.org/abs/2611.08483) | **PDF:** [https://arxiv.org/pdf/2611.08483](https://arxiv.org/pdf/2611.08483)
+- **Abstract:** LLM-guided evolutionary search improves programs by iteratively refining solutions and combining high-scoring methods, but is often slow because each round requires long textual chain-of-thought generation repeated to maintain diversity. SwarmEvolve uses hundreds of low-cost agents per round that work in swarms, reason in latent space without decoding to text, and share information by passing KV caches.
+- **Key Innovations:**
+  - Each swarm studies the problem from a different angle; a novelty filter keeps the most distinct ideas by measuring distances between agents' hidden-state vectors.
+  - Crossover happens naturally in latent space as a summariser agent receives combined KV caches of swarm members.
+  - On 21 problems in mathematical discovery and scientific computing, achieves the highest average score and reaches in a median 3–8 minutes the best scores other SOTA frameworks reach in 60 minutes.
+  - With Qwen3 8B, improves on solutions that AlphaEvolve first found with frontier LLMs on several problems.
+- **Relevance:** Latent-swarm, population-based evolutionary optimisation — connects to open-ended learning/population methods used in game AI research, though evaluated on program discovery rather than game environments.
+
 #### Test-Time Self-Play: Scaling without a Verifier
 - **Title:** Test-Time Self-Play: Scaling without a Verifier
 - **Authors:** Akira Yoshiyama, Akmal Ashirmatov, Jonas Hübotter, Ido Hakimi, Andreas Krause
@@ -569,4 +614,4 @@ This window's industrial signal is strong and mostly *deployed systems* rather t
 - Can execution-grounded self-play be made robust to correlated answer-key errors, or does it require an independent teacher?
 - Will perception-first agents (SARBLOH) generalise beyond grid games to 3D visual game environments?
 
-*Method: arXiv search sweeps over `cs.LG`, `cs.AI`, `cs.GT`, `cs.MA`, `cs.CL`, `cs.CV`, `cs.RO` for gameplay/self-play/MARL/world-model/PCG/game-agent terms; ~630 unique candidates screened across 16 queries, filtered against all existing wiki digests; abstracts, author blocks, and affiliations taken from arXiv search/`abs`/`html`/PDF. 31 papers retained. Sibling digests already cover several related candidates (e.g. `2610.37567`, `2610.35773`, `2610.33894`, `2610.31466`, `2610.31162`, `2610.14883`).*
+*Method: arXiv search sweeps over `cs.LG`, `cs.AI`, `cs.GT`, `cs.MA`, `cs.CL`, `cs.CV`, `cs.RO` plus `cs.AI/cs.LG/cs.MA` recent listings for gameplay/self-play/MARL/world-model/PCG/game-agent terms; screened via arXiv API/abs/HTML pages and filtered against existing wiki digests; abstracts, author blocks, and affiliations taken from arXiv `abs`/`html`/PDF where available (affiliations marked when not listed). 34 papers retained. Sibling digests already cover several related candidates (e.g. `2610.37567`, `2610.35773`, `2610.33894`, `2610.31466`, `2610.31162`, `2610.14883`).*
