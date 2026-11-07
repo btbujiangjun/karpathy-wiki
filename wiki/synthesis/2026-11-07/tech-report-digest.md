@@ -1,3 +1,12 @@
+---
+title: LLM Tech Report Digest — 2026-11-07
+type: synthesis
+created: 2026-11-07
+updated: 2026-11-07
+sources: []
+tags: [tech-report, LLM, technical-report, system-card, model-card, arXiv, moe, hybrid-attention, mamba, reasoning, long-context, multimodal, scaling-law, cybersecurity, open-weights, daily-digest]
+---
+
 # LLM Tech Report Digest — 2026-11-07
 
 > Daily digest of major AI company technical reports (Tech Report / Technical Report / System Card). Focus areas: new architectures (MoE, Mamba, hybrid), training methods (pre-training, post-training, alignment, RL), Scaling Law / 缩放分析, multimodal models, long-context models, reasoning models / reasoning model.
