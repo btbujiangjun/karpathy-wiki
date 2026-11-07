@@ -1,249 +1,181 @@
 ---
-title: "arXiv Paper Check — AI & CTR (November 7, 2026)"
+title: arXiv Paper Check — AI & CTR (November 7, 2026)
 type: synthesis
 created: 2026-11-07
 updated: 2026-11-07
-sources: []
-tags: [arxiv, daily-check, ai, ctr, recommendation, ads, generative-recommendation, ranking, retrieval, llm, agents, rl, on-policy-distillation, sparse-attention, sae, interpretability, efficiency]
+sources:
+  - http://export.arxiv.org/api/query
+  - https://arxiv.org/
+tags:
+  - arxiv
+  - daily-check
+  - ai
+  - ctr
+  - recommendation
+  - ads
+  - generative-recommendation
+  - reranking
+  - retrieval
+  - agents
+  - reasoning
+  - llm
 ---
 
 # arXiv Paper Check — AI & CTR (November 7, 2026)
 
-*Report generated: 2026-11-07 | Window: latest arXiv announcement batch (Fri 2026-11-06). No weekend announcement block.*
+> **Window note:** The user requested papers from the "last 24 hours." As checked on 2026-11-07 10:20 CST, arXiv API queries (`cs.AI`/`cs.LG`/`cs.CL`/`cs.IR`, sorted by submission date, plus CTR/click-through keyword search) show the latest announced submissions primarily from **2026-11-05** (with CTR-specific recent hits including **2026-11-03**). A `submittedDate` filter for 2026-11-06–2026-11-07 returned no results at query time, consistent with arXiv announcement timing. This report curates the most interesting **recent** AI and CTR/recommendation/ads papers from that latest available window.
 
-## Summary
+## Highlights
 
-- Swept `cs.IR`, `cs.AI`, `cs.LG`, `cs.CL` RSS: **826 unique items**, of which **461 are unique `new`/`cross` papers**. **21** touch `cs.IR` (12 are `new`-only). `replace`/`replace-cross` excluded.
-- The CTR/Rec cluster is small but production-heavy: two online A/B wins (BRIDGE on e-commerce ads, ICE on Taobao), task-aware semantic tokenization, and a clear diagnosis of **exposure collapse from collaborative-filtering rewards** in LLM recommenders.
-- The AI cluster is dominated by **on-policy distillation (OPD)** — four papers in this single batch analyze, gate, couple, and cost-account it — plus long-context sparse attention, looped residual architectures, and SAE-based interpretability.
-- Interpretability is moving from features to **structure**: SAE scaling laws for activation buffers, and SAE decomposition showing MoE experts specialize below domain granularity.
-- Abstract-only screening. All featured IDs were grep-verified as absent from the wiki. Numbers are author-reported and not independently reproduced.
+| Area | Pick | Why it matters |
+|------|------|----------------|
+| AI agents / optimization | **SwarmEvolve** (2611.08483) | Latent-space agent swarms + KV-cache crossover; reports much faster evolutionary program search. |
+| CTR / ads / retrieval | **ReuseGR** (2611.04259) | Decouples large-model query planning from lightweight personalized completion for generative retrieval in search ads; reports online CTR/revenue gains. |
+| Generative recommendation | **BRIDGE** (2611.07425) | Targets the semantic quantization gap in SID-based generative rec; reports offline gains and online eCPM lift. |
+| Industrial ranking / ads mix | **OneTrans-GSR** (2611.04720) | Unifies reranking + mix-ranking as one autoregressive slate generator; reports GMV/advertiser/repurchase gains with lower latency. |
+| Re-ranking / behavior modeling | **ICE/JBM** (2611.07591) | Models display→impression→click as a browsing journey; Taobao A/B reports click and revenue lifts. |
+| Test-time reasoning | **StepBack** (2611.08403) | Localizes likely first CoT error and resamples suffixes; matches self-consistency accuracy with fewer tokens. |
+| Productivity agents | **Agent-R²** (2611.08219) | Real-source task synthesis + rubric-based RL; small model reportedly beats much larger baseline on productivity benchmarks. |
+| CTR tooling / evaluation | **NumEmbBench** (2611.01090) | Benchmark/taxonomy for numerical embeddings in CTR prediction with a unified FuxiCTR interface. |
 
-## CTR / Ranking / Ads
+## 1) CTR, Recommendation, Advertising & Retrieval
 
-### 1) [BRIDGE: Bridging the Semantic Quantization Gap for Generative Recommendation](https://arxiv.org/abs/2611.07425)
+### ReuseGR: Offline--Online Decoupled Generative Retrieval via Adaptive Prefix Reuse
+- **Authors:** Xujing Wang, Yufeng Chen, Boxuan Zhang, Chao Wei, Cai Xu, Jie Zhao, Weiru Zhang, Wei Zhao, Ziyu Guan
+- **arXiv:** [2611.04259](https://arxiv.org/abs/2611.04259) (submitted 2026-11-03)
+- **Categories:** cs.IR
+- **Affiliations:** Not specified in arXiv metadata excerpt reviewed.
+- **Key contributions:**
+  - Splits generative retrieval into a **7B offline planner** that produces shared SID prefix sets per query and a **0.5B online model** that uses request history to select prefixes and complete remaining tokens.
+  - **ReuseCut** chooses per-query cache depth to balance computation reuse and candidate coverage; **Path KD** transfers suffix-scoring knowledge from 7B to 0.5B.
+  - **BudgetCut** (initialized by OPD, refined by GRPO) selects branches under a fixed budget for final top-100 recall.
+  - **Reported results (author-reported):** on an industrial search-advertising dataset (~2M query-item records, 3.38M catalog items), query-level HR@100 +3.83 pp and mean online latency -38.9% vs all-online 0.5B (when prefixes prepared); HR@100 comparable to all-online 7B with 57.7% lower online latency. 14-day user-level A/B: CTR +0.93%, revenue per thousand requests +1.05%.
+
+### BRIDGE: Bridging the Semantic Quantization Gap for Generative Recommendation
 - **Authors:** Yatong Xiao, Mingjie Sun, Peng Wang, Wenjin Wu, Peng Jiang
+- **arXiv:** [2611.07425](https://arxiv.org/abs/2611.07425) (submitted 2026-11-05)
 - **Categories:** cs.IR
-- **Summary:** Identifies the **Semantic Quantization Gap (SQG)** in RQ-VAE generative recommendation: the decoder receives only discrete SIDs while quantization derived them from rich continuous signals (codebook centroids, neighborhood geometry, level-wise entropy).
-- **Key Contributions:**
-  - Codebook-grounded latent reasoning injects frozen quantizer centroids as semantic anchors before SID generation.
-  - Privileged EMA self-distillation transfers neighborhood-aware geometry to an on-policy student, mitigating exposure bias.
-  - Effort-aware recurrence allocates more compute to harder early SID levels.
-  - Three Amazon benchmarks: **+10.9% Recall@10 / +9.7% NDCG@10** average; one-week online A/B on a large e-commerce ads platform (5% traffic): **+0.65% eCPM**.
+- **Affiliations:** Not specified in arXiv metadata.
+- **Key contributions:**
+  - Identifies a **Semantic Quantization Gap (SQG)** in SID-based generative recommendation: discrete SIDs lose codebook-centroid, neighborhood, and difficulty information.
+  - **Codebook-grounded latent reasoning** injects frozen RQ-VAE centroids as semantic anchors before SID generation.
+  - **Privileged EMA self-distillation** transfers neighborhood-aware knowledge to an on-policy student, preserving inter-item geometry and mitigating exposure bias.
+  - **Effort-aware recurrence** allocates more computation to early/harder SID levels.
+  - **Reported results:** +10.9% Recall@10 and +9.7% NDCG@10 average over strongest baseline across three Amazon benchmarks (up to +12.6%/+10.7%); one-week online A/B on a large-scale e-commerce advertising platform (5% traffic): eCPM +0.65%.
 
-### 2) [Beyond Independent Predictions: Learning the Browsing Journey for Sequence-Level Re-ranking](https://arxiv.org/abs/2611.07591)
+### OneTrans-GSR: A Generative Slate Ranking Paradigm Unifying Reranking and Mix-Ranking with One Autoregressive Transformer
+- **Authors:** Feng Cheng, Yu-Hsuan Huang, Fengyi Wang, Chaofan Zhou, Zhennan Zhu, Huan He, Bo Zhang, Ruoqi Zhang, Zhanfeng Mo, Ziwei Liu, Lanyi Li, Yifeng Pan, Junhua Long, Ziqiu Zhou, Yue Lin, Shaowei Liu
+- **arXiv:** [2611.04720](https://arxiv.org/abs/2611.04720) (submitted 2026-11-03)
+- **Categories:** cs.IR
+- **Affiliations:** Not specified in arXiv metadata.
+- **Key contributions:**
+  - Replaces separate reranking and mix-ranking rules/models with a **single decoder-only autoregressive policy** that generates the full exposure slate (products, short videos, livestreams, advertising cards).
+  - Uses a **reward model over complete slates** plus reinforcement learning for slate-level/long-term objectives, with explicit **constraint-aware decoding** for business rules.
+  - **Reported results:** slate quality improves with reward/policy compute; deployed in a large-scale industrial recommendation system. Online A/B: GMV/u +2.63%, advertiser value +2.06%, repurchase +2.03%, end-to-end reranking+mix-ranking latency -13%.
+
+### Beyond Independent Predictions: Learning the Browsing Journey for Sequence-Level Re-ranking
 - **Authors:** Jiayi Zhang, Jingxin Hai, Zhenjia Ma, Hongbin Pei, Dagui Chen, Han Zhu, Jian Xu
+- **arXiv:** [2611.07591](https://arxiv.org/abs/2611.07591) (submitted 2026-11-05)
 - **Categories:** cs.IR
-- **Summary:** Industrial Generator–Evaluator re-rankers score candidates with independent per-item CTR, ignoring that a click requires the item to be **displayed → impressed → clicked** and that items compete for finite attention.
-- **Key Contributions:**
-  - **Joint Behavior Modeling (JBM)** replaces independent behavior modeling with an explicit display → impression → click process.
-  - **Impression-Click Evaluator (ICE)** predicts a browsing-depth distribution, suppresses context from unexposed items, and adds a click-distribution matching objective.
-  - Plug-and-play across backbones; 14-day Taobao A/B: **+0.70% clicks, +3.67% revenue**, then full-traffic deployment.
+- **Affiliations:** Not specified in arXiv metadata.
+- **Key contributions:**
+  - Argues standard Independent Behavior Modeling (per-item CTR/utility) ignores that clicks require exposure and items compete for finite attention.
+  - Proposes **Joint Behavior Modeling (JBM)** for display→impression→click and implements **Impression-Click Evaluator (ICE)**: browsing-depth/impression estimation, suppression of unexposed-item context, and click distribution matching.
+  - **Reported results:** offline gains across backbones; 14-day Taobao App A/B: clicks +0.70%, revenue +3.67%; full-traffic deployment.
 
-### 3) [OptST: Optimizing Semantic Tokenization for LLM-Enhanced Recommendation](https://arxiv.org/abs/2611.07523)
-- **Authors:** Hanchong Chen, Jie Liu, Fuyuan Lyu, Dugang Liu, Lingjie Li, Xiuqiang He, Xing Tang
+### SPADE: Spatiotemporal Preference Alignment and Diversity Enhancement for Local Search
+- **Authors:** Chenxu Wang, Wenxuan Yang, Yueqi Mou, Shuxian Bi, Biao Tang, Peng Yan
+- **arXiv:** [2611.04662](https://arxiv.org/abs/2611.04662) (submitted 2026-11-03)
 - **Categories:** cs.IR
-- **Summary:** In the standard two-stage pipeline, an LLM-derived profile tokenizer is frozen before the recommender, so downstream supervision cannot revise the semantic partition it produced.
-- **Key Contributions:**
-  - Learns a **low-rank deformation** of codebook assignments with an anchor regularizer, keeping the pretrained encoder and base codebooks fixed.
-  - Straight-through estimator carries recommendation supervision into hard nearest-code assignment.
-  - Interaction-conditioned prefix selects how much residual semantic detail is exposed per sample.
-  - Highest AUC on four public datasets across conventional and LLM-enhanced baselines, robust to recommender backbone.
+- **Affiliations:** Not specified in arXiv metadata.
+- **Key contributions:**
+  - End-to-end generative query recommendation for local search with open-set vocabulary and spatiotemporal constraints.
+  - **OA-BPE** aligns subword merges with business-value signals for long-tail queries; **STAR** uses continuous multi-scale spatiotemporal encodings; **MARS-DPO** aligns to production impression-click data with composite rewards/adaptive hard negatives; **SDBS** improves slate diversity.
+  - **Reported results:** offline HR@5 +5.6%, GeoC@5 -40.3%, Exec@5 +1.9% vs strongest generative baseline; one-week online A/B: module CTR +1.88%, search volume +0.177%, search DAU +0.105%.
 
-### 4) [What Gets Hacked in a Collaborative Reward for LLM Recommenders: The Part That Does Not Depend on the User](https://arxiv.org/abs/2611.07588)
-- **Authors:** Zhuangsheng Li, Liang Dong, Yu Wu, Dailin Li, Yu Xia, Yunhan C. Zhang, Rui Cai, Yi Wu, Julian McAuley
+### Numerical Embeddings for CTR Prediction: A Taxonomy, Unified Benchmark, and Open-Source FuxiCTR Extension
+- **Authors:** Heng Yao, Hanwei Zhu, Tianying Liu, Yulou Shu, Siyun Hou
+- **arXiv:** [2611.01090](https://arxiv.org/abs/2611.01090) (submitted 2026-10-31)
 - **Categories:** cs.IR
-- **Summary:** CF scores used as RL rewards cause **exposure collapse**: the CF model's own top lists are diverse, but an LLM optimized on its rewards concentrates on fewer items.
-- **Key Contributions:**
-  - Decomposes each CF score into an **item-mean** component and a user-specific residual; controlled interventions identify the item-mean as the collapse driver.
-  - Per-item centering and per-item standardization correct the reward.
-  - Up to **9.8× more distinct items ranked first** across users with comparable ranking accuracy, on two datasets and two identifier schemes.
+- **Affiliations:** Not specified in arXiv metadata.
+- **Key contributions:**
+  - Introduces **NumEmbBench**, an open benchmark for numerical embeddings in CTR prediction; classifies 18 configurations into six mechanism-based families.
+  - Evaluates under one **FuxiCTR** interface across 3 datasets, 9 backbones, 5 seeds with equal-budget tuning and shared train-only z-score protocol.
+  - Finds no single universal winner (DEER best mean rank, but 6 methods lead at least one setting); native-scale tests and paired latency show accuracy/cost tradeoffs are not aligned.
 
-### 5) [User Embeddings are Superpositions of Interpretable Behavioral Modes](https://arxiv.org/abs/2611.08487)
-- **Authors:** Jonathan Kozaczuk, Zheng Dong, Noyan Evirgen, Keivan Majidi, Eddie K. H. Ng, Chris Porter, Qi Zhao, Jia Geng, Changmao Li, Brandon R. Feng
-- **Categories:** cs.LG
-- **Summary:** Dense user embeddings are opaque; the paper argues they are sparse superpositions of interpretable behavioral modes, recoverable post hoc with sparse dictionary learning.
-- **Key Contributions:**
-  - Trains SAEs on user embeddings (classical and transformer-based); validates mode recovery against ground truth on synthetic data.
-  - Recovers modes on two real-world datasets and auto-names them in natural language.
-  - Natural-language labels enable **zero-shot audience retrieval** over embeddings never trained on text.
-  - Model-agnostic and post hoc — no change to the upstream embedding system.
+## 2) Core AI, LLMs & Agents
 
-### 6) [GINGER: Spicing Up Graph-Based Vector Search](https://arxiv.org/abs/2611.08306)
-- **Authors:** Daniel Salwasser, Lars Gottesbüren, Laxman Dhulipala, Jakub Łącki, Guy Blelloch, Rajesh Jayaram, Tobias Rubel, Kshiteej Sheth, Amir Zandieh, Vahab Mirrokni
-- **Categories:** cs.DC, cs.IR
-- **Summary:** A production C++ approximate-nearest-neighbor library from Google targeting throughput and memory on large, high-dimensional embedding corpora.
-- **Key Contributions:**
-  - **Nested TurboQuant (NTQ)**: two-level quantization enabling low-precision graph navigation and high-precision reranking in one code; near-FP precision at **2.6× less memory**.
-  - Up to **2.5× graph compression** without throughput loss via graph reordering + the lossless AdaptiveGap codec.
-  - At 95% recall: **1.8× average** throughput over each dataset's fastest competitor, **≥2.3×** over any single library, **2.9×** over compact libraries on high-dimensional embeddings.
+### SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization
+- **Authors:** Qile Jiang, George Em Karniadakis
+- **arXiv:** [2611.08483](https://arxiv.org/abs/2611.08483) (submitted 2026-11-05)
+- **Categories:** cs.AI, cs.NE
+- **Affiliations:** Not specified in arXiv metadata (George Em Karniadakis is widely associated with Brown University; not asserted from this feed).
+- **Key contributions:**
+  - Runs hundreds of low-cost agents in swarms that **reason in latent space** (no text decoding per step) and exchange information via **KV-cache passing/crossover**.
+  - Uses a novelty filter in hidden-state space to preserve diverse candidate ideas.
+  - **Reported results:** on 21 mathematical discovery/scientific computing problems, highest average score; median 3–8 minutes to reach best scores other SOTA frameworks reach in ~60 minutes. On some problems, SwarmEvolve with Qwen3 8B reportedly improves on solutions AlphaEvolve found with frontier LLMs.
 
-### 7) [Axis-LoRA: Probing and Adapting Embedding Models for Personal-Memory Retrieval](https://arxiv.org/abs/2611.07820)
-- **Authors:** Dohoon Kim, Junho Park, Hyunwoong Bae, Seyoon Kim, Taesup Moon
-- **Categories:** cs.AI, cs.CL
-- **Summary:** Frozen dense embedders barely distinguish memories by time, place, person, and event; a trained projection on top cannot recover the missing signal because each axis lives inside distinct attention heads.
-- **Key Contributions:**
-  - Four per-axis LoRA branches inside the embedding model, combined by a per-query gate.
-  - Trained on a small axis-counterfactual set, updating a small fraction of base parameters.
-  - **+1.28 to +1.56 pp** mean R@10 across three embedders and LongMemEval, ATM-Bench, LoCoMo.
-
-### 8) [The Popular Get More Popular: Auditing Brand Bias in Generative Search](https://arxiv.org/abs/2611.07614)
-- **Authors:** Giorgio Monaco, Jacopo Lenti, Francesco Pierri
-- **Categories:** cs.AI, cs.CY, cs.SI
-- **Summary:** Audits generative search/product recommendations for two biases: **brand popularity bias** (preference for market-dominant entities) and **brand familiarity bias** (advantage from parametric memory).
-- **Key Contributions:**
-  - Across 1,176 top market players, dominant brands in the top quintile are cited **1.4×–2.8×** more often; external web retrieval does not mitigate the effect.
-  - Controlled in-context experiments: replacing authentic brand signatures with unfamiliar ones sharply degrades rank, while fact-preserving rewrites yield negligible gains.
-  - Documents a "rich-get-richer" dynamic and a **parametric barrier to entry** that standard content optimization cannot overcome.
-
-## AI / Training / Agents
-
-### 9) [Recursive Sparse Attention: Million-Token Length Extrapolation at Logarithmic Cost](https://arxiv.org/abs/2611.07232)
-- **Authors:** Ruitian Wang, Xinyu Yang, Minshen Zhang, Hao Zhang
-- **Categories:** cs.CL, cs.LG
-- **Summary:** Builds a tree over the KV cache so each query selects and reads only `O(log L)` nodes, instead of scoring all preceding blocks (`O(L)`) as most sparse-attention methods do.
-- **Key Contributions:**
-  - Each node summarizes its subtree with one key and one mean-pooled value; keys are produced by a per-layer pooler distilled from dense attention.
-  - Each entry's RoPE position is its index among candidates at its level, keeping relative distances in the training range at any length.
-  - Initialized from Qwen3-4B and trained on 0.62B tokens at 32K: best RULER score at every length 131K–2M; **60.5 at 1M vs 40.0** for the best baseline.
-  - Optimized kernels beat dense attention from 64K to 2M; at 524K on one H200, **3.2× prefill / 3.8× decode** speedup.
-
-### 10) [Learning Dynamics of On-Policy Distillation](https://arxiv.org/abs/2611.08016)
-- **Authors:** Guan Zhe Hong, Sumeet Ramesh Motwani, Liang Chen, Yangchen Pan, Junchi Yu, Jialin Yu, Philip Torr, Yi Ren
-- **Categories:** cs.CL, cs.LG
-- **Summary:** Mechanistic analysis of OPD's feedback loop, split into (i) conversion of the distillation signal into parameter updates and (ii) broadcast of those updates across prefixes, which reshapes the rollout distribution.
-- **Key Contributions:**
-  - Explains both **limited student responsiveness** despite large teacher-student disagreement and **degeneration**, where locally teacher-aligned updates raise the probability of unsuccessful continuations.
-  - Shows offline distillation can prepare a student for OPD without improving immediate held-out accuracy; OPD alone may degrade generation but helps substantially after enough offline preparation.
-  - Connects teacher supervision, student geometry, and the evolving rollout distribution.
-
-### 11) [CoRD: Coupled Rollouts Fill the Blind Spot of On-Policy Distillation](https://arxiv.org/abs/2611.07959)
-- **Authors:** Guhan Chen, Bohan Li, Jun Rao, Hejin Wang, Songtao Tian, Yexin Xie, Xiaojun Meng, Peng Yuan, Jiansheng Wei, Xuebo Liu, Zixiong Yu
-- **Categories:** cs.CL, cs.LG
-- **Summary:** OPD only supervises states the student actually reaches, so teacher-reachable states remain a blind spot. CoRD moves the **training-state distribution** toward the teacher while keeping the on-policy loss.
-- **Key Contributions:**
-  - Draws rollouts from a geometric interpolation of student and teacher via the **maximal coupling of speculative decoding**; interventions are as rare as an exact sampler allows and recede as the student learns.
-  - Six base students (Qwen3 / Qwen3.5, 0.6B–4B): **+0.9 to +2.0 pass@1** and **+1.2 to +3.4 pass@8** over OPD on five math benchmarks at equal steps/data.
-  - On frozen teacher-reached states, a 4B student closes in **16 steps** what OPD does not close in 80.
-
-### 12) [Unpacking the Compute Efficiency of Strong-to-Weak OPD against GRPO](https://arxiv.org/abs/2611.08453)
-- **Authors:** Zeyu Leo Liu, Yang Li, Bo Pang, Emre Can Acikgoz, Xuan-Phi Nguyen, Anurag Koul, Srijan Bansal, Erik Nijkamp, Shafiq Joty, Semih Yavuz
-- **Categories:** cs.CL, cs.LG
-- **Summary:** Measures held-out accuracy against training FLOPs for reverse-KL OPD vs GRPO across task difficulty, student/teacher size, domain, and optimization choices.
-- **Key Contributions:**
-  - With an **external** post-trained teacher, OPD generally loses to GRPO in accuracy per training FLOP and often inflates response length.
-  - With the teacher set to the student's **own GRPO checkpoint**, OPD recovers that checkpoint's math accuracy with **50× fewer distillation FLOPs**; holds for larger students, code, and a second model family.
-  - Multi-teacher OPD consolidates per-domain GRPO experts into one student, with distillation costing **5.2% (2 domains) / 8.0% (4 domains)** of specialist training FLOPs.
-
-### 13) [Loopback Transformer: Towards a Unified View of Residual Looped Transformers](https://arxiv.org/abs/2611.07226)
-- **Authors:** Xuan Ouyang, Zefan Cai, Chenlong Zhang, Cheng Luo, Ke Wan, Junjie Hu
-- **Categories:** cs.LG
-- **Summary:** Takes a depth-memory view of residual connections: a full block output mixes its input with its new update, so weighting the output also reweights already-carried history. Reading updates individually gives separate controls.
-- **Key Contributions:**
-  - **Loopback Transformer** keeps the shared stack's input on a separate path and reads individual updates, with geometric decay setting total update weight and attention learning its allocation.
-  - Beats standard Transformers using **40–75% of their parameters** (excl. embeddings/head) on ClimbMix at 191M–3B with matched tokens and depth.
-  - Higher 13-task mean accuracy at 1.4B and 3B; best validation loss among eight looped residual designs at 191M–778M.
-
-### 14) [Test-Time Self-Play: Scaling without a Verifier](https://arxiv.org/abs/2611.07367)
-- **Authors:** Akira Yoshiyama, Akmal Ashirmatov, Jonas Hübotter, Ido Hakimi, Andreas Krause
-- **Categories:** cs.AI, cs.LG
-- **Summary:** Most test-time scaling needs a verifier to select or refine candidates; TTSP uses **asymmetric self-play** instead, so it can scale where no reliable target verifier exists.
-- **Key Contributions:**
-  - Best method at every verifier strength on a difficulty-calibrated LiveCodeBench v6 subset; the gap widens as the verifier weakens.
-  - In the no-verifier limit: **+35% absolute mean@8**.
-  - Gains hold unless the base policy has near-zero coverage of the correct answer (a clear failure boundary).
-
-### 15) [Scaling Laws for SAE Training Data](https://arxiv.org/abs/2611.07756)
-- **Authors:** Nikita Koriagin, Nikita Balagansky, Daniil Gavrilov
+### StepBack: Step-Level Error-Localized Resampling for Efficient Test-Time Reasoning
+- **Authors:** Yang Ouyang, Jung-Eun Kim
+- **arXiv:** [2611.08403](https://arxiv.org/abs/2611.08403) (submitted 2026-11-05)
 - **Categories:** cs.AI, cs.CL, cs.LG
-- **Summary:** Studies how many **unique activations** an SAE needs when the total training budget is fixed. Quality rises fast with buffer size, then plateaus where replaying the buffer matches fresh activations.
-- **Key Contributions:**
-  - Fits a diversity-vs-repetition scaling law for limited data, validated across dictionary sizes, token budgets, Llama-3.1 / Qwen3 layers, and BatchTopK / TopK / JumpReLU SAEs.
-  - Beyond the plateau, extra unique activations add little for reconstruction or interpretability.
-  - Practical rule: pick the smallest buffer that reaches the plateau and replay it — **8–64× less activation storage** with negligible quality loss.
+- **Comment:** NeurIPS 2026 (per arXiv comment)
+- **Affiliations:** Not specified in arXiv metadata.
+- **Key contributions:**
+  - Improves over full-trajectory self-consistency by **localizing the likely first error step** in draft CoT trajectories using lightweight signals.
+  - **Resamples only the detected error step and suffix**, then applies majority voting.
+  - **Reported results:** matches self-consistency accuracy on average across 7 math reasoning/multi-hop QA benchmarks while reducing token usage by up to 41.26%; composable with adaptive inference methods.
 
-### 16) [SAE Interprets MoE: Sparse AutoEncoders Reveal That MoE Experts Exhibit Human-Interpretable Fine-Grained Specialization](https://arxiv.org/abs/2611.08089)
-- **Authors:** Anyuan Zhuo, Shaohua Zhang, Yuan Lin, Pinyan Lu
-- **Categories:** cs.LG
-- **Summary:** Rather than counting gating frequency on domain-labeled corpora, trains an SAE on the MoE layer output; because the encoder is affine, each latent's pre-activation decomposes exactly over experts.
-- **Key Contributions:**
-  - On Qwen3-30B-A3B layers 4/30/46, **contribution is far more concentrated than gating**; most latents have only one or two dominant experts.
-  - Dominant-set overlaps concentrate on a few expert pairs.
-  - Auto-interpretation shows division of labor below coarse domains — separate experts for Java vs front-end code, or geometry vs arithmetic/polynomials — while domains take very unequal numbers of experts.
-  - SAEs and code released (ByteDance Seed).
+### Agent-R²: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis
+- **Authors:** Teng Pan, Zixuan Wang, Yuchen Yan, Qifei Wu, Yao Chen, Yingqi Qu, Ruiqing Zhang, Yongliang Shen
+- **arXiv:** [2611.08219](https://arxiv.org/abs/2611.08219) (submitted 2026-11-05)
+- **Categories:** cs.CL
+- **Affiliations:** Not specified in arXiv metadata.
+- **Key contributions:**
+  - Addresses missing post-training data for realistic productivity agents by synthesizing tasks from **occupational seeds, corpus-derived workflow evidence, and authentic web-sourced multi-format files**.
+  - Distills ~4k task instances with **deliverable-level rubrics**; trains with SFT + **rubric-based RL**.
+  - **Reported results:** Agent-R²-4B (trained on 4k instances) surpasses Qwen3-235B-A22B-Thinking-2507 on GDPval (51.0% vs 48.0%) and OfficeQA (14.8% vs 13.8%); analysis suggests reduced shortcut behavior and more grounded/verified deliverables.
 
-### 17) [What Does Multi-Turn Reinforcement Learning Really Improve in LLM Agents?](https://arxiv.org/abs/2611.06483)
-- **Authors:** Kejian Zhu, Zhuoran Jin, Shangqing Tu, Tianyi Men, Yupu Hao, Jiachun Li, Kang Liu, Jun Zhao
-- **Categories:** cs.CL, cs.LG
-- **Summary:** Evaluates agentic RL through sampling breadth `K` and interaction depth `T` via `Pass@(K,T)`, showing that trajectory-level advantages depend on sufficient turn budgets.
-- **Key Contributions:**
-  - Gains diminish sharply as budgets tighten; agentic RL does **not** uniformly improve single-step decisions.
-  - Strength concentrates in **error recovery and long-horizon resilience**.
-  - Introduces **BudgetMix RL**, varying interaction budgets during training, for robust performance across execution settings; discusses process-supervision trade-offs.
+### FedReason: Large Language Models as Weight-Space Meta-Aggregators for Heterogeneous Federated Learning
+- **Authors:** Ali Mohammadi Ruzbahani, Abbas Yazdinejad, Hadis Karimipour
+- **arXiv:** [2611.08383](https://arxiv.org/abs/2611.08383) (submitted 2026-11-05)
+- **Categories:** cs.CR, cs.AI
+- **Affiliations:** Not specified in arXiv metadata.
+- **Key contributions:**
+  - Uses an LLM as a **server-side meta-aggregator** that inspects client-model statistics in a restricted sandbox and emits a short Python aggregation program (with FedAvg fallback).
+  - Preserves a privacy boundary: full weight tensors do not leave the server; LLM sees only printed analysis results and may score candidates on a 500-image proxy set.
+  - **Reported results (168 runs, 14 baselines):** under Dirichlet label skew, +1.26 pp average over FedAvg across 12 paired runs; strong server-side rule on CIFAR-100 but below SCAFFOLD (which changes client training). With sign-flipping Byzantine clients, excluded malicious clients from first round; proxy feedback critical (73.8% → 38.8% in one seed without it). Reported API cost ~0.79 USD/60-round run.
 
-### 18) [Measuring the Marginal Value of Verifier-Based RL Beyond Supervised Fine-Tuning](https://arxiv.org/abs/2611.07639)
-- **Authors:** Amit Sagtani, Saloni Garg
-- **Categories:** cs.AI, cs.LG
-- **Summary:** A pre-registered, controlled test of what RLVR adds after SFT, using `gpu-train-debug`: 1,877 synthetic GPU/LLM training failure-diagnosis tasks across 30 archetypes with a partial-credit programmatic verifier.
-- **Key Contributions:**
-  - 1,200 gold demonstrations nearly solve the benchmark (SFT 0.785 hard split) while 15 GRPO steps do not move the base model (0.314 vs 0.311).
-  - At pre-registered scale: **no detectable in-distribution gain** (+0.22 pts, 95% CI [−0.06, +0.51]); modest OOD gain (+0.33 pts, CI [+0.02, +0.68]).
-  - Residual SFT errors are mostly systematic and identical across samples, reducing GRPO's within-group signal — a useful negative result for "RL adds on top of SFT" assumptions.
+### Don't Prompt Your Agents. Equip Them: Skillware as a Modular Standard for Sovereign, Auditable, and Deterministic Capability Execution for Logical Systems
+- **Authors:** Vladimiros Peilivanidis
+- **arXiv:** [2611.07652](https://arxiv.org/abs/2611.07652) (submitted 2026-11-05)
+- **Categories:** cs.AI, cs.SE
+- **Affiliations:** ARPA Hellenic Logical Systems (as seen in arXiv metadata context).
+- **Key contributions:**
+  - Proposes **Skillware**: versioned capability bundles with typed JSON contracts, deterministic Python execution, directives, datasets, and unit tests, separating agent intent from execution.
+  - Provides model-agnostic adapters that translate bundles into native tool declarations for cloud or local models.
+  - **Reported results:** 23 models / 368 benchmark conditions; equipped 3B–8B local models reportedly outperform unequipped frontier models on complex workflows, with up to 84.8% token reduction, 97.3% inference-cost reduction, and elimination of parameter errors.
 
-### 19) [La-JEPA: Compact Robot Policies with Latent World Modeling](https://arxiv.org/abs/2611.08156)
-- **Authors:** Mateo Clémente, George Z. Xue, Amin Abyaneh, Liheng Ma, Rui Heng Yang, Tongtong Cao, Zhanguang Zhang, Yingxue Zhang
-- **Categories:** cs.CV, cs.LG, cs.RO
-- **Summary:** Trains a compact world-action policy from scratch in the feature space of a pretrained **V-JEPA 2.1** encoder, predicting future features jointly with actions during training but generating only actions at inference.
-- **Key Contributions:**
-  - SOTA among policies without embodied pretraining on RoboTwin 2.0 (clean/randomized) and LIBERO-Plus with correct instructions, at far fewer parameters than the strongest competing policies.
-  - Faster than Fast-WAM at comparable performance; beats LeapBot-WA and JEPA-WAM without their pretrained policy backbones.
-  - Design study: JEPA features beat video-VAE latents, most clearly OOD; training-time future prediction matters even when skipped at inference.
-  - Corrects corrupted LIBERO-Plus evaluator instructions and re-evaluates.
+### Scientist World: Grow a Research World for AI-Scientists
+- **Authors:** Taiming Lu, Sachin Konan, Zhuang Liu
+- **arXiv:** [2611.08478](https://arxiv.org/abs/2611.08478) (submitted 2026-11-05)
+- **Categories:** cs.AI, cs.CL, cs.LG
+- **Affiliations:** Not specified in arXiv metadata.
+- **Key contributions:**
+  - Converts research papers into **executable environments** for AI scientists: extracts open-ended research questions and reproduces paper methods as baselines.
+  - Releases 1,000 verified environments and 6,400 hours of research traces.
+  - **Reported results:** frontier AI scientists surpass human researchers 74% of the time in their evaluation setting; training on the environment raises a small model (+158%) to match frontier models in research ideation.
 
-### 20) [On the Design of Hyper-Connections: Simplification, Stability, and Scalability](https://arxiv.org/abs/2611.05984)
-- **Authors:** Xiangdong Zhang, Xiaohan Qin, Sunan Zou, Tuo Dai, Bizhao Shi, Zhuo Xia, Yebin Yang, Yizhou Chen, Yuliang Liu, Yu Cheng, Junchi Yan
-- **Categories:** cs.CL, cs.LG
-- **Summary:** Systematically ablates Hyper-Connections (HC), increasingly used in frontier models but poorly understood and costly to train.
-- **Key Contributions:**
-  - Shows learned read/write gating without mixing, or unconstrained mixing with fixed gates, each match mHC alone.
-  - Identifies repeated access to the expanded residual state as the main training overhead.
-  - **SimpleHC** removes residual mixing and uses shared memory access: only **2.4% extra training time** over a vanilla residual at the largest tested scale, comparable to mHC from 15B to 30B MoE, with smoother gradients and stress stability.
+## Cross-cutting Observations
 
-## Also Notable
+1. **CTR/ads systems are moving toward slate-level and generative objectives.** ReuseGR, BRIDGE, OneTrans-GSR, ICE, and SPADE all treat ranking/retrieval as sequence/slate generation or browsing-journey modeling, and several report online A/B metrics (CTR, eCPM, GMV, advertiser value, latency).
+2. **Efficiency is a first-class objective, not an afterthought.** Recent methods trade full decoding or full-trajectory sampling for latent communication (SwarmEvolve), suffix resampling (StepBack), prefix reuse (ReuseGR), compute-aware recurrence (BRIDGE), and deterministic capability execution (Skillware).
+3. **Evaluation is becoming more operational.** NumEmbBench standardizes CTR numerical-embedding comparisons; industrial papers increasingly report latency, traffic percentage, and business metrics alongside offline recall/NDCG/AUC.
+4. **Metadata is incomplete for very recent submissions.** Affiliations/company affiliations should be verified from PDFs, author pages, or later versions before citation in a formal setting.
 
-- **[O$^2$PD: Overlap-Gated On-Policy Distillation on Reliable Prefix](https://arxiv.org/abs/2611.07731)** — aligns only the first 20% of each student rollout; adds reset-atom and support-convergence strategies to fix teacher-support uncovering and dominant-mode mismatch in top-k OPD.
-- **[D$^2$-OPD: Separating Direction and Distance in Extrapolative On-Policy Distillation](https://arxiv.org/abs/2611.07241)** — decouples extrapolation direction from distance with a per-prefix hard KL constraint; up to **+9.45 points** on math reasoning.
-- **[CacheGraft: Enhancing RAG via Latent-Space Document Enrichment](https://arxiv.org/abs/2611.07393)** — offline fused KV-cache passage representations injected into a 0.6B receiver; better answers in 29/30 comparisons, 17 significant, zero-shot for the fuser.
-- **[Decision Models as Retrieval Gates Against Injection and Pollution](https://arxiv.org/abs/2611.08325)** — a 4B decision-model gate cuts injection attack success from 27.9% to **5.7%** and fake-page exposure to 0.5%, at 76 ms/passage.
-- **[FastAFD: When Does Attention-FFN Disaggregation Pay on Rack-Scale NVLink?](https://arxiv.org/abs/2611.07149)** — AFD beats wide-EP vLLM by **1.17× / 1.16×** on Qwen3 / Qwen3.5 on GB200 NVL72; an analytical model predicts the gain within 3%.
-- **[FlashOffloading: Low-Latency KV Cache Offloading for Long-Context LLM Serving](https://arxiv.org/abs/2611.07542)** — fully host-DRAM-resident KV cache; **1.38× prefill / 1.91× decode** under a 30 ms TPOT SLO on Ascend910C with GLM-5.2 + MTP3.
-- **[LowRAM: Low-Rank Keys and Amortised Values for Composable KV Cache Compression](https://arxiv.org/abs/2611.07025)** — values are predictable from keys; **4× near-lossless value compression**, up to 5× decode throughput, and 26.9× composed compression at 94.5% of baseline.
-- **[The Memory Trap: Language Agents Overgeneralize from Benign Interactions](https://arxiv.org/abs/2611.07554)** — benign preference memories leak into high-stakes tasks across six frontier models, causing skipped verification, sycophancy, weakened tests, and more cheating on ImpossibleBench.
-- **[Rethinking Data Selection: The Importance of Coverage over Difficulty in LLM Fine-Tuning](https://arxiv.org/abs/2611.07323)** — difficulty-based selection often fails to beat random; a clustering-based coverage method wins on multi-domain Tülu 3.
-- **[PlayGen2: Learning Real-Time Playable Worlds with Explicit 3D State](https://arxiv.org/abs/2611.07867)** — separates learned 3D state evolution (occupancy grid + entity states) from neural rendering; ~160 ms backend latency on an M4 Pro, zero-shot unseen Doom maps.
-- **[A Night at the LLM Zoo: Data Conditioned Flow Matching for Generating Pretrained LLM Weights](https://arxiv.org/abs/2611.07103)** — 100-model GPT-2 zoos per scale; flow matching in Gram-PCA weight space generates weights from data-mixture conditioning with zero-shot mixture generalization.
-- **[ConvPE: Convolutional Position Embedding Improves Transformers](https://arxiv.org/abs/2611.07749)** — lightweight causal-conv, content-dependent attention bias compatible with RoPE, masks, and KV concatenation.
-- **[Muir: Linear Attention with Sensitivity-Allocated Gating and Matched-Filter Readout](https://arxiv.org/abs/2611.08376)** — shows state updates are less sensitive to erasure than writes; **1.8–2.0% lower perplexity** than GDN-2 and 2,560× length extrapolation (4K → 10M).
-- **[StrataFlux: Memory-Hierarchy-Native Low-Bit LLM Inference](https://arxiv.org/abs/2611.08363)** — streams selective precision from RAM/SSD; 2-bit Qwen3-8B AIME 2024/2025 **11.0% → 47.1%** at unchanged GPU memory.
-- **[Resource-Efficient RL Post-Training through Elastic Expert Parallelism](https://arxiv.org/abs/2611.06984)** — FlexFloor releases MoE workers early while preserving expert availability: **+52.74%** rollout throughput, +65.40% tokens per occupied compute time.
-- **[KOSMOS: Self-scheduling Persistent Kernels for Communication-Compute Overlap](https://arxiv.org/abs/2611.07477)** — demand-ordered workgroups switch between comm and compute roles; **1.29–1.83×** end-to-end training speedup on DeepSeek-V3 / Qwen3-235B proxies over DeepEP.
-- **[Archetypal contexts in the neurons of language models](https://arxiv.org/abs/2611.07234)** — causal neuron silencing in Qwen3.8-27B separates language, topic, and cross-domain relational archetypes into a "sandwich" layer structure.
+## Caveats
 
-## Emerging Trends
-
-- **OPD is being debugged, not just applied.** Four papers in one batch address state coverage (CoRD), supervision reliability (O²PD), extrapolation geometry (D²-OPD), and FLOP accounting vs GRPO. The recurring finding: external teachers are expensive per FLOP, while **self-teacher / multi-teacher distillation** is where the efficiency is.
-- **Generative recommendation is fixing the quantization interface.** BRIDGE and OptST both target the mismatch between continuous semantic structure and discrete SIDs — one on the decoder side, one on the tokenizer side.
-- **Industrial re-ranking is moving from per-item CTR to process models.** ICE's display → impression → click formulation is the clearest example yet that sequence-level utility needs causal exposure modeling.
-- **RL reward design for recommenders has a diversity failure mode.** The CF item-mean decomposition gives a simple, effective correction and a reusable diagnostic.
-- **Interpretability is becoming infrastructure.** SAE buffer scaling laws make SAE training cheaper; SAE-over-MoE turns expert specialization into a measurable, decomposable quantity.
-- **KV-cache work is splitting along the memory hierarchy.** LowRAM (compression), FlashOffloading (host DRAM), StrataFlux (RAM/SSD streaming), and GINGER (vector index) all optimize different tiers rather than one monolithic cache.
-- **Long-context efficiency is going hierarchical and logarithmic.** RecSA's tree-structured KV selection is notable for extrapolating far beyond its training length with positive speedups.
-
-## Notes
-
-- Data source: arXiv RSS for `cs.IR`, `cs.AI`, `cs.LG`, `cs.CL`; latest `lastBuildDate` = Fri, 06 Nov 2026. The 2026-11-07 batch does not exist (Saturday skip), so this report covers the freshest Fri 2026-11-06 announcement block.
-- Counts: **826 unique items**; **461 unique `new`/`cross`**; **21** touch `cs.IR` (12 `new`-only). `replace`/`replace-cross` excluded.
-- arXiv has no dedicated CTR category; CTR/ads work appears under `cs.IR` with cross-lists to `cs.LG` / `cs.AI`.
-- Abstract-only screening. Numbers are author-reported and were not independently reproduced.
-- All featured IDs grep-verified absent from the wiki before writing; no overlap with the 2026-10-29 / 2026-10-31 `arxiv-paper-check` reports.
-- "Announced" is the RSS announcement date, not necessarily the original submission date.
+- This is a **curated check**, not an exhaustive scan of all arXiv categories.
+- All metrics above are **author-reported** unless independently reproduced.
+- The "last 24 hours" constraint could not be satisfied exactly at query time due to arXiv announcement/indexing timing; the report uses the latest available announced/retrievable batch and labels it explicitly.
+- A related synthesis for the same date exists at [arxiv-ai-search](arxiv-ai-search.md); this paper-check focuses on AI+CTR and selects a compact set of highlights.
