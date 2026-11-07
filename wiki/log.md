@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-07] synthesis | tech-report-digest (2026-11-07)
+- Summary: wiki/synthesis/2026-11-07/tech-report-digest.md — LLM 大模型技术报告日报（19 家/组织）。覆盖 DeepSeek-V4/V4.1-Flash（CSA+HCA 混合注意力、mHC、Muon、1M 上下文、32T tokens）、OpenAI GPT-6 Astra/Cyber/Sol/Luna/Rosalind-6（Preparedness）、Meta Muse Wonder/Spark Open/Glimmer 30B、Gemini 4 Argon（1M、Vals 68.9%）与 Gemini Omni 1.2 Flash、Anthropic Claude 5.5 家族（Opus/Sonnet/Haiku）、Mistral Large 4 / Le Chonk 与 Timestral、Qwen3.8-Max/Flash-Next（Qwen4 预览，未发布）、Kimi K3.1 Pro（2.8T/104B、权重 11/4）、GLM-5.3/5.3-Flash 与 GLM-Omni 研究、Step 5 Preview、Intern-S2-Preview-397B/Mobius、ByteDance Seed 2.0/doubao-seed-evolving/Recycler、Grok 4.7、Amazon Nova 2、Microsoft Phi-4-reasoning-vision-15B、Apple AFM 3、NVIDIA Nemotron 3.5 Super/Lightning/Bolt/Transcribe；按架构、训练方法、Scaling Law、多模态、长上下文、推理模型六维总结趋势。
+- Updated: wiki/index.md（Synthesis 表新增 2026-11-07 tech-report-digest 行）, wiki/log.md
+- New pages: wiki/synthesis/2026-11-07/tech-report-digest.md
+- Contradictions: 部分闭源模型参数未公开（参数多为厂商自报/社区推测，Grok 4.7 的 2.1T 仅来自 Musk 表述、官方模型卡未确认）；Qwen4（截至 11/6 未发布，仅预告）、GLM-5.4/5.5（截至 11/1 未发布）、Grok 4.8（截至 11/4 未发布）已在正文标注为未发布；01.AI (Yi) 与 Baichuan 缺乏可验证的 2026 新技术报告；StepFun Step 5 Preview 截至 10/15 仅发布技术博客、无正式 technical report。
+
 ## [2026-10-28] synthesis | conference-digest (2026-10-28)
 - Summary: wiki/synthesis/2026-10-28/conference-digest.md — Conference Digest: **20 papers** across ICML 2026, AAAI 2026, NeurIPS 2025, ICLR 2026, KDD 2026, CVPR 2026, ACL 2026, EMNLP 2025, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025, plus two arXiv preprints. Includes award winners, production systems, bilingual titles, authors/affiliations, methods, exact comparisons, and caveats.
 - Updated: wiki/index.md (Synthesis 表新增 2026-10-28 conference-digest 行)
@@ -8964,3 +8970,13 @@
 - Updated: `wiki/index.md` (Synthesis table — new arxiv-paper-check 2026-11-07 row), `wiki/log.md` (this entry).
 - New pages: `wiki/synthesis/2026-11-07/arxiv-paper-check.md`.
 - Contradictions/flags: abstract-only screening; author-reported numbers not independently reproduced; arXiv has no dedicated CTR category (CTR/ads under `cs.IR`); no featured ID overlaps prior wiki reports (grep-verified absent); no contradictions with existing wiki pages identified.
+
+## [2026-11-07] synthesis | WorldQuant 101 Alpha 美股 Top 20 筛选（2026-11-07）
+- Report: `wiki/synthesis/2026-11-07/wq101-alpha-daily.md` (type: synthesis) — 周六报告，数据基准 2026-11-06（周五）完整收盘。
+- Market: S&P 500 7,376.86（+0.31%）、Nasdaq 24,579.42（+1.09%）、Dow 51,285.73（-0.46%）、Russell 2000 2,754.11（+0.90%）、SOX 9,390.25（+4.21%）、VIX 约 24.4；三大指数连续第四周下跌（周线 S&P -2.7%、Nasdaq -3.4%、Dow -0.9%）；10Y 4.857%、2Y 4.507%、30Y 5.267%、DXY 102.12、WTI 约 $90.8、黄金约 $4,066；板块仅 4/11 收涨（科技 +1.26%、通信 +0.51%、工业 +0.14%、能源 +0.02%，必需消费 -1.21%、金融 -0.68%），等权 -0.39%。
+- Key events: 中期选举民主党横扫两院 → 周四 AI 监管恐慌（S&P -4.36%、Nasdaq -5.52%、Dow -3.4%、Mag7 蒸发约 $1T，Nasdaq 进入技术性回调）；周五半导体超跌反抽（AMD +10.78%、LRCX +8.17% 含 $250 亿回购、INTC +7.77%、TSM +6.26%、MU +5.15%、NVDA +2.81%、IREN +20%）；财报极端分化（ABNB +12.03%、APP +9.86%、NET +12%、FROG +35%、MRNA +5.26% vs MCHP -10%、AXON -18%、DKNG -27%、Atlassian -14%）；10 月非农 +16.5 万（预期约 +6.5 万）、失业率 4.1%、时薪 +0.4%、12 月加息概率约 77-78%；AI 电力政策冲击（VST 11-04 -13.8%、CEG 两日约 -9%、GEV -10%），但 VST 上调 2026/27 EBITDA 指引、GEV 订单 +96% 至 $290 亿、Eaton 电气 backlog +46%。
+- Top 20: NVDA(8.8), GOOGL(8.7), AMD(8.6), MU(8.5), LRCX(8.4), TSM(8.3), APP(8.3), AVGO(8.2), LLY(8.1), NET(8.1), PLTR(8.0), GEV(8.0), VST(7.9), CEG(7.9), ABNB(7.8), MSFT(7.7), META(7.6), AMZN(7.6), ETN(7.5), TSLA(7.4)（半导体 6、软件/云 3、通信服务 3、工业/电力 2、公用/核电 2、医疗 1、可选消费 3）。
+- Rotation: 新增 MU/LRCX/TSM/AVGO/APP/LLY/NET/PLTR/GEV/VST/CEG/ABNB/AMZN/ETN/TSLA；保留 NVDA/AMD/GOOGL/MSFT/META；剔除 XOM/CVX/REGN/WMT/MRK/GPN/KO/TMUS/ACN/MDLZ/CMCSA/AMGN/HD/AAPL/INTC（能源全周 -10%~-12% 趋势破坏、防御拥挤回吐、AAPL 动量不足、INTC 仅列观察池）。
+- Updated: `wiki/index.md` (Synthesis table — new wq101-alpha-daily 2026-11-07 row), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-11-07/wq101-alpha-daily.md`.
+- Contradictions/flags: S&P 板块涨跌幅两口径（科技 +1.26% Xinhua vs +1.46% Market Movement Dashboard；必需消费 -1.21% vs -1.27%；金融 -0.68% vs -0.59%）；周度板块口径冲突（Morningstar 通信服务 +5.25%/能源 -12.32% vs Semiboard 必需消费 +4.11%/科技 -12.78%/能源 -10.09%）；市场宽度两口径（S&P 约 183 涨/316 跌 vs NYSE 1,623 涨/1,193 跌、Nasdaq 2,045 涨/1,295 跌）；WTI $90.52 vs $90.83、黄金 $4,065.90 vs 约 $4,062；AMD $447.98 vs $450.82；ETN 精确收盘价未单独确认；因子读数为基于公开 OHLCV 与事件的代理估计，非逐票 101 alpha 回测；市值为约数，不构成投资建议。
