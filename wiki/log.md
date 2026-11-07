@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-07] synthesis | investment-daily (2026-11-07)
+- Summary: wiki/synthesis/2026-11-07/investment-daily.md — 投资热点日报（周六版，基于 2026-11-06 美股/港股/A 股/中概 ADR 完整收盘）。覆盖美股 Mag 7 与 AI 相关（AAPL/MSFT/NVDA/GOOGL/AMZN/META/TSLA；PLTR/CRM/ORCL/SNOW/C3.ai/AMD/AVGO/TSM/INTC/MU/CRWV/NBIS 等）、港股科技与 AI（腾讯/阿里/美团/小米/百度/网易/快手/中芯/华虹/联想/商汤/智谱/MiniMax/光模块与智驾链）、A 股 AI 算力/芯片/大模型/光模块/半导体设备（寒武纪/海光信息/中科曙光/科大讯飞/三六零/中际旭创/新易盛/北方华创/中微公司等）、中概 ADR（BABA/PDD/JD/BIDU/NTES/BEKE/TCOM/YMM/VIPS/BZ/RLX/TME/BILI/LI/XPEV/NIO/ZK 退市说明）、新能源/EV（TSLA/BYD/LI/XPEV/NIO/宁德时代/阳光电源/隆基绿能/小米）。主线：AI capex 恐慌二次爆发后周五深 V 反弹、数据中心政治/许可风险（43/44 公投通过、高盛约 45% 容量受限）、亚洲补跌与周一补涨窗口、算力链分化（设备相对抗跌、光模块/PCB 承压）、中概 EV 领跑、Anthropic S-1/DeepSeek 融资/国产大模型与可灵等主题。
+- Updated: wiki/index.md (Synthesis table added investment-daily 2026-11-07 entry), wiki/log.md, wiki/synthesis/2026-11-07/investment-daily.md (补充 CRM/ORCL/SNOW/C3.ai、商汤、A 股科大讯飞/三六零/中科曙光/中微公司/寒武纪等覆盖，扩展中概 ADR 清单与数据采集说明)
+- New pages: none (report file already existed; updated in place)
+- Contradictions: none introduced; 部分标的因 web 搜索取消/行情接口限流未取得精确周五收盘或涨跌幅（已在正文与第 9 节明确标注），GooGL/TSLA/费半/TSM 等采用约数，联想/蔚来 ADR/生益科技等保留口径冲突说明
+
 ## [2026-11-07] synthesis | conference-digest (2026-11-07)
 - Summary: wiki/synthesis/2026-11-07/conference-digest.md — structured conference/arXiv digest covering ICML 2026, AAAI 2026, NeurIPS 2025, ICLR 2026, KDD 2026, CVPR 2026, ACL 2026, EMNLP 2025, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025 plus arXiv 2026-10-29→11-05. Includes award/flagship papers and industrial systems from focus orgs (Google DeepMind D4RT/Genie 4; Microsoft Research LLMs Get Lost; Alibaba Gated Attention/EST/FAT; Netflix GenPage/GenRec; OpenAI GPT-Red; Meta ReasonRec; NVIDIA Cosmos; ByteDance OneTrans-GSR/MDL/ReST; Kuaishou EvoRec/MARM/Tool-Star; Baidu GRAB; Tencent LatentRec/CCFormer/DRIFT; Meituan MTFM; Taobao ICE/JBM; arXiv ReuseGR/BRIDGE/SPADE/DualEvolve/SwarmEvolve/Agent-R²/DUOS/StepBack). Per-paper fields: EN+ZH title, authors, affiliation (or explicit "not specified"/verify), venue, abstract+key innovations, comparison with prior methods, arXiv/PDF/official link. Categories: recommendation/advertising/CTR/reranking, LLM/agents/post-training, code execution, generative models/diffusion LM, world models, sequential modeling, games/benchmarks.
 - Updated: wiki/index.md (Synthesis table added conference-digest 2026-11-07 entry), wiki/log.md
