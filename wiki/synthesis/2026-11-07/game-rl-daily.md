@@ -8,7 +8,7 @@ tags: [game-rl, game-ai, llm-agents, reinforcement-learning, self-play, foundati
 ---
 # Game RL & Game AI Bot — Daily Paper Digest (2026-11-07)
 
-*Window: arXiv submissions announced roughly 2026-10-28 → 2026-11-06 (including Fri Nov 6 listings where relevant). 34 new papers across Game RL, game-theoretic learning, MARL systems, LLM/VLA game agents, interactive world models, procedural content generation, game benchmarks, industry deployment, and related techniques. Papers already covered by the sibling `2026-10-30` digest (e.g. `2610.37567`, `2610.35773`, `2610.33894`, `2610.31466`) are excluded; cross-references are noted inline.*
+*Window: arXiv submissions announced roughly 2026-10-28 → 2026-11-06 (including Fri Nov 6 listings where relevant). 39 new papers across Game RL, game-theoretic learning, MARL systems, LLM/VLA game agents, interactive world models, procedural content generation, game benchmarks, industry deployment, and related techniques. Papers already covered by the sibling `2026-10-30` digest (e.g. `2610.37567`, `2610.35773`, `2610.33894`, `2610.31466`) are excluded; cross-references are noted inline.*
 
 > ⚠️ All performance numbers below are **author-reported** and have not been independently reproduced. Affiliations are taken from arXiv HTML/PDF author blocks; where the paper lists none, this is stated explicitly rather than inferred.
 
@@ -531,10 +531,24 @@ This window's industrial signal is strong and mostly *deployed systems* rather t
 ## 8. Related Techniques — Self-Play, Reward, and Exploration
 
 
+#### Policy Network Diffusion
+- **Title:** Policy Network Diffusion
+- **Authors:** Jiate Liu, Deheng Ye
+- **Affiliation:** Not listed on arXiv author block
+- **Venue:** arXiv preprint (2026-11)
+- **arXiv:** [https://arxiv.org/abs/2611.04614](https://arxiv.org/abs/2611.04614)
+- **Abstract:** Diffusion models have shown remarkable progress in AI-generated content, including images and videos. This paper asks whether diffusion models can generate the parameters of policy networks in reinforcement learning, and whether the generated policies exhibit generalisation capabilities.
+- **Key Innovations:**
+  - DPPG combines a Transformer-based autoencoder that patchifies network parameters for high compression with a task-conditioned diffusion model that generates parameters per environment.
+  - A single unified model synthesises high-quality policies across Classic Control, Atari games, and MuJoCo.
+  - Generates networks with more parameters than previous parameter-generation approaches.
+  - In previously unseen environments, generated parameters converge faster and reach competitive performance.
+- **Relevance:** Reframes policy learning as conditional generative modelling of weights — a potential route to fast adaptation and policy reuse across Atari-style game suites.
+
 #### SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization
 - **Title:** SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization
 - **Authors:** Qile Jiang, George Em Karniadakis
-- **Affiliation:** Brown University (affiliation inferred from author profile; verify on PDF)
+- **Affiliation:** Division of Applied Mathematics, Brown University
 - **Venue:** arXiv preprint (2026-11)
 - **arXiv:** [https://arxiv.org/abs/2611.08483](https://arxiv.org/abs/2611.08483) | **PDF:** [https://arxiv.org/pdf/2611.08483](https://arxiv.org/pdf/2611.08483)
 - **Abstract:** LLM-guided evolutionary search improves programs by iteratively refining solutions and combining high-scoring methods, but is often slow because each round requires long textual chain-of-thought generation repeated to maintain diversity. SwarmEvolve uses hundreds of low-cost agents per round that work in swarms, reason in latent space without decoding to text, and share information by passing KV caches.
@@ -614,4 +628,4 @@ This window's industrial signal is strong and mostly *deployed systems* rather t
 - Can execution-grounded self-play be made robust to correlated answer-key errors, or does it require an independent teacher?
 - Will perception-first agents (SARBLOH) generalise beyond grid games to 3D visual game environments?
 
-*Method: arXiv search sweeps over `cs.LG`, `cs.AI`, `cs.GT`, `cs.MA`, `cs.CL`, `cs.CV`, `cs.RO` plus `cs.AI/cs.LG/cs.MA` recent listings for gameplay/self-play/MARL/world-model/PCG/game-agent terms; screened via arXiv API/abs/HTML pages and filtered against existing wiki digests; abstracts, author blocks, and affiliations taken from arXiv `abs`/`html`/PDF where available (affiliations marked when not listed). 34 papers retained. Sibling digests already cover several related candidates (e.g. `2610.37567`, `2610.35773`, `2610.33894`, `2610.31466`, `2610.31162`, `2610.14883`).*
+*Method: arXiv search sweeps over `cs.LG`, `cs.AI`, `cs.GT`, `cs.MA`, `cs.CL`, `cs.CV`, `cs.RO` plus `cs.AI/cs.LG/cs.MA` recent listings for gameplay/self-play/MARL/world-model/PCG/game-agent terms; screened via arXiv API/abs/HTML pages and filtered against existing wiki digests; abstracts, author blocks, and affiliations taken from arXiv `abs`/`html`/PDF where available (affiliations marked when not listed). 39 papers retained. Sibling digests already cover several related candidates (e.g. `2610.37567`, `2610.35773`, `2610.33894`, `2610.31466`, `2610.31162`, `2610.14883`).*
