@@ -9001,16 +9001,6 @@
 - New pages: `wiki/synthesis/2026-11-07/arxiv-paper-check.md`.
 - Contradictions/flags: abstract-only screening; author-reported numbers not independently reproduced; arXiv has no dedicated CTR category (CTR/ads under `cs.IR`); no featured ID overlaps prior wiki reports (grep-verified absent); no contradictions with existing wiki pages identified.
 
-## [2026-11-07] synthesis | WorldQuant 101 Alpha 美股 Top 20 筛选（2026-11-07）
-- Report: `wiki/synthesis/2026-11-07/wq101-alpha-daily.md` (type: synthesis) — 周六报告，数据基准 2026-11-06（周五）完整收盘。
-- Market: S&P 500 7,376.86（+0.31%，周 -2.7%，2025-04 以来最差周）、Nasdaq 24,579.42（+1.09%，周四跌入 correction，周 -3.4%）、Dow 51,285.73（-0.46%，周 -0.9%）、Russell 2000 2,754.11（+0.87%，周 -2.1%）、SOX 9,390.25（+4.21%）；VIX 25.63（-9%，周 +32%）、10Y 约 4.88%、2Y 约 4.51%、DXY 约 102.2（+0.7%）、12 月加息概率 77%–78%；WTI $90.83（周 -12.8%）、Brent $98.32（周 -13.3%）；周五 7/11 板块下跌，IT +1.26%、通信服务 +0.51%，必需消费 -1.21%、金融 -0.68%、房地产约 -0.7%；等权 S&P -0.4%，318 跌/184 涨。
-- Key events: 11-03 民主党中期选举横扫参众两院并在德州等数据中心州取胜 → AI 监管/数据中心放缓担忧；11-05 纳指 -5.5%（19 个月最大单日跌幅）、标普 -4.4%、道指 -3.4%、SOX -12%（史上第二大单日跌幅）、11 板块全跌、IT -7.3%，NVDA -9%、AMD -17%、MU -17%、SNDK -22%、AVGO/INTC -10%；11-06 半导体超跌反抽：AMD +11.04% $449.04、INTC +7.71% $56.28、TSM +6.33% $375.44、MU +5.12% $690.00、NVDA +2.78% $186.64、LRCX +8.23% $200.44（$250 亿回购）、MRVL +5.73%、ANET +7.31%；财报赢家 ABNB +11.67% $189.99（上调全年收入增速至 high-teens）、NET +9.91% $268.75（Q4 指引超预期）、APP +9.86% $391.22（Q3 EPS +76%、营收/EBITDA 超预期）、VST +10.55%、CEG +4.30%；输家 DKNG -22%、SNAP -15%、TRIP -22%、EXPE -13%、ZILLOW -15%、ATLASSIAN -16%；10 月非农 +16.5 万（预期约 6–6.5 万）、失业率 4.1%、时薪 +0.4%；NVDA Q3 FY27 财报确认 11-17 盘后。
-- Top 20: TSM, AMD, LRCX, ABNB, NET, NVDA, APP, AVGO, LLY, MU, CEG, ABBV, JPM, MSFT, GOOGL, V, VST, UNH, COST, WMT（IT/半导体 8、医疗 3、通信服务 2、公用事业 2、金融 2、必需消费 2、可选消费 1）。
-- Rotation: 新增 TSM/LRCX/ABNB/NET/APP/AVGO/MU/LLY/CEG/ABBV/JPM/V/VST/UNH/COST；保留 NVDA/MSFT/GOOGL/AMD/WMT；剔除 XOM/CVX/REGN/MRK/GPN/KO/TMUS/ACN/MDLZ/CMCSA/AMGN/HD/AAPL/META/INTC（油价 -13% 破坏能源动量、防御/事件驱动拥挤或动能衰减、INTC 基本面重定价后质量弱于 TSM/AMD/LRCX）。
-- Updated: `wiki/index.md` (Synthesis table — new wq101-alpha-daily 2026-11-07 row), `wiki/log.md` (this entry).
-- New pages: `wiki/synthesis/2026-11-07/wq101-alpha-daily.md`.
-- Contradictions/flags: AMD 收盘 $449.04（+11.04%，Fox）vs $455.75（+12.70%，CBC 盘中）vs $448.15（MarketBeat 午盘）；NVDA $186.64（+2.78%，Fox）vs $194.15（+6.91%，CBC 盘中）vs $188.42（MarketBeat 午盘）；MU $690.00（+5.12%，Fox）vs $721.68（+9.95%，CBC 盘中）vs $693.50（MarketBeat 午盘）；INTC $56.28（+7.71%，Fox）vs $56.58（+8.29%，CBC 盘中）；VIX 25.63（TheStreet 收盘）vs 26.36（Schwab 盘前）vs 23.88（Reuters 午盘）；10Y 4.88%（Schwab）vs 4.85%（closelook）vs 4.87%（Yahoo）；Nasdaq-100 约 27,700–28,000（+约 1.4%）；APP 周四 +31%（algoinvesting/CNBC 午盘）vs +28%（Investopedia）；EPAM/Unity 的 +22% 为 11-05 事件而非周五（EPAM 周五 -3.86%、Unity +5.51%）；市值为按公开股本与收盘价估算的约数；因子读数为代理估计而非逐票 101 alpha 回测；不构成投资建议。
-
 ## [2026-11-07] ingest | Conference Digest — Top ML/AI Conferences 2025-2026
 - Summary: `wiki/synthesis/2026-11-07/conference-digest.md`
 - Scope: NeurIPS 2025, ICLR 2026, ICML 2026, AAAI 2026, CVPR 2026, ACL 2026, EMNLP 2025/2026, KDD 2026, SIGIR 2026, WWW 2026, CIKM 2025/2026, RecSys 2025/2026；awards + ~40 representative papers across Recommendation/Generative Rec, Advertising/CTR, LLM Agents, Code Execution Prediction, Generative Models/Sequential Modeling, Games/World Models, Benchmarks.
@@ -9019,16 +9009,6 @@
 - Updated: `wiki/index.md` (Synthesis table — new conference-digest 2026-11-07 row), `wiki/log.md` (this entry).
 - New pages: `wiki/synthesis/2026-11-07/conference-digest.md`.
 - Contradictions/flags: many arXiv IDs are search-snippet level (marked `(single-source)`); NVIDIA and Baidu coverage missing in this round; some NeurIPS/ACL/CVPR award titles are title-level only and need proceedings re-check.
-
-## [2026-11-07] synthesis | WorldQuant 101 Alpha 美股 Top 20 筛选（2026-11-07）
-- Report: `wiki/synthesis/2026-11-07/wq101-alpha-daily.md` (type: synthesis) — 周六报告，数据基准 2026-11-06（周五）完整收盘。
-- Market: S&P 500 7,376.86（+0.31%）、Nasdaq 24,579.42（+1.09%）、Dow 51,285.73（-0.46%）、Russell 2000 2,754.11（+0.90%）、SOX 9,390.25（+4.21%）、VIX 约 24.4；三大指数连续第四周下跌（周线 S&P -2.7%、Nasdaq -3.4%、Dow -0.9%）；10Y 4.857%、2Y 4.507%、30Y 5.267%、DXY 102.12、WTI 约 $90.8、黄金约 $4,066；板块仅 4/11 收涨（科技 +1.26%、通信 +0.51%、工业 +0.14%、能源 +0.02%，必需消费 -1.21%、金融 -0.68%），等权 -0.39%。
-- Key events: 中期选举民主党横扫两院 → 周四 AI 监管恐慌（S&P -4.36%、Nasdaq -5.52%、Dow -3.4%、Mag7 蒸发约 $1T，Nasdaq 进入技术性回调）；周五半导体超跌反抽（AMD +10.78%、LRCX +8.17% 含 $250 亿回购、INTC +7.77%、TSM +6.26%、MU +5.15%、NVDA +2.81%、IREN +20%）；财报极端分化（ABNB +12.03%、APP +9.86%、NET +12%、FROG +35%、MRNA +5.26% vs MCHP -10%、AXON -18%、DKNG -27%、Atlassian -14%）；10 月非农 +16.5 万（预期约 +6.5 万）、失业率 4.1%、时薪 +0.4%、12 月加息概率约 77-78%；AI 电力政策冲击（VST 11-04 -13.8%、CEG 两日约 -9%、GEV -10%），但 VST 上调 2026/27 EBITDA 指引、GEV 订单 +96% 至 $290 亿、Eaton 电气 backlog +46%。
-- Top 20: NVDA(8.8), GOOGL(8.7), AMD(8.6), MU(8.5), LRCX(8.4), TSM(8.3), APP(8.3), AVGO(8.2), LLY(8.1), NET(8.1), PLTR(8.0), GEV(8.0), VST(7.9), CEG(7.9), ABNB(7.8), MSFT(7.7), META(7.6), AMZN(7.6), ETN(7.5), TSLA(7.4)（半导体 6、软件/云 3、通信服务 3、工业/电力 2、公用/核电 2、医疗 1、可选消费 3）。
-- Rotation: 新增 MU/LRCX/TSM/AVGO/APP/LLY/NET/PLTR/GEV/VST/CEG/ABNB/AMZN/ETN/TSLA；保留 NVDA/AMD/GOOGL/MSFT/META；剔除 XOM/CVX/REGN/WMT/MRK/GPN/KO/TMUS/ACN/MDLZ/CMCSA/AMGN/HD/AAPL/INTC（能源全周 -10%~-12% 趋势破坏、防御拥挤回吐、AAPL 动量不足、INTC 仅列观察池）。
-- Updated: `wiki/index.md` (Synthesis table — new wq101-alpha-daily 2026-11-07 row), `wiki/log.md` (this entry).
-- New pages: `wiki/synthesis/2026-11-07/wq101-alpha-daily.md`.
-- Contradictions/flags: S&P 板块涨跌幅两口径（科技 +1.26% Xinhua vs +1.46% Market Movement Dashboard；必需消费 -1.21% vs -1.27%；金融 -0.68% vs -0.59%）；周度板块口径冲突（Morningstar 通信服务 +5.25%/能源 -12.32% vs Semiboard 必需消费 +4.11%/科技 -12.78%/能源 -10.09%）；市场宽度两口径（S&P 约 183 涨/316 跌 vs NYSE 1,623 涨/1,193 跌、Nasdaq 2,045 涨/1,295 跌）；WTI $90.52 vs $90.83、黄金 $4,065.90 vs 约 $4,062；AMD $447.98 vs $450.82；ETN 精确收盘价未单独确认；因子读数为基于公开 OHLCV 与事件的代理估计，非逐票 101 alpha 回测；市值为约数，不构成投资建议。
 
 ## [2026-11-07] synthesis | arXiv AI Search — Recent Papers (AI, LLMs, Recommendation, Advertising, Sequential Modeling, CTR, Games)
 - Report: `wiki/synthesis/2026-11-07/arxiv-ai-search.md` (type: synthesis) — arXiv API queries on 2026-11-07 (`submittedDate` desc, cs.AI/CL/LG/IR/MA), deduplicated; 17 curated papers spanning 2026-10-29→2026-11-05.
