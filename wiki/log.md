@@ -9069,3 +9069,9 @@
 - Updated: `wiki/index.md` (Synthesis table — new arxiv-daily 2026-11-08 row), `wiki/log.md` (this entry).
 - New pages: `wiki/synthesis/2026-11-08/arxiv-daily.md`.
 - Contradictions/flags: all metrics author-reported, not independently reproduced; abstract-only screening. Affiliations parsed from rendered HTML/PDF author blocks; `2611.08376` affiliation macro did not render, Google inferred from corresponding-author domain and marked as such. Two ads IDs (`2611.01280`, `2611.01287`) intentionally overlap today's `arxiv-ai-search` because advertising/CTR is a required category; all other featured IDs were absent from 2026-11-07/11-08 sibling reports at write time. No contradictions with existing wiki pages found.
+
+## [2026-11-10] synthesis | arxiv-paper-check (2026-11-10)
+- Summary: wiki/synthesis/2026-11-10/arxiv-paper-check.md — curated AI & CTR/recommendation/ads paper check from latest available arXiv windows at query time (2026-11-10 10:20 CST; strict last-24h batch not fully available due to announcement/indexing timing). 11 highlighted papers with titles, authors, arXiv links, and author-reported key contributions. CTR/Rec/Ads/Retrieval: ReuseGR (2611.04259, 14-day A/B CTR +0.93% / RPM +1.05%), SPADE (2611.04662, module CTR +1.88%), ICE/JBM (2611.07591, Taobao A/B clicks +0.70% / revenue +3.67%), NumEmbBench (2611.01090), WeSearch (2611.00530, production CTR +0.68% / clicks/user +2.27%). AI/Agents: Parallel Agent Teams (2611.09798), Value-Policy Dissociation/NVT (2611.10457), AMP1 (2611.09892, Apple), CPU-ARC (2611.09891, NVIDIA).
+- Updated: wiki/index.md (Synthesis table added arxiv-paper-check 2026-11-10 entry), wiki/log.md
+- New pages: wiki/synthesis/2026-11-10/arxiv-paper-check.md
+- Contradictions: none introduced; "last 24 hours" not satisfied exactly at query time — window labeled explicitly in report.
