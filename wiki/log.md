@@ -9099,3 +9099,9 @@
 - Updated: wiki/index.md（Synthesis 表新增 investment-daily 2026-11-10 行）, wiki/log.md
 - New pages: wiki/synthesis/2026-11-10/investment-daily.md
 - Contradictions/flags: 本次运行中通用 `websearch` 工具调用被取消，报告主要依据 Google News RSS 标题/摘要与公开可访问信息整理；部分个股当日精确涨跌幅与港/A 实时行情未能逐一核验，已在文中标注“待确认/据媒体报道”，不构成投资建议。
+
+## [2026-11-10] synthesis | wq101-alpha-daily (2026-11-10)
+- Summary: wiki/synthesis/2026-11-10/wq101-alpha-daily.md — 基于 WorldQuant 101 Alpha 因子框架（Alpha#1 动量自相关、#6 开盘-量价相关、#12 量价背离、#19 均值回复、#30 波动率/压力、#41 趋势强度/VWAP 偏离、#53 区间反转）对美股市值>$10B 标的进行定性筛选与综合打分，输出 Top 20：NVDA/MSFT/GOOGL/AMZN/AVGO/META/AMD/TSM/AAPL/ORCL/ANET/MRVL/MU/LLY/JPM/COST/GE/CAT/XOM/PLTR。市场背景参考 2026-11-09 收盘后公开头条（油价回落、科技股反弹、Nasdaq/S&P 500 涨超 2%，NVDA 因调查相关新闻承压但板块整体修复），并给出逐股因子信号、评分（1-10）、投资逻辑、风险、总排名表与按板块分类汇总。
+- Updated: wiki/index.md（Synthesis 表更新 wq101-alpha-daily 2026-11-10 条目）, wiki/log.md
+- New pages: wiki/synthesis/2026-11-10/wq101-alpha-daily.md（覆盖更新）
+- Contradictions/flags: 本次运行中 `websearch`/部分行情抓取受限，未能获取完整逐票实时 OHLCV 与精确因子数值；指数与个股表现基于 Google News RSS 标题及公开可得线索的定性归纳，因子方向/强度为代理映射而非严格回测计算，不构成投资建议。
