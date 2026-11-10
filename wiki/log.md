@@ -9087,3 +9087,9 @@
 - Updated: wiki/index.md（Synthesis 表新增 2026-11-10 tech-report-digest 行）, wiki/log.md
 - New pages: wiki/synthesis/2026-11-10/tech-report-digest.md
 - Contradictions/flags: 通用网页搜索工具在本次运行中不可用，部分“最新状态”基于可直接抓取的公开 API/页面与仓库既有 digest 复核；闭源模型参数/数据量多未公开，指标为厂商/论文自报，跨模型不可直接横比。
+
+## [2026-11-10] synthesis | investment-daily (2026-11-10)
+- Summary: wiki/synthesis/2026-11-10/investment-daily.md — 全球科技与AI投资热点日报（美股/港股/A股/中概股/新能源车）。基于可公开检索新闻与 RSS 汇总 2026-11-09 美股收盘与 2026-11-10 亚太早盘线索：油价回落推动风险偏好修复，道指约+1100点、纳指+2.74%、费半大涨约6.85%-7%，AMD 强势反弹，NVDA 因 CEO 相关调查/负面消息逆势下跌约4%-6%；谷歌发布两款新 TPU 芯片；韩国股市大涨触发熔断，三星电子/SK海力士领涨；A股关注国产算力、光模块、存储高景气与“星云星座计划”。按要求覆盖 Mag 7/AI、港股科技、A股算力芯片光模块设备、中概 ADR、新能源车与 AI 主题，并对每个热点给出公司、代码、板块、事件、市场反应与投资逻辑。
+- Updated: wiki/index.md（Synthesis 表新增 investment-daily 2026-11-10 行）, wiki/log.md
+- New pages: wiki/synthesis/2026-11-10/investment-daily.md
+- Contradictions/flags: 本次运行中通用 `websearch` 工具调用被取消，报告主要依据 Google News RSS 标题/摘要与公开可访问信息整理；部分个股当日精确涨跌幅与港/A 实时行情未能逐一核验，已在文中标注“待确认/据媒体报道”，不构成投资建议。
