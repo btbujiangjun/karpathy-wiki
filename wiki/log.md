@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-10] synthesis | conference-digest (2026-11-10)
+- Summary: wiki/synthesis/2026-11-10/conference-digest.md — comprehensive conference/arXiv digest covering ICML 2026, AAAI 2026, NeurIPS 2025, ICLR 2026, KDD 2026, CVPR 2026, ACL 2026, EMNLP 2025, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025 plus arXiv 2026-11-01 to 2026-11-10. Includes award papers (ICML Best: When Agents Lie; NeurIPS Best: Gated Attention; CVPR Best: D4RT; ICLR Outstanding; ICML Outstanding), industrial systems from focus orgs (Google DeepMind Genie 4/Cosmos, OpenAI GPT-Red, Meta ReasonRec, Microsoft Research LLMs Get Lost, ByteDance OneTrans-GSR, Alibaba EST/FAT/Qwen, Tencent/Kuaishou/Baidu/Netflix). Recent highlights: Parallel Agent Teams test-time compute scaling, ENGRAM experience→weights consolidation, Agent-R² productivity synthesis, EvoRec self-evolving recommender (+4.6% ad revenue), ReuseGR decoupled generative retrieval (+0.93% CTR), BRIDGE semantic quantization (+10.9% Recall@10), BitDecoding-FP4/intent-aware caching for efficient serving.
+- Updated: wiki/index.md (added 2026-11-10 conference-digest to Synthesis table), wiki/log.md
+- New pages: wiki/synthesis/2026-11-10/conference-digest.md
+- Contradictions: none; some arXiv papers marked for PDF verification where affiliations not in metadata.
+
 ## [2026-11-07] lint | game-rl-daily affiliation verification + Policy Network Diffusion
 - Verified affiliations against arXiv PDF first pages: StreamDuo (2611.01120) Alaya Lab/UTokyo/Georgia Tech/PKU/Institute of Science Tokyo; Inner-Learning (2610.38304) Charles University Prague; multi-agent scaling laws (2611.01742) Cambridge/Models2 AI; EpiAgent (2610.40227) CASIA/UCAS/Zhongguancun Academy/UCL; SwarmEvolve (2611.08483) Brown University.
 - Added Policy Network Diffusion / DPPG (2611.04614, Jiate Liu & Deheng Ye; affiliation not listed on arXiv) to Related Techniques — diffusion generates Atari/MuJoCo/Classic Control policy-network parameters.
@@ -9075,3 +9081,9 @@
 - Updated: wiki/index.md (Synthesis table added arxiv-paper-check 2026-11-10 entry), wiki/log.md
 - New pages: wiki/synthesis/2026-11-10/arxiv-paper-check.md
 - Contradictions: none introduced; "last 24 hours" not satisfied exactly at query time — window labeled explicitly in report.
+
+## [2026-11-10] synthesis | tech-report-digest (2026-11-10)
+- Summary: wiki/synthesis/2026-11-10/tech-report-digest.md — LLM 大模型技术报告日报（19 家/组织，增量复核 2026-11-07→2026-11-10）。窗口内未检索到可独立确认的全新一手旗舰技术报告/系统卡发布；汇总各机构最新可验证材料（DeepSeek V4/V4.1、OpenAI GPT-6 系列系统卡、Meta Muse 系列、Google Gemini 4 Argon/Omni 更新、Anthropic Claude 5.5、Mistral Large 4/Timestral、Qwen3.8 系列、Kimi K3.1 Pro 权重可获取、GLM/Intern-S2/Seed 2.0/Grok 4.7/Nova 2/Phi-4-reasoning-vision/AFM 3/Nemotron 3.5 等），并按架构、训练/RL/对齐、Scaling Law、多模态、长上下文、推理模型六方向归纳趋势。对 Yi(01.AI)、Baichuan 标注无可验证新通用技术报告。
+- Updated: wiki/index.md（Synthesis 表新增 2026-11-10 tech-report-digest 行）, wiki/log.md
+- New pages: wiki/synthesis/2026-11-10/tech-report-digest.md
+- Contradictions/flags: 通用网页搜索工具在本次运行中不可用，部分“最新状态”基于可直接抓取的公开 API/页面与仓库既有 digest 复核；闭源模型参数/数据量多未公开，指标为厂商/论文自报，跨模型不可直接横比。
