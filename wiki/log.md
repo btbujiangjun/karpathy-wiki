@@ -9148,3 +9148,10 @@
 - Updated: `wiki/index.md`（Synthesis 表新增 2026-11-11 tech-report-digest 条目）, `wiki/log.md`（本条）。
 - New pages: `wiki/synthesis/2026-11-11/tech-report-digest.md`.
 - Contradictions/flags: 无新增一手旗舰报告确认；部分材料为技术博客/模型卡而非完整 arXiv 技术报告（Mistral Large 4、Kimi K3.1 Pro、Step 5 Preview、Apple AFM 3 等）；闭源模型参数/训练数据多未披露；跨模型指标不可直接横比；后续联网恢复后建议补做 24h 增量扫描。
+
+## [2026-11-11] synthesis | investment-daily (2026-11-11)
+- Summary: `wiki/synthesis/2026-11-11/investment-daily.md` — 投资热点日报（2026-11-11）。数据截止美股 2026-11-10 收盘+盘后/夜盘及亚太 2026-11-11 早盘快照。覆盖美股 Mag 7 与 AI 相关（NVDA/AAPL/MSFT/GOOGL/AMZN/META/TSLA、AMD/AVGO/TSM/PLTR/ORCL/CRM/SNOW/CRWV 等）、港股科技（腾讯/阿里/美团/小米/百度/网易/快手/中芯国际/联想/商汤）、A 股 AI/算力/芯片/光模块/设备（寒武纪/海光信息/中科曙光/科大讯飞/三六零/中际旭创/新易盛/北方华创/中微公司）、中概 ADR、新能源与电动车及 AI 主题。
+- Key signals: 纳指 11/10 收跌 0.74%（25,065.88），NVDA 收跌 5.47% 至 $168.89（Huang 调查事件）盘后回升；TSM 收涨 2.02%、盘后走高；美国 10 月 CPI +0.4% MoM 推升 12 月加息概率至~90%；CoreWeave Q3 营收超预期并上调指引；TSMC 董事会批准对 Anthropic、OpenAI 各最高 $5 亿美元投资；亚太 11/11 日经/韩国上涨、恒指 -0.66%、CSI 300 -0.39%，腾讯/阿里盘中小跌。
+- Updated: `wiki/index.md`（Sources 表与 Synthesis 表新增 investment-daily 2026-11-11 条目），`wiki/log.md`。
+- New pages: `wiki/synthesis/2026-11-11/investment-daily.md`。
+- Contradictions/flags: 本环境 `websearch` 不可用且部分行情接口受限，A 股个股、部分港股/ADR 当日精确涨跌与成交数据未能逐一核验，已在报告中标注“待确认/未获取精确报价”；所有市场解读基于公开可得快照与事件线索，不构成投资建议。
