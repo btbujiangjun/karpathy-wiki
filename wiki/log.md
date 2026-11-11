@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-11] synthesis | wq101-alpha-daily (2026-11-11)
+- Report: `wiki/synthesis/2026-11-11/wq101-alpha-daily.md` — 基于 WorldQuant 101 Alpha 因子框架（Alpha#1 动量自相关、#6 开盘-量价相关、#12 量价背离、#19 均值回复、#30 波动率/洗盘反转、#41 趋势强度 sqrt(high*low)-vwap、#53 区间反转）对美股市值 > $10B 标的进行定性/代理筛选与综合打分，输出 Top 20。
+- 市场基准：2026-11-10 美股收盘（S&P 500 7,520.93 -0.38%、Nasdaq 25,065.88 -0.74%、Dow 52,231.89 约 -0.3%、10Y 4.983%、VIX 19.46 夜盘），CPI +0.4% m/m 高于预期、12 月加息定价升温；NVDA $168.80 -5.53%/4.21 亿股最活跃（调查事件），TSM +2.02%、AVGO +7.00%、AMD +4.36%、AMZN +2.01%、META +0.96%、TSLA +1.56% 相对强势。
+- Top 20：TSM、AVGO、MSFT、AMZN、GOOGL、AMD、META、AAPL、COST、LLY、JPM、NVDA、ANET、V、MA、XOM、UNH、GE、CAT、ORCL；逐股提供代码+中英文名、板块、市值、1-2 个核心 Alpha 因子、信号方向+强度、1-10 评分、投资逻辑与风险，并附排名总表与板块分类汇总。
+- Updated: `wiki/index.md`（Synthesis 表新增 2026-11-11 wq101-alpha-daily 条目）、`wiki/log.md`。
+- Contradictions/flags: `websearch` 不可用且行情接口受限，因子信号为公开涨跌/成交活跃度/事件的代理解读，非完整 OHLCV 面板与公式级回测；NVDA 纳入为高风险超跌/量能观察仓（#12/#30），不构成投资建议。
+
 ## [2026-11-11] synthesis | game-rl-daily (2026-11-11)
 - Report: `wiki/synthesis/2026-11-11/game-rl-daily.md` — Game RL & Game AI Bot daily digest (window ~2026-10-20→2026-11-09/10). Discovery via arXiv Export API queries and recent cs.AI/cs.LG listings (`websearch` unavailable in this run); metrics/venues/affiliations are author-reported or from arXiv metadata unless noted.
 - Highlights: intrinsic-motivation world models (2611.13113); MechEval+WARC test-time mechanic learning for ARC-AGI-3 (2611.12324, ARC Prize 2026 Paper Track); zero-search RL for Slay the Spire 2 with failure-driven restarts (2611.12088); TT-MBRL memory via test-time world-model updates incl. Atari/Memory Maze (2611.09625); GTAGym real AAA GTA V tasks/RL (2611.13028); Script2Play automated game generation + VLA behavior cloning in Minecraft/Roblox (2611.11136); HiSTEVE 1.0 hierarchical Minecraft VLA (2610.31162); KPHarness co-evolving knowledge/probing harness (2610.27417); ACADIA 2025 conflict-driven MARL design game (2611.10841); DUOS opponent-shaping update rules without opponent access (2611.08335); MARL-BattleGrounds JAX-native heterogeneous competitive benchmark (2610.14883); scaling continued pretraining for embodied agents across diverse virtual worlds (2610.28698).
