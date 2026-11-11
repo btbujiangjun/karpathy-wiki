@@ -9162,3 +9162,11 @@
 - Updated: `wiki/index.md`（Sources 表与 Synthesis 表新增 investment-daily 2026-11-11 条目），`wiki/log.md`。
 - New pages: `wiki/synthesis/2026-11-11/investment-daily.md`。
 - Contradictions/flags: 本环境 `websearch` 不可用且部分行情接口受限，A 股个股、部分港股/ADR 当日精确涨跌与成交数据未能逐一核验，已在报告中标注“待确认/未获取精确报价”；所有市场解读基于公开可得快照与事件线索，不构成投资建议。
+
+## [2026-11-11] synthesis | wq101-alpha-daily (2026-11-11)
+- Report: `wiki/synthesis/2026-11-11/wq101-alpha-daily.md` (type: synthesis) — 基于 WorldQuant 101 Alpha 因子框架（Alpha#1 动量自相关、#6 开盘-量价相关、#12 量价背离、#19 均值回复、#30 波动率/压力、#41 趋势强度/VWAP 偏离、#53 区间反转）对美股市值>$10B（含边界观察标的）进行定性/代理筛选与综合打分，输出 Top 20。
+- Market context (2026-11-10 close, retrieved 2026-11-11): S&P 500 7,520.93 (-0.38%), Nasdaq 25,065.88 (-0.74%), Dow 52,231.89 (-0.30%), VIX 19.46, 10Y 4.983%; CNBC 指出 10 月 CPI +0.4% MoM 推升 12 月加息概率至~90%，NVDA 连续承压（-3.52%，最活跃），CoreWeave Q3 超预期/上调指引带动 CRWV +15.78%，TSMC 董事会批准对 Anthropic、OpenAI 各最高 $5 亿投资。
+- Top 20: CRWV, AVGO, AMD, AMZN, MSFT, GOOGL, META, TSM, ONTO, NET, ANET, VRT, MU, LLY, COST, JPM, XOM, GE, AAPL, INTC（含逐股中英文名、板块、市值、1-2 核心因子、方向+强度、1-10 评分、投资逻辑与风险；附排名总表与按板块分类汇总）。
+- Updated: `wiki/index.md`（新增 2026-11-11 wq101-alpha-daily 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-11/wq101-alpha-daily.md`.
+- Contradictions/flags: `websearch` 不可用且 Yahoo/CNBC 抓取存在动态页面限制，未获取完整逐票实时 OHLCV、精确市值与严格因子数值；因子信号为公开数据代理映射而非回测计算；ONTO 为边界市值观察标的、TTD 因市值<$10B 未纳入正表。所有内容仅用于研究整理，不构成投资建议。
