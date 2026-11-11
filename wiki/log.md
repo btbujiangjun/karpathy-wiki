@@ -9140,3 +9140,11 @@
 - Updated: `wiki/index.md` (added conference-digest 2026-11-11 row in Sources), `wiki/log.md` (this entry).
 - New pages: `wiki/synthesis/2026-11-11/conference-digest.md`.
 - Contradictions/flags: curated/partial coverage due to unavailable websearch and limited machine-readable access to full proceedings for some venues (AAAI 2026, CVPR 2026, ACL 2026, EMNLP 2025, SIGIR 2026, WWW 2026, CIKM 2025, KDD 2026). All metrics author-reported, not independently reproduced. Affiliations inferred only when stated in arXiv/deployment context; missing metadata noted. No contradictions with existing wiki pages identified.
+
+## [2026-11-11] synthesis | LLM Tech Report Digest — 2026-11-11
+- Report: `wiki/synthesis/2026-11-11/tech-report-digest.md` (type: synthesis) — 增量复核窗口 2026-11-10→2026-11-11，覆盖 19 家目标公司/组织最新可验证大模型技术报告/系统卡/模型卡/官方技术披露。
+- Key findings: 本窗口未检索到可独立确认的全新一手旗舰 Tech Report/System Card 首发；汇总并复核 DeepSeek (V4, V4.1-Flash)、OpenAI (GPT-6 Astra/Cyber/Sol-Luna Oct update/Rosalind-6)、Meta AI/Muse (Wonder/Spark Open/Glimmer)、Google DeepMind (Gemini 4 Argon, Omni 1.2 Flash 更新)、Anthropic (Claude Opus/Sonnet/Haiku 5.5 系统卡)、Mistral AI (Large 4/Le Chonk 开放权重与 Timestral)、Qwen (3.8-Max, 3.8-Flash-Next/qwen4_exp, 3.5-Omni)、Yi 01.AI (无 2026 新通用报告)、Baichuan (无新通用报告确认)、Microsoft Phi (Phi-4-reasoning-vision-15B)、Apple (AFM 3)、NVIDIA (Nemotron 3.5 Super/Lightning/Bolt/Transcribe)、xAI (Grok 4.7)、Amazon Nova 2、安全评估、Zhipu GLM (5.3/5.3-Flash, GLM-Omni 研究)、InternLM (Intern-S2-Preview, Mobius)、Moonshot Kimi (K3.1 Pro 技术博客与权重)、StepFun (Step 5 Preview)、ByteDance Seed (Seed 2.0, Recycler)。对每篇/每项提供中英文标题、机构、模型、日期、核心参数、创新点与链接（参数/指标为公开口径或自报）。
+- Sources checked: `webfetch` 抓取 arXiv 搜索、Mistral Large 4 OSS 页、HF Mistral Large 4 博客、Gemini 4 Argon Model Card、Kimi K3.1 Pro 博客、StepFun Step 5 Preview 博客；并参考 `wiki/synthesis/2026-11-10/tech-report-digest.md` 等仓库基线。通用 `websearch` 工具在本次运行中不可用。
+- Updated: `wiki/index.md`（Synthesis 表新增 2026-11-11 tech-report-digest 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-11/tech-report-digest.md`.
+- Contradictions/flags: 无新增一手旗舰报告确认；部分材料为技术博客/模型卡而非完整 arXiv 技术报告（Mistral Large 4、Kimi K3.1 Pro、Step 5 Preview、Apple AFM 3 等）；闭源模型参数/训练数据多未披露；跨模型指标不可直接横比；后续联网恢复后建议补做 24h 增量扫描。
