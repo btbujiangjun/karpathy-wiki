@@ -4,6 +4,15 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-11] synthesis | arxiv-paper-check (2026-11-11)
+- Report: `wiki/synthesis/2026-11-11/arxiv-paper-check.md` — curated arXiv paper check for AI and CTR/recommendation/ads.
+- Query window: queried 2026-11-11 via arXiv API (`cs.AI`, `cs.IR`, `"click-through rate"`/`CTR` keyword search, sorted by submittedDate desc). Latest retrieved submissions were primarily 2026-11-09 at query time; strict last-24h batch not fully visible, noted explicitly in report.
+- CTR/Rec/Ads highlights: query- and candidate-aware long user sequence modeling for sponsored-product search with dual long-history retrieval and reported online CTR/conversion/orders gains (2611.11675); SlimFM pruned LLM semantic modeling for latency-critical CTR serving, >99% accuracy retention and up to 3.4× latency reduction (2611.11013); cold-start e-commerce ad persona-simulation signal-form study (2611.08840, MAE 24.9/MAPE 26.1%); ShopMind mental-world-model e-commerce simulation improving personalization/realism and CTR prediction utility (2611.11897); MPIUR multimodal graph recommendation over text/images/reviews (2611.13361); INTENT out-of-sample/time/cold-start sequence benchmark (2611.13069).
+- AI highlights: Agentic-OPD recovering forgotten agent capabilities via checkpoint-pool on-policy distillation (2611.12799); HiVe-Mem multimodal agent memory (2611.12872); verifiable RL misalignment and contextual safety learning (2611.12865); MaxIM incremental summarization with MI-based reward shaping (2611.12825); PORT robust token-level preference reweighting (2611.12763).
+- Updated: `wiki/index.md` (Sources table + Synthesis table entries for arxiv-paper-check 2026-11-11), `wiki/log.md`.
+- New pages: `wiki/synthesis/2026-11-11/arxiv-paper-check.md`.
+- Contradictions/flags: all metrics author-reported, abstract/metadata-level screening; affiliations largely not specified in arXiv metadata and should be verified from PDFs; strict 24h window not satisfied exactly due to arXiv announcement/indexing timing.
+
 ## [2026-11-10] synthesis | wq101-alpha-daily (2026-11-10)
 - Summary: wiki/synthesis/2026-11-10/wq101-alpha-daily.md — 按 WorldQuant 101 Alpha 因子框架（Alpha#1 动量/自相关、Alpha#6 开盘-成交量相关、Alpha#53 收盘位置反转、Alpha#30 波动率/洗盘反转、Alpha#12 量价背离、Alpha#41 趋势强度 sqrt(high*low)-vwap、Alpha#19 均值回复）对美股大中盘进行代理筛选，输出 Top 20。分析基准 2026-11-09 周一收盘（S&P 500 7,549.94 +2.35%、Nasdaq 25,253.14 +2.74%、Dow 52,389.75 +2.15%、VIX 19.92 -22.31%、10Y ~4.864%），市场从上周回调反弹但 NVDA 因管理层事件 -3.09% 逆势、半导体/光通信/AI 链条分化修复，CPI 为次日关键催化。Top 20：AMD/MPWR/COHR/AMZN/ASX/INTC/ONTO/TTD(观察,<$10B)/MSFT/GOOGL/AAPL/META/AVGO/MU/VRT/ANET/LLY/JPM/COST/XOM；每只含代码+中英文名、板块、市值、1-2 个核心 Alpha、因子方向+强度、1-10 评分、投资逻辑与风险；附排名总表与板块汇总。
 - Updated: wiki/index.md（Synthesis 表新增 2026-11-10 wq101-alpha-daily 行）, wiki/log.md
@@ -9111,3 +9120,13 @@
 - Updated: wiki/index.md（Synthesis 表更新 wq101-alpha-daily 2026-11-10 条目）, wiki/log.md
 - New pages: wiki/synthesis/2026-11-10/wq101-alpha-daily.md（覆盖更新）
 - Contradictions/flags: 本次运行中 `websearch`/部分行情抓取受限，未能获取完整逐票实时 OHLCV 与精确因子数值；指数与个股表现基于 Google News RSS 标题及公开可得线索的定性归纳，因子方向/强度为代理映射而非严格回测计算，不构成投资建议。
+
+## [2026-11-11] synthesis | arXiv Daily — AI / LLM / Recommendation / Advertising / Sequential Modeling / CTR / Games
+- Report: `wiki/synthesis/2026-11-11/arxiv-daily.md` (type: synthesis) — 14 papers from the latest available arXiv API window at query time (primarily 2026-11-05 to 2026-11-09 submissions).
+- LLMs/Agents: WorkflowArena executable multi-agent workflow orchestration benchmark (2611.12856); PORT robust token-level preference reweighting (2611.12763); Mitigating Agentic Deception via evaluation-side partially observable games (2611.12835); NarrativeBench multilingual diverse-narrative navigation benchmark (2611.12750, NeurIPS 2026 Datasets & Benchmarks Track).
+- Recommendation/Retrieval/Sequential: RecoGEM production generative-recommendation serving with runtime–engine decoupling, >1,000 QPS/instance, P99 <35 ms, 2.88× throughput (2611.12296); TS-GEAR geo-semantic generative ad retrieval for Taobao Shangou, +3.8% ad impressions / +4.2% ad revenue online (2611.12180); NDL proactive dimension-adaptive denoising for graph CF via representation coherence (2611.11801); AST adaptive semantic-ID construction for generative recommendation (2611.11549).
+- Advertising/CTR: SlimFM structured-pruned foundation model for latency-critical CTR/recommendation serving (2611.11013); ShopMind mental world model for personalized e-commerce user simulation (2611.11897); CHO-Bench context-hint optimization benchmark for LLM ad ranking (2611.11955).
+- Games/Strategic: Tropical Gaussian Anticoncentration establishing Ω(√(T log|V|)) minimax regret optimality in extensive-form games (2611.11877); Steering Emergent Behavior in Multi-Agent LLM Systems via Information Networks (2611.11714); Homological Barriers to Stable Learning of First-Order Nash Equilibria (2611.11693).
+- Updated: `wiki/index.md` (Synthesis table — added arxiv-daily 2026-11-11 row), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-11-11/arxiv-daily.md`.
+- Contradictions/flags: abstract-level screening only; all metrics/results are author-reported and not independently reproduced. Affiliations largely not specified in arXiv metadata (Taobao Shangou association for TS-GEAR inferred from title/abstract context, not structured metadata). No contradictions with existing wiki pages identified.
