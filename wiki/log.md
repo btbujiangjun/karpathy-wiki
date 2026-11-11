@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-11] synthesis | game-rl-daily (2026-11-11)
+- Report: `wiki/synthesis/2026-11-11/game-rl-daily.md` — Game RL & Game AI Bot daily digest (window ~2026-10-20→2026-11-09/10). Discovery via arXiv Export API queries and recent cs.AI/cs.LG listings (`websearch` unavailable in this run); metrics/venues/affiliations are author-reported or from arXiv metadata unless noted.
+- Highlights: intrinsic-motivation world models (2611.13113); MechEval+WARC test-time mechanic learning for ARC-AGI-3 (2611.12324, ARC Prize 2026 Paper Track); zero-search RL for Slay the Spire 2 with failure-driven restarts (2611.12088); TT-MBRL memory via test-time world-model updates incl. Atari/Memory Maze (2611.09625); GTAGym real AAA GTA V tasks/RL (2611.13028); Script2Play automated game generation + VLA behavior cloning in Minecraft/Roblox (2611.11136); HiSTEVE 1.0 hierarchical Minecraft VLA (2610.31162); KPHarness co-evolving knowledge/probing harness (2610.27417); ACADIA 2025 conflict-driven MARL design game (2611.10841); DUOS opponent-shaping update rules without opponent access (2611.08335); MARL-BattleGrounds JAX-native heterogeneous competitive benchmark (2610.14883); scaling continued pretraining for embodied agents across diverse virtual worlds (2610.28698).
+- Updated: `wiki/index.md` (Sources and Synthesis tables: added game-rl-daily 2026-11-11 entries), `wiki/log.md`.
+- New pages: none (digest already created at `wiki/synthesis/2026-11-11/game-rl-daily.md`).
+- Contradictions/flags: web search unavailable so proceedings coverage limited to arXiv-stated venues/status and listing discovery; several affiliations/venues not fully specified in arXiv metadata and marked for PDF verification; de-emphasized overlap with `wiki/synthesis/2026-11-10/game-rl-daily.md`.
+
 ## [2026-11-11] synthesis | arxiv-paper-check (2026-11-11)
 - Report: `wiki/synthesis/2026-11-11/arxiv-paper-check.md` — curated arXiv paper check for AI and CTR/recommendation/ads.
 - Query window: queried 2026-11-11 via arXiv API (`cs.AI`, `cs.IR`, `"click-through rate"`/`CTR` keyword search, sorted by submittedDate desc). Latest retrieved submissions were primarily 2026-11-09 at query time; strict last-24h batch not fully visible, noted explicitly in report.
