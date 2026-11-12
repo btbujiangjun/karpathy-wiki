@@ -9237,3 +9237,11 @@
 - Updated: `wiki/index.md`（Synthesis 表新增 2026-11-12 wq101-alpha-daily 条目）, `wiki/log.md`（本条）。
 - New pages: `wiki/synthesis/2026-11-12/wq101-alpha-daily.md`.
 - Contradictions/flags: `websearch` 不可用，未获取完整逐票 OHLCV/VWAP 与公式级 alpha 横截面计算；因子信号为 Yahoo Finance 收盘快照与板块/量价代理映射，部分市值与中文译名为近似值。NVDA/CRWV 等高波动标的事件与情绪风险显著。所有内容仅用于研究整理，不构成投资建议。
+
+## [2026-11-12] synthesis | wq101-alpha-daily (2026-11-12)
+- Report: `wiki/synthesis/2026-11-12/wq101-alpha-daily.md` (type: synthesis) — 基于 WorldQuant 101 Alpha 因子框架（Alpha#1 动量自相关、#6 开盘-量价相关、#12 量价背离、#19 均值回复、#30 波动率/洗盘反转、#41 趋势强度/VWAP 偏离代理、#53 区间反转）对美股市值>$10B 标的进行定性/代理筛选与综合打分，输出 Top 20。
+- Market context (2026-11-11 close, retrieved 2026-11-12): S&P 500 7,619.38 (+1.31%), Nasdaq 25,466.19 (+1.60%), Dow 52,486.49 (+0.49%), VIX 17.49 (-10.12%), 10Y 4.998%; 涨幅/活跃榜显示 MU (+10.08%), AMD (+10.74%), SNDK (+12.51%), CRWV (+18.28%), NBIS (+14.54%), ARM (+9.89%), MRVL (+6.87%), ORCL (+6.08%), INTC (+5.37%) 等放量走强，NVDA -4.45% 且成交 2.666 亿股（显著高于均量）伴 CEO 相关负面舆情/治理标题，夜盘科技期货小幅回吐。
+- Top 20: MU, AMD, SNDK, MRVL, ARM, ORCL, INTC, CRWV, NBIS, MSFT, GOOGL, AMZN, AVGO, ANET, META, AAPL, LLY, JPM, COST, XOM（含逐股中英文名、板块、市值、1-2 核心因子、方向+强度、1-10 评分、投资逻辑与风险；附排名总表与按板块分类汇总）。
+- Updated: `wiki/index.md`（Sources/Synthesis 区新增 2026-11-12 wq101-alpha-daily 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-12/wq101-alpha-daily.md`.
+- Contradictions/flags: `websearch` 不可用且 Yahoo/CNBC 页面动态渲染限制，未获取完整逐票 OHLCV 历史与精确 VWAP/10 日因子数值；因子信号为公开快照代理映射而非严格回测计算；部分 mega-cap 市值为近似量级；NVDA 事件细节待公司公告与权威报道进一步核实。所有内容仅用于研究整理，不构成投资建议。Preference file active: `EXTEND.md` (repo root).
