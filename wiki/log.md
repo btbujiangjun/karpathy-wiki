@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-12] synthesis | game-rl-daily (2026-11-12)
+- Report: `wiki/synthesis/2026-11-12/game-rl-daily.md` — Game RL & Game AI Bot daily digest (window ~2026-10-15→2026-11-10). Discovery via arXiv Export API and recent listings (`websearch` unavailable); metrics, venues, and affiliations are author-reported or from arXiv metadata unless noted.
+- Highlights (13 papers): Gemini 4 Argon multi-agent team reports end-to-end autonomous Minecraft Ender Dragon completion via Mineflayer coding agents (2610.22319); Mirror self-improving video-to-action across Atari/OGBench/DMC/Minecraft (2610.24177); TaskFrame planner-controller Minecraft agent (2610.40276); BCMAAC belief-conditioned decentralized LLM collaboration incl. Minecraft (2610.35398, NeurIPS 2026 PTA workshop); MANA embodied NPC alignment in Minecraft (2611.14431); EvolvingBrain adaptive skill self-evolution on VAB-Minecraft/DiscoveryWorld (2610.20786); OverSeer multi-agent world models with fixed auxiliary views in Minecraft/Doom (2610.28554); density-guided bootstrap boundaries for latent world-model RL incl. Atari Pong/Dreamer V3 (2610.41022); ORCA/ORBiT object-relative RL with Atari results (2610.28197); MFM multimodal filesystem memory for long-horizon embodied agents incl. Minecraft/CUABench (2610.22686); CAD procedural content metageneration with continual abstraction discovery (2608.17947, IEEE CoG 2026); JAXtari GPU-accelerated object-centric modifiable Atari environments (2610.23650, NeurIPS 2026); KlaskTron open-source physical adversarial MARL platform (2611.03138, RSS 2026).
+- Updated: `wiki/index.md` (Sources table and Synthesis table: added game-rl-daily 2026-11-12 entries), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-11-12/game-rl-daily.md`.
+- Contradictions/flags: websearch unavailable so proceedings coverage limited to arXiv-stated venues/status; many affiliations not explicitly structured in arXiv metadata and marked for PDF verification; intentionally de-emphasized overlap with `wiki/synthesis/2026-11-10/game-rl-daily.md` and `wiki/synthesis/2026-11-11/game-rl-daily.md`. Preference file active: `EXTEND.md` (repo root).
+
 ## [2026-11-12] synthesis | arxiv-paper-check (2026-11-12)
 - Report: `wiki/synthesis/2026-11-12/arxiv-paper-check.md` — curated arXiv paper check for AI and CTR/recommendation/ads.
 - Query window: queried 2026-11-12 via arXiv API (`cs.AI`, `cs.LG`, `cs.IR`, `"click-through rate"`/`CTR` keyword search, sorted by submittedDate desc). Latest retrieved submissions were primarily 2026-11-10 at query time; strict last-24h batch not fully visible, noted explicitly in report.
