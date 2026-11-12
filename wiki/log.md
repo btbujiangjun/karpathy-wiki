@@ -9207,3 +9207,10 @@
 - Updated: `wiki/index.md` (Sources table + Synthesis table added conference-digest 2026-11-12), `wiki/log.md` (this entry).
 - New pages: `wiki/synthesis/2026-11-12/conference-digest.md`.
 - Contradictions/flags: `websearch` unavailable and full proceedings for several venues not machine-accessible in this run; venue coverage is partial/curated. Affiliations not always explicit in arXiv metadata (ByteDance/Taobao Shangou associations stated from deployment context in abstracts). All metrics are author-reported and not independently reproduced. No contradictions with existing wiki pages identified. Preference file active: `EXTEND.md` (repo root, bm25 mode `auto_prompt`).
+
+## [2026-11-12] synthesis | LLM 技术报告速览 — 19 家机构最新 Tech Report / System Card 汇总
+- Report: `wiki/synthesis/2026-11-12/tech-report-digest.md` (type: synthesis) — 增量复核 2026-11-11→2026-11-12，汇总 DeepSeek、OpenAI、Meta AI (LLaMA/Muse)、Google DeepMind (Gemini)、Anthropic (Claude)、Mistral AI、Qwen (Alibaba)、Yi (01.AI)、Baichuan、Microsoft (Phi)、Apple、NVIDIA、xAI (Grok)、Amazon (Nova)、Zhipu AI (GLM)、InternLM、Moonshot AI (Kimi)、StepFun、ByteDance (豆包/Seed) 的最新可验证技术报告/系统卡/模型卡。
+- Highlights: **新增重点** Anthropic Claude Fable 5.2 & Mythos 5.2（2026-11-09 公告与系统卡，agentic coding/网络安全/科学工程/数学形式化/对齐与防蒸馏披露）；复核 OpenAI Deployment Safety Hub 近期条目（GPT-6 Cyber 2026-11-05、ChatGPT Images 2.6 2026-11-04、GPT-6 Sol/Luna 10 月更新等）；DeepSeek-V4（arXiv:2606.19348，CSA+HCA+mHC，1M ctx）与 NVIDIA Nemotron 3.5 Super/Lightning（arXiv:2610.38095，Hybrid Mamba-Transformer MoE，MOPD/speculative decoding/NVFP4）仍为最新核心技术报告；Gemini 4 系列、Mistral Large 4、Grok 4.7、Qwen3.8 系列等未确认窗口内新增一手旗舰技术报告。
+- Updated: `wiki/index.md`（新增 2026-11-12 tech-report-digest 条目并修复重复 arxiv-daily 行）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-12/tech-report-digest.md`.
+- Contradictions/flags: `websearch` 工具调用未返回有效结果，检索依赖 `webfetch` 与已知官方/论文页面；部分厂商站点动态渲染导致细节不完整；部分条目（参数/训练数据/完整 benchmark）为厂商自报或披露有限，未独立复现。Preference file active: `EXTEND.md` (repo root).
