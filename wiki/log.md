@@ -9229,3 +9229,11 @@
 - Updated: `wiki/index.md` (Sources + Synthesis 新增 2026-11-12 investment-daily 条目), `wiki/log.md` (this entry).
 - New pages: `wiki/synthesis/2026-11-12/investment-daily.md`.
 - Contradictions/flags: 公开行情接口/页面显示 NVDA 存在显著隔夜反转，事件细节需以公司公告与权威报道核实；大量 A 股/港股/ADR 个股当日精确涨跌与催化未能逐一核验，报告中已标注“待确认”。内容仅供研究整理，不构成投资建议。Preference file active: `EXTEND.md` (repo root).
+
+## [2026-11-12] synthesis | wq101-alpha-daily (2026-11-12)
+- Report: `wiki/synthesis/2026-11-12/wq101-alpha-daily.md` (type: synthesis) — 基于 WorldQuant 101 Alpha 因子框架（Alpha#1 动量自相关、#6 开盘-量价相关、#12 量价背离、#19 均值回复、#30 波动率/压力、#41 趋势强度/VWAP 偏离、#53 区间反转）对美股市值>$10B 标的进行代理筛选与综合打分，输出 Top 20。
+- Market context (2026-11-11 close, retrieved 2026-11-12 via Yahoo Finance): S&P 500 7,619.38 (+1.31%), Nasdaq 25,466.19 (+1.60%), Dow 52,486.49 (+0.49%), VIX 17.49 (-10.12%), 10Y 4.998%; Technology Sector +2.82%（Semiconductors +4.79%），AMD +10.43%、MU +10.08%、CRWV +18.28%、ORCL +6.08%、AVGO +6.33%、INTC +5.37%，NVDA -4.45% 且成交约 2.67 亿股居最活跃（事件驱动分化）。
+- Top 20: AMD, MU, AVGO, CRWV, ORCL, INTC, AAPL, MRVL, MSFT, GOOGL, META, AMZN, ANET, NVDA, COST, LLY, JPM, V, XOM, GE（含中英文名、板块、市值、1-2 核心因子、方向+强度、1-10 评分、投资逻辑与风险；附排名总表与按板块分类汇总）。
+- Updated: `wiki/index.md`（Synthesis 表新增 2026-11-12 wq101-alpha-daily 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-12/wq101-alpha-daily.md`.
+- Contradictions/flags: `websearch` 不可用，未获取完整逐票 OHLCV/VWAP 与公式级 alpha 横截面计算；因子信号为 Yahoo Finance 收盘快照与板块/量价代理映射，部分市值与中文译名为近似值。NVDA/CRWV 等高波动标的事件与情绪风险显著。所有内容仅用于研究整理，不构成投资建议。
