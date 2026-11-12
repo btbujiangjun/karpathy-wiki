@@ -9214,3 +9214,11 @@
 - Updated: `wiki/index.md`（新增 2026-11-12 tech-report-digest 条目并修复重复 arxiv-daily 行）, `wiki/log.md`（本条）。
 - New pages: `wiki/synthesis/2026-11-12/tech-report-digest.md`.
 - Contradictions/flags: `websearch` 工具调用未返回有效结果，检索依赖 `webfetch` 与已知官方/论文页面；部分厂商站点动态渲染导致细节不完整；部分条目（参数/训练数据/完整 benchmark）为厂商自报或披露有限，未独立复现。Preference file active: `EXTEND.md` (repo root).
+## [2026-11-12] synthesis | investment-daily (2026-11-12)
+- Report: `wiki/synthesis/2026-11-12/investment-daily.md` — 今日美股/港股/A股/中概/新能源与AI科技投资热点日报（重点科技与AI板块）。
+- Data cutoff: 美股 2026-11-11 常规收盘及盘后/隔夜快照；港股/A 股 2026-11-12 盘中快照（Yahoo Finance chart/quote 数据，撰写时点 2026-11-12）。`websearch` 多次取消/不可用，部分个股事件与涨跌待确认。
+- Market signals: Nasdaq 11/11 收 25,466.19 (+1.60%)；NVDA 收 $173.73 (+2.92%) 但隔夜 BOATS ~$162.54 (-6.44%，Jensen Huang 相关负面报道/治理传闻扩散）；AAPL $355.63 (+2.04%)、AMD $552.90 (+7.32%)、TSM $413.35 (+4.25%)、MSFT $521.13 (-2.26%)、BABA ADR $101.52 (-1.17%)。HSI 24,034.09 (-1.16%)、上证 3,695.86 (+0.41%)；Tencent 0700.HK HK$402.00 (-1.86%)、Alibaba 9988.HK HK$96.35 (-4.23%)。
+- Coverage: 美股 Mag 7 与 AI（NVDA/AAPL/MSFT/GOOGL/AMZN/META/TSLA、PLTR/AMD/AVGO/TSM/CRM/ORCL/SNOW/C3.ai），港股科技（腾讯/阿里/美团/小米/百度/网易/快手/中芯/联想/商汤），A 股 AI 算力/芯片/大模型/光模块/设备（寒武纪/海光信息/中科曙光/科大讯飞/三六零/中际旭创/新易盛/北方华创/中微公司），中概 ADR 与新能源/电动车（BABA/PDD/JD/BIDU/NTES/BEKE/TCOM/YMM/VIPS/BZ/RLX/TME/BILI/LI/XPEV/NIO/ZK、TSLA/BYD/LI/XPEV/NIO/1810.HK/CATL/阳光电源/隆基），以及 AI 主题（治理风险、先进制程/算力供给、capex ROI、端侧 AI、应用与数据平台、自动驾驶/机器人）。
+- Updated: `wiki/index.md` (Sources + Synthesis 新增 2026-11-12 investment-daily 条目), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-11-12/investment-daily.md`.
+- Contradictions/flags: 公开行情接口/页面显示 NVDA 存在显著隔夜反转，事件细节需以公司公告与权威报道核实；大量 A 股/港股/ADR 个股当日精确涨跌与催化未能逐一核验，报告中已标注“待确认”。内容仅供研究整理，不构成投资建议。Preference file active: `EXTEND.md` (repo root).
