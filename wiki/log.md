@@ -9286,3 +9286,11 @@
 - Updated: `wiki/index.md`（新增 2026-11-13 tech-report-digest 条目）, `wiki/log.md`（本条）。
 - New pages: `wiki/synthesis/2026-11-13/tech-report-digest.md`.
 - Contradictions/flags: 部分厂商页面动态渲染或披露有限，参数/训练数据/benchmark 多为自报且跨模型不可直接横比；未独立复现能力与指标。Preference file active: `EXTEND.md` (repo root, bm25 mode `auto_prompt`).
+
+## [2026-11-13] synthesis | game-rl-daily (2026-11-13)
+- Report: `wiki/synthesis/2026-11-13/game-rl-daily.md` (type: synthesis) — Game RL & Game AI Bot daily digest covering LLM-powered game agents/NPCs, game/world foundation models and action representations, gameplay-data pretraining, game benchmarks/environments, and industry game AI deployment.
+- Window/method: ~2026-11-08→2026-11-11 via arXiv Export API and arXiv abstract pages (`webfetch`/`curl`); `websearch` unavailable. Temporary fetch/parse files stored under `/var/folders/q9/tsl_tl5548x7j892sgt3qvlc0000gn/T/opencode/game-rl-daily-2026-11-13/` and removed after use. Metrics/affiliations/venues author-reported or from arXiv metadata.
+- Papers: GARP real-time generative agents in Godot on local 3B LLM (2611.11064); OnlyAct action representations from V-JEPA 2 for scene-invariant action-conditioned world models (2611.14420); Game-Enhanced Embodied Learning with gameplay events+foresight pretraining improving LIBERO fine-tuning (2611.13819); Re-Search two-player questioning game for LLM ideation over 200 ICML 2026 problems (2611.14487); Rational Use of Time social coordination in *The Mind* card game (2611.14766); SkinAdvisor deployed multimodal skin production planning/ROI forecasting, accepted AAAI 2027 IAAI-27 (2611.15023).
+- Updated: `wiki/index.md` (Synthesis table added 2026-11-13 game-rl-daily entry), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-11-13/game-rl-daily.md`.
+- Contradictions/flags: Limited fresh coverage in this fetch for classic Game RL/self-play/MARL/PBT on Atari/StarCraft/Dota/Go/poker/NetHack and for PCG; several papers lack structured affiliations on arXiv (verify from PDFs). Preference file active: `EXTEND.md` (repo root, bm25 mode `auto_prompt`).
