@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-13] synthesis | wq101-alpha-daily (2026-11-13)
+- Report: `wiki/synthesis/2026-11-13/wq101-alpha-daily.md` — 基于 WorldQuant 101 Alpha 因子框架（Alpha#1 动量自相关、#6 开盘-成交量相关、#12 量价背离、#19 均值回复、#30 波动率/洗盘反转、#41 趋势强度 sqrt(high*low)-vwap、#53 区间反转）对美股市值 > $10B 标的进行定性/代理筛选与综合打分，输出 Top 20（含代码+中英文名、板块、市值、1-2 个核心 Alpha 因子、信号方向+强度、1-10 评分、投资逻辑与风险），并附排名总表与板块分类汇总。
+- Market baseline: 2026-11-12 收盘快照（S&P 500 7,592.40 -0.35%、Nasdaq 25,366.09 -0.39%、Dow 52,297.09 -0.36%、VIX 18.70 +6.92%、10Y 5.10%）；涨幅/活跃显示 AVGO/ANET/AMD/CLS 相对强势，NVDA 巨量下跌（-4.47%，~7.08 亿股）与 SMCI/NBIS/CRWV 回撤，科技内部高分化。`websearch` 不可用，数据来自 Yahoo Finance 页面快照与仓库前序基线，11/13 实时数据未完整复核。
+- Highlights: Top 5 AVGO、ANET、AMD、MSFT、AAPL；组合兼顾半导体/网络动量（#1/#6/#41）、NVDA 事件性量价背离观察（#12/#30）与质量/防御均值回复（#19/#53）。
+- Updated: `wiki/index.md`（Sources 表与 Synthesis 表新增 2026-11-13 wq101-alpha-daily 条目），`wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-13/wq101-alpha-daily.md`。
+- Contradictions/flags: 因子信号为代理解读，非公式级回测；部分市值/中文译名为估算或通用译法；行情页动态渲染可能有口径差异，不构成投资建议。Preference file active: `EXTEND.md` (repo root).
+
 ## [2026-11-13] synthesis | investment-daily (2026-11-13)
 - Report: `wiki/synthesis/2026-11-13/investment-daily.md` — 投资热点日报，覆盖美股 Mag 7 与 AI 相关（AAPL/MSFT/NVDA/GOOGL(GOOG)/AMZN/META/TSLA、PLTR/AMD/AVGO/TSM/CRM/ORCL/SNOW/C3.ai）、港股科技/AI（0700.HK/9988.HK/3690.HK/1810.HK/9888.HK/9999.HK/1024.HK/0981.HK/0992.HK/0020.HK）、A 股 AI 概念与算力/芯片/大模型/光模块/半导体设备（688256.SH/688041.SH/603019.SH/002230.SZ/601360.SH/300308.SZ/300502.SZ/002371.SZ/688012.SH）、中概 ADR（BABA/PDD/JD/BIDU/NTES/BEKE/TCOM/YMM/VIPS/BZ/RLX/TME/BILI/LI/XPEV/NIO/ZK）及新能源/电动车链条（TSLA/BYD/LI/XPEV/NIO/1810.HK/300750.SZ/300274.SZ/601012.SH），并汇总 AI 热点主题（芯片治理与地缘风险、数据中心 capex/ROI、高速互联、国产算力与设备、AI 应用/Agent、自动驾驶与机器人、新能源储能）。
 - Method: 依照 `SCHEMA.md`/`EXTEND.md`（active）与 ingest/synthesis 惯例生成当日 synthesis 报告；尝试通过 `websearch` 与公开行情接口/页面（Yahoo Finance 等）获取 2026-11-13 行情与新闻，`websearch` 多次取消、chart/API 受限、部分抓取页面内容异常，无法完成逐一可独立复核的实时报价与事件确认。报告中对未核实涨跌幅/公告统一标注“待确认/待复核”，并给出主题性事件与投资逻辑框架。
