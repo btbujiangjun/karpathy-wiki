@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-13] synthesis | investment-daily (2026-11-13)
+- Report: `wiki/synthesis/2026-11-13/investment-daily.md` — 投资热点日报，覆盖美股 Mag 7 与 AI 相关（AAPL/MSFT/NVDA/GOOGL(GOOG)/AMZN/META/TSLA、PLTR/AMD/AVGO/TSM/CRM/ORCL/SNOW/C3.ai）、港股科技/AI（0700.HK/9988.HK/3690.HK/1810.HK/9888.HK/9999.HK/1024.HK/0981.HK/0992.HK/0020.HK）、A 股 AI 概念与算力/芯片/大模型/光模块/半导体设备（688256.SH/688041.SH/603019.SH/002230.SZ/601360.SH/300308.SZ/300502.SZ/002371.SZ/688012.SH）、中概 ADR（BABA/PDD/JD/BIDU/NTES/BEKE/TCOM/YMM/VIPS/BZ/RLX/TME/BILI/LI/XPEV/NIO/ZK）及新能源/电动车链条（TSLA/BYD/LI/XPEV/NIO/1810.HK/300750.SZ/300274.SZ/601012.SH），并汇总 AI 热点主题（芯片治理与地缘风险、数据中心 capex/ROI、高速互联、国产算力与设备、AI 应用/Agent、自动驾驶与机器人、新能源储能）。
+- Method: 依照 `SCHEMA.md`/`EXTEND.md`（active）与 ingest/synthesis 惯例生成当日 synthesis 报告；尝试通过 `websearch` 与公开行情接口/页面（Yahoo Finance 等）获取 2026-11-13 行情与新闻，`websearch` 多次取消、chart/API 受限、部分抓取页面内容异常，无法完成逐一可独立复核的实时报价与事件确认。报告中对未核实涨跌幅/公告统一标注“待确认/待复核”，并给出主题性事件与投资逻辑框架。
+- Highlights: NVDA 11/12 收盘后治理/舆情风险延续为 AI 链条短线核心变量；算力需求与资本开支回报、利率高位对科技估值的约束、亚太科技分化及中概/新能源结构性机会与风险为当日主线（均需后续行情与公告复核）。
+- Updated: `wiki/index.md`（Sources 与 Synthesis 表新增 2026-11-13 investment-daily 条目），`wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-13/investment-daily.md`。
+- Contradictions/flags: 实时行情与事件数据可得性不足，指数/个股数值多为待确认；抓取页面存在疑似模拟/异常内容，未作为事实依据引用具体细节。Preference file active: `EXTEND.md` (repo root).
+
 ## [2026-11-13] synthesis | conference-digest (2026-11-13)
 - Report: `wiki/synthesis/2026-11-13/conference-digest.md` — daily conference/arXiv digest covering ICML 2026, AAAI 2026, NeurIPS 2025, ICLR 2026, KDD 2026, CVPR 2026, ACL 2026, EMNLP 2025, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025 and recent papers in AI, LLMs, recommendation systems, advertising, CTR, games, code execution prediction, agent systems, generative models, sequential modeling, and benchmarks.
 - Method: arXiv Atom API and recent listing queries (`cs.AI/cs.CL/cs.CV/cs.IR/cs.LG`, venue/keyword searches) retrieved 2026-11-13. `websearch` unavailable and full proceedings/OpenReview accepted-paper crawls not independently refreshed; venue coverage reported as status snapshot plus venue/workshop-tagged and recent arXiv papers. All metrics author-reported.
