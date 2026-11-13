@@ -9302,3 +9302,11 @@
 - Updated: `wiki/index.md` (Synthesis table added 2026-11-13 game-rl-daily entry), `wiki/log.md` (this entry).
 - New pages: `wiki/synthesis/2026-11-13/game-rl-daily.md`.
 - Contradictions/flags: Limited fresh coverage in this fetch for classic Game RL/self-play/MARL/PBT on Atari/StarCraft/Dota/Go/poker/NetHack and for PCG; several papers lack structured affiliations on arXiv (verify from PDFs). Preference file active: `EXTEND.md` (repo root, bm25 mode `auto_prompt`).
+
+## [2026-11-13] synthesis | wq101-alpha-daily (2026-11-13)
+- Report: `wiki/synthesis/2026-11-13/wq101-alpha-daily.md` (type: synthesis) — 基于 WorldQuant 101 Alpha 因子框架（Alpha#1 动量自相关、#6 开盘-量价相关、#12 量价背离、#19 均值回复、#30 波动率/结构、#41 趋势强度/VWAP 偏离代理、#53 区间反转）对美股市值>$10B 标的进行代理筛选与综合打分，输出 Top 20。
+- Market context (retrieved 2026-11-13 via Yahoo Finance snapshots): S&P/Nasdaq/Dow/Russell 期货盘前小涨（ES 7638~7639.75 +0.30%~+0.32%, NQ 28491.75~28505.75 +0.38%~+0.43%, YM 52516~52517 +0.24%, RTY 2812.7~2813.5 +0.19%~+0.22%），VIX 18.70 (+6.92%)，10Y 5.10% (+2.10%)，Gold 3920.6~3923.2，WTI 88.23，BTC 69925.58 (-5.13%)。涨幅榜/活跃榜显示 AVGO +6.06%、AMD +5.32%、ANET +5.76%、CLS +5.97% 相对强势；NVDA 165.96 (-4.47%) 成交 7.084 亿股居首，CRWV -6.76%、SMCI -10.15%、NBIS -16.52% 高波动分化；个股快照含 MSFT 523.00 (+0.36%)、GOOGL 298.70 (+1.79%)、AMZN 267.44 (+0.48%)、META 623.61 (-0.82%)。
+- Top 20: AVGO, AMD, ANET, GOOGL, MSFT, AMZN, AAPL, NVDA, META, LLY, COST, V, JPM, TSM, MU, SMCI, INTC, XOM, GE, CRWV（含中英文名、板块、市值、1-2 核心因子、方向+强度、1-10 评分、投资逻辑与风险；附排名总表与按板块分类汇总）。
+- Updated: `wiki/index.md`（补充 2026-11-13 wq101-alpha-daily 条目摘要）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-13/wq101-alpha-daily.md`.
+- Contradictions/flags: `websearch` 不可用且 Yahoo Finance API/页面受限，未获取完整 OHLCV/VWAP 与公式级 alpha 横截面计算；个别新闻标题在快照中存在异常叙事（可靠性待核实）。因子信号为公开快照代理映射，部分市值与中文译名为近似值。所有内容仅用于研究整理，不构成投资建议。Preference file active: `EXTEND.md` (repo root).
