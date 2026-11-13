@@ -9270,3 +9270,11 @@
 - Updated: `wiki/index.md` (Synthesis table added `arxiv-ai-search` 2026-11-13 entry), `wiki/log.md` (this entry).
 - New pages: `wiki/synthesis/2026-11-13/arxiv-ai-search.md`.
 - Flags: Structured author affiliations are often absent from arXiv Atom metadata; reported as "Not specified in arXiv metadata" unless clearly inferable from paper context (e.g., TS-GEAR deployment context noted). Key innovations summarized from titles/abstracts/comments; consult linked papers for full details. Preference file active: `EXTEND.md` (repo root).
+
+## [2026-11-13] synthesis | tech-report-digest (2026-11-13)
+- Report: `wiki/synthesis/2026-11-13/tech-report-digest.md` (type: synthesis) — 增量复核 2026-11-12→2026-11-13，汇总 DeepSeek、OpenAI、Meta AI (LLaMA/Muse)、Google DeepMind (Gemini)、Anthropic (Claude)、Mistral AI、Qwen (Alibaba)、Yi (01.AI)、Baichuan、Microsoft (Phi)、Apple、NVIDIA、xAI (Grok)、Amazon (Amazon Nova)、Zhipu AI (GLM/ChatGLM)、InternLM (Shanghai AI Lab)、Moonshot AI (Kimi)、StepFun（阶跃星辰）、ByteDance（豆包/Doubao/Seed）19 家目标机构最新可验证大模型技术报告/系统卡/模型卡。
+- Window findings: `websearch` 不可用，本窗口未检索到明确首发的新旗舰 Tech Report/System Card；复核确认 Anthropic Claude Fable 5.2 & Mythos 5.2 System Card（2026-11-09，公告与系统卡链接可访问）仍为近期关键一手披露。持续有效核心材料包括 DeepSeek-V4（arXiv:2606.19348）、NVIDIA Nemotron 3.5 Super/Lightning（arXiv:2610.38095）、OpenAI Deployment Safety Hub 近期条目（GPT-6 Cyber 2026-11-05、ChatGPT Images 2.6 2026-11-04、GPT-6 Sol/Luna 10 月更新等）及 Google Gemini 4 系列（Argon/Carbon/Hydrogen）官方披露。
+- Coverage: 逐家提供中文标题+英文标题、发布机构、模型名称/系列、发布日期、核心参数（参数量/训练数据量/上下文长度等，按公开披露）、主要创新点与 arXiv/论文/系统卡链接；未确认新增者明确标注状态。
+- Updated: `wiki/index.md`（新增 2026-11-13 tech-report-digest 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-13/tech-report-digest.md`.
+- Contradictions/flags: 部分厂商页面动态渲染或披露有限，参数/训练数据/benchmark 多为自报且跨模型不可直接横比；未独立复现能力与指标。Preference file active: `EXTEND.md` (repo root, bm25 mode `auto_prompt`).
