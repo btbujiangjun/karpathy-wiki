@@ -9342,3 +9342,12 @@
 - Updated: `wiki/index.md`（新增 2026-11-15 tech-report-digest 条目）, `wiki/log.md`（本条）。
 - New pages: `wiki/synthesis/2026-11-15/tech-report-digest.md`.
 - Contradictions/flags: 部分厂商页面动态渲染/超时或披露有限，参数/训练数据/benchmark 多为自报且口径不一，不可直接横比；系统卡/模型页不等同于完整技术报告。Preference file active: `EXTEND.md` (repo root, bm25 mode `auto_prompt`).
+
+## [2026-11-15] synthesis | investment-daily (2026-11-15)
+- Report: `wiki/synthesis/2026-11-15/investment-daily.md` (type: synthesis) — 投资热点日报（2026-11-15 周日；美股参考 2026-11-13 周五收盘/盘后快照，港股/A 股/中概多数标的价格待确认）。聚焦科技与 AI 板块，覆盖美股 Mag 7 与 AI 软硬件、港股科技、A 股 AI/算力/芯片/光模块/半导体设备、中概 ADR 与新能源/电动车链条及 AI 热点主题。
+- Market snapshot (from Yahoo Finance page text, 2026-11-13 close): NASDAQ `^IXIC` 25,136.27 (-0.91%), S&P 500 `^GSPC` 7,561.67 (-0.40%), Dow `^DJI` 52,347.55 (+0.10%), Russell 2000 `^RUT` 2,790.49 (-0.31%), 10Y `^TNX` 5.15% (+1.00%), VIX `^VIX` 19.30 (+3.21%), Gold 3,886.30, WTI 88.56, BTC ~64.7k-64.9k (-4%区间快照). NVDA $162.85 (-2.01%) / AH $161.01 (-1.13%); related snapshots shown on pages include AMD ~$534.06 (-10.95%), META ~$641.69 (+2.15%), AAPL ~$356.27 (+0.14%), AMZN ~$266.66 (-1.16%), TSLA ~$390.22 (-2.60%) (需以正式行情复核).
+- Deliverables: 按要求对各市场/标的提供公司中英文名、代码、板块/交易所、热点事件、市场反应与投资逻辑；指数与主题总览；风险提示与数据限制说明。
+- Sources/method: `webfetch` 抓取 Yahoo Finance 指数/个股页面文本；尝试 `websearch`、Yahoo chart API、Google News RSS 等受限/异常。未采信抓取中出现的异常或疑似不实新闻标题。
+- Updated: `wiki/index.md`（新增 2026-11-15 investment-daily 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-15/investment-daily.md`.
+- Contradictions/flags: 周末休市且实时/检索数据受限，港股/A股/中概涨跌幅多为待确认；部分价格为页面快照并可能存在口径差异。所有内容仅用于研究整理，不构成投资建议。Preference file active: `EXTEND.md` (repo root).
