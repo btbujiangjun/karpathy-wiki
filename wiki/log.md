@@ -9359,3 +9359,12 @@
 - Updated: `wiki/index.md` (Sources and Synthesis tables: added/updated game-rl-daily 2026-11-13 and 2026-11-15 entries), `wiki/log.md` (this entry).
 - New pages: `wiki/synthesis/2026-11-15/game-rl-daily.md`.
 - Contradictions/flags: `websearch` unavailable; several affiliations/venues not fully structured in arXiv metadata (marked for PDF verification); classic-environment-specific new papers (Atari/StarCraft/Dota/Go/poker/NetHack) were limited in non-duplicate retrieved results this run. Preference file active: `EXTEND.md` (repo root, bm25 mode `auto_prompt`).
+
+## [2026-11-15] synthesis | wq101-alpha-daily (2026-11-15)
+- Report: `wiki/synthesis/2026-11-15/wq101-alpha-daily.md` (type: synthesis) — 基于 WorldQuant 101 Alpha 因子（#1 动量、#6 开盘-量价相关、#12 量价背离、#19 均值回复、#30 波动率/结构、#41 趋势强度、#53 区间反转）对市值 > $10B 美股进行代理筛选与综合打分，输出 Top 20。
+- Market context (2026-11-13 close, retrieved 2026-11-15): S&P 500 7,561.67 (-0.40%), Nasdaq 25,136.27 (-0.91%), Dow 52,347.55 (+0.10%), Russell 2000 2,790.49 (-0.31%), VIX 19.30 (+3.21%), 10Y 5.15%, WTI 88.56, Gold 3,886.30, BTC ~65.3k. Sources: Yahoo Finance index/gainers/most-active snapshots (`websearch` unavailable, pages dynamic).
+- Top 20: NU, MSFT, AAPL, GOOGL, AMZN, AVGO, META, KDP, COST, LLY, V, JPM, TSM, NVDA, AMD, INTC, ANET, GE, XOM, CRWV. Highlights: NU 放量动量共振（#1/#6），mega-cap/防御资产均值回复与承接（#19/#41），NVDA/AMD/CRWV 等高波动标的量价背离与反转/波动观察（#12/#30/#53）；含逐股因子解读、综合评分、投资逻辑、风险提示、排名表与板块汇总。
+- Method/limitations: 未获取完整复权 OHLCV/VWAP 历史面板与横截面精确 alpha 计算，因子为定性代理映射；周末休市以 11/13 收盘为基准；仅用于研究整理，不构成投资建议。
+- Updated: `wiki/index.md` (added 2026-11-15 wq101-alpha-daily synthesis entry), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-11-15/wq101-alpha-daily.md`.
+- Flags: 数据时点与工具受限；高利率/VIX 回升下成长股波动放大；高贝塔事件与因子拥挤风险需关注。Preference file active: `EXTEND.md` (repo root, bm25 mode `auto_prompt`).
