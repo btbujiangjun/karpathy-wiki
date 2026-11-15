@@ -9310,3 +9310,19 @@
 - Updated: `wiki/index.md`（补充 2026-11-13 wq101-alpha-daily 条目摘要）, `wiki/log.md`（本条）。
 - New pages: `wiki/synthesis/2026-11-13/wq101-alpha-daily.md`.
 - Contradictions/flags: `websearch` 不可用且 Yahoo Finance API/页面受限，未获取完整 OHLCV/VWAP 与公式级 alpha 横截面计算；个别新闻标题在快照中存在异常叙事（可靠性待核实）。因子信号为公开快照代理映射，部分市值与中文译名为近似值。所有内容仅用于研究整理，不构成投资建议。Preference file active: `EXTEND.md` (repo root).
+
+## [2026-11-15] synthesis | arxiv-ai-search (2026-11-15)
+- Report: `wiki/synthesis/2026-11-15/arxiv-ai-search.md` (type: synthesis) — curated recent arXiv papers (2026-11-09 to 2026-11-12, retrieved 2026-11-15) across AI, LLMs, recommendation systems, advertising/CTR prediction, sequential modeling, and AI for games/agents.
+- Papers: TS-GEAR (2611.12180, Taobao Shangou generative ad retrieval with Geo-Semantic IDs, Query-Geo Target Attention, GMPO), KuaiRecV2 (2611.16795, continual learning/diversity/multi-task rec benchmark, NeurIPS 2026), TriGen (2611.16395, trigger-induced generative recommendation), TraGR (2611.16159, behavior-aware user trajectory prediction), Serving-Aligned ESMM via CTR KD (2611.15137, train-serve pCTCVR alignment), curiosity-aware recommendation (2611.14938, theory/measurement/field evidence), AgentSSL (2611.17323, agentic semi-supervised learning/program selection), Goal Encoding in LLMs (2611.17297, causal/plastic subgoal representations), weight-space-programmed neural game agents (2611.16981), and general/human-like Mario playing with PPO + DRAIL (2611.16175).
+- Sources/method: arXiv Atom API queries and selected abstract pages (`cs.IR/cs.AI/cs.CL/cs.LG`, targeted recommendation/CTR/advertising/sequential/LLM/game searches). No external temporary files retained; task temp-file constraint respected.
+- Updated: `wiki/index.md` (added 2026-11-15 arxiv-ai-search synthesis entry), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-11-15/arxiv-ai-search.md`.
+- Flags: Structured affiliations are often not exposed in arXiv metadata/API; listed as "Not explicitly listed on arXiv" unless clearly stated on the paper page/context. Abstracts/innovations summarized from arXiv metadata/pages (author-reported). Preference file active: `EXTEND.md` (repo root).
+
+## [2026-11-15] synthesis | arxiv-paper-check (2026-11-15)
+- Report: `wiki/synthesis/2026-11-15/arxiv-paper-check.md` (type: synthesis) — curated arXiv paper check for AI and CTR/Click-Through Rate categories. Queried 2026-11-15 via arXiv API and RSS (cs.AI/cs.IR/cs.LG); RSS showed no fresh items in the strict last-24-hour announcement window at query time, so report focuses on latest available recent submissions (primarily 2026-11-11–2026-11-12).
+- Papers highlighted: AgentSSL (2611.17323), CoReMem (2611.17316), Goal Encoding in LLMs (2611.17297), Cited but Unused (2611.17161), Actor/Judge/Teacher? (2611.17167), Serving-Aligned ESMM via CTR KD (2611.15137), KuaiRecV2 (2611.16795), TriGen (2611.16395), TraGR (2611.16159), ReSID (2611.16404).
+- Sources/method: `export.arxiv.org` API queries for cs.AI/cs.IR and CTR keyword searches, plus `rss.arxiv.org` category feeds; abstracts/metadata summarized (author-reported metrics). No temporary fetch files retained.
+- Updated: `wiki/index.md` (added 2026-11-15 arxiv-paper-check synthesis entry), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-11-15/arxiv-paper-check.md`.
+- Flags: Strict 24-hour freshness not fully satisfiable from arXiv feeds at query time; affiliations often unavailable in metadata; results not independently reproduced. Preference file active: `EXTEND.md` (repo root).
