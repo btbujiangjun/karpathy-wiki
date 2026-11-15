@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-15] synthesis | wq101-alpha-daily (2026-11-15)
+- Report: `wiki/synthesis/2026-11-15/wq101-alpha-daily.md` — 基于 WorldQuant 101 Alpha 因子框架（Alpha#1 动量自相关、#6 开盘-量价相关、#12 量价背离、#19 均值回复、#30 波动率/结构、#41 趋势强度、#53 区间反转）对美股市值 > $10B 标的进行定性/代理筛选与综合打分，输出 Top 20（含代码+中英文名、板块、市值、1-2 个核心 Alpha 因子、信号方向+强度、1-10 评分、投资逻辑与风险），并附排名总表与板块分类汇总。
+- Market baseline: 2026-11-13（周五）收盘快照（S&P 500 7,561.67 -0.40%、Nasdaq 25,136.27 -0.91%、Dow 52,347.55 +0.10%、Russell 2000 2,790.49 -0.31%、VIX 19.30 +3.21%、10Y 5.15%）。半导体/AI 硬件承压（NVDA/AMD/AVGO/ANET/TSM/INTC 下跌，NVDA 成交约 3.66 亿股），META 相对强势（+2.90%），防御与质量资产稳健（LLY/JPM/V/COST/XOM），NU 高量上涨（+10.31%）。`websearch` 不可用，数据来自 Yahoo Finance 页面快照与代理信号，非完整 OHLCV/VWAP 面板。
+- Highlights: Top 5 NU、MSFT、AAPL、GOOGL、AMZN；组合兼顾量价动量（#1/#6/#41）、半导体链条回撤下的量价背离/结构观察（#12/#30/#53）与大型平台/防御的均值回复与趋势强度（#19/#41）。
+- Updated: `wiki/index.md`（Sources 表已有 2026-11-15 wq101-alpha-daily 条目；Synthesis 表新增 2026-11-15 wq101-alpha-daily 条目），`wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-15/wq101-alpha-daily.md`。
+- Contradictions/flags: 因子信号为代理解读，非公式级回测；部分市值/中文译名为估算或通用译法；Yahoo 页面动态快照可能有口径差异；报告日期 2026-11-15、数据基准 2026-11-13，不构成投资建议。Preference file active: `EXTEND.md` (repo root).
+
 ## [2026-11-13] synthesis | wq101-alpha-daily (2026-11-13)
 - Report: `wiki/synthesis/2026-11-13/wq101-alpha-daily.md` — 基于 WorldQuant 101 Alpha 因子框架（Alpha#1 动量自相关、#6 开盘-成交量相关、#12 量价背离、#19 均值回复、#30 波动率/洗盘反转、#41 趋势强度 sqrt(high*low)-vwap、#53 区间反转）对美股市值 > $10B 标的进行定性/代理筛选与综合打分，输出 Top 20（含代码+中英文名、板块、市值、1-2 个核心 Alpha 因子、信号方向+强度、1-10 评分、投资逻辑与风险），并附排名总表与板块分类汇总。
 - Market baseline: 2026-11-12 收盘快照（S&P 500 7,592.40 -0.35%、Nasdaq 25,366.09 -0.39%、Dow 52,297.09 -0.36%、VIX 18.70 +6.92%、10Y 5.10%）；涨幅/活跃显示 AVGO/ANET/AMD/CLS 相对强势，NVDA 巨量下跌（-4.47%，~7.08 亿股）与 SMCI/NBIS/CRWV 回撤，科技内部高分化。`websearch` 不可用，数据来自 Yahoo Finance 页面快照与仓库前序基线，11/13 实时数据未完整复核。
