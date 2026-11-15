@@ -9334,3 +9334,11 @@
 - Updated: `wiki/index.md` (added 2026-11-15 conference-digest synthesis entry), `wiki/log.md` (this entry).
 - New pages: `wiki/synthesis/2026-11-15/conference-digest.md`.
 - Flags: Full proceedings crawls for several venues unavailable in this run; affiliations not always explicit in arXiv metadata (reported as stated). Limited fresh verified coverage from some requested companies (Google DeepMind, OpenAI, Meta AI, Microsoft Research, ByteDance, Tencent, Baidu, Netflix, NVIDIA, Anthropic, Apple, Amazon) in this scan. Preference file active: `EXTEND.md` (repo root, bm25 mode `auto_prompt`).
+
+## [2026-11-15] synthesis | tech-report-digest (2026-11-15)
+- Report: `wiki/synthesis/2026-11-15/tech-report-digest.md` (type: synthesis) — 增量复核 2026-11-13→2026-11-15，汇总 DeepSeek、OpenAI、Meta AI (LLaMA/Muse)、Google DeepMind (Gemini)、Anthropic (Claude)、Mistral AI、Qwen (Alibaba)、Yi (01.AI)、Baichuan、Microsoft (Phi)、Apple、NVIDIA、xAI (Grok)、Amazon (Amazon Nova)、Zhipu AI (GLM/ChatGLM)、InternLM (Shanghai AI Lab)、Moonshot AI (Kimi)、StepFun（阶跃星辰）、ByteDance（豆包/Doubao/Seed）19 家目标机构最新可验证大模型技术报告/系统卡/模型卡/官方技术披露。
+- Window findings: `websearch` 不可用；通过 `webfetch`/HTTP 复核 OpenAI Deployment Safety Hub、Anthropic Claude Fable 5.2/Mythos 5.2 公告、Google DeepMind Gemini 4 模型页与 arXiv。未检索到本窗口明确首发的新旗舰 arXiv 技术报告；近期重点材料包括 Gemini 4 系列（Argon/Carbon/Hydrogen，官方模型页与评测方法）、Anthropic Fable 5.2 & Mythos 5.2（2026-11-09）、OpenAI GPT-6 Cyber/ChatGPT Images 2.6 等系统卡、DeepSeek-V4（arXiv:2606.19348）与 NVIDIA Nemotron 3.5 Super/Lightning（arXiv:2610.38095）。
+- Coverage: 逐家给出中文+英文标题、发布机构、模型名称/系列、发布日期、核心参数（按公开披露）、主要创新点与 arXiv/论文/系统卡/官方链接；未确认新增者明确标注状态与检索局限。
+- Updated: `wiki/index.md`（新增 2026-11-15 tech-report-digest 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-15/tech-report-digest.md`.
+- Contradictions/flags: 部分厂商页面动态渲染/超时或披露有限，参数/训练数据/benchmark 多为自报且口径不一，不可直接横比；系统卡/模型页不等同于完整技术报告。Preference file active: `EXTEND.md` (repo root, bm25 mode `auto_prompt`).
