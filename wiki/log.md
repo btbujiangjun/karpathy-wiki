@@ -12,6 +12,14 @@
 - New pages: `wiki/synthesis/2026-11-16/wq101-alpha-daily.md`.
 - Contradictions/flags: 因子信号为代理解读，非完整 OHLCV/VWAP 面板公式级计算；行情快照截至 2026-11-13 且页面存在通用模板文本，关键数据建议多源复核；不构成投资建议。Preference file active: `EXTEND.md` (repo root).
 
+## [2026-11-16] synthesis | wq101-alpha-daily (2026-11-16)
+- Report: `wiki/synthesis/2026-11-16/wq101-alpha-daily.md` — 基于 WorldQuant 101 Alpha 因子框架（Alpha#1 动量自相关、#6 开盘-量价相关、#12 量价背离、#19 均值回复、#30 波动率/结构、#41 趋势强度、#53 反转）对美股市值 > $10B 标的进行定性/代理筛选与综合打分，输出 Top 20。
+- Market baseline: 2026-11-13（周五）收盘快照（S&P 500 7,561.67 -0.40%、Nasdaq 25,136.27 -0.91%、Dow 52,347.55 +0.10%、Russell 2000 2,790.49 -0.31%、VIX 19.30 +3.21%、10Y 5.15%）；2026-11-16 期货小幅混合，主基准仍为 11/13 收盘。半导体/AI 链条承压（NVDA -2.01%、AMD -10.95%、AVGO -4.76% 等），META/NU/金融与防御相对强势。`websearch` 不可用，数据来自 Yahoo Finance 页面快照，因子为代理映射（非完整 OHLCV/VWAP 面板与公式级计算）。
+- Highlights: Top 20 META、NU、MSFT、LLY、AAPL、V、JPM、COST、GOOGL、AMZN、XOM、TSM、NVDA、MU、AMD、AVGO、ANET、INTC、CRWV、MA；含逐股中英文名、板块、市值、1-2 个核心 Alpha 因子、信号方向+强度、1-10 评分、投资逻辑与风险，并附排名总表与板块汇总。
+- Updated: `wiki/index.md`（Sources 表与 Synthesis 表新增 2026-11-16 wq101-alpha-daily 条目）、`wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-16/wq101-alpha-daily.md`.
+- Contradictions/flags: 因子信号为代理解读，非公式级回测；部分市值/中文译名为估算或通用译法；动态页面快照可能有口径差异；不构成投资建议。Preference file active: `EXTEND.md` (repo root).
+
 ## [2026-11-16] synthesis | game-rl-daily (2026-11-16)
 - Summary: `wiki/synthesis/2026-11-16/game-rl-daily.md` — Game RL & Game AI Bot daily digest (window ~2026-08-05→2026-11-13, queried 2026-11-16). Discovery via arXiv Export API HTTPS queries (`websearch` unavailable); deduplicated against arXiv IDs in prior `wiki/synthesis/*/game-rl-daily.md`.
 - Highlights (9 papers): Gamer generalist VLA foundation model for long-horizon real-time 2D/3D gameplay (2611.18397); OCTAVE capability-resolved HTML5 end-to-end game generation benchmark (2611.17681); Minecraft 1.13.1 seed-search Grover-oracle resource/cost study for PCG (2610.33139); ABHBench situated moral decision-making in *Detroit: Become Human* (2611.09326, NeurIPS 2026 Datasets & Benchmarks); evaluating LLM-generated POSG world models for neuro-symbolic reasoning (2611.14419); Werewolf LLM-agent studies on proactive utterance timing/Adversarial Inner Thoughts (2610.32107, AIWolfDial @ INLG 2026), linguistic range/politeness controls (2611.09768), belief shifts under accusations (2609.12446, EMNLP 2026 main), and professional vs non-professional emotion dynamics via EDA (2608.04605).
