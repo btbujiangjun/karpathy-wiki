@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-16] synthesis | tech-report-digest (2026-11-16)
+- Report: `wiki/synthesis/2026-11-16/tech-report-digest.md` — LLM 技术报告速览，覆盖窗口 2026-11-14→16，汇总 19 家目标机构（DeepSeek、OpenAI、Meta AI/LLaMA、Google DeepMind/Gemini、Anthropic/Claude、Mistral AI、Qwen、Yi/01.AI、Baichuan、Microsoft/Phi、Apple、NVIDIA、xAI/Grok、Amazon Nova、Zhipu AI/GLM、InternLM/Shanghai AI Lab、Moonshot AI/Kimi、StepFun、ByteDance/Doubao/Seed）的最新可验证 Tech Report/System Card/Model Card/官方技术披露。
+- Method: `websearch` 在环境中不可用；通过 `webfetch`、HTTP 与 arXiv API 复核 Google DeepMind Gemini 模型页、OpenAI Deployment Safety Hub、Anthropic 新闻页、Meta AI 博客、Mistral 新闻页、xAI 新闻页及仓库既有记录；窗口内未检索到明确首发的新旗舰 arXiv 技术报告。
+- Highlights: Gemini 4 系列新增/明确 Hydrogen（2026-11 公告，模型页/评测方法）为近期官方披露层级；重点复核 Anthropic Claude Fable 5.2 & Mythos 5.2（2026-11-09）、OpenAI GPT-6 Cyber/ChatGPT Images 2.6 等系统卡、DeepSeek-V4（arXiv:2606.19348）、NVIDIA Nemotron 3.5 Super/Lightning（arXiv:2610.38095）；其余机构未确认本窗口新增旗舰技术报告。按要求提供中英文标题、机构、模型、日期、核心参数、创新点与链接。
+- Updated: `wiki/index.md`（Sources 表与 Synthesis 表新增 2026-11-16 tech-report-digest 条目）、`wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-16/tech-report-digest.md`.
+- Contradictions/flags: 检索受限可能遗漏动态发布；闭源参数/训练细节多未公开，benchmark 多为自报；系统卡/模型卡/博客不等同完整技术报告。Preference file active: `EXTEND.md` (repo root).
+
 ## [2026-11-16] synthesis | conference-digest (2026-11-16)
 - Report: `wiki/synthesis/2026-11-16/conference-digest.md` — daily conference/arXiv digest for ICML 2026, AAAI 2026, NeurIPS 2025, ICLR 2026, KDD 2026, CVPR 2026, ACL 2026, EMNLP 2025, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025 and recent work in AI, LLMs, recommendation systems, advertising, CTR, games, code execution prediction, agent systems, generative models, sequential modeling, and benchmarks.
 - Method: queried 2026-11-16; `websearch` unavailable/cancelled and arXiv RSS/API access constrained (no fresh 24h RSS items, latest visible submissions ~2026-11-12–2026-11-13). Synthesized from latest verified wiki sources (`arxiv-paper-check`/`arxiv-daily` 2026-11-16, conference digests 2026-11-15/13). Full proceedings/OpenReview crawls not refreshed; venue status snapshots and arXiv venue/workshop tags used where available. All metrics author-reported.
