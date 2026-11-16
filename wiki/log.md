@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-16] synthesis | investment-daily (2026-11-16)
+- Report: `wiki/synthesis/2026-11-16/investment-daily.md` — 投资热点日报，覆盖美股 Mag 7 与 AI 相关（AAPL/MSFT/NVDA/GOOGL(GOOG)/AMZN/META/TSLA、PLTR/AMD/AVGO/TSM/CRM/ORCL/SNOW/C3.ai）、港股科技/AI（0700.HK/9988.HK/3690.HK/1810.HK/9888.HK/9999.HK/1024.HK/0981.HK/0992.HK/0020.HK）、A 股 AI 概念与算力/芯片/大模型/光模块/半导体设备（688256.SH/688041.SH/603019.SH/002230.SZ/601360.SH/300308.SZ/300502.SZ/002371.SZ/688012.SH）、中概 ADR（BABA/PDD/JD/BIDU/NTES/BEKE/TCOM/YMM/VIPS/BZ/RLX/TME/BILI/LI/XPEV/NIO/ZK）及新能源/电动车链条（TSLA/BYD/LI/XPEV/NIO/1810.HK/300750.SZ/300274.SZ/601012.SH），并汇总 AI 热点主题（NVDA 财报前瞻与算力链波动、云/企业 AI capex 与回报分化、高速互联与光模块、国产算力与设备、AI 应用/Agent、自动驾驶与机器人、新能源与储能）。
+- Method: `websearch` 不可用；通过 `webfetch` 抓取 Yahoo Finance/Google Finance 页面获取 2026-11-13 美股收盘与隔夜快照（IXIC/SPX/DJI/RUT/VIX/TNX、NVDA/MSFT/META/TSLA/AMD/TSM 等）及 2026-11-16 港股腾讯 0700.HK 早盘快照；新闻页存在无法验证/异常标题，未作为事实引用。对未能复核的港股/A股/中概价格与事件统一标注“待确认/待复核”。
+- Highlights: NVDA $162.85 (-2.01%, 11/17 财报前瞻)、AMD $534.06 (-8.75%) 与半导体链条高波动，META +2.90% 相对强势，MSFT +0.17%，TSLA -1.82%，TSM -1.67%；腾讯 0700.HK 盘中约 +0.93%（快照）。
+- Updated: `wiki/index.md`（Sources 表新增 2026-11-16 investment-daily 条目）、`wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-16/investment-daily.md`.
+- Contradictions/flags: 实时/当日完整行情与新闻可得性受限，部分价格口径来自页面快照需复核；报告不构成投资建议。Preference file active: `EXTEND.md` (repo root).
+
 ## [2026-11-16] synthesis | tech-report-digest (2026-11-16)
 - Report: `wiki/synthesis/2026-11-16/tech-report-digest.md` — LLM 技术报告速览，覆盖窗口 2026-11-14→16，汇总 19 家目标机构（DeepSeek、OpenAI、Meta AI/LLaMA、Google DeepMind/Gemini、Anthropic/Claude、Mistral AI、Qwen、Yi/01.AI、Baichuan、Microsoft/Phi、Apple、NVIDIA、xAI/Grok、Amazon Nova、Zhipu AI/GLM、InternLM/Shanghai AI Lab、Moonshot AI/Kimi、StepFun、ByteDance/Doubao/Seed）的最新可验证 Tech Report/System Card/Model Card/官方技术披露。
 - Method: `websearch` 在环境中不可用；通过 `webfetch`、HTTP 与 arXiv API 复核 Google DeepMind Gemini 模型页、OpenAI Deployment Safety Hub、Anthropic 新闻页、Meta AI 博客、Mistral 新闻页、xAI 新闻页及仓库既有记录；窗口内未检索到明确首发的新旗舰 arXiv 技术报告。
