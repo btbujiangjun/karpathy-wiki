@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-16] synthesis | arxiv-paper-check (2026-11-16)
+- Report: `wiki/synthesis/2026-11-16/arxiv-paper-check.md` — curated arXiv paper check for AI and CTR/click-through rate (queried 2026-11-16).
+- Window: arXiv RSS (cs.AI/cs.IR/cs.LG/cs.CL) showed no fresh 24-hour announcements at query time (weekend/skip-day timing). API queries sorted by submission date returned latest visible submissions primarily from **2026-11-12–2026-11-13**; report curated from that latest available window and notes timing explicitly.
+- Highlights (12 papers): AI — Unbundling Multimodal Vision Encoding (2611.17334), ArchSpace (2611.17332), AgentSSL (2611.17323), CoReMem (2611.17316), DiVR diffusion LM regeneration (2611.17320), CRAM energy-based reasoning (2611.17309), Goal Encoding in LLMs (2611.17297), LiveGeo (2611.17267). CTR/Recommendation/Ads — KuaiRecV2 (2611.16795), TriGen trigger-induced generative recommendation (2611.16395), ReSID long-tail generative retrieval (2611.16404), TraGR trajectory prediction (2611.16159).
+- Updated: `wiki/index.md` (Sources table + Synthesis table entries for arxiv-paper-check 2026-11-16), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-11-16/arxiv-paper-check.md`.
+- Contradictions/flags: strict "last 24 hours" window not satisfied due to arXiv announcement timing; abstract/metadata-level synthesis; metrics and deployment claims author-reported; affiliations included only where explicitly indicated in arXiv metadata. Preference file active: `EXTEND.md` (repo root).
+
 ## [2026-11-15] synthesis | wq101-alpha-daily (2026-11-15)
 - Report: `wiki/synthesis/2026-11-15/wq101-alpha-daily.md` — 基于 WorldQuant 101 Alpha 因子框架（Alpha#1 动量自相关、#6 开盘-量价相关、#12 量价背离、#19 均值回复、#30 波动率/结构、#41 趋势强度、#53 区间反转）对美股市值 > $10B 标的进行定性/代理筛选与综合打分，输出 Top 20（含代码+中英文名、板块、市值、1-2 个核心 Alpha 因子、信号方向+强度、1-10 评分、投资逻辑与风险），并附排名总表与板块分类汇总。
 - Market baseline: 2026-11-13（周五）收盘快照（S&P 500 7,561.67 -0.40%、Nasdaq 25,136.27 -0.91%、Dow 52,347.55 +0.10%、Russell 2000 2,790.49 -0.31%、VIX 19.30 +3.21%、10Y 5.15%）。半导体/AI 硬件承压（NVDA/AMD/AVGO/ANET/TSM/INTC 下跌，NVDA 成交约 3.66 亿股），META 相对强势（+2.90%），防御与质量资产稳健（LLY/JPM/V/COST/XOM），NU 高量上涨（+10.31%）。`websearch` 不可用，数据来自 Yahoo Finance 页面快照与代理信号，非完整 OHLCV/VWAP 面板。
@@ -9376,3 +9384,11 @@
 - Updated: `wiki/index.md` (added 2026-11-15 wq101-alpha-daily synthesis entry), `wiki/log.md` (this entry).
 - New pages: `wiki/synthesis/2026-11-15/wq101-alpha-daily.md`.
 - Flags: 数据时点与工具受限；高利率/VIX 回升下成长股波动放大；高贝塔事件与因子拥挤风险需关注。Preference file active: `EXTEND.md` (repo root, bm25 mode `auto_prompt`).
+
+## [2026-11-16] synthesis | arxiv-daily (2026-11-16)
+- Report: `wiki/synthesis/2026-11-16/arxiv-daily.md` — Recent arXiv papers in AI, LLMs, agents, reasoning, multimodal models, and related areas (queried 2026-11-16 via arXiv Export API, sorted by submitted date).
+- Highlights (9 papers, submitted 2026-11-12): Unbundling Multimodal Vision Encoding (2611.17334), ArchSpace LLM architecture research platform (2611.17332), DiVR verifier for diffusion LM regeneration (2611.17320), CoReMem cost-internalizing memory for successive coding tasks with prospective valuation (2611.17316), AgentSSL agentic semi-supervised learning and ProgramSelectBench (2611.17323), sketching LMs for context attribution (2611.17313), CRAM classical-energy reasoning vs looped models (2611.17309), LiveGeo geographic agents in continuously evolving worlds (2611.17267), neurosymbolic RL for mandate-compliant continuous portfolio allocation (2611.17329).
+- Coverage: cs.CL/cs.LG and cs.IR/cs.AI recent feeds; targeted keyword queries for recommendation/advertising/CTR/sequential modeling/games were rate-limited (HTTP 429) during this run, so niche coverage in those areas is limited in this snapshot.
+- Updated: `wiki/index.md` (added 2026-11-16 arxiv-daily synthesis entry), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-11-16/arxiv-daily.md`.
+- Flags: affiliations taken from arXiv metadata where available (many entries not specified); abstract-level summary, metrics/claims author-reported; temporary fetch artifacts removed from `/private/var/folders/q9/tsl_tl5548x7j892sgt3qvlc0000gn/T/opencode/`. Preference file active: `EXTEND.md` (repo root).
