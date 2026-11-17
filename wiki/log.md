@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-17] synthesis | tech-report-digest (2026-11-17)
+- Report: `wiki/synthesis/2026-11-17/tech-report-digest.md` (type: synthesis) — 增量复核 2026-11-16→17，汇总 19 家目标机构最新可验证 Tech Report/System Card/Model Card/官方技术披露。
+- Window findings: `websearch` 不可用（"Web search cancelled"）；通过 `webfetch`/HTTP 复核 OpenAI Deployment Safety Hub、Anthropic Newsroom、Google DeepMind Gemini 模型页、Meta AI 博客、xAI News、Mistral News，并以 arXiv Export API / Hugging Face API 扫描增量。窗口内唯一一手新增为 OpenAI CSAM Image Classifier Model Card（2026-11-16，CLIP+MLP，训练 505K/913K 样本）；另补入上一期未单列的 GPT-6.1 Terra（10-26 增补，网络安全 Critical / 生物化学 High、评测觉察 9.88%）、GPT-Rosalind-6（10-30 增补，同 Astra 权重的 trusted-access 生物推理模型）系统卡与 NVIDIA Nemotron-Labs-Sigma 连续扩散语言模型（arXiv:2610.02665 v2 11-12、HF collection 11-16 更新，3B/8B、Phased DMD NFE 2/4/8/16）；Gemini 4 Hydrogen 官方评测表更新；arXiv 最新批次截至 11-14。
+- Coverage: 每家给出中文+英文标题、机构、模型系列、日期、核心参数、主要创新点与论文/系统卡/官方链接；含重点关注方向速览与窗口内相邻 arXiv 报告（LongCat-Video-Avatar 1.6、UniSpark-9B、Mythos 5 AISI 调查）。
+- Updated: `wiki/index.md`（Sources 表与 Synthesis 表新增 2026-11-17 tech-report-digest 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-17/tech-report-digest.md`.
+- Contradictions/flags: 系统卡/模型卡/博客/模型页披露层级不同；参数与 benchmark 多为自报、口径不一不可直接横比；CSAM/生物/网安双用途模型须遵循官方访问政策；`websearch` 不可用且部分页面动态渲染，可能遗漏未抓取到的发布。Preference file active: `EXTEND.md` (repo root, bm25 mode `auto_prompt`).
+
 ## [2026-11-17] synthesis | conference-digest (2026-11-17)
 - Report: `wiki/synthesis/2026-11-17/conference-digest.md` — daily conference/arXiv digest for ICML 2026, AAAI 2026, NeurIPS 2025, ICLR 2026, KDD 2026, CVPR 2026, ACL 2026, EMNLP 2025, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025 and recent work in AI, LLMs, recommendation, advertising, CTR, games, code execution prediction, agent systems, generative models, sequential modeling, and benchmarks.
 - Method: queried 2026-11-17; `websearch` cancelled/unavailable. arXiv Export API (HTTPS, 5 category queries cs.IR/LG/CL/AI/CV × 120 results, sorted by submittedDate) returned 510 unique papers; 330 published 2026-11-13/14 and absent from wiki (~9.7k known arXiv IDs deduped). Affiliations for 27/30 selected papers extracted from PDF page 1 via pypdf; focus-org attributions PDF-verified. Freshest distinct window = 2026-11-14 submissions (IDs ~2611.192xx) announced 2026-11-16.
