@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-17] synthesis | arxiv-paper-check (2026-11-17)
+- Report: `wiki/synthesis/2026-11-17/arxiv-paper-check.md` — curated arXiv paper check for AI and CTR/click-through rate (queried 2026-11-17 via arXiv Export API + cs.IR RSS).
+- Window: strict last-24h announcement window (cs.IR RSS `lastBuildDate` Mon 2026-11-16 05:00 UTC) contained only 2026-11-13 submissions already summarized by today's sibling `arxiv-daily.md`/`arxiv-ai-search.md`; report therefore curates the freshest available **2026-11-14 submissions** (IDs ~2611.19xxx) plus two relevant 11-13/11-12 items new to the wiki. Every ID checked against `wiki/synthesis/**`; all new except CLEAR (2611.19110), explicitly cross-referenced.
+- Highlights (11 papers): AI — On-policy distillation as a backdoor channel (2611.19207), Beyond Plain MCP / code mode (2611.19123), What Moves a LoCoMo Score? (2611.19199), Surgical Team Model for agentic Web systems (2611.19140), VLM-as-perceiver under occlusion (2611.19179), LABEL / FDA-label routing (2611.19166). CTR/Rec/Ads/IR — TokenFormer V2 (2611.19074, Tencent/WeChat Channels ads, +2.33% GMV, 5.1× fewer FLOPs), CLEAR Meta legible/steerable interests (2611.19110), label-free verbosity-bias audit (2611.18878), MXFP6 quantization for ads R&R (2611.17501), LMEG-Doc multimodal retrieval (2611.18901).
+- Updated: `wiki/index.md` (Sources table + Synthesis table entries for arxiv-paper-check 2026-11-17), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-11-17/arxiv-paper-check.md`.
+- Contradictions/flags: strict 24h window not satisfiable with fresh distinct content due to arXiv announcement timing (no 11-15/16/17 announcement block visible at query time); abstract/metadata-level synthesis; affiliations included only where stated; all metrics author-reported; LoCoMo benchmark sensitivity flagged inline. Preference file active: `EXTEND.md` (repo root).
+
 ## [2026-11-16] synthesis | wq101-alpha-daily (2026-11-16)
 - Report: `wiki/synthesis/2026-11-16/wq101-alpha-daily.md` — 基于 WorldQuant 101 Alpha 因子框架（Alpha#1 动量、#6 开盘-量价相关、#12 量价背离、#19 均值回复、#30 波动率/结构、#41 趋势强度、#53 反转）对美股市值 > $10B 标的进行定性/代理筛选与综合打分，输出 Top 20（含代码+中英文名、板块、市值、1-2 个核心 Alpha 因子、信号方向+强度、1-10 评分、投资逻辑与风险），并附排名总表与板块分类汇总。
 - Market baseline: 数据基准为 2026-11-13（周五）收盘 Yahoo Finance 快照（报告日 2026-11-16，`websearch` 不可用）：S&P 500 7,561.67 (-0.40%)、Nasdaq 25,136.27 (-0.91%)、Dow 52,347.55 (+0.10%)、VIX 19.30 (+3.21%)、10Y 5.15%。板块分化明显：NU/KDP/META 相对强势，NVDA/AMD/DELL/CRWV/NBIS 等 AI 半导体与算力链放量承压。
