@@ -9463,3 +9463,12 @@
 - Updated: `wiki/index.md` (added 2026-11-16 arxiv-daily synthesis entry), `wiki/log.md` (this entry).
 - New pages: `wiki/synthesis/2026-11-16/arxiv-daily.md`.
 - Flags: affiliations taken from arXiv metadata where available (many entries not specified); abstract-level summary, metrics/claims author-reported; temporary fetch artifacts removed from `/private/var/folders/q9/tsl_tl5548x7j892sgt3qvlc0000gn/T/opencode/`. Preference file active: `EXTEND.md` (repo root).
+
+## [2026-11-17] synthesis | investment-daily (2026-11-17)
+- Report: `wiki/synthesis/2026-11-17/investment-daily.md` (type: synthesis) — 全球科技与 AI 投资热点日报（周二版）。数据基准：美股 2026-11-16 常规收盘 + 盘后/隔夜（BOATS）快照；港股/A 股 2026-11-17 早盘约 10:33（GMT+8）盘中快照；中概/ADR 部分为页面关联快照或待确认。
+- Core signals: ①NVDA Q3 FY2027 财报 11/17 盘后（全市场最大事件），11/16 收 $156.14 (-4.12%)、隔夜 $157.90 (+1.13%)，年内约 -16%、52 周低位区间，Melius 11/12 下调至 Hold、目标价 $315→$185；②黄仁勋 CEO 治理风波（CNBC：董事会不考虑让其回归 CEO）与特朗普拟将 NVDA/MSFT/AMZN 列为美国 AI"国家冠军"（11/16 媒体报道，待官方确认）；③Anthropic 递交招股书拟 11 月中旬上市；④美股连续第二日下挫：纳指 24,509.76 (-2.49%)、标普 7,416.59 (-1.92%)、道指 51,608.17 (-1.41%)、VIX 22.91 (+18.70%)、10Y 5.12%，半导体链普跌（TSM ~-5.5%、MU ~-6.3%、MRVL -5.72%、ASML -4.49%）；⑤港股 11/17 盘中恒指 23,485.59 (-1.13%)、腾讯 0700.HK HK$379.80 (-2.72%，11/18 财报)、阿里 9988.HK HK$86.40 (-4.16%，11/19 财报)、美团 HK$70.00 (-2.17%)、小米 1810.HK HK$29.38 (+1.03%，板块内少数上涨)；⑥A 股上证 3,571.93 (-0.85%)，近期光模块中际旭创 +7%/新易盛 +8%（11/11）、寒武纪 11/12 +11% 重回千元；⑦中概 BABA $90.62 (-3.98%，11/19 财报)、BIDU -8.25%、JD -3.62%、NIO -5.86%。
+- Deliverables: 按要求逐热点给出公司中英文名、股票代码、板块/交易所、热点事件、市场反应（涨跌幅）与投资逻辑；含今日核心热点速览、市场总览、美股科技与 AI、港股科技、A 股 AI 链条、中概 ADR、新能源车与 AI 主题跟踪、风险提示。
+- Updated: `wiki/index.md`（Sources 表与 Synthesis 表新增 investment-daily 2026-11-17 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-17/investment-daily.md`.
+- Sources/method: `websearch` 工具被取消/不可用；价格与指数来自 Yahoo Finance 指数/个股页面文本（含"People Also Watch"关联快照），事件来自 Google News RSS 标题/摘要（英文 AI 主题、中文港股/A 股/新能源车主题）。抓取页面的"Performance Overview"区块 YTD 数字与报价区存在符号矛盾（疑似渲染错误），已剔除并以报价区当日涨跌幅为准。
+- Contradictions/flags: "AI 国家冠军""黄仁勋 CEO 传闻""Anthropic IPO 时点"为媒体标题级信息，未经官方确认；中概/ADR 与部分港股/A 股个股精确涨跌未逐一核验，标注"待确认"；不构成投资建议。Preference file active: `EXTEND.md` (repo root, bm25 mode `auto_prompt`).
