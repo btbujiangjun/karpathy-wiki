@@ -4,6 +4,15 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-17] synthesis | wq101-alpha-daily (2026-11-17)
+- Report: `wiki/synthesis/2026-11-17/wq101-alpha-daily.md` — 基于 WorldQuant 101 Alpha 因子框架（用户指定 Alpha#1 动量自相关、#6 开盘-量价相关、#12 量价背离、#19 均值回复、#30 波动率/结构、#41 趋势强度、#53 收盘位置反转）对美股市值 > $10B 标的做**公式级代理计算 + 横截面排序**，输出 Top 20（代码+中英文名、板块、市值、1-2 个核心 Alpha、因子分位方向+强度、1-10 评分、投资逻辑、风险），并附排名总表与板块汇总。
+- Method (upgrade vs prior qualitative-proxy reports): `websearch` 不可用；改用 Yahoo Finance Chart API (`query1.finance.yahoo.com/v8/finance/chart/{symbol}?interval=1d&range=3mo`) 拉取 **61 只**市值 > $10B 美股近 3 个月日线 OHLCV，逐只按指定公式计算 7 因子代理值并做横截面分位（0–1）；因子权重 #1 18%/#6 12%/#12 12%/#19 15%/#30 13%/#41 15%/#53 15%，综合 = 65% × 因子合成 + 35% × 基本面/催化评分，线性映射为 1–10。Alpha#41 的 VWAP 以典型价 `(H+L+C)/3` 近似。
+- Market baseline: 2026-11-16（周一）收盘（Yahoo Chart API 核验）：S&P 500 7,416.59 (-1.92%)、Nasdaq 24,509.76 (-2.49%)、Dow 51,608.17 (-1.41%)、Russell 2000 2,742.94 (-1.70%)、VIX 22.91 (+18.70%)、10Y 5.12%。AI/半导体链放量普跌（NVDA $156.14 -4.12% 成交 3.30 亿股、TSM -6.34%、MU -7.62%、ASML -5.91%），防御/医疗相对占优；NVDA Q3 FY27 财报 11/17 盘后为最大事件风险。
+- Highlights: Top 20 为 GOOGL、LLY、MSFT、AMZN、JNJ、ASML、AAPL、TSM、JPM、NFLX、META、CRM、NVDA、CAT、AMGN、ABBV、MRK、GE、XOM、PLTR；组合呈"质量防御底仓（医疗 5 只 + 平台）+ AI/半导体超跌观察仓（#12/#53 放量下跌逆向信号）+ 工业/能源分散"哑铃结构。GOOGL 因子七维中五维前 20% 居首，LLY #19/#41 近满分；NVDA #1/#30 均为全样本最高但列为事件仓并折价。
+- Updated: `wiki/index.md`（Sources 表与 Synthesis 表新增 2026-11-17 wq101-alpha-daily 条目）、`wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-17/wq101-alpha-daily.md`.
+- Contradictions/flags: `websearch` 不可用；VWAP 以典型价近似、未复权/未回测/未计交易成本，存在单日快照偶然性与幸存者偏差；NFLX 报价约 $60（疑似拆股后口径）与市值为估算需复核；"AI 国家冠军"/治理传闻为标题级信息未采信为事实；因子"放量下跌=偏多"为逆向代理非底部确认；不构成投资建议。Preference file active: `EXTEND.md` (repo root).
+
 ## [2026-11-17] synthesis | game-rl-daily (2026-11-17)
 - Report: `wiki/synthesis/2026-11-17/game-rl-daily.md` — Game RL & Game AI Bot daily digest (window ~2026-10-28→2026-11-14, queried 2026-11-17; arXiv feed timestamp 2026-11-17T03:00Z).
 - Method: discovery via 23 arXiv Export API keyword queries plus a six-category (cs.MA/AI/LG/CL/CV/RO) recency sweep (~3,200 records screened); `websearch` unavailable. Every included ID grep-verified absent from all 1,731 arXiv IDs in prior `wiki/synthesis/*/game-rl-daily.md` digests. Affiliations PDF-verified with pypdf for 12/13 papers.
