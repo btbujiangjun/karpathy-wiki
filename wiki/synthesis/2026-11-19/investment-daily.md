@@ -4,7 +4,7 @@ type: synthesis
 created: 2026-11-19
 updated: 2026-11-19
 sources: [investment-daily.md]
-tags: [investment, daily, us-equities, hk-equities, a-share-equities, adr, china-concept, ai, semiconductor, nvidia, amd, avgo, smci, tencent, alibaba, meituan, xiaomi, baidu, smic, sense-time, tcl, kuaishou, lenovo, byd, tesla, xpev, nio, li-auto, tcomb, ntes, tme, bili, ymm, vips, bz, rlx, cnft, ai]
+tags: [investment, daily, us-equities, hk-equities, a-share-equities, adr, china-concept, ai, semiconductor, nvidia, amd, avgo, smci, tencent, alibaba, meituan, xiaomi, baidu, smic, sense-time, kuaishou, lenovo, byd, tesla, xpev, nio, li-auto, tcomb, ntes, tme, bili, ymm, vips, bz, rlx, ai]
 ---
 
 # 投资热点日报 — 美股 / 港股 / A 股 / 中概股 / 中概新能源（2026-11-19）
