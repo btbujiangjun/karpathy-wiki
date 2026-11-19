@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-19] synthesis | arxiv-paper-check (2026-11-19)
+- Report: `wiki/synthesis/2026-11-19/arxiv-paper-check.md` — AI & CTR paper check for 2026-11-19; window 2026-11-18T02:43:24Z→now; AI: `cs.AI` 14 new papers; picks: RoboBuilder, RePlan-VLA, System 1 medical MCQA, TOGBench, Evidence-Based Credit Assignment, Metrics-in-the-Loop, Levenshtein LED, Interpreting Timestamp Permutations; CTR: `cs.IR` 0 new.
+- Updated: `wiki/index.md` (Sources table + Synthesis table entries for arxiv-paper-check 2026-11-19), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-11-19/arxiv-paper-check.md`.
+- Contradictions/flags: abstract/metadata-level screening only, no full-text review; all metrics/claims author-reported; deduped vs 2026-11-19 `arxiv-daily.md`/`arxiv-ai-search.md` and earlier sibling reports; CTR (`cs.IR`) empty this window.
+
 ## [2026-11-18] synthesis | wq101-alpha-daily (2026-11-18)
 - Report: `wiki/synthesis/2026-11-18/wq101-alpha-daily.md` (type: synthesis) — 基于 WorldQuant 101 Alpha 因子（#1 动量、#6 开盘-量价相关、#12 量价背离、#19 均值回复、#30 波动率/结构、#41 趋势强度、#53 区间反转）对市值 > $10B 美股做公式级代理筛选，输出 Top 20。
 - Method: `websearch` 不可用（"Web search cancelled"）；改用 Yahoo Finance Chart API (`/v8/finance/chart/{symbol}?interval=1d&range=3mo`) 批量拉取 91 只大中盘近 3 个月日线 OHLCV 与 6 个指数快照，截至 2026-11-17 收盘；按用户指定 7 个公式逐只计算横截面代理分位（VWAP 以典型价 (H+L+C)/3 近似）。综合分 = 55% 因子合成（权重 #1 18%/#6 12%/#12 12%/#19 15%/#30 13%/#41 15%/#53 15%）+ 20% 质量/护城河 + 25% 当日事件催化，并对单日跌幅 ≤ -6% 标的扣减 0.03 综合分（"接飞刀"折价）；线性映射为 1–10 分。
