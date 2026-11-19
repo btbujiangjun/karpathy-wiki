@@ -10,6 +10,14 @@
 - New pages: `wiki/synthesis/2026-11-19/arxiv-paper-check.md`.
 - Contradictions/flags: abstract/metadata-level screening only, no full-text review; all metrics/claims author-reported; deduped vs 2026-11-19 `arxiv-daily.md`/`arxiv-ai-search.md` and earlier sibling reports; CTR (`cs.IR`) empty this window.
 
+## [2026-11-19] synthesis | tech-report-digest (2026-11-19)
+- Report: `wiki/synthesis/2026-11-19/tech-report-digest.md` (type: synthesis) — LLM 技术报告速览，覆盖 19 家目标机构最新一手 Tech Report/Technical Report/System Card/Model Card/官方技术披露（窗口核验截至 2026-11-19）。
+- Window findings: 比较 11-18 未发现语义级新旗舰（OpenAI GPT-6.2 System Card 11-17、Apple FastFrames 11-17、NVIDIA AVF 11-16/17 等窗口内无首发事实）；最新确认披露：Anthropic Fable 5.2/Mythos 5.2（11-09）、Apple Siri AI/AFM 3（2026）、Meta Muse Spark 1.1（2026-07-09）、Kimi K3.1 Pro（2026-10-24）、NVIDIA Nemotron 3.5 Super/Bolt/Kumo Tabular（11-16/17）；主要趋势：reasoning model + AI Self-Improvement（Astra）、post-training via RL（NVIDIA Nemotron 3.5 Super）、长上下文（1M）、MoE 混合架构、多模态。
+- Highlights: Meta Muse Spark 1.1（AI at Meta Blog, 2026-07-09）；Anthropic Fable 5.2/Mythos 5.2（Anthropic News, 11-09）；NVIDIA Nemotron 3.5 Super（2611.22161, SWE-bench Pro V2 86.9%→92.1%, GDP_pdf +13.8, 2026-11-17）/ Nemotron 3.5 Bolt E4B 4GB（2611.20771, 2026-11-16）/ Kumo Tabular（2611.23001, 27M/61M/214M, 2026-11-17）；Apple Siri AI/AFM 3（apple.com/ai）；DeepSeek-V4（2606.19348, Pro 1.6T/49B Flash 284B/13B, 1M ctx, CSA+HCA, 2026-04-26）；GLM-5.3（zhipuai.cn/en, 1M ctx）；Grok 4.7（x.ai/news, 2026-09-22）；Kimi K3.1 Pro（moonshot.ai/blog, 2026-10-24）；Mistral Large 4/Le Chonk（2026-10-15/11-05, 1T/49B, MLA+DSA）；Meta Muse Spark 1.1（ai.meta.com/blog, 2026-07-09）。
+- Updated: `wiki/index.md`（Sources 表 + Synthesis 表新增 2026-11-19 tech-report-digest 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-19/tech-report-digest.md`.
+- Contradictions/flags: 系统卡/模型卡/博客/模型页披露层级不同；参数与 benchmark 多为自报、口径不一不可横比；GPT-6.2 Astra、Gemini 4 Carbon、Apple AFM 3 标注为未公开页面口径；Baichuan、InternLM、Yi 本窗口无新报告；`websearch` 不可用，数据来自 webfetch/HTTPS 抓取的官方页面（或其变体 URL）+ arXiv/HuggingFace API + 既有 wiki 速览（synthesis/2026-11-07/11-10/11-18）。Preference file active: `EXTEND.md` (repo root, bm25 mode `auto_prompt`; BM25 not triggered).
+
 ## [2026-11-18] synthesis | wq101-alpha-daily (2026-11-18)
 - Report: `wiki/synthesis/2026-11-18/wq101-alpha-daily.md` (type: synthesis) — 基于 WorldQuant 101 Alpha 因子（#1 动量、#6 开盘-量价相关、#12 量价背离、#19 均值回复、#30 波动率/结构、#41 趋势强度、#53 区间反转）对市值 > $10B 美股做公式级代理筛选，输出 Top 20。
 - Method: `websearch` 不可用（"Web search cancelled"）；改用 Yahoo Finance Chart API (`/v8/finance/chart/{symbol}?interval=1d&range=3mo`) 批量拉取 91 只大中盘近 3 个月日线 OHLCV 与 6 个指数快照，截至 2026-11-17 收盘；按用户指定 7 个公式逐只计算横截面代理分位（VWAP 以典型价 (H+L+C)/3 近似）。综合分 = 55% 因子合成（权重 #1 18%/#6 12%/#12 12%/#19 15%/#30 13%/#41 15%/#53 15%）+ 20% 质量/护城河 + 25% 当日事件催化，并对单日跌幅 ≤ -6% 标的扣减 0.03 综合分（"接飞刀"折价）；线性映射为 1–10 分。
