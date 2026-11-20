@@ -83,6 +83,14 @@
 - New pages: `wiki/synthesis/2026-11-18/arxiv-ai-search.md`.
 - Flags: abstract/metadata-level screening only, no full-text review; all reported metrics and deployment claims are author-reported and not independently reproduced. Temp fetch/cache artifacts were written only to the pre-authorized directory `/var/folders/q9/tsl_tl5548x7j892sgt3qvlc0000gn/T/opencode/` and are being removed. Preference file active: `EXTEND.md` (repo root, bm25 mode `auto_prompt`).
 
+## [2026-11-20] synthesis | wq101-alpha-daily (2026-11-20)
+- Report: `wiki/synthesis/2026-11-20/wq101-alpha-daily.md` — WorldQuant 101 Alpha 美股 Top 20 精选（2026-11-20）。
+- Method: 实时 Yahoo Finance 引擎面板（`/v8/finance/chart`，3mo 复权日，主参考 2026-11-16 常规收盘）下调 129 只市值 > $10B 美股，按 WorldQuant 101 Alpha 因子（#1/#6/#12/#19/#30/#41/#53）公式级计算跨截面百分位（非分钟线完整面板）；综合 = 加权平均因子百分位（权重 #1 0.17/...）×10，1-10 档。
+- Top 20：AMD/MSFT/DE/BLK/REGN/GOOGL/ASML/MU/TSM/MRVL/AMAT/PH/EQIX/ORCL/CRWD/ADSK/LRCX/MPWR/AMZN/GS；含逐股因子分位+方向强度、1-10 评分、逻辑、风险、排名总表与板块汇总。
+- Updated: `wiki/index.md`（Sources 表与 Synthesis 表新增 2026-11-20 wq101-alpha-daily 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-20/wq101-alpha-daily.md`。
+- Contradictions/flags: `websearch` 不可用；数据基准 2026-11-16 常规收盘，后续隔夜数据以 2026-11-16 收盘为准；因子为日盘线代理（非完整分钟线面板），但实时引擎已获取面板数值可复核；部分标的市值为估算；不构成投资建议。Preference file active: `EXTEND.md`（repo root）。
+
 ## [2026-11-17] synthesis | wq101-alpha-daily (2026-11-17)
 - Report: `wiki/synthesis/2026-11-17/wq101-alpha-daily.md` — 基于 WorldQuant 101 Alpha 因子框架（用户指定 Alpha#1 动量自相关、#6 开盘-量价相关、#12 量价背离、#19 均值回复、#30 波动率/结构、#41 趋势强度、#53 收盘位置反转）对美股市值 > $10B 标的做**公式级代理计算 + 横截面排序**，输出 Top 20（代码+中英文名、板块、市值、1-2 个核心 Alpha、因子分位方向+强度、1-10 评分、投资逻辑、风险），并附排名总表与板块汇总。
 - Method (upgrade vs prior qualitative-proxy reports): `websearch` 不可用；改用 Yahoo Finance Chart API (`query1.finance.yahoo.com/v8/finance/chart/{symbol}?interval=1d&range=3mo`) 拉取 **61 只**市值 > $10B 美股近 3 个月日线 OHLCV，逐只按指定公式计算 7 因子代理值并做横截面分位（0–1）；因子权重 #1 18%/#6 12%/#12 12%/#19 15%/#30 13%/#41 15%/#53 15%，综合 = 65% × 因子合成 + 35% × 基本面/催化评分，线性映射为 1–10。Alpha#41 的 VWAP 以典型价 `(H+L+C)/3` 近似。
