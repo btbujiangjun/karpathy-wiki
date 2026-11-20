@@ -9592,3 +9592,12 @@
 - Updated: `wiki/index.md` (Sources and Synthesis tables: added game-rl-daily 2026-11-18 entries), `wiki/log.md` (this entry).
 - New pages: `wiki/synthesis/2026-11-18/game-rl-daily.md`.
 - Flags/contradictions: affiliations PDF-verified for 12/13 papers (EPM 2611.22294 prints none); only one paper has a peer-reviewed venue (ACM MM 2026); `websearch` unavailable; all metrics author-reported and not independently reproduced; dedicated new StarCraft/Dota/NetHack/Go/chess/poker training papers sparse in the deduplicated fresh window. Temporary fetch/PDF artifacts confined to the pre-authorized `/var/folders/q9/.../opencode/` directory and removed after use. Preference file active: `EXTEND.md` (repo root, bm25 mode `auto_prompt`).
+
+## [2026-11-20] synthesis | investment-daily (2026-11-20)
+- Report: `wiki/synthesis/2026-11-20/investment-daily.md` (type: synthesis) — 投资热点日报 — 美股/港股/A 股/中榄股/中榄新能源/AI（2026-11-20，Friday 晚间；US 收盘 Nov 19 + 隔夜/盘后快照）。聚焦科技与 AI 板块。
+- Market snapshot (from Yahoo Finance page text, 2026-11-20): 纳指 Composite `^IXIC` 24,429.88 → 23,879.20 (-2.25%, 收盘 Nov 19；YTD +2.74%); NASDAQ Futures 26,418.00 (-0.69%); S&P 500 futures 7,177.75 (-0.27%); Dow Futures 49,178.50; VIX 28.44 (+15.80%); Gold 3,549.10 (-3.66%); BTC 61,786.93 (-1.18%). NVIDIA close 145.98 (-3.30%, 隔夜 143.79); AMD overnight 470.78 (-3.76%); TSM overnight 341.90 (-2.89%); SMCI close 23.84 (-2.17%); AVGO close 346.65 (-2.09%); PLTR close 153.68 (-1.91%); META close 596.22 (-3.27%); AAPL close 349.21 (-0.92%); AMZN close 257.37 (-3.87%); TSLA overnight 369.00 (-3.84%); INTC overnight 53.97 (-1.28%); CoreWeave -8.70%（算力租赁）; MU -5.00%. 港股（常规收盘快照 10:35–10:41 AM GMT+8）：Tencent 0700.HK 342.800 (-1.61%); Alibaba 9988.HK 82.450 (+2.36%); Xiaomi 1810.HK 27.740 (-2.73%); Baidu 9888.HK 63.750 (-4.49%); Meituan 3690.HK 67.000 (-0.81%); Kuaishou 1024.HK 20.140 (-12.59%); NetEase 9999.HK 152.600 (-18.35%); SMIC 0981.HK 50.050 (-0.89%); BYD 1211.HK 62.850 (-0.55%).
+- Deliverables: 按要求对各市场/标的提供公司中英文名、代码、板块/交易所、热点事件、市场反应与投资逻辑；指数与主题总览；风险提示与数据限制说明。
+- Updated: `wiki/index.md`（新增 2026-11-20 investment-daily 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-20/investment-daily.md`.
+- Sources/method: `webfetch` 抓取 Yahoo Finance 指数/个股页面文本（Summary/Performance Overview/News/People Also Watch）；`websearch` 不可用；Yahoo API 受限/被限流；Google News RSS 等异常。未采信抓取中出现的异常或疑似不实新闻标题。
+- Contradictions/flags: NVIDIA 页面 YTD 显示 -21.54% 与其他数据源存在矛盾，已标注；未取得条目：USTC (603019.SH), LONGI (601012.SH), ZK（极氪 US ADR，Yahoo 页面数据为空）, BIDU US ADR, 1347.HK (Hua Hong). 所有内容仅用于研究整理，不构成投资建议。
