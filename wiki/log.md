@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-20] synthesis | wq101-alpha-daily (2026-11-20)
+- Report: `wiki/synthesis/2026-11-20/wq101-alpha-daily.md` — WorldQuant 101 Alpha 美股 Top 20 精选（2026-11-20）；市场：S&P 约 7,175.83 (-2.02%)、Nasdaq 约 23,879.20 (-2.25%)、10Y 5.05；板块表现：工业 +34.55%、能源 +28.10%、医疗 +16.98%、防御 +15.08%。
+- Top 20：GOOGL(8.4)/MU(8.4)/QCOM(7.7)/V(7.6)/NVDA(7.1)/MA(6.6)/LLY(6.6)/GS(6.4)/MSFT(5.1)/DUK(5.1)/SCHW(4.7)/ABBV(4.6)/AAPL(4.4)/CVX(4.4)/AVGO(4.4)/XOM(4.1)/NEE(4.1)/AMZN(3.9)/CAT(3.9)/AMD(3.8)。
+- Updated: `wiki/index.md`（Sources 表 2026-11-20 wq101-alpha-daily 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-20/wq101-alpha-daily.md`（覆盖重写）。
+- Contradictions/flags: `websearch` 不可用；数据来自 Yahoo Finance `/v8/finance/chart` 3mo 复权日面板（主参考 2026-11-19 收盘）；因子为结构性代理、非完整分钟线面板、非回测；GS/AMD 市值未获取。
+
 ## [2026-11-20] synthesis | tech-report-digest (2026-11-20)
 - Report: `wiki/synthesis/2026-11-20/tech-report-digest.md` (type: synthesis) — LLM 技术报告速览，覆盖 19 家目标机构最新一手 Tech Report/Technical Report/System Card/Model Card/官方技术披露（窗口核验截至 2026-11-20）。
 - Window findings: 新增首发 Google DeepMind Gemini 4 Neon（2026-11-18；AA Index v5.01 #3 score 61，Vals Index #2，1M 上下文，定价 $3M/$15M per M in/out tokens，内部安全：unjustified refusals −3.00pp vs Hydrogen）、OpenAI GPT-6 Cyber 系统卡（2026-11-05；基于 GPT-6 Astra，Preparedness: Cybersecurity Critical/Biological High/AI Self-Improvement below High；ExploitGym 48.45%（Astra 42.43%）、ExploitGym Hardened 36.94%（Astra 29.69%）、SEC-Bench Pro 87.02%（Astra 85.38%）、SRE-Bench 92.84%（Astra 87.98%）、ExploitBench ACE 100%）；OpenAI sitemap 显示 GPT-6 Astra（lastmod 2026-11-19）；Anthropic 11-18 新闻为 IPO 新闻（无新模型）；NVIDIA newsroom 连接失败，NVIDIA 依赖 arXiv/HF/developer 数据（Nemotron 3.5 Super 2611.22161，2026-11-17）。
