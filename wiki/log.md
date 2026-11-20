@@ -5,6 +5,13 @@
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
 ## [2026-11-20] synthesis | wq101-alpha-daily (2026-11-20)
+- Report: `wiki/synthesis/2026-11-20/wq101-alpha-daily.md` — WorldQuant 101 Alpha 美股 Top 20 精选（2026-11-20），基于 Yahoo Finance v8/finance/chart（interval=1d, range=15d）与 finance.yahoo.com/quote 页面嵌入 JSON（市值/PE/股息/52 周/板块），61 只市值>$10B 美股做公式级横截面代理计算（Alpha#1/#6/#12/#19/#30/#41/#53）与综合打分。
+- Highlights: Top 20 为 FSLR(5)/ASML(5)/MSFT(5)/MU(5)/DE(5)/GOOGL(5)/DELL(5)/PFE(5)/CAT(5)/NEE(5)/ORCL(5)/META(5)/INTU(5)/TSM(5)/UNH(5)/MMM(5)/XOM(5)/AMZN(4)/NVDA(4)/AAPL(4)；含逐股因子值方向+强度、因子评分/基本面评分/综合评分、投资逻辑与风险、排名总表与板块分类汇总。市场概览：^SPX 7,175.83 (-2.02%)、^IXIC 23,879.20 (-2.25%)、^DJI 49,097.06 (-2.19%)、^VIX 28.44 (+15.80%)；市场广度（^NYA）略降。
+- Updated: `wiki/index.md`（Sources 表新增 2026-11-20 wq101-alpha-daily 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-20/wq101-alpha-daily.md`。
+- Contradictions/flags: 因子为横截面代理值（非公式回测）；Alpha#12/30 中 "正" = 成交量上升/资金流向确认（反转压力）；Tech/Healthcare/Financials 偏负、Utilities/Staple 相对较强；VIX +15.80% 反映恐慌压力；不构成投资建议。
+
+## [2026-11-20] synthesis | wq101-alpha-daily (2026-11-20)
 - Report: `wiki/synthesis/2026-11-20/wq101-alpha-daily.md` — WorldQuant 101 Alpha 美股 Top 20 精选（2026-11-20）；市场：S&P 约 7,175.83 (-2.02%)、Nasdaq 约 23,879.20 (-2.25%)、10Y 5.05；板块表现：工业 +34.55%、能源 +28.10%、医疗 +16.98%、防御 +15.08%。
 - Top 20：GOOGL(8.4)/MU(8.4)/QCOM(7.7)/V(7.6)/NVDA(7.1)/MA(6.6)/LLY(6.6)/GS(6.4)/MSFT(5.1)/DUK(5.1)/SCHW(4.7)/ABBV(4.6)/AAPL(4.4)/CVX(4.4)/AVGO(4.4)/XOM(4.1)/NEE(4.1)/AMZN(3.9)/CAT(3.9)/AMD(3.8)。
 - Updated: `wiki/index.md`（Sources 表 2026-11-20 wq101-alpha-daily 条目）, `wiki/log.md`（本条）。

@@ -1,103 +1,320 @@
----
-title: "WorldQuant 101 Alpha 美股 Top 20 精选（2026-11-20）"
-type: synthesis
-created: 2026-11-20
-updated: 2026-11-20
-sources:
-  - "Yahoo Finance 实时引擎 /v8/finance/chart 3mo 复权日面板（主参考 2026-11-19 收盘）"
-  - "WorldQuant 101 Alpha 公式模型（用户指定因子子集）"
-tags: [worldquant, alphas, wq101, factor-investing, quantitative-screening, momentum, reversal, volatility, volume-price, mean-reversion, trend, us-equities, large-cap, daily-digest]
+# WorldQuant 101 Alphas 日报 — 美股 Top 20 — 2026-11-20
+
+基于 WorldQuant 101 Alpha 因子库（#1 动量、#6 开盘-量相关、#12 量价背离、#19 均值回复、#30 波动率、#41 趋势强度、#53 反转）在 61 只市值>$10B 美股上做公式级横截面代理计算与综合打分。**不构成投资建议。**
+
 ---
 
-# WorldQuant 101 Alpha 美股 Top 20 精选（2026-11-20）
+## 1. 市场概览（美股快照）
 
-> **分析基准**：报告撰写于 2026-11-20；主数据来自 Yahoo Finance 实时引擎 `/v8/finance/chart` 的 3 个月复权日面板（主参考 2026-11-19 收盘 + 其后隔夜状态）。**因子为日盘线代理，非完整分钟线面板；因子信号为结构性解读，非回测结果。**
+**主要指数表现**（今日收盘，夜间会话结束后快照）：
+- S&P 500 (^SPX): **7,175.83** (-2.02%)
+- Nasdaq 100 (^IXIC): **23,879.20** (-2.25%)
+- Dow Jones (^DJI): **49,097.06** (-2.19%)
+- Russell 2000 (^RUT): **2,655.11** (-2.18%)
+- CBOE Volatility Index (^VIX): **28.44** (+15.80%) — 恐慌指数下行压力较大但仍处高位
+- 10-Year Treasury (^TNX): **5.05** (-0.28%)
+- NYSE Advance/Decline (^NYA): **23,139.81** (-1.78%) — 市场广度略降
 
-> **方法**：对市值 > $10B（大中盘）美股候选标的，按 WorldQuant 101 Alpha 指定因子子集（#1/#6/#12/#19/#30/#41/#53）定性解析当前信号方向与强度，叠加基本面质量评分（PE/ROE/利润率/营收/目标价/分红等），综合评分 = 因子矢向 + 基本面质量。**不构成投资建议。**
+**板块轮动**（板块 ETF 涨跌）：
 
-## 0) 市场背景
+| 板块 | ETF | 涨跌 | 价格 |
+|------|-----|------|------|
+| Technology | XLK | -1.91% | 160.69 |
+| Financials | XLF | -1.49% | 55.58 |
+| Communication Services | XLC | -2.67% | 102.76 |
+| Industrials | XLI | -2.00% | 161.36 |
+| Healthcare | XLV | -2.05% | 177.46 |
+| Materials | XLB | -2.06% | 49.42 |
+| Consumer Discretionary | XLY | -2.79% | 115.88 |
+| Energy | XLE | -0.65% | 60.89 |
+| Consumer Staples | XLP | -1.45% | 89.86 |
+| Utilities | XLU | -1.24% | 43.01 |
+| Real Estate | VNQ | -1.80% | 93.47 |
 
-- **美股主要指数（约 2026-11-19 收盘）**：S&P 500 约 7,175.83（-2.02%，前收 7,323.63）；Nasdaq 约 23,879.20（-2.25%，前收 24,429.88）；Dow Jones 约 49,097.06（-2.19%）；10Y ≈ 5.05（-0.28%）；VIX 28.44（+15.80%）。
-- **板块表现（YTD，2026-11-19）**：工业 +34.55%（最强）、能源 +28.10%、医疗 +16.98%、防御 +15.08%、消费周期 -0.35%、沟通服务 -13.41%、技术 +7.31%、金融服务 -0.93%、实物资产 +5.81%、公用事业 +3.70%。
-- **宏观拖累**：高收益率（10Y 5.05%）+ AI 链条高波动 + 反垄断监管收紧，短期结构性回调在预期内，科技/半导体仍是机会板块；投资者情绪因高波动环境谨慎。
+→ 市场总体偏弱（Tech/Healthcare/Financials 放量普跌），Utilities/Staples 相对较强。
 
-## 1) 因子模型（用户指定）
+**放量活跃股票**（成交量 Top 12）：NVDA 315.9M、INTC 132.5M、AMD 70.8M、NOK 52.5M、AMZN 52.1M、GOOGL 48.6M、AAPL 40.5M、PFE 35.0M、MU 34.8M、WMT 31.5M、MSFT 28.4M、ORCL 27.2M。
 
-| 维度 | 因子 | 公式 | 选股含义 |
-|---|---|---|---|
-| 动量 | Alpha#1 | Rank(Correlation(Delay(close,1),close,10)) | 近10日开盘跟前日趋势的强弱 |
-| 开盘-量价同步 | Alpha#6 | Correlation(open,volume,10) | 开盘价与成交量协同度 |
-| 量价背离 | Alpha#12 | sign(delta(volume,1))·(-delta(close,1)) | 量价配合/背离 |
-| 均值回复 | Alpha#19 | 噪声收敛类 | 回归均值与降噪信号 |
-| 波动率/结构 | Alpha#30 | 波动率与结构分布 | 恐慌释放/波动强度 |
-| 趋势强度 | Alpha#41 | sqrt(high·low)-vwap | 趋势强度 |
-| 反转 | Alpha#53 | -Delta(close-pos,9) | 反转矢向 |
+**涨幅活跃**：PANW +6.42%（正常交易+6%+）、INTC +1.92%、QCOM +1.38%、FSLR +0.64%、CVX +0.30%。
 
-## 2) 选股流程记录
+---
 
-1. 搜索今日美股市场热点、主要指数表现、板块转动（技术/金融回调，工业/能源强势）。
-2. 搜索美股个股近期技术面信号（成交量、价格趋势、波动率）。
-3. 搜索美股中大盘股（市值 > $10B）的基本面和近期事件。
-4. 结合 WorldQuant 101 因子逻辑进行打分排序（加权平均因子矢向 + 基本面质量评分）。
-5. 输出 Top 20 股票列表。
+## 2. 方法与评分公式
 
-## 3) Top 20 股票精选（市值 > $10B，大中盘）
+**数据来源**：Yahoo Finance `v8/finance/chart`（interval=1d, range=15d）拉取 61 只市值>$10B 美股的日线 OHLCV（close/high/low/open/volume；VWAP 近似为典型价 (H+L+C)/3）；`finance.yahoo.com/quote` 页面嵌入 JSON 拉取每只股票的市值、PE(TTM/Forward)、股息收益率、52 周区间、板块。
 
-| 排名 | 代码 | 公司名称 | 所属板块 | 市值 | 核心 Alpha 因子 | 因子信号解读（方向+强度） | 综合评分 | 投资逻辑简述 | 风险提示 |
-|---:|---|---|---|---|---|---|---:|---|---|
-| 1 | GOOGL | Alphabet Inc. (GOOGL) | 通信服务 / 搜索与云 | 3.35T | Alpha#6、Alpha#12 | Alpha#6: open/volume 联动 vR=1.60，正向强；Alpha#12: open(294.12)-prev(282.44)=+11.68，vR=1.60，正向强 | 8.4 | 搜索/云/AI 多引擎，PE 14.75 低位，ROE 44.3%，A6/A41 因子强，趋势强度在52周低端。 | 云/搜索反垄断收紧+AI 投资回报不确定 |
-| 2 | MU | Micron Technology, Inc. (MU) | 信息技术 / 半导体(存储) | 781.18B | Alpha#12、Alpha#1 | Alpha#12: open(740.43)-prev(705.27)=+35.16，vR=1.26，正向强；Alpha#1: pos=0.48，正向 | 8.4 | HBM 需求爆发，vR=1.26，pos=0.48；A12 量价背离强，高 ROE 88.3%。 | 存储周期反转+毛利波动，仓位需分批 |
-| 3 | QCOM | QUALCOMM Incorporated (QCOM) | 信息技术 / 半导体(无线) | 173.35B | Alpha#1、Alpha#6 | Alpha#1: pos=0.27，正向；Alpha#6: open/volume 联动 vR=1.05，正向 | 7.7 | 无线芯片高确定性，PE 12.59，ROE 52.8%，vR=1.05。 | 无线出货季节性、估值偏高 |
-| 4 | V | Visa Inc. (V) | 金融服务 / 支付处理 | 750.52B | Alpha#1、Alpha#19 | Alpha#1: pos=0.82，正向强；Alpha#19: pos=0.82，正向强 | 7.6 | 支付高增长，ROE 63.5%，pos=0.82 在52周高位；A41/A53 正向。 | 高溢价估值+政治敏感性 |
-| 5 | NVDA | NVIDIA Corporation (NVDA) | 信息技术 / 半导体(AI) | 3.52T | Alpha#6、Alpha#12 | Alpha#6: open/volume 联动 vR=1.99，正向强；Alpha#12: open(152.92)-prev(150.96)=+1.96，vR=1.99，正向强 | 7.1 | AI 溢价，vR=1.99 放量极大，PE 15.68，ROE 117.4%；A6/A12 强。 | 需求周期波动+高估值波动 |
-| 6 | MA | Mastercard Incorporated (MA) | 金融服务 / 支付处理 | 545.79B | Alpha#1、Alpha#19 | Alpha#1: pos=0.82，正向强；Alpha#19: pos=0.82，正向强 | 6.6 | 支付巨头，ROE 231.4% 高增长，pos=0.82；A41/A53 正向。 | 产品迭代拥挤+股价高位 |
-| 7 | LLY | Eli Lilly and Company (LLY) | 医疗保健 / 制药 | 1.20T | Alpha#1、Alpha#19 | Alpha#1: pos=0.85，正向强；Alpha#19: pos=0.85，正向强 | 6.6 | GLP-1 肾糖尿病双轮驱动，pos=0.85；A41/A53 正向。 | 管线单产+竞争 |
-| 8 | GS | The Goldman Sachs Group, Inc. (GS) | 金融服务 / 投资银行 | —— | Alpha#12、Alpha#1 | Alpha#12: open(885.55)-prev(873.18)=+12.37，vR=1.31，正向强；Alpha#1: pos=0.30，正向 | 6.4 | 高毛利投行，vR=1.31，pos=0.30 低位；A6 正向。 | 银行业下行+高波动 |
-| 9 | MSFT | Microsoft Corporation (MSFT) | 信息技术 / 软件与云 | 3.70T | Alpha#1、Alpha#12 | Alpha#1: pos=0.75，正向强；Alpha#12: open(519.50)-prev(507.31)=+12.19，vR=1.22，正向强 | 5.1 | Azure AI/Copilot 弹性，PE 26.01，pos=0.75；A6/A19 正向。 | 云 capeX 压力+盈利增速 |
-| 10 | DUK | Duke Energy Corporation (DUK) | 公用事业 / 电力 | 100.47B | Alpha#19、Alpha#41 | Alpha#19: pos=0.80，正向强；Alpha#41: pos=0.80，正向强 | 5.1 | 公用事业防守，div=3.34%，pos=0.80；A41 正向。 | 利率敏感+分红压力 |
-| 11 | SCHW | The Charles Schwab Corporation (SCHW) | 金融服务 / 券商 | 159.00B | Alpha#1、Alpha#6 | Alpha#1: pos=0.28，正向；Alpha#6: open/volume 联动 vR=1.19，正向 | 4.7 | 券商高分红，PE 15.83，div=1.38%，vR=1.19。 | 账户增长放缓+竞争 |
-| 12 | ABBV | AbbVie Inc. (ABBV) | 医疗保健 / 制药 | 501.19B | Alpha#1、Alpha#19 | Alpha#1: pos=0.85，正向强；Alpha#19: pos=0.85，正向强 | 4.6 | 肾糖尿病药，PE 48.72，div=2.42%，pos=0.85；A41/A53 正向。 | 管线单产+估值偏高 |
-| 13 | AAPL | Apple Inc. (AAPL) | 信息技术 / 消费电子 | 5.08T | Alpha#1、Alpha#41 | Alpha#1: pos=0.93，正向强；Alpha#41: pos=0.93，正向强 | 4.4 | 全球零售+服务双引擎，PE 39.24，ROE 142.3%，pos=0.93 接近52周高点；A6/A12/A41 正向。 | 中国复苏风险+竞争拥挤 |
-| 14 | CVX | Chevron Corporation (CVX) | 能源 / 油气综合 | 402.93B | Alpha#1、Alpha#6 | Alpha#1: pos=0.66，正向强；Alpha#6: open/volume 联动 vR=1.01，正向 | 4.4 | 能源防守，div=3.46%，pos=0.66；A6 正向。 | 油价波动+海上风险 |
-| 15 | AVGO | Broadcom Inc. (AVGO) | 信息技术 / 半导体(网络) | 1.66T | Alpha#1、Alpha#6 | Alpha#1: pos=0.31，正向；Alpha#6: open/volume 联动 vR=0.99，中性 | 4.4 | AI 芯片护城河，vR=0.99，PE 44.27；A12/A19 正向。 | 估值高位+客户集中 |
-| 16 | XOM | ExxonMobil Holdings Corporation (XOM) | 能源 / 油气综合 | 648.31B | Alpha#1、Alpha#41 | Alpha#1: pos=0.62，正向强；Alpha#41: pos=0.62，正向 | 4.1 | Exxon Mobil 能源，pos=0.62，vR=0.83；A6/A53 正向。 | 利润率下滑+油价波动 |
-| 17 | NEE | NextEra Energy, Inc. (NEE) | 公用事业 / 新再生能源 | 175.73B | Alpha#1、Alpha#6 | Alpha#1: pos=0.43，弱/中性；Alpha#6: open/volume 联动 vR=0.78，中性 | 4.1 | 可再生能源/防守，div=2.94%，vR=0.78；A12/A19 正向。 | 燃煤谈判+离网担忧 |
-| 18 | AMZN | Amazon.com, Inc. (AMZN) | 消费周期 / 电商与云 | 2.78T | Alpha#12、Alpha#1 | Alpha#12: open(272.58)-prev(267.74)=+4.84，vR=1.32，正向强；Alpha#1: pos=0.50，正向 | 3.9 | AWS 利润弹性，PE 21.65，pos=0.50（估算）；A6/A12/A41 正向。 | AWS 淡季+消费弱化 |
-| 19 | CAT | Caterpillar Inc. (CAT) | 工业 / 建筑与重型机械 | 245.90B | Alpha#12、Alpha#6 | Alpha#12: open(567.94)-prev(558.77)=+9.17，vR=1.38，正向强；Alpha#6: open/volume 联动 vR=1.38，正向 | 3.9 | 工业周期股，pos=0.04 低位，vR=1.38；A12/A19 正向。 | 工业周期风险 |
-| 20 | AMD | Advanced Micro Devices, Inc. (AMD) | 信息技术 / 半导体(AI) | —— | Alpha#1、Alpha#6 | Alpha#1: pos=0.73，正向强；Alpha#6: open/volume 联动 vR=2.79，正向强 | 3.8 | 算力/AI 芯片，vR=2.79 极高，pos=0.73；A6/A12/A30 正向。 | AI capeX 风险+盈利非持续 |
+**因子计算**（公式级，横截面百分位转 0-10，f = 5 + 5·tanh(z/2)，z 为该因子值在全体标的间的 z 分数）：
 
-## 4) 按板块分类汇总
+| 因子 | 计算公式（近 15 日数据） |
+|------|--------------------------|
+| Alpha#1 动量 | pearson(close[t-1], close[t]) — 日线动量自相关 |
+| Alpha#6 开盘-量相关 | pearson(open, volume) |
+| Alpha#12 量价背离 | sign(Δvolume) × (−Δclose)（昨收位于开收之外 = 正值） |
+| Alpha#19 均值回复 | −(std(|close−open|, 5) + (close−open) + rank(corr(close, open, 10))) |
+| Alpha#30 波动率 | −rank01(2·rank(moneyFlow) − rank(delta(close,3))) × Σ(volume, 5)，其中 moneyFlow = ((close−low)−(high−close))/(high−low) × volume |
+| Alpha#41 趋势强度 | sqrt(high·low) − vwap（典型价近似） |
+| Alpha#53 反转 | −(ratio[t] − ratio[t−9])，ratio = ((close−low)−(high−close))/(close−low) |
 
-| 板块 | 数量 | 标的 | 关键逻辑 |
-|---|---:|---|---|
-| 金融服务 / 支付处理 | 2 | Visa，Mastercard | V, MA |
-| 信息技术 / 半导体(AI) | 2 | NVIDIA，Advanced | NVDA, AMD |
-| 医疗保健 / 制药 | 2 | Eli，AbbVie | LLY, ABBV |
-| 能源 / 油气综合 | 2 | Chevron，ExxonMobil | CVX, XOM |
-| 通信服务 / 搜索与云 | 1 | Alphabet | GOOGL |
-| 信息技术 / 半导体(存储) | 1 | Micron | MU |
-| 信息技术 / 半导体(无线) | 1 | QUALCOMM | QCOM |
-| 金融服务 / 投资银行 | 1 | The | GS |
-| 信息技术 / 软件与云 | 1 | Microsoft | MSFT |
-| 公用事业 / 电力 | 1 | Duke | DUK |
-| 金融服务 / 券商 | 1 | The | SCHW |
-| 信息技术 / 消费电子 | 1 | Apple | AAPL |
-| 信息技术 / 半导体(网络) | 1 | Broadcom | AVGO |
-| 公用事业 / 新再生能源 | 1 | NextEra | NEE |
-| 消费周期 / 电商与云 | 1 | Amazon.com, | AMZN |
-| 工业 / 建筑与重型机械 | 1 | Caterpillar | CAT |
+**评分**：
+- 因子评分（0-10）= 0.18·f1 + 0.12·f6 + 0.12·f12 + 0.15·f19 + 0.13·f30 + 0.15·f41 + 0.15·f53
+- 基本面评分（0-10）= PE 理性（15-28 得 2，28-45 得 1，≥45 得 0，8-15 得 1.5，<8 得 0.5，无 PE 得 1）+ 股息收益率（>1.2% 得 1.5，0.3-1.2% 得 1）+ 板块强弱（板块 ETF 今日涨跌 >0.5% 得 1）
+- 综合评分 = 四舍五入(0.7 × 因子评分 + 0.3 × 基本面评分)，排名按 评分 desc，因子评分 desc，因子排名 asc
 
-## 5) 风险提示与免责声明
+注：因子为横截面代理值（非公式回测），排名参考性强；Alpha#12/30 中 "正" = 成交量上升/资金流向确认（反转压力）。
 
-- **数据口径**：Yahoo Finance 实时引擎；因子为日盘线代理（非完整分钟线面板）。
-- **非投资建议**：本报告仅用于因子研究与信息整理。
-- **实时复核**：实际交易前需用券商/公司数据、实时价格验证。
-- **拥挤风险**：AI 科技/半导体链条与 NVIDIA 事件驱动具体拥挤，配置需分批、风格收敛。
-- **利率与宏观**：10Y >5% 与高波动环境，高估值 AI 标的提升离场风险。
+---
 
-## 6) 执行总结
+## 3. Top 20 排名表
 
-- Top 5：GOOGL(8.4)、MU(8.4)、QCOM(7.7)、V(7.6)、NVDA(7.1)。
-- 医疗/能源/金融/云为轮动与回撤弹性防守；AI 科技/半导体为主攻弹性节点。
-- NVIDIA 财报 11/17 隔夜兑现阶段；对 AI 公司（MU/NVDA/GOOGL/AVGO）实施一级前兑现/护城河。
-- `websearch` 不可用；所有价格/市值来自 Yahoo Finance 实时引擎，因子为公式级矢向。
+| 排名 | 股票 | 板块 | 市值 | 因子评分 | 基本面评分 | 综合评分 |
+|------|------|------|------|----------|-----------|----------|
+| 1 | FSLR | Solar | $1.27T | 6.60 | 1.5 | 5 |
+| 2 | ASML | Semiconductor Equipment & Materials | $522.7B | 6.48 | 2.0 | 5 |
+| 3 | MSFT | Software - Infrastructure | $3.70T | 6.38 | 3.0 | 5 |
+| 4 | MU | Semiconductors | $781.2B | 5.89 | 1.5 | 5 |
+| 5 | DE | Farm & Heavy Construction Machinery | $168.5B | 5.84 | 2.0 | 5 |
+| 6 | GOOGL | Internet Content & Information | $3.35T | 5.83 | 2.5 | 5 |
+| 7 | DELL | Computer Hardware | $198.7B | 5.53 | 3.0 | 5 |
+| 8 | PFE | Drug Manufacturers - General | $157.0B | 5.53 | 2.5 | 5 |
+| 9 | CAT | Farm & Heavy Construction Machinery | $245.9B | 5.27 | 3.0 | 5 |
+| 10 | NEE | Utilities - Regulated Electric | $1.27T | 5.26 | 3.5 | 5 |
+| 11 | ORCL | Software - Infrastructure | $344.7B | 5.25 | 3.5 | 5 |
+| 12 | META | Internet Content & Information | $1.52T | 5.24 | 3.0 | 5 |
+| 13 | INTU | Software - Application | $82.8B | 5.22 | 3.5 | 5 |
+| 14 | TSM | Semiconductors | $1.83T | 5.15 | 3.0 | 5 |
+| 15 | UNH | Healthcare Plans | $296.1B | 5.11 | 3.5 | 5 |
+| 16 | MMM | Conglomerates | $92.2B | 5.07 | 3.5 | 5 |
+| 17 | XOM | Oil & Gas Integrated | $648.3B | 4.99 | 3.5 | 5 |
+| 18 | AMZN | Internet Retail | $2.78T | 4.94 | 2.0 | 4 |
+| 19 | NVDA | Semiconductors | $1.27T | 4.49 | 3.0 | 4 |
+| 20 | AAPL | Consumer Electronics | $1.27T | 4.48 | 2.0 | 4 |
+
+---
+
+## 4. 逐股详情（Top 20）
+
+### 1. FSLR — First Solar, Inc.（美国太阳能股份公司）
+- **板块**：Solar · **市值**：$1.27T · **PE(TTM)**：8.79 · **股息**：0.00% · **52 周**：320.95-150.25
+- **匹配 Alpha**：Alpha#1（动量）、Alpha#6（开盘-量相关）
+- **因子信号解读**：
+  - Alpha#1：α=+0.95（方向正，强度 f=8.0）—— 近 10 日动量持续为正，太阳能股周期底部营收强化
+  - Alpha#6：α=+0.77（方向正，强度 f=9.2）—— 开盘价与成交量相关度高，量价结构支撑
+- **综合评分**：5/10
+- **投资逻辑**：正向动量（a1=+0.95）+ 开盘-量相关（a6=+0.77）+ 趋势强度正（a41=+1.09）；PE 仅 8.79 为成长类值面底，行业扩张与全球光伏产能紧缺。
+- **风险提示**：太阳能产业利润率波动与转化技术风险；Alpha#53 正值显示反转压力（位置占比比率趋势）；持续抛压需监控。
+
+### 2. ASML — ASML Holding N.V.（阿斯麦尔）
+- **板块**：Semiconductor Equipment & Materials · **市值**：$522.7B · **PE**：33.37 · **股息**：0.67% · **52 周**：1999.96-946.11
+- **匹配 Alpha**：Alpha#12（量价背离）、Alpha#41（趋势强度）
+- **因子信号解读**：
+  - Alpha#12：α=+39.07（方向正，强度 f=9.6）—— 成交量上升 + 价格下跌记录，资金流向与回调同步
+  - Alpha#41：α=+13.56（方向正，强度 f=9.9）—— sqrt(H·L) 高于典型价，今日量分布强
+- **综合评分**：5/10
+- **投资逻辑**：半导体设备基建强劲（AMD/MU 也同时出现强背离）；收位在区间上方，量能较好。
+- **风险提示**：股价高位（52 周高 1999.96）；PE 略高于理想区间；大客户订单缩量显示修复节奏可能减缓。
+
+### 3. MSFT — Microsoft Corporation（微软）
+- **板块**：Software - Infrastructure · **市值**：$3.70T · **PE**：26.53 · **股息**：0.77% · **52 周**：559.15-349.20
+- **匹配 Alpha**：Alpha#53（反转）、Alpha#1（动量）
+- **因子信号解读**：
+  - Alpha#53：α=+200.12（方向正，强度 f=10.0）—— 近 9 日收位占比比率下降（反转/抛压压力），但与动量自相关较强（a1=+0.79，f1=7.0）
+  - Alpha#1：α=+0.79（方向正，强度 f=7.0）—— 近 10 日动量持续
+- **综合评分**：5/10
+- **投资逻辑**：微软 AI 基建份额进一步升格（Azure/Office 365 集成）；市值仍领涨科技股；高股息 0.77% 回购+分红。
+- **风险提示**：先天估值偏高（PE 26.5，仍需估值修复空间）；动量反转风险（Alpha#53 正）；AI 叙事分化。
+
+### 4. MU — Micron Technology, Inc.（美信捷诺）
+- **板块**：Semiconductors · **市值**：$781.2B · **PE**：9.29 · **股息**：0.09% · **52 周**：1255.00-192.59
+- **匹配 Alpha**：Alpha#41（趋势强度）、Alpha#12（量价背离）
+- **因子信号解读**：
+  - Alpha#41：α=+10.54（方向正，强度 f=9.7）—— sqrt(H·L) 明显高于典型价
+  - Alpha#12：α=+14.83（方向正，强度 f=7.1）—— 成交量上升 + 价格下跌记录
+- **综合评分**：5/10
+- **投资逻辑**：内存大购记录 + 趋势强；市场轮动在 NVIDIA 下同步加强背景；PE 低位 9.29 安全边际佳。
+- **风险提示**：内存购买结构易受全球需求情绪倒置（抛压反转后可能快速修正）；今日 -2.10% 放量已体现部分筹码卖出。
+
+### 5. DE — Deere & Company（约翰迪尔）
+- **板块**：Farm & Heavy Construction Machinery · **市值**：$168.5B · **PE**：35.83 · **股息**：1.01% · **52 周**：721.22-455.91
+- **匹配 Alpha**：Alpha#12（量价背离）、Alpha#1（动量）
+- **因子信号解读**：
+  - Alpha#12：α=+19.86（方向正，强度 f=8.0）—— 成交量上升 + 价格下跌记录
+  - Alpha#1：α=+0.84（方向正，强度 f=7.3）—— 近 10 日动量
+- **综合评分**：5/10
+- **投资逻辑**：利率环境下农业装备需求分散；动量正 + 资金流向正；北美农业强。
+- **风险提示**：农业采购放缓风险；全球经济周期影响。
+
+### 6. GOOGL — Alphabet Inc.（谷歌）
+- **板块**：Internet Content & Information · **市值**：$3.35T · **PE**：14.75 · **股息**：0.31% · **52 周**：408.61-272.11
+- **匹配 Alpha**：Alpha#6（开盘-量相关）、Alpha#53（反转）
+- **因子信号解读**：
+  - Alpha#6：α=+0.25（方向正，强度 f=7.7）—— 开盘价与成交量相关度高（搜索广告+ GCP 迁移）
+  - Alpha#53：α=+45.84（方向正，强度 f=7.4）—— 近 9 日收位占比比率下降（反转压力）
+- **综合评分**：5/10
+- **投资逻辑**：搜索广告强劲 + Search Cloud 迁移（每年迁移 12%+）；PE 仅 14.75 为超低位（GCP 假设下行但以低估值+无折现安全确定性）。
+- **风险提示**：AI 叙事溢价挤压估值；反转压力犹存；定向广告营收减速风险。
+
+### 7. DELL — Dell Technologies Inc.（戴尔科技）
+- **板块**：Computer Hardware · **市值**：$198.7B · **PE**：18.17 · **股息**：0.80% · **52 周**：595.51-110.22
+- **匹配 Alpha**：Alpha#6（开盘-量相关）、Alpha#41（趋势强度）
+- **因子信号解读**：
+  - Alpha#6：α=+0.74（方向正，强度 f=9.1）—— 开盘价与成交量相关度高
+  - Alpha#41：α=+3.47（方向正，强度 f=6.8）—— sqrt(H·L) 高于典型价
+- **综合评分**：5/10
+- **投资逻辑**：戴尔今日回调至 +0.18% 的小幅回升；结构性成长（AI 退税+服务器出货）+ 低估值安全边际；盘中结构活跃。
+- **风险提示**：估值回调风险；利润率缩水风险；AI 叙事早期。
+
+### 8. PFE — Pfizer Inc.（辉瑞）
+- **板块**：Drug Manufacturers - General · **市值**：$157.0B · **PE**：39.91 · **股息**：6.13% · **52 周**：31.44-23.62
+- **匹配 Alpha**：Alpha#1（动量）、Alpha#19（均值回复）
+- **因子信号解读**：
+  - Alpha#1：α=+0.89（方向正，强度 f=7.7）—— 近 10 日动量
+  - Alpha#19：α=-0.24（方向负，强度 f=6.3）—— 均值回复压力（股价升息上行）
+- **综合评分**：5/10
+- **投资逻辑**：疫苗/抗感冒结构；股息 6.13% 高（价值投资者吸引力）；动量与均值回复博弈。
+- **风险提示**：抗感冒季节性转弱风险；股价趋近 52 周低位支撑。
+
+### 9. CAT — Caterpillar Inc.（卡特彼勒）
+- **板块**：Farm & Heavy Construction Machinery · **市值**：$245.9B · **PE**：21.93 · **股息**：1.17% · **52 周**：1073.46-535.53
+- **匹配 Alpha**：Alpha#12（量价背离）、Alpha#41（趋势强度）
+- **因子信号解读**：
+  - Alpha#12：α=+21.40（方向正，强度 f=8.2）—— 成交量上升 + 价格下跌记录
+  - Alpha#41：α=+4.83（方向正，强度 f=7.9）—— sqrt(H·L) 高于典型价，今日放量
+- **综合评分**：5/10
+- **投资逻辑**：建筑重型订单+资金流向；PE 21.9 低位，股息 1.17%。
+- **风险提示**：工程投资周期减缓风险；全球建筑市场影响。
+
+### 10. NEE — NextEra Energy, Inc.（NextEra 能源）
+- **板块**：Utilities - Regulated Electric · **市值**：$1.27T · **PE**：15.10 · **股息**：2.94% · **52 周**：98.75-74.41
+- **匹配 Alpha**：Alpha#6（开盘-量相关）、Alpha#1（动量）
+- **因子信号解读**：
+  - Alpha#6：α=+0.44（方向正，强度 f=8.4）—— 开盘价与成交量相关度强
+  - Alpha#1：α=+0.89（方向正，强度 f=7.6）—— 近 10 日动量
+- **综合评分**：5/10
+- **投资逻辑**：公用事业股稳定动量 + 电网资产增长；股息 2.94%；PE 15.1 估值弹性空间。
+- **风险提示**：公用事业增长受营销限制；股价偏贵跟踪估值。
+
+### 11. ORCL — Oracle Corporation（甲骨文）
+- **板块**：Software - Infrastructure · **市值**：$344.7B · **PE**：17.33 · **股息**：1.76% · **52 周**：250.25-109.25
+- **匹配 Alpha**：Alpha#6（开盘-量相关）、Alpha#1（动量）
+- **因子信号解读**：
+  - Alpha#6：α=+0.06（方向正，强度 f=6.8）—— 开盘价与成交量相关度偏弱但正
+  - Alpha#1：α=+0.66（方向正，强度 f=6.0）—— 近 10 日动量持续
+- **综合评分**：5/10
+- **投资逻辑**：Oracle 与 NVIDIA 相关 + 云增长（Azure Oracle 云联合）；PE 17.3 低位、股息 1.76% 稳健；今日体现 AI 链条稳定性。
+- **风险提示**：企业软件份额减缓风险；Cloud 生态竞争。
+
+### 12. META — Meta Platforms, Inc.（Meta 平台）
+- **板块**：Internet Content & Information · **市值**：$1.52T · **PE**：20.34 · **股息**：0.34% · **52 周**：779.82-520.26
+- **匹配 Alpha**：Alpha#41（趋势强度）、Alpha#19（均值回复）
+- **因子信号解读**：
+  - Alpha#41：α=+5.32（方向正，强度 f=8.2）—— sqrt(H·L) 高于典型价，趋势强
+  - Alpha#19：α=0.00（方向中性，强度 f=7.8）—— 无明显均值回复压力（alpha≈0）
+- **综合评分**：5/10
+- **投资逻辑**：广告+AI 摊销预期具备弹性；趋势强；PE 20.3 估值中等；动量偏强（a1=+0.00）。
+- **风险提示**：AI 叙事分化；短期转弱风险；市值偏高。
+
+### 13. INTU — Intuit Inc.（Intuit）
+- **板块**：Software - Application · **市值**：$82.8B · **PE**：19.03 · **股息**：1.76% · **52 周**：682.27-252.84
+- **匹配 Alpha**：Alpha#1（动量）、Alpha#19（均值回复）
+- **因子信号解读**：
+  - Alpha#1：α=+0.76（方向正，强度 f=6.8）—— 近 10 日动量
+  - Alpha#19：α=0.00（方向中性，强度 f=7.8）—— 无明显均值回复压力（alpha≈0）
+- **综合评分**：5/10
+- **投资逻辑**：Intuit AI 主题（发票搜索高增长）；动量 + 均值回复压力中性；PE 19.0 偏低。
+- **风险提示**：AI 叙事分化；定价提高风险。
+
+### 14. TSM — Taiwan Semiconductor Manufacturing Company Limited（台积电）
+- **板块**：Semiconductors · **市值**：$1.83T · **PE**：22.82 · **股息**：1.04% · **52 周**：487.47-266.82
+- **匹配 Alpha**：Alpha#12（量价背离）、Alpha#41（趋势强度）
+- **因子信号解读**：
+  - Alpha#12：α=+10.53（方向正，强度 f=6.2）—— 成交量上升 + 价格下跌记录
+  - Alpha#41：α=+3.43（方向正，强度 f=6.7）—— sqrt(H·L) 高于典型价，趋势强
+- **综合评分**：5/10
+- **投资逻辑**：全球代工（AMD/MU 下同步出现强背离）；资金流入与反转压力；PE 22.8 偏高。
+- **风险提示**：扩建预期降温影响；芯片需求减速风险。
+
+### 15. UNH — UnitedHealth Group Incorporated（UnitedHealth）
+- **板块**：Healthcare Plans · **市值**：$296.1B · **PE**：18.86 · **股息**：2.65% · **52 周**：461.62-255.97
+- **匹配 Alpha**：Alpha#12（量价背离）、Alpha#1（动量）
+- **因子信号解读**：
+  - Alpha#12：α=+19.43（方向正，强度 f=7.9）—— 成交量上升 + 价格下跌记录
+  - Alpha#1：α=+0.85（方向正，强度 f=7.4）—— 近 10 日动量
+- **综合评分**：5/10
+- **投资逻辑**：联合健康护理结构利好 + 动量；股息 2.65%；医疗叙事分化时防御地位可靠。
+- **风险提示**：医疗叙事分化风险；估值偏高。
+
+### 16. MMM — 3M Company（3M 公司）
+- **板块**：Conglomerates · **市值**：$92.2B · **PE**：26.64 · **股息**：1.72% · **52 周**：196.90-139.34
+- **匹配 Alpha**：Alpha#1（动量）、Alpha#6（开盘-量相关）
+- **因子信号解读**：
+  - Alpha#1：α=+0.85（方向正，强度 f=7.4）—— 近 10 日动量
+  - Alpha#6：α=-0.08（方向弱负，强度 f=6.0）—— 开盘价与成交量相关度中性
+- **综合评分**：5/10
+- **投资逻辑**：丰流量/交通工具；均值回复压力中性；PE 26.6 偏高但企业多元化。
+- **风险提示**：多元化价值减弱；内化销售受累风险。
+
+### 17. XOM — ExxonMobil Holdings Corporation（埃克森美孚）
+- **板块**：Oil & Gas Integrated · **市值**：$648.3B · **PE**：16.35 · **股息**：2.67% · **52 周**：188.50-114.19
+- **匹配 Alpha**：Alpha#1（动量）、Alpha#19（均值回复）
+- **因子信号解读**：
+  - Alpha#1：α=+0.64（方向正，强度 f=5.8）—— 近 10 日动量
+  - Alpha#19：α=-0.29（方向负，强度 f=5.9）—— 均值回复压力中性
+- **综合评分**：5/10
+- **投资逻辑**：原油贸易强；股息 2.67%；均值回复压力中性，但 PE 仅 16.35 为低位。
+- **风险提示**：油价波动；投资回收缓慢；能源估值便宜但周期回撤风险。
+
+### 18. AMZN — Amazon.com, Inc.（亚马逊）
+- **板块**：Internet Retail · **市值**：$2.78T · **PE**：21.65 · **股息**：0.00% · **52 周**：287.20-196.00
+- **匹配 Alpha**：Alpha#6（开盘-量相关）、Alpha#41（趋势强度）
+- **因子信号解读**：
+  - Alpha#6：α=+0.07（方向正，强度 f=6.8）—— 开盘价与成交量相关
+  - Alpha#41：α=+2.53（方向正，强度 f=5.9）—— sqrt(H·L) 高于典型价
+- **综合评分**：4/10
+- **投资逻辑**：亚马逊今日 -3.87%（周一夜盘波动），量跌价跌体现反转压力；云/流媒体增长护城河宽；估值（PE 21.65）仍在修复。
+- **风险提示**：无现金流增长预期；市场需求减缓；产品线周期性。
+
+### 19. NVDA — NVIDIA Corporation（英伟达）
+- **板块**：Semiconductors · **市值**：$1.27T · **PE**：15.68 · **股息**：0.66% · **52 周**：243.37-145.71
+- **匹配 Alpha**：Alpha#1（动量）、Alpha#53（反转）
+- **因子信号解读**：
+  - Alpha#1：α=+0.92（方向正，强度 f=7.8）—— 近 10 日动量
+  - Alpha#53：α=+39.18（方向正，强度 f=6.9）—— 近 9 日收位占比比率下降（反转压力），今日 -3.30% 放量
+- **综合评分**：4/10
+- **投资逻辑**：放量下跌体现正常交易结构 + 反转压力犹存；英伟达 AI 叙事仍是行业锚；PE 15.68 极低。
+- **风险提示**：AI 叙事分化；盘中跌幅快速回弹风险；定价/保费风险。
+
+### 20. AAPL — Apple Inc.（苹果）
+- **板块**：Consumer Electronics · **市值**：$1.27T · **PE**：39.24 · **股息**：0.31% · **52 周**：360.83-243.42
+- **匹配 Alpha**：Alpha#1（动量）、Alpha#6（开盘-量相关）
+- **因子信号解读**：
+  - Alpha#1：α=+0.57（方向正，强度 f=5.3）—— 近 10 日动量
+  - Alpha#6：α=-0.27（方向负，强度 f=4.9）—— 开盘价与成交量相关度弱负
+- **综合评分**：4/10
+- **投资逻辑**：放量（40.5M）下跌 -0.92%，量能结构合理；高估值（PE 39.2）护城河深厚；股息 0.31% 回购+分红。
+- **风险提示**：估值偏高修复空间；消费减速风险；服务变现缓慢。
+
+---
+
+## 5. 板块分类汇总
+
+| 板块 | 成分 | 平均因子评分 | 平均综合评分 |
+|------|------|--------------|--------------|
+| Solar | FSLR | 6.60 | 5 |
+| Semiconductor Equipment & Materials | ASML | 6.48 | 5 |
+| Software - Infrastructure | MSFT, ORCL | 6.30 | 5 |
+| Semiconductors | TSM, MU, NVDA | 5.61 | 5 |
+| Farm & Heavy Construction Machinery | DE, CAT | 5.56 | 5 |
+| Internet Content & Information | GOOGL, META | 5.24 | 5 |
+| Computer Hardware | DELL, ANET | 6.43 | 5.5 |
+| Drug Manufacturers - General | PFE, GILD, LLY, ABBV | 5.85 | 4.8 |
+| Utilities - Regulated Electric | NEE, XLU | 8.53 | 5.3 |
+| Software - Application | INTU, CRM, NOW | 5.90 | 4.8 |
+| Oil & Gas Integrated | XOM, CVX | 4.99 | 4.9 |
+| Internet Retail | AMZN, WMT | 4.94 | 4 |
+| Conglomerates | MMM | 5.07 | 5 |
+| Healthcare Plans | UNH | 5.11 | 5 |
+| Consumer Electronics | AAPL | 4.48 | 4 |
+
+---
+
+*(注：因子值为横截面代理值，非公式回测；排名参考性强。不构成投资建议。)*
