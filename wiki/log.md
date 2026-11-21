@@ -9660,3 +9660,13 @@
 - Generated `wiki/synthesis/2026-11-21/arxiv-ai-search.md` — arXiv Atom API sweep via `export.arxiv.org/api/query` (sorted by submittedDate) over `all:(LLM OR "large language model" OR "foundation model")`, `all:recommendation`, `all:advertising`, `all:"sequential modeling"`, `all:CTR`, `all:(games OR gaming OR "game AI" OR "game design")`; latest submissions 2026-11-19; 20 papers total.
 - Coverage: AI/LLMs — 2611.26619 TideCache (LLM serving), 2611.26553 ROGUE-AI (agentic security), 2611.26601 SoK (LLM vuln capability), 2611.26588 Verify the Verifier, 2611.26545 Geometry of Lies, 2611.26538 LLM GerryMandering, 2611.26309 Client Exits, 2611.25945 BlockJack (KV-cache fault attack), 2611.26562 Barrett's esophagus (pathology foundation model); Recommendation — 2611.26249 (cold-start ranking), 2611.26096 (LSER, Autodesk), 2611.26531 (fleet-scale feature optimization); Advertising — 2611.26060 ISGE (auto-bidding, alimama); Sequential Modeling — 2611.26084 (RL on sequential LM training), 2611.26361 (agent memory, IBM); Games — 2611.26624 PlayCraft, 2611.26012 (agent behavior divergence, match-3), 2611.25981 (multiplayer subgame safety), 2611.25838 ContextRenderer, 2611.26140 (barrier-guarding game).
 - Institution/Company lines are best-effort extractions from the paper abstracts — arXiv's Atom API and HTML pages do not expose author affiliations. New info beyond arXiv metadata: IBM for 2611.26361, alimama (github.com/alimama-tech) for 2611.26060, Autodesk for 2611.26096. No dedicated CTR papers found in this sweep.
+
+## [2026-11-21] synthesis | wq101-alpha-daily (2026-11-21)
+- Report: `wiki/synthesis/2026-11-21/wq101-alpha-daily.md` — WorldQuant 101 Alphas 日报 — 美股 Top 20（Nov 20 收盘快照）
+- Market: S&P 500 6,910.39 (-3.70%); Nasdaq 22,617.73 (-5.28%); Dow 48,147.33 (-1.93%); Russell 2000 2,581.79 (-2.76%); 10Y 4.9120 (-2.77%); VIX 35.89 (+26.20%)；全线回调
+- Universe: 66 只市值>$10B 美股（Equity Screener 行1-100、Day Gainers >$10B、2026-11-20 因子日报宇宙）
+- Method: 因子 f = 5 + 5·tanh(z/2)（横截面标准化）；综合 = 0.7×因子评分 + 0.3×基本面评分（PE 理性 + 股息 + 板块 ETF >0.5%）
+- Data: 个股 OHLCV 自 Yahoo v8/finance/chart（15d）；市值/PE/板块自 Equity Screener；板块 ETF 11 日涨跌自 Select Sector SPDR 日线
+- Updated: `wiki/index.md`, `wiki/log.md`
+- New pages: `wiki/synthesis/2026-11-21/wq101-alpha-daily.md`
+- Flags: US 市场 11 月 21 日（周六）已闭合，数据基准 Nov 20 常规收盘；因子为横截面代理计算非公式回测；不构成投资建议
