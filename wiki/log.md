@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-21] synthesis | game-rl-daily (2026-11-21)
+- Report: `wiki/synthesis/2026-11-21/game-rl-daily.md` — Game RL & Game AI Bot daily digest (2026-11-21); 15 papers, 7 sections (Game RL: MINT, OpenKAGE, Exploiting Aggregate Feedback, MeanQ-BBF, Virtual Double Oracle; Game AI Bot: Think Offline Act in Real Time, Tracking Representations in LLM Reasoning Traces for Iterated Games; Game Foundation Models: Embodied Graph; Procedural Content Generation: 3D GameDev Arena, PixelBench; Game Benchmarks: Movie2Game-Bench, Chess-World-Model; Industry Game AI: Do LLM Agents Still Need To Be Told How to Self-Improve?; Related Techniques: Equilibrium Statistics and Stability in Random Two/Three-Population Evolutionary Games, Learning to Undo).
+- Method: 15 papers new to the wiki; discovery via ~20 arXiv Export API keyword/date-bounded (`submittedDate:[20261110 TO 20261120]`) sweeps + arXiv website search (export API returned HTTP 429 from ~03:05Z onward; `websearch` unavailable); whole-wiki baseline of 9,849 arXiv IDs deduped every included ID (grep-verified); affiliations/abstracts PDF-verified via pypdf first page (12/15; OpenKAGE and Equilibrium Statistics and Stability print no affiliation on PDF first page).
+- Updated: `wiki/index.md` (Synthesis table entry), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-11-21/game-rl-daily.md`.
+- Contradictions/flags: none found; metrics/claims author-reported; non-arXiv proceedings coverage limited to venue/status metadata exposed on arXiv and PDF first pages (3D GameDev Arena public arena; Movie2Game-Bench GUI-model players). Preference file active: `EXTEND.md` (repo root).
+
 ## [2026-11-21] query | 投资热点日报（2026-11-21）
 - Data: Yahoo Finance 个股页面（Quote/Stats/Recent News/Analyst Insights），抓取 ≈ 2026-11-21（US 常规收盘 Nov 20 快照 + 隔夜快照；港/A 常规收盘快照）；新闻入口 Google 与 DuckDuckGo 均被取消/反爬（bot CAPTCHA），事件线多源自 Yahoo 页面 Recent News 与 Analyst Insights（NVDA 数据中心需求→SCI、Anthropic IPO、NIO 自动驾驶交付 Dec 1 财报等）。
 - New pages: `wiki/synthesis/2026-11-21/investment-daily.md`（NVIDIA Q3 财报体现 AI 计算估值跌幅 + 弹性、数据中心需求下游弹性；Hygon -8.75% 体现强势与业绩见顶；A 股 AI 链条分化 AMD/TSM 相对防守；ADR 分化 PDD 反弹/EV 跟随指数）。
