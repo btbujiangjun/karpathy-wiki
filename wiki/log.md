@@ -10,6 +10,13 @@
 - Updated: `wiki/index.md`（Synthesis 表新增 2026-11-21 investment-daily 条目），`wiki/log.md`（本条）。
 - Contradictions/flags: NVIDIA 页面快照（-14.01%）与统计 Previous Close 存在显示矛盾，双报告标注；AMZN/GOOG/META 缺前收（缺数据，标注“未取得”）；各市场热点事件以 Yahoo 页面 Recent News 与 Analyst Insights 为核对来源。
 
+## [2026-11-21] synthesis | tech-report-digest (2026-11-21)
+- Report: `wiki/synthesis/2026-11-21/tech-report-digest.md` (type: synthesis) — LLM 技术报告速览，覆盖 19 家目标机构最新一手 Tech Report/Technical Report/System Card/Model Card/官方技术披露（窗口核验至 2026-11-21）。
+- Window findings: 新增首发 Google DeepMind **Gemini 4 Neon**（2026-11-18, AA Index v5.01 #3, Vals Index #2, 1M 上下文, $3M/$15M per M in/out tokens）、OpenAI **GPT-6.2 System Card**（2026-11-17, Astra/Sol, Preparedness Cyber Critical/Bio High/AI Self-Improvement below High, Astra 首个对外部署达 AI Self-Improvement High, evaluation awareness <3% turns, NanoGPT 训练节省 42.87%）、OpenAI **GPT-Live-1.1 System Card**（2026-10-15, 新增入选, full-duplex 语音模型, 可委托后台模型）、NVIDIA **Nemotron 3.5 Super**（arXiv:2611.22161, 2026-11-17, 混合 MoE Mamba-Transformer, CISPO RL 后训练 via Tinker rank-32 LoRA, SWE-bench Pro V2 86.9%→92.1%, GDP_pdf +13.8）、NVIDIA **Nemotron-Labs-Sigma 连续扩散 LM**（arXiv:2610.02665 v2, 2026-11-12, Phased DMD NFE 2/4/8/16）、ByteDance **Dreamina Seedance 2.5**（2026-07-31, Newsroom 新闻稿）。窗口内 Anthropic Fable 5.2/Mythos 5.2(11-09)、Apple AFM 3+Siri AI、Amazon Nova 2 Lite/Sonic（2025-12-02 AWS 博客, 1M ctx, extended thinking 低/中/高, web grounding+code interpreter）、DeepSeek V4.1-Flash（2026-09-10, 552B MoE, KV Cache 缩小 437 倍）、Meta Muse Spark 1.3(目录未标日期)、NVIDIA 技术博客（2026-09-10, Nemotron 3 Ultra）等按既有口径确认无新一手首发。
+- Updated: `wiki/index.md`（Sources 表 + Synthesis 表新增 2026-11-21 tech-report-digest 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-21/tech-report-digest.md`。
+- Contradictions/flags: 系统卡/系统页/产品目录披露层级不一，参数/训练数据/评测多为厂商自报（OpenAI 评测按 GPT-6.2 System Card 引用, 部分口径与先前速览不可横比）；Meta/Moonshot 等页面在沙箱不可达或目录未标日期（Muse Spark 1.3 目录未标日期, 正文页 404），NVIDIA newsroom 不可达（NVIDIA 用 Technical Blog + 产品页 + 既有速览口径）；Baichuan 窗口未发现可验证新报告；`websearch` 不可用, arXiv 主端点受限（API 429 限流）, 部分机构以既有速览口径为准。
+
 ## [2026-11-21] synthesis | arxiv-paper-check (2026-11-21)
 - Report: `wiki/synthesis/2026-11-21/arxiv-paper-check.md` — AI & CTR paper check for 2026-11-21; window [2026-11-20 02:22Z → 2026-11-21 02:22Z]; AI (`cat:cs.AI`): 0 new (newest 2611.26624v1 PlayCraft, submitted 2026-11-19T18:59:34Z); CTR (`cat:cs.IR`): 0 new (newest 2611.26609v1 Variants of Beam Search for DiskANN, submitted 2026-11-19T18:57:05Z); keyword sweeps (`ti:CTR`, `ti:"click through rate" OR ti:CTR OR abs:"click through rate"`): 0 new (newest 2611.25659v1 DNA, submitted 2026-11-19T07:40:54Z).
 - Updated: `wiki/index.md` (Sources table + Synthesis table entries for arxiv-paper-check 2026-11-21), `wiki/log.md` (this entry).
