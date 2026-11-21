@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-21] query | 投资热点日报（2026-11-21）
+- Data: Yahoo Finance 个股页面（Quote/Stats/Recent News/Analyst Insights），抓取 ≈ 2026-11-21（US 常规收盘 Nov 20 快照 + 隔夜快照；港/A 常规收盘快照）；新闻入口 Google 与 DuckDuckGo 均被取消/反爬（bot CAPTCHA），事件线多源自 Yahoo 页面 Recent News 与 Analyst Insights（NVDA 数据中心需求→SCI、Anthropic IPO、NIO 自动驾驶交付 Dec 1 财报等）。
+- New pages: `wiki/synthesis/2026-11-21/investment-daily.md`（NVIDIA Q3 财报体现 AI 计算估值跌幅 + 弹性、数据中心需求下游弹性；Hygon -8.75% 体现强势与业绩见顶；A 股 AI 链条分化 AMD/TSM 相对防守；ADR 分化 PDD 反弹/EV 跟随指数）。
+- Updated: `wiki/index.md`（Synthesis 表新增 2026-11-21 investment-daily 条目），`wiki/log.md`（本条）。
+- Contradictions/flags: NVIDIA 页面快照（-14.01%）与统计 Previous Close 存在显示矛盾，双报告标注；AMZN/GOOG/META 缺前收（缺数据，标注“未取得”）；各市场热点事件以 Yahoo 页面 Recent News 与 Analyst Insights 为核对来源。
+
 ## [2026-11-21] synthesis | arxiv-paper-check (2026-11-21)
 - Report: `wiki/synthesis/2026-11-21/arxiv-paper-check.md` — AI & CTR paper check for 2026-11-21; window [2026-11-20 02:22Z → 2026-11-21 02:22Z]; AI (`cat:cs.AI`): 0 new (newest 2611.26624v1 PlayCraft, submitted 2026-11-19T18:59:34Z); CTR (`cat:cs.IR`): 0 new (newest 2611.26609v1 Variants of Beam Search for DiskANN, submitted 2026-11-19T18:57:05Z); keyword sweeps (`ti:CTR`, `ti:"click through rate" OR ti:CTR OR abs:"click through rate"`): 0 new (newest 2611.25659v1 DNA, submitted 2026-11-19T07:40:54Z).
 - Updated: `wiki/index.md` (Sources table + Synthesis table entries for arxiv-paper-check 2026-11-21), `wiki/log.md` (this entry).
