@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-21] synthesis | arxiv-paper-check (2026-11-21)
+- Report: `wiki/synthesis/2026-11-21/arxiv-paper-check.md` — AI & CTR paper check for 2026-11-21; window [2026-11-20 02:22Z → 2026-11-21 02:22Z]; AI (`cat:cs.AI`): 0 new (newest 2611.26624v1 PlayCraft, submitted 2026-11-19T18:59:34Z); CTR (`cat:cs.IR`): 0 new (newest 2611.26609v1 Variants of Beam Search for DiskANN, submitted 2026-11-19T18:57:05Z); keyword sweeps (`ti:CTR`, `ti:"click through rate" OR ti:CTR OR abs:"click through rate"`): 0 new (newest 2611.25659v1 DNA, submitted 2026-11-19T07:40:54Z).
+- Updated: `wiki/index.md` (Sources table + Synthesis table entries for arxiv-paper-check 2026-11-21), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-11-21/arxiv-paper-check.md`.
+- Contradictions/flags: 0 new AI/CTR papers — arXiv quiet in the last-24h window; abstract/metadata-level screening only; no picks (nothing to summarize); no ID collisions applicable.
+
 ## [2026-11-20] synthesis | wq101-alpha-daily (2026-11-20)
 - Report: `wiki/synthesis/2026-11-20/wq101-alpha-daily.md` — WorldQuant 101 Alpha 美股 Top 20 精选（2026-11-20），基于 Yahoo Finance v8/finance/chart（interval=1d, range=15d）与 finance.yahoo.com/quote 页面嵌入 JSON（市值/PE/股息/52 周/板块），61 只市值>$10B 美股做公式级横截面代理计算（Alpha#1/#6/#12/#19/#30/#41/#53）与综合打分。
 - Highlights: Top 20 为 FSLR(5)/ASML(5)/MSFT(5)/MU(5)/DE(5)/GOOGL(5)/DELL(5)/PFE(5)/CAT(5)/NEE(5)/ORCL(5)/META(5)/INTU(5)/TSM(5)/UNH(5)/MMM(5)/XOM(5)/AMZN(4)/NVDA(4)/AAPL(4)；含逐股因子值方向+强度、因子评分/基本面评分/综合评分、投资逻辑与风险、排名总表与板块分类汇总。市场概览：^SPX 7,175.83 (-2.02%)、^IXIC 23,879.20 (-2.25%)、^DJI 49,097.06 (-2.19%)、^VIX 28.44 (+15.80%)；市场广度（^NYA）略降。
@@ -9623,3 +9629,14 @@
 - New pages: `wiki/synthesis/2026-11-20/investment-daily.md`.
 - Sources/method: `webfetch` 抓取 Yahoo Finance 指数/个股页面文本（Summary/Performance Overview/News/People Also Watch）；`websearch` 不可用；Yahoo API 受限/被限流；Google News RSS 等异常。未采信抓取中出现的异常或疑似不实新闻标题。
 - Contradictions/flags: NVIDIA 页面 YTD 显示 -21.54% 与其他数据源存在矛盾，已标注；未取得条目：USTC (603019.SH), LONGI (601012.SH), ZK（极氪 US ADR，Yahoo 页面数据为空）, BIDU US ADR, 1347.HK (Hua Hong). 所有内容仅用于研究整理，不构成投资建议。
+
+## [2026-11-21] synthesis | arxiv-daily
+- Generated daily arXiv digest at wiki/synthesis/2026-11-21/arxiv-daily.md
+- 27 papers across: AI/LLMs (8), Recommendation (5), Advertising & CTR (7), Sequential Modeling (3), Games (3)
+- Sweeps: cat:cs.CL, cat:cs.IR, cat:cs.LG, cat:cs.GT, all:advertising (sorted by submittedDate, newest-first)
+- All paper-page data verified against arXiv abs pages (title, authors, abstract, categories, dates); institutions from arXiv where stated
+
+## [2026-11-21] query | arXiv AI Search (2026-11-21)
+- Generated `wiki/synthesis/2026-11-21/arxiv-ai-search.md` — arXiv Atom API sweep via `export.arxiv.org/api/query` (sorted by submittedDate) over `all:(LLM OR "large language model" OR "foundation model")`, `all:recommendation`, `all:advertising`, `all:"sequential modeling"`, `all:CTR`, `all:(games OR gaming OR "game AI" OR "game design")`; latest submissions 2026-11-19; 20 papers total.
+- Coverage: AI/LLMs — 2611.26619 TideCache (LLM serving), 2611.26553 ROGUE-AI (agentic security), 2611.26601 SoK (LLM vuln capability), 2611.26588 Verify the Verifier, 2611.26545 Geometry of Lies, 2611.26538 LLM GerryMandering, 2611.26309 Client Exits, 2611.25945 BlockJack (KV-cache fault attack), 2611.26562 Barrett's esophagus (pathology foundation model); Recommendation — 2611.26249 (cold-start ranking), 2611.26096 (LSER, Autodesk), 2611.26531 (fleet-scale feature optimization); Advertising — 2611.26060 ISGE (auto-bidding, alimama); Sequential Modeling — 2611.26084 (RL on sequential LM training), 2611.26361 (agent memory, IBM); Games — 2611.26624 PlayCraft, 2611.26012 (agent behavior divergence, match-3), 2611.25981 (multiplayer subgame safety), 2611.25838 ContextRenderer, 2611.26140 (barrier-guarding game).
+- Institution/Company lines are best-effort extractions from the paper abstracts — arXiv's Atom API and HTML pages do not expose author affiliations. New info beyond arXiv metadata: IBM for 2611.26361, alimama (github.com/alimama-tech) for 2611.26060, Autodesk for 2611.26096. No dedicated CTR papers found in this sweep.
