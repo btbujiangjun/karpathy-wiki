@@ -11,6 +11,12 @@
 - New pages: `wiki/synthesis/2026-11-22/tech-report-digest.md`。
 - Contradictions/flags: 系统卡/模型卡/官方文档披露层级不一，参数量与训练数据量多为厂商自报（OpenAI GPT-6.2、NVIDIA Nemotron 等，详见各条“核心参数”）；Baichuan 网站暂不可访问；Meta AI/Mistral/xAI 站点本窗口传输失败/超时，沿用 2026-11-21 速览口径；不构成投资建议。
 
+## [2026-11-22] synthesis | arxiv-paper-check (2026-11-22)
+- Report: `wiki/synthesis/2026-11-22/arxiv-paper-check.md` — AI & CTR paper check for 2026-11-22; window: last 24h (2026-11-21 → 2026-11-22); AI (`cat:cs.AI`): 0 new (newest 2611.26624v1 PlayCraft, 2026-11-19T18:59:34Z); CTR (`cat:cs.IR`): 0 new (newest 2611.26609v1 Variants of Beam Search for DiskANN, 2026-11-19T18:57:05Z); keyword sweep (`ti:CTR`, `ti:"click through rate" OR abs:"click through rate"`): 0/unavailable — HTTP 429 rate-limited (4 attempts, ~04:45–05:10 UTC).
+- Updated: `wiki/index.md` (Sources table + Synthesis table entries for arxiv-paper-check 2026-11-22), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-11-22/arxiv-paper-check.md`.
+- Contradictions/flags: 0 new AI/CTR papers — arXiv quiet in the window; newest submissions (2611.26624v1, 2611.26609v1) already covered by the 2026-11-21 sibling reports; keyword sweep not independently confirmed this run due to API rate limiting; abstract/metadata-level screening only, no full-text review.
+
 ## [2026-11-21] synthesis | game-rl-daily (2026-11-21)
 - Report: `wiki/synthesis/2026-11-21/game-rl-daily.md` — Game RL & Game AI Bot daily digest (2026-11-21); 15 papers, 7 sections (Game RL: MINT, OpenKAGE, Exploiting Aggregate Feedback, MeanQ-BBF, Virtual Double Oracle; Game AI Bot: Think Offline Act in Real Time, Tracking Representations in LLM Reasoning Traces for Iterated Games; Game Foundation Models: Embodied Graph; Procedural Content Generation: 3D GameDev Arena, PixelBench; Game Benchmarks: Movie2Game-Bench, Chess-World-Model; Industry Game AI: Do LLM Agents Still Need To Be Told How to Self-Improve?; Related Techniques: Equilibrium Statistics and Stability in Random Two/Three-Population Evolutionary Games, Learning to Undo).
 - Method: 15 papers new to the wiki; discovery via ~20 arXiv Export API keyword/date-bounded (`submittedDate:[20261110 TO 20261120]`) sweeps + arXiv website search (export API returned HTTP 429 from ~03:05Z onward; `websearch` unavailable); whole-wiki baseline of 9,849 arXiv IDs deduped every included ID (grep-verified); affiliations/abstracts PDF-verified via pypdf first page (12/15; OpenKAGE and Equilibrium Statistics and Stability print no affiliation on PDF first page).
