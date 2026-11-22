@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-22] synthesis | tech-report-digest (2026-11-22)
+- Report: `wiki/synthesis/2026-11-22/tech-report-digest.md` — LLM 技术报告速览，覆盖 20 家目标机构（DeepSeek、OpenAI、Anthropic、Google DeepMind、NVIDIA、Meta AI、Mistral AI、Qwen、Yi、Baichuan、Microsoft、Apple、xAI、Amazon Nova、Zhipu AI、InternLM、Moonshot AI、StepFun、ByteDance）最新一手 Tech Report/Technical Report/System Card/Model Card 汇总。
+- Window findings: 新增首发 **OpenAI ChatGPT Images 2.6 系统卡**（2026-11-04, GPT-Image-2.6 Sunburst/Flare, 自报 Sunburst 安全生成 75.50%/未阻止 22.78% vs 基线 76.15%/21.94%, Flare 75.04%/2.14% vs 基线 78.36%/1.49%, 均统计显著）、**Qwen4-Max 系统卡**（Alibaba Cloud Community 2026-11-16/17, 总参 2.4T/激活 71B/1M 上下文, Qwen4 架构 Gated DeltaNet+Qwen Sparse Attention+Gated Residual+N-gram embedding 328B, Live Delivery, Last Secure Code Bench 安全功能性通过率 31.8% vs Qwen3.8-Max 22.0%）；窗口内 Google Gemini 4 Neon（11-18, AA Index v5.01 #3）、OpenAI GPT-6.2 System Card（11-17）、Anthropic Fable 5.2/Mythos 5.2（11-09）、NVIDIA Nemotron 3.5 Super（2611.22161, 11-17）等按既有口径确认无新首发；Baichuan 网站不可达，无可验证新报告。
+- Updated: `wiki/index.md`（Sources 表 + Synthesis 表新增 2026-11-22 tech-report-digest 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-22/tech-report-digest.md`。
+- Contradictions/flags: 系统卡/模型卡/官方文档披露层级不一，参数量与训练数据量多为厂商自报（OpenAI GPT-6.2、NVIDIA Nemotron 等，详见各条“核心参数”）；Baichuan 网站暂不可访问；Meta AI/Mistral/xAI 站点本窗口传输失败/超时，沿用 2026-11-21 速览口径；不构成投资建议。
+
 ## [2026-11-21] synthesis | game-rl-daily (2026-11-21)
 - Report: `wiki/synthesis/2026-11-21/game-rl-daily.md` — Game RL & Game AI Bot daily digest (2026-11-21); 15 papers, 7 sections (Game RL: MINT, OpenKAGE, Exploiting Aggregate Feedback, MeanQ-BBF, Virtual Double Oracle; Game AI Bot: Think Offline Act in Real Time, Tracking Representations in LLM Reasoning Traces for Iterated Games; Game Foundation Models: Embodied Graph; Procedural Content Generation: 3D GameDev Arena, PixelBench; Game Benchmarks: Movie2Game-Bench, Chess-World-Model; Industry Game AI: Do LLM Agents Still Need To Be Told How to Self-Improve?; Related Techniques: Equilibrium Statistics and Stability in Random Two/Three-Population Evolutionary Games, Learning to Undo).
 - Method: 15 papers new to the wiki; discovery via ~20 arXiv Export API keyword/date-bounded (`submittedDate:[20261110 TO 20261120]`) sweeps + arXiv website search (export API returned HTTP 429 from ~03:05Z onward; `websearch` unavailable); whole-wiki baseline of 9,849 arXiv IDs deduped every included ID (grep-verified); affiliations/abstracts PDF-verified via pypdf first page (12/15; OpenKAGE and Equilibrium Statistics and Stability print no affiliation on PDF first page).
