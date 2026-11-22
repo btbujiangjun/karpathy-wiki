@@ -9707,3 +9707,10 @@
 - Deliverables: 按要求对各市场/标的提供公司中英文名、代码、板块/交易所、热点事件、市场反应与投资逻辑；指数与主题总览；风险提示与数据限制说明
 - Data sources/method: Yahoo Finance 页面（^GSPC/^IXIC/^DJI/^VIX 指数页面；个股页面 Quote/Stats 段；港股平台股抓取）；Yahoo live markets 页（周日事件）；`websearch` 不可用、quote/chart API（401/Too Many Requests）不可用，已标注
 - Flags: 今日三地均休市，价格面停留在最近一次收盘（Nov 20 常规收盘）；NVIDIA 页面数据与 Live 事件面存在不一致，已标注；未取得条目（中科曙光/中微公司/新易盛/三六零/BIDU US ADR/SMIC 11/21/Kuaishou/NetEase 11/21 等）
+
+## [2026-11-22] synthesis | wq101-alpha-daily (2026-11-22)
+- Report: `wiki/synthesis/2026-11-22/wq101-alpha-daily.md` — WorldQuant 101 Alphas 日报 — 美股 Top 20 精选（2026-11-22）。
+- Highlights: 市场下跌中 Energy/Utilities/Industrials/Healthcare/Consumer Defensive 反弹（Energy +2.58%、Utilities +2.61%），AI 跌势退散（Nvidia -11.17%、AMD -10.17%、Broadcom -10.17%、Micron -11.58%、CoreWeave -9.07% 等）；Top 20 = FICO/GPN/EC/AAPL/AMZN/WSE/GIS/ZS/HDB/RKT/NOK/GOOGL/INTC/MU/AVGO/SNDK/NFLX/NU/F/JNJ；含逐股因子信号解读（Alpha#53/#12/#41/#19/#1）、综合评分（1–10）、投资逻辑与风险、排名总表与板块汇总。
+- Updated: `wiki/index.md`（Synthesis 表新增 2026-11-22 条目），`wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-22/wq101-alpha-daily.md`。
+- Contradictions/flags: 市场以 Sunday Nov 22 页面快照（常规收盘 Nov 20/21）为基准；#53 正值 + #41 正值 同时爆发于反转周期中后期的标的属正常（上行偏向），需区分"反转"与"趋势延续"；LULU 疑似拆股事件点需复核（单标的价格/指数基准）；不构成投资建议。
