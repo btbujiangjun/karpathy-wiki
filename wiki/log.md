@@ -9686,3 +9686,11 @@
 - Updated: `wiki/index.md`, `wiki/log.md`
 - New pages: `wiki/synthesis/2026-11-21/wq101-alpha-daily.md`
 - Flags: US 市场 11 月 21 日（周六）已闭合，数据基准 Nov 20 常规收盘；因子为横截面代理计算非公式回测；不构成投资建议
+
+## [2026-11-22] synthesis | investment-daily (2026-11-22)
+- Report: `wiki/synthesis/2026-11-22/investment-daily.md` (type: synthesis) — 投资热点日报 — 美股/港股/A 股/中榄股/中榄新能源/AI（2026-11-22；今日周日休市，数据基准：美股常规收盘 Nov 20 + 隔夜快照，港/A 为 11/21 常规收盘快照）
+- Updated: `wiki/index.md`（新增 2026-11-22 investment-daily 条目）, `wiki/log.md`（本条）
+- New pages: `wiki/synthesis/2026-11-22/investment-daily.md`
+- Deliverables: 按要求对各市场/标的提供公司中英文名、代码、板块/交易所、热点事件、市场反应与投资逻辑；指数与主题总览；风险提示与数据限制说明
+- Data sources/method: Yahoo Finance 页面（^GSPC/^IXIC/^DJI/^VIX 指数页面；个股页面 Quote/Stats 段；港股平台股抓取）；Yahoo live markets 页（周日事件）；`websearch` 不可用、quote/chart API（401/Too Many Requests）不可用，已标注
+- Flags: 今日三地均休市，价格面停留在最近一次收盘（Nov 20 常规收盘）；NVIDIA 页面数据与 Live 事件面存在不一致，已标注；未取得条目（中科曙光/中微公司/新易盛/三六零/BIDU US ADR/SMIC 11/21/Kuaishou/NetEase 11/21 等）
