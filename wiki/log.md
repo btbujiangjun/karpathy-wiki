@@ -9813,3 +9813,14 @@
 - New pages: `wiki/synthesis/2026-11-23/wq101-alpha-daily.md`。
 - Contradictions: 无。
 - Flags: 数据基准 Nov 20 常规收盘 + Yahoo 休市快照；部分端点报价有细微口径差异（如 AAPL 345.00 vs 342.56）；以图表端点 OHLCV 为主筹计算口径；非公式回测，不构成投资建议。
+
+## [2026-11-23] synthesis | investment-daily (2026-11-23)
+- Report: `wiki/synthesis/2026-11-23/investment-daily.md` — 投资热点日报 — 美股/港股/A 股/中榄股/新能源与 AI 主题（2026-11-23）
+- Method: Yahoo Finance 实时报价（Mag 7 + AI）+ 新浪财经 hq.sinajs.cn 实时行情（港股/A 股）
+- Market: ^IXIC -5.28%（参考 Nov 20 常规收盘 22,617.73）；^GSPC -3.70%（参考 Nov 20 收盘 6,910.39）；美股科技/AI 板块同步大跌（NVDA -14.01%、TSM -9.48%、AVGO -12.19%、TSLA -7.64%、AMZN -4.10%、ORCL -8.48%、PLTR -6.63%、MSFT -2.77%、GOOG -2.59%）
+- HK: Tencent 00700 -1.744%（338.000）；Alibaba 09988 -1.800%（81.850）；Meituan 03690 -2.857%（64.600）；NetEase 09999 +3.636%（159.600）；Kuaishou 01024 -2.498%；SMIC 00981 -2.077%（48.100）
+- A-share: 寒武约 688256 -2.05%（901.120）；海光信息 688041 -2.61%（159.960）；中科曙光 603019 -0.25%（72.910）；科大讯飞 002230 -0.41%（34.360）；奇虎360/三六零 601360 -1.48%（7.300）；中际旭创 300308 +4.78%（412.010）；新易盛 300502 +8.16%（178.480）；北方华创 002371 -6.82%（539.500）；中微公司 688012 -5.34%（247.530）；SMIC 688981 -5.55%（118.500）
+- Updated: `wiki/index.md`（Synthesis 表新增 2026-11-23 investment-daily 条目）, `wiki/log.md`（本条）
+- New pages: `wiki/synthesis/2026-11-23/investment-daily.md`
+- Contradictions: none
+- Flags: 部分美股（META/AMD/CRM/SNOW/BIDU/C3.ai）及中榄股/新能源报价数据未获取（Yahoo/SINA 数据源限制）
