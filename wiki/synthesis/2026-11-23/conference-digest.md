@@ -1013,18 +1013,18 @@ Live 工具分折：可调整的新闻时间范围（PublishDate_time_to 扩大 
 **Abstract**: Connecting hand input in mixed reality (MR) to a nearby physical device typically requires an integration written in advance for that device, its transport and the mapping. ControlAnything defers this integration to the moment of use and assigns it to a coding agent. On a Meta Quest 3, the wearer selects an object outlined by SAM 3.1 and states what their hands should control. An agent built on Meta's Muse Spark model then writes a connector program on the wearer's laptop, tests it against the live device through hand-written MIDI, Bluetooth and key-press transports, and returns augmented-reality (AR) controls, a per-frame hand program, or both. These outputs are a form of generative UI, interfaces created by an AI model; here, the agent also generates and tests the code that binds the interface to a physical device. In a single-session technical evaluation with the author as the only wearer, nine of ten requests addressing five targets reached a ready state, and the wearer stopped one. The median time to ready was 32.5 s (range 24.9-57.8 s, excluding speech transcription); sequential model calls accounted for a median of 89.9% of this time, and 91.7% of input tokens came from the prompt cache. The system's evidence of success extends to transport acknowledgements but not to physical effects. These findings point to connector reuse and the observation of effects through the headset's own sensors as next steps for on-demand device integration in MR. A user study with first-time wearers is planned.
 
 
-### Benchmarks: Agent Verifiers in Counterfactual Analysis: A Pilot Study Benchmarking Agentic Heterogeneous Treatment Effects ()
+### Benchmarks: Agent Verifiers in Counterfactual Analysis: A Pilot Study Benchmarking Agentic Heterogeneous Treatment Effects (反事实分析中的 Agent 验证器：对异构干预处理收益的基准研究)
 
 - **arXiv**: [2611.23621](https://arxiv.org/abs/2611.23621) · **Venue**: Benchmarks · **Published**: 2026-11-17
 - **Title (English)**: Agent Verifiers in Counterfactual Analysis: A Pilot Study Benchmarking Agentic Heterogeneous Treatment Effects
-- **Title (Chinese)**: 
+- **Title (Chinese)**: 反事实分析中的 Agent 验证器：对异构干预处理收益的基准研究
 - **Authors**: Satiyabooshan Murugaboopathy, Entejar Alam, Adel Daoud, Connor T. Jerzak
 - **Affiliation**: 1Institute for Analytical Sociology, Linköping University, Linköping, Sweden; 2AI and Global Development Lab 3Uppsala University, Uppsala, Sweden; 4NLP@DSAI, Chalmers University of Technology, Gothenburg, Sweden; 5Department of Government, The University of Texas at Austin, Austin, TX, USA; 6Department of Statistics and Data Sciences, The University of Texas at Austin, Austin, TX, USA
 
-**Problem background**: 
+**Problem background**: LLM Agent 可通过检索快速移动的本地上下文扩展协变量空间，挖掘慢速基线协变量遗漏的人群差异；验证困难在于处理效应未观测、检索泄漏、编码器泄漏等。
 
 **Methodology & innovations**:
-
+反事实假设推进 Agent 任务发现，填补协变量发现中不可观测性的空白。
 
 **Comparison with prior methods**: Comparison with prior methods: see the paper — the abstract documents how this work relates to prior approaches.
 
