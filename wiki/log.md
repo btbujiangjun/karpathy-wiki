@@ -9752,3 +9752,11 @@
 - Updated: `wiki/index.md` (Sources table + Synthesis table: added game-rl-daily 2026-11-22 entries), `wiki/log.md` (this entry).
 - New pages: `wiki/synthesis/2026-11-22/game-rl-daily.md`.
 - Contradictions/flags: none found; metrics/claims author-reported; non-arXiv proceedings coverage limited to venue/status metadata exposed on arXiv (e.g., CoToan "Accepted at RIVF 2027", Learning Robust Social Strategies "Published in TMRL (10/2026)").
+
+## [2026-11-23] synthesis | arxiv-paper-check (2026-11-23)
+- Report: `wiki/synthesis/2026-11-23/arxiv-paper-check.md` — 0 new AI/CTR papers in the strict last-24h window (2026-11-22 → 2026-11-23); arXiv quiet.
+- Lanes: AI `cat:cs.AI` → 0; CTR `cat:cs.IR` → 0 (last seen 2611.26609v1, 2026-11-19); CTR `cat:cs.LG`/`stat.ML` → 0; keyword sweep (`abs:"click through rate" OR ti:CTR`) → HTTP 429 rate-limited, unavailable this run.
+- Newest in query window: `2611.27206v1` (cs.AI+cs.LG, 2026-11-20T06:45:57Z) + ~2611.272xx batch (2026-11-20, 06:21–06:45 UTC) — already covered by the 2026-11-20 batch.
+- Updated: `wiki/index.md` (Sources table entry for arxiv-paper-check 2026-11-23), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-11-23/arxiv-paper-check.md`.
+- Contradictions/flags: none (window empty); keyword sweep coverage unconfirmed this run (HTTP 429); abstract/metadata-level screening only, no full-text review.
