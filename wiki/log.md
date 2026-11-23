@@ -9800,7 +9800,7 @@
 ## [2026-11-23] synthesis | wq101-alpha-daily (2026-11-23)
 - Report: `wiki/synthesis/2026-11-23/wq101-alpha-daily.md` — WorldQuant 101 Alpha 美股 Top 20 精选（2026-11-23）；市场: S&P 500 6,910.39 (−3.70%)、Nasdaq 22,617.73 (−5.28%)、Dow 48,147.33 (−1.93%)、VIX 35.89 (+26.20%)、10Y 4.912（−2.77%）；科技（XLK）−7.27%（最弱）、XLB −2.19%、XLI −3.09%、XLY −2.95%、XLF −1.82%、XLRE −0.98%、XLU −0.74%、XLE −0.62%、XLP +0.67%、XLV −0.12%；AI/半导体链整体承压（AMD −13.25%、AVGO −12.19%、TSM −9.48%、MU −13.89%、ASML −6.63%、MPWR −11.87%），但因子得分共振强。
 - Method: Yahoo Finance `v8/finance/chart`（interval=1d, range=20d）日线 OHLCV 横截面代理；websearch 工具当日持续被取消，市场热点推导基于实时快照 + 因子得分；指数/ETF 数据亦取自 v8 图表 API；市值取自近期 wq101 报告（2026-11-15→22），极少数新入池股可能缺少最新值。
-- Updated: `wiki/index.md`（Synthesis 表合并/修正 2026-11-23 条目，文件改为按用户框架的分析），`wiki/log.md`（本条）。
+- Updated: `wiki/index.md`（Sources 表+Synthesis 表合并/修正 2026-11-23 条目，文件改为按用户框架的分析），`wiki/log.md`（本条）。
 - New pages: `wiki/synthesis/2026-11-23/wq101-alpha-daily.md`。
 - Contradictions/flags: 自动化系统既有 2026-11-23 wq101-alpha-daily 条目（提交 9fdce76）已存在，本报告覆盖同路径文件，两条 log 条目共存；不构成投资建议。
 
