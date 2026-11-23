@@ -9796,3 +9796,13 @@
 - Updated: `wiki/index.md` (Sources table entry + Synthesis table row), `wiki/log.md` (this entry).
 - New pages: `wiki/synthesis/2026-11-23/conference-digest.md`.
 - Contradictions/flags: none found; affiliations verified from PDF first pages where extractable; numbers marked author-reported.
+
+## [2026-11-23] synthesis | wq101-alpha-daily (2026-11-23)
+- Report: `wiki/synthesis/2026-11-23/wq101-alpha-daily.md` — WorldQuant 101 Alpha 美股 Top 20 精选（2026-11-23）—— Yahoo Finance v8/finance/chart（interval=1d, range=1mo）日线 OHLCV + Yahoo 报价页 Market Cap，22 只市值>$10B 美股（TSM、MU、AVGO、TSLA、NVDA、FSLR、INTC、UNH、SNDK、MSFT、NU、NFLX、SOFI、AMD、AAPL、GRAB、V、COST、F、MA 为 Top 20；AMD 综合 8 分，余 18 只 10 分；NOK、PEP 次弱被排除）按 WQ101 因子（#1/#6/#12/#19/#30/#41/#53）横截面代理综合打分。
+- Method: Yahoo v8/finance/chart 逐股日线 OHLCV（range=1mo）；市值为 Yahoo 报价页 Market Cap（intraday）；因子值为公式代理值（Pearson r、ΔX 等），非公式回测；候选池来自 Most Active 活跃榜 + 财经报价页筛选。
+- Market: S&P 500 常规收盘 Nov 20 6,910.39（−3.70%）；futures 快照：S&P +2.28%、Nasdaq +3.04%、Dow +1.63%、VIX 35.89 (+26.20%)、10Y 4.912 (−2.77%)、Gold 3,606.30 (+2.59%)、Bitcoin 61,188.43 (+3.31%)。
+- Top 20 signal highlights: ΔX（Alpha#53/30）主体为正向：TSM ΔX≈+108.18、MU ΔX≈+7.78、AVGO ΔX≈+11.15、TSLA ΔX≈+18.60、INTC ΔX≈+28.70、SNDK ΔX≈+11.23、NU ΔX≈+18.17、FSLR ΔX≈+16.36、MA ΔX≈+7.07；量价背离（Alpha#12）正向：TSM ≈+33.38、MU ≈+95.93、AVGO ≈+42.24、TSLA ≈+28.59、SNDK ≈+15.16、NVDA ≈+20.45；动量（Alpha#1）正向 r≈0.79–0.97：TSM、FSLR、MSFT、SNDK、SOFI、V、UNH、TSLA、AAPL。
+- Updated: `wiki/index.md`（Sources 表 + Synthesis 表新增 2026-11-23 wq101-alpha-daily 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-23/wq101-alpha-daily.md`。
+- Contradictions: 无。
+- Flags: 数据基准 Nov 20 常规收盘 + Yahoo 休市快照；部分端点报价有细微口径差异（如 AAPL 345.00 vs 342.56）；以图表端点 OHLCV 为主筹计算口径；非公式回测，不构成投资建议。
