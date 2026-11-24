@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-24] synthesis | game-rl-daily (2026-11-24)
+- Report: `wiki/synthesis/2026-11-24/game-rl-daily.md` — Game RL & Game AI Bot — Daily Digest (2026-11-24): new arXiv papers via Export API sorted by submittedDate, window ≈ 2026-11-21 → 2026-11-24; abstracts/authors/dates from Atom feed; affiliations not stated on arXiv for most.
+- Sections: Game RL (Stack more levels Mario / Learning to Undo Atari / In-Context Adaptivity poker / Martian Arts VR sparring / holographic gradients), Game AI Bot (AutoPILOT/AFK-Bench / PlayScriptBench / AstronautBench / PlayCraft / When Agents Play Differently), Game Foundation Models (Gamer / GameRealm / Script2Play), PCG (PCGRL Platformers / LLM Program Search / Craftax goal compilers / Grover-oracle quantum MC), Benchmarks (AutoPILOT AFK-Bench / PlayScriptBench / AstronautBench / MANGO Arena), Industry (UnityBench-Mini3D; no named studio papers found), Related (Learning to Undo / When Agents Play Differently / Piccolo).
+- Method: arXiv Export API (`export.arxiv.org/api/query`, sorted by submittedDate) with ~12 topic queries; window ~2026-11-21 → 2026-11-24; deduped vs whole-wiki baseline (grep `wiki/synthesis/**`); affiliations from arXiv metadata (many flagged "Not stated"); all metrics/claims author-reported.
+- Updated: `wiki/index.md` (Sources 表新增 2026-11-24 game-rl-daily 条目), `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-24/game-rl-daily.md`.
+- Contradictions/flags: none new; industry-game-ai coverage gap noted honestly (no EA/Ubisoft/Riot/etc. papers found); confirmed claims about AutoPILOT vs VISTA are derived from the paper's reported numbers (68.6% vs 38.3% real-time, 80.0% vs 42.9% GameWorld, +~30pts real, ~1/5 API cost); MC Grover-oracle paper is quantum PCG (2610.33139v1).
+
 ## [2026-11-24] synthesis | arxiv-paper-check (2026-11-24)
 - Report: `wiki/synthesis/2026-11-24/arxiv-paper-check.md` — AI & CTR paper check for 2026-11-24 — **0 new AI/CTR papers in the strict last-24h window (2026-11-23→2026-11-24); arXiv quiet** — freshest available: cs.AI 2611.28671v1 (The Evaluation Substrate Matters: Benchmarking Multi-Agent Serving Substrates, 2026-11-21T08:50Z), cs.IR 2611.28645v1 (PROSPER: LLMs as Sparse Retrievers for First-Stage Product Search, 2026-11-21T08:14Z), cs.LG/stat.ML 2611.27983v1 (Optimal Linear Regression Without a Variance, 2026-11-20).
 - Method: arXiv Export API (`export.arxiv.org/api/query`, sorted by `submittedDate`): `cat:cs.AI`; `cat:cs.IR+OR+cat:cs.LG+OR+cat:stat.ML`; keyword sweep `abs:"click through rate" OR ti:CTR`; window 2026-11-23 → 2026-11-24 (today).
