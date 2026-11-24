@@ -9884,3 +9884,10 @@
 - Notes: 商业 API 限流，本次未获取 Open/High/Low/Volume 历史，Alpha#6/#12/#19/#53 暂不计算；市值取自 Yahoo 图表页 escaped JSON（如 EQIX $99B、DELL $213B）；候选池 65 只。
 - Updated: `wiki/index.md`（2026-11-24 wq101-alpha-daily 条目描述更新）, `wiki/log.md`（本条）。
 - Contradictions: 无。
+
+## [2026-11-24] synthesis | investment-daily (2026-11-24)
+- Report: `wiki/synthesis/2026-11-24/investment-daily.md` — 投资热点日报 — 美股/港股/A 股/中榄股/中榄新能源/AI（2026-11-24）。
+- Method: Yahoo Finance 图表端点（`v8/finance/chart/{symbol}?interval=1d&range=1d`，meta：regularMarketPrice / regularMarketChangePercent）获取美股已获标的（NVDA +31.483%、AMZN +3.472%、AAPL +1.903%、AMD +6.85%、TSLA +11.463%）；Yahoo Finance 首页（`finance.yahoo.com`）快照获取 ^GSPC +4.73%、^IXIC +6.51%、期货约 +0.2% 等市场数据；因 API 持续 HTTP 429，港股/A 股/中榄股等标的标注“未获取（429 限流，待复核）”。
+- Updated: `wiki/index.md`（Sources 表新增 2026-11-24 investment-daily 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-24/investment-daily.md`。
+- Contradictions/Flags: 部分标的因 429 未获取报价，已标“未获取”，不代表下跌/企稳；数据基准为常规收盘口径（美股隔夜快照 + 首页快照混合）。
