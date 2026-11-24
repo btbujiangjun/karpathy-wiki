@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-24] synthesis | arxiv-paper-check (2026-11-24)
+- Report: `wiki/synthesis/2026-11-24/arxiv-paper-check.md` — AI & CTR paper check for 2026-11-24 — **0 new AI/CTR papers in the strict last-24h window (2026-11-23→2026-11-24); arXiv quiet** — freshest available: cs.AI 2611.28671v1 (The Evaluation Substrate Matters: Benchmarking Multi-Agent Serving Substrates, 2026-11-21T08:50Z), cs.IR 2611.28645v1 (PROSPER: LLMs as Sparse Retrievers for First-Stage Product Search, 2026-11-21T08:14Z), cs.LG/stat.ML 2611.27983v1 (Optimal Linear Regression Without a Variance, 2026-11-20).
+- Method: arXiv Export API (`export.arxiv.org/api/query`, sorted by `submittedDate`): `cat:cs.AI`; `cat:cs.IR+OR+cat:cs.LG+OR+cat:stat.ML`; keyword sweep `abs:"click through rate" OR ti:CTR`; window 2026-11-23 → 2026-11-24 (today).
+- Updated: `wiki/index.md` (Sources 表 + Synthesis 表新增 2026-11-24 arxiv-paper-check 条目), `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-24/arxiv-paper-check.md`.
+- Contradictions/flags: 0 papers；抽象/元数据级筛查（无全文），指标均按论文自报；keyword sweep 命中均为窗口外论文（DNA: Unlocking Depth Scaling in CTR Models 2611.25659v1、X-split Argus: Learning Reusable History Tokens for Efficient CTR Prediction 2611.24283v1），已由兄弟报告覆盖。
+
 ## [2026-11-23] synthesis | tech-report-digest (2026-11-23)
 - Report: `wiki/synthesis/2026-11-23/tech-report-digest.md` — LLM 技术报告速览，覆盖 19 家目标机构最新一手 Tech Report/Technical Report/System Card/Model Card/官方技术披露（窗口核验至 2026-11-23）。
 - Method: 逐家规模（webfetch 官网/Newsroom/资讯页 + Deployment Safety Hub 标准制度页 + 技术文档页（Nova 2 user guide 等）+ arXiv Export API（`all:"system card"/"technical report"` + 公司名）+ GitHub 官方组织页（stepfun-ai, InternLM）+ 官方社区博客）。注意：本环境 websearch 不可用，数据来自等价的 HTTPS 抓取（fetch 内核）。
@@ -9824,3 +9831,11 @@
 - New pages: `wiki/synthesis/2026-11-23/investment-daily.md`
 - Contradictions: none
 - Flags: 部分美股（META/AMD/CRM/SNOW/BIDU/C3.ai）及中榄股/新能源报价数据未获取（Yahoo/SINA 数据源限制）
+
+## [2026-11-24] synthesis | arxiv-ai-search (2026-11-24)
+- Report: `wiki/synthesis/2026-11-24/arxiv-ai-search.md` — arXiv AI Search Report — 14 papers — Recommendation & Sequential Modeling (MADRec; Beyond Relevance; PROSPER; DCDN); Advertising (CutAgent; ISGE); CTR (X-split ARGUS); Games & AI Agents (AutoPILOT; CAMOPD; GameWM; ViCoR; Script2Play; Mario); AI/LLM Agents & Infrastructure (MASSys).
+- Method: arXiv Export API (`export.arxiv.org/api/query`, sorted by `submittedDate` desc), 6 topic queries (`all:(LLM OR "large language model" OR "foundation model" OR GPT OR "sequence model")`; recommendation/sequential/CTR/ads/session keywords; game AI/video game/game rec queries; `cat:cs.AI`; advertising/RTB/bidding keywords). Window: submissions 2026-11-03→2026-11-24 (today); 14 papers, latest first.
+- Affiliations: not listed in arXiv metadata — verified Atom API + arXiv abs pages for the 14 selected papers (author names only); PDF-based extraction not repeated.
+- Updated: `wiki/index.md` (Synthesis table entry), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-11-24/arxiv-ai-search.md`.
+- Contradictions/flags: abstract/metadata-level screening only, no full-text review; all metrics/claims author-reported.
