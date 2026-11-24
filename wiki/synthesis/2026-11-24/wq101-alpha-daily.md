@@ -1,105 +1,351 @@
 ---
-title: WorldQuant 101 Alpha 美股 Top 20 精选（2026-11-24）
+title: WorldQuant 101 Alpha 美股 Top 20 精选 — 2026-11-24
 type: synthesis
 created: 2026-11-24
 updated: 2026-11-24
-sources: []
-tags: [wq101-alpha-daily, worldquant, alphas, factor-investing, quant-screening, us-equities, large-cap, momentum, reversal, volatility, volume-price, mean-reversion, trend, daily-digest]
+sources: [investment-daily.md]
+tags: [wq101-alpha-daily, worldquant, alphas, factor-investing, momentum, reversal, volatility, volume-price, mean-reversion, trend, us-equities, large-cap, daily-digest]
 ---
 
-# WorldQuant 101 Alpha 美股 Top 20（2026-11-24）
+# WorldQuant 101 Alpha 美股 Top 20 精选 — 2026-11-24
 
-> 本报告基于 Yahoo Finance `v8/finance/chart`（interval=1d, range=30d）日线 OHLCV 与 meta（shortName），对市值 > $10B 美股（本次计算 41 只）做 WorldQuant 101 因子横截面代理计算与排序，输出 Top 20。
-> **不构成投资建议**；因子为横截面代理值，非完整回测。
+> 数据基准：Yahoo Finance 图表页（`/quote/{sym}/chart`）sparkline 日线 `close` 数组 + `meta` 字段（regularMarketPrice/DayLow/DayHigh/Volume）；候选池市值 > $10B（近期报告 2026-11-15→23 的 Top 20 并集，共 65 只，均获取数据）；因子为横截面代理值（简化定义，非公式回测）；**不构成投资建议**。
+> 注：商业 API 限流，本次未获取 Open/High/Low/Volume 历史，Alpha#6/#12/#19/#53 暂不计算；打分因子为 Alpha#1（动量）、Alpha#30（结构）、Alpha#41（趋势强度）。
 
-## 市场概览（2026-11-24）
+---
 
-| Index | Close | Prev Close | Pct |
-|-------|-------|-----------|-----|
-| ^GSPC (标普 500) | 7,237.17 | 6,910.39 | +4.73% |
-| ^IXIC (纳斯达克) | 24,089.56 | 22,617.73 | +6.51% |
-| ^DJI (道琼斯) | 49,595.31 | 48,147.33 | +3.01% |
-| ^VIX | 26.62 | 35.89 | -25.83% |
+## 1. 市场概览（美股实时快照）
 
-多头情绪回升，VIX 大幅回落。
+| 指数 | 收盘 | 涨跌幅 |
+|------|------|--------|
+| S&P 500 (^GSPC) | 7,237.17 | +4.73% |
+| NASDAQ Composite (^IXIC) | 24,089.56 | +6.51% |
+| Dow Jones Industrial Average (^DJI) | 49,595.31 | +3.01% |
+| CBOE Volatility Index (^VIX) | 26.62 | -25.83% |
+| 10-Year Bond (^TNX) | 4.92 | +0.12% |
 
-## 因子方法（代理）
+→ 三大指数蓄势反弹（S&P 500 +4.73%、Nasdaq +6.51%、Dow +3.01%）；VIX 大幅回落（−25.83%）。
+→ 板块表现：State Street Technology Select  (XLK) +8.97%, State Street Consumer Staples S (XLP) -0.09%, State Street Consumer Discretio (XLY) +3.98%, State Street Health Care Select (XLV) +1.23%, State Street Materials Select S (XLB) +3.23%, State Street Industrial Select  (XLI) +3.90%, State Street Energy Select Sect (XLE) -1.06%。
 
-因子 → 本次的代理（Z = 横截面 z-score）：
+---
 
-- Alpha#1 动量 — Rank(Correlation(Delay(close,1), close, 10)) → 近 10 日 Delay(close,1) 与当日 close 的相关 Z
-- Alpha#6 — Correlation(open, volume, 10) → 近 10 日 open 与 volume 的相关 Z
-- Alpha#12 量价背离 — sign(delta(volume,1)) · (−delta(close,1)) → 今日成交量增 + 价跌
-- Alpha#19 均值回复 — (−1)·rank((stddev(abs(close−open),5) + (close−open) + rank(correlation(close,open,10)))) → 代理 std5 + last(close−open) + corr(close,open,10)
-- Alpha#30 波动结构 — 代理 mean(2·close − low − high)
-- Alpha#41 趋势强度 — ((high·low)^0.5 − vwap) → 代理 sqrt(mean(h·l)) − mean((h+l+c)/3)
-- Alpha#53 区间反转 — (−1)·delta(((close−low)−(high−close))/(close−low), 9) → 代理 ratio(t) − ratio(t−10)
+## 2. 方法与评分公式
 
-综合分 = 0.18·Z(#1) + 0.12·Z(#6) + 0.12·Z(#12) + 0.15·Z(#19) + 0.13·Z(#30) + 0.15·Z(#41) + 0.15·Z(#53)，按 Rank 换算为 1–10 分（Rank 1 = 10）。
+**候选池**：市值 > $10B 美股组合（Top 20 并集自近期报告 2026-11-15→23，本期 65 只）。
 
-## Top 20（Rank | Symbol | Name | Sector | MarketCap | Score | Z(#1) | Z(#12) | Z(#19) | Z(#41) | Z(#53) | 主导因子）
+**因子定义**（本期可计算子集）：
 
-| Rank | Symbol | Name | Sector | MarketCap | Score | Z(#1) | Z(#12) | Z(#19) | Z(#41) | Z(#53) | 主导因子 |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | LLY | Eli Lilly and Company | Healthcare | — | 10 | +0.97 | +0.81 | +3.53 | +3.40 | +0.11 | #19 |
-| 2 | DE | Deere & Company | Industrials | — | 10 | +1.14 | +1.25 | +1.87 | +0.04 | +0.29 | #1 |
-| 3 | HD | Home Depot, Inc. (The) | Consumer Cyclical | — | 9 | +0.60 | +0.07 | +0.02 | +1.00 | +0.26 | #41 |
-| 4 | PG | Procter & Gamble Company (The) | Consumer Defensive | — | 9 | −0.86 | −0.42 | −0.40 | +0.51 | +0.27 | — |
-| 5 | NEE | NextEra Energy, Inc. | Utilities | — | 8 | +1.01 | −0.40 | −0.67 | +0.35 | +0.47 | #1 |
-| 6 | MMM | 3M Company | Industrials | — | 8 | +0.59 | +0.02 | −0.26 | +0.58 | +0.25 | #41 |
-| 7 | TMO | Thermo Fisher Scientific Inc | Healthcare | — | 7 | +0.39 | +0.88 | +0.29 | +0.42 | +0.11 | #12 |
-| 8 | UNH | UnitedHealth Group Incorporated | Healthcare | — | 7 | +1.09 | −0.17 | +3.02 | −0.66 | +0.25 | #19 |
-| 9 | GM | General Motors Company | Consumer Cyclical | — | 6 | +0.98 | −0.22 | −0.56 | +0.21 | +0.49 | #1 |
-| 10 | ABBV | AbbVie Inc. | Healthcare | — | 6 | +0.68 | −0.27 | −0.18 | +0.34 | +0.14 | — |
-| 11 | PFE | Pfizer, Inc. | Healthcare | — | 5 | +1.35 | −0.43 | −0.78 | +0.21 | −0.32 | #1 |
-| 12 | WMT | Walmart Inc. | Consumer Defensive | — | 5 | −0.45 | −0.32 | −0.32 | +0.45 | +0.34 | #41 |
-| 13 | PANW | Palo Alto Networks, Inc. | Technology | — | 4 | −0.75 | +0.28 | −0.03 | −0.32 | −0.54 | #6 |
-| 14 | JNJ | Johnson & Johnson | Healthcare | — | 4 | +0.93 | −0.46 | −0.59 | +0.64 | +0.34 | #41 |
-| 15 | ADBE | Adobe Inc. | Technology | — | 3 | +0.75 | +0.01 | +0.20 | −0.10 | +0.24 | — |
-| 16 | MA | Mastercard Incorporated | Financial Services | — | 3 | +0.55 | +0.27 | +0.42 | +0.81 | +0.21 | #41 |
-| 17 | F | Ford Motor Company | Consumer Cyclical | — | 2 | +1.03 | −0.47 | −0.74 | +0.22 | +0.40 | #1 |
-| 18 | CRM | Salesforce, Inc. | Communication Services | — | 2 | +1.16 | −0.09 | +0.18 | −0.81 | +0.26 | #1 |
-| 19 | TMUS | T-Mobile US, Inc. | Communication Services | — | 1 | +0.40 | −0.38 | −0.32 | +0.42 | +0.24 | — |
-| 20 | V | Visa Inc. | Financial Services | — | 1 | +0.43 | −0.97 | +0.46 | +0.51 | +0.25 | — |
+| Alpha | 计算公式 |
+|-------|----------|
+| #1 动量 | pearson(C[t−1], C[t], 10) — 近 10 个交易日收盘隔一日相关 |
+| #30 波动结构 | (2c − l − h)/(c − l) — 收价在区间高段为正 |
+| #41 趋势强度 | √(H·L) − (H+L+C)/3 — 价格在典型价上方为正 |
 
-## 板块分类汇总（Top 20）
+**评分**：
+- 全样本横截面 z：z = (v − mean)/std；f = 10·tanh(|z|/2)（0–10，符号为方向）。
+- 综合评分 = 匹配因子 f 均值（0–10 分制，匹配因子 = 每只股 f 最高的 2 个因子）。
+- Top 20 按综合评分 desc 排名。
 
-| Sector | Count | Symbols |
-|--------|-------|---------|
-| Technology | 2 | PANW, ADBE |
-| Industrials | 2 | DE, MMM |
-| Communication Services | 2 | CRM, TMUS |
-| Financial Services | 2 | MA, V |
-| Consumer Cyclical | 3 | HD, GM, F |
-| Consumer Defensive | 2 | PG, WMT |
-| Healthcare | 6 | LLY, TMO, UNH, ABBV, PFE, JNJ |
-| Utilities | 1 | NEE |
+---
 
-## 投资逻辑简述（Top 20）
+## 3. Top 20 排名表
 
-- **LLY**（第 1）：均值回复最强（Z19 +3.53），动量 Z1 同步确认，医药防御加成，趋势强 Z41 +3.40。
-- **DE**（第 2）：量价背离（Z12 +1.25）+ 动量（Z1 +1.14），工业景气度偏好。
-- **HD**（第 3）：趋势强（Z41 +1.00），商业地产逆势走强。
-- **PG**（第 4）：量价正相关强（Z6 +3.55），必需消费防御需求信号。
-- **NEE**（第 5）：动量（Z1 +1.01）+ 趋势（Z41 +0.35），公用事业防御线。
-- **MMM**（第 6）：趋势强（Z41 +0.58），量价背离中性。
-- **TMO**（第 7）：量价背离（Z12 +0.88）+ 均值回复（Z19 +0.29），实验工具链主题。
-- **UNH**（第 8）：均值回复最强（Z19 +3.02），医疗板块加成。
-- **GM**（第 9）：动量强（Z1 +0.98），汽车板块反弹。
-- **ABBV**（第 10）：均值回复与趋势适中，药企防御。
-- **PFE**（第 11）：动量单值最高（Z1 +1.35），趋势偏弱（Z41 −0.10）。
-- **WMT**（第 12）：趋势强（Z41 +0.45），零售需求稳定。
-- **PANW**（第 13）：量价背离大（Z6 +2.68），趋势偏弱，网安高增长主题。
-- **JNJ**（第 14）：趋势/动量中庸（Z41 +0.64、Z1 +0.93）。
-- **ADBE**（第 15）：均值回复中，趋势偏弱。
-- **MA**（第 16）：趋势强（Z41 +0.81），支付板块防御。
-- **F**（第 17）：动量强（Z1 +1.03），车企周期复苏层面。
-- **CRM**（第 18）：动量强（Z1 +1.16），趋势偏弱（Z41 −0.81）。
-- **TMUS**（第 19）：趋势适中（Z41 +0.42），动量偏弱。
-- **V**（第 20）：各因子均衡，评分低位，建议作为候选不作作为本期主线。
+| 排名 | 股票代码 | 公司名称（中英文） | 板块 | 市值 | 综合评分 | 匹配 Alpha 因子 |
+|------|----------|-------------------|------|------|----------|-----------------|
+| 1 | EQIX | 思存（Equinix, Inc.） | Real Estate | $99B | 7.65 | Alpha#41 趋势强度、Alpha#1 动量 |
+| 2 | DELL | 戴尔（Dell Technologies Inc.） | Technology | $213B | 6.7 | Alpha#41 趋势强度、Alpha#1 动量 |
+| 3 | LMT | 洛克希德·马丁（Lockheed Martin Corporation） | Industrials | $132B | 5.49 | Alpha#30 波动结构、Alpha#1 动量 |
+| 4 | ISRG | 达芬奇医疗机器人（Intuitive Surgical, Inc.） | Healthcare | $144B | 4.68 | Alpha#30 波动结构、Alpha#1 动量 |
+| 5 | MSFT | 微软（Microsoft Corporation） | Technology | $3.66T | 4.6 | Alpha#41 趋势强度、Alpha#1 动量 |
+| 6 | ASML | ASML（ASML Holding N.V. - New York Re） | Technology | $533B | 4.51 | Alpha#41 趋势强度、Alpha#1 动量 |
+| 7 | TMUS | T-Mobile US（T-Mobile US, Inc.） | 通信服务 / 电信运营 | $176B | 4.5 | Alpha#30 波动结构、Alpha#1 动量 |
+| 8 | GE | GE Aerospace（GE Aerospace） | Industrials | $332B | 4.39 | Alpha#30 波动结构、Alpha#1 动量 |
+| 9 | TSLA | 特斯拉（Tesla, Inc.） | Consumer Cyclical | $1.52T | 4.24 | Alpha#1 动量、Alpha#30 波动结构 |
+| 10 | META | Meta平台（Meta Platforms, Inc.） | Communication Services | $1.53T | 4.22 | Alpha#1 动量、Alpha#30 波动结构 |
+| 11 | GOOGL | 谷歌（Alphabet Inc.） | Communication Services | $3.47T | 4.11 | Alpha#30 波动结构、Alpha#1 动量 |
+| 12 | NFLX | Netflix（Netflix, Inc.） | Communication Services | $239B | 4.06 | Alpha#1 动量、Alpha#30 波动结构 |
+| 13 | NVDA | 英伟达（NVIDIA Corporation） | Technology | $3.99T | 3.8 | Alpha#1 动量、Alpha#30 波动结构 |
+| 14 | AMD | 超威（Advanced Micro Devices, Inc.） | Technology | $751B | 3.66 | Alpha#1 动量、Alpha#41 趋势强度 |
+| 15 | KDP | Keurig Dr Pepper（Keurig Dr Pepper Inc.） | Consumer Staples | $51B | 3.64 | Alpha#30 波动结构、Alpha#41 趋势强度 |
+| 16 | WMT | 沃尔玛（Walmart Inc.） | Consumer Defensive | $1.03T | 3.57 | Alpha#1 动量、Alpha#30 波动结构 |
+| 17 | PLTR | Palantir（Palantir Technologies Inc.） | Technology | $384B | 3.36 | Alpha#30 波动结构、Alpha#1 动量 |
+| 18 | AMGN | 阿玛吉（Amgen Inc.） | Healthcare | $243B | 3.35 | Alpha#1 动量、Alpha#30 波动结构 |
+| 19 | DUK | 杜克能源（Duke Energy Corporation (Holdin） | Utilities | $101B | 3.26 | Alpha#1 动量、Alpha#41 趋势强度 |
+| 20 | AMZN | 亚马逊（Amazon.com, Inc.） | Consumer Cyclical | $2.76T | 3.22 | Alpha#1 动量、Alpha#41 趋势强度 |
 
-## 免责声明
+---
 
-- 因子为横截面代理值（近 10–30 日daily OHLCV 的相关/变化代理），非完整回测；不代表未来表现。
-- MarketCap（市值）未在本次获取中拿到，表中显示为 —；按候选池 > $10B 筛选，请用 Yahoo 实时页二次核实。
-- 非公式级计算，仅供量化模型候选池参考；**不构成投资建议**。
+## 4. 逐股详情（Top 20）
+
+### 1. EQIX — 思存（Equinix, Inc.）
+- **股票代码**：EQIX · **板块**：Real Estate · **市值**：$99B · **今日价**：999.40 · **涨跌幅**：+3.22%
+
+- **匹配 Alpha 因子**：Alpha#41 趋势强度、Alpha#1 动量
+
+- **因子信号解读（当前因子值方向 + 强度）**：Alpha#1 动量：方向正，f=6.17（原始值 +0.8386）；Alpha#30 波动结构：方向负，f=-7.33（原始值 -0.8659）；Alpha#41 趋势强度：方向正，f=9.13（原始值 +5.0072）
+
+- **综合评分**：7.65
+- **投资逻辑简述**：因子共振（Alpha#41 趋势强度 f=9.13 + Alpha#1 动量 f=6.17），Real Estate，今日价 999.40（+3.22%）。
+
+- **风险提示**：因子共振依赖 Alpha#41 趋势强度 f=9.13 + Alpha#1 动量 f=6.17，动量/结构回调时会下降，止盈需随因子强度重新校准。；今日价 999.40（+3.22%）涨跌节奏明显，换手率可观。；市场宏观（S&P 500 +4.73%、VIX −25.83%）变化会传导影响，可与指数强弱对冲。
+
+### 2. DELL — 戴尔（Dell Technologies Inc.）
+- **股票代码**：DELL · **板块**：Technology · **市值**：$213B · **今日价**：334.91 · **涨跌幅**：+20.46%
+
+- **匹配 Alpha 因子**：Alpha#41 趋势强度、Alpha#1 动量
+
+- **因子信号解读（当前因子值方向 + 强度）**：Alpha#1 动量：方向正，f=5.98（原始值 +0.8139）；Alpha#30 波动结构：方向负，f=-5.11（原始值 -0.4294）；Alpha#41 趋势强度：方向正，f=7.42（原始值 +2.9110）
+
+- **综合评分**：6.7
+- **投资逻辑简述**：因子共振（Alpha#41 趋势强度 f=7.42 + Alpha#1 动量 f=5.98），Technology，今日价 334.91（+20.46%）。
+
+- **风险提示**：因子共振依赖 Alpha#41 趋势强度 f=7.42 + Alpha#1 动量 f=5.98，动量/结构回调时会下降，止盈需随因子强度重新校准。；今日价 334.91（+20.46%）涨跌节奏明显，换手率可观。；市场宏观（S&P 500 +4.73%、VIX −25.83%）变化会传导影响，可与指数强弱对冲。
+
+### 3. LMT — 洛克希德·马丁（Lockheed Martin Corporation）
+- **股票代码**：LMT · **板块**：Industrials · **市值**：$132B · **今日价**：571.67 · **涨跌幅**：+1.09%
+
+- **匹配 Alpha 因子**：Alpha#30 波动结构、Alpha#1 动量
+
+- **因子信号解读（当前因子值方向 + 强度）**：Alpha#1 动量：方向正，f=4.53（原始值 +0.6502）；Alpha#30 波动结构：方向正，f=6.45（原始值 +1.1342）；Alpha#41 趋势强度：方向负，f=-3.58（原始值 -1.8232）
+
+- **综合评分**：5.49
+- **投资逻辑简述**：因子共振（Alpha#30 波动结构 f=6.45 + Alpha#1 动量 f=4.53），Industrials，今日价 571.67（+1.09%）。
+
+- **风险提示**：因子共振依赖 Alpha#30 波动结构 f=6.45 + Alpha#1 动量 f=4.53，动量/结构回调时会下降，止盈需随因子强度重新校准。；今日价 571.67（+1.09%）涨跌节奏明显，换手率可观。；市场宏观（S&P 500 +4.73%、VIX −25.83%）变化会传导影响，可与指数强弱对冲。
+
+### 4. ISRG — 达芬奇医疗机器人（Intuitive Surgical, Inc.）
+- **股票代码**：ISRG · **板块**：Healthcare · **市值**：$144B · **今日价**：416.23 · **涨跌幅**：+4.30%
+
+- **匹配 Alpha 因子**：Alpha#30 波动结构、Alpha#1 动量
+
+- **因子信号解读（当前因子值方向 + 强度）**：Alpha#1 动量：方向正，f=3.73（原始值 +0.5709）；Alpha#30 波动结构：方向正，f=5.63（原始值 +0.9814）；Alpha#41 趋势强度：方向负，f=-3.51（原始值 -1.7951）
+
+- **综合评分**：4.68
+- **投资逻辑简述**：因子共振（Alpha#30 波动结构 f=5.63 + Alpha#1 动量 f=3.73），Healthcare，今日价 416.23（+4.30%）。
+
+- **风险提示**：因子共振依赖 Alpha#30 波动结构 f=5.63 + Alpha#1 动量 f=3.73，动量/结构回调时会下降，止盈需随因子强度重新校准。；今日价 416.23（+4.30%）涨跌节奏明显，换手率可观。；市场宏观（S&P 500 +4.73%、VIX −25.83%）变化会传导影响，可与指数强弱对冲。
+
+### 5. MSFT — 微软（Microsoft Corporation）
+- **股票代码**：MSFT · **板块**：Technology · **市值**：$3.66T · **今日价**：492.50 · **涨跌幅**：+1.65%
+
+- **匹配 Alpha 因子**：Alpha#41 趋势强度、Alpha#1 动量
+
+- **因子信号解读（当前因子值方向 + 强度）**：Alpha#1 动量：方向正，f=2.21（原始值 +0.4352）；Alpha#30 波动结构：方向负，f=-7.58（原始值 -0.9323）；Alpha#41 趋势强度：方向正，f=6.98（原始值 +2.5884）
+
+- **综合评分**：4.6
+- **投资逻辑简述**：因子共振（Alpha#41 趋势强度 f=6.98 + Alpha#1 动量 f=2.21），Technology，今日价 492.50（+1.65%）。
+
+- **风险提示**：因子共振依赖 Alpha#41 趋势强度 f=6.98 + Alpha#1 动量 f=2.21，动量/结构回调时会下降，止盈需随因子强度重新校准。；今日价 492.50（+1.65%）涨跌节奏明显，换手率可观。；市场宏观（S&P 500 +4.73%、VIX −25.83%）变化会传导影响，可与指数强弱对冲。
+
+### 6. ASML — ASML（ASML Holding N.V. - New York Re）
+- **股票代码**：ASML · **板块**：Technology · **市值**：$533B · **今日价**：1,383.78 · **涨跌幅**：+9.28%
+
+- **匹配 Alpha 因子**：Alpha#41 趋势强度、Alpha#1 动量
+
+- **因子信号解读（当前因子值方向 + 强度）**：Alpha#1 动量：方向正，f=1.79（原始值 +0.3994）；Alpha#30 波动结构：方向负，f=-5.03（原始值 -0.4176）；Alpha#41 趋势强度：方向正，f=7.23（原始值 +2.7651）
+
+- **综合评分**：4.51
+- **投资逻辑简述**：因子共振（Alpha#41 趋势强度 f=7.23 + Alpha#1 动量 f=1.79），Technology，今日价 1,383.78（+9.28%）。
+
+- **风险提示**：因子共振依赖 Alpha#41 趋势强度 f=7.23 + Alpha#1 动量 f=1.79，动量/结构回调时会下降，止盈需随因子强度重新校准。；今日价 1,383.78（+9.28%）涨跌节奏明显，换手率可观。；市场宏观（S&P 500 +4.73%、VIX −25.83%）变化会传导影响，可与指数强弱对冲。
+
+### 7. TMUS — T-Mobile US（T-Mobile US, Inc.）
+- **股票代码**：TMUS · **板块**：通信服务 / 电信运营 · **市值**：$176B · **今日价**：166.36 · **涨跌幅**：+0.46%
+
+- **匹配 Alpha 因子**：Alpha#30 波动结构、Alpha#1 动量
+
+- **因子信号解读（当前因子值方向 + 强度）**：Alpha#1 动量：方向正，f=4.27（原始值 +0.6239）；Alpha#30 波动结构：方向正，f=4.73（原始值 +0.8365）；Alpha#41 趋势强度：方向负，f=-0.09（原始值 -0.5219）
+
+- **综合评分**：4.5
+- **投资逻辑简述**：因子共振（Alpha#30 波动结构 f=4.73 + Alpha#1 动量 f=4.27），通信服务 / 电信运营，今日价 166.36（+0.46%）。
+
+- **风险提示**：因子共振依赖 Alpha#30 波动结构 f=4.73 + Alpha#1 动量 f=4.27，动量/结构回调时会下降，止盈需随因子强度重新校准。；今日价 166.36（+0.46%）涨跌节奏明显，换手率可观。；市场宏观（S&P 500 +4.73%、VIX −25.83%）变化会传导影响，可与指数强弱对冲。
+
+### 8. GE — GE Aerospace（GE Aerospace）
+- **股票代码**：GE · **板块**：Industrials · **市值**：$332B · **今日价**：321.26 · **涨跌幅**：+3.76%
+
+- **匹配 Alpha 因子**：Alpha#30 波动结构、Alpha#1 动量
+
+- **因子信号解读（当前因子值方向 + 强度）**：Alpha#1 动量：方向正，f=4.36（原始值 +0.6326）；Alpha#30 波动结构：方向正，f=4.43（原始值 +0.7919）；Alpha#41 趋势强度：方向负，f=-1.75（原始值 -1.1176）
+
+- **综合评分**：4.39
+- **投资逻辑简述**：因子共振（Alpha#30 波动结构 f=4.43 + Alpha#1 动量 f=4.36），Industrials，今日价 321.26（+3.76%）。
+
+- **风险提示**：因子共振依赖 Alpha#30 波动结构 f=4.43 + Alpha#1 动量 f=4.36，动量/结构回调时会下降，止盈需随因子强度重新校准。；今日价 321.26（+3.76%）涨跌节奏明显，换手率可观。；市场宏观（S&P 500 +4.73%、VIX −25.83%）变化会传导影响，可与指数强弱对冲。
+
+### 9. TSLA — 特斯拉（Tesla, Inc.）
+- **股票代码**：TSLA · **板块**：Consumer Cyclical · **市值**：$1.52T · **今日价**：385.46 · **涨跌幅**：+11.46%
+
+- **匹配 Alpha 因子**：Alpha#1 动量、Alpha#30 波动结构
+
+- **因子信号解读（当前因子值方向 + 强度）**：Alpha#1 动量：方向正，f=6.41（原始值 +0.8702）；Alpha#30 波动结构：方向正，f=2.07（原始值 +0.4799）；Alpha#41 趋势强度：方向负，f=-3.78（原始值 -1.9024）
+
+- **综合评分**：4.24
+- **投资逻辑简述**：因子共振（Alpha#1 动量 f=6.41 + Alpha#30 波动结构 f=2.07），Consumer Cyclical，今日价 385.46（+11.46%）。
+
+- **风险提示**：因子共振依赖 Alpha#1 动量 f=6.41 + Alpha#30 波动结构 f=2.07，动量/结构回调时会下降，止盈需随因子强度重新校准。；今日价 385.46（+11.46%）涨跌节奏明显，换手率可观。；市场宏观（S&P 500 +4.73%、VIX −25.83%）变化会传导影响，可与指数强弱对冲。
+
+### 10. META — Meta平台（Meta Platforms, Inc.）
+- **股票代码**：META · **板块**：Communication Services · **市值**：$1.53T · **今日价**：597.60 · **涨跌幅**：+6.55%
+
+- **匹配 Alpha 因子**：Alpha#1 动量、Alpha#30 波动结构
+
+- **因子信号解读（当前因子值方向 + 强度）**：Alpha#1 动量：方向正，f=4.34（原始值 +0.6307）；Alpha#30 波动结构：方向正，f=4.11（原始值 +0.7459）；Alpha#41 趋势强度：方向负，f=-5.95（原始值 -2.9283）
+
+- **综合评分**：4.22
+- **投资逻辑简述**：因子共振（Alpha#1 动量 f=4.34 + Alpha#30 波动结构 f=4.11），Communication Services，今日价 597.60（+6.55%）。
+
+- **风险提示**：因子共振依赖 Alpha#1 动量 f=4.34 + Alpha#30 波动结构 f=4.11，动量/结构回调时会下降，止盈需随因子强度重新校准。；今日价 597.60（+6.55%）涨跌节奏明显，换手率可观。；市场宏观（S&P 500 +4.73%、VIX −25.83%）变化会传导影响，可与指数强弱对冲。
+
+### 11. GOOGL — 谷歌（Alphabet Inc.）
+- **股票代码**：GOOGL · **板块**：Communication Services · **市值**：$3.47T · **今日价**：282.10 · **涨跌幅**：+6.34%
+
+- **匹配 Alpha 因子**：Alpha#30 波动结构、Alpha#1 动量
+
+- **因子信号解读（当前因子值方向 + 强度）**：Alpha#1 动量：方向正，f=2.96（原始值 +0.5007）；Alpha#30 波动结构：方向正，f=5.27（原始值 +0.9210）；Alpha#41 趋势强度：方向负，f=-2.88（原始值 -1.5431）
+
+- **综合评分**：4.11
+- **投资逻辑简述**：因子共振（Alpha#30 波动结构 f=5.27 + Alpha#1 动量 f=2.96），Communication Services，今日价 282.10（+6.34%）。
+
+- **风险提示**：因子共振依赖 Alpha#30 波动结构 f=5.27 + Alpha#1 动量 f=2.96，动量/结构回调时会下降，止盈需随因子强度重新校准。；今日价 282.10（+6.34%）涨跌节奏明显，换手率可观。；市场宏观（S&P 500 +4.73%、VIX −25.83%）变化会传导影响，可与指数强弱对冲。
+
+### 12. NFLX — Netflix（Netflix, Inc.）
+- **股票代码**：NFLX · **板块**：Communication Services · **市值**：$239B · **今日价**：58.10 · **涨跌幅**：+2.42%
+
+- **匹配 Alpha 因子**：Alpha#1 动量、Alpha#30 波动结构
+
+- **因子信号解读（当前因子值方向 + 强度）**：Alpha#1 动量：方向正，f=6.43（原始值 +0.8730）；Alpha#30 波动结构：方向正，f=1.70（原始值 +0.4348）；Alpha#41 趋势强度：方向正，f=1.07（原始值 -0.1041）
+
+- **综合评分**：4.06
+- **投资逻辑简述**：因子共振（Alpha#1 动量 f=6.43 + Alpha#30 波动结构 f=1.70），Communication Services，今日价 58.10（+2.42%）。
+
+- **风险提示**：因子共振依赖 Alpha#1 动量 f=6.43 + Alpha#30 波动结构 f=1.70，动量/结构回调时会下降，止盈需随因子强度重新校准。；今日价 58.10（+2.42%）涨跌节奏明显，换手率可观。；市场宏观（S&P 500 +4.73%、VIX −25.83%）变化会传导影响，可与指数强弱对冲。
+
+### 13. NVDA — 英伟达（NVIDIA Corporation）
+- **股票代码**：NVDA · **板块**：Technology · **市值**：$3.99T · **今日价**：165.05 · **涨跌幅**：+31.48%
+
+- **匹配 Alpha 因子**：Alpha#1 动量、Alpha#30 波动结构
+
+- **因子信号解读（当前因子值方向 + 强度）**：Alpha#1 动量：方向正，f=6.57（原始值 +0.8936）；Alpha#30 波动结构：方向正，f=1.02（原始值 +0.3535）；Alpha#41 趋势强度：方向负，f=-1.48（原始值 -1.0200）
+
+- **综合评分**：3.8
+- **投资逻辑简述**：因子共振（Alpha#1 动量 f=6.57 + Alpha#30 波动结构 f=1.02），Technology，今日价 165.05（+31.48%）。
+
+- **风险提示**：因子共振依赖 Alpha#1 动量 f=6.57 + Alpha#30 波动结构 f=1.02，动量/结构回调时会下降，止盈需随因子强度重新校准。；今日价 165.05（+31.48%）涨跌节奏明显，换手率可观。；市场宏观（S&P 500 +4.73%、VIX −25.83%）变化会传导影响，可与指数强弱对冲。
+
+### 14. AMD — 超威（Advanced Micro Devices, Inc.）
+- **股票代码**：AMD · **板块**：Technology · **市值**：$751B · **今日价**：453.46 · **涨跌幅**：+6.85%
+
+- **匹配 Alpha 因子**：Alpha#1 动量、Alpha#41 趋势强度
+
+- **因子信号解读（当前因子值方向 + 强度）**：Alpha#1 动量：方向正，f=4.37（原始值 +0.6336）；Alpha#30 波动结构：方向负，f=-3.17（原始值 -0.1532）；Alpha#41 趋势强度：方向正，f=2.94（原始值 +0.5921）
+
+- **综合评分**：3.66
+- **投资逻辑简述**：因子共振（Alpha#1 动量 f=4.37 + Alpha#41 趋势强度 f=2.94），Technology，今日价 453.46（+6.85%）。
+
+- **风险提示**：因子共振依赖 Alpha#1 动量 f=4.37 + Alpha#41 趋势强度 f=2.94，动量/结构回调时会下降，止盈需随因子强度重新校准。；今日价 453.46（+6.85%）涨跌节奏明显，换手率可观。；市场宏观（S&P 500 +4.73%、VIX −25.83%）变化会传导影响，可与指数强弱对冲。
+
+### 15. KDP — Keurig Dr Pepper（Keurig Dr Pepper Inc.）
+- **股票代码**：KDP · **板块**：Consumer Staples · **市值**：$51B · **今日价**：35.43 · **涨跌幅**：+1.69%
+
+- **匹配 Alpha 因子**：Alpha#30 波动结构、Alpha#41 趋势强度
+
+- **因子信号解读（当前因子值方向 + 强度）**：Alpha#1 动量：方向负，f=-3.51（原始值 -0.0459）；Alpha#30 波动结构：方向正，f=6.47（原始值 +1.1376）；Alpha#41 趋势强度：方向正，f=0.81（原始值 -0.1981）
+
+- **综合评分**：3.64
+- **投资逻辑简述**：因子共振（Alpha#30 波动结构 f=6.47 + Alpha#41 趋势强度 f=0.81），Consumer Staples，今日价 35.43（+1.69%）。
+
+- **风险提示**：因子共振依赖 Alpha#30 波动结构 f=6.47 + Alpha#41 趋势强度 f=0.81，动量/结构回调时会下降，止盈需随因子强度重新校准。；今日价 35.43（+1.69%）涨跌节奏明显，换手率可观。；市场宏观（S&P 500 +4.73%、VIX −25.83%）变化会传导影响，可与指数强弱对冲。
+
+### 16. WMT — 沃尔玛（Walmart Inc.）
+- **股票代码**：WMT · **板块**：Consumer Defensive · **市值**：$1.03T · **今日价**：129.58 · **涨跌幅**：+1.27%
+
+- **匹配 Alpha 因子**：Alpha#1 动量、Alpha#30 波动结构
+
+- **因子信号解读（当前因子值方向 + 强度）**：Alpha#1 动量：方向正，f=3.62（原始值 +0.5608）；Alpha#30 波动结构：方向正，f=3.52（原始值 +0.6652）；Alpha#41 趋势强度：方向正，f=0.03（原始值 -0.4782）
+
+- **综合评分**：3.57
+- **投资逻辑简述**：因子共振（Alpha#1 动量 f=3.62 + Alpha#30 波动结构 f=3.52），Consumer Defensive，今日价 129.58（+1.27%）。
+
+- **风险提示**：因子共振依赖 Alpha#1 动量 f=3.62 + Alpha#30 波动结构 f=3.52，动量/结构回调时会下降，止盈需随因子强度重新校准。；今日价 129.58（+1.27%）涨跌节奏明显，换手率可观。；市场宏观（S&P 500 +4.73%、VIX −25.83%）变化会传导影响，可与指数强弱对冲。
+
+### 17. PLTR — Palantir（Palantir Technologies Inc.）
+- **股票代码**：PLTR · **板块**：Technology · **市值**：$384B · **今日价**：159.36 · **涨跌幅**：+11.06%
+
+- **匹配 Alpha 因子**：Alpha#30 波动结构、Alpha#1 动量
+
+- **因子信号解读（当前因子值方向 + 强度）**：Alpha#1 动量：方向正，f=3.36（原始值 +0.5368）；Alpha#30 波动结构：方向正，f=3.37（原始值 +0.6449）；Alpha#41 趋势强度：方向负，f=-0.72（原始值 -0.7441）
+
+- **综合评分**：3.36
+- **投资逻辑简述**：因子共振（Alpha#30 波动结构 f=3.37 + Alpha#1 动量 f=3.36），Technology，今日价 159.36（+11.06%）。
+
+- **风险提示**：因子共振依赖 Alpha#30 波动结构 f=3.37 + Alpha#1 动量 f=3.36，动量/结构回调时会下降，止盈需随因子强度重新校准。；今日价 159.36（+11.06%）涨跌节奏明显，换手率可观。；市场宏观（S&P 500 +4.73%、VIX −25.83%）变化会传导影响，可与指数强弱对冲。
+
+### 18. AMGN — 阿玛吉（Amgen Inc.）
+- **股票代码**：AMGN · **板块**：Healthcare · **市值**：$243B · **今日价**：449.04 · **涨跌幅**：+3.08%
+
+- **匹配 Alpha 因子**：Alpha#1 动量、Alpha#30 波动结构
+
+- **因子信号解读（当前因子值方向 + 强度）**：Alpha#1 动量：方向正，f=3.71（原始值 +0.5693）；Alpha#30 波动结构：方向正，f=2.99（原始值 +0.5962）；Alpha#41 趋势强度：方向负，f=-2.21（原始值 -1.2890）
+
+- **综合评分**：3.35
+- **投资逻辑简述**：因子共振（Alpha#1 动量 f=3.71 + Alpha#30 波动结构 f=2.99），Healthcare，今日价 449.04（+3.08%）。
+
+- **风险提示**：因子共振依赖 Alpha#1 动量 f=3.71 + Alpha#30 波动结构 f=2.99，动量/结构回调时会下降，止盈需随因子强度重新校准。；今日价 449.04（+3.08%）涨跌节奏明显，换手率可观。；市场宏观（S&P 500 +4.73%、VIX −25.83%）变化会传导影响，可与指数强弱对冲。
+
+### 19. DUK — 杜克能源（Duke Energy Corporation (Holdin）
+- **股票代码**：DUK · **板块**：Utilities · **市值**：$101B · **今日价**：129.47 · **涨跌幅**：-0.24%
+
+- **匹配 Alpha 因子**：Alpha#1 动量、Alpha#41 趋势强度
+
+- **因子信号解读（当前因子值方向 + 强度）**：Alpha#1 动量：方向正，f=4.31（原始值 +0.6275）；Alpha#30 波动结构：方向负，f=-7.90（原始值 -1.0263）；Alpha#41 趋势强度：方向正，f=2.20（原始值 +0.3093）
+
+- **综合评分**：3.26
+- **投资逻辑简述**：因子共振（Alpha#1 动量 f=4.31 + Alpha#41 趋势强度 f=2.20），Utilities，今日价 129.47（-0.24%）。
+
+- **风险提示**：因子共振依赖 Alpha#1 动量 f=4.31 + Alpha#41 趋势强度 f=2.20，动量/结构回调时会下降，止盈需随因子强度重新校准。；今日价 129.47（-0.24%）涨跌节奏明显，换手率可观。；市场宏观（S&P 500 +4.73%、VIX −25.83%）变化会传导影响，可与指数强弱对冲。
+
+### 20. AMZN — 亚马逊（Amazon.com, Inc.）
+- **股票代码**：AMZN · **板块**：Consumer Cyclical · **市值**：$2.76T · **今日价**：255.39 · **涨跌幅**：+3.47%
+
+- **匹配 Alpha 因子**：Alpha#1 动量、Alpha#41 趋势强度
+
+- **因子信号解读（当前因子值方向 + 强度）**：Alpha#1 动量：方向正，f=5.38（原始值 +0.7412）；Alpha#30 波动结构：方向负，f=-1.76（原始值 +0.0240）；Alpha#41 趋势强度：方向正，f=1.07（原始值 -0.1064）
+
+- **综合评分**：3.22
+- **投资逻辑简述**：因子共振（Alpha#1 动量 f=5.38 + Alpha#41 趋势强度 f=1.07），Consumer Cyclical，今日价 255.39（+3.47%）。
+
+- **风险提示**：因子共振依赖 Alpha#1 动量 f=5.38 + Alpha#41 趋势强度 f=1.07，动量/结构回调时会下降，止盈需随因子强度重新校准。；今日价 255.39（+3.47%）涨跌节奏明显，换手率可观。；市场宏观（S&P 500 +4.73%、VIX −25.83%）变化会传导影响，可与指数强弱对冲。
+
+---
+
+## 5. 板块分类汇总（Top 20）
+
+### Communication Services — 3 只
+META, GOOGL, NFLX
+### Consumer Cyclical — 2 只
+TSLA, AMZN
+### Consumer Defensive — 1 只
+WMT
+### Consumer Staples — 1 只
+KDP
+### Healthcare — 2 只
+ISRG, AMGN
+### Industrials — 2 只
+LMT, GE
+### Real Estate — 1 只
+EQIX
+### Technology — 6 只
+DELL, MSFT, ASML, NVDA, AMD, PLTR
+### Utilities — 1 只
+DUK
+### 通信服务 / 电信运营 — 1 只
+TMUS
+
+板块分布：Communication Services 3 只 (15%)、Consumer Cyclical 2 只 (10%)、Consumer Defensive 1 只 (5%)、Consumer Staples 1 只 (5%)、Healthcare 2 只 (10%)、Industrials 2 只 (10%)、Real Estate 1 只 (5%)、Technology 6 只 (30%)、Utilities 1 只 (5%)、通信服务 / 电信运营 1 只 (5%)。
+
+---
+
+## 6. 免责声明
+
+因子为横截面代理值（非公式回测）；数据基准为 Yahoo Finance 实时数据；市值数据取自 Yahoo 图表页；整体不构成投资建议；非自动化交易建议。

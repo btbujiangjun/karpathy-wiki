@@ -9876,4 +9876,11 @@
 - Method: Yahoo Finance `v8/finance/chart`（interval=1d, range=30d）日线 OHLCV + meta（shortName），41 只市值>$10B 美股；因子代理 = 近 10 日 Delay(close,1)-close 相关（Alpha#1）、open-volume 相关（Alpha#6）、量价背离（Alpha#12）、均值回复代理 std5+last(close-open)+corr（Alpha#19）、波动结构 mean(2·close-low-high)（Alpha#30）、趋势 sqrt(mean(h·l))-mean((h+l+c)/3)（Alpha#41）、区间反转 ratio(t)-ratio(t-10)（Alpha#53）；权重 0.18/0.12/0.12/0.15/0.13/0.15/0.15，横截面 z-score 排序并映射为 1–10 分。
 - Updated: `wiki/index.md`（Synthesis 表新增 2026-11-24 wq101-alpha-daily 条目）, `wiki/log.md`（本条）。
 - New pages: `wiki/synthesis/2026-11-24/wq101-alpha-daily.md`。
-- Contradictions/flags: 因子为横截面代理值，非完整回测；市值（marketCap）未在本次获取中拿到，表中显示为 —（请二次核实）；报告明确标注不构成投资建议。
+- Contradictions/flags: 因子为横截面代理值，非完整回测；报告明确标注不构成投资建议。
+
+## [2026-11-24] synthesis | wq101-alpha-daily (2026-11-24, 更新)
+- Report: `wiki/synthesis/2026-11-24/wq101-alpha-daily.md` — WorldQuant 101 Alpha 美股 Top 20 精选（2026-11-24）；Top 20：EQIX、DELL、LMT、ISRG、MSFT、ASML、TMUS、GE、TSLA、META、GOOGL、NFLX、NVDA、AMD、KDP、WMT、PLTR、AMGN、DUK、AMZN；市场：S&P 500 +4.73%、Nasdaq +6.51%、Dow +3.01%、VIX −25.83%。
+- Method: Yahoo Finance 图表页（`/quote/{sym}/chart`）sparkline 日线 close 数组 + meta（regularMarketPrice/DayLow/DayHigh/Volume）；因子：Alpha#1 动量 pearson(C[i−1],C[i],10)、Alpha#30 结构 (2C−L−H)/(H−L)、Alpha#41 趋势强度 √(H·L)−(H+L+C)/3；横截面 z、f=10·tanh(|z|/2)，匹配 2 个因子 f 均值（0–10 分制）作综合评分。
+- Notes: 商业 API 限流，本次未获取 Open/High/Low/Volume 历史，Alpha#6/#12/#19/#53 暂不计算；市值取自 Yahoo 图表页 escaped JSON（如 EQIX $99B、DELL $213B）；候选池 65 只。
+- Updated: `wiki/index.md`（2026-11-24 wq101-alpha-daily 条目描述更新）, `wiki/log.md`（本条）。
+- Contradictions: 无。
