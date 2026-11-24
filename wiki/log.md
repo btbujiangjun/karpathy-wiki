@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-24] synthesis | conference-digest (2026-11-24)
+- Report: `wiki/synthesis/2026-11-24/conference-digest.md` — arXiv 会议论文摘要 2026-11-24：会议论文（ICML 2026, AAAI 2026, NeurIPS 2025, ICLR 2026, KDD 2026, CVPR 2026, ACL 2026, EMNLP 2025, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025，每会议 3 篇 = 36 篇）+ 研究主题（LLM/AI, 推荐系统, 广告, CTR, 游戏, 代码执行预测, 智能体系统, 生成模型, 序列建模, 基准测试，每主题 3 篇 = 28 篇）共 64 篇，含标题中英文、作者、单位(未公开)、摘要、核心创新、先前方法对比、实验结果与 arXiv/PDF 链接。
+- Method: arXiv Export API（`https://export.arxiv.org/api/query`, sorted by `submittedDate` desc）：会议查询（`all:"<Venue> <Year>"` + 变体, venue 确认：`arxiv:comment`/`arxiv:journal_ref` 含会议名, 按提交日期倒序取 3 篇）+ 类别查询（`cat:cs.LG/cs.AI/cs.CL/cs.CV/cs.IR/cs.MA/cs.GT/cs.SE/cs.MM`, max 120, 当天查询, 受 429 限流需重试）；作者通过 `id_list` 查询获取。
+- Updated: `wiki/index.md`（Sources 表 + Synthesis 表新增 2026-11-24 conference-digest 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-24/conference-digest.md`。
+- Contradictions/flags: 单位信息不可用（arXiv API/abs 页未包含作者单位, 本报告标注为未公开）；基于摘要与 arXiv 元数据(指标/实验结果为论文自报, 未读全文)；条目中标注了 workshop/track 属性(如 ICML AI4GOOD Workshop, KDD Blue Sky Ideas Track, ACL workshop 等)。
+
 ## [2026-11-24] synthesis | game-rl-daily (2026-11-24)
 - Report: `wiki/synthesis/2026-11-24/game-rl-daily.md` — Game RL & Game AI Bot — Daily Digest (2026-11-24): new arXiv papers via Export API sorted by submittedDate, window ≈ 2026-11-21 → 2026-11-24; abstracts/authors/dates from Atom feed; affiliations not stated on arXiv for most.
 - Sections: Game RL (Stack more levels Mario / Learning to Undo Atari / In-Context Adaptivity poker / Martian Arts VR sparring / holographic gradients), Game AI Bot (AutoPILOT/AFK-Bench / PlayScriptBench / AstronautBench / PlayCraft / When Agents Play Differently), Game Foundation Models (Gamer / GameRealm / Script2Play), PCG (PCGRL Platformers / LLM Program Search / Craftax goal compilers / Grover-oracle quantum MC), Benchmarks (AutoPILOT AFK-Bench / PlayScriptBench / AstronautBench / MANGO Arena), Industry (UnityBench-Mini3D; no named studio papers found), Related (Learning to Undo / When Agents Play Differently / Piccolo).
