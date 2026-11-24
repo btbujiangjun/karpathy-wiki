@@ -9869,3 +9869,11 @@
 - New pages: `wiki/synthesis/2026-11-24/tech-report-digest.md`
 - Contradictions: none
 - Flags: websearch 不可用；部分闭源参数（参数量、训练数据量、精确上下文长度）多为官方未公开或自报
+
+## [2026-11-24] synthesis | wq101-alpha-daily (2026-11-24)
+- Report: `wiki/synthesis/2026-11-24/wq101-alpha-daily.md` — WorldQuant 101 Alpha 美股 Top 20（2026-11-24）；市场：^GSPC +4.73%、^IXIC +6.51%、^DJI +3.01%、^VIX -25.83%。
+- Highlights: 医药板块（LLY/TMO/UNH/ABBV/PFE/JNJ，6 家）+ 工业（DE/MMM，2 家）+ 支付（MA/V，2 家）为核心集中度；Top 5 共振点为 Alpha#19 均值回复（LLY Z19 +3.53、UNH +3.02）+ Alpha#1 动量（DE +1.14、PFE +1.35）+ Alpha#41 趋势强（HD Z41 +1.00）。
+- Method: Yahoo Finance `v8/finance/chart`（interval=1d, range=30d）日线 OHLCV + meta（shortName），41 只市值>$10B 美股；因子代理 = 近 10 日 Delay(close,1)-close 相关（Alpha#1）、open-volume 相关（Alpha#6）、量价背离（Alpha#12）、均值回复代理 std5+last(close-open)+corr（Alpha#19）、波动结构 mean(2·close-low-high)（Alpha#30）、趋势 sqrt(mean(h·l))-mean((h+l+c)/3)（Alpha#41）、区间反转 ratio(t)-ratio(t-10)（Alpha#53）；权重 0.18/0.12/0.12/0.15/0.13/0.15/0.15，横截面 z-score 排序并映射为 1–10 分。
+- Updated: `wiki/index.md`（Synthesis 表新增 2026-11-24 wq101-alpha-daily 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-24/wq101-alpha-daily.md`。
+- Contradictions/flags: 因子为横截面代理值，非完整回测；市值（marketCap）未在本次获取中拿到，表中显示为 —（请二次核实）；报告明确标注不构成投资建议。
