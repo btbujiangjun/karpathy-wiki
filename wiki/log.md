@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-25] synthesis | tech-report-digest (2026-11-25)
+- Report: `wiki/synthesis/2026-11-25/tech-report-digest.md` — LLM 技术报告速览，覆盖 20 家目标机构最新一手 Tech Report/Technical Report/System Card/Model Card（窗口核验至 2026-11-25）。
+- Window findings: 窗口内新增首发 **OpenAI GPT-6.2 in ChatGPT 系统卡**（2026-11-23，GPT-6.2 优化版, 系统卡自报 Astra 相同系列, 附定价 $8/$0.40/$40 per M in/out tokens, Cybersafety Critical/Bio High, AI Self-Improvement High, GPQA 97.0% 等）；窗口内 Google Gemini 4 Neon（11-18）页面更新至 2026-11-23；xAI Grok 4.7（9-21，CursorBench 4.0 46.3%, 2× 速度半价）；Moonshot Kimi K3.1 Pro（10-24, KDA+MLA+DSA 架构, 3T-class）；OpenAI GPT-6.2 System Card（11-17, Astra/Sol, Preparedness 网络安全 Critical）；Anthropic Fable 5.2/Mythos 5.2（11-09）等既有口径复核。
+- Method: HTTPS 抓取（websearch 不可用, 改用等价 fetch 口径）：各公司官网、官方 Newsroom、官方文档页、GitHub 官方组织页；窗口核验时间 2026-11-25。
+- Updated: `wiki/index.md`（Sources 表 + Synthesis 表新增 2026-11-25 tech-report-digest 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-25/tech-report-digest.md`。
+- Contradictions/flags: 系统卡/模型卡/博客/模型页披露层级不一，部分参数（GPT-6.2, Nemotron 3.5 Super 等）为厂商自报或未公开，已标注；Zhipu（z.ai）、Apple Siri AI 页面抓取失败/未标日期，口径沿用 2026-11-23 速览；Baichuan 网站不可达；本窗口未确认新报告。
+
 ## [2026-11-25] synthesis | conference-digest (2026-11-25)
 - Report: `wiki/synthesis/2026-11-25/conference-digest.md` — 会议论文：ICML 2026(2611.30168 FiRE)、AAAI 2026(2610.33456 FG-ConvNO, 2610.29925 Privacy in Context)、NeurIPS 2025(2610.35635 MATE)、ICLR 2026(2611.30233 CLIP-FMoE, 2611.01870 ASpec)、KDD 2026(2610.32189 EVOLVE)、CVPR 2026(2611.29753 DREAM, 2610.38587 RoSAMDepth)、ACL 2026(2611.31848 QuirkyMind)、EMNLP 2025(2608.23271 AI Disclosure)、SIGIR 2026(2609.06604 TaxoConf)、WWW 2026(2604.27852 NeocorRAG)、CIKM 2025(2511.15241 Selective Mixup, 2511.08181 MARC, 2601.11528 Stock KG)、RecSys 2025(2509.12382 LLM-as-a-Judge, 2509.05564 KARL)；研究主题：AI/LLM(2611.31813 Agentic Discovery of Soundness Bugs, 2611.31804 Federated Policy Gradient, 2611.31063 REPA, 2611.31656 BRAG, 2611.31689 GeoMVGen)、推荐系统(2611.31851)、智能体系统(2611.31685, 2611.31618)、代码执行预测(2611.31554)、生成模型、游戏、序列建模(2611.11622 GenISys)、基准测试(2611.31873 RepoEviAgent, 2611.31868 CALVIN-MAX)。
 - Method: arXiv Export API (`https://export.arxiv.org/api/query`, `sortBy=submittedDate`)：12 会议查询（`all:"<Venue> <Year>"`）+ 8 研究主题查询（`all:"large language model"`, `all:recommendation`, `all:advertising`, `all:"click through rate"`, `all:"code execution"`, `all:games`, `all:"agent system"`, `all:"generative model"`, `all:"sequential modeling"`, `all:benchmark`）；NEW 过滤：排除 wiki 中已见 arXiv ID（grep 11,173 个既有 ID），选取 29 篇 NEW。
