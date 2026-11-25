@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-25] synthesis | wq101-alpha-daily (2026-11-25)
+- Report: `wiki/synthesis/2026-11-25/wq101-alpha-daily.md` — WorldQuant 101 Alpha 美股 Top 20 精选（Yahoo Finance quote 页面，U.S. markets closed；市场概览 + 板块轮动 + 逐股因子解读 + 综合评分 + 排名表与板块汇总）。
+- Method: Yahoo Finance `finance.yahoo.com/quote/{symbol}` 页面（At close: 2026-11-24）取 Previous Close/Open/Day's Range/Volume/Market Cap（intraday）+ YTD 收益作动量代理；7 因子简化代理（#1/#41 为主，#12/#19 等作辅助）；因子 f = 10·tanh(|A|/5)，综合 = clip(round(5 + mean(top-2 f)), 0, 10)。
+- Updated: `wiki/index.md`（Sources 表 + Synthesis 表新增 2026-11-25 wq101-alpha-daily 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-25/wq101-alpha-daily.md`。
+- Top 20：LLY/MU/TSM/ASML/DE/ORCL/KO/JNJ/XOM/CVX/INTC/NVDA/AAPL/V/MA/LMT/TSLA/CSCO（综合评分 10）+ PFE（9）+ AMZN（8）。
+- Contradictions/flags: 因子为结构性代理值，非公式回测；数据来自 Yahoo Finance quote 页面 At close（2026-11-24）；不构成投资建议。
+
 ## [2026-11-25] synthesis | game-rl-daily (2026-11-25)
 - Report: `wiki/synthesis/2026-11-25/game-rl-daily.md` — Game RL & Game AI Bot Daily Digest (2026-11-25): 8 sections — Game RL (Exploring Multi-Player Social Games as Verifiable Training Grounds for LLMs 2611.31821v1; AlphaDefect — Expert-Level AI for Slay the Spire 2 2611.31076v1; Think Offline, Act in Real Time 2611.24590v1; When Agents Play Differently 2611.26012v1; VLA Adaptation with Real and Simulated Data on Robotic Chess 2611.12676v1; From Game Generation to Game Playing 2611.11136v2), Game AI Bot (AutoPILOT 2611.28202v1; Emotion-Aware ChatNPC 2611.29372v1; LLM-based NPCs systematic mapping study 2611.05427v1; MANA 2611.14431v1), Game Foundation Models (Gamer 2611.18397v3; GameRealm 2611.23140v1; NitroGen 2611.26807v1), Game Benchmarks (Off-the-Shelf Autonomous Agents for Game Playtesting 2611.31570v1; OCTAVE 2611.17681v1; WorldLeague 2611.30989v1; Schedule/Rank/Profile 2611.28368v1), Industry Game AI (CPU-Only MMORPG Bots 2611.30502v1), Related Techniques (SWAM 2611.30042v1).
 - Method: arXiv Export API (`export.arxiv.org/api/query`, `sortBy=submittedDate`), window ≈ 2026-11-21 → 2026-11-25; abstracts/authors/affiliations from Atom feed metadata (affiliations not in metadata — noted per convention).
