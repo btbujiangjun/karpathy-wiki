@@ -10,6 +10,14 @@
 - Updated: `wiki/index.md`（Synthesis 表新增 2026-11-25 game-rl-daily 条目）, `wiki/log.md`（本条）。
 - New pages: `wiki/synthesis/2026-11-25/game-rl-daily.md`。
 
+## [2026-11-25] synthesis | wq101-alpha-daily (2026-11-25)
+- Report: `wiki/synthesis/2026-11-25/wq101-alpha-daily.md` — WorldQuant 101 Alpha 美股 Top 20 精选（2026-11-25）；Yahoo Finance quote 页面（finance.yahoo.com/quote/{symbol}）实时数据：S&P 500 7,164.75（−0.73%）、Nasdaq 25,930.50（−1.33%）、Dow 49,850.00（−0.42%）、VIX 26.36（−0.98%）、NYSE 23,354.68（+0.44%）；今日热点：NVDA −8.60%（昨日头条 "Nvidia Falls"）、INSM +13.69%、AMD −11.99%、INTC −10.31%、SPCX −7.00%。
+- Highlights: 市场承压（三大指数跌）；板块轮动——Healthcare（YTD +22.01%）/ Energy（+26.48%）/ Utilities（+5.40%）YTD 领跑，Telecom（−12.26%）承压；候选池 >$10B（Most Active 25 条 + 2026-11-23 报告 Top 20 并集，排除 WULF 5.02B、BMNR 8.26B）。
+- Method: Yahoo Finance quote 页面 + Most Active 表（webfetch）；6 维度因子结构性代理（A1 动量 / A6 开盖量与 Volume vs Avg Vol / A12 量价背离 / A19 均值回复（区间位置）/ A30 波动结构 / A41 趋势强度（√(H·L) vs 收价）；综合评分 `clip(round(5 + mean(匹配因子)), 0, 10)`，与 2026-11-23 报告公式沿用；因子为横截面代理，非公式回测。
+- Updated: `wiki/index.md`（Sources 表新增 2026-11-25 wq101-alpha-daily 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-25/wq101-alpha-daily.md`。
+- Contradictions/flags: 数据基准为 Nov 24 收盘 + 随后快照（Overnight ATS 会话数据亦注明）；部分因子值为区间代理，非真实因子序列；**不构成投资建议**。
+
 ## [2026-11-25] synthesis | investment-daily (2026-11-25)
 - Report: `wiki/synthesis/2026-11-25/investment-daily.md` — 投资热点日报：①美股 AI 环路震荡分化（NVIDIA Nov 24 收盘 151.21(−2.68%)，Overnight 盘前会话 155.38(−9.67%)，治理反转；AMD 等链跟随 NVIDIA；Tesla −0.91%，带 Robotaxi 与 SpaceX-Tesla 争议新闻）②港股平台股：Tencent 0981.HK +0.94%→+0.76%（10:34–10:35），Alibaba +2.01%、Meituan +1.71%、Xiaomi +5.58%（跨关注），SMIC 0981.HK −0.12% ③A 股 AI/算力链承压分化：BYD −0.59%、Innolight +0.19%、NAURA −6.06%、Hygon −0.60% ④中榄股/中榄车链符号（TSLA ADR、JD、Tencent） ⑤AI 热点主题（Tencent SFF2026 AI+AI，Nvidia 弹性，Nvidia 购买 → 数据中心、美出口限制解除、Michael Burry 加仓 JD/Tencent/BYD）。
 - Method: Yahoo Finance 行情（`finance.yahoo.com/quote/{sym}`，`quote/{sym}/news/`）+ NVIDIA 页跨关注快照，webfetch 抓取。
