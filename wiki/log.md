@@ -4,6 +4,13 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-25] synthesis | conference-digest (2026-11-25)
+- Report: `wiki/synthesis/2026-11-25/conference-digest.md` — 会议论文：ICML 2026(2611.30168 FiRE)、AAAI 2026(2610.33456 FG-ConvNO, 2610.29925 Privacy in Context)、NeurIPS 2025(2610.35635 MATE)、ICLR 2026(2611.30233 CLIP-FMoE, 2611.01870 ASpec)、KDD 2026(2610.32189 EVOLVE)、CVPR 2026(2611.29753 DREAM, 2610.38587 RoSAMDepth)、ACL 2026(2611.31848 QuirkyMind)、EMNLP 2025(2608.23271 AI Disclosure)、SIGIR 2026(2609.06604 TaxoConf)、WWW 2026(2604.27852 NeocorRAG)、CIKM 2025(2511.15241 Selective Mixup, 2511.08181 MARC, 2601.11528 Stock KG)、RecSys 2025(2509.12382 LLM-as-a-Judge, 2509.05564 KARL)；研究主题：AI/LLM(2611.31813 Agentic Discovery of Soundness Bugs, 2611.31804 Federated Policy Gradient, 2611.31063 REPA, 2611.31656 BRAG, 2611.31689 GeoMVGen)、推荐系统(2611.31851)、智能体系统(2611.31685, 2611.31618)、代码执行预测(2611.31554)、生成模型、游戏、序列建模(2611.11622 GenISys)、基准测试(2611.31873 RepoEviAgent, 2611.31868 CALVIN-MAX)。
+- Method: arXiv Export API (`https://export.arxiv.org/api/query`, `sortBy=submittedDate`)：12 会议查询（`all:"<Venue> <Year>"`）+ 8 研究主题查询（`all:"large language model"`, `all:recommendation`, `all:advertising`, `all:"click through rate"`, `all:"code execution"`, `all:games`, `all:"agent system"`, `all:"generative model"`, `all:"sequential modeling"`, `all:benchmark`）；NEW 过滤：排除 wiki 中已见 arXiv ID（grep 11,173 个既有 ID），选取 29 篇 NEW。
+- Updated: `wiki/index.md`（Sources 表 + Synthesis 表新增 2026-11-25 conference-digest 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-25/conference-digest.md`。
+- Contradictions/flags: 指标/结果按论文自报（未读全文）；单位多数未公开；CTR/广告类无 NEW 论文（其窗口口径已由既有 arxiv-daily/arxiv-paper-check 报告覆盖）。
+
 ## [2026-11-25] synthesis | arxiv-paper-check (2026-11-25)
 - Report: `wiki/synthesis/2026-11-25/arxiv-paper-check.md` — AI & CTR paper check for 2026-11-25: **0 new AI/CTR papers in the strict last-24h window (2026-11-24 → 2026-11-25); arXiv quiet** — freshest available: cs.AI 2611.31228v1 (Language Models Steer on Injected Uncertainty Tokens, but Fail to Self-Monitor In Situ, 2026-11-23), cs.IR 2611.31185v1 (CO-GRAFT: Attributing RL Gains in Search Agents via Role-Level Policy Grafting, 2026-11-23), keyword sweep 2611.25659v1 (DNA: Unlocking Depth Scaling in CTR Models, 2026-11-19).
 - Method: arXiv Export API (`export.arxiv.org/api/query`, sorted by `submittedDate`): `cat:cs.AI`; `cat:cs.IR`; keyword sweep `all:"click through rate" OR ti:CTR`; window 2026-11-24 → 2026-11-25 (current ~2026-11-25T02:20Z); newest published date across all result files verified by grep to be 2026-11-23 (no ID collisions vs existing wiki).
