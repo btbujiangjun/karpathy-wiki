@@ -4,6 +4,12 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-25] synthesis | game-rl-daily (2026-11-25)
+- Report: `wiki/synthesis/2026-11-25/game-rl-daily.md` — Game RL & Game AI Bot Daily Digest (2026-11-25): 8 sections — Game RL (Exploring Multi-Player Social Games as Verifiable Training Grounds for LLMs 2611.31821v1; AlphaDefect — Expert-Level AI for Slay the Spire 2 2611.31076v1; Think Offline, Act in Real Time 2611.24590v1; When Agents Play Differently 2611.26012v1; VLA Adaptation with Real and Simulated Data on Robotic Chess 2611.12676v1; From Game Generation to Game Playing 2611.11136v2), Game AI Bot (AutoPILOT 2611.28202v1; Emotion-Aware ChatNPC 2611.29372v1; LLM-based NPCs systematic mapping study 2611.05427v1; MANA 2611.14431v1), Game Foundation Models (Gamer 2611.18397v3; GameRealm 2611.23140v1; NitroGen 2611.26807v1), Game Benchmarks (Off-the-Shelf Autonomous Agents for Game Playtesting 2611.31570v1; OCTAVE 2611.17681v1; WorldLeague 2611.30989v1; Schedule/Rank/Profile 2611.28368v1), Industry Game AI (CPU-Only MMORPG Bots 2611.30502v1), Related Techniques (SWAM 2611.30042v1).
+- Method: arXiv Export API (`export.arxiv.org/api/query`, `sortBy=submittedDate`), window ≈ 2026-11-21 → 2026-11-25; abstracts/authors/affiliations from Atom feed metadata (affiliations not in metadata — noted per convention).
+- Updated: `wiki/index.md`（Synthesis 表新增 2026-11-25 game-rl-daily 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-25/game-rl-daily.md`。
+
 ## [2026-11-25] synthesis | investment-daily (2026-11-25)
 - Report: `wiki/synthesis/2026-11-25/investment-daily.md` — 投资热点日报：①美股 AI 环路震荡分化（NVIDIA Nov 24 收盘 151.21(−2.68%)，Overnight 盘前会话 155.38(−9.67%)，治理反转；AMD 等链跟随 NVIDIA；Tesla −0.91%，带 Robotaxi 与 SpaceX-Tesla 争议新闻）②港股平台股：Tencent 0981.HK +0.94%→+0.76%（10:34–10:35），Alibaba +2.01%、Meituan +1.71%、Xiaomi +5.58%（跨关注），SMIC 0981.HK −0.12% ③A 股 AI/算力链承压分化：BYD −0.59%、Innolight +0.19%、NAURA −6.06%、Hygon −0.60% ④中榄股/中榄车链符号（TSLA ADR、JD、Tencent） ⑤AI 热点主题（Tencent SFF2026 AI+AI，Nvidia 弹性，Nvidia 购买 → 数据中心、美出口限制解除、Michael Burry 加仓 JD/Tencent/BYD）。
 - Method: Yahoo Finance 行情（`finance.yahoo.com/quote/{sym}`，`quote/{sym}/news/`）+ NVIDIA 页跨关注快照，webfetch 抓取。
