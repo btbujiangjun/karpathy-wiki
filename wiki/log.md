@@ -4,6 +4,14 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-25] synthesis | investment-daily (2026-11-25)
+- Report: `wiki/synthesis/2026-11-25/investment-daily.md` — 投资热点日报：①美股 AI 环路震荡分化（NVIDIA Nov 24 收盘 151.21(−2.68%)，Overnight 盘前会话 155.38(−9.67%)，治理反转；AMD 等链跟随 NVIDIA；Tesla −0.91%，带 Robotaxi 与 SpaceX-Tesla 争议新闻）②港股平台股：Tencent 0981.HK +0.94%→+0.76%（10:34–10:35），Alibaba +2.01%、Meituan +1.71%、Xiaomi +5.58%（跨关注），SMIC 0981.HK −0.12% ③A 股 AI/算力链承压分化：BYD −0.59%、Innolight +0.19%、NAURA −6.06%、Hygon −0.60% ④中榄股/中榄车链符号（TSLA ADR、JD、Tencent） ⑤AI 热点主题（Tencent SFF2026 AI+AI，Nvidia 弹性，Nvidia 购买 → 数据中心、美出口限制解除、Michael Burry 加仓 JD/Tencent/BYD）。
+- Method: Yahoo Finance 行情（`finance.yahoo.com/quote/{sym}`，`quote/{sym}/news/`）+ NVIDIA 页跨关注快照，webfetch 抓取。
+- Data baseline: 美股 Nov 24 收盘快照（Yahoo 延迟）+ 部分 Nov 25 晨间快照；港/A 为 Nov 25 早盘开盘快照（~10:32–10:35 GMT+8）。
+- Updated: `wiki/index.md`（Sources 表 + Synthesis 表新增 2026-11-25 investment-daily 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-25/investment-daily.md`。
+- Contradictions/flags: 未获取条目已标注（MSFT/GOOGL/PLTR/AVGO/TSM/SNOW/ORCL/CXO/港股次数级），不代表下跌。
+
 ## [2026-11-25] synthesis | tech-report-digest (2026-11-25)
 - Report: `wiki/synthesis/2026-11-25/tech-report-digest.md` — LLM 技术报告速览，覆盖 20 家目标机构最新一手 Tech Report/Technical Report/System Card/Model Card（窗口核验至 2026-11-25）。
 - Window findings: 窗口内新增首发 **OpenAI GPT-6.2 in ChatGPT 系统卡**（2026-11-23，GPT-6.2 优化版, 系统卡自报 Astra 相同系列, 附定价 $8/$0.40/$40 per M in/out tokens, Cybersafety Critical/Bio High, AI Self-Improvement High, GPQA 97.0% 等）；窗口内 Google Gemini 4 Neon（11-18）页面更新至 2026-11-23；xAI Grok 4.7（9-21，CursorBench 4.0 46.3%, 2× 速度半价）；Moonshot Kimi K3.1 Pro（10-24, KDA+MLA+DSA 架构, 3T-class）；OpenAI GPT-6.2 System Card（11-17, Astra/Sol, Preparedness 网络安全 Critical）；Anthropic Fable 5.2/Mythos 5.2（11-09）等既有口径复核。
