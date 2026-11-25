@@ -4,6 +4,20 @@
 > Each entry: `## [YYYY-MM-DD] operation | subject`
 > Parse with: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-11-25] synthesis | arxiv-paper-check (2026-11-25)
+- Report: `wiki/synthesis/2026-11-25/arxiv-paper-check.md` — AI & CTR paper check for 2026-11-25: **0 new AI/CTR papers in the strict last-24h window (2026-11-24 → 2026-11-25); arXiv quiet** — freshest available: cs.AI 2611.31228v1 (Language Models Steer on Injected Uncertainty Tokens, but Fail to Self-Monitor In Situ, 2026-11-23), cs.IR 2611.31185v1 (CO-GRAFT: Attributing RL Gains in Search Agents via Role-Level Policy Grafting, 2026-11-23), keyword sweep 2611.25659v1 (DNA: Unlocking Depth Scaling in CTR Models, 2026-11-19).
+- Method: arXiv Export API (`export.arxiv.org/api/query`, sorted by `submittedDate`): `cat:cs.AI`; `cat:cs.IR`; keyword sweep `all:"click through rate" OR ti:CTR`; window 2026-11-24 → 2026-11-25 (current ~2026-11-25T02:20Z); newest published date across all result files verified by grep to be 2026-11-23 (no ID collisions vs existing wiki).
+- Updated: `wiki/index.md`（Sources 表 + Synthesis 表新增 2026-11-25 arxiv-paper-check 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-25/arxiv-paper-check.md`。
+- Contradictions/flags: 0 papers；抽象/元数据级筛查（无全文），指标均按论文自报；与 2026-11-21/22/23 兄弟报告口径一致（arXiv 窗口内静默）。
+
+## [2026-11-25] synthesis | arxiv-daily (2026-11-25)
+- Report: `wiki/synthesis/2026-11-25/arxiv-daily.md` — Daily ArXiv Digest 2026-11-25: 15 papers (AI/LLMs ×3: TipSweep 2611.31166v1, CO-GRAFT 2611.31185v1, RSA-2048 Toffolis 2611.31158v1; Recommendation ×3: Needwise 2611.31175v1, From Head to Tail 2611.31052v1, MARS 2611.24006v1; Advertising ×2: Ads for Agents 2611.28911v1, ISGE 2611.26060v1; Sequential Modeling ×2: ARMSL 2611.03049v1, Query-and-Candidate-Aware 2611.11675v1; CTR ×2: DNA 2611.25659v1, X-split Argus 2611.24283v1; Games ×2: AlphaDefect 2611.31076v1, GameDojo 2611.30771v1); title/authors/abstract/key innovations/arXiv links per paper.
+- Method: arXiv Export API (`export.arxiv.org/api/query`, `sortBy=submittedDate`, max_results=10); queries: `all:"large language model"`, `cat:cs.AI`, `all:recommendation`, `all:advertising`, `all:adtech`, `all:"sequential modeling"`, `all:CTR`, `all:games`; window 2026-11-23 → 2026-11-25; deduped vs all wiki IDs (`grep wiki/synthesis/**`) — 2611.25659v1 / 2611.24283v1 previously appeared in the 2026-11-23 batch (`wiki/synthesis/2026-11-23/arxiv-daily.md`), re-included here and noted inline.
+- Updated: `wiki/index.md` (Sources 表新增 2026-11-25 arxiv-daily 条目), `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-25/arxiv-daily.md`。
+- Contradictions/flags: none; 论文元数据/摘要级筛查，指标/结果按论文自报；Institution 按惯例标注为 Not stated on arXiv metadata (best effort)（arXiv API/abs 页无作者单位，背景引用为说明性推断）。
+
 ## [2026-11-24] synthesis | conference-digest (2026-11-24)
 - Report: `wiki/synthesis/2026-11-24/conference-digest.md` — arXiv 会议论文摘要 2026-11-24：会议论文（ICML 2026, AAAI 2026, NeurIPS 2025, ICLR 2026, KDD 2026, CVPR 2026, ACL 2026, EMNLP 2025, SIGIR 2026, WWW 2026, CIKM 2025, RecSys 2025，每会议 3 篇 = 36 篇）+ 研究主题（LLM/AI, 推荐系统, 广告, CTR, 游戏, 代码执行预测, 智能体系统, 生成模型, 序列建模, 基准测试，每主题 3 篇 = 28 篇）共 64 篇，含标题中英文、作者、单位(未公开)、摘要、核心创新、先前方法对比、实验结果与 arXiv/PDF 链接。
 - Method: arXiv Export API（`https://export.arxiv.org/api/query`, sorted by `submittedDate` desc）：会议查询（`all:"<Venue> <Year>"` + 变体, venue 确认：`arxiv:comment`/`arxiv:journal_ref` 含会议名, 按提交日期倒序取 3 篇）+ 类别查询（`cat:cs.LG/cs.AI/cs.CL/cs.CV/cs.IR/cs.MA/cs.GT/cs.SE/cs.MM`, max 120, 当天查询, 受 429 限流需重试）；作者通过 `id_list` 查询获取。
