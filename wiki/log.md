@@ -9967,3 +9967,12 @@
 - Updated: `wiki/index.md` (Synthesis 表新增 2026-11-26 game-rl-daily 条目), `wiki/log.md` (本条).
 - New pages: `wiki/synthesis/2026-11-26/game-rl-daily.md`.
 - Contradictions: none.
+
+## [2026-11-26] synthesis | wq101-alpha-daily (2026-11-26)
+- Report: `wiki/synthesis/2026-11-26/wq101-alpha-daily.md` — WorldQuant 101 Alpha 美股 Top 20 精选（2026-11-26；as-of 美股 2026-11-25 收盘；今日 11-26 美股休市/感恩节）。
+- Top 20: CBOE(8.90)/JNJ(7.98)/COST(7.96)/VTR(7.95)/CCI(7.92)/RPRX(7.79)/RSG(7.78)/CVS(7.67)/EPD(7.63)/INTU(7.62)/OXY(7.51)/TGT(7.51)/XEL(7.37)/ABBV(7.31)/CI(7.28)/CME(7.19)/MPC(7.19)/XOM(7.16)/ADBE(7.15)/A(7.14)；板块结构 Health Care×6 + Energy×4 + Financials×2 + Consumer Staples×2 + Real Estate×2 + Information Technology×2 + Industrials×1 + Utilities×1。
+- Method: 候选池美股普通股 marketCap≥$10B（Nasdaq screener 初筛 + 市值，剔除 ETF/基金/Warrant/Unit/Preferred/ZONES/死标的/低历史，cap前300，要求≥60根+7因子全可算，n=292）；Yahoo `v8/finance/chart` 近1年日线 OHLCV；**精确计算用户指定 7 因子**（Alpha#1 `Rank(Correlation(Delay(close,1),close,10))`、#6 `Correlation(open,volume,10)`、#12 `sign(delta(volume,1))*(-1*delta(close,1))`、#19 `-1*rank(stddev(abs(close-open),5)+(close-open)+rank(correlation(close,open,10)))` [括号重构]、#30 `(-1*rank(2*scale(rank(((close-low)-(high-close))/(high-low)*volume))-scale(rank(delta(close,3)))))*sum(volume,5)` [括号重构]、#41 `sqrt(high*low)-vwap`、#53 `-1*delta(((close-low)-(high-close))/(close-low),9)`）；每因子横截面百分位 rank(0-1,并列平均)，**等权合成，综合分=1+9*mean(7 pct)**，匹配因子=top-2；Pearson/stddev 用总体；**daily VWAP 以典型价 (H+L+C)/3 代理**；原始价非 adjclose。
+- Honesty/flags: 用户对 #1/#6/#19/#30 改写与原版 WorldQuant 101（Kakushadze 2016 arXiv:1601.00991，已 PDF 原文核验原版公式）不完全一致（#6 去 −1、#1/#19/#30 不同公式）；**#19/#30 用户括号不配平→重构配平**；**#30/#12 raw 量级大/负→看 pct**；**screener vs chart 口径/时点差异**（CBOE +2.21% vs −2.96% 等，因子以 chart 为准，screener 仅市值/初筛）；**CBOE ranked#1 但标注数据质量需人工复核 + exchange 高相关**；**EPD 板块修正 Energy**；**TGT 本环境=Consumer Staples**；**板块源 GICS/Nasdaq/Yahoo 分歧已标注**；**中文译名非官方**；**非公式回测、不构成投资建议**。
+- Data sources: Yahoo Finance `v8/finance/chart`（日线 OHLCV + meta + 指数 ^GSPC/^IXIC/^DJI/^VIX/^TNX + sector ETF）、Nasdaq screener API、S&P500 GICS (GitHub datasets)、Yahoo Finance 首页头条 + 个股页（webfetch）；**websearch 在本环境不可用，市场热点取自 Yahoo Finance**；原版因子定义 Kakushadze(2016) arXiv:1601.00991（arXiv PDF 原文核验）。
+- Verification: 因子实现经独立手算交叉验证（JNJ/CBOE/XOM 抽样 a1/a6/a12/a41/a53 一致）；原版 #1/#6/#12/#19/#30/#41/#53 已对照 arXiv PDF 文本核验；292/292 last-bar=2026-11-25。
+- Updated: `wiki/index.md`（Synthesis 表新增 2026-11-26 wq101-alpha-daily 条目）, `wiki/log.md`（本条）。New pages: `wiki/synthesis/2026-11-26/wq101-alpha-daily.md`。Contradictions: 无（已显式标注口径差异）。
