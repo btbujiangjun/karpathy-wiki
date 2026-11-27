@@ -111,7 +111,7 @@ tags: [tech-report, LLM, technical-report, system-card, model-card, ArXiv, moe, 
   - **推理模型**：novel mathematical & scientific reasoning; long-horizon agentic; thinking; coding/sciences/finance.
   - **Scaling Law/缩放分析**：system card 含 scaling/acceleration 分析（AECI lagging indicator; breakpoint/one-time jump 分析；不单列“Scaling Law”公式）；RSP scaling thresholds.
   - **多模态**：Claude Fable/Mythos 5.2 text model；Anthropic 多模态产品另计；本卡“model outputs text only”. **长上下文**：见官方（本卡未显式给数值，不臆造）.
-- **arXiv/论文链接**：**非 arXiv**。[Announcement](https://www.anthropic.com/claude-fable-and-mythos-5-2) / [news](https://www.anthropic.com/news/claude-fable-and-mythos-5-2)；[**System Card PDF**](https://www.anthropic.com/document/claude-fable-5-2-mythos-5-2-system-card)（redirect → [assets.claude.com PDF](https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf)）；[RSP](https://www.anthropic.com/responsible-scaling-policy)；[Claude Security]...；[distillation defenses](https://www.anthropic.com/news/distillation-defenses)。**未在本卡发现 arXiv 链接。**
+- **arXiv/论文链接**：**非 arXiv**。[Announcement](https://www.anthropic.com/claude-fable-and-mythos-5-2) / [news](https://www.anthropic.com/news/claude-fable-and-mythos-5-2)；[**System Card PDF**](https://www.anthropic.com/document/claude-fable-5-2-mythos-5-2-system-card)（redirect → [assets.claude.com PDF](https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf)）；[RSP](https://www.anthropic.com/responsible-scaling-policy)；Claude Security（见 system card；本窗口未单独抓取页面）；[distillation defenses](https://www.anthropic.com/news/distillation-defenses)。**未在本卡发现 arXiv 链接。**
 
 ### 6. Mistral AI
 
@@ -146,7 +146,7 @@ tags: [tech-report, LLM, technical-report, system-card, model-card, ArXiv, moe, 
   - **多模态**：native vision.
   - **长上下文**：1M; (lossless 口径见前序/官方措辞，不独立复核).
   - **推理模型**：long-horizon agents; agentic coding; knowledge work; scientific discovery; professional workflows.
-- **arXiv/论文链接**：**本窗口未发现 Qwen4-Max 独立 arXiv 技术报告**；官方社区博客 [Alibaba Unveils Qwen4-Max](https://community.alibabacloud.com/blog/alibaba-unveils-qwen4-max-new-ai-teammate-for-work-creativity-and-discovery_603783)；[Qwen4-Max: One Flagship...](https://community.alibabacloud.com/blog/qwen4-max-one-flagship-for-complex-work-at-a-price-that-scales_603806)；[QwenCloud](https://www.qwencloud.com)；[Qwen research](https://qwen.ai/research)；[Qwen4-Max tag]...；HF `Qwen` org（本窗口未见 Qwen4 权重，open-weight 待发布）。**不臆造 arXiv ID。**
+- **arXiv/论文链接**：**本窗口未发现 Qwen4-Max 独立 arXiv 技术报告**；官方社区博客 [Alibaba Unveils Qwen4-Max](https://community.alibabacloud.com/blog/alibaba-unveils-qwen4-max-new-ai-teammate-for-work-creativity-and-discovery_603783)；[Qwen4-Max: One Flagship for Complex Work, at a Price That Scales](https://community.alibabacloud.com/blog/qwen4-max-one-flagship-for-complex-work-at-a-price-that-scales_603806)；[QwenCloud](https://www.qwencloud.com)；[Qwen research](https://qwen.ai/research)；HF `Qwen` org（本窗口未见 Qwen4 权重，open-weight 待发布）。**不臆造 arXiv ID。**
 
 ### 8. Yi (01.AI)
 
@@ -189,7 +189,7 @@ tags: [tech-report, LLM, technical-report, system-card, model-card, ArXiv, moe, 
   - **多模态**：vision+reasoning; OCR; ChartQA; MathVista; MMMU; ScreenSpot-V2; GUI grounding; computer-use.
   - **推理模型**：Phi-4-Reasoning; Chain-of-Thought; thinking.
   - **Scaling Law**：“lessons of training a multimodal reasoning model”; small-model scaling; no separate Scaling-Law table.
-- **arXiv/论文链接**：[Phi-4-Reasoning-Vision-15B HF](https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B)；[Technical Report (arXiv:2511.19663)](https://arxiv.org/abs/2511.19663) / [aka.ms/Phi-4-reasoning-vision-15B-TR](https://aka.ms/Phi-4-reasoning-vision-15B-TR)；[Microsoft Research blog](https://www.microsoft.com/en-us/research/blog/phi-4-reasoning-vision-and-the-lessons-of-training-a-multimodal-reasoning-model/)；[Microsoft Foundry](https://aka.ms/Phi-4-r-v-foundry)；[GitHub](https://github.com/microsoft/phi-4-reasoning-vision-15B)；[Phi-4 technical report arXiv:2412.08905]...（Phi-4 原报，本窗口未复核）；[FrogNano-4B-2609 HF](https://huggingface.co/microsoft/FrogNano-4B-2609)。**FrogNano 无已验证 arXiv。**
+- **arXiv/论文链接**：[Phi-4-Reasoning-Vision-15B HF](https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B)；[Technical Report (arXiv:2511.19663)](https://arxiv.org/abs/2511.19663) / [aka.ms/Phi-4-reasoning-vision-15B-TR](https://aka.ms/Phi-4-reasoning-vision-15B-TR)；[Microsoft Research blog](https://www.microsoft.com/en-us/research/blog/phi-4-reasoning-vision-and-the-lessons-of-training-a-multimodal-reasoning-model/)；[Microsoft Foundry](https://aka.ms/Phi-4-r-v-foundry)；[GitHub](https://github.com/microsoft/phi-4-reasoning-vision-15B)；Phi-4 原报 arXiv:2412.08905（本窗口未复核，不作链接）；[FrogNano-4B-2609 HF](https://huggingface.co/microsoft/FrogNano-4B-2609)。**FrogNano 无已验证 arXiv。**
 
 ### 11. Apple
 
@@ -223,7 +223,7 @@ tags: [tech-report, LLM, technical-report, system-card, model-card, ArXiv, moe, 
   - **多模态**：VL variant; scientific/visual; Nemotron-Labs-VisualCreation.
   - **长上下文**：1M.
   - **推理模型**：long CoT; RL; reasoning; agentic; tool use.
-- **arXiv/论文链接**：[Nemotron 3.5 Super arXiv:2611.22161](https://arxiv.org/abs/2611.22161)；[Nemotron 3.5 Bolt arXiv:2611.20771](https://arxiv.org/abs/2611.20771)；[Nemotron-Labs-Sigma arXiv:2610.02665](https://arxiv.org/abs/2610.02665)；[Nemotron-Labs-VisualCreation arXiv:2611.31358](https://arxiv.org/abs/2611.31358)；[Nemotron 3.5 Lightning arXiv:2610.38095];[nvidia HF](https://huggingface.co/nvidia);[NVIDIA technical blog](https://developer.nvidia.com/blog);[NVIDIA Nemotron page]...。**多为 NVIDIA 官方 arXiv + model cards，非单一整体技术报告。**
+- **arXiv/论文链接**：[Nemotron 3.5 Super arXiv:2611.22161](https://arxiv.org/abs/2611.22161)；[Nemotron 3.5 Bolt arXiv:2611.20771](https://arxiv.org/abs/2611.20771)；[Nemotron-Labs-Sigma arXiv:2610.02665](https://arxiv.org/abs/2610.02665)；[Nemotron-Labs-VisualCreation arXiv:2611.31358](https://arxiv.org/abs/2611.31358)；Nemotron 3.5 Lightning arXiv:2610.38095（本窗口未复核，不作链接）；[nvidia HF](https://huggingface.co/nvidia);[NVIDIA technical blog](https://developer.nvidia.com/blog)。**多为 NVIDIA 官方 arXiv + model cards，非单一整体技术报告。**
 
 ### 13. xAI (Grok)
 
@@ -245,7 +245,7 @@ tags: [tech-report, LLM, technical-report, system-card, model-card, ArXiv, moe, 
 - **发布日期**：Nova 2 2025-12-02（前序）；Nova 2 Lite AWS blog 2025-12；**Nova 2.5 Sonic what's-new 2026-10**；Nova Act GA；本窗口核验 2026-11-27；**Nova 2 Lite** current. 
 - **核心参数**：**参数量未公开**；Nova 2 Lite **1M-token context**; thinking effort on/off/low/medium/high; built-in **Web Grounding + Code Interpreter + remote MCP**; multimodal text+image+video+speech; **pre-training + SFT + RFT (reinforcement fine-tuning)** customization; Nova Forge; **Nova 2.5 Sonic** speech-to-speech, real-time, async tool use, voice+text, up to 1M ctx; Nova 2 Sonic speech-to-speech; safe content filters + non-configurable child-safety + privacy; no arXiv technical report. 
 - **主要创新点**：reasoning + **extended thinking** (low/med/high); long context 1M; agentic tools; **Nova Act**; **Nova Forge**; customization; safety; Nova Multimodal Embeddings; speech-to-speech. Not a published standalone technical report; AWS docs + service card.
-- **arXiv/论文链接**：**非 arXiv**。[Amazon Nova](https://aws.amazon.com/nova/);[Nova models](https://aws.amazon.com/nova/models/);[Nova 2 getting started](https://docs.aws.amazon.com/nova/latest/nova2-userguide/getting-started-nova-2.html);[Nova 2 Lite blog](https://aws.amazon.com/blogs/aws/introducing-amazon-nova-2-lite-a-fast-cost-effective-reasoning-model/);[Nova 2.5 Sonic](https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-nova-2.5-Sonic/);[Nova Act];[Nova Forge];[responsible AI service card](https://aws.amazon.com/ai/responsible-ai/resources/#service). 
+- **arXiv/论文链接**：**非 arXiv**。[Amazon Nova](https://aws.amazon.com/nova/);[Nova models](https://aws.amazon.com/nova/models/);[Nova 2 getting started](https://docs.aws.amazon.com/nova/latest/nova2-userguide/getting-started-nova-2.html);[Nova 2 Lite blog](https://aws.amazon.com/blogs/aws/introducing-amazon-nova-2-lite-a-fast-cost-effective-reasoning-model/);[Nova 2.5 Sonic](https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-nova-2.5-Sonic/);[Nova Act](https://aws.amazon.com/nova/act/);[Nova Forge](https://aws.amazon.com/nova/forge/);[responsible AI service card](https://aws.amazon.com/ai/responsible-ai/resources/#service). 
 
 ### 15. Zhipu AI (GLM/ChatGLM)
 
@@ -283,7 +283,7 @@ tags: [tech-report, LLM, technical-report, system-card, model-card, ArXiv, moe, 
   - **多模态**：scientific multimodal (bio/chem/spectra...).
   - **推理模型**：scientific evidence reasoning + action; multi-round verification; MLE-bench Lite; OSWorld-Verified; WebArena-Verified; DeepResearch Bench II; OfficeQA Pro; SpreadsheetBench 2; Harvey LAB.
   - **Scaling Law**：not explicitly.
-- **arXiv/论文链接**：[Sage S2.1 Flash arXiv:2611.21072](https://arxiv.org/abs/2611.21072);[GitHub InternLM/Sage-S2.1-Flash](https://github.com/InternLM/Sage-S2.1-Flash);[HF internlm/Sage-SciPerception];[GitHub InternLM org](https://github.com/InternLM);[InternLM technical report arXiv:2403.17297];[Intern-S1];[InternVL]. 
+- **arXiv/论文链接**：[Sage S2.1 Flash arXiv:2611.21072](https://arxiv.org/abs/2611.21072);[GitHub InternLM/Sage-S2.1-Flash](https://github.com/InternLM/Sage-S2.1-Flash);[HF internlm/Sage-SciPerception](https://huggingface.co/internlm/Sage-SciPerception);[GitHub InternLM org](https://github.com/InternLM);[InternLM technical report arXiv:2403.17297](https://arxiv.org/abs/2403.17297);[Intern-S1](https://github.com/InternLM/Intern-S1);[InternVL](https://github.com/OpenGVLab/InternVL). 
 
 ### 17. Moonshot AI (Kimi)
 
@@ -319,7 +319,7 @@ tags: [tech-report, LLM, technical-report, system-card, model-card, ArXiv, moe, 
   - **多模态**：text+image+video; Step 3.7 VL.
   - **长上下文**：1M (Step 5); 256K (3.7 Flash); efficient long-context training/inference.
   - **推理模型**：agentic work; long tool-heavy trajectories; finance; knowledge work; coding.
-- **arXiv/论文链接**：**非 arXiv.org**；[Step-5-Preview GitHub](https://github.com/stepfun-ai/Step-5-Preview);[tech blog platform.stepfun.ai/blog/inside-step-5-preview];[model page www.stepfun.com/step-5-preview];[HF stepfun-ai/Step-5-Preview];[docs platform.stepfun.ai];[Step 3.7 Flash GitHub + model page];[StepFun GitHub org]. **未找到 Step 5 arXiv technical report。**
+- **arXiv/论文链接**：**非 arXiv.org**；[Step-5-Preview GitHub](https://github.com/stepfun-ai/Step-5-Preview);[tech blog](https://platform.stepfun.ai/blog/inside-step-5-preview);[model page](https://www.stepfun.com/step-5-preview);[HF stepfun-ai/Step-5-Preview](https://huggingface.co/stepfun-ai/Step-5-Preview);[docs](https://platform.stepfun.ai);[Step 3.7 Flash GitHub](https://github.com/stepfun-ai/Step-3.7-Flash);[Step 3.7 Flash model page](https://static.stepfun.com/blog/step-3.7-flash/);[StepFun GitHub org](https://github.com/stepfun-ai). **未找到 Step 5 arXiv technical report。**
 
 ### 19. ByteDance（豆包/Doubao）
 
@@ -335,7 +335,7 @@ tags: [tech-report, LLM, technical-report, system-card, model-card, ArXiv, moe, 
   - **多模态**：world-leading visual understanding; SeedRealtime omni-modal audio-visual full-duplex; Seedream/Seedance; 
   - **推理模型**：reasoning intelligence; long-horizon; complex instruction; 
   - **长上下文**：见 model card/官方（未在 abstract 公开，不臆造）.
-- **arXiv/论文链接**：[Seed2.0 Model Card arXiv:2607.00248](https://arxiv.org/abs/2607.00248);[Seed1.8 arXiv:2603.20633];[Seed site seed.bytedance.com];[博客&论文];[SeedRealtime];[Seedream 5.5];[Seedance 2.5];[EdgeBench]. **豆包/Doubao 产品本身不另发 arXiv；LLM model card 以 Seed2.0 为最新。**
+- **arXiv/论文链接**：[Seed2.0 Model Card arXiv:2607.00248](https://arxiv.org/abs/2607.00248);[Seed1.8 arXiv:2603.20633](https://arxiv.org/abs/2603.20633);[Seed site](https://seed.bytedance.com);[博客&论文](https://seed.bytedance.com/zh/research);[SeedRealtime](https://seed.bytedance.com/zh/blog/seedrealtime-audio-visual-full-duplex-llm-released-toward-omni-modal-natural-interaction);[Seedream 5.5](https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5);[Seedance 2.5](https://seed.bytedance.com/zh/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5);[EdgeBench](https://seed.bytedance.com/zh/blog/edgebench-measuring-real-world-environment-learning-and-discovering-a-new-scaling-law). **豆包/Doubao 产品本身不另发 arXiv；LLM model card 以 Seed2.0 为最新。**
 
 ---
 
