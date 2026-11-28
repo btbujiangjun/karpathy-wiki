@@ -10092,3 +10092,16 @@
 - New pages: `wiki/synthesis/2026-11-28/tech-report-digest.md`.
 - Contradictions: 本窗口对前一日 2026-11-27 条目纠正 Phi arXiv ID（2511.19663→2603.03975）；其余交叉核对未发现冲突；厂商自报 vs 官方披露口径差异（如 Mistral 1T/1050B、Seed “not disclosed”）如实记录。
 - Temp files: curl/PDF 抽取工作目录 `/private/var/folders/q9/tsl_tl5548x7j892sgt3qvlc0000gn/T/opencode/tr/`；未写 `raw/`；不修改既有页面。
+
+## [2026-11-28] synthesis | wq101-alpha-daily (2026-11-28)
+- Report: `wiki/synthesis/2026-11-28/wq101-alpha-daily.md` — WorldQuant 101 Alpha 美股 Top 20 精选；7 因子横截面等权合成 1–10 分；Top 20：MSFT/AMP/PNC/UBER/PSX/OXY/DVN/COF/ELV/COP/XOM/IQV/APA/AES/BRK.B/HRL/MKC/EOG/CVX/CI。
+- Market: 最新交易日 2026-11-27（2026-11-28 周六美股休市）；S&P 500 +1.60%、Nasdaq +2.31%、Dow +1.18%、Russell 2000 +1.71%、VIX −11.16%→23.81、10Y ~4.936%；热点 AI 乐观回归+芯片/AI 反弹+Fed 信号+感恩节周 AI（Yahoo RSS，未全文核实）。
+- Method: S&P 500 全量（503，Yahoo/Wikipedia）→≥25 日→市值>$10B（Yahoo marketCap）→n=78；Yahoo `v8/finance/chart`（range=3mo, interval=1d）日线 OHLCV + `v10/finance/quoteSummary`（crumb 鉴权）基本面；最新日横截面 rank[0,1]；composite=mean(7 r_k)；score=round(1+9·composite,1)；匹配=top-2 r_k。
+- Factors: Alpha#1 Rank(Corr(Delay(C,1),C,10))；#6 Corr(open,volume,10)；#12 sign(ΔV)·(−ΔC)；#19 −1·rank(σ5(|C−O|)+(C−O)+rank(corr(C,O,10)))；#30 用户字面值 + 打分用核心 inner=2·scale(rank(X))−scale(rank(ΔC,3)) 之 −1·rank（X=((C−L)−(H−C))/(H−L)·V；scale=L1）；#41 √(H·L)−(H+L+C)/3(vwap 近似)；#53 −1·Δ((2C−H−L)/(C−L),9)。高=好。
+- Sector: 因子口径 Energy 0.662 > Financials 0.563 > Utilities 0.549 > Consumer Staples 0.538 > Real Estate 0.519 > Health Care 0.511 > Comm 0.478 > ConsDisc 0.475 > Industrials 0.470 > Materials 0.443 > InfoTech 0.413；Top20 板块 Energy×8/Financials×4/HealthCare×3/Staples×2/InfoTech×1/Industrials×1/Utilities×1；匹配 #30×14/#53×9/#1×7/#41×5/#6×3/#19×2（#12 未进 Top-2）。
+- Fundamentals: Yahoo quoteSummary 市值/PE/前瞻PE/股息率/净利率/营收增长/分析师共识/目标价/财报日（预计，可能变动）。
+- Honesty/flags: websearch 不可用→Yahoo + RSS；非公式回测（无成本/滑点/换手/中性/样本外）；综合分自定义非 WQ 官方；#1 用户重定义≠原版；#19/#30 括号不平衡按报告 §2 口径；#30 字面 `×sum(volume,5)` 被成交量主导→打分改用核心信号（已标注）；daily VWAP 以(H+L+C)/3近似；单一数据源 Yahoo；幸存者偏差；市值门槛最新快照；中文名译名；**不构成投资建议**。
+- Updated: `wiki/index.md`（Synthesis 表新增 2026-11-28 wq101-alpha-daily 条目）, `wiki/log.md`（本条）。
+- New pages: `wiki/synthesis/2026-11-28/wq101-alpha-daily.md`.
+- Contradictions: 与前日/历史 wq101 报告不同因子口径（本报告 §2 明确）；本日 Top20 与历史 Top20 集合不同；数据基准 2026-11-27 vs 历史不同日；已在报告标注。
+- Temp: 计算脚本与 JSON `/private/var/folders/q9/tsl_tl5548x7j892sgt3qvlc0000gn/T/opencode/wq101/`；未写 raw/。
