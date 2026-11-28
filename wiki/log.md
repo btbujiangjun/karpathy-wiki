@@ -10061,3 +10061,22 @@
 - New pages: `wiki/synthesis/2026-11-28/arxiv-paper-check.md`.
 - Contradictions: none.
 - Temp files: scan script + JSON + raw arXiv XML under `/private/var/folders/q9/tsl_tl5548x7j892sgt3qvlc0000gn/T/opencode/`; nothing written to `raw/`.
+
+## [2026-11-28] synthesis | arxiv-ai-search (2026-11-28)
+- Report: `wiki/synthesis/2026-11-28/arxiv-ai-search.md` — arXiv AI Search Report — 2026-11-28: 36 curated recent papers (submissions 2026-11-14 → 2026-11-28; 14-day window) across AI/LLMs (8), Recommendation (8), Advertising (7), CTR/Conversion (5), Sequential Modeling (3), Games (5). Title/authors/institution-company/full abstract/key innovations/arXiv link per paper.
+- Method: arXiv Export API (`https://export.arxiv.org/api/query`, `sortBy=submittedDate`, `sortOrder=descending`, `submittedDate:[202611140000 TO 202611290000]`) over `cat:cs.AI`, `cat:cs.CL`, `cat:cs.LG`, `cat:cs.IR`, `cat:cs.GT`, `cat:cs.MA`, `stat.ML` plus keyword sweeps (LLM/foundation model; recommendation/recommender; click-through rate/CTR/click prediction; advertising/adtech/ad ranking/auto-bidding/RTB; sequential modeling/sequential recommendation; games/game AI/game theory); deduplicated by arXiv ID; institution best-effort from title page/PDF page 1 via `pypdf`, unclear cases marked 'Not stated'; key innovations condensed from abstracts; no full-text review; metrics author-reported.
+- Updated: `wiki/index.md` (Synthesis table new 2026-11-28 arxiv-ai-search entry), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-11-28/arxiv-ai-search.md`.
+- Contradictions/flags: none; affiliations not guaranteed complete; benchmark numbers author-reported.
+- Temp files: arXiv fetch/filter/PDF extraction/report-builder scripts, JSON, first-page affiliation scans under `/private/var/folders/q9/tsl_tl5548x7j892sgt3qvlc0000gn/T/opencode/`; PDFs deleted after extraction; nothing written to `raw/`.
+
+## [2026-11-28] synthesis | investment-daily (2026-11-28)
+- Report: `wiki/synthesis/2026-11-28/investment-daily.md` — 投资热点日报 — 美股/港股/A 股/中概股/中概新能源/AI（2026-11-28；周六休市，最新交易日 2026-11-27，美股 Black Friday 半日）.
+- Scope: 美股 NASDAQ/S&P 500 科技股、Mag 7（Apple/Microsoft/NVIDIA/Alphabet/Amazon/Meta/Tesla）、AI（Palantir/AMD/Broadcom/TSMC/Salesforce/Oracle/Snowflake/C3.ai/Anthropic + Micron/SK hynix/Sandisk/SpaceX）；港股（Tencent/Alibaba/Meituan/Xiaomi/Baidu/NetEase/Kuaishou/SMIC/Lenovo/SenseTime）；A 股（Cambricon/Hygon/Dawning/iFLYTEK/360/Zhongji Innolight/Eoptolink/NAURA/AMEC）；中概 ADR（BABA/PDD/JD/BIDU/NTES/BEKE/TCOM/YMM/VIPS/BZ/RLX/TME/BILI/LI/XPEV/NIO + user-specified ZK unverified）；中概新能源/EV/新能源（Tesla/BYD/LI/XPEV/NIO/ZK unverified/Xiaomi SU7 1810.HK/CATL/Sungrow/Longi）；AI 热点主题（新模型发布/AI capex/数据中心/算力租赁/自动驾驶/机器人/AI 应用）.
+- Verified data: `websearch` returned `Web search cancelled`; used `webfetch` + Yahoo Finance pages + `query2.finance.yahoo.com/v8/finance/chart/{symbol}?range=1d&interval=1d`. Market reaction uses `regularMarketChangePercent` at close vs `chartPreviousClose`, not after-hours/pre-market. Snapshot: S&P 500 +1.60%, Nasdaq +2.31%, Dow +1.18%, Hang Seng +2.105%, SSE Composite +3.73%, Shenzhen Index +7.24%, ChiNext +11.61%.
+- Key events verified from sources read: AI stocks rebound; NVIDIA Blackwell GB300 NVL72/GB200 in China data center + Shanghai loan collateral + export-control/trade-blacklist concerns + Jensen Huang reinstatement news; Anthropic IPO-after rebound ANT +10.98% + Claude Code + revenue run rate + committed spending + lockup risks; OpenAI vs Apple trade-secret/supplier/talent counterclaims; chip rebound NVDA/AMD/AVGO/TSM/MU/SKHY/SNDK; A-share AI/semiconductor/optical/equipment rally.
+- Unverified/flagged: company-level announcements, earnings, regulatory filings, new model releases, compute-leasing, autonomous-driving commercialization, robotics orders not independently verified; **极氪 ZK user-specified ticker not verified on Yahoo Finance**; `小米SU7` product vs `1810.HK` stock; `C3.ai` code `AI`; `SK hynix` `SKHY` vs `000660.KS`; `BABA` vs `9988.HK`; `BIDU` vs `9888.HK`; `NTES` vs `9999.HK`; `BYDDF` vs `002594.SZ`.
+- Updated: `wiki/index.md` (Synthesis table new 2026-11-28 investment-daily entry), `wiki/log.md` (this entry).
+- New pages: `wiki/synthesis/2026-11-28/investment-daily.md`.
+- Contradictions: none found vs existing wiki investment-daily entries; current 2026-11-28 data supersedes no claims; not investment advice.
+- Sources: Yahoo Finance homepage/articles + query2 v8 chart; Bloomberg articles via Yahoo Finance. No writes to `raw/`.
